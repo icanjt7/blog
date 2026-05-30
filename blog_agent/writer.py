@@ -77,9 +77,10 @@ BODY:
 
     def _write_fallback(self, topic: Topic) -> Draft:
         source_lines = "\n".join(f"- [{s.title}]({s.url})" for s in topic.sources)
+        topic_with_subject = self._with_particle(topic.keyword, "은", "는")
         body = f"""## 한눈에 보기
 
-{topic.keyword}는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.
+{topic_with_subject} 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.
 
 ## 왜 지금 볼 만한가
 
@@ -139,3 +140,14 @@ BODY:
     def _tags(topic: Topic) -> list[str]:
         base = [topic.category, *topic.keyword.split()[:4]]
         return list(dict.fromkeys(base))
+
+    @staticmethod
+    def _with_particle(text: str, consonant_particle: str, vowel_particle: str) -> str:
+        if not text:
+            return text
+        last = text[-1]
+        code = ord(last)
+        if 0xAC00 <= code <= 0xD7A3:
+            has_final = (code - 0xAC00) % 28 != 0
+            return text + (consonant_particle if has_final else vowel_particle)
+        return text + vowel_particle

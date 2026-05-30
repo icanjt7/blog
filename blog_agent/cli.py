@@ -5,6 +5,7 @@ import json
 
 from .config import load_settings
 from .pipeline import BlogPipeline
+from .site import StaticSiteBuilder
 from .storage import RunStore
 
 
@@ -16,6 +17,9 @@ def build_parser() -> argparse.ArgumentParser:
     run.add_argument("--dry-run", action="store_true")
     run.add_argument("--min-quality", type=float, default=65)
     run.add_argument("--publisher", choices=["markdown", "wordpress"])
+    build = sub.add_parser("build-site", help="render generated Markdown posts into a static site")
+    build.add_argument("--posts-dir")
+    build.add_argument("--public-dir")
     status = sub.add_parser("status", help="show recent pipeline runs")
     status.add_argument("--limit", type=int, default=10)
     return parser
@@ -28,6 +32,12 @@ def main() -> None:
     if args.command == "status":
         store = RunStore(settings.state_dir)
         print(json.dumps(store.latest_runs(args.limit), ensure_ascii=False, indent=2))
+        return
+    if args.command == "build-site":
+        posts_dir = settings.output_dir if not args.posts_dir else settings.output_dir.__class__(args.posts_dir)
+        public_dir = settings.public_dir if not args.public_dir else settings.public_dir.__class__(args.public_dir)
+        StaticSiteBuilder(posts_dir, public_dir, settings.site_title).build()
+        print(json.dumps({"ok": True, "public_dir": str(public_dir)}, ensure_ascii=False, indent=2))
         return
     if args.command == "run":
         if args.publisher:

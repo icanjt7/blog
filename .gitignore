@@ -7,4 +7,5 @@ build/
 *.egg-info/
 state/*.sqlite3
 state/*.sqlite3-*
+public/
 .DS_Store

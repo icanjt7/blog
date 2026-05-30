@@ -21,6 +21,19 @@ python -m blog_agent.cli run --count 5 --dry-run
 
 초안은 `output/posts/`에 Markdown 파일로 저장됩니다.
 
+## GitHub Pages 블로그 운영
+
+웹호스팅 없이 GitHub 저장소만으로 자동 블로그를 운영할 수 있습니다.
+
+```bash
+python -m blog_agent.cli run --count 5 --publisher markdown
+python -m blog_agent.cli build-site
+```
+
+`build-site`는 `output/posts/`의 Markdown 글을 `public/` 정적 사이트로 렌더링합니다. GitHub Actions는 매일 글을 만들고, `public/`을 GitHub Pages에 배포합니다.
+
+GitHub 저장소 Settings → Pages에서 Source를 `GitHub Actions`로 설정하세요. 배포 후 주소는 보통 `https://icanjt7.github.io/blog/` 형태가 됩니다.
+
 ## 실제 발행
 
 ```bash
@@ -39,6 +52,8 @@ python -m blog_agent.cli run --count 5 --publisher markdown
 
 - `OPENAI_MODEL`: 기본값 `gpt-4.1-mini`
 - `BLOG_OUTPUT_DIR`: 기본값 `output/posts`
+- `BLOG_PUBLIC_DIR`: 기본값 `public`
+- `BLOG_SITE_TITLE`: 기본값 `Curieux Auto Blog`
 - `WORDPRESS_URL`: 예: `https://example.com`
 - `WORDPRESS_USERNAME`
 - `WORDPRESS_APP_PASSWORD`
@@ -46,7 +61,7 @@ python -m blog_agent.cli run --count 5 --publisher markdown
 
 ## GitHub Actions
 
-`.github/workflows/daily-publish.yml`가 매일 00:10 KST에 실행되도록 설정되어 있습니다.
+`.github/workflows/daily-publish.yml`가 매일 00:10 KST에 실행되도록 설정되어 있습니다. 이 워크플로는 글 생성, 초안 커밋, GitHub Pages 배포까지 수행합니다.
 
 GitHub 저장소 Settings → Secrets and variables → Actions에 다음 값을 등록하세요.
 

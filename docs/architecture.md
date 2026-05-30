@@ -9,6 +9,8 @@ graph TD
     Writer --> Editor[SEO & Risk Editor]
     Editor --> Publisher[Publisher Adapter]
     Publisher --> Blog[Markdown / WordPress / future platform]
+    Blog --> SiteBuilder[Static Site Builder]
+    SiteBuilder --> Pages[GitHub Pages]
 
     CLI --> Store[(SQLite Run Store)]
     Editor --> Report[Quality Report JSON]
@@ -24,6 +26,7 @@ graph TD
 5. `Publisher` saves Markdown drafts or publishes to WordPress.
 6. `RunStore` records every run in SQLite and writes a JSON manifest.
 7. `ReportWriter` stores a quality report for later review.
+8. `StaticSiteBuilder` renders Markdown drafts into `public/` for GitHub Pages hosting.
 
 ## Why This Shape
 

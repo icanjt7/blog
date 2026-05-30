@@ -11,7 +11,9 @@ class Settings(BaseModel):
     openai_api_key: str | None = None
     openai_model: str = "gpt-4.1-mini"
     output_dir: Path = Path("output/posts")
+    public_dir: Path = Path("public")
     state_dir: Path = Path("state")
+    site_title: str = "Curieux Auto Blog"
     publisher: str = "markdown"
     wordpress_url: str | None = None
     wordpress_username: str | None = None
@@ -24,7 +26,9 @@ def load_settings() -> Settings:
         openai_api_key=os.getenv("OPENAI_API_KEY") or None,
         openai_model=os.getenv("OPENAI_MODEL", "gpt-4.1-mini"),
         output_dir=Path(os.getenv("BLOG_OUTPUT_DIR", "output/posts")),
+        public_dir=Path(os.getenv("BLOG_PUBLIC_DIR", "public")),
         state_dir=Path(os.getenv("BLOG_STATE_DIR", "state")),
+        site_title=os.getenv("BLOG_SITE_TITLE", "Curieux Auto Blog"),
         publisher=os.getenv("PUBLISHER", "markdown"),
         wordpress_url=os.getenv("WORDPRESS_URL") or None,
         wordpress_username=os.getenv("WORDPRESS_USERNAME") or None,

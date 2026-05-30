@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
 
@@ -25,10 +27,14 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
           PUBLISHER: ${{ vars.PUBLISHER || 'markdown' }}
+          BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || 'Curieux Auto Blog' }}
           WORDPRESS_URL: ${{ secrets.WORDPRESS_URL }}
           WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
           WORDPRESS_APP_PASSWORD: ${{ secrets.WORDPRESS_APP_PASSWORD }}
         run: python -m blog_agent.cli run --count 5
+
+      - name: Build static site
+        run: python -m blog_agent.cli build-site
 
       - name: Commit generated drafts
         if: always()
@@ -38,3 +44,11 @@ jobs:
           git add output state || true
           git diff --cached --quiet || git commit -m "chore: publish daily blog drafts"
           git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - uses: actions/deploy-pages@v4
