@@ -53,6 +53,23 @@ GitHub 저장소 Settings → Secrets and variables → Actions에 다음 값을
 - `OPENAI_API_KEY`
 - WordPress 사용 시 `WORDPRESS_URL`, `WORDPRESS_USERNAME`, `WORDPRESS_APP_PASSWORD`
 
+## 실행 기록 확인
+
+각 실행은 `state/runs.sqlite3`에 저장되고, 실행별 manifest와 품질 리포트가 JSON으로 남습니다.
+
+```bash
+python -m blog_agent.cli status
+```
+
+아키텍처는 [docs/architecture.md](docs/architecture.md)에 정리되어 있습니다.
+
+## Docker
+
+```bash
+docker build -t blog-auto-agent .
+docker run --env-file .env blog-auto-agent
+```
+
 ## 카테고리 전략
 
 초기 추천 비중:
