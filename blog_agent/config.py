@@ -18,6 +18,7 @@ class Settings(BaseModel):
     wordpress_url: str | None = None
     wordpress_username: str | None = None
     wordpress_app_password: str | None = None
+    wordpress_status: str = "publish"
 
 
 def load_settings() -> Settings:
@@ -33,4 +34,5 @@ def load_settings() -> Settings:
         wordpress_url=os.getenv("WORDPRESS_URL") or None,
         wordpress_username=os.getenv("WORDPRESS_USERNAME") or None,
         wordpress_app_password=os.getenv("WORDPRESS_APP_PASSWORD") or None,
+        wordpress_status=os.getenv("WORDPRESS_STATUS", "publish"),
     )

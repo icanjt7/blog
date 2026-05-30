@@ -42,6 +42,14 @@ python -m blog_agent.cli run --count 5 --publisher markdown
 
 현재 기본 발행기는 `markdown`입니다. WordPress REST API는 바로 사용할 수 있고, 티스토리/네이버는 정책과 인증 방식이 자주 바뀌므로 `blog_agent/publishers.py`의 어댑터를 확장하도록 분리했습니다.
 
+WordPress 발행 검증은 로컬 Docker 환경에서 먼저 할 수 있습니다.
+
+```bash
+docker compose -f docker-compose.wordpress.yml up -d
+```
+
+자세한 절차는 [docs/wordpress-local-test.md](docs/wordpress-local-test.md)를 참고하세요.
+
 ## 환경변수
 
 필수:
@@ -57,6 +65,7 @@ python -m blog_agent.cli run --count 5 --publisher markdown
 - `WORDPRESS_URL`: 예: `https://example.com`
 - `WORDPRESS_USERNAME`
 - `WORDPRESS_APP_PASSWORD`
+- `WORDPRESS_STATUS`: `draft` 또는 `publish`, 기본값 `publish`
 - `PUBLISHER`: `markdown` 또는 `wordpress`
 
 ## GitHub Actions

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import markdown
 import requests
 
 from .config import Settings
@@ -43,13 +44,18 @@ class WordPressPublisher(Publisher):
             raise ValueError("WordPress 환경변수가 필요합니다.")
         self.url = settings.wordpress_url.rstrip("/")
         self.auth = (settings.wordpress_username, settings.wordpress_app_password)
+        self.status = settings.wordpress_status
 
     def publish(self, draft: Draft) -> PublishResult:
         payload = {
             "title": draft.title,
-            "content": draft.body_markdown,
+            "content": markdown.markdown(
+                draft.body_markdown,
+                extensions=["tables", "fenced_code"],
+                output_format="html5",
+            ),
             "excerpt": draft.excerpt,
-            "status": "publish",
+            "status": self.status,
         }
         response = requests.post(
             f"{self.url}/wp-json/wp/v2/posts",
