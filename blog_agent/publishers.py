@@ -1,0 +1,73 @@
+from __future__ import annotations
+
+from pathlib import Path
+
+import requests
+
+from .config import Settings
+from .models import Draft, PublishResult
+
+
+class Publisher:
+    def publish(self, draft: Draft) -> PublishResult:
+        raise NotImplementedError
+
+
+class MarkdownPublisher(Publisher):
+    def __init__(self, output_dir: Path) -> None:
+        self.output_dir = output_dir
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+
+    def publish(self, draft: Draft) -> PublishResult:
+        path = self.output_dir / f"{draft.slug}.md"
+        frontmatter = "\n".join(
+            [
+                "---",
+                f'title: "{draft.title}"',
+                f'date: "{draft.created_at.isoformat()}"',
+                f'category: "{draft.topic.category}"',
+                "tags:",
+                *[f"  - {tag}" for tag in draft.tags],
+                f'quality_score: {draft.quality_score:.1f}',
+                "---",
+                "",
+            ]
+        )
+        path.write_text(frontmatter + draft.body_markdown + "\n", encoding="utf-8")
+        return PublishResult(ok=True, destination="markdown", url=str(path), message="draft saved")
+
+
+class WordPressPublisher(Publisher):
+    def __init__(self, settings: Settings) -> None:
+        if not all([settings.wordpress_url, settings.wordpress_username, settings.wordpress_app_password]):
+            raise ValueError("WordPress 환경변수가 필요합니다.")
+        self.url = settings.wordpress_url.rstrip("/")
+        self.auth = (settings.wordpress_username, settings.wordpress_app_password)
+
+    def publish(self, draft: Draft) -> PublishResult:
+        payload = {
+            "title": draft.title,
+            "content": draft.body_markdown,
+            "excerpt": draft.excerpt,
+            "status": "publish",
+        }
+        response = requests.post(
+            f"{self.url}/wp-json/wp/v2/posts",
+            json=payload,
+            auth=self.auth,
+            timeout=30,
+        )
+        if response.status_code >= 400:
+            return PublishResult(
+                ok=False,
+                destination="wordpress",
+                message=f"{response.status_code}: {response.text[:300]}",
+            )
+        data = response.json()
+        return PublishResult(ok=True, destination="wordpress", url=data.get("link"), message="published")
+
+
+def build_publisher(settings: Settings) -> Publisher:
+    if settings.publisher == "wordpress":
+        return WordPressPublisher(settings)
+    return MarkdownPublisher(settings.output_dir)

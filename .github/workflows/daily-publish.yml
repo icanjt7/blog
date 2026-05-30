@@ -1,0 +1,40 @@
+name: Daily blog publish
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 15 * * *"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Generate and publish posts
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+          PUBLISHER: ${{ vars.PUBLISHER || 'markdown' }}
+          WORDPRESS_URL: ${{ secrets.WORDPRESS_URL }}
+          WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
+          WORDPRESS_APP_PASSWORD: ${{ secrets.WORDPRESS_APP_PASSWORD }}
+        run: python -m blog_agent.cli run --count 5
+
+      - name: Commit generated drafts
+        if: always()
+        run: |
+          git config user.name "blog-agent"
+          git config user.email "actions@github.com"
+          git add output state || true
+          git diff --cached --quiet || git commit -m "chore: publish daily blog drafts"
+          git push

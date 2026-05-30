@@ -1,0 +1,16 @@
+tech:
+  rss:
+    - https://developers.googleblog.com/en/rss/
+    - https://www.theverge.com/rss/index.xml
+    - https://techcrunch.com/feed/
+finance:
+  rss:
+    - https://www.fsc.go.kr/no010101.rss
+    - https://www.bok.or.kr/portal/bbs/P0000559/news.rss?menuNo=200690
+living:
+  rss:
+    - https://www.korea.kr/rss/policy.xml
+    - https://www.korea.kr/rss/pressRelease.xml
+local:
+  rss:
+    - https://www.mcst.go.kr/kor/s_notice/press/pressList.jsp?pType=01

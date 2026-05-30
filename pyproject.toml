@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blog-auto-agent"
+version = "0.1.0"
+description = "Daily blog content planning, writing, review, and publishing agent"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "feedparser>=6.0.11",
+  "openai>=1.30.0",
+  "python-dotenv>=1.0.1",
+  "pydantic>=2.7.0",
+  "requests>=2.32.0",
+  "PyYAML>=6.0.1"
+]
+
+[project.scripts]
+blog-agent = "blog_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["blog_agent*"]
+
+[tool.setuptools.package-data]
+blog_agent = ["sources.yml"]
