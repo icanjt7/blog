@@ -38,6 +38,8 @@ WordPress에도 같은 글을 자동 포스팅하면서 GitHub Pages와 개인 �
 
 초안 검수와 대표 이미지 생성을 위한 Hugging Face Space 콘솔은 [docs/huggingface-space.md](docs/huggingface-space.md)를 참고하세요.
 
+Streamlit 운영 대시보드는 [docs/streamlit-dashboard.md](docs/streamlit-dashboard.md)를 참고하세요. Streamlit Cloud의 Main file path는 `streamlit_app.py`입니다.
+
 ## 실제 발행
 
 ```bash
