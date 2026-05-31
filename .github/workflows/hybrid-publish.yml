@@ -10,7 +10,7 @@ on:
       wordpress_status:
         description: "WordPress post status: draft or publish"
         required: false
-        default: "draft"
+        default: "publish"
       min_quality:
         description: "Minimum quality score"
         required: false
@@ -50,7 +50,7 @@ jobs:
           WORDPRESS_URL: ${{ secrets.WORDPRESS_URL }}
           WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
           WORDPRESS_APP_PASSWORD: ${{ secrets.WORDPRESS_APP_PASSWORD }}
-          WORDPRESS_STATUS: ${{ github.event.inputs.wordpress_status || vars.WORDPRESS_STATUS || 'draft' }}
+          WORDPRESS_STATUS: ${{ github.event.inputs.wordpress_status || vars.WORDPRESS_STATUS || 'publish' }}
         run: |
           python -m blog_agent.cli run \
             --count "${{ github.event.inputs.count || vars.HYBRID_POST_COUNT || '1' }}" \

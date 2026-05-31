@@ -26,11 +26,11 @@ WordPress 관리자에서:
 선택 Variables:
 
 - `OPENAI_MODEL`: 기본값 `gpt-4.1-mini`
-- `WORDPRESS_STATUS`: `draft` 또는 `publish`, 추천 기본값 `draft`
+- `WORDPRESS_STATUS`: `publish` 추천. 임시 저장이 필요할 때만 `draft`
 - `WORDPRESS_POST_COUNT`: 기본값 `1`
 - `WORDPRESS_MIN_QUALITY`: 기본값 `65`
 
-처음에는 반드시 `WORDPRESS_STATUS=draft`로 검증하세요.
+바로 공개 발행하려면 `WORDPRESS_STATUS=publish`로 둡니다.
 
 ## 3. 수동 실행
 
@@ -41,7 +41,7 @@ GitHub 저장소에서:
 입력값:
 
 - `count`: 테스트는 `1`
-- `status`: 테스트는 `draft`
+- `status`: 바로 공개하려면 `publish`
 - `min_quality`: 기본 `65`
 
 성공하면 Actions 로그의 `publish_results`에 WordPress 글 URL이 표시됩니다.
@@ -50,7 +50,7 @@ GitHub 저장소에서:
 
 `.github/workflows/wordpress-publish.yml`은 매일 00:30 KST에 실행됩니다.
 
-처음에는 `draft`로 며칠 돌려보고, WordPress 관리자에서 글 품질을 확인한 뒤 `WORDPRESS_STATUS=publish`로 바꾸는 것을 권장합니다.
+기본값은 `publish`입니다. 임시 저장 운영이 필요한 경우에만 `draft`로 바꾸세요.
 
 ## 5. 실패 처리
 

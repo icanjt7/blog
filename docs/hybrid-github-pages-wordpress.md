@@ -31,7 +31,7 @@ graph TD
 
 - `BLOG_SITE_TITLE`: 사이트명
 - `BLOG_CUSTOM_DOMAIN`: 예: `example.com`
-- `WORDPRESS_STATUS`: 처음에는 `draft`, 검증 후 `publish`
+- `WORDPRESS_STATUS`: `publish` 추천. 임시 저장이 필요할 때만 `draft`
 - `HYBRID_POST_COUNT`: 처음에는 `1`, 안정화 후 원하는 발행량으로 증가
 - `HYBRID_MIN_QUALITY`: 기본 `65`
 - `ENABLE_LLM_EDIT`: `true` 추천
@@ -44,11 +44,11 @@ graph TD
 2. WordPress에서 Application Password를 만듭니다.
 3. 위 Secrets와 Variables를 등록합니다.
 4. `Actions → Hybrid publish → Run workflow`를 실행합니다.
-5. 처음에는 `count=1`, `wordpress_status=draft`로 확인합니다.
+5. `count=1`, `wordpress_status=publish`로 실행하면 WordPress에 바로 공개됩니다.
 
 성공하면:
 
-- WordPress에는 draft 글이 생성됩니다.
+- WordPress에는 공개 글이 생성됩니다.
 - GitHub Pages에는 같은 글이 정적 HTML로 배포됩니다.
 - `output/posts`, `output/reports`, `state/*.json`는 저장소에 기록됩니다.
 - 이미지 생성을 켜면 `output/assets`에 대표 이미지가 저장되고 GitHub Pages 글 상단에 삽입됩니다. WordPress에는 featured media로 업로드를 시도합니다.
@@ -84,14 +84,9 @@ https://icanjt7.github.io/blog/
 
 ## Operating Mode
 
-초기 추천:
-
-- GitHub Pages: 공개
-- WordPress: `draft`
-
-글 품질과 발행 결과가 안정되면:
+추천 운영:
 
 - GitHub Pages: 공개
 - WordPress: `publish`
 
-WordPress 발행이 실패하면 워크플로가 실패 상태로 종료됩니다. GitHub Pages 배포도 같은 실행 안에 있으므로 처음에는 반드시 draft로 충분히 확인하세요.
+WordPress 발행이 실패하면 워크플로가 실패 상태로 종료됩니다. 임시 저장이 필요한 날에는 수동 실행 입력값만 `draft`로 바꾸면 됩니다.

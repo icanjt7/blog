@@ -73,9 +73,9 @@ OpenAI 이미지 생성은 GPT Image 계열 모델을 사용할 수 있습니다
 초기 운영:
 
 1. Space에서 초안과 이미지 콘셉트를 확인합니다.
-2. GitHub Actions `Hybrid publish`를 `wordpress_status=draft`로 실행합니다.
+2. GitHub Actions `Hybrid publish`를 `wordpress_status=publish`로 실행합니다.
 3. WordPress와 GitHub Pages 결과를 확인합니다.
-4. 안정되면 `WORDPRESS_STATUS=publish`로 전환합니다.
+4. 임시 저장이 필요한 날에만 `WORDPRESS_STATUS=draft`로 전환합니다.
 
 주의:
 
