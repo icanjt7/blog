@@ -25,11 +25,21 @@ class Post:
 
 
 class StaticSiteBuilder:
-    def __init__(self, posts_dir: Path, public_dir: Path, site_title: str, custom_domain: str | None = None) -> None:
+    def __init__(
+        self,
+        posts_dir: Path,
+        public_dir: Path,
+        site_title: str,
+        custom_domain: str | None = None,
+        ga_measurement_id: str | None = None,
+        adsense_publisher_id: str | None = None,
+    ) -> None:
         self.posts_dir = posts_dir
         self.public_dir = public_dir
         self.site_title = site_title
         self.custom_domain = custom_domain
+        self.ga_measurement_id = ga_measurement_id
+        self.adsense_publisher_id = adsense_publisher_id
 
     def build(self) -> None:
         self.public_dir.mkdir(parents=True, exist_ok=True)
@@ -82,6 +92,7 @@ class StaticSiteBuilder:
         cover_html = ""
         if post.cover_image:
             cover_html = f'<img class="cover" src="{html.escape(post.cover_image)}" alt="{html.escape(post.cover_image_alt)}" loading="lazy">'
+        ad_slot = self._ad_slot()
         content = f"""
         <article class="post">
           <a class="back" href="./index.html">전체 글</a>
@@ -91,10 +102,22 @@ class StaticSiteBuilder:
             <h1>{html.escape(post.title)}</h1>
             <div class="tags">{self._tag_html(post.tags)}</div>
           </header>
+          {ad_slot}
           <div class="content">{post.body_html}</div>
+          {ad_slot}
         </article>
         """
         self._write_html(f"{post.slug}.html", post.title, content)
+
+    def _ad_slot(self) -> str:
+        if not self.adsense_publisher_id:
+            return ""
+        pub = html.escape(self.adsense_publisher_id)
+        return f"""<div class="ad-slot">
+          <ins class="adsbygoogle" style="display:block" data-ad-client="{pub}"
+               data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+        </div>"""
 
     def _write_index(self, posts: list[Post]) -> None:
         if posts:
@@ -190,6 +213,23 @@ class StaticSiteBuilder:
         (self.public_dir / "feed.xml").write_text(feed, encoding="utf-8")
 
     def _write_html(self, filename: str, title: str, content: str) -> None:
+        ga_script = ""
+        if self.ga_measurement_id:
+            mid = html.escape(self.ga_measurement_id)
+            ga_script = f"""
+  <script async src="https://www.googletagmanager.com/gtag/js?id={mid}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+    gtag('config', '{mid}');
+  </script>"""
+
+        adsense_script = ""
+        if self.adsense_publisher_id:
+            pub = html.escape(self.adsense_publisher_id)
+            adsense_script = f'\n  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={pub}" crossorigin="anonymous"></script>'
+
         page = f"""<!doctype html>
 <html lang="ko">
 <head>
@@ -198,7 +238,7 @@ class StaticSiteBuilder:
   <title>{html.escape(title)}</title>
   <meta name="description" content="{html.escape(self.site_title)}">
   <link rel="stylesheet" href="./style.css">
-  <link rel="alternate" type="application/rss+xml" href="./feed.xml">
+  <link rel="alternate" type="application/rss+xml" href="./feed.xml">{ga_script}{adsense_script}
 </head>
 <body>
   <main>{content}</main>
@@ -269,6 +309,7 @@ a:hover { text-decoration: underline; }
 .content th, .content td { border: 1px solid var(--line); padding: 9px; text-align: left; }
 .content th { background: #ece7da; }
 .cover { width: 100%; max-height: 420px; object-fit: cover; border-radius: 6px; margin-bottom: 20px; display: block; }
+.ad-slot { margin: 24px 0; min-height: 90px; }
 .card-img { width: 100%; height: 180px; object-fit: cover; border-radius: 6px 6px 0 0; display: block; margin: -20px -20px 14px; width: calc(100% + 40px); }
 .empty { padding: 24px 0; color: var(--muted); }
 .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 24px 0; }

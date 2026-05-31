@@ -22,6 +22,10 @@ class Settings(BaseModel):
     # Images — Unsplash free API (50 req/h)
     unsplash_access_key: str | None = None
 
+    # Analytics & monetisation
+    ga_measurement_id: str | None = None    # Google Analytics 4: G-XXXXXXXXXX
+    adsense_publisher_id: str | None = None  # AdSense: ca-pub-XXXXXXXXXX
+
     post_count: int = 5
     enable_llm_edit: bool = True
     enable_image_generation: bool = False
@@ -51,6 +55,8 @@ def load_settings() -> Settings:
         gemini_api_key=os.getenv("GEMINI_API_KEY") or None,
         gemini_model=os.getenv("GEMINI_MODEL", "gemini-2.0-flash"),
         unsplash_access_key=os.getenv("UNSPLASH_ACCESS_KEY") or None,
+        ga_measurement_id=os.getenv("GA_MEASUREMENT_ID") or None,
+        adsense_publisher_id=os.getenv("ADSENSE_PUBLISHER_ID") or None,
         post_count=int(os.getenv("BLOG_POST_COUNT", "5")),
         enable_llm_edit=os.getenv("ENABLE_LLM_EDIT", "true").lower() == "true",
         enable_image_generation=os.getenv("ENABLE_IMAGE_GENERATION", "false").lower() == "true",
