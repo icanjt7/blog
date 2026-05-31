@@ -228,7 +228,10 @@ class StaticSiteBuilder:
         adsense_script = ""
         if self.adsense_publisher_id:
             pub = html.escape(self.adsense_publisher_id)
-            adsense_script = f'\n  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={pub}" crossorigin="anonymous"></script>'
+            adsense_script = (
+                f'\n  <meta name="google-adsense-account" content="{pub}">'
+                f'\n  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={pub}" crossorigin="anonymous"></script>'
+            )
 
         page = f"""<!doctype html>
 <html lang="ko">
