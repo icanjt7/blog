@@ -4,6 +4,7 @@ from dataclasses import dataclass
 
 from .config import Settings
 from .editor import SeoEditorAgent
+from .images import ImageAgent
 from .models import Draft, PublishResult
 from .publishers import build_publisher
 from .reports import ReportWriter
@@ -28,7 +29,8 @@ class BlogPipeline:
         self.scout = TrendScout(settings.state_dir)
         self.retriever = FactRetriever()
         self.writer = WriterAgent(settings)
-        self.editor = SeoEditorAgent()
+        self.editor = SeoEditorAgent(settings)
+        self.images = ImageAgent(settings)
         self.publisher = build_publisher(settings)
         self.store = RunStore(settings.state_dir)
         self.reports = ReportWriter(settings.output_dir)
@@ -50,7 +52,8 @@ class BlogPipeline:
             for topic in topics:
                 self.store.add_event(run_id, "topic_started", "ok", {"keyword": topic.keyword})
                 enriched = self.retriever.enrich(topic)
-                draft = self.editor.review(self.writer.write(enriched))
+                draft = self.editor.improve(self.writer.write(enriched))
+                draft = self.images.attach_cover(draft)
                 drafts.append(draft)
                 if dry_run:
                     self.store.add_draft(run_id, draft)

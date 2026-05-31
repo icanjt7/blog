@@ -2,6 +2,9 @@ from __future__ import annotations
 
 import re
 
+from openai import OpenAI
+
+from .config import Settings
 from .models import Draft
 
 
@@ -15,6 +18,64 @@ AI_CLICHES = [
 
 
 class SeoEditorAgent:
+    def __init__(self, settings: Settings | None = None) -> None:
+        self.settings = settings
+        self.client = (
+            OpenAI(api_key=settings.openai_api_key)
+            if settings and settings.openai_api_key and settings.enable_llm_edit
+            else None
+        )
+
+    def improve(self, draft: Draft) -> Draft:
+        if not self.client:
+            return self.review(draft)
+        reviewed = self.review(draft)
+        sources = "\n".join(
+            f"- {source.title}: {source.url} ({source.summary[:180]})"
+            for source in reviewed.topic.sources
+        )
+        prompt = f"""
+아래 한국어 블로그 초안을 편집해 주세요.
+
+목표:
+- 사실은 유지하고, 출처에 없는 구체 수치나 경험담은 추가하지 않는다.
+- AI가 쓴 것처럼 보이는 반복 표현을 줄인다.
+- 문단을 짧게 나누고, 표/체크리스트의 가독성을 높인다.
+- 핵심 키워드 "{reviewed.topic.keyword}"는 자연스럽게 유지하되 과하게 반복하지 않는다.
+- 지역/맛집 글이라도 직접 방문한 척하지 않는다.
+- 제목, 2문장 요약, Markdown 본문을 반환한다.
+
+현재 검수 메모:
+{chr(10).join(reviewed.review_notes) if reviewed.review_notes else "특이사항 없음"}
+
+참고 출처:
+{sources}
+
+초안 제목:
+{reviewed.title}
+
+초안 요약:
+{reviewed.excerpt}
+
+초안 본문:
+{reviewed.body_markdown}
+
+응답 형식:
+TITLE:
+EXCERPT:
+BODY:
+"""
+        response = self.client.responses.create(
+            model=self.settings.openai_model if self.settings else "gpt-4.1-mini",
+            input=prompt,
+        )
+        text = response.output_text
+        reviewed.title = self._extract(text, "TITLE", reviewed.title)
+        reviewed.excerpt = self._extract(text, "EXCERPT", reviewed.excerpt)
+        reviewed.body_markdown = self._extract(text, "BODY", reviewed.body_markdown).strip()
+        reviewed.review_notes.append("LLM 편집 보완 완료")
+        return self.review(reviewed)
+
     def review(self, draft: Draft) -> Draft:
         notes: list[str] = []
         score = 100.0
@@ -41,3 +102,9 @@ class SeoEditorAgent:
         draft.quality_score = max(0, score)
         draft.review_notes = notes
         return draft
+
+    @staticmethod
+    def _extract(text: str, label: str, default: str) -> str:
+        pattern = rf"{label}:\s*(.*?)(?=\n[A-Z]+:|\Z)"
+        match = re.search(pattern, text, flags=re.S)
+        return match.group(1).strip() if match else default

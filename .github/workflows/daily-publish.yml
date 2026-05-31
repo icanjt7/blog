@@ -26,12 +26,16 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+          OPENAI_IMAGE_MODEL: ${{ vars.OPENAI_IMAGE_MODEL || 'gpt-image-1-mini' }}
+          BLOG_POST_COUNT: ${{ vars.BLOG_POST_COUNT || '5' }}
+          ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
+          ENABLE_IMAGE_GENERATION: ${{ vars.ENABLE_IMAGE_GENERATION || 'false' }}
           PUBLISHER: ${{ vars.PUBLISHER || 'markdown' }}
           BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
           WORDPRESS_URL: ${{ secrets.WORDPRESS_URL }}
           WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
           WORDPRESS_APP_PASSWORD: ${{ secrets.WORDPRESS_APP_PASSWORD }}
-        run: python -m blog_agent.cli run --count 5
+        run: python -m blog_agent.cli run
 
       - name: Build static site
         run: python -m blog_agent.cli build-site

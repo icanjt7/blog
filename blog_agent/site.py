@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import html
 import re
+import shutil
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -37,6 +38,7 @@ class StaticSiteBuilder:
         self._write_dashboard(posts)
         self._write_feed(posts)
         self._write_css()
+        self._copy_assets()
         self._write_cname()
 
     def _load_posts(self) -> list[Post]:
@@ -273,6 +275,16 @@ a:hover { text-decoration: underline; }
     def _write_cname(self) -> None:
         if self.custom_domain:
             (self.public_dir / "CNAME").write_text(self.custom_domain.strip() + "\n", encoding="utf-8")
+
+    def _copy_assets(self) -> None:
+        assets_dir = self.posts_dir.parent / "assets"
+        if not assets_dir.exists():
+            return
+        target_dir = self.public_dir / "assets"
+        target_dir.mkdir(parents=True, exist_ok=True)
+        for path in assets_dir.iterdir():
+            if path.is_file():
+                shutil.copy2(path, target_dir / path.name)
 
     @staticmethod
     def _parse_date(value: str) -> datetime:

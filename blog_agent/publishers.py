@@ -20,6 +20,7 @@ class MarkdownPublisher(Publisher):
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
     def publish(self, draft: Draft) -> PublishResult:
+        body = self._body_with_cover(draft)
         path = self.output_dir / f"{draft.slug}.md"
         frontmatter = "\n".join(
             [
@@ -34,8 +35,16 @@ class MarkdownPublisher(Publisher):
                 "",
             ]
         )
-        path.write_text(frontmatter + draft.body_markdown + "\n", encoding="utf-8")
+        path.write_text(frontmatter + body + "\n", encoding="utf-8")
         return PublishResult(ok=True, destination="markdown", url=str(path), message="draft saved")
+
+    @staticmethod
+    def _body_with_cover(draft: Draft) -> str:
+        if not draft.cover_image_path:
+            return draft.body_markdown
+        image_name = Path(draft.cover_image_path).name
+        alt = draft.cover_image_alt or draft.title
+        return f"![{alt}](assets/{image_name})\n\n{draft.body_markdown}"
 
 
 class WordPressPublisher(Publisher):
@@ -47,16 +56,26 @@ class WordPressPublisher(Publisher):
         self.status = settings.wordpress_status
 
     def publish(self, draft: Draft) -> PublishResult:
+        media = self._upload_media(draft)
+        body = draft.body_markdown
+        if media:
+            _, media_url = media
+            alt = draft.cover_image_alt or draft.title
+            body = f"![{alt}]({media_url})\n\n{draft.body_markdown}"
+        elif draft.cover_image_path:
+            body = MarkdownPublisher._body_with_cover(draft)
         payload = {
             "title": draft.title,
             "content": markdown.markdown(
-                draft.body_markdown,
+                body,
                 extensions=["tables", "fenced_code"],
                 output_format="html5",
             ),
             "excerpt": draft.excerpt,
             "status": self.status,
         }
+        if media:
+            payload["featured_media"] = media[0]
         response = requests.post(
             f"{self.url}/wp-json/wp/v2/posts",
             json=payload,
@@ -71,6 +90,28 @@ class WordPressPublisher(Publisher):
             )
         data = response.json()
         return PublishResult(ok=True, destination="wordpress", url=data.get("link"), message="published")
+
+    def _upload_media(self, draft: Draft) -> tuple[int, str] | None:
+        if not draft.cover_image_path:
+            return None
+        path = Path(draft.cover_image_path)
+        if not path.exists():
+            return None
+        headers = {
+            "Content-Disposition": f'attachment; filename="{path.name}"',
+            "Content-Type": "image/png",
+        }
+        response = requests.post(
+            f"{self.url}/wp-json/wp/v2/media",
+            data=path.read_bytes(),
+            headers=headers,
+            auth=self.auth,
+            timeout=60,
+        )
+        if response.status_code >= 400:
+            return None
+        data = response.json()
+        return int(data["id"]), data.get("source_url", "")
 
 
 class CompositePublisher(Publisher):

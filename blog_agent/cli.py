@@ -14,7 +14,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Daily blog automation agent")
     sub = parser.add_subparsers(dest="command", required=True)
     run = sub.add_parser("run", help="plan, write, review, and publish posts")
-    run.add_argument("--count", type=int, default=5)
+    run.add_argument("--count", type=int)
     run.add_argument("--dry-run", action="store_true")
     run.add_argument("--min-quality", type=float, default=65)
     run.add_argument("--publisher", choices=["markdown", "wordpress", "both"])
@@ -45,7 +45,8 @@ def main() -> None:
         if args.publisher:
             settings.publisher = args.publisher
         pipeline = BlogPipeline(settings)
-        result = pipeline.run(count=args.count, dry_run=args.dry_run, min_quality=args.min_quality)
+        count = args.count if args.count is not None else settings.post_count
+        result = pipeline.run(count=count, dry_run=args.dry_run, min_quality=args.min_quality)
         print(
             json.dumps(
                 {

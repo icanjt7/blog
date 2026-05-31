@@ -67,7 +67,12 @@ docker compose -f docker-compose.wordpress.yml up -d
 선택:
 
 - `OPENAI_MODEL`: 기본값 `gpt-4.1-mini`
+- `OPENAI_IMAGE_MODEL`: 기본값 `gpt-image-1-mini`
+- `BLOG_POST_COUNT`: 기본값 `5`
+- `ENABLE_LLM_EDIT`: 기본값 `true`
+- `ENABLE_IMAGE_GENERATION`: 기본값 `false`
 - `BLOG_OUTPUT_DIR`: 기본값 `output/posts`
+- `BLOG_ASSETS_DIR`: 기본값 `output/assets`
 - `BLOG_PUBLIC_DIR`: 기본값 `public`
 - `BLOG_SITE_TITLE`: 기본값 `브리핑웨이브`
 - `BLOG_CUSTOM_DOMAIN`: GitHub Pages 커스텀 도메인, 설정 시 `CNAME` 자동 생성

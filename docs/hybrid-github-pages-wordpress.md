@@ -32,8 +32,11 @@ graph TD
 - `BLOG_SITE_TITLE`: 사이트명
 - `BLOG_CUSTOM_DOMAIN`: 예: `example.com`
 - `WORDPRESS_STATUS`: 처음에는 `draft`, 검증 후 `publish`
-- `HYBRID_POST_COUNT`: 처음에는 `1`
+- `HYBRID_POST_COUNT`: 처음에는 `1`, 안정화 후 원하는 발행량으로 증가
 - `HYBRID_MIN_QUALITY`: 기본 `65`
+- `ENABLE_LLM_EDIT`: `true` 추천
+- `ENABLE_IMAGE_GENERATION`: 처음에는 `false`, 이미지 비용/품질 확인 후 `true`
+- `OPENAI_IMAGE_MODEL`: 기본 `gpt-image-1-mini`
 
 ## First Run
 
@@ -48,6 +51,24 @@ graph TD
 - WordPress에는 draft 글이 생성됩니다.
 - GitHub Pages에는 같은 글이 정적 HTML로 배포됩니다.
 - `output/posts`, `output/reports`, `state/*.json`는 저장소에 기록됩니다.
+- 이미지 생성을 켜면 `output/assets`에 대표 이미지가 저장되고 GitHub Pages 글 상단에 삽입됩니다. WordPress에는 featured media로 업로드를 시도합니다.
+
+## Quality and Image Flow
+
+발행 파이프라인은 다음 순서로 실행됩니다.
+
+```text
+주제 선정
+→ 초안 작성
+→ LLM 편집 보완
+→ SEO/품질 재검수
+→ 대표 이미지 프롬프트 생성
+→ 선택적으로 이미지 생성
+→ Markdown + WordPress 발행
+→ GitHub Pages 빌드
+```
+
+OpenAI 공식 문서 기준으로 이미지 생성은 Image API 또는 Responses API 이미지 도구를 사용할 수 있습니다. 이 저장소는 대표 이미지 1장을 만들기 위해 단순한 Image API 경로를 사용합니다.
 
 ## Custom Domain
 

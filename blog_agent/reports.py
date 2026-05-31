@@ -26,6 +26,8 @@ class ReportWriter:
                     "review_notes": draft.review_notes,
                     "source_count": len(draft.topic.sources),
                     "source_authority_avg": self._source_authority_avg(draft),
+                    "image_prompt": draft.image_prompt,
+                    "cover_image_path": draft.cover_image_path,
                 }
                 for draft in drafts
             ],
