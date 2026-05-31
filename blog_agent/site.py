@@ -110,9 +110,7 @@ class StaticSiteBuilder:
         self._write_html(f"{post.slug}.html", post.title, content)
 
     def _ad_slot(self) -> str:
-        if not self.adsense_publisher_id:
-            return ""
-        pub = html.escape(self.adsense_publisher_id)
+        pub = html.escape(self.adsense_publisher_id or "ca-pub-3870943054399059")
         return f"""<div class="ad-slot">
           <ins class="adsbygoogle" style="display:block" data-ad-client="{pub}"
                data-ad-format="auto" data-full-width-responsive="true"></ins>
@@ -225,13 +223,11 @@ class StaticSiteBuilder:
     gtag('config', '{mid}');
   </script>"""
 
-        adsense_script = ""
-        if self.adsense_publisher_id:
-            pub = html.escape(self.adsense_publisher_id)
-            adsense_script = (
-                f'\n  <meta name="google-adsense-account" content="{pub}">'
-                f'\n  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={pub}" crossorigin="anonymous"></script>'
-            )
+        pub = html.escape(self.adsense_publisher_id or "ca-pub-3870943054399059")
+        adsense_script = (
+            f'\n  <meta name="google-adsense-account" content="{pub}">'
+            f'\n  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={pub}" crossorigin="anonymous"></script>'
+        )
 
         page = f"""<!doctype html>
 <html lang="ko">
