@@ -1,16 +1,62 @@
 tech:
   rss:
+    # 해외 테크 미디어
     - https://developers.googleblog.com/en/rss/
     - https://www.theverge.com/rss/index.xml
     - https://techcrunch.com/feed/
+    # 국내 IT 공공 보도자료
+    - https://www.msit.go.kr/bbs/publicRss.do?sCode=user&mId=113&mPid=112&bbsSeqNo=94  # 과학기술정보통신부
+    - https://www.kisa.or.kr/rss/rss.do?bbsId=PR_NEWS  # 한국인터넷진흥원(KISA)
+    - https://www.nipa.kr/rss/rss.do  # 정보통신산업진흥원(NIPA)
+
 finance:
   rss:
-    - https://www.fsc.go.kr/no010101.rss
-    - https://www.bok.or.kr/portal/bbs/P0000559/news.rss?menuNo=200690
+    # 금융·경제 공공기관
+    - https://www.fsc.go.kr/no010101.rss                                   # 금융위원회
+    - https://www.bok.or.kr/portal/bbs/P0000559/news.rss?menuNo=200690    # 한국은행
+    - https://www.moef.go.kr/rss/moefRssNewsView.do                        # 기획재정부
+    - https://www.fss.or.kr/rss/fssRss.do?bbsid=1220228032                # 금융감독원
+    - https://www.nhis.or.kr/rss/nhisRssNewsList.do                        # 국민건강보험공단
+    - https://www.nps.or.kr/jsppage/news/rss/news_rss.jsp                  # 국민연금공단
+    - https://www.hira.or.kr/rss/rss.do                                    # 건강보험심사평가원
+
 living:
   rss:
-    - https://www.korea.kr/rss/policy.xml
-    - https://www.korea.kr/rss/pressRelease.xml
+    # 중앙정부 통합
+    - https://www.korea.kr/rss/policy.xml                                  # 정책브리핑 정책
+    - https://www.korea.kr/rss/pressRelease.xml                            # 정책브리핑 보도자료
+    # 주요 부처
+    - https://www.mohw.go.kr/rss/mohwRss.do                                # 보건복지부
+    - https://www.moel.go.kr/rss/moelRss.do                                # 고용노동부
+    - https://www.mlit.go.kr/bbs/rss.do?bbsId=BBSMSTR_000000000214        # 국토교통부
+    - https://www.molit.go.kr/USR/NEWS/m_71/lst.jsp                        # 국토부(구URL)
+    - https://www.moe.go.kr/rss/moeRss.do                                  # 교육부
+    - https://www.mois.go.kr/rss/moisRss.do                                # 행정안전부
+    - https://www.me.go.kr/rss/rss.do                                      # 환경부
+    - https://www.mafra.go.kr/bbs/mafra/68/319872/artclView.do            # 농림축산식품부
+    - https://www.mss.go.kr/rss/mssRss.do                                  # 중소벤처기업부
+    # 복지·지원
+    - https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do  # 복지로
+    - https://www.work.go.kr/rss/rss.do                                    # 고용24
+    # 지방자치단체 주요
+    - https://news.seoul.go.kr/api/rss                                     # 서울시
+    - https://www.busan.go.kr/rss/rss.jsp                                  # 부산시
+    - https://www.gyeonggi.go.kr/rss/rss.jsp                               # 경기도
+    - https://www.incheon.go.kr/rss/rss.do                                 # 인천시
+    - https://www.daegu.go.kr/rss/rss.jsp                                  # 대구시
+    - https://www.daejeon.go.kr/rss/rss.do                                 # 대전시
+    - https://www.gwangju.go.kr/rss/rss.do                                 # 광주시
+    - https://www.ulsan.go.kr/rss/rss.do                                   # 울산시
+
 local:
   rss:
-    - https://www.mcst.go.kr/kor/s_notice/press/pressList.jsp?pType=01
+    # 문화·관광·영화
+    - https://www.mcst.go.kr/kor/s_notice/press/pressList.jsp?pType=01    # 문화체육관광부
+    - https://www.kofic.or.kr/kofic/business/rss/rss.do                   # 영화진흥위원회(박스오피스)
+    - https://www.visitkorea.or.kr/rss/rss.do                              # 한국관광공사
+    - https://www.kto.visitkorea.or.kr/rss/rss.do                         # 한국관광공사(영문)
+    # 지역 뉴스
+    - https://www.jeju.go.kr/rss/rss.do                                    # 제주도
+    - https://www.gangwon.to/rss/rss.do                                    # 강원도
+    - https://www.jeonbuk.go.kr/rss/rss.do                                 # 전북
+    - https://www.gyeongnam.go.kr/rss/rss.do                               # 경남

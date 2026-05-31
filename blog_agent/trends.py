@@ -94,7 +94,10 @@ class TrendScout:
         topics: list[Topic] = []
         for category, source_config in config.items():
             for rss_url in source_config.get("rss", []):
-                parsed = feedparser.parse(rss_url)
+                try:
+                    parsed = feedparser.parse(rss_url)
+                except Exception:
+                    continue
                 for entry in parsed.entries[:10]:
                     title = re.sub(r"\s+", " ", entry.get("title", "")).strip()
                     if not title:
