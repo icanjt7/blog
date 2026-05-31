@@ -36,6 +36,8 @@ GitHub 저장소 Settings → Pages에서 Source를 `GitHub Actions`로 설정�
 
 WordPress에도 같은 글을 자동 포스팅하면서 GitHub Pages와 개인 도메인으로 공개하려면 [docs/hybrid-github-pages-wordpress.md](docs/hybrid-github-pages-wordpress.md)를 참고하세요.
 
+초안 검수와 대표 이미지 생성을 위한 Hugging Face Space 콘솔은 [docs/huggingface-space.md](docs/huggingface-space.md)를 참고하세요.
+
 ## 실제 발행
 
 ```bash

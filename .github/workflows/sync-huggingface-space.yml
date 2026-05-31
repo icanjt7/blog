@@ -1,0 +1,41 @@
+name: Sync Hugging Face Space
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "hf_space/**"
+      - ".github/workflows/sync-huggingface-space.yml"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Upload Space files
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_SPACE_ID: ${{ vars.HF_SPACE_ID }}
+        run: |
+          python -m pip install --upgrade huggingface_hub
+          python - <<'PY'
+          import os
+          from huggingface_hub import HfApi
+
+          token = os.environ["HF_TOKEN"]
+          repo_id = os.environ["HF_SPACE_ID"]
+          HfApi(token=token).upload_folder(
+              repo_id=repo_id,
+              repo_type="space",
+              folder_path="hf_space",
+              path_in_repo=".",
+          )
+          print(f"Uploaded hf_space to {repo_id}")
+          PY
