@@ -20,6 +20,8 @@ class Post:
     slug: str
     excerpt: str
     body_html: str
+    cover_image: str = ""
+    cover_image_alt: str = ""
 
 
 class StaticSiteBuilder:
@@ -72,12 +74,18 @@ class StaticSiteBuilder:
             slug=path.stem,
             excerpt=excerpt,
             body_html=body_html,
+            cover_image=str(meta.get("cover_image") or ""),
+            cover_image_alt=str(meta.get("cover_image_alt") or title),
         )
 
     def _write_post(self, post: Post) -> None:
+        cover_html = ""
+        if post.cover_image:
+            cover_html = f'<img class="cover" src="{html.escape(post.cover_image)}" alt="{html.escape(post.cover_image_alt)}" loading="lazy">'
         content = f"""
         <article class="post">
           <a class="back" href="./index.html">전체 글</a>
+          {cover_html}
           <header>
             <p class="meta">{html.escape(post.category)} · {post.date:%Y-%m-%d}</p>
             <h1>{html.escape(post.title)}</h1>
@@ -93,6 +101,7 @@ class StaticSiteBuilder:
             cards = "\n".join(
                 f"""
                 <article class="card">
+                  {f'<a href="./{post.slug}.html"><img class="card-img" src="{html.escape(post.cover_image)}" alt="{html.escape(post.cover_image_alt)}" loading="lazy"></a>' if post.cover_image else ''}
                   <p class="meta">{html.escape(post.category)} · {post.date:%Y-%m-%d}</p>
                   <h2><a href="./{post.slug}.html">{html.escape(post.title)}</a></h2>
                   <p>{html.escape(post.excerpt)}</p>
@@ -259,6 +268,8 @@ a:hover { text-decoration: underline; }
 .content table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 0.95rem; }
 .content th, .content td { border: 1px solid var(--line); padding: 9px; text-align: left; }
 .content th { background: #ece7da; }
+.cover { width: 100%; max-height: 420px; object-fit: cover; border-radius: 6px; margin-bottom: 20px; display: block; }
+.card-img { width: 100%; height: 180px; object-fit: cover; border-radius: 6px 6px 0 0; display: block; margin: -20px -20px 14px; width: calc(100% + 40px); }
 .empty { padding: 24px 0; color: var(--muted); }
 .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 24px 0; }
 .stats div { border: 1px solid var(--line); border-radius: 8px; padding: 16px; background: #faf7ef; }

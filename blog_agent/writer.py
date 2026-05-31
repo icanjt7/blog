@@ -10,59 +10,125 @@ from .config import Settings
 from .models import Draft, Topic
 
 
-STYLE_RULES = {
-    "living": "친절한 생활정보 블로거. 신청 조건, 준비물, 주의사항을 짧은 문단으로 설명한다.",
-    "tech": "차분한 테크 리뷰어. 스펙, 장단점, 구매 판단 기준을 표와 체크리스트로 정리한다.",
-    "finance": "보수적인 금융 정보 큐레이터. 투자 권유처럼 보이지 않게 사실과 확인 경로를 분리한다.",
-    "local": "데이터 분석형 로컬 큐레이터. 직접 방문한 척하지 않고 공개 정보와 리뷰 경향을 정리한다.",
+PERSONAS = {
+    "living": (
+        "당신은 서울에 사는 30대 직장인으로, 생활 혜택과 지원 정책에 관심이 많습니다. "
+        "친구에게 얘기하듯 쓰되, 중요한 조건과 신청 방법은 빠짐없이 짚어줍니다. "
+        "관공서 말투는 쓰지 않고, '~해요'체와 짧은 구어체를 섞어 씁니다."
+    ),
+    "tech": (
+        "당신은 IT 기기를 10년째 리뷰해온 프리랜서 에디터입니다. "
+        "스펙 수치보다 '실제로 쓰면 어떤지'를 중심에 두고, "
+        "장단점을 솔직하게 나열하되 구매 판단 기준을 명확히 제시합니다. "
+        "업계 전문 용어는 쓰되 풀어서 설명합니다."
+    ),
+    "finance": (
+        "당신은 재테크 커뮤니티 운영자로, 공식 자료를 직접 확인하고 요약해 전달합니다. "
+        "투자 권유처럼 들리지 않도록 사실과 판단을 분리하고, "
+        "독자가 스스로 결정할 수 있도록 확인 경로를 안내합니다."
+    ),
+    "local": (
+        "당신은 전국 맛집·여행지 데이터를 분석하는 콘텐츠 큐레이터입니다. "
+        "직접 방문한 척하지 않고, 공개된 리뷰 경향과 공식 정보를 정리해 '가볼 만한 이유'를 설명합니다. "
+        "방문자들이 자주 언급하는 포인트를 구체적으로 적습니다."
+    ),
 }
+
+HOOK_STYLES = [
+    "질문으로 시작: 독자가 이 글을 클릭한 이유를 한 문장 질문으로 열어라.",
+    "숫자나 구체적 사실로 시작: 인상적인 수치나 잘 알려지지 않은 사실 한 줄로 시작해라.",
+    "공감 상황 묘사로 시작: 독자가 겪었을 법한 상황을 짧게 그려라.",
+    "역설이나 반전으로 시작: '의외로', '사실은' 같은 뒤집기로 관심을 끌어라.",
+]
 
 
 class WriterAgent:
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
-        self.client = OpenAI(api_key=settings.openai_api_key) if settings.openai_api_key else None
+        self._client: OpenAI | None = None
+        self._model: str = ""
+        self._init_client()
+
+    def _init_client(self) -> None:
+        s = self.settings
+        if s.github_token:
+            self._client = OpenAI(
+                api_key=s.github_token,
+                base_url="https://models.inference.ai.azure.com",
+            )
+            self._model = s.github_model
+        elif s.groq_api_key:
+            self._client = OpenAI(
+                api_key=s.groq_api_key,
+                base_url="https://api.groq.com/openai/v1",
+            )
+            self._model = s.groq_model
+        elif s.gemini_api_key:
+            self._client = OpenAI(
+                api_key=s.gemini_api_key,
+                base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+            )
+            self._model = s.gemini_model
+        elif s.openai_api_key:
+            self._client = OpenAI(api_key=s.openai_api_key)
+            self._model = s.openai_model
 
     def write(self, topic: Topic) -> Draft:
-        if self.client:
+        if self._client:
             return self._write_with_llm(topic)
         return self._write_fallback(topic)
 
     def _write_with_llm(self, topic: Topic) -> Draft:
         sources = "\n".join(
-            f"- {source.title}: {source.url} ({source.summary[:240]})"
+            f"- {source.title}: {source.url}\n  내용: {source.summary[:400]}"
             for source in topic.sources
         )
-        prompt = f"""
-한국 블로그용 정보성 글을 작성해 주세요.
+        hook_style = HOOK_STYLES[hash(topic.keyword) % len(HOOK_STYLES)]
+        persona = PERSONAS[topic.category]
+        prompt = f"""[페르소나]
+{persona}
 
-주제: {topic.title_hint}
-핵심 키워드: {topic.keyword}
-카테고리: {topic.category}
-문체: {STYLE_RULES[topic.category]}
+[제목 작성 규칙 — 가장 중요]
+- 검색자가 클릭하고 싶어지는 제목을 만든다.
+- 아래 패턴 중 하나를 골라 쓴다:
+  · 숫자 포함: "3가지만 알면", "5분 만에 정리", "월 10만원 아끼는"
+  · 궁금증 유발: "왜 아무도 안 알려줄까", "이것만 모르면 손해"
+  · 반전/의외성: "의외로 간단한", "사실 이게 핵심이었다"
+  · 독자 상황 공감: "신청했는데 안 됐던 이유", "이 조건 해당되면 바로 신청"
+  · 구체적 혜택: "지금 신청하면 최대 XX 절약", "이 타이밍 놓치면 1년 기다려야"
+- '핵심 정리', '알아보자', '총정리', '완벽 정리' 같은 진부한 표현 금지.
+- 제목은 30자 이내로 압축한다.
 
-조건:
+[글 작성 지침]
+- 도입부: {hook_style}
+- 문장 길이를 의도적으로 섞는다. 짧은 문장(5~10자)과 긴 문장(40~60자)을 번갈아 쓴다.
+- '이번 포스팅에서는', '알아보겠습니다', '결론적으로', '매우 중요합니다', '다양한' 금지.
 - 직접 경험하지 않은 일을 경험한 것처럼 쓰지 않는다.
-- 출처에서 확인 가능한 사실과 일반 조언을 분리한다.
-- 제목 1개, 2문장 요약, 본문 Markdown을 만든다.
-- 본문은 1,200~1,800자 정도로 작성한다.
-- AI가 쓴 티가 나는 과장된 표현, 반복 접속사, 판에 박힌 결론을 피한다.
-- 키워드는 자연스럽게 4~7회만 사용한다.
-- 마지막에는 확인해야 할 공식 경로를 짧게 둔다.
+- 출처에 없는 구체 수치는 추가하지 않는다.
+- 핵심 키워드 "{topic.keyword}"는 4~7회만 자연스럽게 쓴다.
+- 본문 1,400~1,800자. 표 1개 이상 포함.
+- 마지막 문단은 독자에게 하나의 행동 권고나 확인 경로로 마무리.
 
-참고 출처:
+[주제]
+키워드: {topic.keyword}
+힌트: {topic.title_hint}
+카테고리: {topic.category}
+
+[참고 출처]
 {sources}
 
-응답 형식:
+[응답 형식 — 반드시 아래 레이블로 시작]
 TITLE:
 EXCERPT:
 BODY:
 """
-        response = self.client.responses.create(
-            model=self.settings.openai_model,
-            input=prompt,
+        response = self._client.chat.completions.create(
+            model=self._model,
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.85,
+            max_tokens=2048,
         )
-        text = response.output_text
+        text = response.choices[0].message.content or ""
         title = self._extract(text, "TITLE", default=topic.title_hint)
         excerpt = self._extract(text, "EXCERPT", default=topic.rationale)
         body = self._extract(text, "BODY", default=text)
@@ -101,8 +167,6 @@ BODY:
 ## 이렇게 확인하면 편합니다
 
 {topic.keyword} 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.
-
-생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.
 
 ## 체크리스트
 

@@ -8,9 +8,20 @@ from pydantic import BaseModel
 
 
 class Settings(BaseModel):
+    # LLM providers — first non-empty key wins: groq → github_token → gemini → openai
     openai_api_key: str | None = None
     openai_model: str = "gpt-4.1-mini"
     openai_image_model: str = "gpt-image-1-mini"
+    groq_api_key: str | None = None
+    groq_model: str = "llama-3.3-70b-versatile"
+    github_token: str | None = None
+    github_model: str = "Llama-3.3-70B-Instruct"
+    gemini_api_key: str | None = None
+    gemini_model: str = "gemini-2.0-flash"
+
+    # Images — Unsplash free API (50 req/h)
+    unsplash_access_key: str | None = None
+
     post_count: int = 5
     enable_llm_edit: bool = True
     enable_image_generation: bool = False
@@ -33,6 +44,13 @@ def load_settings() -> Settings:
         openai_api_key=os.getenv("OPENAI_API_KEY") or None,
         openai_model=os.getenv("OPENAI_MODEL", "gpt-4.1-mini"),
         openai_image_model=os.getenv("OPENAI_IMAGE_MODEL", "gpt-image-1-mini"),
+        groq_api_key=os.getenv("GROQ_API_KEY") or None,
+        groq_model=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
+        github_token=os.getenv("GITHUB_TOKEN") or None,
+        github_model=os.getenv("GITHUB_MODEL", "Llama-3.3-70B-Instruct"),
+        gemini_api_key=os.getenv("GEMINI_API_KEY") or None,
+        gemini_model=os.getenv("GEMINI_MODEL", "gemini-2.0-flash"),
+        unsplash_access_key=os.getenv("UNSPLASH_ACCESS_KEY") or None,
         post_count=int(os.getenv("BLOG_POST_COUNT", "5")),
         enable_llm_edit=os.getenv("ENABLE_LLM_EDIT", "true").lower() == "true",
         enable_image_generation=os.getenv("ENABLE_IMAGE_GENERATION", "false").lower() == "true",

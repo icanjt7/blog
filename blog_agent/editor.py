@@ -14,17 +14,39 @@ AI_CLICHES = [
     "결론적으로",
     "매우 중요합니다",
     "다양한",
+    "함께 알아보",
+    "살펴보겠습니다",
+    "정리해 보겠습니다",
+    "소개해 드리겠습니다",
+    "어떠셨나요",
+    "도움이 되셨으면",
+    "궁금하셨던",
+    "지금 바로",
+    "놓치지 마세요",
 ]
 
 
 class SeoEditorAgent:
     def __init__(self, settings: Settings | None = None) -> None:
         self.settings = settings
-        self.client = (
-            OpenAI(api_key=settings.openai_api_key)
-            if settings and settings.openai_api_key and settings.enable_llm_edit
-            else None
-        )
+        self.client: OpenAI | None = None
+        self._model: str = ""
+        if settings and settings.enable_llm_edit:
+            self._init_client(settings)
+
+    def _init_client(self, s: Settings) -> None:
+        if s.github_token:
+            self.client = OpenAI(api_key=s.github_token, base_url="https://models.inference.ai.azure.com")
+            self._model = s.github_model
+        elif s.groq_api_key:
+            self.client = OpenAI(api_key=s.groq_api_key, base_url="https://api.groq.com/openai/v1")
+            self._model = s.groq_model
+        elif s.gemini_api_key:
+            self.client = OpenAI(api_key=s.gemini_api_key, base_url="https://generativelanguage.googleapis.com/v1beta/openai/")
+            self._model = s.gemini_model
+        elif s.openai_api_key:
+            self.client = OpenAI(api_key=s.openai_api_key)
+            self._model = s.openai_model
 
     def improve(self, draft: Draft) -> Draft:
         if not self.client:
@@ -38,6 +60,10 @@ class SeoEditorAgent:
 아래 한국어 블로그 초안을 편집해 주세요.
 
 목표:
+- 제목이 클릭하고 싶어지는지 먼저 확인한다. 아래 기준으로 더 좋은 제목으로 바꿔도 된다:
+  · 숫자, 반전, 궁금증, 독자 공감 상황, 구체적 혜택 중 하나를 활용
+  · '핵심 정리', '알아보자', '총정리' 같은 진부한 표현은 교체
+  · 30자 이내
 - 사실은 유지하고, 출처에 없는 구체 수치나 경험담은 추가하지 않는다.
 - AI가 쓴 것처럼 보이는 반복 표현을 줄인다.
 - 문단을 짧게 나누고, 표/체크리스트의 가독성을 높인다.
@@ -65,20 +91,29 @@ TITLE:
 EXCERPT:
 BODY:
 """
-        response = self.client.responses.create(
-            model=self.settings.openai_model if self.settings else "gpt-4.1-mini",
-            input=prompt,
+        response = self.client.chat.completions.create(
+            model=self._model,
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.7,
+            max_tokens=2048,
         )
-        text = response.output_text
+        text = response.choices[0].message.content or ""
         reviewed.title = self._extract(text, "TITLE", reviewed.title)
         reviewed.excerpt = self._extract(text, "EXCERPT", reviewed.excerpt)
         reviewed.body_markdown = self._extract(text, "BODY", reviewed.body_markdown).strip()
         reviewed.review_notes.append("LLM 편집 보완 완료")
         return self.review(reviewed)
 
+    BLAND_TITLE_PATTERNS = ["핵심 정리", "알아보자", "총정리", "완벽 정리", "알아보겠", "정리해", "소개합니다"]
+
     def review(self, draft: Draft) -> Draft:
         notes: list[str] = []
         score = 100.0
+        for pattern in self.BLAND_TITLE_PATTERNS:
+            if pattern in draft.title:
+                score -= 8
+                notes.append(f"제목이 클릭을 유도하지 않습니다: '{pattern}' 포함")
+                break
         keyword_count = draft.body_markdown.count(draft.topic.keyword)
         if keyword_count < 2:
             score -= 12

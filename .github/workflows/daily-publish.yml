@@ -3,7 +3,13 @@ name: Daily blog publish
 on:
   workflow_dispatch:
   schedule:
-    - cron: "10 15 * * *"
+    - cron: "0 23 * * *"   # 08:00 KST
+    - cron: "0 3 * * *"    # 12:00 KST
+    - cron: "0 9 * * *"    # 18:00 KST
+
+concurrency:
+  group: blog-publish
+  cancel-in-progress: false
 
 jobs:
   publish:
@@ -24,9 +30,19 @@ jobs:
 
       - name: Generate and publish posts
         env:
+          # Free LLMs — first non-empty key is used: Groq → GitHub Models → Gemini → OpenAI
+          # GitHub Models — GITHUB_TOKEN auto-provided by Actions (free LLM, no extra secret needed)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL || 'llama-3.3-70b-versatile' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
-          OPENAI_IMAGE_MODEL: ${{ vars.OPENAI_IMAGE_MODEL || 'gpt-image-1-mini' }}
+          # Free stock images via Unsplash API (50 req/h, no cost)
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          # Blog settings
           BLOG_POST_COUNT: ${{ vars.BLOG_POST_COUNT || '5' }}
           ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
           ENABLE_IMAGE_GENERATION: ${{ vars.ENABLE_IMAGE_GENERATION || 'false' }}
@@ -38,6 +54,9 @@ jobs:
         run: python -m blog_agent.cli run
 
       - name: Build static site
+        env:
+          BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
+          BLOG_CUSTOM_DOMAIN: ${{ vars.BLOG_CUSTOM_DOMAIN }}
         run: python -m blog_agent.cli build-site
 
       - name: Commit generated drafts
@@ -46,7 +65,9 @@ jobs:
           git config user.name "blog-agent"
           git config user.email "actions@github.com"
           git add output state || true
-          git diff --cached --quiet || git commit -m "chore: publish daily blog drafts"
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: publish daily blog drafts"
+          git pull --rebase origin main
           git push
 
       - uses: actions/configure-pages@v5

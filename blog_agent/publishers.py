@@ -22,6 +22,11 @@ class MarkdownPublisher(Publisher):
     def publish(self, draft: Draft) -> PublishResult:
         body = self._body_with_cover(draft)
         path = self.output_dir / f"{draft.slug}.md"
+        cover_lines = []
+        if draft.cover_image_path:
+            cover_lines = [f'cover_image: "{draft.cover_image_path}"']
+            if draft.cover_image_alt:
+                cover_lines.append(f'cover_image_alt: "{draft.cover_image_alt}"')
         frontmatter = "\n".join(
             [
                 "---",
@@ -31,6 +36,7 @@ class MarkdownPublisher(Publisher):
                 "tags:",
                 *[f"  - {tag}" for tag in draft.tags],
                 f'quality_score: {draft.quality_score:.1f}',
+                *cover_lines,
                 "---",
                 "",
             ]
@@ -42,9 +48,11 @@ class MarkdownPublisher(Publisher):
     def _body_with_cover(draft: Draft) -> str:
         if not draft.cover_image_path:
             return draft.body_markdown
-        image_name = Path(draft.cover_image_path).name
+        p = draft.cover_image_path
         alt = draft.cover_image_alt or draft.title
-        return f"![{alt}](assets/{image_name})\n\n{draft.body_markdown}"
+        # Unsplash/remote URL vs local file
+        image_ref = p if p.startswith("http") else f"assets/{Path(p).name}"
+        return f"![{alt}]({image_ref})\n\n{draft.body_markdown}"
 
 
 class WordPressPublisher(Publisher):

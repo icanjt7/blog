@@ -9,6 +9,7 @@ tags:
   - 바이오
   - 건에
 quality_score: 100.0
+cover_image: "https://picsum.photos/seed/494/1200/630"
 ---
 ## 한눈에 보기
 
