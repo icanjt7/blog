@@ -2,12 +2,6 @@ name: Sync Hugging Face Space
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - "hf_space/**"
-      - ".github/workflows/sync-huggingface-space.yml"
 
 jobs:
   sync:
@@ -24,6 +18,14 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_SPACE_ID: ${{ vars.HF_SPACE_ID }}
         run: |
+          if [ -z "$HF_TOKEN" ]; then
+            echo "::error::Missing GitHub Secret: HF_TOKEN"
+            exit 1
+          fi
+          if [ -z "$HF_SPACE_ID" ]; then
+            echo "::error::Missing GitHub Variable: HF_SPACE_ID. Example: icanjt7/blog-agent-console"
+            exit 1
+          fi
           python -m pip install --upgrade huggingface_hub
           python - <<'PY'
           import os

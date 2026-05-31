@@ -38,6 +38,8 @@ Variables:
 
 이후 `Actions → Sync Hugging Face Space → Run workflow`를 실행하면 `hf_space/` 폴더가 Space로 업로드됩니다.
 
+`HF_SPACE_ID`가 비어 있으면 업로드가 실패합니다. Space를 아직 만들지 않았다면 이 워크플로는 실행하지 않아도 됩니다. GitHub Pages 블로그와 Streamlit 대시보드 운영에는 Hugging Face Space가 필수는 아닙니다.
+
 ## 3. Space Secrets
 
 Hugging Face Space의 Settings에서 Secrets를 등록합니다.
