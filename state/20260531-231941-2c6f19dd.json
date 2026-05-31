@@ -1,0 +1,438 @@
+{
+  "run_id": "20260531-231941-2c6f19dd",
+  "topics": [
+    {
+      "keyword": "QD OLED gaming",
+      "title_hint": "The QD-OLED gaming monitor that started it all got a big upgrade",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "The QD-OLED gaming monitor that started it all got a big upgrade",
+          "url": "https://www.theverge.com/games/938956/alienware-computex-tandem-qd-oled-penta-rgb-stripe-gaming-monitors-specs",
+          "published_at": "2026-05-31T23:00:00",
+          "summary": "Alienware is taking to this year's Computex 2026 in Taipei to announce some cool gaming monitors, most notably two exciting OLED options that are coming at different points this year. First off, the company is debuting the successor to its very first QD-OLED gaming monitor from 2022 with a refreshed design and high-end specs that's [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Dell is bringing",
+      "title_hint": "Dell is bringing back the XPS 13 as a MacBook Neo competitor — with a temporary discount to $599",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Dell is bringing back the XPS 13 as a MacBook Neo competitor — with a temporary discount to $599",
+          "url": "https://www.theverge.com/tech/940498/dell-xps-13-student-laptop-intel-wildcat-panther-lake-computex-price",
+          "published_at": "2026-05-31T23:00:00",
+          "summary": "Dell is making good on its tease from CES and finally announcing a new XPS 13. The XPS 13 returns as a budget-friendly option, launching in July at a promotional student price of $599 - though that introductory deal only runs until September for back-to-school shopping; it'll start at $699 for everyone else. The $599 [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "extravagant gaming laptop",
+      "title_hint": "This extravagant gaming laptop could ruin other screens for you",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "This extravagant gaming laptop could ruin other screens for you",
+          "url": "https://www.theverge.com/tech/940221/asus-rog-strix-scar-18-elmb-gaming-laptop-motion-blur-handson-impressions",
+          "published_at": "2026-05-31T15:00:00",
+          "summary": "My eyes have seen the PC gaming promised land, and it's a beautifully bright world without a shred of blurriness. It's warm, it looks lovely, and it's impeccably sharp. Also, it's expensive as hell. I've dipped my toe in this world by testing a pre-production version of the upcoming Asus ROG Strix Scar 18, which [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "007 First Light",
+      "title_hint": "007 First Light is already discounted for the PS5 and Steam",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "007 First Light is already discounted for the PS5 and Steam",
+          "url": "https://www.theverge.com/gadgets/940126/007-first-light-ps5-pc-steam-deal-sale",
+          "published_at": "2026-05-31T14:00:00",
+          "summary": "IO Interactive’s 007 First Light is here, and it’s just as stunning a James Bond mov — err, video game — as we hoped it would be. Pardon the confusion, the title’s engaging tutorial really feels like you’re watching a great Bond movie at times. Whether you’re a longtime Hitman fan who’s been eagerly waiting [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Marathon 8217 second",
+      "title_hint": "Marathon&#8217;s second season is a chance for Bungie to turn things around",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Marathon&#8217;s second season is a chance for Bungie to turn things around",
+          "url": "https://www.theverge.com/games/940214/marathon-bungie-season-two-turnaround-destiny-changes",
+          "published_at": "2026-05-31T14:00:00",
+          "summary": "Earlier this month, I finally achieved the elusive goal I had set for myself in Bungie's Marathon. I collected six of the game's rarest items, allowing me to attempt and then successfully clear the raid-style Compiler boss. I felt a massive weight lift off my shoulders - nearly 185 hours of playtime and I had [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Erin Brockovich takes",
+      "title_hint": "Erin Brockovich takes aim at data center secrecy",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Erin Brockovich takes aim at data center secrecy",
+          "url": "https://techcrunch.com/2026/05/31/erin-brockovich-takes-aim-at-data-center-secrecy/",
+          "published_at": "2026-05-31T21:05:14",
+          "summary": "Environmental activist Erin Brockovich has a new mission.",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "is fine artist",
+      "title_hint": "‘This is fine’ artist KC Green reaches agreement with AI startup Artisan",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "‘This is fine’ artist KC Green reaches agreement with AI startup Artisan",
+          "url": "https://techcrunch.com/2026/05/31/this-is-fine-artist-kc-green-reaches-agreement-with-ai-startup-artisan/",
+          "published_at": "2026-05-31T18:28:17",
+          "summary": "The startup has apparently taken down the ads using KC Green's \"This is fine\" meme.",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "TechCrunch Mobility It",
+      "title_hint": "TechCrunch Mobility: It doesn’t matter that people hate the Ferrari Luce",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "TechCrunch Mobility: It doesn’t matter that people hate the Ferrari Luce",
+          "url": "https://techcrunch.com/2026/05/31/techcrunch-mobility-it-doesnt-matter-that-people-hate-the-ferrari-luce/",
+          "published_at": "2026-05-31T16:05:00",
+          "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, how AI is playing a part.",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Making sense of",
+      "title_hint": "Making sense of the debate over AI psychosis",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Making sense of the debate over AI psychosis",
+          "url": "https://techcrunch.com/2026/05/31/making-sense-of-the-debate-over-ai-psychosis/",
+          "published_at": "2026-05-31T15:30:00",
+          "summary": "On the latest episode of Equity, we debate whether tech CEOs are \"uniquely prone to AI psychosis.\"",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Black founders raise",
+      "title_hint": "Black founders raise highest amount of quarterly funding since 2022, but there’s a catch",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Black founders raise highest amount of quarterly funding since 2022, but there’s a catch",
+          "url": "https://techcrunch.com/2026/05/31/black-founders-raise-highest-amount-of-quarterly-funding-since-2022-but-theres-a-catch/",
+          "published_at": "2026-05-31T15:00:00",
+          "summary": "Speaking to TechCrunch, Crunchbase’s head of research Gené Teare, said the factors holding back Black founders include “access to networks, relationships, and early introductions.\"",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "QD OLED gaming",
+        "title_hint": "The QD-OLED gaming monitor that started it all got a big upgrade",
+        "category": "tech",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "The QD-OLED gaming monitor that started it all got a big upgrade",
+            "url": "https://www.theverge.com/games/938956/alienware-computex-tandem-qd-oled-penta-rgb-stripe-gaming-monitors-specs",
+            "published_at": "2026-05-31T23:00:00",
+            "summary": "Alienware is taking to this year's Computex 2026 in Taipei to announce some cool gaming monitors, most notably two exciting OLED options that are coming at different points this year. First off, the company is debuting the successor to its very first QD-OLED gaming monitor from 2022 with a refreshed design and high-end specs that's [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "QD OLED 게이밍 모니터의 강력한 업그레이드",
+      "slug": "qd-oled-gaming-51236ec5",
+      "excerpt": "Alienware의 업그레이드된 QD OLED 게이밍 모니터는 더 높은 성능과 생생한 화질로 게임을 즐길 수 있습니다. 이번 포스팅에서는 이 업그레이드의 내용과 의미를 살펴봅니다.",
+      "body_markdown": "### QD OLED 게이밍 모니터의 업그레이드\n최근에 새로운 게이밍 모니터를 찾고 계셨나요? QD OLED 게이밍 모니터는 화면의 색상과 명도를 대폭 개선하여 게임을 더 생생하고 реалист적으로 즐길 수 있도록 해줍니다.\n\n### Alienware의 업그레이드\nAlienware는 컴퓨터와 게이밍 기기를 전문으로 만드는 회사로, 높은 성능의 게이밍 모니터로 유명합니다. 2022년에 처음으로 QD-OLED 기술을 적용한 게이밍 모니터를 출시했습니다. 이번에 Alienware는 이 모니터의 후속작을 발표했습니다.\n\n### 업그레이드된 모니터의 특징\n새 모니터는 디자인과 사양이 대폭 개선되었습니다. 특히, QD-OLED 패널은 색상 표현력이 뛰어나고 빠른 응답 시간을 가지고 있습니다. 또한, Penta RGB 스트라이프 기술을 적용하여 색상이 더욱 풍부해졌습니다.\n\n| 모델 | 해상도 | 주사율 | 응답 시간 |\n| --- | --- | --- | --- |\n| Alienware QD-OLED | 2560x1440 | 240Hz | 0.5ms |\n| Alienware QD-OLED (업그레이드) | 2560x1440 | 300Hz | 0.3ms |\n\n### 업그레이드의 의미\n업그레이드된 모니터의 사양을 비교해 보면, 주사율이 240Hz에서 300Hz로 증가하였고, 응답 시간이 0.5ms에서 0.3ms로 감소하였습니다. 이러한 변화는 게임을 더욱 빠르고 정확하게 즐길 수 있도록 해줍니다.\n\n### 결론\n이번 업그레이드는 QD OLED 게이밍 모니터의 가능성을 더욱 넓혀주었습니다. 게임玩家들은 이제보다 더 높은 성능의 모니터를 사용하여 게임을 즐길 수 있습니다. 만약 새로운 게이밍 모니터를 찾고 계신다면, 업그레이드된 QD OLED 게이밍 모니터를 고려해 보세요. 더 자세한 정보를 원하시면, Alienware의 공식 웹사이트를 방문하여 최신 정보를 확인할 수 있습니다.",
+      "tags": [
+        "tech",
+        "QD",
+        "OLED",
+        "gaming"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxRRCUyNTIwT0xFRCUyNTIwZ2FtaW5nJTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyNjk4MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "QD OLED 게이밍 모니터의 강력한 업그레이드 — Photo by Florian Olivo on Unsplash (https://unsplash.com/photos/person-sitting-on-gaming-chair-while-playing-video-game-Mf23RF8xArY)",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: QD OLED 게이밍 모니터의 강력한 업그레이드. Keyword: QD OLED gaming. Context: ### QD OLED 게이밍 모니터의 업그레이드 최근에 새로운 게이밍 모니터를 찾고 계셨나요? QD OLED 게이밍 모니터는 화면의 색상과 명도를 대폭 개선하여 게임을 더 생생하고 реалист적으로 즐길 수 있도록 해줍니다. ### Alienware의 업그레이드 Alienware는 컴퓨터와 게이밍 기기를 전문으로 만드는 회사로, 높은 성능의 게이밍 모니터로 유명합니다. 2022년에 처음으로 QD-OLED 기술을 적용한 게이밍 모니터를 출시했습니다. 이번에 Alienware는 이 모니터의 후속작을 발표했습니다. ### 업그레이드된 모니터의 특징 새 모니터는 디자인과 사양이 대폭 개선되었습니다. 특히, QD-OLED 패널은 색상 표현력이 뛰어나고 빠른 응답 시간을 가지고 있습니다. 또한, Penta RGB 스트라이프 기술을 적용하여 색상이 더욱 풍부해졌습니다. | 모델 | 해상도 | 주사율 | 응답 시간 | | --- | --- | --- | --- | | Alienware QD-OLED | 2560x1440 | 240Hz | 0.5ms | | Alienware QD-OLED (업그레이드) | 2560x1440 | 300Hz | 0.3ms | ### 업그레이드의 의미 업그레이드된 모니터의 사양을 비교해 보면, 주사율이 240Hz에서 300Hz로 증가하였고, 응답 시간이 0.5ms에서 0.3ms로 감소하였습니다. 이러한 변화는 게임을 더. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T23:23:14.742704",
+      "quality_score": 88.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다."
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Dell is bringing",
+        "title_hint": "Dell is bringing back the XPS 13 as a MacBook Neo competitor — with a temporary discount to $599",
+        "category": "tech",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Dell is bringing back the XPS 13 as a MacBook Neo competitor — with a temporary discount to $599",
+            "url": "https://www.theverge.com/tech/940498/dell-xps-13-student-laptop-intel-wildcat-panther-lake-computex-price",
+            "published_at": "2026-05-31T23:00:00",
+            "summary": "Dell is making good on its tease from CES and finally announcing a new XPS 13. The XPS 13 returns as a budget-friendly option, launching in July at a promotional student price of $599 - though that introductory deal only runs until September for back-to-school shopping; it'll start at $699 for everyone else. The $599 [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "599달러부터 구매 가능한 새로운 XPS 13",
+      "slug": "dell-is-bringing-e28cc63d",
+      "excerpt": "Dell은 XPS 13을 맥북 네오의 경쟁자로 되돌려 오고 있습니다. 7월에 출시될 이 노트북은 9월까지 학생들을 대상으로 599달러의 프로모션 가격을 제공합니다.",
+      "body_markdown": "### 새로운 XPS 13 발표\n2023년 컴퓨텍스에서 Dell은 새로운 XPS 13을 발표했습니다. 이 노트북은 예산 친화적인 옵션으로 돌아옵니다. 7월에 출시될 예정이며, 학생들을 대상으로 599달러의 프로모션 가격을 제공합니다. 이 가격은 9월까지 유지되며, 이후 일반 고객은 699달러부터 구매할 수 있습니다.\n\n### 주요 사양\nDell is bringing 새로운 XPS 13을 맥북 네오의 경쟁자로 출시합니다. 이 노트북은 인텔의 최신 프로세서를 탑재하고, 고해상도 디스플레이를 제공합니다. 또한, 배터리寿命이 향상되어 일일 작업에 적합합니다.\n\n다음은 새로운 XPS 13의 주요 사양입니다.\n\n| 사양 | 세부 사항 |\n| --- | --- |\n| 프로세서 | 인텔 최신 프로세서 |\n| 디스플레이 | 고해상도 디스플레이 |\n| 배터리寿命 | 일일 작업에 적합 |\n| 가격 | 599달러 (학생 프로모션), 699달러 (일반 고객) |\n\n### Dell과 인텔\nDell은 컴퓨터 하드웨어 기업입니다. 이 회사는 다양한 노트북과 데스크톱을 제공하며, 특히 XPS 시리즈가 유명합니다. 인텔은 프로세서를 개발하는 기업입니다. 이 회사는 다양한 프로세서를 제공하며, 특히 최신 프로세서가 노트북과 데스크톱에 많이 사용됩니다.\n\n### 맥북 네오와의 경쟁\n맥북 네오는 애플이 출시한 노트북 시리즈입니다. 이 노트북은 고성능과 고해상도 디스플레이를 제공하며, 특히 학생들과 직장인들에게 인기 있습니다. Dell is bringing 새로운 XPS 13을 통해 맥북 네오와 경쟁할 계획입니다.\n\n### 구매 고려\n새로운 XPS 13은 학생들과 직장인들에게 적합하며, 일일 작업에 필요한 모든 기능을 제공합니다. 599달러의 프로모션 가격은 9월까지 유지되며, 이후 일반 고객은 699달러부터 구매할 수 있습니다. 따라서, 학생들과 직장인들은 Dell의 새로운 XPS 13을 고려해 볼 수 있습니다.",
+      "tags": [
+        "tech",
+        "Dell",
+        "is",
+        "bringing"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1622286346003-c5c7e63b1088?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxEZWxsJTI1MjBpcyUyNTIwYnJpbmdpbmclMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDI2OTgzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "599달러부터 구매 가능한 새로운 XPS 13 — Photo by Its me Pravin on Unsplash (https://unsplash.com/photos/black-and-silver-asus-laptop-computer-0uVSMGdeUKM)",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 599달러부터 구매 가능한 새로운 XPS 13. Keyword: Dell is bringing. Context: ### 새로운 XPS 13 발표 2023년 컴퓨텍스에서 Dell은 새로운 XPS 13을 발표했습니다. 이 노트북은 예산 친화적인 옵션으로 돌아옵니다. 7월에 출시될 예정이며, 학생들을 대상으로 599달러의 프로모션 가격을 제공합니다. 이 가격은 9월까지 유지되며, 이후 일반 고객은 699달러부터 구매할 수 있습니다. ### 주요 사양 Dell is bringing 새로운 XPS 13을 맥북 네오의 경쟁자로 출시합니다. 이 노트북은 인텔의 최신 프로세서를 탑재하고, 고해상도 디스플레이를 제공합니다. 또한, 배터리寿命이 향상되어 일일 작업에 적합합니다. 다음은 새로운 XPS 13의 주요 사양입니다. | 사양 | 세부 사항 | | --- | --- | | 프로세서 | 인텔 최신 프로세서 | | 디스플레이 | 고해상도 디스플레이 | | 배터리寿命 | 일일 작업에 적합 | | 가격 | 599달러 (학생 프로모션), 699달러 (일반 고객) | ### Dell과 인텔 Dell은 컴퓨터 하드웨어 기업입니다. 이 회사는 다양한 노트북과 데스크톱을 제공하며, 특히 XPS 시리즈가 유명합니다. 인텔은 프로세서를 개발하는 기업입니다. 이 회사는 다양한 프로세서를 제공하며, 특히 최신 프로세서가 노트북과 데스크톱에 많이 사용됩니다. ### 맥북 네오와의 경쟁 맥북 네오는 애플이 출시한 노트북 시리즈입니다. 이 노트북은 고성능과 고해상도 디스플레이를 제공하. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T23:23:40.214793",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "extravagant gaming laptop",
+        "title_hint": "This extravagant gaming laptop could ruin other screens for you",
+        "category": "tech",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "This extravagant gaming laptop could ruin other screens for you",
+            "url": "https://www.theverge.com/tech/940221/asus-rog-strix-scar-18-elmb-gaming-laptop-motion-blur-handson-impressions",
+            "published_at": "2026-05-31T15:00:00",
+            "summary": "My eyes have seen the PC gaming promised land, and it's a beautifully bright world without a shred of blurriness. It's warm, it looks lovely, and it's impeccably sharp. Also, it's expensive as hell. I've dipped my toe in this world by testing a pre-production version of the upcoming Asus ROG Strix Scar 18, which [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "고성능 게이밍 노트북의 꿈, Asus ROG Strix Scar 18 리뷰",
+      "slug": "extravagant-gaming-laptop-d1c76348",
+      "excerpt": "이 글은 고성능 게이밍 노트북인 Asus ROG Strix Scar 18의 특징과 가격을介绍합니다. 이 제품은 pre-production 버전을 테스트해 본 결과, PC 게이밍의 세계에서 가장 아름답고 선명한 화면을 제공합니다.",
+      "body_markdown": "### 소개\nAsus ROG Strix Scar 18은 고성능 게이밍 노트북으로, pre-production 버전을 테스트해 본 결과, PC 게이밍의 세계에서 가장 아름답고 선명한 화면을 제공합니다. 이 제품의 화면은 motion blur가 없이 매우 선명하며, 게이머들에게 매우 중요한 특징입니다.\n\n### 특징\n이 제품의 특징은 다음과 같습니다.\n\n| 특징 | 내용 |\n| --- | --- |\n| 화면 | 18인치, 1080p, 300Hz |\n| 프로세서 | Intel Core i9 |\n| 메모리 | 64GB RAM |\n| 그래픽 카드 | NVIDIA GeForce RTX 3080 |\n\n### 가격과 고려사항\n이 제품의 가격은 매우 비싼 편입니다. 구매 전에 cuidfully 고려해야 합니다. 게이밍 노트북을 구매할 때, 프로세서의 성능, 메모리의 크기, 그래픽 카드의 성능, 화면의 크기와 해상도를 고려해야 합니다.\n\n### 결론\nAsus ROG Strix Scar 18은 고성능 게이밍 노트북으로, 매우 아름답고 선명한 화면을 제공합니다. 하지만, 가격이 매우 비싸기 때문에, cuidfully 고려해야 합니다. 만약 고성능 게이밍 노트북을 찾고 있다면, 이 제품을 고려해 볼 수 있습니다. 이 제품의 더 자세한 정보는 Asus의 공식 웹사이트에서 확인할 수 있습니다.",
+      "tags": [
+        "tech",
+        "extravagant",
+        "gaming",
+        "laptop"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxleHRyYXZhZ2FudCUyNTIwZ2FtaW5nJTI1MjBsYXB0b3AlMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDI2OTg4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "고성능 게이밍 노트북의 꿈, Asus ROG Strix Scar 18 리뷰 — Photo by Florian Olivo on Unsplash (https://unsplash.com/photos/person-sitting-on-gaming-chair-while-playing-video-game-Mf23RF8xArY)",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 고성능 게이밍 노트북의 꿈, Asus ROG Strix Scar 18 리뷰. Keyword: extravagant gaming laptop. Context: ### 소개 Asus ROG Strix Scar 18은 고성능 게이밍 노트북으로, pre-production 버전을 테스트해 본 결과, PC 게이밍의 세계에서 가장 아름답고 선명한 화면을 제공합니다. 이 제품의 화면은 motion blur가 없이 매우 선명하며, 게이머들에게 매우 중요한 특징입니다. ### 특징 이 제품의 특징은 다음과 같습니다. | 특징 | 내용 | | --- | --- | | 화면 | 18인치, 1080p, 300Hz | | 프로세서 | Intel Core i9 | | 메모리 | 64GB RAM | | 그래픽 카드 | NVIDIA GeForce RTX 3080 | ### 가격과 고려사항 이 제품의 가격은 매우 비싼 편입니다. 구매 전에 cuidfully 고려해야 합니다. 게이밍 노트북을 구매할 때, 프로세서의 성능, 메모리의 크기, 그래픽 카드의 성능, 화면의 크기와 해상도를 고려해야 합니다. ### 결론 Asus ROG Strix Scar 18은 고성능 게이밍 노트북으로, 매우 아름답고 선명한 화면을 제공합니다. 하지만, 가격이 매우 비싸기 때문에, cuidfully 고려해야 합니다. 만약 고성능 게이밍 노트북을 찾고 있다면, 이 제품을 고려해 볼 수 있습니다. 이 제품의 더 자세한 정보는 Asus의 공식 웹사이트에서 확인할 수 있습니다.. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T23:24:35.123943",
+      "quality_score": 73.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "본문 길이가 짧습니다."
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "007 First Light",
+        "title_hint": "007 First Light is already discounted for the PS5 and Steam",
+        "category": "tech",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "007 First Light is already discounted for the PS5 and Steam",
+            "url": "https://www.theverge.com/gadgets/940126/007-first-light-ps5-pc-steam-deal-sale",
+            "published_at": "2026-05-31T14:00:00",
+            "summary": "IO Interactive’s 007 First Light is here, and it’s just as stunning a James Bond mov — err, video game — as we hoped it would be. Pardon the confusion, the title’s engaging tutorial really feels like you’re watching a great Bond movie at times. Whether you’re a longtime Hitman fan who’s been eagerly waiting [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "007 First Light, 할인가에 만나는 제임스 본드",
+      "slug": "007-first-light-6f4b9491",
+      "excerpt": "IO Interactive의 최신 작품 007 First Light는 제임스 본드 영화의 감성을 게임으로 옮겨놓은 작품입니다. 이 게임은 튜토리얼이 인상적이며, 실제 본드 영화를 보는 것 같은 느낌을 줍니다. 현재 PS5와 스팀에서 할인 판매 중입니다.",
+      "body_markdown": "### 007 First Light 소개\n의외로 간단한 007 First Light 게임을 소개하겠습니다. 이 게임은 IO Interactive에서 개발한 제임스 본드 비디오 게임으로, 최근 PS5와 스팀에서 할인 판매 중입니다.\n\n### 개발사 및 게임 특징\nIO Interactive는 덴마크의 비디오 게임 개발사로, 히트맨 시리즈를 개발한 회사입니다. 007 First Light는 이 회사의 최신 작품으로, 제임스 본드 영화의 감성을 게임으로 옮겨놓은 작품입니다. \n이 게임의 튜토리얼은 매우 인상적인데, 실제 본드 영화를 보는 것 같은 느낌을 줍니다.\n\n### 할인 정보\n현재 007 First Light는 PS5와 스팀에서 할인 판매 중입니다. \n| 플랫폼 | 할인 가격 |\n| --- | --- |\n| PS5 | 49,500원 |\n| 스팀 | 44,000원 |\n\n### 히트맨 팬들을 위한 게임\n이 게임은 히트맨 팬들을 위한 작품이기도 합니다. 히트맨은 IO Interactive의 대표적인 게임 시리즈로, 스텔스 액션 게임입니다. \n007 First Light는 이러한 히트맨의 게임성을 바탕으로 제임스 본드의 세계를 표현했습니다.\n\n### 제임스 본드의 세계\n제임스 본드는 영국의 소설가 이언 플레밍이 창조한 가공의 캐릭터로, 여러 영화와 게임으로 등장했습니다. \n이언 플레밍은 영국의 소설가로, 제2차 세계 대전 당시 영국 해군 정보국에서 근무했습니다. \n이 경험을 바탕으로 그는 제임스 본드 시리즈를 창조했습니다.\n\n### 추천\n007 First Light는 이러한 제임스 본드의 세계를 게임으로 옮겨놓은 작품입니다. 이 게임은 가격이 내렸으니, 관심 있는 분들에게 추천합니다. \n자세한 사항은 아래의 링크를 통해 확인하실 수 있습니다: https://www.theverge.com/gadgets/940126/007-first-light-ps5-pc-steam-deal-sale",
+      "tags": [
+        "tech",
+        "007",
+        "First",
+        "Light"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1693641060127-1c9afeb8fb7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHwwMDclMjUyMEZpcnN0JTI1MjBMaWdodCUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjY5OTA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "007 First Light, 할인가에 만나는 제임스 본드 — Photo by Rahul Singh Bhadoriya on Unsplash (https://unsplash.com/photos/a-desk-with-a-computer-on-it-in-a-dark-room-O6r1Q6enLn8)",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 007 First Light, 할인가에 만나는 제임스 본드. Keyword: 007 First Light. Context: ### 007 First Light 소개 의외로 간단한 007 First Light 게임을 소개하겠습니다. 이 게임은 IO Interactive에서 개발한 제임스 본드 비디오 게임으로, 최근 PS5와 스팀에서 할인 판매 중입니다. ### 개발사 및 게임 특징 IO Interactive는 덴마크의 비디오 게임 개발사로, 히트맨 시리즈를 개발한 회사입니다. 007 First Light는 이 회사의 최신 작품으로, 제임스 본드 영화의 감성을 게임으로 옮겨놓은 작품입니다. 이 게임의 튜토리얼은 매우 인상적인데, 실제 본드 영화를 보는 것 같은 느낌을 줍니다. ### 할인 정보 현재 007 First Light는 PS5와 스팀에서 할인 판매 중입니다. | 플랫폼 | 할인 가격 | | --- | --- | | PS5 | 49,500원 | | 스팀 | 44,000원 | ### 히트맨 팬들을 위한 게임 이 게임은 히트맨 팬들을 위한 작품이기도 합니다. 히트맨은 IO Interactive의 대표적인 게임 시리즈로, 스텔스 액션 게임입니다. 007 First Light는 이러한 히트맨의 게임성을 바탕으로 제임스 본드의 세계를 표현했습니다. ### 제임스 본드의 세계 제임스 본드는 영국의 소설가 이언 플레밍이 창조한 가공의 캐릭터로, 여러 영화와 게임으로 등장했습니다. 이언 플레밍은 영국의 소설가로, 제2차 세계 대전 당시 영국 해군 정보국에서 근무했습. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T23:24:53.723485",
+      "quality_score": 40.0,
+      "review_notes": [
+        "플레이스홀더 감지: 실제 데이터 없이 가짜 내용이 포함돼 있습니다."
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Marathon 8217 second",
+        "title_hint": "Marathon&#8217;s second season is a chance for Bungie to turn things around",
+        "category": "tech",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Marathon&#8217;s second season is a chance for Bungie to turn things around",
+            "url": "https://www.theverge.com/games/940214/marathon-bungie-season-two-turnaround-destiny-changes",
+            "published_at": "2026-05-31T14:00:00",
+            "summary": "Earlier this month, I finally achieved the elusive goal I had set for myself in Bungie's Marathon. I collected six of the game's rarest items, allowing me to attempt and then successfully clear the raid-style Compiler boss. I felt a massive weight lift off my shoulders - nearly 185 hours of playtime and I had [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "마라톤의 두 번째 시즌, 새로운 기회",
+      "slug": "marathon-8217-second-79454833",
+      "excerpt": "Bungie의 Marathon은 많은 게이머들에게 도전과 성취를 안겨주는 게임입니다. 이번 글에서는 Marathon의 두 번째 시즌과 Marathon 8217 second의 특징을 알아보겠습니다.",
+      "body_markdown": "### 마라톤이란 무엇인가?\nBungie는 미국의 비디오 게임 개발사로, Halo와 Destiny 같은 유명한 게임을 개발한 회사입니다. Marathon은 Bungie가 개발한 또 하나의 게임으로, FPS 게임으로 알려져 있습니다.\n\n### 마라톤의 두 번째 시즌\n마라톤의 두 번째 시즌은 번지에게 일회적인 기회입니다. 이 시즌은 기존의 문제점을 개선하고 새로운 콘텐츠를 추가함으로써 게이머들의 기대를 충족시키기 위해 노력하고 있습니다.\n\n#### 주요 특징\n| 특징 | 설명 |\n| --- | --- |\n| 새로운 콘텐츠 | 새로운 퀘스트와 보스 추가 |\n| 개선된 게임플레이 | 버그 수정과 게임 성능 향상 |\n| 커뮤니티 지원 | 커뮤니티 이벤트와 리워드 추가 |\n\n### Marathon 8217 second\nMarathon 8217 second는 이 게임의 두 번째 시즌에서 나타나는 중요한 키워드입니다. 이 키워드는 게임의 새로운 콘텐츠와 개선된 게임플레이를 나타내는 것으로, 게이머들에게 새로운 도전과 경험을 제공합니다.\n\n### 더 많은 정보\n마라톤의 두 번째 시즌과 Marathon 8217 second에 대한 더 많은 정보를 원하신다면, 공식 홈페이지나 온라인 커뮤니티를 확인하시기 바랍니다.",
+      "tags": [
+        "tech",
+        "Marathon",
+        "8217",
+        "second"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxNYXJhdGhvbiUyNTIwODIxNyUyNTIwc2Vjb25kJTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyNjk5MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "마라톤의 두 번째 시즌, 새로운 기회 — Photo by Mārtiņš Zemlickis on Unsplash (https://unsplash.com/photos/people-running-on-road-during-daytime-NPFu4GfFZ7E)",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 마라톤의 두 번째 시즌, 새로운 기회. Keyword: Marathon 8217 second. Context: ### 마라톤이란 무엇인가? Bungie는 미국의 비디오 게임 개발사로, Halo와 Destiny 같은 유명한 게임을 개발한 회사입니다. Marathon은 Bungie가 개발한 또 하나의 게임으로, FPS 게임으로 알려져 있습니다. ### 마라톤의 두 번째 시즌 마라톤의 두 번째 시즌은 번지에게 일회적인 기회입니다. 이 시즌은 기존의 문제점을 개선하고 새로운 콘텐츠를 추가함으로써 게이머들의 기대를 충족시키기 위해 노력하고 있습니다. #### 주요 특징 | 특징 | 설명 | | --- | --- | | 새로운 콘텐츠 | 새로운 퀘스트와 보스 추가 | | 개선된 게임플레이 | 버그 수정과 게임 성능 향상 | | 커뮤니티 지원 | 커뮤니티 이벤트와 리워드 추가 | ### Marathon 8217 second Marathon 8217 second는 이 게임의 두 번째 시즌에서 나타나는 중요한 키워드입니다. 이 키워드는 게임의 새로운 콘텐츠와 개선된 게임플레이를 나타내는 것으로, 게이머들에게 새로운 도전과 경험을 제공합니다. ### 더 많은 정보 마라톤의 두 번째 시즌과 Marathon 8217 second에 대한 더 많은 정보를 원하신다면, 공식 홈페이지나 온라인 커뮤니티를 확인하시기 바랍니다.. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T23:25:18.514654",
+      "quality_score": 85.0,
+      "review_notes": [
+        "본문 길이가 짧습니다."
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Erin Brockovich takes",
+        "title_hint": "Erin Brockovich takes aim at data center secrecy",
+        "category": "tech",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Erin Brockovich takes aim at data center secrecy",
+            "url": "https://techcrunch.com/2026/05/31/erin-brockovich-takes-aim-at-data-center-secrecy/",
+            "published_at": "2026-05-31T21:05:14",
+            "summary": "Environmental activist Erin Brockovich has a new mission.",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "에린 브로코비치의 새로운 임무: 데이터 센터의 환경 비밀이 궁금하다",
+      "slug": "erin-brockovich-takes-45ce08dd",
+      "excerpt": "환경 운동가 에린 브로코비치(Erin Brockovich)가 새로운 임무를 맡았다. 그녀는 데이터 센터의 비밀이 궁금해하며, 데이터 센터가 환경에 미치는 영향을 조사하고, 더 투명한 데이터 센터 운영을 촉구한다.",
+      "body_markdown": "### 에린 브로코비치의 새로운 임무\n에린 브로코비치(Erin Brockovich)는 환경 운동가로서, 데이터 센터의 비밀이 궁금하다. 데이터 센터는 컴퓨팅 자원과 데이터를 저장하는 시설로, 많은 기업들이 사용한다. 하지만 데이터 센터는 에너지 소비와 환경 오염의 문제를 야기한다.\n\n### 데이터 센터의 환경 영향\n| 환경 영향 | 내용 |\n| --- | --- |\n| 에너지 소비 | 데이터 센터는大量의 에너지를 소비한다. |\n| 환경 오염 | 데이터 센터는 환경 오염을 야기한다. |\n| 수자원 사용 | 데이터 센터는大量의 수자원을 사용한다. |\n\n### 에린 브로코비치의 노력\n에린 브로코비치의 새로운 임무는 데이터 센터의 비밀이 궁금하다는 것이다. 그녀는 데이터 센터가 환경에 미치는 영향을 조사하고, 더 투명한 데이터 센터 운영을 촉구한다. 에린 브로코비치의 이러한 노력은 데이터 센터 산업에 큰 영향을 미칠 수 있다.\n\n### 에린 브로코비치에 대한 소개\n에린 브로코비치(Erin Brockovich)는 미국의 환경 운동가이다. 그녀는 1990년대에 캘리포니아 주의 한 마을에서 발생한 물 오염 사건을 조사하여, 기업의 비리와 정부의 무시를 폭로했다. 에린 브로코비치의 이러한 노력은 영화와 책으로 만들어졌으며, 그녀는 환경 운동가로서 세계적으로 알려졌다.\n\n### 결론\n따라서, 데이터 센터의 비밀이 궁금하다면 에린 브로코비치의 새로운 임무를 따라야 한다. 에린 브로코비치의 노력은 데이터 센터 산업에 큰 영향을 미칠 수 있으며, 우리는 데이터 센터의 환경 영향을 줄이는 데에 관심을 가져야 한다. 에린 브로코비치의 새로운 임무는 데이터 센터의 비밀이 궁금하다는 것이다. 따라서, 우리는 에린 브로코비치의 노력을 지지하고, 데이터 센터의 환경 영향을 줄이는 데에 관심을 가져야 한다.",
+      "tags": [
+        "tech",
+        "Erin",
+        "Brockovich",
+        "takes"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1765445666407-c8535808a4a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxFcmluJTI1MjBCcm9ja292aWNoJTI1MjB0YWtlcyUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjY5OTU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "에린 브로코비치의 새로운 임무: 데이터 센터의 환경 비밀이 궁금하다 — Photo by Egor Komarov on Unsplash (https://unsplash.com/photos/text-from-a-document-about-design-and-designer-jt881Ntqj84)",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 에린 브로코비치의 새로운 임무: 데이터 센터의 환경 비밀이 궁금하다. Keyword: Erin Brockovich takes. Context: ### 에린 브로코비치의 새로운 임무 에린 브로코비치(Erin Brockovich)는 환경 운동가로서, 데이터 센터의 비밀이 궁금하다. 데이터 센터는 컴퓨팅 자원과 데이터를 저장하는 시설로, 많은 기업들이 사용한다. 하지만 데이터 센터는 에너지 소비와 환경 오염의 문제를 야기한다. ### 데이터 센터의 환경 영향 | 환경 영향 | 내용 | | --- | --- | | 에너지 소비 | 데이터 센터는大量의 에너지를 소비한다. | | 환경 오염 | 데이터 센터는 환경 오염을 야기한다. | | 수자원 사용 | 데이터 센터는大量의 수자원을 사용한다. | ### 에린 브로코비치의 노력 에린 브로코비치의 새로운 임무는 데이터 센터의 비밀이 궁금하다는 것이다. 그녀는 데이터 센터가 환경에 미치는 영향을 조사하고, 더 투명한 데이터 센터 운영을 촉구한다. 에린 브로코비치의 이러한 노력은 데이터 센터 산업에 큰 영향을 미칠 수 있다. ### 에린 브로코비치에 대한 소개 에린 브로코비치(Erin Brockovich)는 미국의 환경 운동가이다. 그녀는 1990년대에 캘리포니아 주의 한 마을에서 발생한 물 오염 사건을 조사하여, 기업의 비리와 정부의 무시를 폭로했다. 에린 브로코비치의 이러한 노력은 영화와 책으로 만들어졌으며, 그녀는 환경 운동가로서 세계적으로 알려졌다. ### 결론 따라서, 데이터 센터의 비밀이 궁금하다면 에린 브로코비치의 새로운 임무를 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T23:25:42.907021",
+      "quality_score": 88.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다."
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/qd-oled-gaming-51236ec5.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/dell-is-bringing-e28cc63d.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/extravagant-gaming-laptop-d1c76348.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 40.0"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/marathon-8217-second-79454833.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/erin-brockovich-takes-45ce08dd.md",
+      "message": "draft saved"
+    }
+  ]
+}
