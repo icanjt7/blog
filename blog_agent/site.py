@@ -102,7 +102,7 @@ class StaticSiteBuilder:
             cards = '<p class="empty">아직 발행된 글이 없습니다.</p>'
         content = f"""
         <section class="hero">
-          <p class="meta">자동화 정보 블로그</p>
+          <p class="meta">오늘의 생활·기술·정책 브리핑</p>
           <h1>{html.escape(self.site_title)}</h1>
         </section>
         <section class="grid">{cards}</section>
@@ -125,7 +125,7 @@ class StaticSiteBuilder:
 <rss version="2.0">
   <channel>
     <title>{html.escape(self.site_title)}</title>
-    <description>Daily automated blog posts</description>
+    <description>오늘 꼭 확인할 생활·기술·정책 소식을 정리합니다.</description>
     <link>./</link>
     {items}
   </channel>

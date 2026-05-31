@@ -1,5 +1,5 @@
 ---
-title: Blog Agent Console
+title: 브리핑웨이브 데스크
 emoji: 📝
 colorFrom: teal
 colorTo: amber
@@ -9,7 +9,7 @@ app_file: app.py
 pinned: false
 ---
 
-# Blog Agent Console
+# 브리핑웨이브 데스크
 
 GitHub Pages + WordPress 자동 블로그 운영을 위한 검수 콘솔입니다.
 

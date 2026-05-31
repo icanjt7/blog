@@ -74,12 +74,12 @@ def generate_image(prompt: str) -> tuple[str | None, str]:
     return str(image_path), "이미지를 생성했습니다."
 
 
-with gr.Blocks(title="Blog Agent Console") as demo:
+with gr.Blocks(title="브리핑웨이브 데스크") as demo:
     gr.Markdown(
         """
-        # Blog Agent Console
+        # 브리핑웨이브 데스크
 
-        GitHub Pages + WordPress 자동 블로그 운영 전, 초안과 대표 이미지를 확인하는 작업대입니다.
+        GitHub Pages + WordPress 발행 전, 초안과 대표 이미지를 확인하는 편집 데스크입니다.
         """
     )
 

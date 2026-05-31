@@ -37,7 +37,7 @@ jobs:
 
       - name: Build site
         env:
-          BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || 'Curieux Auto Blog' }}
+          BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
           BLOG_CUSTOM_DOMAIN: ${{ vars.BLOG_CUSTOM_DOMAIN }}
         run: python -m blog_agent.cli build-site
 

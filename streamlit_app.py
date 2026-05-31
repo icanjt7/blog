@@ -61,15 +61,15 @@ def wordpress_api_url(wordpress_url: str) -> str:
 
 
 def main() -> None:
-    st.set_page_config(page_title="Blog Operations", page_icon="📝", layout="wide")
+    st.set_page_config(page_title="브리핑웨이브 운영실", page_icon="📝", layout="wide")
 
     wordpress_url = get_setting("WORDPRESS_URL")
     pages_url = get_setting("GITHUB_PAGES_URL")
     custom_domain = get_setting("BLOG_CUSTOM_DOMAIN")
     public_url = f"https://{custom_domain}" if custom_domain else pages_url
 
-    st.title("Blog Operations")
-    st.caption("WordPress 자동 포스팅과 GitHub Pages 공개 블로그 상태를 확인합니다.")
+    st.title("브리핑웨이브 운영실")
+    st.caption("WordPress 포스팅과 GitHub Pages 공개 채널 상태를 확인합니다.")
 
     col1, col2, col3 = st.columns(3)
     with col1:

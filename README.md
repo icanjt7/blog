@@ -69,7 +69,7 @@ docker compose -f docker-compose.wordpress.yml up -d
 - `OPENAI_MODEL`: 기본값 `gpt-4.1-mini`
 - `BLOG_OUTPUT_DIR`: 기본값 `output/posts`
 - `BLOG_PUBLIC_DIR`: 기본값 `public`
-- `BLOG_SITE_TITLE`: 기본값 `Curieux Auto Blog`
+- `BLOG_SITE_TITLE`: 기본값 `브리핑웨이브`
 - `BLOG_CUSTOM_DOMAIN`: GitHub Pages 커스텀 도메인, 설정 시 `CNAME` 자동 생성
 - `WORDPRESS_URL`: 예: `https://example.com`
 - `WORDPRESS_USERNAME`
