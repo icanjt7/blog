@@ -50,6 +50,8 @@ docker compose -f docker-compose.wordpress.yml up -d
 
 자세한 절차는 [docs/wordpress-local-test.md](docs/wordpress-local-test.md)를 참고하세요.
 
+로컬이 아니라 GitHub Actions에서 바로 WordPress에 발행하려면 [docs/github-wordpress-publish.md](docs/github-wordpress-publish.md)를 참고하세요.
+
 ## 환경변수
 
 필수:

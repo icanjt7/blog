@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 
 from .config import load_settings
 from .pipeline import BlogPipeline
@@ -17,6 +18,7 @@ def build_parser() -> argparse.ArgumentParser:
     run.add_argument("--dry-run", action="store_true")
     run.add_argument("--min-quality", type=float, default=65)
     run.add_argument("--publisher", choices=["markdown", "wordpress"])
+    run.add_argument("--require-publish-success", action="store_true")
     build = sub.add_parser("build-site", help="render generated Markdown posts into a static site")
     build.add_argument("--posts-dir")
     build.add_argument("--public-dir")
@@ -66,6 +68,8 @@ def main() -> None:
                 indent=2,
             )
         )
+        if args.require_publish_success and any(not item.ok for item in result.publish_results):
+            sys.exit(1)
 
 
 if __name__ == "__main__":
