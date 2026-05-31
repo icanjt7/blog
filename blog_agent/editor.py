@@ -8,6 +8,15 @@ from .config import Settings
 from .models import Draft
 
 
+PLACEHOLDER_PATTERNS = [
+    r"[가-힣]+\d+",          # 영화1, 감독1, 인물1 등
+    r"\[[가-힣a-zA-Z]+명?\]", # [감독명], [영화명], [이름], [회사명]
+    r"XXX|OOO|___",
+    r"제목\s*[:：]\s*미정",
+    r"(감독|배우|주연|감독명)\s*[:：]\s*(미정|미상|불명)",
+    r"(영화|작품|도서)\s*\d+\b",  # 영화 1, 작품 2
+]
+
 AI_CLICHES = [
     "이번 포스팅에서는",
     "알아보겠습니다",
@@ -107,9 +116,17 @@ BODY:
 
     BLAND_TITLE_PATTERNS = ["핵심 정리", "알아보자", "총정리", "완벽 정리", "알아보겠", "정리해", "소개합니다"]
 
+    @staticmethod
+    def has_placeholders(text: str) -> bool:
+        return any(re.search(p, text) for p in PLACEHOLDER_PATTERNS)
+
     def review(self, draft: Draft) -> Draft:
         notes: list[str] = []
         score = 100.0
+        combined = draft.title + "\n" + draft.body_markdown
+        if self.has_placeholders(combined):
+            score -= 60
+            notes.append("플레이스홀더 감지: 실제 데이터 없이 가짜 내용이 포함돼 있습니다.")
         for pattern in self.BLAND_TITLE_PATTERNS:
             if pattern in draft.title:
                 score -= 8

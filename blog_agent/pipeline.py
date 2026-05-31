@@ -37,7 +37,9 @@ class BlogPipeline:
 
     def run(self, count: int = 5, dry_run: bool = False, min_quality: float = 65) -> PipelineResult:
         run_id = self.store.new_run(count=count, dry_run=dry_run, publisher=self.settings.publisher)
-        topics = self.scout.scout(limit=count)
+        # 여유분 포함해서 스카우트 — 품질 미달 시 다음 주제로 넘어가기 위해
+        candidate_limit = count * 3
+        topics = self.scout.scout(limit=candidate_limit)
         self.store.add_event(
             run_id,
             "trend_scout",
@@ -47,9 +49,12 @@ class BlogPipeline:
         drafts: list[Draft] = []
         results: list[PublishResult] = []
         published_topics = []
+        published_count = 0
 
         try:
             for topic in topics:
+                if not dry_run and published_count >= count:
+                    break
                 self.store.add_event(run_id, "topic_started", "ok", {"keyword": topic.keyword})
                 enriched = self.retriever.enrich(topic)
                 draft = self.editor.improve(self.writer.write(enriched))
@@ -66,12 +71,14 @@ class BlogPipeline:
                     )
                     results.append(result)
                     self.store.add_draft(run_id, draft, result)
+                    # 다음 주제로 넘어감
                     continue
                 result = self.publisher.publish(draft)
                 results.append(result)
                 self.store.add_draft(run_id, draft, result)
                 if result.ok:
                     published_topics.append(topic)
+                    published_count += 1
 
             if published_topics:
                 self.scout.remember(published_topics)
