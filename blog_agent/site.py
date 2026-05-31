@@ -34,6 +34,7 @@ class StaticSiteBuilder:
         for post in posts:
             self._write_post(post)
         self._write_index(posts)
+        self._write_dashboard(posts)
         self._write_feed(posts)
         self._write_css()
         self._write_cname()
@@ -104,10 +105,54 @@ class StaticSiteBuilder:
         <section class="hero">
           <p class="meta">오늘의 생활·기술·정책 브리핑</p>
           <h1>{html.escape(self.site_title)}</h1>
+          <p><a href="./dashboard.html">운영 현황</a></p>
         </section>
         <section class="grid">{cards}</section>
         """
         self._write_html("index.html", self.site_title, content)
+
+    def _write_dashboard(self, posts: list[Post]) -> None:
+        category_counts: dict[str, int] = {}
+        for post in posts:
+            category_counts[post.category] = category_counts.get(post.category, 0) + 1
+        category_rows = "\n".join(
+            f"<tr><td>{html.escape(category)}</td><td>{count}</td></tr>"
+            for category, count in sorted(category_counts.items())
+        )
+        recent_rows = "\n".join(
+            f"""
+            <tr>
+              <td><a href="./{post.slug}.html">{html.escape(post.title)}</a></td>
+              <td>{html.escape(post.category)}</td>
+              <td>{post.date:%Y-%m-%d}</td>
+            </tr>
+            """
+            for post in posts[:20]
+        )
+        content = f"""
+        <article class="post">
+          <a class="back" href="./index.html">블로그 홈</a>
+          <header>
+            <p class="meta">브리핑웨이브 운영 현황</p>
+            <h1>채널 대시보드</h1>
+          </header>
+          <section class="stats">
+            <div><strong>{len(posts)}</strong><span>발행 글</span></div>
+            <div><strong>{len(category_counts)}</strong><span>카테고리</span></div>
+          </section>
+          <h2>카테고리</h2>
+          <table>
+            <thead><tr><th>카테고리</th><th>글 수</th></tr></thead>
+            <tbody>{category_rows or '<tr><td colspan="2">아직 글이 없습니다.</td></tr>'}</tbody>
+          </table>
+          <h2>최근 글</h2>
+          <table>
+            <thead><tr><th>제목</th><th>카테고리</th><th>날짜</th></tr></thead>
+            <tbody>{recent_rows or '<tr><td colspan="3">아직 글이 없습니다.</td></tr>'}</tbody>
+          </table>
+        </article>
+        """
+        self._write_html("dashboard.html", f"{self.site_title} 운영 현황", content)
 
     def _write_feed(self, posts: list[Post]) -> None:
         items = "\n".join(
@@ -213,9 +258,14 @@ a:hover { text-decoration: underline; }
 .content th, .content td { border: 1px solid var(--line); padding: 9px; text-align: left; }
 .content th { background: #ece7da; }
 .empty { padding: 24px 0; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 24px 0; }
+.stats div { border: 1px solid var(--line); border-radius: 8px; padding: 16px; background: #faf7ef; }
+.stats strong { display: block; font-size: 2rem; line-height: 1; }
+.stats span { color: var(--muted); font-size: 0.9rem; }
 @media (max-width: 640px) {
   main { width: min(100% - 20px, 1040px); padding-top: 20px; }
   .post { padding: 18px; }
+  .stats { grid-template-columns: 1fr; }
 }
 """
         (self.public_dir / "style.css").write_text(css.strip() + "\n", encoding="utf-8")
