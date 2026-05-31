@@ -19,7 +19,7 @@ on:
     - cron: "30 15 * * *"
 
 concurrency:
-  group: wordpress-publish
+  group: blog-publish
   cancel-in-progress: false
 
 jobs:
@@ -72,5 +72,7 @@ jobs:
           git config user.name "blog-agent"
           git config user.email "actions@github.com"
           git add state/*.json output/reports/*.json 2>/dev/null || true
-          git diff --cached --quiet || git commit -m "chore: record wordpress publish run"
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: record wordpress publish run"
+          git pull --rebase origin main
           git push
