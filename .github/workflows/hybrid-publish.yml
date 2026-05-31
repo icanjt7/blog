@@ -1,0 +1,79 @@
+name: Hybrid publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "Number of posts to generate"
+        required: false
+        default: "1"
+      wordpress_status:
+        description: "WordPress post status: draft or publish"
+        required: false
+        default: "draft"
+      min_quality:
+        description: "Minimum quality score"
+        required: false
+        default: "65"
+  schedule:
+    - cron: "45 15 * * *"
+
+concurrency:
+  group: hybrid-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Generate posts and publish to WordPress
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+          PUBLISHER: both
+          WORDPRESS_URL: ${{ secrets.WORDPRESS_URL }}
+          WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
+          WORDPRESS_APP_PASSWORD: ${{ secrets.WORDPRESS_APP_PASSWORD }}
+          WORDPRESS_STATUS: ${{ github.event.inputs.wordpress_status || vars.WORDPRESS_STATUS || 'draft' }}
+        run: |
+          python -m blog_agent.cli run \
+            --count "${{ github.event.inputs.count || vars.HYBRID_POST_COUNT || '1' }}" \
+            --publisher both \
+            --min-quality "${{ github.event.inputs.min_quality || vars.HYBRID_MIN_QUALITY || '65' }}" \
+            --require-publish-success
+
+      - name: Build GitHub Pages site
+        env:
+          BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || 'Curieux Auto Blog' }}
+          BLOG_CUSTOM_DOMAIN: ${{ vars.BLOG_CUSTOM_DOMAIN }}
+        run: python -m blog_agent.cli build-site
+
+      - name: Commit generated content and run state
+        if: always()
+        run: |
+          git config user.name "blog-agent"
+          git config user.email "actions@github.com"
+          git add output state || true
+          git diff --cached --quiet || git commit -m "chore: publish hybrid blog content"
+          git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - uses: actions/deploy-pages@v4

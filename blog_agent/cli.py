@@ -17,7 +17,7 @@ def build_parser() -> argparse.ArgumentParser:
     run.add_argument("--count", type=int, default=5)
     run.add_argument("--dry-run", action="store_true")
     run.add_argument("--min-quality", type=float, default=65)
-    run.add_argument("--publisher", choices=["markdown", "wordpress"])
+    run.add_argument("--publisher", choices=["markdown", "wordpress", "both"])
     run.add_argument("--require-publish-success", action="store_true")
     build = sub.add_parser("build-site", help="render generated Markdown posts into a static site")
     build.add_argument("--posts-dir")
@@ -38,7 +38,7 @@ def main() -> None:
     if args.command == "build-site":
         posts_dir = settings.output_dir if not args.posts_dir else settings.output_dir.__class__(args.posts_dir)
         public_dir = settings.public_dir if not args.public_dir else settings.public_dir.__class__(args.public_dir)
-        StaticSiteBuilder(posts_dir, public_dir, settings.site_title).build()
+        StaticSiteBuilder(posts_dir, public_dir, settings.site_title, settings.custom_domain).build()
         print(json.dumps({"ok": True, "public_dir": str(public_dir)}, ensure_ascii=False, indent=2))
         return
     if args.command == "run":

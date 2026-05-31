@@ -73,7 +73,27 @@ class WordPressPublisher(Publisher):
         return PublishResult(ok=True, destination="wordpress", url=data.get("link"), message="published")
 
 
+class CompositePublisher(Publisher):
+    def __init__(self, publishers: list[Publisher]) -> None:
+        self.publishers = publishers
+
+    def publish(self, draft: Draft) -> PublishResult:
+        results = [publisher.publish(draft) for publisher in self.publishers]
+        failed = [result for result in results if not result.ok]
+        destination = "+".join(result.destination for result in results)
+        wordpress_url = next((result.url for result in results if result.destination == "wordpress"), None)
+        message = " | ".join(f"{result.destination}: {result.message}" for result in results)
+        return PublishResult(
+            ok=not failed,
+            destination=destination,
+            url=wordpress_url or results[0].url,
+            message=message,
+        )
+
+
 def build_publisher(settings: Settings) -> Publisher:
     if settings.publisher == "wordpress":
         return WordPressPublisher(settings)
+    if settings.publisher == "both":
+        return CompositePublisher([MarkdownPublisher(settings.output_dir), WordPressPublisher(settings)])
     return MarkdownPublisher(settings.output_dir)

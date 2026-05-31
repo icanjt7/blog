@@ -14,6 +14,7 @@ class Settings(BaseModel):
     public_dir: Path = Path("public")
     state_dir: Path = Path("state")
     site_title: str = "Curieux Auto Blog"
+    custom_domain: str | None = None
     publisher: str = "markdown"
     wordpress_url: str | None = None
     wordpress_username: str | None = None
@@ -30,6 +31,7 @@ def load_settings() -> Settings:
         public_dir=Path(os.getenv("BLOG_PUBLIC_DIR", "public")),
         state_dir=Path(os.getenv("BLOG_STATE_DIR", "state")),
         site_title=os.getenv("BLOG_SITE_TITLE", "Curieux Auto Blog"),
+        custom_domain=os.getenv("BLOG_CUSTOM_DOMAIN") or None,
         publisher=os.getenv("PUBLISHER", "markdown"),
         wordpress_url=os.getenv("WORDPRESS_URL") or None,
         wordpress_username=os.getenv("WORDPRESS_USERNAME") or None,

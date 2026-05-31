@@ -34,6 +34,8 @@ python -m blog_agent.cli build-site
 
 GitHub 저장소 Settings → Pages에서 Source를 `GitHub Actions`로 설정하세요. 배포 후 주소는 보통 `https://icanjt7.github.io/blog/` 형태가 됩니다.
 
+WordPress에도 같은 글을 자동 포스팅하면서 GitHub Pages와 개인 도메인으로 공개하려면 [docs/hybrid-github-pages-wordpress.md](docs/hybrid-github-pages-wordpress.md)를 참고하세요.
+
 ## 실제 발행
 
 ```bash
@@ -64,11 +66,12 @@ docker compose -f docker-compose.wordpress.yml up -d
 - `BLOG_OUTPUT_DIR`: 기본값 `output/posts`
 - `BLOG_PUBLIC_DIR`: 기본값 `public`
 - `BLOG_SITE_TITLE`: 기본값 `Curieux Auto Blog`
+- `BLOG_CUSTOM_DOMAIN`: GitHub Pages 커스텀 도메인, 설정 시 `CNAME` 자동 생성
 - `WORDPRESS_URL`: 예: `https://example.com`
 - `WORDPRESS_USERNAME`
 - `WORDPRESS_APP_PASSWORD`
 - `WORDPRESS_STATUS`: `draft` 또는 `publish`, 기본값 `publish`
-- `PUBLISHER`: `markdown` 또는 `wordpress`
+- `PUBLISHER`: `markdown`, `wordpress`, `both`
 
 ## GitHub Actions
 

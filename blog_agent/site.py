@@ -22,10 +22,11 @@ class Post:
 
 
 class StaticSiteBuilder:
-    def __init__(self, posts_dir: Path, public_dir: Path, site_title: str) -> None:
+    def __init__(self, posts_dir: Path, public_dir: Path, site_title: str, custom_domain: str | None = None) -> None:
         self.posts_dir = posts_dir
         self.public_dir = public_dir
         self.site_title = site_title
+        self.custom_domain = custom_domain
 
     def build(self) -> None:
         self.public_dir.mkdir(parents=True, exist_ok=True)
@@ -35,6 +36,7 @@ class StaticSiteBuilder:
         self._write_index(posts)
         self._write_feed(posts)
         self._write_css()
+        self._write_cname()
 
     def _load_posts(self) -> list[Post]:
         if not self.posts_dir.exists():
@@ -217,6 +219,10 @@ a:hover { text-decoration: underline; }
 }
 """
         (self.public_dir / "style.css").write_text(css.strip() + "\n", encoding="utf-8")
+
+    def _write_cname(self) -> None:
+        if self.custom_domain:
+            (self.public_dir / "CNAME").write_text(self.custom_domain.strip() + "\n", encoding="utf-8")
 
     @staticmethod
     def _parse_date(value: str) -> datetime:
