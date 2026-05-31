@@ -1,0 +1,1736 @@
+{
+  "run_id": "20260531-102102-7a29b6e4",
+  "topics": [
+    {
+      "keyword": "05월 지원금",
+      "title_hint": "05월 지원금 핵심 정리",
+      "category": "living",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "대한민국 정책브리핑",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "05월 청년",
+      "title_hint": "05월 청년 핵심 정리",
+      "category": "living",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "대한민국 정책브리핑",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "05월 AI",
+      "title_hint": "05월 AI 핵심 정리",
+      "category": "tech",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "05월 아이폰",
+      "title_hint": "05월 아이폰 핵심 정리",
+      "category": "tech",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "05월 금리",
+      "title_hint": "05월 금리 핵심 정리",
+      "category": "finance",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "금융위원회 보도자료",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "05월 환율",
+      "title_hint": "05월 환율 핵심 정리",
+      "category": "finance",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "금융위원회 보도자료",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "05월 서울 맛집",
+      "title_hint": "05월 서울 맛집 핵심 정리",
+      "category": "local",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "05월 부산 여행",
+      "title_hint": "05월 부산 여행 핵심 정리",
+      "category": "local",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "05월 신청방법",
+      "title_hint": "05월 신청방법 핵심 정리",
+      "category": "living",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "대한민국 정책브리핑",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "05월 제철음식",
+      "title_hint": "05월 제철음식 핵심 정리",
+      "category": "living",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "대한민국 정책브리핑",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "05월 생활비",
+      "title_hint": "05월 생활비 핵심 정리",
+      "category": "living",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "대한민국 정책브리핑",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "05월 혜택",
+      "title_hint": "05월 혜택 핵심 정리",
+      "category": "living",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "대한민국 정책브리핑",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "05월 갤럭시",
+      "title_hint": "05월 갤럭시 핵심 정리",
+      "category": "tech",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "05월 노트북",
+      "title_hint": "05월 노트북 핵심 정리",
+      "category": "tech",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "05월 스펙",
+      "title_hint": "05월 스펙 핵심 정리",
+      "category": "tech",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "05월 비교",
+      "title_hint": "05월 비교 핵심 정리",
+      "category": "tech",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "05월 부동산",
+      "title_hint": "05월 부동산 핵심 정리",
+      "category": "finance",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "금융위원회 보도자료",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "05월 대출",
+      "title_hint": "05월 대출 핵심 정리",
+      "category": "finance",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "금융위원회 보도자료",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "05월 연금",
+      "title_hint": "05월 연금 핵심 정리",
+      "category": "finance",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "금융위원회 보도자료",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "05월 세금",
+      "title_hint": "05월 세금 핵심 정리",
+      "category": "finance",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "금융위원회 보도자료",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "05월 제주 카페",
+      "title_hint": "05월 제주 카페 핵심 정리",
+      "category": "local",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "05월 강릉 여행",
+      "title_hint": "05월 강릉 여행 핵심 정리",
+      "category": "local",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "05월 전주 맛집",
+      "title_hint": "05월 전주 맛집 핵심 정리",
+      "category": "local",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "지방선거 사전투표 신분증만 들고",
+      "title_hint": "29~30일 지방선거 사전투표…'신분증만 들고 가까운 투표소로'",
+      "category": "living",
+      "trend_score": 95.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "29~30일 지방선거 사전투표…'신분증만 들고 가까운 투표소로'",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965476&call_from=rsslink",
+          "published_at": "2026-05-29T09:07:00",
+          "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965476&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>제9회 전국동시지방선거 사전투표가 29일부터&nbsp;30일까지 이틀간 전국 3571개 사전투표소에서 일제히 실시된다.</p>\n\n<p>행정안전부는 사전투표 첫날인 29일 오전 윤호중 행정안전부 장관이 세종특별자치시 조치원읍 사전투표소를 찾아 모바일 주민등록증을 발급받고 유권자로서 소중한 한 표를 행사했다고 밝혔다.</p>\n\n<p>사전투표는 선거일 당일투표하기 어려운 국민을 위해 마련된 제도로 선거권이 있는 국민이라면 누구나 신분증을 지참해 전국 읍·면·동에 마련된 사전투표소 어디에서나 투표할 수 있다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>제9회 전국동시지방선거 사전투표 첫날인 29일 점심시간 서울 서초구 서초4동주민센터 사전투표소에 유권자들의 발길이 이어지고 있다.(사진=저작권자(c) 연합뉴스, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>먼저, 윤 장관은 조치원읍 행정복지센터 1층 민원실을 방문해 실물 주민등록증과 동일한 법적 효력을 갖는 모바일 주민등록증을 발급받았다.</p>\n\n<p>모바일 주민등록증은 실물 주민등록증을 지참하면 주소지와 상관없이 모든 주민센터 어디에서나 발급받을 수 있으며 관공서, 은행, 공항, 병원 등 현행 주민등록증이 사용되는 모든 곳에서 사용할 수 있다.</p>\n\n<p>이후 윤 장관은 3층 사전투표소를 찾아 발급받은 모바일 주민등록증으로 제9회 전국동시지방선거 사전투표에 참여했다.</p>\n\n<p>이번 지방선거는 시·도지사부터 시·도 교육감, 시·도 및 시·군·구의원까지 총 4227명 지역 일꾼을 뽑는 대규모 선거다.</p>\n\n<p>유권자는 기본적으로 7종의 투표용지를 받아 투표하게 되고, 국회의원 보궐선거까지 포함하면 최대 8종의 투표용지를 받게 된다.</p>\n\n<p>윤호중 장관은 \"지역 주민의 한 사람으로서 소중한 권리를 행사하러 왔다\"며 \"지방선거는 지역의 미래를 책임질 일꾼을 뽑는 중요한 선거인 만큼 6월 3일 투표가 어려운 유권자께서는 꼭 29일이나 30일 가까운 사전투표소에서 투표권을 행사해 주시기 바란다\"고 당부했다.</p>\n\n<p>한편, 김민재 행정안전부 차관도 서울청사에서 차관회의를 마치고 종로구 보건소를 방문해 사전투표에 참여했다.</p>\n\n<p>문의: 행정안전부 선거의회자치법규과(044-205-3380)</p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "초단기간 공공 비정규직에 공정수당",
+      "title_hint": "초단기간 공공 비정규직에 '공정수당' 지급…채용 사전심사도 확대",
+      "category": "living",
+      "trend_score": 95.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "초단기간 공공 비정규직에 '공정수당' 지급…채용 사전심사도 확대",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965448&call_from=rsslink",
+          "published_at": "2026-05-29T08:30:00",
+          "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965448&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>고용노동부는 '공공부문 비정규직 처우개선 대책'의 후속 조치로 '공공부문 비정규직 처우개선 가이드라인' 및 '공공부문 비정규직 채용사전심사제 운영방안' 개정안을 마련하여 시행한다고 밝혔다.</p>\n\n<p>이번 가이드라인 및 사전심사제 개정안에는 공공부문 비정규직 노동자의 노동가치를 존중해 불공정 고용관행을 근절하고, 고용 불안정성을 보상하는 등 처우 개선을 위한 세부 기준을 담았다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>고용노동부 전경 2025.11.28. (ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>내년부터 적용되는 공정수당과 적정임금의 지급대상과 지급방법을 구체화하고, 각 기관은 내년부터 소속 기간제 노동자가 해당 제도를 적용받을 수 있도록 예산 반영·내부 규정 개정 등 필요한 조치를 취하도록 한다.</p>\n\n<p>업무 특성 등으로 불가피하게 비정규직으로 채용하는 경우에는 최소 1년의 근로계약이 보장되도록 하는 한편, 1월 1일이 휴일이라는 이유로 관행적으로 1월 2일부터 근로계약을 체결하는 것을 지양하도록 한다.</p>\n\n<p>초단시간으로 채용된 노동자에 대해서도 근로시간에 비례하여 공정수당, 주휴수당 등을 지급하도록 명시한다.</p>\n\n<p>처우개선의 지속성 담보를 위해 각 기관의 비정규직 노동자 현황과 임금 등 실태를 매년 관리토록 하고, 특히 전년 대비 비정규직 노동자가 10% 이상 증가한 경우에는 증가 사유도 함께 관리한다.</p>\n\n<p>아울러 각 기관은 가이드라인 준수를 위해 단체협약·취업규칙 등에 규정해야 할 사항은 노사 협의를 통해 최대한 반영하도록 하고, 상급기관은 연 1회 이상 정기적으로 소속기관·산하기관·소관 자회사의 가이드라인 준수여부를 지도·점검한다.</p>\n\n<p>공공부문에서 정규직 채용 원칙 확행을 위해 제도 시행 7년 만에 '공공부문 비정규직 사전심사제 운영방안'을 개정하여 채용 사전심사제의 대상을 확대하고, 형식적 절차가 아닌 비정규직 남용을 사전에 방지하는 실질적 심사 장치로 작동하도록 내실화한다.</p>\n\n<p>우선 심사대상을 2017년 정규직 전환 가이드라인에 따른 1단계 기관에서 자치단체 출연·출자기관, 자회사 등 2단계 기관까지 확대한다.</p>\n\n<p>또한, 파견·용역을 사용하거나 단기 비정규직을 채용하는 경우에도 해당 업무가 상시·지속 업무인지 누락 없이 심사하도록 명확화한다.</p>\n\n<p>비정규직 채용 필요성 심사에 더하여 1년 미만 계약이 불가피한지, 초단시간 근무 형태가 필요한지, 적정임금·공정수당 등 처우개선 예산이 적정하게 편성되었는지 등도 심사하도록 한다.</p>\n\n<p>채용심사의 공정성을 담보하기 위하여 사전심사위원회는 5인 이상으로 구성하고, 외부 위원이 전체 위원의 40% 이상이 되도록 한다.</p>\n\n<p>외부 위원은 전문성을 갖춘 사람으로 위촉하되, 기관의 자문변호사 등은 지양하도록 했다. 고용노동부는 권역별 전문가단을 구성하여 제공할 계획이다.</p>\n\n<p>정부는 매년 사전심사제 운영 현황을 실태조사하고, 심사 실적 및 심사위원회 구성의 적정성 등을 점검할 계획이다.</p>\n\n<p>또한 심사평가위원회를 구성하여 사전심사제 도입 여부 및 내실화 정도를 정성·정량 평가하고, 기관평가 등에 활용하는 방안도 추진한다.</p>\n\n<p>김영훈 노동부 장관은 \"공공부문부터 모범적 사용자로서 비정규직 노동자의 노동가치가 존중받는 일터를 만들어 나가기 위해 가이드라인을 통해 제도화한 것\"이라며 \"공공부문 비정규직 처우개선 대책이 차질 없이 추진될 수 있도록 관계부처와 함께 적극 지도하고, 노동감독·평가 등도 병행하여 현장에서 체감될 수 있도록 하겠다\"고 밝혔다.</p>\n\n<p>문의: &lt;총괄&gt;고용노동부 공공노사관계과(044-202-7662)</p>\n\n<p><br /></p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "새도약기금 장기연체 추가 매입",
+      "title_hint": "새도약기금, 장기연체 9602억 추가 매입…누적 수혜자 75만 명",
+      "category": "living",
+      "trend_score": 95.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "새도약기금, 장기연체 9602억 추가 매입…누적 수혜자 75만 명",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965472&call_from=rsslink",
+          "published_at": "2026-05-29T08:16:00",
+          "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965472&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>금융위원회는 한국자산관리공사의 새도약기금이 농협자산관리회사, 상호금융권(새마을금고·수협·신협·산림조합), 대부회사, 공공기관 등이 보유한 장기 연체 채권을 매입했다고 29일 밝혔다.</p>\n\n<p>이번 5차 매입 대상 채권은 7년 이상 연체·5000만 원 이하의 개인 무담보채권으로 총 규모는 11만 6000명이 보유한 약 9602억 원이다.</p>\n\n<p>매입 즉시 추심은 중단되며, 매입채권 중 기초생활수급자 등 사회 취약계층 채무는 별도 상환능력 심사 없이 소각될 예정이다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>이억원 금융위원장(오른쪽 네번째)이 서울 중구 한국프레스센터에서 열린 새도약기금 출범식에서 정정훈 한국자산관리공사장 등 참석자들과 현판 제막을 한 뒤 기념촬영을 하고 있다.2025.10.1.(ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>그 외 채권은 철저하게 상환능력을 심사한 후 개인파산에 준하는 수준으로 상환능력을 상실한 경우 1년 이내 소각하고, 그 외 상환능력이 현저히 부족한 경우는 채무조정을 추진한다.</p>\n\n<p>상환능력 심사는 새도약기금이 금융자산 등 정보를 수집할 수 있도록 한 신용정보법 개정안 시행 이후인 올해 3분기 중 착수할 계획이다.</p>\n\n<p>채권금융회사는 지난주부터 채무자에게 채권 양도 예정사실을 통지했으며 채무자는 새도약기금 누리집(<a href=\"https://www.newleap.or.kr\" target=\"_blank\">www.newleap.or.kr</a>)을 통해 추가로 본인 채무 매입 여부·상환능력 심사 결과·채권 소각 여부 등을 조회할 수 있다.</p>\n\n<p>새도약기금이 1~5차 매입을 통해 확보한 장기연체채권은 약 9조 1000억 원 규모며, 수혜자는 중복자를 포함해 약 75만 명이다.</p>\n\n<p>향후 새도약기금은 내달 말 상록수제일차유동화전문회사(이하 상록수), 신용보증 재단중앙회, 농협, 대부회사 등이 보유한 장기연체채권을 매입할 예정이다.</p>\n\n<p>아울러 상록수와 유사하게 유동화회사 형태로 장기연체채권을 보유한 회사들에 대한 전수조사를 진행하고 있고, 조사 결과 새도약기금 대상 채권을 보유 중인 것으로 확인되는 경우 빠른 시일 내 대상 채권을 매입할 계획이다.</p>\n\n<p>한편, 대부업권 상위 30곳 중 새도약기금 협약에 가입한 대부회사의 수는 현재 15곳으로, 대부업권 역시 장기연체채권 보유 현황을 전수조사하고 있다.</p>\n\n<p>새도약기금은 대부회사들의 새도약기금 참여 확대를 위한 실질적 인센티브 방안을 적극 검토하고 업계와 지속적으로 소통해 나갈 예정이다.</p>\n\n<p>문의: 금융위원회 서민금융과(02-2100-2838), 한국자산관리공사 새도약기금운영처(051-794-3064)</p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "해외 진출 기업 유턴",
+      "title_hint": "해외 진출 기업, '유턴' 문턱 낮춰 국내 복귀·지방 투자 유도",
+      "category": "living",
+      "trend_score": 95.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "해외 진출 기업, '유턴' 문턱 낮춰 국내 복귀·지방 투자 유도",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965432&call_from=rsslink",
+          "published_at": "2026-05-29T08:09:00",
+          "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965432&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>산업통상부는 29일 열린 경제관계장관회의에서 '국내복귀(유턴) 재정립 및 촉진방안'을 발표했다.</p>\n\n<p>이번 대책은 글로벌 보호무역주의 강화, 공급망 재편 등 대외 여건 변화에 대응해 해외사업장의 단순 국내 이전을 넘어 지방투자를 활성화하고 첨단전략분야의 국내 역량을 확보하기 위한 핵심 국정과제로 마련됐다.</p>\n\n<p>정부는 ▲유턴 인정범위 재설계 ▲유턴보조금 지원체계 개편 ▲평가·관리 강화 및 이행요건 합리화 ▲전략적 유치 및 투자이행 밀착지원 등을 핵심 과제로 추진할 계획이다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>김정관 산업통상부 장관이 27일 오전 세종시 전의면 소재 2026년 1호 국내복귀 기업으로 선정된 화장품 제조기업 한국콜마에서 열린 유턴기업 현장 간담회를 주재하고 있다. 사진은 기사와 관련 없음. (산업통상부 제공) 2026.4.27. (ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p><span style=\"font-weight: bold;\">◆ 유턴 인정범위 재설계</span></p>\n\n<p>초기 유턴정책은 경영 여건이 악화된 해외진출 기업의 국내 복귀를 지원하기 위해 도입되어 '유턴' 개념이 협소하게 규정되어 왔다.</p>\n\n<p>반면, 미·일 등 주요국은 형식적 요건보다 첨단전략 분야의 생산역량 확보에 중점을 두고 투자 지원(리쇼어링)을 확대하고 있다.</p>\n\n<p>정부는 이러한 투자환경 변화에 맞게 유턴 인정범위를 재설계한다.</p>\n\n<p>이를 위해 올해 중 '유턴법' 관련 법령 정비를 추진하고, 내년부터 본격 시행할 계획이다.</p>\n\n<p>우선, 해외사업장과 국내복귀 사업장에서 생산하는 제품·서비스가 같거나 유사해야 하는 동일성 요건을 완화한다.</p>\n\n<p>유사성 판단 시 기존의 소재·부품, 생산공정뿐 아니라 기능·용도, 핵심기술, 공급망 등도 종합적으로 고려할 수 있도록 개선해 탄력적으로 운영할 예정이다. 이를 통해, 기업의 신산업 진출과 사업구조 고도화를 위한 투자 활성화를 뒷받침한다.</p>\n\n<p>아울러, 청산·양도·축소 등 해외사업장 구조조정 요건에 대한 면제 범위도 확대한다.</p>\n\n<p>기존에는 '첨단산업·공급망' 관련 특정 기술이나 제품에 대한 확인서를 보유하고 국내복귀 사업장에서 생산·활용하는 경우만 면제되었으나, 앞으로는 첨단산업·공급망 분야에 해당하면서 핵심 생산시설(마더팩토리) 투자로 인정되는 경우에도 면제할 예정이다.</p>\n\n<p>이를 통해 형식적 요건을 넘어 첨단 제조·혁신역량의 국내 확보를 적극 추진할 계획이다.</p>\n\n<p><span style=\"font-weight: bold;\">◆ 유턴보조금 지원체계 개편</span></p>\n\n<p>기존 유턴보조금 체계는 기준표에 따라 보조비율이 일률적으로 적용되는 방식으로 운영되어, 지방 중심의 우수한 유턴기업 유치에는 한계가 있었다.</p>\n\n<p>이에 지방투자 확대와 첨단전략분야 유턴 촉진을 위해 '협상' 방식으로 보조금 지원체계를 전면 개편한다.</p>\n\n<p>'협상' 방식은 외국인투자기업에 대한 현금지원 정책을 참고하여, 경제효과가 큰 첨단산업·공급망 등 전략 분야 또는 대규모 투자 프로젝트를 대상으로 정부와 기업 간 협의를 거쳐 지원규모를 결정하는 방식이다.</p>\n\n<p>특히 지원규모는 ▲비수도권 투자 ▲청년 중심 고용 창출 ▲첨단전략기술 ▲마더팩토리 해당 여부 등을 종합 고려해 차등 산정할 계획이다.</p>\n\n<p>또한 지방투자와 첨단전략기술 도입을 적극 유도하기 위해 기존의 정액 한도 방식 대신 보조비율 상한 중심으로 기준을 개편할 예정이다.</p>\n\n<p>현행 지원 한도는 투자 건당 300억 원(첨단 400억 원)이고 기업당 600억 원이다.</p>\n\n<p>일반 업종과 소규모 투자는 현행 방식으로 운영하되, 기본 보조비율을 지방투자촉진보조금 수준에 맞추어 합리적으로 조정할 예정이다.</p>\n\n<p><span style=\"font-weight: bold;\">◆ 평가·관리 강화 및 이행요건 합리화</span></p>\n\n<p>그동안 유턴기업으로 선정된 이후, 실제 국내복귀 투자가 계획대로 이행되지 않아 지정이 취소되는 사례가 다수 발생해 왔다.</p>\n\n<p>이에 정부는 유턴기업 선정 단계서부터 국내 투자계획의 구체성, 투자 이행역량 등에 대한 평가를 강화하여 부실기업의 유입을 방지하고 투자 이행률을 제고할 계획이다.</p>\n\n<p>유턴기업 선정 평가와 보조금 심의 절차를 더욱 체계적으로 운영하기 위해 국내복귀실무위원회 신설을 추진하고, '협상' 방식 보조금 지원체계를 뒷받침할 세부 절차도 마련할 예정이다.</p>\n\n<p>아울러 보조금을 지원받은 유턴기업의 투자 이행 여부를 더욱 면밀히 관리·점검하기 위해 이행 기간을 현행 3년에서 지원 규모에 따라 확대한다.</p>\n\n<p>동시에 제조현장의 자동화 추세와 산업구조 변화를 반영하여 이행 요건도 합리적으로 개선할 계획이다.</p>\n\n<p>기존 사업장의 고용 면적 유지 현황은 지속 관리하되, 이를 보조금 정산기준에 기계적으로 연동하던 방식은 개선한다.</p>\n\n<p>투자 이행과정에서 당초 계획보다 더 많은 고용을 창출한 기업에 대해서는 사후 인센티브를 부여할 수 있는 방안도 도입할 예정이다.</p>\n\n<p><span style=\"font-weight: bold;\">◆ 전략적 유치 및 투자이행 밀착 지원</span></p>\n\n<p>정부는 첨단산업, 제조 AI(M.AX), 공급망 분야를 중심으로 핵심 역량을 보유한 잠재 유턴기업을 선제적으로 발굴·유치할 계획이다.</p>\n\n<p>코트라 해외 무역관을 통해 관심 기업을 지속 발굴하는 한편, 유턴기업 대상 '지방정부 IR 플랫폼'을 구축해 지방정부의 투자유치 활동도 적극 지원할 예정이다.</p>\n\n<p>또한, 정부는 프로젝트별 전담 매니저(PM)를 지정해 투자 검토부터 이행까지 전 과정을 밀착 지원한다.</p>\n\n<p>관계부처·지방정부·업계 등이 참여하는 '유턴투자지원단'을 구성해 유턴 기업과 소통을 강화하고, 투자 과정에서 발생하는 애로사항을 신속히 해소할 방침이다. 이를 통해, 성공 사례를 확산하고 선순환 유턴 생태계를 조성해 나갈 계획이다.</p>\n\n<p>김정관 산업부 장관은 \"유턴은 단순한 공장 이전을 넘어 기술 개발과 생산, 공급망의 중심을 어디에 둘 것인가에 대한 전략적 선택이 되고 있다\"고 강조하며 \"이번 개선방안을 신속히 이행하여 지방 중심의 유턴을 촉진하고, 양질의 유턴기업을 적극 유치할 수 있도록 지원하겠다\"고 덧붙였다.</p>\n\n<p>문의: 산업통상부 해외투자과(044-203-4065), 기획예산처 산업중소벤처예산과(044-214-2732)</p>\n\n<p><br /></p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "규모 성남 신규택지",
+      "title_hint": "정부, 6300호 규모 성남 신규택지 1년 앞당겨 2029년 착공",
+      "category": "living",
+      "trend_score": 95.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "정부, 6300호 규모 성남 신규택지 1년 앞당겨 2029년 착공",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965434&call_from=rsslink",
+          "published_at": "2026-05-29T07:52:00",
+          "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965434&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>정부가 6300호 규모의 성남 신규택지 추진일정을 가속화해, 착공시기를 당초 계획인 2030년에서 2029년으로 1년 앞당긴다.&nbsp;</p>\n\n<p>구윤철 부총리 겸 재정경제부장관은 29일 오후 정부서울청사에서 열린 부동산관계장관회의 겸 주택공급촉진 관계장관회의를 주재해 '주택시장 동향 및 대응방향' 등을 논의하고 이 같이 밝혔다.&nbsp;&nbsp;</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>구윤철 경제부총리 겸 재정경제부 장관이 29일 서울 종로구 세종대로 정부서울청사에서 열린 비상경제본부 희의 겸 경제관계장관회의에서 모두 발언을 하고 있다. 이날 회의에서 참석자들은 중동전쟁 관련 대응상황 점검을 논의했다.(ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>구 부총리는 \"정부는 정책의 최우선순위를 주택공급 확대와 조기 착공에 두고 총력을 다하고 있다\"고 강조했다.&nbsp;</p>\n\n<p>먼저, 1.29 공급방안은 실제 착공까지 신속하게 이어지도록 전 과정에 대한 철저한 관리를 유지해 나간다.&nbsp;</p>\n\n<p>특히, 6300호 규모의 성남 신규택지는 계획수립절차를 통합하는 등 추진일정을 가속화해, 착공시기를 당초 계획인 2030년에서 2029년으로 1년 앞당긴다.&nbsp;</p>\n\n<p>2800호 규모의 동대문구, 은평구 부지도 기관별 이전계획을 연내 조속하게 수립하는 등 관련 절차를 빠르게 추진할 계획이다.&nbsp;</p>\n\n<p>이어서, 구 부총리는 \"주택사업 현장의 걸림돌을 확실히 제거하여, 최대한 빠르게 착공이 이뤄지도록 하겠다\"고 언급했다.&nbsp;</p>\n\n<p>현재 수도권 규제지역에서 약 10만호 규모의 주택 착공이 PF 자금조달 및 자재수급 애로, 공사비 상승 등의 사유로 1년 이상 지연되고 있는 상황이다.&nbsp;</p>\n\n<p>정부는 착공 지연요인을 현장에서 밀착 점검하고 애로 해소를 전방위적으로 지원하기 위해, 국토부 중심으로 관계부처와 지자체 등이 참여하는 '범정부 주택공급 현장 애로해소 지원센터'를 오늘부터 가동한다.&nbsp;</p>\n\n<p>구 부총리는 \"특히, 공공 부분에서의 공급물량이 계획대로 확보될 수 있도록, 공공주택 사업의 절차 관리를 한층 강화하겠다\"고 밝혔다.&nbsp;</p>\n\n<p>정부는 지난해 9월 '주택공급 확대방안'에서 발표한 바와 같이 주택공급 목표를 착공 기준으로 전환한 데 이어 공사비도 착공시점 기준으로 관리하는 한편, 남양주왕숙·고양창릉·성남복정 제2지구 등 지연되고 있는 사업지별로 그 원인을 점검해 사업에 차질이 없도록 관리해 나갈 계획이다.</p>\n\n<p>마지막으로 구 부총리는 \"공급정책의 실효성을 저해하는 부동산 불법행위 대응에도 만전을 기하겠다\"고 덧붙였다.&nbsp;</p>\n\n<p>국토부를 중심으로 1.29 공급방안에 포함된 신규 주택공급지 인근에서의 투기의심거래를 집중 조사하고 있으며, 수도권 규제지역 등 43개단지 2만 5000세대에 대한 부정청약 의심사례 전수조사 및 검증도 진행 중이다.&nbsp;</p>\n\n<p>개발정보나 부동산가격 등과 같은 허위정보를 유포하는 행위에 대해서도 대응 실효성을 높여나갈 계획이다.</p>\n\n<p>문의 : 재정경제부 부동산시장과(044-215-2850), 국토교통부 주택정책과(044-201-3317), 공공택지기획과(4441), 금융위원회 금융정책과(02-2100-2830), 국무조정실 부동산감독추진단(044-200-2645)</p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "특별한 희생에 특별한 보상",
+      "title_hint": "특별한 희생에 특별한 보상…\"국민 눈높이에 맞는 예우 실현\"",
+      "category": "living",
+      "trend_score": 95.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "특별한 희생에 특별한 보상…\"국민 눈높이에 맞는 예우 실현\"",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965437&call_from=rsslink",
+          "published_at": "2026-05-29T07:50:00",
+          "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965437&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"><a href=\"https://www.korea.kr/1st_together/\" target=\"_blank\"><img alt=\"국민주권정부 출범 1주년 슬로건\" src=\"https://www.korea.kr/newsWeb/resources/attaches/2026.05/29/slogan_5(6).jpg\" /></a></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b></b></figcaption></figure></div>\n\n<p>국가보훈부가 국민주권정부 출범 1주년을 맞아 '특별한 희생에 특별한 보상'을 위한 보훈의 국가책임을 강화하고 든든한 기틀을 다졌다고 29일&nbsp;밝혔다.</p>\n\n<p><span style=\"font-weight: bold;\">◆ 특별한 희생에 합당한 보상·복지 강화</span></p>\n\n<p>국가보훈부는 지난 1년간 독립, 호국, 민주를 아우르는 균형 잡힌 보훈정책을 추진하여 보상과 예우의 사각지대를 적극 해소하고 고령 보훈대상자를 위한 빈틈없는 의료·돌봄 체계를 구축했다.</p>\n\n<p>올해 5월 '독립유공자법' 개정으로 독립유공자의 사망 시점과 무관하게 손자녀까지 보상금을 지급하는 등 독립유공자 유족 보상 범위를 확대하여 내년부터 2300여 명이 신규 혜택을 받게 된다.</p>\n\n<p>또한 올해 3월부터 고령·저소득 참전유공자 배우자를 대상으로 한 생계지원금 제도를 역대 정부 최초로 신설하여 1만 7000여 명에게 매월 15만 원을 지원한다.</p>\n\n<p>보훈병원이 없는 강원·제주 권역에 보훈병원에 준하는 의료서비스를 제공하는 '준보훈병원' 제도를 도입하기 위해 올해 하반기 시범사업에 착수한다.</p>\n\n<p>의료접근성 확대를 위해 지난해 6월 정부 출범 당시 904개소였던 보훈위탁의료기관을 올해 5월 현재 1025개소로 121개소 확충했으며, 2030년까지 2000개소 달성을 목표로 추진 중이다.</p>\n\n<p>이와 함께 독립유공자 유족의 위탁의료기관 이용 연령을 기존 75세에서 65세로 낮춰 의료혜택을 확대했다.</p>\n\n<p>또한 고령 보훈대상자의 건강한 노후를 위해 현재 222병상인 수원보훈요양원을 100병상 증축하고, 충북권에 100병상 규모 보훈요양원 신축을 차질 없이 추진 중이다.</p>\n\n<p>고령·독거 유공자의 고독사 예방을 위한 'AI 기반 안부확인서비스'도 올해 4월부터 시행하고 있다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>권오을 국가보훈부 장관이 22일 오전 서울시 용산구 백범김구기념관 컨벤션홀에서 열린 독립유공자 후손 장학금 업무협약 및 수여식에서 정수용 빙그레공익재단 이사장과 주요내빈 및 장학생들과 함께 기념촬영을 하고 있다.(ⓒ뉴스1, 국가보훈부 제공, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p><span style=\"font-weight: bold;\">◆ 국민과 함께 기억하고 계승하는 보훈문화 구현</span></p>\n\n<p>국가보훈부는 독립·호국·민주의 역사를 국민과 함께 공유하고, 독립유공자에 대한 영예로운 예우를 실현하고 있다.</p>\n\n<p>지난해 광복 80년 계기 코리아 메모리얼 페스타 등 다양한 국민참여 보훈문화행사를 개최했으며, 참여자 종합만족도 92.4%를 기록했다.</p>\n\n<p>또한 올해 유네스코 지정 '백범 김구 탄생 150주년'을 맞아 음악회, 창작 판소리 공연 등 계기 사업을 추진하고 있다.</p>\n\n<p>생존 애국지사의 특별예우금을 월 157만~172만 원에서 315만~345만 원으로 인상함으로써 예우 수준을 격상했다.</p>\n\n<p>미서훈 독립유공자 발굴·포상을 적극 추진하여 지난해 502명과 올해 3·1절 계기 112명을, 4·19혁명유공자는 2023년 31명 포상 후 3년 만에 70명을 포상했다.</p>\n\n<p>독립유공자 유해봉환을 지속 추진하여 광복 80년 계기로 지난해 문양목 지사 등 6위를 모셔 왔고, 올해 4월에는 마지막 국외 거주 애국지사인 이하전 지사의 유해를 국내 봉환했다.</p>\n\n<p>올해 4월 제14대 독립기념관장 취임 이후 독립기념관 정상화 노력을 통해 4월까지 관람객이 전년 동기간 대비 32만 명에서 48만 명으로 크게 증가했다.</p>\n\n<p>이외에도 효창공원을 국민 친화적 역사공원으로 탈바꿈하기 위한 '국립효창독립공원' 조성도 추진 중이다.</p>\n\n<p>올해 2월 국외 사적지 전수조사 계획을 발표했고, 5월부터 상하이 스탬프 투어를 실시하는 등 국외 사적지 관리 및 활성화도 강화하고 있다.</p>\n\n<p><span style=\"font-weight: bold;\">◆ 국가헌신의 사회적 존중 및 국제보훈협력 확대</span></p>\n\n<p>국가보훈부는 이와 함께 군 복무에 대한 자부심을 가질 수 있도록 국가책임을 강화하고, 유엔참전국과 연대를 공고히 구축했다.</p>\n\n<p>공공부문 임금 및 호봉 책정 시 제대군인의 의무복무기간 반영을 의무화하는 '제대군인법'을 올해 2월 개정하여 군 경력이 사회에서 온전히 인정받는 기반을 마련했다.</p>\n\n<p>장기복무 제대군인의 공공시설 이용료 할인 혜택도 기존 고궁·능원에서 국공립 수목원·자연휴양림·공연장·체육시설까지 대폭 확대할 수 있도록 제대군인법 시행령을 개정했다.</p>\n\n<p>또한, 치료-전역-보훈 등록까지 원스톱으로 신속하게 지원하는 '국가책임형 부상장병 통합지원서비스'를 도입했다.</p>\n\n<p>6·25참전유공자회, 월남전참전자회, 재일학도의용군동지회 등 보훈단체 회원 범위를 유족까지 확대하는 '국가유공자단체법' 등 2개 법률을 개정하여 단체의 지속가능성을 확보했다.</p>\n\n<p>아울러, 고령 국가유공자에 대한 '보훈회관 점심지원 사업'을 실시하여 63개 지자체가 참여하고 있으며 전국으로 확대해 나갈 계획이다.</p>\n\n<p>6·25전쟁 유엔참전용사와 유가족에 대한 예우와 지원을 지속적으로 전개하고 있다.</p>\n\n<p>태국·네덜란드·프랑스 등 유엔참전용사 유해 5위를 봉환하여 부산 유엔기념공원에 안장했다. 나아가 지난해 튀르키예, 올해 필리핀·프랑스·인도 등 주요 유엔참전국과 양해각서를 체결함으로써 국제보훈 교류와 협력을 확대하고 있다.</p>\n\n<p>권오을 국가보훈부 장관은 \"국민주권정부 출범 이후 지난 1년은 국가를 위한 희생과 헌신이 제대로 예우받는 나라, 특별한 희생에 합당한 보상과 지원으로 보답하는 나라를 만들기 위해 국가책임을 강화하고 기틀을 다지는 시간이었다\"면서 \"국민이 주인인 나라의 바탕에는 영웅들의 고귀한 희생과 헌신이 있었음을 늘 기억하며, 앞으로도 국가유공자와 보훈가족 그리고 국민 눈높이에 부합하는 예우를 실현함으로써 보훈이 국민통합의 구심점이 될 수 있도록 최선을 다하겠다\"고 밝혔다.</p>\n\n<p>문의 : 국가보훈부 보훈미래전략담당관(044-202-5045)</p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "국민성장펀드 퓨리오사 바이오 건에",
+      "title_hint": "국민성장펀드, 퓨리오사 AI·SK바이오 등 5건에 자금지원 승인",
+      "category": "living",
+      "trend_score": 95.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "국민성장펀드, 퓨리오사 AI·SK바이오 등 5건에 자금지원 승인",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965438&call_from=rsslink",
+          "published_at": "2026-05-29T07:45:00",
+          "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965438&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>금융위원회는 28일 개최된 국민성장펀드 기금운용심의회에서 퓨리오사 AI에 3700억 원 첨단기금 직접 투자(국민성장펀드 총 8000억 원 내외 예정) 등 총 3건의 메가프로젝트(2차)와 2건의 일반프로젝트에 대한 자금지원을 승인했다.</p>\n\n<p>금융위원회는 지난 4월 국민성장펀드의 자문기구인 전략위원회 제2차 회의에서 바이오·디스플레이 등 조기에 실질적 성과 창출이 가능한 사업과 함께 '소버린 AI 생태계 확장' 프로젝트 등 6건의 2차 메가프로젝트를 선정한 바 있다.</p>\n\n<p>이번 기금운용심의회에서는 2차 메가프로젝트 중 '차세대 바이오·백신 설비구축 및 R&amp;D 지원자금' '국산 AI 반도체 개발을 위한 증자자금' 등 첨단산업 생태계 및국가 경제 전반에 파급 효과가 큰 사업 위주로 자금지원을 승인했다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>서울 중구 신한은행 영업점에 국민참여형 국민성장펀드 홍보물이 놓여져 있다. 2026.5.21 (ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>퓨리오사 AI는 국내 AI 반도체 팹리스 기업으로, 양산에 돌입한 2세대 NPU인 레니게이드(5나노·HBM3)의 생산 확대와 함께, HBM4를 기반으로 설계된 차세대 제품(가칭 스토크)의 개발을 위해 직접투자자금 8000억 원을 조달할 계획이다.</p>\n\n<p>'차세대 바이오·백신 설비구축 및 R&amp;D 지원자금'을 위한 사업도 자금 지원이 이뤄진다.</p>\n\n<p>백신의 생산 및 판매를 주력 사업으로 하는 SK바이오사이언스가 '21가 폐렴구균 백신(PCV21) 상업화를 위해 글로벌 임상 3상에 필요한 R&amp;D 자금을 충당하고 안동에 국내 최대 규모의 백신생산 공장을 증설하는 사업도 3000억 원 규모의 저리 대출 투자가 결정됐다.</p>\n\n<p>AI 인프라 확보를 위한 데이터센터 건설 관련 인프라 투융자도 이뤄진다.&nbsp;</p>\n\n<p>영업이익 기준&nbsp;국내 3위의&nbsp;게임회사인 스마일게이트그룹이 경기도 고양시에 각각 AI 데이터센터를 구축·운영하는 사업으로, 국민성장펀드(첨단전략산업기금)는 지분투자 2500억 원 및 후순위대출 2500억 원의 투융자를 지원한다.</p>\n\n<p>중견기업인 엘앤에프플러스 LFP 양극재 생산공장 구축 사업에는 2200억 원 규모의 12년 장기·저리대출을 지원할 계획이다.&nbsp;</p>\n\n<p>충북 음성소재 데이터센터용 전력기기(배전반) 생산기업인 ㈜근우에 대해서도 200억 원 규모의 10년 장기·저리대출을 지원할 방침이다.</p>\n\n<p>이번에 5건의 4조 1400억&nbsp;원 사업이 승인되면서 국민성장펀드는 누적 16건에 12조 5000억&nbsp;원 사업을 승인했다. 첨단전략산업기금 누적 승인액은 5조 1700억&nbsp;원이다.</p>\n\n<p>문의 : 금융위원회 국민성장펀드총괄과(02-2224-2014), 과학기술정보통신부 정보통신산업기반과(044-202-6244) 정보통신방송기술정책과(6232), 산업통상부 배터리전기전자과(044-203-4263) 인공지능바이오융합산업과(4292) 반도체과(4274), 산업은행 국민성장펀드부문(02-787-3932)</p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+          "authority": 4
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "05월 지원금",
+        "title_hint": "05월 지원금 핵심 정리",
+        "category": "living",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "대한민국 정책브리핑",
+            "url": "https://www.korea.kr/",
+            "published_at": null,
+            "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "05월 지원금 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-지원금-a110f64c",
+      "excerpt": "05월 지원금 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 지원금은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 지원금를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 지원금 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 지원금와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [대한민국 정책브리핑](https://www.korea.kr/)\n",
+      "tags": [
+        "living",
+        "05월",
+        "지원금"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 지원금 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 지원금 핵심 정리: 지금 확인할 포인트. Keyword: 05월 지원금. Context: ## 한눈에 보기 05월 지원금은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 지원금를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 지원금 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 . Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.429267",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 청년",
+        "title_hint": "05월 청년 핵심 정리",
+        "category": "living",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "대한민국 정책브리핑",
+            "url": "https://www.korea.kr/",
+            "published_at": null,
+            "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "05월 청년 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-청년-aed92a67",
+      "excerpt": "05월 청년 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 청년은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 청년를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 청년 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 청년와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [대한민국 정책브리핑](https://www.korea.kr/)\n",
+      "tags": [
+        "living",
+        "05월",
+        "청년"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 청년 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 청년 핵심 정리: 지금 확인할 포인트. Keyword: 05월 청년. Context: ## 한눈에 보기 05월 청년은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 청년를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 청년 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.430746",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 AI",
+        "title_hint": "05월 AI 핵심 정리",
+        "category": "tech",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "제조사 공식 홈페이지와 개발자 블로그",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "제품/기술 발표 원문 확인용",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "05월 AI 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-ai-4b6fd888",
+      "excerpt": "05월 AI 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 AI는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 AI를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 AI 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 AI와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [제조사 공식 홈페이지와 개발자 블로그](https://developers.googleblog.com/)\n",
+      "tags": [
+        "tech",
+        "05월",
+        "AI"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 AI 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 AI 핵심 정리: 지금 확인할 포인트. Keyword: 05월 AI. Context: ## 한눈에 보기 05월 AI는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 AI를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 AI 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.432028",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 아이폰",
+        "title_hint": "05월 아이폰 핵심 정리",
+        "category": "tech",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "제조사 공식 홈페이지와 개발자 블로그",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "제품/기술 발표 원문 확인용",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "05월 아이폰 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-아이폰-89d65684",
+      "excerpt": "05월 아이폰 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 아이폰은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 아이폰를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 아이폰 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 아이폰와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [제조사 공식 홈페이지와 개발자 블로그](https://developers.googleblog.com/)\n",
+      "tags": [
+        "tech",
+        "05월",
+        "아이폰"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 아이폰 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 아이폰 핵심 정리: 지금 확인할 포인트. Keyword: 05월 아이폰. Context: ## 한눈에 보기 05월 아이폰은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 아이폰를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 아이폰 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.433337",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 금리",
+        "title_hint": "05월 금리 핵심 정리",
+        "category": "finance",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "금융위원회 보도자료",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "05월 금리 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-금리-2f50a9a5",
+      "excerpt": "05월 금리 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 금리는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 금리를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 금리 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 금리와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [금융위원회 보도자료](https://www.fsc.go.kr/)\n",
+      "tags": [
+        "finance",
+        "05월",
+        "금리"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 금리 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 금리 핵심 정리: 지금 확인할 포인트. Keyword: 05월 금리. Context: ## 한눈에 보기 05월 금리는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 금리를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 금리 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해. Visual mood: trustworthy financial briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.434700",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 환율",
+        "title_hint": "05월 환율 핵심 정리",
+        "category": "finance",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "금융위원회 보도자료",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "05월 환율 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-환율-f533a285",
+      "excerpt": "05월 환율 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 환율은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 환율를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 환율 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 환율와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [금융위원회 보도자료](https://www.fsc.go.kr/)\n",
+      "tags": [
+        "finance",
+        "05월",
+        "환율"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 환율 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 환율 핵심 정리: 지금 확인할 포인트. Keyword: 05월 환율. Context: ## 한눈에 보기 05월 환율은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 환율를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 환율 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해. Visual mood: trustworthy financial briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.435952",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 서울 맛집",
+        "title_hint": "05월 서울 맛집 핵심 정리",
+        "category": "local",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "05월 서울 맛집 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-서울-맛집-ed91c1ca",
+      "excerpt": "05월 서울 맛집 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 서울 맛집은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 서울 맛집를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 서울 맛집 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 서울 맛집와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "local",
+        "05월",
+        "서울",
+        "맛집"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 서울 맛집 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 서울 맛집 핵심 정리: 지금 확인할 포인트. Keyword: 05월 서울 맛집. Context: ## 한눈에 보기 05월 서울 맛집은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 서울 맛집를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 서울 맛집 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고. Visual mood: curated local guide mood, maps and city details without logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.437344",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 부산 여행",
+        "title_hint": "05월 부산 여행 핵심 정리",
+        "category": "local",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "05월 부산 여행 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-부산-여행-9d802178",
+      "excerpt": "05월 부산 여행 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 부산 여행은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 부산 여행를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 부산 여행 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 부산 여행와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "local",
+        "05월",
+        "부산",
+        "여행"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 부산 여행 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 부산 여행 핵심 정리: 지금 확인할 포인트. Keyword: 05월 부산 여행. Context: ## 한눈에 보기 05월 부산 여행은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 부산 여행를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 부산 여행 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고. Visual mood: curated local guide mood, maps and city details without logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.438757",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 신청방법",
+        "title_hint": "05월 신청방법 핵심 정리",
+        "category": "living",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "대한민국 정책브리핑",
+            "url": "https://www.korea.kr/",
+            "published_at": null,
+            "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "05월 신청방법 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-신청방법-8e8526ca",
+      "excerpt": "05월 신청방법 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 신청방법은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 신청방법를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 신청방법 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 신청방법와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [대한민국 정책브리핑](https://www.korea.kr/)\n",
+      "tags": [
+        "living",
+        "05월",
+        "신청방법"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 신청방법 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 신청방법 핵심 정리: 지금 확인할 포인트. Keyword: 05월 신청방법. Context: ## 한눈에 보기 05월 신청방법은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 신청방법를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 신청방법 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.439825",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 제철음식",
+        "title_hint": "05월 제철음식 핵심 정리",
+        "category": "living",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "대한민국 정책브리핑",
+            "url": "https://www.korea.kr/",
+            "published_at": null,
+            "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "05월 제철음식 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-제철음식-e5d54eb7",
+      "excerpt": "05월 제철음식 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 제철음식은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 제철음식를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 제철음식 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 제철음식와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [대한민국 정책브리핑](https://www.korea.kr/)\n",
+      "tags": [
+        "living",
+        "05월",
+        "제철음식"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 제철음식 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 제철음식 핵심 정리: 지금 확인할 포인트. Keyword: 05월 제철음식. Context: ## 한눈에 보기 05월 제철음식은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 제철음식를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 제철음식 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.440973",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 생활비",
+        "title_hint": "05월 생활비 핵심 정리",
+        "category": "living",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "대한민국 정책브리핑",
+            "url": "https://www.korea.kr/",
+            "published_at": null,
+            "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "05월 생활비 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-생활비-fae2150b",
+      "excerpt": "05월 생활비 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 생활비는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 생활비를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 생활비 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 생활비와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [대한민국 정책브리핑](https://www.korea.kr/)\n",
+      "tags": [
+        "living",
+        "05월",
+        "생활비"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 생활비 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 생활비 핵심 정리: 지금 확인할 포인트. Keyword: 05월 생활비. Context: ## 한눈에 보기 05월 생활비는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 생활비를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 생활비 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 . Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.442028",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 혜택",
+        "title_hint": "05월 혜택 핵심 정리",
+        "category": "living",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "대한민국 정책브리핑",
+            "url": "https://www.korea.kr/",
+            "published_at": null,
+            "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "05월 혜택 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-혜택-bd23ef8b",
+      "excerpt": "05월 혜택 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 혜택은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 혜택를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 혜택 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 혜택와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [대한민국 정책브리핑](https://www.korea.kr/)\n",
+      "tags": [
+        "living",
+        "05월",
+        "혜택"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 혜택 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 혜택 핵심 정리: 지금 확인할 포인트. Keyword: 05월 혜택. Context: ## 한눈에 보기 05월 혜택은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 혜택를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 혜택 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.443098",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 갤럭시",
+        "title_hint": "05월 갤럭시 핵심 정리",
+        "category": "tech",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "제조사 공식 홈페이지와 개발자 블로그",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "제품/기술 발표 원문 확인용",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "05월 갤럭시 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-갤럭시-9ff952d2",
+      "excerpt": "05월 갤럭시 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 갤럭시는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 갤럭시를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 갤럭시 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 갤럭시와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [제조사 공식 홈페이지와 개발자 블로그](https://developers.googleblog.com/)\n",
+      "tags": [
+        "tech",
+        "05월",
+        "갤럭시"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 갤럭시 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 갤럭시 핵심 정리: 지금 확인할 포인트. Keyword: 05월 갤럭시. Context: ## 한눈에 보기 05월 갤럭시는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 갤럭시를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 갤럭시 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.444442",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 노트북",
+        "title_hint": "05월 노트북 핵심 정리",
+        "category": "tech",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "제조사 공식 홈페이지와 개발자 블로그",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "제품/기술 발표 원문 확인용",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "05월 노트북 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-노트북-ecfc0c33",
+      "excerpt": "05월 노트북 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 노트북은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 노트북를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 노트북 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 노트북와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [제조사 공식 홈페이지와 개발자 블로그](https://developers.googleblog.com/)\n",
+      "tags": [
+        "tech",
+        "05월",
+        "노트북"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 노트북 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 노트북 핵심 정리: 지금 확인할 포인트. Keyword: 05월 노트북. Context: ## 한눈에 보기 05월 노트북은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 노트북를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 노트북 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.445832",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 스펙",
+        "title_hint": "05월 스펙 핵심 정리",
+        "category": "tech",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "제조사 공식 홈페이지와 개발자 블로그",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "제품/기술 발표 원문 확인용",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "05월 스펙 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-스펙-03f2582a",
+      "excerpt": "05월 스펙 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 스펙은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 스펙를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 스펙 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 스펙와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [제조사 공식 홈페이지와 개발자 블로그](https://developers.googleblog.com/)\n",
+      "tags": [
+        "tech",
+        "05월",
+        "스펙"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 스펙 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 스펙 핵심 정리: 지금 확인할 포인트. Keyword: 05월 스펙. Context: ## 한눈에 보기 05월 스펙은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 스펙를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 스펙 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.447081",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 비교",
+        "title_hint": "05월 비교 핵심 정리",
+        "category": "tech",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "제조사 공식 홈페이지와 개발자 블로그",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "제품/기술 발표 원문 확인용",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "05월 비교 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-비교-ebba2e53",
+      "excerpt": "05월 비교 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 비교는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 비교를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 비교 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 비교와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [제조사 공식 홈페이지와 개발자 블로그](https://developers.googleblog.com/)\n",
+      "tags": [
+        "tech",
+        "05월",
+        "비교"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 비교 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 비교 핵심 정리: 지금 확인할 포인트. Keyword: 05월 비교. Context: ## 한눈에 보기 05월 비교는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 비교를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 비교 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.448294",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 부동산",
+        "title_hint": "05월 부동산 핵심 정리",
+        "category": "finance",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "금융위원회 보도자료",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "05월 부동산 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-부동산-6686f8f5",
+      "excerpt": "05월 부동산 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 부동산은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 부동산를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 부동산 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 부동산와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [금융위원회 보도자료](https://www.fsc.go.kr/)\n",
+      "tags": [
+        "finance",
+        "05월",
+        "부동산"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 부동산 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 부동산 핵심 정리: 지금 확인할 포인트. Keyword: 05월 부동산. Context: ## 한눈에 보기 05월 부동산은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 부동산를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 부동산 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 . Visual mood: trustworthy financial briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.449580",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 대출",
+        "title_hint": "05월 대출 핵심 정리",
+        "category": "finance",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "금융위원회 보도자료",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "05월 대출 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-대출-337e69c6",
+      "excerpt": "05월 대출 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 대출은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 대출를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 대출 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 대출와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [금융위원회 보도자료](https://www.fsc.go.kr/)\n",
+      "tags": [
+        "finance",
+        "05월",
+        "대출"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 대출 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 대출 핵심 정리: 지금 확인할 포인트. Keyword: 05월 대출. Context: ## 한눈에 보기 05월 대출은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 대출를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 대출 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해. Visual mood: trustworthy financial briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.450716",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 연금",
+        "title_hint": "05월 연금 핵심 정리",
+        "category": "finance",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "금융위원회 보도자료",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "05월 연금 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-연금-3d4b34a3",
+      "excerpt": "05월 연금 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 연금은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 연금를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 연금 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 연금와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [금융위원회 보도자료](https://www.fsc.go.kr/)\n",
+      "tags": [
+        "finance",
+        "05월",
+        "연금"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 연금 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 연금 핵심 정리: 지금 확인할 포인트. Keyword: 05월 연금. Context: ## 한눈에 보기 05월 연금은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 연금를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 연금 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해. Visual mood: trustworthy financial briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.451904",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 세금",
+        "title_hint": "05월 세금 핵심 정리",
+        "category": "finance",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "금융위원회 보도자료",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "05월 세금 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-세금-4e9cf304",
+      "excerpt": "05월 세금 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 세금은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 세금를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 세금 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 세금와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [금융위원회 보도자료](https://www.fsc.go.kr/)\n",
+      "tags": [
+        "finance",
+        "05월",
+        "세금"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 세금 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 세금 핵심 정리: 지금 확인할 포인트. Keyword: 05월 세금. Context: ## 한눈에 보기 05월 세금은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 세금를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 세금 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해. Visual mood: trustworthy financial briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.453179",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 제주 카페",
+        "title_hint": "05월 제주 카페 핵심 정리",
+        "category": "local",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "05월 제주 카페 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-제주-카페-7c2d7229",
+      "excerpt": "05월 제주 카페 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 제주 카페는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 제주 카페를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 제주 카페 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 제주 카페와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "local",
+        "05월",
+        "제주",
+        "카페"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 제주 카페 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 제주 카페 핵심 정리: 지금 확인할 포인트. Keyword: 05월 제주 카페. Context: ## 한눈에 보기 05월 제주 카페는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 제주 카페를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 제주 카페 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고. Visual mood: curated local guide mood, maps and city details without logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.454347",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 강릉 여행",
+        "title_hint": "05월 강릉 여행 핵심 정리",
+        "category": "local",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "05월 강릉 여행 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-강릉-여행-480671ce",
+      "excerpt": "05월 강릉 여행 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 강릉 여행은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 강릉 여행를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 강릉 여행 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 강릉 여행와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "local",
+        "05월",
+        "강릉",
+        "여행"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 강릉 여행 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 강릉 여행 핵심 정리: 지금 확인할 포인트. Keyword: 05월 강릉 여행. Context: ## 한눈에 보기 05월 강릉 여행은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 강릉 여행를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 강릉 여행 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고. Visual mood: curated local guide mood, maps and city details without logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.455484",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "05월 전주 맛집",
+        "title_hint": "05월 전주 맛집 핵심 정리",
+        "category": "local",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "05월 전주 맛집 핵심 정리: 지금 확인할 포인트",
+      "slug": "05월-전주-맛집-5c4b5a09",
+      "excerpt": "05월 전주 맛집 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n05월 전주 맛집은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n05월 전주 맛집를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n05월 전주 맛집 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 05월 전주 맛집와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "local",
+        "05월",
+        "전주",
+        "맛집"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "05월 전주 맛집 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 05월 전주 맛집 핵심 정리: 지금 확인할 포인트. Keyword: 05월 전주 맛집. Context: ## 한눈에 보기 05월 전주 맛집은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 05월 전주 맛집를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 05월 전주 맛집 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고. Visual mood: curated local guide mood, maps and city details without logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.456817",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "지방선거 사전투표 신분증만 들고",
+        "title_hint": "29~30일 지방선거 사전투표…'신분증만 들고 가까운 투표소로'",
+        "category": "living",
+        "trend_score": 95.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "29~30일 지방선거 사전투표…'신분증만 들고 가까운 투표소로'",
+            "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965476&call_from=rsslink",
+            "published_at": "2026-05-29T09:07:00",
+            "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965476&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>제9회 전국동시지방선거 사전투표가 29일부터&nbsp;30일까지 이틀간 전국 3571개 사전투표소에서 일제히 실시된다.</p>\n\n<p>행정안전부는 사전투표 첫날인 29일 오전 윤호중 행정안전부 장관이 세종특별자치시 조치원읍 사전투표소를 찾아 모바일 주민등록증을 발급받고 유권자로서 소중한 한 표를 행사했다고 밝혔다.</p>\n\n<p>사전투표는 선거일 당일투표하기 어려운 국민을 위해 마련된 제도로 선거권이 있는 국민이라면 누구나 신분증을 지참해 전국 읍·면·동에 마련된 사전투표소 어디에서나 투표할 수 있다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>제9회 전국동시지방선거 사전투표 첫날인 29일 점심시간 서울 서초구 서초4동주민센터 사전투표소에 유권자들의 발길이 이어지고 있다.(사진=저작권자(c) 연합뉴스, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>먼저, 윤 장관은 조치원읍 행정복지센터 1층 민원실을 방문해 실물 주민등록증과 동일한 법적 효력을 갖는 모바일 주민등록증을 발급받았다.</p>\n\n<p>모바일 주민등록증은 실물 주민등록증을 지참하면 주소지와 상관없이 모든 주민센터 어디에서나 발급받을 수 있으며 관공서, 은행, 공항, 병원 등 현행 주민등록증이 사용되는 모든 곳에서 사용할 수 있다.</p>\n\n<p>이후 윤 장관은 3층 사전투표소를 찾아 발급받은 모바일 주민등록증으로 제9회 전국동시지방선거 사전투표에 참여했다.</p>\n\n<p>이번 지방선거는 시·도지사부터 시·도 교육감, 시·도 및 시·군·구의원까지 총 4227명 지역 일꾼을 뽑는 대규모 선거다.</p>\n\n<p>유권자는 기본적으로 7종의 투표용지를 받아 투표하게 되고, 국회의원 보궐선거까지 포함하면 최대 8종의 투표용지를 받게 된다.</p>\n\n<p>윤호중 장관은 \"지역 주민의 한 사람으로서 소중한 권리를 행사하러 왔다\"며 \"지방선거는 지역의 미래를 책임질 일꾼을 뽑는 중요한 선거인 만큼 6월 3일 투표가 어려운 유권자께서는 꼭 29일이나 30일 가까운 사전투표소에서 투표권을 행사해 주시기 바란다\"고 당부했다.</p>\n\n<p>한편, 김민재 행정안전부 차관도 서울청사에서 차관회의를 마치고 종로구 보건소를 방문해 사전투표에 참여했다.</p>\n\n<p>문의: 행정안전부 선거의회자치법규과(044-205-3380)</p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "지방선거 사전투표 신분증만 들고 핵심 정리: 지금 확인할 포인트",
+      "slug": "지방선거-사전투표-신분증만-들고-23776016",
+      "excerpt": "지방선거 사전투표 신분증만 들고 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n지방선거 사전투표 신분증만 들고는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n지방선거 사전투표 신분증만 들고를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n지방선거 사전투표 신분증만 들고 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 지방선거 사전투표 신분증만 들고와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [29~30일 지방선거 사전투표…'신분증만 들고 가까운 투표소로'](https://www.korea.kr/news/policyNewsView.do?newsId=148965476&call_from=rsslink)\n",
+      "tags": [
+        "living",
+        "지방선거",
+        "사전투표",
+        "신분증만",
+        "들고"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "지방선거 사전투표 신분증만 들고 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 지방선거 사전투표 신분증만 들고 핵심 정리: 지금 확인할 포인트. Keyword: 지방선거 사전투표 신분증만 들고. Context: ## 한눈에 보기 지방선거 사전투표 신분증만 들고는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 지방선거 사전투표 신분증만 들고를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 지방선거 사전투표 신분증만 들고 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.457982",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "초단기간 공공 비정규직에 공정수당",
+        "title_hint": "초단기간 공공 비정규직에 '공정수당' 지급…채용 사전심사도 확대",
+        "category": "living",
+        "trend_score": 95.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "초단기간 공공 비정규직에 '공정수당' 지급…채용 사전심사도 확대",
+            "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965448&call_from=rsslink",
+            "published_at": "2026-05-29T08:30:00",
+            "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965448&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>고용노동부는 '공공부문 비정규직 처우개선 대책'의 후속 조치로 '공공부문 비정규직 처우개선 가이드라인' 및 '공공부문 비정규직 채용사전심사제 운영방안' 개정안을 마련하여 시행한다고 밝혔다.</p>\n\n<p>이번 가이드라인 및 사전심사제 개정안에는 공공부문 비정규직 노동자의 노동가치를 존중해 불공정 고용관행을 근절하고, 고용 불안정성을 보상하는 등 처우 개선을 위한 세부 기준을 담았다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>고용노동부 전경 2025.11.28. (ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>내년부터 적용되는 공정수당과 적정임금의 지급대상과 지급방법을 구체화하고, 각 기관은 내년부터 소속 기간제 노동자가 해당 제도를 적용받을 수 있도록 예산 반영·내부 규정 개정 등 필요한 조치를 취하도록 한다.</p>\n\n<p>업무 특성 등으로 불가피하게 비정규직으로 채용하는 경우에는 최소 1년의 근로계약이 보장되도록 하는 한편, 1월 1일이 휴일이라는 이유로 관행적으로 1월 2일부터 근로계약을 체결하는 것을 지양하도록 한다.</p>\n\n<p>초단시간으로 채용된 노동자에 대해서도 근로시간에 비례하여 공정수당, 주휴수당 등을 지급하도록 명시한다.</p>\n\n<p>처우개선의 지속성 담보를 위해 각 기관의 비정규직 노동자 현황과 임금 등 실태를 매년 관리토록 하고, 특히 전년 대비 비정규직 노동자가 10% 이상 증가한 경우에는 증가 사유도 함께 관리한다.</p>\n\n<p>아울러 각 기관은 가이드라인 준수를 위해 단체협약·취업규칙 등에 규정해야 할 사항은 노사 협의를 통해 최대한 반영하도록 하고, 상급기관은 연 1회 이상 정기적으로 소속기관·산하기관·소관 자회사의 가이드라인 준수여부를 지도·점검한다.</p>\n\n<p>공공부문에서 정규직 채용 원칙 확행을 위해 제도 시행 7년 만에 '공공부문 비정규직 사전심사제 운영방안'을 개정하여 채용 사전심사제의 대상을 확대하고, 형식적 절차가 아닌 비정규직 남용을 사전에 방지하는 실질적 심사 장치로 작동하도록 내실화한다.</p>\n\n<p>우선 심사대상을 2017년 정규직 전환 가이드라인에 따른 1단계 기관에서 자치단체 출연·출자기관, 자회사 등 2단계 기관까지 확대한다.</p>\n\n<p>또한, 파견·용역을 사용하거나 단기 비정규직을 채용하는 경우에도 해당 업무가 상시·지속 업무인지 누락 없이 심사하도록 명확화한다.</p>\n\n<p>비정규직 채용 필요성 심사에 더하여 1년 미만 계약이 불가피한지, 초단시간 근무 형태가 필요한지, 적정임금·공정수당 등 처우개선 예산이 적정하게 편성되었는지 등도 심사하도록 한다.</p>\n\n<p>채용심사의 공정성을 담보하기 위하여 사전심사위원회는 5인 이상으로 구성하고, 외부 위원이 전체 위원의 40% 이상이 되도록 한다.</p>\n\n<p>외부 위원은 전문성을 갖춘 사람으로 위촉하되, 기관의 자문변호사 등은 지양하도록 했다. 고용노동부는 권역별 전문가단을 구성하여 제공할 계획이다.</p>\n\n<p>정부는 매년 사전심사제 운영 현황을 실태조사하고, 심사 실적 및 심사위원회 구성의 적정성 등을 점검할 계획이다.</p>\n\n<p>또한 심사평가위원회를 구성하여 사전심사제 도입 여부 및 내실화 정도를 정성·정량 평가하고, 기관평가 등에 활용하는 방안도 추진한다.</p>\n\n<p>김영훈 노동부 장관은 \"공공부문부터 모범적 사용자로서 비정규직 노동자의 노동가치가 존중받는 일터를 만들어 나가기 위해 가이드라인을 통해 제도화한 것\"이라며 \"공공부문 비정규직 처우개선 대책이 차질 없이 추진될 수 있도록 관계부처와 함께 적극 지도하고, 노동감독·평가 등도 병행하여 현장에서 체감될 수 있도록 하겠다\"고 밝혔다.</p>\n\n<p>문의: &lt;총괄&gt;고용노동부 공공노사관계과(044-202-7662)</p>\n\n<p><br /></p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "초단기간 공공 비정규직에 공정수당 핵심 정리: 지금 확인할 포인트",
+      "slug": "초단기간-공공-비정규직에-공정수당-fe82d360",
+      "excerpt": "초단기간 공공 비정규직에 공정수당 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n초단기간 공공 비정규직에 공정수당은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n초단기간 공공 비정규직에 공정수당를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n초단기간 공공 비정규직에 공정수당 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 초단기간 공공 비정규직에 공정수당와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [초단기간 공공 비정규직에 '공정수당' 지급…채용 사전심사도 확대](https://www.korea.kr/news/policyNewsView.do?newsId=148965448&call_from=rsslink)\n",
+      "tags": [
+        "living",
+        "초단기간",
+        "공공",
+        "비정규직에",
+        "공정수당"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "초단기간 공공 비정규직에 공정수당 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 초단기간 공공 비정규직에 공정수당 핵심 정리: 지금 확인할 포인트. Keyword: 초단기간 공공 비정규직에 공정수당. Context: ## 한눈에 보기 초단기간 공공 비정규직에 공정수당은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 초단기간 공공 비정규직에 공정수당를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 초단기간 공공 비정규직에 공정수당 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.459434",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "새도약기금 장기연체 추가 매입",
+        "title_hint": "새도약기금, 장기연체 9602억 추가 매입…누적 수혜자 75만 명",
+        "category": "living",
+        "trend_score": 95.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "새도약기금, 장기연체 9602억 추가 매입…누적 수혜자 75만 명",
+            "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965472&call_from=rsslink",
+            "published_at": "2026-05-29T08:16:00",
+            "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965472&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>금융위원회는 한국자산관리공사의 새도약기금이 농협자산관리회사, 상호금융권(새마을금고·수협·신협·산림조합), 대부회사, 공공기관 등이 보유한 장기 연체 채권을 매입했다고 29일 밝혔다.</p>\n\n<p>이번 5차 매입 대상 채권은 7년 이상 연체·5000만 원 이하의 개인 무담보채권으로 총 규모는 11만 6000명이 보유한 약 9602억 원이다.</p>\n\n<p>매입 즉시 추심은 중단되며, 매입채권 중 기초생활수급자 등 사회 취약계층 채무는 별도 상환능력 심사 없이 소각될 예정이다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>이억원 금융위원장(오른쪽 네번째)이 서울 중구 한국프레스센터에서 열린 새도약기금 출범식에서 정정훈 한국자산관리공사장 등 참석자들과 현판 제막을 한 뒤 기념촬영을 하고 있다.2025.10.1.(ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>그 외 채권은 철저하게 상환능력을 심사한 후 개인파산에 준하는 수준으로 상환능력을 상실한 경우 1년 이내 소각하고, 그 외 상환능력이 현저히 부족한 경우는 채무조정을 추진한다.</p>\n\n<p>상환능력 심사는 새도약기금이 금융자산 등 정보를 수집할 수 있도록 한 신용정보법 개정안 시행 이후인 올해 3분기 중 착수할 계획이다.</p>\n\n<p>채권금융회사는 지난주부터 채무자에게 채권 양도 예정사실을 통지했으며 채무자는 새도약기금 누리집(<a href=\"https://www.newleap.or.kr\" target=\"_blank\">www.newleap.or.kr</a>)을 통해 추가로 본인 채무 매입 여부·상환능력 심사 결과·채권 소각 여부 등을 조회할 수 있다.</p>\n\n<p>새도약기금이 1~5차 매입을 통해 확보한 장기연체채권은 약 9조 1000억 원 규모며, 수혜자는 중복자를 포함해 약 75만 명이다.</p>\n\n<p>향후 새도약기금은 내달 말 상록수제일차유동화전문회사(이하 상록수), 신용보증 재단중앙회, 농협, 대부회사 등이 보유한 장기연체채권을 매입할 예정이다.</p>\n\n<p>아울러 상록수와 유사하게 유동화회사 형태로 장기연체채권을 보유한 회사들에 대한 전수조사를 진행하고 있고, 조사 결과 새도약기금 대상 채권을 보유 중인 것으로 확인되는 경우 빠른 시일 내 대상 채권을 매입할 계획이다.</p>\n\n<p>한편, 대부업권 상위 30곳 중 새도약기금 협약에 가입한 대부회사의 수는 현재 15곳으로, 대부업권 역시 장기연체채권 보유 현황을 전수조사하고 있다.</p>\n\n<p>새도약기금은 대부회사들의 새도약기금 참여 확대를 위한 실질적 인센티브 방안을 적극 검토하고 업계와 지속적으로 소통해 나갈 예정이다.</p>\n\n<p>문의: 금융위원회 서민금융과(02-2100-2838), 한국자산관리공사 새도약기금운영처(051-794-3064)</p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "새도약기금 장기연체 추가 매입 핵심 정리: 지금 확인할 포인트",
+      "slug": "새도약기금-장기연체-추가-매입-62d9c031",
+      "excerpt": "새도약기금 장기연체 추가 매입 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n새도약기금 장기연체 추가 매입은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n새도약기금 장기연체 추가 매입를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n새도약기금 장기연체 추가 매입 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 새도약기금 장기연체 추가 매입와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [새도약기금, 장기연체 9602억 추가 매입…누적 수혜자 75만 명](https://www.korea.kr/news/policyNewsView.do?newsId=148965472&call_from=rsslink)\n",
+      "tags": [
+        "living",
+        "새도약기금",
+        "장기연체",
+        "추가",
+        "매입"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "새도약기금 장기연체 추가 매입 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 새도약기금 장기연체 추가 매입 핵심 정리: 지금 확인할 포인트. Keyword: 새도약기금 장기연체 추가 매입. Context: ## 한눈에 보기 새도약기금 장기연체 추가 매입은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 새도약기금 장기연체 추가 매입를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 새도약기금 장기연체 추가 매입 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을,. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.460709",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "해외 진출 기업 유턴",
+        "title_hint": "해외 진출 기업, '유턴' 문턱 낮춰 국내 복귀·지방 투자 유도",
+        "category": "living",
+        "trend_score": 95.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "해외 진출 기업, '유턴' 문턱 낮춰 국내 복귀·지방 투자 유도",
+            "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965432&call_from=rsslink",
+            "published_at": "2026-05-29T08:09:00",
+            "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965432&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>산업통상부는 29일 열린 경제관계장관회의에서 '국내복귀(유턴) 재정립 및 촉진방안'을 발표했다.</p>\n\n<p>이번 대책은 글로벌 보호무역주의 강화, 공급망 재편 등 대외 여건 변화에 대응해 해외사업장의 단순 국내 이전을 넘어 지방투자를 활성화하고 첨단전략분야의 국내 역량을 확보하기 위한 핵심 국정과제로 마련됐다.</p>\n\n<p>정부는 ▲유턴 인정범위 재설계 ▲유턴보조금 지원체계 개편 ▲평가·관리 강화 및 이행요건 합리화 ▲전략적 유치 및 투자이행 밀착지원 등을 핵심 과제로 추진할 계획이다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>김정관 산업통상부 장관이 27일 오전 세종시 전의면 소재 2026년 1호 국내복귀 기업으로 선정된 화장품 제조기업 한국콜마에서 열린 유턴기업 현장 간담회를 주재하고 있다. 사진은 기사와 관련 없음. (산업통상부 제공) 2026.4.27. (ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p><span style=\"font-weight: bold;\">◆ 유턴 인정범위 재설계</span></p>\n\n<p>초기 유턴정책은 경영 여건이 악화된 해외진출 기업의 국내 복귀를 지원하기 위해 도입되어 '유턴' 개념이 협소하게 규정되어 왔다.</p>\n\n<p>반면, 미·일 등 주요국은 형식적 요건보다 첨단전략 분야의 생산역량 확보에 중점을 두고 투자 지원(리쇼어링)을 확대하고 있다.</p>\n\n<p>정부는 이러한 투자환경 변화에 맞게 유턴 인정범위를 재설계한다.</p>\n\n<p>이를 위해 올해 중 '유턴법' 관련 법령 정비를 추진하고, 내년부터 본격 시행할 계획이다.</p>\n\n<p>우선, 해외사업장과 국내복귀 사업장에서 생산하는 제품·서비스가 같거나 유사해야 하는 동일성 요건을 완화한다.</p>\n\n<p>유사성 판단 시 기존의 소재·부품, 생산공정뿐 아니라 기능·용도, 핵심기술, 공급망 등도 종합적으로 고려할 수 있도록 개선해 탄력적으로 운영할 예정이다. 이를 통해, 기업의 신산업 진출과 사업구조 고도화를 위한 투자 활성화를 뒷받침한다.</p>\n\n<p>아울러, 청산·양도·축소 등 해외사업장 구조조정 요건에 대한 면제 범위도 확대한다.</p>\n\n<p>기존에는 '첨단산업·공급망' 관련 특정 기술이나 제품에 대한 확인서를 보유하고 국내복귀 사업장에서 생산·활용하는 경우만 면제되었으나, 앞으로는 첨단산업·공급망 분야에 해당하면서 핵심 생산시설(마더팩토리) 투자로 인정되는 경우에도 면제할 예정이다.</p>\n\n<p>이를 통해 형식적 요건을 넘어 첨단 제조·혁신역량의 국내 확보를 적극 추진할 계획이다.</p>\n\n<p><span style=\"font-weight: bold;\">◆ 유턴보조금 지원체계 개편</span></p>\n\n<p>기존 유턴보조금 체계는 기준표에 따라 보조비율이 일률적으로 적용되는 방식으로 운영되어, 지방 중심의 우수한 유턴기업 유치에는 한계가 있었다.</p>\n\n<p>이에 지방투자 확대와 첨단전략분야 유턴 촉진을 위해 '협상' 방식으로 보조금 지원체계를 전면 개편한다.</p>\n\n<p>'협상' 방식은 외국인투자기업에 대한 현금지원 정책을 참고하여, 경제효과가 큰 첨단산업·공급망 등 전략 분야 또는 대규모 투자 프로젝트를 대상으로 정부와 기업 간 협의를 거쳐 지원규모를 결정하는 방식이다.</p>\n\n<p>특히 지원규모는 ▲비수도권 투자 ▲청년 중심 고용 창출 ▲첨단전략기술 ▲마더팩토리 해당 여부 등을 종합 고려해 차등 산정할 계획이다.</p>\n\n<p>또한 지방투자와 첨단전략기술 도입을 적극 유도하기 위해 기존의 정액 한도 방식 대신 보조비율 상한 중심으로 기준을 개편할 예정이다.</p>\n\n<p>현행 지원 한도는 투자 건당 300억 원(첨단 400억 원)이고 기업당 600억 원이다.</p>\n\n<p>일반 업종과 소규모 투자는 현행 방식으로 운영하되, 기본 보조비율을 지방투자촉진보조금 수준에 맞추어 합리적으로 조정할 예정이다.</p>\n\n<p><span style=\"font-weight: bold;\">◆ 평가·관리 강화 및 이행요건 합리화</span></p>\n\n<p>그동안 유턴기업으로 선정된 이후, 실제 국내복귀 투자가 계획대로 이행되지 않아 지정이 취소되는 사례가 다수 발생해 왔다.</p>\n\n<p>이에 정부는 유턴기업 선정 단계서부터 국내 투자계획의 구체성, 투자 이행역량 등에 대한 평가를 강화하여 부실기업의 유입을 방지하고 투자 이행률을 제고할 계획이다.</p>\n\n<p>유턴기업 선정 평가와 보조금 심의 절차를 더욱 체계적으로 운영하기 위해 국내복귀실무위원회 신설을 추진하고, '협상' 방식 보조금 지원체계를 뒷받침할 세부 절차도 마련할 예정이다.</p>\n\n<p>아울러 보조금을 지원받은 유턴기업의 투자 이행 여부를 더욱 면밀히 관리·점검하기 위해 이행 기간을 현행 3년에서 지원 규모에 따라 확대한다.</p>\n\n<p>동시에 제조현장의 자동화 추세와 산업구조 변화를 반영하여 이행 요건도 합리적으로 개선할 계획이다.</p>\n\n<p>기존 사업장의 고용 면적 유지 현황은 지속 관리하되, 이를 보조금 정산기준에 기계적으로 연동하던 방식은 개선한다.</p>\n\n<p>투자 이행과정에서 당초 계획보다 더 많은 고용을 창출한 기업에 대해서는 사후 인센티브를 부여할 수 있는 방안도 도입할 예정이다.</p>\n\n<p><span style=\"font-weight: bold;\">◆ 전략적 유치 및 투자이행 밀착 지원</span></p>\n\n<p>정부는 첨단산업, 제조 AI(M.AX), 공급망 분야를 중심으로 핵심 역량을 보유한 잠재 유턴기업을 선제적으로 발굴·유치할 계획이다.</p>\n\n<p>코트라 해외 무역관을 통해 관심 기업을 지속 발굴하는 한편, 유턴기업 대상 '지방정부 IR 플랫폼'을 구축해 지방정부의 투자유치 활동도 적극 지원할 예정이다.</p>\n\n<p>또한, 정부는 프로젝트별 전담 매니저(PM)를 지정해 투자 검토부터 이행까지 전 과정을 밀착 지원한다.</p>\n\n<p>관계부처·지방정부·업계 등이 참여하는 '유턴투자지원단'을 구성해 유턴 기업과 소통을 강화하고, 투자 과정에서 발생하는 애로사항을 신속히 해소할 방침이다. 이를 통해, 성공 사례를 확산하고 선순환 유턴 생태계를 조성해 나갈 계획이다.</p>\n\n<p>김정관 산업부 장관은 \"유턴은 단순한 공장 이전을 넘어 기술 개발과 생산, 공급망의 중심을 어디에 둘 것인가에 대한 전략적 선택이 되고 있다\"고 강조하며 \"이번 개선방안을 신속히 이행하여 지방 중심의 유턴을 촉진하고, 양질의 유턴기업을 적극 유치할 수 있도록 지원하겠다\"고 덧붙였다.</p>\n\n<p>문의: 산업통상부 해외투자과(044-203-4065), 기획예산처 산업중소벤처예산과(044-214-2732)</p>\n\n<p><br /></p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "해외 진출 기업 유턴 핵심 정리: 지금 확인할 포인트",
+      "slug": "해외-진출-기업-유턴-39146f4a",
+      "excerpt": "해외 진출 기업 유턴 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n해외 진출 기업 유턴은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n해외 진출 기업 유턴를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n해외 진출 기업 유턴 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 해외 진출 기업 유턴와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [해외 진출 기업, '유턴' 문턱 낮춰 국내 복귀·지방 투자 유도](https://www.korea.kr/news/policyNewsView.do?newsId=148965432&call_from=rsslink)\n",
+      "tags": [
+        "living",
+        "해외",
+        "진출",
+        "기업",
+        "유턴"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "해외 진출 기업 유턴 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 해외 진출 기업 유턴 핵심 정리: 지금 확인할 포인트. Keyword: 해외 진출 기업 유턴. Context: ## 한눈에 보기 해외 진출 기업 유턴은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 해외 진출 기업 유턴를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 해외 진출 기업 유턴 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.462852",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "규모 성남 신규택지",
+        "title_hint": "정부, 6300호 규모 성남 신규택지 1년 앞당겨 2029년 착공",
+        "category": "living",
+        "trend_score": 95.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "정부, 6300호 규모 성남 신규택지 1년 앞당겨 2029년 착공",
+            "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965434&call_from=rsslink",
+            "published_at": "2026-05-29T07:52:00",
+            "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965434&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>정부가 6300호 규모의 성남 신규택지 추진일정을 가속화해, 착공시기를 당초 계획인 2030년에서 2029년으로 1년 앞당긴다.&nbsp;</p>\n\n<p>구윤철 부총리 겸 재정경제부장관은 29일 오후 정부서울청사에서 열린 부동산관계장관회의 겸 주택공급촉진 관계장관회의를 주재해 '주택시장 동향 및 대응방향' 등을 논의하고 이 같이 밝혔다.&nbsp;&nbsp;</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>구윤철 경제부총리 겸 재정경제부 장관이 29일 서울 종로구 세종대로 정부서울청사에서 열린 비상경제본부 희의 겸 경제관계장관회의에서 모두 발언을 하고 있다. 이날 회의에서 참석자들은 중동전쟁 관련 대응상황 점검을 논의했다.(ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>구 부총리는 \"정부는 정책의 최우선순위를 주택공급 확대와 조기 착공에 두고 총력을 다하고 있다\"고 강조했다.&nbsp;</p>\n\n<p>먼저, 1.29 공급방안은 실제 착공까지 신속하게 이어지도록 전 과정에 대한 철저한 관리를 유지해 나간다.&nbsp;</p>\n\n<p>특히, 6300호 규모의 성남 신규택지는 계획수립절차를 통합하는 등 추진일정을 가속화해, 착공시기를 당초 계획인 2030년에서 2029년으로 1년 앞당긴다.&nbsp;</p>\n\n<p>2800호 규모의 동대문구, 은평구 부지도 기관별 이전계획을 연내 조속하게 수립하는 등 관련 절차를 빠르게 추진할 계획이다.&nbsp;</p>\n\n<p>이어서, 구 부총리는 \"주택사업 현장의 걸림돌을 확실히 제거하여, 최대한 빠르게 착공이 이뤄지도록 하겠다\"고 언급했다.&nbsp;</p>\n\n<p>현재 수도권 규제지역에서 약 10만호 규모의 주택 착공이 PF 자금조달 및 자재수급 애로, 공사비 상승 등의 사유로 1년 이상 지연되고 있는 상황이다.&nbsp;</p>\n\n<p>정부는 착공 지연요인을 현장에서 밀착 점검하고 애로 해소를 전방위적으로 지원하기 위해, 국토부 중심으로 관계부처와 지자체 등이 참여하는 '범정부 주택공급 현장 애로해소 지원센터'를 오늘부터 가동한다.&nbsp;</p>\n\n<p>구 부총리는 \"특히, 공공 부분에서의 공급물량이 계획대로 확보될 수 있도록, 공공주택 사업의 절차 관리를 한층 강화하겠다\"고 밝혔다.&nbsp;</p>\n\n<p>정부는 지난해 9월 '주택공급 확대방안'에서 발표한 바와 같이 주택공급 목표를 착공 기준으로 전환한 데 이어 공사비도 착공시점 기준으로 관리하는 한편, 남양주왕숙·고양창릉·성남복정 제2지구 등 지연되고 있는 사업지별로 그 원인을 점검해 사업에 차질이 없도록 관리해 나갈 계획이다.</p>\n\n<p>마지막으로 구 부총리는 \"공급정책의 실효성을 저해하는 부동산 불법행위 대응에도 만전을 기하겠다\"고 덧붙였다.&nbsp;</p>\n\n<p>국토부를 중심으로 1.29 공급방안에 포함된 신규 주택공급지 인근에서의 투기의심거래를 집중 조사하고 있으며, 수도권 규제지역 등 43개단지 2만 5000세대에 대한 부정청약 의심사례 전수조사 및 검증도 진행 중이다.&nbsp;</p>\n\n<p>개발정보나 부동산가격 등과 같은 허위정보를 유포하는 행위에 대해서도 대응 실효성을 높여나갈 계획이다.</p>\n\n<p>문의 : 재정경제부 부동산시장과(044-215-2850), 국토교통부 주택정책과(044-201-3317), 공공택지기획과(4441), 금융위원회 금융정책과(02-2100-2830), 국무조정실 부동산감독추진단(044-200-2645)</p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "규모 성남 신규택지 핵심 정리: 지금 확인할 포인트",
+      "slug": "규모-성남-신규택지-5992fbb2",
+      "excerpt": "규모 성남 신규택지 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n규모 성남 신규택지는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n규모 성남 신규택지를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n규모 성남 신규택지 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 규모 성남 신규택지와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [정부, 6300호 규모 성남 신규택지 1년 앞당겨 2029년 착공](https://www.korea.kr/news/policyNewsView.do?newsId=148965434&call_from=rsslink)\n",
+      "tags": [
+        "living",
+        "규모",
+        "성남",
+        "신규택지"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "규모 성남 신규택지 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 규모 성남 신규택지 핵심 정리: 지금 확인할 포인트. Keyword: 규모 성남 신규택지. Context: ## 한눈에 보기 규모 성남 신규택지는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 규모 성남 신규택지를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 규모 성남 신규택지 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.464059",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "특별한 희생에 특별한 보상",
+        "title_hint": "특별한 희생에 특별한 보상…\"국민 눈높이에 맞는 예우 실현\"",
+        "category": "living",
+        "trend_score": 95.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "특별한 희생에 특별한 보상…\"국민 눈높이에 맞는 예우 실현\"",
+            "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965437&call_from=rsslink",
+            "published_at": "2026-05-29T07:50:00",
+            "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965437&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"><a href=\"https://www.korea.kr/1st_together/\" target=\"_blank\"><img alt=\"국민주권정부 출범 1주년 슬로건\" src=\"https://www.korea.kr/newsWeb/resources/attaches/2026.05/29/slogan_5(6).jpg\" /></a></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b></b></figcaption></figure></div>\n\n<p>국가보훈부가 국민주권정부 출범 1주년을 맞아 '특별한 희생에 특별한 보상'을 위한 보훈의 국가책임을 강화하고 든든한 기틀을 다졌다고 29일&nbsp;밝혔다.</p>\n\n<p><span style=\"font-weight: bold;\">◆ 특별한 희생에 합당한 보상·복지 강화</span></p>\n\n<p>국가보훈부는 지난 1년간 독립, 호국, 민주를 아우르는 균형 잡힌 보훈정책을 추진하여 보상과 예우의 사각지대를 적극 해소하고 고령 보훈대상자를 위한 빈틈없는 의료·돌봄 체계를 구축했다.</p>\n\n<p>올해 5월 '독립유공자법' 개정으로 독립유공자의 사망 시점과 무관하게 손자녀까지 보상금을 지급하는 등 독립유공자 유족 보상 범위를 확대하여 내년부터 2300여 명이 신규 혜택을 받게 된다.</p>\n\n<p>또한 올해 3월부터 고령·저소득 참전유공자 배우자를 대상으로 한 생계지원금 제도를 역대 정부 최초로 신설하여 1만 7000여 명에게 매월 15만 원을 지원한다.</p>\n\n<p>보훈병원이 없는 강원·제주 권역에 보훈병원에 준하는 의료서비스를 제공하는 '준보훈병원' 제도를 도입하기 위해 올해 하반기 시범사업에 착수한다.</p>\n\n<p>의료접근성 확대를 위해 지난해 6월 정부 출범 당시 904개소였던 보훈위탁의료기관을 올해 5월 현재 1025개소로 121개소 확충했으며, 2030년까지 2000개소 달성을 목표로 추진 중이다.</p>\n\n<p>이와 함께 독립유공자 유족의 위탁의료기관 이용 연령을 기존 75세에서 65세로 낮춰 의료혜택을 확대했다.</p>\n\n<p>또한 고령 보훈대상자의 건강한 노후를 위해 현재 222병상인 수원보훈요양원을 100병상 증축하고, 충북권에 100병상 규모 보훈요양원 신축을 차질 없이 추진 중이다.</p>\n\n<p>고령·독거 유공자의 고독사 예방을 위한 'AI 기반 안부확인서비스'도 올해 4월부터 시행하고 있다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>권오을 국가보훈부 장관이 22일 오전 서울시 용산구 백범김구기념관 컨벤션홀에서 열린 독립유공자 후손 장학금 업무협약 및 수여식에서 정수용 빙그레공익재단 이사장과 주요내빈 및 장학생들과 함께 기념촬영을 하고 있다.(ⓒ뉴스1, 국가보훈부 제공, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p><span style=\"font-weight: bold;\">◆ 국민과 함께 기억하고 계승하는 보훈문화 구현</span></p>\n\n<p>국가보훈부는 독립·호국·민주의 역사를 국민과 함께 공유하고, 독립유공자에 대한 영예로운 예우를 실현하고 있다.</p>\n\n<p>지난해 광복 80년 계기 코리아 메모리얼 페스타 등 다양한 국민참여 보훈문화행사를 개최했으며, 참여자 종합만족도 92.4%를 기록했다.</p>\n\n<p>또한 올해 유네스코 지정 '백범 김구 탄생 150주년'을 맞아 음악회, 창작 판소리 공연 등 계기 사업을 추진하고 있다.</p>\n\n<p>생존 애국지사의 특별예우금을 월 157만~172만 원에서 315만~345만 원으로 인상함으로써 예우 수준을 격상했다.</p>\n\n<p>미서훈 독립유공자 발굴·포상을 적극 추진하여 지난해 502명과 올해 3·1절 계기 112명을, 4·19혁명유공자는 2023년 31명 포상 후 3년 만에 70명을 포상했다.</p>\n\n<p>독립유공자 유해봉환을 지속 추진하여 광복 80년 계기로 지난해 문양목 지사 등 6위를 모셔 왔고, 올해 4월에는 마지막 국외 거주 애국지사인 이하전 지사의 유해를 국내 봉환했다.</p>\n\n<p>올해 4월 제14대 독립기념관장 취임 이후 독립기념관 정상화 노력을 통해 4월까지 관람객이 전년 동기간 대비 32만 명에서 48만 명으로 크게 증가했다.</p>\n\n<p>이외에도 효창공원을 국민 친화적 역사공원으로 탈바꿈하기 위한 '국립효창독립공원' 조성도 추진 중이다.</p>\n\n<p>올해 2월 국외 사적지 전수조사 계획을 발표했고, 5월부터 상하이 스탬프 투어를 실시하는 등 국외 사적지 관리 및 활성화도 강화하고 있다.</p>\n\n<p><span style=\"font-weight: bold;\">◆ 국가헌신의 사회적 존중 및 국제보훈협력 확대</span></p>\n\n<p>국가보훈부는 이와 함께 군 복무에 대한 자부심을 가질 수 있도록 국가책임을 강화하고, 유엔참전국과 연대를 공고히 구축했다.</p>\n\n<p>공공부문 임금 및 호봉 책정 시 제대군인의 의무복무기간 반영을 의무화하는 '제대군인법'을 올해 2월 개정하여 군 경력이 사회에서 온전히 인정받는 기반을 마련했다.</p>\n\n<p>장기복무 제대군인의 공공시설 이용료 할인 혜택도 기존 고궁·능원에서 국공립 수목원·자연휴양림·공연장·체육시설까지 대폭 확대할 수 있도록 제대군인법 시행령을 개정했다.</p>\n\n<p>또한, 치료-전역-보훈 등록까지 원스톱으로 신속하게 지원하는 '국가책임형 부상장병 통합지원서비스'를 도입했다.</p>\n\n<p>6·25참전유공자회, 월남전참전자회, 재일학도의용군동지회 등 보훈단체 회원 범위를 유족까지 확대하는 '국가유공자단체법' 등 2개 법률을 개정하여 단체의 지속가능성을 확보했다.</p>\n\n<p>아울러, 고령 국가유공자에 대한 '보훈회관 점심지원 사업'을 실시하여 63개 지자체가 참여하고 있으며 전국으로 확대해 나갈 계획이다.</p>\n\n<p>6·25전쟁 유엔참전용사와 유가족에 대한 예우와 지원을 지속적으로 전개하고 있다.</p>\n\n<p>태국·네덜란드·프랑스 등 유엔참전용사 유해 5위를 봉환하여 부산 유엔기념공원에 안장했다. 나아가 지난해 튀르키예, 올해 필리핀·프랑스·인도 등 주요 유엔참전국과 양해각서를 체결함으로써 국제보훈 교류와 협력을 확대하고 있다.</p>\n\n<p>권오을 국가보훈부 장관은 \"국민주권정부 출범 이후 지난 1년은 국가를 위한 희생과 헌신이 제대로 예우받는 나라, 특별한 희생에 합당한 보상과 지원으로 보답하는 나라를 만들기 위해 국가책임을 강화하고 기틀을 다지는 시간이었다\"면서 \"국민이 주인인 나라의 바탕에는 영웅들의 고귀한 희생과 헌신이 있었음을 늘 기억하며, 앞으로도 국가유공자와 보훈가족 그리고 국민 눈높이에 부합하는 예우를 실현함으로써 보훈이 국민통합의 구심점이 될 수 있도록 최선을 다하겠다\"고 밝혔다.</p>\n\n<p>문의 : 국가보훈부 보훈미래전략담당관(044-202-5045)</p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "특별한 희생에 특별한 보상 핵심 정리: 지금 확인할 포인트",
+      "slug": "특별한-희생에-특별한-보상-26239960",
+      "excerpt": "특별한 희생에 특별한 보상 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n특별한 희생에 특별한 보상은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n특별한 희생에 특별한 보상를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n특별한 희생에 특별한 보상 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 특별한 희생에 특별한 보상와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [특별한 희생에 특별한 보상…\"국민 눈높이에 맞는 예우 실현\"](https://www.korea.kr/news/policyNewsView.do?newsId=148965437&call_from=rsslink)\n",
+      "tags": [
+        "living",
+        "특별한",
+        "희생에",
+        "보상"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "특별한 희생에 특별한 보상 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 특별한 희생에 특별한 보상 핵심 정리: 지금 확인할 포인트. Keyword: 특별한 희생에 특별한 보상. Context: ## 한눈에 보기 특별한 희생에 특별한 보상은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 특별한 희생에 특별한 보상를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 특별한 희생에 특별한 보상 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.465242",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "국민성장펀드 퓨리오사 바이오 건에",
+        "title_hint": "국민성장펀드, 퓨리오사 AI·SK바이오 등 5건에 자금지원 승인",
+        "category": "living",
+        "trend_score": 95.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "국민성장펀드, 퓨리오사 AI·SK바이오 등 5건에 자금지원 승인",
+            "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148965438&call_from=rsslink",
+            "published_at": "2026-05-29T07:45:00",
+            "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148965438&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>금융위원회는 28일 개최된 국민성장펀드 기금운용심의회에서 퓨리오사 AI에 3700억 원 첨단기금 직접 투자(국민성장펀드 총 8000억 원 내외 예정) 등 총 3건의 메가프로젝트(2차)와 2건의 일반프로젝트에 대한 자금지원을 승인했다.</p>\n\n<p>금융위원회는 지난 4월 국민성장펀드의 자문기구인 전략위원회 제2차 회의에서 바이오·디스플레이 등 조기에 실질적 성과 창출이 가능한 사업과 함께 '소버린 AI 생태계 확장' 프로젝트 등 6건의 2차 메가프로젝트를 선정한 바 있다.</p>\n\n<p>이번 기금운용심의회에서는 2차 메가프로젝트 중 '차세대 바이오·백신 설비구축 및 R&amp;D 지원자금' '국산 AI 반도체 개발을 위한 증자자금' 등 첨단산업 생태계 및국가 경제 전반에 파급 효과가 큰 사업 위주로 자금지원을 승인했다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>서울 중구 신한은행 영업점에 국민참여형 국민성장펀드 홍보물이 놓여져 있다. 2026.5.21 (ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>퓨리오사 AI는 국내 AI 반도체 팹리스 기업으로, 양산에 돌입한 2세대 NPU인 레니게이드(5나노·HBM3)의 생산 확대와 함께, HBM4를 기반으로 설계된 차세대 제품(가칭 스토크)의 개발을 위해 직접투자자금 8000억 원을 조달할 계획이다.</p>\n\n<p>'차세대 바이오·백신 설비구축 및 R&amp;D 지원자금'을 위한 사업도 자금 지원이 이뤄진다.</p>\n\n<p>백신의 생산 및 판매를 주력 사업으로 하는 SK바이오사이언스가 '21가 폐렴구균 백신(PCV21) 상업화를 위해 글로벌 임상 3상에 필요한 R&amp;D 자금을 충당하고 안동에 국내 최대 규모의 백신생산 공장을 증설하는 사업도 3000억 원 규모의 저리 대출 투자가 결정됐다.</p>\n\n<p>AI 인프라 확보를 위한 데이터센터 건설 관련 인프라 투융자도 이뤄진다.&nbsp;</p>\n\n<p>영업이익 기준&nbsp;국내 3위의&nbsp;게임회사인 스마일게이트그룹이 경기도 고양시에 각각 AI 데이터센터를 구축·운영하는 사업으로, 국민성장펀드(첨단전략산업기금)는 지분투자 2500억 원 및 후순위대출 2500억 원의 투융자를 지원한다.</p>\n\n<p>중견기업인 엘앤에프플러스 LFP 양극재 생산공장 구축 사업에는 2200억 원 규모의 12년 장기·저리대출을 지원할 계획이다.&nbsp;</p>\n\n<p>충북 음성소재 데이터센터용 전력기기(배전반) 생산기업인 ㈜근우에 대해서도 200억 원 규모의 10년 장기·저리대출을 지원할 방침이다.</p>\n\n<p>이번에 5건의 4조 1400억&nbsp;원 사업이 승인되면서 국민성장펀드는 누적 16건에 12조 5000억&nbsp;원 사업을 승인했다. 첨단전략산업기금 누적 승인액은 5조 1700억&nbsp;원이다.</p>\n\n<p>문의 : 금융위원회 국민성장펀드총괄과(02-2224-2014), 과학기술정보통신부 정보통신산업기반과(044-202-6244) 정보통신방송기술정책과(6232), 산업통상부 배터리전기전자과(044-203-4263) 인공지능바이오융합산업과(4292) 반도체과(4274), 산업은행 국민성장펀드부문(02-787-3932)</p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "국민성장펀드 퓨리오사 바이오 건에 핵심 정리: 지금 확인할 포인트",
+      "slug": "국민성장펀드-퓨리오사-바이오-건에-9d2adbf7",
+      "excerpt": "국민성장펀드 퓨리오사 바이오 건에 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n국민성장펀드 퓨리오사 바이오 건에는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n국민성장펀드 퓨리오사 바이오 건에를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n국민성장펀드 퓨리오사 바이오 건에 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내 모델명을, 금융 정보라면 기준일과 고시 기관을 확인해야 합니다. 지역/여행 정보는 영업시간, 휴무일, 예약 가능 여부처럼 방문 직전에 바뀌는 항목을 다시 확인하는 것이 좋습니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 국민성장펀드 퓨리오사 바이오 건에와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [국민성장펀드, 퓨리오사 AI·SK바이오 등 5건에 자금지원 승인](https://www.korea.kr/news/policyNewsView.do?newsId=148965438&call_from=rsslink)\n",
+      "tags": [
+        "living",
+        "국민성장펀드",
+        "퓨리오사",
+        "바이오",
+        "건에"
+      ],
+      "cover_image_path": null,
+      "cover_image_alt": "국민성장펀드 퓨리오사 바이오 건에 핵심 정리: 지금 확인할 포인트 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 국민성장펀드 퓨리오사 바이오 건에 핵심 정리: 지금 확인할 포인트. Keyword: 국민성장펀드 퓨리오사 바이오 건에. Context: ## 한눈에 보기 국민성장펀드 퓨리오사 바이오 건에는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 국민성장펀드 퓨리오사 바이오 건에를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 국민성장펀드 퓨리오사 바이오 건에 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. 생활정보나 지원금이라면 신청 기간과 대상 조건을, 테크 제품이라면 출시일과 국내. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-05-31T10:21:06.466862",
+      "quality_score": 100.0,
+      "review_notes": []
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-지원금-a110f64c.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-청년-aed92a67.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-ai-4b6fd888.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-아이폰-89d65684.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-금리-2f50a9a5.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-환율-f533a285.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-서울-맛집-ed91c1ca.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-부산-여행-9d802178.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-신청방법-8e8526ca.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-제철음식-e5d54eb7.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-생활비-fae2150b.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-혜택-bd23ef8b.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-갤럭시-9ff952d2.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-노트북-ecfc0c33.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-스펙-03f2582a.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-비교-ebba2e53.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-부동산-6686f8f5.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-대출-337e69c6.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-연금-3d4b34a3.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-세금-4e9cf304.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-제주-카페-7c2d7229.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-강릉-여행-480671ce.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/05월-전주-맛집-5c4b5a09.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/지방선거-사전투표-신분증만-들고-23776016.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/초단기간-공공-비정규직에-공정수당-fe82d360.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/새도약기금-장기연체-추가-매입-62d9c031.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/해외-진출-기업-유턴-39146f4a.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/규모-성남-신규택지-5992fbb2.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/특별한-희생에-특별한-보상-26239960.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/국민성장펀드-퓨리오사-바이오-건에-9d2adbf7.md",
+      "message": "draft saved"
+    }
+  ]
+}
