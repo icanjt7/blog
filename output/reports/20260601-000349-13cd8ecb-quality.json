@@ -1,0 +1,78 @@
+{
+  "run_id": "20260601-000349-13cd8ecb",
+  "average_quality": 84.0,
+  "drafts": [
+    {
+      "slug": "06월-지원금-6ddb0d52",
+      "title": "06월 지원금, 제대로 알고 받자!",
+      "keyword": "06월 지원금",
+      "category": "living",
+      "quality_score": 73.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "본문 길이가 짧습니다."
+      ],
+      "source_count": 1,
+      "source_authority_avg": 5.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 지원금, 제대로 알고 받자!. Keyword: 06월 지원금. Context: ### 06월 지원금이란? 정부에서 제공하는 생활 지원 정책을 말한다. 이 지원 정책은 저소득층, 청년, 자영업자 등에게 혜택을 제공한다. ### 지원금의 종류 - 주거 지원: 임대보증금과 월세를 지원하는 정책 - 교육 지원: 수학, 과학, 영어 등에 대한 교과서와 교재를 지원 - 자영업자 지원: 자영업자들이 사업을 운영할 수 있도록 자금을 지원하는 정책 ### 지원금 종류와 지원 금액 | 지원금 종류 | 지원 금액 | | --- | --- | | 주거 지원 | 월 50만원 | | 교육 지원 | 년 200만원 | | 자영업자 지원 | 년 1,000만원 | ### 신청 방법 지원금의 종류와 신청 방법은 [정부 정책브리핑 홈페이지](https://www.korea.kr/)에서 확인할 수 있다. 1. 대상 확인: 저소득층, 청년, 자영업자 등 2. 필요한 서류 준비: 주민등록증, 건강보험증, 소득증명서 등 3. 온라인 또는 오프라인 신청: 정부 정책브리핑 홈페이지 또는 관공서에서 신청 ### 더 자세한 정보 정부 정책브리핑 홈페이지에서 확인할 수 있다. [https://www.korea.kr/](https://www.korea.kr/). Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1660580845778-6922248d1394?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHwwNiUyNUVDJTI1OUIlMjU5NCUyNTIwJTI1RUMlMjVBNyUyNTgwJTI1RUMlMjU5QiUyNTkwJTI1RUElMjVCOCUyNTg4JTI1MjBsaXZpbmd8ZW58MHwwfHx8MTc4MDI3MjQzOHww&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-청년-066b0307",
+      "title": "06월 청년 지원금 최대 20만 원, 이렇게 받으세요!",
+      "keyword": "06월 청년",
+      "category": "living",
+      "quality_score": 85.0,
+      "review_notes": [
+        "본문 길이가 짧습니다."
+      ],
+      "source_count": 1,
+      "source_authority_avg": 5.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 청년 지원금 최대 20만 원, 이렇게 받으세요!. Keyword: 06월 청년. Context: ### 06월 청년 지원 정책 06월 청년을 위한 지원 정책이 있습니다. 이 정책은 청년들의 경제적 부담을 줄이고, 독립을 지원하기 위해 마련되었습니다. #### 지원 대상 - 지원 대상: 만 19세에서 34세까지의 청년 - 우선 지원 대상: 저소득층 청년이나 청년 자영업자 등 #### 지원금 - 최대 지원금: 20만 원 - 사용 용도: 청년들의 생활비나 자영업자금 ### 지원 정책 세부 내용 | 지원 금액 | 지원 대상 | 신청 기간 | | --- | --- | --- | | 최대 20만 원 | 만 19세~34세 청년 | 06월 1일~06월 30일 | ### 신청 방법 1. **정책 확인**: 대한민국 정책브리핑 웹사이트에 접속하여 지원 정책의 자세한 내용을 확인합니다. 2. **온라인 신청**: 지원금을 온라인으로 신청할 수 있습니다. 3. **서류 준비**: 주민등록증, 건강보험증 등 필요한 서류를 준비합니다. ### 추가 정보 더 자세한 정보는 대한민국 정책브리핑 웹사이트에서 확인할 수 있습니다. 지원 정책의 세부 내용과 신청 방법을 확인하여 최대 20만 원의 지원금을 받으세요!. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://picsum.photos/seed/276/1200/630"
+    },
+    {
+      "slug": "06월-ai-10ba6ced",
+      "title": "06월 AI, 새로운 기회와 도전",
+      "keyword": "06월 AI",
+      "category": "tech",
+      "quality_score": 81.0,
+      "review_notes": [
+        "핵심 키워드 반복이 과합니다.",
+        "AI 문체로 보일 수 있는 표현: 다양한"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 AI, 새로운 기회와 도전. Keyword: 06월 AI. Context: ### 06월 AI란 무엇인가? 06월 AI는 최근 기술 발전에 따라 급격히 발전하고 있는 인공지능 기술입니다. 이 기술은 기계 학습과 딥 러닝을 기반으로 하며, 다양한 업무와 분야에서 활용될 수 있습니다. ### 06월 AI의 핵심 06월 AI의 핵심은 무엇일까요? 이 기술은 인공지능 기술의 발전과 함께 새로운 기회와 도전을 가져옵니다. 비즈니스와 산업에서革命적인 변화를 가져올 수 있으며, 새로운 취업과 교육의 기회를 가져옵니다. | 기술 | 설명 | 활용 분야 | | --- | --- | --- | | 기계 학습 | 데이터를 기반으로 학습하여 예측과 분류를 수행하는 기술 | 추천 시스템, 이미지 인식 | | 딥 러닝 | 인공 신경망을 기반으로 하는 기계 학습의 한 종류 | 음성 인식, 자연어 처리 | ### 06월 AI의 활용 구글의 개발자 블로그(https://developers.googleblog.com/)에서 발표된 바와 같이, 06월 AI는 다양한 기술과 제품을 개발하고 있습니다. 이 기술은 개발자와 비즈니스에서 활용될 수 있으며, 새로운 기회와 도전을 가져옵니다. 구글의 개발자 블로그는 06월 AI의 기술과 제품을 소개하며, 개발자와 비즈니스에서 활용할 수 있는 방법을 설명합니다. 또한, 이 블로그는 06월 AI의 최신 뉴스와 정보를 제공하며, 개발자와 비즈니스에서 06월 AI를 활용하는 방법을 소개합니다. ### 결론 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1561972465-05c968dc2c91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHwwNiUyNUVDJTI1OUIlMjU5NCUyNTIwQUklMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDI3MjQ4Mnww&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-아이폰-ab15a110",
+      "title": "06월 아이폰, 올바른 구매 결정의 키",
+      "keyword": "06월 아이폰",
+      "category": "tech",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 아이폰, 올바른 구매 결정의 키. Keyword: 06월 아이폰. Context: ### 06월 아이폰의 주요 특징 06월 아이폰은 새로운 디자인과 성능 업그레이드 덕분에 많은 관심을 받고 있습니다. 실제로 구매자들이 고려해야 할 점은 무엇일까요? * **성능**: Apple A16 Bionic 칩셋이 탑재되어, 기존 모델보다 20% 이상의 성능 향상을 기대할 수 있습니다. * **배터리**: 배터리寿命도 개선되어, 하루 종일 사용할 수 있는 배터리 타임을 제공합니다. ### 주요 스펙 다음 표를 통해 06월 아이폰의 주요 스펙을 확인해볼 수 있습니다. | 스펙 | 06월 아이폰 | | --- | --- | | 프로세서 | Apple A16 Bionic | | RAM | 6GB | | 저장공간 | 128GB, 256GB, 512GB | | 배터리 | 4500mAh | | 가격 | 1,200,000원 이상 | ### 카메라 업그레이드 06월 아이폰의 또 다른 특징은 카메라 업그레이드입니다. 새로운 광학줌 기능과 개선된 이미지 센서로 인해 더 나은 사진 品質을 기대할 수 있습니다. ### 구매 전 고려사항 구매 전 실제 사용자 리뷰와 비교 테스트를 통해 결정하는 것이 좋습니다. 또한, 가격과 성능을 고려하여 적절한 모델을 선택하는 것이 중요합니다. ### 출시 정보 06월 아이폰의 출시일은 06월 중旬으로 예정되어 있습니다. 사전 예약과 구매 정보는 Apple 공식 홈페이지와 대리점에서 확인할 수 있습니다. ### 참. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1660580845778-6922248d1394?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHwwNiUyNUVDJTI1OUIlMjU5NCUyNTIwJTI1RUMlMjU5NSUyNTg0JTI1RUMlMjU5RCUyNUI0JTI1RUQlMjU4RiUyNUIwJTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyNzI1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-금리-d4da5436",
+      "title": "06월 금리, 높아질까?",
+      "keyword": "06월 금리",
+      "category": "finance",
+      "quality_score": 85.0,
+      "review_notes": [
+        "본문 길이가 짧습니다."
+      ],
+      "source_count": 1,
+      "source_authority_avg": 5.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 금리, 높아질까?. Keyword: 06월 금리. Context: ### 06월 금리 인상 여부 06월 금리 인상이 이루어질까? 금융 정책과 제도 변경 확인은 어디서 할 수 있을까? 금융위원회 보도자료를 통해 06월 금리 변동과 관련된 정보를 확인할 수 있습니다. 금융위원회는 한국의 금융을 총괄하는 기관으로, 금융 정책과 제도 변경에 관한 정보를 제공합니다. ### 금리 변동 확인 06월 금리 인상 여부는 금융위원회에서 발표하는 정보를 통해 확인할 수 있습니다. 금융위원회 보도자료: https://www.fsc.go.kr/ | 월 | 금리 | | --- | --- | | 05월 | 3.5% | | 06월 | ? | ### 금융위원회 정보 금융위원회 보도자료를 통해 금융 정책과 제도 변경에 관한 정보를 확인할 수 있습니다. 06월 금리 변동에 대한 힌트를 얻기 위해서는 금융위원회에서 발표하는 정보를 확인하는 것이 중요합니다. ### 확인 방법 금융위원회에서 발표하는 정보를 통해 06월 금리 변동에 대한 힌트를 얻을 수 있습니다. 금융위원회 보도자료를 통해 06월 금리 변동과 관련된 정보를 확인하세요.. Visual mood: trustworthy financial briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1672870153618-b369bcc8c55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHwwNiUyNUVDJTI1OUIlMjU5NCUyNTIwJTI1RUElMjVCOCUyNTg4JTI1RUIlMjVBNiUyNUFDJTI1MjBmaW5hbmNlfGVufDB8MHx8fDE3ODAyNzI1Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
