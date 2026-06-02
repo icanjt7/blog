@@ -424,15 +424,21 @@ a:hover { text-decoration: underline; }
   .card-img { height: 150px; }
 }
 """
-        (self.public_dir / "style.css").write_text(css.strip() + "\n", encoding="utf-8")
-
-  # basic pagination styles
-  extra = "\n.pagination { display:flex; justify-content:space-between; align-items:center; margin-top:18px; } .pagination a { color:var(--accent); }"
-  (self.public_dir / "style.css").write_text((css.strip() + "\n" + extra).lstrip() + "\n", encoding="utf-8")
+        extra = "\n.pagination { display:flex; justify-content:space-between; align-items:center; margin-top:18px; } .pagination a { color:var(--accent); }"
+        (self.public_dir / "style.css").write_text((css.strip() + "\n" + extra).lstrip() + "\n", encoding="utf-8")
 
     def _write_cname(self) -> None:
-        if self.custom_domain:
-            (self.public_dir / "CNAME").write_text(self.custom_domain.strip() + "\n", encoding="utf-8")
+      if self.custom_domain:
+        (self.public_dir / "CNAME").write_text(self.custom_domain.strip() + "\n", encoding="utf-8")
+
+      # write ads.txt so AdSense crawler can find publisher info at site root
+      pub = (self.adsense_publisher_id or "ca-pub-3870943054399059").strip()
+      ads_content = f"google.com, {pub}, DIRECT, f08c47fec0942fa0\n"
+      (self.public_dir / "ads.txt").write_text(ads_content, encoding="utf-8")
+
+      # write a permissive robots.txt to ensure crawlers can access the site
+      robots = "User-agent: *\nAllow: /\n"
+      (self.public_dir / "robots.txt").write_text(robots, encoding="utf-8")
 
     def _copy_assets(self) -> None:
         assets_dir = self.posts_dir.parent / "assets"
