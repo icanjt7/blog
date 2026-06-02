@@ -611,8 +611,8 @@ class StaticSiteBuilder:
   <link rel="alternate" type="application/rss+xml" href="./feed.xml">{ga_script}{adsense_script}
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
+  <header class="site-header">
+    <div class="page-shell">
       <div class="header-top">
         <a class="brand" href="./index.html">{html.escape(self.site_title)}</a>
         <div class="header-search">
@@ -622,12 +622,16 @@ class StaticSiteBuilder:
         <a href="./dashboard.html" class="dashboard-link{dash_active}">대시보드</a>
       </div>
       {nav_html}
-    </header>
+    </div>
+  </header>
+  <div class="page-shell">
     <main>{content}</main>
-    <footer class="site-footer">
-      <p>© 2024 BriefWave. All rights reserved.</p>
-    </footer>
   </div>
+  <footer class="site-footer">
+    <div class="page-shell">
+      <p>© 2024 BriefWave. All rights reserved.</p>
+    </div>
+  </footer>
   <script>
   (function(){{
     var q=document.getElementById('header-q'),box=document.getElementById('header-results');
@@ -697,8 +701,9 @@ a:hover { text-decoration: underline; }
 .hero h1 { margin: 0; font-size: clamp(1.8rem, 5vw, 4rem); line-height: 1.1; word-break: keep-all; }
 .meta { margin: 0 0 8px; color: var(--muted); font-size: 0.85rem; }
 
-.site-shell, .page-shell { width: min(1040px, 100% - 32px); margin: 0 auto; }
-.site-header { padding: 14px 0 0; border-bottom: 1px solid var(--line); }
+.page-shell { width: min(1040px, 100% - 32px); margin: 0 auto; }
+.site-header { background: var(--paper); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 100; }
+.site-header .page-shell { padding: 14px 0 0; }
 .header-top { display: flex; align-items: center; gap: 12px; padding-bottom: 10px; }
 .brand { font-weight: 700; font-size: 1.1rem; color: var(--ink); flex-shrink: 0; }
 
@@ -732,7 +737,8 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .tag-filter-badge button { background: none; border: none; color: #fff; cursor: pointer; font-size: 1.1rem; padding: 0; line-height: 1; }
 
 /* footer */
-.site-footer { border-top: 1px solid var(--line); padding: 24px 0; text-align: center; color: var(--muted); font-size: 0.82rem; margin-top: 32px; }
+.site-footer { border-top: 1px solid var(--line); background: var(--paper); margin-top: 32px; }
+.site-footer .page-shell { padding: 24px 0; text-align: center; color: var(--muted); font-size: 0.82rem; }
 
 /* ── index grid ── */
 .grid {
@@ -835,7 +841,8 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 /* ── mobile ── */
 @media (max-width: 480px) {
   main { width: 100%; padding: 0 0 48px; }
-  .header-top { flex-wrap: wrap; gap: 8px; padding: 0 16px 10px; }
+  .site-header .page-shell { padding: 10px 16px 0; }
+  .header-top { flex-wrap: wrap; gap: 8px; padding-bottom: 8px; }
   .header-search { order: 3; flex: none; width: 100%; max-width: 100%; }
   .dashboard-link { margin-left: auto; }
   .site-nav { padding: 0 4px; }
