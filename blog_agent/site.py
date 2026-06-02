@@ -64,7 +64,7 @@ class StaticSiteBuilder:
       self._write_search_page(posts)
       self._write_category_pages(posts)
 
-      self._write_dashboard(posts)
+      # self._write_dashboard(posts)  # 관리자 전용 — 일반 사용자에게 노출하지 않음
       self._write_feed(posts)
       self._write_sitemap(posts)
       self._write_css()
@@ -170,7 +170,7 @@ class StaticSiteBuilder:
             <section class="hero">
               <p class="meta">오늘의 생활·기술·정책 브리핑</p>
               <h1>{html.escape(self.site_title)}</h1>
-              <p><a href="./dashboard.html">운영 현황</a></p>
+              <p></p>
             </section>
             <section class="grid">{cards}</section>
             """
@@ -226,7 +226,7 @@ class StaticSiteBuilder:
             <section class="hero">
               <p class="meta">오늘의 생활·기술·정책 브리핑</p>
               <h1>{html.escape(self.site_title)}</h1>
-              <p><a href="./dashboard.html">운영 현황</a> · <a href="./search.html">검색</a></p>
+              <p><a href="./search.html">검색</a></p>
             </section>
             <section class="grid">{cards}</section>
             {nav_html}
@@ -533,7 +533,6 @@ class StaticSiteBuilder:
         urls: list[tuple[str, datetime]] = []
         urls.append((self._page_url("index.html"), datetime.now()))
         urls.append((self._page_url("search.html"), datetime.now()))
-        urls.append((self._page_url("dashboard.html"), datetime.now()))
 
         total_pages = (len(posts) + 8) // 9
         for page in range(2, total_pages + 1):
@@ -598,7 +597,6 @@ class StaticSiteBuilder:
                 image_url = f"{self.site_url}/{og_image.lstrip('./')}"
             og_image_tag = f"\n  <meta property=\"og:image\" content=\"{html.escape(image_url)}\">"
         nav_html = self._nav_html(active)
-        dash_active = " active" if active == "대시보드" else ""
 
         page = f"""<!doctype html>
 <html lang="ko">
@@ -626,7 +624,7 @@ class StaticSiteBuilder:
           <input type="search" id="header-q" placeholder="제목·내용 검색..." autocomplete="off" aria-label="검색">
           <div id="header-results" class="header-dropdown" hidden></div>
         </div>
-        <a href="./dashboard.html" class="dashboard-link{dash_active}">대시보드</a>
+        <!-- dashboard hidden: 관리자 전용 페이지 -->
       </div>
       {nav_html}
     </div>
