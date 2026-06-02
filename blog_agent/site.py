@@ -120,7 +120,27 @@ class StaticSiteBuilder:
         </div>"""
 
     def _write_index(self, posts: list[Post]) -> None:
-        if posts:
+        per_page = 9
+        total = len(posts)
+        if total == 0:
+            cards = '<p class="empty">아직 발행된 글이 없습니다.</p>'
+            content = f"""
+            <section class="hero">
+              <p class="meta">오늘의 생활·기술·정책 브리핑</p>
+              <h1>{html.escape(self.site_title)}</h1>
+              <p><a href="./dashboard.html">운영 현황</a></p>
+            </section>
+            <section class="grid">{cards}</section>
+            """
+            self._write_html("index.html", self.site_title, content)
+            return
+
+        total_pages = (total + per_page - 1) // per_page
+
+        for page in range(1, total_pages + 1):
+            start = (page - 1) * per_page
+            end = start + per_page
+            page_posts = posts[start:end]
             cards = "\n".join(
                 f"""
                 <article class="card">
@@ -131,19 +151,31 @@ class StaticSiteBuilder:
                   <div class="tags">{self._tag_html(post.tags[:5])}</div>
                 </article>
                 """
-                for post in posts
+                for post in page_posts
             )
-        else:
-            cards = '<p class="empty">아직 발행된 글이 없습니다.</p>'
-        content = f"""
-        <section class="hero">
-          <p class="meta">오늘의 생활·기술·정책 브리핑</p>
-          <h1>{html.escape(self.site_title)}</h1>
-          <p><a href="./dashboard.html">운영 현황</a></p>
-        </section>
-        <section class="grid">{cards}</section>
-        """
-        self._write_html("index.html", self.site_title, content)
+
+            # pagination links
+            nav_parts: list[str] = []
+            if page > 1:
+                prev_href = "index.html" if page - 1 == 1 else f"page{page-1}.html"
+                nav_parts.append(f'<a class="prev" href="./{prev_href}">← 이전</a>')
+            if page < total_pages:
+                next_href = f"page{page+1}.html"
+                nav_parts.append(f'<a class="next" href="./{next_href}">다음 →</a>')
+            nav_html = "<nav class=\"pagination\">" + "\n".join(nav_parts) + "</nav>" if nav_parts else ""
+
+            content = f"""
+            <section class="hero">
+              <p class="meta">오늘의 생활·기술·정책 브리핑</p>
+              <h1>{html.escape(self.site_title)}</h1>
+              <p><a href="./dashboard.html">운영 현황</a></p>
+            </section>
+            <section class="grid">{cards}</section>
+            {nav_html}
+            """
+
+            filename = "index.html" if page == 1 else f"page{page}.html"
+            self._write_html(filename, self.site_title, content)
 
     def _write_dashboard(self, posts: list[Post]) -> None:
         category_counts: dict[str, int] = {}
@@ -393,6 +425,10 @@ a:hover { text-decoration: underline; }
 }
 """
         (self.public_dir / "style.css").write_text(css.strip() + "\n", encoding="utf-8")
+
+  # basic pagination styles
+  extra = "\n.pagination { display:flex; justify-content:space-between; align-items:center; margin-top:18px; } .pagination a { color:var(--accent); }"
+  (self.public_dir / "style.css").write_text((css.strip() + "\n" + extra).lstrip() + "\n", encoding="utf-8")
 
     def _write_cname(self) -> None:
         if self.custom_domain:

@@ -40,6 +40,13 @@ class Settings(BaseModel):
     wordpress_username: str | None = None
     wordpress_app_password: str | None = None
     wordpress_status: str = "publish"
+    # Blogger configuration
+    blogger_api_key: str | None = None
+    blogger_blog_id: str | None = None
+    # OAuth2 for Blogger (for publishing requires OAuth2 refresh token)
+    blogger_oauth_client_id: str | None = None
+    blogger_oauth_client_secret: str | None = None
+    blogger_refresh_token: str | None = None
 
 
 def load_settings() -> Settings:
@@ -71,4 +78,9 @@ def load_settings() -> Settings:
         wordpress_username=os.getenv("WORDPRESS_USERNAME") or None,
         wordpress_app_password=os.getenv("WORDPRESS_APP_PASSWORD") or None,
         wordpress_status=os.getenv("WORDPRESS_STATUS", "publish"),
+        blogger_api_key=os.getenv("BLOGGER_API_KEY") or None,
+        blogger_blog_id=os.getenv("BLOGGER_BLOG_ID") or None,
+        blogger_oauth_client_id=os.getenv("BLOGGER_OAUTH_CLIENT_ID") or None,
+        blogger_oauth_client_secret=os.getenv("BLOGGER_OAUTH_CLIENT_SECRET") or None,
+        blogger_refresh_token=os.getenv("BLOGGER_REFRESH_TOKEN") or None,
     )

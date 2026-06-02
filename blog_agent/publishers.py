@@ -7,6 +7,7 @@ import requests
 
 from .config import Settings
 from .models import Draft, PublishResult
+import time
 
 
 class Publisher:
@@ -122,6 +123,88 @@ class WordPressPublisher(Publisher):
         return int(data["id"]), data.get("source_url", "")
 
 
+class BloggerPublisher(Publisher):
+    """Google Blogger API를 통해 포스팅"""
+
+    def __init__(self, settings: Settings) -> None:
+        if not settings.blogger_blog_id:
+            raise ValueError("Blogger 블로그 ID가 필요합니다: BLOGGER_BLOG_ID")
+        self.api_key = settings.blogger_api_key
+        self.blog_id = settings.blogger_blog_id
+        # Optional OAuth2 credentials for write access
+        self.oauth_client_id = settings.blogger_oauth_client_id
+        self.oauth_client_secret = settings.blogger_oauth_client_secret
+        self.refresh_token = settings.blogger_refresh_token
+        self.base_url = "https://www.googleapis.com/blogger/v3"
+
+    def publish(self, draft: Draft) -> PublishResult:
+        body = draft.body_markdown
+        if draft.cover_image_path:
+            body = MarkdownPublisher._body_with_cover(draft)
+        
+        content = markdown.markdown(
+            body,
+            extensions=["tables", "fenced_code"],
+            output_format="html5",
+        )
+
+        payload = {
+            "kind": "blogger#post",
+            "title": draft.title,
+            "content": content,
+            "labels": draft.tags,
+        }
+
+        url = f"{self.base_url}/blogs/{self.blog_id}/posts"
+
+        headers = {"Content-Type": "application/json"}
+        params = {}
+
+        # If refresh token is provided, exchange it for an access token and use Bearer auth
+        if self.refresh_token and self.oauth_client_id and self.oauth_client_secret:
+            token_url = "https://oauth2.googleapis.com/token"
+            data = {
+                "client_id": self.oauth_client_id,
+                "client_secret": self.oauth_client_secret,
+                "refresh_token": self.refresh_token,
+                "grant_type": "refresh_token",
+            }
+            try:
+                tokresp = requests.post(token_url, data=data, timeout=10)
+                tokresp.raise_for_status()
+                access_token = tokresp.json().get("access_token")
+                headers["Authorization"] = f"Bearer {access_token}"
+            except Exception as exc:
+                return PublishResult(ok=False, destination="blogger", message=f"OAuth token error: {str(exc)[:300]}")
+        elif self.api_key:
+            params["key"] = self.api_key
+
+        response = requests.post(url, json=payload, params=params, headers=headers, timeout=30)
+
+        if response.status_code >= 400:
+            return PublishResult(
+                ok=False,
+                destination="blogger",
+                message=f"{response.status_code}: {response.text[:300]}",
+            )
+
+        try:
+            data = response.json()
+            post_url = data.get("url", "")
+            return PublishResult(
+                ok=True,
+                destination="blogger",
+                url=post_url,
+                message="published",
+            )
+        except Exception as e:
+            return PublishResult(
+                ok=False,
+                destination="blogger",
+                message=f"Error parsing response: {str(e)[:300]}",
+            )
+
+
 class CompositePublisher(Publisher):
     def __init__(self, publishers: list[Publisher]) -> None:
         self.publishers = publishers
@@ -143,6 +226,16 @@ class CompositePublisher(Publisher):
 def build_publisher(settings: Settings) -> Publisher:
     if settings.publisher == "wordpress":
         return WordPressPublisher(settings)
+    if settings.publisher == "blogger":
+        return BloggerPublisher(settings)
+    if settings.publisher == "wordpress+blogger":
+        return CompositePublisher([WordPressPublisher(settings), BloggerPublisher(settings)])
     if settings.publisher == "both":
         return CompositePublisher([MarkdownPublisher(settings.output_dir), WordPressPublisher(settings)])
+    if settings.publisher == "all":
+        return CompositePublisher([
+            MarkdownPublisher(settings.output_dir),
+            WordPressPublisher(settings),
+            BloggerPublisher(settings),
+        ])
     return MarkdownPublisher(settings.output_dir)
