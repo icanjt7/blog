@@ -1,7 +1,7 @@
 ---
 title: "고성능 게이밍 노트북의 꿈, Asus ROG Strix Scar 18 리뷰"
 date: "2026-05-31T23:24:35.123943"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - extravagant

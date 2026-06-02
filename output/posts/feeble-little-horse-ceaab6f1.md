@@ -1,7 +1,7 @@
 ---
 title: "디지털 이상성의 새 차원: Feeble Little Horse의 음악 세계"
 date: "2026-05-31T22:37:26.014987"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Feeble

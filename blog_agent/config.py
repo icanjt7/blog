@@ -6,6 +6,12 @@ from pathlib import Path
 from dotenv import load_dotenv
 from pydantic import BaseModel
 
+from .trends import CATEGORY_SEEDS
+
+# Canonical category order derived from CATEGORY_SEEDS so adding a seed
+# automatically makes it a nav category.
+_DEFAULT_CATEGORIES: list[str] = list(CATEGORY_SEEDS.keys())
+
 
 class Settings(BaseModel):
     # LLM providers — first non-empty key wins: groq → github_token → gemini → openai
@@ -48,8 +54,9 @@ class Settings(BaseModel):
     blogger_oauth_client_id: str | None = None
     blogger_oauth_client_secret: str | None = None
     blogger_refresh_token: str | None = None
-    # Top navigation categories (order matters)
-    categories: list[str] = ["핫이슈", "정책", "기술", "생활"]
+    # Top navigation categories — defaults to CATEGORY_SEEDS keys, so adding a
+    # new seed automatically creates a nav category without extra config.
+    categories: list[str] = _DEFAULT_CATEGORIES
 
 
 def load_settings() -> Settings:
@@ -87,5 +94,5 @@ def load_settings() -> Settings:
         blogger_oauth_client_id=os.getenv("BLOGGER_OAUTH_CLIENT_ID") or None,
         blogger_oauth_client_secret=os.getenv("BLOGGER_OAUTH_CLIENT_SECRET") or None,
         blogger_refresh_token=os.getenv("BLOGGER_REFRESH_TOKEN") or None,
-        categories=[c.strip() for c in os.getenv("BLOG_CATEGORIES", "핫이슈,정책,기술,생활").split(",") if c.strip()],
+        categories=[c.strip() for c in os.getenv("BLOG_CATEGORIES", ",".join(_DEFAULT_CATEGORIES)).split(",") if c.strip()],
     )

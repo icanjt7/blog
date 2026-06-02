@@ -1,7 +1,7 @@
 ---
 title: "스팀 컨트롤러, 게임을 넘어 음악도奏で다"
 date: "2026-05-31T10:56:48.612746"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Listen

@@ -1,7 +1,7 @@
 ---
 title: "화재 인명피해 15.7% 감소, 매년 10%씩 줄이기 위해"
 date: "2026-06-01T08:33:41.180397"
-category: "living"
+category: "생활"
 tags:
   - living
   - 화재

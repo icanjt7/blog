@@ -1,7 +1,7 @@
 ---
 title: "사용자 교체 배터리, 다시 부상하다"
 date: "2026-05-31T12:01:29.716156"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - User

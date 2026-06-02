@@ -1,7 +1,7 @@
 ---
 title: "Welcome to Night 핵심 정리: 지금 확인할 포인트"
 date: "2026-05-31T02:11:04.258757"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Welcome

@@ -1,7 +1,7 @@
 ---
 title: "Vega$의 핵심: 스테로이드, 수영 선수, 10억 달러의 비즈니스"
 date: "2026-05-31T13:18:36.738325"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - What

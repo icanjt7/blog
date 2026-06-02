@@ -1,7 +1,7 @@
 ---
 title: "스냅 전직 직원, 새로운 기회 열다"
 date: "2026-05-31T12:02:59.364400"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Snap

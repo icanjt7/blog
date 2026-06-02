@@ -1,7 +1,7 @@
 ---
 title: "구글 픽셀 워치 5, 첫 공개는 게임 개발자에게?"
 date: "2026-06-02T00:15:56.900418"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Google

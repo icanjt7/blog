@@ -1,7 +1,7 @@
 ---
 title: "개발자 분노의 대상, Github Copilot의 새 요금제는?"
 date: "2026-05-31T13:19:04.695139"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - What

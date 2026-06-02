@@ -1,7 +1,7 @@
 ---
 title: "599달러부터 구매 가능한 새로운 XPS 13"
 date: "2026-05-31T23:23:40.214793"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Dell

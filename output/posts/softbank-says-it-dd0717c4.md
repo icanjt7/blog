@@ -1,7 +1,7 @@
 ---
 title: "SoftBank says it 핵심 정리: 지금 확인할 포인트"
 date: "2026-05-31T17:24:36.420395"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - SoftBank

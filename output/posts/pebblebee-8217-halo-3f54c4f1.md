@@ -1,7 +1,7 @@
 ---
 title: "잃어버린 물건을 찾고 안전을 지키는 Pebblebee 8217 Halo"
 date: "2026-06-02T02:11:44.861922"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Pebblebee

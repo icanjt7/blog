@@ -1,7 +1,7 @@
 ---
 title: "마이크로소프트, 왜 이제야 취약점 공개자에 법적 조치를 취하는가?"
 date: "2026-05-31T10:56:08.565780"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Microsoft

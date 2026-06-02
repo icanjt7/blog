@@ -1,7 +1,7 @@
 ---
 title: "마라톤의 두 번째 시즌, 새로운 기회"
 date: "2026-05-31T23:25:18.514654"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Marathon

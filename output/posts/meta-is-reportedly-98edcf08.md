@@ -1,7 +1,7 @@
 ---
 title: "메타의 신개념 AI 펜던트, 일상생활을 편리하게?"
 date: "2026-05-31T13:19:33.751455"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Meta

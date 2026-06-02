@@ -1,7 +1,7 @@
 ---
 title: "주말 박스오피스 1, 2위 영화, 모두 유튜버 출신 감독?"
 date: "2026-05-31T12:02:40.575989"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - weekend

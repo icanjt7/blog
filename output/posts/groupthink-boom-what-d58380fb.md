@@ -1,7 +1,7 @@
 ---
 title: "AI 열풍의 실체: 3가지 핵심 사실"
 date: "2026-05-31T13:20:17.852783"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - groupthink

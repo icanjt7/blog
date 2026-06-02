@@ -1,7 +1,7 @@
 ---
 title: "5만 달러 이하 최고의 EV, Mercedes CLA offers는?"
 date: "2026-05-31T12:01:52.871406"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Mercedes

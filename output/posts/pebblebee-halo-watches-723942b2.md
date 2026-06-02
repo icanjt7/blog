@@ -1,7 +1,7 @@
 ---
 title: "개인 안전을 지키는 Pebblebee Halo watches"
 date: "2026-05-31T10:57:10.679036"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Pebblebee

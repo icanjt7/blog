@@ -1,7 +1,7 @@
 ---
 title: "40% 할인, 아트 TV의 꿈을 이루다"
 date: "2026-05-31T10:56:30.969513"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Two

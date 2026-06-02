@@ -1,7 +1,7 @@
 ---
 title: "에린 브로코비치의 새로운 임무: 데이터 센터의 환경 비밀이 궁금하다"
 date: "2026-05-31T23:25:42.907021"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Erin

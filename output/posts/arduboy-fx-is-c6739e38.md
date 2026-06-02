@@ -1,7 +1,7 @@
 ---
 title: "5분 만에 아드보이 FX를 체험해 보세요"
 date: "2026-05-31T10:57:34.240040"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Arduboy

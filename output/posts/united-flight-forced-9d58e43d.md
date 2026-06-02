@@ -1,7 +1,7 @@
 ---
 title: "블루투스 스피커 이름에 따른 항공 보안 우려 사례"
 date: "2026-05-31T22:37:53.678616"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - United

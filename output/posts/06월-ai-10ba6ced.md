@@ -1,7 +1,7 @@
 ---
 title: "06월 AI, 새로운 기회와 도전"
 date: "2026-06-01T00:07:51.596823"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - 06월

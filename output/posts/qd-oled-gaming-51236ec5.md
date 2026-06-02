@@ -1,7 +1,7 @@
 ---
 title: "QD OLED 게이밍 모니터의 강력한 업그레이드"
 date: "2026-05-31T23:23:14.742704"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - QD

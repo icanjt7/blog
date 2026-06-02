@@ -50,6 +50,11 @@ class StaticSiteBuilder:
     def build(self) -> None:
       self.public_dir.mkdir(parents=True, exist_ok=True)
       posts = self._load_posts()
+      # Auto-extend nav categories with any category found in posts but not yet listed.
+      seen_cats = {p.category for p in posts}
+      for cat in seen_cats:
+          if cat and cat not in self.categories:
+              self.categories.append(cat)
       for post in posts:
         self._write_post(post)
 
@@ -81,7 +86,9 @@ class StaticSiteBuilder:
             meta = yaml.safe_load(frontmatter) or {}
         title = str(meta.get("title") or path.stem)
         date = self._parse_date(str(meta.get("date") or datetime.now().isoformat()))
-        category = str(meta.get("category") or "blog")
+        _cat_map = {"tech": "기술", "living": "생활", "finance": "정책", "local": "핫이슈"}
+        category = str(meta.get("category") or "생활")
+        category = _cat_map.get(category, category)
         tags = [str(tag) for tag in meta.get("tags", [])]
         body_html = markdown.markdown(
             body,

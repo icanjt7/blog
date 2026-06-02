@@ -1,7 +1,7 @@
 ---
 title: "06월 환율, 어떻게 변할까?"
 date: "2026-06-01T08:35:19.803860"
-category: "finance"
+category: "정책"
 tags:
   - finance
   - 06월

@@ -1,7 +1,7 @@
 ---
 title: "구식 웹사이트의 반격: How one founder의 승부수"
 date: "2026-05-31T12:02:17.133295"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - How

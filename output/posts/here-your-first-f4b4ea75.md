@@ -1,7 +1,7 @@
 ---
 title: "마인크래프트 영화 속 Alex 역할을 맡은 Kirsten Dunst의 역할은?"
 date: "2026-05-31T22:37:04.361584"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Here

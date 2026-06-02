@@ -149,7 +149,7 @@ BODY:
             if cliche in draft.body_markdown:
                 score -= 4
                 notes.append(f"AI 문체로 보일 수 있는 표현: {cliche}")
-        if draft.topic.category == "local" and re.search(r"다녀왔|방문했|먹어봤", draft.body_markdown):
+        if draft.topic.category == "핫이슈" and re.search(r"다녀왔|방문했|먹어봤", draft.body_markdown):
             score -= 30
             notes.append("직접 방문한 것처럼 보이는 표현이 있습니다.")
         draft.quality_score = max(0, score)

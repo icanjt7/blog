@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA 키노트 생중계 보는 방법"
 date: "2026-05-31T22:36:09.608096"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - How

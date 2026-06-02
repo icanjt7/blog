@@ -1,7 +1,7 @@
 ---
 title: "Apple의 스마트 안경 전략, 새로운 시장 창조"
 date: "2026-05-31T22:35:39.935903"
-category: "tech"
+category: "기술"
 tags:
   - tech
   - Apple
