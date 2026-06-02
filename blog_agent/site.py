@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import html
+import json
 import re
 import shutil
 from dataclasses import dataclass
@@ -30,28 +31,40 @@ class StaticSiteBuilder:
         posts_dir: Path,
         public_dir: Path,
         site_title: str,
+        site_description: str,
         custom_domain: str | None = None,
+        categories: list[str] | None = None,
         ga_measurement_id: str | None = None,
         adsense_publisher_id: str | None = None,
     ) -> None:
         self.posts_dir = posts_dir
         self.public_dir = public_dir
         self.site_title = site_title
+        self.site_description = site_description
         self.custom_domain = custom_domain
+        self.categories = categories or []
         self.ga_measurement_id = ga_measurement_id
         self.adsense_publisher_id = adsense_publisher_id
+        self.site_url = f"https://{self.custom_domain.strip()}" if self.custom_domain else "https://briefwave.kr"
 
     def build(self) -> None:
-        self.public_dir.mkdir(parents=True, exist_ok=True)
-        posts = self._load_posts()
-        for post in posts:
-            self._write_post(post)
-        self._write_index(posts)
-        self._write_dashboard(posts)
-        self._write_feed(posts)
-        self._write_css()
-        self._copy_assets()
-        self._write_cname()
+      self.public_dir.mkdir(parents=True, exist_ok=True)
+      posts = self._load_posts()
+      for post in posts:
+        self._write_post(post)
+
+      self._write_index(posts)
+      # generate search index and page
+      self._write_search_index(posts)
+      self._write_search_page(posts)
+      self._write_category_pages(posts)
+
+      self._write_dashboard(posts)
+      self._write_feed(posts)
+      self._write_sitemap(posts)
+      self._write_css()
+      self._copy_assets()
+      self._write_cname()
 
     def _load_posts(self) -> list[Post]:
         if not self.posts_dir.exists():
@@ -90,6 +103,28 @@ class StaticSiteBuilder:
             cover_image_alt=str(meta.get("cover_image_alt") or title),
         )
 
+    def _slugify(self, value: str) -> str:
+        normalized = value.strip().lower()
+        return re.sub(r"[^\w가-힣-]+", "-", normalized).strip("-") or "category"
+
+    def _page_url(self, filename: str) -> str:
+        if filename == "index.html":
+            return self.site_url + "/"
+        return f"{self.site_url}/{filename}"
+
+    def _nav_html(self, active: str | None = None) -> str:
+        items = [
+            '<a href="./index.html" class="' + ("active" if active == "홈" else "") + '">홈</a>'
+        ]
+        for category in self.categories:
+            href = f"./category-{self._slugify(category)}.html"
+            active_class = "active" if active == category else ""
+            items.append(f'<a href="{href}" class="{active_class}">{html.escape(category)}</a>')
+        return '<nav class="site-nav">' + "".join(items) + '</nav>'
+
+    def _category_page_filename(self, category: str) -> str:
+        return f"category-{self._slugify(category)}.html"
+
     def _write_post(self, post: Post) -> None:
         cover_html = ""
         if post.cover_image:
@@ -109,7 +144,7 @@ class StaticSiteBuilder:
           {ad_slot}
         </article>
         """
-        self._write_html(f"{post.slug}.html", post.title, content)
+        self._write_html(f"{post.slug}.html", post.title, content, active=post.category, page_url=self._page_url(f"{post.slug}.html"))
 
     def _ad_slot(self) -> str:
         pub = html.escape(self.adsense_publisher_id or "ca-pub-3870943054399059")
@@ -132,7 +167,14 @@ class StaticSiteBuilder:
             </section>
             <section class="grid">{cards}</section>
             """
-            self._write_html("index.html", self.site_title, content)
+            self._write_html(
+                "index.html",
+                self.site_title,
+                content,
+                active="홈",
+                page_url=self._page_url("index.html"),
+                description=self.site_description,
+            )
             return
 
         total_pages = (total + per_page - 1) // per_page
@@ -154,28 +196,44 @@ class StaticSiteBuilder:
                 for post in page_posts
             )
 
-            # pagination links
-            nav_parts: list[str] = []
+            # pagination links with page numbers
+            nav_items: list[str] = []
             if page > 1:
                 prev_href = "index.html" if page - 1 == 1 else f"page{page-1}.html"
-                nav_parts.append(f'<a class="prev" href="./{prev_href}">← 이전</a>')
+                nav_items.append(f'<a class="prev" href="./{prev_href}">← 이전</a>')
+            # numbered pages
+            pages_html = []
+            for p in range(1, total_pages + 1):
+                href = "index.html" if p == 1 else f"page{p}.html"
+                if p == page:
+                    pages_html.append(f'<strong class="current">{p}</strong>')
+                else:
+                    pages_html.append(f'<a href="./{href}">{p}</a>')
+            nav_items.append('<span class="pages">' + ' '.join(pages_html) + '</span>')
             if page < total_pages:
                 next_href = f"page{page+1}.html"
-                nav_parts.append(f'<a class="next" href="./{next_href}">다음 →</a>')
-            nav_html = "<nav class=\"pagination\">" + "\n".join(nav_parts) + "</nav>" if nav_parts else ""
+                nav_items.append(f'<a class="next" href="./{next_href}">다음 →</a>')
+            nav_html = "<nav class=\"pagination\">" + "\n".join(nav_items) + "</nav>"
 
             content = f"""
             <section class="hero">
               <p class="meta">오늘의 생활·기술·정책 브리핑</p>
               <h1>{html.escape(self.site_title)}</h1>
-              <p><a href="./dashboard.html">운영 현황</a></p>
+              <p><a href="./dashboard.html">운영 현황</a> · <a href="./search.html">검색</a></p>
             </section>
             <section class="grid">{cards}</section>
             {nav_html}
             """
 
             filename = "index.html" if page == 1 else f"page{page}.html"
-            self._write_html(filename, self.site_title, content)
+            self._write_html(
+                filename,
+                self.site_title,
+                content,
+                active="홈",
+                page_url=self._page_url(filename),
+                description=self.site_description,
+            )
 
     def _write_dashboard(self, posts: list[Post]) -> None:
         category_counts: dict[str, int] = {}
@@ -218,7 +276,7 @@ class StaticSiteBuilder:
           </table>
         </article>
         """
-        self._write_html("dashboard.html", f"{self.site_title} 운영 현황", content)
+        self._write_html("dashboard.html", f"{self.site_title} 운영 현황", content, active="대시보드", page_url=self._page_url("dashboard.html"))
 
     def _write_feed(self, posts: list[Post]) -> None:
         items = "\n".join(
@@ -244,7 +302,266 @@ class StaticSiteBuilder:
 """
         (self.public_dir / "feed.xml").write_text(feed, encoding="utf-8")
 
-    def _write_html(self, filename: str, title: str, content: str) -> None:
+    def _write_search_index(self, posts: list[Post]) -> None:
+        # create a lightweight JSON index for client-side search
+        items = []
+        for post in posts:
+            items.append(
+                {
+                    "title": post.title,
+                    "slug": post.slug,
+                    "excerpt": post.excerpt,
+                    "date": post.date.strftime("%Y-%m-%d"),
+                    "category": post.category,
+                    "tags": post.tags,
+                }
+            )
+        (self.public_dir / "search.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
+
+    def _write_search_page(self, posts: list[Post]) -> None:
+        categories = sorted({post.category for post in posts})
+        categories_json = json.dumps(categories, ensure_ascii=False)
+        content = (
+            '''
+        <article class="post search-page">
+          <header>
+            <p class="meta">검색</p>
+            <h1>글 검색</h1>
+            <p class="search-help">키워드, 카테고리, 태그로 빠르게 찾을 수 있습니다.</p>
+          </header>
+          <section class="search-panel">
+            <label for="q" class="visually-hidden">검색어 입력</label>
+            <input id="q" type="search" placeholder="검색어를 입력하세요" autocomplete="off">
+            <div id="suggestions" class="suggestions" aria-live="polite"></div>
+            <div class="search-meta">
+              <div class="category-filters" aria-label="카테고리 필터">
+                <button type="button" class="chip active" data-category="">전체</button>
+              </div>
+              <label class="sort-label">정렬:
+                <select id="sort">
+                  <option value="recent">최신순</option>
+                  <option value="oldest">오래된순</option>
+                </select>
+              </label>
+            </div>
+          </section>
+          <section id="results" class="search-results"></section>
+        </article>
+        <script>
+        const categories = '''
+            + categories_json
+            + ''';
+        const searchIndex = [];
+        let activeTag = '';
+
+        async function loadIndex(){
+          const res = await fetch('./search.json');
+          return await res.json();
+        }
+
+        function normalize(value){
+          return value.normalize('NFKC').toLowerCase();
+        }
+
+        function buildSuggestionText(query, items){
+          if(!query && !activeTag) return '검색어를 입력하면 추천 검색어가 나타납니다.';
+          const candidate = items.find(item => normalize(item.title).includes(query) || normalize((item.tags||[]).join(' ')).includes(query));
+          if(candidate) return `이런 검색어도 시도해보세요: ${candidate.title}`;
+          return '검색 결과가 없으면 다른 키워드로 다시 시도해보세요.';
+        }
+
+        function filterResults(query, category, sortKey){
+          const normalizedQuery = normalize(query);
+          const matches = searchIndex.filter(item => {
+            const categoryMatch = !category || item.category === category;
+            const tagMatch = !activeTag || (item.tags||[]).includes(activeTag);
+            if(!categoryMatch || !tagMatch) return false;
+            if(!normalizedQuery) return true;
+            const haystack = normalize([item.title, item.excerpt, item.category, ...(item.tags || [])].join(' '));
+            return haystack.includes(normalizedQuery) || item.title.split(' ').some(w=>normalize(w).startsWith(normalizedQuery));
+          });
+          return matches.sort((a,b)=>{
+            if(sortKey === 'oldest') return new Date(a.date) - new Date(b.date);
+            return new Date(b.date) - new Date(a.date);
+          }).slice(0,50);
+        }
+
+        function renderResults(results){
+          const resultsEl = document.getElementById('results');
+          if(results.length === 0){
+            resultsEl.innerHTML = '<div class="no-results"><p>검색 결과가 없습니다.</p><p class="suggestion-text">다른 검색어를 시도하거나 카테고리를 선택해 보세요.</p></div>';
+            return;
+          }
+          resultsEl.innerHTML = results.map(item => `
+            <article class="card search-result">
+              <p class="meta">${item.category} · ${item.date}</p>
+              <h2><a href="./${item.slug}.html">${item.title}</a></h2>
+              <p>${item.excerpt}</p>
+              <div class="tags">${(item.tags || []).map(tag=>`<span class="tag">${tag}</span>`).join('')}</div>
+            </article>
+          `).join('');
+        }
+
+        function renderCategoryFilters(){
+          const wrapper = document.querySelector('.category-filters');
+          categories.forEach(category => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'chip';
+            button.dataset.category = category;
+            button.textContent = category;
+            wrapper.appendChild(button);
+          });
+        }
+
+        (async ()=>{
+          const idx = await loadIndex();
+          searchIndex.push(...idx);
+          renderCategoryFilters();
+          const input = document.getElementById('q');
+          const suggestions = document.getElementById('suggestions');
+          const sortControl = document.getElementById('sort');
+          const categoryButtons = document.querySelector('.category-filters');
+          let activeCategory = '';
+
+          function update(){
+            const query = input.value.trim();
+            const sortKey = sortControl.value;
+            const results = filterResults(query, activeCategory, sortKey);
+            suggestions.textContent = buildSuggestionText(normalize(query), results);
+            renderResults(results);
+          }
+
+          categoryButtons.addEventListener('click', event => {
+            const target = event.target;
+            if(target.tagName !== 'BUTTON') return;
+            activeCategory = target.dataset.category || '';
+            categoryButtons.querySelectorAll('button').forEach(btn => btn.classList.toggle('active', btn === target));
+            update();
+          });
+
+          input.addEventListener('input', update);
+          sortControl.addEventListener('change', update);
+
+          // URL params: ?q=text and ?tag=tagname
+          const urlParams = new URLSearchParams(window.location.search);
+          const urlQ = urlParams.get('q');
+          const urlTag = urlParams.get('tag');
+          if(urlQ) input.value = urlQ;
+          if(urlTag){
+            activeTag = urlTag;
+            const badge = document.createElement('div');
+            badge.className = 'tag-filter-badge';
+            badge.innerHTML = '태그: <strong>' + urlTag + '</strong> <button type="button" id="clear-tag">×</button>';
+            document.querySelector('.search-panel').appendChild(badge);
+            document.getElementById('clear-tag').addEventListener('click', function(){
+              activeTag = '';
+              badge.remove();
+              const url = new URL(window.location);
+              url.searchParams.delete('tag');
+              window.history.replaceState({}, '', url);
+              update();
+            });
+          }
+          update();
+        })();
+        </script>
+            '''
+        )
+        self._write_html(
+            "search.html",
+            f"{self.site_title} 검색",
+            content,
+            active="검색",
+            page_url=self._page_url("search.html"),
+            description="브리핑웨이브에서 원하는 글을 빠르게 찾을 수 있는 검색 페이지입니다.",
+        )
+
+    def _write_category_pages(self, posts: list[Post]) -> None:
+        category_posts: dict[str, list[Post]] = {}
+        for post in posts:
+            category_posts.setdefault(post.category, []).append(post)
+
+        ordered_categories: list[str] = []
+        for category in self.categories:
+            if category not in ordered_categories:
+                ordered_categories.append(category)
+        for category in sorted(category_posts):
+            if category not in ordered_categories:
+                ordered_categories.append(category)
+
+        for category in ordered_categories:
+            page_posts = category_posts.get(category, [])
+            cards = "\n".join(
+                f"""
+                <article class="card">
+                  {f'<a href="./{post.slug}.html"><img class="card-img" src="{html.escape(post.cover_image)}" alt="{html.escape(post.cover_image_alt)}" loading="lazy"></a>' if post.cover_image else ''}
+                  <p class="meta">{html.escape(post.category)} · {post.date:%Y-%m-%d}</p>
+                  <h2><a href="./{post.slug}.html">{html.escape(post.title)}</a></h2>
+                  <p>{html.escape(post.excerpt)}</p>
+                  <div class="tags">{self._tag_html(post.tags[:5])}</div>
+                </article>
+                """
+                for post in page_posts
+            ) or '<p class="empty">이 카테고리에는 아직 글이 없습니다.</p>'
+            content = f"""
+            <section class=\"hero\">
+              <p class=\"meta\">카테고리</p>
+              <h1>{html.escape(category)}</h1>
+              <p>{len(page_posts)}개의 글을 모아봤습니다.</p>
+            </section>
+            <section class=\"grid\">{cards}</section>
+            """
+            filename = self._category_page_filename(category)
+            self._write_html(
+                filename,
+                f"{category} - {self.site_title}",
+                content,
+                active=category,
+                page_url=self._page_url(filename),
+                description=f"{category} 관련 최신 글과 분석을 모아둔 페이지입니다.",
+            )
+
+    def _write_sitemap(self, posts: list[Post]) -> None:
+        urls: list[tuple[str, datetime]] = []
+        urls.append((self._page_url("index.html"), datetime.now()))
+        urls.append((self._page_url("search.html"), datetime.now()))
+        urls.append((self._page_url("dashboard.html"), datetime.now()))
+
+        total_pages = (len(posts) + 8) // 9
+        for page in range(2, total_pages + 1):
+            urls.append((self._page_url(f"page{page}.html"), datetime.now()))
+
+        category_posts: dict[str, list[Post]] = {}
+        for post in posts:
+            category_posts.setdefault(post.category, []).append(post)
+        for category in category_posts:
+            filename = self._category_page_filename(category)
+            urls.append((self._page_url(filename), datetime.now()))
+
+        for post in posts:
+            urls.append((self._page_url(f"{post.slug}.html"), post.date))
+
+        sitemap_items = "\n".join(
+            f"  <url>\n    <loc>{html.escape(url)}</loc>\n    <lastmod>{modified:%Y-%m-%d}</lastmod>\n  </url>"
+            for url, modified in urls
+        )
+        sitemap = f"""<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">
+{sitemap_items}
+</urlset>"""
+        (self.public_dir / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+
+    def _write_html(
+        self,
+        filename: str,
+        title: str,
+        content: str,
+        active: str | None = None,
+        page_url: str | None = None,
+        description: str | None = None,
+        og_image: str | None = None,
+    ) -> None:
         ga_script = ""
         if self.ga_measurement_id:
             mid = html.escape(self.ga_measurement_id)
@@ -260,8 +577,21 @@ class StaticSiteBuilder:
         pub = html.escape(self.adsense_publisher_id or "ca-pub-3870943054399059")
         adsense_script = (
             f'\n  <meta name="google-adsense-account" content="{pub}">'
-            f'\n  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={pub}" crossorigin="anonymous"></script>'
+            "\n  <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3870943054399059\"\n             crossorigin=\"anonymous\"></script>\n"
         )
+
+        if page_url is None:
+            page_url = self._page_url(filename)
+        if description is None:
+            description = self.site_description
+        og_image_tag = ""
+        if og_image:
+            image_url = og_image
+            if not og_image.startswith("http"):
+                image_url = f"{self.site_url}/{og_image.lstrip('./')}"
+            og_image_tag = f"\n  <meta property=\"og:image\" content=\"{html.escape(image_url)}\">"
+        nav_html = self._nav_html(active)
+        dash_active = " active" if active == "대시보드" else ""
 
         page = f"""<!doctype html>
 <html lang="ko">
@@ -269,12 +599,61 @@ class StaticSiteBuilder:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{html.escape(title)}</title>
-  <meta name="description" content="{html.escape(self.site_title)}">
+  <meta name="description" content="{html.escape(description)}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{html.escape(self.site_title)}">
+  <meta property="og:title" content="{html.escape(title)}">
+  <meta property="og:description" content="{html.escape(description)}">
+  <meta property="og:url" content="{html.escape(page_url)}">{og_image_tag}
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="{html.escape(page_url)}">
   <link rel="stylesheet" href="./style.css">
   <link rel="alternate" type="application/rss+xml" href="./feed.xml">{ga_script}{adsense_script}
 </head>
 <body>
-  <main>{content}</main>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="header-top">
+        <a class="brand" href="./index.html">{html.escape(self.site_title)}</a>
+        <div class="header-search">
+          <input type="search" id="header-q" placeholder="제목·내용 검색..." autocomplete="off" aria-label="검색">
+          <div id="header-results" class="header-dropdown" hidden></div>
+        </div>
+        <a href="./dashboard.html" class="dashboard-link{dash_active}">대시보드</a>
+      </div>
+      {nav_html}
+    </header>
+    <main>{content}</main>
+    <footer class="site-footer">
+      <p>© 2024 BriefWave. All rights reserved.</p>
+    </footer>
+  </div>
+  <script>
+  (function(){{
+    var q=document.getElementById('header-q'),box=document.getElementById('header-results');
+    if(!q||!box)return;
+    var idx=[];
+    fetch('./search.json').then(function(r){{return r.json();}}).then(function(d){{idx=d;}}).catch(function(){{}});
+    function norm(s){{return s.normalize('NFKC').toLowerCase();}}
+    function run(){{
+      var val=q.value.trim();
+      if(!val){{box.innerHTML='';box.hidden=true;return;}}
+      var n=norm(val);
+      var res=idx.filter(function(item){{
+        return norm([item.title,item.excerpt].concat(item.tags||[]).join(' ')).includes(n);
+      }}).slice(0,6);
+      if(!res.length){{box.innerHTML='<div class="hdr-item hdr-empty">검색 결과가 없습니다</div>';box.hidden=false;return;}}
+      box.innerHTML=res.map(function(item){{
+        return '<a class="hdr-item" href="./'+item.slug+'.html"><span class="hdr-title">'+item.title+'</span><span class="hdr-cat">'+item.category+'</span></a>';
+      }}).join('');
+      box.hidden=false;
+    }}
+    q.addEventListener('input',run);
+    q.addEventListener('keydown',function(e){{if(e.key==='Enter'&&q.value.trim())window.location.href='./search.html?q='+encodeURIComponent(q.value.trim());}});
+    q.addEventListener('focus',function(){{if(q.value.trim())run();}});
+    document.addEventListener('click',function(e){{if(!q.contains(e.target)&&!box.contains(e.target))box.hidden=true;}});
+  }})();
+  </script>
 </body>
 </html>
 """
@@ -318,6 +697,43 @@ a:hover { text-decoration: underline; }
 .hero h1 { margin: 0; font-size: clamp(1.8rem, 5vw, 4rem); line-height: 1.1; word-break: keep-all; }
 .meta { margin: 0 0 8px; color: var(--muted); font-size: 0.85rem; }
 
+.site-shell, .page-shell { width: min(1040px, 100% - 32px); margin: 0 auto; }
+.site-header { padding: 14px 0 0; border-bottom: 1px solid var(--line); }
+.header-top { display: flex; align-items: center; gap: 12px; padding-bottom: 10px; }
+.brand { font-weight: 700; font-size: 1.1rem; color: var(--ink); flex-shrink: 0; }
+
+/* header inline search */
+.header-search { flex: 1; position: relative; max-width: 480px; }
+.header-search input[type="search"] { width: 100%; padding: 7px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); font-size: 0.9rem; color: var(--ink); outline: none; transition: border-color .2s; -webkit-appearance: none; }
+.header-search input[type="search"]:focus { border-color: var(--accent); }
+.header-dropdown { position: absolute; top: calc(100% + 6px); left: 0; right: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,.1); z-index: 200; overflow: hidden; }
+.hdr-item { display: flex; align-items: center; gap: 10px; padding: 10px 16px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); transition: background .15s; font-size: 0.88rem; }
+.hdr-item:last-child { border-bottom: none; }
+.hdr-item:hover { background: var(--bg); }
+.hdr-title { flex: 1; line-height: 1.4; word-break: keep-all; }
+.hdr-cat { color: var(--muted); font-size: 0.75rem; flex-shrink: 0; }
+.hdr-empty { color: var(--muted); justify-content: center; }
+.dashboard-link { flex-shrink: 0; color: var(--muted); font-size: 0.85rem; padding: 7px 14px; border: 1px solid var(--line); border-radius: 999px; white-space: nowrap; transition: background .2s, color .2s, border-color .2s; }
+.dashboard-link:hover, .dashboard-link.active { background: var(--accent); color: #fff; border-color: var(--accent); text-decoration: none; }
+
+/* category tab nav */
+.site-nav { display: flex; gap: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.site-nav::-webkit-scrollbar { display: none; }
+.site-nav a { color: var(--muted); padding: 9px 18px; font-size: 0.9rem; font-weight: 500; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s; white-space: nowrap; text-decoration: none; display: block; }
+.site-nav a:hover { color: var(--ink); }
+.site-nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* clickable tags */
+a.tag { text-decoration: none; }
+a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* tag filter badge */
+.tag-filter-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; border-radius: 999px; padding: 5px 14px; font-size: 0.85rem; margin-top: 10px; }
+.tag-filter-badge button { background: none; border: none; color: #fff; cursor: pointer; font-size: 1.1rem; padding: 0; line-height: 1; }
+
+/* footer */
+.site-footer { border-top: 1px solid var(--line); padding: 24px 0; text-align: center; color: var(--muted); font-size: 0.82rem; margin-top: 32px; }
+
 /* ── index grid ── */
 .grid {
   display: grid;
@@ -336,11 +752,16 @@ a:hover { text-decoration: underline; }
 .card p { margin: 0 0 12px; font-size: 0.9rem; color: var(--muted); }
 
 /* ── card thumbnail ── */
+.card > a:first-child {
+  display: block;
+  margin: -16px -16px 0;
+}
 .card-img {
-  width: calc(100% + 32px);
-  margin: -16px -16px 14px;
-  height: 160px;
+  width: 100%;
+  margin-bottom: 14px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+  object-position: center center;
   border-radius: 10px 10px 0 0;
 }
 
@@ -374,11 +795,14 @@ a:hover { text-decoration: underline; }
 
 /* ── cover image ── */
 .cover {
+  display: block;
+  margin: 0 auto 20px;
   width: 100%;
-  max-height: clamp(180px, 40vw, 400px);
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+  object-position: center center;
   border-radius: 8px;
-  margin-bottom: 20px;
 }
 
 /* ── post content ── */
@@ -391,6 +815,9 @@ a:hover { text-decoration: underline; }
 
 /* ── table: scrollable on mobile ── */
 .content .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 16px 0; }
+
+/* center images inside post content */
+.content img { display: block; margin: 16px auto; max-width: 100%; height: auto; }
 .content table { width: 100%; min-width: 360px; border-collapse: collapse; font-size: 0.9rem; }
 .content th, .content td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; white-space: nowrap; }
 .content th { background: #ece7da; }
@@ -408,12 +835,17 @@ a:hover { text-decoration: underline; }
 /* ── mobile ── */
 @media (max-width: 480px) {
   main { width: 100%; padding: 0 0 48px; }
+  .header-top { flex-wrap: wrap; gap: 8px; padding: 0 16px 10px; }
+  .header-search { order: 3; flex: none; width: 100%; max-width: 100%; }
+  .dashboard-link { margin-left: auto; }
+  .site-nav { padding: 0 4px; }
   .hero { padding: 16px 16px 16px; }
   .grid { gap: 10px; padding: 12px 12px 0; }
   .card { border-radius: 8px; padding: 14px; }
-  .card-img { width: calc(100% + 28px); margin: -14px -14px 12px; height: 140px; }
+  .card > a:first-child { margin: -14px -14px 0; }
+  .card-img { width: 100%; margin: 0 0 12px; aspect-ratio: 16 / 9; object-fit: cover; object-position: center center; }
   .post { border-radius: 0; border-left: none; border-right: none; padding: 16px; }
-  .cover { border-radius: 0; max-height: 200px; }
+  .cover { border-radius: 0; aspect-ratio: 16 / 9; object-fit: cover; object-position: center center; max-height: 200px; }
   .content table { font-size: 0.82rem; }
   .content th, .content td { padding: 6px 8px; }
   .stats { grid-template-columns: 1fr; }
@@ -424,7 +856,14 @@ a:hover { text-decoration: underline; }
   .card-img { height: 150px; }
 }
 """
-        extra = "\n.pagination { display:flex; justify-content:space-between; align-items:center; margin-top:18px; } .pagination a { color:var(--accent); }"
+        extra = (
+            "\n.pagination { display:flex; justify-content:center; align-items:center; gap:8px; margin-top:28px; flex-wrap:wrap; }"
+            " .pagination a,.pagination .current { min-width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center; border-radius:8px; font-size:0.9rem; }"
+            " .pagination a { color:var(--accent); border:1px solid var(--line); text-decoration:none; transition:background .2s,color .2s; }"
+            " .pagination a:hover { background:var(--accent); color:#fff; border-color:var(--accent); }"
+            " .pagination .current { background:var(--accent); color:#fff; font-weight:700; border:1px solid var(--accent); }"
+            " .pagination .prev,.pagination .next { padding:0 14px; min-width:auto; }"
+        )
         (self.public_dir / "style.css").write_text((css.strip() + "\n" + extra).lstrip() + "\n", encoding="utf-8")
 
     def _write_cname(self) -> None:
@@ -439,6 +878,9 @@ a:hover { text-decoration: underline; }
       # write a permissive robots.txt to ensure crawlers can access the site
       robots = "User-agent: *\nAllow: /\n"
       (self.public_dir / "robots.txt").write_text(robots, encoding="utf-8")
+      # ensure search.json is present even if no posts
+      if not (self.public_dir / "search.json").exists():
+        (self.public_dir / "search.json").write_text("[]", encoding="utf-8")
 
     def _copy_assets(self) -> None:
         assets_dir = self.posts_dir.parent / "assets"
@@ -468,4 +910,4 @@ a:hover { text-decoration: underline; }
 
     @staticmethod
     def _tag_html(tags: list[str]) -> str:
-        return "".join(f'<span class="tag">{html.escape(tag)}</span>' for tag in tags)
+        return "".join(f'<a class="tag" href="./search.html?tag={html.escape(tag)}">{html.escape(tag)}</a>' for tag in tags)

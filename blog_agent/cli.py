@@ -39,7 +39,12 @@ def main() -> None:
         posts_dir = settings.output_dir if not args.posts_dir else settings.output_dir.__class__(args.posts_dir)
         public_dir = settings.public_dir if not args.public_dir else settings.public_dir.__class__(args.public_dir)
         StaticSiteBuilder(
-            posts_dir, public_dir, settings.site_title, settings.custom_domain,
+            posts_dir,
+            public_dir,
+            settings.site_title,
+            settings.site_description,
+            settings.custom_domain,
+            settings.categories,
             ga_measurement_id=settings.ga_measurement_id,
             adsense_publisher_id=settings.adsense_publisher_id,
         ).build()

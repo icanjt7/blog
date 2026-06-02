@@ -34,6 +34,7 @@ class Settings(BaseModel):
     public_dir: Path = Path("public")
     state_dir: Path = Path("state")
     site_title: str = "브리핑웨이브"
+    site_description: str = "브리핑웨이브에서 생활·기술·정책 소식을 쉽고 빠르게 확인하세요."
     custom_domain: str | None = None
     publisher: str = "markdown"
     wordpress_url: str | None = None
@@ -47,6 +48,8 @@ class Settings(BaseModel):
     blogger_oauth_client_id: str | None = None
     blogger_oauth_client_secret: str | None = None
     blogger_refresh_token: str | None = None
+    # Top navigation categories (order matters)
+    categories: list[str] = ["핫이슈", "정책", "기술", "생활"]
 
 
 def load_settings() -> Settings:
@@ -72,6 +75,7 @@ def load_settings() -> Settings:
         public_dir=Path(os.getenv("BLOG_PUBLIC_DIR", "public")),
         state_dir=Path(os.getenv("BLOG_STATE_DIR", "state")),
         site_title=os.getenv("BLOG_SITE_TITLE", "브리핑웨이브"),
+        site_description=os.getenv("BLOG_SITE_DESCRIPTION", "브리핑웨이브에서 생활·기술·정책 소식을 쉽고 빠르게 확인하세요."),
         custom_domain=os.getenv("BLOG_CUSTOM_DOMAIN") or None,
         publisher=os.getenv("PUBLISHER", "markdown"),
         wordpress_url=os.getenv("WORDPRESS_URL") or None,
@@ -83,4 +87,5 @@ def load_settings() -> Settings:
         blogger_oauth_client_id=os.getenv("BLOGGER_OAUTH_CLIENT_ID") or None,
         blogger_oauth_client_secret=os.getenv("BLOGGER_OAUTH_CLIENT_SECRET") or None,
         blogger_refresh_token=os.getenv("BLOGGER_REFRESH_TOKEN") or None,
+        categories=[c.strip() for c in os.getenv("BLOG_CATEGORIES", "핫이슈,정책,기술,생활").split(",") if c.strip()],
     )
