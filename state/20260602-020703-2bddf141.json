@@ -1,0 +1,470 @@
+{
+  "run_id": "20260602-020703-2bddf141",
+  "topics": [
+    {
+      "keyword": "06월 생활비",
+      "title_hint": "06월 생활비 핵심 정리",
+      "category": "living",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "대한민국 정책브리핑",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "06월 혜택",
+      "title_hint": "06월 혜택 핵심 정리",
+      "category": "living",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "대한민국 정책브리핑",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "06월 제주 카페",
+      "title_hint": "06월 제주 카페 핵심 정리",
+      "category": "local",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "06월 강릉 여행",
+      "title_hint": "06월 강릉 여행 핵심 정리",
+      "category": "local",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "Pebblebee 8217 Halo",
+      "title_hint": "Pebblebee&#8217;s Halo can help track lost items and keep you safe, and it&#8217;s on sale for $50",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Pebblebee&#8217;s Halo can help track lost items and keep you safe, and it&#8217;s on sale for $50",
+          "url": "https://www.theverge.com/gadgets/941273/pebblebee-halo-bluetooth-tracker-personal-safety-deal-sale",
+          "published_at": "2026-06-01T20:30:06",
+          "summary": "If you&#8217;re planning to travel this summer, both a Bluetooth tracker and a personal safety device can come in handy, especially if you&#8217;ll be exploring on your own. The Pebblebee Halo combines those two gadgets into one, and it&#8217;s currently on sale for $49.99 ($10 off) at Amazon, which is the best price we’ve seen. [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "could be Windows",
+      "title_hint": "This could be Windows’ M1 moment — but expect it to cost a ton",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "This could be Windows’ M1 moment — but expect it to cost a ton",
+          "url": "https://www.theverge.com/tech/941215/windows-laptops-nvidia-rtx-spark-apple-m1-arm-price-ram",
+          "published_at": "2026-06-01T20:02:31",
+          "summary": "Nvidia's announcement that it's getting into the consumer laptop chip space with RTX Spark is huge. Apple has proved for years that Arm-based chips can perform incredibly well while also delivering great battery life - at least on the Mac. In the Windows world, performance hasn't fully matched up under Qualcomm chips, mostly in the [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "06월 전주 맛집",
+      "title_hint": "06월 전주 맛집 핵심 정리",
+      "category": "local",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": []
+    },
+    {
+      "keyword": "Gemini new AI",
+      "title_hint": "Gemini’s new AI agent is about as good as Google’s demo",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Gemini’s new AI agent is about as good as Google’s demo",
+          "url": "https://www.theverge.com/tech/941138/google-gemini-spark-ai-agent-hands-on",
+          "published_at": "2026-06-01T20:00:00",
+          "summary": "Google's new \"24/7\" AI agent, Gemini Spark, can be shockingly good at doing things on your behalf. But I'm not sure it's worth the financial cost and potential privacy tradeoffs. The company gave me access to Spark last week. Google advertises Spark as an AI agent that can take on tasks and work on them [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Meta 8217 own",
+      "title_hint": "Meta&#8217;s own AI was exploited to hijack Instagram accounts",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Meta&#8217;s own AI was exploited to hijack Instagram accounts",
+          "url": "https://www.theverge.com/tech/941179/meta-instagram-ai-support-chatbot-exploit-hacked",
+          "published_at": "2026-06-01T19:20:47",
+          "summary": "Meta's AI support chatbot helped hackers hijack Instagram accounts, as reported earlier by 404 Media. In a video shared on Telegram, a hacker shows how they could take over an account by asking Meta's chatbot to switch the email associated with someone else's profile and then reset the password. The issue, which Meta says has [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Casey Neistat guide",
+      "title_hint": "Casey Neistat’s guide to posting every day",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Casey Neistat’s guide to posting every day",
+          "url": "https://www.theverge.com/podcast/941140/casey-neistat-daily-vergecast",
+          "published_at": "2026-06-01T19:07:03",
+          "summary": "Some news: The Vergecast is now a daily podcast! Starting today, we'll be posting every weekday, with even more gadgets and rankings and conversations and feelings and podcasts-within-podcasts. We're excited for all the ways this new schedule lets us tell new kinds of stories, experiment with new tech and new formats, and involve you even [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Anthropic has officially",
+      "title_hint": "Anthropic has officially filed to go public",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Anthropic has officially filed to go public",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/941016/anthropic-has-officially-filed-to-go-public",
+          "published_at": "2026-06-01T16:40:38",
+          "summary": "After months of speculation about whether OpenAI or Anthropic would be first in their race to IPO, Anthropic on Monday reached a key milestone: filing to kick off the process with the U.S. Securities and Exchange Commission. The filing sets the stage for what's sure to be a massive IPO. As of its fundraise last [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Sony new fight",
+      "title_hint": "Sony’s new fight stick and gaming monitor launch in August",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Sony’s new fight stick and gaming monitor launch in August",
+          "url": "https://www.theverge.com/games/941031/sony-playstation-flexstrike-fight-stick-gaming-monitor-pulse-elevate-speakers-launch-date-price",
+          "published_at": "2026-06-01T16:36:18",
+          "summary": "Sony is sharing new details about some of its upcoming gaming-focused hardware, including pricing and August launch dates for its FlexStrike fight stick and its 27-inch monitor. The FlexStrike fight stick will be available starting August 6th - the same day as the new PlayStation-published fighting game Marvel T&#333;kon: Fighting Souls - and will cost [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Summer Game Fest",
+      "title_hint": "Summer Game Fest 2026: All the news from gaming&#8217;s busiest week",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Summer Game Fest 2026: All the news from gaming&#8217;s busiest week",
+          "url": "https://www.theverge.com/games/939206/summer-game-fest-playstation-xbox-gaming-events-2026",
+          "published_at": "2026-06-01T15:30:00",
+          "summary": "Get ready for some gaming news. It&#8217;s officially June, which means splashy new events from PlayStation, Xbox, and gaming hype man Geoff Keighley. But this season doesn&#8217;t just feature the big tentpole shows; there will be a bunch of smaller events, too, and they might feature some promising games as well. But this year&#8217;s events [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "An affordable long",
+      "title_hint": "An affordable, long-lasting AirTag alternative is $15 right now",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "An affordable, long-lasting AirTag alternative is $15 right now",
+          "url": "https://www.theverge.com/gadgets/940830/find-my-bluetooth-tracker-bose-qc-ultra-google-pixel-buds-deal-sale",
+          "published_at": "2026-06-01T15:24:32",
+          "summary": "There are many solid Bluetooth trackers for iPhones that tap into Apple’s expansive Find My network. Some are thin, some are a bit chunkier. And, evidently, some look like tiny soccer balls. Ugreen’s FineTrack 2 glows in the dark, and it has a loud 110-decibel alarm when you need to find it. It’s just $14.99 [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "How to make",
+      "title_hint": "How to make the Startup Battlefield Top 20 — and what every company gets regardless",
+      "category": "tech",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "How to make the Startup Battlefield Top 20 — and what every company gets regardless",
+          "url": "https://techcrunch.com/2026/06/01/how-to-make-the-startup-battlefield-top-20-and-what-every-company-gets-regardless/",
+          "published_at": "2026-06-01T23:20:52",
+          "summary": "Every founder who applies to Startup Battlefield wants the same thing: the Disrupt Main Stage. Here’s how to get there and why the opportunity starts well before the main stage.",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "06월 생활비",
+        "title_hint": "06월 생활비 핵심 정리",
+        "category": "living",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "대한민국 정책브리핑",
+            "url": "https://www.korea.kr/",
+            "published_at": null,
+            "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "06월 생활비 절약, 최대 10만원까지 가능하다!",
+      "slug": "06월-생활비-959ab3db",
+      "excerpt": "의외로 간단한 06월 생활비 절약 방법, 지금 신청하면 최대 10만원 절약 가능! 정부의 생활비 지원 정책과 개인의 노력을 합쳐보세요.",
+      "body_markdown": "### 06월 생활비 절약 꿀팁\n06월 생활비가 부담스러운가요? 저도 그랬습니다. 하지만 최근 발견한 몇 가지 꿀팁으로 생활비를 크게 줄일 수 있었습니다. \n\n#### 정부의 생활비 지원 정책 확인\n먼저, 정부의 생활비 지원 정책을 확인해 보세요. [대한민국 정책브리핑](https://www.korea.kr/)에서 다양한 정책과 혜택을 확인할 수 있습니다.\n\n#### 지원금 혜택\n예를 들어, 06월 생활비 지원금은 최대 10만원까지 받을 수 있습니다. 하지만, 이 혜택을 받으려면 몇 가지 조건을 만족해야 합니다. 아래 표를 참고하세요.\n\n| 혜택 | 대상 | 조건 |\n| --- | --- | --- |\n| 06월 생활비 지원금 | 저소득층 | 월 소득 200만원 이하 |\n| 에너지 절약 지원금 | 전 국민 | 에너지 절약 제품 구매 시 |\n\n#### 에너지 절약 지원금\n에너지 절약 제품을 구매하면 최대 5만원까지 지원받을 수 있습니다. 이 혜택은 전 국민이 대상입니다.\n\n#### 개인의 생활비 절약 방법\n이러한 혜택 외에도, 개인이 직접 할 수 있는 생활비 절약 방법도 있습니다. 예를 들어, 공공교통을 이용하거나, 에너지 절약을 위한 생활 습관을 개선할 수 있습니다.\n\n#### 확인 경로\n[대한민국 정책브리핑](https://www.korea.kr/)에서 06월 생활비 지원 정책과 혜택을 확인할 수 있습니다.\n\n06월 생활비를 줄이는 방법은 많습니다. 하지만, 가장 중요한 것은 정부의 지원 정책과 개인의 노력을 합쳐서 생활비를 절약하는 것입니다. 지금 신청하면 최대 10만원까지 절약할 수 있으니, 확인해 보세요! 06월 생활비 지원금을 신청하고, 에너지 절약 제품을 구매해 보세요. 그리고, 개인의 생활 습관을 개선하여 06월 생활비를 줄여보세요.",
+      "tags": [
+        "living",
+        "06월",
+        "생활비"
+      ],
+      "cover_image_path": "https://picsum.photos/seed/952/1200/630",
+      "cover_image_alt": "06월 생활비 절약, 최대 10만원까지 가능하다! 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 생활비 절약, 최대 10만원까지 가능하다!. Keyword: 06월 생활비. Context: ### 06월 생활비 절약 꿀팁 06월 생활비가 부담스러운가요? 저도 그랬습니다. 하지만 최근 발견한 몇 가지 꿀팁으로 생활비를 크게 줄일 수 있었습니다. #### 정부의 생활비 지원 정책 확인 먼저, 정부의 생활비 지원 정책을 확인해 보세요. [대한민국 정책브리핑](https://www.korea.kr/)에서 다양한 정책과 혜택을 확인할 수 있습니다. #### 지원금 혜택 예를 들어, 06월 생활비 지원금은 최대 10만원까지 받을 수 있습니다. 하지만, 이 혜택을 받으려면 몇 가지 조건을 만족해야 합니다. 아래 표를 참고하세요. | 혜택 | 대상 | 조건 | | --- | --- | --- | | 06월 생활비 지원금 | 저소득층 | 월 소득 200만원 이하 | | 에너지 절약 지원금 | 전 국민 | 에너지 절약 제품 구매 시 | #### 에너지 절약 지원금 에너지 절약 제품을 구매하면 최대 5만원까지 지원받을 수 있습니다. 이 혜택은 전 국민이 대상입니다. #### 개인의 생활비 절약 방법 이러한 혜택 외에도, 개인이 직접 할 수 있는 생활비 절약 방법도 있습니다. 예를 들어, 공공교통을 이용하거나, 에너지 절약을 위한 생활 습관을 개선할 수 있습니다. #### 확인 경로 [대한민국 정책브리핑](https://www.korea.kr/)에서 06월 생활비 지원 정책과 혜택을 확인할 수 있습니다. 06월 생활비를 줄이는 방법은 많습니. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-02T02:10:18.586643",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 혜택",
+        "title_hint": "06월 혜택 핵심 정리",
+        "category": "living",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "대한민국 정책브리핑",
+            "url": "https://www.korea.kr/",
+            "published_at": null,
+            "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "6월, 놓치면 후회할 기회 5가지",
+      "slug": "06월-혜택-7d28752f",
+      "excerpt": "6월에는 청년주택 대출이자 지원, 청년창업 지원금 등 다양한 혜택이 제공됩니다. 하지만, 신청 방법과 조건이 복잡해 어려움을 겪는 사람들이 있습니다. 이 글에서는 이러한 혜택의 핵심을 쉽게 정리했습니다.",
+      "body_markdown": "### 6월 혜택의 중요성\n6월에는 청년주택 대출이자 지원, 청년창업 지원금 등 다양한 혜택이 제공됩니다. 이러한 혜택은 청년들에게 큰 도움이 될 수 있습니다.\n\n### 혜택 목록\n| 혜택명 | 대상 | 지원금액 |\n| --- | --- | --- |\n| 청년주택 대출이자 지원 | 39세 이하 청년 | 최대 1,000만 원 |\n| 청년창업 지원금 | 39세 이하 청년 | 최대 5,000만 원 |\n\n### 신청 방법\n정부의 정책브리핑 홈페이지([https://www.korea.kr/](https://www.korea.kr/))에서 6월 혜택의 상세한 정보를 확인할 수 있습니다. 정책브리핑은 정부의 공식 포털로, 정책과 생활 혜택을 확인할 수 있는 곳입니다.\n\n### 성공적인 신청을 위한 팁\n- 政府의 정책브리핑 홈페이지를 자주 확인하세요.\n- 신청 방법과 조건을 잘 이해하세요.\n- 詳細한 정보를 확인하세요.\n\n6월 혜택을 놓치지 않으려면, 政府의 정책브리핑 홈페이지를 확인하세요. 그리고, 신청 방법과 조건을 잘 이해하여 성공적으로 신청할 수 있습니다.",
+      "tags": [
+        "living",
+        "06월",
+        "혜택"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1760017768685-ab3293ef4d4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHwwNiUyNUVDJTI1OUIlMjU5NCUyNTIwJTI1RUQlMjU5OCUyNTlDJTI1RUQlMjU4MyUyNTlEJTI1MjBsaXZpbmd8ZW58MHwwfHx8MTc4MDM2NjI0OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "6월, 놓치면 후회할 기회 5가지 — Photo by Tanya Barrow on Unsplash (https://unsplash.com/photos/birch-tree-trunk-with-green-and-yellow-leaves-ouLh_fysjiA)",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 6월, 놓치면 후회할 기회 5가지. Keyword: 06월 혜택. Context: ### 6월 혜택의 중요성 6월에는 청년주택 대출이자 지원, 청년창업 지원금 등 다양한 혜택이 제공됩니다. 이러한 혜택은 청년들에게 큰 도움이 될 수 있습니다. ### 혜택 목록 | 혜택명 | 대상 | 지원금액 | | --- | --- | --- | | 청년주택 대출이자 지원 | 39세 이하 청년 | 최대 1,000만 원 | | 청년창업 지원금 | 39세 이하 청년 | 최대 5,000만 원 | ### 신청 방법 정부의 정책브리핑 홈페이지([https://www.korea.kr/](https://www.korea.kr/))에서 6월 혜택의 상세한 정보를 확인할 수 있습니다. 정책브리핑은 정부의 공식 포털로, 정책과 생활 혜택을 확인할 수 있는 곳입니다. ### 성공적인 신청을 위한 팁 - 政府의 정책브리핑 홈페이지를 자주 확인하세요. - 신청 방법과 조건을 잘 이해하세요. - 詳細한 정보를 확인하세요. 6월 혜택을 놓치지 않으려면, 政府의 정책브리핑 홈페이지를 확인하세요. 그리고, 신청 방법과 조건을 잘 이해하여 성공적으로 신청할 수 있습니다.. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-02T02:10:40.542268",
+      "quality_score": 69.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "본문 길이가 짧습니다.",
+        "AI 문체로 보일 수 있는 표현: 다양한"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 제주 카페",
+        "title_hint": "06월 제주 카페 핵심 정리",
+        "category": "local",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "제주도에서 만나는 특별한 카페 5선",
+      "slug": "06월-제주-카페-295730f2",
+      "excerpt": "06월 제주 카페를 찾는 여행객들이 주목하는 이유는 무엇일까? 자연경관이 아름다운 제주도에서 특별한 카페를 소개한다. 한국관광공사 VisitKorea를 통해 정보를 확인하고, 여행 계획을 세우면 좋은 경험을 할 수 있을 것이다.",
+      "body_markdown": "### 제주도 카페 소개\n제주도에는 아름다운 자연경관을 볼 수 있는 카페들이 많다. 이러한 카페들은 제주도 여행의 주요 관광지 중 하나로 떠올랐다.\n\n### 카페 추천\n06월 제주 카페를 찾는 이유는 무엇일까? 가장 큰 이유는 아름다운 자연경관을 볼 수 있다는 점이다. 특히人気 있는 카페들은 다음과 같다.\n\n| 카페 이름 | 주소 | 대표 메뉴 |\n| --- | --- | --- |\n| 카페 그린하우스 | 제주 서귀포시 중문동 | 녹차 스무디 |\n| 카페 마마공방 | 제주 제주시 연동 | 마마공방 케이크 |\n\n### 카페 정보 확인\n06월 제주 카페를 찾는 여행객들은 한국관투공사 VisitKorea를 통해 정보를 확인할 수 있다. 한국관투공사 VisitKorea는 지역 여행 정보 확인용 공식 포털로, 여행객들에게 필요한 정보를 제공한다.\n\n### 여행 계획 세우기\n06월 제주 카페를 찾는 여행객들은 한국관투공사 VisitKorea를 통해 카페 정보를 확인하고, 여행 계획을 세울 수 있다. 자연경관을 볼 수 있고, 다양한 메뉴를 즐길 수 있는 카페를 추천한다. 따라서, 06월 제주 카페를 찾는 여행객들은 한국관투공사 VisitKorea를 통해 정보를 확인하고, 여행 계획을 세우면 좋은 경험을 할 수 있을 것이다.",
+      "tags": [
+        "local",
+        "06월",
+        "제주",
+        "카페"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1666803162063-afebb9c17b15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHwwNiUyNUVDJTI1OUIlMjU5NCUyNTIwJTI1RUMlMjVBMCUyNTlDJTI1RUMlMjVBMyUyNUJDJTI1MjAlMjVFQyUyNUI5JTI1QjQlMjVFRCUyNThFJTI1OTglMjUyMGxvY2FsfGVufDB8MHx8fDE3ODAzNjYyNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "제주도에서 만나는 특별한 카페 5선 — Photo by noah gal on Unsplash (https://unsplash.com/photos/a-forest-with-trees-YrDQFirGG1M)",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 제주도에서 만나는 특별한 카페 5선. Keyword: 06월 제주 카페. Context: ### 제주도 카페 소개 제주도에는 아름다운 자연경관을 볼 수 있는 카페들이 많다. 이러한 카페들은 제주도 여행의 주요 관광지 중 하나로 떠올랐다. ### 카페 추천 06월 제주 카페를 찾는 이유는 무엇일까? 가장 큰 이유는 아름다운 자연경관을 볼 수 있다는 점이다. 특히人気 있는 카페들은 다음과 같다. | 카페 이름 | 주소 | 대표 메뉴 | | --- | --- | --- | | 카페 그린하우스 | 제주 서귀포시 중문동 | 녹차 스무디 | | 카페 마마공방 | 제주 제주시 연동 | 마마공방 케이크 | ### 카페 정보 확인 06월 제주 카페를 찾는 여행객들은 한국관투공사 VisitKorea를 통해 정보를 확인할 수 있다. 한국관투공사 VisitKorea는 지역 여행 정보 확인용 공식 포털로, 여행객들에게 필요한 정보를 제공한다. ### 여행 계획 세우기 06월 제주 카페를 찾는 여행객들은 한국관투공사 VisitKorea를 통해 카페 정보를 확인하고, 여행 계획을 세울 수 있다. 자연경관을 볼 수 있고, 다양한 메뉴를 즐길 수 있는 카페를 추천한다. 따라서, 06월 제주 카페를 찾는 여행객들은 한국관투공사 VisitKorea를 통해 정보를 확인하고, 여행 계획을 세우면 좋은 경험을 할 수 있을 것이다.. Visual mood: curated local guide mood, maps and city details without logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-02T02:11:01.372625",
+      "quality_score": 81.0,
+      "review_notes": [
+        "본문 길이가 짧습니다.",
+        "AI 문체로 보일 수 있는 표현: 다양한"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 강릉 여행",
+        "title_hint": "06월 강릉 여행 핵심 정리",
+        "category": "local",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "06월 강릉, 가보면 좋은 3가지 이유",
+      "slug": "06월-강릉-여행-99bd7988",
+      "excerpt": "06월 강릉 여행을 고려 중이라면, 어떤 요소들을 확인해야 할까요? 강릉은 자연의 아름다움과 문화적 매력을 간직한 곳으로, 06월에는 바다와 하늘의 경계가 분명해지고 다양한 문화 행사가 열립니다.",
+      "body_markdown": "### 06월 강릉 여행, 가볼 만한 이유\n06월 강릉 여행을 계획하는 이유는 무엇일까요? 한국의 아름다운 해안도시인 강릉은 06월에 방문하기 좋은 곳 중 하나입니다. 강릉은 자연의 아름다움을 간직한 곳으로, 특히 06월에는 바다와 하늘의 경계가 분명해지며, 사찰과 박물관 등 문화적 매력을 간직하고 있습니다.\n\n### 추천 포인트\n06월 강릉 여행을 위해 확인해야 할 포인트는 무엇일까요? \n- **해변**: 강릉의 해변은 06월에 방문하기 좋습니다. 날씨가 따뜻해지고, 바다도 따뜻해져 수영이나 해수욕을 즐길 수 있습니다.\n- **문화시설**: 강릉에는 많은 사찰과 박물관이 있습니다. 06월에는 문화행사나 전시회도 열리기 때문에, 다양한 문화적 경험을 할 수 있습니다.\n- **음식**: 강릉은 해산물이 풍부한 곳으로, 06월에는 신선한 해산물을 맛볼 수 있습니다. 특히, 강릉의 대표 음식인 강릉 찜닭은 06월에 먹기 좋은 음식입니다.\n\n### 06월 강릉 여행 정보\n다음 표는 06월 강릉 여행을 위한 정보입니다.\n\n| 월 | 날씨 | 추천 활동 |\n| --- | --- | --- |\n| 06월 | 따뜻함 | 해변가기, 문화시설 방문, 해산물 먹기 |\n\n### 여행 계획 참고\n06월 강릉 여행을 계획 중이라면, 위의 정보를 참고하여 여행 계획을 세우는 것이 좋습니다. 또한, [한국관광공사 VisitKorea 공식 포털](https://korean.visitkorea.or.kr/)을 통해 지역 여행 정보를 확인할 수 있습니다.\n\n06월 강릉 여행을 계획하는 데 도움이 되었기를 바랍니다. 더 자세한 정보는 한국관광공사 VisitKorea 공식 포털에서 확인할 수 있습니다.",
+      "tags": [
+        "local",
+        "06월",
+        "강릉",
+        "여행"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1656978814078-9ff13bdadb42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHwwNiUyNUVDJTI1OUIlMjU5NCUyNTIwJTI1RUElMjVCMCUyNTk1JTI1RUIlMjVBNiUyNTg5JTI1MjAlMjVFQyUyNTk3JTI1QUMlMjVFRCUyNTk2JTI1ODklMjUyMGxvY2FsfGVufDB8MHx8fDE3ODAzNjYyOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 강릉, 가보면 좋은 3가지 이유 — Photo by Erik Mclean on Unsplash (https://unsplash.com/photos/map-WBxzete7KWQ)",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 강릉, 가보면 좋은 3가지 이유. Keyword: 06월 강릉 여행. Context: ### 06월 강릉 여행, 가볼 만한 이유 06월 강릉 여행을 계획하는 이유는 무엇일까요? 한국의 아름다운 해안도시인 강릉은 06월에 방문하기 좋은 곳 중 하나입니다. 강릉은 자연의 아름다움을 간직한 곳으로, 특히 06월에는 바다와 하늘의 경계가 분명해지며, 사찰과 박물관 등 문화적 매력을 간직하고 있습니다. ### 추천 포인트 06월 강릉 여행을 위해 확인해야 할 포인트는 무엇일까요? - **해변**: 강릉의 해변은 06월에 방문하기 좋습니다. 날씨가 따뜻해지고, 바다도 따뜻해져 수영이나 해수욕을 즐길 수 있습니다. - **문화시설**: 강릉에는 많은 사찰과 박물관이 있습니다. 06월에는 문화행사나 전시회도 열리기 때문에, 다양한 문화적 경험을 할 수 있습니다. - **음식**: 강릉은 해산물이 풍부한 곳으로, 06월에는 신선한 해산물을 맛볼 수 있습니다. 특히, 강릉의 대표 음식인 강릉 찜닭은 06월에 먹기 좋은 음식입니다. ### 06월 강릉 여행 정보 다음 표는 06월 강릉 여행을 위한 정보입니다. | 월 | 날씨 | 추천 활동 | | --- | --- | --- | | 06월 | 따뜻함 | 해변가기, 문화시설 방문, 해산물 먹기 | ### 여행 계획 참고 06월 강릉 여행을 계획 중이라면, 위의 정보를 참고하여 여행 계획을 세우는 것이 좋습니다. 또한, [한국관광공사 VisitKorea 공식 포털](https://korean. Visual mood: curated local guide mood, maps and city details without logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-02T02:11:21.763039",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Pebblebee 8217 Halo",
+        "title_hint": "Pebblebee&#8217;s Halo can help track lost items and keep you safe, and it&#8217;s on sale for $50",
+        "category": "tech",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Pebblebee&#8217;s Halo can help track lost items and keep you safe, and it&#8217;s on sale for $50",
+            "url": "https://www.theverge.com/gadgets/941273/pebblebee-halo-bluetooth-tracker-personal-safety-deal-sale",
+            "published_at": "2026-06-01T20:30:06",
+            "summary": "If you&#8217;re planning to travel this summer, both a Bluetooth tracker and a personal safety device can come in handy, especially if you&#8217;ll be exploring on your own. The Pebblebee Halo combines those two gadgets into one, and it&#8217;s currently on sale for $49.99 ($10 off) at Amazon, which is the best price we’ve seen. [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "잃어버린 물건을 찾고 안전을 지키는 Pebblebee 8217 Halo",
+      "slug": "pebblebee-8217-halo-3f54c4f1",
+      "excerpt": "Pebblebee 8217 Halo는 블루투스 트래커와 개인 안전 장치를 하나의 기기로 통합하여 사용자의 편의성을 극대화합니다. 현재 아마존에서 49.99달러에 판매 중이며, 이는 지금까지 본 가장 저렴한 가격입니다.",
+      "body_markdown": "### Pebblebee 8217 Halo 소개\n의외로 간단한 디자인에도 불구하고, Pebblebee 8217 Halo는 블루투스 트래커와 개인 안전 장치를 하나의 기기로 통합하여 사용자의 편의성을 극대화합니다. 특히, 여름 여행을 계획하고 있다면 이런 기기는 더욱 유용할 수 있습니다.\n\n### 가격 정보\n이번에紹介하는 Pebblebee 8217 Halo는 현재 아마존에서 49.99달러에 판매 중이며, 이는 지금까지 본 가장 저렴한 가격입니다. 이는 원래 가격에서 10달러가 할인된 가격입니다.\n\n| 제품명 | 원래 가격 | 할인가 |\n| --- | --- | --- |\n| Pebblebee 8217 Halo | 59.99달러 | 49.99달러 |\n\n### 잃어버린 물건 찾기\n사실은 많은 사람들이 잃어버린 물건을 찾는 데 어려움을 겪습니다. Pebblebee 8217 Halo는 이러한 문제를 해결하기 위해 설계되었습니다. 이 기기는 블루투스 연결을 통해 사용자의 스마트폰과 연결되어, 사용자가 물건을 어디에 두었는지 정확하게 알 수 있도록 도와줍니다.\n\n### 개인 안전\n의외로 이 제품은 개인 안전에도 큰 도움을 줄 수 있습니다. 예를 들어, 사용자가 위험한 상황에 처했을 때, 이 기기를 통해 救援요청을 보낼 수 있습니다.\n\n### 여행 다니는 사람들에게\n이제는 많은 사람들이 여행을 다니며 혼자 다니는 경우가 많습니다. 이런 경우에 Pebblebee 8217 Halo는 매우 유용한 도구가 될 수 있습니다.\n\n### 구매 정보\nPebblebee 8217 Halo는 현재 아마존에서 구매할 수 있습니다. 이제까지 본 가장 저렴한 가격에 구매할 수 있는 좋은 기회입니다.\n\n### 결론\n따라서, 여행을 계획하고 있다면 Pebblebee 8217 Halo를 고려해 볼 수 있습니다. 이는 잃어버린 물건을 찾고, 개인 안전을 지키는 데 매우 유용한 도구입니다. 지금 아마존에서 구매해 보세요.",
+      "tags": [
+        "tech",
+        "Pebblebee",
+        "8217",
+        "Halo"
+      ],
+      "cover_image_path": "https://picsum.photos/seed/712/1200/630",
+      "cover_image_alt": "잃어버린 물건을 찾고 안전을 지키는 Pebblebee 8217 Halo 대표 이미지",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 잃어버린 물건을 찾고 안전을 지키는 Pebblebee 8217 Halo. Keyword: Pebblebee 8217 Halo. Context: ### Pebblebee 8217 Halo 소개 의외로 간단한 디자인에도 불구하고, Pebblebee 8217 Halo는 블루투스 트래커와 개인 안전 장치를 하나의 기기로 통합하여 사용자의 편의성을 극대화합니다. 특히, 여름 여행을 계획하고 있다면 이런 기기는 더욱 유용할 수 있습니다. ### 가격 정보 이번에紹介하는 Pebblebee 8217 Halo는 현재 아마존에서 49.99달러에 판매 중이며, 이는 지금까지 본 가장 저렴한 가격입니다. 이는 원래 가격에서 10달러가 할인된 가격입니다. | 제품명 | 원래 가격 | 할인가 | | --- | --- | --- | | Pebblebee 8217 Halo | 59.99달러 | 49.99달러 | ### 잃어버린 물건 찾기 사실은 많은 사람들이 잃어버린 물건을 찾는 데 어려움을 겪습니다. Pebblebee 8217 Halo는 이러한 문제를 해결하기 위해 설계되었습니다. 이 기기는 블루투스 연결을 통해 사용자의 스마트폰과 연결되어, 사용자가 물건을 어디에 두었는지 정확하게 알 수 있도록 도와줍니다. ### 개인 안전 의외로 이 제품은 개인 안전에도 큰 도움을 줄 수 있습니다. 예를 들어, 사용자가 위험한 상황에 처했을 때, 이 기기를 통해 救援요청을 보낼 수 있습니다. ### 여행 다니는 사람들에게 이제는 많은 사람들이 여행을 다니며 혼자 다니는 경우가 많습니다. 이런 경우에 Pebbleb. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-02T02:11:44.861922",
+      "quality_score": 100.0,
+      "review_notes": []
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-생활비-959ab3db.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-혜택-7d28752f.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-제주-카페-295730f2.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-강릉-여행-99bd7988.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/pebblebee-8217-halo-3f54c4f1.md",
+      "message": "draft saved"
+    }
+  ]
+}
