@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import base64
+import hashlib
 import urllib.parse
 from pathlib import Path
 
@@ -9,6 +10,47 @@ from openai import OpenAI
 
 from .config import Settings
 from .models import Draft
+
+
+VISUAL_KEYWORDS: tuple[tuple[str, str], ...] = (
+    ("맛집", "korean restaurant food table"),
+    ("카페", "coffee cafe interior"),
+    ("여행", "travel city landmark"),
+    ("제주", "jeju island coastline"),
+    ("부산", "busan city ocean"),
+    ("강릉", "korean beach travel"),
+    ("서울", "seoul city street"),
+    ("전주", "korean traditional food"),
+    ("아이폰", "smartphone technology"),
+    ("갤럭시", "smartphone technology"),
+    ("노트북", "laptop desk technology"),
+    ("스펙", "technology device closeup"),
+    ("비교", "technology comparison desk"),
+    ("AI", "artificial intelligence abstract technology"),
+    ("지원금", "public service documents"),
+    ("청년", "young professionals city"),
+    ("생활비", "household budget notebook"),
+    ("혜택", "public service checklist"),
+    ("신청", "application form document"),
+    ("제철음식", "seasonal korean food"),
+    ("금리", "financial chart desk"),
+    ("환율", "currency exchange finance"),
+    ("대출", "loan documents finance"),
+    ("부동산", "real estate apartment city"),
+    ("연금", "retirement finance documents"),
+    ("세금", "tax document calculator"),
+)
+
+CATEGORY_VISUALS = {
+    "핫이슈": "korean city news editorial",
+    "기술": "modern technology editorial",
+    "정책": "finance policy documents",
+    "생활": "everyday lifestyle public information",
+    "local": "local travel guide editorial",
+    "tech": "modern technology editorial",
+    "finance": "finance policy documents",
+    "living": "everyday lifestyle public information",
+}
 
 
 class ImageAgent:
@@ -21,7 +63,7 @@ class ImageAgent:
 
     def attach_cover(self, draft: Draft) -> Draft:
         draft.image_prompt = self.build_prompt(draft)
-        draft.cover_image_alt = f"{draft.title} 대표 이미지"
+        draft.cover_image_alt = f"{draft.topic.keyword} 관련 대표 이미지"
 
         # 1. Unsplash free API (key required, 50 req/h)
         if self.settings.unsplash_access_key:
@@ -37,17 +79,22 @@ class ImageAgent:
                 draft.cover_image_path = local_path
                 return draft
 
-        # 3. Picsum Photos — free, no key, keyword-seeded for consistency
-        draft.cover_image_path = self._picsum_url(draft)
+        # 3. Free topical fallback — keyword-seeded for consistency.
+        draft.cover_image_path = self._fallback_url(draft)
         return draft
 
     def _fetch_unsplash(self, draft: Draft) -> str | None:
-        keyword = f"{draft.topic.keyword} {draft.topic.category}"
-        query = urllib.parse.quote(keyword)
+        query = self.visual_query(draft.topic.keyword, draft.topic.category, draft.title)
         try:
             resp = requests.get(
                 "https://api.unsplash.com/search/photos",
-                params={"query": query, "per_page": 3, "orientation": "landscape"},
+                params={
+                    "query": query,
+                    "per_page": 10,
+                    "orientation": "landscape",
+                    "order_by": "relevant",
+                    "content_filter": "high",
+                },
                 headers={"Authorization": f"Client-ID {self.settings.unsplash_access_key}"},
                 timeout=10,
             )
@@ -56,7 +103,7 @@ class ImageAgent:
             if results:
                 photo = results[0]
                 # utm params required by Unsplash API guidelines
-                url = photo["urls"]["regular"]
+                url = photo["urls"].get("regular") or photo["urls"].get("full")
                 src_url = photo["links"]["html"]
                 author = photo["user"]["name"]
                 # store attribution in alt text
@@ -86,25 +133,43 @@ class ImageAgent:
             return None
 
     @staticmethod
-    def _picsum_url(draft: Draft) -> str:
-        import hashlib
-        seed = int(hashlib.md5(draft.slug.encode()).hexdigest()[:8], 16) % 1000
-        return f"https://picsum.photos/seed/{seed}/1200/630"
+    def _fallback_url(draft: Draft) -> str:
+        query = ImageAgent.visual_query(draft.topic.keyword, draft.topic.category, draft.title)
+        seed = int(hashlib.md5(draft.slug.encode()).hexdigest()[:8], 16) % 10000
+        path = urllib.parse.quote(",".join(query.split()[:5]))
+        return f"https://loremflickr.com/1200/630/{path}?lock={seed}"
+
+    @staticmethod
+    def visual_query(keyword: str, category: str, title: str = "") -> str:
+        text = f"{keyword} {title}".lower()
+        terms: list[str] = []
+        for marker, visual in VISUAL_KEYWORDS:
+            if marker.lower() in text:
+                terms.append(visual)
+        if not terms:
+            terms.append(CATEGORY_VISUALS.get(category, "clean editorial news briefing"))
+        return " ".join(dict.fromkeys(" ".join(terms).split()))
 
     @staticmethod
     def build_prompt(draft: Draft) -> str:
         context = " ".join(draft.body_markdown.split())[:700]
         category_moods = {
+            "핫이슈": "curated Korean local news guide, city details, food or travel context when relevant",
+            "기술": "modern tech magazine cover, clean devices and abstract interface elements",
+            "정책": "trustworthy finance and policy briefing, charts and documents without readable numbers",
+            "생활": "clear public-service editorial, helpful everyday information",
             "living": "clear public-service editorial, helpful everyday information",
             "tech": "modern tech magazine cover, clean devices and abstract interface elements",
             "finance": "trustworthy financial briefing, charts and documents without readable numbers",
             "local": "curated local guide mood, maps and city details without logos",
         }
         mood = category_moods.get(draft.topic.category, "clean editorial news briefing")
+        visual_query = ImageAgent.visual_query(draft.topic.keyword, draft.topic.category, draft.title)
         return (
             "Create a 16:9 editorial cover image for a Korean news-style information channel. "
             f"Article title/theme: {draft.title}. "
             f"Keyword: {draft.topic.keyword}. "
+            f"Concrete visual subject: {visual_query}. "
             f"Context: {context}. "
             f"Visual mood: {mood}. "
             "No readable text, no brand logos, no fake UI, no people implying firsthand review. "

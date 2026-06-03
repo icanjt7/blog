@@ -13,6 +13,8 @@ from urllib.parse import quote
 import markdown
 import yaml
 
+from .images import ImageAgent
+
 
 @dataclass
 class Post:
@@ -107,6 +109,8 @@ class StaticSiteBuilder:
         category = str(meta.get("category") or "생활")
         category = _cat_map.get(category, category)
         tags = [str(tag) for tag in meta.get("tags", [])]
+        raw_cover_image = str(meta.get("cover_image") or "")
+        body = self._strip_leading_image(body)
         body_html = markdown.markdown(
             body,
             extensions=["tables", "fenced_code", "toc"],
@@ -115,6 +119,9 @@ class StaticSiteBuilder:
         # wrap tables for horizontal scroll on mobile
         body_html = body_html.replace("<table>", '<div class="table-wrap"><table>').replace("</table>", "</table></div>")
         excerpt = self._excerpt(body)
+        cover_image = raw_cover_image
+        if not cover_image or "picsum.photos" in cover_image:
+            cover_image = self._fallback_cover_image(title, category, tags, path.stem)
         return Post(
             title=title,
             date=date,
@@ -123,8 +130,8 @@ class StaticSiteBuilder:
             slug=path.stem,
             excerpt=excerpt,
             body_html=body_html,
-            cover_image=str(meta.get("cover_image") or ""),
-            cover_image_alt=str(meta.get("cover_image_alt") or title),
+            cover_image=cover_image,
+            cover_image_alt=str(meta.get("cover_image_alt") or f"{title} 관련 대표 이미지"),
             author=str(meta.get("author") or self._author_for_slug(path.stem)),
         )
 
@@ -155,6 +162,17 @@ class StaticSiteBuilder:
         digest = hashlib.sha256(slug.encode("utf-8")).hexdigest()
         return AUTHOR_NAMES[int(digest[:8], 16) % len(AUTHOR_NAMES)]
 
+    @staticmethod
+    def _fallback_cover_image(title: str, category: str, tags: list[str], slug: str) -> str:
+        query = ImageAgent.visual_query(" ".join(tags), category, title)
+        seed = int(hashlib.md5(slug.encode("utf-8")).hexdigest()[:8], 16) % 10000
+        path = quote(",".join(query.split()[:5]))
+        return f"https://loremflickr.com/1200/630/{path}?lock={seed}"
+
+    @staticmethod
+    def _strip_leading_image(markdown_text: str) -> str:
+        return re.sub(r"^\s*!\[[^\]]*\]\([^)]+\)\s*", "", markdown_text, count=1)
+
     def _write_post(self, post: Post) -> None:
         cover_html = ""
         if post.cover_image:
@@ -178,7 +196,14 @@ class StaticSiteBuilder:
           {ad_slot}
         </article>
         """
-        self._write_html(f"{post.slug}.html", post.title, content, active=post.category, page_url=self._page_url(f"{post.slug}.html"))
+        self._write_html(
+            f"{post.slug}.html",
+            post.title,
+            content,
+            active=post.category,
+            page_url=self._page_url(f"{post.slug}.html"),
+            og_image=post.cover_image,
+        )
 
     def _ad_slot(self) -> str:
         pub = html.escape(self.adsense_publisher_id or "ca-pub-3870943054399059")
