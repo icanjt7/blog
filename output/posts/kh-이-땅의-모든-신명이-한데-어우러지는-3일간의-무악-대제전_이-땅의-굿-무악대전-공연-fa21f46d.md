@@ -6,7 +6,7 @@ tags:
   - "보도기사"
   - "국가유산진흥원"
 quality_score: 90.0
-cover_image: "https://www.kh.or.kr/_static/chf1/img/common/logo.png"
+cover_image: "assets/logos/kh.png"
 cover_image_alt: "이 땅의 모든 신명이 한데 어우러지는 3일간의 무악 대제전_이 땅의 굿-무악대전 공연 개최(260519) 관련 보도자료 이미지"
 author: "국가유산진흥원"
 ---

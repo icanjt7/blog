@@ -6,7 +6,7 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "https://www.mcst.go.kr/kor/images/main/mcst_logo.gif"
+cover_image: "assets/logos/mcst.gif"
 cover_image_alt: "전자도서관 ‘온책방’으로 언제 어디서나 전자책과 소리책을 즐기세요 관련 보도자료 이미지"
 author: "문화체육관광부"
 ---

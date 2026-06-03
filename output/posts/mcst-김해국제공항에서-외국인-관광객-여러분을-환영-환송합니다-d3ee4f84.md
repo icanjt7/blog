@@ -6,7 +6,7 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "https://www.mcst.go.kr/kor/images/main/mcst_logo.gif"
+cover_image: "assets/logos/mcst.gif"
 cover_image_alt: "김해국제공항에서 외국인 관광객 여러분을 환영·환송합니다 관련 보도자료 이미지"
 author: "문화체육관광부"
 ---

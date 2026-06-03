@@ -6,7 +6,7 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "https://www.mcst.go.kr/kor/images/main/mcst_logo.gif"
+cover_image: "assets/logos/mcst.gif"
 cover_image_alt: "지역 바가지요금 근절을 위해 범부처 총력 대응 관련 보도자료 이미지"
 author: "문화체육관광부"
 ---

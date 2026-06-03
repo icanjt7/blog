@@ -6,7 +6,7 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "https://www.mcst.go.kr/kor/images/main/mcst_logo.gif"
+cover_image: "assets/logos/mcst.gif"
 cover_image_alt: "국민주권정부 출범 1년 ‘케이-콘텐츠’ 수출액, 방한 외래관광객, 국민 여가만족도 역대 최대 관련 보도자료 이미지"
 author: "문화체육관광부"
 ---

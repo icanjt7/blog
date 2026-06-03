@@ -33,12 +33,12 @@ USER_AGENT = "Mozilla/5.0 (compatible; BriefWavePressImporter/1.0)"
 TIMEOUT = 20
 
 INSTITUTION_LOGOS: dict[str, str] = {
-    "행정안전부":        "https://www.mois.go.kr/images/og_logo.jpg",
-    "과학기술정보통신부": "https://loremflickr.com/1200/630/science,technology,laboratory?lock=5927",
+    "행정안전부":        "assets/logos/mois.png",
+    "과학기술정보통신부": "https://loremflickr.com/1200/630/science,technology,research?lock=5927",
     "기획재정부":        "https://www.mofe.go.kr/images/common/og-image.jpg",
-    "문화체육관광부":    "https://www.mcst.go.kr/kor/images/main/mcst_logo.gif",
+    "문화체육관광부":    "assets/logos/mcst.gif",
     "국가유산청":        "https://www.khs.go.kr/images/layout/cha_card.jpg",
-    "국가유산진흥원":    "https://www.kh.or.kr/_static/chf1/img/common/logo.png",
+    "국가유산진흥원":    "assets/logos/kh.png",
 }
 
 AGENCIES = {

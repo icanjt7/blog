@@ -6,7 +6,7 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "https://www.mcst.go.kr/kor/images/main/mcst_logo.gif"
+cover_image: "assets/logos/mcst.gif"
 cover_image_alt: "문화, 공적개발원조(ODA)의 새로운 길을 묻다 관련 보도자료 이미지"
 author: "문화체육관광부"
 ---

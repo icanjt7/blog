@@ -1340,9 +1340,11 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
             return
         target_dir = self.public_dir / "assets"
         target_dir.mkdir(parents=True, exist_ok=True)
-        for path in assets_dir.iterdir():
+        for path in assets_dir.rglob("*"):
             if path.is_file():
-                shutil.copy2(path, target_dir / path.name)
+                dest = target_dir / path.relative_to(assets_dir)
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(path, dest)
 
     @staticmethod
     def _parse_date(value: str) -> datetime:
