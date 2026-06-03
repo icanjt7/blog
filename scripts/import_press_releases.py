@@ -411,15 +411,17 @@ def write_post(release: PressRelease, prefix: str, sequence: int, overwrite: boo
     title = existing_frontmatter_value(path, "title") if overwrite else ""
     if not title:
         title = release.title
+    existing_cover = existing_frontmatter_value(path, "cover_image") if overwrite else ""
+    existing_alt = existing_frontmatter_value(path, "cover_image_alt") if overwrite else ""
     try:
         base_dt = datetime.fromisoformat(release.date)
     except ValueError:
         base_dt = datetime.now()
     post_dt = base_dt + timedelta(minutes=sequence)
     tags = ["보도기사", release.institution]
-    img = release.image_url or INSTITUTION_LOGOS.get(release.institution, "")
+    img = existing_cover or release.image_url or INSTITUTION_LOGOS.get(release.institution, "")
     cover_line = f"cover_image: {yaml_quote(img)}\n" if img else ""
-    alt = release.image_alt or f"{release.title} 관련 보도자료 이미지"
+    alt = existing_alt or release.image_alt or f"{release.title} 관련 보도자료 이미지"
     frontmatter = (
         "---\n"
         f"title: {yaml_quote(title)}\n"
