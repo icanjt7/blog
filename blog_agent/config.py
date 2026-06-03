@@ -14,7 +14,7 @@ _DEFAULT_CATEGORIES: list[str] = list(CATEGORY_SEEDS.keys())
 
 
 class Settings(BaseModel):
-    # LLM providers — first non-empty key wins: groq → gemini → openai → github_token
+    # LLM providers — first non-empty key wins: groq → gemini → openrouter → openai → github_token
     openai_api_key: str | None = None
     openai_model: str = "gpt-4.1-mini"
     openai_image_model: str = "gpt-image-1-mini"
@@ -24,6 +24,8 @@ class Settings(BaseModel):
     github_model: str = "Llama-3.3-70B-Instruct"
     gemini_api_key: str | None = None
     gemini_model: str = "gemini-2.0-flash"
+    openrouter_api_key: str | None = None
+    openrouter_model: str = "meta-llama/llama-3.1-8b-instruct:free"
 
     # Images — Unsplash free API (50 req/h)
     unsplash_access_key: str | None = None
@@ -71,6 +73,8 @@ def load_settings() -> Settings:
         github_model=os.getenv("GITHUB_MODEL", "Llama-3.3-70B-Instruct"),
         gemini_api_key=os.getenv("GEMINI_API_KEY") or None,
         gemini_model=os.getenv("GEMINI_MODEL", "gemini-2.0-flash"),
+        openrouter_api_key=os.getenv("OPENROUTER_API_KEY") or None,
+        openrouter_model=os.getenv("OPENROUTER_MODEL", "meta-llama/llama-3.1-8b-instruct:free"),
         unsplash_access_key=os.getenv("UNSPLASH_ACCESS_KEY") or None,
         ga_measurement_id=os.getenv("GA_MEASUREMENT_ID") or None,
         adsense_publisher_id=os.getenv("ADSENSE_PUBLISHER_ID") or None,

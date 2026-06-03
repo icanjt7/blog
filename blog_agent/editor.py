@@ -60,6 +60,14 @@ class SeoEditorAgent:
                 max_retries=1,
             )
             self._model = s.gemini_model
+        elif s.openrouter_api_key:
+            self.client = OpenAI(
+                api_key=s.openrouter_api_key,
+                base_url="https://openrouter.ai/api/v1",
+                timeout=60,
+                max_retries=1,
+            )
+            self._model = s.openrouter_model
         elif s.openai_api_key:
             self.client = OpenAI(api_key=s.openai_api_key, timeout=45, max_retries=1)
             self._model = s.openai_model
