@@ -1,0 +1,20 @@
+{
+  "run_id": "20260603-042636-b2065540",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "06월-전주-맛집-4eae0729",
+      "title": "06월 전주 맛집 TOP 3",
+      "keyword": "06월 전주 맛집",
+      "category": "핫이슈",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 전주 맛집 TOP 3. Keyword: 06월 전주 맛집. Context: ### 전주 맛집 탐색의難題 사실은 전주 여행을 계획할 때, 맛집 정보를 찾는 것이 가장 어려운 일입니다. 많은 사람들이 추천하는 맛집이 있지만, 실제로 맛집을 방문해 본 결과는 만족스럽지 못한 경우가 많습니다. ### 06월 전주 맛집 찾기 06월 전주 맛집을 찾는 방법은 여러 가지가 있지만, 가장 효과적인 방법은 인터넷에서 다른 사람들이 남긴 리뷰를 확인하는 것입니다. 리뷰를 통해 맛집의 위치, 메뉴, 가격, 서비스 등 다양한 정보를 확인할 수 있습니다. 예를 들어, [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/) 공식 포털을 통해서도 지역 여행 정보를 확인할 수 있습니다. ### 전주 대표 음식 전주 여행의 대표적인 음식은 비빔밥, 자개구이, 콩나물국밥 등입니다. 이 음식들은 전주에서만 맛볼 수 있는 독특한 맛을 제공합니다. ### 전주 맛집 위치 전주 맛집은 대부분 전주 시내에 있습니다. 전주 시내는 교통이 편리하여 맛집을 쉽게 찾을 수 있습니다. #### 추천 맛집 | 맛집 이름 | 위치 | 메뉴 | | --- | --- | --- | | 전주 한옥마을 식당 | 전주 완산구 교동 99-1 | 비빔밥, 자개구이 | | 전주 시장 식당 | 전주 완산구 전동 123-4 | 콩나물국밥, 잡채 | ### 추가 정보 06월 전주 맛집을 찾는 데 어려움이 있다면, 인터넷에서 다른 사람들이 . Visual mood: clean editorial news briefing. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1656978814078-9ff13bdadb42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHwwNiUyNUVDJTI1OUIlMjU5NCUyNTIwJTI1RUMlMjVBMCUyNTg0JTI1RUMlMjVBMyUyNUJDJTI1MjAlMjVFQiUyNUE3JTI1OUIlMjVFQyUyNUE3JTI1OTElMjUyMCUyNUVEJTI1OTUlMjVBQiUyNUVDJTI1OUQlMjVCNCUyNUVDJTI1OEElMjU4OHxlbnwwfDB8fHwxNzgwNDYwOTgxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
