@@ -6,7 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image_alt: "구혁채 제1차관, 주한 베트남 대사와 면담 관련 보도자료 이미지"
+cover_image: "assets/press/msit-45a914684b2f.jpg"
+cover_image_alt: "구혁채 제1차관, 주한 베트남 대사와 면담"
 author: "과학기술정보통신부"
 ---
 

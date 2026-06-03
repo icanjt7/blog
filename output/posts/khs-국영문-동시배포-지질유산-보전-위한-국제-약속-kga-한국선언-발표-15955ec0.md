@@ -1,10 +1,9 @@
 ---
 title: "(국영문 동시배포) 지질유산 보전 위한 국제 약속, ‘KGA 한국선언’ 발표"
-date: "2026-05-27T00:21"
+date: "2026-05-27T00:53"
 category: "정책"
 tags:
   - "보도기사"
-  - "국가유산"
   - "국가유산청"
 quality_score: 90.0
 cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=b8cdd3cd2eb2467d8b15cd9a1b7428ee"

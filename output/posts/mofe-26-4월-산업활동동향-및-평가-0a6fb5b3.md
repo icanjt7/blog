@@ -1,11 +1,12 @@
 ---
 title: "'26.4월 산업활동동향 및 평가"
-date: "2026-05-29T00:33"
+date: "2026-05-29T00:32"
 category: "정책"
 tags:
   - "보도기사"
   - "기획재정부"
 quality_score: 90.0
+cover_image: "https://www.mofe.go.kr/images/common/og-image.jpg"
 cover_image_alt: "'26.4월 산업활동동향 및 평가 관련 보도자료 이미지"
 author: "기획재정부"
 ---

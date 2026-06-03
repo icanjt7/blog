@@ -1,10 +1,9 @@
 ---
 title: "“국민과 함께한 1년, K-헤리티지로 세계를 매료하고 국민의 삶을 바꾸다”"
-date: "2026-06-01T00:17"
+date: "2026-06-01T00:49"
 category: "정책"
 tags:
   - "보도기사"
-  - "국가유산"
   - "국가유산청"
 quality_score: 90.0
 cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=807fde7ef1b4419981108400155e62d7"

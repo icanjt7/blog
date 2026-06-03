@@ -1,10 +1,9 @@
 ---
 title: "국립문화유산연구원, 전통안료 국내 생산 업체 1곳에 ‘동록’ 제조 기술 추가 이전"
-date: "2026-06-01T00:16"
+date: "2026-06-01T00:48"
 category: "정책"
 tags:
   - "보도기사"
-  - "국가유산"
   - "국가유산청"
 quality_score: 90.0
 cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=3f0fc9d0c5ae4f028b60170dc1e7f15f"

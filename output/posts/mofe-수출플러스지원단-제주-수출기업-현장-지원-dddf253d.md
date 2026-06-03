@@ -1,11 +1,12 @@
 ---
 title: "수출플러스지원단, 제주 수출기업 현장 지원"
-date: "2026-06-01T00:28"
+date: "2026-06-01T00:27"
 category: "정책"
 tags:
   - "보도기사"
   - "기획재정부"
 quality_score: 90.0
+cover_image: "https://www.mofe.go.kr/images/common/og-image.jpg"
 cover_image_alt: "수출플러스지원단, 제주 수출기업 현장 지원 관련 보도자료 이미지"
 author: "기획재정부"
 ---

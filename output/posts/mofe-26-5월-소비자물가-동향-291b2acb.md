@@ -1,11 +1,12 @@
 ---
 title: "'26.5월 소비자물가 동향"
-date: "2026-06-02T00:25"
+date: "2026-06-02T00:24"
 category: "정책"
 tags:
   - "보도기사"
   - "기획재정부"
 quality_score: 90.0
+cover_image: "https://www.mofe.go.kr/images/common/og-image.jpg"
 cover_image_alt: "'26.5월 소비자물가 동향 관련 보도자료 이미지"
 author: "기획재정부"
 ---

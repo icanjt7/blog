@@ -6,7 +6,8 @@ tags:
   - "보도기사"
   - "행정안전부"
 quality_score: 90.0
-cover_image_alt: "국가정보자원관리원 운영 대전환, 차세대 인공지능정부 인프라로 혁신 본격 착수 관련 보도자료 이미지"
+cover_image: "assets/press/mois-635acdbd03d9.jpg"
+cover_image_alt: "국가정보자원관리원 운영 대전환, 차세대 인공지능정부 인프라로 혁신 본격 착수"
 author: "행정안전부"
 ---
 

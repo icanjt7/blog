@@ -1,11 +1,12 @@
 ---
 title: "세계은행그룹, ‘AI·디지털 기술’ 분야 한국인 우수 인재 유치를 위한 채용 미션 개최"
-date: "2026-05-31T00:29"
+date: "2026-05-31T00:28"
 category: "정책"
 tags:
   - "보도기사"
   - "기획재정부"
 quality_score: 90.0
+cover_image: "https://www.mofe.go.kr/images/common/og-image.jpg"
 cover_image_alt: "세계은행그룹, ‘AI·디지털 기술’ 분야 한국인 우수 인재 유치를 위한 채용 미션 개최 관련 보도자료 이미지"
 author: "기획재정부"
 ---

@@ -6,7 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image_alt: "과기정통부, ‘제2차 양자 혁명’ 국제협력 미래상(비전) 논의 관련 보도자료 이미지"
+cover_image: "assets/press/msit-2a2c74f4fbc6.png"
+cover_image_alt: "과기정통부, ‘제2차 양자 혁명’ 국제협력 미래상(비전) 논의"
 author: "과학기술정보통신부"
 ---
 

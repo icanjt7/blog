@@ -1,11 +1,12 @@
 ---
 title: "재경부, 인공지능(AI) 기반 업무 혁신 가속화"
-date: "2026-06-01T00:26"
+date: "2026-06-01T00:25"
 category: "정책"
 tags:
   - "보도기사"
   - "기획재정부"
 quality_score: 90.0
+cover_image: "https://www.mofe.go.kr/images/common/og-image.jpg"
 cover_image_alt: "재경부, 인공지능(AI) 기반 업무 혁신 가속화 관련 보도자료 이미지"
 author: "기획재정부"
 ---

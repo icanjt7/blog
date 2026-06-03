@@ -6,7 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image_alt: "대한민국 과학기술인상 6월 수상자 손훈 교수 선정 관련 보도자료 이미지"
+cover_image: "assets/press/msit-cda85b995468.png"
+cover_image_alt: "대한민국 과학기술인상 6월 수상자 손훈 교수 선정"
 author: "과학기술정보통신부"
 ---
 

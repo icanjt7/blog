@@ -1,11 +1,12 @@
 ---
 title: "금융보험업계 세법개정 건의 간담회 개최"
-date: "2026-05-29T00:32"
+date: "2026-05-29T00:31"
 category: "정책"
 tags:
   - "보도기사"
   - "기획재정부"
 quality_score: 90.0
+cover_image: "https://www.mofe.go.kr/images/common/og-image.jpg"
 cover_image_alt: "금융보험업계 세법개정 건의 간담회 개최 관련 보도자료 이미지"
 author: "기획재정부"
 ---

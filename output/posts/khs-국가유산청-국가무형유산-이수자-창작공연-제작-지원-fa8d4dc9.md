@@ -1,10 +1,9 @@
 ---
 title: "국가유산청, 국가무형유산 이수자 창작공연 제작 지원"
-date: "2026-06-02T00:14"
+date: "2026-06-02T00:46"
 category: "정책"
 tags:
   - "보도기사"
-  - "국가유산"
   - "국가유산청"
 quality_score: 90.0
 cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=fcd54394fd2c42d698348ed6035bbd1c"

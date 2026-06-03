@@ -1,11 +1,12 @@
 ---
 title: "허장 2차관, 경제협력개발기구(OECD) 각료이사회 참석 위해 프랑스로 출국"
-date: "2026-06-02T00:24"
+date: "2026-06-02T00:23"
 category: "정책"
 tags:
   - "보도기사"
   - "기획재정부"
 quality_score: 90.0
+cover_image: "https://www.mofe.go.kr/images/common/og-image.jpg"
 cover_image_alt: "허장 2차관, 경제협력개발기구(OECD) 각료이사회 참석 위해 프랑스로 출국 관련 보도자료 이미지"
 author: "기획재정부"
 ---
