@@ -7,6 +7,7 @@ import shutil
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import quote
 
 import markdown
 import yaml
@@ -332,11 +333,12 @@ class StaticSiteBuilder:
         content = (
             '''
         <article class="post search-page">
-          <header>
-            <p class="meta">검색</p>
-            <h1>글 검색</h1>
-            <p class="search-help">키워드, 카테고리, 태그로 빠르게 찾을 수 있습니다.</p>
+          <header class="search-hero">
+            <p class="meta" id="search-kicker">검색</p>
+            <h1 id="search-title">글 검색</h1>
+            <p class="search-help" id="search-help">키워드, 카테고리, 태그로 빠르게 찾을 수 있습니다.</p>
           </header>
+          <section id="tag-overview" class="tag-overview" hidden></section>
           <section class="search-panel">
             <label for="q" class="visually-hidden">검색어 입력</label>
             <input id="q" type="search" placeholder="검색어를 입력하세요" autocomplete="off">
@@ -353,6 +355,7 @@ class StaticSiteBuilder:
               </label>
             </div>
           </section>
+          <div id="results-summary" class="results-summary" aria-live="polite"></div>
           <section id="results" class="search-results"></section>
         </article>
         <script>
@@ -371,11 +374,70 @@ class StaticSiteBuilder:
           return value.normalize('NFKC').toLowerCase();
         }
 
+        function escapeHtml(value){
+          return String(value).replace(/[&<>"']/g, char => ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#39;'
+          }[char]));
+        }
+
         function buildSuggestionText(query, items){
           if(!query && !activeTag) return '검색어를 입력하면 추천 검색어가 나타납니다.';
           const candidate = items.find(item => normalize(item.title).includes(query) || normalize((item.tags||[]).join(' ')).includes(query));
           if(candidate) return `이런 검색어도 시도해보세요: ${candidate.title}`;
           return '검색 결과가 없으면 다른 키워드로 다시 시도해보세요.';
+        }
+
+        function renderTagOverview(tag){
+          const overview = document.getElementById('tag-overview');
+          const title = document.getElementById('search-title');
+          const kicker = document.getElementById('search-kicker');
+          const help = document.getElementById('search-help');
+          if(!tag){
+            overview.hidden = true;
+            overview.innerHTML = '';
+            title.textContent = '글 검색';
+            kicker.textContent = '검색';
+            help.textContent = '키워드, 카테고리, 태그로 빠르게 찾을 수 있습니다.';
+            return;
+          }
+
+          const taggedItems = searchIndex.filter(item => (item.tags || []).includes(tag));
+          const categoryCounts = taggedItems.reduce((acc, item) => {
+            acc[item.category] = (acc[item.category] || 0) + 1;
+            return acc;
+          }, {});
+          const relatedCounts = taggedItems.flatMap(item => item.tags || [])
+            .filter(itemTag => itemTag !== tag)
+            .reduce((acc, itemTag) => {
+              acc[itemTag] = (acc[itemTag] || 0) + 1;
+              return acc;
+            }, {});
+          const categoryText = Object.entries(categoryCounts)
+            .sort((a, b) => b[1] - a[1])
+            .map(([name, count]) => `<span>${escapeHtml(name)} ${count}</span>`)
+            .join('');
+          const relatedTags = Object.entries(relatedCounts)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 8)
+            .map(([name, count]) => `<a class="tag related-tag" href="./search.html?tag=${encodeURIComponent(name)}">${escapeHtml(name)}<small>${count}</small></a>`)
+            .join('');
+
+          title.textContent = `#${tag}`;
+          kicker.textContent = '태그 브리핑';
+          help.textContent = '같은 태그로 묶인 글을 최신순으로 모았습니다.';
+          overview.hidden = false;
+          overview.innerHTML = `
+            <div class="tag-overview-main">
+              <span class="tag-count">${taggedItems.length}</span>
+              <span>개의 관련 기사</span>
+            </div>
+            <div class="tag-overview-meta">${categoryText || '<span>분류 없음</span>'}</div>
+            <div class="related-tags" aria-label="관련 태그">${relatedTags || '<span class="muted-text">함께 쓰인 태그가 아직 없습니다.</span>'}</div>
+          `;
         }
 
         function filterResults(query, category, sortKey){
@@ -402,12 +464,25 @@ class StaticSiteBuilder:
           }
           resultsEl.innerHTML = results.map(item => `
             <article class="card search-result">
-              <p class="meta">${item.category} · ${item.date}</p>
-              <h2><a href="./${item.slug}.html">${item.title}</a></h2>
-              <p>${item.excerpt}</p>
-              <div class="tags">${(item.tags || []).map(tag=>`<span class="tag">${tag}</span>`).join('')}</div>
+              <div class="result-topline">
+                <span class="cat-badge">${escapeHtml(item.category)}</span>
+                <time datetime="${escapeHtml(item.date)}">${escapeHtml(item.date)}</time>
+              </div>
+              <h2><a href="./${encodeURIComponent(item.slug)}.html">${escapeHtml(item.title)}</a></h2>
+              <p class="card-excerpt">${escapeHtml(item.excerpt)}</p>
+              <div class="tags">${(item.tags || []).map(tag=>`<a class="tag" href="./search.html?tag=${encodeURIComponent(tag)}">${escapeHtml(tag)}</a>`).join('')}</div>
             </article>
           `).join('');
+        }
+
+        function renderSummary(results, query, category){
+          const summary = document.getElementById('results-summary');
+          const pieces = [];
+          if(activeTag) pieces.push(`<strong>#${escapeHtml(activeTag)}</strong>`);
+          if(query) pieces.push(`검색어 <strong>${escapeHtml(query)}</strong>`);
+          if(category) pieces.push(`카테고리 <strong>${escapeHtml(category)}</strong>`);
+          const scope = pieces.length ? pieces.join(' · ') : '전체 글';
+          summary.innerHTML = `<span>${scope}</span><strong>${results.length}개 결과</strong>`;
         }
 
         function renderCategoryFilters(){
@@ -437,6 +512,7 @@ class StaticSiteBuilder:
             const sortKey = sortControl.value;
             const results = filterResults(query, activeCategory, sortKey);
             suggestions.textContent = buildSuggestionText(normalize(query), results);
+            renderSummary(results, query, activeCategory);
             renderResults(results);
           }
 
@@ -458,18 +534,22 @@ class StaticSiteBuilder:
           if(urlQ) input.value = urlQ;
           if(urlTag){
             activeTag = urlTag;
+            renderTagOverview(activeTag);
             const badge = document.createElement('div');
             badge.className = 'tag-filter-badge';
-            badge.innerHTML = '태그: <strong>' + urlTag + '</strong> <button type="button" id="clear-tag">×</button>';
+            badge.innerHTML = '<span>태그 필터</span><strong>#' + escapeHtml(urlTag) + '</strong> <button type="button" id="clear-tag" aria-label="태그 필터 해제">×</button>';
             document.querySelector('.search-panel').appendChild(badge);
             document.getElementById('clear-tag').addEventListener('click', function(){
               activeTag = '';
               badge.remove();
+              renderTagOverview('');
               const url = new URL(window.location);
               url.searchParams.delete('tag');
               window.history.replaceState({}, '', url);
               update();
             });
+          } else {
+            renderTagOverview('');
           }
           update();
         })();
@@ -705,6 +785,17 @@ main {
 }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 /* ── hero ── */
 .hero { padding: 12px 0 10px; border-bottom: 1px solid var(--line); }
@@ -755,8 +846,10 @@ a.tag { text-decoration: none; }
 a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
 /* tag filter badge */
-.tag-filter-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; border-radius: 999px; padding: 5px 14px; font-size: 0.85rem; margin-top: 10px; }
-.tag-filter-badge button { background: none; border: none; color: #fff; cursor: pointer; font-size: 1.1rem; padding: 0; line-height: 1; }
+.tag-filter-badge { display: inline-flex; align-items: center; gap: 8px; background: #123b36; color: #fff; border-radius: 999px; padding: 7px 12px; font-size: 0.85rem; margin-top: 12px; box-shadow: 0 8px 18px rgba(15,118,110,.16); }
+.tag-filter-badge span { color: rgba(255,255,255,.72); font-size: 0.78rem; }
+.tag-filter-badge button { width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,.14); border: none; border-radius: 999px; color: #fff; cursor: pointer; font-size: 1rem; padding: 0; line-height: 1; }
+.tag-filter-badge button:hover { background: rgba(255,255,255,.24); }
 
 /* footer */
 .site-footer { border-top: 1px solid var(--line); background: var(--paper); margin-top: 32px; }
@@ -826,6 +919,189 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 }
 .back { display: inline-block; margin-bottom: 20px; color: var(--muted); font-size: 0.9rem; }
 
+/* ── search and tag pages ── */
+.search-page {
+  max-width: 920px;
+  border-radius: 12px;
+}
+.search-hero {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+.search-hero h1 {
+  margin-bottom: 8px;
+}
+.search-panel {
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #faf8f1;
+}
+.search-panel input[type="search"] {
+  width: 100%;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  padding: 0 14px;
+  outline: none;
+  -webkit-appearance: none;
+}
+.search-panel input[type="search"]:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(15,118,110,.12);
+}
+.suggestions {
+  min-height: 22px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.search-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 12px;
+}
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.chip {
+  min-height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--muted);
+  padding: 0 12px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+}
+.chip:hover,
+.chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.sort-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.sort-label select {
+  height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 0 8px;
+}
+.tag-overview {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid rgba(15,118,110,.22);
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f2fbf8 0%, #fffdf8 58%, #f7f1df 100%);
+}
+.tag-overview-main {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: var(--ink);
+}
+.tag-count {
+  color: var(--accent);
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.tag-overview-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 12px;
+}
+.tag-overview-meta span {
+  border: 1px solid rgba(15,118,110,.2);
+  border-radius: 999px;
+  background: rgba(255,255,255,.66);
+  color: #33524d;
+  padding: 3px 9px;
+  font-size: 0.8rem;
+}
+.related-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 14px;
+}
+.related-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--paper);
+}
+.related-tag small {
+  color: var(--accent);
+  font-size: 0.68rem;
+}
+.muted-text {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+.results-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.results-summary strong {
+  color: var(--ink);
+}
+.search-results {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.search-result {
+  border-radius: 10px;
+  padding: 16px;
+}
+.search-result h2 {
+  margin-top: 10px;
+}
+.result-topline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.no-results {
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+  background: #faf8f1;
+}
+.suggestion-text {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
 /* ── cover image ── */
 .cover {
   display: block;
@@ -878,8 +1154,16 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   .grid { grid-template-columns: 1fr; gap: 10px; padding: 10px 12px 0; }
   .card { border-radius: 10px; }
   .card-body { padding: 12px 14px 14px; }
-  .post { border-radius: 0; border-left: none; border-right: none; padding: 16px; }
-  .cover { border-radius: 0; aspect-ratio: 16 / 9; object-fit: cover; object-position: center center; max-height: 200px; }
+	  .post { border-radius: 0; border-left: none; border-right: none; padding: 16px; }
+	  .search-page { max-width: none; }
+	  .search-panel { padding: 14px; }
+	  .search-meta { flex-direction: column; align-items: stretch; }
+	  .category-filters { width: 100%; }
+	  .sort-label { justify-content: space-between; width: 100%; }
+	  .sort-label select { max-width: 150px; }
+	  .tag-overview { padding: 16px; }
+	  .results-summary { align-items: flex-start; flex-direction: column; gap: 4px; }
+	  .cover { border-radius: 0; aspect-ratio: 16 / 9; object-fit: cover; object-position: center center; max-height: 200px; }
   .content table { font-size: 0.82rem; }
   .content th, .content td { padding: 6px 8px; }
   .stats { grid-template-columns: 1fr; }
@@ -943,4 +1227,4 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 
     @staticmethod
     def _tag_html(tags: list[str]) -> str:
-        return "".join(f'<a class="tag" href="./search.html?tag={html.escape(tag)}">{html.escape(tag)}</a>' for tag in tags)
+        return "".join(f'<a class="tag" href="./search.html?tag={quote(tag)}">{html.escape(tag)}</a>' for tag in tags)
