@@ -1,0 +1,369 @@
+{
+  "run_id": "20260603-113430-c0cc0449",
+  "topics": [
+    {
+      "keyword": "Uber caps employee",
+      "title_hint": "Uber caps employee AI spending after blowing through budget in 4 months",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Uber caps employee AI spending after blowing through budget in 4 months",
+          "url": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/",
+          "published_at": "2026-06-02T19:11:48",
+          "summary": "Uber's cutback has occurred after the company had reportedly encouraged staff to use AI as much as possible.",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "New Microsoft tool",
+      "title_hint": "New Microsoft tool lets devs spin up AI behavior tests using text descriptions",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "New Microsoft tool lets devs spin up AI behavior tests using text descriptions",
+          "url": "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/",
+          "published_at": "2026-06-02T19:02:21",
+          "summary": "Microsoft on Tuesday took the wraps off Adaptive Spec-driven Scoring for Evaluation and Regression Testing, an open source framework for spinning up AI evaluations.",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "startup Everand is",
+      "title_hint": "A startup, Everand, is now bundling e-books, audiobooks, and book clubs in challenge to Amazon",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "A startup, Everand, is now bundling e-books, audiobooks, and book clubs in challenge to Amazon",
+          "url": "https://techcrunch.com/2026/06/02/a-startup-everand-is-now-bundling-ebooks-audiobooks-and-book-clubs-in-challenge-to-amazon/",
+          "published_at": "2026-06-02T18:31:22",
+          "summary": "A new reading subscription from Everand offers access to both e-books and audiobooks, and Fable's book club community.",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Martin Scorsese becomes",
+      "title_hint": "Martin Scorsese becomes the latest — and most unlikely — Hollywood voice for AI",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Martin Scorsese becomes the latest — and most unlikely — Hollywood voice for AI",
+          "url": "https://techcrunch.com/2026/06/02/martin-scorsese-becomes-the-latest-and-most-unlikely-hollywood-voice-for-ai/",
+          "published_at": "2026-06-02T18:16:53",
+          "summary": "The caveat is that one of the world's most famous living directors is using the tech solely for storyboarding.",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Microsoft launches Scout",
+      "title_hint": "Microsoft launches Scout, an OpenClaw-inspired personal assistant",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Microsoft launches Scout, an OpenClaw-inspired personal assistant",
+          "url": "https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/",
+          "published_at": "2026-06-02T18:02:44",
+          "summary": "Launched at Build, Microsoft Scout is a new AI assistant meant to bring the power and flexibility of OpenClaw into the Microsoft 365 system.",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Ex Anduril engineer",
+      "title_hint": "Ex-Anduril engineer raises $42M to build the Amazon of composite parts",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Ex-Anduril engineer raises $42M to build the Amazon of composite parts",
+          "url": "https://techcrunch.com/2026/06/02/ex-anduril-engineer-raises-42m-to-build-the-amazon-of-composite-parts/",
+          "published_at": "2026-06-02T18:00:00",
+          "summary": "Layup Parts co-founder Zack Eakin has drawn on a motorsports background, and his experience working for Palmer Luckey and Elon Musk, to tackle making faster, cheaper, and better composites.",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Uber caps employee",
+        "title_hint": "Uber caps employee AI spending after blowing through budget in 4 months",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Uber caps employee AI spending after blowing through budget in 4 months",
+            "url": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/",
+            "published_at": "2026-06-02T19:11:48",
+            "summary": "Uber's cutback has occurred after the company had reportedly encouraged staff to use AI as much as possible.",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "4개월만에 예산 다 쓴 Uber, 이제 AI 사용 제한",
+      "slug": "uber-caps-employee-cd9c8241",
+      "excerpt": "Uber는 4개월 만에 예산을 모두 써버린 후 직원들의 AI 사용을 제한하겠다고 발표했습니다. 이는 예산을 모두 소진한 후 등장한 조치로, 이전에는 직원들이 AI를 최대한 많이 사용하도록 격려했습니다.",
+      "body_markdown": "Uber는 최근에 AI 사용을 제한하는 정책을 시행했습니다. 이것은 4개월 만에 예산을 모두 써버린 후에 등장한 조치입니다. 이전에는 직원들이 AI를 최대한 많이 사용하도록 격려했습니다. 하지만 예산을 모두 소진한 후, Uber는 직원들의 AI 사용을 제한하기로 결정했습니다. \n\n이번 조치는 Uber가 AI에 대한 예산을 조절하고, 효율성을 높이려는 시도입니다. Uber caps employee AI spending은 이번 조치의 핵심입니다. \n\nUber는 미국의 대표적인 리드-Sharing 서비스 회사로, 전 세계적으로 많은 사용자를 보유하고 있습니다. Uber caps employee AI spending 정책은 이러한 상황에서 중요한 의미를 가집니다. \n\n다음 표는 Uber의 AI 사용 제한 정책의 주요 내용을 요약한 것입니다.\n| 정책 | 내용 |\n| --- | --- |\n| AI 사용 제한 | 직원들의 AI 사용을 제한함 |\n| 예산 조절 | AI에 대한 예산을 조절하고, 효율성을 높임 |\n| 효율성 향상 | AI 사용을 최적화하고, 비용을 절감함 |\n\nUber caps employee AI spending은 이번 조치의 핵심입니다. Uber는 AI 기술을 활용하여 서비스를 개선하고, 비용을 절감하려는 노력을 지속하고 있습니다. \n\nUber caps employee AI spending 정책은 다음과 같은 의미를 가집니다. 첫째, Uber는 AI 기술을 활용하여 서비스를 개선하고, 비용을 절감하려는 노력을 지속하고 있습니다. 둘째, Uber는 AI 사용을 최적화하고, 효율성을 높이려는 시도입니다. 셋째, Uber는 예산을 조절하고, 비용을 절감하려는 노력을 지속하고 있습니다.\n\n따라서, Uber caps employee AI spending 정책은 중요한 의미를 가집니다. Uber의 AI 사용 제한 정책은 기업이 AI 기술을 활용하여 서비스를 개선하고, 비용을 절감하려는 노력의 대표적인 예입니다. \n\n따라서, 이번 포스팅을 마무리면서, Uber caps employee AI spending 정책을 통해 기업이 AI 기술을 활용하여 서비스를 개선하고, 비용을 절감하려는 노력의 의미를 이해할 수 있습니다. 더욱 자세한 정보를 원하시면, 관련 기사나 보고서를 참고하시기 바랍니다.",
+      "tags": [
+        "기술",
+        "Uber",
+        "caps",
+        "employee"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMGdvdmVybm1lbnQlMjBidWRnZXQlMjBmaW5hbmNlfGVufDF8MHx8fDE3ODA0ODY2NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "4개월만에 예산 다 쓴 Uber, 이제 AI 사용 제한 — Photo by Igor Omilaev on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 4개월만에 예산 다 쓴 Uber, 이제 AI 사용 제한. Keyword: Uber caps employee. Concrete visual subject: artificial intelligence circuit government budget finance. Context: Uber는 최근에 AI 사용을 제한하는 정책을 시행했습니다. 이것은 4개월 만에 예산을 모두 써버린 후에 등장한 조치입니다. 이전에는 직원들이 AI를 최대한 많이 사용하도록 격려했습니다. 하지만 예산을 모두 소진한 후, Uber는 직원들의 AI 사용을 제한하기로 결정했습니다. 이번 조치는 Uber가 AI에 대한 예산을 조절하고, 효율성을 높이려는 시도입니다. Uber caps employee AI spending은 이번 조치의 핵심입니다. Uber는 미국의 대표적인 리드-Sharing 서비스 회사로, 전 세계적으로 많은 사용자를 보유하고 있습니다. Uber caps employee AI spending 정책은 이러한 상황에서 중요한 의미를 가집니다. 다음 표는 Uber의 AI 사용 제한 정책의 주요 내용을 요약한 것입니다. | 정책 | 내용 | | --- | --- | | AI 사용 제한 | 직원들의 AI 사용을 제한함 | | 예산 조절 | AI에 대한 예산을 조절하고, 효율성을 높임 | | 효율성 향상 | AI 사용을 최적화하고, 비용을 절감함 | Uber caps employee AI spending은 이번 조치의 핵심입니다. Uber는 AI 기술을 활용하여 서비스를 개선하고, 비용을 절감하려는 노력을 지속하고 있습니다. Uber caps employee AI spending 정책은 다음과 같은 의미를 가집니다. 첫째, Uber는. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-03T11:37:38.490659",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "New Microsoft tool",
+        "title_hint": "New Microsoft tool lets devs spin up AI behavior tests using text descriptions",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "New Microsoft tool lets devs spin up AI behavior tests using text descriptions",
+            "url": "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/",
+            "published_at": "2026-06-02T19:02:21",
+            "summary": "Microsoft on Tuesday took the wraps off Adaptive Spec-driven Scoring for Evaluation and Regression Testing, an open source framework for spinning up AI evaluations.",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "New Microsoft tool: 지금 확인할 포인트",
+      "slug": "new-microsoft-tool-2c8c8df0",
+      "excerpt": "New Microsoft tool 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\nNew Microsoft tool는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\nNew Microsoft tool를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\nNew Microsoft tool 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. New Microsoft tool와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [New Microsoft tool lets devs spin up AI behavior tests using text descriptions](https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/)\n",
+      "tags": [
+        "기술",
+        "New",
+        "Microsoft",
+        "tool"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1631541738233-41c854132d26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "New Microsoft tool: 지금 확인할 포인트 — Photo by Jay Zhang on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: New Microsoft tool: 지금 확인할 포인트. Keyword: New Microsoft tool. Concrete visual subject: modern technology editorial. Context: ## 한눈에 보기 New Microsoft tool는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 New Microsoft tool를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 New Microsoft tool 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-03T11:37:39.096931",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "startup Everand is",
+        "title_hint": "A startup, Everand, is now bundling e-books, audiobooks, and book clubs in challenge to Amazon",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "A startup, Everand, is now bundling e-books, audiobooks, and book clubs in challenge to Amazon",
+            "url": "https://techcrunch.com/2026/06/02/a-startup-everand-is-now-bundling-ebooks-audiobooks-and-book-clubs-in-challenge-to-amazon/",
+            "published_at": "2026-06-02T18:31:22",
+            "summary": "A new reading subscription from Everand offers access to both e-books and audiobooks, and Fable's book club community.",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "startup Everand is: 지금 확인할 포인트",
+      "slug": "startup-everand-is-5a5b1ad9",
+      "excerpt": "startup Everand is 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\nstartup Everand is는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\nstartup Everand is를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\nstartup Everand is 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. startup Everand is와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [A startup, Everand, is now bundling e-books, audiobooks, and book clubs in challenge to Amazon](https://techcrunch.com/2026/06/02/a-startup-everand-is-now-bundling-ebooks-audiobooks-and-book-clubs-in-challenge-to-amazon/)\n",
+      "tags": [
+        "기술",
+        "startup",
+        "Everand",
+        "is"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1562408590-e32931084e23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "startup Everand is: 지금 확인할 포인트 — Photo by Umberto on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: startup Everand is: 지금 확인할 포인트. Keyword: startup Everand is. Concrete visual subject: modern technology editorial. Context: ## 한눈에 보기 startup Everand is는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 startup Everand is를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 startup Everand is 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-03T11:37:39.229715",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Martin Scorsese becomes",
+        "title_hint": "Martin Scorsese becomes the latest — and most unlikely — Hollywood voice for AI",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Martin Scorsese becomes the latest — and most unlikely — Hollywood voice for AI",
+            "url": "https://techcrunch.com/2026/06/02/martin-scorsese-becomes-the-latest-and-most-unlikely-hollywood-voice-for-ai/",
+            "published_at": "2026-06-02T18:16:53",
+            "summary": "The caveat is that one of the world's most famous living directors is using the tech solely for storyboarding.",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Martin Scorsese becomes: 지금 확인할 포인트",
+      "slug": "martin-scorsese-becomes-ced0e6da",
+      "excerpt": "Martin Scorsese becomes 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\nMartin Scorsese becomes는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\nMartin Scorsese becomes를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\nMartin Scorsese becomes 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. Martin Scorsese becomes와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [Martin Scorsese becomes the latest — and most unlikely — Hollywood voice for AI](https://techcrunch.com/2026/06/02/martin-scorsese-becomes-the-latest-and-most-unlikely-hollywood-voice-for-ai/)\n",
+      "tags": [
+        "기술",
+        "Martin",
+        "Scorsese",
+        "becomes"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Martin Scorsese becomes: 지금 확인할 포인트 — Photo by Adi Goldstein on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Martin Scorsese becomes: 지금 확인할 포인트. Keyword: Martin Scorsese becomes. Concrete visual subject: modern technology editorial. Context: ## 한눈에 보기 Martin Scorsese becomes는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 Martin Scorsese becomes를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 Martin Scorsese becomes 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-03T11:37:39.370340",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Microsoft launches Scout",
+        "title_hint": "Microsoft launches Scout, an OpenClaw-inspired personal assistant",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Microsoft launches Scout, an OpenClaw-inspired personal assistant",
+            "url": "https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/",
+            "published_at": "2026-06-02T18:02:44",
+            "summary": "Launched at Build, Microsoft Scout is a new AI assistant meant to bring the power and flexibility of OpenClaw into the Microsoft 365 system.",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Microsoft launches Scout: 지금 확인할 포인트",
+      "slug": "microsoft-launches-scout-99ec1f11",
+      "excerpt": "Microsoft launches Scout 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\nMicrosoft launches Scout는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\nMicrosoft launches Scout를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\nMicrosoft launches Scout 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. Microsoft launches Scout와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [Microsoft launches Scout, an OpenClaw-inspired personal assistant](https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/)\n",
+      "tags": [
+        "기술",
+        "Microsoft",
+        "launches",
+        "Scout"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Microsoft launches Scout: 지금 확인할 포인트 — Photo by Adi Goldstein on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Microsoft launches Scout: 지금 확인할 포인트. Keyword: Microsoft launches Scout. Concrete visual subject: modern technology editorial. Context: ## 한눈에 보기 Microsoft launches Scout는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 Microsoft launches Scout를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 Microsoft launches Scout 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-03T11:37:39.504488",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Ex Anduril engineer",
+        "title_hint": "Ex-Anduril engineer raises $42M to build the Amazon of composite parts",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Ex-Anduril engineer raises $42M to build the Amazon of composite parts",
+            "url": "https://techcrunch.com/2026/06/02/ex-anduril-engineer-raises-42m-to-build-the-amazon-of-composite-parts/",
+            "published_at": "2026-06-02T18:00:00",
+            "summary": "Layup Parts co-founder Zack Eakin has drawn on a motorsports background, and his experience working for Palmer Luckey and Elon Musk, to tackle making faster, cheaper, and better composites.",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Ex Anduril engineer: 지금 확인할 포인트",
+      "slug": "ex-anduril-engineer-3eba2a1b",
+      "excerpt": "Ex Anduril engineer 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\nEx Anduril engineer는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\nEx Anduril engineer를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\nEx Anduril engineer 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. Ex Anduril engineer와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [Ex-Anduril engineer raises $42M to build the Amazon of composite parts](https://techcrunch.com/2026/06/02/ex-anduril-engineer-raises-42m-to-build-the-amazon-of-composite-parts/)\n",
+      "tags": [
+        "기술",
+        "Ex",
+        "Anduril",
+        "engineer"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1636257020920-e087ff577240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Ex Anduril engineer: 지금 확인할 포인트 — Photo by Jay Zhang on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Ex Anduril engineer: 지금 확인할 포인트. Keyword: Ex Anduril engineer. Concrete visual subject: modern technology editorial. Context: ## 한눈에 보기 Ex Anduril engineer는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 Ex Anduril engineer를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 Ex Anduril engineer 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-03T11:37:39.671296",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/uber-caps-employee-cd9c8241.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/new-microsoft-tool-2c8c8df0.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/startup-everand-is-5a5b1ad9.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/martin-scorsese-becomes-ced0e6da.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/microsoft-launches-scout-99ec1f11.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/ex-anduril-engineer-3eba2a1b.md",
+      "message": "draft saved"
+    }
+  ]
+}
