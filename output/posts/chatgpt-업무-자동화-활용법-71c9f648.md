@@ -1,5 +1,5 @@
 ---
-title: "ChatGPT 업무 자동화 활용법 핵심 정리: 지금 확인할 포인트"
+title: "ChatGPT로 반복 업무 줄이는 법"
 date: "2026-06-03T07:06:00"
 category: "기술"
 tags:

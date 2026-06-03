@@ -206,7 +206,7 @@ BODY:
 """
         return Draft(
             topic=topic,
-            title=f"{topic.keyword} 핵심 정리: 지금 확인할 포인트",
+            title=f"{topic.keyword}: 지금 확인할 포인트",
             slug=self._slug(topic.keyword),
             excerpt=f"{topic.keyword} 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
             body_markdown=body,
