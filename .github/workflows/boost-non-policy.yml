@@ -1,0 +1,86 @@
+name: Boost non-policy posts
+
+on:
+  workflow_dispatch:
+    inputs:
+      per_category:
+        description: "Posts per non-policy category"
+        required: true
+        default: "10"
+      min_quality:
+        description: "Minimum quality score"
+        required: true
+        default: "60"
+
+concurrency:
+  group: boost-non-policy
+  cancel-in-progress: false
+
+jobs:
+  boost:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+      models: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Generate non-policy posts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL || 'llama-3.3-70b-versatile' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.1-8b-instruct:free' }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
+          BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
+        run: |
+          python scripts/generate_non_policy_posts.py \
+            --per-category "${{ inputs.per_category }}" \
+            --min-quality "${{ inputs.min_quality }}"
+
+      - name: Build static site
+        env:
+          BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
+          BLOG_CUSTOM_DOMAIN: ${{ vars.BLOG_CUSTOM_DOMAIN }}
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+          ADSENSE_PUBLISHER_ID: ${{ secrets.ADSENSE_PUBLISHER_ID }}
+        run: python -m blog_agent.cli build-site
+
+      - name: Commit generated posts
+        run: |
+          git config user.name "blog-agent"
+          git config user.email "actions@github.com"
+          git add output state || true
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: boost non-policy posts"
+          git pull --rebase origin main
+          git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - uses: actions/deploy-pages@v4
