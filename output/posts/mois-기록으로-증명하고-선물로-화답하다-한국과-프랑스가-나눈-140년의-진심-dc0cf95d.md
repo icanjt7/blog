@@ -6,7 +6,7 @@ tags:
   - "보도기사"
   - "행정안전부"
 quality_score: 90.0
-cover_image: "assets/press/mois-5ac87f2b4b75.jpg"
+cover_image: "https://www.mois.go.kr/images/og_logo.jpg"
 cover_image_alt: "기록으로 증명하고 선물로 화답하다 한국과 프랑스가 나눈 140년의 진심"
 author: "행정안전부"
 ---

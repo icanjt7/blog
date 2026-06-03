@@ -6,7 +6,7 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/press/msit-3bf8ef5c18d6.png"
+cover_image: "https://loremflickr.com/1200/630/science,technology,laboratory?lock=5927"
 cover_image_alt: "[보도참고] 우리 K-인공지능 모델이 현장에 펼쳐지고 있습니다 ➃"
 author: "과학기술정보통신부"
 ---

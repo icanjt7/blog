@@ -6,7 +6,7 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/press/msit-5b7fd8bcb5d3.jpg"
+cover_image: "https://loremflickr.com/1200/630/science,technology,laboratory?lock=5927"
 cover_image_alt: "세계 최고 과학자 유치 본격화… '톱티어[Top-Tier] 비자' 교수·연구원까지 확대"
 author: "과학기술정보통신부"
 ---

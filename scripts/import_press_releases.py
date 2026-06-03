@@ -13,10 +13,8 @@ from __future__ import annotations
 import argparse
 import hashlib
 import html
-import io
 import re
 import sys
-import zipfile
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -35,8 +33,12 @@ USER_AGENT = "Mozilla/5.0 (compatible; BriefWavePressImporter/1.0)"
 TIMEOUT = 20
 
 INSTITUTION_LOGOS: dict[str, str] = {
-    "기획재정부":    "https://www.mofe.go.kr/images/common/og-image.jpg",
-    "국가유산청":    "https://www.khs.go.kr/images/layout/cha_card.jpg",
+    "행정안전부":        "https://www.mois.go.kr/images/og_logo.jpg",
+    "과학기술정보통신부": "https://loremflickr.com/1200/630/science,technology,laboratory?lock=5927",
+    "기획재정부":        "https://www.mofe.go.kr/images/common/og-image.jpg",
+    "문화체육관광부":    "https://www.mcst.go.kr/kor/images/main/mcst_logo.gif",
+    "국가유산청":        "https://www.khs.go.kr/images/layout/cha_card.jpg",
+    "국가유산진흥원":    "https://www.kh.or.kr/_static/chf1/img/common/logo.png",
 }
 
 AGENCIES = {
@@ -129,61 +131,22 @@ def first_image(fragment: str, base_url: str) -> tuple[str, str]:
     return "", ""
 
 
-PRESS_ASSETS_DIR = ROOT / "output" / "assets" / "press"
-
-
-def fetch_bytes(url: str) -> bytes:
-    resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
-    resp.raise_for_status()
-    return resp.content
-
-
-def extract_hwpx_image(download_url: str, slug: str) -> str:
-    """HWPX(ZIP) 첨부파일을 다운로드해서 첫 번째 이미지를 추출, output/assets/press/ 에 저장.
-    성공하면 'assets/press/slug.ext' 형태의 상대 경로를 반환한다."""
-    PRESS_ASSETS_DIR.mkdir(parents=True, exist_ok=True)
-    # check if already extracted
-    for ext in (".jpg", ".jpeg", ".png"):
-        cached = PRESS_ASSETS_DIR / f"{slug}{ext}"
-        if cached.exists():
-            return f"assets/press/{slug}{ext}"
-    try:
-        data = fetch_bytes(download_url)
-    except Exception:
+def get_og_image(html_src: str, base_url: str) -> str:
+    """og:image 메타 태그에서 이미지 URL을 추출한다."""
+    m = re.search(
+        r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']'
+        r'|<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
+        html_src,
+    )
+    if not m:
         return ""
-    if data[:2] != b"PK":  # not a ZIP/HWPX
+    raw = (m.group(1) or m.group(2) or "").strip()
+    if not raw or not raw.startswith("http"):
+        raw = urljoin(base_url, raw)
+    # skip tiny icon-like images
+    if any(x in raw.lower() for x in ["logo.gif", "logo.png", "icon", "favicon", "mark"]):
         return ""
-    try:
-        with zipfile.ZipFile(io.BytesIO(data)) as zf:
-            names = zf.namelist()
-            # prefer BinData images (actual article images), then Preview
-            candidates = [
-                (n, zf.getinfo(n).file_size)
-                for n in names
-                if any(n.lower().endswith(e) for e in (".jpg", ".jpeg", ".png"))
-                and (n.startswith("BinData/") or "Preview" in n or "preview" in n.lower())
-                and zf.getinfo(n).file_size > 20_000  # skip tiny icons
-            ]
-            if not candidates:
-                # no large images — take preview thumbnail if any
-                candidates = [
-                    (n, zf.getinfo(n).file_size)
-                    for n in names
-                    if ("PrvImage" in n or "Preview" in n)
-                    and any(n.lower().endswith(e) for e in (".jpg", ".jpeg", ".png"))
-                ]
-            if not candidates:
-                return ""
-            # pick the largest image
-            candidates.sort(key=lambda x: -x[1])
-            chosen = candidates[0][0]
-            ext = ".png" if chosen.lower().endswith(".png") else ".jpg"
-            img_data = zf.read(chosen)
-            out = PRESS_ASSETS_DIR / f"{slug}{ext}"
-            out.write_bytes(img_data)
-            return f"assets/press/{slug}{ext}"
-    except Exception:
-        return ""
+    return raw
 
 
 def slugify(value: str) -> str:
@@ -368,13 +331,8 @@ def mois_release(url: str) -> PressRelease:
     date = re.sub(r"\.", "-", raw_date.replace(" ", ""))[:10] or datetime.now().strftime("%Y-%m-%d")
     fragment = body_m.group(1) if body_m else ""
     img_url, img_alt = first_image(fragment, url)
-    # fallback: extract image from eGovFrame HWPX attachment
     if not img_url:
-        fid_m = re.search(r'atchFileId[^>]*value=["\']?(FILE_[A-Za-z0-9]+)', page)
-        if fid_m:
-            dl_url = f"https://www.mois.go.kr/cmm/fms/FileDown.do?atchFileId={fid_m.group(1)}&fileSn=0"
-            slug_key = hashlib.md5(url.encode()).hexdigest()[:12]
-            img_url = extract_hwpx_image(dl_url, f"mois-{slug_key}")
+        img_url = get_og_image(page, url)
     return PressRelease(
         institution="행정안전부",
         title=title,
@@ -429,16 +387,8 @@ def msit_release(url: str) -> PressRelease:
     raw_date = (date_m.group(1) if date_m else "").strip()
     date = raw_date.replace(".", "-")[:10] or datetime.now().strftime("%Y-%m-%d")
     img_url, img_alt = first_image(body_fragment, url)
-    # try to extract image from attached HWPX file
     if not img_url:
-        hwpx_m = re.search(r"setIframePath\(['\"](\d+)['\"],\s*['\"](\d+)['\"]", page)
-        if hwpx_m:
-            dl_url = (
-                f"https://www.msit.go.kr/ssm/file/fileDown.do"
-                f"?atchFileNo={hwpx_m.group(1)}&fileOrd={hwpx_m.group(2)}&fileBtn=A"
-            )
-            slug_key = hashlib.md5(url.encode()).hexdigest()[:12]
-            img_url = extract_hwpx_image(dl_url, f"msit-{slug_key}")
+        img_url = get_og_image(page, url)
     return PressRelease(
         institution="과학기술정보통신부",
         title=title,

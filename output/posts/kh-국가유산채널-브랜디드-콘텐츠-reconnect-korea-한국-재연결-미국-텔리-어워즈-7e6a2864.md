@@ -6,6 +6,7 @@ tags:
   - "보도기사"
   - "국가유산진흥원"
 quality_score: 90.0
+cover_image: "https://www.kh.or.kr/_static/chf1/img/common/logo.png"
 cover_image_alt: "국가유산채널 브랜디드 콘텐츠 「Reconnect KOREA(한국 재연결)」 미국 텔리 어워즈 ‘은상’ 수상(260528) 관련 보도자료 이미지"
 author: "국가유산진흥원"
 ---

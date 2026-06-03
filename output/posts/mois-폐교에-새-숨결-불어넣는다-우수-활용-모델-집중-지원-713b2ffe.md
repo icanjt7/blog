@@ -6,7 +6,7 @@ tags:
   - "보도기사"
   - "행정안전부"
 quality_score: 90.0
-cover_image: "assets/press/mois-6e0fff6dced5.jpg"
+cover_image: "https://www.mois.go.kr/images/og_logo.jpg"
 cover_image_alt: "폐교에 새 숨결 불어넣는다! 우수 활용 모델 집중 지원"
 author: "행정안전부"
 ---

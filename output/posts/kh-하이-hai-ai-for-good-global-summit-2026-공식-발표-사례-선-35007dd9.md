@@ -6,6 +6,7 @@ tags:
   - "보도기사"
   - "국가유산진흥원"
 quality_score: 90.0
+cover_image: "https://www.kh.or.kr/_static/chf1/img/common/logo.png"
 cover_image_alt: "‘하이(HAI)’, ‘AI for Good Global Summit 2026’ 공식 발표 사례 선정(260526) 관련 보도자료 이미지"
 author: "국가유산진흥원"
 ---
