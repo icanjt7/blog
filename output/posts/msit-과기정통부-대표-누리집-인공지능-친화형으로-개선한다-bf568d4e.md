@@ -6,7 +6,7 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "https://loremflickr.com/1200/630/science,technology,laboratory?lock=5927"
+cover_image: "assets/logos/msit.svg"
 cover_image_alt: "과기정통부, 대표 누리집 인공지능 친화형으로 개선한다"
 author: "과학기술정보통신부"
 ---
