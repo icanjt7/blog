@@ -15,6 +15,7 @@ import hashlib
 import html
 import re
 import sys
+import time
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -70,10 +71,25 @@ class PressRelease:
 # ──────────────────────────────────────────────
 
 def fetch(url: str) -> str:
-    resp = SESSION.get(url, timeout=TIMEOUT)
+    resp = request_with_retry("GET", url)
     resp.raise_for_status()
     resp.encoding = resp.apparent_encoding or resp.encoding or "utf-8"
     return resp.text
+
+
+def request_with_retry(method: str, url: str, attempts: int = 3, **kwargs: object) -> requests.Response:
+    last_error: Exception | None = None
+    for index in range(attempts):
+        try:
+            return SESSION.request(method, url, timeout=TIMEOUT, **kwargs)
+        except requests.RequestException as exc:
+            last_error = exc
+            SESSION.close()
+            if index < attempts - 1:
+                time.sleep(1.5 * (index + 1))
+    if last_error:
+        raise last_error
+    raise RuntimeError(f"request failed: {url}")
 
 
 def clean_text(value: str) -> str:
@@ -151,9 +167,9 @@ def get_og_image(html_src: str, base_url: str) -> str:
 def fetch_bytes(url: str, *, data: dict[str, str] | None = None, referer: str = "") -> bytes:
     headers = {"Referer": referer} if referer else None
     if data is None:
-        resp = SESSION.get(url, headers=headers, timeout=TIMEOUT)
+        resp = request_with_retry("GET", url, headers=headers)
     else:
-        resp = SESSION.post(url, data=data, headers=headers, timeout=TIMEOUT)
+        resp = request_with_retry("POST", url, data=data, headers=headers)
     resp.raise_for_status()
     return resp.content
 
