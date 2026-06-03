@@ -92,6 +92,12 @@ def html_to_text(fragment: str) -> str:
     return "\n".join(lines)
 
 
+_IMG_SKIP = re.compile(
+    r"(spacer|blank|arrow|btn_|\.gif|/ico|/icon|icon_|/bg|_bg\.|/mark|mark\.|/bullet|/dot\b)",
+    re.IGNORECASE,
+)
+
+
 def first_image(fragment: str, base_url: str) -> tuple[str, str]:
     for m in re.finditer(r"(?is)<img\b([^>]+)>", fragment):
         attrs = m.group(1)
@@ -99,7 +105,16 @@ def first_image(fragment: str, base_url: str) -> tuple[str, str]:
         if not src_m:
             continue
         src = html.unescape(src_m.group(1)).strip()
-        if not src or src.startswith("data:") or "mark" in src.lower() or src.endswith(".svg"):
+        if not src or src.startswith("data:") or src.endswith(".svg"):
+            continue
+        if _IMG_SKIP.search(src):
+            continue
+        # skip suspiciously small images via width/height attrs
+        w_m = re.search(r"""(?i)\bwidth=["']?(\d+)""", attrs)
+        h_m = re.search(r"""(?i)\bheight=["']?(\d+)""", attrs)
+        if w_m and int(w_m.group(1)) < 60:
+            continue
+        if h_m and int(h_m.group(1)) < 60:
             continue
         alt_m = re.search(r"""(?i)\b(?:alt|title)=["']([^"']*)["']""", attrs)
         alt = clean_text(alt_m.group(1)) if alt_m else ""
@@ -266,16 +281,18 @@ def mois_links(per_source: int) -> list[str]:
 
 def mois_release(url: str) -> PressRelease:
     page = fetch(url)
-    # title is in class="subject" > h4 (the h2 tags only say "보도자료" section heading)
+    # title: class="subject" h4, strip sub_desc span
     title_m = re.search(r'class="subject"[^>]*>(.*?)</h4>', page, re.DOTALL)
     if not title_m:
         title_m = re.search(r'class="subject"[^>]*>(.*?)(?=</(?:div|p|td))', page, re.DOTALL)
-    date_m = re.search(r"등록일\s*</dt>\s*<dd[^>]*>(.*?)</dd>", page, re.DOTALL)
+    # date: inside class="table_info"
+    date_m = re.search(r'등록일\s*</span>\s*:\s*([\d.]+)', page)
     if not date_m:
-        date_m = re.search(r"class=[\"'](reg_date|date)[^>]*>(.*?)</", page, re.DOTALL)
-    body_m = re.search(
-        r'id="content"(.*?)(?=id="(file|btnArea|footer))', page, re.DOTALL
-    )
+        date_m = re.search(r"등록일\s*</dt>\s*<dd[^>]*>(.*?)</dd>", page, re.DOTALL)
+    # body: id="desc_pc" (actual article HTML, stops before prev/next nav)
+    body_m = re.search(r'id="desc_pc"[^>]*>(.*?)(?=class="(prev_next|list_wrap|view_nav|btn_area|pagingArea)"|이전\s*글)', page, re.DOTALL)
+    if not body_m:
+        body_m = re.search(r'id="desc_pc"[^>]*>(.*?)(?=</div>\s*</div>\s*</div>)', page, re.DOTALL)
     if title_m:
         raw = re.sub(r'<span class="sub_desc">.*?</span>', '', title_m.group(1), flags=re.DOTALL)
         raw = re.sub(r'<br\s*/?>', ' ', raw)
@@ -283,7 +300,7 @@ def mois_release(url: str) -> PressRelease:
     else:
         title = "행정안전부 보도자료"
     raw_date = re.sub(r"<[^>]+>", "", date_m.group(1) if date_m else "").strip()
-    date = re.sub(r"[^0-9\-]", "-", raw_date.replace(".", "-")).strip("-")[:10] or datetime.now().strftime("%Y-%m-%d")
+    date = re.sub(r"\.", "-", raw_date.replace(" ", ""))[:10] or datetime.now().strftime("%Y-%m-%d")
     fragment = body_m.group(1) if body_m else ""
     img_url, img_alt = first_image(fragment, url)
     return PressRelease(
@@ -319,19 +336,26 @@ def msit_links(per_source: int) -> list[str]:
 
 def msit_release(url: str) -> PressRelease:
     page = fetch(url)
-    bv_m = re.search(r'class="board_view"(.*?)(?=id="(file|foot|btn))', page, re.DOTALL)
+    bv_m = re.search(r'class="board_view"(.*?)(?=class="(view_nav|view_bottom|btn_list|paging_wrap)")', page, re.DOTALL)
+    if not bv_m:
+        bv_m = re.search(r'class="board_view"(.*?)(?=이전\s*글|다음\s*글)', page, re.DOTALL)
     fragment = bv_m.group(1) if bv_m else page
-    title_m = re.search(r'class="view_head"[^>]*>.*?<h2[^>]*>(.*?)</h2>', fragment, re.DOTALL)
+    # title: h2 inside view_head
+    title_m = re.search(r'class="view_head".*?<h2[^>]*>(.*?)</h2>', fragment, re.DOTALL)
     if not title_m:
         title_m = re.search(r"<h2[^>]*>(.*?)</h2>", fragment, re.DOTALL)
-    date_m = re.search(r'class="date"[^>]*>(.*?)</', fragment, re.DOTALL)
+    # date: span.date inside meta
+    date_m = re.search(r'class="date"[^>]*>([^<]+)<', fragment)
     if not date_m:
         date_m = re.search(r"(\d{4}\.\d{2}\.\d{2})", fragment)
-    # body = board_view minus view_head
-    body_fragment = re.sub(r'class="view_head".*?(?=<div class="(?!view_head))', "", fragment, flags=re.DOTALL)
+    # body: content after view_head section
+    body_fragment = fragment
+    vh_end = re.search(r'</div>\s*(?=<div class="(?!view_head|meta|tit_con))', fragment, re.DOTALL)
+    if vh_end:
+        body_fragment = fragment[vh_end.end():]
     title = clean_text(re.sub(r"<[^>]+>", " ", title_m.group(1))) if title_m else "과학기술정보통신부 보도자료"
-    raw_date = re.sub(r"<[^>]+>", "", date_m.group(1) if date_m else "").strip()
-    date = re.sub(r"\.", "-", raw_date.replace(" ", ""))[:10] or datetime.now().strftime("%Y-%m-%d")
+    raw_date = (date_m.group(1) if date_m else "").strip()
+    date = raw_date.replace(".", "-")[:10] or datetime.now().strftime("%Y-%m-%d")
     img_url, img_alt = first_image(body_fragment, url)
     return PressRelease(
         institution="과학기술정보통신부",
