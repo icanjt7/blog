@@ -27,8 +27,10 @@ class Settings(BaseModel):
     openrouter_api_key: str | None = None
     openrouter_model: str = "meta-llama/llama-3.1-8b-instruct:free"
 
-    # Images — Unsplash free API (50 req/h)
-    unsplash_access_key: str | None = None
+    # Images — free stock photo APIs (첫 번째 설정된 키 사용)
+    unsplash_access_key: str | None = None   # 50 req/h free
+    pexels_api_key: str | None = None        # 200 req/h free
+    pixabay_api_key: str | None = None       # 100 req/min free
 
     # Analytics & monetisation
     ga_measurement_id: str | None = None    # Google Analytics 4: G-XXXXXXXXXX
@@ -76,6 +78,8 @@ def load_settings() -> Settings:
         openrouter_api_key=os.getenv("OPENROUTER_API_KEY") or None,
         openrouter_model=os.getenv("OPENROUTER_MODEL", "meta-llama/llama-3.1-8b-instruct:free"),
         unsplash_access_key=os.getenv("UNSPLASH_ACCESS_KEY") or None,
+        pexels_api_key=os.getenv("PEXELS_API_KEY") or None,
+        pixabay_api_key=os.getenv("PIXABAY_API_KEY") or None,
         ga_measurement_id=os.getenv("GA_MEASUREMENT_ID") or None,
         adsense_publisher_id=os.getenv("ADSENSE_PUBLISHER_ID") or None,
         post_count=int(os.getenv("BLOG_POST_COUNT", "5")),

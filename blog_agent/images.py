@@ -107,51 +107,99 @@ class ImageAgent:
         draft.image_prompt = self.build_prompt(draft)
         draft.cover_image_alt = f"{draft.topic.keyword} 관련 대표 이미지"
 
-        # 1. Unsplash free API (key required, 50 req/h)
-        if self.settings.unsplash_access_key:
-            url = self._fetch_unsplash(draft)
+        # 1~3: 무료 스톡 API (설정된 첫 번째 키 사용)
+        for fetch_fn in (self._fetch_unsplash, self._fetch_pexels, self._fetch_pixabay):
+            url = fetch_fn(draft)
             if url:
                 draft.cover_image_path = url
                 return draft
 
-        # 2. OpenAI image generation (paid, opt-in)
+        # 4. OpenAI image generation (paid, opt-in)
         if self.settings.enable_image_generation and self._openai:
             local_path = self._generate_openai(draft)
             if local_path:
                 draft.cover_image_path = local_path
                 return draft
 
-        # 3. Free topical fallback — keyword-seeded for consistency.
+        # 5. keyword-seeded picsum fallback
         draft.cover_image_path = self._fallback_url(draft)
         return draft
 
     def _fetch_unsplash(self, draft: Draft) -> str | None:
+        if not self.settings.unsplash_access_key:
+            return None
         query = self.visual_query(draft.topic.keyword, draft.topic.category, draft.title)
         try:
             resp = requests.get(
                 "https://api.unsplash.com/search/photos",
-                params={
-                    "query": query,
-                    "per_page": 10,
-                    "orientation": "landscape",
-                    "order_by": "relevant",
-                    "content_filter": "high",
-                },
+                params={"query": query, "per_page": 10,
+                        "orientation": "landscape", "content_filter": "high"},
                 headers={"Authorization": f"Client-ID {self.settings.unsplash_access_key}"},
                 timeout=10,
             )
             resp.raise_for_status()
             results = resp.json().get("results", [])
             if results:
-                photo = results[0]
-                # utm params required by Unsplash API guidelines
+                # slug 해시로 결과 중 하나를 일관성 있게 선택
+                idx = int(hashlib.md5(draft.slug.encode()).hexdigest()[:4], 16) % len(results)
+                photo = results[idx]
                 url = photo["urls"].get("regular") or photo["urls"].get("full")
-                src_url = photo["links"]["html"]
                 author = photo["user"]["name"]
-                # store attribution in alt text
+                draft.cover_image_alt = f"{draft.title} — Photo by {author} on Unsplash"
+                return url
+        except Exception:
+            pass
+        return None
+
+    def _fetch_pexels(self, draft: Draft) -> str | None:
+        if not self.settings.pexels_api_key:
+            return None
+        query = self.visual_query(draft.topic.keyword, draft.topic.category, draft.title)
+        try:
+            resp = requests.get(
+                "https://api.pexels.com/v1/search",
+                params={"query": query, "per_page": 10, "orientation": "landscape"},
+                headers={"Authorization": self.settings.pexels_api_key},
+                timeout=10,
+            )
+            resp.raise_for_status()
+            photos = resp.json().get("photos", [])
+            if photos:
+                idx = int(hashlib.md5(draft.slug.encode()).hexdigest()[:4], 16) % len(photos)
+                photo = photos[idx]
+                url = photo["src"].get("large2x") or photo["src"].get("large")
                 draft.cover_image_alt = (
-                    f"{draft.title} — Photo by {author} on Unsplash ({src_url})"
+                    f"{draft.title} — Photo by {photo['photographer']} on Pexels"
                 )
+                return url
+        except Exception:
+            pass
+        return None
+
+    def _fetch_pixabay(self, draft: Draft) -> str | None:
+        if not self.settings.pixabay_api_key:
+            return None
+        query = self.visual_query(draft.topic.keyword, draft.topic.category, draft.title)
+        try:
+            resp = requests.get(
+                "https://pixabay.com/api/",
+                params={
+                    "key": self.settings.pixabay_api_key,
+                    "q": query,
+                    "image_type": "photo",
+                    "orientation": "horizontal",
+                    "per_page": 10,
+                    "safesearch": "true",
+                },
+                timeout=10,
+            )
+            resp.raise_for_status()
+            hits = resp.json().get("hits", [])
+            if hits:
+                idx = int(hashlib.md5(draft.slug.encode()).hexdigest()[:4], 16) % len(hits)
+                photo = hits[idx]
+                url = photo.get("largeImageURL") or photo.get("webformatURL")
+                draft.cover_image_alt = f"{draft.title} — Photo via Pixabay"
                 return url
         except Exception:
             pass
@@ -176,10 +224,8 @@ class ImageAgent:
 
     @staticmethod
     def _fallback_url(draft: Draft) -> str:
-        query = ImageAgent.visual_query(draft.topic.keyword, draft.topic.category, draft.title)
-        seed = int(hashlib.md5(draft.slug.encode()).hexdigest()[:8], 16) % 10000
-        path = urllib.parse.quote(",".join(query.split()[:5]))
-        return f"https://loremflickr.com/1200/630/{path}?lock={seed}"
+        seed = int(hashlib.md5(draft.slug.encode()).hexdigest()[:8], 16) % 1000
+        return f"https://picsum.photos/seed/{seed}/1200/630"
 
     @staticmethod
     def visual_query(keyword: str, category: str, title: str = "") -> str:
