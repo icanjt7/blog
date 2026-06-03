@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "국가유산진흥원"
 quality_score: 90.0
-cover_image: "assets/logos/kh.png"
-cover_image_alt: "K-Heritage 문화상품, ‘동행축제’ 참여로 전통문화 현대적 가치 알린다(260407) 관련 보도자료 이미지"
+cover_image: "https://images.unsplash.com/photo-1583833008338-31a6657917ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxrb3JlYW4lMjBoZXJpdGFnZSUyMGFyY2hpdGVjdHVyZSUyMGN1bHR1cmUlMjBhcnRzJTIwY3JlYXRpdmV8ZW58MXwwfHx8MTc4MDQ4NDQ5NXww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "K-Heritage 문화상품, ‘동행축제’ 참여로 전통문화 현대적 가치 알린다(260407) — Photo by Louie Nicolo Nimor on Unsplash"
 author: "국가유산진흥원"
 ---
 

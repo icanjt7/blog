@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "과기정통부, 과학 기술 혁신·인공지능 대전환 이끌 ‘제6차 과학 기술 기본계획(안)’ 대국민 공청회 개최"
+cover_image: "https://images.unsplash.com/photo-1705727210721-961cc64a6895?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgwNDgwNzU3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "과학기술 5년 계획, 국민 목소리 듣는다 — Photo by Lusia Komala Widiastuti on Unsplash"
 author: "과학기술정보통신부"
 ---
 

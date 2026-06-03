@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "[보도참고] 국가 인공지능 경쟁력의 핵심, 데이터 확보·활용을 위해 범부처가 함께 나선다!"
+cover_image: "https://images.unsplash.com/photo-1581093577421-f561a654a353?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgwNDgwNzU3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "5개 부처, 데이터 확보·활용 위해 나선다! — Photo by ThisisEngineering on Unsplash"
 author: "과학기술정보통신부"
 ---
 

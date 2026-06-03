@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "assets/logos/mcst.gif"
-cover_image_alt: "올여름 여행, 숙박 할인권 받고 인구감소지역으로 떠나요 관련 보도자료 이미지"
+cover_image: "https://images.unsplash.com/photo-1734489510026-707b81d84de8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dHJhdmVsJTIwZGVzdGluYXRpb24lMjBsYW5kbWFyayUyMHdhbGtpbmclMjB0b3VyaXNtJTIwY3VsdHVyZSUyMGFydHMlMjBjcmVhdGl2ZXxlbnwxfDB8fHwxNzgwNDg0NTA0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "올여름 여행, 숙박 할인권 받고 인구감소지역으로 떠나요 — Photo by ling hua on Unsplash"
 author: "문화체육관광부"
 ---
 

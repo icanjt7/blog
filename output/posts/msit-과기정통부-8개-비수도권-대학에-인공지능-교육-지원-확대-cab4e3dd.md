@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "과기정통부, 비수도권 대학의 인공지능 인재양성 전폭 지원"
+cover_image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMHNjaWVuY2UlMjByZXNlYXJjaCUyMGxhYm9yYXRvcnklMjBuZXR3b3JrJTIwY29tbXVuaWNhdGlvbiUyMGluZnJhc3RydWN0dXJlJTIwZWR1Y2F0aW9uJTIwY2xhc3Nyb29tJTIwYm9va3N8ZW58MXwwfHx8MTc4MDQ4NDUwNnww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "과기정통부, 8개 비수도권 대학에 인공지능 교육 지원 확대 — Photo by Steve A Johnson on Unsplash"
 author: "과학기술정보통신부"
 ---
 

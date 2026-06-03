@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "국가유산진흥원"
 quality_score: 90.0
-cover_image: "assets/logos/kh.png"
-cover_image_alt: "국가유산채널, 미국 텔리 어워즈 '은상' 수상 관련 보도자료 이미지"
+cover_image: "https://images.unsplash.com/photo-1627208753013-8954b7089657?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8a29yZWFuJTIwaGVyaXRhZ2UlMjBhcmNoaXRlY3R1cmV8ZW58MXwwfHx8MTc4MDQ4MDc0Nnww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "국가유산채널, 미국 텔리 어워즈 '은상' 수상 — Photo by zero take on Unsplash"
 author: "국가유산진흥원"
 ---
 

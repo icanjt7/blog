@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "[보도참고] 해커수준의 AI 사이버위협, 민관이 함께 대응 과기정통부, 「AI 기반 사이버위협 대응 민간 정보보호추진계획 발표」"
+cover_image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMHNjaWVuY2UlMjByZXNlYXJjaCUyMGxhYm9yYXRvcnklMjBuZXR3b3JrJTIwY29tbXVuaWNhdGlvbiUyMGluZnJhc3RydWN0dXJlfGVufDF8MHx8fDE3ODA0ODA3NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "AI가 사이버위협을 일으키는 시대, 5계명으로 대응한다 — Photo by Shubham Dhage on Unsplash"
 author: "과학기술정보통신부"
 ---
 

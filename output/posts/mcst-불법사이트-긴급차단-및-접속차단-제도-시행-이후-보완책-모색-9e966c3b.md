@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "assets/logos/mcst.gif"
-cover_image_alt: "불법사이트 긴급차단 및 접속차단 제도 시행 이후 보완책 모색 관련 보도자료 이미지"
+cover_image: "https://images.unsplash.com/photo-1578894381163-e72c17f2d45f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODA0ODA3NTB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "불법사이트 긴급차단 및 접속차단 제도 시행 이후 보완책 모색 — Photo by Charlotte Noelle on Unsplash"
 author: "문화체육관광부"
 ---
 

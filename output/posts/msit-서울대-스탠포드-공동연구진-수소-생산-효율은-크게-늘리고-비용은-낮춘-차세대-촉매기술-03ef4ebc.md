@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "서울대-스탠포드 공동연구진, “수소 생산 효율은 크게 늘리고, 비용은 낮춘” 차세대 촉매기술 개발"
+cover_image: "https://images.unsplash.com/photo-1596883313852-419362eb598d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzZW91bCUyMHJlc3RhdXJhbnQlMjBzdHJlZXQlMjBjaXR5JTIwZm9vZCUyMHNjaWVuY2UlMjByZXNlYXJjaCUyMGxhYm9yYXRvcnklMjBuZXR3b3JrJTIwY29tbXVuaWNhdGlvbiUyMGluZnJhc3RydWN0dXJlfGVufDF8MHx8fDE3ODA0ODQ1MDd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "서울대-스탠포드 공동연구진, “수소 생산 효율은 크게 늘리고, 비용은 낮춘” 차세대 촉매기술 개발 — Photo by Markus Winkler on Unsplash"
 author: "과학기술정보통신부"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "국가유산진흥원"
 quality_score: 90.0
-cover_image: "assets/logos/kh.png"
-cover_image_alt: "국가유산 기반 AI 서비스, 세계무대에 선보이다. 관련 보도자료 이미지"
+cover_image: "https://images.unsplash.com/photo-1763887487365-840fe5127e3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMGtvcmVhbiUyMGhlcml0YWdlJTIwYXJjaGl0ZWN0dXJlfGVufDF8MHx8fDE3ODA0ODA3NDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "국가유산 기반 AI 서비스, 세계무대에 선보이다. — Photo by Artan on Unsplash"
 author: "국가유산진흥원"
 ---
 

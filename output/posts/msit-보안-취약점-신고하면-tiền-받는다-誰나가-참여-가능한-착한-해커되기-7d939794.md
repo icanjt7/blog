@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "“민·관·국민 삼각 공조로 보안구멍 미리 찾아 막는다” 국내 첫 ‘보안취약점 상시 신고조치제’, 시범사업 실시 - 19세 이상 국민 누구나 착한 해커(화이트해커)로 참여 가능, 통신·게임·금융 기술 서비스(핀테크) 등 국민 생활 밀접 기업과 공공 기관의 보안 선제 점검 -"
+cover_image: "https://images.unsplash.com/photo-1691435828932-911a7801adfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgwNDgwNzU3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "보안 취약점 신고하면 tiền 받는다,誰나가 참여 가능한 착한 해커되기 — Photo by Albert Stoynov on Unsplash"
 author: "과학기술정보통신부"
 ---
 

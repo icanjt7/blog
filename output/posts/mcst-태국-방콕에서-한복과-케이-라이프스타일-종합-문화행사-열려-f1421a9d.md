@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "assets/logos/mcst.gif"
-cover_image_alt: "태국 방콕에서 한복과 ‘케이-라이프스타일’ 종합 문화행사 열려 관련 보도자료 이미지"
+cover_image: "https://images.unsplash.com/photo-1780408060175-36f75969bd2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dG91cmlzbSUyMGRlc3RpbmF0aW9uJTIwdHJhdmVsJTIwY3VsdHVyZSUyMGFydHMlMjBjcmVhdGl2ZXxlbnwxfDB8fHwxNzgwNDgwNzUwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "태국 방콕에서 한복과 ‘케이-라이프스타일’ 종합 문화행사 열려 — Photo by Charlie Solorzano on Unsplash"
 author: "문화체육관광부"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "assets/logos/mcst.gif"
-cover_image_alt: "전국 문학관에서 현장 경험 쌓을 청년인턴 50명 모집 관련 보도자료 이미지"
+cover_image: "https://images.unsplash.com/photo-1761774100428-b17ab4fbbe72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjB5b3VuZyUyMHByb2Zlc3Npb25hbHMlMjBjaXR5JTIwY3VsdHVyZSUyMGFydHMlMjBjcmVhdGl2ZXxlbnwxfDB8fHwxNzgwNDg0NTA1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "전국 문학관에서 현장 경험 쌓을 청년인턴 50명 모집 — Photo by jing chen on Unsplash"
 author: "문화체육관광부"
 ---
 

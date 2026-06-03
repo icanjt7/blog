@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "피지컬·제조 AI와 정부 AX로 성과 창출 확대,연구 자율성·창의성 제고를 위한 범부처 협력 강화"
+cover_image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMHNjaWVuY2UlMjByZXNlYXJjaCUyMGxhYm9yYXRvcnklMjBuZXR3b3JrJTIwY29tbXVuaWNhdGlvbiUyMGluZnJhc3RydWN0dXJlfGVufDF8MHx8fDE3ODA0ODA3NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "AI 기술로 연구 혁신을 앞당긴다, 성과 창출 2배 확대 — Photo by Steve A Johnson on Unsplash"
 author: "과학기술정보통신부"
 ---
 

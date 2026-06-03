@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "김민석 국무총리 주재, ‘데이터 관계장관회의’ 개최"
+cover_image: "https://images.pexels.com/photos/18875847/pexels-photo-18875847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "김민석 국무총리, 데이터 역량 결집을 위한 장관 회의 주재 — Photo by Der_ Hördt on Pexels"
 author: "과학기술정보통신부"
 ---
 
