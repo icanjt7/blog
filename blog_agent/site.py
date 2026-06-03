@@ -748,6 +748,7 @@ class StaticSiteBuilder:
   <meta property="og:description" content="{html.escape(description)}">
   <meta property="og:url" content="{html.escape(page_url)}">{og_image_tag}
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="naver-site-verification" content="474c602a51b653598de7203e9604b16da6381678">
   <link rel="canonical" href="{html.escape(page_url)}">
   <link rel="stylesheet" href="./style.css">
   <link rel="alternate" type="application/rss+xml" href="./feed.xml">{ga_script}{adsense_script}
