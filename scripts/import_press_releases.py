@@ -256,6 +256,16 @@ def post_path_for_release(prefix: str, title: str, url: str, overwrite: bool = F
     return POSTS_DIR / f"{prefix}-{slugify(title)}-{digest}.md"
 
 
+def existing_post_for_url(prefix: str, url: str) -> Path | None:
+    digest = hashlib.sha1(url.encode()).hexdigest()[:8]
+    existing = sorted(POSTS_DIR.glob(f"{prefix}-*-{digest}.md"))
+    return existing[0] if existing else None
+
+
+def max_pages_for(per_source: int) -> int:
+    return max(5, min(15, (per_source // 10) + 3))
+
+
 def yaml_quote(value: str) -> str:
     return '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
@@ -453,7 +463,7 @@ def mois_links(per_source: int) -> list[str]:
     seen: set[str] = set()
     links: list[str] = []
     page = 1
-    while len(links) < per_source and page <= 5:
+    while len(links) < per_source and page <= max_pages_for(per_source):
         html_src = fetch(f"{list_url}&pageIndex={page}")
         for m in re.finditer(r'href="([^"]*commonSelectBoardArticle[^"]*nttId=(\d+)[^"]*)"', html_src):
             url = strip_jsessionid(urljoin(base, html.unescape(m.group(1))))
@@ -512,7 +522,7 @@ def msit_links(per_source: int) -> list[str]:
     seen: set[str] = set()
     links: list[str] = []
     page = 1
-    while len(links) < per_source and page <= 5:
+    while len(links) < per_source and page <= max_pages_for(per_source):
         html_src = fetch(f"{list_url}&pageIndex={page}")
         for ntt in re.findall(r"fn_detail\((\d+)\)", html_src):
             if ntt not in seen:
@@ -572,7 +582,7 @@ def mofe_links(per_source: int) -> list[str]:
     seen: set[str] = set()
     links: list[str] = []
     page = 1
-    while len(links) < per_source and page <= 5:
+    while len(links) < per_source and page <= max_pages_for(per_source):
         html_src = fetch(f"{list_url}&pageIndex={page}")
         for ntt_id in re.findall(r"fn_egov_select\(['\"]([^'\"]+)['\"]", html_src):
             if ntt_id not in seen:
@@ -622,7 +632,7 @@ def mcst_links(per_source: int) -> list[str]:
     seen: set[str] = set()
     links: list[str] = []
     page = 1
-    while len(links) < per_source and page <= 5:
+    while len(links) < per_source and page <= max_pages_for(per_source):
         html_src = fetch(f"{list_url}?pageIndex={page}")
         for m in re.finditer(r"pressView\.jsp\?pSeq=(\d+)", html_src):
             pseq = m.group(1)
@@ -687,7 +697,7 @@ def kh_links(per_source: int) -> list[str]:
     seen: set[str] = set()
     links: list[str] = []
     page = 1
-    while len(links) < per_source and page <= 5:
+    while len(links) < per_source and page <= max_pages_for(per_source):
         html_src = fetch(f"{base}?brdType=L&thisPage={page}&searchField=&searchText=")
         for m in re.finditer(r"""href=["']([^"']*brdType=R[^"']*bbIdx=\d+[^"']*)["']""", html_src):
             full = strip_jsessionid(urljoin(base, html.unescape(m.group(1))))
@@ -726,7 +736,7 @@ def khs_links(per_source: int) -> list[str]:
     seen: set[str] = set()
     links: list[str] = []
     page = 1
-    while len(links) < per_source and page <= 5:
+    while len(links) < per_source and page <= max_pages_for(per_source):
         url = (
             "https://www.khs.go.kr/newsBbz/selectNewsBbzList.do"
             f"?pageIndex={page}&mn=NS_01_02&pageUnit=10&sectionId=b_sec_1"
@@ -818,14 +828,19 @@ def _import_source(
     writer: "WriterAgent | None",
     seq_start: int,
     overwrite: bool,
+    new_only: bool = False,
 ) -> tuple[list[Path], list[str], int]:
     name = AGENCIES[prefix]
     print(f"\n[{name}] 링크 수집 중...")
     written: list[Path] = []
     errors: list[str] = []
     seq = seq_start
+    target = per_source
+    list_limit = per_source
+    if new_only and not overwrite:
+        list_limit = max(per_source * 4, per_source + 40)
     try:
-        links = list_fn(per_source)  # type: ignore[call-arg]
+        links = list_fn(list_limit)  # type: ignore[call-arg]
     except Exception as e:
         errors.append(f"{name} 목록 수집 실패: {e}")
         print(f"  ✗ 목록 실패: {e}")
@@ -833,6 +848,9 @@ def _import_source(
     print(f"  {len(links)}건 발견")
     for url in links:
         try:
+            if new_only and not overwrite and existing_post_for_url(prefix, url):
+                print(f"  = 기존 글 건너뜀: {url[:70]}")
+                continue
             release = release_fn(url)  # type: ignore[call-arg]
             if writer:
                 _enrich_release(release, writer)
@@ -840,6 +858,8 @@ def _import_source(
             written.append(path)
             seq += 1
             print(f"  + {release.title[:50]}")
+            if new_only and len(written) >= target:
+                break
         except Exception as e:
             errors.append(f"{url}: {e}")
             print(f"  ✗ {url[:60]}: {e}")
@@ -856,6 +876,8 @@ def main() -> None:
                         help="LLM으로 본문 보강 + 제목 재작성")
     parser.add_argument("--overwrite-existing", action="store_true",
                         help="기존 보도자료 글도 다시 생성해 본문을 갱신")
+    parser.add_argument("--new-only", action="store_true",
+                        help="이미 작성한 URL은 건너뛰고 기관별 신규 글만 지정 수만큼 생성")
     args = parser.parse_args()
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -869,7 +891,14 @@ def main() -> None:
         if args.agencies and prefix not in args.agencies:
             continue
         written, errors, seq = _import_source(
-            prefix, list_fn, release_fn, args.per_source, writer, seq, args.overwrite_existing
+            prefix,
+            list_fn,
+            release_fn,
+            args.per_source,
+            writer,
+            seq,
+            args.overwrite_existing,
+            args.new_only,
         )
         all_written.extend(written)
         all_errors.extend(errors)

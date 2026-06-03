@@ -3,6 +3,22 @@ name: Weekly press release import
 on:
   workflow_dispatch:
     inputs:
+      per_source:
+        description: "Posts per agency"
+        required: true
+        default: "12"
+      agencies:
+        description: "Optional agency codes separated by spaces, e.g. mois msit"
+        required: false
+        default: ""
+      new_only:
+        description: "Skip existing URLs and fill the requested number with new posts"
+        required: true
+        type: choice
+        options:
+          - "false"
+          - "true"
+        default: "false"
       overwrite_existing:
         description: "Refresh existing press-release posts from original attachments"
         required: true
@@ -40,7 +56,7 @@ jobs:
       - name: Install
         run: pip install -e .
 
-      - name: Import press releases (all 6 agencies, 12 each)
+      - name: Import press releases
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
@@ -51,7 +67,13 @@ jobs:
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.1-8b-instruct:free' }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          args=(--per-source 12 --rewrite-titles)
+          args=(--per-source "${{ inputs.per_source || '12' }}" --rewrite-titles)
+          if [ -n "${{ inputs.agencies }}" ]; then
+            args+=(--agencies ${{ inputs.agencies }})
+          fi
+          if [ "${{ inputs.new_only || 'false' }}" = "true" ]; then
+            args+=(--new-only)
+          fi
           if [ "${{ inputs.overwrite_existing || 'false' }}" = "true" ]; then
             args+=(--overwrite-existing)
           fi
