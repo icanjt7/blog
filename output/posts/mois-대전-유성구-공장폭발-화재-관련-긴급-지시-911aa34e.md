@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "행정안전부"
 quality_score: 90.0
-cover_image: "assets/logos/mois.jpg"
-cover_image_alt: "대전 유성구 공장폭발 화재 관련 긴급 지시"
+cover_image: "https://images.unsplash.com/photo-1582140110238-28f751bd624b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhZG1pbmlzdHJhdGlvbiUyMG9mZmljZSUyMHBhcGVyd29yayUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4MDQ4MDc1M3ww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "대전 유성구 공장폭발 화재 관련 긴급 지시 — Photo by Boston Public Library on Unsplash"
 author: "행정안전부"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "행정안전부"
 quality_score: 90.0
-cover_image: "assets/logos/mois.jpg"
-cover_image_alt: "AI 기업 육성 위한 ‘AI·고가치 공공데이터 TOP 100’ 본격 개방 추진"
+cover_image: "https://images.unsplash.com/photo-1706517212966-43695534fe88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMGFkbWluaXN0cmF0aW9uJTIwb2ZmaWNlJTIwcGFwZXJ3b3JrJTIwc2FmZXR5JTIwcHVibGljJTIwc2VydmljZXxlbnwxfDB8fHwxNzgwNDgwNzUzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "AI 기업 육성 위한 ‘AI·고가치 공공데이터 TOP 100’ 본격 개방 추진 — Photo by K C on Unsplash"
 author: "행정안전부"
 ---
 

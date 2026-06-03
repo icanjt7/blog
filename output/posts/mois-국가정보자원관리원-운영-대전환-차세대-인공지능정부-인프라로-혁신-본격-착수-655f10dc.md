@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "행정안전부"
 quality_score: 90.0
-cover_image: "assets/logos/mois.jpg"
-cover_image_alt: "국가정보자원관리원 운영 대전환, 차세대 인공지능정부 인프라로 혁신 본격 착수"
+cover_image: "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMGFkbWluaXN0cmF0aW9uJTIwb2ZmaWNlJTIwcGFwZXJ3b3JrJTIwc2FmZXR5JTIwcHVibGljJTIwc2VydmljZXxlbnwxfDB8fHwxNzgwNDgwNzUzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "국가정보자원관리원 운영 대전환, 차세대 인공지능정부 인프라로 혁신 본격 착수 — Photo by Galina Nelyubova on Unsplash"
 author: "행정안전부"
 ---
 

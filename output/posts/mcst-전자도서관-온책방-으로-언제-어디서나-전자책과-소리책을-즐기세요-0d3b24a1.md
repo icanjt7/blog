@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "assets/logos/mcst.gif"
-cover_image_alt: "전자도서관 ‘온책방’으로 언제 어디서나 전자책과 소리책을 즐기세요 관련 보도자료 이미지"
+cover_image: "https://images.unsplash.com/photo-1760726449764-6b53c0bddae6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODA0ODA3NTB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "전자도서관 ‘온책방’으로 언제 어디서나 전자책과 소리책을 즐기세요 — Photo by Darya Luganskaya on Unsplash"
 author: "문화체육관광부"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "assets/logos/mcst.gif"
-cover_image_alt: "지역 바가지요금 근절을 위해 범부처 총력 대응 관련 보도자료 이미지"
+cover_image: "https://images.unsplash.com/photo-1530789253388-582c481c54b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODA0ODA3NTB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "지역 바가지요금 근절을 위해 범부처 총력 대응 — Photo by Mesut Kaya on Unsplash"
 author: "문화체육관광부"
 ---
 

@@ -8,10 +8,10 @@ tags:
   - FX
   - is
 quality_score: 69.0
-cover_image: "https://picsum.photos/seed/112/1200/630"
-cover_image_alt: "5분 만에 아드보이 FX를 체험해 보세요 대표 이미지"
+cover_image: "https://images.unsplash.com/photo-1562408590-e32931084e23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "5분 만에 아드보이 FX를 체험해 보세요 — Photo by Umberto on Unsplash"
 ---
-![5분 만에 아드보이 FX를 체험해 보세요 대표 이미지](https://picsum.photos/seed/112/1200/630)
+![5분 만에 아드보이 FX를 체험해 보세요 — Photo by Umberto on Unsplash](https://images.unsplash.com/photo-1562408590-e32931084e23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ### 아드보이 FX는 무엇인가요?
 아드보이 FX는 휴대성과 게임성을 결합한 훌륭한 게임 콘솔입니다. 아드보이 FX-C는 이전 모델의 좋은 점들을 결합하고 몇 가지 업그레이드를 더해주면서도 크기는 여전히 작습니다.

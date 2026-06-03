@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "행정안전부"
 quality_score: 90.0
-cover_image: "assets/logos/mois.jpg"
-cover_image_alt: "폐교에 새 숨결 불어넣는다! 우수 활용 모델 집중 지원"
+cover_image: "https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhZG1pbmlzdHJhdGlvbiUyMG9mZmljZSUyMHBhcGVyd29yayUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4MDQ4MDc1M3ww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "폐교에 새 숨결 불어넣는다! 우수 활용 모델 집중 지원 — Photo by Arisa Chattasa on Unsplash"
 author: "행정안전부"
 ---
 

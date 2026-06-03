@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "assets/logos/mcst.gif"
-cover_image_alt: "‘다국어 교통정보 콘텐츠’로 한국 여행 편하게 즐기세요 관련 보도자료 이미지"
+cover_image: "https://images.unsplash.com/photo-1664126328955-4a2e48a66c26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0cmF2ZWwlMjBjaXR5JTIwbGFuZG1hcmslMjB0b3VyaXNtJTIwZGVzdGluYXRpb24lMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODA0ODA3NTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "‘다국어 교통정보 콘텐츠’로 한국 여행 편하게 즐기세요 — Photo by Shane Ryan Herilalaina on Unsplash"
 author: "문화체육관광부"
 ---
 

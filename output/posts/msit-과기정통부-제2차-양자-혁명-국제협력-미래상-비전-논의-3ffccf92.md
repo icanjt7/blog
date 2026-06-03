@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "과기정통부, ‘제2차 양자 혁명’ 국제협력 미래상(비전) 논의"
+cover_image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwcXVhbnR1bSUyMGFic3RyYWN0JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgwNDgwNzU3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "과기정통부, ‘제2차 양자 혁명’ 국제협력 미래상(비전) 논의 — Photo by Shubham Dhage on Unsplash"
 author: "과학기술정보통신부"
 ---
 

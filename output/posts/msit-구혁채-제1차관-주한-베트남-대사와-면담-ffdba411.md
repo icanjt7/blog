@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "구혁채 제1차관, 주한 베트남 대사와 면담"
+cover_image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgwNDgwNzU3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "구혁채 제1차관, 주한 베트남 대사와 면담 — Photo by Jordan Harrison on Unsplash"
 author: "과학기술정보통신부"
 ---
 

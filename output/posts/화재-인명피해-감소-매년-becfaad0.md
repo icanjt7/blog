@@ -9,10 +9,10 @@ tags:
   - 감소
   - 매년
 quality_score: 73.0
-cover_image: "https://picsum.photos/seed/501/1200/630"
-cover_image_alt: "화재 인명피해 15.7% 감소, 매년 10%씩 줄이기 위해 대표 이미지"
+cover_image: "https://images.unsplash.com/photo-1698132979679-f188396e56a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODA0ODA3NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "화재 인명피해 15.7% 감소, 매년 10%씩 줄이기 위해 — Photo by Lawrence Krowdeed on Unsplash"
 ---
-![화재 인명피해 15.7% 감소, 매년 10%씩 줄이기 위해 대표 이미지](https://picsum.photos/seed/501/1200/630)
+![화재 인명피해 15.7% 감소, 매년 10%씩 줄이기 위해 — Photo by Lawrence Krowdeed on Unsplash](https://images.unsplash.com/photo-1698132979679-f188396e56a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODA0ODA3NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ### 화재 인명피해 감소 현황
 최근, 화재 인명피해가 많이 줄었다는 뉴스를 봤을 것 같다. 정확히는 15.7% 감소했다. 소방청은 매년 10%씩 감축 목표를 세웠다.

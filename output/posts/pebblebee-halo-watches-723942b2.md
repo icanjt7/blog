@@ -8,10 +8,10 @@ tags:
   - Halo
   - watches
 quality_score: 81.0
-cover_image: "https://picsum.photos/seed/13/1200/630"
-cover_image_alt: "개인 안전을 지키는 Pebblebee Halo watches 대표 이미지"
+cover_image: "https://images.unsplash.com/photo-1628146023674-ede6049609b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxzYWZldHklMjBwdWJsaWMlMjBzZXJ2aWNlfGVufDF8MHx8fDE3ODA0ODA3NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "개인 안전을 지키는 Pebblebee Halo watches — Photo by Mufid Majnun on Unsplash"
 ---
-![개인 안전을 지키는 Pebblebee Halo watches 대표 이미지](https://picsum.photos/seed/13/1200/630)
+![개인 안전을 지키는 Pebblebee Halo watches — Photo by Mufid Majnun on Unsplash](https://images.unsplash.com/photo-1628146023674-ede6049609b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxzYWZldHklMjBwdWJsaWMlMjBzZXJ2aWNlfGVufDF8MHx8fDE3ODA0ODA3NjF8MA&ixlib=rb-4.1.0&q=80&w=1080)
 
 ### 개인 안전의 새로운 방법
 어딜 가도 안전하지 않은 세상에서, 우리는 항상 주변을 경계해야 한다. 특히 밤에 혼자 다니는 경우, 개인 안전에 대해 더욱 신경을 쓴다. 하지만 항상 비상금이나 스프레이를 가지고 다니는 것은 현실적으로 어렵다.

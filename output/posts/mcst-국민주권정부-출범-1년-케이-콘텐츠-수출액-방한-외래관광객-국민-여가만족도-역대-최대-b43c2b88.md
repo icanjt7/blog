@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "assets/logos/mcst.gif"
-cover_image_alt: "국민주권정부 출범 1년 ‘케이-콘텐츠’ 수출액, 방한 외래관광객, 국민 여가만족도 역대 최대 관련 보도자료 이미지"
+cover_image: "https://images.unsplash.com/photo-1538061879026-7703d25d483c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBnbG9iYWwlMjB0cmFkZSUyMGV4cG9ydCUyMHNoaXBwaW5nJTIwY3VsdHVyZSUyMGFydHMlMjBjcmVhdGl2ZXxlbnwxfDB8fHwxNzgwNDgwNzUwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "국민주권정부 출범 1년 ‘케이-콘텐츠’ 수출액, 방한 외래관광객, 국민 여가만족도 역대 최대 — Photo by Tom Cleary on Unsplash"
 author: "문화체육관광부"
 ---
 

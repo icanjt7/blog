@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "과기정통부, 대표 누리집 인공지능 친화형으로 개선한다"
+cover_image: "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMHNjaWVuY2UlMjByZXNlYXJjaCUyMGxhYm9yYXRvcnklMjBuZXR3b3JrJTIwY29tbXVuaWNhdGlvbiUyMGluZnJhc3RydWN0dXJlfGVufDF8MHx8fDE3ODA0ODA3NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "과기정통부, 대표 누리집 인공지능 친화형으로 개선한다 — Photo by Igor Omilaev on Unsplash"
 author: "과학기술정보통신부"
 ---
 

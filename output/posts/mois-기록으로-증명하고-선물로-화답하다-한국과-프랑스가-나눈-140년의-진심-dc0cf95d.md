@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "행정안전부"
 quality_score: 90.0
-cover_image: "assets/logos/mois.jpg"
-cover_image_alt: "기록으로 증명하고 선물로 화답하다 한국과 프랑스가 나눈 140년의 진심"
+cover_image: "https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhZG1pbmlzdHJhdGlvbiUyMG9mZmljZSUyMHBhcGVyd29yayUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4MDQ4MDc1M3ww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "기록으로 증명하고 선물로 화답하다 한국과 프랑스가 나눈 140년의 진심 — Photo by Arisa Chattasa on Unsplash"
 author: "행정안전부"
 ---
 

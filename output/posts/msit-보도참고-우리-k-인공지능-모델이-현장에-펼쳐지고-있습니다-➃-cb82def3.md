@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "[보도참고] 우리 K-인공지능 모델이 현장에 펼쳐지고 있습니다 ➃"
+cover_image: "https://images.unsplash.com/photo-1744640326166-433469d102f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMHNjaWVuY2UlMjByZXNlYXJjaCUyMGxhYm9yYXRvcnklMjBuZXR3b3JrJTIwY29tbXVuaWNhdGlvbiUyMGluZnJhc3RydWN0dXJlfGVufDF8MHx8fDE3ODA0ODA3NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "[보도참고] 우리 K-인공지능 모델이 현장에 펼쳐지고 있습니다 ➃ — Photo by Immo Wegmann on Unsplash"
 author: "과학기술정보통신부"
 ---
 

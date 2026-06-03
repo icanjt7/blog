@@ -8,6 +8,8 @@ tags:
   - to
   - Night
 quality_score: 100.0
+cover_image: "https://images.unsplash.com/photo-1631541738233-41c854132d26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "Welcome to Night 핵심 정리: 지금 확인할 포인트 — Photo by Jay Zhang on Unsplash"
 ---
 ## 한눈에 보기
 

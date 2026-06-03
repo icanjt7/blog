@@ -9,7 +9,8 @@ tags:
   - 바이오
   - 건에
 quality_score: 100.0
-cover_image: "https://picsum.photos/seed/494/1200/630"
+cover_image: "https://images.unsplash.com/photo-1726197213582-fb5d4e85172f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODA0ODA3NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "국민성장펀드 퓨리오사 바이오 건에 핵심 정리: 지금 확인할 포인트 — Photo by Cecelia Chang on Unsplash"
 ---
 ## 한눈에 보기
 
