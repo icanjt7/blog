@@ -36,7 +36,7 @@ TIMEOUT = 20
 
 INSTITUTION_LOGOS: dict[str, str] = {
     "행정안전부":        "assets/logos/mois.jpg",
-    "과학기술정보통신부": "assets/logos/msit.svg",
+    "과학기술정보통신부": "assets/logos/msit.jpg",
     "기획재정부":        "https://www.mofe.go.kr/images/common/og-image.jpg",
     "문화체육관광부":    "assets/logos/mcst.gif",
     "국가유산청":        "https://www.khs.go.kr/images/layout/cha_card.jpg",
