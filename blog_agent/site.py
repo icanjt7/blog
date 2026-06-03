@@ -173,11 +173,23 @@ class StaticSiteBuilder:
     def _strip_leading_image(markdown_text: str) -> str:
         return re.sub(r"^\s*!\[[^\]]*\]\([^)]+\)\s*", "", markdown_text, count=1)
 
+    @staticmethod
+    def _display_author(post: Post) -> str:
+        if "보도자료" in post.tags and post.author:
+            return f"자료: {post.author} · 편집: 브리핑웨이브"
+        return "브리핑웨이브 편집팀"
+
+    @staticmethod
+    def _author_avatar(label: str) -> str:
+        match = re.search(r"[가-힣A-Za-z0-9]", label)
+        return match.group(0) if match else "브"
+
     def _write_post(self, post: Post) -> None:
         cover_html = ""
         if post.cover_image:
             cover_html = f'<img class="cover" src="{html.escape(post.cover_image)}" alt="{html.escape(post.cover_image_alt)}" loading="lazy">'
         ad_slot = self._ad_slot()
+        display_author = self._display_author(post)
         content = f"""
         <article class="post">
           <a class="back" href="./index.html">전체 글</a>
@@ -186,8 +198,8 @@ class StaticSiteBuilder:
             <p class="meta">{html.escape(post.category)} · {post.date:%Y-%m-%d}</p>
             <h1>{html.escape(post.title)}</h1>
             <div class="byline">
-              <span class="author-avatar" aria-hidden="true">{html.escape(post.author[:1])}</span>
-              <span><strong>{html.escape(post.author)}</strong> 기자</span>
+              <span class="author-avatar" aria-hidden="true">{html.escape(self._author_avatar(display_author))}</span>
+              <span>{html.escape(display_author)}</span>
             </div>
             <div class="tags">{self._tag_html(post.tags)}</div>
           </header>
@@ -220,12 +232,13 @@ class StaticSiteBuilder:
             f'alt="{html.escape(post.cover_image_alt)}" loading="lazy"></a>'
             if post.cover_image else ""
         )
+        display_author = self._display_author(post)
         return f"""<article class="card">
           {thumb}
           <div class="card-body">
             <p class="meta"><span class="cat-badge">{html.escape(post.category)}</span> {post.date:%Y.%m.%d}</p>
             <h2><a href="./{post.slug}.html">{html.escape(post.title)}</a></h2>
-            <p class="card-author">by {html.escape(post.author)} 기자</p>
+            <p class="card-author">{html.escape(display_author)}</p>
             <p class="card-excerpt">{html.escape(post.excerpt)}</p>
             <div class="tags">{self._tag_html(post.tags[:4])}</div>
           </div>
@@ -376,6 +389,7 @@ class StaticSiteBuilder:
                     "category": post.category,
                     "tags": post.tags,
                     "author": post.author,
+                    "display_author": self._display_author(post),
                 }
             )
         (self.public_dir / "search.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
@@ -522,7 +536,7 @@ class StaticSiteBuilder:
 	                <time datetime="${escapeHtml(item.date)}">${escapeHtml(item.date)}</time>
 	              </div>
 	              <h2><a href="./${encodeURIComponent(item.slug)}.html">${escapeHtml(item.title)}</a></h2>
-	              <p class="card-author">by ${escapeHtml(item.author || '브리핑웨이브')} 기자</p>
+	              <p class="card-author">${escapeHtml(item.display_author || '브리핑웨이브 편집팀')}</p>
 	              <p class="card-excerpt">${escapeHtml(item.excerpt)}</p>
 	              <div class="tags">${(item.tags || []).map(tag=>`<a class="tag" href="./search.html?tag=${encodeURIComponent(tag)}">${escapeHtml(tag)}</a>`).join('')}</div>
 	            </article>

@@ -254,7 +254,7 @@ def write_post(release: PressRelease, sequence: int) -> Path:
         "---\n"
         f"title: {yaml_quote(release.title)}\n"
         f"date: {yaml_quote(post_dt.isoformat(timespec='minutes'))}\n"
-        "category: \"핫이슈\"\n"
+        "category: \"보도자료\"\n"
         "tags:\n"
         + "".join(f"  - {yaml_quote(tag)}\n" for tag in tags)
         + "quality_score: 90.0\n"

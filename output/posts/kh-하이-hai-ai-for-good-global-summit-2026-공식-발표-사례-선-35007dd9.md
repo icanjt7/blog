@@ -1,7 +1,7 @@
 ---
 title: "‘하이(HAI)’, ‘AI for Good Global Summit 2026’ 공식 발표 사례 선정(260526)"
 date: "2026-05-26T00:06"
-category: "핫이슈"
+category: "보도자료"
 tags:
   - "보도자료"
   - "국가유산"
