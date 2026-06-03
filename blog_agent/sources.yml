@@ -1,4 +1,4 @@
-tech:
+기술:
   rss:
     # 해외 테크 미디어
     - https://developers.googleblog.com/en/rss/
@@ -9,7 +9,7 @@ tech:
     - https://www.kisa.or.kr/rss/rss.do?bbsId=PR_NEWS  # 한국인터넷진흥원(KISA)
     - https://www.nipa.kr/rss/rss.do  # 정보통신산업진흥원(NIPA)
 
-finance:
+정책:
   rss:
     # 금융·경제 공공기관
     - https://www.fsc.go.kr/no010101.rss                                   # 금융위원회
@@ -20,7 +20,7 @@ finance:
     - https://www.nps.or.kr/jsppage/news/rss/news_rss.jsp                  # 국민연금공단
     - https://www.hira.or.kr/rss/rss.do                                    # 건강보험심사평가원
 
-living:
+생활:
   rss:
     # 중앙정부 통합
     - https://www.korea.kr/rss/policy.xml                                  # 정책브리핑 정책
@@ -48,7 +48,7 @@ living:
     - https://www.gwangju.go.kr/rss/rss.do                                 # 광주시
     - https://www.ulsan.go.kr/rss/rss.do                                   # 울산시
 
-local:
+핫이슈:
   rss:
     # 문화·관광·영화
     - https://www.mcst.go.kr/kor/s_notice/press/pressList.jsp?pType=01    # 문화체육관광부
