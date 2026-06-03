@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import html
+import hashlib
 import json
 import re
 import shutil
@@ -24,6 +25,21 @@ class Post:
     body_html: str
     cover_image: str = ""
     cover_image_alt: str = ""
+    author: str = ""
+
+
+AUTHOR_NAMES = [
+    "알렉스",
+    "민준",
+    "서윤",
+    "지호",
+    "하린",
+    "도윤",
+    "유진",
+    "리아",
+    "현우",
+    "나윤",
+]
 
 
 class StaticSiteBuilder:
@@ -109,6 +125,7 @@ class StaticSiteBuilder:
             body_html=body_html,
             cover_image=str(meta.get("cover_image") or ""),
             cover_image_alt=str(meta.get("cover_image_alt") or title),
+            author=str(meta.get("author") or self._author_for_slug(path.stem)),
         )
 
     def _slugify(self, value: str) -> str:
@@ -133,6 +150,11 @@ class StaticSiteBuilder:
     def _category_page_filename(self, category: str) -> str:
         return f"category-{self._slugify(category)}.html"
 
+    @staticmethod
+    def _author_for_slug(slug: str) -> str:
+        digest = hashlib.sha256(slug.encode("utf-8")).hexdigest()
+        return AUTHOR_NAMES[int(digest[:8], 16) % len(AUTHOR_NAMES)]
+
     def _write_post(self, post: Post) -> None:
         cover_html = ""
         if post.cover_image:
@@ -145,6 +167,10 @@ class StaticSiteBuilder:
           <header>
             <p class="meta">{html.escape(post.category)} · {post.date:%Y-%m-%d}</p>
             <h1>{html.escape(post.title)}</h1>
+            <div class="byline">
+              <span class="author-avatar" aria-hidden="true">{html.escape(post.author[:1])}</span>
+              <span><strong>{html.escape(post.author)}</strong> 기자</span>
+            </div>
             <div class="tags">{self._tag_html(post.tags)}</div>
           </header>
           {ad_slot}
@@ -174,6 +200,7 @@ class StaticSiteBuilder:
           <div class="card-body">
             <p class="meta"><span class="cat-badge">{html.escape(post.category)}</span> {post.date:%Y.%m.%d}</p>
             <h2><a href="./{post.slug}.html">{html.escape(post.title)}</a></h2>
+            <p class="card-author">by {html.escape(post.author)} 기자</p>
             <p class="card-excerpt">{html.escape(post.excerpt)}</p>
             <div class="tags">{self._tag_html(post.tags[:4])}</div>
           </div>
@@ -323,6 +350,7 @@ class StaticSiteBuilder:
                     "date": post.date.strftime("%Y-%m-%d"),
                     "category": post.category,
                     "tags": post.tags,
+                    "author": post.author,
                 }
             )
         (self.public_dir / "search.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
@@ -461,19 +489,20 @@ class StaticSiteBuilder:
           if(results.length === 0){
             resultsEl.innerHTML = '<div class="no-results"><p>검색 결과가 없습니다.</p><p class="suggestion-text">다른 검색어를 시도하거나 카테고리를 선택해 보세요.</p></div>';
             return;
-          }
-          resultsEl.innerHTML = results.map(item => `
-            <article class="card search-result">
-              <div class="result-topline">
-                <span class="cat-badge">${escapeHtml(item.category)}</span>
-                <time datetime="${escapeHtml(item.date)}">${escapeHtml(item.date)}</time>
-              </div>
-              <h2><a href="./${encodeURIComponent(item.slug)}.html">${escapeHtml(item.title)}</a></h2>
-              <p class="card-excerpt">${escapeHtml(item.excerpt)}</p>
-              <div class="tags">${(item.tags || []).map(tag=>`<a class="tag" href="./search.html?tag=${encodeURIComponent(tag)}">${escapeHtml(tag)}</a>`).join('')}</div>
-            </article>
-          `).join('');
-        }
+	          }
+	          resultsEl.innerHTML = results.map(item => `
+	            <article class="card search-result">
+	              <div class="result-topline">
+	                <span class="cat-badge">${escapeHtml(item.category)}</span>
+	                <time datetime="${escapeHtml(item.date)}">${escapeHtml(item.date)}</time>
+	              </div>
+	              <h2><a href="./${encodeURIComponent(item.slug)}.html">${escapeHtml(item.title)}</a></h2>
+	              <p class="card-author">by ${escapeHtml(item.author || '브리핑웨이브')} 기자</p>
+	              <p class="card-excerpt">${escapeHtml(item.excerpt)}</p>
+	              <div class="tags">${(item.tags || []).map(tag=>`<a class="tag" href="./search.html?tag=${encodeURIComponent(tag)}">${escapeHtml(tag)}</a>`).join('')}</div>
+	            </article>
+	          `).join('');
+	        }
 
         function renderSummary(results, query, category){
           const summary = document.getElementById('results-summary');
@@ -803,6 +832,29 @@ a:hover { text-decoration: underline; }
 .hero-stats { margin: 0; font-size: 0.82rem; color: var(--muted); opacity: .7; }
 .meta { margin: 0 0 6px; color: var(--muted); font-size: 0.82rem; display: flex; align-items: center; gap: 6px; }
 .cat-badge { background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 1px 6px; font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
+.byline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.byline strong {
+  color: var(--ink);
+}
+.author-avatar {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #e8f4ef;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
 
 .page-shell { width: min(1040px, 100% - 32px); margin: 0 auto; }
 .site-header { background: var(--paper); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 100; }
@@ -876,6 +928,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .card h2 { margin: 0 0 8px; font-size: clamp(0.98rem, 2.8vw, 1.1rem); line-height: 1.38; word-break: keep-all; }
 .card h2 a { color: var(--ink); }
 .card h2 a:hover { color: var(--accent); text-decoration: none; }
+.card-author { margin: -3px 0 8px; color: var(--muted); font-size: 0.78rem; line-height: 1.4; }
 .card-excerpt { margin: 0 0 12px; font-size: 0.87rem; color: var(--muted); line-height: 1.55;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; flex: 1; }
 
