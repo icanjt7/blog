@@ -260,6 +260,19 @@ def yaml_quote(value: str) -> str:
     return '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
+def existing_frontmatter_value(path: Path, key: str) -> str:
+    if not path.exists():
+        return ""
+    raw = path.read_text(encoding="utf-8")
+    if not raw.startswith("---"):
+        return ""
+    parts = raw.split("---", 2)
+    if len(parts) != 3:
+        return ""
+    match = re.search(rf"^{re.escape(key)}:\s*\"?([^\"\n]+)\"?", parts[1], flags=re.MULTILINE)
+    return clean_text(match.group(1)) if match else ""
+
+
 def shorten(value: str, limit: int = 220) -> str:
     value = clean_text(value)
     value = re.sub(r"^[\-–—ㆍ·•○ㅇ◇□■▪▶※\*\s]+", "", value)
@@ -395,6 +408,9 @@ def write_post(release: PressRelease, prefix: str, sequence: int, overwrite: boo
     path = post_path_for_release(prefix, release.title, release.url, overwrite=overwrite)
     if path.exists() and not overwrite:
         return path
+    title = existing_frontmatter_value(path, "title") if overwrite else ""
+    if not title:
+        title = release.title
     try:
         base_dt = datetime.fromisoformat(release.date)
     except ValueError:
@@ -406,7 +422,7 @@ def write_post(release: PressRelease, prefix: str, sequence: int, overwrite: boo
     alt = release.image_alt or f"{release.title} 관련 보도자료 이미지"
     frontmatter = (
         "---\n"
-        f"title: {yaml_quote(release.title)}\n"
+        f"title: {yaml_quote(title)}\n"
         f"date: {yaml_quote(post_dt.isoformat(timespec='minutes'))}\n"
         "category: \"정책\"\n"
         "tags:\n"
