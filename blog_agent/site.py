@@ -280,7 +280,10 @@ class StaticSiteBuilder:
                 prev_href = "index.html" if page - 1 == 1 else f"page{page-1}.html"
                 nav_items.append(f'<a class="prev" href="./{prev_href}">← 이전</a>')
             pages_html = []
-            for p in range(1, total_pages + 1):
+            win_start = max(1, page - 3)
+            win_end = min(total_pages, win_start + 6)
+            win_start = max(1, win_end - 6)
+            for p in range(win_start, win_end + 1):
                 href = "index.html" if p == 1 else f"page{p}.html"
                 if p == page:
                     pages_html.append(f'<strong class="current">{p}</strong>')
@@ -1270,7 +1273,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 }
 """
         extra = (
-            "\n.pagination { display:flex; justify-content:center; align-items:center; gap:8px; margin-top:28px; flex-wrap:wrap; }"
+            "\n.pagination { display:flex; justify-content:center; align-items:center; gap:6px; margin-top:28px; flex-wrap:nowrap; overflow-x:auto; padding-bottom:4px; }"
             " .pagination a,.pagination .current { min-width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center; border-radius:8px; font-size:0.9rem; }"
             " .pagination a { color:var(--accent); border:1px solid var(--line); text-decoration:none; transition:background .2s,color .2s; }"
             " .pagination a:hover { background:var(--accent); color:#fff; border-color:var(--accent); }"

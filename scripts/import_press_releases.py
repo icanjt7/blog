@@ -14,12 +14,17 @@ import argparse
 import hashlib
 import html
 import re
+import sys
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import urljoin
 
 import requests
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from blog_agent.config import load_settings
+from blog_agent.writer import WriterAgent
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -141,6 +146,33 @@ def extract_sentences(text: str, limit: int = 6) -> list[str]:
     return out
 
 
+def rewrite_title(original: str, body_text: str, writer: "WriterAgent") -> str:
+    if not writer._client:
+        return original
+    prompt = f"""다음은 정부 보도자료 제목입니다. 일반 독자가 클릭하고 싶어지도록 제목을 한 줄로 바꿔줘.
+
+규칙:
+- 30자 이내
+- 공무원 말투 금지 (예: "~를 추진", "~를 실시", "~에 따르면")
+- 숫자/혜택/변화 포인트를 넣으면 좋음
+- '핵심 정리', '총정리', '알아보기' 같은 진부한 표현 금지
+- 원문 제목: {original}
+- 본문 요약: {body_text[:200]}
+
+새 제목만 한 줄로 답해. 다른 설명 없이."""
+    try:
+        resp = writer._client.chat.completions.create(
+            model=writer._model,
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.8,
+            max_tokens=60,
+        )
+        new_title = (resp.choices[0].message.content or "").strip().strip('"').strip("'")
+        return new_title if 4 < len(new_title) <= 50 else original
+    except Exception:
+        return original
+
+
 def make_article_body(release: PressRelease) -> str:
     clean_title = re.sub(r"\(\d{6}\)\s*$", "", release.title).strip()
     sentences = [shorten(s) for s in extract_sentences(release.body_text)]
@@ -234,16 +266,22 @@ def mois_links(per_source: int) -> list[str]:
 
 def mois_release(url: str) -> PressRelease:
     page = fetch(url)
-    title_m = re.search(
-        r'class="view_head"[^>]*>.*?<h2[^>]*>(.*?)</h2>', page, re.DOTALL
-    )
+    # title is in class="subject" > h4 (the h2 tags only say "보도자료" section heading)
+    title_m = re.search(r'class="subject"[^>]*>(.*?)</h4>', page, re.DOTALL)
+    if not title_m:
+        title_m = re.search(r'class="subject"[^>]*>(.*?)(?=</(?:div|p|td))', page, re.DOTALL)
     date_m = re.search(r"등록일\s*</dt>\s*<dd[^>]*>(.*?)</dd>", page, re.DOTALL)
     if not date_m:
         date_m = re.search(r"class=[\"'](reg_date|date)[^>]*>(.*?)</", page, re.DOTALL)
     body_m = re.search(
         r'id="content"(.*?)(?=id="(file|btnArea|footer))', page, re.DOTALL
     )
-    title = clean_text(re.sub(r"<[^>]+>", " ", title_m.group(1))) if title_m else "행정안전부 보도자료"
+    if title_m:
+        raw = re.sub(r'<span class="sub_desc">.*?</span>', '', title_m.group(1), flags=re.DOTALL)
+        raw = re.sub(r'<br\s*/?>', ' ', raw)
+        title = clean_text(re.sub(r"<[^>]+>", " ", raw))
+    else:
+        title = "행정안전부 보도자료"
     raw_date = re.sub(r"<[^>]+>", "", date_m.group(1) if date_m else "").strip()
     date = re.sub(r"[^0-9\-]", "-", raw_date.replace(".", "-")).strip("-")[:10] or datetime.now().strftime("%Y-%m-%d")
     fragment = body_m.group(1) if body_m else ""
@@ -264,7 +302,7 @@ def mois_release(url: str) -> PressRelease:
 # ──────────────────────────────────────────────
 
 def msit_links(per_source: int) -> list[str]:
-    base_view = "https://www.msit.go.kr/bbs/view.do?sCode=user&mPid=208&mId=307&nttSeqNo="
+    base_view = "https://www.msit.go.kr/bbs/view.do?sCode=user&mPid=208&mId=307&bbsSeqNo=94&nttSeqNo="
     list_url  = "https://www.msit.go.kr/bbs/list.do?sCode=user&mPid=208&mId=307"
     seen: set[str] = set()
     links: list[str] = []
@@ -528,9 +566,23 @@ def main() -> None:
                         help="기관별 수집 상한 (기본값: 12)")
     parser.add_argument("--agencies", nargs="*", default=None,
                         help="특정 기관만 수집 (예: --agencies mois msit)")
+    parser.add_argument("--rewrite-titles", action="store_true",
+                        help="LLM으로 제목을 독자 친화적으로 재작성")
     args = parser.parse_args()
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
+
+    writer = None
+    if args.rewrite_titles:
+        try:
+            writer = WriterAgent(load_settings())
+            if writer._client:
+                print(f"제목 재작성 활성화 (모델: {writer._model})")
+            else:
+                print("LLM 키 없음 — 제목 재작성 건너뜀")
+                writer = None
+        except Exception as e:
+            print(f"LLM 초기화 실패: {e}")
 
     written: list[Path] = []
     errors: list[str] = []
@@ -552,6 +604,8 @@ def main() -> None:
         for url in links:
             try:
                 release = release_fn(url)
+                if writer:
+                    release.title = rewrite_title(release.title, release.body_text, writer)
                 path = write_post(release, prefix, seq)
                 written.append(path)
                 seq += 1
