@@ -1,0 +1,61 @@
+name: Weekly press release import
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * 1"  # 매주 월요일 01:00 UTC (한국시간 10:00)
+
+concurrency:
+  group: press-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+      models: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Import press releases (all 6 agencies, 12 each)
+        run: python scripts/import_press_releases.py --per-source 12
+
+      - name: Build static site
+        env:
+          BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
+          BLOG_CUSTOM_DOMAIN: ${{ vars.BLOG_CUSTOM_DOMAIN }}
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+          ADSENSE_PUBLISHER_ID: ${{ secrets.ADSENSE_PUBLISHER_ID }}
+        run: python -m blog_agent.cli build-site
+
+      - name: Commit imported posts
+        run: |
+          git config user.name "blog-agent"
+          git config user.email "actions@github.com"
+          git add output state || true
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: weekly press release import"
+          git pull --rebase origin main
+          git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - uses: actions/deploy-pages@v4

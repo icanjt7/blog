@@ -87,6 +87,8 @@ class StaticSiteBuilder:
       self._write_feed(posts)
       self._write_sitemap(posts)
       self._write_css()
+      self._write_favicon()
+      self._write_robots()
       self._copy_assets()
       self._write_cname()
 
@@ -749,6 +751,7 @@ class StaticSiteBuilder:
   <meta property="og:url" content="{html.escape(page_url)}">{og_image_tag}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="naver-site-verification" content="474c602a51b653598de7203e9604b16da6381678">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="canonical" href="{html.escape(page_url)}">
   <link rel="stylesheet" href="./style.css">
   <link rel="alternate" type="application/rss+xml" href="./feed.xml">{ga_script}{adsense_script}
@@ -1275,6 +1278,23 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
             " .pagination .prev,.pagination .next { padding:0 14px; min-width:auto; }"
         )
         (self.public_dir / "style.css").write_text((css.strip() + "\n" + extra).lstrip() + "\n", encoding="utf-8")
+
+    def _write_robots(self) -> None:
+        content = (
+            "User-agent: *\n"
+            "Allow: /\n"
+            f"Sitemap: {self.site_url}/sitemap.xml\n"
+        )
+        (self.public_dir / "robots.txt").write_text(content, encoding="utf-8")
+
+    def _write_favicon(self) -> None:
+        svg = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#0f766e"/>
+  <rect x="6" y="7" width="20" height="2.8" rx="1.4" fill="white" opacity="0.92"/>
+  <rect x="6" y="13" width="13" height="2.8" rx="1.4" fill="white" opacity="0.92"/>
+  <path d="M6 22.5 Q9.5 18 13 22.5 Q16.5 27 20 22.5 Q23.5 18 26 22.5" stroke="white" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>"""
+        (self.public_dir / "favicon.svg").write_text(svg, encoding="utf-8")
 
     def _write_cname(self) -> None:
       if self.custom_domain:
