@@ -13,8 +13,10 @@ from __future__ import annotations
 import argparse
 import hashlib
 import html
+import io
 import re
 import sys
+import zipfile
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -149,6 +151,41 @@ def get_og_image(html_src: str, base_url: str) -> str:
     return raw
 
 
+def _hwpx_text_from_zip(zf: zipfile.ZipFile) -> str:
+    """ZipFile에서 텍스트를 추출한다. PrvText.txt 우선, 없으면 hp:t 파싱."""
+    names = zf.namelist()  # 한 번만 호출
+    if "Preview/PrvText.txt" in names:
+        raw = zf.read("Preview/PrvText.txt").decode("utf-8", errors="replace")
+        raw = clean_text(re.sub(r"<[^>]*>", " ", raw))  # 기존 clean_text 재사용
+        if len(raw) > 100:
+            return raw
+    sections = [n for n in names if re.match(r"Contents/section\d+\.xml", n)]
+    texts: list[str] = []
+    for sec in sections[:1]:
+        xml = zf.read(sec).decode("utf-8", errors="replace")
+        parts = re.findall(r"<hp:t[^>]*>([^<]+)</hp:t>", xml)
+        texts.extend(p.strip() for p in parts if p.strip())
+    return " ".join(texts)
+
+
+def fetch_bytes(url: str) -> bytes:
+    resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
+    resp.raise_for_status()
+    return resp.content
+
+
+def extract_hwpx_text(download_url: str) -> str:
+    """HWPX 첨부파일을 다운로드해서 본문 텍스트를 반환한다."""
+    try:
+        data = fetch_bytes(download_url)
+        if data[:2] != b"PK":
+            return ""
+        with zipfile.ZipFile(io.BytesIO(data)) as zf:
+            return _hwpx_text_from_zip(zf)
+    except Exception:
+        return ""
+
+
 def slugify(value: str) -> str:
     value = value.strip().lower()
     value = re.sub(r"[^\w가-힣]+", "-", value)
@@ -188,9 +225,50 @@ def extract_sentences(text: str, limit: int = 6) -> list[str]:
     return out
 
 
-def rewrite_title(original: str, body_text: str, writer: "WriterAgent") -> str:
+def _call_llm(writer: "WriterAgent", prompt: str,
+              temperature: float = 0.8, max_tokens: int = 512) -> str:
+    """writer의 LLM 클라이언트로 프롬프트를 보내고 텍스트를 반환한다."""
     if not writer._client:
-        return original
+        return ""
+    try:
+        resp = writer._client.chat.completions.create(
+            model=writer._model,
+            messages=[{"role": "user", "content": prompt}],
+            temperature=temperature,
+            max_tokens=max_tokens,
+        )
+        return (resp.choices[0].message.content or "").strip()
+    except Exception:
+        return ""
+
+
+def generate_article_from_source(release: "PressRelease", writer: "WriterAgent") -> str:
+    """HWPX에서 추출한 원문 텍스트를 LLM으로 기사화한다."""
+    if not release.body_text:
+        return ""
+    prompt = f"""다음은 [{release.institution}]에서 발표한 보도자료 원문입니다.
+이 내용을 독자 친화적인 블로그 기사로 작성해주세요.
+
+[보도자료 원문]
+{release.body_text[:3000]}
+
+[작성 규칙]
+- 본문 1,200~1,600자 (한국어)
+- 독자에게 중요한 수치·날짜·대상을 구체적으로 포함
+- 마크다운 헤딩(##)으로 2~3개 섹션 구성
+- '~입니다', '~합니다' 정중체 사용
+- 마지막 문단: 독자 행동 안내나 원문 확인 경로 안내
+- 자료 출처 기관: {release.institution}
+- 원문 URL: {release.url}
+
+BODY: 로 시작해서 본문만 작성하세요."""
+    text = _call_llm(writer, prompt, temperature=0.75, max_tokens=2048)
+    if text.startswith("BODY:"):
+        text = text[5:].strip()
+    return text if len(text) > 200 else ""
+
+
+def rewrite_title(original: str, body_text: str, writer: "WriterAgent") -> str:
     prompt = f"""다음은 정부 보도자료 제목입니다. 일반 독자가 클릭하고 싶어지도록 제목을 한 줄로 바꿔줘.
 
 규칙:
@@ -202,17 +280,8 @@ def rewrite_title(original: str, body_text: str, writer: "WriterAgent") -> str:
 - 본문 요약: {body_text[:200]}
 
 새 제목만 한 줄로 답해. 다른 설명 없이."""
-    try:
-        resp = writer._client.chat.completions.create(
-            model=writer._model,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.8,
-            max_tokens=60,
-        )
-        new_title = (resp.choices[0].message.content or "").strip().strip('"').strip("'")
-        return new_title if 4 < len(new_title) <= 50 else original
-    except Exception:
-        return original
+    new_title = _call_llm(writer, prompt, temperature=0.8, max_tokens=60).strip('"').strip("'")
+    return new_title if 4 < len(new_title) <= 50 else original
 
 
 def make_article_body(release: PressRelease) -> str:
@@ -389,12 +458,24 @@ def msit_release(url: str) -> PressRelease:
     img_url, img_alt = first_image(body_fragment, url)
     if not img_url:
         img_url = get_og_image(page, url)
+    # HTML 본문이 빈 경우 HWPX 첨부파일에서 텍스트 추출
+    html_body = html_to_text(body_fragment)
+    if len(html_body) < 200:
+        hwpx_m = re.search(r"setIframePath\(['\"](\d+)['\"],\s*['\"](\d+)['\"]", page)
+        if hwpx_m:
+            dl_url = (
+                f"https://www.msit.go.kr/ssm/file/fileDown.do"
+                f"?atchFileNo={hwpx_m.group(1)}&fileOrd={hwpx_m.group(2)}&fileBtn=A"
+            )
+            hwpx_text = extract_hwpx_text(dl_url)
+            if hwpx_text:
+                html_body = hwpx_text
     return PressRelease(
         institution="과학기술정보통신부",
         title=title,
         date=date,
         url=url,
-        body_text=html_to_text(body_fragment),
+        body_text=html_body,
         image_url=img_url,
         image_alt=img_alt or title,
     )
@@ -616,6 +697,64 @@ SOURCES = [
 ]
 
 
+def _init_writer(enabled: bool) -> "WriterAgent | None":
+    if not enabled:
+        return None
+    try:
+        w = WriterAgent(load_settings())
+        if w._client:
+            print(f"LLM 활성화 (모델: {w._model})")
+            return w
+        print("LLM 키 없음 — LLM 기능 건너뜀")
+    except Exception as e:
+        print(f"LLM 초기화 실패: {e}")
+    return None
+
+
+def _enrich_release(release: PressRelease, writer: "WriterAgent") -> None:
+    """LLM으로 본문 보강 + 제목 재작성 (in-place)."""
+    if len(release.body_text) < 300:
+        generated = generate_article_from_source(release, writer)
+        if generated:
+            release.body_text = generated
+    release.title = rewrite_title(release.title, release.body_text, writer)
+
+
+def _import_source(
+    prefix: str,
+    list_fn: object,
+    release_fn: object,
+    per_source: int,
+    writer: "WriterAgent | None",
+    seq_start: int,
+) -> tuple[list[Path], list[str], int]:
+    name = AGENCIES[prefix]
+    print(f"\n[{name}] 링크 수집 중...")
+    written: list[Path] = []
+    errors: list[str] = []
+    seq = seq_start
+    try:
+        links = list_fn(per_source)  # type: ignore[call-arg]
+    except Exception as e:
+        errors.append(f"{name} 목록 수집 실패: {e}")
+        print(f"  ✗ 목록 실패: {e}")
+        return written, errors, seq
+    print(f"  {len(links)}건 발견")
+    for url in links:
+        try:
+            release = release_fn(url)  # type: ignore[call-arg]
+            if writer:
+                _enrich_release(release, writer)
+            path = write_post(release, prefix, seq)
+            written.append(path)
+            seq += 1
+            print(f"  + {release.title[:50]}")
+        except Exception as e:
+            errors.append(f"{url}: {e}")
+            print(f"  ✗ {url[:60]}: {e}")
+    return written, errors, seq
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--per-source", type=int, default=12,
@@ -623,59 +762,31 @@ def main() -> None:
     parser.add_argument("--agencies", nargs="*", default=None,
                         help="특정 기관만 수집 (예: --agencies mois msit)")
     parser.add_argument("--rewrite-titles", action="store_true",
-                        help="LLM으로 제목을 독자 친화적으로 재작성")
+                        help="LLM으로 본문 보강 + 제목 재작성")
     args = parser.parse_args()
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
+    writer = _init_writer(args.rewrite_titles)
 
-    writer = None
-    if args.rewrite_titles:
-        try:
-            writer = WriterAgent(load_settings())
-            if writer._client:
-                print(f"제목 재작성 활성화 (모델: {writer._model})")
-            else:
-                print("LLM 키 없음 — 제목 재작성 건너뜀")
-                writer = None
-        except Exception as e:
-            print(f"LLM 초기화 실패: {e}")
-
-    written: list[Path] = []
-    errors: list[str] = []
+    all_written: list[Path] = []
+    all_errors: list[str] = []
     seq = 0
 
     for prefix, list_fn, release_fn in SOURCES:
         if args.agencies and prefix not in args.agencies:
             continue
-        name = AGENCIES[prefix]
-        print(f"\n[{name}] 링크 수집 중...")
-        try:
-            links = list_fn(args.per_source)
-        except Exception as e:
-            errors.append(f"{name} 목록 수집 실패: {e}")
-            print(f"  ✗ 목록 실패: {e}")
-            continue
+        written, errors, seq = _import_source(
+            prefix, list_fn, release_fn, args.per_source, writer, seq
+        )
+        all_written.extend(written)
+        all_errors.extend(errors)
 
-        print(f"  {len(links)}건 발견")
-        for url in links:
-            try:
-                release = release_fn(url)
-                if writer:
-                    release.title = rewrite_title(release.title, release.body_text, writer)
-                path = write_post(release, prefix, seq)
-                written.append(path)
-                seq += 1
-                print(f"  + {release.title[:50]}")
-            except Exception as e:
-                errors.append(f"{url}: {e}")
-                print(f"  ✗ {url[:60]}: {e}")
-
-    print(f"\n총 {len(written)}건 저장 완료")
-    if errors:
-        print(f"오류 {len(errors)}건:")
-        for e in errors:
+    print(f"\n총 {len(all_written)}건 저장 완료")
+    if all_errors:
+        print(f"오류 {len(all_errors)}건:")
+        for e in all_errors:
             print(f"  - {e}")
-    for p in written:
+    for p in all_written:
         print(p.relative_to(ROOT))
 
 
