@@ -192,6 +192,37 @@ class StaticSiteBuilder:
         return f"https://loremflickr.com/1200/630/{path}?lock={seed}"
 
     @staticmethod
+    def _page_href(page: int, base: str = "index.html") -> str:
+        return base if page == 1 else f"page{page}.html"
+
+    @staticmethod
+    def _cat_page_href(page: int, cat_base: str) -> str:
+        return cat_base if page == 1 else f"{cat_base[:-5]}-{page}.html"
+
+    def _pagination_html(self, page: int, total_pages: int,
+                         cat_base: str | None = None) -> str:
+        """공통 페이지네이션 HTML. cat_base가 있으면 카테고리용, 없으면 홈용."""
+        if total_pages <= 1:
+            return ""
+        def href(p: int) -> str:
+            return self._cat_page_href(p, cat_base) if cat_base else self._page_href(p)
+        nav: list[str] = []
+        if page > 1:
+            nav.append(f'<a class="prev" href="./{href(page-1)}">← 이전</a>')
+        win_start = max(1, min(page - 3, total_pages - 6))
+        win_end = min(total_pages, win_start + 6)
+        pages_html = []
+        for p in range(win_start, win_end + 1):
+            if p == page:
+                pages_html.append(f'<strong class="current">{p}</strong>')
+            else:
+                pages_html.append(f'<a href="./{href(p)}">{p}</a>')
+        nav.append('<span class="pages">' + ' '.join(pages_html) + '</span>')
+        if page < total_pages:
+            nav.append(f'<a class="next" href="./{href(page+1)}">다음 →</a>')
+        return '<nav class="pagination">' + "\n".join(nav) + '</nav>'
+
+    @staticmethod
     def _strip_leading_image(markdown_text: str) -> str:
         return re.sub(r"^\s*!\[[^\]]*\]\([^)]+\)\s*", "", markdown_text, count=1)
 
@@ -294,25 +325,7 @@ class StaticSiteBuilder:
             page_posts = posts[start:end]
             cards = "\n".join(self._card_html(p) for p in page_posts)
 
-            # pagination links
-            nav_items: list[str] = []
-            if page > 1:
-                prev_href = "index.html" if page - 1 == 1 else f"page{page-1}.html"
-                nav_items.append(f'<a class="prev" href="./{prev_href}">← 이전</a>')
-            pages_html = []
-            win_start = max(1, page - 3)
-            win_end = min(total_pages, win_start + 6)
-            win_start = max(1, win_end - 6)
-            for p in range(win_start, win_end + 1):
-                href = "index.html" if p == 1 else f"page{p}.html"
-                if p == page:
-                    pages_html.append(f'<strong class="current">{p}</strong>')
-                else:
-                    pages_html.append(f'<a href="./{href}">{p}</a>')
-            nav_items.append('<span class="pages">' + ' '.join(pages_html) + '</span>')
-            if page < total_pages:
-                nav_items.append(f'<a class="next" href="./page{page+1}.html">다음 →</a>')
-            nav_html = '<nav class="pagination">' + "\n".join(nav_items) + '</nav>'
+            nav_html = self._pagination_html(page, total_pages)
 
             hero_stats = f'<p class="hero-stats">기사 {total}개 · {datetime.now():%Y.%m.%d} 업데이트</p>' if page == 1 else ""
             content = f"""
@@ -671,25 +684,35 @@ class StaticSiteBuilder:
             if category not in ordered_categories:
                 ordered_categories.append(category)
 
+        per_page = 9
         for category in ordered_categories:
-            page_posts = category_posts.get(category, [])
-            cards = "\n".join(self._card_html(p) for p in page_posts) \
-                or '<p class="empty">이 카테고리에는 아직 글이 없습니다.</p>'
-            content = f"""
+            all_posts = category_posts.get(category, [])
+            total = len(all_posts)
+            total_pages = max(1, (total + per_page - 1) // per_page)
+            cat_base = self._category_page_filename(category)
+
+            for page in range(1, total_pages + 1):
+                chunk = all_posts[(page - 1) * per_page: page * per_page]
+                cards = "\n".join(self._card_html(p) for p in chunk) \
+                    or '<p class="empty">이 카테고리에는 아직 글이 없습니다.</p>'
+                nav_html = self._pagination_html(page, total_pages, cat_base)
+                stats = f" — {total}개 기사" if page == 1 else f" — {page}/{total_pages} 페이지"
+                content = f"""
             <section class="hero">
-              <p class="hero-tagline"><strong>{html.escape(category)}</strong> — {len(page_posts)}개 기사</p>
+              <p class="hero-tagline"><strong>{html.escape(category)}</strong>{stats}</p>
             </section>
             <section class="grid">{cards}</section>
+            {nav_html}
             """
-            filename = self._category_page_filename(category)
-            self._write_html(
-                filename,
-                f"{category} - {self.site_title}",
-                content,
-                active=category,
-                page_url=self._page_url(filename),
-                description=f"{category} 관련 최신 글과 분석을 모아둔 페이지입니다.",
-            )
+                filename = cat_base if page == 1 else f"{cat_base[:-5]}-{page}.html"
+                self._write_html(
+                    filename,
+                    f"{category} - {self.site_title}",
+                    content,
+                    active=category,
+                    page_url=self._page_url(filename),
+                    description=f"{category} 관련 최신 글과 분석을 모아둔 페이지입니다.",
+                )
 
     def _write_sitemap(self, posts: list[Post]) -> None:
         urls: list[tuple[str, datetime]] = []
@@ -703,9 +726,13 @@ class StaticSiteBuilder:
         category_posts: dict[str, list[Post]] = {}
         for post in posts:
             category_posts.setdefault(post.category, []).append(post)
-        for category in category_posts:
-            filename = self._category_page_filename(category)
-            urls.append((self._page_url(filename), datetime.now()))
+        per_page = 9
+        for category, cposts in category_posts.items():
+            cat_base = self._category_page_filename(category)
+            total_cat_pages = max(1, (len(cposts) + per_page - 1) // per_page)
+            for p in range(1, total_cat_pages + 1):
+                fname = cat_base if p == 1 else f"{cat_base[:-5]}-{p}.html"
+                urls.append((self._page_url(fname), datetime.now()))
 
         for post in posts:
             urls.append((self._page_url(f"{post.slug}.html"), post.date))

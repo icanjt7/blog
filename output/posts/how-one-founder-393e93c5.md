@@ -8,7 +8,7 @@ tags:
   - one
   - founder
 quality_score: 100.0
-cover_image: "https://images.unsplash.com/photo-1774023092610-acd110d189a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxIb3clMjUyMG9uZSUyNTIwZm91bmRlciUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjI4OTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/startup%2Cfounder%2Ctechnology%2Coffice?lock=1611"
 cover_image_alt: "구식 웹사이트의 반격: How one founder의 승부수 — Photo by Brett Jordan on Unsplash (https://unsplash.com/photos/close-up-of-the-ten-commandments-in-a-book-F7vp1HNA2w4)"
 ---
 ![구식 웹사이트의 반격: How one founder의 승부수 — Photo by Brett Jordan on Unsplash (https://unsplash.com/photos/close-up-of-the-ten-commandments-in-a-book-F7vp1HNA2w4)](https://images.unsplash.com/photo-1774023092610-acd110d189a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxIb3clMjUyMG9uZSUyNTIwZm91bmRlciUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjI4OTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080)

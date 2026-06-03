@@ -8,7 +8,7 @@ tags:
   - Control
   - sequel
 quality_score: 100.0
-cover_image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0NjI1OTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/action%2Cgame%2Csequel%2Ccontroller?lock=4566"
 cover_image_alt: "9월 24일 출시되는 Remedy Control sequel, Control Resonant — Photo by Adi Goldstein on Unsplash (https://unsplash.com/photos/teal-led-panel-EUsVwEOsblE)"
 ---
 ![9월 24일 출시되는 Remedy Control sequel, Control Resonant — Photo by Adi Goldstein on Unsplash (https://unsplash.com/photos/teal-led-panel-EUsVwEOsblE)](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0NjI1OTN8MA&ixlib=rb-4.1.0&q=80&w=1080)
