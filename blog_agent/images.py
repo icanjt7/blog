@@ -14,15 +14,15 @@ from .models import Draft
 
 VISUAL_KEYWORDS: tuple[tuple[str, str], ...] = (
     # 생활/지역
-    ("맛집", "korean restaurant food table"),
-    ("카페", "coffee cafe interior"),
-    ("여행", "travel city landmark"),
+    ("맛집", "korean restaurant food table dining"),
+    ("카페", "coffee cafe interior dessert"),
+    ("여행", "travel destination landmark walking"),
     ("관광", "tourism destination travel"),
-    ("제주", "jeju island coastline"),
-    ("부산", "busan city ocean"),
-    ("강릉", "korean beach travel"),
-    ("서울", "seoul city street"),
-    ("전주", "korean traditional food"),
+    ("제주", "jeju island coastline cafe"),
+    ("부산", "busan haeundae beach skyline ocean"),
+    ("강릉", "gangneung beach coffee street travel"),
+    ("서울", "seoul restaurant street city food"),
+    ("전주", "jeonju hanok village korean food"),
     # 기술
     ("아이폰", "smartphone technology"),
     ("갤럭시", "smartphone technology"),

@@ -114,15 +114,24 @@ def _build_draft(path: Path, meta: dict, body: str) -> Draft:
     )
 
 
-def improve_post(path: Path, image_agent: ImageAgent, dry_run: bool = False) -> tuple[bool, str]:
+def improve_post(
+    path: Path,
+    image_agent: ImageAgent,
+    dry_run: bool = False,
+    force: bool = False,
+    category: str = "",
+) -> tuple[bool, str]:
     raw = path.read_text(encoding="utf-8")
     split = _split_post(raw)
     if not split:
         return False, "skip:no-frontmatter"
     frontmatter, body = split
     meta = yaml.safe_load(frontmatter) or {}
+    post_category = str(meta.get("category") or "").strip('"')
+    if category and post_category != category:
+        return False, "skip:category"
     old_cover = str(meta.get("cover_image") or "")
-    if not _is_weak_cover(old_cover):
+    if not force and not _is_weak_cover(old_cover):
         return False, "skip:strong-cover"
 
     draft = _build_draft(path, meta, body)
@@ -147,6 +156,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--posts-dir", type=Path, default=POSTS_DIR)
     parser.add_argument("--limit", type=int, default=120)
+    parser.add_argument("--category", default="")
+    parser.add_argument("--force", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -159,7 +170,13 @@ def main() -> None:
     for path in sorted(args.posts_dir.glob("*.md")):
         if args.limit > 0 and changed >= args.limit:
             break
-        ok, reason = improve_post(path, image_agent, dry_run=args.dry_run)
+        ok, reason = improve_post(
+            path,
+            image_agent,
+            dry_run=args.dry_run,
+            force=args.force,
+            category=args.category,
+        )
         scanned += 1
         if ok:
             changed += 1

@@ -7,6 +7,18 @@ on:
         description: "Maximum number of weak legacy images to improve"
         required: true
         default: "120"
+      category:
+        description: "Optional category filter, e.g. 핫이슈"
+        required: false
+        default: ""
+      force:
+        description: "Replace existing strong covers too"
+        required: true
+        type: choice
+        options:
+          - "false"
+          - "true"
+        default: "false"
       dry_run:
         description: "Preview targets without changing posts"
         required: true
@@ -50,6 +62,12 @@ jobs:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
           args=(--limit "${{ inputs.limit }}")
+          if [ -n "${{ inputs.category }}" ]; then
+            args+=(--category "${{ inputs.category }}")
+          fi
+          if [ "${{ inputs.force }}" = "true" ]; then
+            args+=(--force)
+          fi
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             args+=(--dry-run)
           fi
