@@ -1,0 +1,88 @@
+name: Improve existing post images
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Maximum number of weak legacy images to improve"
+        required: true
+        default: "120"
+      dry_run:
+        description: "Preview targets without changing posts"
+        required: true
+        type: choice
+        options:
+          - "false"
+          - "true"
+        default: "false"
+
+concurrency:
+  group: improve-images
+  cancel-in-progress: false
+
+jobs:
+  improve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Improve weak legacy covers
+        env:
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: |
+          args=(--limit "${{ inputs.limit }}")
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            args+=(--dry-run)
+          fi
+          python scripts/improve_existing_images.py "${args[@]}"
+
+      - name: Build static site
+        if: inputs.dry_run == 'false'
+        env:
+          BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
+          BLOG_CUSTOM_DOMAIN: ${{ vars.BLOG_CUSTOM_DOMAIN }}
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+          ADSENSE_PUBLISHER_ID: ${{ secrets.ADSENSE_PUBLISHER_ID }}
+        run: python -m blog_agent.cli build-site
+
+      - name: Commit improved posts
+        if: inputs.dry_run == 'false'
+        run: |
+          git config user.name "blog-agent"
+          git config user.email "actions@github.com"
+          git add output/posts || true
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: improve existing article images"
+          git pull --rebase origin main
+          git push
+
+      - uses: actions/configure-pages@v5
+        if: inputs.dry_run == 'false'
+
+      - uses: actions/upload-pages-artifact@v3
+        if: inputs.dry_run == 'false'
+        with:
+          path: public
+
+      - id: deployment
+        if: inputs.dry_run == 'false'
+        uses: actions/deploy-pages@v4
