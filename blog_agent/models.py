@@ -6,7 +6,7 @@ from typing import Literal
 from pydantic import BaseModel, Field, HttpUrl
 
 
-Category = Literal["핫이슈", "기술", "정책", "생활"]
+Category = Literal["핫이슈", "기술", "정책", "생활", "정치"]
 
 
 class Source(BaseModel):

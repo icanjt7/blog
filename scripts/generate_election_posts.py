@@ -141,20 +141,20 @@ def build_topics(limit: int, settings) -> list[Topic]:
     items: list[tuple[str, str, str, str]] = []
 
     for region, office in REGIONS:
-        items.append((f"{office} 당선인 공약", "정책", region, "광역단체장 공약과 선거 결과를 공식자료로 확인"))
-        items.append((f"{region} 교육감 당선인 공약", "정책", region, "교육 공약과 학교 현안 중심으로 확인"))
+        items.append((f"{office} 당선인 공약", "정치", region, "광역단체장 공약과 선거 결과를 공식자료로 확인"))
+        items.append((f"{region} 교육감 당선인 공약", "정치", region, "교육 공약과 학교 현안 중심으로 확인"))
 
     for district in SEOUL_DISTRICTS:
-        items.append((f"서울 {district} 구청장 당선인 공약", "핫이슈", "서울", "동네 생활권 공약을 주민 관점에서 확인"))
+        items.append((f"서울 {district} 구청장 당선인 공약", "정치", "서울", "동네 생활권 공약을 주민 관점에서 확인"))
 
     for city, district in METRO_DISTRICTS:
-        items.append((f"{city} {district} 단체장 당선인 공약", "핫이슈", city, "구·군 단위 생활 공약과 지역 현안 확인"))
+        items.append((f"{city} {district} 단체장 당선인 공약", "정치", city, "구·군 단위 생활 공약과 지역 현안 확인"))
 
     for region, office in LOCAL_CITIES:
-        items.append((f"{office} 당선인 공약", "핫이슈", region, "지역별 생활권 공약과 현안 확인"))
+        items.append((f"{office} 당선인 공약", "정치", region, "지역별 생활권 공약과 현안 확인"))
 
     for keyword, hint in THEME_TOPICS:
-        items.append((f"지방선거 {keyword}", "정책", "전국", hint))
+        items.append((f"지방선거 {keyword}", "정치", "전국", hint))
 
     topics: list[Topic] = []
     for keyword, category, region, hint in items:

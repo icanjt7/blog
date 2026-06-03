@@ -26,6 +26,12 @@ _FALLBACK_SOURCES = {
         summary="금융 정책과 제도 변경 확인용 공식 포털",
         authority=5,
     ),
+    "정치": Source(
+        title="중앙선거관리위원회 선거통계시스템",
+        url="https://info.nec.go.kr/",
+        summary="선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+        authority=5,
+    ),
     "핫이슈": Source(
         title="한국관광공사 VisitKorea",
         url="https://korean.visitkorea.or.kr/",
