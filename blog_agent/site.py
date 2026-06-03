@@ -5,6 +5,8 @@ import hashlib
 import json
 import re
 import shutil
+import struct
+import zlib
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -785,6 +787,15 @@ class StaticSiteBuilder:
             if not og_image.startswith("http"):
                 image_url = f"{self.site_url}/{og_image.lstrip('./')}"
             og_image_tag = f"\n  <meta property=\"og:image\" content=\"{html.escape(image_url)}\">"
+        logo_url = f"{self.site_url}/favicon-512x512.png"
+        structured_data = {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": self.site_title,
+            "url": self.site_url,
+            "logo": logo_url,
+        }
+        structured_json = json.dumps(structured_data, ensure_ascii=False).replace("</", "<\\/")
         nav_html = self._nav_html(active)
 
         page = f"""<!doctype html>
@@ -801,10 +812,15 @@ class StaticSiteBuilder:
   <meta property="og:url" content="{html.escape(page_url)}">{og_image_tag}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="naver-site-verification" content="474c602a51b653598de7203e9604b16da6381678">
+  <meta name="theme-color" content="#0f766e">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="./favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
   <link rel="canonical" href="{html.escape(page_url)}">
   <link rel="stylesheet" href="./style.css">
-  <link rel="alternate" type="application/rss+xml" href="./feed.xml">{ga_script}{adsense_script}
+  <link rel="alternate" type="application/rss+xml" href="./feed.xml">
+  <script type="application/ld+json">{structured_json}</script>{ga_script}{adsense_script}
 </head>
 <body>
   <header class="site-header">
@@ -1347,6 +1363,96 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   <path d="M6 22.5 Q9.5 18 13 22.5 Q16.5 27 20 22.5 Q23.5 18 26 22.5" stroke="white" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>"""
         (self.public_dir / "favicon.svg").write_text(svg, encoding="utf-8")
+        for size, name in (
+            (48, "favicon-48x48.png"),
+            (180, "apple-touch-icon.png"),
+            (192, "icon-192x192.png"),
+            (512, "favicon-512x512.png"),
+        ):
+            (self.public_dir / name).write_bytes(self._brand_png(size))
+        manifest = {
+            "name": self.site_title,
+            "short_name": self.site_title,
+            "icons": [
+                {"src": "./icon-192x192.png", "sizes": "192x192", "type": "image/png"},
+                {"src": "./favicon-512x512.png", "sizes": "512x512", "type": "image/png"},
+            ],
+            "theme_color": "#0f766e",
+            "background_color": "#0f766e",
+            "display": "standalone",
+        }
+        (self.public_dir / "site.webmanifest").write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+
+    @staticmethod
+    def _brand_png(size: int) -> bytes:
+        teal = (15, 118, 110, 255)
+        white = (255, 255, 255, 238)
+        transparent = (0, 0, 0, 0)
+        radius = max(7, size // 5)
+        pixels: list[list[tuple[int, int, int, int]]] = []
+
+        def inside_round_rect(x: int, y: int, w: int, h: int, r: int) -> bool:
+            if r <= x < w - r or r <= y < h - r:
+                return 0 <= x < w and 0 <= y < h
+            cx = r if x < r else w - r - 1
+            cy = r if y < r else h - r - 1
+            return (x - cx) ** 2 + (y - cy) ** 2 <= r ** 2
+
+        for y in range(size):
+            row = []
+            for x in range(size):
+                row.append(teal if inside_round_rect(x, y, size, size, radius) else transparent)
+            pixels.append(row)
+
+        def fill_rect(x0: int, y0: int, w: int, h: int, color: tuple[int, int, int, int]) -> None:
+            rr = max(1, h // 2)
+            for yy in range(y0, y0 + h):
+                for xx in range(x0, x0 + w):
+                    if 0 <= xx < size and 0 <= yy < size and inside_round_rect(xx - x0, yy - y0, w, h, rr):
+                        pixels[yy][xx] = color
+
+        def draw_disc(cx: int, cy: int, r: int, color: tuple[int, int, int, int]) -> None:
+            for yy in range(cy - r, cy + r + 1):
+                for xx in range(cx - r, cx + r + 1):
+                    if 0 <= xx < size and 0 <= yy < size and (xx - cx) ** 2 + (yy - cy) ** 2 <= r ** 2:
+                        pixels[yy][xx] = color
+
+        def draw_line(x1: int, y1: int, x2: int, y2: int, width: int, color: tuple[int, int, int, int]) -> None:
+            steps = max(abs(x2 - x1), abs(y2 - y1), 1)
+            for step in range(steps + 1):
+                t = step / steps
+                x = round(x1 + (x2 - x1) * t)
+                y = round(y1 + (y2 - y1) * t)
+                draw_disc(x, y, max(1, width // 2), color)
+
+        fill_rect(size * 6 // 32, size * 7 // 32, size * 20 // 32, max(3, size * 3 // 32), white)
+        fill_rect(size * 6 // 32, size * 13 // 32, size * 13 // 32, max(3, size * 3 // 32), white)
+        points = [
+            (size * 6 // 32, size * 23 // 32),
+            (size * 10 // 32, size * 19 // 32),
+            (size * 14 // 32, size * 23 // 32),
+            (size * 18 // 32, size * 27 // 32),
+            (size * 22 // 32, size * 23 // 32),
+            (size * 26 // 32, size * 23 // 32),
+        ]
+        for (x1, y1), (x2, y2) in zip(points, points[1:]):
+            draw_line(x1, y1, x2, y2, max(3, size * 3 // 32), white)
+
+        raw = b"".join(b"\x00" + b"".join(bytes(px) for px in row) for row in pixels)
+        def chunk(kind: bytes, data: bytes) -> bytes:
+            import binascii
+            payload = kind + data
+            return struct.pack(">I", len(data)) + payload + struct.pack(">I", binascii.crc32(payload) & 0xFFFFFFFF)
+
+        return (
+            b"\x89PNG\r\n\x1a\n"
+            + chunk(b"IHDR", struct.pack(">IIBBBBB", size, size, 8, 6, 0, 0, 0))
+            + chunk(b"IDAT", zlib.compress(raw, 9))
+            + chunk(b"IEND", b"")
+        )
 
     def _write_cname(self) -> None:
       if self.custom_domain:
