@@ -717,13 +717,27 @@ class StaticSiteBuilder:
                 )
 
     def _write_sitemap(self, posts: list[Post]) -> None:
-        urls: list[tuple[str, datetime]] = []
-        urls.append((self._page_url("index.html"), datetime.now()))
-        urls.append((self._page_url("search.html"), datetime.now()))
+        now = datetime.now()
+
+        def _entry(loc: str, lastmod: datetime, changefreq: str, priority: str, description: str = "") -> str:
+            desc = f"\n    <description>{html.escape(description[:200])}</description>" if description else ""
+            return (
+                f"  <url>\n"
+                f"    <loc>{html.escape(loc)}</loc>\n"
+                f"    <lastmod>{lastmod:%Y-%m-%d}</lastmod>\n"
+                f"    <changefreq>{changefreq}</changefreq>\n"
+                f"    <priority>{priority}</priority>"
+                f"{desc}\n"
+                f"  </url>"
+            )
+
+        entries: list[str] = []
+        entries.append(_entry(self._page_url("index.html"), now, "daily", "1.0"))
+        entries.append(_entry(self._page_url("search.html"), now, "weekly", "0.5"))
 
         total_pages = (len(posts) + 8) // 9
         for page in range(2, total_pages + 1):
-            urls.append((self._page_url(f"page{page}.html"), datetime.now()))
+            entries.append(_entry(self._page_url(f"page{page}.html"), now, "daily", "0.9"))
 
         category_posts: dict[str, list[Post]] = {}
         for post in posts:
@@ -734,19 +748,23 @@ class StaticSiteBuilder:
             total_cat_pages = max(1, (len(cposts) + per_page - 1) // per_page)
             for p in range(1, total_cat_pages + 1):
                 fname = cat_base if p == 1 else f"{cat_base[:-5]}-{p}.html"
-                urls.append((self._page_url(fname), datetime.now()))
+                entries.append(_entry(self._page_url(fname), now, "daily", "0.8"))
 
         for post in posts:
-            urls.append((self._page_url(f"{post.slug}.html"), post.date))
+            entries.append(_entry(
+                self._page_url(f"{post.slug}.html"),
+                post.date,
+                "monthly",
+                "0.7",
+                description=post.excerpt,
+            ))
 
-        sitemap_items = "\n".join(
-            f"  <url>\n    <loc>{html.escape(url)}</loc>\n    <lastmod>{modified:%Y-%m-%d}</lastmod>\n  </url>"
-            for url, modified in urls
+        sitemap = (
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            + "\n".join(entries)
+            + "\n</urlset>\n"
         )
-        sitemap = f"""<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">
-{sitemap_items}
-</urlset>"""
         (self.public_dir / "sitemap.xml").write_text(sitemap, encoding="utf-8")
 
     def _write_html(
@@ -964,6 +982,10 @@ a:hover { text-decoration: underline; }
   font-size: 0.82rem;
   font-weight: 800;
 }
+
+/* ── slim hero (index page) ── */
+.hero-slim { padding: 14px 0 12px; border-bottom: 1px solid var(--line); }
+.hero-tagline { margin: 0; color: var(--muted); font-size: 0.82rem; letter-spacing: 0.02em; }
 
 .page-shell { width: min(1040px, 100% - 32px); margin: 0 auto; }
 .site-header { background: var(--paper); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 100; }

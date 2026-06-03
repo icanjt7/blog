@@ -2,6 +2,8 @@ name: Pages deploy
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 15 * * *"   # 00:00 KST — daily sitemap refresh
   push:
     branches:
       - main
