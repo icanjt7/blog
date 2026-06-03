@@ -44,18 +44,33 @@ class SeoEditorAgent:
             self._init_client(settings)
 
     def _init_client(self, s: Settings) -> None:
-        if s.github_token:
-            self.client = OpenAI(api_key=s.github_token, base_url="https://models.inference.ai.azure.com")
-            self._model = s.github_model
-        elif s.groq_api_key:
-            self.client = OpenAI(api_key=s.groq_api_key, base_url="https://api.groq.com/openai/v1")
+        if s.groq_api_key:
+            self.client = OpenAI(
+                api_key=s.groq_api_key,
+                base_url="https://api.groq.com/openai/v1",
+                timeout=45,
+                max_retries=1,
+            )
             self._model = s.groq_model
         elif s.gemini_api_key:
-            self.client = OpenAI(api_key=s.gemini_api_key, base_url="https://generativelanguage.googleapis.com/v1beta/openai/")
+            self.client = OpenAI(
+                api_key=s.gemini_api_key,
+                base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+                timeout=45,
+                max_retries=1,
+            )
             self._model = s.gemini_model
         elif s.openai_api_key:
-            self.client = OpenAI(api_key=s.openai_api_key)
+            self.client = OpenAI(api_key=s.openai_api_key, timeout=45, max_retries=1)
             self._model = s.openai_model
+        elif s.github_token:
+            self.client = OpenAI(
+                api_key=s.github_token,
+                base_url="https://models.inference.ai.azure.com",
+                timeout=45,
+                max_retries=1,
+            )
+            self._model = s.github_model
 
     def improve(self, draft: Draft) -> Draft:
         if not self.client:
@@ -101,13 +116,17 @@ TITLE:
 EXCERPT:
 BODY:
 """
-        response = self.client.chat.completions.create(
-            model=self._model,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0.7,
-            max_tokens=2048,
-        )
-        text = response.choices[0].message.content or ""
+        try:
+            response = self.client.chat.completions.create(
+                model=self._model,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.7,
+                max_tokens=2048,
+            )
+            text = response.choices[0].message.content or ""
+        except Exception:
+            reviewed.review_notes.append("LLM 편집 실패로 규칙 기반 검수만 적용")
+            return reviewed
         reviewed.title = self._extract(text, "TITLE", reviewed.title)
         reviewed.excerpt = self._extract(text, "EXCERPT", reviewed.excerpt)
         reviewed.body_markdown = self._extract(text, "BODY", reviewed.body_markdown).strip()

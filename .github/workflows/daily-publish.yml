@@ -31,8 +31,8 @@ jobs:
 
       - name: Generate and publish posts
         env:
-          # Free LLMs — first non-empty key is used: Groq → GitHub Models → Gemini → OpenAI
-          # GitHub Models — GITHUB_TOKEN auto-provided by Actions (free LLM, no extra secret needed)
+          # LLMs — first non-empty explicit key is used: Groq → Gemini → OpenAI.
+          # GitHub Models is only a fallback because GITHUB_TOKEN is always present in Actions.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}

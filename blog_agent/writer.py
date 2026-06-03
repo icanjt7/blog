@@ -51,31 +51,40 @@ class WriterAgent:
 
     def _init_client(self) -> None:
         s = self.settings
-        if s.github_token:
-            self._client = OpenAI(
-                api_key=s.github_token,
-                base_url="https://models.inference.ai.azure.com",
-            )
-            self._model = s.github_model
-        elif s.groq_api_key:
+        if s.groq_api_key:
             self._client = OpenAI(
                 api_key=s.groq_api_key,
                 base_url="https://api.groq.com/openai/v1",
+                timeout=45,
+                max_retries=1,
             )
             self._model = s.groq_model
         elif s.gemini_api_key:
             self._client = OpenAI(
                 api_key=s.gemini_api_key,
                 base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+                timeout=45,
+                max_retries=1,
             )
             self._model = s.gemini_model
         elif s.openai_api_key:
-            self._client = OpenAI(api_key=s.openai_api_key)
+            self._client = OpenAI(api_key=s.openai_api_key, timeout=45, max_retries=1)
             self._model = s.openai_model
+        elif s.github_token:
+            self._client = OpenAI(
+                api_key=s.github_token,
+                base_url="https://models.inference.ai.azure.com",
+                timeout=45,
+                max_retries=1,
+            )
+            self._model = s.github_model
 
     def write(self, topic: Topic) -> Draft:
         if self._client:
-            return self._write_with_llm(topic)
+            try:
+                return self._write_with_llm(topic)
+            except Exception:
+                return self._write_fallback(topic)
         return self._write_fallback(topic)
 
     def _write_with_llm(self, topic: Topic) -> Draft:

@@ -14,7 +14,7 @@ _DEFAULT_CATEGORIES: list[str] = list(CATEGORY_SEEDS.keys())
 
 
 class Settings(BaseModel):
-    # LLM providers — first non-empty key wins: groq → github_token → gemini → openai
+    # LLM providers — first non-empty key wins: groq → gemini → openai → github_token
     openai_api_key: str | None = None
     openai_model: str = "gpt-4.1-mini"
     openai_image_model: str = "gpt-image-1-mini"
