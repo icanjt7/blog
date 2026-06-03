@@ -67,6 +67,8 @@ class StaticSiteBuilder:
         self.site_url = f"https://{self.custom_domain.strip()}" if self.custom_domain else "https://briefwave.kr"
 
     def build(self) -> None:
+      if self.public_dir.exists():
+        shutil.rmtree(self.public_dir)
       self.public_dir.mkdir(parents=True, exist_ok=True)
       posts = self._load_posts()
       # Auto-extend nav categories with any category found in posts but not yet listed.
@@ -195,7 +197,7 @@ class StaticSiteBuilder:
 
     @staticmethod
     def _display_author(post: Post) -> str:
-        if "보도자료" in post.tags and post.author:
+        if any(tag in post.tags for tag in ("보도자료", "보도기사")) and post.author:
             return f"자료: {post.author} · 편집: 브리핑웨이브"
         return "브리핑웨이브 편집팀"
 
@@ -1328,9 +1330,6 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
       ads_content = f"google.com, {pub}, DIRECT, f08c47fec0942fa0\n"
       (self.public_dir / "ads.txt").write_text(ads_content, encoding="utf-8")
 
-      # write a permissive robots.txt to ensure crawlers can access the site
-      robots = "User-agent: *\nAllow: /\n"
-      (self.public_dir / "robots.txt").write_text(robots, encoding="utf-8")
       # ensure search.json is present even if no posts
       if not (self.public_dir / "search.json").exists():
         (self.public_dir / "search.json").write_text("[]", encoding="utf-8")
