@@ -35,7 +35,7 @@ USER_AGENT = "Mozilla/5.0 (compatible; BriefWavePressImporter/1.0)"
 TIMEOUT = 20
 
 INSTITUTION_LOGOS: dict[str, str] = {
-    "행정안전부":        "assets/logos/mois.png",
+    "행정안전부":        "assets/logos/mois.jpg",
     "과학기술정보통신부": "assets/logos/msit.svg",
     "기획재정부":        "https://www.mofe.go.kr/images/common/og-image.jpg",
     "문화체육관광부":    "assets/logos/mcst.gif",

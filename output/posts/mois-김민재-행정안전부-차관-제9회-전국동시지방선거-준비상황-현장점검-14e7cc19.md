@@ -6,7 +6,7 @@ tags:
   - "보도기사"
   - "행정안전부"
 quality_score: 90.0
-cover_image: "assets/logos/mois.png"
+cover_image: "assets/logos/mois.jpg"
 cover_image_alt: "김민재 행정안전부 차관, 제9회 전국동시지방선거 준비상황 현장점검"
 author: "행정안전부"
 ---
