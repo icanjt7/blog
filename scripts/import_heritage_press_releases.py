@@ -11,6 +11,8 @@ from urllib.parse import urljoin
 
 import requests
 
+from import_press_releases import extract_first_hwpx_attachment
+
 
 ROOT = Path(__file__).resolve().parents[1]
 POSTS_DIR = ROOT / "output" / "posts"
@@ -100,6 +102,7 @@ def extract_sentences(text: str, limit: int = 5) -> list[str]:
     sentences = []
     for part in parts:
         part = clean_text(part)
+        part = re.sub(r"^[\-–—ㆍ·•○ㅇ◇□■▪▶※\s]+", "", part)
         if len(part) < 25:
             continue
         if any(skip in part for skip in ["문의", "연락", "첨부", "다운로드", "미리보기"]):
@@ -112,6 +115,8 @@ def extract_sentences(text: str, limit: int = 5) -> list[str]:
 
 def shorten(value: str, limit: int = 220) -> str:
     value = clean_text(value)
+    value = re.sub(r"^[\-–—ㆍ·•○ㅇ◇□■▪▶※\*\s]+", "", value)
+    value = re.sub(r"\s+\*\s+", " / ", value)
     if len(value) <= limit:
         return value
     return value[:limit].rsplit(" ", 1)[0].rstrip(" ,.;·") + "..."
@@ -136,6 +141,13 @@ def make_article_body(release: PressRelease) -> str:
         bullets = f"- 발표 기관: {release.institution}\n- 발표일: {release.date}\n- 핵심 주제: {clean_title}"
 
     detail = "\n\n".join(detail_sentences)
+    if not detail and len(release.body_text) > 500:
+        paragraphs = [
+            shorten(re.sub(r"^[\-–—ㆍ·•○ㅇ◇□■▪▶※\s]+", "", line), 260)
+            for line in release.body_text.splitlines()
+            if len(clean_text(line)) > 40
+        ]
+        detail = "\n\n".join(paragraphs[2:4] or paragraphs[:2])
     if not detail:
         detail = (
             "원문 보도자료에는 일정, 참여 대상, 추진 배경 등 세부 정보가 함께 안내되어 있습니다. "
@@ -189,12 +201,13 @@ def kh_release(url: str) -> PressRelease:
     date = clean_text(date_match.group(1)) if date_match else datetime.now().strftime("%Y-%m-%d")
     fragment = body_match.group(1) if body_match else ""
     image_url, image_alt = first_image(fragment, url)
+    hwpx_text = extract_first_hwpx_attachment(page_html, url, "국가유산진흥원")
     return PressRelease(
         institution="국가유산진흥원",
         title=title,
         date=date,
         url=url,
-        body_text=html_fragment_to_text(fragment),
+        body_text=hwpx_text or html_fragment_to_text(fragment),
         image_url=image_url,
         image_alt=image_alt,
     )
@@ -230,12 +243,13 @@ def khs_release(url: str) -> PressRelease:
     date = clean_text(date_match.group(1)) if date_match else datetime.now().strftime("%Y-%m-%d")
     fragment = body_match.group(1) if body_match else ""
     image_url, image_alt = first_image(fragment, url)
+    hwpx_text = extract_first_hwpx_attachment(page_html, url, "국가유산청")
     return PressRelease(
         institution="국가유산청",
         title=title,
         date=date,
         url=url,
-        body_text=html_fragment_to_text(fragment),
+        body_text=hwpx_text or html_fragment_to_text(fragment),
         image_url=image_url,
         image_alt=image_alt,
     )

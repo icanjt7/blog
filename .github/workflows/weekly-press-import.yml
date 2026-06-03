@@ -2,6 +2,15 @@ name: Weekly press release import
 
 on:
   workflow_dispatch:
+    inputs:
+      overwrite_existing:
+        description: "Refresh existing press-release posts from original attachments"
+        required: true
+        type: choice
+        options:
+          - "false"
+          - "true"
+        default: "false"
   schedule:
     - cron: "0 1 * * 1"  # 매주 월요일 01:00 UTC (한국시간 10:00)
 
@@ -41,7 +50,12 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.1-8b-instruct:free' }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python scripts/import_press_releases.py --per-source 12 --rewrite-titles
+        run: |
+          args=(--per-source 12 --rewrite-titles)
+          if [ "${{ inputs.overwrite_existing || 'false' }}" = "true" ]; then
+            args+=(--overwrite-existing)
+          fi
+          python scripts/import_press_releases.py "${args[@]}"
 
       - name: Build static site
         env:

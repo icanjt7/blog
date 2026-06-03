@@ -13,10 +13,8 @@ from __future__ import annotations
 import argparse
 import hashlib
 import html
-import io
 import re
 import sys
-import zipfile
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -26,6 +24,7 @@ import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from blog_agent.config import load_settings
+from blog_agent.hwpx import extract_hwpx_text_bytes
 from blog_agent.writer import WriterAgent
 
 
@@ -33,6 +32,8 @@ ROOT = Path(__file__).resolve().parents[1]
 POSTS_DIR = ROOT / "output" / "posts"
 USER_AGENT = "Mozilla/5.0 (compatible; BriefWavePressImporter/1.0)"
 TIMEOUT = 20
+SESSION = requests.Session()
+SESSION.headers.update({"User-Agent": USER_AGENT})
 
 INSTITUTION_LOGOS: dict[str, str] = {
     "행정안전부":        "assets/logos/mois.jpg",
@@ -69,11 +70,7 @@ class PressRelease:
 # ──────────────────────────────────────────────
 
 def fetch(url: str) -> str:
-    resp = requests.get(
-        url,
-        headers={"User-Agent": USER_AGENT},
-        timeout=TIMEOUT,
-    )
+    resp = SESSION.get(url, timeout=TIMEOUT)
     resp.raise_for_status()
     resp.encoding = resp.apparent_encoding or resp.encoding or "utf-8"
     return resp.text
@@ -151,39 +148,75 @@ def get_og_image(html_src: str, base_url: str) -> str:
     return raw
 
 
-def _hwpx_text_from_zip(zf: zipfile.ZipFile) -> str:
-    """ZipFile에서 텍스트를 추출한다. PrvText.txt 우선, 없으면 hp:t 파싱."""
-    names = zf.namelist()  # 한 번만 호출
-    if "Preview/PrvText.txt" in names:
-        raw = zf.read("Preview/PrvText.txt").decode("utf-8", errors="replace")
-        raw = clean_text(re.sub(r"<[^>]*>", " ", raw))  # 기존 clean_text 재사용
-        if len(raw) > 100:
-            return raw
-    sections = [n for n in names if re.match(r"Contents/section\d+\.xml", n)]
-    texts: list[str] = []
-    for sec in sections[:1]:
-        xml = zf.read(sec).decode("utf-8", errors="replace")
-        parts = re.findall(r"<hp:t[^>]*>([^<]+)</hp:t>", xml)
-        texts.extend(p.strip() for p in parts if p.strip())
-    return " ".join(texts)
-
-
-def fetch_bytes(url: str) -> bytes:
-    resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
+def fetch_bytes(url: str, *, data: dict[str, str] | None = None, referer: str = "") -> bytes:
+    headers = {"Referer": referer} if referer else None
+    if data is None:
+        resp = SESSION.get(url, headers=headers, timeout=TIMEOUT)
+    else:
+        resp = SESSION.post(url, data=data, headers=headers, timeout=TIMEOUT)
     resp.raise_for_status()
     return resp.content
 
 
-def extract_hwpx_text(download_url: str) -> str:
+def extract_hwpx_text(download_url: str, *, data: dict[str, str] | None = None, referer: str = "") -> str:
     """HWPX 첨부파일을 다운로드해서 본문 텍스트를 반환한다."""
     try:
-        data = fetch_bytes(download_url)
-        if data[:2] != b"PK":
+        payload = fetch_bytes(download_url, data=data, referer=referer)
+        if payload[:2] != b"PK":
             return ""
-        with zipfile.ZipFile(io.BytesIO(data)) as zf:
-            return _hwpx_text_from_zip(zf)
+        return extract_hwpx_text_bytes(payload)
     except Exception:
         return ""
+
+
+def _js_args(call_args: str) -> list[str]:
+    return [html.unescape(item) for item in re.findall(r"""['"]([^'"]*)['"]""", call_args)]
+
+
+def extract_first_hwpx_attachment(page: str, page_url: str, institution: str = "") -> str:
+    """Find the first HWPX attachment on a press-release page and return text."""
+    # 과학기술정보통신부: fn_download('atchFileNo', 'fileOrd', 'hwpx') posts a form.
+    for match in re.finditer(r"fn_download\(([^)]*hwpx[^)]*)\)", page, flags=re.IGNORECASE):
+        args = _js_args(match.group(1))
+        if len(args) >= 2:
+            text = extract_hwpx_text(
+                "https://www.msit.go.kr/ssm/file/fileDown.do",
+                data={"atchFileNo": args[0], "fileOrd": args[1], "fileBtn": "A"},
+                referer=page_url,
+            )
+            if text:
+                return text
+
+    # 문화체육관광부: file_download(fileName, savedName, path)
+    for match in re.finditer(r"file_download\(([^)]*?\.hwpx[^)]*)\)", page, flags=re.IGNORECASE):
+        args = _js_args(match.group(1))
+        if len(args) >= 3:
+            url = (
+                "https://www.mcst.go.kr/servlets/eduport/front/upload/UplDownloadFile"
+                f"?pFileName={args[0]}&pRealName={args[1]}&pPath={args[2]}&pFlag="
+            )
+            text = extract_hwpx_text(url, referer=page_url)
+            if text:
+                return text
+
+    # 국가유산청 등: adjacent title says .hwpx and href points to FileDown.do.
+    for match in re.finditer(
+        r"""(?is)<li[^>]*>.*?\.hwpx.*?<a[^>]+href=["']([^"']*FileDown\.do[^"']+)["']""",
+        page,
+    ):
+        url = urljoin(page_url, html.unescape(match.group(1)))
+        text = extract_hwpx_text(url, referer=page_url)
+        if text:
+            return text
+
+    # Generic direct .hwpx links.
+    for match in re.finditer(r"""(?i)href=["']([^"']+\.hwpx(?:\?[^"']*)?)["']""", page):
+        url = urljoin(page_url, html.unescape(match.group(1)))
+        text = extract_hwpx_text(url, referer=page_url)
+        if text:
+            return text
+
+    return ""
 
 
 def slugify(value: str) -> str:
@@ -198,12 +231,23 @@ def unique_slug(prefix: str, title: str, url: str) -> str:
     return f"{prefix}-{slugify(title)}-{digest}"
 
 
+def post_path_for_release(prefix: str, title: str, url: str, overwrite: bool = False) -> Path:
+    digest = hashlib.sha1(url.encode()).hexdigest()[:8]
+    if overwrite:
+        existing = sorted(POSTS_DIR.glob(f"{prefix}-*-{digest}.md"))
+        if existing:
+            return existing[0]
+    return POSTS_DIR / f"{prefix}-{slugify(title)}-{digest}.md"
+
+
 def yaml_quote(value: str) -> str:
     return '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
 def shorten(value: str, limit: int = 220) -> str:
     value = clean_text(value)
+    value = re.sub(r"^[\-–—ㆍ·•○ㅇ◇□■▪▶※\*\s]+", "", value)
+    value = re.sub(r"\s+\*\s+", " / ", value)
     if len(value) <= limit:
         return value
     return value[:limit].rsplit(" ", 1)[0].rstrip(" ,.;·") + "..."
@@ -215,9 +259,12 @@ def extract_sentences(text: str, limit: int = 6) -> list[str]:
     out = []
     for p in parts:
         p = clean_text(p)
+        p = re.sub(r"^[\-–—ㆍ·•○ㅇ◇□■▪▶※\s]+", "", p)
         if len(p) < 25:
             continue
-        if any(skip in p for skip in ["문의", "연락처", "첨부", "다운로드", "☎", "▶", "○"]):
+        if any(skip in p for skip in ["문의", "연락처", "첨부", "다운로드", "☎"]):
+            continue
+        if "관련 보도자료 내용입니다" in p:
             continue
         out.append(p)
         if len(out) >= limit:
@@ -295,10 +342,19 @@ def make_article_body(release: PressRelease) -> str:
     if not bullets:
         bullets = f"- 발표 기관: {release.institution}\n- 발표일: {release.date}\n- 핵심 주제: {clean_title}"
 
-    detail = "\n\n".join(details) or (
-        "원문 보도자료에는 일정, 참여 대상, 추진 배경 등 세부 정보가 함께 안내되어 있습니다. "
-        "관심 있는 독자는 원문에서 최신 공지와 첨부 자료를 함께 확인하는 것이 좋습니다."
-    )
+    detail = "\n\n".join(details)
+    if not detail and len(release.body_text) > 500:
+        paragraphs = [
+            shorten(re.sub(r"^[\-–—ㆍ·•○ㅇ◇□■▪▶※\s]+", "", line), 260)
+            for line in release.body_text.splitlines()
+            if len(clean_text(line)) > 40
+        ]
+        detail = "\n\n".join(paragraphs[2:4] or paragraphs[:2])
+    if not detail:
+        detail = (
+            "원문 보도자료에는 일정, 참여 대상, 추진 배경 등 세부 정보가 함께 안내되어 있습니다. "
+            "관심 있는 독자는 원문에서 최신 공지와 첨부 자료를 함께 확인하는 것이 좋습니다."
+        )
 
     sections = [
         (
@@ -319,10 +375,9 @@ def make_article_body(release: PressRelease) -> str:
     return "\n\n".join(sections).strip() + "\n"
 
 
-def write_post(release: PressRelease, prefix: str, sequence: int) -> Path:
-    slug = unique_slug(prefix, release.title, release.url)
-    path = POSTS_DIR / f"{slug}.md"
-    if path.exists():
+def write_post(release: PressRelease, prefix: str, sequence: int, overwrite: bool = False) -> Path:
+    path = post_path_for_release(prefix, release.title, release.url, overwrite=overwrite)
+    if path.exists() and not overwrite:
         return path
     try:
         base_dt = datetime.fromisoformat(release.date)
@@ -458,18 +513,10 @@ def msit_release(url: str) -> PressRelease:
     img_url, img_alt = first_image(body_fragment, url)
     if not img_url:
         img_url = get_og_image(page, url)
-    # HTML 본문이 빈 경우 HWPX 첨부파일에서 텍스트 추출
     html_body = html_to_text(body_fragment)
-    if len(html_body) < 200:
-        hwpx_m = re.search(r"setIframePath\(['\"](\d+)['\"],\s*['\"](\d+)['\"]", page)
-        if hwpx_m:
-            dl_url = (
-                f"https://www.msit.go.kr/ssm/file/fileDown.do"
-                f"?atchFileNo={hwpx_m.group(1)}&fileOrd={hwpx_m.group(2)}&fileBtn=A"
-            )
-            hwpx_text = extract_hwpx_text(dl_url)
-            if hwpx_text:
-                html_body = hwpx_text
+    hwpx_text = extract_first_hwpx_attachment(page, url, "과학기술정보통신부")
+    if len(hwpx_text) > len(html_body):
+        html_body = hwpx_text
     return PressRelease(
         institution="과학기술정보통신부",
         title=title,
@@ -518,12 +565,14 @@ def mofe_release(url: str) -> PressRelease:
     date = re.sub(r"\.", "-", raw_date.replace(" ", ""))[:10] or datetime.now().strftime("%Y-%m-%d")
     fragment = body_m.group(2) if body_m and body_m.lastindex and body_m.lastindex >= 2 else ""
     img_url, img_alt = first_image(fragment or page, url)
+    hwpx_text = extract_first_hwpx_attachment(page, url, "기획재정부")
+    body_text = hwpx_text or html_to_text(fragment or page)
     return PressRelease(
         institution="기획재정부",
         title=title,
         date=date,
         url=url,
-        body_text=html_to_text(fragment or page),
+        body_text=body_text,
         image_url=img_url,
         image_alt=img_alt,
     )
@@ -579,6 +628,9 @@ def mcst_release(url: str) -> PressRelease:
         fragment = body_m2.group(0) if body_m2 else ""
     img_url, img_alt = first_image(page, url)
     body_text = html_to_text(fragment).strip()
+    hwpx_text = extract_first_hwpx_attachment(page, url, "문화체육관광부")
+    if len(hwpx_text) > len(body_text):
+        body_text = hwpx_text
     if not body_text:
         body_text = f"{title}. 원문 보도자료(HWP/PDF)는 문화체육관광부 공식 누리집에서 내려받을 수 있습니다."
     return PressRelease(
@@ -623,12 +675,14 @@ def kh_release(url: str) -> PressRelease:
     date  = clean_text(date_m.group(1)) if date_m else datetime.now().strftime("%Y-%m-%d")
     fragment = body_m.group(1) if body_m else ""
     img_url, img_alt = first_image(fragment, url)
+    hwpx_text = extract_first_hwpx_attachment(page, url, "국가유산진흥원")
+    body_text = hwpx_text or html_to_text(fragment)
     return PressRelease(
         institution="국가유산진흥원",
         title=title,
         date=date,
         url=url,
-        body_text=html_to_text(fragment),
+        body_text=body_text,
         image_url=img_url,
         image_alt=img_alt,
     )
@@ -672,12 +726,14 @@ def khs_release(url: str) -> PressRelease:
     img_url, img_alt = first_image(fragment, url)
     if img_url.startswith("http://www.khs.go.kr"):
         img_url = img_url.replace("http://www.khs.go.kr", "https://www.khs.go.kr", 1)
+    hwpx_text = extract_first_hwpx_attachment(page, url, "국가유산청")
+    body_text = hwpx_text or html_to_text(fragment)
     return PressRelease(
         institution="국가유산청",
         title=title,
         date=date,
         url=url,
-        body_text=html_to_text(fragment),
+        body_text=body_text,
         image_url=img_url,
         image_alt=img_alt,
     )
@@ -727,6 +783,7 @@ def _import_source(
     per_source: int,
     writer: "WriterAgent | None",
     seq_start: int,
+    overwrite: bool,
 ) -> tuple[list[Path], list[str], int]:
     name = AGENCIES[prefix]
     print(f"\n[{name}] 링크 수집 중...")
@@ -745,7 +802,7 @@ def _import_source(
             release = release_fn(url)  # type: ignore[call-arg]
             if writer:
                 _enrich_release(release, writer)
-            path = write_post(release, prefix, seq)
+            path = write_post(release, prefix, seq, overwrite=overwrite)
             written.append(path)
             seq += 1
             print(f"  + {release.title[:50]}")
@@ -763,6 +820,8 @@ def main() -> None:
                         help="특정 기관만 수집 (예: --agencies mois msit)")
     parser.add_argument("--rewrite-titles", action="store_true",
                         help="LLM으로 본문 보강 + 제목 재작성")
+    parser.add_argument("--overwrite-existing", action="store_true",
+                        help="기존 보도자료 글도 다시 생성해 본문을 갱신")
     args = parser.parse_args()
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -776,7 +835,7 @@ def main() -> None:
         if args.agencies and prefix not in args.agencies:
             continue
         written, errors, seq = _import_source(
-            prefix, list_fn, release_fn, args.per_source, writer, seq
+            prefix, list_fn, release_fn, args.per_source, writer, seq, args.overwrite_existing
         )
         all_written.extend(written)
         all_errors.extend(errors)
