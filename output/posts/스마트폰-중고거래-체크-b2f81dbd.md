@@ -8,7 +8,7 @@ tags:
   - 중고거래
   - 체크
 quality_score: 100.0
-cover_image: "https://images.unsplash.com/photo-1636257020920-e087ff577240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=470"
 cover_image_alt: "스마트폰 중고거래 체크 설정부터 바꾸는 법 — Photo by Jay Zhang on Unsplash"
 ---
 ![스마트폰 중고거래 체크 설정부터 바꾸는 법 — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1636257020920-e087ff577240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

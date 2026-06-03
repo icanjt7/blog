@@ -8,7 +8,7 @@ tags:
   - boom
   - what
 quality_score: 88.0
-cover_image: "https://images.unsplash.com/photo-1588214321417-4db0632c764a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxncm91cHRoaW5rJTI1MjBib29tJTI1MjB3aGF0JTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyMzM2MzF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/artificial%2Cintelligence%2Cneural%2Cnetwork?lock=568"
 cover_image_alt: "AI 열풍의 실체: 3가지 핵심 사실 — Photo by Guido Coppa on Unsplash (https://unsplash.com/photos/man-in-black-suit-jacket-FPHo-LzhDqQ)"
 ---
 ![AI 열풍의 실체: 3가지 핵심 사실 — Photo by Guido Coppa on Unsplash (https://unsplash.com/photos/man-in-black-suit-jacket-FPHo-LzhDqQ)](https://images.unsplash.com/photo-1588214321417-4db0632c764a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxncm91cHRoaW5rJTI1MjBib29tJTI1MjB3aGF0JTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyMzM2MzF8MA&ixlib=rb-4.1.0&q=80&w=1080)

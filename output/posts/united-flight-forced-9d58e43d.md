@@ -8,7 +8,7 @@ tags:
   - flight
   - forced
 quality_score: 88.0
-cover_image: "https://images.unsplash.com/photo-1473862170180-84427c485aca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxVbml0ZWQlMjUyMGZsaWdodCUyNTIwZm9yY2VkJTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyNjcwODZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=85"
 cover_image_alt: "블루투스 스피커 이름에 따른 항공 보안 우려 사례 — Photo by Tim Gouw on Unsplash (https://unsplash.com/photos/whgite-united-plane-on-park-OwD1ON8O-O4)"
 ---
 ![블루투스 스피커 이름에 따른 항공 보안 우려 사례 — Photo by Tim Gouw on Unsplash (https://unsplash.com/photos/whgite-united-plane-on-park-OwD1ON8O-O4)](https://images.unsplash.com/photo-1473862170180-84427c485aca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxVbml0ZWQlMjUyMGZsaWdodCUyNTIwZm9yY2VkJTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyNjcwODZ8MA&ixlib=rb-4.1.0&q=80&w=1080)

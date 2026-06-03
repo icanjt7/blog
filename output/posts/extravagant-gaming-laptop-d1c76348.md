@@ -8,7 +8,7 @@ tags:
   - gaming
   - laptop
 quality_score: 73.0
-cover_image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxleHRyYXZhZ2FudCUyNTIwZ2FtaW5nJTI1MjBsYXB0b3AlMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDI2OTg4Mnww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/laptop%2Cportable%2Ccomputer%2Cmodern%2Cgaming?lock=6028"
 cover_image_alt: "고성능 게이밍 노트북의 꿈, Asus ROG Strix Scar 18 리뷰 — Photo by Florian Olivo on Unsplash (https://unsplash.com/photos/person-sitting-on-gaming-chair-while-playing-video-game-Mf23RF8xArY)"
 ---
 ![고성능 게이밍 노트북의 꿈, Asus ROG Strix Scar 18 리뷰 — Photo by Florian Olivo on Unsplash (https://unsplash.com/photos/person-sitting-on-gaming-chair-while-playing-video-game-Mf23RF8xArY)](https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxleHRyYXZhZ2FudCUyNTIwZ2FtaW5nJTI1MjBsYXB0b3AlMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDI2OTg4Mnww&ixlib=rb-4.1.0&q=80&w=1080)

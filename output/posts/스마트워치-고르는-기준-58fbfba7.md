@@ -8,7 +8,7 @@ tags:
   - 고르는
   - 기준
 quality_score: 100.0
-cover_image: "https://images.unsplash.com/photo-1636257020920-e087ff577240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/smartwatch%2Cwearable%2Cwrist%2Cdisplay%2Ctech?lock=6423"
 cover_image_alt: "스마트워치 고르는 기준: 초보가 먼저 볼 기준 — Photo by Jay Zhang on Unsplash"
 ---
 ![스마트워치 고르는 기준: 초보가 먼저 볼 기준 — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1636257020920-e087ff577240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

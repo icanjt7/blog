@@ -8,7 +8,7 @@ tags:
   - happens
   - in
 quality_score: 85.0
-cover_image: "https://images.unsplash.com/photo-1765445773767-8be93cb46139?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxXaGF0JTI1MjBoYXBwZW5zJTI1MjBpbiUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjMzNTI1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=6082"
 cover_image_alt: "Vega$의 핵심: 스테로이드, 수영 선수, 10억 달러의 비즈니스 — Photo by Egor Komarov on Unsplash (https://unsplash.com/photos/distorted-text-with-glitch-effects-on-black-background-4BzFom54ozA)"
 ---
 ![Vega$의 핵심: 스테로이드, 수영 선수, 10억 달러의 비즈니스 — Photo by Egor Komarov on Unsplash (https://unsplash.com/photos/distorted-text-with-glitch-effects-on-black-background-4BzFom54ozA)](https://images.unsplash.com/photo-1765445773767-8be93cb46139?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxXaGF0JTI1MjBoYXBwZW5zJTI1MjBpbiUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjMzNTI1fDA&ixlib=rb-4.1.0&q=80&w=1080)

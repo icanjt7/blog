@@ -8,7 +8,7 @@ tags:
   - OLED
   - gaming
 quality_score: 88.0
-cover_image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxRRCUyNTIwT0xFRCUyNTIwZ2FtaW5nJTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyNjk4MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/gaming%2Cesports%2Cinteractive?lock=353"
 cover_image_alt: "QD OLED 게이밍 모니터의 강력한 업그레이드 — Photo by Florian Olivo on Unsplash (https://unsplash.com/photos/person-sitting-on-gaming-chair-while-playing-video-game-Mf23RF8xArY)"
 ---
 ![QD OLED 게이밍 모니터의 강력한 업그레이드 — Photo by Florian Olivo on Unsplash (https://unsplash.com/photos/person-sitting-on-gaming-chair-while-playing-video-game-Mf23RF8xArY)](https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxRRCUyNTIwT0xFRCUyNTIwZ2FtaW5nJTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyNjk4MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080)

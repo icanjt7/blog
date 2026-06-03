@@ -8,7 +8,7 @@ tags:
   - caps
   - employee
 quality_score: 100.0
-cover_image: "https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMGdvdmVybm1lbnQlMjBidWRnZXQlMjBmaW5hbmNlfGVufDF8MHx8fDE3ODA0ODY2NTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/artificial%2Cintelligence%2Cneural%2Cnetwork%2Cgovernment?lock=4209"
 cover_image_alt: "4개월만에 예산 다 쓴 Uber, 이제 AI 사용 제한 — Photo by Igor Omilaev on Unsplash"
 ---
 ![4개월만에 예산 다 쓴 Uber, 이제 AI 사용 제한 — Photo by Igor Omilaev on Unsplash](https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMGdvdmVybm1lbnQlMjBidWRnZXQlMjBmaW5hbmNlfGVufDF8MHx8fDE3ODA0ODY2NTh8MA&ixlib=rb-4.1.0&q=80&w=1080)

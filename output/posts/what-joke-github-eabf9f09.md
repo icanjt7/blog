@@ -8,7 +8,7 @@ tags:
   - joke
   - Github
 quality_score: 88.0
-cover_image: "https://images.unsplash.com/photo-1762330470070-249e7c23c8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxXaGF0JTI1MjBqb2tlJTI1MjBHaXRodWIlMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDIzMzU1NXww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=114"
 cover_image_alt: "개발자 분노의 대상, Github Copilot의 새 요금제는? — Photo by Zulfugar Karimov on Unsplash (https://unsplash.com/photos/digital-interface-with-ask-anything-prompt--lZmnpignB8)"
 ---
 ![개발자 분노의 대상, Github Copilot의 새 요금제는? — Photo by Zulfugar Karimov on Unsplash (https://unsplash.com/photos/digital-interface-with-ask-anything-prompt--lZmnpignB8)](https://images.unsplash.com/photo-1762330470070-249e7c23c8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxXaGF0JTI1MjBqb2tlJTI1MjBHaXRodWIlMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDIzMzU1NXww&ixlib=rb-4.1.0&q=80&w=1080)

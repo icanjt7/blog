@@ -8,7 +8,7 @@ tags:
   - adds
   - new
 quality_score: 100.0
-cover_image: "https://images.unsplash.com/photo-1631541716721-b9c987bfc3b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=9233"
 cover_image_alt: "Plex adds new: 지금 확인할 포인트 — Photo by Jay Zhang on Unsplash"
 ---
 ![Plex adds new: 지금 확인할 포인트 — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1631541716721-b9c987bfc3b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

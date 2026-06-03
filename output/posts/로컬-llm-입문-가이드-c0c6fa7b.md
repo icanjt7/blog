@@ -9,7 +9,7 @@ tags:
   - 입문
   - 가이드
 quality_score: 92.0
-cover_image: "https://images.unsplash.com/photo-1636257020938-c8d6413fc3a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwdGVjaG5vbG9neSUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzgwNDgwNzQ1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=4659"
 cover_image_alt: "로컬 LLM 입문 가이드 핵심 정리: 지금 확인할 포인트 — Photo by Jay Zhang on Unsplash"
 ---
 ![로컬 LLM 입문 가이드 핵심 정리: 지금 확인할 포인트 — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1636257020938-c8d6413fc3a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwdGVjaG5vbG9neSUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzgwNDgwNzQ1fDA&ixlib=rb-4.1.0&q=80&w=1080)

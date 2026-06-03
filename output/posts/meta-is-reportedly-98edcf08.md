@@ -8,7 +8,7 @@ tags:
   - is
   - reportedly
 quality_score: 69.0
-cover_image: "https://images.unsplash.com/photo-1689439518156-3659596b5c6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxNZXRhJTI1MjBpcyUyNTIwcmVwb3J0ZWRseSUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjMzNTg0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/artificial%2Cintelligence%2Cneural%2Cnetwork?lock=8560"
 cover_image_alt: "메타의 신개념 AI 펜던트, 일상생활을 편리하게? — Photo by Julio Lopez on Unsplash (https://unsplash.com/photos/a-person-holding-a-cell-phone-in-front-of-a-large-screen-kUATfFyJQQ4)"
 ---
 ![메타의 신개념 AI 펜던트, 일상생활을 편리하게? — Photo by Julio Lopez on Unsplash (https://unsplash.com/photos/a-person-holding-a-cell-phone-in-front-of-a-large-screen-kUATfFyJQQ4)](https://images.unsplash.com/photo-1689439518156-3659596b5c6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxNZXRhJTI1MjBpcyUyNTIwcmVwb3J0ZWRseSUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjMzNTg0fDA&ixlib=rb-4.1.0&q=80&w=1080)

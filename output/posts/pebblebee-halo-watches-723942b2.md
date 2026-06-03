@@ -8,7 +8,7 @@ tags:
   - Halo
   - watches
 quality_score: 81.0
-cover_image: "https://images.unsplash.com/photo-1628146023674-ede6049609b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxzYWZldHklMjBwdWJsaWMlMjBzZXJ2aWNlfGVufDF8MHx8fDE3ODA0ODA3NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/smartwatch%2Cwearable%2Cwrist%2Cdevice%2Ctracker?lock=7013"
 cover_image_alt: "개인 안전을 지키는 Pebblebee Halo watches — Photo by Mufid Majnun on Unsplash"
 ---
 ![개인 안전을 지키는 Pebblebee Halo watches — Photo by Mufid Majnun on Unsplash](https://images.unsplash.com/photo-1628146023674-ede6049609b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxzYWZldHklMjBwdWJsaWMlMjBzZXJ2aWNlfGVufDF8MHx8fDE3ODA0ODA3NjF8MA&ixlib=rb-4.1.0&q=80&w=1080)

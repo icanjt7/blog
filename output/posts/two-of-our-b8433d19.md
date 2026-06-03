@@ -8,7 +8,7 @@ tags:
   - of
   - our
 quality_score: 85.0
-cover_image: "https://images.unsplash.com/photo-1593840108331-52227779615f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxUd28lMjUyMG9mJTI1MjBvdXIlMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDIyNDk5OHww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=8967"
 cover_image_alt: "40% 할인, 아트 TV의 꿈을 이루다 — Photo by Ralph Hutter on Unsplash (https://unsplash.com/photos/red-and-white-number-2-k3zvtiG5UqM)"
 ---
 ![40% 할인, 아트 TV의 꿈을 이루다 — Photo by Ralph Hutter on Unsplash (https://unsplash.com/photos/red-and-white-number-2-k3zvtiG5UqM)](https://images.unsplash.com/photo-1593840108331-52227779615f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxUd28lMjUyMG9mJTI1MjBvdXIlMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDIyNDk5OHww&ixlib=rb-4.1.0&q=80&w=1080)
