@@ -8,7 +8,7 @@ tags:
   - Everand
   - is
 quality_score: 100.0
-cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=4013"
+cover_image: ""
 cover_image_alt: "startup Everand is: 지금 확인할 포인트 — Photo by Umberto on Unsplash"
 ---
 ![startup Everand is: 지금 확인할 포인트 — Photo by Umberto on Unsplash](https://images.unsplash.com/photo-1562408590-e32931084e23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

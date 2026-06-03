@@ -8,7 +8,7 @@ tags:
   - Little
   - Horse
 quality_score: 81.0
-cover_image: "https://loremflickr.com/1200/630/digital%2Ctechnology%2Cabstract?lock=6966"
+cover_image: ""
 cover_image_alt: "디지털 이상성의 새 차원: Feeble Little Horse의 음악 세계 — Photo by yanmin yang on Unsplash (https://unsplash.com/photos/brown-horse-with-brown-leather-strap--yyTkybwU88)"
 ---
 ![디지털 이상성의 새 차원: Feeble Little Horse의 음악 세계 — Photo by yanmin yang on Unsplash (https://unsplash.com/photos/brown-horse-with-brown-leather-strap--yyTkybwU88)](https://images.unsplash.com/photo-1596292345761-561a07a038b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxGZWVibGUlMjUyMExpdHRsZSUyNTIwSG9yc2UlMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDI2NzA1Nnww&ixlib=rb-4.1.0&q=80&w=1080)

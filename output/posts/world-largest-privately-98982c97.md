@@ -8,7 +8,7 @@ tags:
   - largest
   - privately
 quality_score: 73.0
-cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=3344"
+cover_image: ""
 cover_image_alt: "세계 최대 개인 소유 레이저, 작동을 시작하다 — Photo by Jay Zhang on Unsplash"
 ---
 ![세계 최대 개인 소유 레이저, 작동을 시작하다 — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1636257021575-660116eedbba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

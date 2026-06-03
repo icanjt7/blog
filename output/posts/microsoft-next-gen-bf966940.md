@@ -8,7 +8,7 @@ tags:
   - next
   - gen
 quality_score: 100.0
-cover_image: "https://loremflickr.com/1200/630/quantum%2Cscience%2Cabstract?lock=3846"
+cover_image: ""
 cover_image_alt: "5분 만에 이해하는 Microsoft의 차세대 양자 칩 — Photo by A Chosen Soul on Unsplash"
 ---
 ![5분 만에 이해하는 Microsoft의 차세대 양자 칩 — Photo by A Chosen Soul on Unsplash](https://images.unsplash.com/photo-1694350021790-f4a9111b3127?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxxdWFudHVtJTIwc2NpZW5jZSUyMGFic3RyYWN0fGVufDF8MHx8fDE3ODA0ODI2Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080)

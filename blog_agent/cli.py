@@ -2,12 +2,64 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
+from pathlib import Path
+
+import yaml
 
 from .config import load_settings
+from .images import ImageAgent
+from .models import Draft, Topic
 from .pipeline import BlogPipeline
 from .site import StaticSiteBuilder
 from .storage import RunStore
+
+_CAT_MAP = {"tech": "기술", "living": "생활", "finance": "정책", "local": "핫이슈"}
+_VALID_CATS = {"핫이슈", "기술", "정책", "생활", "정치"}
+
+
+def _reimage_posts(posts_dir: Path, settings, category_filter: str | None = None) -> int:
+    """Re-fetch cover images for posts that have an empty or picsum cover_image."""
+    agent = ImageAgent(settings)
+    updated = 0
+    for md_path in sorted(posts_dir.glob("*.md")):
+        raw = md_path.read_text(encoding="utf-8")
+        if not raw.startswith("---"):
+            continue
+        _, fm, body = raw.split("---", 2)
+        meta = yaml.safe_load(fm) or {}
+
+        cover = str(meta.get("cover_image") or "")
+        if cover and "picsum.photos" not in cover:
+            continue  # 이미 유효한 이미지가 있으면 건너뜀
+
+        raw_cat = str(meta.get("category") or "생활")
+        cat = _CAT_MAP.get(raw_cat, raw_cat)
+        if cat not in _VALID_CATS:
+            cat = "생활"
+        if category_filter and cat != category_filter:
+            continue
+
+        title = str(meta.get("title") or md_path.stem)
+        tags = [str(t) for t in (meta.get("tags") or [])]
+        keyword = " ".join(tags[:5]) or title
+
+        topic = Topic(keyword=keyword, title_hint=title, category=cat)  # type: ignore[arg-type]
+        draft = Draft(topic=topic, title=title, slug=md_path.stem, excerpt="", body_markdown="", tags=tags)
+        draft = agent.attach_cover(draft)
+
+        new_url = draft.cover_image_path or ""
+        if not new_url:
+            continue
+
+        new_fm = re.sub(r'^cover_image:.*$', f'cover_image: "{new_url}"', fm, flags=re.MULTILINE)
+        if "cover_image:" not in new_fm:
+            new_fm = new_fm.rstrip("\n") + f'\ncover_image: "{new_url}"\n'
+        md_path.write_text(f"---{new_fm}---{body}", encoding="utf-8")
+        updated += 1
+
+    return updated
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -22,6 +74,9 @@ def build_parser() -> argparse.ArgumentParser:
     build = sub.add_parser("build-site", help="render generated Markdown posts into a static site")
     build.add_argument("--posts-dir")
     build.add_argument("--public-dir")
+    reimage = sub.add_parser("re-image", help="re-fetch cover images for posts with missing/picsum images")
+    reimage.add_argument("--category", help="only re-image posts in this category (e.g. 기술)")
+    reimage.add_argument("--posts-dir")
     status = sub.add_parser("status", help="show recent pipeline runs")
     status.add_argument("--limit", type=int, default=10)
     return parser
@@ -49,6 +104,11 @@ def main() -> None:
             adsense_publisher_id=settings.adsense_publisher_id,
         ).build()
         print(json.dumps({"ok": True, "public_dir": str(public_dir)}, ensure_ascii=False, indent=2))
+        return
+    if args.command == "re-image":
+        posts_dir = settings.output_dir if not args.posts_dir else Path(args.posts_dir)
+        count = _reimage_posts(posts_dir, settings, category_filter=args.category)
+        print(json.dumps({"ok": True, "updated": count}, ensure_ascii=False, indent=2))
         return
     if args.command == "run":
         if args.publisher:

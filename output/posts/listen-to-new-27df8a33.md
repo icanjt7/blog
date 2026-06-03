@@ -8,7 +8,7 @@ tags:
   - to
   - new
 quality_score: 85.0
-cover_image: "https://loremflickr.com/1200/630/gaming%2Cesports%2Cinteractive?lock=9462"
+cover_image: ""
 cover_image_alt: "스팀 컨트롤러, 게임을 넘어 음악도奏で다 — Photo by Nick Fewings on Unsplash (https://unsplash.com/photos/brown-and-white-wooden-round-frame-mki48azlI2k)"
 ---
 ![스팀 컨트롤러, 게임을 넘어 음악도奏で다 — Photo by Nick Fewings on Unsplash (https://unsplash.com/photos/brown-and-white-wooden-round-frame-mki48azlI2k)](https://images.unsplash.com/photo-1618605978795-d7ebd4f964f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxMaXN0ZW4lMjUyMHRvJTI1MjBuZXclMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDIyNTAxOXww&ixlib=rb-4.1.0&q=80&w=1080)

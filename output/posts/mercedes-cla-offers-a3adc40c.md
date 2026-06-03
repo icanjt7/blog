@@ -8,7 +8,7 @@ tags:
   - CLA
   - offers
 quality_score: 84.0
-cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=3616"
+cover_image: ""
 cover_image_alt: "5만 달러 이하 최고의 EV, Mercedes CLA offers는? — Photo by Sebastian Pociecha on Unsplash (https://unsplash.com/photos/silver-mercedes-benz-ornament-PjWeUfdIciQ)"
 ---
 ![5만 달러 이하 최고의 EV, Mercedes CLA offers는? — Photo by Sebastian Pociecha on Unsplash (https://unsplash.com/photos/silver-mercedes-benz-ornament-PjWeUfdIciQ)](https://images.unsplash.com/photo-1533592651141-91f62076b00c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxNZXJjZWRlcyUyNTIwQ0xBJTI1MjBvZmZlcnMlMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDIyNzAzMnww&ixlib=rb-4.1.0&q=80&w=1080)

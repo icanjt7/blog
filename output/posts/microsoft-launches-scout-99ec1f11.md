@@ -8,7 +8,7 @@ tags:
   - launches
   - Scout
 quality_score: 100.0
-cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=8285"
+cover_image: ""
 cover_image_alt: "Microsoft launches Scout: 지금 확인할 포인트 — Photo by Adi Goldstein on Unsplash"
 ---
 ![Microsoft launches Scout: 지금 확인할 포인트 — Photo by Adi Goldstein on Unsplash](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

@@ -8,7 +8,7 @@ tags:
   - dentures
   - an
 quality_score: 84.0
-cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=6768"
+cover_image: ""
 cover_image_alt: "로보택시에서 잊어버린 1,000개 이상의 물건: Squishmallows,義歯, 그리고 더 많은 것 — Photo by Jay Zhang on Unsplash"
 ---
 ![로보택시에서 잊어버린 1,000개 이상의 물건: Squishmallows,義歯, 그리고 더 많은 것 — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1636257020920-e087ff577240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

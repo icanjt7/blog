@@ -8,7 +8,7 @@ tags:
   - to
   - Night
 quality_score: 100.0
-cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=1038"
+cover_image: ""
 cover_image_alt: "Welcome to Night 핵심 정리: 지금 확인할 포인트 — Photo by Jay Zhang on Unsplash"
 ---
 ## 한눈에 보기

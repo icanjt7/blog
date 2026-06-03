@@ -8,7 +8,7 @@ tags:
   - Wander
   - StumbleUpon
 quality_score: 100.0
-cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=5585"
+cover_image: ""
 cover_image_alt: "Meet Wander StumbleUpon: 지금 확인할 포인트 — Photo by Jay Zhang on Unsplash"
 ---
 ![Meet Wander StumbleUpon: 지금 확인할 포인트 — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1631541737241-54e7f10d6bb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

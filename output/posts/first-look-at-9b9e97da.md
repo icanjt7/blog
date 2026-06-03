@@ -8,7 +8,7 @@ tags:
   - look
   - at
 quality_score: 88.0
-cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=9765"
+cover_image: ""
 cover_image_alt: "마이크로소프트의 새로운 Surface 디바이스: 첫눈에 반한 Surface Laptop Ultra와 Surface Dev Box — Photo by Jay Zhang on Unsplash"
 ---
 ![마이크로소프트의 새로운 Surface 디바이스: 첫눈에 반한 Surface Laptop Ultra와 Surface Dev Box — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1631541737952-7ec4486c75da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

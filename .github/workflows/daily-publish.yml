@@ -59,6 +59,13 @@ jobs:
           WORDPRESS_APP_PASSWORD: ${{ secrets.WORDPRESS_APP_PASSWORD }}
         run: python -m blog_agent.cli run
 
+      - name: Re-fetch missing cover images
+        env:
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: python -m blog_agent.cli re-image
+
       - name: Build static site
         env:
           BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}

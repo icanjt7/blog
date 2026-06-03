@@ -8,7 +8,7 @@ tags:
   - Bluetooth
   - trackers
 quality_score: 96.0
-cover_image: "https://loremflickr.com/1200/630/wearable%2Ctracker%2Ccompact%2Cdevice?lock=2400"
+cover_image: ""
 cover_image_alt: "블루투스 트래커로 쉽게 찾는 5분 전략 — Photo by Jay Zhang on Unsplash"
 ---
 ![블루투스 트래커로 쉽게 찾는 5분 전략 — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1636257020920-e087ff577240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

@@ -8,7 +8,7 @@ tags:
   - your
   - first
 quality_score: 85.0
-cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=9356"
+cover_image: ""
 cover_image_alt: "마인크래프트 영화 속 Alex 역할을 맡은 Kirsten Dunst의 역할은? — Photo by Brett Jordan on Unsplash (https://unsplash.com/photos/close-up-of-the-ten-commandments-in-a-book-F7vp1HNA2w4)"
 ---
 ![마인크래프트 영화 속 Alex 역할을 맡은 Kirsten Dunst의 역할은? — Photo by Brett Jordan on Unsplash (https://unsplash.com/photos/close-up-of-the-ten-commandments-in-a-book-F7vp1HNA2w4)](https://images.unsplash.com/photo-1774023092610-acd110d189a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxIZXJlJTI1MjB5b3VyJTI1MjBmaXJzdCUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjY3MDMzfDA&ixlib=rb-4.1.0&q=80&w=1080)

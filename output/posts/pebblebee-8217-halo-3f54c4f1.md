@@ -8,7 +8,7 @@ tags:
   - 8217
   - Halo
 quality_score: 100.0
-cover_image: "https://loremflickr.com/1200/630/wearable%2Ctracker%2Ccompact%2Cgadget%2Cdevice?lock=1712"
+cover_image: ""
 cover_image_alt: "잃어버린 물건을 찾고 안전을 지키는 Pebblebee 8217 Halo — Photo by Anshul Gurjar on Unsplash"
 ---
 ![잃어버린 물건을 찾고 안전을 지키는 Pebblebee 8217 Halo — Photo by Anshul Gurjar on Unsplash](https://images.unsplash.com/photo-1767619879597-17943ea7482a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8c2FmZXR5JTIwcHVibGljJTIwc2VydmljZXxlbnwxfDB8fHwxNzgwNDgwNzYxfDA&ixlib=rb-4.1.0&q=80&w=1080)

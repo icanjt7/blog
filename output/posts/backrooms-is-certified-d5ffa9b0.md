@@ -8,7 +8,7 @@ tags:
   - is
   - certified
 quality_score: 100.0
-cover_image: "https://loremflickr.com/1200/630/technology%2Cinnovation%2Ccircuit%2Cabstract?lock=9732"
+cover_image: ""
 cover_image_alt: "Backrooms is certified 핵심 정리: 지금 확인할 포인트 — Photo by Jay Zhang on Unsplash"
 ---
 ## 한눈에 보기
