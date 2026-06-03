@@ -66,6 +66,9 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.1-8b-instruct:free' }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
           args=(--per-source "${{ inputs.per_source || '12' }}" --rewrite-titles)
           if [ -n "${{ inputs.agencies }}" ]; then

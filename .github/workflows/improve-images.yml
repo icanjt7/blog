@@ -11,6 +11,10 @@ on:
         description: "Optional category filter, e.g. 핫이슈"
         required: false
         default: ""
+      tag:
+        description: "Optional tag filter, e.g. 보도기사"
+        required: false
+        default: ""
       force:
         description: "Replace existing strong covers too"
         required: true
@@ -64,6 +68,9 @@ jobs:
           args=(--limit "${{ inputs.limit }}")
           if [ -n "${{ inputs.category }}" ]; then
             args+=(--category "${{ inputs.category }}")
+          fi
+          if [ -n "${{ inputs.tag }}" ]; then
+            args+=(--tag "${{ inputs.tag }}")
           fi
           if [ "${{ inputs.force }}" = "true" ]; then
             args+=(--force)

@@ -120,6 +120,7 @@ def improve_post(
     dry_run: bool = False,
     force: bool = False,
     category: str = "",
+    tag: str = "",
 ) -> tuple[bool, str]:
     raw = path.read_text(encoding="utf-8")
     split = _split_post(raw)
@@ -130,6 +131,9 @@ def improve_post(
     post_category = str(meta.get("category") or "").strip('"')
     if category and post_category != category:
         return False, "skip:category"
+    post_tags = [str(value) for value in meta.get("tags") or []]
+    if tag and tag not in post_tags:
+        return False, "skip:tag"
     old_cover = str(meta.get("cover_image") or "")
     if not force and not _is_weak_cover(old_cover):
         return False, "skip:strong-cover"
@@ -157,6 +161,7 @@ def main() -> None:
     parser.add_argument("--posts-dir", type=Path, default=POSTS_DIR)
     parser.add_argument("--limit", type=int, default=120)
     parser.add_argument("--category", default="")
+    parser.add_argument("--tag", default="")
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
@@ -176,6 +181,7 @@ def main() -> None:
             dry_run=args.dry_run,
             force=args.force,
             category=args.category,
+            tag=args.tag,
         )
         scanned += 1
         if ok:

@@ -26,6 +26,8 @@ import requests
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from blog_agent.config import load_settings
 from blog_agent.hwpx import extract_hwpx_text_bytes
+from blog_agent.images import ImageAgent
+from blog_agent.models import Draft, Topic
 from blog_agent.writer import WriterAgent
 
 
@@ -414,7 +416,59 @@ def make_article_body(release: PressRelease) -> str:
     return "\n\n".join(sections).strip() + "\n"
 
 
-def write_post(release: PressRelease, prefix: str, sequence: int, overwrite: bool = False) -> Path:
+def _excerpt(text: str, limit: int = 180) -> str:
+    text = " ".join(clean_text(text).split())
+    return text[:limit].rstrip()
+
+
+def search_cover_image(
+    release: PressRelease,
+    prefix: str,
+    image_agent: ImageAgent | None,
+) -> tuple[str, str]:
+    if release.image_url:
+        return release.image_url, release.image_alt or f"{release.title} 관련 보도자료 이미지"
+    if not image_agent:
+        return "", ""
+
+    slug = unique_slug(prefix, release.title, release.url)
+    draft = Draft(
+        topic=Topic(
+            keyword=release.title,
+            title_hint=release.title,
+            category="정책",
+        ),
+        title=release.title,
+        slug=slug,
+        excerpt=_excerpt(release.body_text),
+        body_markdown=release.body_text,
+        tags=["보도기사", release.institution],
+    )
+    updated = image_agent.attach_cover(draft)
+    return updated.cover_image_path or "", updated.cover_image_alt or ""
+
+
+def is_placeholder_cover(url: str) -> bool:
+    if not url:
+        return False
+    weak_markers = (
+        "picsum.photos",
+        "loremflickr.com",
+        "placehold.co",
+        "placeholder",
+        "assets/logos/",
+        "/assets/logos/",
+    )
+    return url in set(INSTITUTION_LOGOS.values()) or any(marker in url for marker in weak_markers)
+
+
+def write_post(
+    release: PressRelease,
+    prefix: str,
+    sequence: int,
+    overwrite: bool = False,
+    image_agent: ImageAgent | None = None,
+) -> Path:
     path = post_path_for_release(prefix, release.title, release.url, overwrite=overwrite)
     if path.exists() and not overwrite:
         return path
@@ -423,15 +477,26 @@ def write_post(release: PressRelease, prefix: str, sequence: int, overwrite: boo
         title = release.title
     existing_cover = existing_frontmatter_value(path, "cover_image") if overwrite else ""
     existing_alt = existing_frontmatter_value(path, "cover_image_alt") if overwrite else ""
+    preserved_cover = existing_cover if existing_cover and not is_placeholder_cover(existing_cover) else ""
+    preserved_alt = existing_alt if preserved_cover else ""
     try:
         base_dt = datetime.fromisoformat(release.date)
     except ValueError:
         base_dt = datetime.now()
     post_dt = base_dt + timedelta(minutes=sequence)
     tags = ["보도기사", release.institution]
-    img = existing_cover or release.image_url or INSTITUTION_LOGOS.get(release.institution, "")
+    searched_cover = ""
+    searched_alt = ""
+    if not preserved_cover and not release.image_url:
+        searched_cover, searched_alt = search_cover_image(release, prefix, image_agent)
+    img = (
+        preserved_cover
+        or release.image_url
+        or searched_cover
+        or INSTITUTION_LOGOS.get(release.institution, "")
+    )
     cover_line = f"cover_image: {yaml_quote(img)}\n" if img else ""
-    alt = existing_alt or release.image_alt or f"{release.title} 관련 보도자료 이미지"
+    alt = preserved_alt or release.image_alt or searched_alt or f"{release.title} 관련 보도자료 이미지"
     frontmatter = (
         "---\n"
         f"title: {yaml_quote(title)}\n"
@@ -811,6 +876,28 @@ def _init_writer(enabled: bool) -> "WriterAgent | None":
     return None
 
 
+def _init_image_agent(enabled: bool) -> ImageAgent | None:
+    if not enabled:
+        return None
+    try:
+        settings = load_settings()
+        settings.enable_image_generation = False
+        agent = ImageAgent(settings)
+        providers = []
+        if settings.unsplash_access_key:
+            providers.append("Unsplash")
+        if settings.pexels_api_key:
+            providers.append("Pexels")
+        if settings.pixabay_api_key:
+            providers.append("Pixabay")
+        provider_text = " → ".join(providers) if providers else "picsum fallback"
+        print(f"이미지 검색 활성화 ({provider_text})")
+        return agent
+    except Exception as e:
+        print(f"이미지 검색 초기화 실패: {e}")
+    return None
+
+
 def _enrich_release(release: PressRelease, writer: "WriterAgent") -> None:
     """LLM으로 본문 보강 + 제목 재작성 (in-place)."""
     if len(release.body_text) < 300:
@@ -829,6 +916,7 @@ def _import_source(
     seq_start: int,
     overwrite: bool,
     new_only: bool = False,
+    image_agent: ImageAgent | None = None,
 ) -> tuple[list[Path], list[str], int]:
     name = AGENCIES[prefix]
     print(f"\n[{name}] 링크 수집 중...")
@@ -854,7 +942,7 @@ def _import_source(
             release = release_fn(url)  # type: ignore[call-arg]
             if writer:
                 _enrich_release(release, writer)
-            path = write_post(release, prefix, seq, overwrite=overwrite)
+            path = write_post(release, prefix, seq, overwrite=overwrite, image_agent=image_agent)
             written.append(path)
             seq += 1
             print(f"  + {release.title[:50]}")
@@ -878,10 +966,13 @@ def main() -> None:
                         help="기존 보도자료 글도 다시 생성해 본문을 갱신")
     parser.add_argument("--new-only", action="store_true",
                         help="이미 작성한 URL은 건너뛰고 기관별 신규 글만 지정 수만큼 생성")
+    parser.add_argument("--no-search-images", action="store_true",
+                        help="원문 이미지가 없는 보도자료에 검색 기반 대표 이미지를 붙이지 않음")
     args = parser.parse_args()
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
     writer = _init_writer(args.rewrite_titles)
+    image_agent = _init_image_agent(not args.no_search_images)
 
     all_written: list[Path] = []
     all_errors: list[str] = []
@@ -899,6 +990,7 @@ def main() -> None:
             seq,
             args.overwrite_existing,
             args.new_only,
+            image_agent,
         )
         all_written.extend(written)
         all_errors.extend(errors)
