@@ -164,9 +164,27 @@ class StaticSiteBuilder:
         digest = hashlib.sha256(slug.encode("utf-8")).hexdigest()
         return AUTHOR_NAMES[int(digest[:8], 16) % len(AUTHOR_NAMES)]
 
-    @staticmethod
-    def _fallback_cover_image(title: str, category: str, tags: list[str], slug: str) -> str:
-        query = ImageAgent.visual_query(" ".join(tags), category, title)
+    _INSTITUTION_VISUALS: dict[str, str] = {
+        "행정안전부": "government administration building",
+        "과학기술정보통신부": "science technology research laboratory",
+        "기획재정부": "economy finance chart government",
+        "문화체육관광부": "culture arts tourism",
+        "국가유산청": "korean heritage palace architecture",
+        "국가유산진흥원": "traditional korean culture heritage",
+    }
+
+    def _fallback_cover_image(self, title: str, category: str, tags: list[str], slug: str) -> str:
+        # for press release posts, inject institution-specific visual terms
+        institution_query = ""
+        for tag in tags:
+            if tag in self._INSTITUTION_VISUALS:
+                institution_query = self._INSTITUTION_VISUALS[tag]
+                break
+        keyword_input = " ".join(tags) + " " + institution_query
+        query = ImageAgent.visual_query(keyword_input, category, title)
+        # if still generic fallback, use institution visual directly
+        if institution_query and query in ("finance policy documents",):
+            query = institution_query
         seed = int(hashlib.md5(slug.encode("utf-8")).hexdigest()[:8], 16) % 10000
         path = quote(",".join(query.split()[:5]))
         return f"https://loremflickr.com/1200/630/{path}?lock={seed}"
@@ -1273,12 +1291,14 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 }
 """
         extra = (
-            "\n.pagination { display:flex; justify-content:center; align-items:center; gap:6px; margin-top:28px; flex-wrap:nowrap; overflow-x:auto; padding-bottom:4px; }"
-            " .pagination a,.pagination .current { min-width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center; border-radius:8px; font-size:0.9rem; }"
-            " .pagination a { color:var(--accent); border:1px solid var(--line); text-decoration:none; transition:background .2s,color .2s; }"
+            "\n.pagination { display:flex; justify-content:center; align-items:center; gap:4px; margin-top:32px; margin-bottom:8px; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; padding:4px 12px 8px; scrollbar-width:none; }"
+            " .pagination::-webkit-scrollbar { display:none; }"
+            " .pagination a,.pagination .current { min-width:34px; height:34px; display:inline-flex; align-items:center; justify-content:center; border-radius:8px; font-size:0.875rem; flex-shrink:0; }"
+            " .pagination a { color:var(--accent); border:1px solid var(--line); text-decoration:none; transition:background .15s,color .15s; }"
             " .pagination a:hover { background:var(--accent); color:#fff; border-color:var(--accent); }"
             " .pagination .current { background:var(--accent); color:#fff; font-weight:700; border:1px solid var(--accent); }"
-            " .pagination .prev,.pagination .next { padding:0 14px; min-width:auto; }"
+            " .pagination .prev,.pagination .next { padding:0 10px; min-width:auto; font-size:0.8rem; border-radius:8px; white-space:nowrap; }"
+            " .pagination .pages { display:contents; }"
         )
         (self.public_dir / "style.css").write_text((css.strip() + "\n" + extra).lstrip() + "\n", encoding="utf-8")
 

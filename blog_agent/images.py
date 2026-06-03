@@ -13,20 +13,32 @@ from .models import Draft
 
 
 VISUAL_KEYWORDS: tuple[tuple[str, str], ...] = (
+    # 생활/지역
     ("맛집", "korean restaurant food table"),
     ("카페", "coffee cafe interior"),
     ("여행", "travel city landmark"),
+    ("관광", "tourism destination travel"),
     ("제주", "jeju island coastline"),
     ("부산", "busan city ocean"),
     ("강릉", "korean beach travel"),
     ("서울", "seoul city street"),
     ("전주", "korean traditional food"),
+    # 기술
     ("아이폰", "smartphone technology"),
     ("갤럭시", "smartphone technology"),
     ("노트북", "laptop desk technology"),
     ("스펙", "technology device closeup"),
     ("비교", "technology comparison desk"),
-    ("AI", "artificial intelligence abstract technology"),
+    ("AI", "artificial intelligence circuit"),
+    ("인공지능", "artificial intelligence circuit"),
+    ("디지털", "digital technology abstract"),
+    ("반도체", "semiconductor chip circuit"),
+    ("우주", "space astronomy science"),
+    ("과학", "science research laboratory"),
+    ("양자", "quantum science abstract"),
+    ("소프트웨어", "software code screen"),
+    ("통신", "network communication infrastructure"),
+    # 정책/경제
     ("지원금", "public service documents"),
     ("청년", "young professionals city"),
     ("생활비", "household budget notebook"),
@@ -39,6 +51,36 @@ VISUAL_KEYWORDS: tuple[tuple[str, str], ...] = (
     ("부동산", "real estate apartment city"),
     ("연금", "retirement finance documents"),
     ("세금", "tax document calculator"),
+    ("물가", "economy price market statistics"),
+    ("예산", "government budget finance"),
+    ("수출", "global trade export shipping"),
+    ("무역", "trade port shipping container"),
+    ("투자", "investment finance growth"),
+    # 문화/유산
+    ("유산", "korean heritage architecture"),
+    ("문화재", "korean heritage traditional"),
+    ("공연", "performance stage arts"),
+    ("전시", "exhibition gallery art"),
+    ("문화", "culture arts creative"),
+    ("관람", "museum exhibition visitors"),
+    # 사회/행정
+    ("선거", "election civic government"),
+    ("공무원", "government office building"),
+    ("행정", "administration office paperwork"),
+    ("안전", "safety public service"),
+    ("재해", "disaster response emergency"),
+    ("복구", "recovery construction work"),
+    # 외교/국제
+    ("외교", "diplomacy international summit"),
+    ("OECD", "international conference summit"),
+    ("유네스코", "heritage international organization"),
+    ("정상", "government meeting official"),
+    ("회의", "conference meeting table"),
+    # 의료/교육/환경
+    ("의료", "healthcare medical clean"),
+    ("교육", "education classroom books"),
+    ("기후", "climate environment green"),
+    ("환경", "environment nature green"),
 )
 
 CATEGORY_VISUALS = {

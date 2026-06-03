@@ -233,7 +233,7 @@ def write_post(release: PressRelease, prefix: str, sequence: int) -> Path:
     except ValueError:
         base_dt = datetime.now()
     post_dt = base_dt + timedelta(minutes=sequence)
-    tags = ["보도자료", release.institution]
+    tags = ["보도기사", release.institution]
     cover_line = f"cover_image: {yaml_quote(release.image_url)}\n" if release.image_url else ""
     alt = release.image_alt or f"{release.title} 관련 보도자료 이미지"
     frontmatter = (

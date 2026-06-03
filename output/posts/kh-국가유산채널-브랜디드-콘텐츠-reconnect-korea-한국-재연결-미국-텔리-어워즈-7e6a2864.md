@@ -3,7 +3,7 @@ title: "국가유산채널 브랜디드 콘텐츠 「Reconnect KOREA(한국 재�
 date: "2026-05-28T00:04"
 category: "정책"
 tags:
-  - "보도자료"
+  - "보도기사"
   - "국가유산"
   - "국가유산진흥원"
 quality_score: 90.0

@@ -3,7 +3,7 @@ title: "‘하이(HAI)’, ‘AI for Good Global Summit 2026’ 공식 발표 �
 date: "2026-05-26T00:06"
 category: "정책"
 tags:
-  - "보도자료"
+  - "보도기사"
   - "국가유산"
   - "국가유산진흥원"
 quality_score: 90.0

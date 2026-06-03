@@ -3,7 +3,7 @@ title: "AI 기업 육성 위한 ‘AI·고가치 공공데이터 TOP 100’ 본�
 date: "2026-06-01T00:10"
 category: "정책"
 tags:
-  - "보도자료"
+  - "보도기사"
   - "행정안전부"
 quality_score: 90.0
 cover_image_alt: "AI 기업 육성 위한 ‘AI·고가치 공공데이터 TOP 100’ 본격 개방 추진 관련 보도자료 이미지"
