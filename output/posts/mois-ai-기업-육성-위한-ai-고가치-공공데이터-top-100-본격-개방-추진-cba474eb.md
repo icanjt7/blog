@@ -1,13 +1,13 @@
 ---
-title: "AI 기업 육성 위한 ‘AI·고가치 공공데이터 TOP 100’ 본격 개방 추진"
+title: "AI 기업에 100개 공공데이터 개방, 2028년까지 비즈니스 창출 지원"
 date: "2026-06-01T00:10"
 category: "정책"
 tags:
   - "보도기사"
   - "행정안전부"
 quality_score: 90.0
-cover_image: "https://images.unsplash.com/photo-1706517212966-43695534fe88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMGFkbWluaXN0cmF0aW9uJTIwb2ZmaWNlJTIwcGFwZXJ3b3JrJTIwc2FmZXR5JTIwcHVibGljJTIwc2VydmljZXxlbnwxfDB8fHwxNzgwNDgwNzUzfDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "AI 기업 육성 위한 ‘AI·고가치 공공데이터 TOP 100’ 본격 개방 추진 — Photo by K C on Unsplash"
+cover_image: "https://mois.go.kr/images/og_logo.jpg"
+cover_image_alt: "AI 기업 육성 위한 ‘AI·고가치 공공데이터 TOP 100’ 본격 개방 추진"
 author: "행정안전부"
 ---
 
@@ -15,7 +15,7 @@ author: "행정안전부"
 
 ## 한눈에 보기
 
-이번 보도자료의 핵심은 'AI 기업 육성 위한 ‘AI·고가치 공공데이터 TOP 100’ 본격 개방 추진'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
+이번 보도자료의 핵심은 'AI 기업에 100개 공공데이터 개방, 2028년까지 비즈니스 창출 지원'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
 
 ## 핵심 포인트
 

@@ -1,13 +1,13 @@
 ---
-title: "국가정보자원관리원 운영 대전환, 차세대 인공지능정부 인프라로 혁신 본격 착수"
+title: "2030년까지 노후 대전센터 폐쇄, 인공지능정부로革新"
 date: "2026-06-01T00:09"
 category: "정책"
 tags:
   - "보도기사"
   - "행정안전부"
 quality_score: 90.0
-cover_image: "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMGFkbWluaXN0cmF0aW9uJTIwb2ZmaWNlJTIwcGFwZXJ3b3JrJTIwc2FmZXR5JTIwcHVibGljJTIwc2VydmljZXxlbnwxfDB8fHwxNzgwNDgwNzUzfDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "국가정보자원관리원 운영 대전환, 차세대 인공지능정부 인프라로 혁신 본격 착수 — Photo by Galina Nelyubova on Unsplash"
+cover_image: "https://mois.go.kr/images/og_logo.jpg"
+cover_image_alt: "국가정보자원관리원 운영 대전환, 차세대 인공지능정부 인프라로 혁신 본격 착수"
 author: "행정안전부"
 ---
 
@@ -15,7 +15,7 @@ author: "행정안전부"
 
 ## 한눈에 보기
 
-이번 보도자료의 핵심은 '국가정보자원관리원 운영 대전환, 차세대 인공지능정부 인프라로 혁신 본격 착수'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
+이번 보도자료의 핵심은 '2030년까지 노후 대전센터 폐쇄, 인공지능정부로革新'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
 
 ## 핵심 포인트
 

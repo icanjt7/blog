@@ -1,13 +1,13 @@
 ---
-title: "‘하이(HAI)’, ‘AI for Good Global Summit 2026’ 공식 발표 사례 선정(260526)"
-date: "2026-05-26T01:02"
+title: "국가유산 데이터로 만든 AI 기술, 제네바서 세계에 선보인다"
+date: "2026-05-26T00:30"
 category: "정책"
 tags:
   - "보도기사"
   - "국가유산진흥원"
 quality_score: 90.0
-cover_image: "https://images.unsplash.com/photo-1763887487365-840fe5127e3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMGtvcmVhbiUyMGhlcml0YWdlJTIwYXJjaGl0ZWN0dXJlfGVufDF8MHx8fDE3ODA0ODA3NDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "‘하이(HAI)’, ‘AI for Good Global Summit 2026’ 공식 발표 사례 선정(260526) — Photo by Artan on Unsplash"
+cover_image: "assets/logos/kh.png"
+cover_image_alt: "국가유산 데이터로 만든 AI 기술, 제네바서 세계에 선보인다 관련 보도자료 이미지"
 author: "국가유산진흥원"
 ---
 
@@ -15,7 +15,7 @@ author: "국가유산진흥원"
 
 ## 한눈에 보기
 
-이번 보도자료의 핵심은 '‘하이(HAI)’, ‘AI for Good Global Summit 2026’ 공식 발표 사례 선정'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
+이번 보도자료의 핵심은 '국가유산 데이터로 만든 AI 기술, 제네바서 세계에 선보인다'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
 
 ## 핵심 포인트
 
@@ -25,7 +25,7 @@ author: "국가유산진흥원"
 
 ## 더 살펴볼 내용
 
-이번에 소개되는 ‘ 하이 (HAI)’ 는 한국지능정보사회진흥원 (NIA) 의 AI· 데이터레이크 * 활용지원 사업으로 개발된 국가유산 기반 멀티모달 * AI 서비스다
+이번에 소개되는 ‘ 하이 (HAI)’ 는 한국지능정보사회진흥원 (NIA) 의 AI· 데이터레이크 / 활용지원 사업으로 개발된 국가유산 기반 멀티모달 / AI 서비스다
 
 사용자가 텍스트를 입력하면 전문가 고증을 거친 국가유산 데이터를 바탕으로 한국적 맥락을 반영한 이미지를 생성한다
 

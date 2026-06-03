@@ -1,13 +1,13 @@
 ---
-title: "폐교에 새 숨결 불어넣는다! 우수 활용 모델 집중 지원"
+title: "120억 원 지원, 폐교 재탄생 사업 시작된다"
 date: "2026-06-01T00:06"
 category: "정책"
 tags:
   - "보도기사"
   - "행정안전부"
 quality_score: 90.0
-cover_image: "https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhZG1pbmlzdHJhdGlvbiUyMG9mZmljZSUyMHBhcGVyd29yayUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4MDQ4MDc1M3ww&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "폐교에 새 숨결 불어넣는다! 우수 활용 모델 집중 지원 — Photo by Arisa Chattasa on Unsplash"
+cover_image: "https://mois.go.kr/images/og_logo.jpg"
+cover_image_alt: "폐교에 새 숨결 불어넣는다! 우수 활용 모델 집중 지원"
 author: "행정안전부"
 ---
 
@@ -15,7 +15,7 @@ author: "행정안전부"
 
 ## 한눈에 보기
 
-이번 보도자료의 핵심은 '폐교에 새 숨결 불어넣는다! 우수 활용 모델 집중 지원'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
+이번 보도자료의 핵심은 '120억 원 지원, 폐교 재탄생 사업 시작된다'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
 
 ## 핵심 포인트
 

@@ -1,13 +1,13 @@
 ---
-title: "국가유산채널 브랜디드 콘텐츠 「Reconnect KOREA(한국 재연결)」 미국 텔리 어워즈 ‘은상’ 수상(260528)"
-date: "2026-05-28T01:00"
+title: "국가유산채널 콘텐츠, 미국 텔리 어워즈 은상 수상!"
+date: "2026-05-28T00:28"
 category: "정책"
 tags:
   - "보도기사"
   - "국가유산진흥원"
 quality_score: 90.0
-cover_image: "https://images.unsplash.com/photo-1627208753013-8954b7089657?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8a29yZWFuJTIwaGVyaXRhZ2UlMjBhcmNoaXRlY3R1cmV8ZW58MXwwfHx8MTc4MDQ4MDc0Nnww&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "국가유산채널 브랜디드 콘텐츠 「Reconnect KOREA(한국 재연결)」 미국 텔리 어워즈 ‘은상’ 수상(260528) — Photo by zero take on Unsplash"
+cover_image: "assets/logos/kh.png"
+cover_image_alt: "국가유산채널 콘텐츠, 미국 텔리 어워즈 은상 수상! 관련 보도자료 이미지"
 author: "국가유산진흥원"
 ---
 
@@ -15,12 +15,12 @@ author: "국가유산진흥원"
 
 ## 한눈에 보기
 
-이번 보도자료의 핵심은 '국가유산채널 브랜디드 콘텐츠 「Reconnect KOREA(한국 재연결)」 미국 텔리 어워즈 ‘은상’ 수상'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
+이번 보도자료의 핵심은 '국가유산채널 콘텐츠, 미국 텔리 어워즈 은상 수상!'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
 
 ## 핵심 포인트
 
 - 국가유산청(청장 허민)과 국가유산청 산하 국가유산진흥원(원장 이귀영)이 함께 운영하는 ‘국가유산채널’의 브랜디드 콘텐츠* 「Reconnect KOREA(한국 재연결)」가 5월 20일(현지시간) 제47회 텔리 어워즈 <문화·라이프스타일 캠페인> 부문에서 ‘은상’을 수상하였다.
-- * 브랜디드 콘텐츠(Branded Contents): 시청자에게 공감과 즐거움을 제공하기 위한 목적의 콘텐츠에 브랜드의 메시지를 녹여 시청자가 자연스럽게 받아들일 수 있도록 만든 광고 ‘텔리 어워즈(Telly Awards)’는 1979년 제정된 국제 시상식으로, TV와 영상 콘텐츠 전반에서 뛰어난 작품성을 기리는 상이다.
+- 브랜디드 콘텐츠(Branded Contents): 시청자에게 공감과 즐거움을 제공하기 위한 목적의 콘텐츠에 브랜드의 메시지를 녹여 시청자가 자연스럽게 받아들일 수 있도록 만든 광고 ‘텔리 어워즈(Telly Awards)’는 1979년 제정된 국제 시상식으로, TV와 영상 콘텐츠 전반에서 뛰어난 작품성을 기리는 상이다.
 - 현재는 방송뿐 아니라 디지털 영상, 다큐멘터리, 브랜디드 콘텐츠, 소셜 비디오 등 ‘모든 스크린 위의 영상 콘텐츠’를 대상으로 한다.
 
 ## 더 살펴볼 내용
