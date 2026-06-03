@@ -3,9 +3,7 @@ name: Daily blog publish
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 23 * * *"   # 08:00 KST
-    - cron: "0 3 * * *"    # 12:00 KST
-    - cron: "0 9 * * *"    # 18:00 KST
+    - cron: "*/10 * * * *"  # 10분마다 (하루 144회, 1포스트/회)
 
 concurrency:
   group: blog-publish
@@ -46,7 +44,7 @@ jobs:
           # Free stock images via Unsplash API (50 req/h, no cost)
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           # Blog settings
-          BLOG_POST_COUNT: ${{ vars.BLOG_POST_COUNT || '5' }}
+          BLOG_POST_COUNT: ${{ vars.BLOG_POST_COUNT || '1' }}
           ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
           ENABLE_IMAGE_GENERATION: ${{ vars.ENABLE_IMAGE_GENERATION || 'false' }}
           PUBLISHER: ${{ vars.PUBLISHER || 'markdown' }}

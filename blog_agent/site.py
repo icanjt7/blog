@@ -161,18 +161,32 @@ class StaticSiteBuilder:
           <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
         </div>"""
 
+    def _card_html(self, post: Post) -> str:
+        thumb = (
+            f'<a class="card-thumb" href="./{post.slug}.html">'
+            f'<img class="card-img" src="{html.escape(post.cover_image)}" '
+            f'alt="{html.escape(post.cover_image_alt)}" loading="lazy"></a>'
+            if post.cover_image else ""
+        )
+        return f"""<article class="card">
+          {thumb}
+          <div class="card-body">
+            <p class="meta"><span class="cat-badge">{html.escape(post.category)}</span> {post.date:%Y.%m.%d}</p>
+            <h2><a href="./{post.slug}.html">{html.escape(post.title)}</a></h2>
+            <p class="card-excerpt">{html.escape(post.excerpt)}</p>
+            <div class="tags">{self._tag_html(post.tags[:4])}</div>
+          </div>
+        </article>"""
+
     def _write_index(self, posts: list[Post]) -> None:
         per_page = 9
         total = len(posts)
         if total == 0:
-            cards = '<p class="empty">아직 발행된 글이 없습니다.</p>'
-            content = f"""
+            content = """
             <section class="hero">
-              <p class="meta">오늘의 생활·기술·정책 브리핑</p>
-              <h1>{html.escape(self.site_title)}</h1>
-              <p></p>
+              <p class="hero-tagline">지금 알아야 할 소식을 빠르게 브리핑합니다</p>
             </section>
-            <section class="grid">{cards}</section>
+            <p class="empty">아직 발행된 글이 없습니다.</p>
             """
             self._write_html(
                 "index.html",
@@ -190,25 +204,13 @@ class StaticSiteBuilder:
             start = (page - 1) * per_page
             end = start + per_page
             page_posts = posts[start:end]
-            cards = "\n".join(
-                f"""
-                <article class="card">
-                  {f'<a href="./{post.slug}.html"><img class="card-img" src="{html.escape(post.cover_image)}" alt="{html.escape(post.cover_image_alt)}" loading="lazy"></a>' if post.cover_image else ''}
-                  <p class="meta">{html.escape(post.category)} · {post.date:%Y-%m-%d}</p>
-                  <h2><a href="./{post.slug}.html">{html.escape(post.title)}</a></h2>
-                  <p>{html.escape(post.excerpt)}</p>
-                  <div class="tags">{self._tag_html(post.tags[:5])}</div>
-                </article>
-                """
-                for post in page_posts
-            )
+            cards = "\n".join(self._card_html(p) for p in page_posts)
 
-            # pagination links with page numbers
+            # pagination links
             nav_items: list[str] = []
             if page > 1:
                 prev_href = "index.html" if page - 1 == 1 else f"page{page-1}.html"
                 nav_items.append(f'<a class="prev" href="./{prev_href}">← 이전</a>')
-            # numbered pages
             pages_html = []
             for p in range(1, total_pages + 1):
                 href = "index.html" if p == 1 else f"page{p}.html"
@@ -218,15 +220,14 @@ class StaticSiteBuilder:
                     pages_html.append(f'<a href="./{href}">{p}</a>')
             nav_items.append('<span class="pages">' + ' '.join(pages_html) + '</span>')
             if page < total_pages:
-                next_href = f"page{page+1}.html"
-                nav_items.append(f'<a class="next" href="./{next_href}">다음 →</a>')
-            nav_html = "<nav class=\"pagination\">" + "\n".join(nav_items) + "</nav>"
+                nav_items.append(f'<a class="next" href="./page{page+1}.html">다음 →</a>')
+            nav_html = '<nav class="pagination">' + "\n".join(nav_items) + '</nav>'
 
+            hero_stats = f'<p class="hero-stats">기사 {total}개 · {datetime.now():%Y.%m.%d} 업데이트</p>' if page == 1 else ""
             content = f"""
             <section class="hero">
-              <p class="meta">오늘의 생활·기술·정책 브리핑</p>
-              <h1>{html.escape(self.site_title)}</h1>
-              <p><a href="./search.html">검색</a></p>
+              <p class="hero-tagline">지금 알아야 할 소식을 빠르게 브리핑합니다</p>
+              {hero_stats}
             </section>
             <section class="grid">{cards}</section>
             {nav_html}
@@ -499,25 +500,13 @@ class StaticSiteBuilder:
 
         for category in ordered_categories:
             page_posts = category_posts.get(category, [])
-            cards = "\n".join(
-                f"""
-                <article class="card">
-                  {f'<a href="./{post.slug}.html"><img class="card-img" src="{html.escape(post.cover_image)}" alt="{html.escape(post.cover_image_alt)}" loading="lazy"></a>' if post.cover_image else ''}
-                  <p class="meta">{html.escape(post.category)} · {post.date:%Y-%m-%d}</p>
-                  <h2><a href="./{post.slug}.html">{html.escape(post.title)}</a></h2>
-                  <p>{html.escape(post.excerpt)}</p>
-                  <div class="tags">{self._tag_html(post.tags[:5])}</div>
-                </article>
-                """
-                for post in page_posts
-            ) or '<p class="empty">이 카테고리에는 아직 글이 없습니다.</p>'
+            cards = "\n".join(self._card_html(p) for p in page_posts) \
+                or '<p class="empty">이 카테고리에는 아직 글이 없습니다.</p>'
             content = f"""
-            <section class=\"hero\">
-              <p class=\"meta\">카테고리</p>
-              <h1>{html.escape(category)}</h1>
-              <p>{len(page_posts)}개의 글을 모아봤습니다.</p>
+            <section class="hero">
+              <p class="hero-tagline"><strong>{html.escape(category)}</strong> — {len(page_posts)}개 기사</p>
             </section>
-            <section class=\"grid\">{cards}</section>
+            <section class="grid">{cards}</section>
             """
             filename = self._category_page_filename(category)
             self._write_html(
@@ -718,28 +707,31 @@ a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* ── hero ── */
-.hero { padding: 28px 0 24px; border-bottom: 1px solid var(--line); }
-.hero h1 { margin: 0; font-size: clamp(1.8rem, 5vw, 4rem); line-height: 1.1; word-break: keep-all; }
-.meta { margin: 0 0 8px; color: var(--muted); font-size: 0.85rem; }
+.hero { padding: 20px 0 16px; border-bottom: 1px solid var(--line); }
+.hero-tagline { margin: 0 0 4px; font-size: 1rem; color: var(--muted); word-break: keep-all; }
+.hero-stats { margin: 0; font-size: 0.82rem; color: var(--muted); opacity: .7; }
+.meta { margin: 0 0 6px; color: var(--muted); font-size: 0.82rem; display: flex; align-items: center; gap: 6px; }
+.cat-badge { background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 1px 6px; font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
 
 .page-shell { width: min(1040px, 100% - 32px); margin: 0 auto; }
 .site-header { background: var(--paper); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 100; }
-.site-header .page-shell { padding: 14px 0 0; }
-.header-top { display: flex; align-items: center; gap: 12px; padding-bottom: 10px; }
-/* ── brand logo ── */
-.brand { display: flex; align-items: center; gap: 9px; flex-shrink: 0; text-decoration: none; }
-.brand:hover { text-decoration: none; }
-.brand-icon { display: block; flex-shrink: 0; }
-.brand-wordmark { display: flex; align-items: baseline; line-height: 1; }
-.brand-b { font-size: 1.08rem; font-weight: 500; color: var(--ink); letter-spacing: -0.02em; }
-.brand-w { font-size: 1.08rem; font-weight: 800; color: var(--accent); letter-spacing: -0.04em; }
+.site-header .page-shell { padding: 12px 0 0; }
+.header-top { display: flex; align-items: center; gap: 14px; padding-bottom: 10px; }
 
-/* header inline search */
-.header-search { flex: 1; position: relative; max-width: 460px; display: flex; align-items: center; }
-.header-search input[type="search"] { flex: 1; min-width: 0; padding: 7px 14px; border: 1px solid var(--line); border-right: none; border-radius: 999px 0 0 999px; background: var(--paper); font-size: 0.88rem; color: var(--ink); outline: none; transition: border-color .2s; -webkit-appearance: none; }
+/* ── brand logo ── */
+.brand { display: flex; align-items: center; gap: 8px; flex-shrink: 0; text-decoration: none; line-height: 1; }
+.brand:hover { text-decoration: none; }
+.brand-icon { display: block; flex-shrink: 0; width: 1.75rem; height: 1.75rem; }
+.brand-wordmark { display: flex; align-items: baseline; }
+.brand-b { font-size: 1.25rem; font-weight: 500; color: var(--ink); letter-spacing: -0.02em; }
+.brand-w { font-size: 1.25rem; font-weight: 800; color: var(--accent); letter-spacing: -0.04em; }
+
+/* ── header search ── */
+.header-search { flex: 1; position: relative; max-width: 440px; display: flex; align-items: stretch; height: 36px; }
+.header-search input[type="search"] { flex: 1; min-width: 0; height: 36px; padding: 0 14px; border: 1px solid var(--line); border-right: none; border-radius: 999px 0 0 999px; background: var(--paper); font-size: 0.88rem; color: var(--ink); outline: none; transition: border-color .2s; -webkit-appearance: none; box-sizing: border-box; }
 .header-search input[type="search"]:focus { border-color: var(--accent); }
 .header-search input[type="search"]:focus + .search-btn { border-color: var(--accent); background: var(--accent); color: #fff; }
-.search-btn { flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 38px; height: 36px; border: 1px solid var(--line); border-radius: 0 999px 999px 0; background: var(--paper); color: var(--muted); cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+.search-btn { flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 42px; height: 36px; border: 1px solid var(--line); border-left: none; border-radius: 0 999px 999px 0; background: var(--bg); color: var(--muted); cursor: pointer; transition: background .2s, color .2s, border-color .2s; padding: 0; }
 .search-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 .header-dropdown { position: absolute; top: calc(100% + 6px); left: 0; right: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,.1); z-index: 200; overflow: hidden; }
 .hdr-item { display: flex; align-items: center; gap: 10px; padding: 10px 16px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); transition: background .15s; font-size: 0.88rem; }
@@ -773,32 +765,37 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 /* ── index grid ── */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
-  gap: 14px;
-  padding-top: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 16px;
+  padding-top: 24px;
 }
 .card {
   background: var(--paper);
   border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 16px;
+  border-radius: 12px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow .2s, transform .18s;
 }
-.card h2 { margin: 0 0 8px; font-size: clamp(1rem, 3vw, 1.18rem); line-height: 1.35; word-break: keep-all; }
-.card p { margin: 0 0 12px; font-size: 0.9rem; color: var(--muted); }
+.card:hover { box-shadow: 0 6px 28px rgba(0,0,0,.09); transform: translateY(-3px); }
+.card-body { padding: 14px 16px 16px; flex: 1; display: flex; flex-direction: column; }
+.card h2 { margin: 0 0 8px; font-size: clamp(0.98rem, 2.8vw, 1.1rem); line-height: 1.38; word-break: keep-all; }
+.card h2 a { color: var(--ink); }
+.card h2 a:hover { color: var(--accent); text-decoration: none; }
+.card-excerpt { margin: 0 0 12px; font-size: 0.87rem; color: var(--muted); line-height: 1.55;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; flex: 1; }
 
 /* ── card thumbnail ── */
-.card > a:first-child {
-  display: block;
-  margin: -16px -16px 0;
-}
+.card-thumb { display: block; }
 .card-img {
   width: 100%;
-  margin-bottom: 14px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: center center;
-  border-radius: 10px 10px 0 0;
+  border-radius: 0;
+  display: block;
+  margin: 0;
 }
 
 /* ── tags ── */
@@ -873,14 +870,14 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   main { width: 100%; padding: 0 0 48px; }
   .site-header .page-shell { padding: 10px 16px 0; }
   .header-top { flex-wrap: wrap; gap: 8px; padding-bottom: 8px; }
-  .header-search { order: 3; flex: none; width: 100%; max-width: 100%; }
-  .dashboard-link { margin-left: auto; }
+  .header-search { order: 3; flex: none; width: 100%; max-width: 100%; height: 38px; }
+  .header-search input[type="search"] { height: 38px; }
+  .search-btn { height: 38px; }
   .site-nav { padding: 0 4px; }
-  .hero { padding: 16px 16px 16px; }
-  .grid { gap: 10px; padding: 12px 12px 0; }
-  .card { border-radius: 8px; padding: 14px; }
-  .card > a:first-child { margin: -14px -14px 0; }
-  .card-img { width: 100%; margin: 0 0 12px; aspect-ratio: 16 / 9; object-fit: cover; object-position: center center; }
+  .hero { padding: 14px 16px 12px; }
+  .grid { grid-template-columns: 1fr; gap: 10px; padding: 12px 12px 0; }
+  .card { border-radius: 10px; }
+  .card-body { padding: 12px 14px 14px; }
   .post { border-radius: 0; border-left: none; border-right: none; padding: 16px; }
   .cover { border-radius: 0; aspect-ratio: 16 / 9; object-fit: cover; object-position: center center; max-height: 200px; }
   .content table { font-size: 0.82rem; }
@@ -890,7 +887,6 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 
 @media (min-width: 481px) and (max-width: 768px) {
   .cover { max-height: 280px; }
-  .card-img { height: 150px; }
 }
 """
         extra = (
