@@ -619,12 +619,26 @@ class StaticSiteBuilder:
   <header class="site-header">
     <div class="page-shell">
       <div class="header-top">
-        <a class="brand" href="./index.html">{html.escape(self.site_title)}</a>
+        <a class="brand" href="./index.html" aria-label="{html.escape(self.site_title)}">
+          <svg class="brand-icon" width="34" height="34" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <rect width="32" height="32" rx="7" fill="#0f766e"/>
+            <rect x="6" y="7" width="20" height="2.8" rx="1.4" fill="white" opacity="0.92"/>
+            <rect x="6" y="13" width="13" height="2.8" rx="1.4" fill="white" opacity="0.92"/>
+            <path d="M6 22.5 Q9.5 18 13 22.5 Q16.5 27 20 22.5 Q23.5 18 26 22.5" stroke="white" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand-wordmark">
+            <span class="brand-b">브리핑</span><span class="brand-w">웨이브</span>
+          </span>
+        </a>
         <div class="header-search">
-          <input type="search" id="header-q" placeholder="제목·내용 검색..." autocomplete="off" aria-label="검색">
+          <input type="search" id="header-q" placeholder="기사 검색..." autocomplete="off" aria-label="검색">
+          <button class="search-btn" id="header-search-btn" type="button" aria-label="검색">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round">
+              <circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.3" y2="16.3"/>
+            </svg>
+          </button>
           <div id="header-results" class="header-dropdown" hidden></div>
         </div>
-        <!-- dashboard hidden: 관리자 전용 페이지 -->
       </div>
       {nav_html}
     </div>
@@ -657,10 +671,12 @@ class StaticSiteBuilder:
       }}).join('');
       box.hidden=false;
     }}
+    var btn=document.getElementById('header-search-btn');
     q.addEventListener('input',run);
     q.addEventListener('keydown',function(e){{if(e.key==='Enter'&&q.value.trim())window.location.href='./search.html?q='+encodeURIComponent(q.value.trim());}});
     q.addEventListener('focus',function(){{if(q.value.trim())run();}});
-    document.addEventListener('click',function(e){{if(!q.contains(e.target)&&!box.contains(e.target))box.hidden=true;}});
+    if(btn)btn.addEventListener('click',function(){{if(q.value.trim())window.location.href='./search.html?q='+encodeURIComponent(q.value.trim());else q.focus();}});
+    document.addEventListener('click',function(e){{if(!q.contains(e.target)&&!box.contains(e.target)&&(!btn||!btn.contains(e.target)))box.hidden=true;}});
   }})();
   </script>
 </body>
@@ -710,12 +726,21 @@ a:hover { text-decoration: underline; }
 .site-header { background: var(--paper); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 100; }
 .site-header .page-shell { padding: 14px 0 0; }
 .header-top { display: flex; align-items: center; gap: 12px; padding-bottom: 10px; }
-.brand { font-weight: 700; font-size: 1.1rem; color: var(--ink); flex-shrink: 0; }
+/* ── brand logo ── */
+.brand { display: flex; align-items: center; gap: 9px; flex-shrink: 0; text-decoration: none; }
+.brand:hover { text-decoration: none; }
+.brand-icon { display: block; flex-shrink: 0; }
+.brand-wordmark { display: flex; align-items: baseline; line-height: 1; }
+.brand-b { font-size: 1.08rem; font-weight: 500; color: var(--ink); letter-spacing: -0.02em; }
+.brand-w { font-size: 1.08rem; font-weight: 800; color: var(--accent); letter-spacing: -0.04em; }
 
 /* header inline search */
-.header-search { flex: 1; position: relative; max-width: 480px; }
-.header-search input[type="search"] { width: 100%; padding: 7px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); font-size: 0.9rem; color: var(--ink); outline: none; transition: border-color .2s; -webkit-appearance: none; }
+.header-search { flex: 1; position: relative; max-width: 460px; display: flex; align-items: center; }
+.header-search input[type="search"] { flex: 1; min-width: 0; padding: 7px 14px; border: 1px solid var(--line); border-right: none; border-radius: 999px 0 0 999px; background: var(--paper); font-size: 0.88rem; color: var(--ink); outline: none; transition: border-color .2s; -webkit-appearance: none; }
 .header-search input[type="search"]:focus { border-color: var(--accent); }
+.header-search input[type="search"]:focus + .search-btn { border-color: var(--accent); background: var(--accent); color: #fff; }
+.search-btn { flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 38px; height: 36px; border: 1px solid var(--line); border-radius: 0 999px 999px 0; background: var(--paper); color: var(--muted); cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+.search-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 .header-dropdown { position: absolute; top: calc(100% + 6px); left: 0; right: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,.1); z-index: 200; overflow: hidden; }
 .hdr-item { display: flex; align-items: center; gap: 10px; padding: 10px 16px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); transition: background .15s; font-size: 0.88rem; }
 .hdr-item:last-child { border-bottom: none; }
