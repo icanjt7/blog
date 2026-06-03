@@ -633,7 +633,7 @@ def mcst_links(per_source: int) -> list[str]:
     links: list[str] = []
     page = 1
     while len(links) < per_source and page <= max_pages_for(per_source):
-        html_src = fetch(f"{list_url}?pageIndex={page}")
+        html_src = fetch(f"{list_url}?pCurrentPage={page}")
         for m in re.finditer(r"pressView\.jsp\?pSeq=(\d+)", html_src):
             pseq = m.group(1)
             if pseq not in seen:
