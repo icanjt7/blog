@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 from pathlib import Path
+import re
 
 import markdown
 import requests
+import yaml
 
 from .config import Settings
 from .models import Draft, PublishResult
@@ -23,34 +25,31 @@ class MarkdownPublisher(Publisher):
     def publish(self, draft: Draft) -> PublishResult:
         body = self._body_with_cover(draft)
         path = self.output_dir / f"{draft.slug}.md"
-        cover_lines = []
+        meta = {
+            "title": self._clean_scalar(draft.title),
+            "date": draft.created_at.isoformat(),
+            "category": draft.topic.category,
+            "tags": [self._clean_scalar(tag) for tag in draft.tags],
+            "quality_score": round(draft.quality_score, 1),
+        }
         if draft.cover_image_path:
-            cover_lines = [f'cover_image: "{draft.cover_image_path}"']
+            meta["cover_image"] = draft.cover_image_path
             if draft.cover_image_alt:
-                cover_lines.append(f'cover_image_alt: "{draft.cover_image_alt}"')
-        frontmatter = "\n".join(
-            [
-                "---",
-                f'title: "{draft.title}"',
-                f'date: "{draft.created_at.isoformat()}"',
-                f'category: "{draft.topic.category}"',
-                "tags:",
-                *[f"  - {tag}" for tag in draft.tags],
-                f'quality_score: {draft.quality_score:.1f}',
-                *cover_lines,
-                "---",
-                "",
-            ]
-        )
+                meta["cover_image_alt"] = self._clean_scalar(draft.cover_image_alt)
+        frontmatter = "---\n" + yaml.safe_dump(meta, allow_unicode=True, sort_keys=False) + "---\n\n"
         path.write_text(frontmatter + body + "\n", encoding="utf-8")
         return PublishResult(ok=True, destination="markdown", url=str(path), message="draft saved")
+
+    @staticmethod
+    def _clean_scalar(value: str) -> str:
+        return re.sub(r"\s+", " ", str(value)).strip()
 
     @staticmethod
     def _body_with_cover(draft: Draft) -> str:
         if not draft.cover_image_path:
             return draft.body_markdown
         p = draft.cover_image_path
-        alt = draft.cover_image_alt or draft.title
+        alt = MarkdownPublisher._clean_scalar(draft.cover_image_alt or draft.title)
         # Unsplash/remote URL vs local file
         image_ref = p if p.startswith("http") else f"assets/{Path(p).name}"
         return f"![{alt}]({image_ref})\n\n{draft.body_markdown}"

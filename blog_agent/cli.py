@@ -37,7 +37,11 @@ def _reimage_posts(
         if not raw.startswith("---"):
             continue
         _, fm, body = raw.split("---", 2)
-        meta = yaml.safe_load(fm) or {}
+        try:
+            meta = yaml.safe_load(fm) or {}
+        except yaml.YAMLError:
+            print(f"skip invalid frontmatter: {md_path}")
+            continue
 
         raw_cat = str(meta.get("category") or "생활")
         cat = _CAT_MAP.get(raw_cat, raw_cat)
