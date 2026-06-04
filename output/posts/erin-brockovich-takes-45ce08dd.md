@@ -8,7 +8,7 @@ tags:
   - Brockovich
   - takes
 quality_score: 88.0
-cover_image: "https://images.unsplash.com/photo-1765445666407-c8535808a4a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxFcmluJTI1MjBCcm9ja292aWNoJTI1MjB0YWtlcyUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjY5OTU2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1618141569498-68620bb46ecf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxlbnZpcm9ubWVudCUyMG5hdHVyZSUyMGdyZWVufGVufDF8MHx8fDE3ODA1MzA0ODh8MA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "에린 브로코비치의 새로운 임무: 데이터 센터의 환경 비밀이 궁금하다 — Photo by Egor Komarov on Unsplash (https://unsplash.com/photos/text-from-a-document-about-design-and-designer-jt881Ntqj84)"
 ---
 ![에린 브로코비치의 새로운 임무: 데이터 센터의 환경 비밀이 궁금하다 — Photo by Egor Komarov on Unsplash (https://unsplash.com/photos/text-from-a-document-about-design-and-designer-jt881Ntqj84)](https://images.unsplash.com/photo-1765445666407-c8535808a4a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxFcmluJTI1MjBCcm9ja292aWNoJTI1MjB0YWtlcyUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjY5OTU2fDA&ixlib=rb-4.1.0&q=80&w=1080)

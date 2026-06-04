@@ -9,7 +9,7 @@ tags:
   - 도구
   - 비교
 quality_score: 100.0
-cover_image: "https://images.unsplash.com/photo-1671124739629-0583d5c856a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwY29tcGFyaXNvbiUyMGRlc2slMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMGNvbmZlcmVuY2UlMjBtZWV0aW5nJTIwdGFibGV8ZW58MXwwfHx8MTc4MDUyMjQ1MHww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwZGV2aWNlcyUyMGNvbXBhcmlzb24lMjByZXZpZXclMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMGNvbmZlcmVuY2UlMjBtZWV0aW5nJTIwdGFibGV8ZW58MXwwfHx8MTc4MDUzMDQ4NXww&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "AI 회의록 도구 비교: 고르기 전 볼 기준 — Photo by Frankie Cordoba on Unsplash"
 ---
 ![AI 회의록 도구 비교: 고르기 전 볼 기준 — Photo by Frankie Cordoba on Unsplash](https://images.unsplash.com/photo-1671124739629-0583d5c856a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwY29tcGFyaXNvbiUyMGRlc2slMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMGNvbmZlcmVuY2UlMjBtZWV0aW5nJTIwdGFibGV8ZW58MXwwfHx8MTc4MDUyMjQ1MHww&ixlib=rb-4.1.0&q=80&w=1080)

@@ -8,7 +8,7 @@ tags:
   - 8217
   - second
 quality_score: 85.0
-cover_image: "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxNYXJhdGhvbiUyNTIwODIxNyUyNTIwc2Vjb25kJTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyNjk5MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1749006590324-d6b2e90ab1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwNTMwNDg1fDA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "마라톤의 두 번째 시즌, 새로운 기회 — Photo by Mārtiņš Zemlickis on Unsplash (https://unsplash.com/photos/people-running-on-road-during-daytime-NPFu4GfFZ7E)"
 ---
 ![마라톤의 두 번째 시즌, 새로운 기회 — Photo by Mārtiņš Zemlickis on Unsplash (https://unsplash.com/photos/people-running-on-road-during-daytime-NPFu4GfFZ7E)](https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxNYXJhdGhvbiUyNTIwODIxNyUyNTIwc2Vjb25kJTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyNjk5MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080)

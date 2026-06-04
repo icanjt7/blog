@@ -8,7 +8,7 @@ tags:
   - replaceable
   - batteries
 quality_score: 69.0
-cover_image: "https://images.unsplash.com/photo-1676337167752-2062c6ca7366?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxVc2VyJTI1MjByZXBsYWNlYWJsZSUyNTIwYmF0dGVyaWVzJTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyMjg5MDF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1742899273038-67ff67477663?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxiYXR0ZXJ5JTIwcG93ZXIlMjBlbmVyZ3klMjB0ZWNofGVufDF8MHx8fDE3ODA1MzMyOTd8MA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "사용자 교체 배터리, 다시 부상하다 — Photo by Newpowa on Unsplash (https://unsplash.com/photos/a-red-and-green-battery-with-a-pair-of-pliers-attached-to-it-9-eTixAqB_M)"
 ---
 ![사용자 교체 배터리, 다시 부상하다 — Photo by Newpowa on Unsplash (https://unsplash.com/photos/a-red-and-green-battery-with-a-pair-of-pliers-attached-to-it-9-eTixAqB_M)](https://images.unsplash.com/photo-1676337167752-2062c6ca7366?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxVc2VyJTI1MjByZXBsYWNlYWJsZSUyNTIwYmF0dGVyaWVzJTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyMjg5MDF8MA&ixlib=rb-4.1.0&q=80&w=1080)

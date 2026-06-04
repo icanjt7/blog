@@ -8,7 +8,7 @@ tags:
   - Little
   - Horse
 quality_score: 81.0
-cover_image: "https://images.unsplash.com/photo-1596292345761-561a07a038b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxGZWVibGUlMjUyMExpdHRsZSUyNTIwSG9yc2UlMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDI2NzA1Nnww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxkaWdpdGFsJTIwdGVjaG5vbG9neSUyMGFic3RyYWN0fGVufDF8MHx8fDE3ODA1MzA0ODl8MA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "디지털 이상성의 새 차원: Feeble Little Horse의 음악 세계 — Photo by yanmin yang on Unsplash (https://unsplash.com/photos/brown-horse-with-brown-leather-strap--yyTkybwU88)"
 ---
 ![디지털 이상성의 새 차원: Feeble Little Horse의 음악 세계 — Photo by yanmin yang on Unsplash (https://unsplash.com/photos/brown-horse-with-brown-leather-strap--yyTkybwU88)](https://images.unsplash.com/photo-1596292345761-561a07a038b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxGZWVibGUlMjUyMExpdHRsZSUyNTIwSG9yc2UlMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDI2NzA1Nnww&ixlib=rb-4.1.0&q=80&w=1080)

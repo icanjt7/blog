@@ -8,7 +8,7 @@ tags:
   - Build
   - 2026
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1631541737241-54e7f10d6bb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1680128370647-56557382933d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxzb2Z0d2FyZSUyMHdpbmRvd3MlMjB0ZWNobm9sb2d5fGVufDF8MHx8fDE3ODA1MzMyOTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "Microsoft Build 2026 주요 발표 7가지 — Photo by Jay Zhang on Unsplash"
 ---
 ![Microsoft Build 2026 주요 발표 7가지 — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1631541737241-54e7f10d6bb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

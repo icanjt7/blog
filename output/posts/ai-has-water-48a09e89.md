@@ -8,7 +8,7 @@ tags:
   - has
   - water
 quality_score: 100.0
-cover_image: "https://images.unsplash.com/photo-1476231682828-37e571bc172f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMGVudmlyb25tZW50JTIwbmF0dXJlJTIwZ3JlZW58ZW58MXwwfHx8MTc4MDQ3ODcxNHww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1697051090634-feb44b1559b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMGVudmlyb25tZW50JTIwbmF0dXJlJTIwZ3JlZW58ZW58MXwwfHx8MTc4MDUzMDQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "구글, 환경에 미치는 영향을 줄이기 위해 물 사용 약속 5가지 발표 — Photo by Geranimo on Unsplash (https://unsplash.com/photos/aerial-shot-of-road-surrounded-by-green-trees-qzgN45hseN0)"
 ---
 ![구글, 환경에 미치는 영향을 줄이기 위해 물 사용 약속 5가지 발표 — Photo by Geranimo on Unsplash (https://unsplash.com/photos/aerial-shot-of-road-surrounded-by-green-trees-qzgN45hseN0)](https://images.unsplash.com/photo-1476231682828-37e571bc172f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdCUyMGVudmlyb25tZW50JTIwbmF0dXJlJTIwZ3JlZW58ZW58MXwwfHx8MTc4MDQ3ODcxNHww&ixlib=rb-4.1.0&q=80&w=1080)

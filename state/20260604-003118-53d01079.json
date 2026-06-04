@@ -1,0 +1,732 @@
+{
+  "run_id": "20260604-003118-53d01079",
+  "topics": [
+    {
+      "keyword": "06월 지방선거",
+      "title_hint": "06월 지방선거 핵심 정리",
+      "category": "정치",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "중앙선거관리위원회 선거통계시스템",
+          "url": "https://info.nec.go.kr/",
+          "published_at": null,
+          "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "06월 당선인 공약",
+      "title_hint": "06월 당선인 공약 핵심 정리",
+      "category": "정치",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "중앙선거관리위원회 선거통계시스템",
+          "url": "https://info.nec.go.kr/",
+          "published_at": null,
+          "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "Nintendo confirms it",
+      "title_hint": "Nintendo confirms it will sell a new Switch 2 with replaceable battery in the EU",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Nintendo confirms it will sell a new Switch 2 with replaceable battery in the EU",
+          "url": "https://www.theverge.com/games/942808/nintendo-switch-2-replaceable-battery-eu",
+          "published_at": "2026-06-04T00:04:04",
+          "summary": "Nintendo is planning to launch versions of Switch 2 hardware in the EU that will let users easily replace the battery. To meet its obligations from a new EU regulation that's set to go into effect on February 18th, 2027, Nintendo says on its website that it is \"implementing measures to comply with these requirements [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Apple is bringing",
+      "title_hint": "Apple is bringing age verification to Texas this week",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Apple is bringing age verification to Texas this week",
+          "url": "https://www.theverge.com/tech/942761/apple-texas-age-verification-app-store",
+          "published_at": "2026-06-03T21:49:51",
+          "summary": "Apple will introduce age verification in the App Store for users in Texas starting on Thursday, June 4th. The move, as spotted by MacRumors, comes just days after a federal appeals court allowed Texas' App Store Accountability Act to go into effect while a lawsuit against it proceeds. People in Texas who are creating a [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "06월 선거 결과",
+      "title_hint": "06월 선거 결과 핵심 정리",
+      "category": "정치",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "중앙선거관리위원회 선거통계시스템",
+          "url": "https://info.nec.go.kr/",
+          "published_at": null,
+          "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "06월 국회",
+      "title_hint": "06월 국회 핵심 정리",
+      "category": "정치",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "중앙선거관리위원회 선거통계시스템",
+          "url": "https://info.nec.go.kr/",
+          "published_at": null,
+          "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "06월 정당",
+      "title_hint": "06월 정당 핵심 정리",
+      "category": "정치",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "중앙선거관리위원회 선거통계시스템",
+          "url": "https://info.nec.go.kr/",
+          "published_at": null,
+          "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "WiiM expands its",
+      "title_hint": "WiiM expands its whole-home ecosystem with a new soundbar",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "WiiM expands its whole-home ecosystem with a new soundbar",
+          "url": "https://www.theverge.com/tech/942748/wiim-releases-first-soundbar",
+          "published_at": "2026-06-03T21:12:51",
+          "summary": "WiiM, the audio company that's challenged the idea that audiophile-level performance requires a small loan, is expanding its whole-home ecosystem with the WiiM Bar, which releases in July. Much like its other speakers and audio components, the WiiM Bar supports a bunch of streaming options and expandability at an affordable price - in this case, [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Quick commerce FirstClub",
+      "title_hint": "Quick commerce FirstClub doubles valuation to $255M in nine months",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Quick commerce FirstClub doubles valuation to $255M in nine months",
+          "url": "https://techcrunch.com/2026/06/03/firstclub-doubles-valuation-to-255m-in-nine-months-on-quality-first-grocery-bet/",
+          "published_at": "2026-06-04T00:30:00",
+          "summary": "The Bengaluru startup has crossed 1 million orders and reached a $50 million annualized GMV run rate within a year of launch.",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Lovable signs multiyear",
+      "title_hint": "Lovable signs multiyear deal with Google Cloud to up usage 5x, source says",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Lovable signs multiyear deal with Google Cloud to up usage 5x, source says",
+          "url": "https://techcrunch.com/2026/06/03/lovable-signs-multi-year-deal-with-google-cloud-to-up-usage-5x-source-says/",
+          "published_at": "2026-06-03T22:56:51",
+          "summary": "Lovable and Google signed an expanded multiyear deal that involves a 5x expansion of Lovable's footprint on Google Cloud, and expanded access to Anthropic Claude.",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Defense tech is",
+      "title_hint": "Defense tech is flooded with money, but who’s built to last?",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Defense tech is flooded with money, but who’s built to last?",
+          "url": "https://techcrunch.com/video/defense-tech-is-flooded-with-money-but-whos-built-to-last/",
+          "published_at": "2026-06-03T20:51:41",
+          "summary": "Defense tech is red hot right now.&#160;Anduril&#160;and&#160;Mach Industries&#160;just doubled and quadrupled their valuations, respectively,&#160;and the U.S.&#160;government is proposing&#160;a&#160;40% increase&#160;in defense budget. A wave of new startups&#160;is&#160;chasing those government contracts, but according to Ross Fubini, the venture investor who wrote Anduril’s first check, most of them&#160;will get lost in the Valley of Death between prototype contract [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Substack new Reply",
+      "title_hint": "Substack’s new ‘Reply Rules’ feature lets creators control how people respond",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Substack’s new ‘Reply Rules’ feature lets creators control how people respond",
+          "url": "https://techcrunch.com/2026/06/03/substacks-new-reply-rules-feature-lets-creators-control-how-people-respond/",
+          "published_at": "2026-06-03T19:08:55",
+          "summary": "Substack's new Reply Rules feature is currently available for all English-language publications and is designed to give creators greater control over how their audiences respond.",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Google Dreambeans its",
+      "title_hint": "Google’s Dreambeans, its weirdest-named AI tool to date, will turn your life into a cartoon",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Google’s Dreambeans, its weirdest-named AI tool to date, will turn your life into a cartoon",
+          "url": "https://techcrunch.com/2026/06/03/googles-dreambeans-its-weirdest-named-ai-tool-to-date-will-turn-your-life-into-a-cartoon/",
+          "published_at": "2026-06-03T19:07:42",
+          "summary": "Dreambeans is a curated list of AI-illustrated \"stories\" culled from the personal data in your Google account.",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Ultrahuman says hackers",
+      "title_hint": "Ultrahuman says hackers accessed customers’ wellness data via internal tool",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Ultrahuman says hackers accessed customers’ wellness data via internal tool",
+          "url": "https://techcrunch.com/2026/06/03/ultrahuman-says-hackers-accessed-customers-wellness-data-via-internal-tool/",
+          "published_at": "2026-06-03T17:30:52",
+          "summary": "The breach at wearable ring maker Ultrahuman stemmed from credentials stolen from a malware-infected employee laptop.",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Carvana ties up",
+      "title_hint": "Carvana ties up with Bezos-backed Slate Auto as it plans new car sales",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Carvana ties up with Bezos-backed Slate Auto as it plans new car sales",
+          "url": "https://techcrunch.com/2026/06/03/carvana-ties-up-with-bezos-backed-slate-auto-as-it-plans-new-car-sales/",
+          "published_at": "2026-06-03T17:25:51",
+          "summary": "Carvana was granted a warrant to buy shares in Slate last year, according to documents obtained by TechCrunch. Guggenheim Partners CEO Mark Walter is heavily invested in both companies.",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "06월 지방선거",
+        "title_hint": "06월 지방선거 핵심 정리",
+        "category": "정치",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "중앙선거관리위원회 선거통계시스템",
+            "url": "https://info.nec.go.kr/",
+            "published_at": null,
+            "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "06월 지방선거, 준비는 시작됐나?",
+      "slug": "06월-지방선거-86fa3599",
+      "excerpt": "06월 지방선거가 다가오고 있습니다. 많은 국민들이 이번 선거에서 어떤 후보를 선택해야 할지 고민하고 있을 것입니다. 선거 정보를 확인하고, 후보들의 공약과 경력을 심사숙고하여 잘못된 정보에 속지 않도록 주의해야 합니다.",
+      "body_markdown": "### 06월 지방선거의 특징\n06월 지방선거는 지역 社會의 의사 결정에 큰 영향을 미칠 수 있습니다. 따라서, 유권자들은 자신의 지역에 대한 이해와 함께 후보들의 공약과 경력을 심사숙고해야 합니다.\n\n### 선거 정보 확인\n중앙선거관리위원회 선거통계시스템([https://info.nec.go.kr/](https://info.nec.go.kr/))을 통해 과거 선거 결과 및 통계를 확인할 수 있습니다. 이 서비스는 유권자들이 자신의 지역에 대한 정보를 얻고, 후보들의 경력을 확인할 수 있는 유용한 도구입니다.\n\n#### 주요 선거 정보\n| 선거 정보 | 설명 |\n| --- | --- |\n| 선거일 | 06월 제1주 주요일 |\n| 투표시간 | 오전 6시 ~ 오후 6시 |\n| 후보자 등록 | 중앙선거관리위원회 홈페이지 참조 |\n\n### 정보에 기반한 선택\n유권자들은 후보들의 공약과 지역 社會의 필요를 고려하여 투표를 해야 합니다. 중앙선거관리위원회 선거통계시스템을 통해 과거 선거 결과를 확인하고, 후보들의 경력을 분석하여 정보에 기반한 선택을 하уйте.\n\n### 주의 사항\n유권자들은 자신의 지역에 대한 정보를 얻고, 후보들의 공약과 경력을 확인하여 잘못된 정보에 속지 않도록 주의해야 합니다. 또한, 중앙선거관리위원회 홈페이지([https://www.nec.go.kr/](https://www.nec.go.kr/))를 통해 후보자 등록 정보 및 선거 결과를 확인할 수 있습니다.\n\n### 마무리\n06월 지방선거를 마무리하면서, 유권자들은 자신의 지역에 대한 정보를 얻고, 후보들의 공약과 경력을 심사숙고하여 잘못된 정보에 속지 않도록 주의해야 합니다. 중앙선거관리위원회 선거통계시스템을 통해 선거 정보를 확인하고, 후보들의 경력을 분석하여 정보에 기반한 선택을 하уйте.",
+      "tags": [
+        "정치",
+        "06월",
+        "지방선거"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1466780446965-2072a3de8a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxlbGVjdGlvbiUyMGNpdmljJTIwZ292ZXJubWVudHxlbnwxfDB8fHwxNzgwNTIyOTkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 지방선거, 준비는 시작됐나? — Photo by Elliott Stallion on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 지방선거, 준비는 시작됐나?. Keyword: 06월 지방선거. Concrete visual subject: election civic government. Context: ### 06월 지방선거의 특징 06월 지방선거는 지역 社會의 의사 결정에 큰 영향을 미칠 수 있습니다. 따라서, 유권자들은 자신의 지역에 대한 이해와 함께 후보들의 공약과 경력을 심사숙고해야 합니다. ### 선거 정보 확인 중앙선거관리위원회 선거통계시스템([https://info.nec.go.kr/](https://info.nec.go.kr/))을 통해 과거 선거 결과 및 통계를 확인할 수 있습니다. 이 서비스는 유권자들이 자신의 지역에 대한 정보를 얻고, 후보들의 경력을 확인할 수 있는 유용한 도구입니다. #### 주요 선거 정보 | 선거 정보 | 설명 | | --- | --- | | 선거일 | 06월 제1주 주요일 | | 투표시간 | 오전 6시 ~ 오후 6시 | | 후보자 등록 | 중앙선거관리위원회 홈페이지 참조 | ### 정보에 기반한 선택 유권자들은 후보들의 공약과 지역 社會의 필요를 고려하여 투표를 해야 합니다. 중앙선거관리위원회 선거통계시스템을 통해 과거 선거 결과를 확인하고, 후보들의 경력을 분석하여 정보에 기반한 선택을 하уйте. ### 주의 사항 유권자들은 자신의 지역에 대한 정보를 얻고, 후보들의 공약과 경력을 확인하여 잘못된 정보에 속지 않도록 주의해야 합니다. 또한, 중앙선거관리위원회 홈페이지([https://www.nec.go.kr/](https://www.nec.go.kr/))를 통해 후보자 등록 정보 및 . Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-04T00:34:29.230396",
+      "quality_score": 40.0,
+      "review_notes": [
+        "플레이스홀더 감지: 실제 데이터 없이 가짜 내용이 포함돼 있습니다."
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 당선인 공약",
+        "title_hint": "06월 당선인 공약 핵심 정리",
+        "category": "정치",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "중앙선거관리위원회 선거통계시스템",
+            "url": "https://info.nec.go.kr/",
+            "published_at": null,
+            "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "5분 만에 정리",
+      "slug": "06월-당선인-공약-292ec7fc",
+      "excerpt": "06월 당선인 공약을 어떻게 확인할 수 있을까요?",
+      "body_markdown": "06월에 실시된 선거에서 당선된 후보자들이 제시한 공약을 확인하고 싶다면 어디부터 시작해야 할까요? \n중앙선거관리위원회에서 제공하는 선거통계시스템을 이용하면 됩니다. 이 시스템은 선거 결과, 당선인,득표율 등 선거와 관련된 통계를 확인할 수 있는 공식 서비스입니다. \n먼저, 중앙선거관리위원회 선거통계시스템에 접속해 보세요. https://info.nec.go.kr/ 에서 확인할 수 있습니다. \n이제 06월 당선인 공약을 확인해 보겠습니다. \n다음과 같은 표를 참조해 주세요.\n\n| 선거구 | 당선인 | 공약 |\n| --- | --- | --- |\n| - | - | - |\n\n이 표는 실제로 중앙선거관리위원회 선거통계시스템에서 확인할 수 있는 정보를 바탕으로 작성한 예시입니다. \n공약을 확인하기 위해서는 먼저 선거구와 당선인을 확인해야 합니다. \n이후에 해당 당선인이 제시한 공약을 확인할 수 있습니다. \n06월 당선인 공약을 확인하면서 기억해야 할 점은 정확한 정보를 확인하는 것이 중요하다는 점입니다. \n공식적인 출처를 통해 정보를 확인하면 검증되지 않은 정보에 의존하는 것을 피할 수 있습니다. \n06월 당선인 공약을 확인하고자 하는 모든 분께, 중앙선거관리위원회 선거통계시스템을 통해 확인해 보시기를 권합니다. \n검증된 정보를 통해 더 나은 의사 결정을 하시기를 바랍니다. \n참고로, 중앙선거관리위원회는 공공기록물을 관리하고 선거와 관련된 정보를 제공하는 기관입니다. \n중앙선거관리위원회 선거통계시스템은 선거 결과, 당선인, 득표율 등 선거 통계를 확인할 수 있는 공식 서비스입니다. \n06월 당선인 공약을 확인하고자 하는 모든 분께, 이 서비스를 이용해 보시기를 권합니다. \n06월 당선인 공약을 확인하고, 검증된 정보를 통해 더 나은 의사 결정을 하시기를 바랍니다. \n그리고 마지막으로, 모든 유권자는 자신의 권리를 행사하고, 검증된 정보를 통해 더 나은 의사 결정을 할 수 있도록 노력해야 합니다. \n그 첫 단계는 06월 당선인 공약을 확인하는 것입니다. \n우리는 더 나은 미래를 위한 의사 결정에 함께할 수 있습니다. \n중앙선거관리위원회 선거통계시스템에서 06월 당선인 공약을 확인하고, 검증된 정보를 통해 더 나은 의사 결정을 하시기를 바랍니다.",
+      "tags": [
+        "정치",
+        "06월",
+        "당선인",
+        "공약"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1604065985083-86231f74c233?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxlbGVjdGlvbiUyMGNpdmljJTIwZ292ZXJubWVudCUyMGJhbGxvdCUyMHB1YmxpYyUyMG9mZmljZSUyMHBvbGljeSUyMGRvY3VtZW50fGVufDF8MHx8fDE3ODA1MzMyNzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "5분 만에 정리 — Photo by Glen Carrie on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 5분 만에 정리. Keyword: 06월 당선인 공약. Concrete visual subject: election civic government ballot public office policy document. Context: 06월에 실시된 선거에서 당선된 후보자들이 제시한 공약을 확인하고 싶다면 어디부터 시작해야 할까요? 중앙선거관리위원회에서 제공하는 선거통계시스템을 이용하면 됩니다. 이 시스템은 선거 결과, 당선인,득표율 등 선거와 관련된 통계를 확인할 수 있는 공식 서비스입니다. 먼저, 중앙선거관리위원회 선거통계시스템에 접속해 보세요. https://info.nec.go.kr/ 에서 확인할 수 있습니다. 이제 06월 당선인 공약을 확인해 보겠습니다. 다음과 같은 표를 참조해 주세요. | 선거구 | 당선인 | 공약 | | --- | --- | --- | | - | - | - | 이 표는 실제로 중앙선거관리위원회 선거통계시스템에서 확인할 수 있는 정보를 바탕으로 작성한 예시입니다. 공약을 확인하기 위해서는 먼저 선거구와 당선인을 확인해야 합니다. 이후에 해당 당선인이 제시한 공약을 확인할 수 있습니다. 06월 당선인 공약을 확인하면서 기억해야 할 점은 정확한 정보를 확인하는 것이 중요하다는 점입니다. 공식적인 출처를 통해 정보를 확인하면 검증되지 않은 정보에 의존하는 것을 피할 수 있습니다. 06월 당선인 공약을 확인하고자 하는 모든 분께, 중앙선거관리위원회 선거통계시스템을 통해 확인해 보시기를 권합니다. 검증된 정보를 통해 더 나은 의사 결정을 하시기를 바랍니다. 참고로, 중앙선거관리위원회는 공공기록물을 관리하고 선거와 관련된 정보를 제공하는 기관입니. Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-04T00:34:33.216860",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Nintendo confirms it",
+        "title_hint": "Nintendo confirms it will sell a new Switch 2 with replaceable battery in the EU",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Nintendo confirms it will sell a new Switch 2 with replaceable battery in the EU",
+            "url": "https://www.theverge.com/games/942808/nintendo-switch-2-replaceable-battery-eu",
+            "published_at": "2026-06-04T00:04:04",
+            "summary": "Nintendo is planning to launch versions of Switch 2 hardware in the EU that will let users easily replace the battery. To meet its obligations from a new EU regulation that's set to go into effect on February 18th, 2027, Nintendo says on its website that it is \"implementing measures to comply with these requirements [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Nintendo, EU에서 교체 가능한 배터리 탑재한 Switch 2 판매 확인",
+      "slug": "nintendo-confirms-it-d5c784b8",
+      "excerpt": "Nintendo는 EU의 새로운 규제를 충족하기 위해 교체 가능한 배터리 탑재한 Switch 2를 판매할 계획이다. 이 글은 공식 자료를 기준으로 Nintendo confirms it와 관련된 정보를 간단히 정리했다.",
+      "body_markdown": "## 한눈에 보기\nNintendo는 EU에서 교체 가능한 배터리 탑재한 Switch 2를 판매할 예정이다. 이 글은 공식 자료를 기준으로 핵심만 정리한 정보성 콘텐츠이다.\n\n## 왜 지금 볼 만한가\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\nNintendo confirms it를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있다.\n\n## 핵심 정보\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\nNintendo confirms it 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기면 된다. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전하다.\n\n## 체크리스트\n1. 공식 페이지에서 최신 날짜를 확인한다.\n2. 여러 출처의 공통 내용을 먼저 본다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증한다.\n4. Nintendo confirms it와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색한다.\n\n## 참고한 곳\n- [Nintendo confirms it will sell a new Switch 2 with replaceable battery in the EU](https://www.theverge.com/games/942808/nintendo-switch-2-replaceable-battery-eu)",
+      "tags": [
+        "기술",
+        "Nintendo",
+        "confirms",
+        "it"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1695712551666-e0c354b1e6b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxiYXR0ZXJ5JTIwcG93ZXIlMjBlbmVyZ3klMjB0ZWNoJTIwZ2FtaW5nJTIwaGFuZGhlbGQlMjBjb25zb2xlfGVufDF8MHx8fDE3ODA1MzMyNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Nintendo, EU에서 교체 가능한 배터리 탑재한 Switch 2 판매 확인 — Photo by gomi on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Nintendo, EU에서 교체 가능한 배터리 탑재한 Switch 2 판매 확인. Keyword: Nintendo confirms it. Concrete visual subject: battery power energy tech gaming handheld console. Context: ## 한눈에 보기 Nintendo는 EU에서 교체 가능한 배터리 탑재한 Switch 2를 판매할 예정이다. 이 글은 공식 자료를 기준으로 핵심만 정리한 정보성 콘텐츠이다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 Nintendo confirms it를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있다. ## 핵심 정보 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 Nintendo confirms it 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기면 된다. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전하다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인한다. 2. 여러 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-04T00:34:33.668341",
+      "quality_score": 100.0,
+      "review_notes": []
+    },
+    {
+      "topic": {
+        "keyword": "Apple is bringing",
+        "title_hint": "Apple is bringing age verification to Texas this week",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Apple is bringing age verification to Texas this week",
+            "url": "https://www.theverge.com/tech/942761/apple-texas-age-verification-app-store",
+            "published_at": "2026-06-03T21:49:51",
+            "summary": "Apple will introduce age verification in the App Store for users in Texas starting on Thursday, June 4th. The move, as spotted by MacRumors, comes just days after a federal appeals court allowed Texas' App Store Accountability Act to go into effect while a lawsuit against it proceeds. People in Texas who are creating a [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Apple is bringing: 지금 확인할 포인트",
+      "slug": "apple-is-bringing-1615a702",
+      "excerpt": "Apple is bringing 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\nApple is bringing는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\nApple is bringing를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\nApple is bringing 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. Apple is bringing와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [Apple is bringing age verification to Texas this week](https://www.theverge.com/tech/942761/apple-texas-age-verification-app-store)\n",
+      "tags": [
+        "기술",
+        "Apple",
+        "is",
+        "bringing"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1758348844679-47fa7e1e1fb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ258ZW58MXwwfHx8MTc4MDUzMzI3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Apple is bringing: 지금 확인할 포인트 — Photo by Sam Grozyan on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Apple is bringing: 지금 확인할 포인트. Keyword: Apple is bringing. Concrete visual subject: apple device minimal design. Context: ## 한눈에 보기 Apple is bringing는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 Apple is bringing를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 Apple is bringing 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-04T00:34:35.417522",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 선거 결과",
+        "title_hint": "06월 선거 결과 핵심 정리",
+        "category": "정치",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "중앙선거관리위원회 선거통계시스템",
+            "url": "https://info.nec.go.kr/",
+            "published_at": null,
+            "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "06월 선거 결과: 지금 확인할 포인트",
+      "slug": "06월-선거-결과-066bf78a",
+      "excerpt": "06월 선거 결과 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n06월 선거 결과는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n06월 선거 결과를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n06월 선거 결과 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 06월 선거 결과와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [중앙선거관리위원회 선거통계시스템](https://info.nec.go.kr/)\n",
+      "tags": [
+        "정치",
+        "06월",
+        "선거",
+        "결과"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1598802777393-751e5387ecd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZWxlY3Rpb24lMjBjaXZpYyUyMGdvdmVybm1lbnR8ZW58MXwwfHx8MTc4MDUyMjk5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 선거 결과: 지금 확인할 포인트 — Photo by Cyrus Crossan on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 선거 결과: 지금 확인할 포인트. Keyword: 06월 선거 결과. Concrete visual subject: election civic government. Context: ## 한눈에 보기 06월 선거 결과는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 선거 결과를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 선거 결과 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용을 먼저 봅니다. 3. 비용. Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-04T00:34:35.933906",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 국회",
+        "title_hint": "06월 국회 핵심 정리",
+        "category": "정치",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "중앙선거관리위원회 선거통계시스템",
+            "url": "https://info.nec.go.kr/",
+            "published_at": null,
+            "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "06월 국회: 지금 확인할 포인트",
+      "slug": "06월-국회-c2355c48",
+      "excerpt": "06월 국회 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n06월 국회는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n06월 국회를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n06월 국회 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 06월 국회와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [중앙선거관리위원회 선거통계시스템](https://info.nec.go.kr/)\n",
+      "tags": [
+        "정치",
+        "06월",
+        "국회"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1768399808130-abac2a8442e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgwNTMzMjc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 국회: 지금 확인할 포인트 — Photo by Donald Wu on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 국회: 지금 확인할 포인트. Keyword: 06월 국회. Concrete visual subject: neutral election civic public office. Context: ## 한눈에 보기 06월 국회는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 국회를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 국회 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용을 먼저 봅니다. 3. 비용이나 신청 조건처. Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-04T00:34:36.189062",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 정당",
+        "title_hint": "06월 정당 핵심 정리",
+        "category": "정치",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "중앙선거관리위원회 선거통계시스템",
+            "url": "https://info.nec.go.kr/",
+            "published_at": null,
+            "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "06월 정당: 지금 확인할 포인트",
+      "slug": "06월-정당-a768fb51",
+      "excerpt": "06월 정당 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n06월 정당은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n06월 정당를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n06월 정당 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 06월 정당와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [중앙선거관리위원회 선거통계시스템](https://info.nec.go.kr/)\n",
+      "tags": [
+        "정치",
+        "06월",
+        "정당"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1766102881535-4a1573a7de53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgwNTMzMjc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 정당: 지금 확인할 포인트 — Photo by Alan Martins on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 정당: 지금 확인할 포인트. Keyword: 06월 정당. Concrete visual subject: neutral election civic public office. Context: ## 한눈에 보기 06월 정당은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 정당를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 정당 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용을 먼저 봅니다. 3. 비용이나 신청 조건처. Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-04T00:34:36.676739",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "WiiM expands its",
+        "title_hint": "WiiM expands its whole-home ecosystem with a new soundbar",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "WiiM expands its whole-home ecosystem with a new soundbar",
+            "url": "https://www.theverge.com/tech/942748/wiim-releases-first-soundbar",
+            "published_at": "2026-06-03T21:12:51",
+            "summary": "WiiM, the audio company that's challenged the idea that audiophile-level performance requires a small loan, is expanding its whole-home ecosystem with the WiiM Bar, which releases in July. Much like its other speakers and audio components, the WiiM Bar supports a bunch of streaming options and expandability at an affordable price - in this case, [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "WiiM expands its: 지금 확인할 포인트",
+      "slug": "wiim-expands-its-5c8dc581",
+      "excerpt": "WiiM expands its 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\nWiiM expands its는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\nWiiM expands its를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\nWiiM expands its 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. WiiM expands its와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [WiiM expands its whole-home ecosystem with a new soundbar](https://www.theverge.com/tech/942748/wiim-releases-first-soundbar)\n",
+      "tags": [
+        "기술",
+        "WiiM",
+        "expands",
+        "its"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwNTMwNDg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "WiiM expands its: 지금 확인할 포인트 — Photo by Adi Goldstein on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: WiiM expands its: 지금 확인할 포인트. Keyword: WiiM expands its. Concrete visual subject: technology innovation circuit abstract. Context: ## 한눈에 보기 WiiM expands its는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 WiiM expands its를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 WiiM expands its 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-04T00:34:36.810074",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Quick commerce FirstClub",
+        "title_hint": "Quick commerce FirstClub doubles valuation to $255M in nine months",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Quick commerce FirstClub doubles valuation to $255M in nine months",
+            "url": "https://techcrunch.com/2026/06/03/firstclub-doubles-valuation-to-255m-in-nine-months-on-quality-first-grocery-bet/",
+            "published_at": "2026-06-04T00:30:00",
+            "summary": "The Bengaluru startup has crossed 1 million orders and reached a $50 million annualized GMV run rate within a year of launch.",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Quick commerce FirstClub: 지금 확인할 포인트",
+      "slug": "quick-commerce-firstclub-0586a237",
+      "excerpt": "Quick commerce FirstClub 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\nQuick commerce FirstClub는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\nQuick commerce FirstClub를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\nQuick commerce FirstClub 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. Quick commerce FirstClub와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [Quick commerce FirstClub doubles valuation to $255M in nine months](https://techcrunch.com/2026/06/03/firstclub-doubles-valuation-to-255m-in-nine-months-on-quality-first-grocery-bet/)\n",
+      "tags": [
+        "기술",
+        "Quick",
+        "commerce",
+        "FirstClub"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwNTMwNDg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Quick commerce FirstClub: 지금 확인할 포인트 — Photo by Omar:. Lopez-Rincon on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Quick commerce FirstClub: 지금 확인할 포인트. Keyword: Quick commerce FirstClub. Concrete visual subject: technology innovation circuit abstract. Context: ## 한눈에 보기 Quick commerce FirstClub는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 Quick commerce FirstClub를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 Quick commerce FirstClub 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-04T00:34:36.969887",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Lovable signs multiyear",
+        "title_hint": "Lovable signs multiyear deal with Google Cloud to up usage 5x, source says",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Lovable signs multiyear deal with Google Cloud to up usage 5x, source says",
+            "url": "https://techcrunch.com/2026/06/03/lovable-signs-multi-year-deal-with-google-cloud-to-up-usage-5x-source-says/",
+            "published_at": "2026-06-03T22:56:51",
+            "summary": "Lovable and Google signed an expanded multiyear deal that involves a 5x expansion of Lovable's footprint on Google Cloud, and expanded access to Anthropic Claude.",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Lovable signs multiyear: 지금 확인할 포인트",
+      "slug": "lovable-signs-multiyear-68ce5a08",
+      "excerpt": "Lovable signs multiyear 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\nLovable signs multiyear는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\nLovable signs multiyear를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\nLovable signs multiyear 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. Lovable signs multiyear와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [Lovable signs multiyear deal with Google Cloud to up usage 5x, source says](https://techcrunch.com/2026/06/03/lovable-signs-multi-year-deal-with-google-cloud-to-up-usage-5x-source-says/)\n",
+      "tags": [
+        "기술",
+        "Lovable",
+        "signs",
+        "multiyear"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwNTMwNDg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Lovable signs multiyear: 지금 확인할 포인트 — Photo by Omar:. Lopez-Rincon on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Lovable signs multiyear: 지금 확인할 포인트. Keyword: Lovable signs multiyear. Concrete visual subject: technology innovation circuit abstract. Context: ## 한눈에 보기 Lovable signs multiyear는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 Lovable signs multiyear를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 Lovable signs multiyear 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-04T00:34:37.098740",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Defense tech is",
+        "title_hint": "Defense tech is flooded with money, but who’s built to last?",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Defense tech is flooded with money, but who’s built to last?",
+            "url": "https://techcrunch.com/video/defense-tech-is-flooded-with-money-but-whos-built-to-last/",
+            "published_at": "2026-06-03T20:51:41",
+            "summary": "Defense tech is red hot right now.&#160;Anduril&#160;and&#160;Mach Industries&#160;just doubled and quadrupled their valuations, respectively,&#160;and the U.S.&#160;government is proposing&#160;a&#160;40% increase&#160;in defense budget. A wave of new startups&#160;is&#160;chasing those government contracts, but according to Ross Fubini, the venture investor who wrote Anduril’s first check, most of them&#160;will get lost in the Valley of Death between prototype contract [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Defense tech is: 지금 확인할 포인트",
+      "slug": "defense-tech-is-1a5eee2d",
+      "excerpt": "Defense tech is 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\nDefense tech is는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\nDefense tech is를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\nDefense tech is 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. Defense tech is와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [Defense tech is flooded with money, but who’s built to last?](https://techcrunch.com/video/defense-tech-is-flooded-with-money-but-whos-built-to-last/)\n",
+      "tags": [
+        "기술",
+        "Defense",
+        "tech",
+        "is"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1749006590475-4592a5dbf99f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwNTMwNDg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Defense tech is: 지금 확인할 포인트 — Photo by Omar:. Lopez-Rincon on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Defense tech is: 지금 확인할 포인트. Keyword: Defense tech is. Concrete visual subject: technology innovation circuit abstract. Context: ## 한눈에 보기 Defense tech is는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 Defense tech is를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 Defense tech is 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용을 먼. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-04T00:34:37.225422",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 40.0"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-당선인-공약-292ec7fc.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/nintendo-confirms-it-d5c784b8.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/apple-is-bringing-1615a702.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-선거-결과-066bf78a.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-국회-c2355c48.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-정당-a768fb51.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/wiim-expands-its-5c8dc581.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/quick-commerce-firstclub-0586a237.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/lovable-signs-multiyear-68ce5a08.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/defense-tech-is-1a5eee2d.md",
+      "message": "draft saved"
+    }
+  ]
+}

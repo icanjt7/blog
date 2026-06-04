@@ -8,7 +8,7 @@ tags:
   - look
   - at
 quality_score: 88.0
-cover_image: "https://images.unsplash.com/photo-1631541737952-7ec4486c75da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1750365919878-2735d30fa3d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwNTMwNDg1fDA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "마이크로소프트의 새로운 Surface 디바이스: 첫눈에 반한 Surface Laptop Ultra와 Surface Dev Box — Photo by Jay Zhang on Unsplash"
 ---
 ![마이크로소프트의 새로운 Surface 디바이스: 첫눈에 반한 Surface Laptop Ultra와 Surface Dev Box — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1631541737952-7ec4486c75da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

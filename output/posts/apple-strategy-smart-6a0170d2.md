@@ -8,7 +8,7 @@ tags:
   - strategy
   - smart
 quality_score: 84.0
-cover_image: "https://images.unsplash.com/photo-1615725802642-936d9aade2ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxBcHBsZSUyNTIwc3RyYXRlZ3klMjUyMHNtYXJ0JTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyNjY5NTR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1766503206581-6824e98f49de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ258ZW58MXwwfHx8MTc4MDUzMzI3NXww&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "Apple의 스마트 안경 전략, 새로운 시장 창조 — Photo by Jimmy Jin on Unsplash (https://unsplash.com/photos/people-standing-in-front-of-white-wall-IaDnLLFMqhk)"
 ---
 ![Apple의 스마트 안경 전략, 새로운 시장 창조 — Photo by Jimmy Jin on Unsplash (https://unsplash.com/photos/people-standing-in-front-of-white-wall-IaDnLLFMqhk)](https://images.unsplash.com/photo-1615725802642-936d9aade2ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxBcHBsZSUyNTIwc3RyYXRlZ3klMjUyMHNtYXJ0JTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyNjY5NTR8MA&ixlib=rb-4.1.0&q=80&w=1080)

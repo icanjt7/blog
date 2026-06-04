@@ -8,7 +8,7 @@ tags:
   - Bluetooth
   - trackers
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1636257020920-e087ff577240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1743491856718-cb51601e86dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx3ZWFyYWJsZSUyMHRyYWNrZXIlMjBjb21wYWN0JTIwZGV2aWNlJTIwYmx1ZXRvb3RoJTIwd2lyZWxlc3MlMjBjb25uZWN0aW9ufGVufDF8MHx8fDE3ODA1MzMyODF8MA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "블루투스 트래커로 쉽게 찾는 5분 전략 — Photo by Jay Zhang on Unsplash"
 ---
 ![블루투스 트래커로 쉽게 찾는 5분 전략 — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1636257020920-e087ff577240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

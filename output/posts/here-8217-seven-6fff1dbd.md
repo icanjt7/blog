@@ -8,7 +8,7 @@ tags:
   - 8217
   - seven
 quality_score: 73.0
-cover_image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1772587023179-d70e47f1acc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBlc3BvcnRzJTIwaW50ZXJhY3RpdmV8ZW58MXwwfHx8MTc4MDUzMDQ5MHww&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "PS5 울버린 7분 게임 플레이 영상公開 — Photo by Adi Goldstein on Unsplash"
 ---
 ![PS5 울버린 7분 게임 플레이 영상公開 — Photo by Adi Goldstein on Unsplash](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

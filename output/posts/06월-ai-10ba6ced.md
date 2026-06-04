@@ -7,7 +7,7 @@ tags:
   - 06월
   - AI
 quality_score: 81.0
-cover_image: "https://images.unsplash.com/photo-1561972465-05c968dc2c91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHwwNiUyNUVDJTI1OUIlMjU5NCUyNTIwQUklMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDI3MjQ4Mnww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgwNTMwNDc5fDA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "06월 AI, 새로운 기회와 도전 — Photo by Clyde He on Unsplash (https://unsplash.com/photos/a-close-up-of-a-micro-processor-chip-555k71dHQLA)"
 ---
 ![06월 AI, 새로운 기회와 도전 — Photo by Clyde He on Unsplash (https://unsplash.com/photos/a-close-up-of-a-micro-processor-chip-555k71dHQLA)](https://images.unsplash.com/photo-1561972465-05c968dc2c91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHwwNiUyNUVDJTI1OUIlMjU5NCUyNTIwQUklMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDI3MjQ4Mnww&ixlib=rb-4.1.0&q=80&w=1080)

@@ -8,7 +8,7 @@ tags:
   - signs
   - executive
 quality_score: 88.0
-cover_image: "https://images.unsplash.com/photo-1716436330152-a58390897652?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdHxlbnwxfDB8fHwxNzgwNDgwNzMyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgwNTMwNDc5fDA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "트럼프, AI 모델 공개 전 정부 심사 의무화: 보안 강화의 첫걸음? — Photo by BoliviaInteligente on Unsplash"
 ---
 ![트럼프, AI 모델 공개 전 정부 심사 의무화: 보안 강화의 첫걸음? — Photo by BoliviaInteligente on Unsplash](https://images.unsplash.com/photo-1716436330152-a58390897652?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdHxlbnwxfDB8fHwxNzgwNDgwNzMyfDA&ixlib=rb-4.1.0&q=80&w=1080)

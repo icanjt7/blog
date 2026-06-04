@@ -8,7 +8,7 @@ tags:
   - is
   - bringing
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1622286346003-c5c7e63b1088?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxEZWxsJTI1MjBpcyUyNTIwYnJpbmdpbmclMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDI2OTgzMnww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwNTMwNDg1fDA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "599달러부터 구매 가능한 새로운 XPS 13 — Photo by Its me Pravin on Unsplash (https://unsplash.com/photos/black-and-silver-asus-laptop-computer-0uVSMGdeUKM)"
 ---
 ![599달러부터 구매 가능한 새로운 XPS 13 — Photo by Its me Pravin on Unsplash (https://unsplash.com/photos/black-and-silver-asus-laptop-computer-0uVSMGdeUKM)](https://images.unsplash.com/photo-1622286346003-c5c7e63b1088?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxEZWxsJTI1MjBpcyUyNTIwYnJpbmdpbmclMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDI2OTgzMnww&ixlib=rb-4.1.0&q=80&w=1080)

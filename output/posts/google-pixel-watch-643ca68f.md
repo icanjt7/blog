@@ -8,7 +8,7 @@ tags:
   - Pixel
   - Watch
 quality_score: 73.0
-cover_image: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxHb29nbGUlMjUyMFBpeGVsJTI1MjBXYXRjaCUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMzU5MzY2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1696688713460-de12ac76ebc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxzbWFydHdhdGNoJTIwd2VhcmFibGUlMjB3cmlzdCUyMHRlY2glMjBkZXZpY2UlMjBzbWFydHBob25lJTIwZ29vZ2xlJTIwbW9kZXJuJTIwc2NyZWVuJTIwc2VhcmNoJTIwY2xvdWQlMjB0ZWNobm9sb2d5JTIwZ2FtaW5nJTIwZXNwb3J0cyUyMGludGVyYWN0aXZlfGVufDF8MHx8fDE3ODA1MzMyODl8MA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "구글 픽셀 워치 5, 첫 공개는 게임 개발자에게? — Photo by Mitchell Luo on Unsplash (https://unsplash.com/photos/google-logo-neon-light-signage-jz4ca36oJ_M)"
 ---
 ![구글 픽셀 워치 5, 첫 공개는 게임 개발자에게? — Photo by Mitchell Luo on Unsplash (https://unsplash.com/photos/google-logo-neon-light-signage-jz4ca36oJ_M)](https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxHb29nbGUlMjUyMFBpeGVsJTI1MjBXYXRjaCUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMzU5MzY2fDA&ixlib=rb-4.1.0&q=80&w=1080)

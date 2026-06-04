@@ -8,7 +8,7 @@ tags:
   - is
   - threatening
 quality_score: 73.0
-cover_image: "https://images.unsplash.com/photo-1662947036644-ecfde1221ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxNaWNyb3NvZnQlMjUyMGlzJTI1MjB0aHJlYXRlbmluZyUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjI0OTgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1662947036583-d67dd8055edf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzb2Z0d2FyZSUyMHdpbmRvd3MlMjB0ZWNobm9sb2d5fGVufDF8MHx8fDE3ODA1MzMyOTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "마이크로소프트, 왜 이제야 취약점 공개자에 법적 조치를 취하는가? — Photo by BoliviaInteligente on Unsplash (https://unsplash.com/photos/a-glass-of-beer-wIBDrEv73xY)"
 ---
 ![마이크로소프트, 왜 이제야 취약점 공개자에 법적 조치를 취하는가? — Photo by BoliviaInteligente on Unsplash (https://unsplash.com/photos/a-glass-of-beer-wIBDrEv73xY)](https://images.unsplash.com/photo-1662947036644-ecfde1221ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxNaWNyb3NvZnQlMjUyMGlzJTI1MjB0aHJlYXRlbmluZyUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjI0OTgwfDA&ixlib=rb-4.1.0&q=80&w=1080)

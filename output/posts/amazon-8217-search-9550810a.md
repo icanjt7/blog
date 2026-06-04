@@ -8,7 +8,7 @@ tags:
   - 8217
   - search
 quality_score: 84.0
-cover_image: "https://images.unsplash.com/photo-1631541737952-7ec4486c75da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1674027392857-9aed6e8ecab9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxjbG91ZCUyMGVjb21tZXJjZSUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc4MDUzMzI4MHww&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "Amazon 8217 search의 충격적 진실 — Photo by Jay Zhang on Unsplash"
 ---
 ![Amazon 8217 search의 충격적 진실 — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1631541737952-7ec4486c75da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)
