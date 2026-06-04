@@ -34,6 +34,26 @@ TOURISM_KEYWORDS = (
     "포차",
 )
 
+MEDICAL_TOURISM_KEYWORDS = (
+    "의료관광",
+    "의료 관광",
+    "메디컬",
+    "웰니스",
+    "건강검진",
+    "검진",
+    "병원",
+    "의원",
+    "클리닉",
+    "피부과",
+    "치과",
+    "한방",
+    "한의원",
+    "성형",
+    "미용",
+    "재활",
+    "치료",
+)
+
 
 REGION_HINTS: dict[str, tuple[str, str]] = {
     "서울": ("11", "11000"),
@@ -94,6 +114,7 @@ class TourApiSummary:
     sources: list[Source]
     related_count: int = 0
     rate_count: int = 0
+    medical_count: int = 0
 
 
 class TourApiClient:
@@ -101,18 +122,26 @@ class TourApiClient:
         self.settings = settings
         self.guide_endpoint = settings.tourapi_guide_endpoint.rstrip("/")
         self.rate_endpoint = settings.tourapi_rate_endpoint.rstrip("/")
+        self.mdc_endpoint = settings.tourapi_mdc_endpoint.rstrip("/")
 
     @staticmethod
     def is_tourism_topic(topic: Topic) -> bool:
         text = f"{topic.keyword} {topic.title_hint} {topic.rationale}"
         return topic.category == "핫이슈" and any(word in text for word in TOURISM_KEYWORDS)
 
+    @staticmethod
+    def is_medical_tourism_topic(topic: Topic) -> bool:
+        text = f"{topic.keyword} {topic.title_hint} {topic.rationale}"
+        return topic.category == "핫이슈" and any(word in text for word in MEDICAL_TOURISM_KEYWORDS)
+
     def enrich(self, topic: Topic) -> TourApiSummary:
-        if not self.is_tourism_topic(topic):
+        is_tourism = self.is_tourism_topic(topic)
+        is_medical_tourism = self.is_medical_tourism_topic(topic)
+        if not (is_tourism or is_medical_tourism):
             return TourApiSummary([])
 
         sources: list[Source] = []
-        related_items = self._fetch_related(topic)
+        related_items = self._fetch_related(topic) if is_tourism else []
         if related_items:
             sources.append(
                 Source(
@@ -123,7 +152,7 @@ class TourApiClient:
                 )
             )
 
-        rate_items = self._fetch_rate(topic)
+        rate_items = self._fetch_rate(topic) if is_tourism else []
         if rate_items:
             sources.append(
                 Source(
@@ -134,7 +163,18 @@ class TourApiClient:
                 )
             )
 
-        return TourApiSummary(sources, len(related_items), len(rate_items))
+        medical_items = self._fetch_medical_tourism(topic) if is_medical_tourism else []
+        if medical_items:
+            sources.append(
+                Source(
+                    title="한국관광공사 TourAPI 의료관광 정보",
+                    url="https://www.data.go.kr/",
+                    summary=self._summarise_medical_tourism(topic.keyword, medical_items),
+                    authority=5,
+                )
+            )
+
+        return TourApiSummary(sources, len(related_items), len(rate_items), len(medical_items))
 
     def _fetch_related(self, topic: Topic) -> list[dict]:
         if not self.settings.tourapi_guide_key:
@@ -187,6 +227,62 @@ class TourApiClient:
             },
         )
 
+    def _fetch_medical_tourism(self, topic: Topic) -> list[dict]:
+        if not self.settings.tourapi_mdc_key:
+            return []
+
+        base_params = self._base_params(self.settings.tourapi_mdc_key) | {
+            "numOfRows": "10",
+            "pageNo": "1",
+        }
+        items = self._get_items_first(
+            self._endpoint_candidates("searchKeyword"),
+            base_params
+            | {
+                "keyword": self._clean_keyword(topic.keyword),
+                "arrange": "Q",
+            },
+        )
+        if not items:
+            region = self._region_codes(topic.keyword)
+            if region:
+                area_cd, signgu_cd = region
+                items = self._get_items_first(
+                    self._endpoint_candidates("mdclTursmSyncList"),
+                    base_params
+                    | {
+                        "areaCode": area_cd,
+                        "sigunguCode": signgu_cd,
+                        "showflag": "1",
+                        "arrange": "Q",
+                    },
+                )
+        if not items:
+            return []
+
+        enriched: list[dict] = []
+        for item in items[:5]:
+            merged = dict(item)
+            content_id = self._pick(item, "contentid", "contentId")
+            content_type_id = self._pick(item, "contenttypeid", "contentTypeId")
+            if content_id:
+                detail_params = self._base_params(self.settings.tourapi_mdc_key) | {
+                    "contentId": content_id,
+                    "contentid": content_id,
+                    "defaultYN": "Y",
+                    "addrinfoYN": "Y",
+                    "mapinfoYN": "Y",
+                    "overviewYN": "Y",
+                    "_type": "json",
+                }
+                if content_type_id:
+                    detail_params |= {"contentTypeId": content_type_id, "contenttypeid": content_type_id}
+                merged |= self._first_item_from_candidates(self._endpoint_candidates("detailCommon"), detail_params)
+                merged |= self._first_item_from_candidates(self._endpoint_candidates("detailIntro"), detail_params)
+                merged |= self._first_item_from_candidates(self._endpoint_candidates("detailMdclTursm"), detail_params)
+            enriched.append(merged)
+        return enriched
+
     @staticmethod
     def _base_params(service_key: str) -> dict[str, str]:
         return {
@@ -225,6 +321,24 @@ class TourApiClient:
         if isinstance(items, list):
             return [item for item in items if isinstance(item, dict)]
         return []
+
+    def _get_items_first(self, urls: list[str], params: dict[str, str]) -> list[dict]:
+        for url in urls:
+            items = self._get_items(url, params)
+            if items:
+                return items
+        return []
+
+    def _first_item_from_candidates(self, urls: list[str], params: dict[str, str]) -> dict:
+        items = self._get_items_first(urls, params)
+        return items[0] if items else {}
+
+    def _endpoint_candidates(self, operation: str) -> list[str]:
+        if operation.endswith("2"):
+            names = [operation, operation[:-1]]
+        else:
+            names = [f"{operation}2", operation]
+        return [f"{self.mdc_endpoint}/{name}" for name in dict.fromkeys(names)]
 
     @staticmethod
     def _pick(item: dict, *names: str) -> str:
@@ -281,5 +395,40 @@ class TourApiClient:
         return (
             "TourAPI 관광지 집중률 정보는 KT 이동통신 기반 방문자 추이 예측값입니다. "
             "가장 붐비는 시기를 100으로 본 상대 수치이므로, 혼잡 가능성을 설명할 때만 보조 지표로 쓰세요. "
+            f"조회 키워드: {keyword}. 결과: {joined}"
+        )
+
+    def _summarise_medical_tourism(self, keyword: str, items: list[dict]) -> str:
+        rows: list[str] = []
+        for item in items[:8]:
+            title = self._pick(item, "title", "facltNm", "yadmNm", "contentNm") or keyword
+            addr = self._pick(item, "addr1", "addr2", "adres", "address")
+            tel = self._pick(item, "tel", "telno", "infocenter", "medicaltourinfo")
+            overview = self._pick(item, "overview", "treatitem", "mdclTursmInfo", "intro")
+            medical_info = self._pick(item, "treatitem", "mdclTursmInfo", "medicaltourinfo", "medicalTourInfo")
+            parking = self._pick(item, "parking", "parkingshopping", "parkingculture")
+            rest = self._pick(item, "restdate", "restdatehealth", "restdateculture", "chkcreditcard")
+            homepage = self._pick(item, "homepage", "firstimage")
+            parts = [title]
+            if addr:
+                parts.append(f"주소 {addr}")
+            if tel:
+                parts.append(f"문의 {tel}")
+            if overview:
+                parts.append(f"개요 {overview[:120]}")
+            if medical_info and medical_info != overview:
+                parts.append(f"의료관광 정보 {medical_info[:120]}")
+            if parking:
+                parts.append(f"주차 {parking}")
+            if rest:
+                parts.append(f"휴무/이용 참고 {rest}")
+            if homepage:
+                parts.append("공식/이미지 정보 있음")
+            rows.append(" · ".join(parts))
+        joined = " / ".join(rows)
+        return (
+            "TourAPI 의료관광 정보에서 가져온 공개 데이터입니다. "
+            "의료관광 글에서는 치료 효과나 안전성을 단정하지 말고, 주소·문의·운영정보·주차·공식 확인 경로를 중심으로 안내하세요. "
+            "예약, 진료 가능 여부, 통역, 비용, 준비서류는 방문 전 기관에 직접 확인해야 합니다. "
             f"조회 키워드: {keyword}. 결과: {joined}"
         )

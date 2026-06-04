@@ -54,6 +54,7 @@ jobs:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           TOURAPI_GUIDE: ${{ secrets.TOURAPI_GUIDE }}
           TOURAPI_RATE: ${{ secrets.TOURAPI_RATE }}
+          TOURAPI_MDC: ${{ secrets.TOURAPI_MDC }}
           TOURAPI_BASE_YM: ${{ vars.TOURAPI_BASE_YM || '202503' }}
           ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
           BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}

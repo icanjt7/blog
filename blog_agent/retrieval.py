@@ -107,7 +107,8 @@ class FactRetriever:
                 ]
                 topic.rationale = (
                     f"{topic.rationale} / TourAPI 연관 관광지 {tour_summary.related_count}건"
-                    f"{', 집중률 ' + str(tour_summary.rate_count) + '건' if tour_summary.rate_count else ''} 활용"
+                    f"{', 집중률 ' + str(tour_summary.rate_count) + '건' if tour_summary.rate_count else ''}"
+                    f"{', 의료관광 ' + str(tour_summary.medical_count) + '건' if tour_summary.medical_count else ''} 활용"
                 ).strip(" /")
 
         # 각 소스의 본문을 가져와서 summary를 보강한다

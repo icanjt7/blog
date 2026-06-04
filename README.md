@@ -78,6 +78,7 @@ docker compose -f docker-compose.wordpress.yml up -d
 - `BLOG_CUSTOM_DOMAIN`: GitHub Pages 커스텀 도메인, 설정 시 `CNAME` 자동 생성
 - `TOURAPI_GUIDE`: 한국관광공사 관광지별 연관 관광지 정보 API 키. 여행·카페거리·코스 글에서 주변 연관 관광지와 동선 근거로 사용합니다.
 - `TOURAPI_RATE`: 한국관광공사 관광지 집중률 방문자 추이 예측 정보 API 키. 관광 글에서 혼잡 가능성을 보는 보조 지표로 사용합니다.
+- `TOURAPI_MDC`: 한국관광공사 의료관광 정보 API 키. 의료관광 글에서 주소·문의·운영정보·주차·예약 전 확인 포인트를 보강합니다.
 - `TOURAPI_BASE_YM`: 연관 관광지 데이터 기준월, 기본값 `202503`
 - `WORDPRESS_URL`: 예: `https://example.com`
 - `WORDPRESS_USERNAME`
@@ -92,7 +93,7 @@ docker compose -f docker-compose.wordpress.yml up -d
 GitHub 저장소 Settings → Secrets and variables → Actions에 다음 값을 등록하세요.
 
 - `OPENAI_API_KEY`
-- 관광 글 보강 사용 시 `TOURAPI_GUIDE`, `TOURAPI_RATE`
+- 관광 글 보강 사용 시 `TOURAPI_GUIDE`, `TOURAPI_RATE`, `TOURAPI_MDC`
 - WordPress 사용 시 `WORDPRESS_URL`, `WORDPRESS_USERNAME`, `WORDPRESS_APP_PASSWORD`
 
 ## 실행 기록 확인
