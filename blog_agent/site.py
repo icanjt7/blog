@@ -177,6 +177,26 @@ class StaticSiteBuilder:
         "국가유산진흥원": "traditional korean culture heritage",
     }
 
+    # 기술 카테고리 폴백이 단일 쿼리로 수렴하지 않도록 다양한 후보 유지
+    _TECH_FALLBACK_POOL: tuple[str, ...] = (
+        "smartphone screen modern minimal",
+        "laptop computer workspace bright",
+        "artificial intelligence neural abstract",
+        "circuit board electronics close",
+        "software developer code screen",
+        "cloud network server datacenter",
+        "wireless device bluetooth minimal",
+        "wearable smartwatch fitness tech",
+        "gaming controller console modern",
+        "electric vehicle autonomous future",
+        "drone aerial modern tech",
+        "robot automation industrial future",
+        "satellite space science orbit",
+        "microscope science laboratory research",
+        "fiber optic cable network light",
+        "touchscreen display interface digital",
+    )
+
     def _fallback_cover_image(self, title: str, category: str, tags: list[str], slug: str) -> str:
         # for press release posts, inject institution-specific visual terms
         institution_query = ""
@@ -189,6 +209,10 @@ class StaticSiteBuilder:
         # if still generic fallback, use institution visual directly
         if institution_query and query in ("finance policy documents",):
             query = institution_query
+        # 기술 카테고리 전용 폴백: 카테고리 기본값으로 수렴하면 slug로 다양화
+        if category in ("기술", "tech") and query == "technology innovation circuit abstract":
+            idx = int(hashlib.md5(slug.encode("utf-8")).hexdigest()[:4], 16) % len(self._TECH_FALLBACK_POOL)
+            query = self._TECH_FALLBACK_POOL[idx]
         seed = int(hashlib.md5(slug.encode("utf-8")).hexdigest()[:8], 16) % 10000
         path = quote(",".join(query.split()[:5]))
         return f"https://loremflickr.com/1200/630/{path}?lock={seed}"
