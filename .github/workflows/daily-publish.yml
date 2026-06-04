@@ -51,6 +51,7 @@ jobs:
           TOURAPI_GUIDE: ${{ secrets.TOURAPI_GUIDE }}
           TOURAPI_RATE: ${{ secrets.TOURAPI_RATE }}
           TOURAPI_MDC: ${{ secrets.TOURAPI_MDC }}
+          TOURAPI_PET: ${{ secrets.TOURAPI_PET }}
           TOURAPI_BASE_YM: ${{ vars.TOURAPI_BASE_YM || '202503' }}
           # Blog settings
           BLOG_POST_COUNT: ${{ vars.DAILY_POST_COUNT || '10' }}

@@ -121,6 +121,46 @@ class TourApiClientTest(unittest.TestCase):
         self.assertIn("검진 상담", result.sources[0].summary)
         self.assertEqual(get.call_args_list[0].args[0], "https://apis.data.go.kr/B551011/KorService2/searchKeyword2")
 
+    def test_enrich_adds_pet_tourism_source(self) -> None:
+        settings = Settings(tourapi_pet_key="pet-key")
+        client = TourApiClient(settings)
+        topic = Topic(keyword="서울 반려동물 동반여행", title_hint="강아지와 가기 좋은 곳", category="핫이슈")
+
+        payloads = [
+            {
+                "response": {
+                    "body": {
+                        "items": {
+                            "item": [
+                                {
+                                    "contentid": "200",
+                                    "contenttypeid": "12",
+                                    "title": "서울펫파크",
+                                    "addr1": "서울특별시 성동구",
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {"response": {"body": {"items": {"item": [{"overview": "반려견 산책이 가능한 공원"}]}}}},
+            {"response": {"body": {"items": {"item": [{"parking": "주차 가능", "restdate": "월요일"}]}}}},
+            {"response": {"body": {"items": {"item": [{"relaPosesFclty": "반려견 놀이터"}]}}}},
+            {"response": {"body": {"items": {"item": [{"acmpyNeedMtr": "목줄 착용"}]}}}},
+            {"response": {"body": {"items": {"item": [{"originimgurl": "https://example.com/pet.jpg"}]}}}},
+        ]
+
+        with patch("blog_agent.tourapi.requests.get", side_effect=[_FakeResponse(p) for p in payloads]) as get:
+            result = client.enrich(topic)
+
+        self.assertEqual(result.pet_count, 1)
+        self.assertEqual(len(result.sources), 1)
+        self.assertIn("반려동물", result.sources[0].title)
+        self.assertIn("서울펫파크", result.sources[0].summary)
+        self.assertIn("목줄 착용", result.sources[0].summary)
+        self.assertIn("반려견 놀이터", result.sources[0].summary)
+        self.assertEqual(get.call_args_list[0].args[0], "https://apis.data.go.kr/B551011/KorPetTourService2/searchKeyword2")
+
 
 if __name__ == "__main__":
     unittest.main()

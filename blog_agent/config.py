@@ -34,9 +34,11 @@ class Settings(BaseModel):
     tourapi_guide_key: str | None = None     # 한국관광공사 관광지별 연관 관광지 정보
     tourapi_rate_key: str | None = None      # 한국관광공사 관광지 집중률 방문자 추이 예측 정보
     tourapi_mdc_key: str | None = None       # 한국관광공사 의료관광 정보
+    tourapi_pet_key: str | None = None       # 한국관광공사 반려동물 동반여행 정보
     tourapi_guide_endpoint: str = "https://apis.data.go.kr/B551011/TarRlteTarService1"
     tourapi_rate_endpoint: str = "https://apis.data.go.kr/B551011/TatsCnctrRateService"
     tourapi_mdc_endpoint: str = "https://apis.data.go.kr/B551011/KorService2"
+    tourapi_pet_endpoint: str = "https://apis.data.go.kr/B551011/KorPetTourService2"
     tourapi_base_ym: str = "202503"
 
     # Analytics & monetisation
@@ -90,9 +92,11 @@ def load_settings() -> Settings:
         tourapi_guide_key=os.getenv("TOURAPI_GUIDE") or None,
         tourapi_rate_key=os.getenv("TOURAPI_RATE") or None,
         tourapi_mdc_key=os.getenv("TOURAPI_MDC") or None,
+        tourapi_pet_key=os.getenv("TOURAPI_PET") or None,
         tourapi_guide_endpoint=os.getenv("TOURAPI_GUIDE_ENDPOINT", "https://apis.data.go.kr/B551011/TarRlteTarService1"),
         tourapi_rate_endpoint=os.getenv("TOURAPI_RATE_ENDPOINT", "https://apis.data.go.kr/B551011/TatsCnctrRateService"),
         tourapi_mdc_endpoint=os.getenv("TOURAPI_MDC_ENDPOINT", "https://apis.data.go.kr/B551011/KorService2"),
+        tourapi_pet_endpoint=os.getenv("TOURAPI_PET_ENDPOINT", "https://apis.data.go.kr/B551011/KorPetTourService2"),
         tourapi_base_ym=os.getenv("TOURAPI_BASE_YM", "202503"),
         ga_measurement_id=os.getenv("GA_MEASUREMENT_ID") or None,
         adsense_publisher_id=os.getenv("ADSENSE_PUBLISHER_ID") or None,
