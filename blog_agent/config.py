@@ -31,6 +31,11 @@ class Settings(BaseModel):
     unsplash_access_key: str | None = None   # 50 req/h free
     pexels_api_key: str | None = None        # 200 req/h free
     pixabay_api_key: str | None = None       # 100 req/min free
+    tourapi_guide_key: str | None = None     # 한국관광공사 관광지별 연관 관광지 정보
+    tourapi_rate_key: str | None = None      # 한국관광공사 관광지 집중률 방문자 추이 예측 정보
+    tourapi_guide_endpoint: str = "https://apis.data.go.kr/B551011/TarRlteTarService1"
+    tourapi_rate_endpoint: str = "https://apis.data.go.kr/B551011/TatsCnctrRateService"
+    tourapi_base_ym: str = "202503"
 
     # Analytics & monetisation
     ga_measurement_id: str | None = None    # Google Analytics 4: G-XXXXXXXXXX
@@ -80,6 +85,11 @@ def load_settings() -> Settings:
         unsplash_access_key=os.getenv("UNSPLASH_ACCESS_KEY") or None,
         pexels_api_key=os.getenv("PEXELS_API_KEY") or None,
         pixabay_api_key=os.getenv("PIXABAY_API_KEY") or None,
+        tourapi_guide_key=os.getenv("TOURAPI_GUIDE") or None,
+        tourapi_rate_key=os.getenv("TOURAPI_RATE") or None,
+        tourapi_guide_endpoint=os.getenv("TOURAPI_GUIDE_ENDPOINT", "https://apis.data.go.kr/B551011/TarRlteTarService1"),
+        tourapi_rate_endpoint=os.getenv("TOURAPI_RATE_ENDPOINT", "https://apis.data.go.kr/B551011/TatsCnctrRateService"),
+        tourapi_base_ym=os.getenv("TOURAPI_BASE_YM", "202503"),
         ga_measurement_id=os.getenv("GA_MEASUREMENT_ID") or None,
         adsense_publisher_id=os.getenv("ADSENSE_PUBLISHER_ID") or None,
         post_count=int(os.getenv("BLOG_POST_COUNT", "5")),

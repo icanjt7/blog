@@ -5,7 +5,9 @@ from html.parser import HTMLParser
 
 import requests
 
+from .config import Settings
 from .models import Source, Topic
+from .tourapi import TourApiClient
 
 _FALLBACK_SOURCES = {
     "생활": Source(
@@ -89,9 +91,24 @@ def _fetch_body(url: str, max_chars: int = 2000) -> str:
 
 
 class FactRetriever:
+    def __init__(self, settings: Settings | None = None) -> None:
+        self.tourapi = TourApiClient(settings) if settings else None
+
     def enrich(self, topic: Topic) -> Topic:
         if not topic.sources:
             topic.sources.append(_FALLBACK_SOURCES[topic.category])
+
+        if self.tourapi:
+            tour_summary = self.tourapi.enrich(topic)
+            if tour_summary.sources:
+                topic.sources = [
+                    *tour_summary.sources,
+                    *[source for source in topic.sources if "google.com/search" not in str(source.url)],
+                ]
+                topic.rationale = (
+                    f"{topic.rationale} / TourAPI 연관 관광지 {tour_summary.related_count}건"
+                    f"{', 집중률 ' + str(tour_summary.rate_count) + '건' if tour_summary.rate_count else ''} 활용"
+                ).strip(" /")
 
         # 각 소스의 본문을 가져와서 summary를 보강한다
         for source in topic.sources:

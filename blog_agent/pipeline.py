@@ -27,7 +27,7 @@ class BlogPipeline:
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
         self.scout = TrendScout(settings.state_dir)
-        self.retriever = FactRetriever()
+        self.retriever = FactRetriever(settings)
         self.writer = WriterAgent(settings)
         self.editor = SeoEditorAgent(settings)
         self.images = ImageAgent(settings)

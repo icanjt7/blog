@@ -106,6 +106,15 @@ class WriterAgent:
             f"- {source.title}: {source.url}\n  내용: {source.summary[:400]}"
             for source in topic.sources
         )
+        tourism_instruction = ""
+        if self._has_tourapi_source(topic):
+            tourism_instruction = f"""
+[TourAPI 관광 글 작성 지침]
+- 참고 출처에 한국관광공사 TourAPI 데이터가 있으면 본문에 반드시 반영한다.
+- 연관 관광지 정보는 '함께 묶을 곳', '동선 순서', '주변에서 볼 것'으로 풀어 쓴다.
+- 관광지 집중률 정보는 혼잡 가능성을 보는 보조 지표로만 설명하고, 실제 방문자 수처럼 단정하지 않는다.
+- "{topic.keyword}" 제목이 동선/코스/카페거리라면 일반적인 검색 확인법 대신 실제 이동 순서와 현장에서 볼 요소를 먼저 제시한다.
+"""
         hook_style = HOOK_STYLES[hash(topic.keyword) % len(HOOK_STYLES)]
         persona = PERSONAS[topic.category]
         prompt = f"""[페르소나]
@@ -131,6 +140,7 @@ class WriterAgent:
 - 핵심 키워드 "{topic.keyword}"는 4~7회만 자연스럽게 쓴다.
 - 본문 1,400~1,800자. 표 1개 이상 포함.
 - 마지막 문단은 독자에게 하나의 행동 권고나 확인 경로로 마무리.
+{tourism_instruction}
 
 [맥락 심화 — 반드시 포함]
 글에 등장하는 인물·작품·기업·제도가 있다면 독자가 처음 듣는 사람이라고 가정하고 아래를 설명한다:
@@ -173,6 +183,8 @@ BODY:
         )
 
     def _write_fallback(self, topic: Topic) -> Draft:
+        if self._has_tourapi_source(topic):
+            return self._write_tourism_fallback(topic)
         source_lines = "\n".join(f"- [{s.title}]({s.url})" for s in topic.sources)
         topic_with_subject = self._with_particle(topic.keyword, "은", "는")
         body = f"""## 한눈에 보기
@@ -219,6 +231,51 @@ BODY:
             tags=self._tags(topic),
         )
 
+    def _write_tourism_fallback(self, topic: Topic) -> Draft:
+        source_lines = "\n".join(f"- [{s.title}]({s.url})" for s in topic.sources)
+        tour_summaries = [s.summary for s in topic.sources if "TourAPI" in s.title]
+        summary_text = "\n".join(tour_summaries)[:1200]
+        topic_with_subject = self._with_particle(topic.keyword, "은", "는")
+        body = f"""## 한눈에 보기
+
+{topic_with_subject} 카페나 명소 한 곳만 찍는 글보다 실제로 어떻게 움직이면 좋은지가 더 중요합니다. 한국관광공사 TourAPI의 연관 관광지 데이터를 기준으로 보면, 먼저 대표 지점을 정하고 주변에서 함께 묶을 곳을 고르는 방식이 가장 안전합니다.
+
+## 추천 동선
+
+| 순서 | 볼 것 | 판단 기준 |
+| --- | --- | --- |
+| 1 | 대표 관광지 또는 거리 초입 | 이동 기준점으로 삼기 좋음 |
+| 2 | 연관 관광지·골목·상권 | TourAPI에서 함께 언급되는 주변 지점 확인 |
+| 3 | 카페·식사·휴식 지점 | 오래 머물 곳은 중간에 배치 |
+| 4 | 산책·야경·시장 등 마무리 지점 | 시간대와 혼잡도를 보고 조정 |
+
+{topic.keyword}를 처음 볼 때는 지도에서 가장 유명한 지점 하나를 먼저 찍고, 그 주변의 연관 장소를 2~3개만 더하는 편이 좋습니다. 동선을 너무 길게 잡으면 이동 시간이 늘어나고, 실제로는 카페나 식사 대기 때문에 뒤 일정이 밀리기 쉽습니다.
+
+## TourAPI에서 본 주변 포인트
+
+{summary_text or "TourAPI 응답은 있었지만 요약 가능한 항목이 제한적입니다. 공식 데이터는 연관 장소 확인용으로만 활용하세요."}
+
+## 이렇게 움직이면 편합니다
+
+1. 출발지는 대중교통역이나 주차 가능한 대표 지점으로 잡습니다.
+2. 첫 장소에서 바로 오래 머물기보다 주변 골목과 상권을 먼저 훑습니다.
+3. 카페나 식사는 동선 중간에 넣어 체력을 아낍니다.
+4. 관광지 집중률 데이터가 있으면 혼잡 가능성을 보는 보조 지표로만 참고합니다.
+5. 운영시간과 팝업 여부처럼 바뀌는 정보는 방문 당일 지도 앱에서 다시 확인합니다.
+
+## 참고한 곳
+
+{source_lines}
+"""
+        return Draft(
+            topic=topic,
+            title=f"{topic.keyword}, 처음 가면 이 동선",
+            slug=self._slug(topic.keyword),
+            excerpt=f"{topic.keyword} 방문 전 TourAPI 연관 관광지 데이터를 바탕으로 동선을 잡았습니다.",
+            body_markdown=body,
+            tags=self._tags(topic),
+        )
+
     @staticmethod
     def _extract(text: str, label: str, default: str) -> str:
         pattern = rf"{label}:\s*(.*?)(?=\n[A-Z]+:|\Z)"
@@ -235,6 +292,10 @@ BODY:
     def _tags(topic: Topic) -> list[str]:
         base = [topic.category, *topic.keyword.split()[:4]]
         return list(dict.fromkeys(base))
+
+    @staticmethod
+    def _has_tourapi_source(topic: Topic) -> bool:
+        return any("TourAPI" in source.title for source in topic.sources)
 
     @staticmethod
     def _with_particle(text: str, consonant_particle: str, vowel_particle: str) -> str:

@@ -52,6 +52,9 @@ jobs:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          TOURAPI_GUIDE: ${{ secrets.TOURAPI_GUIDE }}
+          TOURAPI_RATE: ${{ secrets.TOURAPI_RATE }}
+          TOURAPI_BASE_YM: ${{ vars.TOURAPI_BASE_YM || '202503' }}
           ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
           BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
         run: |

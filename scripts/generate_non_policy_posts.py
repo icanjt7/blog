@@ -298,7 +298,7 @@ def main() -> None:
     settings.publisher = "markdown"
     writer = WriterAgent(settings)
     editor = SeoEditorAgent(settings)
-    retriever = FactRetriever()
+    retriever = FactRetriever(settings)
     images = ImageAgent(settings)
     publisher = MarkdownPublisher(settings.output_dir)
 
