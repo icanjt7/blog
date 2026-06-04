@@ -45,6 +45,8 @@ AUTHOR_NAMES = [
     "나윤",
 ]
 
+GTM_CONTAINER_ID = "GTM-PRH78BZK"
+
 
 class StaticSiteBuilder:
     def __init__(
@@ -801,6 +803,18 @@ class StaticSiteBuilder:
         description: str | None = None,
         og_image: str | None = None,
     ) -> None:
+        gtm_id = html.escape(GTM_CONTAINER_ID)
+        gtm_head = f"""  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+  new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  }})(window,document,'script','dataLayer','{gtm_id}');</script>
+  <!-- End Google Tag Manager -->"""
+        gtm_body = f"""  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={gtm_id}"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->"""
         ga_script = ""
         if self.ga_measurement_id:
             mid = html.escape(self.ga_measurement_id)
@@ -844,6 +858,7 @@ class StaticSiteBuilder:
 <html lang="ko">
 <head>
   <meta charset="utf-8">
+{gtm_head}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{html.escape(title)}</title>
   <meta name="description" content="{html.escape(description)}">
@@ -865,6 +880,7 @@ class StaticSiteBuilder:
   <script type="application/ld+json">{structured_json}</script>{ga_script}{adsense_script}
 </head>
 <body>
+{gtm_body}
   <header class="site-header">
     <div class="page-shell">
       <div class="header-top">
