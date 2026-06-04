@@ -3,7 +3,7 @@ name: Daily blog publish
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */2 * * *"  # 2시간마다 (하루 12회, 1포스트/회)
+    - cron: "17 */2 * * *"  # 2시간마다, GitHub Actions 정각 혼잡을 피함
 
 concurrency:
   group: blog-publish
