@@ -59,6 +59,7 @@ jobs:
           TOURAPI_RATE: ${{ secrets.TOURAPI_RATE }}
           TOURAPI_MDC: ${{ secrets.TOURAPI_MDC }}
           TOURAPI_PET: ${{ secrets.TOURAPI_PET }}
+          TOURAPI_TOUR: ${{ secrets.TOURAPI_TOUR }}
           TOURAPI_BASE_YM: ${{ vars.TOURAPI_BASE_YM || '202503' }}
           ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
           ENABLE_IMAGE_GENERATION: ${{ vars.ENABLE_IMAGE_GENERATION || 'false' }}

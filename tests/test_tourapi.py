@@ -20,6 +20,46 @@ class _FakeResponse:
 
 
 class TourApiClientTest(unittest.TestCase):
+    def test_enrich_adds_korean_tourism_source(self) -> None:
+        settings = Settings(tourapi_tour_key="tour-key")
+        client = TourApiClient(settings)
+        topic = Topic(keyword="서울 성수 카페 동선", title_hint="처음 가면 이 동선", category="핫이슈")
+
+        payloads = [
+            {
+                "response": {
+                    "body": {
+                        "items": {
+                            "item": [
+                                {
+                                    "contentid": "300",
+                                    "contenttypeid": "12",
+                                    "title": "서울숲",
+                                    "addr1": "서울특별시 성동구",
+                                    "cat2": "자연관광지",
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {"response": {"body": {"items": {"item": [{"overview": "성수와 함께 묶기 좋은 공원"}]}}}},
+            {"response": {"body": {"items": {"item": [{"usetime": "상시", "parking": "공영주차장 이용"}]}}}},
+            {"response": {"body": {"items": {"item": [{"infoname": "산책", "infotext": "서울숲 산책로"}]}}}},
+            {"response": {"body": {"items": {"item": [{"originimgurl": "https://example.com/seoulforest.jpg"}]}}}},
+        ]
+
+        with patch("blog_agent.tourapi.requests.get", side_effect=[_FakeResponse(p) for p in payloads]) as get:
+            result = client.enrich(topic)
+
+        self.assertEqual(result.tour_count, 1)
+        self.assertEqual(len(result.sources), 1)
+        self.assertIn("국문 관광정보", result.sources[0].title)
+        self.assertIn("서울숲", result.sources[0].summary)
+        self.assertIn("성수와 함께 묶기 좋은 공원", result.sources[0].summary)
+        self.assertIn("공영주차장 이용", result.sources[0].summary)
+        self.assertEqual(get.call_args_list[0].args[0], "https://apis.data.go.kr/B551011/KorService2/searchKeyword2")
+
     def test_enrich_adds_related_and_rate_sources_for_tourism_topic(self) -> None:
         settings = Settings(tourapi_guide_key="guide-key", tourapi_rate_key="rate-key")
         client = TourApiClient(settings)

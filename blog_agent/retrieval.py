@@ -106,6 +106,8 @@ class FactRetriever:
                     *[source for source in topic.sources if "google.com/search" not in str(source.url)],
                 ]
                 tour_parts = []
+                if tour_summary.tour_count:
+                    tour_parts.append(f"국문 관광정보 {tour_summary.tour_count}건")
                 if tour_summary.related_count:
                     tour_parts.append(f"연관 관광지 {tour_summary.related_count}건")
                 if tour_summary.rate_count:
