@@ -8,7 +8,7 @@ tags:
   - to
   - watch
 quality_score: 84.0
-cover_image: ""
+cover_image: "https://images.unsplash.com/photo-1638193394203-670cf78605ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxIb3clMjUyMHRvJTI1MjB3YXRjaCUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjY2OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "NVIDIA 키노트 생중계 보는 방법 — Photo by Junjie Tam on Unsplash (https://unsplash.com/photos/a-black-and-white-photo-of-an-apple-watch-8Qn0sOiu_Y8)"
 ---
 ![NVIDIA 키노트 생중계 보는 방법 — Photo by Junjie Tam on Unsplash (https://unsplash.com/photos/a-black-and-white-photo-of-an-apple-watch-8Qn0sOiu_Y8)](https://images.unsplash.com/photo-1638193394203-670cf78605ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxIb3clMjUyMHRvJTI1MjB3YXRjaCUyNTIwdGVjaHxlbnwwfDB8fHwxNzgwMjY2OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080)

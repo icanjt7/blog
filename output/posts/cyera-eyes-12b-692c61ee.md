@@ -8,7 +8,7 @@ tags:
   - eyes
   - 12B
 quality_score: 92.0
-cover_image: ""
+cover_image: "https://images.unsplash.com/photo-1631541737241-54e7f10d6bb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "사이버 보안의 미래: Cyera eyes 12B의 12억 달러 평가 — Photo by Jay Zhang on Unsplash"
 ---
 ![사이버 보안의 미래: Cyera eyes 12B의 12억 달러 평가 — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1631541737241-54e7f10d6bb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

@@ -64,7 +64,11 @@ jobs:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
-        run: python -m blog_agent.cli re-image
+        run: |
+          # --force --category 기술: 기존 Unsplash URL을 새 쿼리로 소급 교체 (1회성)
+          python -m blog_agent.cli re-image --force --category 기술
+          # 그 외 카테고리는 빈 이미지만 채움
+          python -m blog_agent.cli re-image
 
       - name: Build static site
         env:

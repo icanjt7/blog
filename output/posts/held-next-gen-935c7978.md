@@ -8,7 +8,7 @@ tags:
   - next
   - gen
 quality_score: 96.0
-cover_image: ""
+cover_image: "https://images.unsplash.com/photo-1636257021575-660116eedbba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "'-held next gen' 휴대폰의 진실: 높은 성능과 효율성, 하지만... — Photo by Jay Zhang on Unsplash"
 ---
 !['-held next gen' 휴대폰의 진실: 높은 성능과 효율성, 하지만... — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1636257021575-660116eedbba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwZWRpdG9yaWFsfGVufDF8MHx8fDE3ODA0ODA3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080)

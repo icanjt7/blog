@@ -9,7 +9,7 @@ tags:
   - 번역
   - 도구
 quality_score: 100.0
-cover_image: ""
+cover_image: "https://images.unsplash.com/photo-1716436330152-a58390897652?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdHxlbnwxfDB8fHwxNzgwNDgwNzMyfDA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "무료 AI 번역 도구: 초보가 먼저 볼 기준 — Photo by BoliviaInteligente on Unsplash"
 ---
 ![무료 AI 번역 도구: 초보가 먼저 볼 기준 — Photo by BoliviaInteligente on Unsplash](https://images.unsplash.com/photo-1716436330152-a58390897652?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdHxlbnwxfDB8fHwxNzgwNDgwNzMyfDA&ixlib=rb-4.1.0&q=80&w=1080)

@@ -8,7 +8,7 @@ tags:
   - raises
   - 200M
 quality_score: 100.0
-cover_image: ""
+cover_image: "https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdHxlbnwxfDB8fHwxNzgwNDgwNzMyfDA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "Coralogix raises 200M: 지금 확인할 포인트 — Photo by Igor Omilaev on Unsplash"
 ---
 ![Coralogix raises 200M: 지금 확인할 포인트 — Photo by Igor Omilaev on Unsplash](https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdHxlbnwxfDB8fHwxNzgwNDgwNzMyfDA&ixlib=rb-4.1.0&q=80&w=1080)

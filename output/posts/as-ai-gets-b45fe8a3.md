@@ -8,7 +8,7 @@ tags:
   - AI
   - gets
 quality_score: 77.0
-cover_image: ""
+cover_image: "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdHxlbnwxfDB8fHwxNzgwNDgwNzMyfDA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "As AI gets, 비현실적인 약속을 드러내다 — Photo by Steve A Johnson on Unsplash"
 ---
 ![As AI gets, 비현실적인 약속을 드러내다 — Photo by Steve A Johnson on Unsplash](https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdHxlbnwxfDB8fHwxNzgwNDgwNzMyfDA&ixlib=rb-4.1.0&q=80&w=1080)

@@ -8,7 +8,7 @@ tags:
   - two
   - biggest
 quality_score: 73.0
-cover_image: ""
+cover_image: "https://images.unsplash.com/photo-1586426006315-b11fa075a76a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx3ZWVrZW5kJTI1MjB0d28lMjUyMGJpZ2dlc3QlMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDIyODk2OXww&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "주말 박스오피스 1, 2위 영화, 모두 유튜버 출신 감독? — Photo by Sincerely Media on Unsplash (https://unsplash.com/photos/scrabble-letters-spelling-out-the-word-yay-weekend-VjBL5PvEkbM)"
 ---
 ![주말 박스오피스 1, 2위 영화, 모두 유튜버 출신 감독? — Photo by Sincerely Media on Unsplash (https://unsplash.com/photos/scrabble-letters-spelling-out-the-word-yay-weekend-VjBL5PvEkbM)](https://images.unsplash.com/photo-1586426006315-b11fa075a76a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx3ZWVrZW5kJTI1MjB0d28lMjUyMGJpZ2dlc3QlMjUyMHRlY2h8ZW58MHwwfHx8MTc4MDIyODk2OXww&ixlib=rb-4.1.0&q=80&w=1080)

@@ -8,7 +8,7 @@ tags:
   - Qi2
   - batteries
 quality_score: 96.0
-cover_image: ""
+cover_image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwdGVjaG5vbG9neXxlbnwxfDB8fHwxNzgwNDgwNzMzfDA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "아이폰과 픽셀을 위한 5가지 최고의 Qi2 배터리 — Photo by William Hook on Unsplash"
 ---
 ![아이폰과 픽셀을 위한 5가지 최고의 Qi2 배터리 — Photo by William Hook on Unsplash](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwdGVjaG5vbG9neXxlbnwxfDB8fHwxNzgwNDgwNzMzfDA&ixlib=rb-4.1.0&q=80&w=1080)

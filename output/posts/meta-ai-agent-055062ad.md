@@ -8,7 +8,7 @@ tags:
   - AI
   - agent
 quality_score: 100.0
-cover_image: ""
+cover_image: "https://images.unsplash.com/photo-1739036868260-c26b292cd85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdHxlbnwxfDB8fHwxNzgwNDgwNzMyfDA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "Meta AI agent: 지금 확인할 포인트 — Photo by Igor Omilaev on Unsplash"
 ---
 ![Meta AI agent: 지금 확인할 포인트 — Photo by Igor Omilaev on Unsplash](https://images.unsplash.com/photo-1739036868260-c26b292cd85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2lyY3VpdHxlbnwxfDB8fHwxNzgwNDgwNzMyfDA&ixlib=rb-4.1.0&q=80&w=1080)

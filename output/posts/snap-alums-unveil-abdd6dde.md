@@ -8,7 +8,7 @@ tags:
   - alums
   - unveil
 quality_score: 73.0
-cover_image: ""
+cover_image: "https://images.unsplash.com/photo-1688678991326-a79b865c025d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxTbmFwJTI1MjBhbHVtcyUyNTIwdW52ZWlsJTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyMjg5ODV8MA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "스냅 전직 직원, 새로운 기회 열다 — Photo by Dave Adamson on Unsplash (https://unsplash.com/photos/a-close-up-of-a-computer-screen-with-a-message-on-it-PCuZzaY9WSc)"
 ---
 ![스냅 전직 직원, 새로운 기회 열다 — Photo by Dave Adamson on Unsplash (https://unsplash.com/photos/a-close-up-of-a-computer-screen-with-a-message-on-it-PCuZzaY9WSc)](https://images.unsplash.com/photo-1688678991326-a79b865c025d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxTbmFwJTI1MjBhbHVtcyUyNTIwdW52ZWlsJTI1MjB0ZWNofGVufDB8MHx8fDE3ODAyMjg5ODV8MA&ixlib=rb-4.1.0&q=80&w=1080)

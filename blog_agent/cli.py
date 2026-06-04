@@ -19,8 +19,17 @@ _CAT_MAP = {"tech": "기술", "living": "생활", "finance": "정책", "local": 
 _VALID_CATS = {"핫이슈", "기술", "정책", "생활", "정치"}
 
 
-def _reimage_posts(posts_dir: Path, settings, category_filter: str | None = None) -> int:
-    """Re-fetch cover images for posts that have an empty or picsum cover_image."""
+def _reimage_posts(
+    posts_dir: Path,
+    settings,
+    category_filter: str | None = None,
+    force: bool = False,
+) -> int:
+    """Re-fetch cover images for posts.
+
+    force=True: 기존 URL이 있어도 새 쿼리로 재요청 (소급 적용 시 사용).
+    force=False: 빈 이미지 / picsum URL 포스트만 처리 (평소 운영).
+    """
     agent = ImageAgent(settings)
     updated = 0
     for md_path in sorted(posts_dir.glob("*.md")):
@@ -30,16 +39,16 @@ def _reimage_posts(posts_dir: Path, settings, category_filter: str | None = None
         _, fm, body = raw.split("---", 2)
         meta = yaml.safe_load(fm) or {}
 
-        cover = str(meta.get("cover_image") or "")
-        if cover and "picsum.photos" not in cover:
-            continue  # 이미 유효한 이미지가 있으면 건너뜀
-
         raw_cat = str(meta.get("category") or "생활")
         cat = _CAT_MAP.get(raw_cat, raw_cat)
         if cat not in _VALID_CATS:
             cat = "생활"
         if category_filter and cat != category_filter:
             continue
+
+        cover = str(meta.get("cover_image") or "")
+        if not force and cover and "picsum.photos" not in cover:
+            continue  # 평소엔 유효한 이미지 건너뜀
 
         title = str(meta.get("title") or md_path.stem)
         tags = [str(t) for t in (meta.get("tags") or [])]
@@ -50,7 +59,8 @@ def _reimage_posts(posts_dir: Path, settings, category_filter: str | None = None
         draft = agent.attach_cover(draft)
 
         new_url = draft.cover_image_path or ""
-        if not new_url:
+        # picsum 폴백이면 저장하지 않음 (build-time loremflickr 폴백이 더 나음)
+        if not new_url or "picsum.photos" in new_url:
             continue
 
         new_fm = re.sub(r'^cover_image:.*$', f'cover_image: "{new_url}"', fm, flags=re.MULTILINE)
@@ -76,6 +86,7 @@ def build_parser() -> argparse.ArgumentParser:
     build.add_argument("--public-dir")
     reimage = sub.add_parser("re-image", help="re-fetch cover images for posts with missing/picsum images")
     reimage.add_argument("--category", help="only re-image posts in this category (e.g. 기술)")
+    reimage.add_argument("--force", action="store_true", help="기존 URL이 있어도 재요청 (소급 적용)")
     reimage.add_argument("--posts-dir")
     status = sub.add_parser("status", help="show recent pipeline runs")
     status.add_argument("--limit", type=int, default=10)
@@ -107,7 +118,7 @@ def main() -> None:
         return
     if args.command == "re-image":
         posts_dir = settings.output_dir if not args.posts_dir else Path(args.posts_dir)
-        count = _reimage_posts(posts_dir, settings, category_filter=args.category)
+        count = _reimage_posts(posts_dir, settings, category_filter=args.category, force=args.force)
         print(json.dumps({"ok": True, "updated": count}, ensure_ascii=False, indent=2))
         return
     if args.command == "run":

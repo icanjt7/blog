@@ -8,7 +8,7 @@ tags:
   - acquisition
   - of
 quality_score: 100.0
-cover_image: ""
+cover_image: "https://images.unsplash.com/photo-1636257020938-c8d6413fc3a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwdGVjaG5vbG9neSUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzgwNDgwNzQ1fDA&ixlib=rb-4.1.0&q=80&w=1080"
 cover_image_alt: "SwitchBot acquisition of: 지금 확인할 포인트 — Photo by Jay Zhang on Unsplash"
 ---
 ![SwitchBot acquisition of: 지금 확인할 포인트 — Photo by Jay Zhang on Unsplash](https://images.unsplash.com/photo-1636257020938-c8d6413fc3a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwdGVjaG5vbG9neSUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzgwNDgwNzQ1fDA&ixlib=rb-4.1.0&q=80&w=1080)
