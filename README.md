@@ -83,6 +83,7 @@ docker compose -f docker-compose.wordpress.yml up -d
 - `WORDPRESS_URL`: 예: `https://example.com`
 - `TOURAPI_PET`: 한국관광공사 반려동물 동반여행 정보 API 키. 반려견·애견동반·펫캉스 글에서 동반 조건, 주의사항, 반려동물 시설 정보를 보강합니다.
 - `TOURAPI_TOUR`: 한국관광공사 국문 관광정보 서비스 API 키. 여행 글에서 장소명·주소·개요·운영시간·휴무·주차·이미지 정보를 보강합니다.
+- `TOURAPI_TOUR_EN`: 한국관광공사 영문 관광정보 서비스 API 키. 여행 글에서 영문 장소명·주소·개요를 보조 정보로 보강합니다.
 - `WORDPRESS_USERNAME`
 - `WORDPRESS_APP_PASSWORD`
 - `WORDPRESS_STATUS`: `draft` 또는 `publish`, 기본값 `publish`
@@ -95,7 +96,7 @@ docker compose -f docker-compose.wordpress.yml up -d
 GitHub 저장소 Settings → Secrets and variables → Actions에 다음 값을 등록하세요.
 
 - `OPENAI_API_KEY`
-- 관광 글 보강 사용 시 `TOURAPI_GUIDE`, `TOURAPI_RATE`, `TOURAPI_MDC`, `TOURAPI_PET`, `TOURAPI_TOUR`
+- 관광 글 보강 사용 시 `TOURAPI_GUIDE`, `TOURAPI_RATE`, `TOURAPI_MDC`, `TOURAPI_PET`, `TOURAPI_TOUR`, `TOURAPI_TOUR_EN`
 - WordPress 사용 시 `WORDPRESS_URL`, `WORDPRESS_USERNAME`, `WORDPRESS_APP_PASSWORD`
 
 ## 실행 기록 확인

@@ -60,6 +60,46 @@ class TourApiClientTest(unittest.TestCase):
         self.assertIn("공영주차장 이용", result.sources[0].summary)
         self.assertEqual(get.call_args_list[0].args[0], "https://apis.data.go.kr/B551011/KorService2/searchKeyword2")
 
+    def test_enrich_adds_english_tourism_source(self) -> None:
+        settings = Settings(tourapi_tour_en_key="tour-en-key")
+        client = TourApiClient(settings)
+        topic = Topic(keyword="서울 성수 카페 동선", title_hint="처음 가면 이 동선", category="핫이슈")
+
+        payloads = [
+            {
+                "response": {
+                    "body": {
+                        "items": {
+                            "item": [
+                                {
+                                    "contentid": "400",
+                                    "contenttypeid": "12",
+                                    "title": "Seoul Forest",
+                                    "addr1": "Seongsu-dong, Seongdong-gu, Seoul",
+                                    "cat2": "Nature",
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {"response": {"body": {"items": {"item": [{"overview": "A large park near Seongsu cafe streets."}]}}}},
+            {"response": {"body": {"items": {"item": [{"usetime": "Open all year", "parking": "Public parking available"}]}}}},
+            {"response": {"body": {"items": {"item": [{"infoname": "Walking", "infotext": "Forest walking trail"}]}}}},
+            {"response": {"body": {"items": {"item": [{"originimgurl": "https://example.com/seoulforest-en.jpg"}]}}}},
+        ]
+
+        with patch("blog_agent.tourapi.requests.get", side_effect=[_FakeResponse(p) for p in payloads]) as get:
+            result = client.enrich(topic)
+
+        self.assertEqual(result.tour_en_count, 1)
+        self.assertEqual(len(result.sources), 1)
+        self.assertIn("영문 관광정보", result.sources[0].title)
+        self.assertIn("Seoul Forest", result.sources[0].summary)
+        self.assertIn("A large park near Seongsu", result.sources[0].summary)
+        self.assertIn("Public parking available", result.sources[0].summary)
+        self.assertEqual(get.call_args_list[0].args[0], "https://apis.data.go.kr/B551011/EngService2/searchKeyword2")
+
     def test_enrich_adds_related_and_rate_sources_for_tourism_topic(self) -> None:
         settings = Settings(tourapi_guide_key="guide-key", tourapi_rate_key="rate-key")
         client = TourApiClient(settings)

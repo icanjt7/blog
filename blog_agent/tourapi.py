@@ -131,6 +131,7 @@ REGION_HINTS: dict[str, tuple[str, str]] = {
 class TourApiSummary:
     sources: list[Source]
     tour_count: int = 0
+    tour_en_count: int = 0
     related_count: int = 0
     rate_count: int = 0
     medical_count: int = 0
@@ -145,6 +146,7 @@ class TourApiClient:
         self.mdc_endpoint = settings.tourapi_mdc_endpoint.rstrip("/")
         self.pet_endpoint = settings.tourapi_pet_endpoint.rstrip("/")
         self.tour_endpoint = settings.tourapi_tour_endpoint.rstrip("/")
+        self.tour_en_endpoint = settings.tourapi_tour_en_endpoint.rstrip("/")
 
     @staticmethod
     def is_tourism_topic(topic: Topic) -> bool:
@@ -176,6 +178,17 @@ class TourApiClient:
                     title="한국관광공사 TourAPI 국문 관광정보",
                     url="https://www.data.go.kr/data/15101578/openapi.do",
                     summary=self._summarise_tourism_info(topic.keyword, tour_items),
+                    authority=5,
+                )
+            )
+
+        tour_en_items = self._fetch_english_tourism_info(topic) if is_tourism else []
+        if tour_en_items:
+            sources.append(
+                Source(
+                    title="한국관광공사 TourAPI 영문 관광정보",
+                    url="https://www.data.go.kr/data/15101753/openapi.do",
+                    summary=self._summarise_english_tourism_info(topic.keyword, tour_en_items),
                     authority=5,
                 )
             )
@@ -227,6 +240,7 @@ class TourApiClient:
         return TourApiSummary(
             sources=sources,
             tour_count=len(tour_items),
+            tour_en_count=len(tour_en_items),
             related_count=len(related_items),
             rate_count=len(rate_items),
             medical_count=len(medical_items),
@@ -303,6 +317,78 @@ class TourApiClient:
                 merged |= self._first_item_from_candidates(self._tour_endpoint_candidates("detailIntro"), detail_params)
                 merged |= self._first_item_from_candidates(self._tour_endpoint_candidates("detailInfo"), detail_params)
                 merged |= self._first_item_from_candidates(self._tour_endpoint_candidates("detailImage"), detail_params)
+            enriched.append(merged)
+        return enriched
+
+    def _fetch_english_tourism_info(self, topic: Topic) -> list[dict]:
+        if not self.settings.tourapi_tour_en_key:
+            return []
+
+        base_params = self._base_params(self.settings.tourapi_tour_en_key) | {
+            "numOfRows": "10",
+            "pageNo": "1",
+        }
+        items = self._get_items_first(
+            self._tour_en_endpoint_candidates("searchKeyword"),
+            base_params
+            | {
+                "keyword": self._clean_keyword(topic.keyword),
+                "arrange": "Q",
+            },
+        )
+        if not items and self._looks_like_festival(topic):
+            items = self._get_items_first(
+                self._tour_en_endpoint_candidates("searchFestival"),
+                base_params
+                | {
+                    "eventStartDate": date.today().strftime("%Y%m%d"),
+                    "arrange": "Q",
+                },
+            )
+        if not items and self._looks_like_stay(topic):
+            items = self._get_items_first(
+                self._tour_en_endpoint_candidates("searchStay"),
+                base_params | {"arrange": "Q"},
+            )
+        if not items:
+            region = self._region_codes(topic.keyword)
+            if region:
+                area_cd, signgu_cd = region
+                items = self._get_items_first(
+                    self._tour_en_endpoint_candidates("areaBasedList"),
+                    base_params
+                    | {
+                        "areaCode": area_cd,
+                        "sigunguCode": signgu_cd,
+                        "arrange": "Q",
+                        "listYN": "Y",
+                    },
+                )
+        if not items:
+            return []
+
+        enriched: list[dict] = []
+        for item in items[:5]:
+            merged = dict(item)
+            content_id = self._pick(item, "contentid", "contentId")
+            content_type_id = self._pick(item, "contenttypeid", "contentTypeId")
+            if content_id:
+                detail_params = self._base_params(self.settings.tourapi_tour_en_key) | {
+                    "contentId": content_id,
+                    "contentid": content_id,
+                    "defaultYN": "Y",
+                    "addrinfoYN": "Y",
+                    "mapinfoYN": "Y",
+                    "overviewYN": "Y",
+                    "imageYN": "Y",
+                    "_type": "json",
+                }
+                if content_type_id:
+                    detail_params |= {"contentTypeId": content_type_id, "contenttypeid": content_type_id}
+                merged |= self._first_item_from_candidates(self._tour_en_endpoint_candidates("detailCommon"), detail_params)
+                merged |= self._first_item_from_candidates(self._tour_en_endpoint_candidates("detailIntro"), detail_params)
+                merged |= self._first_item_from_candidates(self._tour_en_endpoint_candidates("detailInfo"), detail_params)
+                merged |= self._first_item_from_candidates(self._tour_en_endpoint_candidates("detailImage"), detail_params)
             enriched.append(merged)
         return enriched
 
@@ -531,6 +617,9 @@ class TourApiClient:
     def _tour_endpoint_candidates(self, operation: str) -> list[str]:
         return self._operation_candidates(self.tour_endpoint, operation)
 
+    def _tour_en_endpoint_candidates(self, operation: str) -> list[str]:
+        return self._operation_candidates(self.tour_en_endpoint, operation)
+
     @staticmethod
     def _operation_candidates(base_endpoint: str, operation: str) -> list[str]:
         if operation.endswith("2"):
@@ -601,6 +690,53 @@ class TourApiClient:
             "TourAPI 국문 관광정보 서비스에서 가져온 공개 데이터입니다. "
             "여행 글에서는 장소명, 주소, 분류, 개요, 운영시간, 휴무, 주차, 이미지 유무를 실제 동선과 비교표에 반영하세요. "
             "행사·숙박 정보는 일정과 예약 조건이 바뀔 수 있으므로 방문 전 공식 안내를 다시 확인해야 합니다. "
+            f"조회 키워드: {keyword}. 결과: {joined}"
+        )
+
+    def _summarise_english_tourism_info(self, keyword: str, items: list[dict]) -> str:
+        rows: list[str] = []
+        for item in items[:8]:
+            title = self._pick(item, "title", "facltNm", "contentNm") or keyword
+            addr = self._pick(item, "addr1", "addr2", "address")
+            category = self._pick(item, "cat1", "cat2", "cat3", "lclsSystm1", "lclsSystm2", "lclsSystm3")
+            tel = self._pick(item, "tel", "telno", "infocenter")
+            overview = self._pick(item, "overview", "intro", "infoname", "infotext")
+            hours = self._pick(
+                item,
+                "usetime",
+                "usetimeculture",
+                "usetimefestival",
+                "opentime",
+                "playtime",
+                "checkintime",
+                "checkouttime",
+            )
+            rest = self._pick(item, "restdate", "restdateculture", "restdateleports", "restdatefood", "restdateshopping")
+            parking = self._pick(item, "parking", "parkingculture", "parkingfood", "parkingshopping", "parkinglodging")
+            image = self._pick(item, "firstimage", "firstimage2", "originimgurl", "smallimageurl")
+            parts = [title]
+            if addr:
+                parts.append(f"English address {addr}")
+            if category:
+                parts.append(f"category {category}")
+            if tel:
+                parts.append(f"contact {tel}")
+            if overview:
+                parts.append(f"English overview {overview[:120]}")
+            if hours:
+                parts.append(f"hours {hours}")
+            if rest:
+                parts.append(f"closed/schedule {rest}")
+            if parking:
+                parts.append(f"parking {parking}")
+            if image:
+                parts.append("English image info available")
+            rows.append(" · ".join(parts))
+        joined = " / ".join(rows)
+        return (
+            "TourAPI 영문 관광정보 서비스에서 가져온 공개 데이터입니다. "
+            "한국어 여행 글에서는 외국인 독자를 위한 영문 장소명, 영문 주소, 영문 개요를 보조 정보로 반영하세요. "
+            "영문 콘텐츠를 작성할 때는 이 출처의 title, overview, address 표현을 우선 사용하고, 한국어 데이터와 서로 다른 운영정보는 방문 전 공식 안내 확인이 필요하다고 쓰세요. "
             f"조회 키워드: {keyword}. 결과: {joined}"
         )
 
