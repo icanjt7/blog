@@ -245,7 +245,7 @@ BODY:
         topic_with_subject = self._with_particle(topic.keyword, "은", "는")
         body = f"""## 한눈에 보기
 
-{topic_with_subject} 카페나 명소 한 곳만 찍는 글보다 실제로 어떻게 움직이면 좋은지가 더 중요합니다. 한국관광공사 TourAPI의 연관 관광지 데이터를 기준으로 보면, 먼저 대표 지점을 정하고 주변에서 함께 묶을 곳을 고르는 방식이 가장 안전합니다.
+{topic_with_subject} 카페나 명소 한 곳만 찍는 글보다 실제로 어떻게 움직이면 좋은지가 더 중요합니다. 한국관광공사 공개 데이터의 연관 관광지 정보를 기준으로 보면, 먼저 대표 지점을 정하고 주변에서 함께 묶을 곳을 고르는 방식이 가장 안전합니다.
 
 ## 추천 동선
 
@@ -260,7 +260,7 @@ BODY:
 
 ## 주변 포인트
 
-{summary_text or "TourAPI 응답은 있었지만 요약 가능한 항목이 제한적입니다. 공식 데이터는 연관 장소 확인용으로만 활용하세요."}
+{summary_text or "공개 데이터 응답은 있었지만 요약 가능한 항목이 제한적입니다. 공식 데이터는 연관 장소 확인용으로만 활용하세요."}
 
 ## 이렇게 움직이면 편합니다
 
@@ -282,7 +282,7 @@ BODY:
             topic=topic,
             title=f"{topic.keyword}, 처음 가면 이 동선",
             slug=self._slug(topic.keyword),
-            excerpt=f"{topic.keyword} 방문 전 TourAPI 연관 관광지 데이터를 바탕으로 동선을 잡았습니다.",
+            excerpt=f"{topic.keyword} 방문 전 공개 데이터의 연관 관광지 정보를 바탕으로 동선을 잡았습니다.",
             body_markdown=body,
             tags=self._tags(topic),
         )
