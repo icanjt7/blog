@@ -12,7 +12,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     permissions:
@@ -61,7 +61,7 @@ jobs:
           TOURAPI_TOUR_EN: ${{ secrets.TOURAPI_TOUR_EN }}
           TOURAPI_BASE_YM: ${{ vars.TOURAPI_BASE_YM || '202503' }}
           # Blog settings
-          BLOG_POST_COUNT: ${{ vars.DAILY_POST_COUNT || '10' }}
+          BLOG_POST_COUNT: ${{ vars.DAILY_POST_COUNT || '1' }}
           ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
           ENABLE_IMAGE_GENERATION: ${{ vars.ENABLE_IMAGE_GENERATION || 'false' }}
           PUBLISHER: ${{ vars.PUBLISHER || 'markdown' }}
