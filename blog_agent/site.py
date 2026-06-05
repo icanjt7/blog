@@ -87,6 +87,7 @@ class StaticSiteBuilder:
       # generate search index and page
       self._write_search_index(posts)
       self._write_search_page(posts)
+      self._write_press_release_pages(posts)
       self._write_category_pages(posts)
 
       # self._write_dashboard(posts)  # 관리자 전용 — 일반 사용자에게 노출하지 않음
@@ -161,7 +162,10 @@ class StaticSiteBuilder:
 
     def _nav_html(self, active: str | None = None) -> str:
         items = [
-            '<a href="./index.html" class="' + ("active" if active == "홈" else "") + '">홈</a>'
+            '<a href="./index.html" class="' + ("active" if active == "홈" else "") + '">홈</a>',
+            '<a href="./press-releases.html" class="'
+            + ("active" if active == "보도자료" else "")
+            + '">보도자료</a>',
         ]
         for category in self.categories:
             href = f"./category-{self._slugify(category)}.html"
@@ -749,6 +753,36 @@ class StaticSiteBuilder:
                     description=f"{category} 관련 최신 글과 분석을 모아둔 페이지입니다.",
                 )
 
+    def _write_press_release_pages(self, posts: list[Post]) -> None:
+        press_posts = [post for post in posts if "보도기사" in post.tags]
+        per_page = 9
+        total = len(press_posts)
+        total_pages = max(1, (total + per_page - 1) // per_page)
+        base = "press-releases.html"
+
+        for page in range(1, total_pages + 1):
+            chunk = press_posts[(page - 1) * per_page: page * per_page]
+            cards = "\n".join(self._card_html(post) for post in chunk) \
+                or '<p class="empty">아직 등록된 보도자료가 없습니다.</p>'
+            nav_html = self._pagination_html(page, total_pages, base)
+            stats = f" — {total}개 기사" if page == 1 else f" — {page}/{total_pages} 페이지"
+            content = f"""
+            <section class="hero">
+              <p class="hero-tagline"><strong>보도자료</strong>{stats}</p>
+            </section>
+            <section class="grid">{cards}</section>
+            {nav_html}
+            """
+            filename = base if page == 1 else f"press-releases-{page}.html"
+            self._write_html(
+                filename,
+                f"보도자료 - {self.site_title}",
+                content,
+                active="보도자료",
+                page_url=self._page_url(filename),
+                description="정부 기관 보도자료를 독자가 빠르게 확인할 수 있도록 정리한 페이지입니다.",
+            )
+
     def _write_sitemap(self, posts: list[Post]) -> None:
         now = datetime.now()
 
@@ -767,6 +801,12 @@ class StaticSiteBuilder:
         entries: list[str] = []
         entries.append(_entry(self._page_url("index.html"), now, "daily", "1.0"))
         entries.append(_entry(self._page_url("search.html"), now, "weekly", "0.5"))
+
+        press_count = sum("보도기사" in post.tags for post in posts)
+        press_pages = max(1, (press_count + 8) // 9)
+        for page in range(1, press_pages + 1):
+            filename = "press-releases.html" if page == 1 else f"press-releases-{page}.html"
+            entries.append(_entry(self._page_url(filename), now, "daily", "0.9"))
 
         total_pages = (len(posts) + 8) // 9
         for page in range(2, total_pages + 1):
