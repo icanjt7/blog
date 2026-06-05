@@ -68,6 +68,8 @@ docker compose -f docker-compose.wordpress.yml up -d
 
 - `OPENAI_MODEL`: 기본값 `gpt-4.1-mini`
 - `OPENAI_IMAGE_MODEL`: 기본값 `gpt-image-1-mini`
+- `GROQ_API_KEY`: Groq 사용 시 설정합니다. 설정되면 Groq가 우선 사용됩니다.
+- `GROQ_MODEL`: 기본값 `groq/compound`. 글 품질이 떨어지면 `llama-3.3-70b-versatile`로 되돌릴 수 있습니다.
 - `BLOG_POST_COUNT`: 기본값 `5`
 - `ENABLE_LLM_EDIT`: 기본값 `true`
 - `ENABLE_IMAGE_GENERATION`: 기본값 `false`
