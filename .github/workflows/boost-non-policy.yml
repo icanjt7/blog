@@ -64,13 +64,14 @@ jobs:
           TOURAPI_TOUR_EN: ${{ secrets.TOURAPI_TOUR_EN }}
           TOURAPI_BASE_YM: ${{ vars.TOURAPI_BASE_YM || '202503' }}
           ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
+          LLM_TIMEOUT_SECONDS: ${{ vars.LLM_TIMEOUT_SECONDS || '20' }}
           BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
         run: |
           args=(--per-category "${{ inputs.per_category }}" --min-quality "${{ inputs.min_quality }}")
           if [ -n "${{ inputs.categories }}" ]; then
             args+=(--categories ${{ inputs.categories }})
           fi
-          python scripts/generate_non_policy_posts.py "${args[@]}"
+          python -u scripts/generate_non_policy_posts.py "${args[@]}"
 
       - name: Build static site
         env:

@@ -44,39 +44,40 @@ class SeoEditorAgent:
             self._init_client(settings)
 
     def _init_client(self, s: Settings) -> None:
+        timeout = s.llm_timeout_seconds
         if s.groq_api_key:
             self.client = OpenAI(
                 api_key=s.groq_api_key,
                 base_url="https://api.groq.com/openai/v1",
-                timeout=45,
-                max_retries=1,
+                timeout=timeout,
+                max_retries=0,
             )
             self._model = s.groq_model
         elif s.gemini_api_key:
             self.client = OpenAI(
                 api_key=s.gemini_api_key,
                 base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-                timeout=45,
-                max_retries=1,
+                timeout=timeout,
+                max_retries=0,
             )
             self._model = s.gemini_model
         elif s.openrouter_api_key:
             self.client = OpenAI(
                 api_key=s.openrouter_api_key,
                 base_url="https://openrouter.ai/api/v1",
-                timeout=60,
-                max_retries=1,
+                timeout=timeout,
+                max_retries=0,
             )
             self._model = s.openrouter_model
         elif s.openai_api_key:
-            self.client = OpenAI(api_key=s.openai_api_key, timeout=45, max_retries=1)
+            self.client = OpenAI(api_key=s.openai_api_key, timeout=timeout, max_retries=0)
             self._model = s.openai_model
         elif s.github_token:
             self.client = OpenAI(
                 api_key=s.github_token,
                 base_url="https://models.inference.ai.azure.com",
-                timeout=45,
-                max_retries=1,
+                timeout=timeout,
+                max_retries=0,
             )
             self._model = s.github_model
 

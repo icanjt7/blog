@@ -20,6 +20,7 @@ class Settings(BaseModel):
     openai_image_model: str = "gpt-image-1-mini"
     groq_api_key: str | None = None
     groq_model: str = "groq/compound"
+    llm_timeout_seconds: float = 20
     github_token: str | None = None
     github_model: str = "Llama-3.3-70B-Instruct"
     gemini_api_key: str | None = None
@@ -84,6 +85,7 @@ def load_settings() -> Settings:
         openai_image_model=os.getenv("OPENAI_IMAGE_MODEL", "gpt-image-1-mini"),
         groq_api_key=os.getenv("GROQ_API_KEY") or None,
         groq_model=os.getenv("GROQ_MODEL", "groq/compound"),
+        llm_timeout_seconds=float(os.getenv("LLM_TIMEOUT_SECONDS", "20")),
         github_token=os.getenv("GITHUB_TOKEN") or None,
         github_model=os.getenv("GITHUB_MODEL", "Llama-3.3-70B-Instruct"),
         gemini_api_key=os.getenv("GEMINI_API_KEY") or None,
