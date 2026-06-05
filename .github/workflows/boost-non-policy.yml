@@ -11,6 +11,10 @@ on:
         description: "Minimum quality score"
         required: true
         default: "60"
+      categories:
+        description: "Optional categories separated by spaces, e.g. 생활 핫이슈"
+        required: false
+        default: ""
 
 concurrency:
   group: boost-non-policy
@@ -62,9 +66,11 @@ jobs:
           ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
           BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
         run: |
-          python scripts/generate_non_policy_posts.py \
-            --per-category "${{ inputs.per_category }}" \
-            --min-quality "${{ inputs.min_quality }}"
+          args=(--per-category "${{ inputs.per_category }}" --min-quality "${{ inputs.min_quality }}")
+          if [ -n "${{ inputs.categories }}" ]; then
+            args+=(--categories ${{ inputs.categories }})
+          fi
+          python scripts/generate_non_policy_posts.py "${args[@]}"
 
       - name: Build static site
         env:

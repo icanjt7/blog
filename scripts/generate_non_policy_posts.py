@@ -211,8 +211,64 @@ POPULAR_TOPICS["핫이슈"].extend([
     ("김해 봉리단길 카페", "가볍게 걷기 좋은 동선"),
 ])
 
+POPULAR_TOPICS["생활"].extend([
+    ("여름철 냉장고 정리법", "식재료를 오래 보관하고 전기요금도 줄이는 기준"),
+    ("에어컨 필터 교체 시기", "냄새와 냉방 효율을 함께 관리하는 방법"),
+    ("장마철 집안 환기법", "습도와 곰팡이를 줄이는 시간대별 환기 기준"),
+    ("여름철 식중독 예방", "도시락, 배달음식, 냉장보관 전 확인할 점"),
+    ("샤워기 수압 약할 때", "필터, 호스, 수전 점검 순서"),
+    ("전기요금 누진제 확인법", "여름 고지서가 오르기 전 보는 사용량 기준"),
+    ("텀블러 냄새 제거법", "커피 냄새와 물때를 줄이는 세척 루틴"),
+    ("옷장 습기 제거 방법", "제습제, 환기, 옷 간격을 함께 보는 기준"),
+    ("여름철 벌레 차단법", "방충망, 배수구, 음식물 쓰레기 관리"),
+    ("베개 세탁 주기", "땀과 냄새를 줄이는 침구 관리 기준"),
+    ("수면 전 스마트폰 줄이는 법", "잠들기 전 루틴을 만드는 방법"),
+    ("주방 기름때 제거 순서", "후드, 가스레인지, 벽면을 나눠 청소하는 법"),
+    ("아파트 층간소음 대처법", "기록, 관리사무소, 민원 절차 확인"),
+    ("여름철 실내 식물 관리", "물주기와 통풍을 조절하는 방법"),
+    ("휴가철 빈집 보안 체크", "도어락, 우편물, 조명 예약 점검"),
+    ("자동차 에어컨 냄새 제거", "필터와 송풍 습관을 함께 보는 관리법"),
+    ("냉장고 성에 제거 방법", "전기요금과 보관 효율을 높이는 정리법"),
+    ("여름철 운동복 세탁법", "땀 냄새와 세균 번식을 줄이는 세탁 기준"),
+    ("우산 곰팡이 막는 법", "말리는 방법과 보관 위치 확인"),
+    ("물 절약 샤워 습관", "수도요금을 줄이는 작은 생활 루틴"),
+    ("배수구 냄새 차단법", "트랩, 청소, 환기를 함께 관리하는 순서"),
+    ("여름철 음식물 쓰레기 관리", "냄새와 벌레를 줄이는 보관 기준"),
+    ("실내 온습도계 활용법", "냉방, 제습, 환기 타이밍 잡기"),
+    ("멀티탭 안전 점검", "과열과 문어발 배선을 피하는 기준"),
+    ("여름철 아이스팩 재사용", "냉동실 정리와 분리배출 기준"),
+])
+
+POPULAR_TOPICS["핫이슈"].extend([
+    ("서울 여의도 한강공원 코스", "저녁 산책과 피크닉 동선을 함께 보는 방법"),
+    ("서울 남산 야경 코스", "케이블카와 산책길을 묶는 동선"),
+    ("서울 청계천 산책 코스", "퇴근 후 걷기 좋은 구간과 주변 카페"),
+    ("서울 연남동 카페거리", "주말 혼잡을 피하는 골목 동선"),
+    ("서울 문래창작촌 코스", "카페, 전시, 골목 산책을 묶는 방법"),
+    ("부산 전포카페거리 코스", "서면과 함께 보기 좋은 카페 동선"),
+    ("부산 감천문화마을 코스", "사진 포인트와 시장 동선을 묶는 방법"),
+    ("대구 앞산 전망대 코스", "야경과 카페를 함께 보는 동선"),
+    ("광주 충장로 데이트 코스", "카페와 식사 동선을 함께 정리"),
+    ("대전 엑스포과학공원 코스", "가족 나들이와 주변 산책 동선"),
+    ("울산 태화강 국가정원 코스", "강변 산책과 야경을 함께 보는 방법"),
+    ("세종 호수공원 산책", "저녁 산책과 카페 동선"),
+    ("수원 광교호수공원 코스", "야경과 산책길을 함께 보는 코스"),
+    ("용인 한국민속촌 주변 코스", "가족 나들이와 식사 동선"),
+    ("파주 임진각 평화누리 코스", "드라이브와 산책을 묶는 일정"),
+    ("강릉 경포호 산책 코스", "바다와 호수를 함께 보는 동선"),
+    ("속초 영랑호 산책 코스", "카페와 호수길을 묶는 방법"),
+    ("청주 성안길 먹거리", "시장과 카페를 함께 보는 동선"),
+    ("천안 독립기념관 코스", "가족 나들이와 주변 식사 동선"),
+    ("전주 덕진공원 산책", "연못과 한옥마을을 함께 보는 코스"),
+    ("목포 근대역사거리 코스", "사진 포인트와 시장 동선"),
+    ("순천 드라마촬영장 코스", "레트로 거리와 국가정원을 묶는 일정"),
+    ("포항 죽도시장 먹거리", "시장 방문 전 알아둘 메뉴와 동선"),
+    ("진주 남강 야경 코스", "촉석루와 강변 산책을 함께 보는 방법"),
+    ("제주 우도 당일치기 코스", "배편과 이동 동선을 먼저 보는 일정"),
+])
+
 TITLE_OVERRIDES = {
-    "생활": ("놓치기 쉬운", "아끼는", "먼저 볼", "바로 써먹는", "헷갈릴 때 보는"),
+    "생활": ("먼저 볼 체크포인트", "실수 줄이는 기준", "쉽게 시작하는 법", "바로 써먹는 순서", "헷갈릴 때 보는 기준"),
     "기술": ("고르기 전 볼", "초보가 먼저 볼", "체감 기준", "설정부터 바꾸는", "실패 줄이는"),
     "핫이슈": ("처음 가면 이 동선", "하루 코스로 묶기", "비 오면 이 코스", "저녁에 걷기 좋은", "먹거리 동선"),
 }
@@ -223,6 +279,8 @@ def fallback_title(keyword: str, category: str, index: int) -> str:
     style = styles[index % len(styles)]
     if category == "핫이슈":
         return f"{keyword}, {style}"
+    if category == "생활":
+        return f"{keyword}: {style}"
     if style.endswith("는"):
         return f"{keyword} {style} 법"
     return f"{keyword}: {style} 기준"
@@ -253,11 +311,13 @@ def existing_text(posts_dir: Path) -> str:
     return "\n".join(chunks)
 
 
-def build_topics(per_category: int, settings) -> list[Topic]:
+def build_topics(per_category: int, settings, categories: set[str] | None = None) -> list[Topic]:
     seen = load_seen_keywords(settings.state_dir)
     existing = existing_text(settings.output_dir)
     topics: list[Topic] = []
     for category, items in POPULAR_TOPICS.items():
+        if categories and category not in categories:
+            continue
         added = 0
         for keyword, hint in items:
             key = keyword.lower()
@@ -291,6 +351,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--per-category", type=int, default=10)
     parser.add_argument("--min-quality", type=float, default=60)
+    parser.add_argument("--categories", nargs="*", default=None)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -302,7 +363,8 @@ def main() -> None:
     images = ImageAgent(settings)
     publisher = MarkdownPublisher(settings.output_dir)
 
-    topics = build_topics(args.per_category, settings)
+    selected_categories = set(args.categories) if args.categories else None
+    topics = build_topics(args.per_category, settings, selected_categories)
     print(f"{len(topics)} non-policy topics selected")
     published: list[str] = []
     start = datetime.now().replace(second=0, microsecond=0) + timedelta(minutes=7)
