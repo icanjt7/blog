@@ -1,93 +1,49 @@
 ---
-title: '** Steam Machine, 여름 구매 전 5가지 포인트 **EXCERPT:** Valve says it가 이번 여름에 공개할 Steam
-  Machine과 Steam Frame의 핵심 특징을 정리했다. 실제 사용감과 구매 시 고려해야 할 5가지 포인트를 확인해 보세요. **BODY:**
-  ## Valve와 새 하드웨어 소개 - **Valve**: 미국 워싱턴 주에 본사를 둔 비디오 게임 퍼블리셔·플랫폼 운영사로, *Steam* 서비스를
-  운영한다. - **Steam Machine**: SteamOS 기반의 게임 전용 PC로, 콘솔처럼 플러그‑앤‑플레이하면서도 PC 부품 교체가 가능한
-  하이브리드 모델이다. - **Steam Frame**: Valve가 동시에 발표한 고해상도 디스플레이와 트래킹 센서를 탑재한 VR 헤드셋이다.
-  - **SteamOS**: 리눅스 기반 운영체제로, Steam Machine에 최적화돼 자동 그래픽 최적화와 스트리밍 기능을 제공한다. - **Verified
-  프로그램**: Valve가 자체 테스트를 통해 하드웨어와 게임 호환성을 사전 검증하는 제도이다. ## 실제 사용감은 어떨까? | 항목 | 장점
-  | 단점 | |------|------|------| | **설정 편의성** | 전용 UI가 직관적이며, 게임 실행 시 자동 최적화 적용 | 일부
-  비공식 게임은 수동 설정 필요 | | **소음** | 고성능 GPU 탑재에도 평균 35 dB 수준으로 조용 | 부하가 큰 상황에서는 소음 상승
-  | | **업그레이드** | 표준 ATX 규격으로 메모리·저장 장치 교체 용이 | 전원 공급 용량 제한으로 고사양 GPU 교체 시 추가 어댑터
-  필요 | | **가격** | 콘솔 대비 약 20 % 저렴 | 초기 구매 비용이 여전히 높은 편 | | **VR 연동** | Steam Frame과
-  원스톱 연결 가능 | 별도 VR 컨트롤러 필요 | ## 구매 판단 기준 5가지 체크리스트 - **성능** – 최신 RTX 3060 기반 GPU
-  탑재 (하지만 전원 용량 제한에 유의) - **가격** – 콘솔 대비 저렴하지만 초기 비용은 여전히 고가 - **확장성** – ATX 규격 부품
-  교체 가능, 케이스 내부 공간은 제한적 - **소프트웨어** – SteamOS 기반 자동 최적화, 일부 레거시 게임 호환성 이슈 존재 - **VR
-  연동** – Steam Frame 포함 번들 시 가성비 좋음, 별도 컨트롤러 필요 ## 구매를 고민하는 사람에게 1. **예산이 150만원 이하**라면
-  기존 게이밍 PC를 업그레이드하는 것이 비용 효율적일 수 있다. 2. **VR을 본격적으로 즐기고 싶다면**, Steam Frame 포함 번들을
-  선택하면 별도 장비 구매보다 저렴하게 시작할 수 있다. 3. **플러그‑앤‑플레이**를 원한다면, Steam Machine이 가장 적합한 선택이다.
-  Valve says it는 “새 하드웨어에서 여러분의 타이틀을 체험하게 될 날이 기대된다”고 밝혔다. 이는 Valve가 Verified 프로그램을
-  통해 주요 게임의 호환성을 미리 검증했음을 의미한다. **마무리** 여름 출시가 확정된 Steam Machine과 Steam Frame의 최신
-  가격·재고는 Valve 공식 블로그에서 확인할 수 있다. 필요에 맞는 옵션을 골라 새로운 게임 환경을 경험해 보세요.'
-date: '2026-06-05T04:33:45.011343'
-category: 기술
+title: "Steam Machine, 여름 구매 전 5가지 포인트"
+date: "2026-06-05T04:33:45.011343"
+category: "기술"
 tags:
-- 기술
-- Valve
-- says
-- it
+  - "기술"
+  - "Valve"
+  - "Steam Machine"
 quality_score: 88.0
-cover_image: https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxoZWFkc2V0JTIwYXVkaW8lMjB3aXJlbGVzcyUyMGdhbWluZyUyMHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnQlMjBjb2RlJTIwY2xvdWQlMjBwbGF0Zm9ybSUyMGFic3RyYWN0JTIwZXNwb3J0cyUyMGludGVyYWN0aXZlJTIwZ292ZXJubWVudCUyMGJ1ZGdldCUyMGZpbmFuY2UlMjBlbnZpcm9ubWVudCUyMG5hdHVyZSUyMGdyZWVufGVufDF8MHx8fDE3ODA2MzQwMzF8MA&ixlib=rb-4.1.0&q=80&w=1080
-cover_image_alt: '** Steam Machine, 여름 구매 전 5가지 포인트 **EXCERPT:** Valve says it가 이번
-  여름에 공개할 Steam Machine과 Steam Frame의 핵심 특징을 정리했다. 실제 사용감과 구매 시 고려해야 할 5가지 포인트를 확인해
-  보세요. **BODY:** ## Valve와 새 하드웨어 소개 - **Valve**: 미국 워싱턴 주에 본사를 둔 비디오 게임 퍼블리셔·플랫폼
-  운영사로, *Steam* 서비스를 운영한다. - **Steam Machine**: SteamOS 기반의 게임 전용 PC로, 콘솔처럼 플러그‑앤‑플레이하면서도
-  PC 부품 교체가 가능한 하이브리드 모델이다. - **Steam Frame**: Valve가 동시에 발표한 고해상도 디스플레이와 트래킹 센서를
-  탑재한 VR 헤드셋이다. - **SteamOS**: 리눅스 기반 운영체제로, Steam Machine에 최적화돼 자동 그래픽 최적화와 스트리밍
-  기능을 제공한다. - **Verified 프로그램**: Valve가 자체 테스트를 통해 하드웨어와 게임 호환성을 사전 검증하는 제도이다. ##
-  실제 사용감은 어떨까? | 항목 | 장점 | 단점 | |------|------|------| | **설정 편의성** | 전용 UI가 직관적이며,
-  게임 실행 시 자동 최적화 적용 | 일부 비공식 게임은 수동 설정 필요 | | **소음** | 고성능 GPU 탑재에도 평균 35 dB 수준으로
-  조용 | 부하가 큰 상황에서는 소음 상승 | | **업그레이드** | 표준 ATX 규격으로 메모리·저장 장치 교체 용이 | 전원 공급 용량 제한으로
-  고사양 GPU 교체 시 추가 어댑터 필요 | | **가격** | 콘솔 대비 약 20 % 저렴 | 초기 구매 비용이 여전히 높은 편 | | **VR
-  연동** | Steam Frame과 원스톱 연결 가능 | 별도 VR 컨트롤러 필요 | ## 구매 판단 기준 5가지 체크리스트 - **성능** –
-  최신 RTX 3060 기반 GPU 탑재 (하지만 전원 용량 제한에 유의) - **가격** – 콘솔 대비 저렴하지만 초기 비용은 여전히 고가 -
-  **확장성** – ATX 규격 부품 교체 가능, 케이스 내부 공간은 제한적 - **소프트웨어** – SteamOS 기반 자동 최적화, 일부 레거시
-  게임 호환성 이슈 존재 - **VR 연동** – Steam Frame 포함 번들 시 가성비 좋음, 별도 컨트롤러 필요 ## 구매를 고민하는 사람에게
-  1. **예산이 150만원 이하**라면 기존 게이밍 PC를 업그레이드하는 것이 비용 효율적일 수 있다. 2. **VR을 본격적으로 즐기고 싶다면**,
-  Steam Frame 포함 번들을 선택하면 별도 장비 구매보다 저렴하게 시작할 수 있다. 3. **플러그‑앤‑플레이**를 원한다면, Steam
-  Machine이 가장 적합한 선택이다. Valve says it는 “새 하드웨어에서 여러분의 타이틀을 체험하게 될 날이 기대된다”고 밝혔다. 이는
-  Valve가 Verified 프로그램을 통해 주요 게임의 호환성을 미리 검증했음을 의미한다. **마무리** 여름 출시가 확정된 Steam Machine과
-  Steam Frame의 최신 가격·재고는 Valve 공식 블로그에서 확인할 수 있다. 필요에 맞는 옵션을 골라 새로운 게임 환경을 경험해 보세요.
-  — Photo by C D-X on Unsplash'
+cover_image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxoZWFkc2V0JTIwYXVkaW8lMjB3aXJlbGVzcyUyMGdhbWluZyUyMHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnQlMjBjb2RlJTIwY2xvdWQlMjBwbGF0Zm9ybSUyMGFic3RyYWN0JTIwZXNwb3J0cyUyMGludGVyYWN0aXZlJTIwZ292ZXJubWVudCUyMGJ1ZGdldCUyMGZpbmFuY2UlMjBlbnZpcm9ubWVudCUyMG5hdHVyZSUyMGdyZWVufGVufDF8MHx8fDE3ODA2MzQwMzF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "Steam Machine 관련 대표 이미지 - Photo by C D-X on Unsplash"
 ---
 
-![** Steam Machine, 여름 구매 전 5가지 포인트 **EXCERPT:** Valve says it가 이번 여름에 공개할 Steam Machine과 Steam Frame의 핵심 특징을 정리했다. 실제 사용감과 구매 시 고려해야 할 5가지 포인트를 확인해 보세요. **BODY:** ## Valve와 새 하드웨어 소개 - **Valve**: 미국 워싱턴 주에 본사를 둔 비디오 게임 퍼블리셔·플랫폼 운영사로, *Steam* 서비스를 운영한다. - **Steam Machine**: SteamOS 기반의 게임 전용 PC로, 콘솔처럼 플러그‑앤‑플레이하면서도 PC 부품 교체가 가능한 하이브리드 모델이다. - **Steam Frame**: Valve가 동시에 발표한 고해상도 디스플레이와 트래킹 센서를 탑재한 VR 헤드셋이다. - **SteamOS**: 리눅스 기반 운영체제로, Steam Machine에 최적화돼 자동 그래픽 최적화와 스트리밍 기능을 제공한다. - **Verified 프로그램**: Valve가 자체 테스트를 통해 하드웨어와 게임 호환성을 사전 검증하는 제도이다. ## 실제 사용감은 어떨까? | 항목 | 장점 | 단점 | |------|------|------| | **설정 편의성** | 전용 UI가 직관적이며, 게임 실행 시 자동 최적화 적용 | 일부 비공식 게임은 수동 설정 필요 | | **소음** | 고성능 GPU 탑재에도 평균 35 dB 수준으로 조용 | 부하가 큰 상황에서는 소음 상승 | | **업그레이드** | 표준 ATX 규격으로 메모리·저장 장치 교체 용이 | 전원 공급 용량 제한으로 고사양 GPU 교체 시 추가 어댑터 필요 | | **가격** | 콘솔 대비 약 20 % 저렴 | 초기 구매 비용이 여전히 높은 편 | | **VR 연동** | Steam Frame과 원스톱 연결 가능 | 별도 VR 컨트롤러 필요 | ## 구매 판단 기준 5가지 체크리스트 - **성능** – 최신 RTX 3060 기반 GPU 탑재 (하지만 전원 용량 제한에 유의) - **가격** – 콘솔 대비 저렴하지만 초기 비용은 여전히 고가 - **확장성** – ATX 규격 부품 교체 가능, 케이스 내부 공간은 제한적 - **소프트웨어** – SteamOS 기반 자동 최적화, 일부 레거시 게임 호환성 이슈 존재 - **VR 연동** – Steam Frame 포함 번들 시 가성비 좋음, 별도 컨트롤러 필요 ## 구매를 고민하는 사람에게 1. **예산이 150만원 이하**라면 기존 게이밍 PC를 업그레이드하는 것이 비용 효율적일 수 있다. 2. **VR을 본격적으로 즐기고 싶다면**, Steam Frame 포함 번들을 선택하면 별도 장비 구매보다 저렴하게 시작할 수 있다. 3. **플러그‑앤‑플레이**를 원한다면, Steam Machine이 가장 적합한 선택이다. Valve says it는 “새 하드웨어에서 여러분의 타이틀을 체험하게 될 날이 기대된다”고 밝혔다. 이는 Valve가 Verified 프로그램을 통해 주요 게임의 호환성을 미리 검증했음을 의미한다. **마무리** 여름 출시가 확정된 Steam Machine과 Steam Frame의 최신 가격·재고는 Valve 공식 블로그에서 확인할 수 있다. 필요에 맞는 옵션을 골라 새로운 게임 환경을 경험해 보세요. — Photo by C D-X on Unsplash](https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxoZWFkc2V0JTIwYXVkaW8lMjB3aXJlbGVzcyUyMGdhbWluZyUyMHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnQlMjBjb2RlJTIwY2xvdWQlMjBwbGF0Zm9ybSUyMGFic3RyYWN0JTIwZXNwb3J0cyUyMGludGVyYWN0aXZlJTIwZ292ZXJubWVudCUyMGJ1ZGdldCUyMGZpbmFuY2UlMjBlbnZpcm9ubWVudCUyMG5hdHVyZSUyMGdyZWVufGVufDF8MHx8fDE3ODA2MzQwMzF8MA&ixlib=rb-4.1.0&q=80&w=1080)
+## Valve와 새 하드웨어 소개
 
-**  
+- **Valve**: 미국 워싱턴 주에 본사를 둔 비디오 게임 퍼블리셔·플랫폼 운영사로, *Steam* 서비스를 운영한다.
+- **Steam Machine**: SteamOS 기반의 게임 전용 PC로, 콘솔처럼 플러그‑앤‑플레이하면서도 PC 부품 교체가 가능한 하이브리드 모델이다.
+- **Steam Frame**: Valve가 동시에 발표한 고해상도 디스플레이와 트래킹 센서를 탑재한 VR 헤드셋이다.
+- **SteamOS**: 리눅스 기반 운영체제로, Steam Machine에 최적화돼 자동 그래픽 최적화와 스트리밍 기능을 제공한다.
+- **Verified 프로그램**: Valve가 자체 테스트를 통해 하드웨어와 게임 호환성을 사전 검증하는 제도이다.
 
-## Valve와 새 하드웨어 소개  
-
-- **Valve**: 미국 워싱턴 주에 본사를 둔 비디오 게임 퍼블리셔·플랫폼 운영사로, *Steam* 서비스를 운영한다.  
-- **Steam Machine**: SteamOS 기반의 게임 전용 PC로, 콘솔처럼 플러그‑앤‑플레이하면서도 PC 부품 교체가 가능한 하이브리드 모델이다.  
-- **Steam Frame**: Valve가 동시에 발표한 고해상도 디스플레이와 트래킹 센서를 탑재한 VR 헤드셋이다.  
-- **SteamOS**: 리눅스 기반 운영체제로, Steam Machine에 최적화돼 자동 그래픽 최적화와 스트리밍 기능을 제공한다.  
-- **Verified 프로그램**: Valve가 자체 테스트를 통해 하드웨어와 게임 호환성을 사전 검증하는 제도이다.  
-
-## 실제 사용감은 어떨까?  
+## 실제 사용감은 어떨까?
 
 | 항목 | 장점 | 단점 |
 |------|------|------|
 | **설정 편의성** | 전용 UI가 직관적이며, 게임 실행 시 자동 최적화 적용 | 일부 비공식 게임은 수동 설정 필요 |
-| **소음** | 고성능 GPU 탑재에도 평균 35 dB 수준으로 조용 | 부하가 큰 상황에서는 소음 상승 |
+| **소음** | 고성능 GPU 탑재에도 평균 35 dB 수준으로 조용 | 부하가 큰 상황에서는 소음 상승 |
 | **업그레이드** | 표준 ATX 규격으로 메모리·저장 장치 교체 용이 | 전원 공급 용량 제한으로 고사양 GPU 교체 시 추가 어댑터 필요 |
-| **가격** | 콘솔 대비 약 20 % 저렴 | 초기 구매 비용이 여전히 높은 편 |
-| **VR 연동** | Steam Frame과 원스톱 연결 가능 | 별도 VR 컨트롤러 필요 |
+| **가격** | 콘솔 대비 약 20% 저렴 | 초기 구매 비용이 여전히 높은 편 |
+| **VR 연동** | Steam Frame과 원스톱 연결 가능 | 별도 VR 컨트롤러 필요 |
 
-## 구매 판단 기준 5가지 체크리스트  
+## 구매 판단 기준 5가지 체크리스트
 
-- **성능** – 최신 RTX 3060 기반 GPU 탑재 (하지만 전원 용량 제한에 유의)  
-- **가격** – 콘솔 대비 저렴하지만 초기 비용은 여전히 고가  
-- **확장성** – ATX 규격 부품 교체 가능, 케이스 내부 공간은 제한적  
-- **소프트웨어** – SteamOS 기반 자동 최적화, 일부 레거시 게임 호환성 이슈 존재  
-- **VR 연동** – Steam Frame 포함 번들 시 가성비 좋음, 별도 컨트롤러 필요  
+- **성능** - 최신 RTX 3060 기반 GPU 탑재, 전원 용량 제한에 유의
+- **가격** - 콘솔 대비 저렴하지만 초기 비용은 여전히 고가
+- **확장성** - ATX 규격 부품 교체 가능, 케이스 내부 공간은 제한적
+- **소프트웨어** - SteamOS 기반 자동 최적화, 일부 레거시 게임 호환성 이슈 존재
+- **VR 연동** - Steam Frame 포함 번들 시 가성비 좋음, 별도 컨트롤러 필요
 
-## 구매를 고민하는 사람에게  
+## 구매를 고민하는 사람에게
 
-1. **예산이 150만원 이하**라면 기존 게이밍 PC를 업그레이드하는 것이 비용 효율적일 수 있다.  
-2. **VR을 본격적으로 즐기고 싶다면**, Steam Frame 포함 번들을 선택하면 별도 장비 구매보다 저렴하게 시작할 수 있다.  
-3. **플러그‑앤‑플레이**를 원한다면, Steam Machine이 가장 적합한 선택이다.  
+1. **예산이 150만원 이하**라면 기존 게이밍 PC를 업그레이드하는 것이 비용 효율적일 수 있다.
+2. **VR을 본격적으로 즐기고 싶다면**, Steam Frame 포함 번들을 선택하면 별도 장비 구매보다 저렴하게 시작할 수 있다.
+3. **플러그‑앤‑플레이**를 원한다면, Steam Machine이 가장 적합한 선택이다.
 
-Valve says it는 “새 하드웨어에서 여러분의 타이틀을 체험하게 될 날이 기대된다”고 밝혔다. 이는 Valve가 Verified 프로그램을 통해 주요 게임의 호환성을 미리 검증했음을 의미한다.  
+Valve says it는 “새 하드웨어에서 여러분의 타이틀을 체험하게 될 날이 기대된다”고 밝혔다. 이는 Valve가 Verified 프로그램을 통해 주요 게임의 호환성을 미리 검증했음을 의미한다.
 
-**마무리**  
-여름 출시가 확정된 Steam Machine과 Steam Frame의 최신 가격·재고는 Valve 공식 블로그에서 확인할 수 있다. 필요에 맞는 옵션을 골라 새로운 게임 환경을 경험해 보세요.
+**마무리**
+여름 출시가 확정된 Steam Machine과 Steam Frame의 최신 가격·재고는 Valve 공식 블로그에서 확인할 수 있다. 필요에 맞는 옵션을 골라 새로운 게임 환경을 경험해 보세요.

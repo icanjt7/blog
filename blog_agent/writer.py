@@ -288,9 +288,13 @@ BODY:
 
     @staticmethod
     def _extract(text: str, label: str, default: str) -> str:
-        pattern = rf"{label}:\s*(.*?)(?=\n[A-Z]+:|\Z)"
+        pattern = (
+            rf"(?im)^[ \t]*(?:\*\*)?{re.escape(label)}:(?:\*\*)?[ \t]*"
+            rf"(.*?)(?=^[ \t]*(?:\*\*)?(?:TITLE|EXCERPT|BODY):(?:\*\*)?[ \t]*|\Z)"
+        )
         match = re.search(pattern, text, flags=re.S)
-        return match.group(1).strip() if match else default
+        value = match.group(1).strip() if match else default
+        return re.sub(r"^\*\*|\*\*$", "", value).strip()
 
     @staticmethod
     def _slug(keyword: str) -> str:

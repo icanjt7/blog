@@ -109,8 +109,15 @@ class StaticSiteBuilder:
         meta: dict = {}
         body = raw
         if raw.startswith("---"):
-            _, frontmatter, body = raw.split("---", 2)
-            meta = yaml.safe_load(frontmatter) or {}
+            match = re.match(r"^---[ \t]*\r?\n(.*?)\r?\n---[ \t]*(?:\r?\n|$)", raw, flags=re.S)
+            if not match:
+                raise ValueError(f"Unclosed frontmatter in {path}")
+            frontmatter = match.group(1)
+            body = raw[match.end():]
+            try:
+                meta = yaml.safe_load(frontmatter) or {}
+            except yaml.YAMLError as exc:
+                raise ValueError(f"Invalid frontmatter YAML in {path}") from exc
         title = str(meta.get("title") or path.stem)
         date = self._parse_date(str(meta.get("date") or datetime.now().isoformat()))
         _cat_map = {"tech": "기술", "living": "생활", "finance": "정책", "local": "핫이슈"}
