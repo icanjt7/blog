@@ -180,7 +180,7 @@ class StaticSiteBuilder:
     _INSTITUTION_VISUALS: dict[str, str] = {
         "행정안전부": "government administration building",
         "과학기술정보통신부": "science technology research laboratory",
-        "기획재정부": "economy finance chart government",
+        "재정경제부": "economy finance chart government",
         "문화체육관광부": "culture arts tourism",
         "국가유산청": "korean heritage palace architecture",
         "국가유산진흥원": "traditional korean culture heritage",

@@ -4,14 +4,14 @@ date: "2026-06-05T00:06"
 category: "정책"
 tags:
   - "보도기사"
-  - "기획재정부"
+  - "재정경제부"
 quality_score: 90.0
 cover_image: "https://www.mofe.go.kr/images/common/og-image.jpg"
 cover_image_alt: "허장 제2차관, 프랑스 파리에서 한국경제 투자설명회 개최 관련 보도자료 이미지"
-author: "기획재정부"
+author: "재정경제부"
 ---
 
-기획재정부가 2026-06-05 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. 원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다.
+재정경제부가 2026-06-05 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. 원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다.
 
 ## 한눈에 보기
 
@@ -31,10 +31,10 @@ author: "기획재정부"
 
 ## 확인 메모
 
-- 발표 기관: 기획재정부
+- 발표 기관: 재정경제부
 - 발표일: 2026-06-05
 - 자료 성격: 기관 보도자료 기반 브리핑
 
 ## 원문
 
-- [기획재정부 보도자료](https://www.mofe.go.kr/nw/nes/detailNesDtaView.do?searchBbsId1=MOSFBBS_000000000028&menuNo=4010100&searchNttId1=MOSF_000000000078092)
+- [재정경제부 보도자료](https://www.mofe.go.kr/nw/nes/detailNesDtaView.do?searchBbsId1=MOSFBBS_000000000028&menuNo=4010100&searchNttId1=MOSF_000000000078092)

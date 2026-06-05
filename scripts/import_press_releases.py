@@ -3,7 +3,7 @@
 지원 기관:
   - 행정안전부   (mois)
   - 과학기술정보통신부 (msit)
-  - 기획재정부   (mofe)
+  - 재정경제부   (mofe)
   - 문화체육관광부 (mcst)
   - 국가유산청   (khs)
   - 국가유산진흥원 (kh)
@@ -41,7 +41,7 @@ SESSION.headers.update({"User-Agent": USER_AGENT})
 INSTITUTION_LOGOS: dict[str, str] = {
     "행정안전부":        "assets/logos/mois.jpg",
     "과학기술정보통신부": "assets/logos/msit.jpg",
-    "기획재정부":        "https://www.mofe.go.kr/images/common/og-image.jpg",
+    "재정경제부":        "https://www.mofe.go.kr/images/common/og-image.jpg",
     "문화체육관광부":    "assets/logos/mcst.gif",
     "국가유산청":        "https://www.khs.go.kr/images/layout/cha_card.jpg",
     "국가유산진흥원":    "assets/logos/kh.png",
@@ -50,7 +50,7 @@ INSTITUTION_LOGOS: dict[str, str] = {
 AGENCIES = {
     "mois": "행정안전부",
     "msit": "과학기술정보통신부",
-    "mofe": "기획재정부",
+    "mofe": "재정경제부",
     "mcst": "문화체육관광부",
     "khs":  "국가유산청",
     "kh":   "국가유산진흥원",
@@ -673,7 +673,7 @@ def msit_release(url: str) -> PressRelease:
 
 
 # ──────────────────────────────────────────────
-# 기획재정부 (mofe)
+# 재정경제부 (mofe)
 # ──────────────────────────────────────────────
 
 def mofe_links(per_source: int) -> list[str]:
@@ -704,15 +704,15 @@ def mofe_release(url: str) -> PressRelease:
     )
     if not body_m:
         body_m = re.search(r'class="boardInfo"(.*?)(?=class="(file|foot|btn)")', page, re.DOTALL)
-    title = clean_text(re.sub(r"<[^>]+>", " ", title_m.group(1))) if title_m else "기획재정부 보도자료"
+    title = clean_text(re.sub(r"<[^>]+>", " ", title_m.group(1))) if title_m else "재정경제부 보도자료"
     raw_date = re.sub(r"<[^>]+>", "", date_m.group(1) if date_m else "").strip()
     date = re.sub(r"\.", "-", raw_date.replace(" ", ""))[:10] or datetime.now().strftime("%Y-%m-%d")
     fragment = body_m.group(2) if body_m and body_m.lastindex and body_m.lastindex >= 2 else ""
     img_url, img_alt = first_image(fragment or page, url)
-    hwpx_text = extract_first_hwpx_attachment(page, url, "기획재정부")
+    hwpx_text = extract_first_hwpx_attachment(page, url, "재정경제부")
     body_text = hwpx_text or html_to_text(fragment or page)
     return PressRelease(
-        institution="기획재정부",
+        institution="재정경제부",
         title=title,
         date=date,
         url=url,
