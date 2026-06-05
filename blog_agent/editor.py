@@ -34,6 +34,14 @@ AI_CLICHES = [
     "놓치지 마세요",
 ]
 
+GENERIC_FALLBACK_PATTERNS = [
+    "최근 검색 수요가 꾸준히 생기는 주제입니다",
+    "공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다",
+    "조건, 비용, 일정, 공식 안내 변경 여부",
+    "지역명, 연도, 모델명 같은 보조 키워드",
+    "공식 자료 중심으로 간단히 정리했습니다",
+]
+
 
 class SeoEditorAgent:
     def __init__(self, settings: Settings | None = None) -> None:
@@ -177,9 +185,24 @@ BODY:
             if cliche in draft.body_markdown:
                 score -= 4
                 notes.append(f"AI 문체로 보일 수 있는 표현: {cliche}")
+        generic_hits = [pattern for pattern in GENERIC_FALLBACK_PATTERNS if pattern in combined]
+        if generic_hits:
+            score -= 45
+            notes.append("일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.")
         if draft.topic.category == "핫이슈" and re.search(r"다녀왔|방문했|먹어봤", draft.body_markdown):
             score -= 30
             notes.append("직접 방문한 것처럼 보이는 표현이 있습니다.")
+        if draft.topic.category == "핫이슈" and re.search(r"여행|코스|카페|맛집|해수욕장|동선", draft.topic.keyword):
+            has_tourapi = any("TourAPI" in source.title for source in draft.topic.sources)
+            has_specific_place = re.search(r"주변 포인트|추천 동선|해수욕장|동백섬|시장|카페|관광지", draft.body_markdown)
+            if not has_tourapi and not has_specific_place:
+                score -= 35
+                notes.append("여행 글인데 관광 API나 구체 장소 동선이 부족합니다.")
+        if draft.topic.category == "기술":
+            title_words = [word for word in re.split(r"\W+", draft.topic.title_hint) if len(word) >= 5]
+            if title_words and not any(word in draft.body_markdown for word in title_words[:5]):
+                score -= 25
+                notes.append("기술 글이 원문 제목의 핵심 대상을 충분히 설명하지 않습니다.")
         draft.quality_score = max(0, score)
         draft.review_notes = notes
         return draft

@@ -192,6 +192,8 @@ BODY:
     def _write_fallback(self, topic: Topic) -> Draft:
         if self._has_tourapi_source(topic):
             return self._write_tourism_fallback(topic)
+        if topic.category == "기술" and topic.sources:
+            return self._write_tech_source_fallback(topic)
         source_lines = "\n".join(f"- [{s.title}]({s.url})" for s in topic.sources)
         topic_with_subject = self._with_particle(topic.keyword, "은", "는")
         body = f"""## 한눈에 보기
@@ -234,6 +236,50 @@ BODY:
             title=f"{topic.keyword}: 지금 확인할 포인트",
             slug=self._slug(topic.keyword),
             excerpt=f"{topic.keyword} 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+            body_markdown=body,
+            tags=self._tags(topic),
+        )
+
+    def _write_tech_source_fallback(self, topic: Topic) -> Draft:
+        primary = topic.sources[0]
+        source_lines = "\n".join(f"- [{s.title}]({s.url})" for s in topic.sources)
+        summary = re.sub(r"\s+", " ", primary.summary or topic.title_hint).strip()
+        title = topic.title_hint if len(topic.title_hint) <= 58 else topic.title_hint[:55].rstrip() + "..."
+        body = f"""## 무슨 소식인가
+
+{topic.title_hint} 이슈는 단순한 해외 정책 뉴스가 아니라 기술 인프라의 비용과 책임을 묻는 흐름입니다. 원문 보도에서 확인되는 핵심은 다음과 같습니다.
+
+> {summary[:650]}
+
+## 왜 기술 이슈인가
+
+데이터센터, 클라우드, AI 서비스는 모두 전력과 냉각 설비 위에서 돌아갑니다. 새 규제나 허가 유예가 나오면 기업은 모델 개발 속도뿐 아니라 전력 계약, 지역 인허가, 냉각 방식, 송전망 부담까지 함께 계산해야 합니다.
+
+## 핵심 정리
+
+| 항목 | 봐야 할 내용 |
+| --- | --- |
+| 대상 | 어떤 기업, 설비, 서비스가 직접 영향을 받는지 |
+| 기술 맥락 | AI, 클라우드, 데이터센터, 반도체 중 어디와 연결되는지 |
+| 비용 변수 | 전력, 냉각, 인허가, 공급망 비용이 늘어나는지 |
+| 다음 확인 | 법안 서명, 시행일, 예외 조항, 기업 대응 |
+
+## 독자가 이해해야 할 포인트
+
+1. 제목의 주어가 모호하면 먼저 원문 제목 전체를 봐야 합니다.
+2. 정책 이슈라도 기술 카테고리에서는 인프라, 제품, 기업 전략과의 연결을 설명해야 합니다.
+3. 원문 요약만으로 부족하면 같은 사안을 다룬 공식 자료나 후속 보도를 함께 확인해야 합니다.
+4. 이 글은 빠른 브리핑이므로, 최종 판단은 원문 기사와 법안·기업 발표를 대조하는 편이 안전합니다.
+
+## 참고한 곳
+
+{source_lines}
+"""
+        return Draft(
+            topic=topic,
+            title=title,
+            slug=self._slug(topic.keyword),
+            excerpt=f"{topic.title_hint} 이슈가 기술 인프라와 기업 전략에 어떤 의미인지 정리했습니다.",
             body_markdown=body,
             tags=self._tags(topic),
         )
