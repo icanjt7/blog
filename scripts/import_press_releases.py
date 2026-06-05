@@ -313,6 +313,28 @@ def extract_sentences(text: str, limit: int = 6) -> list[str]:
     return out
 
 
+def extract_detail_lines(text: str, limit: int = 4) -> list[str]:
+    """Return usable detail lines even when the source is a list/table, not prose."""
+    lines: list[str] = []
+    seen: set[str] = set()
+    for raw in text.splitlines():
+        line = clean_text(raw)
+        line = re.sub(r"^[\-–—ㆍ·•○ㅇ◇□■▪▶※\*\s]+", "", line)
+        line = re.sub(r"\s+\*\s+", " / ", line)
+        if len(line) < 18:
+            continue
+        if any(skip in line for skip in ["문의", "연락처", "첨부", "다운로드", "미리보기", "보도자료"]):
+            continue
+        normalized = re.sub(r"\s+", "", line)
+        if normalized in seen:
+            continue
+        seen.add(normalized)
+        lines.append(shorten(line, 260))
+        if len(lines) >= limit:
+            break
+    return lines
+
+
 def _call_llm(writer: "WriterAgent", prompt: str,
               temperature: float = 0.8, max_tokens: int = 512) -> str:
     """writer의 LLM 클라이언트로 프롬프트를 보내고 텍스트를 반환한다."""
@@ -375,20 +397,25 @@ def rewrite_title(original: str, body_text: str, writer: "WriterAgent") -> str:
 def make_article_body(release: PressRelease) -> str:
     clean_title = re.sub(r"\(\d{6}\)\s*$", "", release.title).strip()
     sentences = [shorten(s) for s in extract_sentences(release.body_text)]
+    detail_lines = extract_detail_lines(release.body_text)
     summary = f"이번 보도자료의 핵심은 '{clean_title}'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다."
     points = sentences[1:4] or sentences[:3]
     details = sentences[4:6]
 
     bullets = "\n".join(f"- {s}" for s in points)
+    if not bullets and detail_lines:
+        bullets = "\n".join(f"- {s}" for s in detail_lines[:3])
     if not bullets:
         bullets = f"- 발표 기관: {release.institution}\n- 발표일: {release.date}\n- 핵심 주제: {clean_title}"
 
     detail = "\n\n".join(details)
-    if not detail and len(release.body_text) > 500:
+    if not detail and detail_lines:
+        detail = "\n\n".join(detail_lines[:2])
+    if not detail:
         paragraphs = [
             shorten(re.sub(r"^[\-–—ㆍ·•○ㅇ◇□■▪▶※\s]+", "", line), 260)
             for line in release.body_text.splitlines()
-            if len(clean_text(line)) > 40
+            if len(clean_text(line)) > 25
         ]
         detail = "\n\n".join(paragraphs[2:4] or paragraphs[:2])
     if not detail:
