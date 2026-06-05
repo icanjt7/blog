@@ -1,0 +1,75 @@
+name: Refine TourAPI posts
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_count:
+        description: "Maximum TourAPI fallback posts to refine"
+        required: true
+        default: "50"
+
+concurrency:
+  group: refine-tourapi-posts
+  cancel-in-progress: false
+
+jobs:
+  refine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+      models: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Refine legacy TourAPI posts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL || 'groq/compound' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.1-8b-instruct:free' }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+          LLM_TIMEOUT_SECONDS: ${{ vars.LLM_TIMEOUT_SECONDS || '30' }}
+        run: python -u scripts/refine_tourapi_posts.py --max-count "${{ inputs.max_count }}"
+
+      - name: Build static site
+        env:
+          BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
+          BLOG_CUSTOM_DOMAIN: ${{ vars.BLOG_CUSTOM_DOMAIN }}
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+          ADSENSE_PUBLISHER_ID: ${{ secrets.ADSENSE_PUBLISHER_ID }}
+        run: python -m blog_agent.cli build-site
+
+      - name: Commit refined posts
+        run: |
+          git config user.name "blog-agent"
+          git config user.email "actions@github.com"
+          git add output blog_agent scripts .github/workflows || true
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refine TourAPI travel posts"
+          git pull --rebase origin main
+          git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - uses: actions/deploy-pages@v4
