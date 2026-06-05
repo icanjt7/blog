@@ -10,7 +10,7 @@ import zlib
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlsplit, urlunsplit
 
 import markdown
 import yaml
@@ -752,15 +752,18 @@ class StaticSiteBuilder:
     def _write_sitemap(self, posts: list[Post]) -> None:
         now = datetime.now()
 
-        def _entry(loc: str, lastmod: datetime, changefreq: str, priority: str, description: str = "") -> str:
-            desc = f"\n    <description>{html.escape(description[:200])}</description>" if description else ""
+        def _sitemap_loc(loc: str) -> str:
+            parts = urlsplit(loc)
+            encoded_path = quote(parts.path, safe="/%")
+            return urlunsplit((parts.scheme, parts.netloc, encoded_path, parts.query, parts.fragment))
+
+        def _entry(loc: str, lastmod: datetime, changefreq: str, priority: str) -> str:
             return (
                 f"  <url>\n"
-                f"    <loc>{html.escape(loc)}</loc>\n"
+                f"    <loc>{html.escape(_sitemap_loc(loc))}</loc>\n"
                 f"    <lastmod>{lastmod:%Y-%m-%d}</lastmod>\n"
                 f"    <changefreq>{changefreq}</changefreq>\n"
-                f"    <priority>{priority}</priority>"
-                f"{desc}\n"
+                f"    <priority>{priority}</priority>\n"
                 f"  </url>"
             )
 
@@ -789,7 +792,6 @@ class StaticSiteBuilder:
                 post.date,
                 "monthly",
                 "0.7",
-                description=post.excerpt,
             ))
 
         sitemap = (
