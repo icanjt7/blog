@@ -589,8 +589,19 @@ class TourApiClient:
         except Exception:
             return []
 
-        body = data.get("response", {}).get("body", {})
-        items = body.get("items", {}).get("item", [])
+        response = data.get("response", {})
+        if not isinstance(response, dict):
+            return []
+
+        body = response.get("body", {})
+        if not isinstance(body, dict):
+            return []
+
+        item_container = body.get("items", {})
+        if not isinstance(item_container, dict):
+            return []
+
+        items = item_container.get("item", [])
         if isinstance(items, dict):
             return [items]
         if isinstance(items, list):
