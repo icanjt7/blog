@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import os
 import re
+from dataclasses import dataclass
 from pathlib import Path
 
 import yaml
@@ -14,19 +15,53 @@ TARGET_PHRASE = "TourAPI에서 본 주변 포인트"
 NEW_PHRASE = "주변 포인트"
 
 
-def init_client() -> tuple[OpenAI | None, str]:
+@dataclass(frozen=True)
+class LlmProvider:
+    name: str
+    client: OpenAI
+    model: str
+
+
+def init_providers() -> list[LlmProvider]:
     timeout = float(os.getenv("LLM_TIMEOUT_SECONDS", "30"))
+    providers: list[LlmProvider] = []
     if key := os.getenv("GROQ_API_KEY"):
-        return OpenAI(api_key=key, base_url="https://api.groq.com/openai/v1", timeout=timeout, max_retries=0), os.getenv("GROQ_MODEL", "groq/compound")
+        providers.append(
+            LlmProvider(
+                "groq",
+                OpenAI(api_key=key, base_url="https://api.groq.com/openai/v1", timeout=timeout, max_retries=0),
+                os.getenv("GROQ_MODEL", "groq/compound"),
+            )
+        )
     if key := os.getenv("GEMINI_API_KEY"):
-        return OpenAI(api_key=key, base_url="https://generativelanguage.googleapis.com/v1beta/openai/", timeout=timeout, max_retries=0), os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
+        providers.append(
+            LlmProvider(
+                "gemini",
+                OpenAI(api_key=key, base_url="https://generativelanguage.googleapis.com/v1beta/openai/", timeout=timeout, max_retries=0),
+                os.getenv("GEMINI_MODEL", "gemini-2.0-flash"),
+            )
+        )
     if key := os.getenv("OPENROUTER_API_KEY"):
-        return OpenAI(api_key=key, base_url="https://openrouter.ai/api/v1", timeout=timeout, max_retries=0), os.getenv("OPENROUTER_MODEL", "meta-llama/llama-3.1-8b-instruct:free")
+        providers.append(
+            LlmProvider(
+                "openrouter",
+                OpenAI(api_key=key, base_url="https://openrouter.ai/api/v1", timeout=timeout, max_retries=0),
+                os.getenv("OPENROUTER_MODEL", "meta-llama/llama-3.1-8b-instruct:free"),
+            )
+        )
     if key := os.getenv("OPENAI_API_KEY"):
-        return OpenAI(api_key=key, timeout=timeout, max_retries=0), os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+        providers.append(LlmProvider("openai", OpenAI(api_key=key, timeout=timeout, max_retries=0), os.getenv("OPENAI_MODEL", "gpt-4.1-mini")))
     if key := os.getenv("GITHUB_TOKEN"):
-        return OpenAI(api_key=key, base_url="https://models.inference.ai.azure.com", timeout=timeout, max_retries=0), os.getenv("GITHUB_MODEL", "Llama-3.3-70B-Instruct")
-    return None, ""
+        providers.append(
+            LlmProvider(
+                "github",
+                OpenAI(api_key=key, base_url="https://models.inference.ai.azure.com", timeout=timeout, max_retries=0),
+                os.getenv("GITHUB_MODEL", "Llama-3.3-70B-Instruct"),
+            )
+        )
+    order = [name.strip() for name in os.getenv("REFINE_LLM_PROVIDER_ORDER", "gemini,openrouter,openai,github,groq").split(",")]
+    rank = {name: index for index, name in enumerate(order)}
+    return sorted(providers, key=lambda provider: rank.get(provider.name, len(rank)))
 
 
 def split_post(text: str) -> tuple[dict, str]:
@@ -55,7 +90,15 @@ def rule_cleanup(body: str) -> str:
     return cleaned.strip()
 
 
-def llm_refine(client: OpenAI, model: str, title: str, body: str) -> str:
+def is_target_post(text: str) -> bool:
+    return TARGET_PHRASE in text or ("## 주변 포인트" in text and "한국관광공사 TourAPI" in text)
+
+
+def compact_body_for_prompt(body: str) -> str:
+    return body[:7000]
+
+
+def llm_refine(provider: LlmProvider, title: str, body: str) -> str:
     prompt = f"""
 아래 한국어 여행/핫이슈 블로그 글의 본문만 자연스럽게 다시 다듬어 주세요.
 
@@ -72,10 +115,10 @@ def llm_refine(client: OpenAI, model: str, title: str, body: str) -> str:
 {title}
 
 현재 본문:
-{body}
+{compact_body_for_prompt(body)}
 """
-    response = client.chat.completions.create(
-        model=model,
+    response = provider.client.chat.completions.create(
+        model=provider.model,
         messages=[{"role": "user", "content": prompt}],
         temperature=0.55,
         max_tokens=2200,
@@ -85,24 +128,29 @@ def llm_refine(client: OpenAI, model: str, title: str, body: str) -> str:
     return rule_cleanup(refined)
 
 
-def refine_file(path: Path, client: OpenAI | None, model: str, dry_run: bool) -> tuple[bool, str]:
+def refine_file(path: Path, providers: list[LlmProvider], dry_run: bool) -> tuple[bool, str]:
     text = path.read_text(encoding="utf-8")
-    if TARGET_PHRASE not in text:
-        return False, "no target phrase"
+    if not is_target_post(text):
+        return False, "not a TourAPI fallback post"
 
     meta, body = split_post(text)
     title = str(meta.get("title") or path.stem)
     cover, content = extract_cover(body)
     content = rule_cleanup(content)
 
-    if client:
-        try:
-            content = llm_refine(client, model, title, content)
-        except Exception as exc:
-            content = rule_cleanup(content)
-            reason = f"llm failed, rule cleanup only: {exc}"
+    if providers:
+        errors: list[str] = []
+        for provider in providers:
+            try:
+                content = llm_refine(provider, title, content)
+            except Exception as exc:
+                errors.append(f"{provider.name}: {exc}")
+                continue
+            reason = f"llm refined via {provider.name}"
+            break
         else:
-            reason = "llm refined"
+            content = rule_cleanup(content)
+            reason = "all llm providers failed, rule cleanup only: " + " | ".join(errors[:3])
     else:
         reason = "no llm key, rule cleanup only"
 
@@ -123,13 +171,13 @@ def main() -> None:
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
-    client, model = init_client()
+    providers = init_providers()
     paths = sorted(Path().glob(args.glob))
     changed = 0
     for path in paths:
         if changed >= args.max_count:
             break
-        ok, reason = refine_file(path, client, model, args.dry_run)
+        ok, reason = refine_file(path, providers, args.dry_run)
         if ok:
             changed += 1
             mode = "would refine" if args.dry_run else "refined"
