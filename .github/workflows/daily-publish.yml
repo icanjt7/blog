@@ -61,7 +61,7 @@ jobs:
           TOURAPI_TOUR_EN: ${{ secrets.TOURAPI_TOUR_EN }}
           TOURAPI_BASE_YM: ${{ vars.TOURAPI_BASE_YM || '202503' }}
           # Blog settings
-          BLOG_POST_COUNT: ${{ vars.DAILY_POST_COUNT || '1' }}
+          BLOG_POST_COUNT: "1"
           ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
           ENABLE_IMAGE_GENERATION: ${{ vars.ENABLE_IMAGE_GENERATION || 'false' }}
           PUBLISHER: ${{ vars.PUBLISHER || 'markdown' }}
