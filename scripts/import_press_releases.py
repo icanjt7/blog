@@ -399,7 +399,7 @@ def make_article_body(release: PressRelease) -> str:
 
     sections = [
         (
-            f"{release.institution}이 {release.date} 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. "
+            f"{with_particle(release.institution, '이', '가')} {release.date} 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. "
             "원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다."
         ),
         "## 한눈에 보기",
@@ -419,6 +419,14 @@ def make_article_body(release: PressRelease) -> str:
 def _excerpt(text: str, limit: int = 180) -> str:
     text = " ".join(clean_text(text).split())
     return text[:limit].rstrip()
+
+
+def with_particle(text: str, consonant_particle: str, vowel_particle: str) -> str:
+    if not text:
+        return text
+    code = ord(text[-1])
+    has_final = 0xAC00 <= code <= 0xD7A3 and (code - 0xAC00) % 28 != 0
+    return text + (consonant_particle if has_final else vowel_particle)
 
 
 def search_cover_image(
