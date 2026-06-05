@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from .config import Settings
 from .editor import SeoEditorAgent
 from .images import ImageAgent
-from .models import Draft, PublishResult
+from .models import Draft, PublishResult, Topic
 from .publishers import build_publisher
 from .reports import ReportWriter
 from .retrieval import FactRetriever
@@ -40,6 +40,7 @@ class BlogPipeline:
         # 여유분 포함해서 스카우트 — 품질 미달 시 다음 주제로 넘어가기 위해
         candidate_limit = count * 3
         topics = self.scout.scout(limit=candidate_limit)
+        topics = self._prioritize_api_topic(topics, count)
         self.store.add_event(
             run_id,
             "trend_scout",
@@ -96,3 +97,40 @@ class BlogPipeline:
             self.store.add_event(run_id, "pipeline", "failed", {"error": str(exc)})
             self.store.finish_run(run_id, "failed", error=str(exc))
             raise
+
+    def _prioritize_api_topic(self, topics: list[Topic], count: int) -> list[Topic]:
+        if count <= 0 or not self.retriever.tourapi or not self._has_tourapi_key():
+            return topics
+        publish_window = min(count, len(topics))
+        if any(self._is_tourapi_topic(topic) for topic in topics[:publish_window]):
+            return topics
+        for index, topic in enumerate(topics[publish_window:], start=publish_window):
+            if self._is_tourapi_topic(topic):
+                reordered = list(topics)
+                api_topic = reordered.pop(index)
+                reordered.insert(max(0, publish_window - 1), api_topic)
+                return reordered
+        return topics
+
+    def _has_tourapi_key(self) -> bool:
+        return any(
+            [
+                self.settings.tourapi_guide_key,
+                self.settings.tourapi_rate_key,
+                self.settings.tourapi_mdc_key,
+                self.settings.tourapi_pet_key,
+                self.settings.tourapi_tour_key,
+                self.settings.tourapi_tour_en_key,
+            ]
+        )
+
+    def _is_tourapi_topic(self, topic: Topic) -> bool:
+        tourapi = self.retriever.tourapi
+        return bool(
+            tourapi
+            and (
+                tourapi.is_tourism_topic(topic)
+                or tourapi.is_medical_tourism_topic(topic)
+                or tourapi.is_pet_tourism_topic(topic)
+            )
+        )
