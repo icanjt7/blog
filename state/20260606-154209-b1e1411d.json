@@ -1,0 +1,389 @@
+{
+  "run_id": "20260606-154209-b1e1411d",
+  "topics": [
+    {
+      "keyword": "06월 제주 반려동물 동반여행",
+      "title_hint": "06월 제주 반려동물 동반여행 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "06월 서울 의료관광 병원",
+      "title_hint": "06월 서울 의료관광 병원 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "mayor of Shelbyville",
+      "title_hint": "The mayor of Shelbyville, Indiana, says only people who live in ‘shitty houses’ oppose data center",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "The mayor of Shelbyville, Indiana, says only people who live in ‘shitty houses’ oppose data center",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/944984/shelbyville-indiana-mayor-shitty-houses-data-center",
+          "published_at": "2026-06-06T15:05:00",
+          "summary": "A proposed $2 billion data center has become a political flashpoint in the small city of Shelbyville, Indiana. And the controversy has only grown more intense after the mayor, Scott Furgeson, was caught on camera saying of the \"No Data Center\" signs going up that, \"I've seen a lot of these all over town, but [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Benn Jordan longs",
+      "title_hint": "Benn Jordan longs for the days of tech that didn’t spy on you",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Benn Jordan longs for the days of tech that didn’t spy on you",
+          "url": "https://www.theverge.com/report/942609/benn-jordan-music-gear-cybersecurity-surveillance-questionnaire",
+          "published_at": "2026-06-06T15:00:00",
+          "summary": "Benn Jordan may have initially gained notoriety for his music as Flashbulb and later, reviewing synths and effects pedals on YouTube under Benn and Gear. But about five years ago, Benn decided to take his YouTube channel in a different direction. He didn't stop covering music gear overnight, but as time progressed, his channel became [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "06월 여수 밤바다 여행",
+      "title_hint": "06월 여수 밤바다 여행 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드 / TourAPI 연관 관광지 10건 활용",
+      "sources": [
+        {
+          "title": "한국관광공사 TourAPI 관광지별 연관 관광지 정보",
+          "url": "https://www.data.go.kr/data/15128560/openapi.do",
+          "published_at": null,
+          "summary": "TourAPI 관광지별 연관 관광지 정보에서 가져온 공개 데이터입니다. 글에서는 연관 관광지, 주변에서 함께 묶기 좋은 지점, 카테고리 흐름을 우선 반영하세요. 조회 키워드: 06월 여수 밤바다 여행. 결과: 기준 관광지 GS칼텍스예울마루 · 연관 관광지 라라브레드/여수점 · 분류 음식 · 지역 전라남도 · 연관 순위 1 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 샛별식당 · 분류 음식 · 지역 전라남도 · 연관 순위 2 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 나르샤관광호텔 · 분류 숙박 · 지역 전라남도 · 연관 순위 3 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 히든베이호텔 · 분류 숙박 · 지역 전라남도 · 연관 순위 4 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 웅천친수공원 · 분류 관광지 · 지역 전라남도 · 연관 순위 5 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 라마다프라자바이윈덤/여수 · 분류 숙박 · 지역 전라남도 · 연관 순위 6 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 디오션리조트 · 분류 숙박 · 지역 전라남도 · 연관 순위 7 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 자매식당산장어전문점 · 분류 음식 · 지역 전라남도 · 연관 순위 8",
+          "authority": 5
+        },
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "06월 전주 한옥마을 먹거리 동선",
+      "title_hint": "06월 전주 한옥마을 먹거리 동선 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": []
+    },
+    {
+      "keyword": "82 is best",
+      "title_hint": "82-0 is the best basketball game, to hell with NBA 2K",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "82-0 is the best basketball game, to hell with NBA 2K",
+          "url": "https://www.theverge.com/games/944975/82-0-perfect-basketball-stats-game",
+          "published_at": "2026-06-06T14:30:00",
+          "summary": "82-0 marries the stat nerd fun of fantasy basketball with instant gratification and a bit of dumb luck. The goal is to draft a team of players that could (theoretically) have a perfect 82-0 season. Obviously, if you just had free rein to pick whoever you wanted from throughout history, there would be little challenge. [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Meta made its",
+      "title_hint": "Meta made its own AI-generated clickbait news feed",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Meta made its own AI-generated clickbait news feed",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/944235/meta-app-ai-clickbait-articles",
+          "published_at": "2026-06-06T14:00:00",
+          "summary": "Facebook has long been filled with feeds of clickbait articles. Now, Meta is making its own clickbait articles with AI. The standalone Meta AI app now has a \"For You\" section that populates a list of clickbait-style stories for you to read. But the topics, images, and text are all AI-generated - and as questionable [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Kabuto Park captures",
+      "title_hint": "Kabuto Park captures the fleeting joy of summer vacation",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Kabuto Park captures the fleeting joy of summer vacation",
+          "url": "https://www.theverge.com/entertainment/944060/kabuto-park-review-xbox-nintendo-switch-steam",
+          "published_at": "2026-06-06T13:00:00",
+          "summary": "There are a lot of games that remind me of summer - hot days in the backseat with a copy of Dragon Warrior III, cooling off in the basement while grinding Gran Turismo races - but there aren't a lot of games that are actually about summer. That's part of what makes Kabuto Park so [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "06월 제주 반려동물 동반여행",
+        "title_hint": "06월 제주 반려동물 동반여행 핵심 정리",
+        "category": "핫이슈",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "06월 제주 반려동물 동반여행: 지금 확인할 포인트",
+      "slug": "06월-제주-반려동물-동반여행-6bb0ddfb",
+      "excerpt": "06월 제주 반려동물 동반여행 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n06월 제주 반려동물 동반여행은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n06월 제주 반려동물 동반여행를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n06월 제주 반려동물 동반여행 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 06월 제주 반려동물 동반여행와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "핫이슈",
+        "06월",
+        "제주",
+        "반려동물",
+        "동반여행"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1621352973597-a53f65a96336?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMGxhbmRtYXJrJTIwd2Fsa2luZyUyMGplanUlMjBpc2xhbmQlMjBjb2FzdGxpbmUlMjBjYWZlfGVufDF8MHx8fDE3ODA3MDMwNDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 제주 반려동물 동반여행: 지금 확인할 포인트 — Photo by Yamin Ohmar on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 제주 반려동물 동반여행: 지금 확인할 포인트. Keyword: 06월 제주 반려동물 동반여행. Concrete visual subject: travel destination landmark walking jeju island coastline cafe. Context: ## 한눈에 보기 06월 제주 반려동물 동반여행은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 제주 반려동물 동반여행를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 제주 반려동물 동반여행 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-06T15:50:25.986678",
+      "quality_score": 20.0,
+      "review_notes": [
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "여행 글인데 관광 API나 구체 장소 동선이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 서울 의료관광 병원",
+        "title_hint": "06월 서울 의료관광 병원 핵심 정리",
+        "category": "핫이슈",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "06월 서울 의료관광 병원: 지금 확인할 포인트",
+      "slug": "06월-서울-의료관광-병원-e0cfb269",
+      "excerpt": "06월 서울 의료관광 병원 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n06월 서울 의료관광 병원은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n06월 서울 의료관광 병원를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n06월 서울 의료관광 병원 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 06월 서울 의료관광 병원와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "핫이슈",
+        "06월",
+        "서울",
+        "의료관광",
+        "병원"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1762440127280-3d9a764d3821?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBzZW91bCUyMHJlc3RhdXJhbnQlMjBzdHJlZXQlMjBjaXR5JTIwZm9vZCUyMGhlYWx0aGNhcmUlMjBtZWRpY2FsJTIwY2xlYW58ZW58MXwwfHx8MTc4MDcwMzA4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 서울 의료관광 병원: 지금 확인할 포인트 — Photo by Rina Kemppainen on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 서울 의료관광 병원: 지금 확인할 포인트. Keyword: 06월 서울 의료관광 병원. Concrete visual subject: tourism destination travel seoul restaurant street city food healthcare medical clean. Context: ## 한눈에 보기 06월 서울 의료관광 병원은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 서울 의료관광 병원를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 서울 의료관광 병원 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-06T15:50:59.601150",
+      "quality_score": 55.0,
+      "review_notes": [
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "mayor of Shelbyville",
+        "title_hint": "The mayor of Shelbyville, Indiana, says only people who live in ‘shitty houses’ oppose data center",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "The mayor of Shelbyville, Indiana, says only people who live in ‘shitty houses’ oppose data center",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/944984/shelbyville-indiana-mayor-shitty-houses-data-center",
+            "published_at": "2026-06-06T15:05:00",
+            "summary": "A proposed $2 billion data center has become a political flashpoint in the small city of Shelbyville, Indiana. And the controversy has only grown more intense after the mayor, Scott Furgeson, was caught on camera saying of the \"No Data Center\" signs going up that, \"I've seen a lot of these all over town, but [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "The mayor of Shelbyville, Indiana, says only people who...",
+      "slug": "mayor-of-shelbyville-eee881ec",
+      "excerpt": "The mayor of Shelbyville, Indiana, says only people who live in ‘shitty houses’ oppose data center 이슈가 기술 인프라와 기업 전략에 어떤 의미인지 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\nThe mayor of Shelbyville, Indiana, says only people who live in ‘shitty houses’ oppose data center 이슈는 단순한 해외 정책 뉴스가 아니라 기술 인프라의 비용과 책임을 묻는 흐름입니다. 원문 보도에서 확인되는 핵심은 다음과 같습니다.\n\n> A proposed $2 billion data center has become a political flashpoint in the small city of Shelbyville, Indiana. And the controversy has only grown more intense after the mayor, Scott Furgeson, was caught on camera saying of the \"No Data Center\" signs going up that, \"I've seen a lot of these all over town, but [&#8230;]\n\n## 왜 기술 이슈인가\n\n데이터센터, 클라우드, AI 서비스는 모두 전력과 냉각 설비 위에서 돌아갑니다. 새 규제나 허가 유예가 나오면 기업은 모델 개발 속도뿐 아니라 전력 계약, 지역 인허가, 냉각 방식, 송전망 부담까지 함께 계산해야 합니다.\n\n## 핵심 정리\n\n| 항목 | 봐야 할 내용 |\n| --- | --- |\n| 대상 | 어떤 기업, 설비, 서비스가 직접 영향을 받는지 |\n| 기술 맥락 | AI, 클라우드, 데이터센터, 반도체 중 어디와 연결되는지 |\n| 비용 변수 | 전력, 냉각, 인허가, 공급망 비용이 늘어나는지 |\n| 다음 확인 | 법안 서명, 시행일, 예외 조항, 기업 대응 |\n\n## 독자가 이해해야 할 포인트\n\n1. 제목의 주어가 모호하면 먼저 원문 제목 전체를 봐야 합니다.\n2. 정책 이슈라도 기술 카테고리에서는 인프라, 제품, 기업 전략과의 연결을 설명해야 합니다.\n3. 원문 요약만으로 부족하면 같은 사안을 다룬 공식 자료나 후속 보도를 함께 확인해야 합니다.\n4. 이 글은 빠른 브리핑이므로, 최종 판단은 원문 기사와 법안·기업 발표를 대조하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [The mayor of Shelbyville, Indiana, says only people who live in ‘shitty houses’ oppose data center](https://www.theverge.com/ai-artificial-intelligence/944984/shelbyville-indiana-mayor-shitty-houses-data-center)\n",
+      "tags": [
+        "기술",
+        "mayor",
+        "of",
+        "Shelbyville"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1750365919878-2735d30fa3d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwNjczNjE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "The mayor of Shelbyville, Indiana, says only people who... — Photo by Omar:. Lopez-Rincon on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: The mayor of Shelbyville, Indiana, says only people who.... Keyword: mayor of Shelbyville. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 The mayor of Shelbyville, Indiana, says only people who live in ‘shitty houses’ oppose data center 이슈는 단순한 해외 정책 뉴스가 아니라 기술 인프라의 비용과 책임을 묻는 흐름입니다. 원문 보도에서 확인되는 핵심은 다음과 같습니다. > A proposed $2 billion data center has become a political flashpoint in the small city of Shelbyville, Indiana. And the controversy has only grown more intense after the mayor, Scott Furgeson, was caught on camera saying of the \"No Data Center\" signs going up that, \"I've seen a lot of these all over town, but [&#8230;] ## 왜 기술 이슈인가 데이터센터, 클라우드, AI 서비스는 모두 전력과 냉각 설비 위에서 돌아갑니다. 새 규제나 허가 유예가 나오면 기업은 모델 개발 속도뿐 아니라 전력 계약, 지역 인허가, 냉각 방식, 송전망 부담까지 함께 계산해야 합니다. ## 핵심 정리 | 항목 | 봐야 할 내용 | | --- | --- | | 대상 | 어떤 기업, 설비. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-06T15:51:11.910008",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Benn Jordan longs",
+        "title_hint": "Benn Jordan longs for the days of tech that didn’t spy on you",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Benn Jordan longs for the days of tech that didn’t spy on you",
+            "url": "https://www.theverge.com/report/942609/benn-jordan-music-gear-cybersecurity-surveillance-questionnaire",
+            "published_at": "2026-06-06T15:00:00",
+            "summary": "Benn Jordan may have initially gained notoriety for his music as Flashbulb and later, reviewing synths and effects pedals on YouTube under Benn and Gear. But about five years ago, Benn decided to take his YouTube channel in a different direction. He didn't stop covering music gear overnight, but as time progressed, his channel became [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Benn Jordan longs for the days of tech that didn’t spy...",
+      "slug": "benn-jordan-longs-8e4d4d31",
+      "excerpt": "Benn Jordan longs for the days of tech that didn’t spy on you 이슈가 기술 인프라와 기업 전략에 어떤 의미인지 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\nBenn Jordan longs for the days of tech that didn’t spy on you 이슈는 단순한 해외 정책 뉴스가 아니라 기술 인프라의 비용과 책임을 묻는 흐름입니다. 원문 보도에서 확인되는 핵심은 다음과 같습니다.\n\n> Benn Jordan may have initially gained notoriety for his music as Flashbulb and later, reviewing synths and effects pedals on YouTube under Benn and Gear. But about five years ago, Benn decided to take his YouTube channel in a different direction. He didn't stop covering music gear overnight, but as time progressed, his channel became [&#8230;]\n\n## 왜 기술 이슈인가\n\n데이터센터, 클라우드, AI 서비스는 모두 전력과 냉각 설비 위에서 돌아갑니다. 새 규제나 허가 유예가 나오면 기업은 모델 개발 속도뿐 아니라 전력 계약, 지역 인허가, 냉각 방식, 송전망 부담까지 함께 계산해야 합니다.\n\n## 핵심 정리\n\n| 항목 | 봐야 할 내용 |\n| --- | --- |\n| 대상 | 어떤 기업, 설비, 서비스가 직접 영향을 받는지 |\n| 기술 맥락 | AI, 클라우드, 데이터센터, 반도체 중 어디와 연결되는지 |\n| 비용 변수 | 전력, 냉각, 인허가, 공급망 비용이 늘어나는지 |\n| 다음 확인 | 법안 서명, 시행일, 예외 조항, 기업 대응 |\n\n## 독자가 이해해야 할 포인트\n\n1. 제목의 주어가 모호하면 먼저 원문 제목 전체를 봐야 합니다.\n2. 정책 이슈라도 기술 카테고리에서는 인프라, 제품, 기업 전략과의 연결을 설명해야 합니다.\n3. 원문 요약만으로 부족하면 같은 사안을 다룬 공식 자료나 후속 보도를 함께 확인해야 합니다.\n4. 이 글은 빠른 브리핑이므로, 최종 판단은 원문 기사와 법안·기업 발표를 대조하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [Benn Jordan longs for the days of tech that didn’t spy on you](https://www.theverge.com/report/942609/benn-jordan-music-gear-cybersecurity-surveillance-questionnaire)\n",
+      "tags": [
+        "기술",
+        "Benn",
+        "Jordan",
+        "longs"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwNjczNjE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Benn Jordan longs for the days of tech that didn’t spy... — Photo by Ludovico Ceroseis on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Benn Jordan longs for the days of tech that didn’t spy.... Keyword: Benn Jordan longs. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 Benn Jordan longs for the days of tech that didn’t spy on you 이슈는 단순한 해외 정책 뉴스가 아니라 기술 인프라의 비용과 책임을 묻는 흐름입니다. 원문 보도에서 확인되는 핵심은 다음과 같습니다. > Benn Jordan may have initially gained notoriety for his music as Flashbulb and later, reviewing synths and effects pedals on YouTube under Benn and Gear. But about five years ago, Benn decided to take his YouTube channel in a different direction. He didn't stop covering music gear overnight, but as time progressed, his channel became [&#8230;] ## 왜 기술 이슈인가 데이터센터, 클라우드, AI 서비스는 모두 전력과 냉각 설비 위에서 돌아갑니다. 새 규제나 허가 유예가 나오면 기업은 모델 개발 속도뿐 아니라 전력 계약, 지역 인허가, 냉각 방식, 송전망 부담까지 함께 계산해야 합니다. ## 핵심 정리 | 항목 | 봐야 할 내용 | | --- | --- | | 대상 | 어떤 기업, 설비, 서비스가 직접 영. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-06T15:51:34.207715",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 여수 밤바다 여행",
+        "title_hint": "06월 여수 밤바다 여행 핵심 정리",
+        "category": "핫이슈",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드 / TourAPI 연관 관광지 10건 활용",
+        "sources": [
+          {
+            "title": "한국관광공사 TourAPI 관광지별 연관 관광지 정보",
+            "url": "https://www.data.go.kr/data/15128560/openapi.do",
+            "published_at": null,
+            "summary": "TourAPI 관광지별 연관 관광지 정보에서 가져온 공개 데이터입니다. 글에서는 연관 관광지, 주변에서 함께 묶기 좋은 지점, 카테고리 흐름을 우선 반영하세요. 조회 키워드: 06월 여수 밤바다 여행. 결과: 기준 관광지 GS칼텍스예울마루 · 연관 관광지 라라브레드/여수점 · 분류 음식 · 지역 전라남도 · 연관 순위 1 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 샛별식당 · 분류 음식 · 지역 전라남도 · 연관 순위 2 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 나르샤관광호텔 · 분류 숙박 · 지역 전라남도 · 연관 순위 3 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 히든베이호텔 · 분류 숙박 · 지역 전라남도 · 연관 순위 4 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 웅천친수공원 · 분류 관광지 · 지역 전라남도 · 연관 순위 5 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 라마다프라자바이윈덤/여수 · 분류 숙박 · 지역 전라남도 · 연관 순위 6 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 디오션리조트 · 분류 숙박 · 지역 전라남도 · 연관 순위 7 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 자매식당산장어전문점 · 분류 음식 · 지역 전라남도 · 연관 순위 8",
+            "authority": 5
+          },
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "06월 여수 밤바다 여행, 처음 가면 이 동선",
+      "slug": "06월-여수-밤바다-여행-1616b6e4",
+      "excerpt": "06월 여수 밤바다 여행 방문 전 공개 데이터의 연관 관광지 정보를 바탕으로 동선을 잡았습니다.",
+      "body_markdown": "## 한눈에 보기\n\n06월 여수 밤바다 여행은 카페나 명소 한 곳만 찍는 글보다 실제로 어떻게 움직이면 좋은지가 더 중요합니다. 한국관광공사 공개 데이터의 연관 관광지 정보를 기준으로 보면, 먼저 대표 지점을 정하고 주변에서 함께 묶을 곳을 고르는 방식이 가장 안전합니다.\n\n## 추천 동선\n\n| 순서 | 볼 것 | 판단 기준 |\n| --- | --- | --- |\n| 1 | 대표 관광지 또는 거리 초입 | 이동 기준점으로 삼기 좋음 |\n| 2 | 국문 관광정보의 주소·분류가 분명한 장소 | 지도에서 실제 이동 순서 확인 |\n| 3 | 카페·식사·휴식 지점 | 오래 머물 곳은 중간에 배치 |\n| 4 | 산책·야경·시장 등 마무리 지점 | 시간대와 혼잡도를 보고 조정 |\n\n06월 여수 밤바다 여행를 처음 볼 때는 지도에서 가장 유명한 지점 하나를 먼저 찍고, 그 주변의 연관 장소를 2~3개만 더하는 편이 좋습니다. 동선을 너무 길게 잡으면 이동 시간이 늘어나고, 실제로는 카페나 식사 대기 때문에 뒤 일정이 밀리기 쉽습니다.\n\n## 주변 포인트\n\nTourAPI 관광지별 연관 관광지 정보에서 가져온 공개 데이터입니다. 글에서는 연관 관광지, 주변에서 함께 묶기 좋은 지점, 카테고리 흐름을 우선 반영하세요. 조회 키워드: 06월 여수 밤바다 여행. 결과: 기준 관광지 GS칼텍스예울마루 · 연관 관광지 라라브레드/여수점 · 분류 음식 · 지역 전라남도 · 연관 순위 1 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 샛별식당 · 분류 음식 · 지역 전라남도 · 연관 순위 2 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 나르샤관광호텔 · 분류 숙박 · 지역 전라남도 · 연관 순위 3 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 히든베이호텔 · 분류 숙박 · 지역 전라남도 · 연관 순위 4 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 웅천친수공원 · 분류 관광지 · 지역 전라남도 · 연관 순위 5 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 라마다프라자바이윈덤/여수 · 분류 숙박 · 지역 전라남도 · 연관 순위 6 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 디오션리조트 · 분류 숙박 · 지역 전라남도 · 연관 순위 7 / 기준 관광지 GS칼텍스예울마루 · 연관 관광지 자매식당산장어전문점 · 분류 음식 · 지역 전라남도 · 연관 순위 8\n\n## 이렇게 움직이면 편합니다\n\n1. 출발지는 대중교통역이나 주차 가능한 대표 지점으로 잡습니다.\n2. 첫 장소에서 바로 오래 머물기보다 주변 골목과 상권을 먼저 훑습니다.\n3. 카페나 식사는 동선 중간에 넣어 체력을 아낍니다.\n4. 국문 관광정보에 주소, 운영시간, 휴무, 주차가 있으면 동선표의 판단 기준으로 씁니다.\n5. 영문 관광정보가 있으면 외국인 독자가 검색할 수 있는 영문 장소명이나 주소를 함께 적습니다.\n6. 관광지 집중률 데이터가 있으면 혼잡 가능성을 보는 보조 지표로만 참고합니다.\n7. 의료관광 정보가 포함된 경우 예약, 진료 가능 여부, 통역, 비용은 기관에 직접 확인합니다.\n8. 반려동물 동반 정보가 포함된 경우 목줄·이동장, 실내외 가능 구역, 무게·견종 제한, 추가요금은 업체에 다시 확인합니다.\n9. 운영시간과 팝업 여부처럼 바뀌는 정보는 방문 당일 지도 앱에서 다시 확인합니다.\n\n## 참고한 곳\n\n- [한국관광공사 TourAPI 관광지별 연관 관광지 정보](https://www.data.go.kr/data/15128560/openapi.do)\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "핫이슈",
+        "06월",
+        "여수",
+        "밤바다",
+        "여행"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1764146457591-db4335ba94e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dHJhdmVsJTIwZGVzdGluYXRpb24lMjBsYW5kbWFyayUyMHdhbGtpbmd8ZW58MXwwfHx8MTc4MDc0NjY5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 여수 밤바다 여행, 처음 가면 이 동선 — Photo by Matej Kubes on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 여수 밤바다 여행, 처음 가면 이 동선. Keyword: 06월 여수 밤바다 여행. Concrete visual subject: travel destination landmark walking. Context: ## 한눈에 보기 06월 여수 밤바다 여행은 카페나 명소 한 곳만 찍는 글보다 실제로 어떻게 움직이면 좋은지가 더 중요합니다. 한국관광공사 공개 데이터의 연관 관광지 정보를 기준으로 보면, 먼저 대표 지점을 정하고 주변에서 함께 묶을 곳을 고르는 방식이 가장 안전합니다. ## 추천 동선 | 순서 | 볼 것 | 판단 기준 | | --- | --- | --- | | 1 | 대표 관광지 또는 거리 초입 | 이동 기준점으로 삼기 좋음 | | 2 | 국문 관광정보의 주소·분류가 분명한 장소 | 지도에서 실제 이동 순서 확인 | | 3 | 카페·식사·휴식 지점 | 오래 머물 곳은 중간에 배치 | | 4 | 산책·야경·시장 등 마무리 지점 | 시간대와 혼잡도를 보고 조정 | 06월 여수 밤바다 여행를 처음 볼 때는 지도에서 가장 유명한 지점 하나를 먼저 찍고, 그 주변의 연관 장소를 2~3개만 더하는 편이 좋습니다. 동선을 너무 길게 잡으면 이동 시간이 늘어나고, 실제로는 카페나 식사 대기 때문에 뒤 일정이 밀리기 쉽습니다. ## 주변 포인트 TourAPI 관광지별 연관 관광지 정보에서 가져온 공개 데이터입니다. 글에서는 연관 관광지, 주변에서 함께 묶기 좋은 지점, 카테고리 흐름을 우선 반영하세요. 조회 키워드: 06월 여수 밤바다 여행. 결과: 기준 관광지 GS칼텍스예울마루 · 연관 관광지 라라브레드/여수점 · 분류 음식 · 지역 전라남도 ·. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-06T15:52:00.892058",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 20.0"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 55.0"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/mayor-of-shelbyville-eee881ec.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/benn-jordan-longs-8e4d4d31.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-여수-밤바다-여행-1616b6e4.md",
+      "message": "draft saved"
+    }
+  ]
+}
