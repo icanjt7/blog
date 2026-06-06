@@ -1,0 +1,79 @@
+{
+  "run_id": "20260606-114642-fb2ed17b",
+  "average_quality": 75.0,
+  "drafts": [
+    {
+      "slug": "06월-제주-반려동물-동반여행-6bb0ddfb",
+      "title": "06월 제주 반려동물 동반여행: 지금 확인할 포인트",
+      "keyword": "06월 제주 반려동물 동반여행",
+      "category": "핫이슈",
+      "quality_score": 20.0,
+      "review_notes": [
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "여행 글인데 관광 API나 구체 장소 동선이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 제주 반려동물 동반여행: 지금 확인할 포인트. Keyword: 06월 제주 반려동물 동반여행. Concrete visual subject: travel destination landmark walking jeju island coastline cafe. Context: ## 한눈에 보기 06월 제주 반려동물 동반여행은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 제주 반려동물 동반여행를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 제주 반려동물 동반여행 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1621352973597-a53f65a96336?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMGxhbmRtYXJrJTIwd2Fsa2luZyUyMGplanUlMjBpc2xhbmQlMjBjb2FzdGxpbmUlMjBjYWZlfGVufDF8MHx8fDE3ODA3MDMwNDN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-서울-의료관광-병원-e0cfb269",
+      "title": "06월 서울 의료관광 병원: 지금 확인할 포인트",
+      "keyword": "06월 서울 의료관광 병원",
+      "category": "핫이슈",
+      "quality_score": 55.0,
+      "review_notes": [
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 서울 의료관광 병원: 지금 확인할 포인트. Keyword: 06월 서울 의료관광 병원. Concrete visual subject: tourism destination travel seoul restaurant street city food healthcare medical clean. Context: ## 한눈에 보기 06월 서울 의료관광 병원은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 서울 의료관광 병원를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 서울 의료관광 병원 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1762440127280-3d9a764d3821?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBzZW91bCUyMHJlc3RhdXJhbnQlMjBzdHJlZXQlMjBjaXR5JTIwZm9vZCUyMGhlYWx0aGNhcmUlMjBtZWRpY2FsJTIwY2xlYW58ZW58MXwwfHx8MTc4MDcwMzA4OHww&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "final-fantasy-vii-d361c10e",
+      "title": "Final Fantasy VII&#8217;s remake trilogy will conclude...",
+      "keyword": "Final Fantasy VII",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Final Fantasy VII&#8217;s remake trilogy will conclude.... Keyword: Final Fantasy VII. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 Final Fantasy VII&#8217;s remake trilogy will conclude with Revelation 이슈는 단순한 해외 정책 뉴스가 아니라 기술 인프라의 비용과 책임을 묻는 흐름입니다. 원문 보도에서 확인되는 핵심은 다음과 같습니다. > Square Enix has officially announced the third and final game in its Final Fantasy VII remake trilogy: Final Fantasy VII Revelation. It will release on multiple platforms simultaneously - PC, PS5, Xbox Series X / S, and Nintendo Switch 2 - in spring 2027. In footage shown onstage at Summer Game Fest Live, there was [&#8230;] ## 왜 기술 이슈인가 데이터센터, 클라우드, AI 서비스는 모두 전력과 냉각 설비 위에서 돌아갑니다. 새 규제나 허가 유예가 나오면 기업은 모델 개발 속도뿐 아니라 전력 계약, 지역 인허가, 냉각 방식, 송전망 부담까지 함께 계산해야 합니다. ## 핵심 정리 | 항목 | 봐야 할 내용 | | --- | --- | | 대상 | 어떤 기업, 설비, 서비스가 직접 영향을 받는지 | |. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwNjczNjE4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "control-resonant-is-285b24f9",
+      "title": "Control Resonant is a sequel — and also a starting point",
+      "keyword": "Control Resonant is",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Control Resonant is a sequel — and also a starting point. Keyword: Control Resonant is. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 Control Resonant is a sequel — and also a starting point 이슈는 단순한 해외 정책 뉴스가 아니라 기술 인프라의 비용과 책임을 묻는 흐름입니다. 원문 보도에서 확인되는 핵심은 다음과 같습니다. > Chronologically, Control Resonant is a sequel to 2019's Control. But in most other ways, the games aren't directly connected. To developer Remedy, they're more like two sides of the same coin. When Resonant was first revealed last year, creative director Mikael Kasurinen said you can play the games in any order. The world of Control [&#8230;] ## 왜 기술 이슈인가 데이터센터, 클라우드, AI 서비스는 모두 전력과 냉각 설비 위에서 돌아갑니다. 새 규제나 허가 유예가 나오면 기업은 모델 개발 속도뿐 아니라 전력 계약, 지역 인허가, 냉각 방식, 송전망 부담까지 함께 계산해야 합니다. ## 핵심 정리 | 항목 | 봐야 할 내용 | | --- | --- | | 대상 | 어떤 기업, 설비, 서비스가 직접 영향을 받는지. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwNjczNjE4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-경주-당일치기-코스-d9b0f720",
+      "title": "06월 경주 당일치기 코스, 처음 가면 이 동선",
+      "keyword": "06월 경주 당일치기 코스",
+      "category": "핫이슈",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 2,
+      "source_authority_avg": 4.5,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 경주 당일치기 코스, 처음 가면 이 동선. Keyword: 06월 경주 당일치기 코스. Concrete visual subject: korean city news editorial. Context: ## 한눈에 보기 06월 경주 당일치기 코스는 카페나 명소 한 곳만 찍는 글보다 실제로 어떻게 움직이면 좋은지가 더 중요합니다. 한국관광공사 공개 데이터의 연관 관광지 정보를 기준으로 보면, 먼저 대표 지점을 정하고 주변에서 함께 묶을 곳을 고르는 방식이 가장 안전합니다. ## 추천 동선 | 순서 | 볼 것 | 판단 기준 | | --- | --- | --- | | 1 | 대표 관광지 또는 거리 초입 | 이동 기준점으로 삼기 좋음 | | 2 | 국문 관광정보의 주소·분류가 분명한 장소 | 지도에서 실제 이동 순서 확인 | | 3 | 카페·식사·휴식 지점 | 오래 머물 곳은 중간에 배치 | | 4 | 산책·야경·시장 등 마무리 지점 | 시간대와 혼잡도를 보고 조정 | 06월 경주 당일치기 코스를 처음 볼 때는 지도에서 가장 유명한 지점 하나를 먼저 찍고, 그 주변의 연관 장소를 2~3개만 더하는 편이 좋습니다. 동선을 너무 길게 잡으면 이동 시간이 늘어나고, 실제로는 카페나 식사 대기 때문에 뒤 일정이 밀리기 쉽습니다. ## 주변 포인트 TourAPI 관광지별 연관 관광지 정보에서 가져온 공개 데이터입니다. 글에서는 연관 관광지, 주변에서 함께 묶기 좋은 지점, 카테고리 흐름을 우선 반영하세요. 조회 키워드: 06월 경주 당일치기 코스. 결과: 기준 관광지 감포항 · 연관 관광지 문무대왕릉 · 분류 관광지 · 지역 경상북도 · 연관 순위. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1703825864792-5880081beaaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxrb3JlYW4lMjBjaXR5JTIwbmV3cyUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzgwNjY0NDI4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
