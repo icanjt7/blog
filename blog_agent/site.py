@@ -206,6 +206,11 @@ class StaticSiteBuilder:
         "touchscreen display interface digital",
     )
 
+    _BLOCKED_FALLBACK_COVERS: set[str] = {
+        "https://loremflickr.com/1200/630/travel%2Cdestination%2Clandmark%2Cwalking%2Cbusan?lock=9039",
+        "https://loremflickr.com/1200/630/travel%2Cdestination%2Clandmark%2Cwalking%2Cjeju?lock=6697",
+    }
+
     def _fallback_cover_image(self, title: str, category: str, tags: list[str], slug: str) -> str:
         # for press release posts, inject institution-specific visual terms
         institution_query = ""
@@ -224,7 +229,11 @@ class StaticSiteBuilder:
             query = self._TECH_FALLBACK_POOL[idx]
         seed = int(hashlib.md5(slug.encode("utf-8")).hexdigest()[:8], 16) % 10000
         path = quote(",".join(query.split()[:5]))
-        return f"https://loremflickr.com/1200/630/{path}?lock={seed}"
+        url = f"https://loremflickr.com/1200/630/{path}?lock={seed}"
+        if url in self._BLOCKED_FALLBACK_COVERS:
+            seed = (seed + 7919) % 10000
+            url = f"https://loremflickr.com/1200/630/{path}?lock={seed}"
+        return url
 
     @staticmethod
     def _page_href(page: int, base: str = "index.html") -> str:
