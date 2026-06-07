@@ -31,6 +31,8 @@ from import_press_releases import (  # noqa: E402
     html_to_text,
     write_post,
 )
+from blog_agent.config import load_settings  # noqa: E402
+from blog_agent.images import ImageAgent  # noqa: E402
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -43,6 +45,11 @@ SESSION.headers.update({"User-Agent": USER_AGENT})
 
 
 CENTRAL_SECTIONS = ("부처", "청", "위원회", "대통령 소속 위원회")
+GENERIC_KOREA_IMAGES = (
+    "/images/event/korea_logo_2024.jpg",
+    "korea_logo_2024.jpg",
+    "/images/event/korea_logo",
+)
 
 
 @dataclass(frozen=True)
@@ -189,6 +196,11 @@ def _download_first_hwpx(page: str, page_url: str) -> str:
     return ""
 
 
+def is_generic_korea_image(url: str) -> bool:
+    lowered = (url or "").lower()
+    return any(marker.lower() in lowered for marker in GENERIC_KOREA_IMAGES)
+
+
 def release_from_item(item: ListItem) -> PressRelease:
     page = request(item.url)
     title = clean_text(_jsonld_value(page, "headline") or item.title)
@@ -210,6 +222,9 @@ def release_from_item(item: ListItem) -> PressRelease:
         img_url, img_alt = first_image(view_m.group(1), item.url)
     if not img_url:
         img_url = get_og_image(page, item.url)
+    if is_generic_korea_image(img_url):
+        img_url = ""
+        img_alt = ""
     return PressRelease(
         institution=item.agency,
         title=title,
@@ -237,6 +252,9 @@ def main() -> None:
     args = parser.parse_args()
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
+    settings = load_settings()
+    settings.enable_image_generation = False
+    image_agent = ImageAgent(settings)
     agencies = list_agencies()
     if args.agencies:
         wanted = {item.lower() for item in args.agencies}
@@ -275,7 +293,7 @@ def main() -> None:
                 if args.dry_run:
                     print(f"  ? {release.date} {release.title[:60]}")
                 else:
-                    path = write_post(release, prefix, seq)
+                    path = write_post(release, prefix, seq, image_agent=image_agent)
                     written.append(path)
                     print(f"  + {release.date} {release.title[:55]}")
                 seq += 1

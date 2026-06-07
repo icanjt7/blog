@@ -53,6 +53,7 @@ def _is_weak_cover(url: str | None) -> bool:
         "placeholder",
         "assets/logos/",
         "/assets/logos/",
+        "korea_logo_2024.jpg",
     )
     return any(marker in url for marker in weak_markers)
 

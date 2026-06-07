@@ -31,6 +31,14 @@ on:
           - "false"
           - "true"
         default: "false"
+      improve_existing_only:
+        description: "Only replace weak images on existing press posts"
+        required: true
+        type: choice
+        options:
+          - "false"
+          - "true"
+        default: "false"
 
 concurrency:
   group: central-government-press-import
@@ -63,12 +71,16 @@ jobs:
         run: pip install -e .
 
       - name: Import central government press releases
+        if: ${{ inputs.improve_existing_only != 'true' }}
         env:
           INPUT_PER_AGENCY: ${{ inputs.per_agency || '5' }}
           INPUT_AGENCIES: ${{ inputs.agencies || '' }}
           INPUT_MAX_AGENCIES: ${{ inputs.max_agencies || '0' }}
           INPUT_NEW_ONLY: ${{ inputs.new_only || 'true' }}
           INPUT_DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
           args=(--per-agency "${INPUT_PER_AGENCY}")
           if [ -n "${INPUT_AGENCIES}" ]; then
@@ -85,6 +97,14 @@ jobs:
             args+=(--dry-run)
           fi
           python scripts/import_korea_policy_press.py "${args[@]}"
+
+      - name: Improve weak press release images
+        if: ${{ inputs.dry_run != 'true' }}
+        env:
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: python scripts/improve_existing_images.py --tag 보도기사 --limit 350
 
       - name: Build static site
         if: ${{ inputs.dry_run != 'true' }}
