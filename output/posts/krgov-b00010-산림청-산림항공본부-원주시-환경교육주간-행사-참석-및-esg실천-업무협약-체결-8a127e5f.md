@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "산림청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "산림항공본부, 원주시 '환경교육주간 행사' 참석 및 ESG실천 업무협약 체결"
+cover_image: "https://images.unsplash.com/photo-1567397168010-53c432628d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxlZHVjYXRpb24lMjBjbGFzc3Jvb20lMjBib29rcyUyMGVudmlyb25tZW50JTIwbmF0dXJlJTIwZ3JlZW58ZW58MXwwfHx8MTc4MDgzOTgyN3ww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "산림항공본부, 원주시 '환경교육주간 행사' 참석 및 ESG실천 업무협약 체결 — Photo by Meelika Marzzarella on Unsplash"
 author: "산림청"
 ---
 

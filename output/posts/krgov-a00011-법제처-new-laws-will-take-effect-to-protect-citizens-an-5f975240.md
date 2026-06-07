@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "법제처"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "New Laws will Take Effect to Protect Citizens and Promote Industries"
+cover_image: "https://images.unsplash.com/photo-1468779036391-52341f60b55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "New Laws will Take Effect to Protect Citizens and Promote Industries — Photo by Beatriz Pérez Moya on Unsplash"
 author: "법제처"
 ---
 

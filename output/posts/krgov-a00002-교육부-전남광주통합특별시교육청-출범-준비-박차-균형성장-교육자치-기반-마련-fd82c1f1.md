@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "교육부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "전남광주통합특별시교육청 출범 준비 박차, 균형성장.교육자치 기반 마련"
+cover_image: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxlZHVjYXRpb24lMjBjbGFzc3Jvb20lMjBib29rc3xlbnwxfDB8fHwxNzgwODM5ODAyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "전남광주통합특별시교육청 출범 준비 박차, 균형성장.교육자치 기반 마련 — Photo by Tom Hermans on Unsplash"
 author: "교육부"
 ---
 

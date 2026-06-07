@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "금융위원회"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "AI 시대 진화하는 보험사기, 범정부 공조로 국민들의 보험금 누수 막아낸다. - ｢AI 기반 보험사기 방지체계 구축 TF｣ 출범"
+cover_image: "https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgwNzc1NzY4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "AI 시대 진화하는 보험사기, 범정부 공조로 국민들의 보험금 누수 막아낸다. - ｢AI 기반 보험사기 방지체계 구축 TF｣ 출범 — Photo by Ecliptic Graphic on Unsplash"
 author: "금융위원회"
 ---
 

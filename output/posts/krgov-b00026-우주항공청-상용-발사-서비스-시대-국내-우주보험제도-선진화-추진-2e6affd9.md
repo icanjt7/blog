@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "우주항공청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "상용 발사 서비스 시대, 국내 우주보험제도 선진화 추진"
+cover_image: "https://images.pexels.com/photos/23947551/pexels-photo-23947551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "상용 발사 서비스 시대, 국내 우주보험제도 선진화 추진 — Photo by Beth Fitzpatrick on Pexels"
 author: "우주항공청"
 ---
 

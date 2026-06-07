@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "법무부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "케이(K)-교정은 수용관리에'치료·재활 강화'를 더해 재범 예방, 사회적 비용 감소의 이중 효과 창출을 위해 혁신 중"
+cover_image: "https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "케이(K)-교정은 수용관리에'치료·재활 강화'를 더해 재범 예방, 사회적 비용 감소의 이중 효과 창출을 위해 혁신 중 — Photo by Arisa Chattasa on Unsplash"
 author: "법무부"
 ---
 

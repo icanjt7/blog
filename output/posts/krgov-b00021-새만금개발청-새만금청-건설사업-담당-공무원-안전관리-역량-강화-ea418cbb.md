@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "새만금개발청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "새만금청, 건설사업 담당 공무원 안전관리 역량 강화"
+cover_image: "https://images.unsplash.com/photo-1765189920727-73843d7efbb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxnb3Zlcm5tZW50JTIwb2ZmaWNlJTIwYnVpbGRpbmclMjBzYWZldHklMjBwdWJsaWMlMjBzZXJ2aWNlfGVufDF8MHx8fDE3ODA4Mzk4Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "새만금청, 건설사업 담당 공무원 안전관리 역량 강화 — Photo by Noa van Ieperen on Unsplash"
 author: "새만금개발청"
 ---
 

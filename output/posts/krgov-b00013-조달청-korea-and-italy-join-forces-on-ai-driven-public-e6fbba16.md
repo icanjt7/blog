@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "조달청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "Korea and Italy Join Forces on AI-Driven Public Procurement Innovation"
+cover_image: "https://images.unsplash.com/photo-1677442135131-4d7c123aef1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgwNzc1NzY4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "Korea and Italy Join Forces on AI-Driven Public Procurement Innovation — Photo by Steve A Johnson on Unsplash"
 author: "조달청"
 ---
 

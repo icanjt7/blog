@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "해양수산부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "국제자연보전연맹(IUCN), 「한국의 갯벌 2단계」 유네스코 세계유산 '확대 승인 권고'"
+cover_image: "https://images.unsplash.com/photo-1448523183439-d2ac62aca997?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxrb3JlYW4lMjBoZXJpdGFnZSUyMGFyY2hpdGVjdHVyZSUyMGludGVybmF0aW9uYWwlMjBvcmdhbml6YXRpb258ZW58MXwwfHx8MTc4MDgzOTgxM3ww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "국제자연보전연맹(IUCN), 「한국의 갯벌 2단계」 유네스코 세계유산 '확대 승인 권고' — Photo by Brady Bellini on Unsplash"
 author: "해양수산부"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "국세청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "\"유튜브 절세 꿀팁 믿어도 될까?\" 국세청, 「상속･증여세 오해 그리고 진실」 배포"
+cover_image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "\"유튜브 절세 꿀팁 믿어도 될까?\" 국세청, 「상속･증여세 오해 그리고 진실」 배포 — Photo by Kelly Sikkema on Unsplash"
 author: "국세청"
 ---
 

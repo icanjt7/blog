@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "국가기후위기대응위원회"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "김민석 총리, 청소년·청년 기후대표단 면담"
+cover_image: "https://images.pexels.com/photos/36712828/pexels-photo-36712828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "김민석 총리, 청소년·청년 기후대표단 면담 — Photo by Vitaly Gariev on Pexels"
 author: "국가기후위기대응위원회"
 ---
 

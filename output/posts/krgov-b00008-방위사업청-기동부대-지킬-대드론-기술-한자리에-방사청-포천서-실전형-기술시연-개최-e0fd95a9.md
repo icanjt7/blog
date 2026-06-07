@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "방위사업청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "기동부대 지킬 대드론 기술 한자리에... 방사청, 포천서 실전형 기술시연 개최"
+cover_image: "https://images.unsplash.com/photo-1642125960084-7aee22e94584?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxkcm9uZSUyMGFlcmlhbCUyMHNreSUyMG1vZGVybnxlbnwxfDB8fHwxNzgwODM5ODI1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "기동부대 지킬 대드론 기술 한자리에... 방사청, 포천서 실전형 기술시연 개최 — Photo by ARTO SURAJ on Unsplash"
 author: "방위사업청"
 ---
 

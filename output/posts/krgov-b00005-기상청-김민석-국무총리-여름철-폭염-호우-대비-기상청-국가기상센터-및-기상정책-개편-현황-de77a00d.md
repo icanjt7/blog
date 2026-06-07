@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "기상청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "김민석 국무총리, 여름철 폭염·호우 대비 기상청 국가기상센터 및 기상정책 개편 현황"
+cover_image: "https://images.unsplash.com/photo-1631651693480-97f1132e333d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "김민석 국무총리, 여름철 폭염·호우 대비 기상청 국가기상센터 및 기상정책 개편 현황 — Photo by 2H Media on Unsplash"
 author: "기상청"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "우주항공청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "우주항공청, 국내 첫 민·군 겸용 항공용 터보팬 엔진 및 하이브리드 추진시스템 개발 착수"
+cover_image: "https://images.pexels.com/photos/7615732/pexels-photo-7615732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "우주항공청, 국내 첫 민·군 겸용 항공용 터보팬 엔진 및 하이브리드 추진시스템 개발 착수 — Photo by Antonio  Moura on Pexels"
 author: "우주항공청"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "경찰청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "세계에서 가장 안전한 대한민국을 향해"
+cover_image: "https://images.unsplash.com/photo-1767619879597-17943ea7482a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8c2FmZXR5JTIwcHVibGljJTIwc2VydmljZXxlbnwxfDB8fHwxNzgwODM5ODA0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "세계에서 가장 안전한 대한민국을 향해 — Photo by Anshul Gurjar on Unsplash"
 author: "경찰청"
 ---
 

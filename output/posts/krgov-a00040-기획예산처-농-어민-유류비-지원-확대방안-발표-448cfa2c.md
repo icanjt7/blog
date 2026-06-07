@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "기획예산처"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "농·어민 유류비 지원 확대방안 발표"
+cover_image: "https://images.unsplash.com/photo-1729011063347-877f8edbfa8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxnb3Zlcm5tZW50JTIwYnVkZ2V0JTIwZmluYW5jZXxlbnwxfDB8fHwxNzgwODM5ODE5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "농·어민 유류비 지원 확대방안 발표 — Photo by Joemi Brazier on Unsplash"
 author: "기획예산처"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "저출산고령사회위원회"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "김진오 부위원장, 김성주 국민연금공단 이사장 예방"
+cover_image: "https://images.pexels.com/photos/7545279/pexels-photo-7545279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "김진오 부위원장, 김성주 국민연금공단 이사장 예방 — Photo by SHVETS production on Pexels"
 author: "저출산고령사회위원회"
 ---
 

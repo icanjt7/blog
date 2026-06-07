@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "국토교통부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "열차사고 원인 더 정확히, \"모든 열차 운전실 CCTV 설치\""
+cover_image: "https://images.unsplash.com/photo-1554224155-1696413565d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "열차사고 원인 더 정확히, \"모든 열차 운전실 CCTV 설치\" — Photo by Kelly Sikkema on Unsplash"
 author: "국토교통부"
 ---
 

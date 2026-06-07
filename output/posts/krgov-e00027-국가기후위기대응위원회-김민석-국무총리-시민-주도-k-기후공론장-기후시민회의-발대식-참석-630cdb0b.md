@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "국가기후위기대응위원회"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "김민석 국무총리, 시민 주도 K-기후공론장 기후시민회의 발대식 참석"
+cover_image: "https://images.pexels.com/photos/5439471/pexels-photo-5439471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "김민석 국무총리, 시민 주도 K-기후공론장 기후시민회의 발대식 참석 — Photo by Tima Miroshnichenko on Pexels"
 author: "국가기후위기대응위원회"
 ---
 

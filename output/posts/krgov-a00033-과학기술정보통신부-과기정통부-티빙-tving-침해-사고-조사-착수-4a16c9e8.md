@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "과기정통부, 티빙(TVING) 침해 사고 조사 착수"
+cover_image: "https://images.unsplash.com/photo-1579154204601-01588f351e67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgwODM5ODE3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "과기정통부, 티빙(TVING) 침해 사고 조사 착수 — Photo by National Cancer Institute on Unsplash"
 author: "과학기술정보통신부"
 ---
 

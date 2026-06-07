@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "외교부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "유엔 레바논 평화유지군(UNIFIL) 사상자 발생 관련 대변인 성명"
+cover_image: "https://images.unsplash.com/photo-1560523159-fbe43c0b465f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxkaXBsb21hY3klMjBpbnRlcm5hdGlvbmFsJTIwc3VtbWl0fGVufDF8MHx8fDE3ODA4Mzk4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "유엔 레바논 평화유지군(UNIFIL) 사상자 발생 관련 대변인 성명 — Photo by Product School on Unsplash"
 author: "외교부"
 ---
 

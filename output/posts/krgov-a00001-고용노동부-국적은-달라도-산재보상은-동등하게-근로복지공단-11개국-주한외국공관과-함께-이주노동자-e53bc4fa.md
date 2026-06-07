@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "고용노동부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "\"국적은 달라도 산재보상은 동등하게\" 근로복지공단, 11개국 주한외국공관과 함께 이주노동자 산재보호 강화"
+cover_image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "\"국적은 달라도 산재보상은 동등하게\" 근로복지공단, 11개국 주한외국공관과 함께 이주노동자 산재보호 강화 — Photo by Kelly Sikkema on Unsplash"
 author: "고용노동부"
 ---
 

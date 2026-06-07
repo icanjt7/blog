@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "중소벤처기업부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "지역에서도 초격차 스타트업 성장 본격화! 중기부, 지역 신산업 생태계 확산 지원"
+cover_image: "https://images.unsplash.com/photo-1554224155-1696413565d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "지역에서도 초격차 스타트업 성장 본격화! 중기부, 지역 신산업 생태계 확산 지원 — Photo by Kelly Sikkema on Unsplash"
 author: "중소벤처기업부"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "식품의약품안전처"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "[보도참고] 식약처 의료용 고압가스 등 허가 신청 시 제출자료 간소화"
+cover_image: "https://images.unsplash.com/photo-1758599668125-e154250f24bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcHBsaWNhdGlvbiUyMGZvcm0lMjBkb2N1bWVudCUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2UlMjBoZWFsdGhjYXJlJTIwbWVkaWNhbCUyMGNsZWFufGVufDF8MHx8fDE3ODA4Mzk4MTR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "[보도참고] 식약처 의료용 고압가스 등 허가 신청 시 제출자료 간소화 — Photo by Vitaly Gariev on Unsplash"
 author: "식품의약품안전처"
 ---
 

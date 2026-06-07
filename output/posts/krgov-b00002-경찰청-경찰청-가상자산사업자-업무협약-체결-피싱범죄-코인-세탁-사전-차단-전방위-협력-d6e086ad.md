@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "경찰청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "경찰청 ·가상자산사업자 업무협약 체결 '피싱범죄 코인 세탁 사전 차단' 전방위 협력"
+cover_image: "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "경찰청 ·가상자산사업자 업무협약 체결 '피싱범죄 코인 세탁 사전 차단' 전방위 협력 — Photo by Vlad Deep on Unsplash"
 author: "경찰청"
 ---
 

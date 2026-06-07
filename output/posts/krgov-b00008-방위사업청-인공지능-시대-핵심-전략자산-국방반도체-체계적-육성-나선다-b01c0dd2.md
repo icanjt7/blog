@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "방위사업청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "인공지능 시대 핵심 전략자산 '국방반도체', 체계적 육성 나선다!"
+cover_image: "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMHNlbWljb25kdWN0b3IlMjBjaGlwJTIwbWljcm9wcm9jZXNzb3J8ZW58MXwwfHx8MTc4MDgzOTgyNnww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "인공지능 시대 핵심 전략자산 '국방반도체', 체계적 육성 나선다! — Photo by Igor Omilaev on Unsplash"
 author: "방위사업청"
 ---
 

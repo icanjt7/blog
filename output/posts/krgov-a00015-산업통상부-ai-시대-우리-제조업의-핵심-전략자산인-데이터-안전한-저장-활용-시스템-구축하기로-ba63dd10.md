@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "산업통상부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "AI 시대 우리 제조업의 핵심 전략자산인 데이터, 안전한 저장·활용 시스템 구축하기로"
+cover_image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4MDgzOTgxMHww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "AI 시대 우리 제조업의 핵심 전략자산인 데이터, 안전한 저장·활용 시스템 구축하기로 — Photo by Steve A Johnson on Unsplash"
 author: "산업통상부"
 ---
 

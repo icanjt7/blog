@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "기후에너지환경부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "햇빛소득마을, 주민부담은 낮추고 전력망 안정성은 높인다."
+cover_image: "https://images.unsplash.com/photo-1603612692333-7bac35e43500?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxjbGltYXRlJTIwZW52aXJvbm1lbnQlMjBncmVlbiUyMG5hdHVyZXxlbnwxfDB8fHwxNzgwODM5ODEyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "햇빛소득마을, 주민부담은 낮추고 전력망 안정성은 높인다. — Photo by Ankit Choudhary on Unsplash"
 author: "기후에너지환경부"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "성평등가족부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "성평등가족부-법원행정처, 스토킹·교제폭력 피해자 보호 강화 협력"
+cover_image: "https://images.unsplash.com/photo-1583521214690-73421a1829a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxhZG1pbmlzdHJhdGlvbiUyMG9mZmljZSUyMHBhcGVyd29ya3xlbnwxfDB8fHwxNzgwODM5ODA4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "성평등가족부-법원행정처, 스토킹·교제폭력 피해자 보호 강화 협력 — Photo by Wesley Tingey on Unsplash"
 author: "성평등가족부"
 ---
 

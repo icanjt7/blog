@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "우주항공청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "지속가능한 우주항공 교육·문화 생태계 확산 기반 마련"
+cover_image: "https://images.pexels.com/photos/8471932/pexels-photo-8471932.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "지속가능한 우주항공 교육·문화 생태계 확산 기반 마련 — Photo by MART  PRODUCTION on Pexels"
 author: "우주항공청"
 ---
 

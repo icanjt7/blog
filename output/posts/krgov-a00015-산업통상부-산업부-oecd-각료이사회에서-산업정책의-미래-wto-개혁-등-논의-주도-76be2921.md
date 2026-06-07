@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "산업통상부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "산업부, OECD 각료이사회에서 산업정책의 미래, WTO 개혁 등 논의 주도"
+cover_image: "https://images.pexels.com/photos/6949525/pexels-photo-6949525.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "산업부, OECD 각료이사회에서 산업정책의 미래, WTO 개혁 등 논의 주도 — Photo by Werner Pfennig on Pexels"
 author: "산업통상부"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "기후에너지환경부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "국립공원 탄소중립 실천을 이끌 '기후행동 청년 봉사단' 모집"
+cover_image: "https://images.unsplash.com/photo-1565599573128-ae3ef5c9f478?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx5b3VuZyUyMHByb2Zlc3Npb25hbHMlMjBjaXR5JTIwY2xpbWF0ZSUyMGVudmlyb25tZW50JTIwZ3JlZW4lMjBuYXR1cmV8ZW58MXwwfHx8MTc4MDgzOTgxMnww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "국립공원 탄소중립 실천을 이끌 '기후행동 청년 봉사단' 모집 — Photo by Gábor Molnár on Unsplash"
 author: "기후에너지환경부"
 ---
 

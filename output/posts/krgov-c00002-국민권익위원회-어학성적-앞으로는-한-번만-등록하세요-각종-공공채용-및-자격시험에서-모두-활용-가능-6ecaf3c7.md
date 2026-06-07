@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "국민권익위원회"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "\"어학성적, 앞으로는 한 번만 등록하세요.\"… 각종 공공채용 및 자격시험에서 모두 활용 가능"
+cover_image: "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "\"어학성적, 앞으로는 한 번만 등록하세요.\"… 각종 공공채용 및 자격시험에서 모두 활용 가능 — Photo by Vlad Deep on Unsplash"
 author: "국민권익위원회"
 ---
 

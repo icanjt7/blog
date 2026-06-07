@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "지식재산처"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "지식재산처, 공과대학장들과 함께 이공계 대학 특허교육 확산·정착 방안 공동 모색"
+cover_image: "https://images.unsplash.com/photo-1594312915251-48db9280c8f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxlZHVjYXRpb24lMjBjbGFzc3Jvb20lMjBib29rc3xlbnwxfDB8fHwxNzgwODM5ODAyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "지식재산처, 공과대학장들과 함께 이공계 대학 특허교육 확산·정착 방안 공동 모색 — Photo by Elisa Calvet B. on Unsplash"
 author: "지식재산처"
 ---
 

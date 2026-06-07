@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "행정안전부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "여름철 호우·폭염 대비 산불피해지역 안전관리 현장점검"
+cover_image: "https://images.unsplash.com/photo-1544396821-4dd40b938ad3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhZG1pbmlzdHJhdGlvbiUyMG9mZmljZSUyMHBhcGVyd29yayUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4MDgzOTgxNnww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "여름철 호우·폭염 대비 산불피해지역 안전관리 현장점검 — Photo by Viktor Talashuk on Unsplash"
 author: "행정안전부"
 ---
 

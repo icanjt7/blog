@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "기획예산처"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "기획예산처, 포항 국가배터리순환클러스터 현장방문"
+cover_image: "https://images.unsplash.com/photo-1676337167629-d896b3ed5724?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxiYXR0ZXJ5JTIwcG93ZXIlMjBlbmVyZ3klMjB0ZWNoJTIwZ292ZXJubWVudCUyMGJ1ZGdldCUyMGZpbmFuY2V8ZW58MXwwfHx8MTc4MDgzOTgyMHww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "기획예산처, 포항 국가배터리순환클러스터 현장방문 — Photo by Newpowa on Unsplash"
 author: "기획예산처"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "방송미디어통신위원회"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "\"인공지능(AI)으로 1분 만에 챙기는 통신 꿀팁\""
+cover_image: "https://images.pexels.com/photos/30901567/pexels-photo-30901567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "\"인공지능(AI)으로 1분 만에 챙기는 통신 꿀팁\" — Photo by Markus Winkler on Pexels"
 author: "방송미디어통신위원회"
 ---
 

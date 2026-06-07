@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "교육부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "교육부, 5월의 '이달의 우수성과 직원'으로 김중범 주무관을 선정·격려"
+cover_image: "https://images.unsplash.com/photo-1588072432836-e10032774350?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxlZHVjYXRpb24lMjBjbGFzc3Jvb20lMjBib29rc3xlbnwxfDB8fHwxNzgwODM5ODAyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "교육부, 5월의 '이달의 우수성과 직원'으로 김중범 주무관을 선정·격려 — Photo by CDC on Unsplash"
 author: "교육부"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "과학기술정보통신부 인사(과장급 전보)"
+cover_image: "https://images.unsplash.com/photo-1701848055770-effbdb148e15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8c2NpZW5jZSUyMHJlc2VhcmNoJTIwbGFib3JhdG9yeSUyMG5ldHdvcmslMjBjb21tdW5pY2F0aW9uJTIwaW5mcmFzdHJ1Y3R1cmV8ZW58MXwwfHx8MTc4MDgzOTgxN3ww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "과학기술정보통신부 인사(과장급 전보) — Photo by 铮 夏 on Unsplash"
 author: "과학기술정보통신부"
 ---
 

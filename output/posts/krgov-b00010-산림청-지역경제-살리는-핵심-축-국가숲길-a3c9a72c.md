@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "산림청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "지역경제 살리는 핵심 축, '국가숲길'"
+cover_image: "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMHBvbGljeSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzgwODM5ODAwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "지역경제 살리는 핵심 축, '국가숲길' — Photo by Kelly Sikkema on Unsplash"
 author: "산림청"
 ---
 

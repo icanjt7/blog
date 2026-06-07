@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "기획예산처"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "연기금투자풀 금융 세미나"
+cover_image: "https://images.unsplash.com/photo-1534951009808-766178b47a4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxnb3Zlcm5tZW50JTIwYnVkZ2V0JTIwZmluYW5jZSUyMGludmVzdG1lbnQlMjBncm93dGh8ZW58MXwwfHx8MTc4MDgzOTgyMHww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "연기금투자풀 금융 세미나 — Photo by Ibrahim Rifath on Unsplash"
 author: "기획예산처"
 ---
 

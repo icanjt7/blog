@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "원자력안전위원회"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "원안위, 방사선발생장치 생산허가기관 피폭 의심 보고에 따른 조사 착수"
+cover_image: "https://images.unsplash.com/photo-1628147529780-36964fbb8d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxzYWZldHklMjBwdWJsaWMlMjBzZXJ2aWNlfGVufDF8MHx8fDE3ODA4Mzk4MDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "원안위, 방사선발생장치 생산허가기관 피폭 의심 보고에 따른 조사 착수 — Photo by Mufid Majnun on Unsplash"
 author: "원자력안전위원회"
 ---
 

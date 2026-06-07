@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "산림청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "북부지방산림청, 치악산 국립공원 산사태취약지역 유관기관 합동 점검 실시"
+cover_image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "북부지방산림청, 치악산 국립공원 산사태취약지역 유관기관 합동 점검 실시 — Photo by Kelly Sikkema on Unsplash"
 author: "산림청"
 ---
 

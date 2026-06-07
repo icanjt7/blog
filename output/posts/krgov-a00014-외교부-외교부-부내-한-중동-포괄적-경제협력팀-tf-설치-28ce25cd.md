@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "외교부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "외교부, 부내 「한-중동 포괄적 경제협력팀(TF)」 설치"
+cover_image: "https://images.unsplash.com/photo-1495149905644-c9f27692c2c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxkaXBsb21hY3klMjBpbnRlcm5hdGlvbmFsJTIwc3VtbWl0fGVufDF8MHx8fDE3ODA4Mzk4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "외교부, 부내 「한-중동 포괄적 경제협력팀(TF)」 설치 — Photo by Markus Krisetya on Unsplash"
 author: "외교부"
 ---
 

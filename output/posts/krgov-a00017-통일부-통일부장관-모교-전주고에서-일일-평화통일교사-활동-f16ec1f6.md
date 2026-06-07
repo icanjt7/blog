@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "통일부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "통일부장관, 모교 전주고에서 일일 평화통일교사 활동"
+cover_image: "https://images.pexels.com/photos/36968040/pexels-photo-36968040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "통일부장관, 모교 전주고에서 일일 평화통일교사 활동 — Photo by Kat Carabio on Pexels"
 author: "통일부"
 ---
 

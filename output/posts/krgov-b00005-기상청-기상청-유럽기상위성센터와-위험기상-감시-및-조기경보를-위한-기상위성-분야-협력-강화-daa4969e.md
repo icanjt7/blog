@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "기상청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "기상청, 유럽기상위성센터와 위험기상 감시 및 조기경보를 위한 기상위성 분야 협력 강화"
+cover_image: "https://images.unsplash.com/photo-1554224155-3a58922a22c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "기상청, 유럽기상위성센터와 위험기상 감시 및 조기경보를 위한 기상위성 분야 협력 강화 — Photo by Kelly Sikkema on Unsplash"
 author: "기상청"
 ---
 

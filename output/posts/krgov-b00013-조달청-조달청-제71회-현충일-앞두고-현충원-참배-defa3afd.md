@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "조달청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "조달청, 제71회 현충일 앞두고 현충원 참배"
+cover_image: "https://images.unsplash.com/photo-1468779036391-52341f60b55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "조달청, 제71회 현충일 앞두고 현충원 참배 — Photo by Beatriz Pérez Moya on Unsplash"
 author: "조달청"
 ---
 

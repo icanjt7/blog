@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "해양수산부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "평년보다 1℃ 높은 올여름 바다, 역대 최대 장비 보급으로 어가 피해 막는다"
+cover_image: "https://images.unsplash.com/photo-1635859890085-ec8cb5466806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "평년보다 1℃ 높은 올여름 바다, 역대 최대 장비 보급으로 어가 피해 막는다 — Photo by Dimitri Karastelev on Unsplash"
 author: "해양수산부"
 ---
 

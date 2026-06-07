@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "국세청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "국세청-서울대학교 국세행정 AX를 위해 협력"
+cover_image: "https://images.unsplash.com/photo-1696835196629-ebfe1fb68f32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzZW91bCUyMHJlc3RhdXJhbnQlMjBzdHJlZXQlMjBjaXR5JTIwZm9vZCUyMGFkbWluaXN0cmF0aW9uJTIwb2ZmaWNlJTIwcGFwZXJ3b3JrfGVufDF8MHx8fDE3ODA4Mzk4MjN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "국세청-서울대학교 국세행정 AX를 위해 협력 — Photo by Paul Flatten on Unsplash"
 author: "국세청"
 ---
 

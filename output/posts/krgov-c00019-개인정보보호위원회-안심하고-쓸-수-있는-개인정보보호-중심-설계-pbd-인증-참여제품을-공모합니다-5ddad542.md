@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "개인정보보호위원회"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "안심하고 쓸 수 있는 개인정보보호 중심 설계(PbD) 인증 참여제품을 공모합니다"
+cover_image: "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "안심하고 쓸 수 있는 개인정보보호 중심 설계(PbD) 인증 참여제품을 공모합니다 — Photo by Vlad Deep on Unsplash"
 author: "개인정보보호위원회"
 ---
 

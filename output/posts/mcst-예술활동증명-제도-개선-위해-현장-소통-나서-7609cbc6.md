@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "문화체육관광부"
 quality_score: 90.0
-cover_image: "assets/logos/mcst.gif"
-cover_image_alt: "예술활동증명 제도 개선 위해 현장 소통 나서 관련 보도자료 이미지"
+cover_image: "https://images.unsplash.com/photo-1779079383736-b8303c7f2e5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODA4Mzk4MDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "예술활동증명 제도 개선 위해 현장 소통 나서 — Photo by Jeffrey Zhang on Unsplash"
 author: "문화체육관광부"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "과학기술정보통신부"
 quality_score: 90.0
-cover_image: "assets/logos/msit.jpg"
-cover_image_alt: "안전한 국제협력을 돕는 현장 연구안보 관리체계 구축 지원"
+cover_image: "https://images.unsplash.com/photo-1701848055770-effbdb148e15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZSUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4MDgzOTgxOHww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "안전한 국제협력을 돕는 현장 연구안보 관리체계 구축 지원 — Photo by 铮 夏 on Unsplash"
 author: "과학기술정보통신부"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "방위사업청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "방위사업청, 한화에어로스페이스 폭발사고 관련 안전사고 대응 TF 회의 개최"
+cover_image: "https://images.unsplash.com/photo-1660901714052-ba6957feba6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8c2FmZXR5JTIwcHVibGljJTIwc2VydmljZSUyMGNvbmZlcmVuY2UlMjBtZWV0aW5nJTIwdGFibGV8ZW58MXwwfHx8MTc4MDgzOTgyNXww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "방위사업청, 한화에어로스페이스 폭발사고 관련 안전사고 대응 TF 회의 개최 — Photo by Kaja Sariwating on Unsplash"
 author: "방위사업청"
 ---
 

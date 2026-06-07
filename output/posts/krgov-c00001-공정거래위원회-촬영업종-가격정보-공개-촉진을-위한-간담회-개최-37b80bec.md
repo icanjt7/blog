@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "공정거래위원회"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "촬영업종 가격정보 공개 촉진을 위한 간담회 개최"
+cover_image: "https://images.unsplash.com/photo-1554224155-1696413565d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "촬영업종 가격정보 공개 촉진을 위한 간담회 개최 — Photo by Kelly Sikkema on Unsplash"
 author: "공정거래위원회"
 ---
 

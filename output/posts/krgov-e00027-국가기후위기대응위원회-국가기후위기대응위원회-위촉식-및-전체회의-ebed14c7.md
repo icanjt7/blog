@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "국가기후위기대응위원회"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "국가기후위기대응위원회 위촉식 및 전체회의"
+cover_image: "https://images.pexels.com/photos/5511295/pexels-photo-5511295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "국가기후위기대응위원회 위촉식 및 전체회의 — Photo by Mike van Schoonderwalt on Pexels"
 author: "국가기후위기대응위원회"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "개인정보보호위원회"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "(보도참고)개인정보위, (주)티빙 이용자 개인정보 유출 사고 관련 조사 착수"
+cover_image: "https://images.unsplash.com/photo-1635859890085-ec8cb5466806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA4Mzk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "(보도참고)개인정보위, (주)티빙 이용자 개인정보 유출 사고 관련 조사 착수 — Photo by Dimitri Karastelev on Unsplash"
 author: "개인정보보호위원회"
 ---
 

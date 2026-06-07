@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "행정중심복합도시건설청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "행복청-국민자문단, 경주에서 국가상징구역 조성 아이디어 모았다"
+cover_image: "https://images.unsplash.com/photo-1771758249853-415175dc29b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhZG1pbmlzdHJhdGlvbiUyMG9mZmljZSUyMHBhcGVyd29ya3xlbnwxfDB8fHwxNzgwODM5ODA4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "행복청-국민자문단, 경주에서 국가상징구역 조성 아이디어 모았다 — Photo by Camilo Rueda Lopez on Unsplash"
 author: "행정중심복합도시건설청"
 ---
 

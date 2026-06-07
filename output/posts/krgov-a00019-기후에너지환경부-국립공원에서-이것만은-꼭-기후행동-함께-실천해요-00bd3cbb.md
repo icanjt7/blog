@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "기후에너지환경부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "국립공원에서 이것만은 꼭! 기후행동 함께 실천해요"
+cover_image: "https://images.unsplash.com/photo-1621157281949-65e2de4ba88b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxjbGltYXRlJTIwZW52aXJvbm1lbnQlMjBncmVlbiUyMG5hdHVyZXxlbnwxfDB8fHwxNzgwODM5ODEyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "국립공원에서 이것만은 꼭! 기후행동 함께 실천해요 — Photo by Vyacheslav Shatskiy on Unsplash"
 author: "기후에너지환경부"
 ---
 

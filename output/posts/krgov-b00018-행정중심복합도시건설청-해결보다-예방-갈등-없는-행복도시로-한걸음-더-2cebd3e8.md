@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "행정중심복합도시건설청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "'해결보다 예방' 갈등 없는 행복도시로 한걸음 더"
+cover_image: "https://images.unsplash.com/photo-1758876020343-c8c2add9d527?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhZG1pbmlzdHJhdGlvbiUyMG9mZmljZSUyMHBhcGVyd29ya3xlbnwxfDB8fHwxNzgwODM5ODA4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "'해결보다 예방' 갈등 없는 행복도시로 한걸음 더 — Photo by Vitaly Gariev on Unsplash"
 author: "행정중심복합도시건설청"
 ---
 

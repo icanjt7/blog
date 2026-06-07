@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "해양수산부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "(동정) 황종우 해양수산부 장관, 전기차화재 훈련 점검 및 해양안전 TF 회의 주재"
+cover_image: "https://images.unsplash.com/photo-1594535182308-8ffefbb661e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxlbGVjdHJpYyUyMHZlaGljbGUlMjBjYXIlMjBjbGVhbiUyMGVuZXJneSUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2UlMjBjb25mZXJlbmNlJTIwbWVldGluZyUyMHRhYmxlfGVufDF8MHx8fDE3ODA4Mzk4MTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "(동정) 황종우 해양수산부 장관, 전기차화재 훈련 점검 및 해양안전 TF 회의 주재 — Photo by Michael Marais on Unsplash"
 author: "해양수산부"
 ---
 

@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "교육부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "해외 학생들, 교육부 비티에스(BTS), 케이(K)-드라마 등 한류 교재로 한국어 배운다"
+cover_image: "https://images.unsplash.com/photo-1485322551133-3a4c27a9d925?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxlZHVjYXRpb24lMjBjbGFzc3Jvb20lMjBib29rc3xlbnwxfDB8fHwxNzgwODM5ODAyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "해외 학생들, 교육부 비티에스(BTS), 케이(K)-드라마 등 한류 교재로 한국어 배운다 — Photo by Jessica Ruscello on Unsplash"
 author: "교육부"
 ---
 

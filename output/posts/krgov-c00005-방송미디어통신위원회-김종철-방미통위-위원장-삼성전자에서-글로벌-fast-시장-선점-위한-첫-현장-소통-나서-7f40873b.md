@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "방송미디어통신위원회"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "김종철 방미통위 위원장, 삼성전자에서 글로벌 FAST 시장 선점 위한 첫 현장 소통 나서"
+cover_image: "https://images.pexels.com/photos/4486718/pexels-photo-4486718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "김종철 방미통위 위원장, 삼성전자에서 글로벌 FAST 시장 선점 위한 첫 현장 소통 나서 — Photo by Brett Sayles on Pexels"
 author: "방송미디어통신위원회"
 ---
 

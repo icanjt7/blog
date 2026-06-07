@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "새만금개발청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "문성요 새만금개발청장, 현대차그룹 투자 예정지 현장점검 \"모든 역량 집중해서 신속하게 지원\""
+cover_image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxpbnZlc3RtZW50JTIwZmluYW5jZSUyMGdyb3d0aHxlbnwxfDB8fHwxNzgwODM5ODIyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "문성요 새만금개발청장, 현대차그룹 투자 예정지 현장점검 \"모든 역량 집중해서 신속하게 지원\" — Photo by Markus Winkler on Unsplash"
 author: "새만금개발청"
 ---
 

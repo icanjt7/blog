@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "국민통합위원회"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "전직원회의 정치적 중립의무 강조"
+cover_image: "https://images.unsplash.com/photo-1769771744699-7b73a101b318?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxjb25mZXJlbmNlJTIwbWVldGluZyUyMHRhYmxlfGVufDF8MHx8fDE3ODA4Mzk4MDF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "전직원회의 정치적 중립의무 강조 — Photo by dmrjy on Unsplash"
 author: "국민통합위원회"
 ---
 

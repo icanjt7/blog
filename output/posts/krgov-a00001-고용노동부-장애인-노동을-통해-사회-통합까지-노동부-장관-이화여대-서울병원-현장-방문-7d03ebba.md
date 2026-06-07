@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "고용노동부"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "\"장애인, 노동을 통해 사회 통합까지\"노동부 장관 '이화여대 서울병원' 현장 방문"
+cover_image: "https://images.unsplash.com/photo-1768006274245-d3e37d36d07b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxzZW91bCUyMHJlc3RhdXJhbnQlMjBzdHJlZXQlMjBjaXR5JTIwZm9vZHxlbnwxfDB8fHwxNzgwNjY0OTE2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "\"장애인, 노동을 통해 사회 통합까지\"노동부 장관 '이화여대 서울병원' 현장 방문 — Photo by zero take on Unsplash"
 author: "고용노동부"
 ---
 

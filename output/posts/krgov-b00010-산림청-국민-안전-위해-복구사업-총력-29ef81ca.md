@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "산림청"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "\"국민 안전 위해 복구사업 총력\""
+cover_image: "https://images.unsplash.com/photo-1603465410243-af3e840367dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8c2FmZXR5JTIwcHVibGljJTIwc2VydmljZSUyMHJlY292ZXJ5JTIwY29uc3RydWN0aW9uJTIwd29ya3xlbnwxfDB8fHwxNzgwODM5ODI3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "\"국민 안전 위해 복구사업 총력\" — Photo by Maarten van den Heuvel on Unsplash"
 author: "산림청"
 ---
 

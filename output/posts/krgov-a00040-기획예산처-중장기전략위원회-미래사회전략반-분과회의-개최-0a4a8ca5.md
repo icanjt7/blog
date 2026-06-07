@@ -6,8 +6,8 @@ tags:
   - "보도기사"
   - "기획예산처"
 quality_score: 90.0
-cover_image: "https://www.korea.kr/images/event/korea_logo_2024.jpg"
-cover_image_alt: "중장기전략위원회 미래사회전략반 분과회의 개최"
+cover_image: "https://images.unsplash.com/photo-1628062699790-7c45262b82b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxnb3Zlcm5tZW50JTIwYnVkZ2V0JTIwZmluYW5jZSUyMGNvbmZlcmVuY2UlMjBtZWV0aW5nJTIwdGFibGV8ZW58MXwwfHx8MTc4MDgzOTgyMXww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "중장기전략위원회 미래사회전략반 분과회의 개최 — Photo by Michael Fousert on Unsplash"
 author: "기획예산처"
 ---
 
