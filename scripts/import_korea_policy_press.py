@@ -1,0 +1,302 @@
+"""Import central-government press releases from korea.kr.
+
+The agency-specific importer handles a handful of ministries directly. This
+script uses Korea Policy Briefing's common press-release index so that all
+central-government agencies exposed there can be imported with one parser.
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import html
+import re
+import sys
+import time
+from dataclasses import dataclass
+from datetime import datetime
+from pathlib import Path
+from urllib.parse import urljoin
+
+import requests
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from import_press_releases import (  # noqa: E402
+    POSTS_DIR,
+    PressRelease,
+    clean_text,
+    extract_hwpx_text,
+    first_image,
+    get_og_image,
+    html_to_text,
+    write_post,
+)
+
+
+ROOT = Path(__file__).resolve().parents[1]
+BASE = "https://www.korea.kr"
+LIST_URL = f"{BASE}/briefing/pressReleaseList.do"
+TIMEOUT = 20
+USER_AGENT = "Mozilla/5.0 (compatible; BriefWaveKoreaPolicyImporter/1.0)"
+SESSION = requests.Session()
+SESSION.headers.update({"User-Agent": USER_AGENT})
+
+
+CENTRAL_SECTIONS = ("부처", "청", "위원회", "대통령 소속 위원회")
+
+
+@dataclass(frozen=True)
+class Agency:
+    code: str
+    name: str
+    section: str
+
+
+@dataclass(frozen=True)
+class ListItem:
+    title: str
+    date: str
+    agency: str
+    url: str
+    lead: str
+
+
+def request(url: str, *, params: dict[str, str] | None = None) -> str:
+    last_error: Exception | None = None
+    for attempt in range(3):
+        try:
+            resp = SESSION.get(url, params=params, timeout=TIMEOUT)
+            resp.raise_for_status()
+            resp.encoding = resp.apparent_encoding or resp.encoding or "utf-8"
+            return resp.text
+        except requests.RequestException as exc:
+            last_error = exc
+            if attempt < 2:
+                time.sleep(1.2 * (attempt + 1))
+    raise RuntimeError(f"request failed: {url}") from last_error
+
+
+def slugify(value: str) -> str:
+    value = value.strip().lower()
+    value = re.sub(r"[^\w가-힣]+", "-", value)
+    value = re.sub(r"-{2,}", "-", value).strip("-")
+    return value[:24].strip("-") or "agency"
+
+
+def prefix_for(agency: Agency) -> str:
+    return f"krgov-{agency.code.lower()}-{slugify(agency.name)}"
+
+
+def extract_agencies(page: str) -> list[Agency]:
+    agencies: list[Agency] = []
+    seen: set[str] = set()
+    for section in CENTRAL_SECTIONS:
+        marker = f"<button type=\"button\"><i></i>{section}</button>"
+        start = page.find(marker)
+        if start < 0:
+            continue
+        next_start = len(page)
+        for other in CENTRAL_SECTIONS:
+            other_marker = f"<button type=\"button\"><i></i>{other}</button>"
+            idx = page.find(other_marker, start + len(marker))
+            if idx > start:
+                next_start = min(next_start, idx)
+        block = page[start:next_start]
+        for code, label in re.findall(
+            r'<input name="chkRepCode" type="checkbox" value="([^"]+)" id="\1"[^>]*>\s*'
+            r'<label for="\1"[^>]*>(.*?)</label>',
+            block,
+            flags=re.S,
+        ):
+            name = clean_text(re.sub(r"<[^>]+>", " ", html.unescape(label)))
+            if not name or code in seen:
+                continue
+            seen.add(code)
+            agencies.append(Agency(code=code, name=name, section=section))
+    return agencies
+
+
+def list_agencies() -> list[Agency]:
+    return extract_agencies(request(LIST_URL))
+
+
+def _extract_list_items(page: str, agency_name: str) -> list[ListItem]:
+    items: list[ListItem] = []
+    for block in re.findall(r"(?is)<li>\s*<a href=\"([^\"]*pressReleaseView\.do[^\"]*)\">(.*?)</a>\s*</li>", page):
+        href, inner = block
+        title_m = re.search(r"(?is)<strong>(.*?)</strong>", inner)
+        lead_m = re.search(r'(?is)<span class="lead">\s*(.*?)\s*</span>', inner)
+        source_m = re.search(
+            r'(?is)<span class="source">\s*<span>([^<]+)</span>\s*<span>([^<]+)</span>',
+            inner,
+        )
+        if not title_m or not source_m:
+            continue
+        date = clean_text(source_m.group(1))
+        source = clean_text(source_m.group(2))
+        if source != agency_name:
+            continue
+        title = clean_text(re.sub(r"<[^>]+>", " ", html.unescape(title_m.group(1))))
+        lead = html_to_text(lead_m.group(1)) if lead_m else ""
+        url = urljoin(BASE, html.unescape(href)).split("&pageIndex=", 1)[0]
+        items.append(ListItem(title=title, date=date, agency=source, url=url, lead=lead))
+    return items
+
+
+def agency_items(agency: Agency, limit: int) -> list[ListItem]:
+    items: list[ListItem] = []
+    seen: set[str] = set()
+    for page_no in range(1, 8):
+        page = request(
+            LIST_URL,
+            params={
+                "pageIndex": str(page_no),
+                "repCode": agency.code,
+                "startDate": "2025-01-01",
+                "endDate": datetime.now().strftime("%Y-%m-%d"),
+            },
+        )
+        for item in _extract_list_items(page, agency.name):
+            if item.url in seen:
+                continue
+            seen.add(item.url)
+            items.append(item)
+            if len(items) >= limit:
+                return items
+        if "list_type" not in page:
+            break
+    return items
+
+
+def _jsonld_value(page: str, key: str) -> str:
+    match = re.search(rf'"{re.escape(key)}"\s*:\s*"((?:\\.|[^"])*)"', page)
+    if not match:
+        return ""
+    value = match.group(1).replace('\\"', '"').replace("\\n", "\n")
+    return clean_text(html.unescape(html.unescape(value)))
+
+
+def _download_first_hwpx(page: str, page_url: str) -> str:
+    for match in re.finditer(
+        r'(?is)<a href="([^"]*/common/download\.do\?fileId=[^"]+tblKey=GMN[^"]*)">\s*'
+        r'(?:<img[^>]+alt="한글파일"[^>]*>)?([^<]*?\.hwpx)',
+        page,
+    ):
+        href = html.unescape(match.group(1))
+        text = extract_hwpx_text(urljoin(BASE, href), referer=page_url)
+        if text:
+            return text
+    return ""
+
+
+def release_from_item(item: ListItem) -> PressRelease:
+    page = request(item.url)
+    title = clean_text(_jsonld_value(page, "headline") or item.title)
+    date_value = _jsonld_value(page, "datePublished")
+    date = (date_value[:10] if date_value else item.date.replace(".", "-")[:10]) or datetime.now().strftime("%Y-%m-%d")
+    body = _download_first_hwpx(page, item.url)
+    if not body:
+        desc = _jsonld_value(page, "description")
+        view_m = re.search(r'(?is)<div class="view_cont">(.*?)</div>\s*</div>\s*<div class="article_footer">', page)
+        body = html_to_text(view_m.group(1)) if view_m else ""
+        if len(body) < 250:
+            body = desc or item.lead
+    if len(body) < 250:
+        body = item.lead
+    img_url = ""
+    img_alt = ""
+    view_m = re.search(r'(?is)<div class="view_cont">(.*?)</div>', page)
+    if view_m:
+        img_url, img_alt = first_image(view_m.group(1), item.url)
+    if not img_url:
+        img_url = get_og_image(page, item.url)
+    return PressRelease(
+        institution=item.agency,
+        title=title,
+        date=date,
+        url=item.url,
+        body_text=body,
+        image_url=img_url,
+        image_alt=img_alt or title,
+    )
+
+
+def existing_post_for_url_anywhere(url: str) -> Path | None:
+    digest = hashlib.sha1(url.encode()).hexdigest()[:8]
+    matches = sorted(POSTS_DIR.glob(f"*-{digest}.md"))
+    return matches[0] if matches else None
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--per-agency", type=int, default=5)
+    parser.add_argument("--agencies", nargs="*", help="기관명 또는 기관코드 일부 지정")
+    parser.add_argument("--max-agencies", type=int, default=0)
+    parser.add_argument("--new-only", action="store_true")
+    parser.add_argument("--dry-run", action="store_true")
+    args = parser.parse_args()
+
+    POSTS_DIR.mkdir(parents=True, exist_ok=True)
+    agencies = list_agencies()
+    if args.agencies:
+        wanted = {item.lower() for item in args.agencies}
+        agencies = [
+            agency
+            for agency in agencies
+            if agency.code.lower() in wanted
+            or agency.name.lower() in wanted
+            or any(token in agency.name.lower() for token in wanted)
+        ]
+    if args.max_agencies:
+        agencies = agencies[: args.max_agencies]
+
+    written: list[Path] = []
+    errors: list[str] = []
+    seq = 0
+    print(f"대상 기관: {len(agencies)}개 / 기관당 {args.per_agency}건")
+
+    for agency in agencies:
+        print(f"\n[{agency.section}] {agency.name} ({agency.code})")
+        try:
+            items = agency_items(agency, max(args.per_agency * 3, args.per_agency + 8))
+        except Exception as exc:
+            errors.append(f"{agency.name} 목록 실패: {exc}")
+            print(f"  x 목록 실패: {exc}")
+            continue
+
+        count = 0
+        for item in items:
+            if args.new_only and existing_post_for_url_anywhere(item.url):
+                print(f"  = 기존 글 건너뜀: {item.title[:45]}")
+                continue
+            try:
+                release = release_from_item(item)
+                prefix = prefix_for(agency)
+                if args.dry_run:
+                    print(f"  ? {release.date} {release.title[:60]}")
+                else:
+                    path = write_post(release, prefix, seq)
+                    written.append(path)
+                    print(f"  + {release.date} {release.title[:55]}")
+                seq += 1
+                count += 1
+                if count >= args.per_agency:
+                    break
+            except Exception as exc:
+                errors.append(f"{agency.name} {item.url}: {exc}")
+                print(f"  x {item.title[:45]}: {exc}")
+        if count < args.per_agency:
+            errors.append(f"{agency.name}: {count}/{args.per_agency}건만 저장")
+            print(f"  ! {count}/{args.per_agency}건")
+
+    print(f"\n저장 완료: {len(written)}건")
+    if errors:
+        print(f"오류/부족: {len(errors)}건")
+        for error in errors[:80]:
+            print(f"  - {error}")
+    for path in written:
+        print(path.relative_to(ROOT))
+
+
+if __name__ == "__main__":
+    main()
