@@ -150,10 +150,10 @@ def _extract_list_items(page: str, agency_name: str) -> list[ListItem]:
     return items
 
 
-def agency_items(agency: Agency, limit: int) -> list[ListItem]:
+def agency_items(agency: Agency, limit: int, scan_pages: int = 20) -> list[ListItem]:
     items: list[ListItem] = []
     seen: set[str] = set()
-    for page_no in range(1, 8):
+    for page_no in range(1, max(1, scan_pages) + 1):
         page = request(
             LIST_URL,
             params={
@@ -244,9 +244,10 @@ def existing_post_for_url_anywhere(url: str) -> Path | None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--per-agency", type=int, default=5)
+    parser.add_argument("--per-agency", type=int, default=2)
     parser.add_argument("--agencies", nargs="*", help="기관명 또는 기관코드 일부 지정")
     parser.add_argument("--max-agencies", type=int, default=0)
+    parser.add_argument("--scan-pages", type=int, default=20, help="기관별 목록을 훑을 최대 페이지 수")
     parser.add_argument("--new-only", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
@@ -276,7 +277,12 @@ def main() -> None:
     for agency in agencies:
         print(f"\n[{agency.section}] {agency.name} ({agency.code})")
         try:
-            items = agency_items(agency, max(args.per_agency * 3, args.per_agency + 8))
+            item_limit = (
+                max(args.per_agency * 30, args.per_agency + 80)
+                if args.new_only
+                else max(args.per_agency * 3, args.per_agency + 8)
+            )
+            items = agency_items(agency, item_limit, scan_pages=args.scan_pages)
         except Exception as exc:
             errors.append(f"{agency.name} 목록 실패: {exc}")
             print(f"  x 목록 실패: {exc}")
