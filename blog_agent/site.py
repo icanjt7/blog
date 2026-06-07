@@ -875,6 +875,7 @@ class StaticSiteBuilder:
         page = f"""<!doctype html>
 <html lang="ko">
 <head>
+{ga_script}
   <meta charset="utf-8">
 {gtm_head}
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -895,7 +896,7 @@ class StaticSiteBuilder:
   <link rel="canonical" href="{html.escape(page_url)}">
   <link rel="stylesheet" href="./style.css">
   <link rel="alternate" type="application/rss+xml" href="./feed.xml">
-  <script type="application/ld+json">{structured_json}</script>{ga_script}{adsense_script}
+  <script type="application/ld+json">{structured_json}</script>{adsense_script}
 </head>
 <body>
 {gtm_body}

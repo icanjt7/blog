@@ -11,6 +11,7 @@ from .trends import CATEGORY_SEEDS
 # Canonical category order derived from CATEGORY_SEEDS so adding a seed
 # automatically makes it a nav category.
 _DEFAULT_CATEGORIES: list[str] = list(CATEGORY_SEEDS.keys())
+DEFAULT_GA_MEASUREMENT_ID = "G-X7YV03FBW3"
 
 
 class Settings(BaseModel):
@@ -47,7 +48,7 @@ class Settings(BaseModel):
     tourapi_base_ym: str = "202503"
 
     # Analytics & monetisation
-    ga_measurement_id: str | None = None    # Google Analytics 4: G-XXXXXXXXXX
+    ga_measurement_id: str | None = DEFAULT_GA_MEASUREMENT_ID    # Google Analytics 4: G-XXXXXXXXXX
     adsense_publisher_id: str | None = None  # AdSense: ca-pub-XXXXXXXXXX
 
     post_count: int = 5
@@ -108,7 +109,7 @@ def load_settings() -> Settings:
         tourapi_tour_endpoint=os.getenv("TOURAPI_TOUR_ENDPOINT", "https://apis.data.go.kr/B551011/KorService2"),
         tourapi_tour_en_endpoint=os.getenv("TOURAPI_TOUR_EN_ENDPOINT", "https://apis.data.go.kr/B551011/EngService2"),
         tourapi_base_ym=os.getenv("TOURAPI_BASE_YM", "202503"),
-        ga_measurement_id=os.getenv("GA_MEASUREMENT_ID") or None,
+        ga_measurement_id=os.getenv("GA_MEASUREMENT_ID") or DEFAULT_GA_MEASUREMENT_ID,
         adsense_publisher_id=os.getenv("ADSENSE_PUBLISHER_ID") or None,
         post_count=int(os.getenv("BLOG_POST_COUNT", "5")),
         enable_llm_edit=os.getenv("ENABLE_LLM_EDIT", "true").lower() == "true",
