@@ -38,7 +38,7 @@ from blog_agent.images import ImageAgent  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://www.korea.kr"
 LIST_URL = f"{BASE}/briefing/pressReleaseList.do"
-TIMEOUT = 20
+TIMEOUT = 45
 USER_AGENT = "Mozilla/5.0 (compatible; BriefWaveKoreaPolicyImporter/1.0)"
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": USER_AGENT})
@@ -70,7 +70,7 @@ class ListItem:
 
 def request(url: str, *, params: dict[str, str] | None = None) -> str:
     last_error: Exception | None = None
-    for attempt in range(3):
+    for attempt in range(6):
         try:
             resp = SESSION.get(url, params=params, timeout=TIMEOUT)
             resp.raise_for_status()
@@ -78,8 +78,8 @@ def request(url: str, *, params: dict[str, str] | None = None) -> str:
             return resp.text
         except requests.RequestException as exc:
             last_error = exc
-            if attempt < 2:
-                time.sleep(1.2 * (attempt + 1))
+            if attempt < 5:
+                time.sleep(2.0 * (attempt + 1))
     raise RuntimeError(f"request failed: {url}") from last_error
 
 

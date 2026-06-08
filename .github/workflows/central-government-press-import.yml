@@ -26,6 +26,10 @@ on:
         description: "Optional total posts cap for this run. 0 means unlimited"
         required: true
         default: "0"
+      batch_count:
+        description: "How many import batches to run sequentially"
+        required: true
+        default: "1"
       scan_pages:
         description: "Press-list pages to scan per agency"
         required: true
@@ -106,6 +110,7 @@ jobs:
           INPUT_SECTIONS: ${{ inputs.sections || '' }}
           INPUT_MAX_AGENCIES: ${{ inputs.max_agencies || '0' }}
           INPUT_MAX_TOTAL_POSTS: ${{ inputs.max_total_posts || '0' }}
+          INPUT_BATCH_COUNT: ${{ inputs.batch_count || '1' }}
           INPUT_START_DATE: ${{ inputs.start_date || '2025-01-01' }}
           INPUT_END_DATE: ${{ inputs.end_date || '' }}
           INPUT_NEW_ONLY: ${{ inputs.new_only || 'true' }}
@@ -140,7 +145,38 @@ jobs:
           if [ "${INPUT_DRY_RUN}" = "true" ]; then
             args+=(--dry-run)
           fi
-          python -u scripts/import_korea_policy_press.py "${args[@]}"
+          batch_count="${INPUT_BATCH_COUNT}"
+          if [ "${batch_count}" -lt 1 ]; then
+            batch_count=1
+          fi
+          git config user.name "blog-agent"
+          git config user.email "actions@github.com"
+          for batch in $(seq 1 "${batch_count}"); do
+            echo "::group::Import batch ${batch}/${batch_count}"
+            log_file="$(mktemp)"
+            python -u scripts/import_korea_policy_press.py "${args[@]}" | tee "${log_file}"
+            status="${PIPESTATUS[0]}"
+            echo "::endgroup::"
+            if [ "${status}" -ne 0 ]; then
+              exit "${status}"
+            fi
+            if [ "${INPUT_DRY_RUN}" = "true" ]; then
+              continue
+            fi
+            saved="$(grep -Eo '저장 완료: [0-9]+건' "${log_file}" | tail -1 | grep -Eo '[0-9]+' || true)"
+            if [ -z "${saved}" ] || [ "${saved}" = "0" ]; then
+              echo "No new posts in batch ${batch}; stopping."
+              break
+            fi
+            git add output/posts || true
+            if git diff --cached --quiet; then
+              echo "No post changes to commit in batch ${batch}; stopping."
+              break
+            fi
+            git commit -m "chore: import central government press releases batch ${batch}"
+            git pull --rebase --autostash origin main
+            git push
+          done
 
       - name: Improve weak press release images
         if: ${{ inputs.dry_run != 'true' }}
