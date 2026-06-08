@@ -14,6 +14,10 @@ on:
         description: "Optional agency names/codes separated by spaces, e.g. 보건복지부 A00041"
         required: false
         default: ""
+      sections:
+        description: "Optional sections separated by spaces, e.g. 부처 청 위원회"
+        required: false
+        default: ""
       max_agencies:
         description: "Optional limit for testing. 0 means all agencies"
         required: true
@@ -22,6 +26,14 @@ on:
         description: "Press-list pages to scan per agency"
         required: true
         default: "20"
+      start_date:
+        description: "Import start date YYYY-MM-DD"
+        required: false
+        default: "2025-01-01"
+      end_date:
+        description: "Import end date YYYY-MM-DD. Empty means today"
+        required: false
+        default: ""
       new_only:
         description: "Skip existing URLs and fill with new posts"
         required: true
@@ -83,7 +95,10 @@ jobs:
           INPUT_PER_AGENCY: ${{ inputs.per_agency || '2' }}
           INPUT_SCAN_PAGES: ${{ inputs.scan_pages || '20' }}
           INPUT_AGENCIES: ${{ inputs.agencies || '' }}
+          INPUT_SECTIONS: ${{ inputs.sections || '' }}
           INPUT_MAX_AGENCIES: ${{ inputs.max_agencies || '0' }}
+          INPUT_START_DATE: ${{ inputs.start_date || '2025-01-01' }}
+          INPUT_END_DATE: ${{ inputs.end_date || '' }}
           INPUT_NEW_ONLY: ${{ inputs.new_only || 'true' }}
           INPUT_DRY_RUN: ${{ inputs.dry_run || 'false' }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
@@ -96,8 +111,16 @@ jobs:
             read -r -a agencies <<< "${INPUT_AGENCIES}"
             args+=(--agencies "${agencies[@]}")
           fi
+          if [ -n "${INPUT_SECTIONS}" ]; then
+            read -r -a sections <<< "${INPUT_SECTIONS}"
+            args+=(--sections "${sections[@]}")
+          fi
           if [ "${INPUT_MAX_AGENCIES}" != "0" ]; then
             args+=(--max-agencies "${INPUT_MAX_AGENCIES}")
+          fi
+          args+=(--start-date "${INPUT_START_DATE}")
+          if [ -n "${INPUT_END_DATE}" ]; then
+            args+=(--end-date "${INPUT_END_DATE}")
           fi
           if [ "${INPUT_NEW_ONLY}" = "true" ]; then
             args+=(--new-only)

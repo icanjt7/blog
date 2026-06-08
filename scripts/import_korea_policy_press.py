@@ -150,17 +150,24 @@ def _extract_list_items(page: str, agency_name: str) -> list[ListItem]:
     return items
 
 
-def agency_items(agency: Agency, limit: int, scan_pages: int = 20) -> list[ListItem]:
+def agency_items(
+    agency: Agency,
+    limit: int,
+    scan_pages: int = 20,
+    start_date: str = "2025-01-01",
+    end_date: str | None = None,
+) -> list[ListItem]:
     items: list[ListItem] = []
     seen: set[str] = set()
+    end_date = end_date or datetime.now().strftime("%Y-%m-%d")
     for page_no in range(1, max(1, scan_pages) + 1):
         page = request(
             LIST_URL,
             params={
                 "pageIndex": str(page_no),
                 "repCode": agency.code,
-                "startDate": "2025-01-01",
-                "endDate": datetime.now().strftime("%Y-%m-%d"),
+                "startDate": start_date,
+                "endDate": end_date,
             },
         )
         for item in _extract_list_items(page, agency.name):
@@ -246,8 +253,11 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--per-agency", type=int, default=2)
     parser.add_argument("--agencies", nargs="*", help="기관명 또는 기관코드 일부 지정")
+    parser.add_argument("--sections", nargs="*", help="섹션 지정: 부처 청 위원회 대통령 소속 위원회")
     parser.add_argument("--max-agencies", type=int, default=0)
     parser.add_argument("--scan-pages", type=int, default=20, help="기관별 목록을 훑을 최대 페이지 수")
+    parser.add_argument("--start-date", default="2025-01-01", help="수집 시작일 YYYY-MM-DD")
+    parser.add_argument("--end-date", default="", help="수집 종료일 YYYY-MM-DD, 기본값은 오늘")
     parser.add_argument("--new-only", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
@@ -257,6 +267,9 @@ def main() -> None:
     settings.enable_image_generation = False
     image_agent = ImageAgent(settings)
     agencies = list_agencies()
+    if args.sections:
+        wanted_sections = {section.lower() for section in args.sections}
+        agencies = [agency for agency in agencies if agency.section.lower() in wanted_sections]
     if args.agencies:
         wanted = {item.lower() for item in args.agencies}
         agencies = [
@@ -272,7 +285,8 @@ def main() -> None:
     written: list[Path] = []
     errors: list[str] = []
     seq = 0
-    print(f"대상 기관: {len(agencies)}개 / 기관당 {args.per_agency}건")
+    end_date = args.end_date or datetime.now().strftime("%Y-%m-%d")
+    print(f"대상 기관: {len(agencies)}개 / 기관당 {args.per_agency}건 / 기간 {args.start_date}~{end_date}")
 
     for agency in agencies:
         print(f"\n[{agency.section}] {agency.name} ({agency.code})")
@@ -282,7 +296,13 @@ def main() -> None:
                 if args.new_only
                 else max(args.per_agency * 3, args.per_agency + 8)
             )
-            items = agency_items(agency, item_limit, scan_pages=args.scan_pages)
+            items = agency_items(
+                agency,
+                item_limit,
+                scan_pages=args.scan_pages,
+                start_date=args.start_date,
+                end_date=end_date,
+            )
         except Exception as exc:
             errors.append(f"{agency.name} 목록 실패: {exc}")
             print(f"  x 목록 실패: {exc}")
