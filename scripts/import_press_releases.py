@@ -47,6 +47,174 @@ INSTITUTION_LOGOS: dict[str, str] = {
     "국가유산진흥원":    "assets/logos/kh.png",
 }
 
+PRESS_CATEGORY_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
+    (
+        "정치",
+        (
+            "선거",
+            "투표",
+            "당선",
+            "후보자",
+            "공약",
+            "정당",
+            "국회",
+            "의원",
+            "정치",
+        ),
+    ),
+    (
+        "기술",
+        (
+            "ai",
+            "인공지능",
+            "데이터",
+            "디지털",
+            "클라우드",
+            "보안",
+            "사이버",
+            "반도체",
+            "배터리",
+            "전기차",
+            "자율주행",
+            "로봇",
+            "드론",
+            "우주",
+            "위성",
+            "발사체",
+            "항공",
+            "r&d",
+            "연구개발",
+            "기술개발",
+            "소프트웨어",
+            "플랫폼",
+            "통신",
+            "5g",
+            "6g",
+            "양자",
+            "스타트업",
+            "벤처",
+            "특허",
+        ),
+    ),
+    (
+        "핫이슈",
+        (
+            "관광",
+            "여행",
+            "축제",
+            "행사",
+            "공연",
+            "전시",
+            "박람회",
+            "문화",
+            "콘텐츠",
+            "한류",
+            "k-",
+            "케이",
+            "국가유산",
+            "문화유산",
+            "무형유산",
+            "궁",
+            "박물관",
+            "미술관",
+            "지역",
+            "방문",
+            "캠페인",
+        ),
+    ),
+    (
+        "생활",
+        (
+            "지원",
+            "신청",
+            "혜택",
+            "복지",
+            "돌봄",
+            "청년",
+            "교육",
+            "학교",
+            "유학생",
+            "취업",
+            "채용",
+            "일자리",
+            "노동",
+            "근로",
+            "임금",
+            "안전",
+            "폭염",
+            "집중호우",
+            "재난",
+            "질병",
+            "감염",
+            "예방",
+            "의료",
+            "건강",
+            "식품",
+            "화장품",
+            "주거",
+            "교통",
+            "철도",
+            "생활",
+            "소비자",
+            "민원",
+            "서류",
+            "요금",
+        ),
+    ),
+    (
+        "정책",
+        (
+            "예산",
+            "재정",
+            "경제",
+            "금융",
+            "물가",
+            "세금",
+            "세제",
+            "규제",
+            "법",
+            "시행령",
+            "입법",
+            "제도",
+            "계획",
+            "전략",
+            "위원회",
+            "회의",
+            "협의회",
+            "협약",
+            "수출",
+            "무역",
+            "투자",
+            "공공기관",
+            "조달",
+        ),
+    ),
+)
+
+INSTITUTION_CATEGORY_HINTS: dict[str, str] = {
+    "과학기술정보통신부": "기술",
+    "우주항공청": "기술",
+    "방송미디어통신위원회": "기술",
+    "개인정보보호위원회": "기술",
+    "문화체육관광부": "핫이슈",
+    "국가유산청": "핫이슈",
+    "국가유산진흥원": "핫이슈",
+    "식품의약품안전처": "생활",
+    "보건복지부": "생활",
+    "질병관리청": "생활",
+    "교육부": "생활",
+    "고용노동부": "생활",
+    "병무청": "생활",
+    "경찰청": "생활",
+    "소방청": "생활",
+    "행정안전부": "생활",
+    "국토교통부": "생활",
+    "기획예산처": "정책",
+    "재정경제부": "정책",
+    "금융위원회": "정책",
+    "공정거래위원회": "정책",
+}
+
 AGENCIES = {
     "mois": "행정안전부",
     "msit": "과학기술정보통신부",
@@ -456,10 +624,37 @@ def with_particle(text: str, consonant_particle: str, vowel_particle: str) -> st
     return text + (consonant_particle if has_final else vowel_particle)
 
 
+def classify_press_category(release: PressRelease) -> str:
+    """보도자료 소재를 사이트 주요 카테고리로 분류한다."""
+    text = f"{release.title}\n{release.institution}\n{release.body_text[:2500]}".lower()
+    scores = {category: 0 for category, _ in PRESS_CATEGORY_RULES}
+    for category, keywords in PRESS_CATEGORY_RULES:
+        for keyword in keywords:
+            key = keyword.lower()
+            if key in text:
+                scores[category] += 3 if key in release.title.lower() else 1
+
+    hint = INSTITUTION_CATEGORY_HINTS.get(release.institution)
+    if hint:
+        scores[hint] = scores.get(hint, 0) + 1
+
+    political_markers = ("선거", "투표", "당선", "공약", "정당", "후보자", "정치")
+    if scores["정치"] >= 3 and any(marker in text for marker in political_markers):
+        return "정치"
+    if scores["기술"] >= 3:
+        return "기술"
+    if scores["핫이슈"] >= 3:
+        return "핫이슈"
+    if scores["생활"] >= 3:
+        return "생활"
+    return max(scores, key=scores.get) if max(scores.values()) > 0 else "정책"
+
+
 def search_cover_image(
     release: PressRelease,
     prefix: str,
     image_agent: ImageAgent | None,
+    category: str,
 ) -> tuple[str, str]:
     if release.image_url:
         return release.image_url, release.image_alt or f"{release.title} 관련 보도자료 이미지"
@@ -471,7 +666,7 @@ def search_cover_image(
         topic=Topic(
             keyword=release.title,
             title_hint=release.title,
-            category="정책",
+            category=category,  # type: ignore[arg-type]
         ),
         title=release.title,
         slug=slug,
@@ -519,11 +714,12 @@ def write_post(
     except ValueError:
         base_dt = datetime.now()
     post_dt = base_dt + timedelta(minutes=sequence)
-    tags = ["보도기사", release.institution]
+    category = classify_press_category(release)
+    tags = ["보도기사", release.institution, category]
     searched_cover = ""
     searched_alt = ""
     if not preserved_cover and not release.image_url:
-        searched_cover, searched_alt = search_cover_image(release, prefix, image_agent)
+        searched_cover, searched_alt = search_cover_image(release, prefix, image_agent, category)
     img = (
         preserved_cover
         or release.image_url
@@ -536,7 +732,7 @@ def write_post(
         "---\n"
         f"title: {yaml_quote(title)}\n"
         f"date: {yaml_quote(post_dt.isoformat(timespec='minutes'))}\n"
-        "category: \"정책\"\n"
+        f"category: {yaml_quote(category)}\n"
         "tags:\n"
         + "".join(f"  - {yaml_quote(t)}\n" for t in tags)
         + "quality_score: 90.0\n"

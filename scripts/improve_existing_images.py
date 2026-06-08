@@ -19,7 +19,7 @@ from blog_agent.models import Draft, Topic
 
 
 POSTS_DIR = Path(__file__).resolve().parents[1] / "output" / "posts"
-VALID_CATEGORIES = {"핫이슈", "기술", "정책", "생활"}
+VALID_CATEGORIES = {"핫이슈", "기술", "정책", "생활", "정치"}
 
 
 def _quote_yaml(value: str) -> str:

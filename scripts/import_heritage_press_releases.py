@@ -11,7 +11,7 @@ from urllib.parse import urljoin
 
 import requests
 
-from import_press_releases import extract_first_hwpx_attachment
+from import_press_releases import classify_press_category, extract_first_hwpx_attachment
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -261,14 +261,15 @@ def write_post(release: PressRelease, sequence: int) -> Path:
     path = POSTS_DIR / f"{slug}.md"
     base_dt = datetime.fromisoformat(release.date)
     post_dt = base_dt + timedelta(minutes=sequence)
-    tags = ["보도자료", "국가유산", release.institution]
+    category = classify_press_category(release)  # type: ignore[arg-type]
+    tags = ["보도기사", "보도자료", "국가유산", release.institution, category]
     cover_line = f"cover_image: {yaml_quote(release.image_url)}\n" if release.image_url else ""
     alt = release.image_alt or f"{release.title} 관련 보도자료 이미지"
     frontmatter = (
         "---\n"
         f"title: {yaml_quote(release.title)}\n"
         f"date: {yaml_quote(post_dt.isoformat(timespec='minutes'))}\n"
-        "category: \"정책\"\n"
+        f"category: {yaml_quote(category)}\n"
         "tags:\n"
         + "".join(f"  - {yaml_quote(tag)}\n" for tag in tags)
         + "quality_score: 90.0\n"
