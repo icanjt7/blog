@@ -128,7 +128,7 @@ jobs:
           if [ "${INPUT_DRY_RUN}" = "true" ]; then
             args+=(--dry-run)
           fi
-          python scripts/import_korea_policy_press.py "${args[@]}"
+          python -u scripts/import_korea_policy_press.py "${args[@]}"
 
       - name: Improve weak press release images
         if: ${{ inputs.dry_run != 'true' }}
