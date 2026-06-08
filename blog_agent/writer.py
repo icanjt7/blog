@@ -375,30 +375,163 @@ BODY:
                 "point_3": "패션 브랜드 협업의 의미는 로고보다 소재 선택, 착용감, 재봉·패턴 설계 역량에 있습니다.",
             }
 
+        return self._generic_tech_news_context(topic, display_title, summary_text, blob)
+
+    def _generic_tech_news_context(self, topic: Topic, display_title: str, summary_text: str, blob: str) -> dict[str, str]:
         clean_summary = self._clean_summary(summary_text)
+        angle = self._tech_angle(blob)
+        subject = self._humanize_tech_subject(display_title or topic.keyword)
+        title = angle["title_template"].format(subject=subject)
         return {
-            "title": f"{topic.keyword}: 무엇이 바뀌나",
-            "excerpt": f"{display_title} 소식을 기술 제품과 사용자 영향 중심으로 정리했습니다.",
+            "title": title,
+            "excerpt": angle["excerpt_template"].format(subject=subject),
             "summary": (
                 f"{display_title} 소식입니다. "
-                f"{clean_summary or '원문 요약이 짧아 세부 내용은 제한적이지만, 기술 제품이나 서비스 변화가 사용자 경험과 운영 기준에 어떤 영향을 주는지 확인할 필요가 있습니다.'}"
+                f"{clean_summary or angle['summary_fallback'].format(subject=subject)}"
             ),
-            "background": (
-                "해외 기술 뉴스 제목은 회사명, 제품명, 별칭만 짧게 드러나는 경우가 많습니다. "
-                "먼저 어떤 회사와 제품의 이야기인지 확인하고, 그 변화가 기능 추가인지, 가격 변경인지, 장애인지, 규제 대응인지 나눠 봐야 합니다."
+            "background": angle["background"].format(subject=subject),
+            "why_it_matters": angle["why_it_matters"].format(subject=subject),
+            "target": angle["target"],
+            "tech_context": angle["tech_context"],
+            "user_impact": angle["user_impact"],
+            "next_check": angle["next_check"],
+            "point_1": angle["point_1"].format(subject=subject),
+            "point_2": angle["point_2"].format(subject=subject),
+            "point_3": angle["point_3"].format(subject=subject),
+        }
+
+    @staticmethod
+    def _tech_angle(blob: str) -> dict[str, str]:
+        angles = [
+            (
+                ("hack", "breach", "security", "privacy", "data", "wellness"),
+                {
+                    "title_template": "{subject}, 보안 리스크가 핵심",
+                    "excerpt_template": "{subject} 이슈를 개인정보, 내부 도구 접근, 사고 대응 기준으로 정리했습니다.",
+                    "summary_fallback": "{subject} 관련 보도는 제품 기능보다 데이터 접근과 사고 대응 절차를 먼저 봐야 하는 보안 이슈입니다.",
+                    "background": "{subject} 같은 디지털 서비스는 앱 화면 뒤에서 계정, 내부 운영 도구, 고객 데이터 저장소가 함께 움직입니다. 보안 사고가 나면 해커가 어떤 권한으로 어디까지 접근했는지가 핵심입니다.",
+                    "why_it_matters": "웨어러블·헬스케어·생산성 서비스는 단순 연락처보다 민감한 생활 패턴과 건강 지표를 다룰 수 있습니다. 따라서 {subject} 이슈는 기능 업데이트가 아니라 데이터 최소화, 내부 권한 통제, 사고 통지 체계의 문제로 읽어야 합니다.",
+                    "target": "서비스 이용자, 보안 담당자, 개인정보 처리 서비스를 운영하는 스타트업",
+                    "tech_context": "내부 관리도구 보안, 고객 데이터 접근권한, 침해사고 대응, 개인정보 최소화",
+                    "user_impact": "계정 정보, 건강·활동 데이터, 알림 수신 여부, 비밀번호 재설정 같은 사후 조치에 영향 가능",
+                    "next_check": "침해 범위, 노출 데이터 항목, 사용자 통지, 비밀번호·토큰 재설정, 감독기관 신고 여부",
+                    "point_1": "{subject}에서 가장 먼저 볼 것은 '누가 어떤 내부 도구에 접근했나'입니다.",
+                    "point_2": "서비스 회사가 빠르게 복구했다고 해도 노출 데이터 종류와 보관 기간은 별도 확인이 필요합니다.",
+                    "point_3": "헬스·웨어러블 데이터는 광고 데이터보다 개인 생활을 더 자세히 드러낼 수 있습니다.",
+                },
             ),
-            "why_it_matters": (
-                "기술 이슈는 발표 자체보다 사용자 경험, 운영 안정성, 비용 구조, 생태계 의존성으로 이어질 때 중요해집니다. "
-                "특히 AI와 클라우드 서비스는 외부 API, 구독 요금, 인프라 안정성이 함께 움직이므로 원문 제목만으로 판단하면 맥락을 놓치기 쉽습니다."
+            (
+                ("dreambeans", "cartoon", "image", "creator", "ai tool", "generative"),
+                {
+                    "title_template": "{subject}, 생성 AI의 다음 실험",
+                    "excerpt_template": "{subject} 소식을 이미지 생성 AI, 개인정보, 크리에이터 도구 관점에서 풀었습니다.",
+                    "summary_fallback": "{subject}는 사용자의 사진이나 일상 데이터를 창작물로 바꾸는 생성 AI 도구 흐름과 맞닿아 있습니다.",
+                    "background": "Google 같은 플랫폼 기업은 검색·클라우드뿐 아니라 이미지, 영상, 생산성 도구에 생성 AI를 붙이고 있습니다. {subject}는 이름보다 어떤 입력 데이터를 받아 어떤 결과물을 만드는지가 더 중요합니다.",
+                    "why_it_matters": "생성 AI 도구는 재미있는 기능처럼 보이지만, 사진·얼굴·취향 데이터를 다룰 때 개인정보와 저작권 문제가 함께 생깁니다. {subject}를 볼 때는 결과물 품질뿐 아니라 학습·저장·공유 설정을 확인해야 합니다.",
+                    "target": "AI 이미지 도구 이용자, 크리에이터, Google 생태계 사용자",
+                    "tech_context": "생성형 이미지 모델, 개인화 콘텐츠, 입력 데이터 보호, 플랫폼 내 AI 기능 통합",
+                    "user_impact": "사진 변환, 캐릭터 생성, SNS 공유, 데이터 저장 설정 확인 필요",
+                    "next_check": "공식 출시 지역, 입력 데이터 보관 정책, 상업적 이용 가능 여부, 워터마크·표시 정책",
+                    "point_1": "{subject}는 이름보다 '내 사진과 생활 데이터를 어떻게 쓰는가'가 핵심입니다.",
+                    "point_2": "무료 AI 기능이라도 결과물 공유권과 데이터 보관 조건은 서비스 약관에 달려 있습니다.",
+                    "point_3": "크리에이터에게는 빠른 시안 제작 도구가 될 수 있지만 원본성 논란도 따라붙을 수 있습니다.",
+                },
             ),
+            (
+                ("substack", "reply", "creator", "comment", "moderation"),
+                {
+                    "title_template": "Substack 답글 규칙, 왜 중요할까",
+                    "excerpt_template": "Substack의 Reply Rules를 창작자 커뮤니티 운영과 댓글 관리 기능 관점에서 정리했습니다.",
+                    "summary_fallback": "Substack의 새 답글 규칙 기능은 창작자가 독자 반응을 더 세밀하게 통제하도록 돕는 커뮤니티 관리 기능입니다.",
+                    "background": "Substack은 뉴스레터와 구독형 글쓰기를 결합한 창작자 플랫폼입니다. 글 발행만이 아니라 댓글, 토론, 유료 구독자 커뮤니티가 수익 모델과 연결됩니다.",
+                    "why_it_matters": "크리에이터 플랫폼의 경쟁력은 글쓰기 도구만으로 정해지지 않습니다. 악성 댓글을 줄이고, 유료 독자의 대화 품질을 지키고, 창작자가 번아웃 없이 운영할 수 있게 만드는 관리 기능이 점점 중요해집니다.",
+                    "target": "Substack 작가, 뉴스레터 운영자, 유료 커뮤니티를 운영하는 창작자",
+                    "tech_context": "댓글 권한 설정, 커뮤니티 모더레이션, 창작자 수익화 플랫폼, 구독자 관리",
+                    "user_impact": "누가 답글을 달 수 있는지, 토론 품질이 어떻게 관리되는지, 유료 독자 경험이 달라질 수 있음",
+                    "next_check": "Reply Rules 적용 범위, 무료·유료 독자 구분, 차단·승인 기능, 기존 댓글 정책과의 차이",
+                    "point_1": "Substack의 핵심 고객은 글을 쓰는 사람이라서 댓글 통제권이 제품 경쟁력이 됩니다.",
+                    "point_2": "답글 규칙은 검열 논쟁보다 커뮤니티 운영 비용을 줄이는 도구로 봐야 합니다.",
+                    "point_3": "유료 구독 모델에서는 대화 품질이 콘텐츠만큼 재구독률에 영향을 줍니다.",
+                },
+            ),
+            (
+                ("google cloud", "cloud", "multiyear", "usage", "lovable"),
+                {
+                    "title_template": "{subject}, 클라우드 비용을 봐야",
+                    "excerpt_template": "{subject} 소식을 AI 앱 성장, Google Cloud 계약, 인프라 비용 관점에서 정리했습니다.",
+                    "summary_fallback": "{subject}는 AI 서비스가 빠르게 성장할 때 클라우드 사용량과 장기 계약이 어떻게 중요해지는지 보여주는 사례입니다.",
+                    "background": "AI 앱은 사용자가 늘수록 모델 호출, 저장소, 빌드·배포, 보안 로그 비용이 함께 늘어납니다. {subject}처럼 클라우드 계약이 보도되는 이유는 제품 인기가 곧 인프라 비용으로 이어지기 때문입니다.",
+                    "why_it_matters": "AI 스타트업은 기능 출시 속도만큼 단위 경제성이 중요합니다. 사용량을 5배 늘리는 계약은 성장 신호일 수 있지만, 동시에 클라우드 의존도와 비용 구조를 더 꼼꼼히 봐야 한다는 뜻입니다.",
+                    "target": "AI 앱 사용자, 스타트업 투자자, 클라우드 비용을 관리하는 개발팀",
+                    "tech_context": "Google Cloud 계약, AI 앱 추론·빌드 비용, 확장성, 클라우드 벤더 의존도",
+                    "user_impact": "서비스 속도, 사용량 제한, 요금제 변화, 장애 대응 품질에 영향 가능",
+                    "next_check": "계약 기간, 사용량 증가 근거, 가격 정책 변화, 멀티클라우드 여부, 실제 사용자 증가",
+                    "point_1": "{subject}에서 '사용량 증가'는 제품 인기와 비용 부담을 동시에 뜻합니다.",
+                    "point_2": "AI 앱은 사용자가 버튼을 한 번 누를 때도 모델 호출과 배포 인프라가 비용으로 잡힐 수 있습니다.",
+                    "point_3": "장기 클라우드 계약은 안정성을 주지만 특정 벤더 의존도를 키울 수 있습니다.",
+                },
+            ),
+            (
+                ("carvana", "slate", "auto", "car", "vehicle", "ev"),
+                {
+                    "title_template": "Carvana와 Slate Auto, 관전 포인트",
+                    "excerpt_template": "Carvana와 Slate Auto 협력을 온라인 자동차 판매와 전기차 유통 변화로 정리했습니다.",
+                    "summary_fallback": "Carvana와 Slate Auto의 협력은 중고차 온라인 판매 플랫폼이 신차·전기차 유통으로 확장할 가능성을 보여줍니다.",
+                    "background": "Carvana는 차량 검색, 금융, 배송을 온라인으로 묶은 미국 자동차 거래 플랫폼입니다. Slate Auto는 전기차 시장에서 주목받는 신생 제조사로 알려져 있어, 두 회사의 협력은 단순 제휴보다 판매 채널 실험에 가깝습니다.",
+                    "why_it_matters": "자동차 유통은 딜러망, 재고 금융, 배송, 보증이 얽혀 있어 플랫폼화가 쉽지 않습니다. Carvana가 신차 판매까지 넓히면 소비자는 온라인 구매 편의성을 얻을 수 있지만, 제조사와 딜러의 역할 분담도 달라질 수 있습니다.",
+                    "target": "온라인 차량 구매자, 전기차 스타트업, 자동차 유통 플랫폼",
+                    "tech_context": "온라인 자동차 거래, 전기차 직접 판매, 재고·배송 시스템, 자동차 금융 플랫폼",
+                    "user_impact": "가격 비교, 차량 인도 방식, 보증·반품 조건, 금융 선택지가 달라질 수 있음",
+                    "next_check": "판매 지역, 실제 차량 인도 일정, 보증 주체, 반품 조건, 기존 딜러망과의 관계",
+                    "point_1": "Carvana 이슈는 앱 기능보다 자동차 판매망이 온라인으로 이동하는 흐름입니다.",
+                    "point_2": "신차 판매가 붙으면 플랫폼은 재고 관리와 제조사 관계라는 더 어려운 문제를 다뤄야 합니다.",
+                    "point_3": "소비자는 클릭 구매 편의성보다 보증, 배송, 반품 조건을 먼저 확인해야 합니다.",
+                },
+            ),
+            (
+                ("defense", "anduril", "military", "weapon", "drone"),
+                {
+                    "title_template": "방산 테크 투자, 오래 갈 기업은?",
+                    "excerpt_template": "방산 테크 투자 열기를 제품 실증, 조달, 규제 리스크 관점에서 정리했습니다.",
+                    "summary_fallback": "방산 테크 시장에는 자금이 몰리고 있지만 오래 살아남는 기업은 실제 조달과 현장 검증을 통과해야 합니다.",
+                    "background": "방산 테크는 드론, 감시 센서, 자율 시스템, 사이버 방어, 군수 소프트웨어처럼 군과 안보 기관이 쓰는 기술을 다룹니다. 일반 SaaS보다 판매 주기가 길고 정부 조달 규칙의 영향을 크게 받습니다.",
+                    "why_it_matters": "투자금이 많다는 사실만으로 방산 스타트업의 경쟁력이 증명되지는 않습니다. 실제 군 운용 환경에서 버티는 하드웨어, 보안 인증, 긴 조달 절차, 윤리·수출 규제가 모두 관문입니다.",
+                    "target": "방산 스타트업, 투자자, 국방 기술 조달을 보는 독자",
+                    "tech_context": "드론·자율 시스템, 군수 소프트웨어, 정부 조달, 보안 인증, 현장 실증",
+                    "user_impact": "일반 소비자 영향은 제한적이지만 공공 예산, 안보 기술 경쟁, 민간 기술 이전과 연결됨",
+                    "next_check": "실제 계약 규모, 시제품과 양산 차이, 조달 기관, 수출 통제, 현장 운용 사례",
+                    "point_1": "방산 테크는 데모 영상보다 실제 납품과 유지보수 계약이 더 중요합니다.",
+                    "point_2": "정부 고객은 빠른 성장보다 안정성, 보안, 장기 지원 능력을 봅니다.",
+                    "point_3": "투자 열기가 커질수록 과장된 기술 주장과 실제 운용 성과를 구분해야 합니다.",
+                },
+            ),
+        ]
+        for keywords, angle in angles:
+            if any(keyword in blob for keyword in keywords):
+                return angle
+        return {
+            "title_template": "{subject}, 사용자가 볼 변화",
+            "excerpt_template": "{subject} 소식을 제품 변화와 실제 사용자 영향 중심으로 정리했습니다.",
+            "summary_fallback": "{subject}는 제품 기능, 가격, 운영 안정성 중 무엇이 달라지는지 나눠 봐야 하는 기술 이슈입니다.",
+            "background": "해외 기술 뉴스 제목은 회사명, 제품명, 별칭만 짧게 드러나는 경우가 많습니다. {subject}도 먼저 어떤 회사와 제품의 이야기인지, 변화가 기능 추가인지 가격 변화인지 장애 대응인지 구분해야 합니다.",
+            "why_it_matters": "기술 이슈는 발표 문구보다 사용자 경험과 비용 구조로 이어질 때 중요해집니다. {subject}를 볼 때도 실제 사용자가 해야 할 행동, 기업이 부담할 운영 비용, 대체 서비스 가능성을 함께 확인해야 합니다.",
             "target": "해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀",
-            "tech_context": "제품 기능, 서비스 안정성, 가격·구독 구조, 외부 플랫폼 의존성",
+            "tech_context": "제품 기능 변화, 서비스 안정성, 가격·구독 구조, 플랫폼 의존성",
             "user_impact": "기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능",
             "next_check": "공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도",
-            "point_1": "제목이 짧으면 원문에서 회사명과 제품명을 먼저 확인해야 합니다.",
+            "point_1": "{subject}의 핵심은 제목보다 어떤 기능·비용·운영 조건이 달라졌는지입니다.",
             "point_2": "신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다.",
             "point_3": "AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다.",
         }
+
+    @staticmethod
+    def _humanize_tech_subject(text: str) -> str:
+        cleaned = re.sub(r"\s+", " ", text).strip()
+        cleaned = cleaned.replace("’", "'")
+        cleaned = re.sub(r":\s*지금 확인할 포인트$", "", cleaned)
+        if len(cleaned) > 46:
+            cleaned = cleaned[:46].rsplit(" ", 1)[0]
+        return cleaned or "이번 기술 소식"
 
     @staticmethod
     def _clean_summary(text: str) -> str:

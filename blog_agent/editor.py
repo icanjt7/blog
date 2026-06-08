@@ -40,6 +40,8 @@ GENERIC_FALLBACK_PATTERNS = [
     "조건, 비용, 일정, 공식 안내 변경 여부",
     "지역명, 연도, 모델명 같은 보조 키워드",
     "공식 자료 중심으로 간단히 정리했습니다",
+    "지금 확인할 포인트",
+    "여러 출처의 공통 내용을 먼저 봅니다",
 ]
 
 
@@ -150,7 +152,17 @@ BODY:
         reviewed.review_notes.append("LLM 편집 보완 완료")
         return self.review(reviewed)
 
-    BLAND_TITLE_PATTERNS = ["핵심 정리", "알아보자", "총정리", "완벽 정리", "알아보겠", "정리해", "소개합니다"]
+    BLAND_TITLE_PATTERNS = [
+        "핵심 정리",
+        "알아보자",
+        "총정리",
+        "완벽 정리",
+        "알아보겠",
+        "정리해",
+        "소개합니다",
+        "지금 확인할 포인트",
+        "무엇이 바뀌나",
+    ]
 
     @staticmethod
     def has_placeholders(text: str) -> bool:
@@ -203,6 +215,9 @@ BODY:
             if title_words and not any(word in draft.body_markdown for word in title_words[:5]):
                 score -= 25
                 notes.append("기술 글이 원문 제목의 핵심 대상을 충분히 설명하지 않습니다.")
+            if re.search(r"최근 검색 수요가 꾸준히|공식 안내와 최신 공지|지역명, 연도, 모델명", draft.body_markdown):
+                score -= 35
+                notes.append("기술 글이 범용 확인 템플릿에 머물러 기사별 차이가 부족합니다.")
         draft.quality_score = max(0, score)
         draft.review_notes = notes
         return draft
