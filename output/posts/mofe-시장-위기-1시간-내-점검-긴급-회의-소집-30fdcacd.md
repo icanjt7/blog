@@ -1,0 +1,38 @@
+---
+title: "시장 위기 1시간 내 점검, 긴급 회의 소집"
+date: "2026-06-07T00:24"
+category: "정책"
+tags:
+  - "보도기사"
+  - "재정경제부"
+quality_score: 90.0
+cover_image: "https://images.unsplash.com/photo-1769771744699-7b73a101b318?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxjb25mZXJlbmNlJTIwbWVldGluZyUyMHRhYmxlfGVufDF8MHx8fDE3ODA4Mzk4MDF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "시장 위기 1시간 내 점검, 긴급 회의 소집 — Photo by dmrjy on Unsplash"
+author: "재정경제부"
+---
+
+재정경제부가 2026-06-07 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. 원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다.
+
+## 한눈에 보기
+
+이번 보도자료의 핵심은 '시장 위기 1시간 내 점검, 긴급 회의 소집'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
+
+## 핵심 포인트
+
+- 발표 기관: 재정경제부
+- 발표일: 2026-06-07
+- 핵심 주제: 시장 위기 1시간 내 점검, 긴급 회의 소집
+
+## 더 살펴볼 내용
+
+원문 보도자료에는 일정, 참여 대상, 추진 배경 등 세부 정보가 함께 안내되어 있습니다. 관심 있는 독자는 원문에서 최신 공지와 첨부 자료를 함께 확인하는 것이 좋습니다.
+
+## 확인 메모
+
+- 발표 기관: 재정경제부
+- 발표일: 2026-06-07
+- 자료 성격: 기관 보도자료 기반 브리핑
+
+## 원문
+
+- [재정경제부 보도자료](https://www.mofe.go.kr/nw/nes/detailNesDtaView.do?searchBbsId1=MOSFBBS_000000000028&menuNo=4010100&searchNttId1=MOSF_000000000078102)
