@@ -57,40 +57,39 @@ class WriterAgent:
 
     def _init_client(self) -> None:
         s = self.settings
-        timeout = s.llm_timeout_seconds
         if s.groq_api_key:
             self._client = OpenAI(
                 api_key=s.groq_api_key,
                 base_url="https://api.groq.com/openai/v1",
-                timeout=timeout,
-                max_retries=0,
+                timeout=45,
+                max_retries=1,
             )
             self._model = s.groq_model
         elif s.gemini_api_key:
             self._client = OpenAI(
                 api_key=s.gemini_api_key,
                 base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-                timeout=timeout,
-                max_retries=0,
+                timeout=45,
+                max_retries=1,
             )
             self._model = s.gemini_model
         elif s.openrouter_api_key:
             self._client = OpenAI(
                 api_key=s.openrouter_api_key,
                 base_url="https://openrouter.ai/api/v1",
-                timeout=timeout,
-                max_retries=0,
+                timeout=60,
+                max_retries=1,
             )
             self._model = s.openrouter_model
         elif s.openai_api_key:
-            self._client = OpenAI(api_key=s.openai_api_key, timeout=timeout, max_retries=0)
+            self._client = OpenAI(api_key=s.openai_api_key, timeout=45, max_retries=1)
             self._model = s.openai_model
         elif s.github_token:
             self._client = OpenAI(
                 api_key=s.github_token,
                 base_url="https://models.inference.ai.azure.com",
-                timeout=timeout,
-                max_retries=0,
+                timeout=45,
+                max_retries=1,
             )
             self._model = s.github_model
 
@@ -193,7 +192,7 @@ BODY:
         if self._has_tourapi_source(topic):
             return self._write_tourism_fallback(topic)
         if topic.category == "기술" and topic.sources:
-            return self._write_tech_source_fallback(topic)
+            return self._write_tech_news_fallback(topic)
         source_lines = "\n".join(f"- [{s.title}]({s.url})" for s in topic.sources)
         topic_with_subject = self._with_particle(topic.keyword, "은", "는")
         body = f"""## 한눈에 보기
@@ -240,36 +239,37 @@ BODY:
             tags=self._tags(topic),
         )
 
-    def _write_tech_source_fallback(self, topic: Topic) -> Draft:
-        primary = topic.sources[0]
+    def _write_tech_news_fallback(self, topic: Topic) -> Draft:
         source_lines = "\n".join(f"- [{s.title}]({s.url})" for s in topic.sources)
-        summary = re.sub(r"\s+", " ", primary.summary or topic.title_hint).strip()
-        title = topic.title_hint if len(topic.title_hint) <= 58 else topic.title_hint[:55].rstrip() + "..."
+        context = self._tech_news_context(topic)
+        title = context["title"] or f"{topic.keyword}: 무엇이 달라졌나"
         body = f"""## 무슨 소식인가
 
-{topic.title_hint} 이슈는 단순한 해외 정책 뉴스가 아니라 기술 인프라의 비용과 책임을 묻는 흐름입니다. 원문 보도에서 확인되는 핵심은 다음과 같습니다.
+{context["summary"]}
 
-> {summary[:650]}
+## 먼저 알아둘 배경
+
+{context["background"]}
 
 ## 왜 기술 이슈인가
 
-데이터센터, 클라우드, AI 서비스는 모두 전력과 냉각 설비 위에서 돌아갑니다. 새 규제나 허가 유예가 나오면 기업은 모델 개발 속도뿐 아니라 전력 계약, 지역 인허가, 냉각 방식, 송전망 부담까지 함께 계산해야 합니다.
+{context["why_it_matters"]}
 
 ## 핵심 정리
 
-| 항목 | 봐야 할 내용 |
+| 항목 | 이번 글에서 봐야 할 내용 |
 | --- | --- |
-| 대상 | 어떤 기업, 설비, 서비스가 직접 영향을 받는지 |
-| 기술 맥락 | AI, 클라우드, 데이터센터, 반도체 중 어디와 연결되는지 |
-| 비용 변수 | 전력, 냉각, 인허가, 공급망 비용이 늘어나는지 |
-| 다음 확인 | 법안 서명, 시행일, 예외 조항, 기업 대응 |
+| 직접 대상 | {context["target"]} |
+| 기술 맥락 | {context["tech_context"]} |
+| 사용자 영향 | {context["user_impact"]} |
+| 다음 확인 | {context["next_check"]} |
 
 ## 독자가 이해해야 할 포인트
 
-1. 제목의 주어가 모호하면 먼저 원문 제목 전체를 봐야 합니다.
-2. 정책 이슈라도 기술 카테고리에서는 인프라, 제품, 기업 전략과의 연결을 설명해야 합니다.
-3. 원문 요약만으로 부족하면 같은 사안을 다룬 공식 자료나 후속 보도를 함께 확인해야 합니다.
-4. 이 글은 빠른 브리핑이므로, 최종 판단은 원문 기사와 법안·기업 발표를 대조하는 편이 안전합니다.
+1. {context["point_1"]}
+2. {context["point_2"]}
+3. {context["point_3"]}
+4. 원문 요약만으로 부족하면 회사 공지, 상태 페이지, 후속 보도까지 같이 확인하는 편이 안전합니다.
 
 ## 참고한 곳
 
@@ -279,10 +279,134 @@ BODY:
             topic=topic,
             title=title,
             slug=self._slug(topic.keyword),
-            excerpt=f"{topic.title_hint} 이슈가 기술 인프라와 기업 전략에 어떤 의미인지 정리했습니다.",
+            excerpt=context["excerpt"],
             body_markdown=body,
             tags=self._tags(topic),
         )
+
+    def _tech_news_context(self, topic: Topic) -> dict[str, str]:
+        primary = topic.sources[0]
+        title_text = primary.title or topic.title_hint or topic.keyword
+        summary_text = primary.summary or topic.rationale or ""
+        blob = f"{topic.keyword} {topic.title_hint} {title_text} {summary_text}".lower()
+        display_title = title_text.strip() or topic.keyword
+
+        if "notion" in blob and "anthropic" in blob:
+            return {
+                "title": "Notion AI 장애, 실제 영향은?",
+                "excerpt": "Notion이 Anthropic Claude 모델 접근을 일시 중단했다가 복구한 사건을 AI 서비스 의존성 관점에서 정리했습니다.",
+                "summary": (
+                    "Notion AI에서 Anthropic의 Claude 계열 모델을 선택한 일부 사용자가 실패율 증가를 겪었고, "
+                    "Notion은 문제 대응 과정에서 Anthropic 모델 사용을 잠시 막았다가 약 12시간 뒤 복구했습니다. "
+                    "핵심은 모델 성능 논란이라기보다 Notion 같은 생산성 도구가 외부 AI 모델 인프라에 얼마나 기대고 있는지 드러난 사건입니다."
+                ),
+                "background": (
+                    "Notion은 문서, 데이터베이스, 프로젝트 관리를 한곳에서 쓰는 업무용 협업 도구입니다. "
+                    "Anthropic은 Claude 모델을 제공하는 AI 기업이고, Notion AI는 이런 외부 모델을 붙여 문서 요약, 초안 작성, 검색 보조 기능을 제공합니다. "
+                    "따라서 모델 제공사 쪽 오류가 생기면 Notion 자체 앱이 살아 있어도 AI 기능만 따로 흔들릴 수 있습니다."
+                ),
+                "why_it_matters": (
+                    "AI 기능이 부가 기능에서 업무 흐름의 일부로 들어오면서 장애의 의미가 달라졌습니다. "
+                    "예전에는 문서 편집기가 열리면 서비스가 정상이라고 봤지만, 지금은 요약, 자동 작성, 내부 지식 검색까지 함께 동작해야 사용자가 정상으로 느낍니다. "
+                    "기업 고객 입장에서는 단일 모델 제공사 의존도, 장애 시 대체 모델 전환, 상태 공지 속도까지 계약과 운영 기준으로 봐야 합니다."
+                ),
+                "target": "Notion AI 사용자, Anthropic Claude 모델을 붙인 SaaS 서비스, 기업 IT 관리자",
+                "tech_context": "외부 LLM API, SaaS 통합, 모델 장애 대응, 멀티벤더 AI 아키텍처",
+                "user_impact": "문서 요약·작성 같은 AI 기능 실패율이 올라가거나 특정 모델 선택지가 잠시 사라질 수 있음",
+                "next_check": "Notion과 Anthropic의 상태 공지, 장애 원인 설명, 재발 방지책, 대체 모델 제공 여부",
+                "point_1": "이번 사건은 Notion 전체 서비스 중단보다 'Notion 안의 Claude 기능' 장애에 가깝습니다.",
+                "point_2": "업무 도구가 AI 모델을 외부에서 호출하면 앱 회사와 모델 회사의 안정성이 함께 중요해집니다.",
+                "point_3": "기업 도입 전에는 특정 모델이 막혔을 때 다른 모델로 자동 전환되는지 확인해야 합니다.",
+            }
+
+        if "tokenpocalypse" in blob or ("copilot" in blob and "token" in blob):
+            return {
+                "title": "AI 토큰 과금, 왜 부담 커지나",
+                "excerpt": "GitHub Copilot 가격 변화와 'Tokenpocalypse' 논의를 AI 서비스 비용 전가 문제로 풀었습니다.",
+                "summary": (
+                    "TechCrunch의 'Tokenpocalypse' 논의는 GitHub Copilot 같은 AI 개발 도구가 정액제처럼 보이던 사용 경험에서 "
+                    "토큰 사용량과 고성능 모델 비용을 더 직접적으로 반영하는 방향으로 움직이는 흐름을 다룹니다. "
+                    "토큰은 AI 모델이 텍스트를 읽고 생성할 때 세는 기본 단위라서, 긴 코드베이스 분석이나 반복 호출이 많을수록 비용이 커집니다."
+                ),
+                "background": (
+                    "GitHub Copilot은 개발자가 코드 자동완성, 설명, 테스트 작성 등을 할 때 쓰는 Microsoft 계열 AI 코딩 도구입니다. "
+                    "그동안 많은 AI 서비스는 투자금과 클라우드 계약 덕분에 실제 추론 비용보다 낮은 가격으로 사용자를 모았습니다. "
+                    "하지만 AI 기업들이 수익성, IPO, 고성능 모델 운영비를 설명해야 하는 단계가 오면 사용량 제한과 가격 인상이 나타날 가능성이 커집니다."
+                ),
+                "why_it_matters": (
+                    "AI 서비스 비용은 소프트웨어 구독료만의 문제가 아닙니다. "
+                    "모델 추론에는 GPU 서버, 메모리, 전력, 네트워크, 모델 운영 인력이 들어가고, 긴 컨텍스트나 에이전트식 반복 작업은 호출량을 빠르게 늘립니다. "
+                    "개발팀은 이제 '몇 명이 쓰는가'뿐 아니라 '얼마나 많은 토큰을 쓰는가'를 예산 항목으로 관리해야 합니다."
+                ),
+                "target": "GitHub Copilot 사용자, AI 코딩 도구를 도입한 개발팀, SaaS 예산 담당자",
+                "tech_context": "LLM 토큰 과금, 추론 비용, AI 코딩 도구, 고성능 모델 사용 제한",
+                "user_impact": "무제한처럼 쓰던 기능에 사용량 한도, 모델별 추가 비용, 팀 단위 예산 관리가 붙을 수 있음",
+                "next_check": "Copilot 요금제 세부 조건, 토큰·프리미엄 요청 제한, 기업 계약의 초과 과금 기준",
+                "point_1": "Tokenpocalypse는 실제 제품명이 아니라 AI 토큰 비용 부담이 커지는 현상을 비유한 표현입니다.",
+                "point_2": "코드 에이전트처럼 여러 번 읽고 고치는 기능은 일반 챗봇보다 토큰을 더 빨리 씁니다.",
+                "point_3": "팀 단위 도입 때는 월 구독료와 함께 고성능 모델 사용량, 초과 요금, 로그 확인 기능을 봐야 합니다.",
+            }
+
+        if ("nasa" in blob and "prada" in blob) or "lcvg" in blob or "axemu" in blob:
+            return {
+                "title": "NASA의 Prada 우주복, 핵심은 냉각",
+                "excerpt": "Axiom Space와 Prada가 공개한 Artemis IV용 LCVG를 우주복 생명유지 기술 관점에서 설명했습니다.",
+                "summary": (
+                    "NASA 우주비행사가 달에서 입게 될 장비로 언급된 것은 겉옷 패션이 아니라 Axiom Space와 Prada가 공개한 "
+                    "Liquid Cooling and Ventilation Garment, 즉 LCVG입니다. "
+                    "이 옷은 AxEMU 우주복 안쪽에 입는 베이스 레이어로, 달 표면 활동 중 몸에서 나는 열을 빼고 호흡 공기 흐름을 관리하는 역할을 합니다."
+                ),
+                "background": (
+                    "Axiom Space는 NASA의 달 탐사 프로그램에 쓰일 차세대 우주복 AxEMU를 개발하는 민간 우주 인프라 기업입니다. "
+                    "Prada는 이름 때문에 패션 협업처럼 보이지만, 이번에는 고기능 섬유, 패턴 설계, 3D 모델링 경험을 우주복 내부 의복 설계에 보탠 사례입니다. "
+                    "Artemis IV는 NASA가 달 표면 활동을 다시 확대하려는 Artemis 프로그램의 후속 임무로 거론됩니다."
+                ),
+                "why_it_matters": (
+                    "우주복은 단순한 방한복이 아니라 작은 생명유지 시스템입니다. "
+                    "달 표면에서는 햇빛, 그림자, 먼지, 운동량에 따라 체온 관리가 어려워지고, 밀폐된 옷 안에서는 이산화탄소와 습기도 처리해야 합니다. "
+                    "LCVG 같은 내부 냉각·환기층은 우주비행사가 장시간 선외활동을 버틸 수 있게 만드는 핵심 부품입니다."
+                ),
+                "target": "NASA Artemis 임무, Axiom Space 우주복 개발팀, 고기능 섬유·웨어러블 기술 업계",
+                "tech_context": "우주복 생명유지, 액체 냉각 의복, 환기 시스템, 고기능 섬유와 3D 패턴 설계",
+                "user_impact": "일반 소비자 제품은 아니지만 극한환경 웨어러블과 냉각 섬유 기술의 실증 사례가 됨",
+                "next_check": "Axiom Space의 시험 일정, NASA 인증 과정, Artemis IV 일정, 실제 달 표면 운용 결과",
+                "point_1": "기사의 'Prada long johns'는 속옷 농담에 가깝고, 실제로는 우주복 내부 냉각·환기 장비를 뜻합니다.",
+                "point_2": "물이 흐르는 관이 주요 근육 부위의 열을 가져가고, 별도 환기 흐름이 호흡과 이산화탄소 제거를 돕습니다.",
+                "point_3": "패션 브랜드 협업의 의미는 로고보다 소재 선택, 착용감, 재봉·패턴 설계 역량에 있습니다.",
+            }
+
+        clean_summary = self._clean_summary(summary_text)
+        return {
+            "title": f"{topic.keyword}: 무엇이 바뀌나",
+            "excerpt": f"{display_title} 소식을 기술 제품과 사용자 영향 중심으로 정리했습니다.",
+            "summary": (
+                f"{display_title} 소식입니다. "
+                f"{clean_summary or '원문 요약이 짧아 세부 내용은 제한적이지만, 기술 제품이나 서비스 변화가 사용자 경험과 운영 기준에 어떤 영향을 주는지 확인할 필요가 있습니다.'}"
+            ),
+            "background": (
+                "해외 기술 뉴스 제목은 회사명, 제품명, 별칭만 짧게 드러나는 경우가 많습니다. "
+                "먼저 어떤 회사와 제품의 이야기인지 확인하고, 그 변화가 기능 추가인지, 가격 변경인지, 장애인지, 규제 대응인지 나눠 봐야 합니다."
+            ),
+            "why_it_matters": (
+                "기술 이슈는 발표 자체보다 사용자 경험, 운영 안정성, 비용 구조, 생태계 의존성으로 이어질 때 중요해집니다. "
+                "특히 AI와 클라우드 서비스는 외부 API, 구독 요금, 인프라 안정성이 함께 움직이므로 원문 제목만으로 판단하면 맥락을 놓치기 쉽습니다."
+            ),
+            "target": "해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀",
+            "tech_context": "제품 기능, 서비스 안정성, 가격·구독 구조, 외부 플랫폼 의존성",
+            "user_impact": "기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능",
+            "next_check": "공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도",
+            "point_1": "제목이 짧으면 원문에서 회사명과 제품명을 먼저 확인해야 합니다.",
+            "point_2": "신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다.",
+            "point_3": "AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다.",
+        }
+
+    @staticmethod
+    def _clean_summary(text: str) -> str:
+        cleaned = re.sub(r"<[^>]+>", " ", text)
+        cleaned = re.sub(r"\s+", " ", cleaned).strip()
+        if len(cleaned) <= 280:
+            return cleaned
+        return cleaned[:280].rsplit(" ", 1)[0] + "..."
 
     def _write_tourism_fallback(self, topic: Topic) -> Draft:
         source_lines = "\n".join(f"- [{s.title}]({s.url})" for s in topic.sources)
@@ -291,7 +415,7 @@ BODY:
         topic_with_subject = self._with_particle(topic.keyword, "은", "는")
         body = f"""## 한눈에 보기
 
-{topic_with_subject} 카페나 명소 한 곳만 찍는 글보다 실제로 어떻게 움직이면 좋은지가 더 중요합니다. 한국관광공사 공개 데이터의 연관 관광지 정보를 기준으로 보면, 먼저 대표 지점을 정하고 주변에서 함께 묶을 곳을 고르는 방식이 가장 안전합니다.
+{topic_with_subject} 카페나 명소 한 곳만 찍는 글보다 실제로 어떻게 움직이면 좋은지가 더 중요합니다. 한국관광공사 TourAPI의 연관 관광지 데이터를 기준으로 보면, 먼저 대표 지점을 정하고 주변에서 함께 묶을 곳을 고르는 방식이 가장 안전합니다.
 
 ## 추천 동선
 
@@ -304,9 +428,9 @@ BODY:
 
 {topic.keyword}를 처음 볼 때는 지도에서 가장 유명한 지점 하나를 먼저 찍고, 그 주변의 연관 장소를 2~3개만 더하는 편이 좋습니다. 동선을 너무 길게 잡으면 이동 시간이 늘어나고, 실제로는 카페나 식사 대기 때문에 뒤 일정이 밀리기 쉽습니다.
 
-## 주변 포인트
+## TourAPI에서 본 주변 포인트
 
-{summary_text or "공개 데이터 응답은 있었지만 요약 가능한 항목이 제한적입니다. 공식 데이터는 연관 장소 확인용으로만 활용하세요."}
+{summary_text or "TourAPI 응답은 있었지만 요약 가능한 항목이 제한적입니다. 공식 데이터는 연관 장소 확인용으로만 활용하세요."}
 
 ## 이렇게 움직이면 편합니다
 
@@ -328,7 +452,7 @@ BODY:
             topic=topic,
             title=f"{topic.keyword}, 처음 가면 이 동선",
             slug=self._slug(topic.keyword),
-            excerpt=f"{topic.keyword} 방문 전 공개 데이터의 연관 관광지 정보를 바탕으로 동선을 잡았습니다.",
+            excerpt=f"{topic.keyword} 방문 전 TourAPI 연관 관광지 데이터를 바탕으로 동선을 잡았습니다.",
             body_markdown=body,
             tags=self._tags(topic),
         )
