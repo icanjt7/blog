@@ -1,5 +1,5 @@
 ---
-title: 'Apple drops support: 무엇이 바뀌나'
+title: 'iPad·Apple Watch 지원 종료, 내 기기는 괜찮나'
 date: '2026-06-08T20:41:15.595175'
 category: 기술
 tags:
@@ -7,42 +7,45 @@ tags:
 - Apple
 - drops
 - support
-quality_score: 100.0
+quality_score: 91.0
 cover_image: https://images.unsplash.com/photo-1760597371632-bbd930d6b844?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ258ZW58MXwwfHx8MTc4MDk1MTI3Nnww&ixlib=rb-4.1.0&q=80&w=1080
-cover_image_alt: 'Apple drops support: 무엇이 바뀌나 — Photo by Daniel Romero on Unsplash'
+cover_image_alt: 'iPad·Apple Watch 지원 종료, 내 기기는 괜찮나'
 ---
 
-![Apple drops support: 무엇이 바뀌나 — Photo by Daniel Romero on Unsplash](https://images.unsplash.com/photo-1760597371632-bbd930d6b844?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ258ZW58MXwwfHx8MTc4MDk1MTI3Nnww&ixlib=rb-4.1.0&q=80&w=1080)
+![iPad·Apple Watch 지원 종료, 내 기기는 괜찮나](https://images.unsplash.com/photo-1760597371632-bbd930d6b844?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ258ZW58MXwwfHx8MTc4MDk1MTI3Nnww&ixlib=rb-4.1.0&q=80&w=1080)
 
 ## 무슨 소식인가
 
-Apple drops support for a long list of iPads and Apple Watches with latest OS updates 소식입니다. I hope you have a modern Apple Watch or iPad, because otherwise watchOS 27 and iPadOS 27 won't run on your device. Apple often drops support for older devices with its latest software updates, but this year it's culling even more device generations than ever before. Apple is...
+애플이 최신 iPadOS 27과 watchOS 27 업데이트에서 여러 구형 iPad와 Apple Watch 지원을 중단한다는 소식입니다. 새 운영체제가 나오면 모든 기기가 계속 업데이트되는 것은 아닙니다. 칩 성능, 메모리, 센서, 보안 기능 기준을 맞추기 어려운 모델은 어느 시점부터 새 OS 대상에서 빠집니다.
+
+이 변화는 당장 기기가 멈춘다는 뜻은 아닙니다. 다만 새 기능, 장기 보안 패치, 앱 호환성에서 점점 불리해질 수 있다는 신호입니다.
 
 ## 먼저 알아둘 배경
 
-해외 기술 뉴스 제목은 회사명, 제품명, 별칭만 짧게 드러나는 경우가 많습니다. 먼저 어떤 회사와 제품의 이야기인지 확인하고, 그 변화가 기능 추가인지, 가격 변경인지, 장애인지, 규제 대응인지 나눠 봐야 합니다.
+애플은 오래된 기기도 비교적 길게 지원하는 편이지만, AI 기능과 건강·피트니스 기능이 늘어나면 요구 사양도 올라갑니다. iPad는 멀티태스킹, 외부 디스플레이, Apple Pencil 기능과 연결되고, Apple Watch는 건강 센서, 운동 기록, Siri 기능, 배터리 관리와 관련됩니다.
+
+지원 종료 모델을 쓰는 사용자는 새 기능보다 앱 업데이트가 언제까지 안정적으로 되는지를 봐야 합니다. 은행, 인증, 건강 앱처럼 보안 기준이 높은 앱은 OS 버전 제한을 더 빨리 올릴 수 있습니다.
 
 ## 왜 기술 이슈인가
 
-기술 이슈는 발표 자체보다 사용자 경험, 운영 안정성, 비용 구조, 생태계 의존성으로 이어질 때 중요해집니다. 특히 AI와 클라우드 서비스는 외부 API, 구독 요금, 인프라 안정성이 함께 움직이므로 원문 제목만으로 판단하면 맥락을 놓치기 쉽습니다.
+운영체제 지원 종료는 구매 주기와 중고 가격에 직접 영향을 줍니다. 새 OS가 안 올라가는 기기는 중고 거래 가치가 낮아질 수 있고, 가족용·학습용으로 계속 쓸 때도 앱 호환성을 확인해야 합니다. 기업이나 학교에서 iPad를 대량 운용한다면 교체 예산과 관리 정책도 달라집니다.
 
 ## 핵심 정리
 
 | 항목 | 이번 글에서 봐야 할 내용 |
 | --- | --- |
-| 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 |
-| 기술 맥락 | 제품 기능, 서비스 안정성, 가격·구독 구조, 외부 플랫폼 의존성 |
-| 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 |
-| 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 |
+| 직접 대상 | 구형 iPad와 Apple Watch 사용자 |
+| 기술 맥락 | OS 지원 종료, 보안 패치, 앱 호환성, 칩셋 요구사항 |
+| 사용자 영향 | 새 기능 사용 제한, 중고 가치 변화, 앱 업데이트 제약 가능 |
+| 다음 확인 | 공식 지원 기기 목록, 보안 업데이트 기간, 주요 앱 최소 OS 버전 |
 
 ## 독자가 이해해야 할 포인트
 
-1. 제목이 짧으면 원문에서 회사명과 제품명을 먼저 확인해야 합니다.
-2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다.
-3. AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다.
-4. 원문 요약만으로 부족하면 회사 공지, 상태 페이지, 후속 보도까지 같이 확인하는 편이 안전합니다.
+1. 지원 종료는 고장이나 사용 불가가 아니라 새 OS 대상에서 빠지는 것입니다.
+2. 오래된 기기는 보조 기기로 계속 쓸 수 있지만 금융·업무용 앱은 더 신중히 봐야 합니다.
+3. 중고 구매 전에는 모델명보다 지원 OS 버전을 먼저 확인하는 편이 안전합니다.
+4. Apple Watch는 건강 기능과 센서 지원 차이가 있어 아이폰보다 교체 체감이 빠를 수 있습니다.
 
 ## 참고한 곳
 
 - [Apple drops support for a long list of iPads and Apple Watches with latest OS updates](https://www.theverge.com/news/946147/apple-watchos-27-ipados-27-supported-devices-dropped)
-
