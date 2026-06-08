@@ -22,6 +22,10 @@ on:
         description: "Optional limit for testing. 0 means all agencies"
         required: true
         default: "0"
+      max_total_posts:
+        description: "Optional total posts cap for this run. 0 means unlimited"
+        required: true
+        default: "0"
       scan_pages:
         description: "Press-list pages to scan per agency"
         required: true
@@ -101,6 +105,7 @@ jobs:
           INPUT_AGENCIES: ${{ inputs.agencies || '' }}
           INPUT_SECTIONS: ${{ inputs.sections || '' }}
           INPUT_MAX_AGENCIES: ${{ inputs.max_agencies || '0' }}
+          INPUT_MAX_TOTAL_POSTS: ${{ inputs.max_total_posts || '0' }}
           INPUT_START_DATE: ${{ inputs.start_date || '2025-01-01' }}
           INPUT_END_DATE: ${{ inputs.end_date || '' }}
           INPUT_NEW_ONLY: ${{ inputs.new_only || 'true' }}
@@ -121,6 +126,9 @@ jobs:
           fi
           if [ "${INPUT_MAX_AGENCIES}" != "0" ]; then
             args+=(--max-agencies "${INPUT_MAX_AGENCIES}")
+          fi
+          if [ "${INPUT_MAX_TOTAL_POSTS}" != "0" ]; then
+            args+=(--max-total-posts "${INPUT_MAX_TOTAL_POSTS}")
           fi
           args+=(--start-date "${INPUT_START_DATE}")
           if [ -n "${INPUT_END_DATE}" ]; then

@@ -258,6 +258,7 @@ def main() -> None:
     parser.add_argument("--scan-pages", type=int, default=20, help="기관별 목록을 훑을 최대 페이지 수")
     parser.add_argument("--start-date", default="2025-01-01", help="수집 시작일 YYYY-MM-DD")
     parser.add_argument("--end-date", default="", help="수집 종료일 YYYY-MM-DD, 기본값은 오늘")
+    parser.add_argument("--max-total-posts", type=int, default=0, help="이번 실행에서 저장할 전체 최대 글 수, 0이면 제한 없음")
     parser.add_argument("--new-only", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
@@ -286,9 +287,14 @@ def main() -> None:
     errors: list[str] = []
     seq = 0
     end_date = args.end_date or datetime.now().strftime("%Y-%m-%d")
-    print(f"대상 기관: {len(agencies)}개 / 기관당 {args.per_agency}건 / 기간 {args.start_date}~{end_date}")
+    max_total = max(0, args.max_total_posts)
+    limit_label = f" / 전체 최대 {max_total}건" if max_total else ""
+    print(f"대상 기관: {len(agencies)}개 / 기관당 {args.per_agency}건{limit_label} / 기간 {args.start_date}~{end_date}")
 
     for agency in agencies:
+        if max_total and len(written) >= max_total:
+            print(f"\n전체 최대 {max_total}건에 도달하여 수집을 종료합니다.")
+            break
         print(f"\n[{agency.section}] {agency.name} ({agency.code})")
         try:
             item_limit = (
@@ -324,6 +330,9 @@ def main() -> None:
                     print(f"  + {release.date} {release.title[:55]}")
                 seq += 1
                 count += 1
+                if max_total and len(written) >= max_total:
+                    print(f"  ! 전체 최대 {max_total}건 도달")
+                    break
                 if count >= args.per_agency:
                     break
             except Exception as exc:
