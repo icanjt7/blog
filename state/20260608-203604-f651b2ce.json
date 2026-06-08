@@ -1,0 +1,428 @@
+{
+  "run_id": "20260608-203604-f651b2ce",
+  "topics": [
+    {
+      "keyword": "06월 제주 반려동물 동반여행",
+      "title_hint": "06월 제주 반려동물 동반여행 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "06월 서울 의료관광 병원",
+      "title_hint": "06월 서울 의료관광 병원 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "44 things coming",
+      "title_hint": "44 things coming to your Apple devices that you might have missed",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "44 things coming to your Apple devices that you might have missed",
+          "url": "https://www.theverge.com/tech/946260/apple-wwdc-2026-ios-ipados-macos-watchos-visionos-27-features-missed",
+          "published_at": "2026-06-08T20:26:52",
+          "summary": "This year's WWDC keynote was all about AI. But with all the attention on Apple Intelligence and Siri AI, the company breezed by - or neglected to mention - a bunch of cool, smaller features across its new updates. I've rounded up a bunch of them right here. The new operating systems are available in [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Apple drops support",
+      "title_hint": "Apple drops support for a long list of iPads and Apple Watches with latest OS updates",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Apple drops support for a long list of iPads and Apple Watches with latest OS updates",
+          "url": "https://www.theverge.com/news/946147/apple-watchos-27-ipados-27-supported-devices-dropped",
+          "published_at": "2026-06-08T19:45:00",
+          "summary": "I hope you have a modern Apple Watch or iPad, because otherwise watchOS 27 and iPadOS 27 won't run on your device. Apple often drops support for older devices with its latest software updates, but this year it's culling even more device generations than ever before. Apple is dropping support for four generations of Apple [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "06월 전주 한옥마을 먹거리 동선",
+      "title_hint": "06월 전주 한옥마을 먹거리 동선 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "Apple announces watchOS",
+      "title_hint": "Apple announces watchOS 27, now with Siri AI",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Apple announces watchOS 27, now with Siri AI",
+          "url": "https://www.theverge.com/tech/943145/apple-watch-watchos-27-wwdc-2026",
+          "published_at": "2026-06-08T19:34:10",
+          "summary": "Apple just announced watchOS 27, the next version of its Apple Watch operating system, introducing support for Siri AI, a redesigned \"dynamic\" app grid, and improvements to health and fitness tracking. The watchOS 27 update will be available \"this fall,\" according to Apple, though support is notably limited - the new OS will only be [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Apple WWDC 2026",
+      "title_hint": "Apple WWDC 2026: The 7 biggest announcements",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Apple WWDC 2026: The 7 biggest announcements",
+          "url": "https://www.theverge.com/tech/945693/apple-wwdc-2026-biggest-announcements-ios-27",
+          "published_at": "2026-06-08T18:43:56",
+          "summary": "Apple's keynote at this year's Worldwide Developers Conference was a big one. After months of delays, Apple reintroduced us to its AI-upgraded Siri, which will go beyond what the existing voice assistant can do by offering more personalized help. We also got a look at many other updates coming across the operating systems powering the [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "WWDC 2026 bonus",
+      "title_hint": "WWDC 2026 bonus live blog: Tech Talk with Craig Federighi",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "WWDC 2026 bonus live blog: Tech Talk with Craig Federighi",
+          "url": "https://www.theverge.com/tech/946046/wwdc-2026-live-blog-tech-talk-with-craig-federighi",
+          "published_at": "2026-06-08T18:42:53",
+          "summary": "Fresh off the WWDC keynote presentation, The Verge has been invited to an \"on-the-record technical deep dive into the bold new architecture enabling Apple Intelligence capabilities.\" Apple SVP of Software Engineering Craig Federighi and his team will be there, and so will we. The revamped Apple Intelligence is at the heart of nearly every update [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Cameras get an",
+      "title_hint": "Cameras get an Apple Intelligence boost in Apple Home",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Cameras get an Apple Intelligence boost in Apple Home",
+          "url": "https://www.theverge.com/tech/946032/apple-home-ai-camera-descriptions-search-4k",
+          "published_at": "2026-06-08T18:37:31",
+          "summary": "Apple Intelligence is coming to cameras connected to Apple Home. At WWDC, Apple announced that with iOS27, its HomeKit Secure Video service will use Apple Intelligence to analyze footage and generate descriptions summarizing what the camera saw. You can also search footage with natural language to find clips from across connected cameras, such as when [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "06월 제주 반려동물 동반여행",
+        "title_hint": "06월 제주 반려동물 동반여행 핵심 정리",
+        "category": "핫이슈",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "06월 제주 반려동물 동반여행: 지금 확인할 포인트",
+      "slug": "06월-제주-반려동물-동반여행-f122612e",
+      "excerpt": "06월 제주 반려동물 동반여행 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n06월 제주 반려동물 동반여행은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n06월 제주 반려동물 동반여행를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n06월 제주 반려동물 동반여행 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 06월 제주 반려동물 동반여행와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "핫이슈",
+        "06월",
+        "제주",
+        "반려동물",
+        "동반여행"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1584264415558-6580a2bf40a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMGxhbmRtYXJrJTIwd2Fsa2luZyUyMGplanUlMjBpc2xhbmQlMjBjb2FzdGxpbmUlMjBjYWZlfGVufDF8MHx8fDE3ODA4MjU2Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 제주 반려동물 동반여행: 지금 확인할 포인트 — Photo by Linda Yuan on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 제주 반려동물 동반여행: 지금 확인할 포인트. Keyword: 06월 제주 반려동물 동반여행. Concrete visual subject: travel destination landmark walking jeju island coastline cafe. Context: ## 한눈에 보기 06월 제주 반려동물 동반여행은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 제주 반려동물 동반여행를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 제주 반려동물 동반여행 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-08T20:40:03.232602",
+      "quality_score": 20.0,
+      "review_notes": [
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "여행 글인데 관광 API나 구체 장소 동선이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 서울 의료관광 병원",
+        "title_hint": "06월 서울 의료관광 병원 핵심 정리",
+        "category": "핫이슈",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "06월 서울 의료관광 병원: 지금 확인할 포인트",
+      "slug": "06월-서울-의료관광-병원-7eb77d1f",
+      "excerpt": "06월 서울 의료관광 병원 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n06월 서울 의료관광 병원은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n06월 서울 의료관광 병원를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n06월 서울 의료관광 병원 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 06월 서울 의료관광 병원와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "핫이슈",
+        "06월",
+        "서울",
+        "의료관광",
+        "병원"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1763917157954-d63c916c5903?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBzZW91bCUyMHJlc3RhdXJhbnQlMjBzdHJlZXQlMjBjaXR5JTIwZm9vZCUyMGhlYWx0aGNhcmUlMjBtZWRpY2FsJTIwY2xlYW58ZW58MXwwfHx8MTc4MDkzNjMyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 서울 의료관광 병원: 지금 확인할 포인트 — Photo by waa towaw on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 서울 의료관광 병원: 지금 확인할 포인트. Keyword: 06월 서울 의료관광 병원. Concrete visual subject: tourism destination travel seoul restaurant street city food healthcare medical clean. Context: ## 한눈에 보기 06월 서울 의료관광 병원은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 서울 의료관광 병원를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 서울 의료관광 병원 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-08T20:40:45.851048",
+      "quality_score": 55.0,
+      "review_notes": [
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "44 things coming",
+        "title_hint": "44 things coming to your Apple devices that you might have missed",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "44 things coming to your Apple devices that you might have missed",
+            "url": "https://www.theverge.com/tech/946260/apple-wwdc-2026-ios-ipados-macos-watchos-visionos-27-features-missed",
+            "published_at": "2026-06-08T20:26:52",
+            "summary": "This year's WWDC keynote was all about AI. But with all the attention on Apple Intelligence and Siri AI, the company breezed by - or neglected to mention - a bunch of cool, smaller features across its new updates. I've rounded up a bunch of them right here. The new operating systems are available in [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "44 things coming: 무엇이 바뀌나",
+      "slug": "44-things-coming-7a7f1b96",
+      "excerpt": "44 things coming to your Apple devices that you might have missed 소식을 기술 제품과 사용자 영향 중심으로 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\n44 things coming to your Apple devices that you might have missed 소식입니다. This year's WWDC keynote was all about AI. But with all the attention on Apple Intelligence and Siri AI, the company breezed by - or neglected to mention - a bunch of cool, smaller features across its new updates. I've rounded up a bunch of them right here. The new operating...\n\n## 먼저 알아둘 배경\n\n해외 기술 뉴스 제목은 회사명, 제품명, 별칭만 짧게 드러나는 경우가 많습니다. 먼저 어떤 회사와 제품의 이야기인지 확인하고, 그 변화가 기능 추가인지, 가격 변경인지, 장애인지, 규제 대응인지 나눠 봐야 합니다.\n\n## 왜 기술 이슈인가\n\n기술 이슈는 발표 자체보다 사용자 경험, 운영 안정성, 비용 구조, 생태계 의존성으로 이어질 때 중요해집니다. 특히 AI와 클라우드 서비스는 외부 API, 구독 요금, 인프라 안정성이 함께 움직이므로 원문 제목만으로 판단하면 맥락을 놓치기 쉽습니다.\n\n## 핵심 정리\n\n| 항목 | 이번 글에서 봐야 할 내용 |\n| --- | --- |\n| 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 |\n| 기술 맥락 | 제품 기능, 서비스 안정성, 가격·구독 구조, 외부 플랫폼 의존성 |\n| 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 |\n| 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 |\n\n## 독자가 이해해야 할 포인트\n\n1. 제목이 짧으면 원문에서 회사명과 제품명을 먼저 확인해야 합니다.\n2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다.\n3. AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다.\n4. 원문 요약만으로 부족하면 회사 공지, 상태 페이지, 후속 보도까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [44 things coming to your Apple devices that you might have missed](https://www.theverge.com/tech/946260/apple-wwdc-2026-ios-ipados-macos-watchos-visionos-27-features-missed)\n",
+      "tags": [
+        "기술",
+        "44",
+        "things",
+        "coming"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1779788131533-3b044ac53911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwOTMwOTcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "44 things coming: 무엇이 바뀌나 — Photo by Victor on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 44 things coming: 무엇이 바뀌나. Keyword: 44 things coming. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 44 things coming to your Apple devices that you might have missed 소식입니다. This year's WWDC keynote was all about AI. But with all the attention on Apple Intelligence and Siri AI, the company breezed by - or neglected to mention - a bunch of cool, smaller features across its new updates. I've rounded up a bunch of them right here. The new operating... ## 먼저 알아둘 배경 해외 기술 뉴스 제목은 회사명, 제품명, 별칭만 짧게 드러나는 경우가 많습니다. 먼저 어떤 회사와 제품의 이야기인지 확인하고, 그 변화가 기능 추가인지, 가격 변경인지, 장애인지, 규제 대응인지 나눠 봐야 합니다. ## 왜 기술 이슈인가 기술 이슈는 발표 자체보다 사용자 경험, 운영 안정성, 비용 구조, 생태계 의존성으로 이어질 때 중요해집니다. 특히 AI와 클라우드 서비스는 외부 API, 구독 요금, 인프라 안정성이 함께 움직이므로 원문 제목만으로 판단하면 맥락을 놓치기 쉽습니다. ## 핵심 정리 | 항목 | 이번 글에서 봐야 할 내용 | | --- | --- | | 직접. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-08T20:41:02.298127",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Apple drops support",
+        "title_hint": "Apple drops support for a long list of iPads and Apple Watches with latest OS updates",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Apple drops support for a long list of iPads and Apple Watches with latest OS updates",
+            "url": "https://www.theverge.com/news/946147/apple-watchos-27-ipados-27-supported-devices-dropped",
+            "published_at": "2026-06-08T19:45:00",
+            "summary": "I hope you have a modern Apple Watch or iPad, because otherwise watchOS 27 and iPadOS 27 won't run on your device. Apple often drops support for older devices with its latest software updates, but this year it's culling even more device generations than ever before. Apple is dropping support for four generations of Apple [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Apple drops support: 무엇이 바뀌나",
+      "slug": "apple-drops-support-104424ce",
+      "excerpt": "Apple drops support for a long list of iPads and Apple Watches with latest OS updates 소식을 기술 제품과 사용자 영향 중심으로 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\nApple drops support for a long list of iPads and Apple Watches with latest OS updates 소식입니다. I hope you have a modern Apple Watch or iPad, because otherwise watchOS 27 and iPadOS 27 won't run on your device. Apple often drops support for older devices with its latest software updates, but this year it's culling even more device generations than ever before. Apple is...\n\n## 먼저 알아둘 배경\n\n해외 기술 뉴스 제목은 회사명, 제품명, 별칭만 짧게 드러나는 경우가 많습니다. 먼저 어떤 회사와 제품의 이야기인지 확인하고, 그 변화가 기능 추가인지, 가격 변경인지, 장애인지, 규제 대응인지 나눠 봐야 합니다.\n\n## 왜 기술 이슈인가\n\n기술 이슈는 발표 자체보다 사용자 경험, 운영 안정성, 비용 구조, 생태계 의존성으로 이어질 때 중요해집니다. 특히 AI와 클라우드 서비스는 외부 API, 구독 요금, 인프라 안정성이 함께 움직이므로 원문 제목만으로 판단하면 맥락을 놓치기 쉽습니다.\n\n## 핵심 정리\n\n| 항목 | 이번 글에서 봐야 할 내용 |\n| --- | --- |\n| 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 |\n| 기술 맥락 | 제품 기능, 서비스 안정성, 가격·구독 구조, 외부 플랫폼 의존성 |\n| 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 |\n| 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 |\n\n## 독자가 이해해야 할 포인트\n\n1. 제목이 짧으면 원문에서 회사명과 제품명을 먼저 확인해야 합니다.\n2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다.\n3. AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다.\n4. 원문 요약만으로 부족하면 회사 공지, 상태 페이지, 후속 보도까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [Apple drops support for a long list of iPads and Apple Watches with latest OS updates](https://www.theverge.com/news/946147/apple-watchos-27-ipados-27-supported-devices-dropped)\n",
+      "tags": [
+        "기술",
+        "Apple",
+        "drops",
+        "support"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1760597371632-bbd930d6b844?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ258ZW58MXwwfHx8MTc4MDk1MTI3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Apple drops support: 무엇이 바뀌나 — Photo by Daniel Romero on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Apple drops support: 무엇이 바뀌나. Keyword: Apple drops support. Concrete visual subject: apple device minimal design. Context: ## 무슨 소식인가 Apple drops support for a long list of iPads and Apple Watches with latest OS updates 소식입니다. I hope you have a modern Apple Watch or iPad, because otherwise watchOS 27 and iPadOS 27 won't run on your device. Apple often drops support for older devices with its latest software updates, but this year it's culling even more device generations than ever before. Apple is... ## 먼저 알아둘 배경 해외 기술 뉴스 제목은 회사명, 제품명, 별칭만 짧게 드러나는 경우가 많습니다. 먼저 어떤 회사와 제품의 이야기인지 확인하고, 그 변화가 기능 추가인지, 가격 변경인지, 장애인지, 규제 대응인지 나눠 봐야 합니다. ## 왜 기술 이슈인가 기술 이슈는 발표 자체보다 사용자 경험, 운영 안정성, 비용 구조, 생태계 의존성으로 이어질 때 중요해집니다. 특히 AI와 클라우드 서비스는 외부 API, 구독 요금, 인프라 안정성이 함께 움직이므로 원문 제목만으로 판단하면 맥락을 놓치기 쉽습니다. ## 핵심 정리 | 항목 | 이번 글에서 봐야 할 내용 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-08T20:41:15.595175",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 전주 한옥마을 먹거리 동선",
+        "title_hint": "06월 전주 한옥마을 먹거리 동선 핵심 정리",
+        "category": "핫이슈",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "06월 전주 한옥마을 먹거리 동선: 지금 확인할 포인트",
+      "slug": "06월-전주-한옥마을-먹거리-동선-e5950fc9",
+      "excerpt": "06월 전주 한옥마을 먹거리 동선 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n06월 전주 한옥마을 먹거리 동선은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n06월 전주 한옥마을 먹거리 동선를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n06월 전주 한옥마을 먹거리 동선 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 06월 전주 한옥마을 먹거리 동선와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "핫이슈",
+        "06월",
+        "전주",
+        "한옥마을",
+        "먹거리"
+      ],
+      "cover_image_path": "https://images.pexels.com/photos/35396691/pexels-photo-35396691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "cover_image_alt": "06월 전주 한옥마을 먹거리 동선: 지금 확인할 포인트 — Photo by CK Seng on Pexels",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 전주 한옥마을 먹거리 동선: 지금 확인할 포인트. Keyword: 06월 전주 한옥마을 먹거리 동선. Concrete visual subject: jeonju hanok village korean food. Context: ## 한눈에 보기 06월 전주 한옥마을 먹거리 동선은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 전주 한옥마을 먹거리 동선를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 전주 한옥마을 먹거리 동선 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. . Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-08T20:41:33.111819",
+      "quality_score": 20.0,
+      "review_notes": [
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "여행 글인데 관광 API나 구체 장소 동선이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Apple announces watchOS",
+        "title_hint": "Apple announces watchOS 27, now with Siri AI",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Apple announces watchOS 27, now with Siri AI",
+            "url": "https://www.theverge.com/tech/943145/apple-watch-watchos-27-wwdc-2026",
+            "published_at": "2026-06-08T19:34:10",
+            "summary": "Apple just announced watchOS 27, the next version of its Apple Watch operating system, introducing support for Siri AI, a redesigned \"dynamic\" app grid, and improvements to health and fitness tracking. The watchOS 27 update will be available \"this fall,\" according to Apple, though support is notably limited - the new OS will only be [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Apple announces watchOS: 무엇이 바뀌나",
+      "slug": "apple-announces-watchos-bbd0d5e5",
+      "excerpt": "Apple announces watchOS 27, now with Siri AI 소식을 기술 제품과 사용자 영향 중심으로 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\nApple announces watchOS 27, now with Siri AI 소식입니다. Apple just announced watchOS 27, the next version of its Apple Watch operating system, introducing support for Siri AI, a redesigned \"dynamic\" app grid, and improvements to health and fitness tracking. The watchOS 27 update will be available \"this fall,\" according to Apple,...\n\n## 먼저 알아둘 배경\n\n해외 기술 뉴스 제목은 회사명, 제품명, 별칭만 짧게 드러나는 경우가 많습니다. 먼저 어떤 회사와 제품의 이야기인지 확인하고, 그 변화가 기능 추가인지, 가격 변경인지, 장애인지, 규제 대응인지 나눠 봐야 합니다.\n\n## 왜 기술 이슈인가\n\n기술 이슈는 발표 자체보다 사용자 경험, 운영 안정성, 비용 구조, 생태계 의존성으로 이어질 때 중요해집니다. 특히 AI와 클라우드 서비스는 외부 API, 구독 요금, 인프라 안정성이 함께 움직이므로 원문 제목만으로 판단하면 맥락을 놓치기 쉽습니다.\n\n## 핵심 정리\n\n| 항목 | 이번 글에서 봐야 할 내용 |\n| --- | --- |\n| 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 |\n| 기술 맥락 | 제품 기능, 서비스 안정성, 가격·구독 구조, 외부 플랫폼 의존성 |\n| 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 |\n| 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 |\n\n## 독자가 이해해야 할 포인트\n\n1. 제목이 짧으면 원문에서 회사명과 제품명을 먼저 확인해야 합니다.\n2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다.\n3. AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다.\n4. 원문 요약만으로 부족하면 회사 공지, 상태 페이지, 후속 보도까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [Apple announces watchOS 27, now with Siri AI](https://www.theverge.com/tech/943145/apple-watch-watchos-27-wwdc-2026)\n",
+      "tags": [
+        "기술",
+        "Apple",
+        "announces",
+        "watchOS"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1594754312437-fa52c21273cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxzbWFydHdhdGNoJTIwd2VhcmFibGUlMjB3cmlzdCUyMGRldmljZSUyMGFwcGxlJTIwbWluaW1hbCUyMGRlc2lnbnxlbnwxfDB8fHwxNzgwOTUxMzEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Apple announces watchOS: 무엇이 바뀌나 — Photo by Nicolas Lobos on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Apple announces watchOS: 무엇이 바뀌나. Keyword: Apple announces watchOS. Concrete visual subject: smartwatch wearable wrist device apple minimal design. Context: ## 무슨 소식인가 Apple announces watchOS 27, now with Siri AI 소식입니다. Apple just announced watchOS 27, the next version of its Apple Watch operating system, introducing support for Siri AI, a redesigned \"dynamic\" app grid, and improvements to health and fitness tracking. The watchOS 27 update will be available \"this fall,\" according to Apple,... ## 먼저 알아둘 배경 해외 기술 뉴스 제목은 회사명, 제품명, 별칭만 짧게 드러나는 경우가 많습니다. 먼저 어떤 회사와 제품의 이야기인지 확인하고, 그 변화가 기능 추가인지, 가격 변경인지, 장애인지, 규제 대응인지 나눠 봐야 합니다. ## 왜 기술 이슈인가 기술 이슈는 발표 자체보다 사용자 경험, 운영 안정성, 비용 구조, 생태계 의존성으로 이어질 때 중요해집니다. 특히 AI와 클라우드 서비스는 외부 API, 구독 요금, 인프라 안정성이 함께 움직이므로 원문 제목만으로 판단하면 맥락을 놓치기 쉽습니다. ## 핵심 정리 | 항목 | 이번 글에서 봐야 할 내용 | | --- | --- | | 직접 대상 | 해당 제품 사용자, 도입을 검. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-08T20:41:45.323256",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 20.0"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 55.0"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/44-things-coming-7a7f1b96.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/apple-drops-support-104424ce.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 20.0"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/apple-announces-watchos-bbd0d5e5.md",
+      "message": "draft saved"
+    }
+  ]
+}
