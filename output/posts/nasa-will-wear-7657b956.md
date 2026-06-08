@@ -9,6 +9,7 @@ tags:
   - Axiom
   - Artemis
 quality_score: 82.0
+cover_image: "https://images.unsplash.com/photo-1749006590324-d6b2e90ab1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwOTMwOTcyfDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 ## 무슨 소식인가

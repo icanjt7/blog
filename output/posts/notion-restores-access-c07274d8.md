@@ -9,6 +9,7 @@ tags:
   - Claude
   - AI
 quality_score: 82.0
+cover_image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgwOTM2Mzc1fDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 ## 무슨 소식인가

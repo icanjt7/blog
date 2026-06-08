@@ -1,0 +1,98 @@
+{
+  "run_id": "20260608-163012-fcd824aa",
+  "average_quality": 59.8,
+  "drafts": [
+    {
+      "slug": "06월-제주-반려동물-동반여행-f122612e",
+      "title": "06월 제주 반려동물 동반여행: 지금 확인할 포인트",
+      "keyword": "06월 제주 반려동물 동반여행",
+      "category": "핫이슈",
+      "quality_score": 20.0,
+      "review_notes": [
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "여행 글인데 관광 API나 구체 장소 동선이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 제주 반려동물 동반여행: 지금 확인할 포인트. Keyword: 06월 제주 반려동물 동반여행. Concrete visual subject: travel destination landmark walking jeju island coastline cafe. Context: ## 한눈에 보기 06월 제주 반려동물 동반여행은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 제주 반려동물 동반여행를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 제주 반려동물 동반여행 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1584264415558-6580a2bf40a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMGxhbmRtYXJrJTIwd2Fsa2luZyUyMGplanUlMjBpc2xhbmQlMjBjb2FzdGxpbmUlMjBjYWZlfGVufDF8MHx8fDE3ODA4MjU2Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-서울-의료관광-병원-7eb77d1f",
+      "title": "06월 서울 의료관광 병원: 지금 확인할 포인트",
+      "keyword": "06월 서울 의료관광 병원",
+      "category": "핫이슈",
+      "quality_score": 55.0,
+      "review_notes": [
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 서울 의료관광 병원: 지금 확인할 포인트. Keyword: 06월 서울 의료관광 병원. Concrete visual subject: tourism destination travel seoul restaurant street city food healthcare medical clean. Context: ## 한눈에 보기 06월 서울 의료관광 병원은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 서울 의료관광 병원를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 서울 의료관광 병원 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1763917157954-d63c916c5903?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBzZW91bCUyMHJlc3RhdXJhbnQlMjBzdHJlZXQlMjBjaXR5JTIwZm9vZCUyMGhlYWx0aGNhcmUlMjBtZWRpY2FsJTIwY2xlYW58ZW58MXwwfHx8MTc4MDkzNjMyNHww&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "verge-father-day-68e90563",
+      "title": "Verge Father Day: 무엇이 바뀌나",
+      "keyword": "Verge Father Day",
+      "category": "기술",
+      "quality_score": 88.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Verge Father Day: 무엇이 바뀌나. Keyword: Verge Father Day. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 The Verge’s Father’s Day 2026 gift guide 소식입니다. With Father's Day on the horizon, happening June 21st, it's time to start thinking about what kind of gifts you want to buy for the fathers you care about. You know your dad best - he may be a man of simple pleasures who wants nothing more than to share a meal or drinks with... ## 먼저 알아둘 배경 해외 기술 뉴스 제목은 회사명, 제품명, 별칭만 짧게 드러나는 경우가 많습니다. 먼저 어떤 회사와 제품의 이야기인지 확인하고, 그 변화가 기능 추가인지, 가격 변경인지, 장애인지, 규제 대응인지 나눠 봐야 합니다. ## 왜 기술 이슈인가 기술 이슈는 발표 자체보다 사용자 경험, 운영 안정성, 비용 구조, 생태계 의존성으로 이어질 때 중요해집니다. 특히 AI와 클라우드 서비스는 외부 API, 구독 요금, 인프라 안정성이 함께 움직이므로 원문 제목만으로 판단하면 맥락을 놓치기 쉽습니다. ## 핵심 정리 | 항목 | 이번 글에서 봐야 할 내용 | | --- | --- | | 직접 대상 | 해당 제품 사용자, 도입을 검토하는. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwOTMwOTcyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "notebooklm-8217-gemini-c01ed0c6",
+      "title": "NotebookLM 8217 Gemini: 무엇이 바뀌나",
+      "keyword": "NotebookLM 8217 Gemini",
+      "category": "기술",
+      "quality_score": 88.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: NotebookLM 8217 Gemini: 무엇이 바뀌나. Keyword: NotebookLM 8217 Gemini. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 NotebookLM&#8217;s Gemini 3.5 upgrade adds a cloud computer and help finding sources 소식입니다. Google is rolling out \"across the board\" updates to NotebookLM. The AI-powered note-taking app now uses Google's upgraded Gemini 3.5 model, which will allow it to respond with \"more accurate and reliable information,\" according to a blog post on Monday. Launched in 2023,... ## 먼저 알아둘 배경 해외 기술 뉴스 제목은 회사명, 제품명, 별칭만 짧게 드러나는 경우가 많습니다. 먼저 어떤 회사와 제품의 이야기인지 확인하고, 그 변화가 기능 추가인지, 가격 변경인지, 장애인지, 규제 대응인지 나눠 봐야 합니다. ## 왜 기술 이슈인가 기술 이슈는 발표 자체보다 사용자 경험, 운영 안정성, 비용 구조, 생태계 의존성으로 이어질 때 중요해집니다. 특히 AI와 클라우드 서비스는 외부 API, 구독 요금, 인프라 안정성이 함께 움직이므로 원문 제목만으로 판단하면 맥락을 놓치기 쉽습니다. ## 핵심 정리 | 항목 | 이번 글에서 봐야 할 내용 | | -. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1749006590475-4592a5dbf99f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwOTMwOTcyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-전주-한옥마을-먹거리-동선-e5950fc9",
+      "title": "06월 전주 한옥마을 먹거리 동선: 지금 확인할 포인트",
+      "keyword": "06월 전주 한옥마을 먹거리 동선",
+      "category": "핫이슈",
+      "quality_score": 20.0,
+      "review_notes": [
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "여행 글인데 관광 API나 구체 장소 동선이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 전주 한옥마을 먹거리 동선: 지금 확인할 포인트. Keyword: 06월 전주 한옥마을 먹거리 동선. Concrete visual subject: jeonju hanok village korean food. Context: ## 한눈에 보기 06월 전주 한옥마을 먹거리 동선은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 전주 한옥마을 먹거리 동선를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 전주 한옥마을 먹거리 동선 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. . Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.pexels.com/photos/35396691/pexels-photo-35396691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "slug": "wwdc-2026-all-bc8517f7",
+      "title": "WWDC 2026 All: 무엇이 바뀌나",
+      "keyword": "WWDC 2026 All",
+      "category": "기술",
+      "quality_score": 88.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: WWDC 2026 All: 무엇이 바뀌나. Keyword: WWDC 2026 All. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 WWDC 2026: All the news from Apple’s developers conference 소식입니다. Apple’s annual WWDC event is kicking off on June 8th with a keynote presentation starting at 1PM ET / 10AM PT, where Apple will announce major updates to iOS, macOS, and its other operating systems.&#160; Among those updates could be Apple’s delayed Siri overhaul, which has... ## 먼저 알아둘 배경 해외 기술 뉴스 제목은 회사명, 제품명, 별칭만 짧게 드러나는 경우가 많습니다. 먼저 어떤 회사와 제품의 이야기인지 확인하고, 그 변화가 기능 추가인지, 가격 변경인지, 장애인지, 규제 대응인지 나눠 봐야 합니다. ## 왜 기술 이슈인가 기술 이슈는 발표 자체보다 사용자 경험, 운영 안정성, 비용 구조, 생태계 의존성으로 이어질 때 중요해집니다. 특히 AI와 클라우드 서비스는 외부 API, 구독 요금, 인프라 안정성이 함께 움직이므로 원문 제목만으로 판단하면 맥락을 놓치기 쉽습니다. ## 핵심 정리 | 항목 | 이번 글에서 봐야 할 내용 | | --- | --- | | 직접 대상 | 해당. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1749006590324-d6b2e90ab1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwOTMwOTcyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
