@@ -15,10 +15,13 @@ DEFAULT_GA_MEASUREMENT_ID = "G-X7YV03FBW3"
 
 
 class Settings(BaseModel):
-    # LLM providers — first non-empty key wins: groq → gemini → openrouter → openai → github_token
+    # LLM providers — first non-empty key wins: motif → groq → gemini → openrouter → openai → github_token
     openai_api_key: str | None = None
     openai_model: str = "gpt-4.1-mini"
     openai_image_model: str = "gpt-image-1-mini"
+    motif_api_key: str | None = None
+    motif_model: str = "motif-12.7b-reasoning"
+    motif_base_url: str = "https://chat.motiftech.io/openapi/v1"
     groq_api_key: str | None = None
     groq_model: str = "groq/compound"
     llm_timeout_seconds: float = 20
@@ -84,6 +87,9 @@ def load_settings() -> Settings:
         openai_api_key=os.getenv("OPENAI_API_KEY") or None,
         openai_model=os.getenv("OPENAI_MODEL", "gpt-4.1-mini"),
         openai_image_model=os.getenv("OPENAI_IMAGE_MODEL", "gpt-image-1-mini"),
+        motif_api_key=os.getenv("MOTIF_API") or os.getenv("MOTIF_API_KEY") or None,
+        motif_model=os.getenv("MOTIF_MODEL", "motif-12.7b-reasoning"),
+        motif_base_url=os.getenv("MOTIF_BASE_URL", "https://chat.motiftech.io/openapi/v1"),
         groq_api_key=os.getenv("GROQ_API_KEY") or None,
         groq_model=os.getenv("GROQ_MODEL", "groq/compound"),
         llm_timeout_seconds=float(os.getenv("LLM_TIMEOUT_SECONDS", "20")),

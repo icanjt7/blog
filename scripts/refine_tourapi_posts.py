@@ -25,6 +25,19 @@ class LlmProvider:
 def init_providers() -> list[LlmProvider]:
     timeout = float(os.getenv("LLM_TIMEOUT_SECONDS", "30"))
     providers: list[LlmProvider] = []
+    if key := os.getenv("MOTIF_API") or os.getenv("MOTIF_API_KEY"):
+        providers.append(
+            LlmProvider(
+                "motif",
+                OpenAI(
+                    api_key=key,
+                    base_url=os.getenv("MOTIF_BASE_URL", "https://chat.motiftech.io/openapi/v1"),
+                    timeout=timeout,
+                    max_retries=0,
+                ),
+                os.getenv("MOTIF_MODEL", "motif-12.7b-reasoning"),
+            )
+        )
     if key := os.getenv("GROQ_API_KEY"):
         providers.append(
             LlmProvider(
@@ -59,7 +72,7 @@ def init_providers() -> list[LlmProvider]:
                 os.getenv("GITHUB_MODEL", "Llama-3.3-70B-Instruct"),
             )
         )
-    order = [name.strip() for name in os.getenv("REFINE_LLM_PROVIDER_ORDER", "gemini,openrouter,openai,github,groq").split(",")]
+    order = [name.strip() for name in os.getenv("REFINE_LLM_PROVIDER_ORDER", "motif,gemini,openrouter,openai,github,groq").split(",")]
     rank = {name: index for index, name in enumerate(order)}
     return sorted(providers, key=lambda provider: rank.get(provider.name, len(rank)))
 

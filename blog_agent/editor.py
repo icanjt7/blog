@@ -55,7 +55,15 @@ class SeoEditorAgent:
 
     def _init_client(self, s: Settings) -> None:
         timeout = s.llm_timeout_seconds
-        if s.groq_api_key:
+        if s.motif_api_key:
+            self.client = OpenAI(
+                api_key=s.motif_api_key,
+                base_url=s.motif_base_url,
+                timeout=timeout,
+                max_retries=0,
+            )
+            self._model = s.motif_model
+        elif s.groq_api_key:
             self.client = OpenAI(
                 api_key=s.groq_api_key,
                 base_url="https://api.groq.com/openai/v1",

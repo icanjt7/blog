@@ -57,7 +57,15 @@ class WriterAgent:
 
     def _init_client(self) -> None:
         s = self.settings
-        if s.groq_api_key:
+        if s.motif_api_key:
+            self._client = OpenAI(
+                api_key=s.motif_api_key,
+                base_url=s.motif_base_url,
+                timeout=45,
+                max_retries=1,
+            )
+            self._model = s.motif_model
+        elif s.groq_api_key:
             self._client = OpenAI(
                 api_key=s.groq_api_key,
                 base_url="https://api.groq.com/openai/v1",
