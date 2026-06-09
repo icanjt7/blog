@@ -7,8 +7,8 @@ tags:
   - "문화체육관광부"
   - "핫이슈"
 quality_score: 90.0
-cover_image: "https://picsum.photos/seed/681/1200/630"
-cover_image_alt: "제3차 실무 마약류대책협의회 개최 관련 대표 이미지"
+cover_image: "https://images.unsplash.com/photo-1766938976429-7ada0d64f571?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dG91cmlzbSUyMGRlc3RpbmF0aW9uJTIwdHJhdmVsJTIwY3VsdHVyZSUyMGFydHMlMjBjcmVhdGl2ZXxlbnwxfDB8fHwxNzgwOTk0MDU1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "제3차 실무 마약류대책협의회 개최 — Photo by SERGEI BEZZUBOV on Unsplash"
 author: "문화체육관광부"
 ---
 

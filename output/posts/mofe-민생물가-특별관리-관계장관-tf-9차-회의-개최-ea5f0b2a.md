@@ -7,8 +7,8 @@ tags:
   - "재정경제부"
   - "생활"
 quality_score: 90.0
-cover_image: "https://picsum.photos/seed/405/1200/630"
-cover_image_alt: "민생물가 특별관리 관계장관 TF 9차 회의 개최 관련 대표 이미지"
+cover_image: "https://images.unsplash.com/photo-1565688103955-d38e06888776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxlY29ub215JTIwcHJpY2UlMjBtYXJrZXQlMjBzdGF0aXN0aWNzJTIwY29uZmVyZW5jZSUyMG1lZXRpbmclMjB0YWJsZXxlbnwxfDB8fHwxNzgwOTk0MDU2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "민생물가 특별관리 관계장관 TF 9차 회의 개최 — Photo by sps universal on Unsplash"
 author: "재정경제부"
 ---
 

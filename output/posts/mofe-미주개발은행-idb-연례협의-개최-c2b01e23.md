@@ -7,8 +7,8 @@ tags:
   - "재정경제부"
   - "기술"
 quality_score: 90.0
-cover_image: "https://picsum.photos/seed/917/1200/630"
-cover_image_alt: "미주개발은행(IDB) 연례협의 개최 관련 대표 이미지"
+cover_image: "https://images.unsplash.com/photo-1750365919878-2735d30fa3d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwODI1Njc1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "미주개발은행(IDB) 연례협의 개최 — Photo by Omar:. Lopez-Rincon on Unsplash"
 author: "재정경제부"
 ---
 

@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 90.0
-cover_image: "https://picsum.photos/seed/729/1200/630"
-cover_image_alt: "과기정통부, 물리적 인공지능(피지컬 AI) 핵심기술 국산화를 위한 선도 사업 본격 착수"
+cover_image: "https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMHNjaWVuY2UlMjByZXNlYXJjaCUyMGxhYm9yYXRvcnklMjBjb21tdW5pY2F0aW9uJTIwaW5mcmFzdHJ1Y3R1cmV8ZW58MXwwfHx8MTc4MDk5NDA1OHww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "과기정통부, 물리적 인공지능(피지컬 AI) 핵심기술 국산화를 위한 선도 사업 본격 착수 — Photo by Growtika on Unsplash"
 author: "과학기술정보통신부"
 ---
 

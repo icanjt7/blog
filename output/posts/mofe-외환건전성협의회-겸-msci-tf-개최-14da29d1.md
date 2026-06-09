@@ -7,8 +7,8 @@ tags:
   - "재정경제부"
   - "정책"
 quality_score: 90.0
-cover_image: "https://picsum.photos/seed/927/1200/630"
-cover_image_alt: "외환건전성협의회 겸 MSCI TF 개최 관련 대표 이미지"
+cover_image: "https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODA5MTg4OTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "외환건전성협의회 겸 MSCI TF 개최 — Photo by Arisa Chattasa on Unsplash"
 author: "재정경제부"
 ---
 

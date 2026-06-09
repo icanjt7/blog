@@ -7,8 +7,8 @@ tags:
   - "국가유산진흥원"
   - "기술"
 quality_score: 90.0
-cover_image: "https://picsum.photos/seed/213/1200/630"
-cover_image_alt: "‘하이(HAI)’, ‘AI for Good Global Summit 2026’ 공식 발표 사례 선정(260526) 관련 대표 이미지"
+cover_image: "https://images.unsplash.com/photo-1540998145333-e2eef1a9822d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMGtvcmVhbiUyMGhlcml0YWdlJTIwYXJjaGl0ZWN0dXJlfGVufDF8MHx8fDE3ODA5OTQwNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "‘하이(HAI)’, ‘AI for Good Global Summit 2026’ 공식 발표 사례 선정(260526) — Photo by Bundo Kim on Unsplash"
 author: "국가유산진흥원"
 ---
 
