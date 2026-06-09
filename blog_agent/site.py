@@ -177,6 +177,97 @@ GOVERNMENT_GLOBAL_PAGES: dict[str, dict[str, str]] = {
     },
 }
 
+LOCALIZED_POST_COPY: dict[str, dict[str, str]] = {
+    "en": {
+        "label": "English search version",
+            "notice": "This page helps international readers and search engines discover the original Korean article. Use the language selector to read the full article in your preferred language.",
+            "original": "Original Korean article",
+            "summary": "Korean article summary",
+            "keywords": "Related multilingual search keywords",
+            "read": "Read the original article",
+        },
+    "ja": {
+        "label": "日本語検索版",
+            "notice": "このページは、海外の読者と検索エンジンが韓国語の元記事を見つけやすくするためのページです。全文は言語セレクターで翻訳して読めます。",
+            "original": "韓国語の元記事",
+            "summary": "韓国語記事の要約",
+            "keywords": "関連する多言語検索キーワード",
+            "read": "元記事を読む",
+        },
+    "zh-CN": {
+        "label": "中文搜索版本",
+            "notice": "本页面用于帮助国际读者和搜索引擎发现原始韩文文章。可使用语言选择器阅读完整译文。",
+            "original": "韩文原文",
+            "summary": "韩文文章摘要",
+            "keywords": "相关多语言搜索关键词",
+            "read": "阅读韩文原文",
+        },
+    "es": {
+        "label": "Versión de búsqueda en español",
+            "notice": "Esta página ayuda a lectores internacionales y motores de búsqueda a encontrar el artículo original en coreano. Usa el selector de idioma para leerlo traducido.",
+            "original": "Artículo original en coreano",
+            "summary": "Resumen del artículo en coreano",
+            "keywords": "Palabras clave multilingües relacionadas",
+            "read": "Leer el artículo original",
+        },
+    "fr": {
+        "label": "Version de recherche en français",
+            "notice": "Cette page aide les lecteurs internationaux et les moteurs de recherche à trouver l'article coréen original. Utilisez le sélecteur de langue pour lire la traduction complète.",
+            "original": "Article original en coréen",
+            "summary": "Résumé de l'article coréen",
+            "keywords": "Mots-clés multilingues associés",
+            "read": "Lire l'article original",
+        },
+    "de": {
+        "label": "Deutsche Suchversion",
+            "notice": "Diese Seite hilft internationalen Leserinnen und Lesern sowie Suchmaschinen, den koreanischen Originalartikel zu finden. Nutzen Sie die Sprachauswahl für die vollständige Übersetzung.",
+            "original": "Koreanischer Originalartikel",
+            "summary": "Zusammenfassung des koreanischen Artikels",
+            "keywords": "Verwandte mehrsprachige Suchbegriffe",
+            "read": "Originalartikel lesen",
+        },
+    "pt": {
+        "label": "Versão de busca em português",
+            "notice": "Esta página ajuda leitores internacionais e mecanismos de busca a encontrar o artigo original em coreano. Use o seletor de idioma para ler a tradução completa.",
+            "original": "Artigo original em coreano",
+            "summary": "Resumo do artigo em coreano",
+            "keywords": "Palavras-chave multilíngues relacionadas",
+            "read": "Ler o artigo original",
+        },
+    "vi": {
+        "label": "Phiên bản tìm kiếm tiếng Việt",
+            "notice": "Trang này giúp độc giả quốc tế và công cụ tìm kiếm tìm thấy bài viết gốc bằng tiếng Hàn. Hãy dùng bộ chọn ngôn ngữ để đọc bản dịch đầy đủ.",
+            "original": "Bài viết gốc tiếng Hàn",
+            "summary": "Tóm tắt bài viết tiếng Hàn",
+            "keywords": "Từ khóa tìm kiếm đa ngôn ngữ liên quan",
+            "read": "Đọc bài viết gốc",
+        },
+    "id": {
+        "label": "Versi pencarian bahasa Indonesia",
+            "notice": "Halaman ini membantu pembaca internasional dan mesin pencari menemukan artikel asli berbahasa Korea. Gunakan pemilih bahasa untuk membaca terjemahan lengkap.",
+            "original": "Artikel asli bahasa Korea",
+            "summary": "Ringkasan artikel bahasa Korea",
+            "keywords": "Kata kunci pencarian multibahasa terkait",
+            "read": "Baca artikel asli",
+        },
+    "th": {
+        "label": "เวอร์ชันค้นหาภาษาไทย",
+            "notice": "หน้านี้ช่วยให้ผู้อ่านต่างประเทศและเครื่องมือค้นหาพบบทความต้นฉบับภาษาเกาหลี ใช้ตัวเลือกภาษาเพื่ออ่านคำแปลฉบับเต็ม",
+            "original": "บทความต้นฉบับภาษาเกาหลี",
+            "summary": "สรุปบทความภาษาเกาหลี",
+            "keywords": "คำค้นหาหลายภาษาที่เกี่ยวข้อง",
+            "read": "อ่านบทความต้นฉบับ",
+        },
+    "ar": {
+        "label": "نسخة بحث عربية",
+            "notice": "تساعد هذه الصفحة القراء الدوليين ومحركات البحث على العثور على المقال الكوري الأصلي. استخدم محدد اللغة لقراءة الترجمة الكاملة.",
+            "original": "المقال الكوري الأصلي",
+            "summary": "ملخص المقال الكوري",
+            "keywords": "كلمات بحث متعددة اللغات ذات صلة",
+            "read": "قراءة المقال الأصلي",
+        },
+}
+
 SEARCH_ALIASES: dict[str, tuple[str, ...]] = {
     "핫이슈": ("hot issue", "breaking news", "trend", "local news", "travel", "restaurant", "cafe", "旅游", "旅行", "ニュース", "tendencia"),
     "기술": ("technology", "tech", "it", "gadget", "ai", "software", "device", "科技", "技术", "技術", "tecnologia"),
@@ -341,12 +432,12 @@ class StaticSiteBuilder:
             return self.site_url + "/"
         return f"{self.site_url}/{filename}"
 
-    def _nav_html(self, active: str | None = None) -> str:
+    def _nav_html(self, active: str | None = None, prefix: str = "./") -> str:
         items = [
-            '<a href="./index.html" class="' + ("active" if active == "홈" else "") + '">홈</a>'
+            f'<a href="{prefix}index.html" class="' + ("active" if active == "홈" else "") + '">홈</a>'
         ]
         for category in self.categories:
-            href = f"./category-{self._slugify(category)}.html"
+            href = f"{prefix}category-{self._slugify(category)}.html"
             active_class = "active" if active == category else ""
             items.append(f'<a href="{href}" class="{active_class}">{html.escape(category)}</a>')
         return '<nav class="site-nav">' + "".join(items) + '</nav>'
@@ -365,6 +456,23 @@ class StaticSiteBuilder:
 
     def _category_page_filename(self, category: str) -> str:
         return f"category-{self._slugify(category)}.html"
+
+    @staticmethod
+    def _language_dir(code: str) -> str:
+        return code.lower()
+
+    def _localized_post_filename(self, post: Post, lang: str) -> str:
+        if lang == "ko":
+            return f"{post.slug}.html"
+        return f"{self._language_dir(lang)}/{post.slug}.html"
+
+    def _post_alternate_urls(self, post: Post) -> dict[str, str]:
+        alternates = {
+            lang: self._page_url(self._localized_post_filename(post, lang))
+            for lang, _ in LANGUAGE_OPTIONS
+        }
+        alternates["x-default"] = alternates["ko"]
+        return alternates
 
     @staticmethod
     def _author_for_slug(slug: str) -> str:
@@ -472,6 +580,7 @@ class StaticSiteBuilder:
         return match.group(0) if match else "브"
 
     def _write_post(self, post: Post) -> None:
+        alternates = self._post_alternate_urls(post)
         cover_html = ""
         if post.cover_image:
             cover_html = f'<img class="cover" src="{html.escape(post.cover_image)}" alt="{html.escape(post.cover_image_alt)}" loading="lazy">'
@@ -502,7 +611,113 @@ class StaticSiteBuilder:
             active=post.category,
             page_url=self._page_url(f"{post.slug}.html"),
             og_image=post.cover_image,
+            alternate_urls=alternates,
         )
+        self._write_localized_post_pages(post, alternates)
+
+    def _write_localized_post_pages(self, post: Post, alternates: dict[str, str]) -> None:
+        aliases = self._search_aliases(post)
+        alias_text = ", ".join(aliases[:16])
+        display_author = self._display_author(post)
+        for lang, _label in LANGUAGE_OPTIONS:
+            if lang == "ko":
+                continue
+            copy = LOCALIZED_POST_COPY.get(lang, LOCALIZED_POST_COPY["en"])
+            direction = ' dir="rtl"' if lang == "ar" else ""
+            title = f'{copy["label"]}: {post.title}'
+            cover_html = ""
+            if post.cover_image:
+                cover_html = f'<img class="cover" src="{html.escape(post.cover_image)}" alt="{html.escape(post.cover_image_alt)}" loading="lazy">'
+            content = f"""
+        <article class="post localized-post"{direction}>
+          <a class="back" href="../{html.escape(post.slug)}.html">{html.escape(copy["original"])}</a>
+          {cover_html}
+          <header>
+            <p class="meta">{html.escape(copy["label"])} · {post.date:%Y-%m-%d}</p>
+            <h1>{html.escape(post.title)}</h1>
+            <p class="localized-notice">{html.escape(copy["notice"])}</p>
+            <div class="byline">
+              <span class="author-avatar" aria-hidden="true">{html.escape(self._author_avatar(display_author))}</span>
+              <span>{html.escape(display_author)}</span>
+            </div>
+            <div class="tags">{self._tag_html(post.tags, prefix="../")}</div>
+          </header>
+          <section class="localized-keywords">
+            <strong>{html.escape(copy["summary"])}</strong>
+            <p>{html.escape(post.excerpt)}</p>
+          </section>
+          <section class="localized-keywords">
+            <strong>{html.escape(copy["keywords"])}</strong>
+            <span>{html.escape(alias_text)}</span>
+          </section>
+          <p><a class="read-original" href="../{html.escape(post.slug)}.html">{html.escape(copy["read"])}</a></p>
+        </article>
+            """
+            self._write_lightweight_localized_html(
+                self._localized_post_filename(post, lang),
+                title,
+                content,
+                page_url=self._page_url(self._localized_post_filename(post, lang)),
+                description=f'{copy["label"]}: {post.excerpt}',
+                html_lang=lang,
+                alternate_urls=alternates,
+            )
+
+    def _write_lightweight_localized_html(
+        self,
+        filename: str,
+        title: str,
+        content: str,
+        page_url: str,
+        description: str,
+        html_lang: str,
+        alternate_urls: dict[str, str],
+    ) -> None:
+        alternate_link_tags = "\n".join(
+            f'  <link rel="alternate" hreflang="{html.escape(lang)}" href="{html.escape(url)}">'
+            for lang, url in sorted(alternate_urls.items())
+        )
+        page = f"""<!doctype html>
+<html lang="{html.escape(html_lang)}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{html.escape(title)}</title>
+  <meta name="description" content="{html.escape(description)}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="{html.escape(self.site_title)}">
+  <meta property="og:title" content="{html.escape(title)}">
+  <meta property="og:description" content="{html.escape(description)}">
+  <meta property="og:url" content="{html.escape(page_url)}">
+  <link rel="canonical" href="{html.escape(page_url)}">
+{alternate_link_tags}
+  <style>
+    body{{margin:0;background:#f7f5ef;color:#232323;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.75}}
+    main{{width:min(760px,100% - 32px);margin:0 auto;padding:28px 0 48px}}
+    a{{color:#0f766e;text-decoration:none}}a:hover{{text-decoration:underline}}
+    .post{{background:#fffdf8;border:1px solid #ded8ca;border-radius:10px;padding:22px}}
+    .back{{display:inline-block;margin-bottom:14px;font-size:.9rem}}
+    .cover{{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;margin-bottom:16px}}
+    .meta{{margin:0 0 6px;color:#6b675e;font-size:.86rem}}
+    h1{{margin:0 0 10px;font-size:clamp(1.35rem,4vw,2rem);line-height:1.35}}
+    .localized-notice,.localized-keywords{{color:#6b675e}}
+    .localized-keywords{{margin:16px 0;padding:14px 16px;border:1px solid #ded8ca;border-radius:8px;background:#f7f5ef;font-size:.92rem}}
+    .localized-keywords strong{{display:block;margin-bottom:6px;color:#0f766e}}
+    .localized-keywords p{{margin:0}}
+    .tags{{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}}
+    .tag{{border:1px solid #ded8ca;border-radius:999px;padding:2px 8px;font-size:.8rem;color:#6b675e}}
+    .read-original{{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 14px;border-radius:999px;background:#0f766e;color:#fff;font-weight:700}}
+    .read-original:hover{{text-decoration:none;filter:brightness(.94)}}
+  </style>
+</head>
+<body>
+  <main>{content}</main>
+</body>
+</html>
+"""
+        target = self.public_dir / filename
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(page, encoding="utf-8")
 
     def _ad_slot(self) -> str:
         pub = html.escape(self.adsense_publisher_id or "ca-pub-3870943054399059")
@@ -1065,14 +1280,25 @@ class StaticSiteBuilder:
                 f"  </url>"
             )
 
-        entries: list[str] = []
-        entries.append(_entry(self._page_url("index.html"), now, "daily", "1.0"))
-        entries.append(_entry(self._page_url("search.html"), now, "weekly", "0.5"))
+        def _urlset(entries: list[str]) -> str:
+            return (
+                '<?xml version="1.0" encoding="UTF-8"?>\n'
+                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+                'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+                + "\n".join(entries)
+                + "\n</urlset>\n"
+            )
+
+        sitemap_files: list[str] = []
+
+        static_entries: list[str] = []
+        static_entries.append(_entry(self._page_url("index.html"), now, "daily", "1.0"))
+        static_entries.append(_entry(self._page_url("search.html"), now, "weekly", "0.5"))
 
         government_alternates = {lang: self._page_url(copy["filename"]) for lang, copy in GOVERNMENT_GLOBAL_PAGES.items()}
         government_alternates["x-default"] = self._page_url(GOVERNMENT_GLOBAL_PAGES["en"]["filename"])
         for lang, copy in GOVERNMENT_GLOBAL_PAGES.items():
-            entries.append(_entry(
+            static_entries.append(_entry(
                 self._page_url(copy["filename"]),
                 now,
                 "daily",
@@ -1082,7 +1308,7 @@ class StaticSiteBuilder:
 
         total_pages = (len(posts) + 8) // 9
         for page in range(2, total_pages + 1):
-            entries.append(_entry(self._page_url(f"page{page}.html"), now, "daily", "0.9"))
+            static_entries.append(_entry(self._page_url(f"page{page}.html"), now, "daily", "0.9"))
 
         category_posts: dict[str, list[Post]] = {}
         for post in posts:
@@ -1093,24 +1319,40 @@ class StaticSiteBuilder:
             total_cat_pages = max(1, (len(cposts) + per_page - 1) // per_page)
             for p in range(1, total_cat_pages + 1):
                 fname = cat_base if p == 1 else f"{cat_base[:-5]}-{p}.html"
-                entries.append(_entry(self._page_url(fname), now, "daily", "0.8"))
+                static_entries.append(_entry(self._page_url(fname), now, "daily", "0.8"))
 
-        for post in posts:
-            entries.append(_entry(
-                self._page_url(f"{post.slug}.html"),
-                post.date,
-                "monthly",
-                "0.7",
-            ))
+        static_name = "sitemap-static.xml"
+        (self.public_dir / static_name).write_text(_urlset(static_entries), encoding="utf-8")
+        sitemap_files.append(static_name)
 
-        sitemap = (
-            '<?xml version="1.0" encoding="UTF-8"?>\n'
-            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
-            'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
-            + "\n".join(entries)
-            + "\n</urlset>\n"
+        for lang, _label in LANGUAGE_OPTIONS:
+            post_entries = []
+            for post in posts:
+                post_entries.append(_entry(
+                    self._page_url(self._localized_post_filename(post, lang)),
+                    post.date,
+                    "monthly",
+                    "0.7" if lang == "ko" else "0.5",
+                    self._post_alternate_urls(post),
+                ))
+            filename = f"sitemap-posts-{self._language_dir(lang)}.xml"
+            (self.public_dir / filename).write_text(_urlset(post_entries), encoding="utf-8")
+            sitemap_files.append(filename)
+
+        sitemap_index_entries = "\n".join(
+            f"  <sitemap>\n"
+            f"    <loc>{html.escape(_sitemap_loc(self._page_url(filename)))}</loc>\n"
+            f"    <lastmod>{now:%Y-%m-%d}</lastmod>\n"
+            f"  </sitemap>"
+            for filename in sitemap_files
         )
-        (self.public_dir / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+        sitemap_index = (
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            + sitemap_index_entries
+            + "\n</sitemapindex>\n"
+        )
+        (self.public_dir / "sitemap.xml").write_text(sitemap_index, encoding="utf-8")
 
     def _write_html(
         self,
@@ -1123,6 +1365,7 @@ class StaticSiteBuilder:
         og_image: str | None = None,
         html_lang: str = "ko",
         alternate_urls: dict[str, str] | None = None,
+        asset_prefix: str = "./",
     ) -> None:
         gtm_id = html.escape(GTM_CONTAINER_ID)
         gtm_head = f"""  <!-- Google Tag Manager -->
@@ -1173,7 +1416,7 @@ class StaticSiteBuilder:
             "logo": logo_url,
         }
         structured_json = json.dumps(structured_data, ensure_ascii=False).replace("</", "<\\/")
-        nav_html = self._nav_html(active)
+        nav_html = self._nav_html(active, prefix=asset_prefix)
         language_switcher = self._language_switcher_html()
         language_codes_json = json.dumps([code for code, _ in LANGUAGE_OPTIONS], ensure_ascii=False)
         language_aliases_json = json.dumps(LANGUAGE_BASE_ALIASES, ensure_ascii=False)
@@ -1202,13 +1445,13 @@ class StaticSiteBuilder:
   <meta name="twitter:card" content="summary_large_image">
   <meta name="naver-site-verification" content="474c602a51b653598de7203e9604b16da6381678">
   <meta name="theme-color" content="#0f766e">
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-  <link rel="icon" type="image/png" sizes="48x48" href="./favicon-48x48.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-  <link rel="manifest" href="./site.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="{asset_prefix}favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="{asset_prefix}favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{asset_prefix}apple-touch-icon.png">
+  <link rel="manifest" href="{asset_prefix}site.webmanifest">
   <link rel="canonical" href="{html.escape(page_url)}">{alternate_link_tags}
-  <link rel="stylesheet" href="./style.css">
-  <link rel="alternate" type="application/rss+xml" href="./feed.xml">
+  <link rel="stylesheet" href="{asset_prefix}style.css">
+  <link rel="alternate" type="application/rss+xml" href="{asset_prefix}feed.xml">
   <script type="application/ld+json">{structured_json}</script>{adsense_script}
 </head>
 <body>
@@ -1216,7 +1459,7 @@ class StaticSiteBuilder:
   <header class="site-header">
     <div class="page-shell">
       <div class="header-top">
-        <a class="brand" href="./index.html" aria-label="{html.escape(self.site_title)}">
+        <a class="brand" href="{asset_prefix}index.html" aria-label="{html.escape(self.site_title)}">
           <svg class="brand-icon" width="34" height="34" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
             <rect width="32" height="32" rx="7" fill="#0f766e"/>
             <rect x="6" y="7" width="20" height="2.8" rx="1.4" fill="white" opacity="0.92"/>
@@ -1254,7 +1497,8 @@ class StaticSiteBuilder:
     var q=document.getElementById('header-q'),box=document.getElementById('header-results');
     if(!q||!box)return;
     var idx=[];
-    fetch('./search.json').then(function(r){{return r.json();}}).then(function(d){{idx=d;}}).catch(function(){{}});
+    var assetPrefix='{asset_prefix}';
+    fetch(assetPrefix+'search.json').then(function(r){{return r.json();}}).then(function(d){{idx=d;}}).catch(function(){{}});
     function norm(s){{return s.normalize('NFKC').toLowerCase();}}
     function searchText(item){{return [item.title,item.excerpt,item.category].concat(item.tags||[],item.aliases||[]).join(' ');}}
     function run(){{
@@ -1266,15 +1510,15 @@ class StaticSiteBuilder:
       }}).slice(0,6);
       if(!res.length){{box.innerHTML='<div class="hdr-item hdr-empty">검색 결과가 없습니다</div>';box.hidden=false;return;}}
       box.innerHTML=res.map(function(item){{
-        return '<a class="hdr-item" href="./'+item.slug+'.html"><span class="hdr-title">'+item.title+'</span><span class="hdr-cat">'+item.category+'</span></a>';
+        return '<a class="hdr-item" href="'+assetPrefix+item.slug+'.html"><span class="hdr-title">'+item.title+'</span><span class="hdr-cat">'+item.category+'</span></a>';
       }}).join('');
       box.hidden=false;
     }}
     var btn=document.getElementById('header-search-btn');
     q.addEventListener('input',run);
-    q.addEventListener('keydown',function(e){{if(e.key==='Enter'&&q.value.trim())window.location.href='./search.html?q='+encodeURIComponent(q.value.trim());}});
+    q.addEventListener('keydown',function(e){{if(e.key==='Enter'&&q.value.trim())window.location.href=assetPrefix+'search.html?q='+encodeURIComponent(q.value.trim());}});
     q.addEventListener('focus',function(){{if(q.value.trim())run();}});
-    if(btn)btn.addEventListener('click',function(){{if(q.value.trim())window.location.href='./search.html?q='+encodeURIComponent(q.value.trim());else q.focus();}});
+    if(btn)btn.addEventListener('click',function(){{if(q.value.trim())window.location.href=assetPrefix+'search.html?q='+encodeURIComponent(q.value.trim());else q.focus();}});
     document.addEventListener('click',function(e){{if(!q.contains(e.target)&&!box.contains(e.target)&&(!btn||!btn.contains(e.target)))box.hidden=true;}});
   }})();
   </script>
@@ -1368,7 +1612,9 @@ class StaticSiteBuilder:
 </body>
 </html>
 """
-        (self.public_dir / filename).write_text(page, encoding="utf-8")
+        target = self.public_dir / filename
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(page, encoding="utf-8")
 
     def _write_css(self) -> None:
         css = """
@@ -1553,6 +1799,40 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 }
 .global-post-item p { margin: 0 0 8px; color: var(--muted); font-size: 0.9rem; line-height: 1.65; }
 .global-post-item .global-aliases { margin-bottom: 0; color: #7a7468; font-size: 0.78rem; }
+.localized-notice {
+  margin: 10px 0 14px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.localized-keywords {
+  margin: 16px 0 20px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+.localized-keywords strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--accent);
+}
+.localized-keywords p { margin: 0; color: var(--muted); }
+.read-original {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.read-original:hover { text-decoration: none; filter: brightness(.94); }
 
 /* footer */
 .site-footer { border-top: 1px solid var(--line); background: var(--paper); margin-top: 32px; }
@@ -2040,5 +2320,5 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
         return text[:160] + ("..." if len(text) > 160 else "")
 
     @staticmethod
-    def _tag_html(tags: list[str]) -> str:
-        return "".join(f'<a class="tag" href="./search.html?tag={quote(tag)}">{html.escape(tag)}</a>' for tag in tags)
+    def _tag_html(tags: list[str], prefix: str = "./") -> str:
+        return "".join(f'<a class="tag" href="{prefix}search.html?tag={quote(tag)}">{html.escape(tag)}</a>' for tag in tags)
