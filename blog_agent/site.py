@@ -227,13 +227,9 @@ class StaticSiteBuilder:
         if category in ("기술", "tech") and query == "technology innovation circuit abstract":
             idx = int(hashlib.md5(slug.encode("utf-8")).hexdigest()[:4], 16) % len(self._TECH_FALLBACK_POOL)
             query = self._TECH_FALLBACK_POOL[idx]
-        seed = int(hashlib.md5(slug.encode("utf-8")).hexdigest()[:8], 16) % 10000
-        path = quote(",".join(query.split()[:5]))
-        url = f"https://loremflickr.com/1200/630/{path}?lock={seed}"
-        if url in self._BLOCKED_FALLBACK_COVERS:
-            seed = (seed + 7919) % 10000
-            url = f"https://loremflickr.com/1200/630/{path}?lock={seed}"
-        return url
+        seed_input = f"{slug}-{query}"
+        seed = hashlib.md5(seed_input.encode("utf-8")).hexdigest()[:12]
+        return f"https://picsum.photos/seed/{seed}/1200/630"
 
     @staticmethod
     def _page_href(page: int, base: str = "index.html") -> str:
