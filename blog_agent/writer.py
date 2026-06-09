@@ -412,6 +412,40 @@ BODY:
     def _tech_angle(blob: str) -> dict[str, str]:
         angles = [
             (
+                ("apple ai pitch", "private cloud compute", "privacy promise", "apple intelligence"),
+                {
+                    "title_template": "Apple AI의 승부수, 개인정보 약속",
+                    "excerpt_template": "Apple AI 전략을 Apple Intelligence, Private Cloud Compute, Siri 개인정보 처리 관점에서 정리했습니다.",
+                    "summary_fallback": "Apple의 AI 전략은 기능 경쟁만이 아니라 개인정보 보호 약속을 실제 서비스 구조로 증명할 수 있는지가 핵심입니다.",
+                    "background": "Apple Intelligence는 iPhone, iPad, Mac에서 문서 요약, 알림 정리, 이미지 생성, Siri 명령 이해 같은 기능을 제공하려는 Apple의 AI 기능 묶음입니다. Apple은 기기 안 처리와 Private Cloud Compute를 함께 내세워 클라우드를 쓰더라도 사용자 요청을 오래 저장하거나 임의로 들여다보지 않겠다고 설명합니다.",
+                    "why_it_matters": "AI 비서는 일정, 메일, 사진, 파일처럼 민감한 개인 맥락을 다룰수록 쓸모가 커집니다. Apple AI를 볼 때는 모델 성능뿐 아니라 어떤 요청이 기기 안에서 끝나는지, 어떤 요청이 클라우드로 가는지, 외부 검증이 가능한지 확인해야 합니다.",
+                    "target": "iPhone·Mac 사용자, Siri 개선을 기다리는 사용자, Apple 생태계 개발자",
+                    "tech_context": "Apple Intelligence, Siri, 온디바이스 AI, Private Cloud Compute, 개인정보 보호 설계",
+                    "user_impact": "AI 기능의 편의성, 개인 데이터 처리 신뢰도, 지원 언어·기기 조건에 영향",
+                    "next_check": "한국어 지원 여부, 지원 기기 목록, Siri 실제 작업 성공률, Private Cloud Compute 검증 자료",
+                    "point_1": "Apple AI의 핵심 메시지는 가장 빠른 AI가 아니라 개인정보를 덜 넘기는 AI입니다.",
+                    "point_2": "Private Cloud Compute는 클라우드 처리와 개인정보 보호 사이의 불신을 줄이기 위한 장치입니다.",
+                    "point_3": "Siri 개선은 발표 문구보다 일상 작업 성공률, 앱 연동 범위, 지역·언어 지원으로 판단해야 합니다.",
+                },
+            ),
+            (
+                ("rivian r2", "rivian", "r2 is too much fun"),
+                {
+                    "title_template": "Rivian R2, 자율주행보다 운전 재미",
+                    "excerpt_template": "Rivian R2 시승기를 전기 SUV 대중화, 운전 경험, Rivian의 사업 확장 관점에서 정리했습니다.",
+                    "summary_fallback": "Rivian R2는 로보택시나 완전 자율주행보다 사람이 직접 몰고 싶은 전기 SUV라는 포지션을 보여주는 모델입니다.",
+                    "background": "Rivian은 미국 전기차 제조사로 R1T 픽업트럭과 R1S SUV를 통해 아웃도어 성향의 고가 EV 브랜드 이미지를 만들었습니다. R2는 더 넓은 소비자층을 겨냥한 중형 전기 SUV로, Rivian이 팬층을 넘어 대중형 EV 시장으로 확장할 수 있는지 보여주는 차입니다.",
+                    "why_it_matters": "전기차 경쟁은 배터리 용량만으로 끝나지 않습니다. 소프트웨어 UI, 운전자 보조 기능, 충전 경험, 가격, 생산 일정, 실제 운전 감각이 함께 평가됩니다. Rivian R2는 자율주행 담론 속에서도 운전자가 직접 몰고 싶어지는 경험이 제품 경쟁력이 될 수 있음을 보여줍니다.",
+                    "target": "전기 SUV 구매 예정자, Rivian 투자·산업 동향을 보는 독자, EV 시장 관심층",
+                    "tech_context": "전기차 플랫폼, 운전자 보조, OTA 업데이트, 배터리 효율, 중형 SUV 시장",
+                    "user_impact": "전기 SUV 선택 기준, 실제 구매 가격, 주행거리, 충전·서비스 경험 판단에 영향",
+                    "next_check": "최종 가격, 배터리 옵션, 실제 주행거리, 생산·인도 일정, 운전자 보조 기능 구성",
+                    "point_1": "Rivian R2의 핵심은 로보택시가 아니라 사람이 직접 몰고 싶은 전기 SUV라는 점입니다.",
+                    "point_2": "R2는 Rivian이 고가 모험용 EV 브랜드에서 더 대중적인 브랜드로 내려올 수 있는 시험대입니다.",
+                    "point_3": "구매 판단은 목표 가격보다 최종 사양, 보조금, 충전 조건, 인도 일정을 함께 봐야 합니다.",
+                },
+            ),
+            (
                 ("hack", "breach", "security", "privacy", "data", "wellness"),
                 {
                     "title_template": "{subject}, 보안 리스크가 핵심",
@@ -480,7 +514,7 @@ BODY:
                 },
             ),
             (
-                ("carvana", "slate", "auto", "car", "vehicle", "ev"),
+                ("carvana", "slate auto"),
                 {
                     "title_template": "Carvana와 Slate Auto, 관전 포인트",
                     "excerpt_template": "Carvana와 Slate Auto 협력을 온라인 자동차 판매와 전기차 유통 변화로 정리했습니다.",

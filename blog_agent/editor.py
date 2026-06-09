@@ -226,6 +226,22 @@ BODY:
             if re.search(r"최근 검색 수요가 꾸준히|공식 안내와 최신 공지|지역명, 연도, 모델명", draft.body_markdown):
                 score -= 35
                 notes.append("기술 글이 범용 확인 템플릿에 머물러 기사별 차이가 부족합니다.")
+            source_blob = " ".join(
+                f"{source.title} {source.summary}" for source in draft.topic.sources
+            ).lower()
+            draft_blob = f"{draft.title}\n{draft.body_markdown}".lower()
+            if "rivian" in source_blob and re.search(r"\b(carvana|slate auto)\b", draft_blob):
+                score -= 70
+                notes.append("기술 글의 원문은 Rivian인데 Carvana/Slate Auto 내용이 섞였습니다.")
+            if "apple" in source_blob and "privacy" in source_blob and re.search(
+                r"보안 사고|침해사고|해커|노출 데이터|비밀번호.*재설정",
+                draft.body_markdown,
+            ):
+                score -= 45
+                notes.append("Apple AI 개인정보 이슈를 해킹/침해사고 템플릿으로 잘못 해석했습니다.")
+            if re.search(r"will live or die by its|is too much fun to let", draft.title, flags=re.I):
+                score -= 20
+                notes.append("영문 원문 제목이 잘린 채 제목에 남아 있습니다.")
         draft.quality_score = max(0, score)
         draft.review_notes = notes
         return draft
