@@ -62,6 +62,172 @@ LANGUAGE_OPTIONS: tuple[tuple[str, str], ...] = (
     ("ar", "العربية"),
 )
 
+LANGUAGE_BASE_ALIASES: dict[str, str] = {
+    "zh": "zh-CN",
+}
+
+GOVERNMENT_GLOBAL_PAGES: dict[str, dict[str, str]] = {
+    "ko": {
+        "filename": "government-press.html",
+        "title": "한국 정부·공공기관 보도기사",
+        "kicker": "공식 발표 글로벌 검색 허브",
+        "description": "한국 정부부처와 공공기관의 보도기사를 한곳에서 확인할 수 있는 페이지입니다.",
+        "intro": "재정, 기술, 문화, 보건, 안전, 고용, 교통 등 주요 정부·공공기관 발표를 분야별 기사로 정리합니다.",
+        "terms": "한국 정부 보도자료, 공공기관 소식, 중앙부처 발표, 정책 브리핑",
+        "lang_name": "한국어",
+    },
+    "en": {
+        "filename": "government-press-en.html",
+        "title": "Korean Government and Public Agency Press Articles",
+        "kicker": "Global search hub for official Korean announcements",
+        "description": "Browse Korean ministry and public agency press articles on policy, technology, culture, health, safety, labor, transport, and public services.",
+        "intro": "BriefWave curates official announcements from Korean ministries and public institutions into readable news briefings with source-oriented context.",
+        "terms": "Korean government press release, South Korea ministry news, public agency announcement, policy briefing Korea",
+        "lang_name": "English",
+    },
+    "ja": {
+        "filename": "government-press-ja.html",
+        "title": "韓国政府・公共機関のプレス記事",
+        "kicker": "韓国公式発表の検索ハブ",
+        "description": "韓国の省庁・公共機関による政策、技術、文化、保健、安全、雇用、交通分野の発表記事をまとめています。",
+        "intro": "BriefWaveは韓国政府と公共機関の公式発表を、読みやすいニュース形式で整理します。",
+        "terms": "韓国政府プレスリリース, 韓国省庁ニュース, 公共機関発表, 韓国政策ブリーフィング",
+        "lang_name": "日本語",
+    },
+    "zh-CN": {
+        "filename": "government-press-zh-cn.html",
+        "title": "韩国政府和公共机构新闻稿文章",
+        "kicker": "韩国官方公告全球搜索入口",
+        "description": "查看韩国政府部门和公共机构有关政策、科技、文化、卫生、安全、就业、交通和公共服务的新闻文章。",
+        "intro": "BriefWave 将韩国政府和公共机构的官方公告整理成便于阅读的新闻简报。",
+        "terms": "韩国政府新闻稿, 韩国部委新闻, 公共机构公告, 韩国政策简报",
+        "lang_name": "中文",
+    },
+    "es": {
+        "filename": "government-press-es.html",
+        "title": "Artículos de prensa del gobierno y agencias públicas de Corea",
+        "kicker": "Centro global de búsqueda para anuncios oficiales de Corea",
+        "description": "Consulta artículos sobre comunicados de ministerios y agencias públicas de Corea en política, tecnología, cultura, salud, seguridad, empleo y transporte.",
+        "intro": "BriefWave organiza anuncios oficiales de ministerios e instituciones públicas de Corea en resúmenes informativos legibles.",
+        "terms": "comunicado del gobierno coreano, noticias de ministerios de Corea, agencia pública Corea, política pública Corea",
+        "lang_name": "Español",
+    },
+    "fr": {
+        "filename": "government-press-fr.html",
+        "title": "Articles de presse du gouvernement et des organismes publics coréens",
+        "kicker": "Hub de recherche mondial pour les annonces officielles coréennes",
+        "description": "Retrouvez les annonces des ministères et organismes publics coréens sur les politiques, la technologie, la culture, la santé, la sécurité, l'emploi et les transports.",
+        "intro": "BriefWave transforme les annonces officielles coréennes en synthèses d'actualité lisibles et contextualisées.",
+        "terms": "communiqué du gouvernement coréen, actualités ministères Corée, organisme public Corée, politique publique Corée",
+        "lang_name": "Français",
+    },
+    "de": {
+        "filename": "government-press-de.html",
+        "title": "Presseartikel koreanischer Ministerien und öffentlicher Einrichtungen",
+        "kicker": "Globaler Suchhub für offizielle Ankündigungen aus Korea",
+        "description": "Lesen Sie Artikel zu Mitteilungen koreanischer Ministerien und öffentlicher Einrichtungen über Politik, Technologie, Kultur, Gesundheit, Sicherheit, Arbeit und Verkehr.",
+        "intro": "BriefWave bereitet offizielle Meldungen aus Korea als verständliche Nachrichtenbriefings auf.",
+        "terms": "Pressemitteilung koreanische Regierung, Ministerium Korea Nachrichten, öffentliche Einrichtung Korea, Politikbriefing Korea",
+        "lang_name": "Deutsch",
+    },
+    "pt": {
+        "filename": "government-press-pt.html",
+        "title": "Artigos de imprensa do governo e órgãos públicos da Coreia",
+        "kicker": "Hub global de busca para anúncios oficiais da Coreia",
+        "description": "Veja artigos sobre comunicados de ministérios e órgãos públicos coreanos em política, tecnologia, cultura, saúde, segurança, trabalho e transporte.",
+        "intro": "O BriefWave organiza anúncios oficiais da Coreia em briefings de notícias claros e contextualizados.",
+        "terms": "comunicado do governo coreano, notícias ministérios Coreia, agência pública Coreia, política pública Coreia",
+        "lang_name": "Português",
+    },
+    "vi": {
+        "filename": "government-press-vi.html",
+        "title": "Bài viết thông cáo của chính phủ và cơ quan công Hàn Quốc",
+        "kicker": "Trung tâm tìm kiếm toàn cầu cho thông báo chính thức của Hàn Quốc",
+        "description": "Theo dõi bài viết về thông cáo của bộ ngành và cơ quan công Hàn Quốc trong chính sách, công nghệ, văn hóa, y tế, an toàn, lao động và giao thông.",
+        "intro": "BriefWave biên tập thông báo chính thức của Hàn Quốc thành các bản tin dễ đọc, có bối cảnh.",
+        "terms": "thông cáo chính phủ Hàn Quốc, tin bộ ngành Hàn Quốc, cơ quan công Hàn Quốc, chính sách Hàn Quốc",
+        "lang_name": "Tiếng Việt",
+    },
+    "id": {
+        "filename": "government-press-id.html",
+        "title": "Artikel siaran pers pemerintah dan lembaga publik Korea",
+        "kicker": "Pusat pencarian global untuk pengumuman resmi Korea",
+        "description": "Temukan artikel pengumuman kementerian dan lembaga publik Korea tentang kebijakan, teknologi, budaya, kesehatan, keselamatan, tenaga kerja, dan transportasi.",
+        "intro": "BriefWave menyusun pengumuman resmi Korea menjadi ringkasan berita yang mudah dibaca.",
+        "terms": "siaran pers pemerintah Korea, berita kementerian Korea, lembaga publik Korea, kebijakan Korea",
+        "lang_name": "Indonesia",
+    },
+    "th": {
+        "filename": "government-press-th.html",
+        "title": "บทความข่าวประชาสัมพันธ์รัฐบาลและหน่วยงานสาธารณะเกาหลี",
+        "kicker": "ศูนย์ค้นหาระดับโลกสำหรับประกาศทางการของเกาหลี",
+        "description": "อ่านบทความจากกระทรวงและหน่วยงานสาธารณะของเกาหลีเกี่ยวกับนโยบาย เทคโนโลยี วัฒนธรรม สุขภาพ ความปลอดภัย แรงงาน และการคมนาคม",
+        "intro": "BriefWave จัดเรียงประกาศทางการของเกาหลีเป็นบทสรุปข่าวที่อ่านง่ายและมีบริบท",
+        "terms": "ข่าวประชาสัมพันธ์รัฐบาลเกาหลี, ข่าวกระทรวงเกาหลี, หน่วยงานสาธารณะเกาหลี, นโยบายเกาหลี",
+        "lang_name": "ไทย",
+    },
+    "ar": {
+        "filename": "government-press-ar.html",
+        "title": "مقالات بيانات الحكومة والهيئات العامة الكورية",
+        "kicker": "مركز بحث عالمي للإعلانات الرسمية الكورية",
+        "description": "تابع مقالات عن بيانات الوزارات والهيئات العامة في كوريا حول السياسات والتقنية والثقافة والصحة والسلامة والعمل والنقل.",
+        "intro": "يقوم BriefWave بتنظيم الإعلانات الرسمية الكورية في موجزات إخبارية واضحة وسهلة القراءة.",
+        "terms": "بيان صحفي للحكومة الكورية, أخبار وزارات كوريا, هيئة عامة كورية, سياسات كوريا",
+        "lang_name": "العربية",
+    },
+}
+
+SEARCH_ALIASES: dict[str, tuple[str, ...]] = {
+    "핫이슈": ("hot issue", "breaking news", "trend", "local news", "travel", "restaurant", "cafe", "旅游", "旅行", "ニュース", "tendencia"),
+    "기술": ("technology", "tech", "it", "gadget", "ai", "software", "device", "科技", "技术", "技術", "tecnologia"),
+    "정책": ("policy", "government", "finance", "subsidy", "support", "economy", "政策", "政府", "政策", "politica"),
+    "생활": ("life", "lifestyle", "living", "tips", "benefits", "family", "生活", "暮らし", "vida"),
+    "정치": ("politics", "election", "candidate", "pledge", "civic", "政治", "選挙", "politica"),
+    "여행": ("travel", "trip", "tour", "tourism", "旅行", "旅游", "viaje"),
+    "맛집": ("restaurant", "food", "dining", "place to eat", "グルメ", "餐厅", "comida"),
+    "카페": ("cafe", "coffee", "咖啡", "カフェ"),
+    "지원금": ("subsidy", "grant", "benefit", "support payment", "补贴", "補助金"),
+    "혜택": ("benefit", "discount", "support", "优惠", "特典"),
+    "선거": ("election", "vote", "candidate", "選挙", "选举"),
+    "공약": ("pledge", "promise", "campaign promise", "公約", "承诺"),
+    "보도기사": ("press release", "official release", "government news", "新闻稿", "プレスリリース"),
+    "AI": ("artificial intelligence", "machine learning", "生成 ai", "人工智能", "inteligencia artificial"),
+    "인공지능": ("ai", "artificial intelligence", "machine learning", "人工智能", "人工知能"),
+    "Apple": ("apple", "iphone", "ipad", "mac", "siri"),
+    "Rivian": ("rivian", "ev", "electric vehicle", "electric suv"),
+    "전기차": ("ev", "electric vehicle", "electric car", "电动车", "電気自動車"),
+    "대한민국": ("korea", "south korea", "republic of korea", "韓国", "韩国", "corea"),
+    "정부": ("government", "ministry", "public sector", "official", "政府", "政府機関", "gobierno"),
+    "공공기관": ("public institution", "public agency", "government agency", "公共機関", "公共机构"),
+    "행정안전부": ("ministry of the interior and safety", "mois", "korean interior ministry", "韓国 行政安全部", "韩国行政安全部"),
+    "과학기술정보통신부": ("ministry of science and ict", "msit", "science ministry", "ict ministry", "韓国 科学技術情報通信部", "韩国科学技术信息通信部"),
+    "재정경제부": ("ministry of economy and finance", "ministry of finance", "mofe", "korean finance ministry", "韓国 財政経済部", "韩国财政经济部"),
+    "기획재정부": ("ministry of economy and finance", "ministry of finance", "mofe", "korean finance ministry", "韓国 企画財政部", "韩国企划财政部"),
+    "문화체육관광부": ("ministry of culture sports and tourism", "mcst", "culture ministry", "tourism ministry", "韓国 文化体育観光部", "韩国文化体育观光部"),
+    "국가유산청": ("korea heritage service", "cultural heritage administration", "khs", "heritage agency", "韓国 国家遺産庁", "韩国国家遗产厅"),
+    "국가유산진흥원": ("korea heritage agency", "korea heritage service foundation", "kh", "heritage foundation", "韓国 国家遺産振興院", "韩国国家遗产振兴院"),
+    "교육부": ("ministry of education", "education ministry", "韓国 教育部", "韩国教育部"),
+    "국토교통부": ("ministry of land infrastructure and transport", "molit", "transport ministry", "land ministry"),
+    "보건복지부": ("ministry of health and welfare", "mohw", "health ministry", "welfare ministry"),
+    "고용노동부": ("ministry of employment and labor", "moel", "labor ministry", "employment ministry"),
+    "외교부": ("ministry of foreign affairs", "mofa", "foreign ministry"),
+    "국방부": ("ministry of national defense", "mnd", "defense ministry"),
+    "법무부": ("ministry of justice", "justice ministry"),
+    "산업통상부": ("ministry of trade industry and energy", "motie", "industry ministry"),
+    "중소벤처기업부": ("ministry of smes and startups", "mss", "startup ministry"),
+    "환경부": ("ministry of environment", "environment ministry"),
+    "기후에너지환경부": ("ministry of climate energy and environment", "climate ministry", "environment ministry"),
+    "농림축산식품부": ("ministry of agriculture food and rural affairs", "mafra", "agriculture ministry"),
+    "해양수산부": ("ministry of oceans and fisheries", "mof", "oceans ministry", "fisheries ministry"),
+    "식품의약품안전처": ("ministry of food and drug safety", "mfds", "food drug safety"),
+    "질병관리청": ("korea disease control and prevention agency", "kdca", "disease control agency"),
+    "소방청": ("national fire agency", "nfa", "fire agency"),
+    "경찰청": ("korean national police agency", "knpa", "police agency"),
+    "국민권익위원회": ("anti-corruption and civil rights commission", "acrc", "civil rights commission"),
+    "국가보훈부": ("ministry of patriots and veterans affairs", "mpva", "veterans ministry"),
+    "원자력안전위원회": ("nuclear safety and security commission", "nssc", "nuclear safety commission"),
+}
+
 
 class StaticSiteBuilder:
     def __init__(
@@ -102,6 +268,7 @@ class StaticSiteBuilder:
       # generate search index and page
       self._write_search_index(posts)
       self._write_search_page(posts)
+      self._write_global_government_pages(posts)
       self._write_category_pages(posts)
 
       # self._write_dashboard(posts)  # 관리자 전용 — 일반 사용자에게 노출하지 않음
@@ -495,9 +662,34 @@ class StaticSiteBuilder:
                     "tags": post.tags,
                     "author": post.author,
                     "display_author": self._display_author(post),
+                    "aliases": self._search_aliases(post),
                 }
             )
         (self.public_dir / "search.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
+
+    @staticmethod
+    def _search_aliases(post: Post) -> list[str]:
+        values = [post.title, post.category, post.author, *post.tags]
+        aliases: list[str] = []
+        if any(tag in post.tags for tag in ("보도기사", "보도자료")) or post.slug.startswith(("krgov-", "mois-", "msit-", "mofe-", "mcst-", "khs-", "kh-")):
+            aliases.extend(
+                (
+                    "korean government press release",
+                    "south korea public agency news",
+                    "official korean ministry announcement",
+                    "government briefing",
+                    "public institution news",
+                    "韩国政府新闻稿",
+                    "韓国政府プレスリリース",
+                    "comunicado del gobierno coreano",
+                )
+            )
+        for value in values:
+            value_text = str(value)
+            for marker, terms in SEARCH_ALIASES.items():
+                if marker.lower() in value_text.lower():
+                    aliases.extend(terms)
+        return sorted(set(alias for alias in aliases if alias))
 
     def _write_search_page(self, posts: list[Post]) -> None:
         categories = sorted({post.category for post in posts})
@@ -558,7 +750,7 @@ class StaticSiteBuilder:
 
         function buildSuggestionText(query, items){
           if(!query && !activeTag) return '검색어를 입력하면 추천 검색어가 나타납니다.';
-          const candidate = items.find(item => normalize(item.title).includes(query) || normalize((item.tags||[]).join(' ')).includes(query));
+          const candidate = items.find(item => normalize(searchText(item)).includes(query));
           if(candidate) return `이런 검색어도 시도해보세요: ${candidate.title}`;
           return '검색 결과가 없으면 다른 키워드로 다시 시도해보세요.';
         }
@@ -619,7 +811,7 @@ class StaticSiteBuilder:
             const tagMatch = !activeTag || (item.tags||[]).includes(activeTag);
             if(!categoryMatch || !tagMatch) return false;
             if(!normalizedQuery) return true;
-            const haystack = normalize([item.title, item.excerpt, item.category, ...(item.tags || [])].join(' '));
+            const haystack = normalize(searchText(item));
             return haystack.includes(normalizedQuery) || item.title.split(' ').some(w=>normalize(w).startsWith(normalizedQuery));
           });
           return matches.sort((a,b)=>{
@@ -726,6 +918,10 @@ class StaticSiteBuilder:
           }
           update();
         })();
+
+        function searchText(item){
+          return [item.title, item.excerpt, item.category].concat(item.tags || [], item.aliases || []).join(' ');
+        }
         </script>
             '''
         )
@@ -736,6 +932,63 @@ class StaticSiteBuilder:
             active="검색",
             page_url=self._page_url("search.html"),
             description="브리핑웨이브에서 원하는 글을 빠르게 찾을 수 있는 검색 페이지입니다.",
+        )
+
+    def _write_global_government_pages(self, posts: list[Post]) -> None:
+        public_posts = [post for post in posts if self._is_government_post(post)]
+        latest_posts = public_posts[:36]
+        alternates = {lang: self._page_url(copy["filename"]) for lang, copy in GOVERNMENT_GLOBAL_PAGES.items()}
+        alternates["x-default"] = self._page_url(GOVERNMENT_GLOBAL_PAGES["en"]["filename"])
+
+        for lang, copy in GOVERNMENT_GLOBAL_PAGES.items():
+            items = "\n".join(self._global_government_item_html(post, lang) for post in latest_posts)
+            if not items:
+                items = '<p class="empty">No government press articles are available yet.</p>'
+            content = f"""
+        <article class="post global-search-page">
+          <header class="search-hero">
+            <p class="meta">{html.escape(copy["kicker"])}</p>
+            <h1>{html.escape(copy["title"])}</h1>
+            <p class="search-help">{html.escape(copy["intro"])}</p>
+          </header>
+          <section class="global-search-terms" aria-label="search terms">
+            <strong>{html.escape(copy["lang_name"])}</strong>
+            <span>{html.escape(copy["terms"])}</span>
+          </section>
+          <section class="global-post-list">
+            {items}
+          </section>
+        </article>
+            """
+            self._write_html(
+                copy["filename"],
+                f'{copy["title"]} - {self.site_title}',
+                content,
+                active="검색",
+                page_url=self._page_url(copy["filename"]),
+                description=copy["description"],
+                html_lang=lang,
+                alternate_urls=alternates,
+            )
+
+    def _global_government_item_html(self, post: Post, lang: str) -> str:
+        aliases = self._search_aliases(post)
+        alias_text = ", ".join(aliases[:8])
+        direction = ' dir="rtl"' if lang == "ar" else ""
+        return f"""
+            <article class="global-post-item"{direction}>
+              <p class="meta">{post.date:%Y-%m-%d} · {html.escape(post.category)}</p>
+              <h2><a href="./{html.escape(post.slug)}.html">{html.escape(post.title)}</a></h2>
+              <p>{html.escape(post.excerpt)}</p>
+              <p class="global-aliases">{html.escape(alias_text)}</p>
+            </article>
+        """
+
+    @staticmethod
+    def _is_government_post(post: Post) -> bool:
+        return (
+            any(tag in post.tags for tag in ("보도기사", "보도자료"))
+            or post.slug.startswith(("krgov-", "mois-", "msit-", "mofe-", "mcst-", "khs-", "kh-"))
         )
 
     def _write_category_pages(self, posts: list[Post]) -> None:
@@ -789,10 +1042,23 @@ class StaticSiteBuilder:
             encoded_path = quote(parts.path, safe="/%")
             return urlunsplit((parts.scheme, parts.netloc, encoded_path, parts.query, parts.fragment))
 
-        def _entry(loc: str, lastmod: datetime, changefreq: str, priority: str) -> str:
+        def _entry(
+            loc: str,
+            lastmod: datetime,
+            changefreq: str,
+            priority: str,
+            alternates: dict[str, str] | None = None,
+        ) -> str:
+            alternate_links = ""
+            if alternates:
+                alternate_links = "".join(
+                    f"    <xhtml:link rel=\"alternate\" hreflang=\"{html.escape(lang)}\" href=\"{html.escape(_sitemap_loc(href))}\" />\n"
+                    for lang, href in sorted(alternates.items())
+                )
             return (
                 f"  <url>\n"
                 f"    <loc>{html.escape(_sitemap_loc(loc))}</loc>\n"
+                f"{alternate_links}"
                 f"    <lastmod>{lastmod:%Y-%m-%d}</lastmod>\n"
                 f"    <changefreq>{changefreq}</changefreq>\n"
                 f"    <priority>{priority}</priority>\n"
@@ -802,6 +1068,17 @@ class StaticSiteBuilder:
         entries: list[str] = []
         entries.append(_entry(self._page_url("index.html"), now, "daily", "1.0"))
         entries.append(_entry(self._page_url("search.html"), now, "weekly", "0.5"))
+
+        government_alternates = {lang: self._page_url(copy["filename"]) for lang, copy in GOVERNMENT_GLOBAL_PAGES.items()}
+        government_alternates["x-default"] = self._page_url(GOVERNMENT_GLOBAL_PAGES["en"]["filename"])
+        for lang, copy in GOVERNMENT_GLOBAL_PAGES.items():
+            entries.append(_entry(
+                self._page_url(copy["filename"]),
+                now,
+                "daily",
+                "0.6",
+                government_alternates,
+            ))
 
         total_pages = (len(posts) + 8) // 9
         for page in range(2, total_pages + 1):
@@ -828,7 +1105,8 @@ class StaticSiteBuilder:
 
         sitemap = (
             '<?xml version="1.0" encoding="UTF-8"?>\n'
-            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+            'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
             + "\n".join(entries)
             + "\n</urlset>\n"
         )
@@ -843,6 +1121,8 @@ class StaticSiteBuilder:
         page_url: str | None = None,
         description: str | None = None,
         og_image: str | None = None,
+        html_lang: str = "ko",
+        alternate_urls: dict[str, str] | None = None,
     ) -> None:
         gtm_id = html.escape(GTM_CONTAINER_ID)
         gtm_head = f"""  <!-- Google Tag Manager -->
@@ -895,9 +1175,18 @@ class StaticSiteBuilder:
         structured_json = json.dumps(structured_data, ensure_ascii=False).replace("</", "<\\/")
         nav_html = self._nav_html(active)
         language_switcher = self._language_switcher_html()
+        language_codes_json = json.dumps([code for code, _ in LANGUAGE_OPTIONS], ensure_ascii=False)
+        language_aliases_json = json.dumps(LANGUAGE_BASE_ALIASES, ensure_ascii=False)
+        alternate_link_tags = ""
+        if alternate_urls:
+            alternate_link_tags = "\n".join(
+                f'  <link rel="alternate" hreflang="{html.escape(lang)}" href="{html.escape(url)}">'
+                for lang, url in sorted(alternate_urls.items())
+            )
+            alternate_link_tags = "\n" + alternate_link_tags
 
         page = f"""<!doctype html>
-<html lang="ko">
+<html lang="{html.escape(html_lang)}">
 <head>
 {ga_script}
   <meta charset="utf-8">
@@ -917,7 +1206,7 @@ class StaticSiteBuilder:
   <link rel="icon" type="image/png" sizes="48x48" href="./favicon-48x48.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
   <link rel="manifest" href="./site.webmanifest">
-  <link rel="canonical" href="{html.escape(page_url)}">
+  <link rel="canonical" href="{html.escape(page_url)}">{alternate_link_tags}
   <link rel="stylesheet" href="./style.css">
   <link rel="alternate" type="application/rss+xml" href="./feed.xml">
   <script type="application/ld+json">{structured_json}</script>{adsense_script}
@@ -967,12 +1256,13 @@ class StaticSiteBuilder:
     var idx=[];
     fetch('./search.json').then(function(r){{return r.json();}}).then(function(d){{idx=d;}}).catch(function(){{}});
     function norm(s){{return s.normalize('NFKC').toLowerCase();}}
+    function searchText(item){{return [item.title,item.excerpt,item.category].concat(item.tags||[],item.aliases||[]).join(' ');}}
     function run(){{
       var val=q.value.trim();
       if(!val){{box.innerHTML='';box.hidden=true;return;}}
       var n=norm(val);
       var res=idx.filter(function(item){{
-        return norm([item.title,item.excerpt].concat(item.tags||[]).join(' ')).includes(n);
+        return norm(searchText(item)).includes(n);
       }}).slice(0,6);
       if(!res.length){{box.innerHTML='<div class="hdr-item hdr-empty">검색 결과가 없습니다</div>';box.hidden=false;return;}}
       box.innerHTML=res.map(function(item){{
@@ -991,6 +1281,8 @@ class StaticSiteBuilder:
   <script>
   (function(){{
     var sourceLang='ko';
+    var supportedLanguages={language_codes_json};
+    var languageAliases={language_aliases_json};
     var select=document.getElementById('language-select');
     function cookieValue(name){{
       var parts=document.cookie.split(';');
@@ -1021,10 +1313,38 @@ class StaticSiteBuilder:
       var match=raw.match(/^\\/(?:auto|ko)\\/([^/]+)$/);
       return match ? match[1] : sourceLang;
     }}
+    function normalizeLanguage(code){{
+      if(!code)return '';
+      var cleaned=String(code).trim();
+      if(!cleaned)return '';
+      if(supportedLanguages.indexOf(cleaned)>-1)return cleaned;
+      var base=cleaned.split('-')[0];
+      if(languageAliases[base])return languageAliases[base];
+      for(var i=0;i<supportedLanguages.length;i++){{
+        if(supportedLanguages[i].split('-')[0]===base)return supportedLanguages[i];
+      }}
+      return '';
+    }}
+    function detectPreferredLanguage(){{
+      var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']);
+      for(var i=0;i<langs.length;i++){{
+        var lang=normalizeLanguage(langs[i]);
+        if(lang&&lang!==sourceLang)return lang;
+      }}
+      return sourceLang;
+    }}
+    var storedChoice=localStorage.getItem('briefwave-language-choice')||'';
+    var cookieLang=currentLang();
+    var initialLang=cookieLang;
+    if(cookieLang===sourceLang&&!storedChoice){{
+      initialLang=detectPreferredLanguage();
+      if(initialLang!==sourceLang)setCookie('googtrans','/'+sourceLang+'/'+initialLang);
+    }}
     if(select){{
-      select.value=currentLang();
+      select.value=initialLang;
       select.addEventListener('change',function(){{
         var lang=select.value;
+        localStorage.setItem('briefwave-language-choice',lang);
         if(lang===sourceLang){{
           clearCookie('googtrans');
         }}else{{
@@ -1201,6 +1521,38 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .tag-filter-badge span { color: rgba(255,255,255,.72); font-size: 0.78rem; }
 .tag-filter-badge button { width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,.14); border: none; border-radius: 999px; color: #fff; cursor: pointer; font-size: 1rem; padding: 0; line-height: 1; }
 .tag-filter-badge button:hover { background: rgba(255,255,255,.24); }
+
+/* global government search pages */
+.global-search-page { max-width: 920px; margin: 0 auto; }
+.global-search-terms {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 8px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.global-search-terms strong { color: var(--accent); }
+.global-post-list { display: grid; gap: 12px; margin-top: 16px; }
+.global-post-item {
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+.global-post-item h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1rem, 2.6vw, 1.16rem);
+  line-height: 1.42;
+  word-break: keep-all;
+}
+.global-post-item p { margin: 0 0 8px; color: var(--muted); font-size: 0.9rem; line-height: 1.65; }
+.global-post-item .global-aliases { margin-bottom: 0; color: #7a7468; font-size: 0.78rem; }
 
 /* footer */
 .site-footer { border-top: 1px solid var(--line); background: var(--paper); margin-top: 32px; }
