@@ -47,6 +47,21 @@ AUTHOR_NAMES = [
 
 GTM_CONTAINER_ID = "GTM-PRH78BZK"
 
+LANGUAGE_OPTIONS: tuple[tuple[str, str], ...] = (
+    ("ko", "한국어"),
+    ("en", "English"),
+    ("ja", "日本語"),
+    ("zh-CN", "中文"),
+    ("es", "Español"),
+    ("fr", "Français"),
+    ("de", "Deutsch"),
+    ("pt", "Português"),
+    ("vi", "Tiếng Việt"),
+    ("id", "Indonesia"),
+    ("th", "ไทย"),
+    ("ar", "العربية"),
+)
+
 
 class StaticSiteBuilder:
     def __init__(
@@ -168,6 +183,18 @@ class StaticSiteBuilder:
             active_class = "active" if active == category else ""
             items.append(f'<a href="{href}" class="{active_class}">{html.escape(category)}</a>')
         return '<nav class="site-nav">' + "".join(items) + '</nav>'
+
+    def _language_switcher_html(self) -> str:
+        options = "\n".join(
+            f'            <option value="{html.escape(code)}">{html.escape(label)}</option>'
+            for code, label in LANGUAGE_OPTIONS
+        )
+        return f"""<div class="language-switcher">
+          <select id="language-select" aria-label="Language">
+{options}
+          </select>
+          <div id="google_translate_element" class="translate-host" aria-hidden="true"></div>
+        </div>"""
 
     def _category_page_filename(self, category: str) -> str:
         return f"category-{self._slugify(category)}.html"
@@ -867,6 +894,7 @@ class StaticSiteBuilder:
         }
         structured_json = json.dumps(structured_data, ensure_ascii=False).replace("</", "<\\/")
         nav_html = self._nav_html(active)
+        language_switcher = self._language_switcher_html()
 
         page = f"""<!doctype html>
 <html lang="ko">
@@ -919,6 +947,7 @@ class StaticSiteBuilder:
           </button>
           <div id="header-results" class="header-dropdown" hidden></div>
         </div>
+        {language_switcher}
       </div>
       {nav_html}
     </div>
@@ -959,6 +988,63 @@ class StaticSiteBuilder:
     document.addEventListener('click',function(e){{if(!q.contains(e.target)&&!box.contains(e.target)&&(!btn||!btn.contains(e.target)))box.hidden=true;}});
   }})();
   </script>
+  <script>
+  (function(){{
+    var sourceLang='ko';
+    var select=document.getElementById('language-select');
+    function cookieValue(name){{
+      var parts=document.cookie.split(';');
+      for(var i=0;i<parts.length;i++){{
+        var part=parts[i].trim();
+        if(part.indexOf(name+'=')===0)return decodeURIComponent(part.slice(name.length+1));
+      }}
+      return '';
+    }}
+    function setCookie(name,value){{
+      var maxAge='; max-age=31536000';
+      var base=name+'='+encodeURIComponent(value)+'; path=/'+maxAge+'; SameSite=Lax';
+      document.cookie=base;
+      var host=location.hostname;
+      if(host.indexOf('.')>-1){{
+        document.cookie=name+'='+encodeURIComponent(value)+'; path=/; domain=.'+host+'; max-age=31536000; SameSite=Lax';
+      }}
+    }}
+    function clearCookie(name){{
+      document.cookie=name+'=; path=/; max-age=0; SameSite=Lax';
+      var host=location.hostname;
+      if(host.indexOf('.')>-1){{
+        document.cookie=name+'=; path=/; domain=.'+host+'; max-age=0; SameSite=Lax';
+      }}
+    }}
+    function currentLang(){{
+      var raw=cookieValue('googtrans');
+      var match=raw.match(/^\\/(?:auto|ko)\\/([^/]+)$/);
+      return match ? match[1] : sourceLang;
+    }}
+    if(select){{
+      select.value=currentLang();
+      select.addEventListener('change',function(){{
+        var lang=select.value;
+        if(lang===sourceLang){{
+          clearCookie('googtrans');
+        }}else{{
+          setCookie('googtrans','/'+sourceLang+'/'+lang);
+        }}
+        location.reload();
+      }});
+    }}
+    window.googleTranslateElementInit=function(){{
+      if(!window.google||!window.google.translate)return;
+      new window.google.translate.TranslateElement({{
+        pageLanguage: sourceLang,
+        includedLanguages: '{",".join(code for code, _ in LANGUAGE_OPTIONS)}',
+        autoDisplay: false,
+        layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
+      }}, 'google_translate_element');
+    }};
+  }})();
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
 </body>
 </html>
 """
@@ -1069,6 +1155,33 @@ a:hover { text-decoration: underline; }
 .hdr-title { flex: 1; line-height: 1.4; word-break: keep-all; }
 .hdr-cat { color: var(--muted); font-size: 0.75rem; flex-shrink: 0; }
 .hdr-empty { color: var(--muted); justify-content: center; }
+.language-switcher { flex-shrink: 0; position: relative; height: 36px; }
+.language-switcher select {
+  width: 116px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.82rem;
+  padding: 0 30px 0 12px;
+  cursor: pointer;
+  outline: none;
+}
+.language-switcher select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(15,118,110,.12); }
+.translate-host {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+body > .skiptranslate,
+.goog-te-banner-frame,
+.goog-te-balloon-frame { display: none !important; }
+body { top: 0 !important; }
 .dashboard-link { flex-shrink: 0; color: var(--muted); font-size: 0.85rem; padding: 7px 14px; border: 1px solid var(--line); border-radius: 999px; white-space: nowrap; transition: background .2s, color .2s, border-color .2s; }
 .dashboard-link:hover, .dashboard-link.active { background: var(--accent); color: #fff; border-color: var(--accent); text-decoration: none; }
 
@@ -1388,6 +1501,8 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   .header-search { order: 3; flex: none; width: 100%; max-width: 100%; height: 38px; }
   .header-search input[type="search"] { height: 38px; }
   .search-btn { height: 38px; }
+  .language-switcher { margin-left: auto; height: 34px; }
+  .language-switcher select { width: 104px; height: 34px; font-size: 0.78rem; }
   .site-nav { padding: 0 4px; }
   .hero { padding: 10px 16px 8px; }
   .grid { grid-template-columns: 1fr; gap: 10px; padding: 10px 12px 0; }
