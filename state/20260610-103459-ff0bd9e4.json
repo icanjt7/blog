@@ -1,0 +1,432 @@
+{
+  "run_id": "20260610-103459-ff0bd9e4",
+  "topics": [
+    {
+      "keyword": "06월 제주 반려동물 동반여행",
+      "title_hint": "06월 제주 반려동물 동반여행 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "06월 서울 의료관광 병원",
+      "title_hint": "06월 서울 의료관광 병원 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "Microsoft is disabling",
+      "title_hint": "Microsoft is disabling Office 2019 for Mac next month",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Microsoft is disabling Office 2019 for Mac next month",
+          "url": "https://www.theverge.com/news/947518/microsoft-office-2019-for-mac-end-of-support-no-edit",
+          "published_at": "2026-06-10T09:14:35",
+          "summary": "Microsoft's Office 2019 apps for Mac will stop working next month, because the company isn't renewing a certificate that validates Office licenses. Owners of Office 2019 for Mac are being warned they'll have to purchase Office 2024 or a Microsoft 365 subscription if they want to continue editing documents. Microsoft previously promised that \"all your [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Waymo built virtual",
+      "title_hint": "Waymo built a virtual driver to study how humans react to surprises on the road",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Waymo built a virtual driver to study how humans react to surprises on the road",
+          "url": "https://www.theverge.com/transportation/947178/waymo-reference-driver-model-surprise-avoid-collision",
+          "published_at": "2026-06-10T09:00:00",
+          "summary": "Waymo has a lot of experience building virtual systems to help its autonomous vehicles better understand the real world. It built realistic 3D worlds to better anticipate natural disasters and unpredictable edge cases. It created a virtual representation of a hyperattentive driver to test against its own autonomous vehicles in a series of simulated scenarios [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "06월 전주 한옥마을 먹거리 동선",
+      "title_hint": "06월 전주 한옥마을 먹거리 동선 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "WhatsApp ordered to",
+      "title_hint": "WhatsApp ordered to host rival AI assistants for free",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "WhatsApp ordered to host rival AI assistants for free",
+          "url": "https://www.theverge.com/tech/947516/meta-whatsapp-eu-third-party-ai-chatbot-ban-order",
+          "published_at": "2026-06-10T08:40:56",
+          "summary": "Meta has been ordered by the European Commission to restore free WhatsApp access for chatbots made by rival AI providers while the regulator finishes its antitrust investigation. The rare interim measure announced on Tuesday was deemed necessary \"to prevent serious and irreparable damage to competition\" in the general-purpose AI assistant market. This is only the [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "Logitech new Mobi",
+      "title_hint": "Logitech’s new Mobi Fold squeezes a lot of functionality into a tiny folding mouse",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Logitech’s new Mobi Fold squeezes a lot of functionality into a tiny folding mouse",
+          "url": "https://www.theverge.com/tech/945549/logitech-mobi-fold-wireless-bluetooth-travel-mouse-hands-on",
+          "published_at": "2026-06-10T07:01:00",
+          "summary": "Logitech finally announced its new ultraportable travel mouse following leaked marketing images that spoiled the surprise last month. As the name implies, the Mobi Fold is a compact mouse that can  fold in half using a hinge that can pivot about 130 degrees. At $79.99 in graphite, off-white, lilac, and sand color options, the Mobi [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "App Store is",
+      "title_hint": "The App Store is going to add subscription bundles soon",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "The App Store is going to add subscription bundles soon",
+          "url": "https://www.theverge.com/tech/947365/apple-subscription-bundles-app-store",
+          "published_at": "2026-06-09T21:30:48",
+          "summary": "Later this year, you will be able to get bundled subscriptions for iPhone apps, as Apple announced it's expanding App Store bundles so they can include offers from different companies. It's similar to streaming video bundles that have combined offers for Apple TV and Peacock, but it also could put together subscriptions for completely different [&#8230;]",
+          "authority": 3
+        }
+      ]
+    },
+    {
+      "keyword": "GM thinks EVs",
+      "title_hint": "GM thinks EVs can help offset AI’s energy suck with vehicle-to-grid tech",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "GM thinks EVs can help offset AI’s energy suck with vehicle-to-grid tech",
+          "url": "https://www.theverge.com/transportation/946820/gm-energy-ev-v2g-storage-sodium-ion",
+          "published_at": "2026-06-09T21:00:00",
+          "summary": "At an event in San Francisco today, General Motors made a series of announcements around EV batteries, energy storage, and grid resiliency in the face of growing electricity demand from AI data centers. The automaker announced that it would be activating new vehicle-to-grid capabilities for its current EV and home energy customers. It's releasing a [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "06월 제주 반려동물 동반여행",
+        "title_hint": "06월 제주 반려동물 동반여행 핵심 정리",
+        "category": "핫이슈",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "06월 제주 반려동물 동반여행: 지금 확인할 포인트",
+      "slug": "06월-제주-반려동물-동반여행-51e30b4d",
+      "excerpt": "06월 제주 반려동물 동반여행 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n06월 제주 반려동물 동반여행은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n06월 제주 반려동물 동반여행를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n06월 제주 반려동물 동반여행 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 06월 제주 반려동물 동반여행와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "핫이슈",
+        "06월",
+        "제주",
+        "반려동물",
+        "동반여행"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1593104210235-d124c754a7d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMGxhbmRtYXJrJTIwd2Fsa2luZyUyMGplanUlMjBpc2xhbmQlMjBjb2FzdGxpbmUlMjBjYWZlfGVufDF8MHx8fDE3ODEwMTEyMzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 제주 반려동물 동반여행: 지금 확인할 포인트 — Photo by Mark Chan on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 제주 반려동물 동반여행: 지금 확인할 포인트. Keyword: 06월 제주 반려동물 동반여행. Concrete visual subject: travel destination landmark walking jeju island coastline cafe. Context: ## 한눈에 보기 06월 제주 반려동물 동반여행은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 제주 반려동물 동반여행를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 제주 반려동물 동반여행 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-10T10:37:39.492246",
+      "quality_score": 12.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '지금 확인할 포인트' 포함",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "여행 글인데 관광 API나 구체 장소 동선이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 서울 의료관광 병원",
+        "title_hint": "06월 서울 의료관광 병원 핵심 정리",
+        "category": "핫이슈",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "06월 서울 의료관광 병원: 지금 확인할 포인트",
+      "slug": "06월-서울-의료관광-병원-b17f6bff",
+      "excerpt": "06월 서울 의료관광 병원 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n06월 서울 의료관광 병원은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n06월 서울 의료관광 병원를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n06월 서울 의료관광 병원 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 06월 서울 의료관광 병원와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "핫이슈",
+        "06월",
+        "서울",
+        "의료관광",
+        "병원"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1761309101977-bc309d3d8668?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBzZW91bCUyMHJlc3RhdXJhbnQlMjBzdHJlZXQlMjBjaXR5JTIwZm9vZCUyMGhlYWx0aGNhcmUlMjBtZWRpY2FsJTIwY2xlYW58ZW58MXwwfHx8MTc4MTA2NzE3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 서울 의료관광 병원: 지금 확인할 포인트 — Photo by Kyle Hinkson on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 서울 의료관광 병원: 지금 확인할 포인트. Keyword: 06월 서울 의료관광 병원. Concrete visual subject: tourism destination travel seoul restaurant street city food healthcare medical clean. Context: ## 한눈에 보기 06월 서울 의료관광 병원은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 서울 의료관광 병원를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 서울 의료관광 병원 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-10T10:39:59.779525",
+      "quality_score": 47.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '지금 확인할 포인트' 포함",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Microsoft is disabling",
+        "title_hint": "Microsoft is disabling Office 2019 for Mac next month",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Microsoft is disabling Office 2019 for Mac next month",
+            "url": "https://www.theverge.com/news/947518/microsoft-office-2019-for-mac-end-of-support-no-edit",
+            "published_at": "2026-06-10T09:14:35",
+            "summary": "Microsoft's Office 2019 apps for Mac will stop working next month, because the company isn't renewing a certificate that validates Office licenses. Owners of Office 2019 for Mac are being warned they'll have to purchase Office 2024 or a Microsoft 365 subscription if they want to continue editing documents. Microsoft previously promised that \"all your [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Microsoft is disabling Office 2019 for Mac, 사용자가 볼 변화",
+      "slug": "microsoft-is-disabling-e2af74fd",
+      "excerpt": "Microsoft is disabling Office 2019 for Mac 소식을 제품 변화와 실제 사용자 영향 중심으로 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\nMicrosoft is disabling Office 2019 for Mac next month 소식입니다. Microsoft's Office 2019 apps for Mac will stop working next month, because the company isn't renewing a certificate that validates Office licenses. Owners of Office 2019 for Mac are being warned they'll have to purchase Office 2024 or a Microsoft 365 subscription if they want to...\n\n## 먼저 알아둘 배경\n\nMicrosoft is disabling Office 2019 for Mac는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다.\n\n## 왜 기술 이슈인가\n\nMicrosoft is disabling Office 2019 for Mac 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다.\n\n## 핵심 정리\n\n| 항목 | 이번 글에서 봐야 할 내용 |\n| --- | --- |\n| 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 |\n| 기술 맥락 | 제품 기능 변화, 서비스 안정성, 가격·구독 구조, 플랫폼 의존성 |\n| 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 |\n| 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 |\n\n## 독자가 이해해야 할 포인트\n\n1. Microsoft is disabling Office 2019 for Mac의 핵심은 제목보다 어떤 기능·비용·운영 조건이 달라졌는지입니다.\n2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다.\n3. AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다.\n4. 원문 요약만으로 부족하면 회사 공지, 상태 페이지, 후속 보도까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [Microsoft is disabling Office 2019 for Mac next month](https://www.theverge.com/news/947518/microsoft-office-2019-for-mac-end-of-support-no-edit)\n",
+      "tags": [
+        "기술",
+        "Microsoft",
+        "is",
+        "disabling"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1538370621607-4919ce7889b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxzb2Z0d2FyZSUyMHdpbmRvd3MlMjB0ZWNobm9sb2d5fGVufDF8MHx8fDE3ODEwODgxMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Microsoft is disabling Office 2019 for Mac, 사용자가 볼 변화 — Photo by Johnyvino on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Microsoft is disabling Office 2019 for Mac, 사용자가 볼 변화. Keyword: Microsoft is disabling. Concrete visual subject: software windows technology. Context: ## 무슨 소식인가 Microsoft is disabling Office 2019 for Mac next month 소식입니다. Microsoft's Office 2019 apps for Mac will stop working next month, because the company isn't renewing a certificate that validates Office licenses. Owners of Office 2019 for Mac are being warned they'll have to purchase Office 2024 or a Microsoft 365 subscription if they want to... ## 먼저 알아둘 배경 Microsoft is disabling Office 2019 for Mac는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다. ## 왜 기술 이슈인가 Microsoft is disabling Office 2019 for Mac 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다. ## 핵심 정리 | 항목 | 이번 글에서 봐야 할 내용. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-10T10:41:52.211750",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Waymo built virtual",
+        "title_hint": "Waymo built a virtual driver to study how humans react to surprises on the road",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Waymo built a virtual driver to study how humans react to surprises on the road",
+            "url": "https://www.theverge.com/transportation/947178/waymo-reference-driver-model-surprise-avoid-collision",
+            "published_at": "2026-06-10T09:00:00",
+            "summary": "Waymo has a lot of experience building virtual systems to help its autonomous vehicles better understand the real world. It built realistic 3D worlds to better anticipate natural disasters and unpredictable edge cases. It created a virtual representation of a hyperattentive driver to test against its own autonomous vehicles in a series of simulated scenarios [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Waymo built a virtual driver to study how, 사용자가 볼 변화",
+      "slug": "waymo-built-virtual-54261da9",
+      "excerpt": "Waymo built a virtual driver to study how 소식을 제품 변화와 실제 사용자 영향 중심으로 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\nWaymo built a virtual driver to study how humans react to surprises on the road 소식입니다. Waymo has a lot of experience building virtual systems to help its autonomous vehicles better understand the real world. It built realistic 3D worlds to better anticipate natural disasters and unpredictable edge cases. It created a virtual representation of a hyperattentive...\n\n## 먼저 알아둘 배경\n\nWaymo built a virtual driver to study how는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다.\n\n## 왜 기술 이슈인가\n\nWaymo built a virtual driver to study how 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다.\n\n## 핵심 정리\n\n| 항목 | 이번 글에서 봐야 할 내용 |\n| --- | --- |\n| 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 |\n| 기술 맥락 | 제품 기능 변화, 서비스 안정성, 가격·구독 구조, 플랫폼 의존성 |\n| 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 |\n| 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 |\n\n## 독자가 이해해야 할 포인트\n\n1. Waymo built a virtual driver to study how의 핵심은 제목보다 어떤 기능·비용·운영 조건이 달라졌는지입니다.\n2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다.\n3. AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다.\n4. 원문 요약만으로 부족하면 회사 공지, 상태 페이지, 후속 보도까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [Waymo built a virtual driver to study how humans react to surprises on the road](https://www.theverge.com/transportation/947178/waymo-reference-driver-model-surprise-avoid-collision)\n",
+      "tags": [
+        "기술",
+        "Waymo",
+        "built",
+        "virtual"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxMDY3MTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Waymo built a virtual driver to study how, 사용자가 볼 변화 — Photo by Adi Goldstein on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Waymo built a virtual driver to study how, 사용자가 볼 변화. Keyword: Waymo built virtual. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 Waymo built a virtual driver to study how humans react to surprises on the road 소식입니다. Waymo has a lot of experience building virtual systems to help its autonomous vehicles better understand the real world. It built realistic 3D worlds to better anticipate natural disasters and unpredictable edge cases. It created a virtual representation of a hyperattentive... ## 먼저 알아둘 배경 Waymo built a virtual driver to study how는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다. ## 왜 기술 이슈인가 Waymo built a virtual driver to study how 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다. ## 핵심 정리 | . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-10T10:43:45.040939",
+      "quality_score": 88.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 전주 한옥마을 먹거리 동선",
+        "title_hint": "06월 전주 한옥마을 먹거리 동선 핵심 정리",
+        "category": "핫이슈",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "06월 전주 한옥마을 먹거리 동선: 지금 확인할 포인트",
+      "slug": "06월-전주-한옥마을-먹거리-동선-05d33c33",
+      "excerpt": "06월 전주 한옥마을 먹거리 동선 관련 정보를 공식 자료 중심으로 간단히 정리했습니다.",
+      "body_markdown": "## 한눈에 보기\n\n06월 전주 한옥마을 먹거리 동선은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다.\n\n## 왜 지금 볼 만한가\n\n- 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드\n- 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부\n- 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자\n\n06월 전주 한옥마을 먹거리 동선를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다.\n\n## 핵심 정리\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 기본 정보 | 공식 안내와 최신 공지 확인 |\n| 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 |\n| 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 |\n\n## 이렇게 확인하면 편합니다\n\n06월 전주 한옥마을 먹거리 동선 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다.\n\n## 체크리스트\n\n1. 공식 페이지에서 최신 날짜를 확인합니다.\n2. 여러 출처의 공통 내용을 먼저 봅니다.\n3. 비용이나 신청 조건처럼 바뀌기 쉬운 정보는 다시 검증합니다.\n4. 06월 전주 한옥마을 먹거리 동선와 함께 지역명, 연도, 모델명 같은 보조 키워드를 붙여 검색합니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "핫이슈",
+        "06월",
+        "전주",
+        "한옥마을",
+        "먹거리"
+      ],
+      "cover_image_path": "https://images.pexels.com/photos/6896970/pexels-photo-6896970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "cover_image_alt": "06월 전주 한옥마을 먹거리 동선: 지금 확인할 포인트 — Photo by Jakob Jin on Pexels",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 전주 한옥마을 먹거리 동선: 지금 확인할 포인트. Keyword: 06월 전주 한옥마을 먹거리 동선. Concrete visual subject: jeonju hanok village korean food. Context: ## 한눈에 보기 06월 전주 한옥마을 먹거리 동선은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 전주 한옥마을 먹거리 동선를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 전주 한옥마을 먹거리 동선 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. . Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-10T10:45:50.400325",
+      "quality_score": 12.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '지금 확인할 포인트' 포함",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "여행 글인데 관광 API나 구체 장소 동선이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "WhatsApp ordered to",
+        "title_hint": "WhatsApp ordered to host rival AI assistants for free",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "WhatsApp ordered to host rival AI assistants for free",
+            "url": "https://www.theverge.com/tech/947516/meta-whatsapp-eu-third-party-ai-chatbot-ban-order",
+            "published_at": "2026-06-10T08:40:56",
+            "summary": "Meta has been ordered by the European Commission to restore free WhatsApp access for chatbots made by rival AI providers while the regulator finishes its antitrust investigation. The rare interim measure announced on Tuesday was deemed necessary \"to prevent serious and irreparable damage to competition\" in the general-purpose AI assistant market. This is only the [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "WhatsApp ordered to host rival AI assistants, 사용자가 볼 변화",
+      "slug": "whatsapp-ordered-to-8f69f296",
+      "excerpt": "WhatsApp ordered to host rival AI assistants 소식을 제품 변화와 실제 사용자 영향 중심으로 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\nWhatsApp ordered to host rival AI assistants for free 소식입니다. Meta has been ordered by the European Commission to restore free WhatsApp access for chatbots made by rival AI providers while the regulator finishes its antitrust investigation. The rare interim measure announced on Tuesday was deemed necessary \"to prevent serious and...\n\n## 먼저 알아둘 배경\n\nWhatsApp ordered to host rival AI assistants는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다.\n\n## 왜 기술 이슈인가\n\nWhatsApp ordered to host rival AI assistants 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다.\n\n## 핵심 정리\n\n| 항목 | 이번 글에서 봐야 할 내용 |\n| --- | --- |\n| 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 |\n| 기술 맥락 | 제품 기능 변화, 서비스 안정성, 가격·구독 구조, 플랫폼 의존성 |\n| 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 |\n| 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 |\n\n## 독자가 이해해야 할 포인트\n\n1. WhatsApp ordered to host rival AI assistants의 핵심은 제목보다 어떤 기능·비용·운영 조건이 달라졌는지입니다.\n2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다.\n3. AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다.\n4. 원문 요약만으로 부족하면 회사 공지, 상태 페이지, 후속 보도까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [WhatsApp ordered to host rival AI assistants for free](https://www.theverge.com/tech/947516/meta-whatsapp-eu-third-party-ai-chatbot-ban-order)\n",
+      "tags": [
+        "기술",
+        "WhatsApp",
+        "ordered",
+        "to"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1696272440000-0808a203c852?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMG5ldXJhbCUyMG5ldHdvcmt8ZW58MXwwfHx8MTc4MTA1NTIxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "WhatsApp ordered to host rival AI assistants, 사용자가 볼 변화 — Photo by Andres Siimon on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: WhatsApp ordered to host rival AI assistants, 사용자가 볼 변화. Keyword: WhatsApp ordered to. Concrete visual subject: artificial intelligence neural network. Context: ## 무슨 소식인가 WhatsApp ordered to host rival AI assistants for free 소식입니다. Meta has been ordered by the European Commission to restore free WhatsApp access for chatbots made by rival AI providers while the regulator finishes its antitrust investigation. The rare interim measure announced on Tuesday was deemed necessary \"to prevent serious and... ## 먼저 알아둘 배경 WhatsApp ordered to host rival AI assistants는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다. ## 왜 기술 이슈인가 WhatsApp ordered to host rival AI assistants 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다. ## 핵심 정리 | 항목 | 이번 글에서 봐야 할 내용 | | -. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-10T10:47:43.107593",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 12.0"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 47.0"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/microsoft-is-disabling-e2af74fd.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/waymo-built-virtual-54261da9.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 12.0"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/whatsapp-ordered-to-8f69f296.md",
+      "message": "draft saved"
+    }
+  ]
+}
