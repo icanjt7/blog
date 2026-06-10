@@ -1,0 +1,147 @@
+{
+  "run_id": "20260610-045106-bc18b383",
+  "average_quality": 54.9,
+  "drafts": [
+    {
+      "slug": "세기-대군부인-찾은-풍류-56bc72c9",
+      "title": "세기 대군부인 찾은 풍류: 지금 확인할 포인트",
+      "keyword": "세기 대군부인 찾은 풍류",
+      "category": "생활",
+      "quality_score": 47.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '지금 확인할 포인트' 포함",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 세기 대군부인 찾은 풍류: 지금 확인할 포인트. Keyword: 세기 대군부인 찾은 풍류. Concrete visual subject: everyday lifestyle public information. Context: ## 한눈에 보기 세기 대군부인 찾은 풍류는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 세기 대군부인 찾은 풍류를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 세기 대군부인 찾은 풍류 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용을 먼저 봅니다.. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1652346637860-ab158d82b68e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODA5MTg4NzV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "대통령-재외공관-동포들-목소리-d889eeee",
+      "title": "대통령 재외공관 동포들 목소리: 지금 확인할 포인트",
+      "keyword": "대통령 재외공관 동포들 목소리",
+      "category": "생활",
+      "quality_score": 47.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '지금 확인할 포인트' 포함",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 대통령 재외공관 동포들 목소리: 지금 확인할 포인트. Keyword: 대통령 재외공관 동포들 목소리. Concrete visual subject: everyday lifestyle public information. Context: ## 한눈에 보기 대통령 재외공관 동포들 목소리는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 대통령 재외공관 동포들 목소리를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 대통령 재외공관 동포들 목소리 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1756105317533-20d5fafca1f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODEwMTEyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-제주-반려동물-동반여행-51e30b4d",
+      "title": "06월 제주 반려동물 동반여행: 지금 확인할 포인트",
+      "keyword": "06월 제주 반려동물 동반여행",
+      "category": "핫이슈",
+      "quality_score": 12.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '지금 확인할 포인트' 포함",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "여행 글인데 관광 API나 구체 장소 동선이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 제주 반려동물 동반여행: 지금 확인할 포인트. Keyword: 06월 제주 반려동물 동반여행. Concrete visual subject: travel destination landmark walking jeju island coastline cafe. Context: ## 한눈에 보기 06월 제주 반려동물 동반여행은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 제주 반려동물 동반여행를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 제주 반려동물 동반여행 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1593104210235-d124c754a7d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMGxhbmRtYXJrJTIwd2Fsa2luZyUyMGplanUlMjBpc2xhbmQlMjBjb2FzdGxpbmUlMjBjYWZlfGVufDF8MHx8fDE3ODEwMTEyMzF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-서울-의료관광-병원-b17f6bff",
+      "title": "06월 서울 의료관광 병원: 지금 확인할 포인트",
+      "keyword": "06월 서울 의료관광 병원",
+      "category": "핫이슈",
+      "quality_score": 47.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '지금 확인할 포인트' 포함",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 서울 의료관광 병원: 지금 확인할 포인트. Keyword: 06월 서울 의료관광 병원. Concrete visual subject: tourism destination travel seoul restaurant street city food healthcare medical clean. Context: ## 한눈에 보기 06월 서울 의료관광 병원은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: 월별 반복 검색 수요가 있는 evergreen 키워드 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 06월 서울 의료관광 병원를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 06월 서울 의료관광 병원 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1761309101977-bc309d3d8668?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBzZW91bCUyMHJlc3RhdXJhbnQlMjBzdHJlZXQlMjBjaXR5JTIwZm9vZCUyMGhlYWx0aGNhcmUlMjBtZWRpY2FsJTIwY2xlYW58ZW58MXwwfHx8MTc4MTA2NzE3N3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "tried-siri-ai-2ac2f5d1",
+      "title": "I tried Siri AI, and so far it actually works, 애플 사용자 변화",
+      "keyword": "tried Siri AI",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: I tried Siri AI, and so far it actually works, 애플 사용자 변화. Keyword: tried Siri AI. Concrete visual subject: artificial intelligence neural network. Context: ## 무슨 소식인가 I tried Siri AI, and so far it actually works 소식입니다. I tried Siri AI, and so far it actually works | The Verge Skip to main content The homepage The Verge The Verge logo. The homepage The Verge The Verge logo. Notifications Notifications Hamburger Navigation Button Navigation Drawer The Verge The Verge logo. Login / Sign Up close... ## 먼저 알아둘 배경 WWDC는 애플이 iOS, iPadOS, macOS, watchOS, visionOS 같은 운영체제 변화를 개발자와 사용자에게 공개하는 행사입니다. I tried Siri AI, and so far it actually works는 새 기능 자체뿐 아니라 어떤 기기가 업데이트 대상에서 빠지는지까지 함께 봐야 합니다. ## 왜 기술 이슈인가 애플 운영체제 업데이트는 앱 호환성, 보안 패치, 배터리 체감, 건강·피트니스 기능에 직접 영향을 줍니다. I tried Siri AI, and so far it actually works를 볼 때는 신기능 목록보다 내 기기가 지원되는지, Siri AI 같은 기능이 지. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgxMDU1MjEwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "congress-just-gave-7d950445",
+      "title": "Congress just gave DHS another $70 billion, 보안 리스크가 핵심",
+      "keyword": "Congress just gave",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Congress just gave DHS another $70 billion, 보안 리스크가 핵심. Keyword: Congress just gave. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 Congress just gave DHS another $70 billion 소식입니다. Congress narrowly voted to fund President Donald Trump's mass deportation agenda, giving the Department of Homeland Security $70 billion over the next three years. The house voted 214 to 212 in favor of the reconciliation bill Tuesday, following the Senate's 52-47 vote last... ## 먼저 알아둘 배경 Congress just gave DHS another $70 billion 같은 디지털 서비스는 앱 화면 뒤에서 계정, 내부 운영 도구, 고객 데이터 저장소가 함께 움직입니다. 보안 사고가 나면 해커가 어떤 권한으로 어디까지 접근했는지가 핵심입니다. ## 왜 기술 이슈인가 웨어러블·헬스케어·생산성 서비스는 단순 연락처보다 민감한 생활 패턴과 건강 지표를 다룰 수 있습니다. 따라서 Congress just gave DHS another $70 billion 이슈는 기능 업데이트가 아니라 데이터 최소화, 내부 권한 통제, 사고 통지 체계의 문제로 읽어야 합니다. ## 핵심 정리 | 항목 | 이번 글에서 봐야 할 내용 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1779788131533-3b044ac53911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwOTMwOTcyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "기후부-군산-제천-물순환-bbf0b46d",
+      "title": "기후부 군산 제천 물순환: 지금 확인할 포인트",
+      "keyword": "기후부 군산 제천 물순환",
+      "category": "생활",
+      "quality_score": 47.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '지금 확인할 포인트' 포함",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 기후부 군산 제천 물순환: 지금 확인할 포인트. Keyword: 기후부 군산 제천 물순환. Concrete visual subject: climate environment green. Context: ## 한눈에 보기 기후부 군산 제천 물순환은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 기후부 군산 제천 물순환를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 기후부 군산 제천 물순환 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용을 먼저 봅니다.. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1545121436-87364761152c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxjbGltYXRlJTIwZW52aXJvbm1lbnQlMjBncmVlbnxlbnwxfDB8fHwxNzgxMDExMjAyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "피지컬-핵심기술-국산화-착수-605b4b41",
+      "title": "피지컬 핵심기술 국산화 착수: 지금 확인할 포인트",
+      "keyword": "피지컬 핵심기술 국산화 착수",
+      "category": "생활",
+      "quality_score": 47.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '지금 확인할 포인트' 포함",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 피지컬 핵심기술 국산화 착수: 지금 확인할 포인트. Keyword: 피지컬 핵심기술 국산화 착수. Concrete visual subject: everyday lifestyle public information. Context: ## 한눈에 보기 피지컬 핵심기술 국산화 착수는 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 피지컬 핵심기술 국산화 착수를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 피지컬 핵심기술 국산화 착수 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통 내용을 먼. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1756105317533-20d5fafca1f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODEwMTEyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "신혼부부-공공임대주택-입주-기준-b10545ce",
+      "title": "신혼부부 공공임대주택 입주 기준: 지금 확인할 포인트",
+      "keyword": "신혼부부 공공임대주택 입주 기준",
+      "category": "생활",
+      "quality_score": 47.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '지금 확인할 포인트' 포함",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 신혼부부 공공임대주택 입주 기준: 지금 확인할 포인트. Keyword: 신혼부부 공공임대주택 입주 기준. Concrete visual subject: everyday lifestyle public information. Context: ## 한눈에 보기 신혼부부 공공임대주택 입주 기준은 최근 검색 수요가 꾸준히 생기는 주제입니다. 이 글은 공개된 자료를 기준으로 핵심만 정리한 정보성 콘텐츠입니다. ## 왜 지금 볼 만한가 - 주제 성격: RSS 신규성과 공식/전문 매체 출처 기반 - 확인 포인트: 조건, 비용, 일정, 공식 안내 변경 여부 - 읽는 사람: 빠르게 비교하고 결정 기준을 잡고 싶은 독자 신혼부부 공공임대주택 입주 기준를 볼 때는 먼저 \"지금 나에게 적용되는 정보인지\"를 확인하는 편이 좋습니다. 검색 결과 상단의 글이 오래된 안내를 그대로 담고 있는 경우가 있고, 특히 가격, 신청 기간, 운영 시간, 대상 조건은 짧은 기간에도 바뀔 수 있습니다. ## 핵심 정리 | 항목 | 확인할 내용 | | --- | --- | | 기본 정보 | 공식 안내와 최신 공지 확인 | | 장점 | 시간을 줄이고 선택 기준을 세우기 쉬움 | | 주의점 | 날짜, 가격, 운영 시간, 조건은 변동 가능 | ## 이렇게 확인하면 편합니다 신혼부부 공공임대주택 입주 기준 관련 글을 여러 개 열어볼 때는 공통으로 반복되는 내용과 출처가 분명한 내용을 먼저 남기세요. 블로그 후기나 커뮤니티 글은 실제 체감 정보를 얻는 데 도움이 되지만, 최종 판단은 공식 페이지나 원문 공지를 함께 보는 것이 안전합니다. ## 체크리스트 1. 공식 페이지에서 최신 날짜를 확인합니다. 2. 여러 출처의 공통. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1651750752740-a6d6c6182812?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODEwMTEyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
