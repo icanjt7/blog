@@ -467,12 +467,8 @@ class StaticSiteBuilder:
         return f"{self._language_dir(lang)}/{post.slug}.html"
 
     def _post_alternate_urls(self, post: Post) -> dict[str, str]:
-        alternates = {
-            lang: self._page_url(self._localized_post_filename(post, lang))
-            for lang, _ in LANGUAGE_OPTIONS
-        }
-        alternates["x-default"] = alternates["ko"]
-        return alternates
+        canonical = self._page_url(self._localized_post_filename(post, "ko"))
+        return {"ko": canonical, "x-default": canonical}
 
     @staticmethod
     def _author_for_slug(slug: str) -> str:
@@ -613,7 +609,9 @@ class StaticSiteBuilder:
             og_image=post.cover_image,
             alternate_urls=alternates,
         )
-        self._write_localized_post_pages(post, alternates)
+        # 애드센스 심사 전에는 얇은 언어별 복제 페이지를 만들지 않는다.
+        # 다국어 독자 경험은 상단 번역 선택기로 제공하고, 검색 색인용 다국어 포스트는
+        # 전체 본문 번역 품질을 확보한 뒤 별도 생성하는 편이 안전하다.
 
     def _write_localized_post_pages(self, post: Post, alternates: dict[str, str]) -> None:
         aliases = self._search_aliases(post)
@@ -1325,19 +1323,18 @@ class StaticSiteBuilder:
         (self.public_dir / static_name).write_text(_urlset(static_entries), encoding="utf-8")
         sitemap_files.append(static_name)
 
-        for lang, _label in LANGUAGE_OPTIONS:
-            post_entries = []
-            for post in posts:
-                post_entries.append(_entry(
-                    self._page_url(self._localized_post_filename(post, lang)),
-                    post.date,
-                    "monthly",
-                    "0.7" if lang == "ko" else "0.5",
-                    self._post_alternate_urls(post),
-                ))
-            filename = f"sitemap-posts-{self._language_dir(lang)}.xml"
-            (self.public_dir / filename).write_text(_urlset(post_entries), encoding="utf-8")
-            sitemap_files.append(filename)
+        post_entries = []
+        for post in posts:
+            post_entries.append(_entry(
+                self._page_url(self._localized_post_filename(post, "ko")),
+                post.date,
+                "monthly",
+                "0.7",
+                self._post_alternate_urls(post),
+            ))
+        posts_name = "sitemap-posts-ko.xml"
+        (self.public_dir / posts_name).write_text(_urlset(post_entries), encoding="utf-8")
+        sitemap_files.append(posts_name)
 
         sitemap_index_entries = "\n".join(
             f"  <sitemap>\n"

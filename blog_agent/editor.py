@@ -42,6 +42,10 @@ GENERIC_FALLBACK_PATTERNS = [
     "공식 자료 중심으로 간단히 정리했습니다",
     "지금 확인할 포인트",
     "여러 출처의 공통 내용을 먼저 봅니다",
+    "제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다",
+    "발표 문구보다 사용자가 오늘 바꿔야 할 설정",
+    "신기능인지 장애인지 가격 변화인지",
+    "AI·클라우드 기능은 한 회사의 앱 안에서도",
 ]
 
 
@@ -170,6 +174,7 @@ BODY:
         "소개합니다",
         "지금 확인할 포인트",
         "무엇이 바뀌나",
+        "사용자가 볼 변화",
     ]
 
     @staticmethod
@@ -219,6 +224,9 @@ BODY:
                 score -= 35
                 notes.append("여행 글인데 관광 API나 구체 장소 동선이 부족합니다.")
         if draft.topic.category == "기술":
+            if self._looks_like_raw_english_title(draft.title):
+                score -= 45
+                notes.append("영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.")
             title_words = [word for word in re.split(r"\W+", draft.topic.title_hint) if len(word) >= 5]
             if title_words and not any(word in draft.body_markdown for word in title_words[:5]):
                 score -= 25
@@ -226,6 +234,12 @@ BODY:
             if re.search(r"최근 검색 수요가 꾸준히|공식 안내와 최신 공지|지역명, 연도, 모델명", draft.body_markdown):
                 score -= 35
                 notes.append("기술 글이 범용 확인 템플릿에 머물러 기사별 차이가 부족합니다.")
+            if re.search(r"제품명, 회사명, 기능 변화|이번 글에서 봐야 할 내용|해당 제품 사용자, 도입을 검토하는 기업", draft.body_markdown):
+                score -= 45
+                notes.append("기술 글이 범용 기술 뉴스 템플릿에 머물러 기사별 차이가 부족합니다.")
+            if self._has_low_information_tech_body(draft.body_markdown):
+                score -= 30
+                notes.append("기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.")
             source_blob = " ".join(
                 f"{source.title} {source.summary}" for source in draft.topic.sources
             ).lower()
@@ -245,6 +259,22 @@ BODY:
         draft.quality_score = max(0, score)
         draft.review_notes = notes
         return draft
+
+    @staticmethod
+    def _looks_like_raw_english_title(title: str) -> bool:
+        tokens = re.findall(r"[A-Za-z]{2,}", title)
+        if len(tokens) >= 4:
+            return True
+        return bool(re.search(r"\b(is|are|was|were|to|for|with|ordered|built|disabling|host)\b", title, flags=re.I))
+
+    @staticmethod
+    def _has_low_information_tech_body(body: str) -> bool:
+        headings = len(re.findall(r"^##\s+", body, flags=re.M))
+        numbers = len(re.findall(r"\d", body))
+        english_entities = len(set(re.findall(r"\b[A-Z][A-Za-z0-9]{2,}\b", body)))
+        if len(body) < 1300:
+            return True
+        return headings < 5 or (numbers < 2 and english_entities < 4)
 
     @staticmethod
     def _extract(text: str, label: str, default: str) -> str:

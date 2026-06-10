@@ -20,6 +20,34 @@ STOPWORDS = {
     "for",
     "this",
     "that",
+    "are",
+    "is",
+    "was",
+    "were",
+    "to",
+    "of",
+    "on",
+    "in",
+    "as",
+    "by",
+    "ordered",
+    "built",
+    "host",
+    "disabling",
+    "next",
+    "month",
+    "free",
+    "how",
+    "humans",
+    "react",
+    "surprises",
+    "road",
+    "congress",
+    "just",
+    "gave",
+    "tried",
+    "actually",
+    "works",
     "정부",
     "발표",
     "지원",
@@ -169,7 +197,15 @@ class TrendScout:
             return " ".join([token for token in korean_tokens[:4] if token not in STOPWORDS])
         tokens = re.findall(r"[가-힣A-Za-z0-9]{2,}", title)
         filtered = [token for token in tokens if token.lower() not in STOPWORDS]
-        return " ".join(filtered[:3]) if filtered else title[:30]
+        if not filtered:
+            return title[:30]
+        preferred = [
+            token
+            for token in filtered
+            if re.search(r"[A-Z0-9]", token) or token.lower() in {"ai", "mac", "ios"}
+        ]
+        keyword_tokens = preferred[:4] if len(preferred) >= 2 else filtered[:4]
+        return " ".join(keyword_tokens)
 
     @staticmethod
     def _published_at(entry: dict) -> datetime | None:
