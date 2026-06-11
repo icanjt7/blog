@@ -152,6 +152,8 @@ class TrendScout:
                     title = re.sub(r"\s+", " ", entry.get("title", "")).strip()
                     if not title:
                         continue
+                    if re.search(r"보도\s*(자료|참고)|참고자료", title):
+                        continue
                     keyword = self._keyword_from_title(title)
                     if keyword.lower() in seen:
                         continue

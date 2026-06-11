@@ -10,7 +10,6 @@ from .models import Draft
 
 
 PLACEHOLDER_PATTERNS = [
-    r"[가-힣]+\d+",          # 영화1, 감독1, 인물1 등
     r"\[[가-힣a-zA-Z]+명?\]", # [감독명], [영화명], [이름], [회사명]
     r"XXX|OOO|___",
     r"제목\s*[:：]\s*미정",
