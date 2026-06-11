@@ -1,0 +1,129 @@
+{
+  "run_id": "20260611-110227-5cc9dea0",
+  "topics": [
+    {
+      "keyword": "06월 월드컵",
+      "title_hint": "06월 월드컵 핵심 정리",
+      "category": "스포츠",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "FIFA 공식 대회 페이지",
+          "url": "https://www.fifa.com/",
+          "published_at": null,
+          "summary": "월드컵 일정, 명단, 공식 기록 확인용 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "06월 축구 대표팀",
+      "title_hint": "06월 축구 대표팀 핵심 정리",
+      "category": "스포츠",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "FIFA 공식 대회 페이지",
+          "url": "https://www.fifa.com/",
+          "published_at": null,
+          "summary": "월드컵 일정, 명단, 공식 기록 확인용 포털",
+          "authority": 5
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "06월 월드컵",
+        "title_hint": "06월 월드컵 핵심 정리",
+        "category": "스포츠",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "FIFA 공식 대회 페이지",
+            "url": "https://www.fifa.com/",
+            "published_at": null,
+            "summary": "월드컵 일정, 명단, 공식 기록 확인용 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "06월 월드컵, 일정과 규칙 먼저 보기",
+      "slug": "06월-월드컵-d55630bb",
+      "excerpt": "06월 월드컵를 경기 일정, 대회 구조, 관전 변수 중심으로 빠르게 정리했습니다.",
+      "body_markdown": "## 지금 보는 이유\n\n06월 월드컵는 일정과 명단이 계속 바뀌는 스포츠 주제입니다. 특히 대회 개막 시기에는 예측 글과 공식 기록이 섞여 보이기 때문에, 먼저 확정된 정보부터 잡는 편이 좋습니다.\n\n월드컵 일정, 명단, 공식 기록 확인용 포털\n\n## 먼저 볼 기본값\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 대회 구조 | 대표팀, 선수, 대회, 리그 중 무엇을 보는지 |\n| 일정 | 경기일, 엔트리 발표일, 중계 시간 |\n| 시청 | 중계 플랫폼, 유료 시청 여부, 현장 관람 비용 |\n| 변수 | 부상, 징계, 일정 변경, 기상 변수 |\n\n## 관전 포인트\n\n경기 전 정보는 발표 시점이 중요합니다. 예비 명단과 최종 명단, 평가전과 공식전, 현지 시간과 한국 시간을 구분해야 착오가 줄어듭니다.\n\n전술 전망은 해석이고, 일정과 기록은 사실입니다. 두 정보를 분리해서 보면 과장된 예상 글에 휘둘릴 가능성이 줄어듭니다.\n\n06월 월드컵를 볼 때는 우승 후보보다 조 편성, 이동 거리, 휴식일, 부상 변수를 먼저 보는 것이 좋습니다. 큰 대회일수록 이름값보다 일정 관리와 선수층이 결과를 흔드는 경우가 많습니다.\n\n## 체크리스트\n\n1. 경기 시간이 한국 시간인지 현지 시간인지 확인합니다.\n2. 조별리그와 토너먼트 규칙을 구분합니다.\n3. 최종 명단과 예비 명단을 혼동하지 않습니다.\n4. 중계 채널과 하이라이트 제공처를 미리 확인합니다.\n5. 기록은 FIFA 등 공식 페이지를 기준으로 다시 봅니다.\n\n## 참고한 곳\n\n- [FIFA 공식 대회 페이지](https://www.fifa.com/)\n",
+      "tags": [
+        "스포츠",
+        "06월",
+        "월드컵"
+      ],
+      "cover_image_path": "https://images.unsplash.com/flagged/photo-1550413231-202a9d53a331?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmb290YmFsbCUyMHN0YWRpdW0lMjBwbGF5ZXIlMjBtYXRjaCUyMGFjdGlvbnxlbnwxfDB8fHwxNzgxMTY2MzIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 월드컵, 일정과 규칙 먼저 보기 — Photo by Waldemar Brandt on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 월드컵, 일정과 규칙 먼저 보기. Keyword: 06월 월드컵. Concrete visual subject: football stadium player match action. Context: ## 지금 보는 이유 06월 월드컵는 일정과 명단이 계속 바뀌는 스포츠 주제입니다. 특히 대회 개막 시기에는 예측 글과 공식 기록이 섞여 보이기 때문에, 먼저 확정된 정보부터 잡는 편이 좋습니다. 월드컵 일정, 명단, 공식 기록 확인용 포털 ## 먼저 볼 기본값 | 항목 | 확인할 내용 | | --- | --- | | 대회 구조 | 대표팀, 선수, 대회, 리그 중 무엇을 보는지 | | 일정 | 경기일, 엔트리 발표일, 중계 시간 | | 시청 | 중계 플랫폼, 유료 시청 여부, 현장 관람 비용 | | 변수 | 부상, 징계, 일정 변경, 기상 변수 | ## 관전 포인트 경기 전 정보는 발표 시점이 중요합니다. 예비 명단과 최종 명단, 평가전과 공식전, 현지 시간과 한국 시간을 구분해야 착오가 줄어듭니다. 전술 전망은 해석이고, 일정과 기록은 사실입니다. 두 정보를 분리해서 보면 과장된 예상 글에 휘둘릴 가능성이 줄어듭니다. 06월 월드컵를 볼 때는 우승 후보보다 조 편성, 이동 거리, 휴식일, 부상 변수를 먼저 보는 것이 좋습니다. 큰 대회일수록 이름값보다 일정 관리와 선수층이 결과를 흔드는 경우가 많습니다. ## 체크리스트 1. 경기 시간이 한국 시간인지 현지 시간인지 확인합니다. 2. 조별리그와 토너먼트 규칙을 구분합니다. 3. 최종 명단과 예비 명단을 혼동하지 않습니다. 4. 중계 채널과 하이라이트 제공처를 미리 확인합니다. 5. . Visual mood: clean editorial news briefing. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-11T11:06:14.738611",
+      "quality_score": 85.0,
+      "review_notes": [
+        "본문 길이가 짧습니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 축구 대표팀",
+        "title_hint": "06월 축구 대표팀 핵심 정리",
+        "category": "스포츠",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "FIFA 공식 대회 페이지",
+            "url": "https://www.fifa.com/",
+            "published_at": null,
+            "summary": "월드컵 일정, 명단, 공식 기록 확인용 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "06월 축구 대표팀, 일정과 규칙 먼저 보기",
+      "slug": "06월-축구-대표팀-4256814b",
+      "excerpt": "06월 축구 대표팀를 경기 일정, 대회 구조, 관전 변수 중심으로 빠르게 정리했습니다.",
+      "body_markdown": "## 지금 보는 이유\n\n06월 축구 대표팀는 일정과 명단이 계속 바뀌는 스포츠 주제입니다. 특히 대회 개막 시기에는 예측 글과 공식 기록이 섞여 보이기 때문에, 먼저 확정된 정보부터 잡는 편이 좋습니다.\n\n월드컵 일정, 명단, 공식 기록 확인용 포털\n\n## 먼저 볼 기본값\n\n| 항목 | 확인할 내용 |\n| --- | --- |\n| 대회 구조 | 대표팀, 선수, 대회, 리그 중 무엇을 보는지 |\n| 일정 | 경기일, 엔트리 발표일, 중계 시간 |\n| 시청 | 중계 플랫폼, 유료 시청 여부, 현장 관람 비용 |\n| 변수 | 부상, 징계, 일정 변경, 기상 변수 |\n\n## 관전 포인트\n\n경기 전 정보는 발표 시점이 중요합니다. 예비 명단과 최종 명단, 평가전과 공식전, 현지 시간과 한국 시간을 구분해야 착오가 줄어듭니다.\n\n전술 전망은 해석이고, 일정과 기록은 사실입니다. 두 정보를 분리해서 보면 과장된 예상 글에 휘둘릴 가능성이 줄어듭니다.\n\n06월 축구 대표팀를 볼 때는 우승 후보보다 조 편성, 이동 거리, 휴식일, 부상 변수를 먼저 보는 것이 좋습니다. 큰 대회일수록 이름값보다 일정 관리와 선수층이 결과를 흔드는 경우가 많습니다.\n\n## 체크리스트\n\n1. 경기 시간이 한국 시간인지 현지 시간인지 확인합니다.\n2. 조별리그와 토너먼트 규칙을 구분합니다.\n3. 최종 명단과 예비 명단을 혼동하지 않습니다.\n4. 중계 채널과 하이라이트 제공처를 미리 확인합니다.\n5. 기록은 FIFA 등 공식 페이지를 기준으로 다시 봅니다.\n\n## 참고한 곳\n\n- [FIFA 공식 대회 페이지](https://www.fifa.com/)\n",
+      "tags": [
+        "스포츠",
+        "06월",
+        "축구",
+        "대표팀"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxmb290YmFsbCUyMHN0YWRpdW0lMjBwbGF5ZXIlMjBtYXRjaCUyMGFjdGlvbnxlbnwxfDB8fHwxNzgxMTY2MzIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 축구 대표팀, 일정과 규칙 먼저 보기 — Photo by Vienna Reyes on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 축구 대표팀, 일정과 규칙 먼저 보기. Keyword: 06월 축구 대표팀. Concrete visual subject: football stadium player match action. Context: ## 지금 보는 이유 06월 축구 대표팀는 일정과 명단이 계속 바뀌는 스포츠 주제입니다. 특히 대회 개막 시기에는 예측 글과 공식 기록이 섞여 보이기 때문에, 먼저 확정된 정보부터 잡는 편이 좋습니다. 월드컵 일정, 명단, 공식 기록 확인용 포털 ## 먼저 볼 기본값 | 항목 | 확인할 내용 | | --- | --- | | 대회 구조 | 대표팀, 선수, 대회, 리그 중 무엇을 보는지 | | 일정 | 경기일, 엔트리 발표일, 중계 시간 | | 시청 | 중계 플랫폼, 유료 시청 여부, 현장 관람 비용 | | 변수 | 부상, 징계, 일정 변경, 기상 변수 | ## 관전 포인트 경기 전 정보는 발표 시점이 중요합니다. 예비 명단과 최종 명단, 평가전과 공식전, 현지 시간과 한국 시간을 구분해야 착오가 줄어듭니다. 전술 전망은 해석이고, 일정과 기록은 사실입니다. 두 정보를 분리해서 보면 과장된 예상 글에 휘둘릴 가능성이 줄어듭니다. 06월 축구 대표팀를 볼 때는 우승 후보보다 조 편성, 이동 거리, 휴식일, 부상 변수를 먼저 보는 것이 좋습니다. 큰 대회일수록 이름값보다 일정 관리와 선수층이 결과를 흔드는 경우가 많습니다. ## 체크리스트 1. 경기 시간이 한국 시간인지 현지 시간인지 확인합니다. 2. 조별리그와 토너먼트 규칙을 구분합니다. 3. 최종 명단과 예비 명단을 혼동하지 않습니다. 4. 중계 채널과 하이라이트 제공처를 미리 확인합니. Visual mood: clean editorial news briefing. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-11T11:06:23.882285",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-월드컵-d55630bb.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-축구-대표팀-4256814b.md",
+      "message": "draft saved"
+    }
+  ]
+}
