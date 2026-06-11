@@ -65,9 +65,10 @@ jobs:
           TOURAPI_BASE_YM: ${{ vars.TOURAPI_BASE_YM || '202503' }}
           # Blog settings
           BLOG_POST_COUNT: "2"
-          BLOG_CANDIDATE_MULTIPLIER: ${{ vars.BLOG_CANDIDATE_MULTIPLIER || '2' }}
-          BLOG_MAX_CANDIDATES: ${{ vars.BLOG_MAX_CANDIDATES || '5' }}
-          LLM_TIMEOUT_SECONDS: ${{ vars.LLM_TIMEOUT_SECONDS || '16' }}
+          BLOG_CANDIDATE_MULTIPLIER: ${{ vars.BLOG_CANDIDATE_MULTIPLIER || '1' }}
+          BLOG_MAX_CANDIDATES: ${{ vars.BLOG_MAX_CANDIDATES || '2' }}
+          BLOG_LLM_PROVIDER_LIMIT: ${{ vars.BLOG_LLM_PROVIDER_LIMIT || '2' }}
+          LLM_TIMEOUT_SECONDS: ${{ vars.LLM_TIMEOUT_SECONDS || '10' }}
           ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
           ENABLE_IMAGE_GENERATION: ${{ vars.ENABLE_IMAGE_GENERATION || 'false' }}
           PUBLISHER: ${{ vars.PUBLISHER || 'markdown' }}

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 import re
 
 from openai import OpenAI
@@ -60,7 +61,10 @@ class SeoEditorAgent:
 
     def _init_client(self, s: Settings) -> None:
         timeout = s.llm_timeout_seconds
+        provider_limit = self._env_int("BLOG_LLM_PROVIDER_LIMIT", 0)
         def add(client: OpenAI, model: str) -> None:
+            if provider_limit and len(self._providers) >= provider_limit:
+                return
             self._providers.append((client, model))
             if self.client is None:
                 self.client = client
@@ -305,3 +309,10 @@ BODY:
         pattern = rf"{label}:\s*(.*?)(?=\n[A-Z]+:|\Z)"
         match = re.search(pattern, text, flags=re.S)
         return match.group(1).strip() if match else default
+
+    @staticmethod
+    def _env_int(name: str, default: int) -> int:
+        try:
+            return max(0, int(os.getenv(name, str(default))))
+        except ValueError:
+            return max(0, default)

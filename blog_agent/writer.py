@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import os
 import re
 from datetime import datetime
 
@@ -64,7 +65,10 @@ class WriterAgent:
     def _init_client(self) -> None:
         s = self.settings
         timeout = s.llm_timeout_seconds
+        provider_limit = self._env_int("BLOG_LLM_PROVIDER_LIMIT", 0)
         def add(client: OpenAI, model: str) -> None:
+            if provider_limit and len(self._providers) >= provider_limit:
+                return
             self._providers.append((client, model))
             if self._client is None:
                 self._client = client
@@ -754,6 +758,13 @@ BODY:
         if len(cleaned) <= 280:
             return cleaned
         return cleaned[:280].rsplit(" ", 1)[0] + "..."
+
+    @staticmethod
+    def _env_int(name: str, default: int) -> int:
+        try:
+            return max(0, int(os.getenv(name, str(default))))
+        except ValueError:
+            return max(0, default)
 
     def _write_tourism_fallback(self, topic: Topic) -> Draft:
         source_lines = "\n".join(f"- [{s.title}]({s.url})" for s in topic.sources)
