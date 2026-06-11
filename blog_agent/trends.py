@@ -71,7 +71,11 @@ CATEGORY_SEEDS = {
     "기술": ["AI", "아이폰", "갤럭시", "노트북", "스펙", "비교"],
     "정책": ["금리", "환율", "부동산", "대출", "연금", "세금"],
     "정치": ["지방선거", "당선인 공약", "선거 결과", "국회", "정당"],
-    "스포츠": ["월드컵", "축구 대표팀", "경기 일정", "선수 명단", "전술 분석"],
+    "스포츠": [
+        "2026 월드컵 48개국 일정",
+        "한국 축구 대표팀 월드컵 일정",
+        "2026 월드컵 조별리그 관전법",
+    ],
     "핫이슈": [
         "서울 맛집",
         "부산 여행",
@@ -110,6 +114,7 @@ class TrendScout:
         category_counts: Counter[str] = Counter()
         deferred: list[Topic] = []
         max_per_category = self._env_int("BLOG_MAX_PER_CATEGORY_PER_RUN", 1, minimum=1)
+        strict_category_diversity = os.getenv("BLOG_STRICT_CATEGORY_DIVERSITY", "true").lower() == "true"
         for topic in ranked:
             key = self._topic_key(topic.keyword)
             if self._is_seen_topic(topic.keyword, used) or self._is_seen_topic(topic.keyword, seen):
@@ -122,6 +127,8 @@ class TrendScout:
             unique.append(topic)
             if len(unique) >= limit:
                 break
+        if strict_category_diversity:
+            return unique
         for topic in deferred:
             if len(unique) >= limit:
                 break
@@ -200,7 +207,8 @@ class TrendScout:
             if category == "스포츠" and os.getenv("ENABLE_SPORTS_SEEDS", "false").lower() != "true":
                 continue
             for seed in seeds:
-                counter[(category, f"{month} {seed}")] += 1
+                keyword = seed if category == "스포츠" else f"{month} {seed}"
+                counter[(category, keyword)] += 1
         return [
             Topic(
                 keyword=keyword,
