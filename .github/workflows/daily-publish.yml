@@ -76,7 +76,7 @@ jobs:
           WORDPRESS_URL: ${{ secrets.WORDPRESS_URL }}
           WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
           WORDPRESS_APP_PASSWORD: ${{ secrets.WORDPRESS_APP_PASSWORD }}
-        run: python -m blog_agent.cli run --min-quality 85 --require-publish-success
+        run: python -m blog_agent.cli run --min-quality 90 --require-publish-success
 
       - name: Re-fetch missing cover images
         env:

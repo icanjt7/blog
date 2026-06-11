@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 from collections import Counter
 from datetime import datetime, timedelta
@@ -195,6 +196,8 @@ class TrendScout:
         month = datetime.now().strftime("%m월")
         counter = Counter()
         for category, seeds in CATEGORY_SEEDS.items():
+            if category == "스포츠" and os.getenv("ENABLE_SPORTS_SEEDS", "false").lower() != "true":
+                continue
             for seed in seeds:
                 counter[(category, f"{month} {seed}")] += 1
         return [
