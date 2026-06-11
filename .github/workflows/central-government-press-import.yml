@@ -104,12 +104,12 @@ jobs:
       - name: Import central government press releases
         if: ${{ inputs.improve_existing_only != 'true' }}
         env:
-          INPUT_PER_AGENCY: ${{ inputs.per_agency || '2' }}
-          INPUT_SCAN_PAGES: ${{ inputs.scan_pages || '20' }}
+          INPUT_PER_AGENCY: ${{ inputs.per_agency || '1' }}
+          INPUT_SCAN_PAGES: ${{ inputs.scan_pages || '6' }}
           INPUT_AGENCIES: ${{ inputs.agencies || '' }}
           INPUT_SECTIONS: ${{ inputs.sections || '' }}
-          INPUT_MAX_AGENCIES: ${{ inputs.max_agencies || '0' }}
-          INPUT_MAX_TOTAL_POSTS: ${{ inputs.max_total_posts || '0' }}
+          INPUT_MAX_AGENCIES: ${{ inputs.max_agencies || '18' }}
+          INPUT_MAX_TOTAL_POSTS: ${{ inputs.max_total_posts || '18' }}
           INPUT_BATCH_COUNT: ${{ inputs.batch_count || '1' }}
           INPUT_START_DATE: ${{ inputs.start_date || '2025-01-01' }}
           INPUT_END_DATE: ${{ inputs.end_date || '' }}
@@ -184,7 +184,7 @@ jobs:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
-        run: python scripts/improve_existing_images.py --tag 보도기사 --limit 350
+        run: python scripts/improve_existing_images.py --tag 보도기사 --limit 80
 
       - name: Build static site
         if: ${{ inputs.dry_run != 'true' }}

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass
 
 from .config import Settings
@@ -37,8 +38,11 @@ class BlogPipeline:
 
     def run(self, count: int = 5, dry_run: bool = False, min_quality: float = 65) -> PipelineResult:
         run_id = self.store.new_run(count=count, dry_run=dry_run, publisher=self.settings.publisher)
-        # 여유분 포함해서 스카우트 — 품질 미달 시 다음 주제로 넘어가기 위해
-        candidate_limit = count * 3
+        # 여유분 포함해서 스카우트. 예약 실행에서는 외부 API/LLM 지연이 누적되지 않도록
+        # 환경변수로 후보 수를 제한한다.
+        multiplier = self._env_int("BLOG_CANDIDATE_MULTIPLIER", 3, minimum=1)
+        max_candidates = max(count, self._env_int("BLOG_MAX_CANDIDATES", count * multiplier, minimum=count))
+        candidate_limit = min(count * multiplier, max_candidates)
         topics = self.scout.scout(limit=candidate_limit)
         topics = self._prioritize_api_topic(topics, count)
         self.store.add_event(
@@ -134,3 +138,10 @@ class BlogPipeline:
                 or tourapi.is_pet_tourism_topic(topic)
             )
         )
+
+    @staticmethod
+    def _env_int(name: str, default: int, minimum: int = 0) -> int:
+        try:
+            return max(minimum, int(os.getenv(name, str(default))))
+        except ValueError:
+            return max(minimum, default)

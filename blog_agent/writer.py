@@ -62,47 +62,48 @@ class WriterAgent:
 
     def _init_client(self) -> None:
         s = self.settings
+        timeout = s.llm_timeout_seconds
         if s.motif_api_key:
             self._client = OpenAI(
                 api_key=s.motif_api_key,
                 base_url=s.motif_base_url,
-                timeout=45,
-                max_retries=1,
+                timeout=timeout,
+                max_retries=0,
             )
             self._model = s.motif_model
         elif s.groq_api_key:
             self._client = OpenAI(
                 api_key=s.groq_api_key,
                 base_url="https://api.groq.com/openai/v1",
-                timeout=45,
-                max_retries=1,
+                timeout=timeout,
+                max_retries=0,
             )
             self._model = s.groq_model
         elif s.gemini_api_key:
             self._client = OpenAI(
                 api_key=s.gemini_api_key,
                 base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-                timeout=45,
-                max_retries=1,
+                timeout=timeout,
+                max_retries=0,
             )
             self._model = s.gemini_model
         elif s.openrouter_api_key:
             self._client = OpenAI(
                 api_key=s.openrouter_api_key,
                 base_url="https://openrouter.ai/api/v1",
-                timeout=60,
-                max_retries=1,
+                timeout=timeout,
+                max_retries=0,
             )
             self._model = s.openrouter_model
         elif s.openai_api_key:
-            self._client = OpenAI(api_key=s.openai_api_key, timeout=45, max_retries=1)
+            self._client = OpenAI(api_key=s.openai_api_key, timeout=timeout, max_retries=0)
             self._model = s.openai_model
         elif s.github_token:
             self._client = OpenAI(
                 api_key=s.github_token,
                 base_url="https://models.inference.ai.azure.com",
-                timeout=45,
-                max_retries=1,
+                timeout=timeout,
+                max_retries=0,
             )
             self._model = s.github_model
 

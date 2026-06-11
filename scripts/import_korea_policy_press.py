@@ -38,7 +38,7 @@ from blog_agent.images import ImageAgent  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://www.korea.kr"
 LIST_URL = f"{BASE}/briefing/pressReleaseList.do"
-TIMEOUT = 45
+TIMEOUT = 20
 USER_AGENT = "Mozilla/5.0 (compatible; BriefWaveKoreaPolicyImporter/1.0)"
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": USER_AGENT})
@@ -59,6 +59,24 @@ class Agency:
     section: str
 
 
+FALLBACK_AGENCIES = (
+    Agency("A00001", "고용노동부", "부처"),
+    Agency("A00002", "교육부", "부처"),
+    Agency("A00004", "국무조정실", "부처"),
+    Agency("A00005", "국방부", "부처"),
+    Agency("A00006", "국토교통부", "부처"),
+    Agency("A00009", "문화체육관광부", "부처"),
+    Agency("A00012", "보건복지부", "부처"),
+    Agency("A00013", "성평등가족부", "부처"),
+    Agency("A00033", "과학기술정보통신부", "부처"),
+    Agency("A00038", "국가데이터처", "부처"),
+    Agency("A00039", "지식재산처", "부처"),
+    Agency("B00022", "소방청", "청"),
+    Agency("B00023", "질병관리청", "청"),
+    Agency("C00012", "원자력안전위원회", "위원회"),
+)
+
+
 @dataclass(frozen=True)
 class ListItem:
     title: str
@@ -70,7 +88,7 @@ class ListItem:
 
 def request(url: str, *, params: dict[str, str] | None = None) -> str:
     last_error: Exception | None = None
-    for attempt in range(6):
+    for attempt in range(3):
         try:
             resp = SESSION.get(url, params=params, timeout=TIMEOUT)
             resp.raise_for_status()
@@ -78,8 +96,8 @@ def request(url: str, *, params: dict[str, str] | None = None) -> str:
             return resp.text
         except requests.RequestException as exc:
             last_error = exc
-            if attempt < 5:
-                time.sleep(2.0 * (attempt + 1))
+            if attempt < 2:
+                time.sleep(1.5 * (attempt + 1))
     raise RuntimeError(f"request failed: {url}") from last_error
 
 
@@ -124,7 +142,15 @@ def extract_agencies(page: str) -> list[Agency]:
 
 
 def list_agencies() -> list[Agency]:
-    return extract_agencies(request(LIST_URL))
+    try:
+        agencies = extract_agencies(request(LIST_URL))
+    except Exception as exc:
+        print(f"기관 목록 수집 실패, fallback 기관 목록으로 진행합니다: {exc}")
+        return list(FALLBACK_AGENCIES)
+    if not agencies:
+        print("기관 목록을 찾지 못해 fallback 기관 목록으로 진행합니다.")
+        return list(FALLBACK_AGENCIES)
+    return agencies
 
 
 def _extract_list_items(page: str, agency_name: str) -> list[ListItem]:
