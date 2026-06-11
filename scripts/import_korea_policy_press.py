@@ -25,6 +25,8 @@ from import_press_releases import (  # noqa: E402
     POSTS_DIR,
     PressRelease,
     clean_text,
+    _enrich_release,
+    _init_writer,
     extract_hwpx_text,
     first_image,
     get_og_image,
@@ -287,12 +289,14 @@ def main() -> None:
     parser.add_argument("--max-total-posts", type=int, default=0, help="이번 실행에서 저장할 전체 최대 글 수, 0이면 제한 없음")
     parser.add_argument("--new-only", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--rewrite-titles", action="store_true", help="LLM으로 제목과 본문 품질을 보강")
     args = parser.parse_args()
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
     settings = load_settings()
     settings.enable_image_generation = False
     image_agent = ImageAgent(settings)
+    writer = _init_writer(args.rewrite_titles)
     agencies = list_agencies()
     if args.sections:
         wanted_sections = {section.lower() for section in args.sections}
@@ -347,6 +351,8 @@ def main() -> None:
                 continue
             try:
                 release = release_from_item(item)
+                if writer:
+                    _enrich_release(release, writer)
                 prefix = prefix_for(agency)
                 if args.dry_run:
                     print(f"  ? {release.date} {release.title[:60]}")

@@ -520,6 +520,33 @@ def _call_llm(writer: "WriterAgent", prompt: str,
         return ""
 
 
+WEAK_ARTICLE_MARKERS = (
+    "이번 보도자료의 핵심은",
+    "발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다",
+    "원문 보도자료에는 일정, 참여 대상, 추진 배경 등 세부 정보가 함께 안내되어 있습니다",
+)
+
+
+def needs_llm_enrichment(text: str) -> bool:
+    cleaned = clean_text(text)
+    if len(cleaned) < 900:
+        return True
+    return any(marker in cleaned for marker in WEAK_ARTICLE_MARKERS)
+
+
+def _similar_text(a: str, b: str) -> bool:
+    a_tokens = set(re.findall(r"[가-힣A-Za-z0-9]{2,}", clean_text(a).lower()))
+    b_tokens = set(re.findall(r"[가-힣A-Za-z0-9]{2,}", clean_text(b).lower()))
+    if not a_tokens or not b_tokens:
+        return False
+    overlap = len(a_tokens & b_tokens) / min(len(a_tokens), len(b_tokens))
+    return overlap >= 0.72
+
+
+def _already_used(candidate: str, used: set[str]) -> bool:
+    return any(candidate == item or _similar_text(candidate, item) for item in used)
+
+
 def generate_article_from_source(release: "PressRelease", writer: "WriterAgent") -> str:
     """HWPX에서 추출한 원문 텍스트를 LLM으로 기사화한다."""
     if not release.body_text:
@@ -531,11 +558,13 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
 {release.body_text[:3000]}
 
 [작성 규칙]
-- 본문 1,200~1,600자 (한국어)
+- 본문 1,400~1,900자 (한국어)
 - 독자에게 중요한 수치·날짜·대상을 구체적으로 포함
-- 마크다운 헤딩(##)으로 2~3개 섹션 구성
+- 마크다운 헤딩(##)으로 3~4개 섹션 구성
 - '~입니다', '~합니다' 정중체 사용
-- 마지막 문단: 독자 행동 안내나 원문 확인 경로 안내
+- 제목을 반복하는 "이번 보도자료의 핵심은..." 문장 금지
+- 원문에서 확인한 장소, 참여 기관, 대상, 일정, 수치가 있으면 반드시 반영
+- 마지막 문단: 독자가 다음에 확인할 행동이나 원문 확인 경로 안내
 - 자료 출처 기관: {release.institution}
 - 원문 URL: {release.url}
 
@@ -564,11 +593,44 @@ def rewrite_title(original: str, body_text: str, writer: "WriterAgent") -> str:
 
 def make_article_body(release: PressRelease) -> str:
     clean_title = re.sub(r"\(\d{6}\)\s*$", "", release.title).strip()
-    sentences = [shorten(s) for s in extract_sentences(release.body_text)]
+    clean_title = re.sub(r"^\[(?:보도자료|보도참고|참고|설명자료)\]\s*", "", clean_title).strip()
+    sentences = [
+        shorten(re.sub(r"^[\-–—ㆍ·•○ㅇ◇□■▪▶※>\s]+", "", s), 300)
+        for s in extract_sentences(release.body_text)
+    ]
+    sentences = [
+        s
+        for s in sentences
+        if len(clean_text(s)) > 24
+        and "자세한 내용은" not in s
+        and "자료제공" not in s
+        and not s.startswith("문의")
+    ]
     detail_lines = extract_detail_lines(release.body_text)
-    summary = f"이번 보도자료의 핵심은 '{clean_title}'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다."
-    points = sentences[1:4] or sentences[:3]
-    details = sentences[4:6]
+    lead = sentences[0] if sentences else f"{release.institution}이 {release.date} '{clean_title}' 관련 보도자료를 공개했습니다."
+    points = sentences[1:5] or sentences[:4]
+    used_sentences = {lead, *points}
+    details = [s for s in sentences[5:12] if not _already_used(s, used_sentences)][:3]
+
+    fact_candidates = re.findall(
+        r"[^.\n]*(?:\d+(?:\.\d+)?\s*(?:개|건|명|곳|회|억|조|%|원|년|월|일)|"
+        r"\d{1,2}\.\d{1,2}\.|"
+        r"전국|대구|서울|부산|전북|전주|벨기에|유럽연합|EU|IMEC|AI|반도체|양자)[^.\n]*",
+        release.body_text,
+        flags=re.I,
+    )
+    facts = []
+    for item in fact_candidates:
+        value = shorten(re.sub(r"^[\-–—ㆍ·•○ㅇ◇□■▪▶※>\s]+", "", clean_text(item)), 220)
+        if (
+            len(value) > 20
+            and value not in facts
+            and not _already_used(value, used_sentences)
+            and "자료제공" not in value
+        ):
+            facts.append(value)
+        if len(facts) >= 5:
+            break
 
     bullets = "\n".join(f"- {s}" for s in points)
     if not bullets and detail_lines:
@@ -586,29 +648,54 @@ def make_article_body(release: PressRelease) -> str:
             if len(clean_text(line)) > 25
         ]
         detail = "\n\n".join(paragraphs[2:4] or paragraphs[:2])
-    if not detail:
-        detail = (
-            "원문 보도자료에는 일정, 참여 대상, 추진 배경 등 세부 정보가 함께 안내되어 있습니다. "
-            "관심 있는 독자는 원문에서 최신 공지와 첨부 자료를 함께 확인하는 것이 좋습니다."
+    fact_block = "\n".join(f"- {fact}" for fact in facts)
+    if not fact_block:
+        fact_block = (
+            f"- 발표 기관: {release.institution}\n"
+            f"- 발표일: {release.date}\n"
+            f"- 확인할 원문: {clean_title}"
         )
 
     sections = [
         (
-            f"{with_particle(release.institution, '이', '가')} {release.date} 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. "
-            "원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다."
+            f"{with_particle(release.institution, '이', '가')} {release.date} 공개한 자료를 바탕으로 "
+            f"{clean_title}의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다."
         ),
-        "## 한눈에 보기",
-        summary,
-        "## 핵심 포인트",
+        "## 무엇을 발표했나",
+        lead,
+        "## 핵심 내용",
         bullets,
-        "## 더 살펴볼 내용",
+        "## 숫자와 현장 정보",
+        fact_block,
+        "## 배경과 의미",
         detail,
-        "## 확인 메모",
-        f"- 발표 기관: {release.institution}\n- 발표일: {release.date}\n- 자료 성격: 기관 보도자료 기반 브리핑",
+        "## 독자가 확인할 점",
+        (
+            "- 적용 대상과 시행 시점이 내 상황과 맞는지 확인합니다.\n"
+            "- 보도자료에 나온 수치와 장소는 후속 공지에서 바뀔 수 있으므로 원문을 함께 봅니다.\n"
+            "- 신청, 참여, 방문이 필요한 사안이면 담당 기관 안내와 연락처를 다시 확인합니다."
+        ),
         "## 원문",
         f"- [{release.institution} 보도자료]({release.url})",
     ]
     return "\n\n".join(sections).strip() + "\n"
+
+
+def estimate_article_quality(body: str) -> float:
+    cleaned = clean_text(body)
+    score = 70.0
+    if len(cleaned) >= 900:
+        score += 8
+    if len(cleaned) >= 1300:
+        score += 5
+    if len(re.findall(r"^##\s+", body, flags=re.M)) >= 4:
+        score += 5
+    if re.search(r"\d", cleaned):
+        score += 5
+    if re.search(r"대상|시행|기간|장소|기관|신청|참여|확인", cleaned):
+        score += 4
+    score -= 8 * sum(1 for marker in WEAK_ARTICLE_MARKERS if marker in cleaned)
+    return max(50.0, min(96.0, score))
 
 
 def _excerpt(text: str, limit: int = 180) -> str:
@@ -728,6 +815,8 @@ def write_post(
     )
     cover_line = f"cover_image: {yaml_quote(img)}\n" if img else ""
     alt = preserved_alt or release.image_alt or searched_alt or f"{release.title} 관련 보도자료 이미지"
+    article_body = make_article_body(release)
+    quality_score = estimate_article_quality(article_body)
     frontmatter = (
         "---\n"
         f"title: {yaml_quote(title)}\n"
@@ -735,13 +824,13 @@ def write_post(
         f"category: {yaml_quote(category)}\n"
         "tags:\n"
         + "".join(f"  - {yaml_quote(t)}\n" for t in tags)
-        + "quality_score: 90.0\n"
+        + f"quality_score: {quality_score:.1f}\n"
         + cover_line
         + f"cover_image_alt: {yaml_quote(alt)}\n"
         + f"author: {yaml_quote(release.institution)}\n"
         + "---\n\n"
     )
-    path.write_text(frontmatter + make_article_body(release), encoding="utf-8")
+    path.write_text(frontmatter + article_body, encoding="utf-8")
     return path
 
 
@@ -1131,7 +1220,7 @@ def _init_image_agent(enabled: bool) -> ImageAgent | None:
 
 def _enrich_release(release: PressRelease, writer: "WriterAgent") -> None:
     """LLM으로 본문 보강 + 제목 재작성 (in-place)."""
-    if len(release.body_text) < 300:
+    if needs_llm_enrichment(release.body_text):
         generated = generate_article_from_source(release, writer)
         if generated:
             release.body_text = generated

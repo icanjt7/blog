@@ -54,6 +54,15 @@ STOPWORDS = {
     "지원",
     "관련",
     "안내",
+    "단호히",
+    "성과",
+    "가능",
+    "대응",
+    "써도",
+    "하반기",
+    "확대",
+    "시행",
+    "올",
 }
 
 CATEGORY_SEEDS = {
@@ -100,8 +109,8 @@ class TrendScout:
         category_counts: Counter[str] = Counter()
         deferred: list[Topic] = []
         for topic in ranked:
-            key = topic.keyword.lower()
-            if key in used or key in seen:
+            key = self._topic_key(topic.keyword)
+            if self._is_seen_topic(topic.keyword, used) or self._is_seen_topic(topic.keyword, seen):
                 continue
             if category_counts[topic.category] >= 2:
                 deferred.append(topic)
@@ -114,8 +123,8 @@ class TrendScout:
         for topic in deferred:
             if len(unique) >= limit:
                 break
-            key = topic.keyword.lower()
-            if key in used or key in seen:
+            key = self._topic_key(topic.keyword)
+            if self._is_seen_topic(topic.keyword, used) or self._is_seen_topic(topic.keyword, seen):
                 continue
             used.add(key)
             unique.append(topic)
@@ -124,14 +133,14 @@ class TrendScout:
     def remember(self, topics: list[Topic]) -> None:
         path = self.state_dir / "published_keywords.json"
         seen = self._load_seen_keywords()
-        seen.update(topic.keyword.lower() for topic in topics)
+        seen.update(self._topic_key(topic.keyword) for topic in topics)
         path.write_text(json.dumps(sorted(seen), ensure_ascii=False, indent=2), encoding="utf-8")
 
     def _load_seen_keywords(self) -> set[str]:
         path = self.state_dir / "published_keywords.json"
         if not path.exists():
             return set()
-        return set(json.loads(path.read_text(encoding="utf-8")))
+        return {self._topic_key(keyword) for keyword in json.loads(path.read_text(encoding="utf-8"))}
 
     def _topics_from_rss(self, seen: set[str]) -> list[Topic]:
         config = yaml.safe_load(self.source_file.read_text(encoding="utf-8"))
@@ -155,16 +164,17 @@ class TrendScout:
                     if re.search(r"보도\s*(자료|참고)|참고자료", title):
                         continue
                     keyword = self._keyword_from_title(title)
-                    if keyword.lower() in seen:
+                    if self._is_seen_topic(keyword, seen):
                         continue
                     published = self._published_at(entry)
                     recency = self._recency_score(published)
                     language_fit = 20 if re.search(r"[가-힣]", title) else -20
+                    refined_category = self._refine_category(category, title, rss_url)
                     topics.append(
                         Topic(
                             keyword=keyword,
                             title_hint=title,
-                            category=category,
+                            category=refined_category,
                             trend_score=55 + recency + language_fit,
                             competition_score=0.35,
                             rationale="RSS 신규성과 공식/전문 매체 출처 기반",
@@ -197,14 +207,29 @@ class TrendScout:
                 rationale="월별 반복 검색 수요가 있는 evergreen 키워드",
             )
             for (category, keyword), score in counter.items()
-            if keyword.lower() not in seen
+            if not self._is_seen_topic(keyword, seen)
         ]
 
     @staticmethod
     def _keyword_from_title(title: str) -> str:
+        quoted_terms = [
+            re.sub(r"\s+", " ", term).strip(" '\"‘’“”")
+            for term in re.findall(r"['‘’“\"]([^'‘’“\"]{2,})['‘’“\"]", title)
+        ]
+        quoted_terms = [
+            term
+            for term in quoted_terms
+            if re.search(r"[가-힣A-Za-z0-9]", term) and not re.search(r"자료제공|문의", term)
+        ]
         korean_tokens = re.findall(r"[가-힣]{2,}", title)
         if korean_tokens:
-            return " ".join([token for token in korean_tokens[:4] if token not in STOPWORDS])
+            filtered = [TrendScout._normalize_korean_token(token) for token in korean_tokens]
+            filtered = [token for token in filtered if token and token not in STOPWORDS]
+            if quoted_terms:
+                quoted = TrendScout._normalize_korean_token(quoted_terms[0])
+                rest = [token for token in filtered if token not in quoted]
+                return " ".join([quoted, *rest[:3]]).strip() or title[:30]
+            return " ".join(filtered[:4]) or title[:30]
         tokens = re.findall(r"[가-힣A-Za-z0-9]{2,}", title)
         filtered = [token for token in tokens if token.lower() not in STOPWORDS]
         if not filtered:
@@ -216,6 +241,52 @@ class TrendScout:
         ]
         keyword_tokens = preferred[:4] if len(preferred) >= 2 else filtered[:4]
         return " ".join(keyword_tokens)
+
+    @staticmethod
+    def _normalize_korean_token(token: str) -> str:
+        if len(token) >= 3 and token[-1] in "이가은는을를":
+            return token[:-1]
+        return token
+
+    @classmethod
+    def _topic_key(cls, value: str) -> str:
+        tokens = re.findall(r"[가-힣A-Za-z0-9]{2,}", value.lower())
+        normalized = [
+            cls._normalize_korean_token(token)
+            for token in tokens
+            if token and token not in STOPWORDS
+        ]
+        return " ".join(normalized) or value.lower().strip()
+
+    @classmethod
+    def _is_seen_topic(cls, value: str, seen: set[str]) -> bool:
+        key = cls._topic_key(value)
+        if key in seen:
+            return True
+        tokens = set(key.split())
+        if len(tokens) < 3:
+            return False
+        for prior in seen:
+            prior_tokens = set(prior.split())
+            if len(prior_tokens) < 3:
+                continue
+            overlap = tokens & prior_tokens
+            if len(overlap) >= 3 and len(overlap) / min(len(tokens), len(prior_tokens)) >= 0.75:
+                return True
+        return False
+
+    @staticmethod
+    def _refine_category(category: str, title: str, rss_url: str) -> str:
+        text = f"{title} {rss_url}"
+        if re.search(r"AI|인공지능|로봇|스마트건설|반도체|소프트웨어|클라우드|데이터|디지털|모빌리티", text, re.IGNORECASE):
+            return "기술"
+        if re.search(r"국세청|탈세|체납|세금|금융|예금|금리|대출|부동산|재정|경제|공정위|관세", text):
+            return "정책"
+        if re.search(r"월드컵|축구|야구|농구|경기|대표팀|선수|리그", text):
+            return "스포츠"
+        if re.search(r"여권|신분증|신청|복지|건강|안전|청년|가족|주거|교육", text):
+            return "생활"
+        return category
 
     @staticmethod
     def _published_at(entry: dict) -> datetime | None:

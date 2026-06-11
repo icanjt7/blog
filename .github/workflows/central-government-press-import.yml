@@ -115,6 +115,19 @@ jobs:
           INPUT_END_DATE: ${{ inputs.end_date || '' }}
           INPUT_NEW_ONLY: ${{ inputs.new_only || 'true' }}
           INPUT_DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
+          MOTIF_API: ${{ secrets.MOTIF_API }}
+          MOTIF_MODEL: ${{ vars.MOTIF_MODEL || 'motif-12.7b-reasoning' }}
+          MOTIF_BASE_URL: ${{ vars.MOTIF_BASE_URL || 'https://chat.motiftech.io/openapi/v1' }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL || 'groq/compound' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.1-8b-instruct:free' }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
@@ -145,6 +158,7 @@ jobs:
           if [ "${INPUT_DRY_RUN}" = "true" ]; then
             args+=(--dry-run)
           fi
+          args+=(--rewrite-titles)
           batch_count="${INPUT_BATCH_COUNT}"
           if [ "${batch_count}" -lt 1 ]; then
             batch_count=1

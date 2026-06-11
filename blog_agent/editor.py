@@ -46,6 +46,10 @@ GENERIC_FALLBACK_PATTERNS = [
     "발표 문구보다 사용자가 오늘 바꿔야 할 설정",
     "신기능인지 장애인지 가격 변화인지",
     "AI·클라우드 기능은 한 회사의 앱 안에서도",
+    "검색 전에 기준을 세워두면 시간을 꽤 줄일 수 있습니다",
+    "가장 흔한 실수는 제목만 보고 바로 결론을 내리는 것입니다",
+    "같은 표현이 반복돼도 실제 의미가 다를 수 있습니다",
+    "헷갈리는 조건 3가지",
 ]
 
 
@@ -221,9 +225,14 @@ BODY:
                 notes.append(f"제목이 클릭을 유도하지 않습니다: '{pattern}' 포함")
                 break
         keyword_count = draft.body_markdown.count(draft.topic.keyword)
+        keyword_covered_by_tokens = self._keyword_tokens_covered(
+            draft.topic.keyword,
+            draft.title + "\n" + draft.body_markdown,
+        )
         if keyword_count < 2:
-            score -= 12
-            notes.append("핵심 키워드 노출이 적습니다.")
+            if not keyword_covered_by_tokens:
+                score -= 12
+                notes.append("핵심 키워드 노출이 적습니다.")
         if keyword_count > 8:
             score -= 15
             notes.append("핵심 키워드 반복이 과합니다.")
@@ -302,6 +311,19 @@ BODY:
         if len(body) < 1300:
             return True
         return headings < 5 or (numbers < 2 and english_entities < 4)
+
+    @staticmethod
+    def _keyword_tokens_covered(keyword: str, text: str) -> bool:
+        tokens = [
+            token
+            for token in re.findall(r"[가-힣A-Za-z0-9]{2,}", keyword.lower())
+            if token not in {"관련", "핵심", "정리"}
+        ]
+        if len(tokens) < 2:
+            return False
+        lowered = text.lower()
+        hits = sum(1 for token in tokens if token in lowered)
+        return hits >= min(len(tokens), 3)
 
     @staticmethod
     def _extract(text: str, label: str, default: str) -> str:
