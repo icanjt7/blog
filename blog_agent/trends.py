@@ -109,11 +109,12 @@ class TrendScout:
         used: set[str] = set()
         category_counts: Counter[str] = Counter()
         deferred: list[Topic] = []
+        max_per_category = self._env_int("BLOG_MAX_PER_CATEGORY_PER_RUN", 1, minimum=1)
         for topic in ranked:
             key = self._topic_key(topic.keyword)
             if self._is_seen_topic(topic.keyword, used) or self._is_seen_topic(topic.keyword, seen):
                 continue
-            if category_counts[topic.category] >= 2:
+            if category_counts[topic.category] >= max_per_category:
                 deferred.append(topic)
                 continue
             used.add(key)
@@ -281,9 +282,11 @@ class TrendScout:
     @staticmethod
     def _refine_category(category: str, title: str, rss_url: str) -> str:
         text = f"{title} {rss_url}"
+        if re.search(r"이재명정부|대통령|국무총리|외교|국회|정당|선거|투표|공약", text):
+            return "정치"
         if re.search(r"AI|인공지능|로봇|스마트건설|반도체|소프트웨어|클라우드|데이터|디지털|모빌리티", text, re.IGNORECASE):
             return "기술"
-        if re.search(r"국세청|탈세|체납|세금|금융|예금|금리|대출|부동산|재정|경제|공정위|관세", text):
+        if re.search(r"국세청|탈세|체납|세금|금융|예금|금리|대출|부동산|재정|경제|공정위|관세|고용여건|고용동향|취업자|부총리|전 부처|물가|원자재", text):
             return "정책"
         if re.search(r"월드컵|축구|야구|농구|경기|대표팀|선수|리그", text):
             return "스포츠"
@@ -310,3 +313,10 @@ class TrendScout:
         if age < timedelta(days=7):
             return 10
         return 3
+
+    @staticmethod
+    def _env_int(name: str, default: int, minimum: int = 0) -> int:
+        try:
+            return max(minimum, int(os.getenv(name, str(default))))
+        except ValueError:
+            return max(minimum, default)
