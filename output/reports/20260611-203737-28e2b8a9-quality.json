@@ -1,0 +1,90 @@
+{
+  "run_id": "20260611-203737-28e2b8a9",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "에너지캐시백-전기-혜택-725c629d",
+      "title": "에너지캐시백 전기 혜택, 신청 전 확인할 것",
+      "keyword": "에너지캐시백 전기 혜택",
+      "category": "생활",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 에너지캐시백 전기 혜택, 신청 전 확인할 것. Keyword: 에너지캐시백 전기 혜택. Concrete visual subject: public service checklist application form document. Context: ## 무엇이 달라졌나 전기 1%만 덜 써도 혜택…올 하반기 '에너지캐시백' 확대 시행 소식의 핵심은 에너지캐시백 전기 혜택가 일상에서 어떤 선택이나 준비로 이어지는지입니다. 생활 정보는 제목만 보면 좋아 보이지만, 실제로는 대상, 기준일, 신청 방식, 비용 조건을 나눠 봐야 도움이 됩니다. 전기를 덜 쓴 가정에 지원해 주는 '주택용 에너지캐시백' 제도가&nbsp;올 하반기 동안 확대 시행된다.&nbsp;&nbsp; 기존에는 전기 사용량을 3% 이상 줄여야 캐시백을 받을 수 있었는데, 올 하반기에는 전기 사용량 기준이 '1% 이상'으로 완화된다.&nbsp; 또 절감률 구간에 따라 1kWh당 20~30원의 추가 지원금을 더해 1kWh당 최대 120원까지 캐시백을 받을 수 있다. 기후에너지환경부는 중동전쟁 장기화에 따른 자원안보 위기와 에너지 수급 불안에 대응하고, 국민의 자발적인... ## 바로 확인할 항목 | 항목 | 확인 기준 | | --- | --- | | 신청 주체 | 개인, 가구, 지역, 사용량 등 적용 대상 | | 준비물 | 지원 금액, 수수료, 준비물, 계정 또는 인증 조건 | | 처리 흐름 | 시행일, 신청 기간, 적용 기간, 처리 소요 시간 | | 예외 상황 | 지역 제한, 사전 신청, 자동 적용 여부, 중복 혜택 제한 | ## 실제로 헷갈리는 지점 생활 정보는 '가능하다'는 말보다 '누가 어떤 조건에서 가능한가'가 중요. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1650106479458-9dc724d1b8f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxwdWJsaWMlMjBzZXJ2aWNlJTIwY2hlY2tsaXN0JTIwYXBwbGljYXRpb24lMjBmb3JtJTIwZG9jdW1lbnR8ZW58MXwwfHx8MTc4MTIxMDM0MXww&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "ai-로봇-전북-전주-건설현장-dbca7247",
+      "title": "AI 건설로봇 혁신센터, 무엇이 달라지나",
+      "keyword": "AI·로봇 전북 전주 건설현장",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APITimeoutError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: AI 건설로봇 혁신센터, 무엇이 달라지나. Keyword: AI·로봇 전북 전주 건설현장. Concrete visual subject: jeonju hanok village korean food robot automation future artificial intelligence neural network. Context: ## 무슨 소식인가 전북·전주 건설현장, 'AI·로봇' 활용한 스마트건설 전초기지로 소식입니다. 국토교통부는 전북특별자치도, 전주시, 전북대학교, 한국건설기술연구원과 함께 AI 건설로봇 혁신센터를 설립하고 스마트건설 산업 육성에 나선다고 11일 밝혔다. 5개 기관은 AI 전환을 선도할 (가칭) AI 건설·로봇 혁신센터를 설립해 대한민국 스마트건설의 전초기지로 키워나가기 위해 업무협약을 체결하고 긴밀히 협력해 나가기로 했다. 국교부는 이번 협약으로 수도권과 대기업 중심으로 활용되던 스마트건설 기술의 지방 확산을 추진해 스마트건설 관련 정책 개발과 제도 개선 등을 주도할 계획이다. 김윤덕... ## 먼저 알아둘 배경 전북·전주 건설현장은 반복 작업, 위험 구역, 숙련 인력 부족, 공정 관리가 함께 얽힌 산업 현장입니다. AI와 로봇이 들어오면 단순히 장비가 새로 생기는 것이 아니라 측량, 점검, 자재 이동, 위험 감지, 공정 데이터 관리 방식이 바뀔 수 있습니다. ## 왜 기술 이슈인가 스마트건설은 수도권 대기업만의 기술 도입으로 끝나면 효과가 제한됩니다. 지역 대학, 연구기관, 지자체, 중소 건설사가 함께 쓰는 실증 거점이 만들어져야 현장 적용 사례가 늘고 안전 개선도 이어질 수 있습니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | 건설사, 스마트건설 장비 기업, 지자체 산업 담당자, 건설 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1603031682537-ea6729c9d1bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxqZW9uanUlMjBoYW5vayUyMHZpbGxhZ2UlMjBrb3JlYW4lMjBmb29kJTIwcm9ib3QlMjBhdXRvbWF0aW9uJTIwZnV0dXJlJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMG5ldXJhbCUyMG5ldHdvcmt8ZW58MXwwfHx8MTc4MTIxMDM1OHww&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "중동발-고용여건-불확실성-확대-전-부처-총력-대응-부총리-3b4f6cdd",
+      "title": "중동발 고용여건 불확실성 확대…전 부처 총력 대응 부총리, 적용 범위가 핵심",
+      "keyword": "중동발 고용여건 불확실성 확대…전 부처 총력 대응 부총리",
+      "category": "정책",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 중동발 고용여건 불확실성 확대…전 부처 총력 대응 부총리, 적용 범위가 핵심. Keyword: 중동발 고용여건 불확실성 확대…전 부처 총력 대응 부총리. Concrete visual subject: finance policy documents. Context: ## 이 이슈의 핵심 구 부총리 \"중동발 고용여건 불확실성 확대…전 부처 총력 대응\"는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 중동발 고용여건 불확실성 확대…전 부처 총력 대응 부총리를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 중동전쟁 장기화 등 영향으로&nbsp;지난달 취업자가 감소세로 전환한 가운데, 정부는 청년층 등의&nbsp;고용 안정을 위해 모든 노력을 다하겠다는 방침을 표명했다.&nbsp;&nbsp; 우선, 기존에 발표한&nbsp;청년뉴딜 추진방안 핵심과제를 신속하게 집행하는 한편,&nbsp;하반기 중에는&nbsp;에이전틱 AI 등 첨단산업 부문의 청년 전문인력 교육도 1000명 이상을 대상으로 추진키로 했다.&nbsp; 재정경제부는 11일 구윤철 부총리 겸 재경부 장관이 주재해 정부서울청사에서 관계장관... ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 개인, 가구, 사업자, 기관 중 누구에게 적용되는지 | | 시점 | 발표일과 시행일이 같은지, 유예 기간이 있는지 | | 영향 | 지원 규모, 부담 변화, 신청 또는 신고 절차 | | 예외 | 소득, 지역, 업종, 기존 이용자 여부에 따른 예외 | ## 독자가 이해해야 할 배경 정책 발표는 방향과 실제 집행 사이에 시간이 생길 수 있습니다. 보도자료의 문장만 보지 말고 시행령,. Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODExNjgzNDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "이재명정부-1년-외신-평가한-실용주의-816255be",
+      "title": "이재명정부 1년 외신 평가한 실용주의, 발언보다 맥락 보기",
+      "keyword": "이재명정부 1년 외신 평가한 실용주의",
+      "category": "정치",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 이재명정부 1년 외신 평가한 실용주의, 발언보다 맥락 보기. Keyword: 이재명정부 1년 외신 평가한 실용주의. Concrete visual subject: neutral election civic public office. Context: ## 이 이슈의 핵심 외신이 평가한 '이재명정부 1년'…\"실용주의 외교·AI 공급망 핵심국\"는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 이재명정부 1년 외신 평가한 실용주의를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 이재명정부 출범 이후 1년 동안 세계 주요 외신들은 한국을 단순한 수출국이나 북핵 위험국이 아닌 '실용주의 균형 외교를 추진하는 전략적 중견국', '인공지능(AI)·반도체 공급망 핵심국', '세계적 영향력 가진 문화강국' 등으로 보도하며 외교 질서와 세계 공급망을 주도하는 핵심 국가, 문화산업의 핵심축으로 재평가한 것으로 나타났다. 문화체육관광부는 11일 이재명 정부 출범 이후 1년간 19개국 67개 주요 외신의 한국 관련 기사 6만 4827건을 분석해 이같이 전했다. 특히 이번 분석은 단순... ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 정부, 국회, 정당, 부처, 외교 상대국 중 어느 주체가 관련되는지 | | 시점 | 발표일, 회담일, 법안 처리 일정, 후속 브리핑 여부 | | 영향 | 예산, 산업 영향, 외교 협력, 규제 변화 가능성 | | 예외 | 정치적 해석과 확정된 제도 변화를 구분할 필요 | ## 독자가 이해해야 할 배경 정치 이슈는 찬반 평가보다 확인 가능한 사실을 먼저 봐야 합니다. 공식 발표, 회의 결과, . Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1759169306825-d1d4b832ae3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgxMjEwMzgyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "한국-축구-대표팀-월드컵-일정-4294d157",
+      "title": "한국 축구 대표팀 월드컵 일정, 일정과 규칙 먼저 보기",
+      "keyword": "한국 축구 대표팀 월드컵 일정",
+      "category": "스포츠",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 5.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 한국 축구 대표팀 월드컵 일정, 일정과 규칙 먼저 보기. Keyword: 한국 축구 대표팀 월드컵 일정. Concrete visual subject: football stadium player match action. Context: ## 지금 보는 이유 한국 축구 대표팀 월드컵 일정는 2026 FIFA 월드컵을 볼 때 먼저 확인해야 할 기본 정보와 맞닿아 있습니다. 이번 대회는 2026년 6월 11일부터 7월 19일까지 캐나다·멕시코·미국에서 열리고, 참가국은 48개국, 전체 경기는 104경기입니다. 32개국 체제에 익숙한 독자라면 조별리그 통과 방식, 32강 토너먼트, 개최 도시 이동 거리부터 다시 봐야 합니다. 대표팀 전력 평가는 그다음입니다. ## 기본 구조 | 항목 | 2026 월드컵 기준 | | --- | --- | | 개최 기간 | 2026년 6월 11일~7월 19일 | | 개최국 | 캐나다, 멕시코, 미국 | | 참가국 | 48개국 | | 총 경기 수 | 104경기 | | 핵심 변화 | 48개국 확대와 32강 토너먼트 | ## 관전 포인트 경기 전 정보는 발표 시점이 중요합니다. 예비 명단과 최종 명단, 평가전과 공식전, 현지 시간과 한국 시간을 구분해야 착오가 줄어듭니다. 전술 전망은 해석이고, 일정과 기록은 사실입니다. 2026년 대회는 규모가 커진 만큼 조 편성, 휴식일, 이동 거리까지 함께 봐야 합니다. 한국 축구 대표팀 월드컵 일정를 볼 때는 우승 후보보다 조 편성, 이동 거리, 휴식일, 부상 변수를 먼저 보는 것이 좋습니다. 북중미 3개국 개최라 현지 날짜와 한국 시간이 달라질 수 있고, 장거리 이동이 많은 팀은 선수단 운영 부담도 커질 . Visual mood: clean editorial news briefing. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxmb290YmFsbCUyMHN0YWRpdW0lMjBwbGF5ZXIlMjBtYXRjaCUyMGFjdGlvbnxlbnwxfDB8fHwxNzgxMTY2MzIzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-서울-의료관광-병원-075cee6e",
+      "title": "06월 서울 의료관광 병원, 동선부터 잡는 법",
+      "keyword": "06월 서울 의료관광 병원",
+      "category": "핫이슈",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 서울 의료관광 병원, 동선부터 잡는 법. Keyword: 06월 서울 의료관광 병원. Concrete visual subject: tourism destination travel seoul restaurant street city food healthcare medical clean. Context: ## 동선부터 잡아야 하는 이유 한국관광공사 VisitKorea를 볼 때는 이름난 장소를 많이 넣는 것보다 이동이 자연스러운지가 더 중요합니다. 06월 서울 의료관광 병원 같은 지역·여행 주제는 시간대, 휴무, 예약 여부에 따라 만족도가 크게 달라집니다. 지역 여행 정보 확인용 공식 포털 ## 방문 전 비교표 | 구분 | 확인할 점 | | --- | --- | | 동선 | 아이 동반, 가족 여행, 반려동물 동반, 혼잡 시간대 | | 시간 | 운영 시간, 휴무일, 계절별 혼잡 시간 | | 비용 | 입장료, 주차비, 예약금, 식사 예산 | | 변수 | 우천, 성수기, 대기, 예약 마감, 반려동물 제한 | ## 추천 동선과 주변 포인트 여행 글은 직접 방문 후기와 공개 데이터를 구분해서 봐야 합니다. 이 글은 방문 경험을 꾸미지 않고, 확인해야 할 조건을 중심으로 정리합니다. 가족이나 아이와 함께 움직인다면 이동 거리를 짧게 잡는 것이 우선입니다. 유명 장소를 많이 넣는 것보다 쉬는 지점과 식사 시간을 동선 중간에 두는 편이 만족도가 높습니다. 처음 가는 지역이라면 대표 관광지 하나를 기준으로 주변 포인트를 2~3곳만 묶는 편이 좋습니다. 아이나 가족, 반려동물과 함께라면 이동 거리보다 쉬는 지점, 화장실, 식사 대기 시간, 실내 대체 장소를 먼저 넣어야 일정이 무너지지 않습니다. ## 체크리스트 1. 첫 장소와 마지막 장소를 지도에서 먼. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1628532431030-3b6d433ed166?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBzZW91bCUyMHJlc3RhdXJhbnQlMjBzdHJlZXQlMjBjaXR5JTIwZm9vZCUyMGhlYWx0aGNhcmUlMjBtZWRpY2FsJTIwY2xlYW58ZW58MXwwfHx8MTc4MTE2NjM3OXww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
