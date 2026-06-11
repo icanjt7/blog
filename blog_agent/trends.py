@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 import feedparser
+import requests
 import yaml
 
 from .models import Source, Topic
@@ -138,7 +139,13 @@ class TrendScout:
         for category, source_config in config.items():
             for rss_url in source_config.get("rss", []):
                 try:
-                    parsed = feedparser.parse(rss_url)
+                    resp = requests.get(
+                        rss_url,
+                        headers={"User-Agent": "Mozilla/5.0 (compatible; blog-agent/1.0)"},
+                        timeout=8,
+                    )
+                    resp.raise_for_status()
+                    parsed = feedparser.parse(resp.content)
                 except Exception:
                     continue
                 for entry in parsed.entries[:10]:
