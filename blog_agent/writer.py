@@ -58,64 +58,94 @@ class WriterAgent:
         self.settings = settings
         self._client: OpenAI | None = None
         self._model: str = ""
+        self._providers: list[tuple[OpenAI, str]] = []
         self._init_client()
 
     def _init_client(self) -> None:
         s = self.settings
         timeout = s.llm_timeout_seconds
+        def add(client: OpenAI, model: str) -> None:
+            self._providers.append((client, model))
+            if self._client is None:
+                self._client = client
+                self._model = model
+
         if s.motif_api_key:
-            self._client = OpenAI(
-                api_key=s.motif_api_key,
-                base_url=s.motif_base_url,
-                timeout=timeout,
-                max_retries=0,
+            add(
+                OpenAI(
+                    api_key=s.motif_api_key,
+                    base_url=s.motif_base_url,
+                    timeout=timeout,
+                    max_retries=0,
+                ),
+                s.motif_model,
             )
-            self._model = s.motif_model
-        elif s.groq_api_key:
-            self._client = OpenAI(
-                api_key=s.groq_api_key,
-                base_url="https://api.groq.com/openai/v1",
-                timeout=timeout,
-                max_retries=0,
+        if s.groq_api_key:
+            add(
+                OpenAI(
+                    api_key=s.groq_api_key,
+                    base_url="https://api.groq.com/openai/v1",
+                    timeout=timeout,
+                    max_retries=0,
+                ),
+                s.groq_model,
             )
-            self._model = s.groq_model
-        elif s.gemini_api_key:
-            self._client = OpenAI(
-                api_key=s.gemini_api_key,
-                base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-                timeout=timeout,
-                max_retries=0,
+        if s.gemini_api_key:
+            add(
+                OpenAI(
+                    api_key=s.gemini_api_key,
+                    base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+                    timeout=timeout,
+                    max_retries=0,
+                ),
+                s.gemini_model,
             )
-            self._model = s.gemini_model
-        elif s.openrouter_api_key:
-            self._client = OpenAI(
-                api_key=s.openrouter_api_key,
-                base_url="https://openrouter.ai/api/v1",
-                timeout=timeout,
-                max_retries=0,
+        if s.openrouter_api_key:
+            add(
+                OpenAI(
+                    api_key=s.openrouter_api_key,
+                    base_url="https://openrouter.ai/api/v1",
+                    timeout=timeout,
+                    max_retries=0,
+                ),
+                s.openrouter_model,
             )
-            self._model = s.openrouter_model
-        elif s.openai_api_key:
-            self._client = OpenAI(api_key=s.openai_api_key, timeout=timeout, max_retries=0)
-            self._model = s.openai_model
-        elif s.github_token:
-            self._client = OpenAI(
-                api_key=s.github_token,
-                base_url="https://models.inference.ai.azure.com",
-                timeout=timeout,
-                max_retries=0,
+        if s.openai_api_key:
+            add(OpenAI(api_key=s.openai_api_key, timeout=timeout, max_retries=0), s.openai_model)
+        if s.github_token:
+            add(
+                OpenAI(
+                    api_key=s.github_token,
+                    base_url="https://models.inference.ai.azure.com",
+                    timeout=timeout,
+                    max_retries=0,
+                ),
+                s.github_model,
             )
-            self._model = s.github_model
 
     def write(self, topic: Topic) -> Draft:
-        if self._client:
-            try:
-                return self._write_with_llm(topic)
-            except Exception:
-                return self._write_fallback(topic)
+        if self._providers:
+            last_error: Exception | None = None
+            for client, model in self._providers:
+                try:
+                    return self._write_with_llm(topic, client, model)
+                except Exception as exc:
+                    last_error = exc
+                    continue
+            draft = self._write_fallback(topic)
+            if last_error:
+                draft.review_notes.append(f"LLM 작성 실패로 규칙 기반 초안 사용: {type(last_error).__name__}")
+            return draft
         return self._write_fallback(topic)
 
-    def _write_with_llm(self, topic: Topic) -> Draft:
+    def _write_with_llm(self, topic: Topic, client: OpenAI | None = None, model: str | None = None) -> Draft:
+        client = client or self._client
+        model = model or self._model
+        if not client:
+            try:
+                return self._write_fallback(topic)
+            except Exception:
+                raise
         sources = "\n".join(
             f"- {source.title}: {source.url}\n  내용: {source.summary[:400]}"
             for source in topic.sources
@@ -183,8 +213,8 @@ TITLE:
 EXCERPT:
 BODY:
 """
-        response = self._client.chat.completions.create(
-            model=self._model,
+        response = client.chat.completions.create(
+            model=model,
             messages=[{"role": "user", "content": prompt}],
             temperature=0.85,
             max_tokens=2048,

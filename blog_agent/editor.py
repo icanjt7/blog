@@ -54,57 +54,73 @@ class SeoEditorAgent:
         self.settings = settings
         self.client: OpenAI | None = None
         self._model: str = ""
+        self._providers: list[tuple[OpenAI, str]] = []
         if settings and settings.enable_llm_edit:
             self._init_client(settings)
 
     def _init_client(self, s: Settings) -> None:
         timeout = s.llm_timeout_seconds
+        def add(client: OpenAI, model: str) -> None:
+            self._providers.append((client, model))
+            if self.client is None:
+                self.client = client
+                self._model = model
+
         if s.motif_api_key:
-            self.client = OpenAI(
-                api_key=s.motif_api_key,
-                base_url=s.motif_base_url,
-                timeout=timeout,
-                max_retries=0,
+            add(
+                OpenAI(
+                    api_key=s.motif_api_key,
+                    base_url=s.motif_base_url,
+                    timeout=timeout,
+                    max_retries=0,
+                ),
+                s.motif_model,
             )
-            self._model = s.motif_model
-        elif s.groq_api_key:
-            self.client = OpenAI(
-                api_key=s.groq_api_key,
-                base_url="https://api.groq.com/openai/v1",
-                timeout=timeout,
-                max_retries=0,
+        if s.groq_api_key:
+            add(
+                OpenAI(
+                    api_key=s.groq_api_key,
+                    base_url="https://api.groq.com/openai/v1",
+                    timeout=timeout,
+                    max_retries=0,
+                ),
+                s.groq_model,
             )
-            self._model = s.groq_model
-        elif s.gemini_api_key:
-            self.client = OpenAI(
-                api_key=s.gemini_api_key,
-                base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-                timeout=timeout,
-                max_retries=0,
+        if s.gemini_api_key:
+            add(
+                OpenAI(
+                    api_key=s.gemini_api_key,
+                    base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+                    timeout=timeout,
+                    max_retries=0,
+                ),
+                s.gemini_model,
             )
-            self._model = s.gemini_model
-        elif s.openrouter_api_key:
-            self.client = OpenAI(
-                api_key=s.openrouter_api_key,
-                base_url="https://openrouter.ai/api/v1",
-                timeout=timeout,
-                max_retries=0,
+        if s.openrouter_api_key:
+            add(
+                OpenAI(
+                    api_key=s.openrouter_api_key,
+                    base_url="https://openrouter.ai/api/v1",
+                    timeout=timeout,
+                    max_retries=0,
+                ),
+                s.openrouter_model,
             )
-            self._model = s.openrouter_model
-        elif s.openai_api_key:
-            self.client = OpenAI(api_key=s.openai_api_key, timeout=timeout, max_retries=0)
-            self._model = s.openai_model
-        elif s.github_token:
-            self.client = OpenAI(
-                api_key=s.github_token,
-                base_url="https://models.inference.ai.azure.com",
-                timeout=timeout,
-                max_retries=0,
+        if s.openai_api_key:
+            add(OpenAI(api_key=s.openai_api_key, timeout=timeout, max_retries=0), s.openai_model)
+        if s.github_token:
+            add(
+                OpenAI(
+                    api_key=s.github_token,
+                    base_url="https://models.inference.ai.azure.com",
+                    timeout=timeout,
+                    max_retries=0,
+                ),
+                s.github_model,
             )
-            self._model = s.github_model
 
     def improve(self, draft: Draft) -> Draft:
-        if not self.client:
+        if not self._providers:
             return self.review(draft)
         reviewed = self.review(draft)
         sources = "\n".join(
@@ -147,16 +163,24 @@ TITLE:
 EXCERPT:
 BODY:
 """
-        try:
-            response = self.client.chat.completions.create(
-                model=self._model,
-                messages=[{"role": "user", "content": prompt}],
-                temperature=0.7,
-                max_tokens=2048,
-            )
-            text = response.choices[0].message.content or ""
-        except Exception:
-            reviewed.review_notes.append("LLM 편집 실패로 규칙 기반 검수만 적용")
+        text = ""
+        last_error: Exception | None = None
+        for client, model in self._providers:
+            try:
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=[{"role": "user", "content": prompt}],
+                    temperature=0.7,
+                    max_tokens=2048,
+                )
+                text = response.choices[0].message.content or ""
+                break
+            except Exception as exc:
+                last_error = exc
+                continue
+        if not text:
+            suffix = f": {type(last_error).__name__}" if last_error else ""
+            reviewed.review_notes.append(f"LLM 편집 실패로 규칙 기반 검수만 적용{suffix}")
             return reviewed
         reviewed.title = self._extract(text, "TITLE", reviewed.title)
         reviewed.excerpt = self._extract(text, "EXCERPT", reviewed.excerpt)

@@ -153,7 +153,21 @@ def main() -> None:
                 indent=2,
             )
         )
-        if args.require_publish_success and any(not item.ok for item in result.publish_results):
+        published = sum(1 for item in result.publish_results if item.ok)
+        if args.require_publish_success and published < count and not args.dry_run:
+            print(
+                json.dumps(
+                    {
+                        "ok": False,
+                        "published": published,
+                        "required": count,
+                        "message": "not enough posts passed quality gate and were published",
+                    },
+                    ensure_ascii=False,
+                    indent=2,
+                ),
+                file=sys.stderr,
+            )
             sys.exit(1)
 
 
