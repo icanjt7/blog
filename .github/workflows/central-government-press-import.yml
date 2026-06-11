@@ -2,8 +2,9 @@ name: Central government press import
 
 on:
   schedule:
-    # Daily 08:20 KST. GitHub cron uses UTC.
-    - cron: "20 23 * * *"
+    # Daily 08:00 and 17:00 KST. GitHub cron uses UTC.
+    - cron: "0 23 * * *"
+    - cron: "0 8 * * *"
   workflow_dispatch:
     inputs:
       per_agency:

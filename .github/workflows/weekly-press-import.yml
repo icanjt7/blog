@@ -1,4 +1,4 @@
-name: Weekly press release import
+name: Six agency press release import
 
 on:
   workflow_dispatch:
@@ -28,7 +28,9 @@ on:
           - "true"
         default: "false"
   schedule:
-    - cron: "0 1 * * 1"  # 매주 월요일 01:00 UTC (한국시간 10:00)
+    # Daily 09:00 and 18:00 KST. GitHub cron uses UTC.
+    - cron: "0 0 * * *"
+    - cron: "0 9 * * *"
 
 concurrency:
   group: press-import
