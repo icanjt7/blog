@@ -34,6 +34,12 @@ _FALLBACK_SOURCES = {
         summary="선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
         authority=5,
     ),
+    "스포츠": Source(
+        title="FIFA 공식 대회 페이지",
+        url="https://www.fifa.com/",
+        summary="월드컵 일정, 명단, 공식 기록 확인용 포털",
+        authority=5,
+    ),
     "핫이슈": Source(
         title="한국관광공사 VisitKorea",
         url="https://korean.visitkorea.or.kr/",

@@ -5,7 +5,7 @@ from blog_agent.models import Draft, Topic
 settings = load_settings()
 publisher = build_publisher(settings)
 
-topic = Topic(keyword="테스트 게시물", title_hint="테스트", category="tech")
+topic = Topic(keyword="테스트 게시물", title_hint="테스트", category="기술")
 
 draft = Draft(
     topic=topic,

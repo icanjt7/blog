@@ -135,6 +135,7 @@ CATEGORY_VISUALS = {
     "기술": "technology innovation circuit abstract",
     "정책": "finance policy documents",
     "정치": "neutral election civic public office",
+    "스포츠": "football stadium player match action",
     "생활": "everyday lifestyle public information",
     "local": "local travel guide editorial",
     "tech": "technology innovation circuit abstract",
