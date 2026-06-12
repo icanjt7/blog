@@ -2281,7 +2281,8 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 
       # write ads.txt so AdSense crawler can find publisher info at site root
       pub = (self.adsense_publisher_id or "ca-pub-3870943054399059").strip()
-      ads_content = f"google.com, {pub}, DIRECT, f08c47fec0942fa0\n"
+      ads_pub = pub.removeprefix("ca-")
+      ads_content = f"google.com, {ads_pub}, DIRECT, f08c47fec0942fa0\n"
       (self.public_dir / "ads.txt").write_text(ads_content, encoding="utf-8")
 
       # ensure search.json is present even if no posts
