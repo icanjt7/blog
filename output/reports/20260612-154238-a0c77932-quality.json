@@ -1,0 +1,64 @@
+{
+  "run_id": "20260612-154238-a0c77932",
+  "average_quality": 91.5,
+  "drafts": [
+    {
+      "slug": "노인학대-작년보다-신고의무자-보호-69085387",
+      "title": "노인학대 작년보다 신고의무자 보호, 신청 전 확인할 것",
+      "keyword": "노인학대 작년보다 신고의무자 보호",
+      "category": "생활",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 노인학대 작년보다 신고의무자 보호, 신청 전 확인할 것. Keyword: 노인학대 작년보다 신고의무자 보호. Concrete visual subject: application form document. Context: ## 무엇이 달라졌나 '노인학대' 작년보다 16.8%↑…신고의무자 확대 등 노인 보호 강화 소식의 핵심은 노인학대 작년보다 신고의무자 보호가 일상에서 어떤 선택이나 준비로 이어지는지입니다. 생활 정보는 제목만 보면 좋아 보이지만, 실제로는 대상, 기준일, 신청 방식, 비용 조건을 나눠 봐야 도움이 됩니다. 지난해 노인학대 신고는 2만 6578건으로 전년 대비 16.8% 증가한 것으로 나타났다. 이 중 노인학대로 판정된 건수는 신고대비 30% 수준인 7973건으로, 지난해보다 11.2% 증가한 수치다.&nbsp; 보건복지부는 이 같은 노인학대 현황을 반영해&nbsp;노인학대 신고를 보다 활성화하고 재학대 예방 및 학대피해 노인 보호를 강화할 계획이다. 어버이날을 하루 앞둔 7일 서울 종로구 탑골공원 인근 무료급식소를 찾은 어르신들이 식사를 위해 줄을 서고 있다. 2026.5.7. (ⓒ뉴스1, 무단... ## 바로 확인할 항목 | 항목 | 확인 기준 | | --- | --- | | 신청 주체 | 개인, 가구, 지역, 사용량 등 적용 대상 | | 준비물 | 지원 금액, 수수료, 준비물, 계정 또는 인증 조건 | | 처리 흐름 | 시행일, 신청 기간, 적용 기간, 처리 소요 시간 | | 예외 상황 | 지역 제한, 사전 신청, 자동 적용 여부, 중복 혜택 제한 | ## 실제로 헷갈리는 지점 생활 정보는 '가능하다'는 말보다 '누가 어떤 조건에. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1631651693480-97f1132e333d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcHBsaWNhdGlvbiUyMGZvcm0lMjBkb2N1bWVudHxlbnwxfDB8fHwxNzgxMTY3ODExfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "지속가능한-스마트도시-데이터허브로-만든다-9023ab8b",
+      "title": "AI와 데이터허브로 '지속가능한 스마트도시' 만든다, 생성 AI의 다음 실험",
+      "keyword": "지속가능한 스마트도시 데이터허브로 만든다",
+      "category": "기술",
+      "quality_score": 66.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APITimeoutError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: AI와 데이터허브로 '지속가능한 스마트도시' 만든다, 생성 AI의 다음 실험. Keyword: 지속가능한 스마트도시 데이터허브로 만든다. Concrete visual subject: artificial intelligence neural network. Context: ## 무슨 소식인가 AI와 데이터허브로 '지속가능한 스마트도시' 만든다 소식입니다. 국토교통부는 '2026년 스마트도시 조성사업' 공모 결과 거점형은 경기 수원시, 특화단지는 부산광역시와 경기 성남시를 선정했다. '2026년 스마트도시 데이터허브 시범솔루션 발굴사업' 공모에선 경상남도와 충남 태안군을 선정했다. '스마트도시 조성사업'은 인공지능·스마트기술을 활용하여 다양한 도시문제를 해결하고, 스마트도시 산업 활성화를 지원하는 3개년 사업이다. 국토교통부는 지난 3월 지방정부를 대상으로 '거점형 스마트도시 조성사업', '스마트도시 특화단지 조성사업' 2개 유형으로 나누어... ## 먼저 알아둘 배경 Google 같은 플랫폼 기업은 검색·클라우드뿐 아니라 이미지, 영상, 생산성 도구에 생성 AI를 붙이고 있습니다. AI와 데이터허브로 '지속가능한 스마트도시' 만든다는 이름보다 어떤 입력 데이터를 받아 어떤 결과물을 만드는지가 더 중요합니다. ## 왜 기술 이슈인가 생성 AI 도구는 재미있는 기능처럼 보이지만, 사진·얼굴·취향 데이터를 다룰 때 개인정보와 저작권 문제가 함께 생깁니다. AI와 데이터허브로 '지속가능한 스마트도시' 만든다를 볼 때는 결과물 품질뿐 아니라 학습·저장·공유 설정을 확인해야 합니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | AI 이미지 도구 이용자, 크리에이터, Go. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgxMTY2MzgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "물가-고용-각별한-경각심-청년고용-개선에-정책-최우선-부총리-ef668947",
+      "title": "물가·고용 각별한 경각심…청년고용 개선에 정책 최우선 부총리, 적용 범위가 핵심",
+      "keyword": "물가·고용 각별한 경각심…청년고용 개선에 정책 최우선 부총리",
+      "category": "정책",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 물가·고용 각별한 경각심…청년고용 개선에 정책 최우선 부총리, 적용 범위가 핵심. Keyword: 물가·고용 각별한 경각심…청년고용 개선에 정책 최우선 부총리. Concrete visual subject: young professionals city economy price market statistics. Context: ## 이 이슈의 핵심 구 부총리 \"물가·고용 각별한 경각심…청년고용 개선에 정책 최우선\"는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 물가·고용 각별한 경각심…청년고용 개선에 정책 최우선 부총리를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 정부가&nbsp;물가와 청년고용 안정을 위해 총력을 기울이기로 했다. 아울러 차세대 전력반도체·SMR&nbsp;등&nbsp;초혁신경제 프로젝트도 본격 추진한다.&nbsp; 구윤철 부총리 겸 재정경제부장관은 12일 정부서울청사에서 비상경제본부 회의 겸 경제관계장관회의를 주재하고 이같이 밝혔다. 구윤철 경제부총리 겸 재정경제부 장관이 12일 서울 종로구 세종대로 정부서울청사에서 열린 비상경제본부회의 겸 경제관계장관회의에서 모두 발언을 하고 있다.(ⓒ뉴스1, 무단 전재-재배포 금지) 구 부총리는... ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 개인, 가구, 사업자, 기관 중 누구에게 적용되는지 | | 시점 | 발표일과 시행일이 같은지, 유예 기간이 있는지 | | 영향 | 지원 규모, 부담 변화, 신청 또는 신고 절차 | | 예외 | 소득, 지역, 업종, 기존 이용자 여부에 따른 예외 | ## 독자가 이해해야 할 배경 정책 발표는 방향과 실제 집행 사이에 시간이 생길 수 있습니다. 보도자료의 문장만 보지 말고 시. Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1587400563263-e77a5590bfe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8eW91bmclMjBwcm9mZXNzaW9uYWxzJTIwY2l0eSUyMGVjb25vbXklMjBwcmljZSUyMG1hcmtldCUyMHN0YXRpc3RpY3N8ZW58MXwwfHx8MTc4MTI3OTA3MHww&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "현장-안전관리-만전-북중미월드컵-거리응원-행안부-48458907",
+      "title": "현장 안전관리 만전 북중미월드컵 거리응원 행안부, 일정과 규칙 먼저 보기",
+      "keyword": "현장 안전관리 만전 북중미월드컵 거리응원 행안부",
+      "category": "스포츠",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 현장 안전관리 만전 북중미월드컵 거리응원 행안부, 일정과 규칙 먼저 보기. Keyword: 현장 안전관리 만전 북중미월드컵 거리응원 행안부. Concrete visual subject: safety public service. Context: ## 지금 보는 이유 현장 안전관리 만전 북중미월드컵 거리응원 행안부는 2026 FIFA 월드컵을 볼 때 먼저 확인해야 할 기본 정보와 맞닿아 있습니다. 이번 대회는 2026년 6월 11일부터 7월 19일까지 캐나다·멕시코·미국에서 열리고, 참가국은 48개국, 전체 경기는 104경기입니다. 32개국 체제에 익숙한 독자라면 조별리그 통과 방식, 32강 토너먼트, 개최 도시 이동 거리부터 다시 봐야 합니다. 대표팀 전력 평가는 그다음입니다. ## 기본 구조 | 항목 | 2026 월드컵 기준 | | --- | --- | | 개최 기간 | 2026년 6월 11일~7월 19일 | | 개최국 | 캐나다, 멕시코, 미국 | | 참가국 | 48개국 | | 총 경기 수 | 104경기 | | 핵심 변화 | 48개국 확대와 32강 토너먼트 | ## 관전 포인트 경기 전 정보는 발표 시점이 중요합니다. 예비 명단과 최종 명단, 평가전과 공식전, 현지 시간과 한국 시간을 구분해야 착오가 줄어듭니다. 전술 전망은 해석이고, 일정과 기록은 사실입니다. 2026년 대회는 규모가 커진 만큼 조 편성, 휴식일, 이동 거리까지 함께 봐야 합니다. 현장 안전관리 만전 북중미월드컵 거리응원 행안부를 볼 때는 우승 후보보다 조 편성, 이동 거리, 휴식일, 부상 변수를 먼저 보는 것이 좋습니다. 북중미 3개국 개최라 현지 날짜와 한국 시간이 달라질 수 있고, 장거리 이동이 . Visual mood: clean editorial news briefing. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1642873965196-bf664f721006?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxzYWZldHklMjBwdWJsaWMlMjBzZXJ2aWNlfGVufDF8MHx8fDE3ODExNjgyMDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
