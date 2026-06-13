@@ -101,6 +101,26 @@ GitHub 저장소 Settings → Secrets and variables → Actions에 다음 값을
 - 관광 글 보강 사용 시 `TOURAPI_GUIDE`, `TOURAPI_RATE`, `TOURAPI_MDC`, `TOURAPI_PET`, `TOURAPI_TOUR`, `TOURAPI_TOUR_EN`
 - WordPress 사용 시 `WORDPRESS_URL`, `WORDPRESS_USERNAME`, `WORDPRESS_APP_PASSWORD`
 
+### Google Search Console sitemap 자동 제출
+
+일반 블로그 글은 Google Indexing API 대상이 아닙니다. 자동 색인 신호는 Search Console API로 `sitemap.xml`을 다시 제출하는 방식으로 처리합니다.
+
+1. Google Cloud에서 서비스 계정을 만들고 Search Console API를 활성화합니다.
+2. 서비스 계정 이메일을 Google Search Console의 `https://briefwave.kr/` 속성 사용자로 추가합니다.
+3. 서비스 계정 JSON 전체를 GitHub Actions secret에 저장합니다.
+
+사용하는 secret:
+
+- `GOOGLE_SERVICE_ACCOUNT_JSON`: 서비스 계정 JSON 원문
+- 또는 `GOOGLE_SERVICE_ACCOUNT_JSON_BASE64`: 서비스 계정 JSON을 base64 인코딩한 값
+
+선택 변수:
+
+- `GOOGLE_SEARCH_CONSOLE_SITE_URL`: 기본값 `https://briefwave.kr/`
+- `GOOGLE_SITEMAP_URL`: 기본값 `https://briefwave.kr/sitemap.xml`
+
+secret이 없으면 배포는 실패하지 않고 sitemap 제출 단계만 건너뜁니다.
+
 ## 실행 기록 확인
 
 각 실행은 `state/runs.sqlite3`에 저장되고, 실행별 manifest와 품질 리포트가 JSON으로 남습니다.

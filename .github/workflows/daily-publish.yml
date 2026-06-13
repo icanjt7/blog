@@ -114,3 +114,11 @@ jobs:
           path: public
 
       - uses: actions/deploy-pages@v4
+
+      - name: Submit sitemap to Google Search Console
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_SERVICE_ACCOUNT_JSON_BASE64: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON_BASE64 }}
+          GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL || 'https://briefwave.kr/' }}
+          GOOGLE_SITEMAP_URL: ${{ vars.GOOGLE_SITEMAP_URL || 'https://briefwave.kr/sitemap.xml' }}
+        run: python scripts/submit_google_sitemap.py
