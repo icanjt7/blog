@@ -8,7 +8,8 @@ import shutil
 import struct
 import zlib
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
+from email.utils import format_datetime
 from pathlib import Path
 from urllib.parse import quote, urlsplit, urlunsplit
 
@@ -849,35 +850,73 @@ class StaticSiteBuilder:
         self._write_html("dashboard.html", f"{self.site_title} 운영 현황", content, active="대시보드", page_url=self._page_url("dashboard.html"))
 
     def _write_feed(self, posts: list[Post]) -> None:
-        items = "\n".join(
-            f"""
-            <item>
-              <title>{html.escape(post.title)}</title>
-              <link>{html.escape(self._page_url(f"{post.slug}.html"))}</link>
-              <guid isPermaLink="true">{html.escape(self._page_url(f"{post.slug}.html"))}</guid>
-              <description>{html.escape(post.excerpt)}</description>
-              <pubDate>{post.date:%a, %d %b %Y 00:00:00 +0900}</pubDate>
-              {self._feed_image_tags(post)}
-            </item>
-            """
-            for post in posts[:20]
-        )
-        feed = f"""<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+        feed_xml = self._feed_xml(posts, "feed.xml")
+        rss_xml = self._feed_xml(posts, "rss.xml")
+        (self.public_dir / "feed.xml").write_text(feed_xml, encoding="utf-8")
+        # Compatibility alias for services that look for /rss.xml instead of /feed.xml.
+        (self.public_dir / "rss.xml").write_text(rss_xml, encoding="utf-8")
+
+    def _feed_xml(self, posts: list[Post], filename: str) -> str:
+        latest_posts = posts[:50]
+        last_build = latest_posts[0].date if latest_posts else datetime.now()
+        items = "\n".join(self._feed_item(post) for post in latest_posts)
+        return f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>{html.escape(self.site_title)}</title>
-    <description>오늘 꼭 확인할 생활·기술·정책 소식을 정리합니다.</description>
+    <description>{html.escape(self.site_description)}</description>
     <link>{html.escape(self.site_url + "/")}</link>
+    <atom:link href="{html.escape(self._page_url(filename))}" rel="self" type="application/rss+xml" />
+    <language>ko-KR</language>
+    <lastBuildDate>{self._rss_date(last_build)}</lastBuildDate>
+    <pubDate>{self._rss_date(last_build)}</pubDate>
+    <ttl>30</ttl>
+    <generator>BriefWave StaticSiteBuilder</generator>
     <image>
       <url>{html.escape(self.site_url + "/favicon-512x512.png")}</url>
       <title>{html.escape(self.site_title)}</title>
       <link>{html.escape(self.site_url + "/")}</link>
+      <width>512</width>
+      <height>512</height>
     </image>
-    {items}
+{items}
   </channel>
 </rss>
 """
-        (self.public_dir / "feed.xml").write_text(feed, encoding="utf-8")
+
+    def _feed_item(self, post: Post) -> str:
+        post_url = self._page_url(f"{post.slug}.html")
+        cover_html = ""
+        if post.cover_image:
+            cover_html = (
+                f'<p><img src="{html.escape(self._absolute_url(post.cover_image))}" '
+                f'alt="{html.escape(post.cover_image_alt or post.title)}"></p>'
+            )
+        content_html = f"{cover_html}{post.body_html}"
+        categories = []
+        for value in [post.category, *post.tags]:
+            if value and value not in categories:
+                categories.append(value)
+        category_xml = "\n".join(
+            f"              <category>{html.escape(value)}</category>" for value in categories[:16]
+        )
+        return f"""
+            <item>
+              <title>{html.escape(post.title)}</title>
+              <link>{html.escape(post_url)}</link>
+              <guid isPermaLink="true">{html.escape(post_url)}</guid>
+              <description>{html.escape(post.excerpt)}</description>
+              <pubDate>{self._rss_date(post.date)}</pubDate>
+              <dc:creator>{html.escape(self._display_author(post))}</dc:creator>
+{category_xml}
+              {self._feed_image_tags(post)}
+              <content:encoded>{self._cdata(content_html)}</content:encoded>
+            </item>
+"""
 
     def _feed_image_tags(self, post: Post) -> str:
         if not post.cover_image:
@@ -891,6 +930,17 @@ class StaticSiteBuilder:
             f'                <media:title>{escaped_alt}</media:title>\n'
             f'              </media:content>'
         )
+
+    @staticmethod
+    def _rss_date(value: datetime) -> str:
+        kst = timezone(timedelta(hours=9))
+        if value.tzinfo is None:
+            value = value.replace(tzinfo=kst)
+        return format_datetime(value.astimezone(kst))
+
+    @staticmethod
+    def _cdata(value: str) -> str:
+        return "<![CDATA[" + value.replace("]]>", "]]]]><![CDATA[>") + "]]>"
 
     def _write_search_index(self, posts: list[Post]) -> None:
         # create a lightweight JSON index for client-side search
