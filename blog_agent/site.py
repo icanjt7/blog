@@ -1015,6 +1015,7 @@ class StaticSiteBuilder:
           </section>
           <div id="results-summary" class="results-summary" aria-live="polite"></div>
           <section id="results" class="search-results"></section>
+          <nav id="search-pagination" class="pagination search-pagination" aria-label="검색 결과 페이지"></nav>
         </article>
         <script>
         const categories = '''
@@ -1022,6 +1023,8 @@ class StaticSiteBuilder:
             + ''';
         const searchIndex = [];
         let activeTag = '';
+        let currentPage = 1;
+        const resultsPerPage = 9;
 
         async function loadIndex(){
           const res = await fetch('./search.json');
@@ -1111,16 +1114,22 @@ class StaticSiteBuilder:
           return matches.sort((a,b)=>{
             if(sortKey === 'oldest') return new Date(a.date) - new Date(b.date);
             return new Date(b.date) - new Date(a.date);
-          }).slice(0,50);
+          });
         }
 
-        function renderResults(results){
+        function renderResults(results, page){
           const resultsEl = document.getElementById('results');
           if(results.length === 0){
             resultsEl.innerHTML = '<div class="no-results"><p>검색 결과가 없습니다.</p><p class="suggestion-text">다른 검색어를 시도하거나 카테고리를 선택해 보세요.</p></div>';
+            renderPagination(0, 1);
             return;
 	          }
-	          resultsEl.innerHTML = results.map(item => `
+          const totalPages = Math.max(1, Math.ceil(results.length / resultsPerPage));
+          const safePage = Math.min(Math.max(1, page), totalPages);
+          currentPage = safePage;
+          const start = (safePage - 1) * resultsPerPage;
+          const pageItems = results.slice(start, start + resultsPerPage);
+	          resultsEl.innerHTML = pageItems.map(item => `
 	            <article class="card search-result">
 	              <div class="result-topline">
 	                <span class="cat-badge">${escapeHtml(item.category)}</span>
@@ -1132,6 +1141,7 @@ class StaticSiteBuilder:
 	              <div class="tags">${(item.tags || []).map(tag=>`<a class="tag" href="./search.html?tag=${encodeURIComponent(tag)}">${escapeHtml(tag)}</a>`).join('')}</div>
 	            </article>
 	          `).join('');
+          renderPagination(results.length, safePage);
 	        }
 
         function renderSummary(results, query, category){
@@ -1141,7 +1151,45 @@ class StaticSiteBuilder:
           if(query) pieces.push(`검색어 <strong>${escapeHtml(query)}</strong>`);
           if(category) pieces.push(`카테고리 <strong>${escapeHtml(category)}</strong>`);
           const scope = pieces.length ? pieces.join(' · ') : '전체 글';
-          summary.innerHTML = `<span>${scope}</span><strong>${results.length}개 결과</strong>`;
+          if(results.length === 0){
+            summary.innerHTML = `<span>${scope}</span><strong>0개 결과</strong>`;
+            return;
+          }
+          const totalPages = Math.max(1, Math.ceil(results.length / resultsPerPage));
+          const start = (currentPage - 1) * resultsPerPage + 1;
+          const end = Math.min(results.length, currentPage * resultsPerPage);
+          summary.innerHTML = `<span>${scope}</span><strong>${results.length}개 결과 · ${start}-${end} · ${currentPage}/${totalPages} 페이지</strong>`;
+        }
+
+        function renderPagination(totalResults, page){
+          const nav = document.getElementById('search-pagination');
+          if(!nav) return;
+          const totalPages = Math.ceil(totalResults / resultsPerPage);
+          if(totalPages <= 1){
+            nav.innerHTML = '';
+            nav.hidden = true;
+            return;
+          }
+          nav.hidden = false;
+          const winStart = Math.max(1, Math.min(page - 3, totalPages - 6));
+          const winEnd = Math.min(totalPages, winStart + 6);
+          const controls = [];
+          if(page > 1){
+            controls.push(`<button type="button" class="prev" data-page="${page - 1}">← 이전</button>`);
+          }
+          controls.push('<span class="pages">');
+          for(let p = winStart; p <= winEnd; p++){
+            if(p === page){
+              controls.push(`<strong class="current">${p}</strong>`);
+            }else{
+              controls.push(`<button type="button" data-page="${p}">${p}</button>`);
+            }
+          }
+          controls.push('</span>');
+          if(page < totalPages){
+            controls.push(`<button type="button" class="next" data-page="${page + 1}">다음 →</button>`);
+          }
+          nav.innerHTML = controls.join('');
         }
 
         function renderCategoryFilters(){
@@ -1164,15 +1212,19 @@ class StaticSiteBuilder:
           const suggestions = document.getElementById('suggestions');
           const sortControl = document.getElementById('sort');
           const categoryButtons = document.querySelector('.category-filters');
+          const pagination = document.getElementById('search-pagination');
           let activeCategory = '';
 
-          function update(){
+          function update(page){
             const query = input.value.trim();
             const sortKey = sortControl.value;
+            currentPage = page || 1;
             const results = filterResults(query, activeCategory, sortKey);
             suggestions.textContent = buildSuggestionText(normalize(query), results);
+            const totalPages = Math.max(1, Math.ceil(results.length / resultsPerPage));
+            if(currentPage > totalPages) currentPage = totalPages;
             renderSummary(results, query, activeCategory);
-            renderResults(results);
+            renderResults(results, currentPage);
           }
 
           categoryButtons.addEventListener('click', event => {
@@ -1180,11 +1232,20 @@ class StaticSiteBuilder:
             if(target.tagName !== 'BUTTON') return;
             activeCategory = target.dataset.category || '';
             categoryButtons.querySelectorAll('button').forEach(btn => btn.classList.toggle('active', btn === target));
-            update();
+            update(1);
           });
 
-          input.addEventListener('input', update);
-          sortControl.addEventListener('change', update);
+          if(pagination){
+            pagination.addEventListener('click', event => {
+              const target = event.target.closest('button[data-page]');
+              if(!target) return;
+              update(parseInt(target.dataset.page, 10) || 1);
+              document.getElementById('results-summary').scrollIntoView({behavior: 'smooth', block: 'start'});
+            });
+          }
+
+          input.addEventListener('input', () => update(1));
+          sortControl.addEventListener('change', () => update(1));
 
           // URL params: ?q=text and ?tag=tagname
           const urlParams = new URLSearchParams(window.location.search);
@@ -1205,12 +1266,12 @@ class StaticSiteBuilder:
               const url = new URL(window.location);
               url.searchParams.delete('tag');
               window.history.replaceState({}, '', url);
-              update();
+              update(1);
             });
           } else {
             renderTagOverview('');
           }
-          update();
+          update(1);
         })();
 
         function searchText(item){
@@ -2284,9 +2345,9 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
         extra = (
             "\n.pagination { display:flex; justify-content:center; align-items:center; gap:4px; margin-top:32px; margin-bottom:8px; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; padding:4px 12px 8px; scrollbar-width:none; }"
             " .pagination::-webkit-scrollbar { display:none; }"
-            " .pagination a,.pagination .current { min-width:34px; height:34px; display:inline-flex; align-items:center; justify-content:center; border-radius:8px; font-size:0.875rem; flex-shrink:0; }"
-            " .pagination a { color:var(--accent); border:1px solid var(--line); text-decoration:none; transition:background .15s,color .15s; }"
-            " .pagination a:hover { background:var(--accent); color:#fff; border-color:var(--accent); }"
+            " .pagination a,.pagination button,.pagination .current { min-width:34px; height:34px; display:inline-flex; align-items:center; justify-content:center; border-radius:8px; font-size:0.875rem; flex-shrink:0; }"
+            " .pagination a,.pagination button { color:var(--accent); border:1px solid var(--line); background:var(--paper); text-decoration:none; transition:background .15s,color .15s; cursor:pointer; font:inherit; }"
+            " .pagination a:hover,.pagination button:hover { background:var(--accent); color:#fff; border-color:var(--accent); }"
             " .pagination .current { background:var(--accent); color:#fff; font-weight:700; border:1px solid var(--accent); }"
             " .pagination .prev,.pagination .next { padding:0 10px; min-width:auto; font-size:0.8rem; border-radius:8px; white-space:nowrap; }"
             " .pagination .pages { display:contents; }"
