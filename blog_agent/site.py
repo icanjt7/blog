@@ -432,6 +432,13 @@ class StaticSiteBuilder:
             return self.site_url + "/"
         return f"{self.site_url}/{filename}"
 
+    def _absolute_url(self, value: str) -> str:
+        if not value:
+            return ""
+        if value.startswith(("http://", "https://")):
+            return value
+        return f"{self.site_url}/{value.lstrip('./')}"
+
     def _nav_html(self, active: str | None = None, prefix: str = "./") -> str:
         items = [
             f'<a href="{prefix}index.html" class="' + ("active" if active == "홈" else "") + '">홈</a>'
@@ -606,7 +613,11 @@ class StaticSiteBuilder:
             content,
             active=post.category,
             page_url=self._page_url(f"{post.slug}.html"),
+            description=post.excerpt,
             og_image=post.cover_image,
+            og_type="article",
+            meta_extra=self._article_meta_tags(post),
+            structured_data=[self._news_article_schema(post)],
             alternate_urls=alternates,
         )
         # 애드센스 심사 전에는 얇은 언어별 복제 페이지를 만들지 않는다.
@@ -842,24 +853,44 @@ class StaticSiteBuilder:
             f"""
             <item>
               <title>{html.escape(post.title)}</title>
-              <link>{post.slug}.html</link>
+              <link>{html.escape(self._page_url(f"{post.slug}.html"))}</link>
+              <guid isPermaLink="true">{html.escape(self._page_url(f"{post.slug}.html"))}</guid>
               <description>{html.escape(post.excerpt)}</description>
               <pubDate>{post.date:%a, %d %b %Y 00:00:00 +0900}</pubDate>
+              {self._feed_image_tags(post)}
             </item>
             """
             for post in posts[:20]
         )
         feed = f"""<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>{html.escape(self.site_title)}</title>
     <description>오늘 꼭 확인할 생활·기술·정책 소식을 정리합니다.</description>
-    <link>./</link>
+    <link>{html.escape(self.site_url + "/")}</link>
+    <image>
+      <url>{html.escape(self.site_url + "/favicon-512x512.png")}</url>
+      <title>{html.escape(self.site_title)}</title>
+      <link>{html.escape(self.site_url + "/")}</link>
+    </image>
     {items}
   </channel>
 </rss>
 """
         (self.public_dir / "feed.xml").write_text(feed, encoding="utf-8")
+
+    def _feed_image_tags(self, post: Post) -> str:
+        if not post.cover_image:
+            return ""
+        image_url = self._absolute_url(post.cover_image)
+        escaped_url = html.escape(image_url)
+        escaped_alt = html.escape(post.cover_image_alt or post.title)
+        return (
+            f'<media:thumbnail url="{escaped_url}" />\n'
+            f'              <media:content url="{escaped_url}" medium="image">\n'
+            f'                <media:title>{escaped_alt}</media:title>\n'
+            f'              </media:content>'
+        )
 
     def _write_search_index(self, posts: list[Post]) -> None:
         # create a lightweight JSON index for client-side search
@@ -1261,6 +1292,8 @@ class StaticSiteBuilder:
             changefreq: str,
             priority: str,
             alternates: dict[str, str] | None = None,
+            image_url: str | None = None,
+            image_caption: str | None = None,
         ) -> str:
             alternate_links = ""
             if alternates:
@@ -1268,10 +1301,19 @@ class StaticSiteBuilder:
                     f"    <xhtml:link rel=\"alternate\" hreflang=\"{html.escape(lang)}\" href=\"{html.escape(_sitemap_loc(href))}\" />\n"
                     for lang, href in sorted(alternates.items())
                 )
+            image_link = ""
+            if image_url:
+                image_link = (
+                    f"    <image:image>\n"
+                    f"      <image:loc>{html.escape(_sitemap_loc(image_url))}</image:loc>\n"
+                    f"      <image:caption>{html.escape(image_caption or self.site_title)}</image:caption>\n"
+                    f"    </image:image>\n"
+                )
             return (
                 f"  <url>\n"
                 f"    <loc>{html.escape(_sitemap_loc(loc))}</loc>\n"
                 f"{alternate_links}"
+                f"{image_link}"
                 f"    <lastmod>{lastmod:%Y-%m-%d}</lastmod>\n"
                 f"    <changefreq>{changefreq}</changefreq>\n"
                 f"    <priority>{priority}</priority>\n"
@@ -1282,7 +1324,8 @@ class StaticSiteBuilder:
             return (
                 '<?xml version="1.0" encoding="UTF-8"?>\n'
                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
-                'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+                'xmlns:xhtml="http://www.w3.org/1999/xhtml" '
+                'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
                 + "\n".join(entries)
                 + "\n</urlset>\n"
             )
@@ -1331,6 +1374,8 @@ class StaticSiteBuilder:
                 "monthly",
                 "0.7",
                 self._post_alternate_urls(post),
+                self._absolute_url(post.cover_image) if post.cover_image else None,
+                post.cover_image_alt or post.title,
             ))
         posts_name = "sitemap-posts-ko.xml"
         (self.public_dir / posts_name).write_text(_urlset(post_entries), encoding="utf-8")
@@ -1360,6 +1405,9 @@ class StaticSiteBuilder:
         page_url: str | None = None,
         description: str | None = None,
         og_image: str | None = None,
+        og_type: str = "website",
+        meta_extra: str = "",
+        structured_data: list[dict] | None = None,
         html_lang: str = "ko",
         alternate_urls: dict[str, str] | None = None,
         asset_prefix: str = "./",
@@ -1398,21 +1446,42 @@ class StaticSiteBuilder:
             page_url = self._page_url(filename)
         if description is None:
             description = self.site_description
-        og_image_tag = ""
-        if og_image:
-            image_url = og_image
-            if not og_image.startswith("http"):
-                image_url = f"{self.site_url}/{og_image.lstrip('./')}"
-            og_image_tag = f"\n  <meta property=\"og:image\" content=\"{html.escape(image_url)}\">"
+        image_url = self._absolute_url(og_image or "og-default.png")
+        og_image_tag = (
+            f'\n  <meta property="og:image" content="{html.escape(image_url)}">'
+            f'\n  <meta property="og:image:secure_url" content="{html.escape(image_url)}">'
+            '\n  <meta property="og:image:width" content="1200">'
+            '\n  <meta property="og:image:height" content="630">'
+            f'\n  <meta property="og:image:alt" content="{html.escape(title)}">'
+        )
         logo_url = f"{self.site_url}/favicon-512x512.png"
-        structured_data = {
+        organization_schema = {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": self.site_title,
             "url": self.site_url,
             "logo": logo_url,
         }
-        structured_json = json.dumps(structured_data, ensure_ascii=False).replace("</", "<\\/")
+        website_schema = {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": self.site_title,
+            "alternateName": "BriefWave",
+            "url": self.site_url,
+            "inLanguage": "ko-KR",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": f"{self.site_url}/search.html?q={{search_term_string}}",
+                "query-input": "required name=search_term_string",
+            },
+        }
+        structured_items = [organization_schema, website_schema]
+        if structured_data:
+            structured_items.extend(structured_data)
+        structured_json = "\n  ".join(
+            f'<script type="application/ld+json">{json.dumps(item, ensure_ascii=False).replace("</", "<\\/")}</script>'
+            for item in structured_items
+        )
         nav_html = self._nav_html(active, prefix=asset_prefix)
         language_switcher = self._language_switcher_html()
         language_codes_json = json.dumps([code for code, _ in LANGUAGE_OPTIONS], ensure_ascii=False)
@@ -1434,12 +1503,16 @@ class StaticSiteBuilder:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{html.escape(title)}</title>
   <meta name="description" content="{html.escape(description)}">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="{html.escape(og_type)}">
+  <meta property="og:locale" content="ko_KR">
   <meta property="og:site_name" content="{html.escape(self.site_title)}">
   <meta property="og:title" content="{html.escape(title)}">
   <meta property="og:description" content="{html.escape(description)}">
   <meta property="og:url" content="{html.escape(page_url)}">{og_image_tag}
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{html.escape(title)}">
+  <meta name="twitter:description" content="{html.escape(description)}">
+  <meta name="twitter:image" content="{html.escape(image_url)}">
   <meta name="naver-site-verification" content="474c602a51b653598de7203e9604b16da6381678">
   <meta name="theme-color" content="#0f766e">
   <link rel="icon" type="image/svg+xml" href="{asset_prefix}favicon.svg">
@@ -1449,7 +1522,8 @@ class StaticSiteBuilder:
   <link rel="canonical" href="{html.escape(page_url)}">{alternate_link_tags}
   <link rel="stylesheet" href="{asset_prefix}style.css">
   <link rel="alternate" type="application/rss+xml" href="{asset_prefix}feed.xml">
-  <script type="application/ld+json">{structured_json}</script>{adsense_script}
+{meta_extra}
+  {structured_json}{adsense_script}
 </head>
 <body>
 {gtm_body}
@@ -2191,6 +2265,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
             (512, "favicon-512x512.png"),
         ):
             (self.public_dir / name).write_bytes(self._brand_png(size))
+        (self.public_dir / "og-default.png").write_bytes(self._default_social_png())
         manifest = {
             "name": self.site_title,
             "short_name": self.site_title,
@@ -2273,6 +2348,108 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
             + chunk(b"IHDR", struct.pack(">IIBBBBB", size, size, 8, 6, 0, 0, 0))
             + chunk(b"IDAT", zlib.compress(raw, 9))
             + chunk(b"IEND", b"")
+        )
+
+    def _default_social_png(self) -> bytes:
+        width, height = 1200, 630
+        bg = (247, 245, 239, 255)
+        teal = (15, 118, 110, 255)
+        ink = (35, 35, 35, 255)
+        muted = (222, 216, 202, 255)
+        pixels = [[bg for _ in range(width)] for _ in range(height)]
+
+        def fill_rect(x0: int, y0: int, w: int, h: int, color: tuple[int, int, int, int]) -> None:
+            for yy in range(max(0, y0), min(height, y0 + h)):
+                for xx in range(max(0, x0), min(width, x0 + w)):
+                    pixels[yy][xx] = color
+
+        def draw_line(x1: int, y1: int, x2: int, y2: int, line_width: int, color: tuple[int, int, int, int]) -> None:
+            steps = max(abs(x2 - x1), abs(y2 - y1), 1)
+            radius = max(1, line_width // 2)
+            for step in range(steps + 1):
+                t = step / steps
+                x = round(x1 + (x2 - x1) * t)
+                y = round(y1 + (y2 - y1) * t)
+                for yy in range(y - radius, y + radius + 1):
+                    for xx in range(x - radius, x + radius + 1):
+                        if 0 <= xx < width and 0 <= yy < height and (xx - x) ** 2 + (yy - y) ** 2 <= radius ** 2:
+                            pixels[yy][xx] = color
+
+        fill_rect(0, 0, width, 18, teal)
+        fill_rect(86, 96, 156, 156, teal)
+        # Reuse the simple icon shape by drawing its recognizable white marks at larger scale.
+        fill_rect(116, 132, 96, 14, (255, 255, 255, 238))
+        fill_rect(116, 162, 64, 14, (255, 255, 255, 238))
+        draw_line(116, 212, 136, 194, 11, (255, 255, 255, 238))
+        draw_line(136, 194, 156, 212, 11, (255, 255, 255, 238))
+        draw_line(156, 212, 176, 230, 11, (255, 255, 255, 238))
+        draw_line(176, 230, 196, 212, 11, (255, 255, 255, 238))
+        draw_line(196, 212, 222, 212, 11, (255, 255, 255, 238))
+
+        # Pixel-style title bars. They intentionally avoid readable text inside the PNG;
+        # crawlers only need a stable 1200x630 image, while HTML carries the text.
+        fill_rect(286, 116, 420, 34, ink)
+        fill_rect(286, 174, 610, 24, teal)
+        fill_rect(86, 354, 820, 18, muted)
+        fill_rect(86, 402, 680, 18, muted)
+        fill_rect(86, 450, 760, 18, muted)
+        fill_rect(86, 522, 230, 16, teal)
+        fill_rect(344, 522, 230, 16, muted)
+        fill_rect(602, 522, 230, 16, muted)
+
+        raw = b"".join(b"\x00" + b"".join(bytes(px) for px in row) for row in pixels)
+
+        def chunk(kind: bytes, data: bytes) -> bytes:
+            import binascii
+            payload = kind + data
+            return struct.pack(">I", len(data)) + payload + struct.pack(">I", binascii.crc32(payload) & 0xFFFFFFFF)
+
+        return (
+            b"\x89PNG\r\n\x1a\n"
+            + chunk(b"IHDR", struct.pack(">IIBBBBB", width, height, 8, 6, 0, 0, 0))
+            + chunk(b"IDAT", zlib.compress(raw, 9))
+            + chunk(b"IEND", b"")
+        )
+
+    def _news_article_schema(self, post: Post) -> dict:
+        image_url = self._absolute_url(post.cover_image or "og-default.png")
+        page_url = self._page_url(f"{post.slug}.html")
+        display_author = self._display_author(post)
+        return {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "mainEntityOfPage": {"@type": "WebPage", "@id": page_url},
+            "headline": post.title,
+            "description": post.excerpt,
+            "image": [image_url],
+            "datePublished": post.date.isoformat(),
+            "dateModified": post.date.isoformat(),
+            "articleSection": post.category,
+            "keywords": ", ".join(post.tags),
+            "inLanguage": "ko-KR",
+            "author": {"@type": "Organization", "name": display_author},
+            "publisher": {
+                "@type": "Organization",
+                "name": self.site_title,
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": f"{self.site_url}/favicon-512x512.png",
+                    "width": 512,
+                    "height": 512,
+                },
+            },
+        }
+
+    def _article_meta_tags(self, post: Post) -> str:
+        tags = "\n".join(
+            f'  <meta property="article:tag" content="{html.escape(tag)}">'
+            for tag in post.tags[:12]
+        )
+        return (
+            f'  <meta property="article:published_time" content="{html.escape(post.date.isoformat())}">\n'
+            f'  <meta property="article:modified_time" content="{html.escape(post.date.isoformat())}">\n'
+            f'  <meta property="article:section" content="{html.escape(post.category)}">\n'
+            f"{tags}"
         )
 
     def _write_cname(self) -> None:
