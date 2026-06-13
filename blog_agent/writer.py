@@ -4,6 +4,7 @@ import hashlib
 import os
 import re
 from datetime import datetime
+from html import unescape as html_unescape
 
 from openai import OpenAI
 
@@ -194,6 +195,8 @@ class WriterAgent:
 - 핵심 키워드 "{topic.keyword}"는 4~7회만 자연스럽게 쓴다.
 - 본문 1,400~1,800자. 표 1개 이상 포함.
 - 마지막 문단은 독자에게 하나의 행동 권고나 확인 경로로 마무리.
+- "원문 안내의 시행일과 적용 대상을 먼저 봅니다", "신청, 예약, 방문, 자동 적용 중 어떤 방식인지 구분합니다"처럼 모든 글에 붙일 수 있는 범용 체크리스트는 금지한다.
+- 체크리스트를 쓰려면 참고 출처에서 확인되는 고유명사, 숫자, 기간, 대상, 기관명, 절차를 최소 5개 이상 넣어 주제별로 다르게 쓴다.
 {tourism_instruction}
 
 [맥락 심화 — 반드시 포함]
@@ -260,40 +263,34 @@ BODY:
         category = topic.category
 
         if category == "생활":
+            living = self._living_context(topic, source_title, source_summary)
             return f"""## 무엇이 달라졌나
 
-{source_title} 소식의 핵심은 {topic.keyword}가 일상에서 어떤 선택이나 준비로 이어지는지입니다. 생활 정보는 제목만 보면 좋아 보이지만, 실제로는 대상, 기준일, 신청 방식, 비용 조건을 나눠 봐야 도움이 됩니다.
+{source_title} 소식은 {living["lead"]} 먼저 제목의 혜택 표현보다 실제로 누가, 언제, 어떤 절차로 움직여야 하는지 나눠 보는 편이 좋습니다.
 
 {source_summary or frame["opening"]}
 
-## 바로 확인할 항목
+## 이번 글에서 바로 볼 항목
 
-| 항목 | 확인 기준 |
+| 항목 | 이번 소식에서 확인할 내용 |
 | --- | --- |
-| 신청 주체 | {frame["target_check"]} |
-| 준비물 | {frame["cost_check"]} |
-| 처리 흐름 | {frame["timing_check"]} |
-| 예외 상황 | {frame["exception_check"]} |
+{living["table_rows"]}
 
-## 실제로 헷갈리는 지점
+## 숫자와 대상은 이렇게 읽으면 쉽습니다
 
-{frame["detail_1"]}
+{living["detail_1"]}
 
-{frame["detail_2"]}
+{living["detail_2"]}
 
-{topic.keyword}를 검색할 때는 "혜택이 있는가"와 "내가 바로 이용할 수 있는가"를 분리해서 봐야 합니다. 지원이나 안내가 있어도 지역, 기간, 신청 방식, 이용 조건에 따라 실제 체감은 달라질 수 있습니다.
+{living["detail_3"]}
 
-## 이렇게 준비하면 덜 헤맨다
+## 실제 확인 순서
 
-1. 원문 안내의 시행일과 적용 대상을 먼저 봅니다.
-2. 신청, 예약, 방문, 자동 적용 중 어떤 방식인지 구분합니다.
-3. 비용, 포인트, 캐시백, 준비물처럼 숫자로 확인할 항목을 따로 적습니다.
-4. 지역이나 세대, 계정, 사용량처럼 예외 조건이 있는지 확인합니다.
-5. 이용 직전에는 운영 주체의 최신 안내를 다시 확인합니다.
+{living["steps"]}
 
 ## 마무리
 
-{topic.keyword}는 편의나 혜택이 커진 소식일수록 예외 조건을 함께 봐야 합니다. 실제 이용 전에는 원문 안내에서 대상, 기준일, 신청 또는 적용 절차를 한 번 더 확인하는 편이 가장 안전합니다.
+{living["closing"]}
 
 ## 참고한 곳
 
@@ -980,10 +977,163 @@ BODY:
     @staticmethod
     def _clean_summary(text: str) -> str:
         cleaned = re.sub(r"<[^>]+>", " ", text)
+        cleaned = html_unescape(cleaned)
         cleaned = re.sub(r"\s+", " ", cleaned).strip()
         if len(cleaned) <= 280:
             return cleaned
         return cleaned[:280].rsplit(" ", 1)[0] + "..."
+
+    def _living_context(self, topic: Topic, source_title: str, source_summary: str) -> dict[str, str]:
+        raw_context = self._clean_living_text(f"{source_title}. {source_summary}")
+        numbers = self._extract_living_numbers(raw_context)
+        targets = self._extract_living_targets(raw_context, topic.keyword)
+        actions = self._extract_living_actions(raw_context)
+        agency = self._extract_living_agency(raw_context)
+        topic_label = self._with_particle(topic.keyword, "은", "는")
+        primary_number = numbers[0] if numbers else "발표문에 나온 기준"
+        second_number = numbers[1] if len(numbers) > 1 else "적용 시점"
+        target_text = targets[0] if targets else topic.keyword
+        target_topic = self._with_particle(target_text, "과", "와")
+        agency_text = agency or "운영 주체"
+        rows = [
+            ("핵심 대상", target_text),
+            ("확인할 수치", ", ".join(numbers[:4]) if numbers else "원문에 표시된 금액, 비율, 기간"),
+            ("처리 방식", ", ".join(actions[:3]) if actions else "신청·방문·자동 적용 여부를 원문에서 확인"),
+            ("담당 주체", agency_text),
+        ]
+        if len(numbers) >= 5:
+            rows.append(("추가로 볼 숫자", ", ".join(numbers[4:8])))
+        table_rows = "\n".join(f"| {name} | {value} |" for name, value in rows)
+        number_sentence = (
+            f"이번 소식에서 먼저 볼 숫자는 {', '.join(numbers[:5])}입니다. "
+            if numbers
+            else "이번 소식은 숫자가 제목에 크게 드러나지 않더라도 원문 안의 기준일과 대상 조건을 함께 봐야 합니다. "
+        )
+        target_sentence = (
+            f"대상은 '{target_text}'으로 읽히는 부분부터 확인하면 됩니다. "
+            if targets
+            else f"{topic_label} 누구에게 적용되는지 원문 제목과 본문 첫 문단에서 먼저 확인해야 합니다. "
+        )
+        action_sentence = (
+            f"행동 방식은 {', '.join(actions[:3])} 쪽에 가깝습니다. "
+            if actions
+            else "별도 신청인지, 안내를 확인만 하면 되는지, 기관이 자동으로 적용하는지는 원문 링크에서 한 번 더 봐야 합니다. "
+        )
+        detail_1 = (
+            f"{number_sentence}{primary_number}만 따로 보면 실제 조건을 놓칠 수 있습니다. "
+            f"{second_number}처럼 함께 나온 기간·비율·단위가 무엇을 기준으로 하는지 같이 봐야 합니다."
+        )
+        detail_2 = (
+            f"{target_sentence}{topic.keyword}처럼 생활과 연결되는 정보는 전체 국민 대상인지, 특정 세대·가구·업종·연령대 대상인지가 다르면 행동이 달라집니다."
+        )
+        detail_3 = (
+            f"{action_sentence}특히 {agency_text}가 운영하거나 발표한 사안이라면 원문 페이지의 첨부자료, 신청 페이지, 문의처가 실제 행동 기준이 됩니다."
+        )
+        steps = "\n".join(
+            f"{idx}. {step}"
+            for idx, step in enumerate(
+                self._living_steps(topic.keyword, numbers, targets, actions, agency_text),
+                start=1,
+            )
+        )
+        return {
+            "lead": f"{target_topic} 직접 연결되는지 확인해야 하는 생활 정보입니다.",
+            "table_rows": table_rows,
+            "detail_1": detail_1,
+            "detail_2": detail_2,
+            "detail_3": detail_3,
+            "steps": steps,
+            "closing": (
+                f"{topic_label} '{primary_number}' 같은 눈에 띄는 표현보다 대상과 처리 방식이 더 중요합니다. "
+                f"실제 신청이나 이용 전에는 {agency_text}의 원문 안내에서 최신 기준을 확인하세요."
+            ),
+        }
+
+    @staticmethod
+    def _clean_living_text(text: str) -> str:
+        return re.sub(r"\s+", " ", html_unescape(re.sub(r"<[^>]+>", " ", text))).strip()
+
+    @staticmethod
+    def _extract_living_numbers(text: str) -> list[str]:
+        patterns = [
+            r"\d{4}\s*년\s*\d{1,2}\s*월\s*\d{1,2}\s*일",
+            r"\d{1,2}\s*월\s*\d{1,2}\s*일",
+            r"\d{1,2}\s*월(?:부터|까지|~\d{1,2}\s*월까지)?",
+            r"\d+(?:\.\d+)?\s*%",
+            r"\d+(?:,\d{3})*(?:\.\d+)?\s*(?:원|만원|억원|조원)",
+            r"\d+(?:,\d{3})*(?:\.\d+)?\s*(?:건|명|개|곳|세대|가구|kg|㎏|kWh|회|년)",
+            r"\d+(?:,\d{3})*(?:\.\d+)?\s*(?:원|만원)?\s*[~∼-]\s*\d+(?:,\d{3})*(?:\.\d+)?\s*(?:원|만원|%)",
+        ]
+        found: list[str] = []
+        for pattern in patterns:
+            for match in re.findall(pattern, text, flags=re.I):
+                value = re.sub(r"\s+", " ", match).strip()
+                if value and value not in found:
+                    found.append(value)
+        return found[:10]
+
+    @staticmethod
+    def _extract_living_targets(text: str, keyword: str) -> list[str]:
+        candidates: list[str] = []
+        target_terms = (
+            "주택용", "가정", "가구", "세대", "청년", "어르신", "노인", "아동", "미성년자", "부모",
+            "학생", "대학생", "직장인", "소상공인", "자영업자", "사업자", "농어민",
+            "장애인", "피해자", "종사자", "이용자", "국민",
+        )
+        for term in target_terms:
+            if term in text or term in keyword:
+                candidates.append(term)
+        quoted = re.findall(r"'([^']{2,30})'", text)
+        for value in quoted:
+            if any(term in value for term in ("서비스", "제도", "캐시백", "부트캠프", "지원", "혜택")):
+                candidates.append(value)
+        return list(dict.fromkeys(candidates))[:5]
+
+    @staticmethod
+    def _extract_living_actions(text: str) -> list[str]:
+        action_map = {
+            "신청": "신청 필요",
+            "접수": "접수 일정 확인",
+            "예약": "예약 필요 여부 확인",
+            "방문": "방문 전 운영 확인",
+            "재발급": "재발급 절차 확인",
+            "캐시백": "요금 차감 또는 캐시백 기준 확인",
+            "차감": "요금 차감 방식 확인",
+            "지급": "지급 방식 확인",
+            "신고": "신고 또는 접수 경로 확인",
+            "공모": "공모 신청 일정 확인",
+            "모집": "모집 대상과 마감 확인",
+            "확대": "확대 적용 시점 확인",
+            "폐쇄": "이용 중단 또는 대체 경로 확인",
+        }
+        actions = [label for marker, label in action_map.items() if marker in text]
+        return list(dict.fromkeys(actions))[:5]
+
+    @staticmethod
+    def _extract_living_agency(text: str) -> str:
+        agencies = re.findall(r"([가-힣A-Za-z·]{2,30}(?:부|처|청|공사|공단|위원회|진흥원|재단|센터))", text)
+        blocked = {"정부", "국민", "자료", "원문", "본문", "지난해"}
+        for agency in agencies:
+            if agency not in blocked and not agency.endswith("정부"):
+                return agency
+        return ""
+
+    @staticmethod
+    def _living_steps(keyword: str, numbers: list[str], targets: list[str], actions: list[str], agency: str) -> list[str]:
+        first_number = numbers[0] if numbers else "원문 기준일"
+        first_target = targets[0] if targets else keyword
+        first_action = actions[0] if actions else "공식 안내 확인"
+        steps = [
+            f"{WriterAgent._with_particle(first_target, '이', '가')} 실제 대상에 포함되는지 원문 첫 문단에서 확인합니다.",
+            f"'{first_number}' 표현이 금액인지, 비율인지, 시행 기간인지 단위를 나눠 적습니다.",
+            f"처리 방식은 '{first_action}' 기준으로 보고 필요한 준비물을 역으로 확인합니다.",
+        ]
+        if len(numbers) >= 2:
+            steps.append(f"'{numbers[1]}'도 함께 표시돼 있다면 적용 기간이나 한도인지 따로 확인합니다.")
+        if len(targets) >= 2:
+            steps.append(f"'{targets[1]}'처럼 보조 대상이 있으면 가족·세대·계정 단위 제한을 확인합니다.")
+        steps.append(f"마지막으로 {agency} 원문 링크에서 첨부자료나 문의처가 있는지 확인합니다.")
+        return steps[:6]
 
     @staticmethod
     def _env_int(name: str, default: int) -> int:
