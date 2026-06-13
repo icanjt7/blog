@@ -34,6 +34,10 @@ on:
           - "false"
           - "true"
         default: "false"
+      timeout_minutes:
+        description: "Job timeout for large one-time imports"
+        required: true
+        default: "60"
 
 concurrency:
   group: us-government-press-import
@@ -42,7 +46,7 @@ concurrency:
 jobs:
   import:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: ${{ fromJSON(github.event_name == 'workflow_dispatch' && inputs.timeout_minutes || '60') }}
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     permissions:
