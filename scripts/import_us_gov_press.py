@@ -339,7 +339,7 @@ TITLE:
 BODY:
 """
     generated = _call_llm(writer, prompt)
-    title = extract_label(generated, "TITLE") or fallback_title(entry)
+    title = normalize_title(extract_label(generated, "TITLE"), entry)
     body = extract_label(generated, "BODY") or ""
     if len(clean_text(body)) < 700:
         body = fallback_body(entry, source_text)
@@ -360,6 +360,21 @@ def extract_label(text: str, label: str) -> str:
 def fallback_title(entry: USEntry) -> str:
     title = re.sub(r"\s+", " ", entry.title).strip()
     return f"{entry.source.agency_ko}, {title[:24]}".rstrip()
+
+
+def normalize_title(value: str, entry: USEntry) -> str:
+    """Keep LLM titles safe for YAML/frontmatter and filenames."""
+    value = clean_text(value.replace("\\n", "\n"))
+    value = re.split(r"(?i)\b(?:BODY|EXCERPT)\s*:", value, maxsplit=1)[0]
+    value = re.sub(r"(?i)^TITLE\s*:\s*", "", value).strip()
+    value = value.splitlines()[0] if value.splitlines() else value
+    value = value.strip(" \t\r\n\"'`*_#:-")
+    value = re.sub(r"\s+", " ", value)
+    if len(value) > 70:
+        value = value[:70].rsplit(" ", 1)[0].rstrip(" ,.;:-")
+    if len(value) < 4 or value in {"**", "---"}:
+        return fallback_title(entry)
+    return value
 
 
 def fallback_body(entry: USEntry, source_text: str) -> str:

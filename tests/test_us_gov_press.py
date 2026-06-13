@@ -63,6 +63,21 @@ class USGovernmentPressImportTest(unittest.TestCase):
         self.assertEqual(len(entries), 1)
         self.assertEqual(entries[0].url, "https://agency.gov/release")
 
+    def test_normalize_title_removes_body_label_and_markdown(self) -> None:
+        source = MODULE.SOURCES[2]
+        entry = MODULE.USEntry(
+            source=source,
+            title="Paramount Skydance Warner Bros Transaction",
+            date="2026-06-12",
+            url="https://www.justice.gov/example",
+            summary="",
+        )
+
+        title = MODULE.normalize_title('**\\nBODY: broken article body', entry)
+
+        self.assertIn("미 법무부", title)
+        self.assertNotIn("BODY", title)
+
 
 if __name__ == "__main__":
     unittest.main()
