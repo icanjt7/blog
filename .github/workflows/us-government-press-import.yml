@@ -1,0 +1,157 @@
+name: US government press import
+
+on:
+  schedule:
+    # Daily 10:20 KST. GitHub cron uses UTC.
+    - cron: "20 1 * * *"
+  workflow_dispatch:
+    inputs:
+      per_source:
+        description: "Posts per U.S. agency/source"
+        required: true
+        default: "1"
+      max_total_posts:
+        description: "Total posts cap for this run. 0 means unlimited"
+        required: true
+        default: "6"
+      sources:
+        description: "Optional source codes separated by spaces, e.g. nasa doj ftc"
+        required: false
+        default: ""
+      new_only:
+        description: "Skip existing URLs and fill with new posts"
+        required: true
+        type: choice
+        options:
+          - "true"
+          - "false"
+        default: "true"
+      dry_run:
+        description: "Preview only, do not commit or deploy"
+        required: true
+        type: choice
+        options:
+          - "false"
+          - "true"
+        default: "false"
+
+concurrency:
+  group: us-government-press-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+      models: read
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync latest main
+        run: git pull --ff-only origin main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Import U.S. government press releases
+        env:
+          INPUT_PER_SOURCE: ${{ inputs.per_source || '1' }}
+          INPUT_MAX_TOTAL_POSTS: ${{ inputs.max_total_posts || '6' }}
+          INPUT_SOURCES: ${{ inputs.sources || '' }}
+          INPUT_NEW_ONLY: ${{ inputs.new_only || 'true' }}
+          INPUT_DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
+          MOTIF_API: ${{ secrets.MOTIF_API }}
+          MOTIF_MODEL: ${{ vars.MOTIF_MODEL || 'motif-12.7b-reasoning' }}
+          MOTIF_BASE_URL: ${{ vars.MOTIF_BASE_URL || 'https://chat.motiftech.io/openapi/v1' }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL || 'groq/compound' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.1-8b-instruct:free' }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: |
+          args=(--per-source "${INPUT_PER_SOURCE}")
+          if [ "${INPUT_MAX_TOTAL_POSTS}" != "0" ]; then
+            args+=(--max-total-posts "${INPUT_MAX_TOTAL_POSTS}")
+          else
+            args+=(--max-total-posts 0)
+          fi
+          if [ -n "${INPUT_SOURCES}" ]; then
+            read -r -a sources <<< "${INPUT_SOURCES}"
+            args+=(--sources "${sources[@]}")
+          fi
+          if [ "${INPUT_NEW_ONLY}" = "true" ]; then
+            args+=(--new-only)
+          fi
+          if [ "${INPUT_DRY_RUN}" = "true" ]; then
+            args+=(--dry-run)
+          fi
+          python -u scripts/import_us_gov_press.py "${args[@]}"
+
+      - name: Re-fetch missing cover images
+        if: ${{ inputs.dry_run != 'true' }}
+        env:
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: python -m blog_agent.cli re-image
+
+      - name: Build static site
+        if: ${{ inputs.dry_run != 'true' }}
+        env:
+          BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
+          BLOG_CUSTOM_DOMAIN: ${{ vars.BLOG_CUSTOM_DOMAIN }}
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+          ADSENSE_PUBLISHER_ID: ${{ secrets.ADSENSE_PUBLISHER_ID }}
+        run: python -m blog_agent.cli build-site
+
+      - name: Commit imported posts
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "blog-agent"
+          git config user.email "actions@github.com"
+          git add output state || true
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: import us government press releases"
+          git pull --rebase --autostash origin main
+          git push
+
+      - uses: actions/configure-pages@v5
+        if: ${{ inputs.dry_run != 'true' }}
+
+      - uses: actions/upload-pages-artifact@v3
+        if: ${{ inputs.dry_run != 'true' }}
+        with:
+          path: public
+
+      - uses: actions/deploy-pages@v4
+        if: ${{ inputs.dry_run != 'true' }}
+
+      - name: Submit sitemap to Google Search Console
+        if: ${{ inputs.dry_run != 'true' }}
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_SERVICE_ACCOUNT_JSON_BASE64: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON_BASE64 }}
+          GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL || 'https://briefwave.kr/' }}
+          GOOGLE_SITEMAP_URL: ${{ vars.GOOGLE_SITEMAP_URL || 'https://briefwave.kr/sitemap.xml' }}
+        run: python scripts/submit_google_sitemap.py

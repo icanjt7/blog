@@ -93,7 +93,15 @@ docker compose -f docker-compose.wordpress.yml up -d
 
 ## GitHub Actions
 
-`.github/workflows/daily-publish.yml`가 매일 00:10 KST에 실행되도록 설정되어 있습니다. 이 워크플로는 글 생성, 초안 커밋, GitHub Pages 배포까지 수행합니다.
+`.github/workflows/daily-publish.yml`는 2시간마다 실행되어 생활·기술·정책·정치·핫이슈·스포츠 카테고리별 글을 발행합니다. 이 워크플로는 글 생성, 초안 커밋, GitHub Pages 배포까지 수행합니다.
+
+보도자료 자동 수집 워크플로:
+
+- `central-government-press-import.yml`: 중앙정부 보도자료, 08:00/17:00 KST
+- `weekly-press-import.yml`: 기존 6개 기관 보도자료, 09:00/18:00 KST
+- `us-government-press-import.yml`: 미국 정부 공식 RSS 보도자료, 10:20 KST
+
+미국 정부 수집기는 백악관, NASA, 미 법무부, FTC, 미 교육부, 미 노동통계국 공식 피드를 사용합니다. 기본값은 기관당 1건, 전체 최대 6건이며 글은 기존 카테고리(`정치`, `기술`, `정책`, `생활`, `핫이슈`)로 분류됩니다.
 
 GitHub 저장소 Settings → Secrets and variables → Actions에 다음 값을 등록하세요.
 
