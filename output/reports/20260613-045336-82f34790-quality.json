@@ -1,0 +1,51 @@
+{
+  "run_id": "20260613-045336-82f34790",
+  "average_quality": 87.3,
+  "drafts": [
+    {
+      "slug": "한-이탈리아는-최적의-파트너-글로벌-불확실성-함께-헤쳐나가야-대통령-94579adc",
+      "title": "한-이탈리아는 최적의 파트너…글로벌 불확실성 함께 헤쳐나가야 대통령, 발언보다 맥락 보기",
+      "keyword": "한-이탈리아는 최적의 파트너…글로벌 불확실성 함께 헤쳐나가야 대통령",
+      "category": "정치",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 한-이탈리아는 최적의 파트너…글로벌 불확실성 함께 헤쳐나가야 대통령, 발언보다 맥락 보기. Keyword: 한-이탈리아는 최적의 파트너…글로벌 불확실성 함께 헤쳐나가야 대통령. Concrete visual subject: neutral election civic public office. Context: ## 이 이슈의 핵심 이 대통령 \"한-이탈리아는 최적의 파트너…글로벌 불확실성 함께 헤쳐나가야\"는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 한-이탈리아는 최적의 파트너…글로벌 불확실성 함께 헤쳐나가야 대통령를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 이재명 대통령이 12일(현지시간) 오후, 로마 시내 호텔에서 개최된 '한-이탈리아 비즈니스 라운드테이블'에 참석했다. 이 대통령의 이탈리아 국빈 방문을 계기로 개최된 이번 행사에는 류진 한국경제인연합회 회장 및 이재용 삼성전자 회장 등 양국 기업인 30여명, 양국 정부인사, 협회·단체를 포함해 총 40여 명이 참석했다. 이재명 대통령이 12일(현지시간) 이탈리아 로마의 한 호텔에서 열린 비즈니스 라운드테이블에서 발언하고 있다. 2026.6.13 (사진=저작권자(c) 연합뉴스, 무단 전재-재배포... ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 정부, 국회, 정당, 부처, 외교 상대국 중 어느 주체가 관련되는지 | | 시점 | 발표일, 회담일, 법안 처리 일정, 후속 브리핑 여부 | | 영향 | 예산, 산업 영향, 외교 협력, 규제 변화 가능성 | | 예외 | 정치적 해석과 확정된 제도 변화를 구분할 필요 | ## 독자가 이해해야 할 배경 정치 이슈는 찬반 평가보다 확인 가능한 사실을 먼저 봐야. Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1778800053717-9c0ad9b8751d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgxMzI2NTA1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "지속가능한-스마트도시-데이터허브로-만든다-c6f535a9",
+      "title": "AI와 데이터허브로 '지속가능한 스마트도시' 만든다, 생성 AI의 다음 실험",
+      "keyword": "지속가능한 스마트도시 데이터허브로 만든다",
+      "category": "기술",
+      "quality_score": 66.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: AI와 데이터허브로 '지속가능한 스마트도시' 만든다, 생성 AI의 다음 실험. Keyword: 지속가능한 스마트도시 데이터허브로 만든다. Concrete visual subject: artificial intelligence neural network. Context: ## 무슨 소식인가 AI와 데이터허브로 '지속가능한 스마트도시' 만든다 소식입니다. 국토교통부는 '2026년 스마트도시 조성사업' 공모 결과 거점형은 경기 수원시, 특화단지는 부산광역시와 경기 성남시를 선정했다. '2026년 스마트도시 데이터허브 시범솔루션 발굴사업' 공모에선 경상남도와 충남 태안군을 선정했다. '스마트도시 조성사업'은 인공지능·스마트기술을 활용하여 다양한 도시문제를 해결하고, 스마트도시 산업 활성화를 지원하는 3개년 사업이다. 국토교통부는 지난 3월 지방정부를 대상으로 '거점형 스마트도시 조성사업', '스마트도시 특화단지 조성사업' 2개 유형으로 나누어... ## 먼저 알아둘 배경 Google 같은 플랫폼 기업은 검색·클라우드뿐 아니라 이미지, 영상, 생산성 도구에 생성 AI를 붙이고 있습니다. AI와 데이터허브로 '지속가능한 스마트도시' 만든다는 이름보다 어떤 입력 데이터를 받아 어떤 결과물을 만드는지가 더 중요합니다. ## 왜 기술 이슈인가 생성 AI 도구는 재미있는 기능처럼 보이지만, 사진·얼굴·취향 데이터를 다룰 때 개인정보와 저작권 문제가 함께 생깁니다. AI와 데이터허브로 '지속가능한 스마트도시' 만든다를 볼 때는 결과물 품질뿐 아니라 학습·저장·공유 설정을 확인해야 합니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | AI 이미지 도구 이용자, 크리에이터, Go. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgxMTY2MzgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "안전관리-빈틈없이-챙긴다-부산-공연-인파에-07f28bf5",
+      "title": "안전관리 빈틈없이 챙긴다 부산 공연 인파에, 신청 전 확인할 것",
+      "keyword": "안전관리 빈틈없이 챙긴다 부산 공연 인파에",
+      "category": "생활",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 안전관리 빈틈없이 챙긴다 부산 공연 인파에, 신청 전 확인할 것. Keyword: 안전관리 빈틈없이 챙긴다 부산 공연 인파에. Concrete visual subject: busan haeundae beach skyline ocean application form document performance stage arts safety public service. Context: ## 무엇이 달라졌나 정부, BTS 부산 공연 인파에 \"안전관리 빈틈없이 챙긴다\" 소식은 안전관리 빈틈없이 챙긴다 부산 공연 인파에와 직접 연결되는지 확인해야 하는 생활 정보입니다. 먼저 제목의 혜택 표현보다 실제로 누가, 언제, 어떤 절차로 움직여야 하는지 나눠 보는 편이 좋습니다. 김광용 행정안전부 재난안전관리본부장은 12일 방탄소년단(BTS) 공연이 열리는 부산광역시를 찾아 인파 안전관리 점검회의를 주재했다고 행안부는 전했다. 12일과 13일 아시아드 주경기장에서 열리는 이번 공연은 본공연 외에도 다양한 연계 행사가 함께 개최되며 국내외 수많은 관객이 공연장과 행사장에 몰릴 것으로 예상되는 만큼 현장 안전관리에 사각지대가 없도록 철저한 대비가 필요하다. 연계 행사로는 부산항 제1부두의 '포트빌리지'와 광안리 해수욕장의 '드론라이트쇼', 해운대 해수욕장의 '러브송라운지'가... ## 이번 글에서 바로 볼 항목 | 항목 | 이번 소식에서 확인할 내용 | | --- | --- | | 핵심 대상 | 안전관리 빈틈없이 챙긴다 부산 공연 인파에 | | 확인할 수치 | 원문에 표시된 금액, 비율, 기간 | | 처리 방식 | 신청·방문·자동 적용 여부를 원문에서 확인 | | 담당 주체 | 행정안전부 | ## 숫자와 대상은 이렇게 읽으면 쉽습니다 이번 소식은 숫자가 제목에 크게 드러나지 않더라도 원문 안의 기준일과 대상 조건을 함께 봐야 합니다. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1638591751482-1a7d27fcea15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxidXNhbiUyMGhhZXVuZGFlJTIwYmVhY2glMjBza3lsaW5lJTIwb2NlYW4lMjBhcHBsaWNhdGlvbiUyMGZvcm0lMjBkb2N1bWVudCUyMHBlcmZvcm1hbmNlJTIwc3RhZ2UlMjBhcnRzJTIwc2FmZXR5JTIwcHVibGljJTIwc2VydmljZXxlbnwxfDB8fHwxNzgxMzI2NTIzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
