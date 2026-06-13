@@ -1478,10 +1478,11 @@ class StaticSiteBuilder:
         structured_items = [organization_schema, website_schema]
         if structured_data:
             structured_items.extend(structured_data)
-        structured_json = "\n  ".join(
-            f'<script type="application/ld+json">{json.dumps(item, ensure_ascii=False).replace("</", "<\\/")}</script>'
-            for item in structured_items
-        )
+        structured_scripts = []
+        for item in structured_items:
+            item_json = json.dumps(item, ensure_ascii=False).replace("</", "<\\/")
+            structured_scripts.append(f'<script type="application/ld+json">{item_json}</script>')
+        structured_json = "\n  ".join(structured_scripts)
         nav_html = self._nav_html(active, prefix=asset_prefix)
         language_switcher = self._language_switcher_html()
         language_codes_json = json.dumps([code for code, _ in LANGUAGE_OPTIONS], ensure_ascii=False)
