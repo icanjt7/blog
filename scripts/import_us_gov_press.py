@@ -235,19 +235,24 @@ def existing_post_for_url_anywhere(url: str) -> Path | None:
 
 
 def _call_llm(writer: WriterAgent | None, prompt: str, *, temperature: float = 0.65, max_tokens: int = 2200) -> str:
-    if not writer or not writer._client:
+    if not writer or not writer._providers:
         return ""
-    try:
-        response = writer._client.chat.completions.create(
-            model=writer._model,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=temperature,
-            max_tokens=max_tokens,
-        )
-        return (response.choices[0].message.content or "").strip()
-    except Exception as exc:
-        print(f"  ! LLM 실패: {type(exc).__name__}")
-        return ""
+    last_error = ""
+    for client, model in writer._providers:
+        try:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=temperature,
+                max_tokens=max_tokens,
+            )
+            return (response.choices[0].message.content or "").strip()
+        except Exception as exc:
+            last_error = f"{model}: {type(exc).__name__}"
+            continue
+    if last_error:
+        print(f"  ! LLM 전체 실패: {last_error}")
+    return ""
 
 
 def korean_article(entry: USEntry, source_text: str, writer: WriterAgent | None) -> tuple[str, str]:
