@@ -76,16 +76,14 @@ class SeoEditorAgent:
     def _init_client(self, s: Settings) -> None:
         timeout = s.llm_timeout_seconds
         provider_limit = self._env_int("BLOG_LLM_PROVIDER_LIMIT", 0)
-        def add(client: OpenAI, model: str) -> None:
-            if provider_limit and len(self._providers) >= provider_limit:
-                return
-            self._providers.append((client, model))
-            if self.client is None:
-                self.client = client
-                self._model = model
+        providers: list[tuple[str, OpenAI, str]] = []
+
+        def add(name: str, client: OpenAI, model: str) -> None:
+            providers.append((name, client, model))
 
         if s.motif_api_key:
             add(
+                "motif",
                 OpenAI(
                     api_key=s.motif_api_key,
                     base_url=s.motif_base_url,
@@ -96,6 +94,7 @@ class SeoEditorAgent:
             )
         if s.groq_api_key:
             add(
+                "groq",
                 OpenAI(
                     api_key=s.groq_api_key,
                     base_url="https://api.groq.com/openai/v1",
@@ -106,6 +105,7 @@ class SeoEditorAgent:
             )
         if s.gemini_api_key:
             add(
+                "gemini",
                 OpenAI(
                     api_key=s.gemini_api_key,
                     base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
@@ -116,6 +116,7 @@ class SeoEditorAgent:
             )
         if s.openrouter_api_key:
             add(
+                "openrouter",
                 OpenAI(
                     api_key=s.openrouter_api_key,
                     base_url="https://openrouter.ai/api/v1",
@@ -125,9 +126,10 @@ class SeoEditorAgent:
                 s.openrouter_model,
             )
         if s.openai_api_key:
-            add(OpenAI(api_key=s.openai_api_key, timeout=timeout, max_retries=0), s.openai_model)
+            add("openai", OpenAI(api_key=s.openai_api_key, timeout=timeout, max_retries=0), s.openai_model)
         if s.github_token:
             add(
+                "github",
                 OpenAI(
                     api_key=s.github_token,
                     base_url="https://models.inference.ai.azure.com",
@@ -136,6 +138,16 @@ class SeoEditorAgent:
                 ),
                 s.github_model,
             )
+        order = self._provider_order()
+        rank = {name: index for index, name in enumerate(order)}
+        providers.sort(key=lambda item: rank.get(item[0], len(rank)))
+        for _name, client, model in providers:
+            if provider_limit and len(self._providers) >= provider_limit:
+                break
+            self._providers.append((client, model))
+            if self.client is None:
+                self.client = client
+                self._model = model
 
     def improve(self, draft: Draft) -> Draft:
         if not self._providers:
@@ -411,6 +423,14 @@ BODY:
         pattern = rf"{label}:\s*(.*?)(?=\n[A-Z]+:|\Z)"
         match = re.search(pattern, text, flags=re.S)
         return match.group(1).strip() if match else default
+
+    @staticmethod
+    def _provider_order() -> list[str]:
+        raw = os.getenv(
+            "BLOG_LLM_PROVIDER_ORDER",
+            os.getenv("REFINE_LLM_PROVIDER_ORDER", "motif,groq,gemini,openrouter,openai,github"),
+        )
+        return [item.strip().lower() for item in raw.split(",") if item.strip()]
 
     @staticmethod
     def _env_int(name: str, default: int) -> int:

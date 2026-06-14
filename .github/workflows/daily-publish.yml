@@ -37,9 +37,8 @@ jobs:
 
       - name: Generate and publish posts
         env:
-          # LLMs — first non-empty explicit key is used: Motif → Groq → Gemini → OpenRouter → OpenAI → GitHub Models.
-          # GitHub Models is only a final fallback because GITHUB_TOKEN is always present in Actions.
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # LLMs — try the configured order until one produces a usable draft/editor pass.
+          GITHUB_TOKEN: ${{ github.token }}
           GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
           MOTIF_API: ${{ secrets.MOTIF_API }}
           MOTIF_MODEL: ${{ vars.MOTIF_MODEL || 'motif-12.7b-reasoning' }}
@@ -70,8 +69,9 @@ jobs:
           BLOG_MAX_PER_CATEGORY_PER_RUN: ${{ vars.BLOG_MAX_PER_CATEGORY_PER_RUN || '1' }}
           BLOG_STRICT_CATEGORY_DIVERSITY: ${{ vars.BLOG_STRICT_CATEGORY_DIVERSITY || 'true' }}
           ENABLE_SPORTS_SEEDS: ${{ vars.ENABLE_SPORTS_SEEDS || 'true' }}
-          BLOG_LLM_PROVIDER_LIMIT: ${{ vars.BLOG_LLM_PROVIDER_LIMIT || '2' }}
-          LLM_TIMEOUT_SECONDS: ${{ vars.LLM_TIMEOUT_SECONDS || '10' }}
+          BLOG_LLM_PROVIDER_ORDER: ${{ vars.BLOG_LLM_PROVIDER_ORDER || 'github,motif,groq,gemini,openrouter,openai' }}
+          BLOG_LLM_PROVIDER_LIMIT: ${{ vars.BLOG_LLM_PROVIDER_LIMIT || '5' }}
+          LLM_TIMEOUT_SECONDS: ${{ vars.LLM_TIMEOUT_SECONDS || '20' }}
           ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
           ENABLE_IMAGE_GENERATION: ${{ vars.ENABLE_IMAGE_GENERATION || 'false' }}
           PUBLISHER: ${{ vars.PUBLISHER || 'markdown' }}
