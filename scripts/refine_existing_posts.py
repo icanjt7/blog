@@ -9,6 +9,8 @@ from __future__ import annotations
 import argparse
 import os
 import re
+import signal
+from contextlib import contextmanager
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -51,6 +53,28 @@ class LlmProvider:
     name: str
     client: OpenAI
     model: str
+
+
+class ProviderTimeoutError(TimeoutError):
+    pass
+
+
+@contextmanager
+def hard_timeout(seconds: int):
+    if seconds <= 0 or not hasattr(signal, "SIGALRM"):
+        yield
+        return
+
+    def _raise_timeout(_signum, _frame):
+        raise ProviderTimeoutError(f"LLM provider exceeded {seconds}s")
+
+    previous = signal.signal(signal.SIGALRM, _raise_timeout)
+    signal.alarm(seconds)
+    try:
+        yield
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, previous)
 
 
 def init_providers() -> list[LlmProvider]:
@@ -237,16 +261,18 @@ def refine_with_llm(
     if not providers:
         return body, "no llm providers"
     max_providers = max(1, int(os.getenv("REFINE_MAX_PROVIDERS_PER_POST", "2")))
+    timeout = int(float(os.getenv("LLM_TIMEOUT_SECONDS", "30"))) + 10
     prompt = prompt_for(meta, body, max_growth, min_ratio)
     errors: list[str] = []
     for provider in providers[:max_providers]:
         try:
-            response = provider.client.chat.completions.create(
-                model=provider.model,
-                messages=[{"role": "user", "content": prompt}],
-                temperature=0.5,
-                max_tokens=2600,
-            )
+            with hard_timeout(timeout):
+                response = provider.client.chat.completions.create(
+                    model=provider.model,
+                    messages=[{"role": "user", "content": prompt}],
+                    temperature=0.5,
+                    max_tokens=2600,
+                )
             refined = normalize_body(response.choices[0].message.content or "")
             ok, reason = acceptable(body, refined, max_growth=max_growth, min_ratio=min_ratio)
             if ok:
@@ -323,6 +349,7 @@ def main() -> None:
         if wanted_tags and not (tags & wanted_tags):
             continue
         scanned += 1
+        print(f"checking: {path.relative_to(ROOT)}", flush=True)
         ok, reason = refine_file(
             path,
             providers,
