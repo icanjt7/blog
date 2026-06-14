@@ -41,6 +41,8 @@ AI_CLICHES = (
     "정리해 보겠습니다",
     "도움이 되셨으면",
     "놓치지 마세요",
+    "이제 준비가 끝났으니",
+    "확인해 보시기 바랍니다",
 )
 
 
@@ -186,6 +188,8 @@ def acceptable(original: str, refined: str, *, max_growth: float, min_ratio: flo
         return False, "too few sections"
     if any(marker in refined for marker in WEAK_MARKERS):
         return False, "weak marker remains"
+    if any(marker in refined for marker in AI_CLICHES):
+        return False, "ai cliche remains"
     lost_links = body_links(original) - body_links(refined)
     if lost_links:
         return False, "source links removed"
