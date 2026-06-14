@@ -183,21 +183,7 @@ TITLE:
 EXCERPT:
 BODY:
 """
-        text = ""
-        last_error: Exception | None = None
-        for client, model in self._providers:
-            try:
-                response = client.chat.completions.create(
-                    model=model,
-                    messages=[{"role": "user", "content": prompt}],
-                    temperature=0.7,
-                    max_tokens=2048,
-                )
-                text = response.choices[0].message.content or ""
-                break
-            except Exception as exc:
-                last_error = exc
-                continue
+        text, last_error = self._complete(prompt, temperature=0.7, max_tokens=2048)
         if not text:
             suffix = f": {type(last_error).__name__}" if last_error else ""
             reviewed.review_notes.append(f"LLM 편집 실패로 규칙 기반 검수만 적용{suffix}")
@@ -205,8 +191,90 @@ BODY:
         reviewed.title = self._extract(text, "TITLE", reviewed.title)
         reviewed.excerpt = self._extract(text, "EXCERPT", reviewed.excerpt)
         reviewed.body_markdown = self._extract(text, "BODY", reviewed.body_markdown).strip()
+        reviewed = self.review(reviewed)
         reviewed.review_notes.append("LLM 편집 보완 완료")
-        return self.review(reviewed)
+        if self._needs_second_pass(reviewed):
+            repaired = self._second_pass(reviewed, sources)
+            if repaired:
+                return repaired
+        return reviewed
+
+    def _complete(self, prompt: str, *, temperature: float, max_tokens: int) -> tuple[str, Exception | None]:
+        last_error: Exception | None = None
+        for client, model in self._providers:
+            try:
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=[{"role": "user", "content": prompt}],
+                    temperature=temperature,
+                    max_tokens=max_tokens,
+                )
+                text = response.choices[0].message.content or ""
+                if text.strip():
+                    return text, None
+            except Exception as exc:
+                last_error = exc
+                continue
+        return "", last_error
+
+    def _needs_second_pass(self, draft: Draft) -> bool:
+        threshold = self._env_float("BLOG_EDITOR_REWRITE_THRESHOLD", 90.0)
+        if draft.quality_score >= threshold:
+            return False
+        severe_markers = (
+            "일반 fallback 템플릿",
+            "범용",
+            "구체성이 부족",
+            "본문 길이가 짧",
+            "기술 글이",
+            "원문 제목의 핵심 대상",
+        )
+        return any(any(marker in note for marker in severe_markers) for note in draft.review_notes)
+
+    def _second_pass(self, draft: Draft, sources: str) -> Draft | None:
+        prompt = f"""
+아래 글은 1차 편집 후 검수에서 아직 품질 기준을 통과하지 못했습니다.
+검수 메모를 모두 해결하도록 제목, 요약, 본문을 다시 작성하세요.
+
+절대 조건:
+- 출처에 없는 사실, 수치, 경험담은 만들지 않는다.
+- 본문은 1,300자 이상, ## 헤딩 5개 이상, 표 1개 이상으로 작성한다.
+- 검수 메모에 나온 범용 문장과 AI식 반복 표현은 제거한다.
+- 출처의 고유명사, 수치, 기간, 기관명, 절차를 본문과 표에 반영한다.
+- 제목은 30자 이내 한국어로, 원문 핵심 대상을 드러낸다.
+
+검수 메모:
+{chr(10).join(draft.review_notes) if draft.review_notes else "품질 점수가 낮음"}
+
+참고 출처:
+{sources}
+
+현재 제목:
+{draft.title}
+
+현재 요약:
+{draft.excerpt}
+
+현재 본문:
+{draft.body_markdown}
+
+응답 형식:
+TITLE:
+EXCERPT:
+BODY:
+"""
+        text, last_error = self._complete(prompt, temperature=0.55, max_tokens=2600)
+        if not text:
+            suffix = f": {type(last_error).__name__}" if last_error else ""
+            draft.review_notes.append(f"LLM 2차 보완 실패{suffix}")
+            return None
+        candidate = draft.model_copy(deep=True)
+        candidate.title = self._extract(text, "TITLE", candidate.title)
+        candidate.excerpt = self._extract(text, "EXCERPT", candidate.excerpt)
+        candidate.body_markdown = self._extract(text, "BODY", candidate.body_markdown).strip()
+        candidate = self.review(candidate)
+        candidate.review_notes.append("LLM 2차 검수 보완 완료")
+        return candidate
 
     BLAND_TITLE_PATTERNS = [
         "핵심 정리",
@@ -350,3 +418,10 @@ BODY:
             return max(0, int(os.getenv(name, str(default))))
         except ValueError:
             return max(0, default)
+
+    @staticmethod
+    def _env_float(name: str, default: float) -> float:
+        try:
+            return max(0.0, float(os.getenv(name, str(default))))
+        except ValueError:
+            return max(0.0, default)
