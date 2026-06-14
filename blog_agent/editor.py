@@ -10,7 +10,7 @@ from .models import Draft
 
 
 PLACEHOLDER_PATTERNS = [
-    r"\[[가-힣a-zA-Z]+명?\]", # [감독명], [영화명], [이름], [회사명]
+    r"\[[가-힣a-zA-Z]+명?\](?!\()", # [감독명], [영화명], [이름], [회사명] (Markdown 링크 제외)
     r"XXX|OOO|___",
     r"제목\s*[:：]\s*미정",
     r"(감독|배우|주연|감독명)\s*[:：]\s*(미정|미상|불명)",
@@ -166,6 +166,7 @@ class SeoEditorAgent:
   · '핵심 정리', '알아보자', '총정리' 같은 진부한 표현은 교체
   · 30자 이내
 - 사실은 유지하고, 출처에 없는 구체 수치나 경험담은 추가하지 않는다.
+- "A사/B사/C사", "제품 A", "가상의 모델"처럼 실제 출처를 확인할 수 없는 익명 비교표는 제거하고 확인 가능한 기준표로 바꾼다.
 - 글에 등장하는 인물·작품·기업·제도 중 설명이 부족한 것이 있으면 한 줄씩 보완한다.
 - AI가 쓴 것처럼 보이는 반복 표현을 줄인다.
 - 문단을 짧게 나누고, 표/체크리스트의 가독성을 높인다.
@@ -240,6 +241,7 @@ BODY:
             "구체성이 부족",
             "본문 길이가 짧",
             "기술 글이",
+            "기술 글의",
             "원문 제목의 핵심 대상",
         )
         return any(any(marker in note for marker in severe_markers) for note in draft.review_notes)
@@ -399,12 +401,12 @@ BODY:
 
     @staticmethod
     def _has_low_information_tech_body(body: str) -> bool:
-        headings = len(re.findall(r"^##\s+", body, flags=re.M))
+        headings = len(re.findall(r"^#{2,4}\s+|^\*\*[^*\n]{4,80}\*\*", body, flags=re.M))
         numbers = len(re.findall(r"\d", body))
         english_entities = len(set(re.findall(r"\b[A-Z][A-Za-z0-9]{2,}\b", body)))
         if len(body) < 1300:
             return True
-        return headings < 5 or (numbers < 2 and english_entities < 4)
+        return headings < 2 or (numbers < 2 and english_entities < 4)
 
     @staticmethod
     def _keyword_tokens_covered(keyword: str, text: str) -> bool:
