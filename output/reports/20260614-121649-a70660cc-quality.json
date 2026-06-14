@@ -1,0 +1,22 @@
+{
+  "run_id": "20260614-121649-a70660cc",
+  "average_quality": 66.0,
+  "drafts": [
+    {
+      "slug": "solid-state-batteries-still-045dcfe7",
+      "title": "고체 배터리, 왜 아직 전자기기에 못 들어가나?",
+      "keyword": "Solid state batteries still",
+      "category": "기술",
+      "quality_score": 66.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 고체 배터리, 왜 아직 전자기기에 못 들어가나?. Keyword: Solid state batteries still. Concrete visual subject: battery power energy tech. Context: --- 고체 배터리, 아직도 상상 속 기술? Solid state batteries still 전자기기에 적용되지 못하는 이유는 무엇일까요? 지난 10년간 IT 업계에서는 \"곧 고체 배터리 시대가 온다\"는 기대가 많았습니다. 하지만 현재 스마트폰, 노트북, e-바이크 등 대부분의 제품은 여전히 리튬이온(Li-ion) 배터리를 사용하고 있습니다. 고체 배터리는 높은 에너지 밀도, 빠른 충전, 그리고 불에 잘 타지 않는 안전성을 약속합니다. 하지만 실제 제품화는 지연되고 있습니다. 주요 원인은 고체 전해질의 원료 확보와 제조 공정의 복잡함, 그리고 품질 유지의 어려움입니다. 더버지(The Verge) 칼럼니스트 토마스 리커(Thomas Ricker)는 배터리 기술의 최신 동향을 뉴스레터 ‘The Stepback’에서 상세히 다루고 있습니다. 그는 e-바이크, 파워스테이션, 모바일 워크 환경 등 다양한 분야에서 배터리 혁신을 분석하는 전문가입니다. 젤 타입 배터리란? 젤 타입 배터리는 기존 리튬이온 배터리의 액체 전해질을 젤 형태로 바꾼 기술입니다. 완전 고체 전해질이 아닌 ‘세미 고체’ 방식으로, 안전성과 성능을 어느 정도 보완합니다. 실제로 젤 타입 배터리는 일부 프리미엄 e-바이크와 이동식 파워스테이션에 적용되고 있습니다. 배터리 종류별 주요 비교 | 항목 | Solid-state (고체) | Gel-based (젤) | Liquid. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1581244249923-172ef5029576?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxiYXR0ZXJ5JTIwcG93ZXIlMjBlbmVyZ3klMjB0ZWNofGVufDF8MHx8fDE3ODE0Mzk2NDd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
