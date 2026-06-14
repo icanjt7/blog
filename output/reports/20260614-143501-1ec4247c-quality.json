@@ -1,0 +1,79 @@
+{
+  "run_id": "20260614-143501-1ec4247c",
+  "average_quality": 76.6,
+  "drafts": [
+    {
+      "slug": "06월-선거구-확인-방법-aadecac5",
+      "title": "내 선거구 바뀌었나? 주소로 3분 만에 확인하는 방법",
+      "keyword": "06월 선거구 확인 방법",
+      "category": "정치",
+      "quality_score": 40.0,
+      "review_notes": [
+        "플레이스홀더 감지: 실제 데이터 없이 가짜 내용이 포함돼 있습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 내 선거구 바뀌었나? 주소로 3분 만에 확인하는 방법. Keyword: 06월 선거구 확인 방법. Concrete visual subject: election civic government. Context: 올해 6월 선거를 앞두고 전국 235개 시군구 중 10곳의 선거구 경계가 새롭게 획정되었습니다. 인구 변화와 행정구역 조정 때문인데, 이런 변화로 투표장 위치나 후보자 명단이 달라질 수 있습니다. 예전 주소를 기준으로 투표소를 찾았다가 헛걸음하지 않으려면, 선거구 변경 여부를 미리 확인하는 것이 중요합니다. **선거구란?** 선거구는 한 지역의 대표를 뽑는 경계 구역입니다. 중앙선거관리위원회(중앙선관위)가 인구, 행정구역, 지역 대표성을 반영해 4년마다 획정합니다. 올해는 세종특별자치시, 경기 고양시, 부산 남구 등 10개 지역에서 선거구가 조정되었습니다. **대표적 변경 지역(2024년 기준)** - 세종특별자치시: 행정구역 조정에 따라 선거구 재획정 - 경기 고양시: 인구 변동으로 선거구 경계 변경 - 부산 남구: 일부 구의 선거구가 통합 또는 분할됨 (중앙선관위 [선거구 획정 자료, 2024년 4월](https://info.nec.go.kr/) 기준) **내 선거구, 투표소, 후보자 일정 확인 방법** 06월 선거구 확인은 중앙선관위 공식 사이트에서 간단하게 할 수 있습니다. 아래 표는 실제 확인 과정과 필요한 정보를 정리한 것입니다. | 단계 | 내용 | 공식 자료 기준 | |-----------------------|----------------------------------------------------|--------. Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1540908390241-82158ab62887?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxlbGVjdGlvbiUyMGNpdmljJTIwZ292ZXJubWVudHxlbnwxfDB8fHwxNzgxNDQxMjczfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-와이파이-7-공유기-08c0c6d2",
+      "title": "06월 와이파이 7 공유기, 이 집이면 바꿔야 하는 5가지 조건",
+      "keyword": "06월 와이파이 7 공유기",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 와이파이 7 공유기, 이 집이면 바꿔야 하는 5가지 조건. Keyword: 06월 와이파이 7 공유기. Concrete visual subject: router wifi network device. Context: --- ## 와이파이 7 공유기, 지금 바꿔도 괜찮을까? 06월 와이파이 7 공유기의 핵심은 기존 Wi-Fi 6E보다 한 단계 업그레이드된 무선 인터넷 표준(IEEE 802.11be)입니다. 6GHz 대역, 320MHz 채널폭, 그리고 MU-MIMO와 MLO(멀티 링크 운영) 기술이 적용되어 속도와 안정성을 크게 개선합니다. ### 체감 성능, 집마다 다르다 공유기 성능은 단순 스펙만으로 결정되지 않습니다. 특히 06월 와이파이 7 공유기는 집 구조와 단말 호환성이 중요한 변수입니다. ### 효과를 극대화하는 집 조건 아래 표는 구글 개발자 블로그(2024년 6월) 기준, 실제로 와이파이 7 체감이 큰 조건을 정리한 것입니다. | 조건 | 체감 변화 | 관련 공식 세부 기준 | |----------------------------|----------------------------------|--------------------------------------------------------------------| | 6GHz 지원 단말 2대 이상 | 초고속 다운로드, 지연 최소화 | 구글 Nest WiFi Pro, ASUS ROG Rapture, 넷기어 Nighthawk 공식 지원 | | 벽 많고 복도형/다층 아파트 | 신호 약화 줄고 끊김 개선 | 320MHz 채널폭, MLO 기능 필수 | | 백홀 구성 가능(유선/무선) | 여러. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1606421753414-8d165c9d48e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxyb3V0ZXIlMjB3aWZpJTIwbmV0d29yayUyMGRldmljZXxlbnwxfDB8fHwxNzgxNDQ3OTczfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-모바일-신분증-사용처-09b932fd",
+      "title": "6월 모바일 신분증, 어디까지 쓸 수 있나? 주요 사용처 한눈에",
+      "keyword": "06월 모바일 신분증 사용처",
+      "category": "생활",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 6월 모바일 신분증, 어디까지 쓸 수 있나? 주요 사용처 한눈에. Keyword: 06월 모바일 신분증 사용처. Concrete visual subject: everyday lifestyle public information. Context: 모바일 신분증, 어디까지 쓸 수 있을지 궁금한 분 많죠? 특히 2024년 6월부터 ‘정부24’ 앱에서 모바일 주민등록증 발급이 시작되면서 사용처가 확대되고 있습니다. 하지만 모든 곳에서 되는 것은 아니니, 실제 적용 범위를 정부 공식 안내를 토대로 정리합니다. ### 모바일 신분증이란? 모바일 신분증은 스마트폰에 신분증 정보를 저장해 실물 없이 신분 확인이 가능한 서비스입니다. 행정안전부가 주도해 개발했고, 현재 주민등록증(정부24 앱)과 운전면허증(모바일 운전면허증 앱) 발급이 가능합니다. ### 6월 모바일 신분증 사용처 공식 기준 아래 표는 2024년 6월 기준, 정부 안내를 바탕으로 각 분야별 모바일 신분증 사용처를 정리한 것입니다. | 분야 | 사용 가능 업무/기관 | 제한/불가 업무 | 참고 사항 | |----------------|-------------------------------|------------------------------|---------------------------| | 은행 창구 | 일부 업무(정보 변경, 상담 등) | 신규 계좌 개설, 대출, 고액 거래 | 금융기관별 적용 범위 상이 | | 공공기관 | 주민센터, 시청(민원 처리, 출입) | 특정 인증서류 제출(일부 기관) | 2024년 6월 확대 적용 | | 온라인 서비스 | 정부24 앱, 국민은행 앱 등 | 없음 | 모바일 발급 가능 | |. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1756105317533-20d5fafca1f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODE0MzQwOTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-자동차세-연납-80d8cf20",
+      "title": "6월 자동차세 연납, 놓치면 생기는 3가지 불이익",
+      "keyword": "06월 자동차세 연납",
+      "category": "정책",
+      "quality_score": 88.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 6월 자동차세 연납, 놓치면 생기는 3가지 불이익. Keyword: 06월 자동차세 연납. Concrete visual subject: finance policy documents. Context: 자동차세 연납 신청을 하려다 이미 기간이 끝나 아쉬웠던 경험, 많은 분들이 한 번쯤 겪으셨을 겁니다. 특히 6월 자동차세 연납은 각 지자체별로 신청 방식과 일정이 달라 혼란을 겪기 쉽습니다. 단순히 할인율만 확인하는 것보다, 일정과 환급 조건을 먼저 체크하는 것이 중요합니다. 자동차세 연납은 차량을 소유한 개인 또는 법인이 지방세로 납부하는 제도입니다. ‘연납’은 한 해 자동차세를 미리 내면 일정 할인 혜택을 받는 방식인데, 6월 연납은 1월·3월·6월·9월 중 세 번째 기회입니다. 이 시기에 신청하면 7월~12월분 세금만 미리 납부하며, 1월 연납보다 할인율은 낮아집니다(금융위원회 공식 자료 기준 약 5~6%, 지역별 차이 있음). 가장 많이 놓치는 부분은 차량을 중도에 매각하거나 폐차할 경우 환급 절차입니다. 예를 들어 6월에 연납하고 9월에 차량을 팔았다면, 이미 납부한 10~12월분 세금은 환급 대상입니다. 단, 환급은 자동이 아닌 직접 시군구청 세무과에 신청해야 하며, 신청 후 계좌로 입금됩니다. 지방세 납부 경로는 위택스(Wetax), 정부24, 각 금융기관 인터넷뱅킹, 지자체 방문 등 여러 가지가 있습니다. 지자체별로 안내 방식이 다르며, 일부 지역은 연납 기간에 안내문을 발송하지만 그렇지 않은 곳도 많습니다. 금융위원회 공식 홈페이지와 각 시군구청 홈페이지에서 실제 연납 일정과 방법을 확인할 수 있습니다. 금융위원회는 . Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODE0MzQxMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-월드컵-개최-도시-5da14690",
+      "title": "이동거리 때문에 달라진 06월 월드컵 도시",
+      "keyword": "06월 월드컵 개최 도시",
+      "category": "스포츠",
+      "quality_score": 55.0,
+      "review_notes": [
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 이동거리 때문에 달라진 06월 월드컵 도시. Keyword: 06월 월드컵 개최 도시. Concrete visual subject: football stadium player match action. Context: 의외로 월드컵 개최 도시는 경기력의 절반을 좌우한다. 경기장만 멋진 게 아니라 선수들이 뛸 준비가 되어 있는지가 중요하다. 이번 2026 북중미 월드컵(정식 명칭: FIFA World Cup 2026)은 캐나다, 미국, 멕시코 세 나라가 공동 개최한다. 출처 기준(2024.06. FIFA 공식)으로 총 16개 도시가 경기장 역할을 맡는다. 이름만 들어도 광활한 미국 대륙. 도시마다 거리 차이가 상상 이상이다. 멕시코시티에서 밴쿠버까지 약 4,000km. 비행 시간만 5~6시간이다. 시차도 최대 3시간까지 벌어진다. 선수들은 이동만 해도 피로가 쌓인다. 사실은 대부분의 월드컵에서 한두 도시에 집중해 경기를 치렀다. 하지만 이번에는 뉴욕, 로스앤젤레스, 멕시코시티, 밴쿠버 등 북미와 멕시코 주요 도시가 모두 포함됐다. 이로 인해 이동 거리, 시차, 날씨가 경기력에 직접 영향을 미친다. 주요 개최 도시, 경기장, 특징은 아래와 같다. | 국가 | 도시 | 경기장 | 특징 | |--------|-------------------|------------------------|------------------------------| | 미국 | 뉴욕(이스트러더포드) | 메트라이프 스타디움 | 대도시, 관중 열기, 시차 영향 | | 미국 | 로스앤젤레스 | 소파이 스타디움 | 서부, 이동 거리, 기온 변수 | | 미국 | 댈러스 | AT&T 스타. Visual mood: clean editorial news briefing. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1473976345543-9ffc928e648d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmb290YmFsbCUyMHN0YWRpdW0lMjBwbGF5ZXIlMjBtYXRjaCUyMGFjdGlvbnxlbnwxfDB8fHwxNzgxNDQwNzM5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
