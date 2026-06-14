@@ -1,0 +1,374 @@
+{
+  "run_id": "20260614-124224-8d01d9f4",
+  "topics": [
+    {
+      "keyword": "06월 AI 노트북 NPU",
+      "title_hint": "AI 노트북 살 때 NPU 숫자보다 먼저 볼 것",
+      "category": "기술",
+      "trend_score": 82.0,
+      "competition_score": 0.35,
+      "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+      "sources": [
+        {
+          "title": "AI 노트북 살 때 NPU 숫자보다 먼저 볼 것",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "AI PC의 NPU TOPS, 메모리, 배터리, 온디바이스 AI 기능, 실제 구매 판단 기준을 설명한다.",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "06월 2026 월드컵 조편성",
+      "title_hint": "2026 월드컵 조편성 전 알아둘 48개국 규칙",
+      "category": "스포츠",
+      "trend_score": 82.0,
+      "competition_score": 0.35,
+      "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+      "sources": [
+        {
+          "title": "2026 월드컵 조편성 전 알아둘 48개국 규칙",
+          "url": "https://www.fifa.com/",
+          "published_at": null,
+          "summary": "48개국 확대, 조별리그, 32강 토너먼트, 3개국 공동 개최 변수를 설명한다.",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "06월 장마철 실내 습도 관리",
+      "title_hint": "곰팡이 생기기 전 실내 습도 잡는 5가지 기준",
+      "category": "생활",
+      "trend_score": 81.0,
+      "competition_score": 0.35,
+      "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+      "sources": [
+        {
+          "title": "곰팡이 생기기 전 실내 습도 잡는 5가지 기준",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "장마철 환기 시간, 제습기 위치, 욕실·베란다 곰팡이, 의류 보관을 중심으로 정리한다.",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "06월 청년도약계좌 유지",
+      "title_hint": "청년도약계좌, 해지 전에 놓치기 쉬운 조건",
+      "category": "정책",
+      "trend_score": 81.0,
+      "competition_score": 0.35,
+      "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+      "sources": [
+        {
+          "title": "청년도약계좌, 해지 전에 놓치기 쉬운 조건",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "납입 기간, 정부 기여금, 소득 요건, 중도해지 사유, 만기 전략을 설명한다.",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "06월 선거구 확인 방법",
+      "title_hint": "우리 동네 선거구 바뀌었는지 확인하는 법",
+      "category": "정치",
+      "trend_score": 81.0,
+      "competition_score": 0.35,
+      "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+      "sources": [
+        {
+          "title": "우리 동네 선거구 바뀌었는지 확인하는 법",
+          "url": "https://info.nec.go.kr/",
+          "published_at": null,
+          "summary": "선거구 획정, 주소지 기준, 사전투표소, 후보자 등록 일정 확인 순서를 정리한다.",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "06월 제주 실내 관광지",
+      "title_hint": "제주 비 오는 날, 실내 관광지만 묶는 동선",
+      "category": "핫이슈",
+      "trend_score": 80.0,
+      "competition_score": 0.35,
+      "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+      "sources": [
+        {
+          "title": "제주 비 오는 날, 실내 관광지만 묶는 동선",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "제주 실내 전시, 카페, 체험 공간, 렌터카 이동, 우천 대안을 정리한다.",
+          "authority": 4
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "06월 AI 노트북 NPU",
+        "title_hint": "AI 노트북 살 때 NPU 숫자보다 먼저 볼 것",
+        "category": "기술",
+        "trend_score": 82.0,
+        "competition_score": 0.35,
+        "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+        "sources": [
+          {
+            "title": "AI 노트북 살 때 NPU 숫자보다 먼저 볼 것",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "AI PC의 NPU TOPS, 메모리, 배터리, 온디바이스 AI 기능, 실제 구매 판단 기준을 설명한다.",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "수치만 믿다간 후회! 06월 AI 노트북 NPU 진짜 체크포인트 5",
+      "slug": "06월-ai-노트북-npu-cd7b324c",
+      "excerpt": "06월 출시 AI 노트북, NPU 숫자만 보고 결정하면 손해입니다. 실제 사용에 중요한 온디바이스 AI, 메모리, 배터리, 소프트웨어 최적화 등 필수 기준을 최신 모델과 함께 정리합니다.",
+      "body_markdown": "30 TOPS, 50 TOPS. 06월 출시 AI 노트북 NPU 모델에서 흔히 강조되는 수치입니다. NPU(Neural Processing Unit)는 인공지능 연산을 담당하는 독립 칩으로, 초당 수십조 번의 연산(TOPS)을 처리합니다. 하지만 실제 사용 환경에서는 이 숫자만으로 체감 성능을 판단하기 어렵습니다.\n\n구글 개발자 블로그(2024년 6월)는 AI PC 구매 시 NPU 수치보다 온디바이스 AI 기능, 메모리 대역폭 및 용량, 배터리 지속시간, 소프트웨어 최적화가 훨씬 더 중요하다고 강조합니다.\n\n**06월 AI 노트북 NPU, 실제로 중요한 5가지 기준**\n\n1. **온디바이스 AI 기능 지원**\n   - AI 기능이 클라우드 서버가 아닌 노트북 자체에서 실행되는지 확인하세요.\n   - 예시: 구글 ‘지메일 요약’, ‘이미지 생성’ 기능이 PC에서 직접 작동하는지 체크.\n   - 최근 구글은 개인정보 보호와 빠른 반응성을 위해 온디바이스 AI 개발을 확대 중입니다.\n\n2. **메모리 대역폭과 용량**\n   - NPU 성능이 높아도 메모리 병목이 생기면 AI 기능이 느려질 수 있습니다.\n   - DDR5 또는 LPDDR5X, 4,800MHz 이상, 16GB 이상 메모리가 체감 성능에 유리합니다.\n\n3. **배터리 지속시간**\n   - 강력한 NPU는 배터리 소모를 늘립니다.\n   - AI 작업 기준 6시간 이상 지속되는 모델인지 공식 스펙 페이지에서 확인하세요.\n   - 삼성 갤럭시북, 델 XPS 등 주요 브랜드에서 AI 작업 기준 배터리 테스트 결과를 공개합니다.\n\n4. **소프트웨어 최적화**\n   - OS와 앱 제조사가 직접 최적화한 모델이 실제 사용에서 유리합니다.\n   - 윈도우11 Copilot, 구글 포토 자동 분류, Adobe Photoshop AI 기능 등이 온디바이스에서 원활하게 작동하는지 체크하세요.\n\n5. **지원 앱 및 브랜드 공식 확인**\n   - NPU TOPS 수치가 높아도 지원되는 앱이 적으면 실질적 활용도가 떨어집니다.\n   - 인텔 코어 울트라, AMD Ryzen AI, 삼성 갤럭시북, 델 XPS 등 공식 브랜드와 AI 앱 연동 현황을 브랜드 사이트와 구글 개발자 블로그에서 비교하세요.\n\n---\n\n**06월 AI 노트북 NPU 체크표**  \n| 체크 항목              | 기준 수치 및 조건               | 공식 브랜드/모델 (2024년 6월)           |  \n|---------------------|-----------------------------|--------------------------------------|  \n| NPU TOPS 수치         | 20~50 TOPS 이상                  | 인텔 코어 울트라, AMD Ryzen AI        |  \n| 온디바이스 AI 지원    | ‘지메일 요약’, ‘이미지 생성’ 등   | 구글, 마이크로소프트, 윈도우11 Copilot|  \n| 메모리 대역폭/용량    | DDR5/LPDDR5X, 4,800MHz, 16GB 이상| 삼성 갤럭시북, 델 XPS                 |  \n| 배터리 지속시간       | AI 작업 기준 6시간 이상            | 공식 스펙 페이지, 배터리 테스트 결과  |  \n| 소프트웨어 최적화     | OS·앱 제조사 직접 지원 여부         | 윈도우11, 구글 앱, Adobe Photoshop AI |\n\n---\n\n구글, 마이크로소프트, 인텔, AMD, 삼성, 델 등 주요 회사는 NPU 수치뿐 아니라 전체 시스템 최적화를 강조합니다. 구글은 온디바이스 AI 확대로 개인정보 보호와 빠른 반응성을 추구하고 있습니다. 마이크로소프트 역시 Copilot 기능을 노트북 로컬에서 실행하는 방향으로 업데이트 중입니다.\n\n06월 AI 노트북 NPU 모델을 구매할 때는 단순한 숫자 경쟁이 아닌, 실제 지원되는 AI 기능과 시스템 최적화 여부를 브랜드 공식 정보와 앱 지원 현황에서 꼼꼼히 비교해 보세요. 체감 성능은 수치 너머에 있습니다.\n\n**참고:**  \n- 구글 개발자 블로그 (https://developers.googleblog.com/)\n- 각 브랜드 공식 스펙 페이지 (인텔, AMD, 삼성, 델)\n- 윈도우11 Copilot, Adobe 공식 지원 현황\n\n06월 AI 노트북 NPU, 제대로 비교하면 후회 없는 선택이 가능합니다.",
+      "tags": [
+        "기술",
+        "06월",
+        "AI",
+        "노트북",
+        "NPU"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1629131726692-1accd0c53ce0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxsYXB0b3AlMjBwb3J0YWJsZSUyMGNvbXB1dGVyJTIwbW9kZXJuJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMG5ldXJhbCUyMG5ldHdvcmt8ZW58MXwwfHx8MTc4MTQ0MDY2NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "수치만 믿다간 후회! 06월 AI 노트북 NPU 진짜 체크포인트 5 — Photo by Giorgio Trovato on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 수치만 믿다간 후회! 06월 AI 노트북 NPU 진짜 체크포인트 5. Keyword: 06월 AI 노트북 NPU. Concrete visual subject: laptop portable computer modern artificial intelligence neural network. Context: 30 TOPS, 50 TOPS. 06월 출시 AI 노트북 NPU 모델에서 흔히 강조되는 수치입니다. NPU(Neural Processing Unit)는 인공지능 연산을 담당하는 독립 칩으로, 초당 수십조 번의 연산(TOPS)을 처리합니다. 하지만 실제 사용 환경에서는 이 숫자만으로 체감 성능을 판단하기 어렵습니다. 구글 개발자 블로그(2024년 6월)는 AI PC 구매 시 NPU 수치보다 온디바이스 AI 기능, 메모리 대역폭 및 용량, 배터리 지속시간, 소프트웨어 최적화가 훨씬 더 중요하다고 강조합니다. **06월 AI 노트북 NPU, 실제로 중요한 5가지 기준** 1. **온디바이스 AI 기능 지원** - AI 기능이 클라우드 서버가 아닌 노트북 자체에서 실행되는지 확인하세요. - 예시: 구글 ‘지메일 요약’, ‘이미지 생성’ 기능이 PC에서 직접 작동하는지 체크. - 최근 구글은 개인정보 보호와 빠른 반응성을 위해 온디바이스 AI 개발을 확대 중입니다. 2. **메모리 대역폭과 용량** - NPU 성능이 높아도 메모리 병목이 생기면 AI 기능이 느려질 수 있습니다. - DDR5 또는 LPDDR5X, 4,800MHz 이상, 16GB 이상 메모리가 체감 성능에 유리합니다. 3. **배터리 지속시간** - 강력한 NPU는 배터리 소모를 늘립니다. - AI 작업 기준 6시간 이상 지속되는 모델인지 공식 스펙 페이지에서 확인하세요. - 삼. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-14T12:46:02.670111",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 2026 월드컵 조편성",
+        "title_hint": "2026 월드컵 조편성 전 알아둘 48개국 규칙",
+        "category": "스포츠",
+        "trend_score": 82.0,
+        "competition_score": 0.35,
+        "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+        "sources": [
+          {
+            "title": "2026 월드컵 조편성 전 알아둘 48개국 규칙",
+            "url": "https://www.fifa.com/",
+            "published_at": null,
+            "summary": "48개국 확대, 조별리그, 32강 토너먼트, 3개국 공동 개최 변수를 설명한다.",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "48개국 참가! 2026 월드컵 조편성, 꼭 알아야 할 5가지",
+      "slug": "06월-2026-월드컵-조편성-062580e9",
+      "excerpt": "2026 FIFA 월드컵은 48개국 참가와 3개국 공동 개최 등 큰 변화가 있습니다. 조편성과 경기 일정, 관전 변수 중심으로 꼭 확인해야 할 주요 정보를 정리합니다.",
+      "body_markdown": "## 2026 FIFA 월드컵, 무엇이 달라졌나?\n\n2026년 6월 11일부터 7월 19일까지 캐나다, 멕시코, 미국에서 개최되는 2026 FIFA 월드컵은 기존 32개국에서 48개국으로 확대되었습니다. 전체 경기 수는 104경기로 증가했으며, 세 나라가 공동으로 대회를 주최합니다.\n\n이전 대회와 비교할 때 조별리그 구조, 토너먼트 진출 방식, 팀별 이동 거리 등 여러 변화가 생겼습니다.\n\n## 주요 대회 구조\n\n| 구분       | 2026 월드컵 기준                |\n|------------|--------------------------------|\n| 개최 기간  | 2026년 6월 11일~7월 19일         |\n| 개최국     | 캐나다, 멕시코, 미국             |\n| 참가국     | 48개국                           |\n| 경기 수    | 104경기                          |\n| 조별리그   | 12개 조(각 조 4팀)               |\n| 토너먼트   | 32강부터 시작                    |\n| 공식 출처  | FIFA 공식 홈페이지               |\n\n*조별리그는 12개 조로 나뉘며, 각 조에서 상위 2팀과 일부 3위팀이 토너먼트에 진출합니다.  \n(세부 규칙은 FIFA 공식 자료 참고: [2026 월드컵 조편성 규칙](https://www.fifa.com/))*\n\n## 관전 체크포인트\n\n- **한국 시간 확인:** 북중미 3개국 공동 개최로 경기 시간이 한국과 크게 다를 수 있습니다.\n- **조별리그 3위 조건:** 3위 팀의 토너먼트 진출 조건이 새롭게 도입되어 순위표 확인이 중요합니다.\n- **이동 거리 변수:** 개최 도시 간 이동이 많아 선수단 운영과 휴식일이 경기력에 영향을 줄 수 있습니다.\n- **최종 엔트리 발표일:** 예비 명단, 최종 명단, 경기 당일 엔트리 발표 시점을 반드시 공식 출처에서 확인하세요.\n- **부상 및 일정:** 부상 소식과 최신 일정은 FIFA 공식 홈페이지에서 최신 정보로 확인합니다.\n\n## 참고 기준표 (출처: FIFA)\n\n| 기준         | 수치/내용                  |\n|--------------|---------------------------|\n| 참가국       | 48개국                     |\n| 전체 경기    | 104경기                    |\n| 개최국       | 캐나다, 멕시코, 미국       |\n| 개최 기간    | 2026년 6월 11일~7월 19일   |\n| 조별리그      | 12조(4팀씩)                |\n| 토너먼트 진출 | 각 조 상위 2팀 + 일부 3위팀 |\n| 공식 출처    | FIFA 공식 홈페이지         |\n\n## 주의할 점\n\n2022년 카타르 월드컵(32개국, 64경기) 기준의 정보는 2026년 대회에는 적용되지 않습니다. 대표팀 명단 발표, 경기 일정, 조별리그 규칙 등은 반드시 최신 FIFA 공식 자료를 확인하세요.\n\n## 참고 사이트\n\n- [2026 월드컵 조편성 전 알아둘 48개국 규칙](https://www.fifa.com/)\n\n---\n\n**핵심 키워드:** 06월 2026 월드컵 조편성  \n**출처:** FIFA 공식 홈페이지  \n**대상:** 월드컵 관전 예정자, 대표팀 정보 확인자  \n**절차:** 공식 시간 및 명단 발표일, 조별리그 규칙 확인  \n**기관명:** FIFA  \n**기간:** 2026년 6월 11일~7월 19일  \n**경기 수:** 104경기  \n**조별리그:** 12개 조(4팀씩)  \n**토너먼트:** 32강부터 시작",
+      "tags": [
+        "스포츠",
+        "06월",
+        "2026",
+        "월드컵",
+        "조편성"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1679391029864-d46f366a456b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxmb290YmFsbCUyMHN0YWRpdW0lMjBwbGF5ZXIlMjBtYXRjaCUyMGFjdGlvbnxlbnwxfDB8fHwxNzgxNDQwNzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "48개국 참가! 2026 월드컵 조편성, 꼭 알아야 할 5가지 — Photo by Howard Bouchevereau on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 48개국 참가! 2026 월드컵 조편성, 꼭 알아야 할 5가지. Keyword: 06월 2026 월드컵 조편성. Concrete visual subject: football stadium player match action. Context: ## 2026 FIFA 월드컵, 무엇이 달라졌나? 2026년 6월 11일부터 7월 19일까지 캐나다, 멕시코, 미국에서 개최되는 2026 FIFA 월드컵은 기존 32개국에서 48개국으로 확대되었습니다. 전체 경기 수는 104경기로 증가했으며, 세 나라가 공동으로 대회를 주최합니다. 이전 대회와 비교할 때 조별리그 구조, 토너먼트 진출 방식, 팀별 이동 거리 등 여러 변화가 생겼습니다. ## 주요 대회 구조 | 구분 | 2026 월드컵 기준 | |------------|--------------------------------| | 개최 기간 | 2026년 6월 11일~7월 19일 | | 개최국 | 캐나다, 멕시코, 미국 | | 참가국 | 48개국 | | 경기 수 | 104경기 | | 조별리그 | 12개 조(각 조 4팀) | | 토너먼트 | 32강부터 시작 | | 공식 출처 | FIFA 공식 홈페이지 | *조별리그는 12개 조로 나뉘며, 각 조에서 상위 2팀과 일부 3위팀이 토너먼트에 진출합니다. (세부 규칙은 FIFA 공식 자료 참고: [2026 월드컵 조편성 규칙](https://www.fifa.com/))* ## 관전 체크포인트 - **한국 시간 확인:** 북중미 3개국 공동 개최로 경기 시간이 한국과 크게 다를 수 있습니다. - **조별리그 3위 조건:** 3위 팀의 토너먼트 진출 조건이 새롭게 도입되어 순위표 확인이 중요합니다. Visual mood: clean editorial news briefing. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-14T12:46:37.747957",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 장마철 실내 습도 관리",
+        "title_hint": "곰팡이 생기기 전 실내 습도 잡는 5가지 기준",
+        "category": "생활",
+        "trend_score": 81.0,
+        "competition_score": 0.35,
+        "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+        "sources": [
+          {
+            "title": "곰팡이 생기기 전 실내 습도 잡는 5가지 기준",
+            "url": "https://www.korea.kr/",
+            "published_at": null,
+            "summary": "장마철 환기 시간, 제습기 위치, 욕실·베란다 곰팡이, 의류 보관을 중심으로 정리한다.",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "장마철 곰팡이 막는 실내 습도 관리 5가지 체크포인트",
+      "slug": "06월-장마철-실내-습도-관리-00e9f58b",
+      "excerpt": "06월 장마철에는 습도계만 믿으면 곰팡이 걱정에서 벗어나기 어렵습니다. 정부 포털 자료를 바탕으로, 실내 습도 관리의 실수와 꼭 챙겨야 할 5가지 기준을 구체적으로 소개합니다.",
+      "body_markdown": "비 오는 06월 장마철, 집안 습기가 곰팡이로 이어져 고민인 분들이 많습니다. 습도계 숫자만 믿고 방심하면 욕실, 베란다, 옷장 등 곳곳에 곰팡이 얼룩이 생기기 쉽죠. 아래는 대한민국 정부 대표 포털(코리아.kr)에서 안내한 실내 습도 관리의 핵심 기준 5가지입니다.\n\n---\n\n### 1. 환기 시간: 비가 그친 후 30분만 열기\n\n장마철엔 환기가 중요하지만, 아무때나 창문을 열면 오히려 습기만 쌓입니다.  \n비가 완전히 그친 뒤, 바람이 드는 타이밍에 30분 정도 창문을 열어주세요.  \n환기는 하루 1~2회가 적당하며, 벽이나 천장, 옷장 같은 구석진 곳도 눈으로 습기 상태를 확인하는 것이 필요합니다.\n\n---\n\n### 2. 제습기 위치: 구석·습기 많은 곳에 배치\n\n제습기는 방 중앙이 아닌 욕실, 베란다, 옷장 앞 등 습기가 쌓이는 구석에 두면 효과가 높습니다.  \n‘위닉스’, ‘LG전자’ 등 국내 제습기 제조사에서도 공기 흐름과 위치를 강조합니다.  \n집을 비우는 시간이 많다면 타이머 기능으로 집에 들어오기 2시간 전에 작동시키는 것도 좋습니다.\n\n---\n\n### 3. 욕실·베란다 곰팡이: 발생 즉시 청소\n\n욕실과 베란다는 곰팡이 발생이 잦은 곳입니다.  \n머리 감거나 샤워 후에는 즉시 바닥과 벽의 물기를 닦아내고, 청소 도구도 햇볕에 말려줍니다.  \n코리아.kr에서는 곰팡이가 보이면 바로 제거하고, 주기적인 소독을 권장합니다.\n\n---\n\n### 4. 의류 보관: 통풍 선반, 제습제 필수\n\n장마철엔 옷장 속 습기가 올라가 곰팡이 위험이 커집니다.  \n통풍이 잘 되는 선반이나 옷걸이로 공간을 확보하고, 실리카겔이나 제습제를 배치하세요.  \n겨울옷, 캐리어 옷 등 장기간 보관하는 의류는 한 번씩 꺼내서 상태를 점검하고 건조시키는 것이 중요합니다.\n\n---\n\n### 5. 습도계만 믿지 말기: 직접 눈으로 점검\n\n습도계가 50~60%로 보여도, 욕실·베란다·신발장·냉장고 뒤 등 습도계가 닿지 않는 구석은 실제로 더 습할 수 있습니다.  \n매일 아침·저녁 천장, 벽, 창문 틈, 문고리 등 직접 만져보고 눈으로 확인하세요.  \n물기가 보이면 즉시 닦아내는 습관이 곰팡이 예방에 효과적입니다.\n\n---\n\n#### 장마철 실내 습도 관리 기준표  \n| 기준          | 세부 내용                  | 적용 장소          | 추천 시기        | 확인 방법           | 출처                |\n|---------------|----------------------------|--------------------|------------------|---------------------|---------------------|\n| 환기 시간     | 비 그친 후 30분 환기       | 거실, 방           | 하루 1~2회       | 눈으로 습기 확인   | 코리아.kr(2024.06)  |\n| 제습기 위치   | 구석 배치, 타이머 활용     | 욕실, 베란다, 옷장 | 집 비우기 전후   | 직접 만져보기      | 위닉스, LG전자      |\n| 곰팡이 청소   | 물기 즉시 닦고 소독        | 욕실, 베란다       | 발생 즉시        | 청소 후 소독        | 코리아.kr(2024.06)  |\n| 의류 보관     | 통풍 선반+제습제 배치      | 옷장, 보관함       | 장마 시작 전후   | 옷 상태 확인        | 코리아.kr(2024.06)  |\n| 눈으로 점검   | 구석·천장 직접 확인        | 신발장, 냉장고 뒤  | 매일 아침·저녁   | 촉감·눈으로 점검    | 코리아.kr(2024.06)  |\n\n---\n\n습도계만 믿는 습관을 바꿔, 올해 장마철엔 곰팡이 걱정 없이 실내를 관리해보세요.  \n오늘 저녁, 베란다와 욕실, 옷장 등 평소 놓치던 구석까지 직접 눈으로 점검하는 것이 시작입니다.",
+      "tags": [
+        "생활",
+        "06월",
+        "장마철",
+        "실내",
+        "습도"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1730717051655-8028acef500b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODE0MzQwOTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "장마철 곰팡이 막는 실내 습도 관리 5가지 체크포인트 — Photo by Oleksandr Zhluktenko on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 장마철 곰팡이 막는 실내 습도 관리 5가지 체크포인트. Keyword: 06월 장마철 실내 습도 관리. Concrete visual subject: everyday lifestyle public information. Context: 비 오는 06월 장마철, 집안 습기가 곰팡이로 이어져 고민인 분들이 많습니다. 습도계 숫자만 믿고 방심하면 욕실, 베란다, 옷장 등 곳곳에 곰팡이 얼룩이 생기기 쉽죠. 아래는 대한민국 정부 대표 포털(코리아.kr)에서 안내한 실내 습도 관리의 핵심 기준 5가지입니다. --- ### 1. 환기 시간: 비가 그친 후 30분만 열기 장마철엔 환기가 중요하지만, 아무때나 창문을 열면 오히려 습기만 쌓입니다. 비가 완전히 그친 뒤, 바람이 드는 타이밍에 30분 정도 창문을 열어주세요. 환기는 하루 1~2회가 적당하며, 벽이나 천장, 옷장 같은 구석진 곳도 눈으로 습기 상태를 확인하는 것이 필요합니다. --- ### 2. 제습기 위치: 구석·습기 많은 곳에 배치 제습기는 방 중앙이 아닌 욕실, 베란다, 옷장 앞 등 습기가 쌓이는 구석에 두면 효과가 높습니다. ‘위닉스’, ‘LG전자’ 등 국내 제습기 제조사에서도 공기 흐름과 위치를 강조합니다. 집을 비우는 시간이 많다면 타이머 기능으로 집에 들어오기 2시간 전에 작동시키는 것도 좋습니다. --- ### 3. 욕실·베란다 곰팡이: 발생 즉시 청소 욕실과 베란다는 곰팡이 발생이 잦은 곳입니다. 머리 감거나 샤워 후에는 즉시 바닥과 벽의 물기를 닦아내고, 청소 도구도 햇볕에 말려줍니다. 코리아.kr에서는 곰팡이가 보이면 바로 제거하고, 주기적인 소독을 권장합니다. --- ### 4. 의류 보관: 통풍. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-14T12:47:06.221058",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 청년도약계좌 유지",
+        "title_hint": "청년도약계좌, 해지 전에 놓치기 쉬운 조건",
+        "category": "정책",
+        "trend_score": 81.0,
+        "competition_score": 0.35,
+        "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+        "sources": [
+          {
+            "title": "청년도약계좌, 해지 전에 놓치기 쉬운 조건",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "납입 기간, 정부 기여금, 소득 요건, 중도해지 사유, 만기 전략을 설명한다.",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "6월, 청년도약계좌 정부 지원금 지키는 체크포인트 5가지",
+      "slug": "06월-청년도약계좌-유지-4052cb0c",
+      "excerpt": "청년도약계좌를 6월에 해지하거나 만기 도달 시, 정부 지원금이 줄거나 환수되는 사례가 많습니다. 금융위원회 공식 자료를 바탕으로, 이번 달 꼭 확인해야 할 유지 조건 5가지를 정리했습니다.",
+      "body_markdown": "06월 청년도약계좌를 해지하거나 만기 도달을 앞둔 청년이라면, 이번 달 유지 조건을 놓치지 않는 것이 중요합니다.  \n많은 사례에서 6월 심사 기준을 미처 확인하지 않아 정부 기여금이 줄거나 반환되는 일이 발생합니다.\n\n**청년도약계좌란?**  \n청년도약계좌는 만 19~34세 청년이 5년간 매월 최대 70만 원을 저축하면 정부가 추가 기여금을 지원하는 정책입니다.  \n2023년 금융위원회가 도입했으며, 연 소득 5천만 원 이하, 총 자산 2.8억 원 이하의 청년만 신청할 수 있습니다.  \n계좌를 정상 유지하면 정부 기여금이 지급되지만, 납입 누락이나 소득 기준 미달 시 지원금이 제한될 수 있습니다.\n\n**06월에 특히 주의해야 할 이유**  \n금융위원회는 6월을 기준으로 납입 실적, 소득 요건, 중도해지 사유 등 주요 조건을 다시 심사합니다.  \n6월 중 해지나 조건 미달로 정부 기여금 환수 또는 지원금 축소 사례가 늘고 있다는 점도 최근 보도자료에서 강조됐습니다.\n\n**06월 청년도약계좌 유지 조건 5가지**  \n아래 표는 금융위원회 공식 자료에 근거한 6월 유지 필수 조건입니다.\n\n| 조건                | 구체 내용                                    | 확인 방법/출처                          |\n|---------------------|----------------------------------------------|------------------------------------------|\n| 최소 납입 기간      | 6월까지 1년 이상 납입해야 정부 기여금 유지   | 금융위원회 공고문, 계좌 개설 은행       |\n| 소득 요건           | 6월 기준 연 소득 5,000만 원 이하만 조건 충족 | 금융위원회 홈페이지, 은행 제출 서류     |\n| 정부 기여금 환수    | 6월 중 해지 시 지급된 기여금 일부/전액 반환 가능 | 금융위원회 질의응답, 은행 상담센터      |\n| 중도해지 사유       | 6월 심사에서 인정된 사유만 정부 지원 유지    | 금융위원회 보도자료, 직접 문의          |\n| 만기 전략           | 6월 만기 때 조건 만족해야 지원금 전액 지급   | 은행 만기 안내 자료, 금융위 원문        |\n\n**구체적으로, 다음을 점검하세요:**  \n- _최소 납입 기간_: 6월까지 12개월 이상 납입 실적이 있어야 정부 기여금이 유지됩니다. 한 달이라도 납입이 누락되면 지원금이 줄어들 수 있습니다.  \n- _소득 요건_: 6월 심사 기준 연 소득 5천만 원 이하를 넘으면 지원금 지급이 중단됩니다. 은행에 제출하는 소득 증빙 자료가 필요합니다.  \n- _정부 기여금 환수_: 6월에 해지하면 그동안 받은 정부 기여금 일부 또는 전액을 반환해야 할 수 있습니다.  \n- _중도해지 사유_: 6월 심사에서 인정되지 않는 사유로 해지하면 정부 지원금이 지급되지 않습니다.  \n- _만기 전략_: 6월 만기 도달 시, 모든 조건을 충족해야 지원금 전액을 받을 수 있습니다.\n\n**청년도약계좌 제도 주요 변화(2023년→2024년 6월)**  \n- 소득·납입 실적 심사가 강화됨  \n- 소득 증빙 서류 제출이 엄격해짐  \n- 최초 1년 납입 미달 시 기여금 지급 중단  \n- 중도해지 사유 인정 기준이 까다로워짐\n\n금융위원회(정부 정책 담당기관)는 이런 변화와 조건을 [공식 홈페이지](https://www.fsc.go.kr/)와 보도자료에서 안내하고 있습니다.  \n실제 계좌 유지 기준과 정부 지원금 조건은 은행별 상담센터에서도 확인 가능합니다.\n\n**6월 유지 조건 체크리스트**  \n- 6월까지 납입 누락 없는지 계좌 거래내역 확인  \n- 6월 해지 시 정부 기여금 환수 조건 확인  \n- 최근 1년 소득 증빙 자료 준비  \n- 중도해지 사유 공식 인정 여부 확인  \n- 만기 도달 시 조건 충족 여부 체크\n\n06월 청년도약계좌 유지 조건은 한번 놓치면 되돌릴 수 없습니다.  \n금융위원회 공식 자료와 은행 상담센터에서 내 계좌의 유지 기준을 반드시 확인하세요.  \n해지나 만기 전에 조건을 꼼꼼히 점검하면 불필요한 정부 지원금 환수와 지급 제한을 예방할 수 있습니다.",
+      "tags": [
+        "정책",
+        "06월",
+        "청년도약계좌",
+        "유지"
+      ],
+      "cover_image_path": "https://images.pexels.com/photos/5669635/pexels-photo-5669635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "cover_image_alt": "6월, 청년도약계좌 정부 지원금 지키는 체크포인트 5가지 — Photo by Sora Shimazaki on Pexels",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 6월, 청년도약계좌 정부 지원금 지키는 체크포인트 5가지. Keyword: 06월 청년도약계좌 유지. Concrete visual subject: public service documents young professionals city. Context: 06월 청년도약계좌를 해지하거나 만기 도달을 앞둔 청년이라면, 이번 달 유지 조건을 놓치지 않는 것이 중요합니다. 많은 사례에서 6월 심사 기준을 미처 확인하지 않아 정부 기여금이 줄거나 반환되는 일이 발생합니다. **청년도약계좌란?** 청년도약계좌는 만 19~34세 청년이 5년간 매월 최대 70만 원을 저축하면 정부가 추가 기여금을 지원하는 정책입니다. 2023년 금융위원회가 도입했으며, 연 소득 5천만 원 이하, 총 자산 2.8억 원 이하의 청년만 신청할 수 있습니다. 계좌를 정상 유지하면 정부 기여금이 지급되지만, 납입 누락이나 소득 기준 미달 시 지원금이 제한될 수 있습니다. **06월에 특히 주의해야 할 이유** 금융위원회는 6월을 기준으로 납입 실적, 소득 요건, 중도해지 사유 등 주요 조건을 다시 심사합니다. 6월 중 해지나 조건 미달로 정부 기여금 환수 또는 지원금 축소 사례가 늘고 있다는 점도 최근 보도자료에서 강조됐습니다. **06월 청년도약계좌 유지 조건 5가지** 아래 표는 금융위원회 공식 자료에 근거한 6월 유지 필수 조건입니다. | 조건 | 구체 내용 | 확인 방법/출처 | |---------------------|----------------------------------------------|------------------------------------------| | 최소 납입 기간 | 6월까지 1. Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-14T12:47:31.442206",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 선거구 확인 방법",
+        "title_hint": "우리 동네 선거구 바뀌었는지 확인하는 법",
+        "category": "정치",
+        "trend_score": 81.0,
+        "competition_score": 0.35,
+        "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+        "sources": [
+          {
+            "title": "우리 동네 선거구 바뀌었는지 확인하는 법",
+            "url": "https://info.nec.go.kr/",
+            "published_at": null,
+            "summary": "선거구 획정, 주소지 기준, 사전투표소, 후보자 등록 일정 확인 순서를 정리한다.",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "06월 선거구 확인 방법, 발언보다 맥락 보기",
+      "slug": "06월-선거구-확인-방법-aadecac5",
+      "excerpt": "06월 선거구 확인 방법 이슈를 발언 배경, 이해관계자, 후속 일정 중심으로 정리했습니다.",
+      "body_markdown": "## 이 이슈의 핵심\n\n우리 동네 선거구 바뀌었는지 확인하는 법는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 06월 선거구 확인 방법를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다.\n\n선거구 획정, 주소지 기준, 사전투표소, 후보자 등록 일정 확인 순서를 정리한다.\n\n## 정책 읽는 순서\n\n| 구분 | 봐야 할 질문 |\n| --- | --- |\n| 대상 | 정부, 국회, 정당, 부처, 외교 상대국 중 어느 주체가 관련되는지 |\n| 시점 | 발표일, 회담일, 법안 처리 일정, 후속 브리핑 여부 |\n| 영향 | 예산, 산업 영향, 외교 협력, 규제 변화 가능성 |\n| 예외 | 정치적 해석과 확정된 제도 변화를 구분할 필요 |\n\n## 독자가 이해해야 할 배경\n\n정치 이슈는 찬반 평가보다 확인 가능한 사실을 먼저 봐야 합니다. 공식 발표, 회의 결과, 법안 문안, 후속 브리핑이 있는지 확인하세요.\n\n외교나 산업 이슈가 섞인 정치 뉴스는 구체적인 협력 분야와 실제 실행 일정이 중요합니다. 수사적 표현과 실행 계획을 분리해서 보는 편이 안전합니다.\n\n세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 06월 선거구 확인 방법도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다.\n\n## 확인 포인트\n\n1. 담당 기관과 발표일을 확인합니다.\n2. 개인, 사업자, 기관 중 누구에게 영향을 주는지 나눕니다.\n3. 단속, 지원, 신고, 신청 중 어떤 행동으로 이어지는지 봅니다.\n4. 금액이나 비율이 있다면 한도와 기간을 함께 확인합니다.\n5. 원문 자료의 후속 링크나 담당 부서를 확인합니다.\n\n## 마무리\n\n06월 선거구 확인 방법는 자극적인 제목보다 적용 범위가 중요합니다. 실제 행동이 필요한지는 원문에서 시행일, 대상, 담당 기관을 확인한 뒤 판단하는 것이 좋습니다.\n\n## 참고한 곳\n\n- [우리 동네 선거구 바뀌었는지 확인하는 법](https://info.nec.go.kr/)\n",
+      "tags": [
+        "정치",
+        "06월",
+        "선거구",
+        "확인",
+        "방법"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1540908390241-82158ab62887?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxlbGVjdGlvbiUyMGNpdmljJTIwZ292ZXJubWVudHxlbnwxfDB8fHwxNzgxNDQxMjczfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "06월 선거구 확인 방법, 발언보다 맥락 보기 — Photo by Element5 Digital on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 선거구 확인 방법, 발언보다 맥락 보기. Keyword: 06월 선거구 확인 방법. Concrete visual subject: election civic government. Context: ## 이 이슈의 핵심 우리 동네 선거구 바뀌었는지 확인하는 법는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 06월 선거구 확인 방법를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 선거구 획정, 주소지 기준, 사전투표소, 후보자 등록 일정 확인 순서를 정리한다. ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 정부, 국회, 정당, 부처, 외교 상대국 중 어느 주체가 관련되는지 | | 시점 | 발표일, 회담일, 법안 처리 일정, 후속 브리핑 여부 | | 영향 | 예산, 산업 영향, 외교 협력, 규제 변화 가능성 | | 예외 | 정치적 해석과 확정된 제도 변화를 구분할 필요 | ## 독자가 이해해야 할 배경 정치 이슈는 찬반 평가보다 확인 가능한 사실을 먼저 봐야 합니다. 공식 발표, 회의 결과, 법안 문안, 후속 브리핑이 있는지 확인하세요. 외교나 산업 이슈가 섞인 정치 뉴스는 구체적인 협력 분야와 실제 실행 일정이 중요합니다. 수사적 표현과 실행 계획을 분리해서 보는 편이 안전합니다. 세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 06월 선거구 확인 방법도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다. ## 확. Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-14T12:47:51.187613",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "06월 제주 실내 관광지",
+        "title_hint": "제주 비 오는 날, 실내 관광지만 묶는 동선",
+        "category": "핫이슈",
+        "trend_score": 80.0,
+        "competition_score": 0.35,
+        "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+        "sources": [
+          {
+            "title": "제주 비 오는 날, 실내 관광지만 묶는 동선",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "제주 실내 전시, 카페, 체험 공간, 렌터카 이동, 우천 대안을 정리한다.",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "06월 제주 실내 관광지, 동선부터 잡는 법",
+      "slug": "06월-제주-실내-관광지-046c4f48",
+      "excerpt": "06월 제주 실내 관광지를 동선, 시간대, 비용, 운영 조건 중심으로 확인하는 방법을 정리했습니다.",
+      "body_markdown": "## 동선부터 잡아야 하는 이유\n\n제주 비 오는 날, 실내 관광지만 묶는 동선를 볼 때는 이름난 장소를 많이 넣는 것보다 이동이 자연스러운지가 더 중요합니다. 06월 제주 실내 관광지 같은 지역·여행 주제는 시간대, 휴무, 예약 여부에 따라 만족도가 크게 달라집니다.\n\n제주 실내 전시, 카페, 체험 공간, 렌터카 이동, 우천 대안을 정리한다.\n\n## 방문 전 비교표\n\n| 구분 | 확인할 점 |\n| --- | --- |\n| 동선 | 아이 동반, 가족 여행, 반려동물 동반, 혼잡 시간대 |\n| 시간 | 운영 시간, 휴무일, 계절별 혼잡 시간 |\n| 비용 | 입장료, 주차비, 예약금, 식사 예산 |\n| 변수 | 우천, 성수기, 대기, 예약 마감, 반려동물 제한 |\n\n## 추천 동선과 주변 포인트\n\n여행 글은 직접 방문 후기와 공개 데이터를 구분해서 봐야 합니다. 이 글은 방문 경험을 꾸미지 않고, 확인해야 할 조건을 중심으로 정리합니다.\n\n가족이나 아이와 함께 움직인다면 이동 거리를 짧게 잡는 것이 우선입니다. 유명 장소를 많이 넣는 것보다 쉬는 지점과 식사 시간을 동선 중간에 두는 편이 만족도가 높습니다.\n\n처음 가는 지역이라면 대표 관광지 하나를 기준으로 주변 포인트를 2~3곳만 묶는 편이 좋습니다. 아이나 가족, 반려동물과 함께라면 이동 거리보다 쉬는 지점, 화장실, 식사 대기 시간, 실내 대체 장소를 먼저 넣어야 일정이 무너지지 않습니다.\n\n## 체크리스트\n\n1. 첫 장소와 마지막 장소를 지도에서 먼저 찍습니다.\n2. 식사와 휴식 시간을 일정 중간에 넣습니다.\n3. 주차, 대중교통, 우천 대안을 함께 확인합니다.\n4. 예약이 필요한 곳은 방문 전날 다시 확인합니다.\n5. 후기는 참고하되 운영 시간은 공식 안내를 기준으로 봅니다.\n\n## 참고한 곳\n\n- [제주 비 오는 날, 실내 관광지만 묶는 동선](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "핫이슈",
+        "06월",
+        "제주",
+        "실내",
+        "관광지"
+      ],
+      "cover_image_path": "https://images.pexels.com/photos/16677692/pexels-photo-16677692.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "cover_image_alt": "06월 제주 실내 관광지, 동선부터 잡는 법 — Photo by Kharl Anthony Paica on Pexels",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 제주 실내 관광지, 동선부터 잡는 법. Keyword: 06월 제주 실내 관광지. Concrete visual subject: tourism destination travel jeju island coastline cafe. Context: ## 동선부터 잡아야 하는 이유 제주 비 오는 날, 실내 관광지만 묶는 동선를 볼 때는 이름난 장소를 많이 넣는 것보다 이동이 자연스러운지가 더 중요합니다. 06월 제주 실내 관광지 같은 지역·여행 주제는 시간대, 휴무, 예약 여부에 따라 만족도가 크게 달라집니다. 제주 실내 전시, 카페, 체험 공간, 렌터카 이동, 우천 대안을 정리한다. ## 방문 전 비교표 | 구분 | 확인할 점 | | --- | --- | | 동선 | 아이 동반, 가족 여행, 반려동물 동반, 혼잡 시간대 | | 시간 | 운영 시간, 휴무일, 계절별 혼잡 시간 | | 비용 | 입장료, 주차비, 예약금, 식사 예산 | | 변수 | 우천, 성수기, 대기, 예약 마감, 반려동물 제한 | ## 추천 동선과 주변 포인트 여행 글은 직접 방문 후기와 공개 데이터를 구분해서 봐야 합니다. 이 글은 방문 경험을 꾸미지 않고, 확인해야 할 조건을 중심으로 정리합니다. 가족이나 아이와 함께 움직인다면 이동 거리를 짧게 잡는 것이 우선입니다. 유명 장소를 많이 넣는 것보다 쉬는 지점과 식사 시간을 동선 중간에 두는 편이 만족도가 높습니다. 처음 가는 지역이라면 대표 관광지 하나를 기준으로 주변 포인트를 2~3곳만 묶는 편이 좋습니다. 아이나 가족, 반려동물과 함께라면 이동 거리보다 쉬는 지점, 화장실, 식사 대기 시간, 실내 대체 장소를 먼저 넣어야 일정이 무너지지 않습니다. ## . Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "created_at": "2026-06-14T12:48:03.407892",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-ai-노트북-npu-cd7b324c.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-2026-월드컵-조편성-062580e9.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-장마철-실내-습도-관리-00e9f58b.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-청년도약계좌-유지-4052cb0c.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 89.0"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 89.0"
+    }
+  ]
+}
