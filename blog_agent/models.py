@@ -36,7 +36,10 @@ class Draft(BaseModel):
     tags: list[str] = Field(default_factory=list)
     cover_image_path: str | None = None
     cover_image_alt: str | None = None
+    inline_image_path: str | None = None
+    inline_image_alt: str | None = None
     image_prompt: str | None = None
+    inline_image_prompt: str | None = None
     created_at: datetime = Field(default_factory=datetime.now)
     quality_score: float = 0
     review_notes: list[str] = Field(default_factory=list)

@@ -174,6 +174,37 @@ class ImageAgent:
         draft.cover_image_path = self._fallback_url(draft)
         return draft
 
+    def attach_inline_image(self, draft: Draft) -> Draft:
+        inline = draft.model_copy(deep=True)
+        inline.slug = f"{draft.slug}-inline"
+        inline.title = f"{draft.title} 본문 보조 이미지"
+        inline.inline_image_prompt = self.build_inline_prompt(draft)
+        inline.image_prompt = inline.inline_image_prompt
+        inline.cover_image_alt = f"{draft.topic.keyword} 본문 이해를 돕는 이미지"
+
+        for fetch_fn in (self._fetch_unsplash, self._fetch_pexels, self._fetch_pixabay):
+            url = fetch_fn(inline)
+            if url and url != draft.cover_image_path:
+                draft.inline_image_path = url
+                draft.inline_image_alt = inline.cover_image_alt
+                draft.inline_image_prompt = inline.inline_image_prompt
+                return draft
+
+        if self.settings.enable_image_generation and self._openai:
+            local_path = self._generate_openai(inline)
+            if local_path:
+                draft.inline_image_path = local_path
+                draft.inline_image_alt = inline.cover_image_alt
+                draft.inline_image_prompt = inline.inline_image_prompt
+                return draft
+
+        url = self._fallback_url(inline)
+        if url != draft.cover_image_path:
+            draft.inline_image_path = url
+            draft.inline_image_alt = inline.cover_image_alt
+            draft.inline_image_prompt = inline.inline_image_prompt
+        return draft
+
     def _fetch_unsplash(self, draft: Draft) -> str | None:
         if not self.settings.unsplash_access_key:
             return None
@@ -312,4 +343,18 @@ class ImageAgent:
             f"Visual mood: {mood}. "
             "No readable text, no brand logos, no fake UI, no people implying firsthand review. "
             "Use a polished, credible, news briefing style suitable for a blog thumbnail."
+        )
+
+    @staticmethod
+    def build_inline_prompt(draft: Draft) -> str:
+        context = " ".join(draft.body_markdown.split())[:900]
+        visual_query = ImageAgent.visual_query(draft.topic.keyword, draft.topic.category, draft.title)
+        return (
+            "Create a 16:9 editorial in-article image for a Korean information article. "
+            f"Article title/theme: {draft.title}. "
+            f"Keyword: {draft.topic.keyword}. "
+            f"Concrete visual subject: {visual_query}. "
+            f"Article context: {context}. "
+            "The image should support a middle section of the article, not repeat a generic title thumbnail. "
+            "No readable text, no logos, no fake charts with numbers, no staged firsthand review scene."
         )

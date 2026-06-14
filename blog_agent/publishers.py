@@ -23,7 +23,7 @@ class MarkdownPublisher(Publisher):
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
     def publish(self, draft: Draft) -> PublishResult:
-        body = self._body_with_cover(draft)
+        body = self._body_with_images(draft)
         path = self.output_dir / f"{draft.slug}.md"
         meta = {
             "title": self._clean_scalar(draft.title),
@@ -36,6 +36,10 @@ class MarkdownPublisher(Publisher):
             meta["cover_image"] = draft.cover_image_path
             if draft.cover_image_alt:
                 meta["cover_image_alt"] = self._clean_scalar(draft.cover_image_alt)
+        if draft.inline_image_path:
+            meta["inline_image"] = draft.inline_image_path
+            if draft.inline_image_alt:
+                meta["inline_image_alt"] = self._clean_scalar(draft.inline_image_alt)
         frontmatter = "---\n" + yaml.safe_dump(meta, allow_unicode=True, sort_keys=False) + "---\n\n"
         path.write_text(frontmatter + body + "\n", encoding="utf-8")
         return PublishResult(ok=True, destination="markdown", url=str(path), message="draft saved")
@@ -45,14 +49,37 @@ class MarkdownPublisher(Publisher):
         return re.sub(r"\s+", " ", str(value)).strip()
 
     @staticmethod
-    def _body_with_cover(draft: Draft) -> str:
-        if not draft.cover_image_path:
-            return draft.body_markdown
-        p = draft.cover_image_path
-        alt = MarkdownPublisher._clean_scalar(draft.cover_image_alt or draft.title)
-        # Unsplash/remote URL vs local file
-        image_ref = p if p.startswith("http") else f"assets/{Path(p).name}"
-        return f"![{alt}]({image_ref})\n\n{draft.body_markdown}"
+    def _body_with_images(draft: Draft) -> str:
+        body = draft.body_markdown
+        if draft.inline_image_path:
+            body = MarkdownPublisher._insert_inline_image(
+                body,
+                MarkdownPublisher._image_ref(draft.inline_image_path),
+                MarkdownPublisher._clean_scalar(draft.inline_image_alt or f"{draft.title} 본문 이미지"),
+            )
+        if draft.cover_image_path:
+            alt = MarkdownPublisher._clean_scalar(draft.cover_image_alt or draft.title)
+            body = f"![{alt}]({MarkdownPublisher._image_ref(draft.cover_image_path)})\n\n{body}"
+        return body
+
+    @staticmethod
+    def _image_ref(path_or_url: str) -> str:
+        return path_or_url if path_or_url.startswith("http") else f"assets/{Path(path_or_url).name}"
+
+    @staticmethod
+    def _insert_inline_image(body: str, image_ref: str, alt: str) -> str:
+        if not image_ref or image_ref in body:
+            return body
+        image_md = f"\n\n![{alt}]({image_ref})\n\n"
+        heading_matches = list(re.finditer(r"(?m)^#{2,4}\s+.+$", body))
+        if len(heading_matches) >= 2:
+            insert_at = heading_matches[1].start()
+            return body[:insert_at].rstrip() + image_md + body[insert_at:].lstrip()
+        paragraphs = list(re.finditer(r"\n\s*\n", body))
+        if len(paragraphs) >= 2:
+            insert_at = paragraphs[1].end()
+            return body[:insert_at].rstrip() + image_md + body[insert_at:].lstrip()
+        return body.rstrip() + image_md
 
 
 class WordPressPublisher(Publisher):
@@ -66,12 +93,18 @@ class WordPressPublisher(Publisher):
     def publish(self, draft: Draft) -> PublishResult:
         media = self._upload_media(draft)
         body = draft.body_markdown
+        if draft.inline_image_path:
+            body = MarkdownPublisher._insert_inline_image(
+                body,
+                MarkdownPublisher._image_ref(draft.inline_image_path),
+                MarkdownPublisher._clean_scalar(draft.inline_image_alt or f"{draft.title} 본문 이미지"),
+            )
         if media:
             _, media_url = media
             alt = draft.cover_image_alt or draft.title
-            body = f"![{alt}]({media_url})\n\n{draft.body_markdown}"
+            body = f"![{alt}]({media_url})\n\n{body}"
         elif draft.cover_image_path:
-            body = MarkdownPublisher._body_with_cover(draft)
+            body = MarkdownPublisher._body_with_images(draft)
         payload = {
             "title": draft.title,
             "content": markdown.markdown(
@@ -137,9 +170,7 @@ class BloggerPublisher(Publisher):
         self.base_url = "https://www.googleapis.com/blogger/v3"
 
     def publish(self, draft: Draft) -> PublishResult:
-        body = draft.body_markdown
-        if draft.cover_image_path:
-            body = MarkdownPublisher._body_with_cover(draft)
+        body = MarkdownPublisher._body_with_images(draft)
         
         content = markdown.markdown(
             body,

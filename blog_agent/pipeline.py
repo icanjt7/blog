@@ -64,6 +64,7 @@ class BlogPipeline:
                 enriched = self.retriever.enrich(topic)
                 draft = self.editor.improve(self.writer.write(enriched))
                 draft = self.images.attach_cover(draft)
+                draft = self.images.attach_inline_image(draft)
                 drafts.append(draft)
                 if dry_run:
                     self.store.add_draft(run_id, draft)
