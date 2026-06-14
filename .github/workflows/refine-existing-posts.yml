@@ -84,10 +84,11 @@ jobs:
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.1-8b-instruct:free' }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
           GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
           LLM_TIMEOUT_SECONDS: ${{ vars.LLM_TIMEOUT_SECONDS || '30' }}
           REFINE_MAX_PROVIDERS_PER_POST: ${{ vars.REFINE_MAX_PROVIDERS_PER_POST || '2' }}
+          REFINE_REQUIRE_LLM: "true"
         run: |
           args=(--limit "${{ inputs.limit }}" --min-quality "${{ inputs.min_quality }}" --max-growth "${{ inputs.max_growth }}")
           if [ "${{ inputs.include_all }}" = "true" ]; then

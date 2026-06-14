@@ -330,6 +330,10 @@ def main() -> None:
     args = parser.parse_args()
 
     providers = init_providers()
+    provider_names = ", ".join(provider.name for provider in providers) or "none"
+    print(f"loaded llm providers: {provider_names}", flush=True)
+    if not providers and os.getenv("REFINE_REQUIRE_LLM", "").lower() in {"1", "true", "yes"}:
+        raise SystemExit("REFINE_REQUIRE_LLM is true, but no LLM providers are configured")
     paths = sorted(ROOT.glob(args.glob), key=lambda path: path.stat().st_mtime)
     changed = 0
     scanned = 0
