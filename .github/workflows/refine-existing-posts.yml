@@ -1,0 +1,146 @@
+name: Refine existing posts
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Maximum existing posts to refine"
+        required: true
+        default: "50"
+      min_quality:
+        description: "Refine posts below this quality score or with weak markers"
+        required: true
+        default: "90"
+      category:
+        description: "Optional categories separated by spaces, e.g. 생활 기술"
+        required: false
+        default: ""
+      tag:
+        description: "Optional tags separated by spaces, e.g. 보도기사 미국정부"
+        required: false
+        default: ""
+      include_all:
+        description: "Refine even posts that do not look weak"
+        required: true
+        type: choice
+        options:
+          - "false"
+          - "true"
+        default: "false"
+      max_growth:
+        description: "Maximum visible length growth ratio"
+        required: true
+        default: "1.12"
+      dry_run:
+        description: "Preview only, do not commit or deploy"
+        required: true
+        type: choice
+        options:
+          - "false"
+          - "true"
+        default: "false"
+
+concurrency:
+  group: refine-existing-posts
+  cancel-in-progress: false
+
+jobs:
+  refine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+      models: read
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync latest main
+        run: git pull --ff-only origin main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Refine existing posts
+        env:
+          MOTIF_API: ${{ secrets.MOTIF_API }}
+          MOTIF_MODEL: ${{ vars.MOTIF_MODEL || 'motif-12.7b-reasoning' }}
+          MOTIF_BASE_URL: ${{ vars.MOTIF_BASE_URL || 'https://chat.motiftech.io/openapi/v1' }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL || 'groq/compound' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.1-8b-instruct:free' }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
+          LLM_TIMEOUT_SECONDS: ${{ vars.LLM_TIMEOUT_SECONDS || '30' }}
+        run: |
+          args=(--limit "${{ inputs.limit }}" --min-quality "${{ inputs.min_quality }}" --max-growth "${{ inputs.max_growth }}")
+          if [ "${{ inputs.include_all }}" = "true" ]; then
+            args+=(--include-all)
+          fi
+          if [ -n "${{ inputs.category }}" ]; then
+            read -r -a categories <<< "${{ inputs.category }}"
+            args+=(--category "${categories[@]}")
+          fi
+          if [ -n "${{ inputs.tag }}" ]; then
+            read -r -a tags <<< "${{ inputs.tag }}"
+            args+=(--tag "${tags[@]}")
+          fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            args+=(--dry-run)
+          fi
+          python -u scripts/refine_existing_posts.py "${args[@]}"
+
+      - name: Build static site
+        if: ${{ inputs.dry_run != 'true' }}
+        env:
+          BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
+          BLOG_CUSTOM_DOMAIN: ${{ vars.BLOG_CUSTOM_DOMAIN }}
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+          ADSENSE_PUBLISHER_ID: ${{ secrets.ADSENSE_PUBLISHER_ID }}
+        run: python -m blog_agent.cli build-site
+
+      - name: Commit refined posts
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "blog-agent"
+          git config user.email "actions@github.com"
+          git add output/posts || true
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refine existing posts"
+          git pull --rebase --autostash origin main
+          git push
+
+      - uses: actions/configure-pages@v5
+        if: ${{ inputs.dry_run != 'true' }}
+
+      - uses: actions/upload-pages-artifact@v3
+        if: ${{ inputs.dry_run != 'true' }}
+        with:
+          path: public
+
+      - uses: actions/deploy-pages@v4
+        if: ${{ inputs.dry_run != 'true' }}
+
+      - name: Submit sitemap to Google Search Console
+        if: ${{ inputs.dry_run != 'true' }}
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_SERVICE_ACCOUNT_JSON_BASE64: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON_BASE64 }}
+          GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL || 'https://briefwave.kr/' }}
+          GOOGLE_SITEMAP_URL: ${{ vars.GOOGLE_SITEMAP_URL || 'https://briefwave.kr/sitemap.xml' }}
+        run: python scripts/submit_google_sitemap.py
