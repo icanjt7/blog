@@ -236,9 +236,10 @@ def refine_with_llm(
 ) -> tuple[str, str]:
     if not providers:
         return body, "no llm providers"
+    max_providers = max(1, int(os.getenv("REFINE_MAX_PROVIDERS_PER_POST", "2")))
     prompt = prompt_for(meta, body, max_growth, min_ratio)
     errors: list[str] = []
-    for provider in providers:
+    for provider in providers[:max_providers]:
         try:
             response = provider.client.chat.completions.create(
                 model=provider.model,
