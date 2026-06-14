@@ -31,6 +31,10 @@ on:
         description: "Maximum visible length growth ratio"
         required: true
         default: "1.12"
+      min_ratio:
+        description: "Minimum visible length ratio; lower means concise rewrites can pass"
+        required: true
+        default: "0.50"
       dry_run:
         description: "Preview only, do not commit or deploy"
         required: true
@@ -91,7 +95,7 @@ jobs:
           REFINE_LLM_PROVIDER_ORDER: ${{ vars.REFINE_LLM_PROVIDER_ORDER || 'gemini,openrouter,github,motif,groq' }}
           REFINE_REQUIRE_LLM: "true"
         run: |
-          args=(--limit "${{ inputs.limit }}" --min-quality "${{ inputs.min_quality }}" --max-growth "${{ inputs.max_growth }}")
+          args=(--limit "${{ inputs.limit }}" --min-quality "${{ inputs.min_quality }}" --max-growth "${{ inputs.max_growth }}" --min-ratio "${{ inputs.min_ratio }}")
           if [ "${{ inputs.include_all }}" = "true" ]; then
             args+=(--include-all)
           fi
