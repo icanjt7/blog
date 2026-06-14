@@ -183,6 +183,19 @@ def normalize_body(text: str) -> str:
     return text.strip()
 
 
+def preserve_images(original: str, refined: str) -> str:
+    images = re.findall(r"!\[[^\]]*\]\([^)]+\)", original)
+    missing = [image for image in images if image not in refined]
+    if not missing:
+        return refined
+    image_block = "\n".join(missing)
+    first_heading = re.match(r"^(##\s+.+)$", refined, flags=re.M)
+    if not first_heading:
+        return f"{image_block}\n\n{refined}".strip()
+    insert_at = first_heading.end()
+    return f"{refined[:insert_at]}\n{image_block}{refined[insert_at:]}".strip()
+
+
 def should_refine(meta: dict, body: str, *, min_quality: float, include_all: bool) -> bool:
     if include_all:
         return True
@@ -274,6 +287,7 @@ def refine_with_llm(
                     max_tokens=2600,
                 )
             refined = normalize_body(response.choices[0].message.content or "")
+            refined = preserve_images(body, refined)
             ok, reason = acceptable(body, refined, max_growth=max_growth, min_ratio=min_ratio)
             if ok:
                 return refined, f"llm refined via {provider.name}"
@@ -337,6 +351,7 @@ def main() -> None:
     paths = sorted(ROOT.glob(args.glob), key=lambda path: path.stat().st_mtime)
     changed = 0
     scanned = 0
+    reported_failures = 0
     wanted_categories = set(args.category)
     wanted_tags = set(args.tag)
     for path in paths:
@@ -367,6 +382,9 @@ def main() -> None:
             changed += 1
             mode = "would refine" if args.dry_run else "refined"
             print(f"{mode}: {path.relative_to(ROOT)} ({reason})")
+        elif not reason.startswith("skip:") and reported_failures < 30:
+            reported_failures += 1
+            print(f"not refined: {path.relative_to(ROOT)} ({reason})", flush=True)
     print(f"\nscanned {scanned} posts, refined {changed} posts")
 
 
