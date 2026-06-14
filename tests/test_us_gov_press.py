@@ -32,6 +32,8 @@ class USGovernmentPressImportTest(unittest.TestCase):
         self.assertIn("NASA", body)
         self.assertIn("| 항목 | 내용 |", body)
         self.assertIn("https://www.nasa.gov/example", body)
+        self.assertIn("원문 제목", body)
+        self.assertNotIn("한국 기업, 연구기관, 소비자, 정책 담당자가 직접 적용할 내용인지", body)
 
     def test_fetch_feed_skips_items_without_links(self) -> None:
         rss = """<?xml version="1.0"?>
@@ -77,6 +79,31 @@ class USGovernmentPressImportTest(unittest.TestCase):
 
         self.assertIn("미 법무부", title)
         self.assertNotIn("BODY", title)
+
+    def test_us_article_specific_rejects_generic_body(self) -> None:
+        source = MODULE.SOURCES[0]
+        entry = MODULE.USEntry(
+            source=source,
+            title="Executive action",
+            date="2026-06-12",
+            url="https://www.whitehouse.gov/example",
+            summary="",
+        )
+        body = """미국 백악관이 발표했습니다.
+
+## 내용
+이 발표는 미국 내 정책 흐름을 보여주는 자료입니다.
+## 의미
+한국 기업, 연구기관, 소비자, 정책 담당자가 직접 적용할 내용인지 판단하려면 발표 기관, 대상, 시행 시점, 후속 문서를 함께 확인해야 합니다.
+## 표
+| 항목 | 내용 |
+|---|---|
+| 기관 | 미국 백악관 |
+## 원문
+- 링크
+"""
+
+        self.assertFalse(MODULE.us_article_is_specific(body, entry))
 
 
 if __name__ == "__main__":

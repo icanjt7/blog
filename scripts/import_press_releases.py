@@ -234,6 +234,7 @@ class PressRelease:
     body_text: str
     image_url: str = ""
     image_alt: str = ""
+    article_ready: bool = False
 
 
 # ──────────────────────────────────────────────
@@ -503,21 +504,46 @@ def extract_detail_lines(text: str, limit: int = 4) -> list[str]:
     return lines
 
 
+def _llm_outputs(
+    writer: "WriterAgent",
+    prompt: str,
+    temperature: float = 0.8,
+    max_tokens: int = 512,
+) -> list[str]:
+    """Return provider responses in priority order so weak drafts can be rejected."""
+    providers = getattr(writer, "_providers", [])
+    if not providers and not writer._client:
+        return []
+    if not providers:
+        providers = [(writer._client, writer._model)]
+    outputs: list[str] = []
+    last_error = ""
+    for client, model in providers:
+        if not client:
+            continue
+        try:
+            resp = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=temperature,
+                max_tokens=max_tokens,
+            )
+            text = (resp.choices[0].message.content or "").strip()
+            if text:
+                outputs.append(text)
+        except Exception as exc:
+            last_error = f"{model}: {type(exc).__name__}"
+            continue
+    if last_error:
+        print(f"  ! LLM 전체 실패: {last_error}")
+    return outputs
+
+
 def _call_llm(writer: "WriterAgent", prompt: str,
               temperature: float = 0.8, max_tokens: int = 512) -> str:
     """writer의 LLM 클라이언트로 프롬프트를 보내고 텍스트를 반환한다."""
-    if not writer._client:
-        return ""
-    try:
-        resp = writer._client.chat.completions.create(
-            model=writer._model,
-            messages=[{"role": "user", "content": prompt}],
-            temperature=temperature,
-            max_tokens=max_tokens,
-        )
-        return (resp.choices[0].message.content or "").strip()
-    except Exception:
-        return ""
+    outputs = _llm_outputs(writer, prompt, temperature=temperature, max_tokens=max_tokens)
+    return outputs[0] if outputs else ""
 
 
 WEAK_ARTICLE_MARKERS = (
@@ -558,21 +584,40 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
 {release.body_text[:3000]}
 
 [작성 규칙]
-- 본문 1,400~1,900자 (한국어)
-- 독자에게 중요한 수치·날짜·대상을 구체적으로 포함
-- 마크다운 헤딩(##)으로 3~4개 섹션 구성
+- 본문 1,500~2,100자 (한국어)
+- 첫 문단에 반드시 발표 기관({release.institution}), 발표일({release.date}), 발표 주제를 넣기
+- 독자에게 중요한 수치·날짜·대상·장소·참여기관·지원내용·시행방식을 구체적으로 포함
+- 원문에 있는 고유명사, 사업명, 제도명, 금액, 기간은 가능한 한 그대로 살리기
+- 마크다운 헤딩(##)으로 4~5개 섹션 구성
+- 표 1개 포함: 구분 / 확인할 내용
 - '~입니다', '~합니다' 정중체 사용
 - 제목을 반복하는 "이번 보도자료의 핵심은..." 문장 금지
+- "원문 보도자료에는 세부 정보가 있습니다"처럼 뭉뚱그린 문장 금지
 - 원문에서 확인한 장소, 참여 기관, 대상, 일정, 수치가 있으면 반드시 반영
-- 마지막 문단: 독자가 다음에 확인할 행동이나 원문 확인 경로 안내
+- 마지막 섹션은 '## 확인할 점'으로 두고, 이 발표를 보고 독자가 확인할 구체 항목 3개를 적기
 - 자료 출처 기관: {release.institution}
 - 원문 URL: {release.url}
 
 BODY: 로 시작해서 본문만 작성하세요."""
-    text = _call_llm(writer, prompt, temperature=0.75, max_tokens=2048)
-    if text.startswith("BODY:"):
-        text = text[5:].strip()
-    return text if len(text) > 200 else ""
+    for text in _llm_outputs(writer, prompt, temperature=0.75, max_tokens=2048):
+        if text.startswith("BODY:"):
+            text = text[5:].strip()
+        if article_is_specific(text, release):
+            return text
+    return ""
+
+
+def article_is_specific(text: str, release: PressRelease) -> bool:
+    cleaned = clean_text(text)
+    if len(cleaned) < 850:
+        return False
+    if release.institution not in cleaned:
+        return False
+    if sum(1 for marker in WEAK_ARTICLE_MARKERS if marker in cleaned) > 0:
+        return False
+    has_sections = len(re.findall(r"^##\s+", text, flags=re.M)) >= 3
+    has_fact = bool(re.search(r"\d|대상|기간|장소|기관|신청|참여|시행|지원|발표일|원문", cleaned))
+    return has_sections and has_fact
 
 
 def rewrite_title(original: str, body_text: str, writer: "WriterAgent") -> str:
@@ -670,15 +715,47 @@ def make_article_body(release: PressRelease) -> str:
         "## 배경과 의미",
         detail,
         "## 독자가 확인할 점",
-        (
-            "- 적용 대상과 시행 시점이 내 상황과 맞는지 확인합니다.\n"
-            "- 보도자료에 나온 수치와 장소는 후속 공지에서 바뀔 수 있으므로 원문을 함께 봅니다.\n"
-            "- 신청, 참여, 방문이 필요한 사안이면 담당 기관 안내와 연락처를 다시 확인합니다."
-        ),
+        concrete_reader_checks(release, facts, detail_lines),
         "## 원문",
         f"- [{release.institution} 보도자료]({release.url})",
     ]
     return "\n\n".join(sections).strip() + "\n"
+
+
+def concrete_reader_checks(release: PressRelease, facts: list[str], detail_lines: list[str]) -> str:
+    source = "\n".join([release.title, release.body_text])
+    checks: list[str] = []
+    if re.search(r"신청|접수|공모|모집|예약|참여", source):
+        checks.append("신청·접수형 사안이면 원문에서 접수 기간, 제출 서류, 담당 부서 안내를 먼저 확인합니다.")
+    if re.search(r"지원|보조|예산|금액|원|억|조|감면|혜택|쿠폰|바우처", source):
+        checks.append("지원·예산 관련 내용은 대상 조건, 금액 기준, 중복 수혜 가능 여부를 원문 표기대로 확인합니다.")
+    if re.search(r"시행|개정|적용|일부터|월부터|년부터|기간", source):
+        checks.append("시행일이나 적용 기간이 있는 발표이므로 실제 적용 시작일과 유예기간을 따로 확인합니다.")
+    if re.search(r"지역|전국|서울|부산|대구|광주|인천|대전|울산|세종|제주|현장|장소", source):
+        checks.append("지역·현장 관련 내용은 내가 이용할 지역이 포함되는지와 방문 가능 시간을 확인합니다.")
+    if re.search(r"기업|기관|학교|대학|청년|아동|가족|어르신|장애|소상공인|농가", source):
+        checks.append("대상자가 특정되어 있으므로 개인, 기업, 기관 중 누구에게 적용되는 발표인지 구분해서 봅니다.")
+    for fact in [*facts, *detail_lines]:
+        if len(checks) >= 3:
+            break
+        if fact and not _already_used(fact, set(checks)):
+            checks.append(f"원문 핵심 문장으로는 '{shorten(fact, 110)}' 부분을 함께 확인합니다.")
+    if not checks:
+        checks = [
+            f"{release.institution} 발표 원문에서 후속 공지나 첨부자료가 있는지 확인합니다.",
+            f"발표일 {release.date} 이후 내용이 바뀌었을 수 있으므로 최신 공지 기준으로 다시 봅니다.",
+            "신청, 참여, 방문이 필요한 사안이면 담당 기관 안내와 연락처를 확인합니다.",
+        ]
+    return "\n".join(f"- {item}" for item in checks[:3])
+
+
+def finalize_article_body(release: PressRelease) -> str:
+    if release.article_ready and article_is_specific(release.body_text, release):
+        body = release.body_text.strip()
+        if "## 원문" not in body:
+            body += f"\n\n## 원문\n\n- [{release.institution} 보도자료]({release.url})"
+        return body + "\n"
+    return make_article_body(release)
 
 
 def estimate_article_quality(body: str) -> float:
@@ -815,7 +892,7 @@ def write_post(
     )
     cover_line = f"cover_image: {yaml_quote(img)}\n" if img else ""
     alt = preserved_alt or release.image_alt or searched_alt or f"{release.title} 관련 보도자료 이미지"
-    article_body = make_article_body(release)
+    article_body = finalize_article_body(release)
     quality_score = estimate_article_quality(article_body)
     frontmatter = (
         "---\n"
@@ -1224,6 +1301,7 @@ def _enrich_release(release: PressRelease, writer: "WriterAgent") -> None:
         generated = generate_article_from_source(release, writer)
         if generated:
             release.body_text = generated
+            release.article_ready = True
     release.title = rewrite_title(release.title, release.body_text, writer)
 
 

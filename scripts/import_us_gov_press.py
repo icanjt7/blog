@@ -29,9 +29,12 @@ from import_press_releases import (  # noqa: E402
     PressRelease,
     clean_text,
     estimate_article_quality,
+    extract_detail_lines,
+    extract_sentences,
     first_image,
     get_og_image,
     html_to_text,
+    with_particle,
     write_post,
     yaml_quote,
 )
@@ -44,6 +47,12 @@ TIMEOUT = 20
 USER_AGENT = "Mozilla/5.0 (compatible; BriefWaveUSGovImporter/1.0)"
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": USER_AGENT})
+
+WEAK_US_MARKERS = (
+    "한국 기업, 연구기관, 소비자, 정책 담당자가 직접 적용할 내용인지 판단하려면",
+    "발표 기관, 대상, 시행 시점, 후속 문서를 함께 확인해야 합니다",
+    "공개한 공식 발표를 바탕으로, 한국 독자가 확인할 핵심 맥락을 정리했습니다",
+)
 
 
 @dataclass(frozen=True)
@@ -283,8 +292,20 @@ def existing_post_for_url_anywhere(url: str) -> Path | None:
 
 
 def _call_llm(writer: WriterAgent | None, prompt: str, *, temperature: float = 0.65, max_tokens: int = 2200) -> str:
+    outputs = _llm_outputs(writer, prompt, temperature=temperature, max_tokens=max_tokens)
+    return outputs[0] if outputs else ""
+
+
+def _llm_outputs(
+    writer: WriterAgent | None,
+    prompt: str,
+    *,
+    temperature: float = 0.65,
+    max_tokens: int = 2200,
+) -> list[str]:
     if not writer or not writer._providers:
-        return ""
+        return []
+    outputs: list[str] = []
     last_error = ""
     for client, model in writer._providers:
         try:
@@ -294,16 +315,19 @@ def _call_llm(writer: WriterAgent | None, prompt: str, *, temperature: float = 0
                 temperature=temperature,
                 max_tokens=max_tokens,
             )
-            return (response.choices[0].message.content or "").strip()
+            text = (response.choices[0].message.content or "").strip()
+            if text:
+                outputs.append(text)
         except Exception as exc:
             last_error = f"{model}: {type(exc).__name__}"
             continue
     if last_error:
         print(f"  ! LLM 전체 실패: {last_error}")
-    return ""
+    return outputs
 
 
 def korean_article(entry: USEntry, source_text: str, writer: WriterAgent | None) -> tuple[str, str]:
+    source_facts = source_fact_pack(entry, source_text)
     prompt = f"""다음은 미국 정부 공식 기관의 보도자료 또는 뉴스 릴리스입니다.
 한국 독자가 이해할 수 있도록 한국어 블로그 기사로 재작성하세요.
 
@@ -323,27 +347,48 @@ def korean_article(entry: USEntry, source_text: str, writer: WriterAgent | None)
 [원문 내용]
 {source_text[:4200]}
 
+[원문에서 추출한 확인 포인트]
+{source_facts}
+
 [작성 규칙]
 - 제목은 한국어 34자 이내, 기관명이나 변화 포인트를 포함
-- 본문은 1,300~1,800자
+- 본문은 1,500~2,100자
 - 원문에 없는 수치, 인명, 결론을 만들지 않기
-- 첫 단락에서 어떤 기관의 어떤 발표인지 명확히 설명
+- 첫 단락에서 {entry.source.agency_ko}({entry.source.agency})가 {entry.date}에 어떤 발표를 했는지 명확히 설명
+- 발표 대상, 조치 내용, 일정, 금액, 기관명, 수치가 원문에 있으면 구체적으로 반영
 - '미국 이야기라 한국과 무관하다'처럼 단정하지 말고, 한국 독자가 볼 연결점을 설명
-- 최소 4개 섹션을 ## 헤딩으로 구성
+- 최소 5개 섹션을 ## 헤딩으로 구성: 발표 내용 / 세부 내용 / 숫자와 일정 / 한국 독자가 볼 부분 / 원문 확인
 - 표 1개 포함: 항목 / 내용
 - 마지막에는 원문 확인 링크를 안내
-- 반복형 체크리스트나 범용 문장 금지
+- 반복형 체크리스트나 "공식 발표를 확인해야 한다" 수준의 범용 문장 금지
+- 원문이 짧으면 짧다고 말하지 말고, 확인 가능한 사실만 촘촘히 풀어 설명
 
 응답 형식:
 TITLE:
 BODY:
 """
-    generated = _call_llm(writer, prompt)
-    title = normalize_title(extract_label(generated, "TITLE"), entry)
-    body = extract_label(generated, "BODY") or ""
-    if len(clean_text(body)) < 700:
-        body = fallback_body(entry, source_text)
-    return title, body
+    fallback_title_value = fallback_title(entry)
+    for generated in _llm_outputs(writer, prompt):
+        title = normalize_title(extract_label(generated, "TITLE"), entry)
+        body = extract_label(generated, "BODY") or ""
+        if us_article_is_specific(body, entry):
+            return title, body
+        fallback_title_value = title or fallback_title_value
+    return fallback_title_value, fallback_body(entry, source_text)
+
+
+def us_article_is_specific(body: str, entry: USEntry) -> bool:
+    cleaned = clean_text(body)
+    if len(cleaned) < 900:
+        return False
+    if entry.source.agency_ko not in cleaned and entry.source.agency not in cleaned:
+        return False
+    if len(re.findall(r"^##\s+", body, flags=re.M)) < 4:
+        return False
+    generic_markers = (*WEAK_US_MARKERS, "이 발표는 미국 내")
+    if any(marker in cleaned for marker in generic_markers):
+        return False
+    return bool(re.search(r"\d|대상|기관|조치|시행|일정|금액|규제|지원|소송|발표", cleaned))
 
 
 def extract_label(text: str, label: str) -> str:
@@ -379,37 +424,91 @@ def normalize_title(value: str, entry: USEntry) -> str:
 
 def fallback_body(entry: USEntry, source_text: str) -> str:
     summary = clean_text(source_text or entry.summary)
-    sentences = [
-        clean_text(item)
-        for item in re.split(r"(?<=[.!?])\s+", summary)
-        if len(clean_text(item)) > 35
-    ][:8]
+    sentences = extract_sentences(summary, limit=10)
+    detail_lines = extract_detail_lines(source_text or entry.summary, limit=6)
     if not sentences:
         sentences = [f"{entry.source.agency}가 '{entry.title}' 관련 발표를 공개했습니다."]
     marker = CATEGORY_MARKERS.get(entry.source.category_hint, CATEGORY_MARKERS["정책"])
-    points = "\n".join(f"- {line}" for line in sentences[1:5]) or f"- 원문 제목: {entry.title}\n- 발표 기관: {entry.source.agency}"
+    points_source = sentences[1:6] or detail_lines[:5] or sentences[:4]
+    points = "\n".join(f"- {line}" for line in points_source) or f"- 원문 제목: {entry.title}\n- 발표 기관: {entry.source.agency}"
+    facts = extract_us_facts(summary, limit=5)
+    fact_block = "\n".join(f"- {line}" for line in facts) or "\n".join(f"- {line}" for line in detail_lines[:4])
+    if not fact_block:
+        fact_block = f"- 발표 기관: {entry.source.agency_ko} ({entry.source.agency})\n- 발표일: {entry.date}\n- 원문 제목: {entry.title}"
     table = (
         "| 항목 | 내용 |\n"
         "|---|---|\n"
         f"| 발표 기관 | {entry.source.agency_ko} ({entry.source.agency}) |\n"
         f"| 발표일 | {entry.date} |\n"
+        f"| 원문 제목 | {entry.title} |\n"
         f"| 분류 기준 | {entry.source.category_hint} / {marker} |\n"
         f"| 원문 | [{entry.source.agency} release]({entry.url}) |\n"
     )
+    korea_angle = korean_reader_angle(entry, summary)
     return (
-        f"{entry.source.agency_ko}가 {entry.date} 공개한 공식 발표를 바탕으로, 한국 독자가 확인할 핵심 맥락을 정리했습니다.\n\n"
+        f"{with_particle(entry.source.agency_ko, '이', '가')}({entry.source.agency}) {entry.date} 공개한 '{entry.title}' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.\n\n"
         "## 어떤 발표인가\n\n"
         f"{sentences[0]}\n\n"
-        "## 핵심 내용\n\n"
+        "## 발표에서 확인되는 내용\n\n"
         f"{points}\n\n"
-        "## 한눈에 보는 기준\n\n"
+        "## 숫자와 고유명사\n\n"
+        f"{fact_block}\n\n"
+        "## 한눈에 보는 원문 기준\n\n"
         f"{table}\n"
         "## 한국 독자가 볼 부분\n\n"
-        f"이 발표는 미국 내 {entry.source.category_hint} 흐름을 보여주는 자료입니다. "
-        "한국 기업, 연구기관, 소비자, 정책 담당자가 직접 적용할 내용인지 판단하려면 발표 기관, 대상, 시행 시점, 후속 문서를 함께 확인해야 합니다.\n\n"
+        f"{korea_angle}\n\n"
         "## 원문 확인\n\n"
         f"- [{entry.source.agency} 공식 자료]({entry.url})\n"
     )
+
+
+def source_fact_pack(entry: USEntry, source_text: str) -> str:
+    facts = extract_us_facts(source_text or entry.summary, limit=6)
+    details = extract_detail_lines(source_text or entry.summary, limit=4)
+    lines = [
+        f"- 발표 기관: {entry.source.agency_ko} ({entry.source.agency})",
+        f"- 발표일: {entry.date}",
+        f"- 원문 제목: {entry.title}",
+    ]
+    for item in [*facts, *details]:
+        if item not in lines:
+            lines.append(f"- {item}")
+        if len(lines) >= 9:
+            break
+    return "\n".join(lines)
+
+
+def extract_us_facts(text: str, limit: int = 5) -> list[str]:
+    facts: list[str] = []
+    for raw in re.split(r"(?<=[.!?])\s+|\n+", text):
+        line = clean_text(raw)
+        if len(line) < 28:
+            continue
+        if not re.search(
+            r"\d|percent|million|billion|trillion|department|agency|commission|court|act|rule|program|grant|"
+            r"lawsuit|settlement|NASA|FTC|DOJ|White House|Bureau|Labor|Education",
+            line,
+            flags=re.I,
+        ):
+            continue
+        if line not in facts:
+            facts.append(line[:260].rstrip(" ,.;"))
+        if len(facts) >= limit:
+            break
+    return facts
+
+
+def korean_reader_angle(entry: USEntry, text: str) -> str:
+    lower = text.lower()
+    if any(key in lower for key in ["consumer", "fraud", "scam", "privacy", "data", "payment"]):
+        return "소비자 보호나 개인정보, 결제 관행과 관련된 발표라면 국내 서비스 이용자도 유사한 약관, 환불, 데이터 활용 방식을 비교해 볼 수 있습니다. 특히 플랫폼 기업이나 해외 서비스를 쓰는 경우에는 미국 규제기관이 문제 삼은 행위가 무엇인지 확인하는 것이 도움이 됩니다."
+    if any(key in lower for key in ["nasa", "space", "mission", "launch", "galaxy", "artemis"]):
+        return "우주·과학 분야 발표는 국내 연구기관, 대학, 항공우주 산업 종사자가 기술 협력 흐름을 살필 때 참고할 만합니다. 임무 일정, 관측 장비, 연구 목표처럼 원문에 적힌 고유 정보를 중심으로 보는 것이 좋습니다."
+    if any(key in lower for key in ["employment", "payroll", "cpi", "ppi", "prices", "wages", "inflation"]):
+        return "고용·물가 지표는 미국 경기 판단뿐 아니라 환율, 금리, 수출 기업의 비용 전망과도 연결됩니다. 다만 원문 지표의 기준월, 계절조정 여부, 전월 대비·전년 대비 구분을 함께 봐야 해석이 흔들리지 않습니다."
+    if any(key in lower for key in ["court", "justice", "sentence", "indictment", "law enforcement"]):
+        return "법 집행 발표는 특정 사건의 판결이나 수사 결과를 다루는 경우가 많습니다. 국내 독자는 혐의, 판결 단계, 관련 기관을 구분해 보고, 확정 판결인지 수사·기소 단계인지 원문에서 확인해야 합니다."
+    return f"{entry.source.category_hint} 분야의 미국 공식 발표이므로 국내 독자는 발표 기관, 적용 대상, 시행 시점, 후속 문서가 실제 이해관계와 연결되는지 확인해 볼 수 있습니다."
 
 
 def write_us_post(
@@ -442,13 +541,119 @@ def write_us_post(
     tags = ["보도기사", "미국정부", entry.source.agency_ko, category, *entry.source.tags]
     tag_block = "tags:\n" + "".join(f"  - {yaml_quote(tag)}\n" for tag in dict.fromkeys(tags))
     frontmatter = re.sub(r'^category:\s*.*$', f"category: {yaml_quote(category)}", frontmatter, flags=re.M)
-    frontmatter = re.sub(r"(?ms)^tags:\n(?:  - .*\n)+", tag_block, frontmatter)
-    frontmatter = re.sub(r'^author:\s*.*$', f"author: {yaml_quote(entry.source.agency_ko)}", frontmatter, flags=re.M)
+    if re.search(r"(?ms)^tags:\n(?:  - .*\n)+", frontmatter):
+        frontmatter = re.sub(r"(?ms)^tags:\n(?:  - .*\n)+", tag_block, frontmatter)
+    else:
+        frontmatter += tag_block
     final_body = body.strip() + "\n"
     score = estimate_article_quality(final_body)
-    frontmatter = re.sub(r"^quality_score:\s*.*$", f"quality_score: {score:.1f}", frontmatter, flags=re.M)
+    frontmatter = upsert_frontmatter(frontmatter, "author", yaml_quote(entry.source.agency_ko))
+    frontmatter = upsert_frontmatter(frontmatter, "quality_score", f"{score:.1f}")
     path.write_text(f"---{frontmatter}---\n\n{final_body}", encoding="utf-8")
     return path
+
+
+def upsert_frontmatter(frontmatter: str, key: str, value: str) -> str:
+    line = f"{key}: {value}"
+    if re.search(rf"^{re.escape(key)}\s*:", frontmatter, flags=re.M):
+        return re.sub(rf"^{re.escape(key)}\s*:.*$", line, frontmatter, flags=re.M)
+    if not frontmatter.endswith("\n"):
+        frontmatter += "\n"
+    return frontmatter + line + "\n"
+
+
+def source_for_post(path: Path) -> USSource | None:
+    name = path.name
+    for source in sorted(SOURCES, key=lambda item: len(item.code), reverse=True):
+        if name.startswith(f"usgov-{source.code}-"):
+            return source
+    return None
+
+
+def frontmatter_value(raw: str, key: str) -> str:
+    if not raw.startswith("---"):
+        return ""
+    parts = raw.split("---", 2)
+    if len(parts) != 3:
+        return ""
+    match = re.search(rf"^{re.escape(key)}:\s*\"?([^\"\n]+)\"?", parts[1], flags=re.M)
+    return clean_text(match.group(1)) if match else ""
+
+
+def markdown_url(body: str) -> str:
+    matches = re.findall(r"\((https?://[^)\s]+)\)", body)
+    for url in reversed(matches):
+        if any(domain in url for domain in ("whitehouse.gov", "nasa.gov", "justice.gov", "ftc.gov", "bls.gov", "ed.gov")):
+            return url
+    return matches[-1] if matches else ""
+
+
+def is_weak_us_post(raw: str) -> bool:
+    if any(marker in raw for marker in WEAK_US_MARKERS):
+        return True
+    if not frontmatter_value(raw, "author") or not frontmatter_value(raw, "quality_score"):
+        return True
+    body = raw.split("---", 2)[2] if raw.startswith("---") and len(raw.split("---", 2)) == 3 else raw
+    english_tokens = len(re.findall(r"\b[A-Za-z]{4,}\b", body))
+    korean_tokens = len(re.findall(r"[가-힣]{2,}", body))
+    return english_tokens > max(35, korean_tokens * 2)
+
+
+def repair_weak_existing(limit: int, writer: WriterAgent | None, dry_run: bool = False) -> list[Path]:
+    if limit <= 0:
+        return []
+    repaired: list[Path] = []
+    for path in sorted(POSTS_DIR.glob("usgov-*.md"), key=lambda item: item.stat().st_mtime, reverse=True):
+        if len(repaired) >= limit:
+            break
+        raw = path.read_text(encoding="utf-8")
+        if not is_weak_us_post(raw):
+            continue
+        source = source_for_post(path)
+        if not source:
+            continue
+        parts = raw.split("---", 2)
+        if len(parts) != 3:
+            continue
+        frontmatter, old_body = parts[1], parts[2]
+        url = markdown_url(old_body)
+        if not url:
+            continue
+        entry = USEntry(
+            source=source,
+            title=frontmatter_value(raw, "title") or path.stem,
+            date=(frontmatter_value(raw, "date") or datetime.now().date().isoformat())[:10],
+            url=url,
+            summary=clean_text(old_body),
+            image_url=frontmatter_value(raw, "cover_image"),
+            image_alt=frontmatter_value(raw, "cover_image_alt"),
+        )
+        source_text, image_url, image_alt = fetch_page_context(entry)
+        entry.image_url = image_url or entry.image_url
+        entry.image_alt = image_alt or entry.image_alt
+        title, body = korean_article(entry, source_text, writer)
+        if not us_article_is_specific(body, entry):
+            continue
+        if dry_run:
+            print(f"  ? 보강 대상: {path.name} -> {title[:60]}")
+            repaired.append(path)
+            continue
+        category = source.category_hint
+        tags = ["보도기사", "미국정부", source.agency_ko, category, *source.tags]
+        tag_block = "tags:\n" + "".join(f"  - {yaml_quote(tag)}\n" for tag in dict.fromkeys(tags))
+        frontmatter = upsert_frontmatter(frontmatter, "title", yaml_quote(title))
+        frontmatter = upsert_frontmatter(frontmatter, "category", yaml_quote(category))
+        frontmatter = re.sub(r"(?ms)^tags:\n(?:  - .*\n)+", tag_block, frontmatter)
+        frontmatter = upsert_frontmatter(frontmatter, "author", yaml_quote(source.agency_ko))
+        frontmatter = upsert_frontmatter(frontmatter, "quality_score", f"{estimate_article_quality(body):.1f}")
+        if entry.image_url:
+            frontmatter = upsert_frontmatter(frontmatter, "cover_image", yaml_quote(entry.image_url))
+        if entry.image_alt:
+            frontmatter = upsert_frontmatter(frontmatter, "cover_image_alt", yaml_quote(entry.image_alt))
+        path.write_text(f"---{frontmatter}---\n\n{body.strip()}\n", encoding="utf-8")
+        repaired.append(path)
+        print(f"  ~ 보강: {path.name}")
+    return repaired
 
 
 def init_writer(enabled: bool) -> WriterAgent | None:
@@ -483,6 +688,7 @@ def main() -> None:
     parser.add_argument("--new-only", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--no-llm", action="store_true")
+    parser.add_argument("--repair-weak-existing", type=int, default=0, help="Rewrite weak existing U.S. posts before importing new ones")
     args = parser.parse_args()
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -493,6 +699,11 @@ def main() -> None:
 
     writer = init_writer(not args.no_llm)
     image_agent = init_image_agent()
+    if args.repair_weak_existing:
+        repaired = repair_weak_existing(args.repair_weak_existing, writer, dry_run=args.dry_run)
+        print(f"기존 약한 미국 정부 글 보강: {len(repaired)}건")
+        if args.dry_run:
+            return
     written: list[Path] = []
     errors: list[str] = []
     max_total = max(0, args.max_total_posts)

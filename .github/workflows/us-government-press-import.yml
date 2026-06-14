@@ -38,6 +38,10 @@ on:
         description: "Job timeout for large one-time imports"
         required: true
         default: "60"
+      repair_weak_existing:
+        description: "Rewrite weak existing U.S. posts before importing. 0 disables"
+        required: true
+        default: "0"
 
 concurrency:
   group: us-government-press-import
@@ -77,6 +81,7 @@ jobs:
           INPUT_SOURCES: ${{ inputs.sources || '' }}
           INPUT_NEW_ONLY: ${{ inputs.new_only || 'true' }}
           INPUT_DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          INPUT_REPAIR_WEAK_EXISTING: ${{ inputs.repair_weak_existing || '0' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
           MOTIF_API: ${{ secrets.MOTIF_API }}
@@ -109,6 +114,9 @@ jobs:
           fi
           if [ "${INPUT_DRY_RUN}" = "true" ]; then
             args+=(--dry-run)
+          fi
+          if [ "${INPUT_REPAIR_WEAK_EXISTING}" != "0" ]; then
+            args+=(--repair-weak-existing "${INPUT_REPAIR_WEAK_EXISTING}")
           fi
           python -u scripts/import_us_gov_press.py "${args[@]}"
 
