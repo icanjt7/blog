@@ -88,6 +88,7 @@ jobs:
           GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
           LLM_TIMEOUT_SECONDS: ${{ vars.LLM_TIMEOUT_SECONDS || '30' }}
           REFINE_MAX_PROVIDERS_PER_POST: ${{ vars.REFINE_MAX_PROVIDERS_PER_POST || '5' }}
+          REFINE_LLM_PROVIDER_ORDER: ${{ vars.REFINE_LLM_PROVIDER_ORDER || 'gemini,openrouter,github,motif,groq' }}
           REFINE_REQUIRE_LLM: "true"
         run: |
           args=(--limit "${{ inputs.limit }}" --min-quality "${{ inputs.min_quality }}" --max-growth "${{ inputs.max_growth }}")

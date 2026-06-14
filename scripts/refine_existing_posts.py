@@ -340,6 +340,7 @@ def main() -> None:
     parser.add_argument("--tag", nargs="*", default=[], help="Optional tag filter")
     parser.add_argument("--max-growth", type=float, default=1.12, help="Maximum visible length growth ratio")
     parser.add_argument("--min-ratio", type=float, default=0.72, help="Minimum visible length ratio")
+    parser.add_argument("--max-candidates", type=int, default=0, help="Maximum weak posts to send to LLM")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -351,6 +352,8 @@ def main() -> None:
     paths = sorted(ROOT.glob(args.glob), key=lambda path: path.stat().st_mtime)
     changed = 0
     scanned = 0
+    candidates = 0
+    max_candidates = args.max_candidates or max(args.limit * 5, args.limit)
     reported_failures = 0
     wanted_categories = set(args.category)
     wanted_tags = set(args.tag)
@@ -368,6 +371,12 @@ def main() -> None:
         if wanted_tags and not (tags & wanted_tags):
             continue
         scanned += 1
+        if not should_refine(meta, _body, min_quality=args.min_quality, include_all=args.include_all):
+            continue
+        if candidates >= max_candidates:
+            print(f"candidate limit reached: {candidates}/{max_candidates}", flush=True)
+            break
+        candidates += 1
         print(f"checking: {path.relative_to(ROOT)}", flush=True)
         ok, reason = refine_file(
             path,
