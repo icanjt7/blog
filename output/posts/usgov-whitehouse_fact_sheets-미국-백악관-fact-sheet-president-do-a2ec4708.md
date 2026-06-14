@@ -1,5 +1,5 @@
 ---
-title: "미국 백악관, Fact Sheet: President Do"
+title: "미국 백악관, 국가 안보 시스템 사이버 보안 강화"
 date: "2026-06-12T02:24"
 category: "정책"
 tags:
@@ -9,36 +9,38 @@ tags:
   - "정책"
   - "백악관"
   - "팩트시트"
+author: "미국 백악관"
+quality_score: 96.0
 cover_image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODEzMTYyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "미국 백악관, Fact Sheet: President Do"
 ---
 
-미국 백악관가 2026-06-12 공개한 공식 발표를 바탕으로, 한국 독자가 확인할 핵심 맥락을 정리했습니다.
+## 발표 내용
+2026년 6월 12일, 미국 백악관(The White House)은 대통령 국가 안보 각서(National Security Presidential Memorandum)를 통해 미국 국가 안보 시스템(NSS)의 사이버 보안을 강화하고 거버넌스를 현대화한다는 내용을 발표했습니다. 이번 각서는 2026년 이후 예상되는 사이버 위협에 대응하기 위해 NSS의 보호 수준을 전면 재정비하는 것이 핵심 목표입니다.
 
-## 어떤 발표인가
+## 세부 내용
+- **구조·권한·역할·책임 명확화**: NSS를 관리·운영하는 모든 기관에 대해 사이버 보안 요구사항을 명시하고, 이를 이행하도록 하는 체계와 책임자를 지정했습니다.  
+- **민간기관 방어 수준 동등화**: 민간 부처가 운영하거나 소유하는 NSS도 군·정보기관(DOW·IC)과 동일한 수준의 방어를 받도록 보장합니다.  
+- **CNSS 재구성**: 35년 만에 ‘국가 안보 시스템 위원회(Committee on National Security Systems, CNSS)’를 재설립하고 현대화하여, 모든 NSS에 대한 기본 사이버 보안 기준을 설정하고 기관 간 협조·책임성을 강화합니다.  
+- **NSA 국장 권한 확대**: 국가 안보국(NSA) 국장을 ‘국가 안보 시스템(National Manager)’으로 지정해, NSA의 기술 역량을 전 정부에 걸쳐 활용해 방어 격차를 해소합니다.  
+- **자원·예산 효율화**: 중복된 요구사항을 폐지하고 공유 서비스를 확대해 납세자 비용을 절감하도록 유도합니다.  
+- **정책 협조 위원회**: CNSS와 협력해 NSS 사이버 보안 현황을 평가·조정하는 전담 위원회를 신설했습니다.
 
-PROTECTING CRITICAL MILITARY AND INTELLIGENCE MISSIONS: Today, President Donald J.
-
-## 핵심 내용
-
-- Trump signed a National Security Presidential Memorandum to bolster the cybersecurity of America’s National Security Systems (NSS) and modernize NSS governance to meet the cyber challenges of 2026 and beyond.
-- DEFENDING NATIONAL SECURITY SYSTEMS ACROSS THE FEDERAL GOVERNMENT: President Trump is prioritizing these foundational systems to guarantee […]
-The post Fact Sheet: President Donald J.
-- Trump Defends America’s Warfighters and Intelligence Officers Against Cyber Threats appeared first on The White House .
-- PROTECTING CRITICAL MILITARY AND INTELLIGENCE MISSIONS: Today, President Donald J.
-
-## 한눈에 보는 기준
-
+## 숫자와 일정
 | 항목 | 내용 |
-|---|---|
+|------|------|
 | 발표 기관 | 미국 백악관 (The White House) |
-| 발표일 | 2026-06-12 |
-| 분류 기준 | 정책 / 정책 법 집행 규제 제도 예산 기관 발표 |
-| 원문 | [The White House release](https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-defends-americas-warfighters-and-intelligence-officers-against-cyber-threats/) |
+| 발표일 | 2026‑06‑12 |
+| 주요 조치 | 대통령 국가 안보 각서 서명 |
+| 대상 시스템 | 국가 안보 시스템(NSS) – 군·정보·민간 부처가 운영하는 모든 고보안 컴퓨터 시스템 |
+| 재구성 위원회 | CNSS (35년 만에 현대화) |
+| 책임자 | NSA 국장 – 국가 안보 시스템 국장 지정 |
 
 ## 한국 독자가 볼 부분
-
-이 발표는 미국 내 정책 흐름을 보여주는 자료입니다. 한국 기업, 연구기관, 소비자, 정책 담당자가 직접 적용할 내용인지 판단하려면 발표 기관, 대상, 시행 시점, 후속 문서를 함께 확인해야 합니다.
+1. **국제 사이버 방어 협력** – 미국이 NSS 전반에 걸쳐 표준화·공유 서비스를 확대함에 따라, 한국도 유사한 ‘공동 사이버 방어 프레임워크’를 구축할 때 참고할 수 있는 사례가 됩니다.  
+2. **공공‑민간 파트너십** – 민간 부처의 NSS 방어 수준을 군·정보기관과 동등하게 맞추는 정책은, 한국의 공공‑민간 사이버 협력 모델을 강화하는 데 시사점을 제공합니다.  
+3. **예산 효율화** – 중복 요구사항 폐지와 공유 서비스 확대는 한국 정부가 사이버 예산을 효율적으로 운용하는 방안으로 적용 가능할 수 있습니다.  
+4. **기관 간 조정 메커니즘** – CNSS와 정책 협조 위원회 같은 중앙 조정 기구는 한국의 ‘국가 사이버 안보 위원회’와 연계해 보다 일관된 방어 체계를 만들 때 모델이 될 수 있습니다.
 
 ## 원문 확인
-
-- [The White House 공식 자료](https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-defends-americas-warfighters-and-intelligence-officers-against-cyber-threats/)
+원문은 아래 링크에서 확인할 수 있습니다.

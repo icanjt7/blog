@@ -10,24 +10,48 @@ tags:
   - "백악관"
   - "미국정치"
   - "releases"
+author: "미국 백악관"
+quality_score: 96.0
 cover_image: "https://images.unsplash.com/photo-1768158989131-64cbff67f292?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhZG1pbmlzdHJhdGlvbiUyMG9mZmljZSUyMHBhcGVyd29ya3xlbnwxfDB8fHwxNzgxMTY3Njk3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "미국 백악관, 트럼프 대통령의 원자력 행정명령 1주년 기념"
 ---
 
-## 미국 백악관 발표
-미국 백악관은 최근 트럼프 대통령의 원자력 행정명령 1주년을 기념하는 발표를 했습니다. 이 발표는 미국의 원자력 산업 발전에 대한 트럼프 행정부의 노력과 성과를 강조했습니다.
+미국 백악관이(The White House) 2026-05-22 공개한 '미국 백악관, 트럼프 대통령의 원자력 행정명령 1주년 기념' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
 
-## 트럼프 대통령의 원자력 정책
-트럼프 대통령의 원자력 행정명령은 미국의 원자력 산업을振兴하기 위한 중요한 발걸음입니다. 이 행정명령은 새로운 원자로 기술 개발을 촉진하고, 기존 원자로의 운전 라이선스 발급을 간소화하는 내용을 포함하고 있습니다. 이러한 정책은 미국의 원자력 산업이 새로운 기술 개발과 사업을 추진할 수 있는 기회를 제공하고 있습니다.
+## 어떤 발표인가
 
-## 미국의 원자력 산업 발전
-미국의 원자력 산업은 최근 몇 년간 새로운 기술 개발과 사업을 추진하고 있습니다. 특히, 작은 원자로(SMR) 기술은 많은 주목을 받고 있습니다. 작은 원자로는 기존의 대형 원자로보다 더 작고, 더 효율적인 에너지 생산을 가능하게 합니다. 미국 정부는 작은 원자로 기술 개발을 지원하기 위해 다양한 프로그램을 운영하고 있습니다.
+Releases Remarks by Director Michael Kratsios on the One Year Anniversary of President Trump’s Nuclear EOs The White House May 22, 2026 Director Michael Kratsios The White House Office of Science and Technology Policy Remarks as Prepared for Delivery Operation Gigawatt Summit Deer Valley, Utah Thank you.
 
-## 미국의 원자력 산업과 한국
-미국의 원자력 산업 발전은 한국에도 많은 영향을 미칠 수 있습니다. 한국은 미국과 함께 원자력 기술 개발과 사업을 추진하고 있습니다. 특히, 한국의 원자력 산업은 미국의 작은 원자로 기술 개발에 많은 관심을 가지고 있습니다. 미국과 한국의 원자력 산업 협력은 양국 모두에 많은ประโยชน을 가져다줄 수 있습니다.
+## 발표에서 확인되는 내용
+
+- It is so good to be with you here in beautiful Utah.
+- I want to thank Governor Cox for bringing us together today.
+- Federalism is foundational to America’s greatness, and states like Utah are fundamental to the American Nuclear Renaissance.
+- As some of you may know, tomorrow marks one year since President Trump signed a series of Executive Orders on nuclear energy.
+- On behalf of the Trump Administration, I am here to celebrate how far we’ve come in these past 12 months, and to share a vision of where we are headed next.
+
+## 숫자와 고유명사
+
+- The White House Office of Science and Technology Policy
+- On behalf of the Trump Administration, I am here to celebrate how far we’ve come in these past 12 months, and to share a vision of where we are headed next
+- With last year’s executive orders, President Trump made the most transformational decision for civil nuclear power since President Eisenhower announced Atoms for Peace, in 1953
+- Within two decades, the country had 30 nuclear plants in operation, 55 under construction, and more than 80 in planning or under order
+- Prior to President Trump’s policies, we weren’t testing new reactors, we were shutting perfectly good reactors down
+
+## 한눈에 보는 원문 기준
+
 | 항목 | 내용 |
-| --- | --- |
-| 행정명령 발효일 | 1년 전 |
-| 목표 | 새로운 원자로 기술 개발 촉진 |
-| 미국의 원자력 산업 발전 | 새로운 기술 개발과 사업 추진 |
+|---|---|
+| 발표 기관 | 미국 백악관 (The White House) |
+| 발표일 | 2026-05-22 |
+| 원문 제목 | 미국 백악관, 트럼프 대통령의 원자력 행정명령 1주년 기념 |
+| 분류 기준 | 정치 / 대통령 백악관 의회 행정부 외교 안보 선거 정치 |
+| 원문 | [The White House release](https://www.whitehouse.gov/releases/2026/05/remarks-by-director-michael-kratsios-on-the-one-year-anniversary-of-president-trumps-nuclear-eos/) |
 
-위의 내용은 미국 백악관의 발표를 기반으로 작성되었습니다. 자세한 내용은 [원문 확인 링크](https://www.whitehouse.gov/releases/2026/05/remarks-by-director-michael-kratsios-on-the-one-year-anniversary-of-president-trumps-nuclear-eos/)에서 확인하실 수 있습니다.
+## 한국 독자가 볼 부분
+
+정치 분야의 미국 공식 발표이므로 국내 독자는 발표 기관, 적용 대상, 시행 시점, 후속 문서가 실제 이해관계와 연결되는지 확인해 볼 수 있습니다.
+
+## 원문 확인
+
+- [The White House 공식 자료](https://www.whitehouse.gov/releases/2026/05/remarks-by-director-michael-kratsios-on-the-one-year-anniversary-of-president-trumps-nuclear-eos/)

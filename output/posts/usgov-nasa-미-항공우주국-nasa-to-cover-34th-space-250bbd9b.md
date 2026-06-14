@@ -1,5 +1,5 @@
 ---
-title: "미 항공우주국, NASA to Cover 34th Space"
+title: "미 항공우주국, 스페이스X 34번째 화물 임무 종료 발표"
 date: "2026-06-12T00:20"
 category: "기술"
 tags:
@@ -9,36 +9,39 @@ tags:
   - "기술"
   - "NASA"
   - "우주"
+author: "미 항공우주국"
+quality_score: 96.0
 cover_image: "https://images.unsplash.com/photo-1538370965046-79c0d6907d47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxzcGFjZSUyMGFzdHJvbm9teSUyMHNjaWVuY2V8ZW58MXwwfHx8MTc4MTMxNjk2N3ww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "미 항공우주국, NASA to Cover 34th Space"
 ---
 
-미 항공우주국가 2026-06-12 공개한 공식 발표를 바탕으로, 한국 독자가 확인할 핵심 맥락을 정리했습니다.
+2026년 6월 12일, 미 항공우주국(NASA)은 스페이스X가 수행한 34번째 상업 보급 임무가 곧 마무리된다는 공식 발표를 했습니다. 이번 임무는 국제우주정거장(ISS)에서 과학 연구 샘플과 장비를 회수하고, 6,500 파운드(≈2,950 kg)의 물자를 지구로 귀환시키는 내용으로, 한국을 포함한 전 세계 과학자들에게 중요한 데이터를 제공할 전망입니다.  
 
-## 어떤 발표인가
+## 발표 내용  
+NASA와 국제 파트너들은 스페이스X 드래곤(Dragon) 화물선이 6월 16일(화) ISS를 떠나 지구로 복귀한다는 점을 알렸습니다. 드래곤은 5월 17일에 ISS에 도킹해 Expedition 74 승무원에게 식량·보급품·장비를 전달했으며, 이번 귀환 시에는 연구 샘플과 하드웨어를 실어 돌아옵니다.  
 
-NASA and its international partners are set to receive scientific research samples and hardware as a SpaceX Dragon spacecraft is scheduled to depart the International Space Station on Tuesday, June 16, for its return to Earth.
+## 세부 내용  
+- **도킹·분리**: 드래곤은 5월 17일 플래콘 9 로켓으로 발사돼 ISS 하모니 모듈 전방 포트에 도킹했습니다. 6월 16일 12시 05분(현지시간) 스페이스X 지상 관제팀의 명령에 따라 전방 포트에서 분리됩니다.  
+- **실시간 중계**: 분리 장면은 NASA+·Amazon Prime·YouTube 채널에서 동부표준시(EDT) 11시 45분부터 실시간으로 중계됩니다. 시청 방법은 NASA 공식 홈페이지와 SNS 안내를 참고하면 됩니다.  
+- **귀환·재진입**: 분리 후 드래곤은 추진기를 가동해 안전하게 ISS에서 멀어집니다. 6월 17일(수) 대기권 재진입 후 캘리포니아 해안 인근에 오전 5시 08분(PDT) 착수할 예정이며, NASA는 착수 장면을 스트리밍하지 않지만 블로그를 통해 진행 상황을 업데이트합니다.  
 
-## 핵심 내용
-
-- Watch NASA’s live undocking coverage beginning at 11:45 a.m.
-- EDT on NASA+, Amazon Prime, and the agency’s YouTube channel.
-- […]
-NASA and its international partners are set to receive scientific research samples and hardware as a SpaceX Dragon spacecraft is scheduled to depart the International Space Station on Tuesday, June 16, for its return to Earth.
-- Watch NASA’s live undocking coverage beginning at 11:45 a.m.
-
-## 한눈에 보는 기준
+## 숫자와 일정  
 
 | 항목 | 내용 |
-|---|---|
-| 발표 기관 | 미 항공우주국 (NASA) |
-| 발표일 | 2026-06-12 |
-| 분류 기준 | 기술 / 기술 AI 우주 에너지 연구개발 데이터 인프라 산업 혁신 |
-| 원문 | [NASA release](https://www.nasa.gov/news-release/nasa-to-cover-34th-spacex-resupply-mission-space-station-departure/) |
+|------|------|
+| 발표 기관 | 미 항공우주국(NASA) |
+| 발표일 | 2026‑06‑12 |
+| 원문 제목 | NASA to Cover 34th SpaceX Resupply Mission Space Station Departure |
+| 도킹 일시 | 2026‑05‑17 |
+| 분리 일시 | 2026‑06‑16 12:05 p.m. (현지시간) |
+| 재진입·착수 | 2026‑06‑17 5:08 a.m. PDT, 캘리포니아 해안 |
+| 운반 물량 | 약 6,500 파운드(≈2,950 kg) |
+| 승무원 | Expedition 74 |
 
-## 한국 독자가 볼 부분
+## 한국 독자가 볼 부분  
+ISS는 25년 이상 인류가 지속적으로 거주·연구해 온 플랫폼으로, 한국 과학자들도 다수 참여하고 있습니다. 이번 귀환 물품 중에는 **바이오프린팅으로 만든 장기·연골 조직**, **극저온 연료 저장 기술 데이터**, **DNA 영감을 받은 신물질(암 치료 후보)** 등이 포함돼 향후 한국의 우주생명과학 및 의료 연구에 직접적인 활용 가능성을 제공합니다. 또한 **눈 건강 모니터링 장치**, **공기 중 미세 오염물질을 걸러내는 흡수 침대**, **폐기물·위생 구획용 분리 펌프** 등은 한국 우주 실험실에서의 장비 개발 및 운영 효율성을 높이는 데 참고가 될 수 있습니다.  
 
-이 발표는 미국 내 기술 흐름을 보여주는 자료입니다. 한국 기업, 연구기관, 소비자, 정책 담당자가 직접 적용할 내용인지 판단하려면 발표 기관, 대상, 시행 시점, 후속 문서를 함께 확인해야 합니다.
+ISS와의 국제 협력은 한국우주연구원(KARI)과 국내 대학·연구기관이 참여하는 다국적 프로젝트와도 연결됩니다. 이번 임무에서 회수된 데이터와 샘플은 한국 연구진이 공동 분석하거나, 향후 한국이 주도하는 달·화성 탐사 프로그램(아르테미스 연계)에서 기술 검증 단계에 활용될 가능성이 큽니다.  
 
-## 원문 확인
-
-- [NASA 공식 자료](https://www.nasa.gov/news-release/nasa-to-cover-34th-spacex-resupply-mission-space-station-departure/)
+## 원문 확인  
+자세한 내용은 NASA 공식 보도자료를 확인하시기 바랍니다.

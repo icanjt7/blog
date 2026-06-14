@@ -1,5 +1,5 @@
 ---
-title: "미 연방거래위원회, FTC Takes Action Against"
+title: "미 연방거래위원회, LifeWave 고위 참가자 제재"
 date: "2026-04-27T02:11"
 category: "생활"
 tags:
@@ -9,36 +9,42 @@ tags:
   - "생활"
   - "FTC"
   - "소비자보호"
+author: "미 연방거래위원회"
+quality_score: 96.0
 cover_image: "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgxMjc5MDYyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "미 연방거래위원회, FTC Takes Action Against"
 ---
 
-미 연방거래위원회가 2026-04-27 공개한 공식 발표를 바탕으로, 한국 독자가 확인할 핵심 맥락을 정리했습니다.
+## 발표 내용
+미 연방거래위원회(Federal Trade Commission, 이하 FTC)는 2026년 4월 27일, 멀티레벨 마케팅(MLM) 기업 LifeWave의 고위 참가자인 스티븐·메릿(Steven Merritt)과 지나·메릿(Gina Merritt) 부부를 상대로 허위·근거 없는 수익 주장을 이용해 근로자를 모집한 혐의에 대해 공식 조치를 취했다고 발표했다. FTC는 이들이 “주당 2만 5천 달러 이상을 벌 수 있다”는 식의 과장된 수익 약속을 반복적으로 내세워 잠재 참가자를 유인했으며, 실제로는 대부분이 전혀 수익을 얻지 못했다고 주장한다.
 
-## 어떤 발표인가
+## 세부 내용
+FTC 소비자보호국(Bureau of Consumer Protection) 국장 크리스토퍼 무파리지(Christopher Mufarrige)는 “메릿 부부는 부풀린 수익 주장을 통해 LifeWave에 참여하도록 유도했으며, 이는 명백히 소비자를 기만하는 행위”라며 “수익을 약속한다면 반드시 그 근거를 서면으로 제시하고, 검증 가능한 증거를 제공해야 한다”고 강조했다.  
 
-The Federal Trade Commission is taking action against high-level participants in a multilevel marketing (MLM) company over allegations they used false or baseless earning claims to recruit workers, most of whom did not earn any money.
+메릿 부부는 2025년 5월에 유튜브에 올린 모집 회의 영상에서 지나 메릿이 “우리는 여러분에게 **‘버트로드(buttload)’** 만큼의 돈을 벌게 할 것이다. 주당 2만 5천 달러 이상을 벌게 해줄 수 있다”고 말했으며, 스티븐 메릿 역시 “돈은 계속 들어오며, 당신이 나타나지 않아도 흐르는 물처럼 멈추지 않는다”고 주장했다.
 
-## 핵심 내용
-
-- The FTC alleged in a complaint that Steven and Gina Merritt, senior-level participants in a MLM called LifeWave, deceived consumers about the amount of money they could earn from selling products and recruiting new participants for the company, which sells health and wellness products.
-- “The Merritts used inflated earnings claims to entice potential participants to join LifeWave when in reality most people did not earn any money,” said Christopher Mufarrige, Director of the FTC’s Bureau of Consumer Protection.
-- “The FTC has been very clear that if you tell consumers they will make lots of money, you need to back up the claims.”
-The FTC alleged that the Merritts repeatedly claimed people could earn substantial income from selling LifeWave products and recruiting new members.
-- For example, in a video posted to their YouTube page in May 2025 from a recruiting meeting, Gina Merritt said, “We’re going to make you a – can I say buttload – a buttload of money…I cannot wait to help you guys get to the top rank and make $25,000 or more a week.” Steven Merritt also said at that same meeting, “The money keeps coming, even if you don’t show up, and you can’t stop it.
-
-## 한눈에 보는 기준
-
-| 항목 | 내용 |
-|---|---|
-| 발표 기관 | 미 연방거래위원회 (Federal Trade Commission) |
-| 발표일 | 2026-04-27 |
-| 분류 기준 | 생활 / 생활 소비자 교육 학생 노동 안전 건강 피해 예방 신청 대상 |
-| 원문 | [Federal Trade Commission release](https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-takes-action-against-high-level-mlm-participants-who-deceived-workers-about-amount-money-they) |
+## 숫자와 일정
+- **2024년 LifeWave 소득 공개 보고서**  
+  - 활성 참가자 79 %가 수수료를 전혀 받지 못함  
+  - 0.035 %만이 주당 2만 5천 달러 이상을 벌음  
+- **FTC 조치 내용**  
+  - 허위·과장된 수익 주장 전면 금지  
+  - 이미지(주택·자동차·여행 등)를 통한 암시적 수익 과시 금지  
+  - 실제 수익을 근거 없이 제시하거나, 수익이 적은 이유를 숨기는 행위 금지  
+  - 수익 주장을 할 경우, 오해를 일으키지 않아야 하며 서면 증거를 제시하고, 요청 시 즉시 제공해야 함  
+  - 메릿 부부는 하위 참가자들에게 이번 FTC 조치와 금지 사항을 통보해야 함  
+- **법적 절차**  
+  - 판결은 미국 플로리다 남부지방법원(Southern District of Florida)에서 2 대 0 투표로 승인  
+  - 최종 명령은 법원의 서명으로 효력을 갖는다  
+- **담당 직원**: 클레어 왁(Claire Wack)·멜리사 디키(Melissa Dickey) (FTC 소비자보호국)
 
 ## 한국 독자가 볼 부분
+한국에서도 다단계·네트워크 마케팅이 활발히 이루어지고 있어, 유사한 수익 과대광고 사례가 빈번히 보고된다. FTC의 이번 조치는 다음과 같은 점에서 한국 소비자에게도 의미가 있다.  
 
-이 발표는 미국 내 생활 흐름을 보여주는 자료입니다. 한국 기업, 연구기관, 소비자, 정책 담당자가 직접 적용할 내용인지 판단하려면 발표 기관, 대상, 시행 시점, 후속 문서를 함께 확인해야 합니다.
+1. **수익 주장 검증 필요** – “주당 2만 5천 달러”와 같은 구체적 금액이 제시될 경우, 해당 기업이 제공하는 공식 소득 공개 자료를 반드시 확인해야 한다.  
+2. **시각적 과시 주의** – 고가 주택·자동차·여행 사진 등은 실제 수익을 과장하는 수단으로 사용될 수 있다.  
+3. **법적 대응 가능성** – 미국과 마찬가지로 한국에서도 허위·과장 광고는 공정거래위원회·소비자보호원 등에서 제재 대상이 된다.  
+4. **하위 참가자 보호** – 상위 리더가 허위 정보를 제공하면 하위 참가자 전체가 피해를 입는다. 따라서 모집 과정에서 계약서·수익 구조를 꼼꼼히 검토하고, 의심스러운 부분은 전문가와 상담하는 것이 바람직하다.  
 
 ## 원문 확인
-
-- [Federal Trade Commission 공식 자료](https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-takes-action-against-high-level-mlm-participants-who-deceived-workers-about-amount-money-they)
+자세한 원문 내용은 아래 링크에서 확인할 수 있다.

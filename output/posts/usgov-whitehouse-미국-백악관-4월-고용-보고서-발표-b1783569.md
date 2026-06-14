@@ -10,25 +10,48 @@ tags:
   - "백악관"
   - "미국정치"
   - "releases"
+author: "미국 백악관"
+quality_score: 96.0
 cover_image: "https://images.unsplash.com/photo-1766102881535-4a1573a7de53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgxMjEwMzgyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "미국 백악관, 4월 고용 보고서 발표"
 ---
 
-## 소개
-미국 백악관은 2026년 5월 8일, 4월 고용 보고서를 발표했습니다. 이 보고서에 따르면, 미국 경제는 도널드 트럼프 대통령의 지도력 하에 강력한 성장세를 보이고 있습니다. 미국은 4월에 12,600개의 공장 건설 일자리를 추가했으며, 이에 따라 미국 제조업에 대한 투자가 더욱 증가하고 있습니다.
+미국 백악관이(The White House) 2026-05-08 공개한 '미국 백악관, 4월 고용 보고서 발표' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
 
-## 고용 시장 동향
-미국 노동 시장은 강력한 성장세를 보이고 있습니다. 4월에 115,000개의 일자리가 추가되었습니다. 이는 경제학자들의 예상을 크게 초과한 것으로, 2026년 2월 连续 두 번째로 강력한 성장세를 보인 것입니다. 2026년 1월부터 현재까지 미국 경제는 평균 월 76,000개의 새로운 일자리를 창출했습니다. 이는 2025년의 월 평균 10,000개의 일자리와 비교하면 크게 증가한 것입니다.
+## 어떤 발표인가
 
-## 제조업의 회복
-미국 제조업은 다시 회복되고 있습니다. 4월에 12,600개의 공장 건설 일자리가 추가되었습니다. 이는 미국 제조업에 대한 새로운 투자로 인해 가능했습니다. 2026년 1분기에 제조업 일자리는 2023년 이후 처음으로 증가했습니다. 모든 주요 지표가 강력한 확장을 나타내고 있습니다.
+Releases JOBS REPORT: Trump Economy Roars Ahead with Big Private Sector Job Gains The White House May 8, 2026 “The April jobs report smashing expectations thanks to robust private-sector growth is yet another sign that the American economy remains on a solid trajectory under President Trump.
 
-## 주요 통계
+## 발표에서 확인되는 내용
+
+- America added 12,600 factory construction jobs in April as trillions in investments continue pouring into American manufacturing.
+- Every leading indicator is pointed in the right direction, and Americans can rest assured that the best is yet to come.” — White House spokesman Kush Desai Here’s what you need to know: The U.S.
+- The economy added 115,000 jobs in April — crushing economists’ expectations and delivering the second straight month of strong gains.
+- In 2026, the economy has powered ahead with an average of 76,000 new jobs per month, a big leap from the 10,000 monthly average in 2025.
+- Economists keep getting it wrong as they underestimate the strength of the Trump economy.
+
+## 숫자와 고유명사
+
+- America added 12,600 factory construction jobs in April as trillions in investments continue pouring into American manufacturing
+- — White House spokesman Kush Desai
+- The economy added 115,000 jobs in April — crushing economists’ expectations and delivering the second straight month of strong gains
+- In 2026, the economy has powered ahead with an average of 76,000 new jobs per month, a big leap from the 10,000 monthly average in 2025
+- 94% of Bloomberg economists (65 out of 69) completely missed April’s impressive growth, continuing their pattern of underestimating the momentum of the current expansion
+
+## 한눈에 보는 원문 기준
+
 | 항목 | 내용 |
-| --- | --- |
-| 4월 추가 일자리 | 115,000개 |
-| 2026년 1월부터 현재까지 월 평균 일자리 | 76,000개 |
-| 4월 공장 건설 일자리 | 12,600개 |
-| 연방 정부 직원 감소 | 345,000명 |
+|---|---|
+| 발표 기관 | 미국 백악관 (The White House) |
+| 발표일 | 2026-05-08 |
+| 원문 제목 | 미국 백악관, 4월 고용 보고서 발표 |
+| 분류 기준 | 정치 / 대통령 백악관 의회 행정부 외교 안보 선거 정치 |
+| 원문 | [The White House release](https://www.whitehouse.gov/releases/2026/05/jobs-report-trump-economy-roars-ahead-with-big-private-sector-job-gains/) |
 
-## 결론
-미국 백악관의 4월 고용 보고서에 따르면, 미국 경제는 강력한 성장세를 보이고 있습니다. 미국 제조업은 다시 회복되고 있으며, 노동 시장은 강력한 성장세를 보이고 있습니다. 이러한 성과는 도널드 트럼프 대통령의 지도력 하에 가능했습니다. 자세한 내용은 [원문](https://www.whitehouse.gov/releases/2026/05/jobs-report-trump-economy-roars-ahead-with-big-private-sector-job-gains/)을 참조하세요.
+## 한국 독자가 볼 부분
+
+소비자 보호나 개인정보, 결제 관행과 관련된 발표라면 국내 서비스 이용자도 유사한 약관, 환불, 데이터 활용 방식을 비교해 볼 수 있습니다. 특히 플랫폼 기업이나 해외 서비스를 쓰는 경우에는 미국 규제기관이 문제 삼은 행위가 무엇인지 확인하는 것이 도움이 됩니다.
+
+## 원문 확인
+
+- [The White House 공식 자료](https://www.whitehouse.gov/releases/2026/05/jobs-report-trump-economy-roars-ahead-with-big-private-sector-job-gains/)

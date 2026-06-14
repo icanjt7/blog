@@ -1,5 +1,5 @@
 ---
-title: "미국 백악관, Fact Sheet: President Do"
+title: "미국 백악관, 인공지능 혁신과 보안 강화 조치 발표"
 date: "2026-06-02T02:29"
 category: "정책"
 tags:
@@ -9,36 +9,28 @@ tags:
   - "정책"
   - "백악관"
   - "팩트시트"
+author: "미국 백악관"
+quality_score: 92.0
 cover_image: "https://images.unsplash.com/photo-1554224155-1696413565d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODEzMTYyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "미국 백악관, Fact Sheet: President Do"
 ---
 
-미국 백악관가 2026-06-02 공개한 공식 발표를 바탕으로, 한국 독자가 확인할 핵심 맥락을 정리했습니다.
+## 발표 내용
+미국 백악관은 2026년 6월 2일, 도널드 트럼프 대통령이 인공지능(AI) 혁신과 보안을 강화하기 위한 행정 명령에 서명했다고 발표했다. 이 행정 명령은 미국의 사이버 보안을 강화하고, 중요 인프라를 보호하며, 미국이 인공지능 혁신의 글로벌 리더로 남아 있도록 하는 것을 목표로 한다.
 
-## 어떤 발표인가
+## 세부 내용
+행정 명령은 관련 기관들에게 국가 안보 시스템, 전쟁부 정보 시스템, 및 민간 연방 정부 정보 시스템의 사이버 방위를 우선적으로 다루도록 지시한다. 또한, 국토 안보 장관은 예산 관리 사무소장, 국가 안보 담당 대통령 보좌관, 및 국가 사이버 보안 담당자와 협의하여, 연방 기관, 주 및 지방 당국, 및 중요 인프라 운영자에게 인공지능 기반의 사이버 보안 도구와 서비스에 대한 접근을 용이하게 하는 구속력 있는 운영 지침과 기타 지침을 발급하도록 한다.
 
-PROMOTING AMERICAN AI INNOVATION AND SECURITY: Today, President Donald J.
-
-## 핵심 내용
-
-- Trump signed an Executive Order to advance American artificial intelligence (AI) innovation to strengthen America’s cybersecurity, protect critical infrastructure, and ensure the United States remains the global leader in AI innovation.
-- STRIKING THE RIGHT BALANCE BETWEEN INNOVATION AND SECURITY: President Trump believes America must lead the world […]
-The post Fact Sheet: President Donald J.
-- Trump Promotes Advanced Artificial Intelligence Innovation and Security appeared first on The White House .
-- PROMOTING AMERICAN AI INNOVATION AND SECURITY: Today, President Donald J.
-
-## 한눈에 보는 기준
-
-| 항목 | 내용 |
-|---|---|
-| 발표 기관 | 미국 백악관 (The White House) |
-| 발표일 | 2026-06-02 |
-| 분류 기준 | 정책 / 정책 법 집행 규제 제도 예산 기관 발표 |
-| 원문 | [The White House release](https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-promotes-advanced-artificial-intelligence-innovation-and-security/) |
+## 숫자와 일정
+행정 명령은 인공지능 산업과 중요 인프라 운영자와의 자발적인 협력을 통해, 소프트웨어 취약점을 대규모로 식별하고 수정하는 인공지능 사이버 보안 클리어링하우스를 설립한다. 또한, 예산 관리 사무소와 인사 관리 사무소는 고급 인공지능 사이버 보안 능력에 대한 자금 지원 기회를 식별하고, 연방 사이버 보안 채용 및 배치 경로를 확장하도록 지시한다.
 
 ## 한국 독자가 볼 부분
-
-이 발표는 미국 내 정책 흐름을 보여주는 자료입니다. 한국 기업, 연구기관, 소비자, 정책 담당자가 직접 적용할 내용인지 판단하려면 발표 기관, 대상, 시행 시점, 후속 문서를 함께 확인해야 합니다.
+이 행정 명령은 미국의 인공지능 혁신과 보안을 강화하는 것을 목표로 한다. 이는 한국에서도 인공지능 기술의 발전과 함께 사이버 보안의 중요성이 증가하고 있는 상황에서, 미국의 정책 방향을 참고할 수 있는 부분이다. 특히, 인공지능 기반의 사이버 보안 도구와 서비스의 개발과 보급은 한국의 사이버 보안 강화에도 기여할 수 있을 것이다.
 
 ## 원문 확인
-
-- [The White House 공식 자료](https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-promotes-advanced-artificial-intelligence-innovation-and-security/)
+| 항목 | 내용 |
+| --- | --- |
+| 발표 기관 | 미국 백악관 |
+| 발표일 | 2026년 6월 2일 |
+| 행정 명령 내용 | 인공지능 혁신과 보안 강화 |
+| 목표 | 미국의 사이버 보안 강화, 중요 인프라 보호, 인공지능 혁신의 글로벌 리더 유지 |

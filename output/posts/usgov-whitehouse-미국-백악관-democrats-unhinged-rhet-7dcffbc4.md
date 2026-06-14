@@ -1,5 +1,5 @@
 ---
-title: "미국 백악관, Democrats’ Unhinged Rhet"
+title: "미국 백악관, 민주당의 폭력적인 수사법 비난"
 date: "2026-04-28T00:15"
 category: "정치"
 tags:
@@ -10,36 +10,40 @@ tags:
   - "백악관"
   - "미국정치"
   - "releases"
+author: "미국 백악관"
+quality_score: 96.0
 cover_image: "https://images.unsplash.com/photo-1768399808130-abac2a8442e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgxMjEwMzgyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "미국 백악관, Democrats’ Unhinged Rhet"
 ---
 
-미국 백악관가 2026-04-28 공개한 공식 발표를 바탕으로, 한국 독자가 확인할 핵심 맥락을 정리했습니다.
+## 발표 내용  
+미국 백악관은 2026년 4월 28일, 민주당의 폭력적인 수사법이 도널드 J. 트럼프 대통령에 대한 세 번째 살해 시도를 촉발했다고 비난했습니다. 이번 발표는 백악관 공식 웹사이트에 게재되었습니다. 백악관은 이번 공격이 무작위가 아니라 민주당이 수년간 지속해 온 무분별하고 자극적인 언어 사용의 예측 가능한 결과라고 주장했습니다.  
 
-## 어떤 발표인가
+## 세부 내용  
+백악관은 최근 몇 달 동안 민주당 지도자들의 발언이 폭력과 선동을 조장하고 있다고 강조했습니다.  
 
-This past weekend, another Radical Left lunatic attempted to assassinate President Donald J.
+- 하킴 제프리스 하원 소수당 지도자는 “민주당은 공화당에 대해 ‘최대 규모의 전쟁’을 벌이고 있다”고 선언했습니다.  
+- 척 슈머 상원 의원은 지지자들에게 트럼프 대통령에 대해 “강력하게 저항할 것”을 촉구했습니다.  
+- 조쉬 샤피로 캘리포니아 주지사는 트럼프 행정부 내부에서 “사람들의 목이 잘릴 필요가 있다”고 발언했습니다.  
+- 가빈 뉴섬 캘리포니아 주지사는 지지자들에게 “이런 놈들을 입에 주먹을 날리라”고 격렬히 비난했습니다.  
+- 티머시 월즈 미네소타 주지사는 “우리 주는 연방 정부와 전쟁 중”이라고 선언했습니다.  
 
-## 핵심 내용
+이 외에도 수많은 민주당 의원·상원의원들이 트럼프 대통령과 그의 행정부를 “파시스트”, “나치”, “독재자” 등으로 규탄하며 폭력적인 언어를 사용했습니다. 백악관은 이러한 발언이 폭력적인 행동을 부추기는 독성 환경을 만든다고 지적했습니다.  
 
-- Trump — the third such attack on President Trump in under two years.
-- The attack was not random; it was the predictable result of years of reckless, inflammatory, and escalating rhetoric from Democrats.
-- By relentlessly smearing President Trump, his Administration, and tens of […]
-The post Democrats’ Unhinged Rhetoric Incites Third Assassination Attempt on President Trump appeared first on The White House .
-- This past weekend, another Radical Left lunatic attempted to assassinate President Donald J.
-
-## 한눈에 보는 기준
+## 숫자와 일정  
 
 | 항목 | 내용 |
-|---|---|
+|------|------|
 | 발표 기관 | 미국 백악관 (The White House) |
-| 발표일 | 2026-04-28 |
-| 분류 기준 | 정치 / 대통령 백악관 의회 행정부 외교 안보 선거 정치 |
-| 원문 | [The White House release](https://www.whitehouse.gov/releases/2026/04/democrats-unhinged-rhetoric-incites-third-assassination-attempt-on-president-trump/) |
+| 발표일 | 2026‑04‑28 |
+| 원문 제목 | Democrats’ Unhinged Rhetoric Incites Third Assassination Attempt on President Trump |
+| 살해 시도 횟수 | 3회 (2년 미만) |
+| 폭력적 수사법이 주류화된 기간 | 10년 이상 |
 
-## 한국 독자가 볼 부분
+## 한국 독자가 볼 부분  
+1. **국제 안보와 경제 파장** – 미국 내 정치적 폭력 위험이 고조되면 국제 금융시장·무역에 불확실성이 커질 수 있습니다. 한국 기업·투자자도 미국 시장에 대한 리스크를 재평가할 필요가 있습니다.  
+2. **정치 담론의 위험성** – 폭력적인 수사법이 정당 간 갈등을 심화시키고 실제 폭력으로 이어지는 사례가 늘어나고 있습니다. 한국에서도 과격한 언어 사용이 사회적 분열을 초래할 수 있음을 경고합니다.  
+3. **언론·공공기관의 역할** – 백악관이 공식적으로 비판을 제기한 만큼, 정부·언론이 사실에 기반한 균형 잡힌 보도를 해야 한다는 점은 한국에서도 동일하게 적용됩니다.  
 
-이 발표는 미국 내 정치 흐름을 보여주는 자료입니다. 한국 기업, 연구기관, 소비자, 정책 담당자가 직접 적용할 내용인지 판단하려면 발표 기관, 대상, 시행 시점, 후속 문서를 함께 확인해야 합니다.
-
-## 원문 확인
-
-- [The White House 공식 자료](https://www.whitehouse.gov/releases/2026/04/democrats-unhinged-rhetoric-incites-third-assassination-attempt-on-president-trump/)
+## 원문 확인  
+원문 전체는 아래 링크에서 확인할 수 있습니다.

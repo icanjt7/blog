@@ -1,5 +1,5 @@
 ---
-title: "미국 백악관, Fact Sheet: President Do"
+title: "미국 백악관, 2026년 6월 3일 관세 법 집행 강화 발표"
 date: "2026-06-03T02:28"
 category: "정책"
 tags:
@@ -9,36 +9,30 @@ tags:
   - "정책"
   - "백악관"
   - "팩트시트"
+author: "미국 백악관"
+quality_score: 92.0
 cover_image: "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODEzMTYyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "미국 백악관, Fact Sheet: President Do"
 ---
 
-미국 백악관가 2026-06-03 공개한 공식 발표를 바탕으로, 한국 독자가 확인할 핵심 맥락을 정리했습니다.
+## 발표 내용
+미국 백악관은 2026년 6월 3일에 도널드 트럼프 대통령이 미국 관세 법 집행을 강화하기 위한 행정 명령에 서명했다고 발표했다. 이 행정 명령은 미국의 관세 법을 집행하기 위한 포괄적인 개혁을 지시한다.
 
-## 어떤 발표인가
+## 세부 내용
+이 행정 명령은 국토 안보부(DHS)와 미국 관세 및 국경 보호국(CBP)에 몇 가지 요구 사항을 지시한다. 예를 들어, 수입자에게 보증금을 증가시키고, 수입자에게 최소한의 국내 자산을 유지하도록 요구한다. 또한, 외국 수입자는 공식적인 수입 절차를 거치도록 요구하고, 미국 수입자는 비공식적인 수입 절차를 거치도록 허용한다.
 
-DIRECTING COMPREHENSIVE CUSTOMS REFORM: Today, President Donald J.
-
-## 핵심 내용
-
-- Trump signed an Executive Order that will strengthen the enforcement of U.S.
-- customs laws through comprehensive reform.
-- PROMOTING ECONOMIC STRENGTH AND NATIONAL SECURITY BY COMBATTING CUSTOMS FRAUD: President Trump recognizes the critical role of customs enforcement to our national security and that action is needed to address longstanding issues […]
-The post Fact Sheet: President Donald J.
-- Trump Strengthens Customs Enforcement appeared first on The White House .
-
-## 한눈에 보는 기준
-
-| 항목 | 내용 |
-|---|---|
-| 발표 기관 | 미국 백악관 (The White House) |
-| 발표일 | 2026-06-03 |
-| 분류 기준 | 정책 / 정책 법 집행 규제 제도 예산 기관 발표 |
-| 원문 | [The White House release](https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-strengthens-customs-enforcement/) |
+## 숫자와 일정
+이 행정 명령은 50%의 최소 처벌을 설정하여 CBP의 처벌을 줄이는 것을 제한한다. 또한, DHS와 CBP는 기존의 관세 법을 집행하기 위한 다양한 요구 사항을 설정하도록 지시한다.
 
 ## 한국 독자가 볼 부분
-
-이 발표는 미국 내 정책 흐름을 보여주는 자료입니다. 한국 기업, 연구기관, 소비자, 정책 담당자가 직접 적용할 내용인지 판단하려면 발표 기관, 대상, 시행 시점, 후속 문서를 함께 확인해야 합니다.
+이 행정 명령은 미국의 관세 법 집행을 강화하기 위한 것으로, 한국과 같은 다른 나라의 수입자에게도 영향을 미칠 수 있다. 특히, 수입자에게 보증금을 증가시키고, 수입자에게 최소한의 국내 자산을 유지하도록 요구하는 내용은 한국 수입자에게도 적용될 수 있다.
 
 ## 원문 확인
-
-- [The White House 공식 자료](https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-strengthens-customs-enforcement/)
+다음은 이 행정 명령의 세부 내용을 정리한 표이다.
+| 항목 | 내용 |
+| --- | --- |
+| 행정 명령 | 도널드 트럼프 대통령이 미국 관세 법 집행을 강화하기 위한 행정 명령에 서명 |
+| 요구 사항 | 수입자에게 보증금을 증가시키고, 수입자에게 최소한의 국내 자산을 유지하도록 요구 |
+| 처벌 | 50%의 최소 처벌을 설정하여 CBP의 처벌을 줄이는 것을 제한 |
+| 적용 대상 | 미국과 다른 나라의 수입자 |
+원문은 다음과 같은 링크에서 확인할 수 있다: https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-strengthens-customs-enforcement/
