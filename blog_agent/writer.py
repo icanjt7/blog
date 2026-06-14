@@ -123,7 +123,7 @@ class WriterAgent:
                 "github",
                 OpenAI(
                     api_key=s.github_token,
-                    base_url="https://models.inference.ai.azure.com",
+                    base_url="https://models.github.ai/inference",
                     timeout=timeout,
                     max_retries=0,
                 ),

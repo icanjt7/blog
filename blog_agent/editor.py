@@ -132,7 +132,7 @@ class SeoEditorAgent:
                 "github",
                 OpenAI(
                     api_key=s.github_token,
-                    base_url="https://models.inference.ai.azure.com",
+                    base_url="https://models.github.ai/inference",
                     timeout=timeout,
                     max_retries=0,
                 ),
@@ -199,6 +199,7 @@ BODY:
         if not text:
             suffix = f": {type(last_error).__name__}" if last_error else ""
             reviewed.review_notes.append(f"LLM 편집 실패로 규칙 기반 검수만 적용{suffix}")
+            reviewed.quality_score = min(reviewed.quality_score, 89.0)
             return reviewed
         reviewed.title = self._extract(text, "TITLE", reviewed.title)
         reviewed.excerpt = self._extract(text, "EXCERPT", reviewed.excerpt)

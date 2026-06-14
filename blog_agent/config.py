@@ -26,11 +26,11 @@ class Settings(BaseModel):
     groq_model: str = "groq/compound"
     llm_timeout_seconds: float = 20
     github_token: str | None = None
-    github_model: str = "Llama-3.3-70B-Instruct"
+    github_model: str = "openai/gpt-4.1"
     gemini_api_key: str | None = None
     gemini_model: str = "gemini-2.0-flash"
     openrouter_api_key: str | None = None
-    openrouter_model: str = "meta-llama/llama-3.1-8b-instruct:free"
+    openrouter_model: str = "meta-llama/llama-3.3-70b-instruct:free"
 
     # Images — free stock photo APIs (첫 번째 설정된 키 사용)
     unsplash_access_key: str | None = None   # 50 req/h free
@@ -94,11 +94,11 @@ def load_settings() -> Settings:
         groq_model=os.getenv("GROQ_MODEL", "groq/compound"),
         llm_timeout_seconds=float(os.getenv("LLM_TIMEOUT_SECONDS", "20")),
         github_token=os.getenv("GITHUB_TOKEN") or None,
-        github_model=os.getenv("GITHUB_MODEL", "Llama-3.3-70B-Instruct"),
+        github_model=os.getenv("GITHUB_MODEL", "openai/gpt-4.1"),
         gemini_api_key=os.getenv("GEMINI_API_KEY") or None,
         gemini_model=os.getenv("GEMINI_MODEL", "gemini-2.0-flash"),
         openrouter_api_key=os.getenv("OPENROUTER_API_KEY") or None,
-        openrouter_model=os.getenv("OPENROUTER_MODEL", "meta-llama/llama-3.1-8b-instruct:free"),
+        openrouter_model=os.getenv("OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free"),
         unsplash_access_key=os.getenv("UNSPLASH_ACCESS_KEY") or None,
         pexels_api_key=os.getenv("PEXELS_API_KEY") or None,
         pixabay_api_key=os.getenv("PIXABAY_API_KEY") or None,
