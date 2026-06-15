@@ -1,0 +1,80 @@
+{
+  "run_id": "20260615-053006-d123107d",
+  "average_quality": 77.6,
+  "drafts": [
+    {
+      "slug": "06월-선거구-확인-방법-a4fd0942",
+      "title": "06월 선거구 확인 방법, 핵심을 먼저 보자",
+      "keyword": "06월 선거구 확인 방법",
+      "category": "정치",
+      "quality_score": 85.0,
+      "review_notes": [
+        "본문 길이가 짧습니다.",
+        "LLM 편집 보완 완료",
+        "LLM 2차 보완 실패: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 선거구 확인 방법, 핵심을 먼저 보자. Keyword: 06월 선거구 확인 방법. Concrete visual subject: election civic government. Context: ## 이 이슈의 핵심 06월 선거구 확인 방법은 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 정부, 국회, 정당, 부처, 외교 상대국 중 어느 주체가 관련되는지 | | 시점 | 발표일, 회담일, 법안 처리 일정, 후속 브리핑 여부 | | 영향 | 예산, 산업 영향, 외교 협력, 규제 변화 가능성 | | 예외 | 정치적 해석과 확정된 제도 변화를 구분할 필요 | ## 독자가 이해해야 할 배경 정치 이슈는 찬반 평가보다 확인 가능한 사실을 먼저 봐야 합니다. 공식 발표, 회의 결과, 법안 문안, 후속 브리핑이 있는지 확인하세요. ## 확인 포인트 1. 담당 기관과 발표일을 확인합니다. 2. 개인, 사업자, 기관 중 누구에게 영향을 주는지 나눕니다. 3. 단속, 지원, 신고, 신청 중 어떤 행동으로 이어지는지 봅니다. 4. 금액이나 비율이 있다면 한도와 기간을 함께 확인합니다. 5. 원문 자료의 후속 링크나 담당 부서를 확인합니다. ## 마무리 06월 선거구 확인 방법는 자극적인 제목보다 적용 범위가 중요합니다. 실제 행동이 필요한지는 원문에서 시행일, 대상, 담당 기관을 확인한 뒤 판단하는 것이 좋습니다. ## 참고한 곳 - [우리 동네 선거구 바뀌었는지 확인하는 법](. Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1603032813605-2c91e257e2ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxlbGVjdGlvbiUyMGNpdmljJTIwZ292ZXJubWVudHxlbnwxfDB8fHwxNzgxNDQxMjczfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-클라우드-백업-비용-cd348115",
+      "title": "사진 백업비 아끼려면 클라우드 구조부터 봐야 한다, 클라우드 비용을 봐야",
+      "keyword": "06월 클라우드 백업 비용",
+      "category": "기술",
+      "quality_score": 70.0,
+      "review_notes": [
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 사진 백업비 아끼려면 클라우드 구조부터 봐야 한다, 클라우드 비용을 봐야. Keyword: 06월 클라우드 백업 비용. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 사진 백업비 아끼려면 클라우드 구조부터 봐야 한다 소식입니다. iCloud, Google Photos, OneDrive의 저장 용량, 가족 공유, 원본 보관, 중복 백업을 비교한다. ## 먼저 알아둘 배경 AI 앱은 사용자가 늘수록 모델 호출, 저장소, 빌드·배포, 보안 로그 비용이 함께 늘어납니다. 사진 백업비 아끼려면 클라우드 구조부터 봐야 한다처럼 클라우드 계약이 보도되는 이유는 제품 인기가 곧 인프라 비용으로 이어지기 때문입니다. ## 왜 기술 이슈인가 AI 스타트업은 기능 출시 속도만큼 단위 경제성이 중요합니다. 사용량을 5배 늘리는 계약은 성장 신호일 수 있지만, 동시에 클라우드 의존도와 비용 구조를 더 꼼꼼히 봐야 한다는 뜻입니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | AI 앱 사용자, 스타트업 투자자, 클라우드 비용을 관리하는 개발팀 | | 기술 맥락 | Google Cloud 계약, AI 앱 추론·빌드 비용, 확장성, 클라우드 벤더 의존도 | | 사용자 영향 | 서비스 속도, 사용량 제한, 요금제 변화, 장애 대응 품질에 영향 가능 | | 다음 확인 | 계약 기간, 사용량 증가 근거, 가격 정책 변화, 멀티클라우드 여부, 실제 사용자 증가 | ## 독자가 이해해야 할 포인트 1. 사진 백업비 아끼려면 클라우드 구조부터 봐야 한다에서 '사용량 증가'는. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1749006590475-4592a5dbf99f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxNDMxMjg1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-자동차세-연납-1585d9e8",
+      "title": "06월 자동차세 연납, 적용 범위가 핵심",
+      "keyword": "06월 자동차세 연납",
+      "category": "정책",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 자동차세 연납, 적용 범위가 핵심. Keyword: 06월 자동차세 연납. Concrete visual subject: finance policy documents. Context: ## 이 이슈의 핵심 자동차세 연납, 할인보다 먼저 봐야 할 일정는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 06월 자동차세 연납를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 신청 기간, 납부 월, 차량 매각·폐차 시 환급, 지방세 납부 경로를 정리한다. ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 개인, 가구, 사업자, 기관 중 누구에게 적용되는지 | | 시점 | 발표일과 시행일이 같은지, 유예 기간이 있는지 | | 영향 | 지원 규모, 부담 변화, 신청 또는 신고 절차 | | 예외 | 소득, 지역, 업종, 기존 이용자 여부에 따른 예외 | ## 독자가 이해해야 할 배경 정책 발표는 방향과 실제 집행 사이에 시간이 생길 수 있습니다. 보도자료의 문장만 보지 말고 시행령, 고시, 신청 페이지가 열렸는지까지 이어서 봐야 합니다. 숫자가 있는 정책은 기준을 함께 봐야 합니다. 지원 금액, 비율, 한도, 적용 기간 중 어느 값인지 구분하지 않으면 실제 체감과 다르게 이해하기 쉽습니다. 세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 06월 자동차세 연납도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다. ## 확. Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODE0MzQxMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-월드컵-개최-도시-3385a084",
+      "title": "06월 월드컵 개최 도시, 일정과 규칙 먼저 보기",
+      "keyword": "06월 월드컵 개최 도시",
+      "category": "스포츠",
+      "quality_score": 55.0,
+      "review_notes": [
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 월드컵 개최 도시, 일정과 규칙 먼저 보기. Keyword: 06월 월드컵 개최 도시. Concrete visual subject: football stadium player match action. Context: ## 지금 보는 이유 06월 월드컵 개최 도시는 2026 FIFA 월드컵을 볼 때 먼저 확인해야 할 기본 정보와 맞닿아 있습니다. 이번 대회는 2026년 6월 11일부터 7월 19일까지 캐나다·멕시코·미국에서 열리고, 참가국은 48개국, 전체 경기는 104경기입니다. 32개국 체제에 익숙한 독자라면 조별리그 통과 방식, 32강 토너먼트, 개최 도시 이동 거리부터 다시 봐야 합니다. 대표팀 전력 평가는 그다음입니다. ## 기본 구조 | 항목 | 2026 월드컵 기준 | | --- | --- | | 개최 기간 | 2026년 6월 11일~7월 19일 | | 개최국 | 캐나다, 멕시코, 미국 | | 참가국 | 48개국 | | 총 경기 수 | 104경기 | | 핵심 변화 | 48개국 확대와 32강 토너먼트 | ## 관전 포인트 경기 전 정보는 발표 시점이 중요합니다. 예비 명단과 최종 명단, 평가전과 공식전, 현지 시간과 한국 시간을 구분해야 착오가 줄어듭니다. 전술 전망은 해석이고, 일정과 기록은 사실입니다. 2026년 대회는 규모가 커진 만큼 조 편성, 휴식일, 이동 거리까지 함께 봐야 합니다. 06월 월드컵 개최 도시를 볼 때는 우승 후보보다 조 편성, 이동 거리, 휴식일, 부상 변수를 먼저 보는 것이 좋습니다. 북중미 3개국 개최라 현지 날짜와 한국 시간이 달라질 수 있고, 장거리 이동이 많은 팀은 선수단 운영 부담도 커질 수 있습니다. Visual mood: clean editorial news briefing. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1473976345543-9ffc928e648d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmb290YmFsbCUyMHN0YWRpdW0lMjBwbGF5ZXIlMjBtYXRjaCUyMGFjdGlvbnxlbnwxfDB8fHwxNzgxNDQwNzM5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "06월-청년-월세-지원-확인-143d7ee0",
+      "title": "06월 청년 월세 지원 확인, 신청 전 확인할 것",
+      "keyword": "06월 청년 월세 지원 확인",
+      "category": "생활",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 06월 청년 월세 지원 확인, 신청 전 확인할 것. Keyword: 06월 청년 월세 지원 확인. Concrete visual subject: young professionals city application form document. Context: ## 무엇이 달라졌나 청년 월세 지원, 소득·거주 조건 먼저 보는 법 소식은 청년과 직접 연결되는지 확인해야 하는 생활 정보입니다. 먼저 제목의 혜택 표현보다 실제로 누가, 언제, 어떤 절차로 움직여야 하는지 나눠 보는 편이 좋습니다. 청년 주거 지원에서 연령, 소득, 임대차 계약, 중복 지원 여부를 점검한다. ## 이번 글에서 바로 볼 항목 | 항목 | 이번 소식에서 확인할 내용 | | --- | --- | | 핵심 대상 | 청년 | | 확인할 수치 | 원문에 표시된 금액, 비율, 기간 | | 처리 방식 | 신청·방문·자동 적용 여부를 원문에서 확인 | | 담당 주체 | 운영 주체 | ## 숫자와 대상은 이렇게 읽으면 쉽습니다 이번 소식은 숫자가 제목에 크게 드러나지 않더라도 원문 안의 기준일과 대상 조건을 함께 봐야 합니다. 발표문에 나온 기준만 따로 보면 실제 조건을 놓칠 수 있습니다. 적용 시점처럼 함께 나온 기간·비율·단위가 무엇을 기준으로 하는지 같이 봐야 합니다. 대상은 '청년'으로 읽히는 부분부터 확인하면 됩니다. 06월 청년 월세 지원 확인처럼 생활과 연결되는 정보는 전체 국민 대상인지, 특정 세대·가구·업종·연령대 대상인지가 다르면 행동이 달라집니다. 별도 신청인지, 안내를 확인만 하면 되는지, 기관이 자동으로 적용하는지는 원문 링크에서 한 번 더 봐야 합니다. 특히 운영 주체가 운영하거나 발표한 사안이라면 원문 페. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1635442962671-584193cdf451?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx5b3VuZyUyMHByb2Zlc3Npb25hbHMlMjBjaXR5JTIwYXBwbGljYXRpb24lMjBmb3JtJTIwZG9jdW1lbnR8ZW58MXwwfHx8MTc4MTQ1OTk0OHww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
