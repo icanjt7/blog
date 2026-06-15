@@ -1,0 +1,109 @@
+name: Improve duplicate titles and short posts
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Maximum posts to improve in this run"
+        required: true
+        default: "30"
+      mode:
+        description: "Targets to improve"
+        required: true
+        type: choice
+        options:
+          - both
+          - titles
+          - short
+        default: both
+      min_length:
+        description: "Posts below this visible character count are short"
+        required: true
+        default: "800"
+      target_length:
+        description: "Target visible character count for expanded posts"
+        required: true
+        default: "1100"
+      dry_run:
+        description: "Preview candidates without committing"
+        required: true
+        type: choice
+        options:
+          - "false"
+          - "true"
+        default: "false"
+  schedule:
+    - cron: "30 16 * * *"
+
+concurrency:
+  group: improve-search-index-posts
+  cancel-in-progress: false
+
+jobs:
+  improve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+      models: read
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync latest main
+        run: git pull --ff-only origin main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Test improvement rules
+        run: pytest -q tests/test_improve_search_index_posts.py
+
+      - name: Improve duplicate titles and short posts
+        env:
+          MOTIF_API: ${{ secrets.MOTIF_API }}
+          MOTIF_MODEL: ${{ vars.MOTIF_MODEL || 'motif-12.7b-reasoning' }}
+          MOTIF_BASE_URL: ${{ vars.MOTIF_BASE_URL || 'https://chat.motiftech.io/openapi/v1' }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL || 'groq/compound' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.1-8b-instruct:free' }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
+          LLM_TIMEOUT_SECONDS: ${{ vars.LLM_TIMEOUT_SECONDS || '30' }}
+          REFINE_LLM_PROVIDER_ORDER: ${{ vars.REFINE_LLM_PROVIDER_ORDER || 'gemini,openrouter,github,motif,groq' }}
+          INDEX_IMPROVE_MAX_PROVIDERS_PER_POST: ${{ vars.INDEX_IMPROVE_MAX_PROVIDERS_PER_POST || '3' }}
+        run: |
+          args=(
+            --limit "${{ inputs.limit || '30' }}"
+            --mode "${{ inputs.mode || 'both' }}"
+            --min-length "${{ inputs.min_length || '800' }}"
+            --target-length "${{ inputs.target_length || '1100' }}"
+          )
+          if [ "${{ inputs.dry_run || 'false' }}" = "true" ]; then
+            args+=(--dry-run)
+          fi
+          python -u scripts/improve_search_index_posts.py "${args[@]}"
+
+      - name: Commit improved posts
+        if: ${{ (inputs.dry_run || 'false') != 'true' }}
+        run: |
+          git config user.name "blog-agent"
+          git config user.email "actions@github.com"
+          git add output/posts || true
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: improve duplicate titles and short posts"
+          git pull --rebase --autostash origin main
+          git push
