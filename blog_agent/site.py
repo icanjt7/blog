@@ -431,7 +431,8 @@ class StaticSiteBuilder:
     def _page_url(self, filename: str) -> str:
         if filename == "index.html":
             return self.site_url + "/"
-        return f"{self.site_url}/{filename}"
+        encoded_filename = quote(filename, safe="/%")
+        return f"{self.site_url}/{encoded_filename}"
 
     def _absolute_url(self, value: str) -> str:
         if not value:
@@ -804,6 +805,8 @@ class StaticSiteBuilder:
                 active="홈",
                 page_url=self._page_url(filename),
                 description=self.site_description,
+                robots="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+                if page == 1 else "noindex,follow",
             )
 
     def _write_dashboard(self, posts: list[Post]) -> None:
@@ -880,8 +883,8 @@ class StaticSiteBuilder:
       <url>{html.escape(self.site_url + "/favicon-512x512.png")}</url>
       <title>{html.escape(self.site_title)}</title>
       <link>{html.escape(self.site_url + "/")}</link>
-      <width>512</width>
-      <height>512</height>
+      <width>144</width>
+      <height>144</height>
     </image>
 {items}
   </channel>
@@ -1287,6 +1290,7 @@ class StaticSiteBuilder:
             active="검색",
             page_url=self._page_url("search.html"),
             description="브리핑웨이브에서 원하는 글을 빠르게 찾을 수 있는 검색 페이지입니다.",
+            robots="noindex,follow",
         )
 
     def _write_global_government_pages(self, posts: list[Post]) -> None:
@@ -1387,6 +1391,8 @@ class StaticSiteBuilder:
                     active=category,
                     page_url=self._page_url(filename),
                     description=f"{category} 관련 최신 글과 분석을 모아둔 페이지입니다.",
+                    robots="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+                    if page == 1 else "noindex,follow",
                 )
 
     def _write_sitemap(self, posts: list[Post]) -> None:
@@ -1445,8 +1451,6 @@ class StaticSiteBuilder:
 
         static_entries: list[str] = []
         static_entries.append(_entry(self._page_url("index.html"), now, "daily", "1.0"))
-        static_entries.append(_entry(self._page_url("search.html"), now, "weekly", "0.5"))
-
         government_alternates = {lang: self._page_url(copy["filename"]) for lang, copy in GOVERNMENT_GLOBAL_PAGES.items()}
         government_alternates["x-default"] = self._page_url(GOVERNMENT_GLOBAL_PAGES["en"]["filename"])
         for lang, copy in GOVERNMENT_GLOBAL_PAGES.items():
@@ -1458,20 +1462,13 @@ class StaticSiteBuilder:
                 government_alternates,
             ))
 
-        total_pages = (len(posts) + 8) // 9
-        for page in range(2, total_pages + 1):
-            static_entries.append(_entry(self._page_url(f"page{page}.html"), now, "daily", "0.9"))
-
         category_posts: dict[str, list[Post]] = {}
         for post in posts:
             category_posts.setdefault(post.category, []).append(post)
-        per_page = 9
         for category, cposts in category_posts.items():
             cat_base = self._category_page_filename(category)
-            total_cat_pages = max(1, (len(cposts) + per_page - 1) // per_page)
-            for p in range(1, total_cat_pages + 1):
-                fname = cat_base if p == 1 else f"{cat_base[:-5]}-{p}.html"
-                static_entries.append(_entry(self._page_url(fname), now, "daily", "0.8"))
+            if cposts:
+                static_entries.append(_entry(self._page_url(cat_base), now, "daily", "0.8"))
 
         static_name = "sitemap-static.xml"
         (self.public_dir / static_name).write_text(_urlset(static_entries), encoding="utf-8")
@@ -1518,6 +1515,7 @@ class StaticSiteBuilder:
         og_image: str | None = None,
         og_type: str = "website",
         meta_extra: str = "",
+        robots: str = "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
         structured_data: list[dict] | None = None,
         html_lang: str = "ko",
         alternate_urls: dict[str, str] | None = None,
@@ -1615,6 +1613,7 @@ class StaticSiteBuilder:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{html.escape(title)}</title>
   <meta name="description" content="{html.escape(description)}">
+  <meta name="robots" content="{html.escape(robots)}">
   <meta property="og:type" content="{html.escape(og_type)}">
   <meta property="og:locale" content="ko_KR">
   <meta property="og:site_name" content="{html.escape(self.site_title)}">

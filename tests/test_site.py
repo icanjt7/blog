@@ -91,8 +91,67 @@ RSS 본문 {idx}입니다.
                 self.assertIn("<content:encoded><![CDATA[", text)
                 self.assertIn("<dc:creator>", text)
                 self.assertEqual(text.count("<item>"), 2)
+                self.assertIn("<width>144</width>", text)
+                self.assertIn("<height>144</height>", text)
             self.assertIn('href="https://example.com/feed.xml"', feed.read_text(encoding="utf-8"))
             self.assertIn('href="https://example.com/rss.xml"', rss.read_text(encoding="utf-8"))
+
+    def test_build_uses_consistent_canonical_and_indexing_rules(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            posts_dir = root / "posts"
+            posts_dir.mkdir()
+            for idx in range(10):
+                (posts_dir / f"한글-글-{idx}.md").write_text(
+                    f"""---
+title: '색인 테스트 {idx}'
+date: '2026-06-{idx + 1:02d}T09:30:00'
+category: 기술
+tags:
+- 테스트
+---
+
+## 본문
+
+색인 규칙을 검증하는 본문입니다.
+""",
+                    encoding="utf-8",
+                )
+            builder = StaticSiteBuilder(
+                posts_dir=posts_dir,
+                public_dir=root / "public",
+                site_title="테스트",
+                site_description="테스트 설명",
+                custom_domain="example.com",
+                categories=["기술"],
+            )
+
+            builder.build()
+
+            first_post = (root / "public" / "한글-글-0.html").read_text(encoding="utf-8")
+            self.assertIn(
+                '<link rel="canonical" href="https://example.com/%ED%95%9C%EA%B8%80-%EA%B8%80-0.html">',
+                first_post,
+            )
+            self.assertIn(
+                '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
+                first_post,
+            )
+
+            page_two = (root / "public" / "page2.html").read_text(encoding="utf-8")
+            category_two = (root / "public" / "category-기술-2.html").read_text(encoding="utf-8")
+            search = (root / "public" / "search.html").read_text(encoding="utf-8")
+            self.assertIn('<meta name="robots" content="noindex,follow">', page_two)
+            self.assertIn('<meta name="robots" content="noindex,follow">', category_two)
+            self.assertIn('<meta name="robots" content="noindex,follow">', search)
+
+            static_sitemap = (root / "public" / "sitemap-static.xml").read_text(encoding="utf-8")
+            post_sitemap = (root / "public" / "sitemap-posts-ko.xml").read_text(encoding="utf-8")
+            self.assertNotIn("search.html", static_sitemap)
+            self.assertNotIn("page2.html", static_sitemap)
+            self.assertNotIn("category-%EA%B8%B0%EC%88%A0-2.html", static_sitemap)
+            self.assertIn("category-%EA%B8%B0%EC%88%A0.html", static_sitemap)
+            self.assertIn("%ED%95%9C%EA%B8%80-%EA%B8%80-0.html", post_sitemap)
 
 if __name__ == "__main__":
     unittest.main()
