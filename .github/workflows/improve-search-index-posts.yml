@@ -72,7 +72,7 @@ jobs:
         run: pip install -e .
 
       - name: Test improvement rules
-        run: pytest -q tests/test_improve_search_index_posts.py
+        run: python -m unittest discover -s tests -p 'test_improve_search_index_posts.py'
 
       - name: Improve duplicate titles and short posts
         env:
