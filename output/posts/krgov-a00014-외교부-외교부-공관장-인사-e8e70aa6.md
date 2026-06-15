@@ -1,15 +1,17 @@
 ---
-title: "외교부 공관장 인사"
-date: "2026-05-29T08:12"
-category: "생활"
+title: 2026년 외교부 공관장 인사 현황
+date: 2026-05-29T08:12
+category: 생활
 tags:
-  - "보도기사"
-  - "외교부"
-  - "생활"
+- 보도기사
+- 외교부
+- 생활
 quality_score: 90.0
-cover_image: "https://images.unsplash.com/photo-1560523159-fbe43c0b465f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxkaXBsb21hY3klMjBpbnRlcm5hdGlvbmFsJTIwc3VtbWl0fGVufDF8MHx8fDE3ODA4Mzk4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "외교부 공관장 인사"
-author: "외교부"
+cover_image: https://images.unsplash.com/photo-1560523159-fbe43c0b465f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxkaXBsb21hY3klMjBpbnRlcm5hdGlvbmFsJTIwc3VtbWl0fGVufDF8MHx8fDE3ODA4Mzk4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 외교부 공관장 인사
+author: 외교부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 외교부가 2026-05-29 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. 원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다.
