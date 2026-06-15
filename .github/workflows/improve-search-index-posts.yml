@@ -1,6 +1,13 @@
 name: Improve duplicate titles and short posts
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/improve-search-index-posts.yml"
+      - "scripts/improve_search_index_posts.py"
+      - "tests/test_improve_search_index_posts.py"
   workflow_dispatch:
     inputs:
       limit:
