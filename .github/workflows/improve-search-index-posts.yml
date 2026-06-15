@@ -90,8 +90,8 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
           LLM_TIMEOUT_SECONDS: ${{ vars.LLM_TIMEOUT_SECONDS || '30' }}
-          REFINE_LLM_PROVIDER_ORDER: ${{ vars.REFINE_LLM_PROVIDER_ORDER || 'gemini,openrouter,github,motif,groq' }}
-          INDEX_IMPROVE_MAX_PROVIDERS_PER_POST: ${{ vars.INDEX_IMPROVE_MAX_PROVIDERS_PER_POST || '3' }}
+          REFINE_LLM_PROVIDER_ORDER: ${{ vars.INDEX_IMPROVE_PROVIDER_ORDER || 'motif,groq,github,gemini,openrouter,openai' }}
+          INDEX_IMPROVE_MAX_PROVIDERS_PER_POST: ${{ vars.INDEX_IMPROVE_MAX_PROVIDERS_PER_POST || '6' }}
         run: |
           args=(
             --limit "${{ inputs.limit || '30' }}"
