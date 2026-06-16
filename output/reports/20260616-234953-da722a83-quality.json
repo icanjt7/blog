@@ -1,0 +1,21 @@
+{
+  "run_id": "20260616-234953-da722a83",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "complete-calvin-hobbes-father-378fe641",
+      "title": "‘The Complete Calvin and Hobbes’ 아버지의 날 만화책 선물 추천",
+      "keyword": "Complete Calvin Hobbes Father",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: ‘The Complete Calvin and Hobbes’ 아버지의 날 만화책 선물 추천. Keyword: Complete Calvin Hobbes Father. Concrete visual subject: technology innovation circuit abstract. Context: ## 아버지의 날과 만화책 선물 트렌드 미국에서 Father’s Day(아버지의 날)는 매년 6월 셋째 주 일요일에 열린다. 전통적으로 전자제품이나 디지털 콘텐츠가 선물로 인기가 높지만, 최근에는 아날로그 감성이 담긴 만화책 ‘The Complete Calvin and Hobbes’가 새로운 대안으로 추천되고 있다. The Verge 기사에서는 “만화 스트립을 좋아하는 사람에게 빠르고 쉬운 선물”이라고 강조한다. ## ‘Calvin and Hobbes’의 작품 배경과 완전판 구성 ‘Calvin and Hobbes’는 Bill Watterson이 1985년부터 1995년까지 미국 신문에 연재한 대표 만화다. 작품은 가족, 유머, 상상력, 일상 소재를 다루며 폭넓은 세대가 공감할 수 있다. 저자인 Watterson은 만화 산업의 상업화에 반대하며 라이선스 상품을 제한했고, 완전판은 3권 세트로 출간되어 희소성과 소장 가치가 높다. 이 세트는 약 2.7kg의 무게로, 10년간의 모든 에피소드가 담겨 있다. ## 주요 특징 및 실제 장단점 ‘The Complete Calvin and Hobbes’는 선물로서 다음과 같은 구체적 장단점을 가진다. - **전편 수록 및 컬렉터 가치** 1985~1995년 연재 전편이 한 세트에 모두 포함되어 있어 수집가와 만화 애호가에게 만족감을 준다. - **아날로그 감성** 디지털 기기와 달리 직접 넘기는 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1765256931300-ceeaed648d21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dGVjaG5vbG9neSUyMGlubm92YXRpb24lMjBjaXJjdWl0JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc4MTU4ODM1NXww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
