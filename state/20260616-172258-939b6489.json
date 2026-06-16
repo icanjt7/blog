@@ -1,0 +1,136 @@
+{
+  "run_id": "20260616-172258-939b6489",
+  "topics": [
+    {
+      "keyword": "06월 공공기관장 인사",
+      "title_hint": "공공기관장 인사 뉴스, 임기와 권한부터 확인하기",
+      "category": "정치",
+      "trend_score": 77.0,
+      "competition_score": 0.35,
+      "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+      "sources": [
+        {
+          "title": "공공기관장 인사 뉴스, 임기와 권한부터 확인하기",
+          "url": "https://info.nec.go.kr/",
+          "published_at": null,
+          "summary": "임명 절차, 임기, 주무부처, 기관 역할, 경영평가와의 관계를 정리한다.",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "Verizon 8217 8216 Simplicity",
+      "title_hint": "Verizon&#8217;s &#8216;Simplicity&#8217; flat-rate plan starts at $30 per month for new customers",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Verizon&#8217;s &#8216;Simplicity&#8217; flat-rate plan starts at $30 per month for new customers",
+          "url": "https://www.theverge.com/tech/950881/verizon-simplicity-plan-launch",
+          "published_at": "2026-06-16T17:19:35",
+          "summary": "Verizon is launching a new Simplicity plan that starts at $30 / month for new customers, or $45 / month for existing ones. In its announcement, Verizon says the plan drops activation and upgrade fees, while offering one flat price for each line. The $30 price for new customers is an \"initial promotional offer\" that [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "06월 공공기관장 인사",
+        "title_hint": "공공기관장 인사 뉴스, 임기와 권한부터 확인하기",
+        "category": "정치",
+        "trend_score": 77.0,
+        "competition_score": 0.35,
+        "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+        "sources": [
+          {
+            "title": "공공기관장 인사 뉴스, 임기와 권한부터 확인하기",
+            "url": "https://info.nec.go.kr/",
+            "published_at": null,
+            "summary": "임명 절차, 임기, 주무부처, 기관 역할, 경영평가와의 관계를 정리한다.",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "6월에 공공기관장 인사가 몰리는 5가지 이유",
+      "slug": "06월-공공기관장-인사-112d5db9",
+      "excerpt": "공공기관장 인사가 6월에 집중되는 배경에는 경영평가 일정과 임기 만료가 맞물려 있습니다. 임명 절차와 교체 사례, 기관별 권한 차이까지 핵심 정보를 정리했습니다.",
+      "body_markdown": "공공기관장 인사가 06월에 집중되는 이유, 알고 계신가요?  \n임기와 권한, 그리고 기관별 특징까지.  \n매년 6월이면 ‘공공기관장 인사 시즌’이라는 뉴스가 쏟아집니다. 왜 하필 6월일까요?\n\n### 공공기관이란?\n\n공공기관은 정부나 지방자치단체 산하에 설치된 법인 또는 단체를 뜻합니다.  \n대표적으로 한국전력공사(전기 공급), 국민건강보험공단(국민 건강보험 운영), 한국도로공사(도로 관리) 등이 있습니다.  \n각 기관의 수장을 ‘공공기관장’이라고 부르며, 임명 방식과 임기는 기관마다 다릅니다.\n\n### 6월 인사가 집중되는 이유\n\n공공기관장 인사가 6월에 몰리는 가장 큰 이유는 ‘경영평가’와 연관되어 있습니다.  \n경영평가는 국무조정실 산하 공공기관운영위원회가 매년 6월 발표하며, 기관의 효율성·투명성·사회적 책임 등을 평가합니다.  \n평가 결과는 기관장 재임이나 교체 결정에 직접 영향을 미칩니다.  \n임기 만료 시점도 경영평가 발표와 맞물리는 경우가 많아, 인사가 6월~7월에 집중됩니다.\n\n### 기관별 임명 절차와 권한\n\n공공기관장은 정부(기획재정부) 또는 소관 부처에서 임명합니다.  \n소관 부처란 각 기관을 관리·감독하는 정부 부처를 의미하며, 예를 들어 국민건강보험공단은 보건복지부가 주무부처입니다.  \n기관장은 예산 집행, 인사 관리, 정책 실행권을 갖지만, 대규모 사업은 주무부처 승인이 필요합니다.\n\n#### 06월 인사 관련 핵심 비교표  \n| 구분                | 내용                                                            | 예시 기관                   | 주무부처             | 참고 출처                    |\n|-------------------|-----------------------------------------------------------------|---------------------------|--------------------|---------------------------|\n| 임명 방식            | 정부 직접 임명, 또는 소관 부처 추천 후 임명                      | 한국전력공사, 국민건강보험공단 | 기획재정부, 보건복지부 | info.nec.go.kr           |\n| 임기                | 기관별로 상이(1~3년)                                            | 한국도로공사(3년)           | 국토교통부           | 기관 공식 홈페이지         |\n| 권한                | 예산, 인사, 정책 실행권                                         | 수자원공사                 | 환경부               | 기관 운영규정              |\n| 경영평가            | 매년 6월 국무조정실·공공기관운영위원회 평가                     | 모든 공공기관              | 각 주무부처          | info.nec.go.kr           |\n| 인사 시기            | 평가 결과 발표 후, 임기 만료·정책 변화에 따라 교체                | 6월~7월 인사 집중           | 모든 부처            | 최근 3년 인사 기록         |\n\n### 기관장 교체 사례와 영향\n\n최근 3년간 06월~7월 발표된 기관장 교체 사례는 경영평가 결과와 밀접한 관련이 있습니다.  \n평가에서 낮은 점수를 받은 기관장은 교체되는 일이 많으며, 인사 이후에는 조직 개편과 신규 정책 도입이 이어집니다.  \n예를 들어, 한국전력공사 사장은 에너지 전문성을 갖춘 인물이 임명되는 경우가 많고, 국민건강보험공단 이사장은 보건·의료 정책 경험이 풍부한 전문가가 주로 임명됩니다.\n\n### 주요 체크포인트\n\n- **임명 절차**: 기관별로 정부 직접 임명 또는 부처 추천 후 임명(출처: info.nec.go.kr)  \n- **임기**: 공식 취임일·만료일은 기관 홈페이지에서 확인 가능  \n- **경영평가 일정**: 국무조정실·공공기관운영위원회에서 6월 발표  \n- **주무부처**: 각 기관별 담당 부처 정보 명확  \n- **교체 사례**: 최근 3년간 6월~7월 인사 기록과 교체 사유 공개\n\n### 정보 확인 방법\n\n최신 06월 공공기관장 인사 뉴스, 경영평가 결과, 교체 사례 등은 선거정보포털([info.nec.go.kr](https://info.nec.go.kr))에서 주무부처별 공식 보도자료와 경영평가 일정, 임명 절차까지 직접 확인할 수 있습니다.  \n정확한 정보에 접근하는 것이 변화의 흐름을 이해하는 첫걸음입니다.",
+      "tags": [
+        "정치",
+        "06월",
+        "공공기관장",
+        "인사"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1759169306825-d1d4b832ae3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgxNTYyNzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "6월에 공공기관장 인사가 몰리는 5가지 이유 — Photo by 𝕡𝕒𝕨𝕤 𝕒𝕟𝕕 𝕡𝕣𝕚𝕟𝕥𝕤 on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1764476751235-82addb009cd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgxNTYyNzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "6월에 공공기관장 인사가 몰리는 5가지 이유 본문 보조 이미지 — Photo by Yosuke Ota on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 6월에 공공기관장 인사가 몰리는 5가지 이유. Keyword: 06월 공공기관장 인사. Concrete visual subject: neutral election civic public office. Context: 공공기관장 인사가 06월에 집중되는 이유, 알고 계신가요? 임기와 권한, 그리고 기관별 특징까지. 매년 6월이면 ‘공공기관장 인사 시즌’이라는 뉴스가 쏟아집니다. 왜 하필 6월일까요? ### 공공기관이란? 공공기관은 정부나 지방자치단체 산하에 설치된 법인 또는 단체를 뜻합니다. 대표적으로 한국전력공사(전기 공급), 국민건강보험공단(국민 건강보험 운영), 한국도로공사(도로 관리) 등이 있습니다. 각 기관의 수장을 ‘공공기관장’이라고 부르며, 임명 방식과 임기는 기관마다 다릅니다. ### 6월 인사가 집중되는 이유 공공기관장 인사가 6월에 몰리는 가장 큰 이유는 ‘경영평가’와 연관되어 있습니다. 경영평가는 국무조정실 산하 공공기관운영위원회가 매년 6월 발표하며, 기관의 효율성·투명성·사회적 책임 등을 평가합니다. 평가 결과는 기관장 재임이나 교체 결정에 직접 영향을 미칩니다. 임기 만료 시점도 경영평가 발표와 맞물리는 경우가 많아, 인사가 6월~7월에 집중됩니다. ### 기관별 임명 절차와 권한 공공기관장은 정부(기획재정부) 또는 소관 부처에서 임명합니다. 소관 부처란 각 기관을 관리·감독하는 정부 부처를 의미하며, 예를 들어 국민건강보험공단은 보건복지부가 주무부처입니다. 기관장은 예산 집행, 인사 관리, 정책 실행권을 갖지만, 대규모 사업은 주무부처 승인이 필요합니다. #### 06월 인사 관련 핵심 비교표 | 구분 | 내용 | 예시 . Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 6월에 공공기관장 인사가 몰리는 5가지 이유. Keyword: 06월 공공기관장 인사. Concrete visual subject: neutral election civic public office. Article context: 공공기관장 인사가 06월에 집중되는 이유, 알고 계신가요? 임기와 권한, 그리고 기관별 특징까지. 매년 6월이면 ‘공공기관장 인사 시즌’이라는 뉴스가 쏟아집니다. 왜 하필 6월일까요? ### 공공기관이란? 공공기관은 정부나 지방자치단체 산하에 설치된 법인 또는 단체를 뜻합니다. 대표적으로 한국전력공사(전기 공급), 국민건강보험공단(국민 건강보험 운영), 한국도로공사(도로 관리) 등이 있습니다. 각 기관의 수장을 ‘공공기관장’이라고 부르며, 임명 방식과 임기는 기관마다 다릅니다. ### 6월 인사가 집중되는 이유 공공기관장 인사가 6월에 몰리는 가장 큰 이유는 ‘경영평가’와 연관되어 있습니다. 경영평가는 국무조정실 산하 공공기관운영위원회가 매년 6월 발표하며, 기관의 효율성·투명성·사회적 책임 등을 평가합니다. 평가 결과는 기관장 재임이나 교체 결정에 직접 영향을 미칩니다. 임기 만료 시점도 경영평가 발표와 맞물리는 경우가 많아, 인사가 6월~7월에 집중됩니다. ### 기관별 임명 절차와 권한 공공기관장은 정부(기획재정부) 또는 소관 부처에서 임명합니다. 소관 부처란 각 기관을 관리·감독하는 정부 부처를 의미하며, 예를 들어 국민건강보험공단은 보건복지부가 주무부처입니다. 기관장은 예산 집행, 인사 관리, 정책 실행권을 갖지만, 대규모 사업은 주무부처 승인이 필요합니다. #### 06월 인사 관련 핵심 비교표 | 구분 | 내용 | 예시 기관 | 주무부처 | 참고 출처 | |-------------------|-----------------------------------------------------------------|---------------------------|--------------------|---------------------------| | 임명 방식 | 정부 직접. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-06-16T17:26:38.241940",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Verizon 8217 8216 Simplicity",
+        "title_hint": "Verizon&#8217;s &#8216;Simplicity&#8217; flat-rate plan starts at $30 per month for new customers",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Verizon&#8217;s &#8216;Simplicity&#8217; flat-rate plan starts at $30 per month for new customers",
+            "url": "https://www.theverge.com/tech/950881/verizon-simplicity-plan-launch",
+            "published_at": "2026-06-16T17:19:35",
+            "summary": "Verizon is launching a new Simplicity plan that starts at $30 / month for new customers, or $45 / month for existing ones. In its announcement, Verizon says the plan drops activation and upgrade fees, while offering one flat price for each line. The $30 price for new customers is an \"initial promotional offer\" that [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "신규 가입, 월 30달러? Verizon Simplicity 요금제 5가지 핵심",
+      "slug": "verizon-8217-8216-simplicity-88339969",
+      "excerpt": "Verizon이 2024년 6월 신규 고객 대상 월 30달러 Simplicity 요금제를 출시했습니다. 숨겨진 비용 없이, 실제 가입 조건과 장단점을 최신 공식 정보로 정리합니다.",
+      "body_markdown": "## Verizon Simplicity 요금제, 무엇이 다른가?\n\n미국 최대 이동통신사 Verizon(버라이즌)은 2024년 6월, 신규 고객을 위한 ‘Simplicity’ 플랫 요금제를 공식 발표했습니다.  \n이 요금제의 핵심은 복잡한 조건 없이 명확한 가격과 숨겨진 비용이 없다는 점입니다.\n\n### 주요 특징 체크리스트\n\n| 항목                | 공식 내용(2024년 6월 기준)            |\n|--------------------|--------------------------------------|\n| 월 요금            | 신규 $30 / 기존 $45                  |\n| 프로모션 조건      | 신규 고객만 $30, 기존은 $45          |\n| 부가 비용          | 활성화비/업그레이드비 없음           |\n| 가입 방식          | 온라인/오프라인 즉시 가입 가능       |\n| 약정/의무 기간     | 무약정                               |\n\n- 출처: [The Verge, 2024-06-06](https://www.theverge.com/tech/950881/verizon-simplicity-plan-launch)\n\nVerizon은 1983년 설립된 미국 최대 이동통신 기업으로, 꾸준히 사용자 친화적 요금제를 발표하고 있습니다.  \n‘8217 8216’은 요금제 코드명이며, ‘Simplicity’는 이번 플랜의 공식 명칭입니다.\n\n### 장점  \n- 신규 고객은 월 30달러로 저렴하게 시작 가능  \n- 숨겨진 활성화비/업그레이드비 등 추가 비용 없음  \n- 가입 절차 간편(즉시 온라인/매장 가입 가능)  \n- 무약정, 의무기간 없음\n\n### 단점  \n- 기존 고객은 월 45달러로 차등 적용  \n- 데이터 제공량, 속도 등 상세 옵션은 아직 미공개  \n- 프로모션 기간 및 종료일 공식 발표 없음  \n- 가족/다회선 할인 등 추가 혜택은 미제공\n\n---\n\n## 실제 가입 전, 꼭 확인해야 할 5가지\n\n1. **공식 프로모션 가격 적용 기간**  \n   - Verizon 홈페이지에서 최신 공지 확인 필요  \n   - (2024년 6월 현재 활성화 중)\n\n2. **월 요금 차이**  \n   - 신규 $30, 기존 $45  \n   - 단, 신규 가입자만 프로모션 적용\n\n3. **부가 비용 면제**  \n   - 활성화비, 업그레이드비 등 추가 비용 없음  \n   - 계약서에 명시\n\n4. **데이터/속도 옵션**  \n   - 공식 발표 전, 고객센터 문의 필요  \n   - 무제한 여부 미확인\n\n5. **가족/다회선 할인 부재**  \n   - 추가 할인/혜택은 현재 제공되지 않음\n\n---\n\n## 결론\n\nVerizon Simplicity 요금제는  \n- 복잡한 조건 없이 명확한 가격을 원하는 사용자  \n- 신규 가입을 고민하는 미국 내 소비자  \n에게 특히 유리합니다.\n\n공식 홈페이지에서 프로모션 적용 기간, 데이터 제공량 등 최신 정보를 반드시 확인하세요.  \n월 30달러로 시작할 수 있는 Simplicity, 지금이 가입 적기일 수 있습니다.\n\n---\n\n> **참고 출처**  \n> [Verizon Simplicity 요금제 공식 발표](https://www.theverge.com/tech/950881/verizon-simplicity-plan-launch) (The Verge, 2024-06-06)",
+      "tags": [
+        "기술",
+        "Verizon",
+        "8217",
+        "8216",
+        "Simplicity"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1749006590324-d6b2e90ab1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxNTg4MzU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "신규 가입, 월 30달러? Verizon Simplicity 요금제 5가지 핵심 — Photo by Omar:. Lopez-Rincon on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1766203551890-2664b619042b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxNTg4MzU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "신규 가입, 월 30달러? Verizon Simplicity 요금제 5가지 핵심 본문 보조 이미지 — Photo by Albert Stoynov on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 신규 가입, 월 30달러? Verizon Simplicity 요금제 5가지 핵심. Keyword: Verizon 8217 8216 Simplicity. Concrete visual subject: technology innovation circuit abstract. Context: ## Verizon Simplicity 요금제, 무엇이 다른가? 미국 최대 이동통신사 Verizon(버라이즌)은 2024년 6월, 신규 고객을 위한 ‘Simplicity’ 플랫 요금제를 공식 발표했습니다. 이 요금제의 핵심은 복잡한 조건 없이 명확한 가격과 숨겨진 비용이 없다는 점입니다. ### 주요 특징 체크리스트 | 항목 | 공식 내용(2024년 6월 기준) | |--------------------|--------------------------------------| | 월 요금 | 신규 $30 / 기존 $45 | | 프로모션 조건 | 신규 고객만 $30, 기존은 $45 | | 부가 비용 | 활성화비/업그레이드비 없음 | | 가입 방식 | 온라인/오프라인 즉시 가입 가능 | | 약정/의무 기간 | 무약정 | - 출처: [The Verge, 2024-06-06](https://www.theverge.com/tech/950881/verizon-simplicity-plan-launch) Verizon은 1983년 설립된 미국 최대 이동통신 기업으로, 꾸준히 사용자 친화적 요금제를 발표하고 있습니다. ‘8217 8216’은 요금제 코드명이며, ‘Simplicity’는 이번 플랜의 공식 명칭입니다. ### 장점 - 신규 고객은 월 30달러로 저렴하게 시작 가능 - 숨겨진 활성화비/업그레이드비 등 추가 비용 없음 - 가입 절차 간편(즉시. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 신규 가입, 월 30달러? Verizon Simplicity 요금제 5가지 핵심. Keyword: Verizon 8217 8216 Simplicity. Concrete visual subject: technology innovation circuit abstract. Article context: ## Verizon Simplicity 요금제, 무엇이 다른가? 미국 최대 이동통신사 Verizon(버라이즌)은 2024년 6월, 신규 고객을 위한 ‘Simplicity’ 플랫 요금제를 공식 발표했습니다. 이 요금제의 핵심은 복잡한 조건 없이 명확한 가격과 숨겨진 비용이 없다는 점입니다. ### 주요 특징 체크리스트 | 항목 | 공식 내용(2024년 6월 기준) | |--------------------|--------------------------------------| | 월 요금 | 신규 $30 / 기존 $45 | | 프로모션 조건 | 신규 고객만 $30, 기존은 $45 | | 부가 비용 | 활성화비/업그레이드비 없음 | | 가입 방식 | 온라인/오프라인 즉시 가입 가능 | | 약정/의무 기간 | 무약정 | - 출처: [The Verge, 2024-06-06](https://www.theverge.com/tech/950881/verizon-simplicity-plan-launch) Verizon은 1983년 설립된 미국 최대 이동통신 기업으로, 꾸준히 사용자 친화적 요금제를 발표하고 있습니다. ‘8217 8216’은 요금제 코드명이며, ‘Simplicity’는 이번 플랜의 공식 명칭입니다. ### 장점 - 신규 고객은 월 30달러로 저렴하게 시작 가능 - 숨겨진 활성화비/업그레이드비 등 추가 비용 없음 - 가입 절차 간편(즉시 온라인/매장 가입 가능) - 무약정, 의무기간 없음 ### 단점 - 기존 고객은 월 45달러로 차등 적용 - 데이터 제공량, 속도 등 상세 옵션은 아직 미공개 - 프로모션 기간 및 종료일 공식 발표 없음 - 가족/다회선 할인 등 추가 혜택은 미제공 --- ## 실제 가입 전, 꼭 확인해야 할 5가지 1. **공식 프로모션 가격 적용 기간** - Veriz. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-06-16T17:27:10.058451",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/06월-공공기관장-인사-112d5db9.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/verizon-8217-8216-simplicity-88339969.md",
+      "message": "draft saved"
+    }
+  ]
+}
