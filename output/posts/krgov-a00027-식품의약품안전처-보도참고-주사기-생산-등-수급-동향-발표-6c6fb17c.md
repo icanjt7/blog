@@ -1,15 +1,17 @@
 ---
-title: "[보도참고] 주사기 생산 등 수급 동향 발표"
-date: "2026-05-21T07:25"
-category: "생활"
+title: 주사기 생산량과 재고량 현황
+date: 2026-05-21T07:25
+category: 생활
 tags:
-  - "보도기사"
-  - "식품의약품안전처"
-  - "생활"
+- 보도기사
+- 식품의약품안전처
+- 생활
 quality_score: 90.0
-cover_image: "https://images.unsplash.com/photo-1726197213582-fb5d4e85172f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODA5MTg4NzV8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "[보도참고] 주사기 생산 등 수급 동향 발표"
-author: "식품의약품안전처"
+cover_image: https://images.unsplash.com/photo-1726197213582-fb5d4e85172f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODA5MTg4NzV8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: '[보도참고] 주사기 생산 등 수급 동향 발표'
+author: 식품의약품안전처
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 식품의약품안전처가 2026-05-21 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. 원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다.
