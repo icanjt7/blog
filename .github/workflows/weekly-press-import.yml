@@ -72,7 +72,7 @@ jobs:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           INPUT_PER_SOURCE: ${{ inputs.per_source || '12' }}
           INPUT_AGENCIES: ${{ inputs.agencies || '' }}
-          INPUT_NEW_ONLY: ${{ inputs.new_only || 'false' }}
+          INPUT_NEW_ONLY: ${{ inputs.new_only || 'true' }}
           INPUT_OVERWRITE_EXISTING: ${{ inputs.overwrite_existing || 'false' }}
         run: |
           args=(--per-source "${INPUT_PER_SOURCE}" --rewrite-titles)

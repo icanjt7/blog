@@ -1334,7 +1334,7 @@ def _import_source(
     print(f"  {len(links)}건 발견")
     for url in links:
         try:
-            if new_only and not overwrite and existing_post_for_url(prefix, url):
+            if not overwrite and existing_post_for_url(prefix, url):
                 print(f"  = 기존 글 건너뜀: {url[:70]}")
                 continue
             release = release_fn(url)  # type: ignore[call-arg]
@@ -1398,6 +1398,9 @@ def main() -> None:
         print(f"오류 {len(all_errors)}건:")
         for e in all_errors:
             print(f"  - {e}")
+        source_failures = [error for error in all_errors if "목록 수집 실패" in error]
+        if source_failures or not all_written:
+            sys.exit(1)
     for p in all_written:
         print(p.relative_to(ROOT))
 

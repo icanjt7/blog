@@ -379,6 +379,8 @@ def main() -> None:
         print(f"오류/부족: {len(errors)}건")
         for error in errors[:80]:
             print(f"  - {error}")
+        if not written and not args.dry_run:
+            sys.exit(1)
     for path in written:
         print(path.relative_to(ROOT))
 
