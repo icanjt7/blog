@@ -1,0 +1,21 @@
+{
+  "run_id": "20260616-212112-9701d5dc",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "complete-calvin-hobbes-father-378fe641",
+      "title": "아버지의 날, 마지막 선물 고민? Complete Calvin Hobbes Father 5가지 체크포인트",
+      "keyword": "Complete Calvin Hobbes Father",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 아버지의 날, 마지막 선물 고민? Complete Calvin Hobbes Father 5가지 체크포인트. Keyword: Complete Calvin Hobbes Father. Concrete visual subject: technology innovation circuit abstract. Context: ### 미국 아버지의 날, 만화책 선물로 주목받는 이유 'Calvin and Hobbes'는 미국 만화가 빌 워터슨(Bill Watterson)이 1985년부터 1995년까지 신문에 연재한 대표적인 만화입니다. 지적 호기심 많은 6살 소년 칼빈과, 그의 상상 속 호랑이 친구 호브스가 일상과 철학을 넘나드는 대화로 많은 사랑을 받았죠. 'The Complete Calvin and Hobbes'는 이 10년간의 모든 스트립을 3권 합본으로 엮은 컬렉션입니다. Father’s Day(미국의 아버지의 날, 매년 6월 셋째 주 일요일)에 맞춰 선물로 추천되는 이유는 명확합니다. ### 기술적 감각과 감성, 동시에 만족시키는 컬렉션 #### 장점 - **고급 인쇄 품질과 내구성** 두꺼운 종이와 완성도 높은 컬러 인쇄로, 책을 넘기는 촉감과 시각적 만족도가 뛰어납니다. - **완전한 컬렉션** 10년간 연재된 모든 스트립을 처음부터 끝까지 한 번에 감상할 수 있어, 개별 단행본이나 신문에서 찾을 필요가 없습니다. - **세대 잇는 선물 가치** 아이와 함께 읽거나, 혼자서 유년 시절을 떠올릴 때 특별한 대화 소재가 됩니다. #### 단점 - **무게와 크기** 3권 합본의 총 무게가 약 6kg에 달하며, 책장 최소 30cm 공간이 필요합니다. - **가격** Father’s Day 한정 할인으로 $60~$70에 구매 가능하지만, 평소에는 $10. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1765256931300-ceeaed648d21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dGVjaG5vbG9neSUyMGlubm92YXRpb24lMjBjaXJjdWl0JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc4MTU4ODM1NXww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
