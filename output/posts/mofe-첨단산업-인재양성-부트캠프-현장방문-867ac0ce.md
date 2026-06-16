@@ -7,8 +7,8 @@ tags:
   - "재정경제부"
   - "기술"
 quality_score: 92.0
-cover_image: "https://picsum.photos/seed/35/1200/630"
-cover_image_alt: "첨단산업 인재양성 부트캠프 현장방문 관련 대표 이미지"
+cover_image: "https://images.unsplash.com/photo-1749006590475-4592a5dbf99f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxNTg4MzU1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "첨단산업 인재양성 부트캠프 현장방문 — Photo by Omar:. Lopez-Rincon on Unsplash"
 author: "재정경제부"
 ---
 

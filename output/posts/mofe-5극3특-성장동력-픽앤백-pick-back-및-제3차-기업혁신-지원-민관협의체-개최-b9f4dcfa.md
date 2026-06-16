@@ -7,8 +7,8 @@ tags:
   - "재정경제부"
   - "생활"
 quality_score: 92.0
-cover_image: "https://picsum.photos/seed/332/1200/630"
-cover_image_alt: "5극3특 성장동력 픽앤백(Pick&Back) 및 제3차 기업혁신 지원 민관협의체 개최 관련 대표 이미지"
+cover_image: "https://images.unsplash.com/photo-1730717051655-8028acef500b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODE1NjI3MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "5극3특 성장동력 픽앤백(Pick&Back) 및 제3차 기업혁신 지원 민관협의체 개최 — Photo by Oleksandr Zhluktenko on Unsplash"
 author: "재정경제부"
 ---
 

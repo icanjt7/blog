@@ -7,8 +7,8 @@ tags:
   - "재정경제부"
   - "정책"
 quality_score: 92.0
-cover_image: "https://picsum.photos/seed/746/1200/630"
-cover_image_alt: "정책금융기관으로서 역할 강화를 위한 한국수출입은행 직·간접 투자제도 개선 관련 대표 이미지"
+cover_image: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxnbG9iYWwlMjB0cmFkZSUyMGV4cG9ydCUyMHNoaXBwaW5nJTIwaW52ZXN0bWVudCUyMGZpbmFuY2UlMjBncm93dGh8ZW58MXwwfHx8MTc4MTYxNDY1Mnww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "정책금융기관으로서 역할 강화를 위한 한국수출입은행 직·간접 투자제도 개선 — Photo by CHUTTERSNAP on Unsplash"
 author: "재정경제부"
 ---
 

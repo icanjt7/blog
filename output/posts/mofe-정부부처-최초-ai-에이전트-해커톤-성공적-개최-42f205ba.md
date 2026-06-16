@@ -7,8 +7,8 @@ tags:
   - "재정경제부"
   - "기술"
 quality_score: 92.0
-cover_image: "https://picsum.photos/seed/787/1200/630"
-cover_image_alt: "정부부처 최초, AI 에이전트 해커톤 성공적 개최 관련 대표 이미지"
+cover_image: "https://images.unsplash.com/photo-1696272440000-0808a203c852?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMG5ldXJhbCUyMG5ldHdvcmt8ZW58MXwwfHx8MTc4MTU0OTUyMnww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "정부부처 최초, AI 에이전트 해커톤 성공적 개최 — Photo by Andres Siimon on Unsplash"
 author: "재정경제부"
 ---
 

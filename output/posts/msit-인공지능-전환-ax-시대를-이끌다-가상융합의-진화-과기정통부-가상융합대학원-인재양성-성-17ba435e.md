@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 96.0
-cover_image: "https://picsum.photos/seed/950/1200/630"
-cover_image_alt: "“인공지능 전환(AX) 시대를 이끌다, 가상융합의 진화” 과기정통부, 가상융합대학원 인재양성 성과 한눈에"
+cover_image: "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMHNjaWVuY2UlMjByZXNlYXJjaCUyMGxhYm9yYXRvcnklMjBjb21tdW5pY2F0aW9uJTIwaW5mcmFzdHJ1Y3R1cmV8ZW58MXwwfHx8MTc4MTYxNDY1NHww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "“인공지능 전환(AX) 시대를 이끌다, 가상융합의 진화” 과기정통부, 가상융합대학원 인재양성 성과 한눈에 — Photo by Steve A Johnson on Unsplash"
 author: "과학기술정보통신부"
 ---
 

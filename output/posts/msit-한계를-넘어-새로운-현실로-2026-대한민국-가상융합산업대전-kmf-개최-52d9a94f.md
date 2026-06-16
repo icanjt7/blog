@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 96.0
-cover_image: "https://picsum.photos/seed/927/1200/630"
-cover_image_alt: "“한계를 넘어, 새로운 현실로“ 2026 대한민국 가상융합산업대전(KMF) 개최"
+cover_image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgxNjE0NjUzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "“한계를 넘어, 새로운 현실로“ 2026 대한민국 가상융합산업대전(KMF) 개최 — Photo by Jordan Harrison on Unsplash"
 author: "과학기술정보통신부"
 ---
 

@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 92.0
-cover_image: "https://picsum.photos/seed/42/1200/630"
-cover_image_alt: "통신3사, 상용망 기반 긴급구조 통신 우선전송으로 소방청 골든타임 확보 기여"
+cover_image: "https://images.unsplash.com/photo-1691435828932-911a7801adfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgxNjE0NjUzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "통신3사, 상용망 기반 긴급구조 통신 우선전송으로 소방청 골든타임 확보 기여 — Photo by Albert Stoynov on Unsplash"
 author: "과학기술정보통신부"
 ---
 

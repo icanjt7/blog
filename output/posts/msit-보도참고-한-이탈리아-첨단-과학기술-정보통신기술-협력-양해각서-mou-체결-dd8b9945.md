@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 96.0
-cover_image: "https://picsum.photos/seed/91/1200/630"
-cover_image_alt: "[보도참고] 한-이탈리아, 첨단 과학기술·정보통신기술 협력 양해각서(MOU) 체결"
+cover_image: "https://images.unsplash.com/photo-1616996691748-3f5f78093ab0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgxNjE0NjUzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "[보도참고] 한-이탈리아, 첨단 과학기술·정보통신기술 협력 양해각서(MOU) 체결 — Photo by RephiLe water on Unsplash"
 author: "과학기술정보통신부"
 ---
 

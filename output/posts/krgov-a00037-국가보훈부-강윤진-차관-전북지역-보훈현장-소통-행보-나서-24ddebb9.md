@@ -7,8 +7,8 @@ tags:
   - "국가보훈부"
   - "핫이슈"
 quality_score: 84.0
-cover_image: "https://picsum.photos/seed/423/1200/630"
-cover_image_alt: "강윤진 차관, 전북지역 보훈현장 소통 행보 나서"
+cover_image: "https://images.unsplash.com/photo-1544827503-673e2a2c4c00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxrb3JlYW4lMjBjaXR5JTIwbmV3cyUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzgxNjE0Mjg4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "강윤진 차관, 전북지역 보훈현장 소통 행보 나서 — Photo by m h on Unsplash"
 author: "국가보훈부"
 ---
 

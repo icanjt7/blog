@@ -7,8 +7,8 @@ tags:
   - "식품의약품안전처"
   - "생활"
 quality_score: 96.0
-cover_image: "https://picsum.photos/seed/542/1200/630"
-cover_image_alt: "[보도참고] 식약처, 브라질 위생감시청(ANVISA) 등과 의료제품, 화장품 분야에서 규제조화 협력 확대하기로"
+cover_image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzYWZldHklMjBwdWJsaWMlMjBzZXJ2aWNlJTIwaGVhbHRoY2FyZSUyMG1lZGljYWwlMjBjbGVhbnxlbnwxfDB8fHwxNzgxNjE0NjQ5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "[보도참고] 식약처, 브라질 위생감시청(ANVISA) 등과 의료제품, 화장품 분야에서 규제조화 협력 확대하기로 — Photo by Martha Dominguez de Gouveia on Unsplash"
 author: "식품의약품안전처"
 ---
 

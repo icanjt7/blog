@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 92.0
-cover_image: "https://picsum.photos/seed/58/1200/630"
-cover_image_alt: "국가 연구개발(R&D) 통합로그인 사이트 “연구24” 운영 개시"
+cover_image: "https://images.unsplash.com/photo-1705727210721-961cc64a6895?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgxNjE0NjUzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "국가 연구개발(R&D) 통합로그인 사이트 “연구24” 운영 개시 — Photo by Lusia Komala Widiastuti on Unsplash"
 author: "과학기술정보통신부"
 ---
 

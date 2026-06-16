@@ -7,8 +7,8 @@ tags:
   - "법무부"
   - "정책"
 quality_score: 96.0
-cover_image: "https://picsum.photos/seed/561/1200/630"
-cover_image_alt: "중동·유럽 사례로 본 한국 난민 제도의 과제…법무부·서강대 공동 포럼 개최"
+cover_image: "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMHBvbGljeSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzgxNTYyODQ1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "중동·유럽 사례로 본 한국 난민 제도의 과제…법무부·서강대 공동 포럼 개최 — Photo by Kelly Sikkema on Unsplash"
 author: "법무부"
 ---
 

@@ -7,8 +7,8 @@ tags:
   - "재정경제부"
   - "정책"
 quality_score: 92.0
-cover_image: "https://picsum.photos/seed/474/1200/630"
-cover_image_alt: "민간이 직접 기획하는 경제발전공유사업(KSP), 우리 기업 진출을 강화하는 방향으로 본격 개편 관련 대표 이미지"
+cover_image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODE1NjI4NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "민간이 직접 기획하는 경제발전공유사업(KSP), 우리 기업 진출을 강화하는 방향으로 본격 개편 — Photo by Kelly Sikkema on Unsplash"
 author: "재정경제부"
 ---
 

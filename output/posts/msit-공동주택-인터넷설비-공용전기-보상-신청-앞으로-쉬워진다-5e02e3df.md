@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "생활"
 quality_score: 96.0
-cover_image: "https://picsum.photos/seed/384/1200/630"
-cover_image_alt: "공동주택 인터넷설비 공용전기 보상 신청, 앞으로 쉬워진다!"
+cover_image: "https://images.unsplash.com/photo-1578016981482-d4dd3db297b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZSUyMGFwcGxpY2F0aW9uJTIwZm9ybSUyMGRvY3VtZW50fGVufDF8MHx8fDE3ODE2MTQ2NTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "공동주택 인터넷설비 공용전기 보상 신청, 앞으로 쉬워진다! — Photo by Claudio Schwarz on Unsplash"
 author: "과학기술정보통신부"
 ---
 
