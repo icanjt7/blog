@@ -1,14 +1,17 @@
 ---
-title: "허장 제2차관, 경제개발협력기구(OECD) 각료이사회 참석 및 주요 인사 면담 결과"
-date: "2026-06-07T00:25"
-category: "정책"
+title: 허장 제2차관, OECD 각료이사회 참석과 인사 면담 요약
+date: 2026-06-07T00:25
+category: 정책
 tags:
-  - "보도기사"
-  - "재정경제부"
+- 보도기사
+- 재정경제부
 quality_score: 90.0
-cover_image: "https://images.pexels.com/photos/28314377/pexels-photo-28314377.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-cover_image_alt: "허장 제2차관, 경제개발협력기구(OECD) 각료이사회 참석 및 주요 인사 면담 결과 — Photo by Sokmeas UY on Pexels"
-author: "재정경제부"
+cover_image: https://images.pexels.com/photos/28314377/pexels-photo-28314377.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+cover_image_alt: 허장 제2차관, 경제개발협력기구(OECD) 각료이사회 참석 및 주요 인사 면담 결과 — Photo by Sokmeas
+  UY on Pexels
+author: 재정경제부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 재정경제부가 2026-06-07 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. 원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다.

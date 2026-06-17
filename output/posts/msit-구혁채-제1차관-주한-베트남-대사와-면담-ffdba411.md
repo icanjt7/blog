@@ -1,14 +1,16 @@
 ---
-title: "구혁채 제1차관, 주한 베트남 대사와 면담"
-date: "2026-06-01T18:30"
-category: "정책"
+title: 구혁채 제1차관, 주한 베트남 대사와 과학기술 협력 논의
+date: 2026-06-01T18:30
+category: 정책
 tags:
-  - "보도기사"
-  - "과학기술정보통신부"
+- 보도기사
+- 과학기술정보통신부
 quality_score: 90.0
-cover_image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgwNDgwNzU3fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "구혁채 제1차관, 주한 베트남 대사와 면담 — Photo by Jordan Harrison on Unsplash"
-author: "과학기술정보통신부"
+cover_image: https://images.unsplash.com/photo-1544197150-b99a580bb7a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzgwNDgwNzU3fDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 구혁채 제1차관, 주한 베트남 대사와 면담 — Photo by Jordan Harrison on Unsplash
+author: 과학기술정보통신부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 과학기술정보통신부이 2026-06-03 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. 원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다.

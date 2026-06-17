@@ -1,15 +1,17 @@
 ---
-title: "미 노동통계국, Both payroll employment"
-date: "2025-12-16T01:26"
-category: "정책"
+title: 미 노동통계국, 11월 고용 64천명 증가와 실업률 4.6% 발표
+date: 2025-12-16T01:26
+category: 정책
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미 노동통계국"
-  - "정책"
-  - "노동통계국"
-  - "고용지표"
-cover_image: "https://images.unsplash.com/photo-1468779036391-52341f60b55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODEzMTYyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+- 보도기사
+- 미국정부
+- 미 노동통계국
+- 정책
+- 노동통계국
+- 고용지표
+cover_image: https://images.unsplash.com/photo-1468779036391-52341f60b55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODEzMTYyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미 노동통계국가 2025-12-16 공개한 공식 발표를 바탕으로, 한국 독자가 확인할 핵심 맥락을 정리했습니다.

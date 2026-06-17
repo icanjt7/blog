@@ -1,14 +1,16 @@
 ---
-title: "예술활동증명 제도 개선 위해 현장 소통 나서"
-date: "2026-06-04T00:11"
-category: "정책"
+title: 예술활동증명 제도 개선 위한 현장 소통 진행
+date: 2026-06-04T00:11
+category: 정책
 tags:
-  - "보도기사"
-  - "문화체육관광부"
+- 보도기사
+- 문화체육관광부
 quality_score: 90.0
-cover_image: "https://images.unsplash.com/photo-1779079383736-b8303c7f2e5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODA4Mzk4MDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "예술활동증명 제도 개선 위해 현장 소통 나서 — Photo by Jeffrey Zhang on Unsplash"
-author: "문화체육관광부"
+cover_image: https://images.unsplash.com/photo-1779079383736-b8303c7f2e5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODA4Mzk4MDV8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 예술활동증명 제도 개선 위해 현장 소통 나서 — Photo by Jeffrey Zhang on Unsplash
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 문화체육관광부가 2026-06-04 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. 원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다.
