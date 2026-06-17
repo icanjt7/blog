@@ -1,0 +1,20 @@
+{
+  "run_id": "20260617-221540-dc349157",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "tim-cook-ram-8216-22710160",
+      "title": "RAM 가격 인상, 애플 CEO가 직접 밝힌 5가지 변화",
+      "keyword": "Tim Cook RAM 8216",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: RAM 가격 인상, 애플 CEO가 직접 밝힌 5가지 변화. Keyword: Tim Cook RAM 8216. Concrete visual subject: technology innovation circuit abstract. Context: Apple의 RAM 옵션 가격이 곧 인상됩니다. 최근 월스트리트저널과의 인터뷰에서 Tim Cook(애플 CEO)은 \"RAM 비용이 감당할 수 없는 수준에 이르렀고, 가격 인상이 불가피하다\"고 밝혔습니다. Tim Cook은 2011년부터 애플을 이끌고 있으며, 공급망 관리 전문가로 평가받는 인물입니다. ### RAM 가격 인상 배경 - 글로벌 메모리칩 공급 부족이 심화되고 있습니다. - 삼성전자, SK하이닉스, Micron 등 주요 RAM 제조사들도 생산량 확대에 어려움을 겪고 있습니다. - 최근 8GB RAM 한 슬롯의 평균 시장 가격은 전년 대비 최대 40% 상승(2024년 5월 기준, DRAMeXchange 자료). - 애플은 RAM 업그레이드 옵션 가격을 10~20% 인상할 계획임을 공식 발표했습니다. ### 2024년 6월 이후 주요 애플 기기 RAM 옵션 가격 변화 | 기기 | RAM 옵션 변경 | 기존 가격 | 변경 후 가격(예상) | |-------------------|--------------------|-------------|--------------------| | MacBook Pro | 8GB → 16GB | 180,000원 | 210,000원 | | iPad Pro | 8GB → 16GB | 160,000원 | 180,000원 | | iPhone 15 Pro | 6GB → 8GB | 120,000원 | 13. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1750365919971-7dd273e7b317?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxNTg4MzU1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
