@@ -1,0 +1,37 @@
+{
+  "run_id": "20260617-235315-5f6ee727",
+  "average_quality": 77.5,
+  "drafts": [
+    {
+      "slug": "신고포상금-공정거래-위반-과징금-8380c6a4",
+      "title": "과징금 10%까지 지급! 공정거래 신고포상금 바뀐 조건 한눈에",
+      "keyword": "신고포상금 공정거래 위반 과징금",
+      "category": "생활",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 과징금 10%까지 지급! 공정거래 신고포상금 바뀐 조건 한눈에. Keyword: 신고포상금 공정거래 위반 과징금. Concrete visual subject: everyday lifestyle public information. Context: ```markdown ## 공정거래 위반 신고포상금, 이렇게 달라집니다 공정거래위원회는 2024년 6월 18일부터 공정거래법 등 위반행위 신고자에게 지급하는 포상금 규정을 개정해 시행합니다. 이번 개정으로 포상금 지급 상한이 폐지되고, 과징금의 최대 10%까지 포상금이 지급됩니다. *공정거래위원회는 시장의 공정한 경쟁을 유지하고 위반행위 신고를 활성화하기 위해 설립된 정부 기관입니다.* ## 주요 변경점과 실무 기준 아래 표는 2024년 6월 18일 시행되는 신고포상금 제도의 핵심 내용을 모아 정리한 것입니다. | 기준 | 내용 | |----------------|---------------------------------------------------------------------| | 시행일 | 2024년 6월 18일 | | 지급 상한 | 없음 (상한 폐지) | | 지급 비율 | 과징금의 최대 10% | | 적용 대상 | 공정거래법 등 위반행위 신고자 (개인·법인 모두 가능) | | 담당 기관 | 공정거래위원회 | | 증거 인정 범위 | 부당지원, 사익편취 등 거래내역·조건뿐만 아니라 지원의도 관련 정보 포함 | | 지급 절차 | 신고 → 위반행위 확인 → 과징금 부과 → 포상금 결정·지급 | | 공식 안내 | [공정거래위원회 정책 브리핑](https://www.korea.kr/news/policyNewsView.do?news. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1724923170448-f8411c8d7e8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODE3NDA0NzR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "vsco-studio-pro-500-066dc7d9",
+      "title": "VSCO Studio Pro 500, 연 500달러 구독의 진짜 가치와 선택 기준",
+      "keyword": "VSCO Studio Pro 500",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "핵심 키워드 반복이 과합니다.",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 보완 완료",
+        "LLM 2차 보완 실패: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: VSCO Studio Pro 500, 연 500달러 구독의 진짜 가치와 선택 기준. Keyword: VSCO Studio Pro 500. Concrete visual subject: technology innovation circuit abstract. Context: 사진 편집 앱, VSCO Studio Pro 500 VSCO Studio Pro 500은 2011년 미국에서 설립된 사진·영상 편집 플랫폼 VSCO가 2024년 6월 발표한 최신 모바일 앱입니다. 이번 신제품은 iOS에서 먼저 출시되었으며, macOS 데스크톱용은 2024년 하반기 지원 예정입니다. 기존 VSCO 앱과 달리, 대량 사진 편집과 스타일 통일에 특화된 프로급 기능을 강조합니다. 주요 기능 - **배치 편집(batch editing)**: 여러 장의 사진을 한 번에 선택해 필터와 스타일을 일괄 적용할 수 있습니다. - **스타일 매칭(style matching)**: 선택한 레퍼런스 이미지를 기준으로 다른 사진의 색감과 톤을 자동 변환합니다. - **VSCO 갤러리 공유**: 편집 작업물을 VSCO 커뮤니티 갤러리에 즉시 업로드 가능합니다. - **iOS 지원**: 2024년 6월 현재 iOS에서 사용 가능하며, macOS는 연말 출시 예정입니다. - **연간 구독료**: 500달러(2024년 기준). 기존 VSCO 앱(29.99달러)과 Adobe Lightroom(119.99달러) 대비 높은 가격입니다. 가격과 경쟁 제품 비교 VSCO Studio Pro 500은 연 500달러 구독료로, Adobe Creative Cloud(미국 기준 연 70만원대)와 유사하거나 더 높은 수준입니다. Adobe Lightroom은 고급 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1749006590475-4592a5dbf99f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxNzQwNTM0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
