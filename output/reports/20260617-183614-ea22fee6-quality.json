@@ -1,0 +1,34 @@
+{
+  "run_id": "20260617-183614-ea22fee6",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "k-뉴딜-아카데미-청년-직업훈련-기업-2a60a29f",
+      "title": "청년 훈련수당 최대 50만 원, K-뉴딜 아카데미 최신 조건",
+      "keyword": "K-뉴딜 아카데미 청년 직업훈련 기업",
+      "category": "생활",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 청년 훈련수당 최대 50만 원, K-뉴딜 아카데미 최신 조건. Keyword: K-뉴딜 아카데미 청년 직업훈련 기업. Concrete visual subject: young professionals city. Context: ## K-뉴딜 아카데미, 청년에게 어떤 혜택이 있나? 고용노동부와 한국직업능력연구원은 2024년 6월 17일, K-뉴딜 아카데미 참여기업 53곳과 운영 아카데미 72곳을 발표했습니다. 이 프로그램은 인공지능, 반도체, 엔터테인먼트 등 첨단 산업 분야에서 청년에게 직업능력개발 훈련과 관련 수당을 지원합니다. 특히 출석률에 따라 수도권 청년은 월 최대 30만 원, 비수도권 청년은 월 최대 50만 원까지 훈련수당을 받을 수 있습니다. 이번 선정 결과는 실제 지원 조건과 신청 방법을 구체적으로 확인할 때 도움이 됩니다. ### 주요 조건 한눈에 보기 | 항목 | 확인 내용 | |------------------|---------------------------------------------------------------| | 선정 기업 | 53개 (2024년 6월 발표, 고용노동부) | | 운영 아카데미 | 72개 (한국직업능력연구원 발표) | | 지원 대상 | 만 18~34세 청년 | | 지원 금액 | 수도권 월 최대 30만 원, 비수도권 월 최대 50만 원 | | 분야 | 인공지능, 반도체, 엔터테인먼트 등 첨단산업 | | 담당 기관 | 고용노동부, 한국직업능력연구원 | | 신청 절차 | 기업·아카데미별 안내, 고용노동부 공식 페이지 참고 | | 발표 일자 | 2024년 6월 17일 | | 문의처 | 고용노동부 공식 문의 채널, 발표. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1649956830365-e36d62bc796a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx5b3VuZyUyMHByb2Zlc3Npb25hbHMlMjBjaXR5fGVufDF8MHx8fDE3ODE2MTAxMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "anthropic-got-hit-export-5273710b",
+      "title": "안전 논쟁을 바꾼 Waymo의 'Reference Driver' 모델, 실제 효과는?",
+      "keyword": "Anthropic got hit export",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 안전 논쟁을 바꾼 Waymo의 'Reference Driver' 모델, 실제 효과는?. Keyword: Anthropic got hit export. Concrete visual subject: safety public service. Context: ## Anthropic got hit export 규제, AI 업계에 미친 영향 최근 Anthropic는 미국 정부의 갑작스러운 수출 규제 명령으로 최신 AI 모델의 외국인 접근을 차단해야 했습니다. 이 조치로 미국 내 외국인 사용자와 Anthropic의 직원까지 영향받았으며, 회사는 모델 서비스를 복구하기 위해 노력하고 있습니다. - 규제 근거: 2024년 미국 트럼프 행정부 긴급 수출 명령 - 적용 범위: 미국 내외 모든 외국인과 Anthropic 직원 - 영향 기관: Anthropic, AI 서비스 사용자, 관련 연구자 - 조치 기간: 2024년 6월 - 출처: The Verge, Anthropic 공식 발표 --- ## Waymo Reference Driver, 무엇이 다른가? Waymo는 Alphabet(구글) 계열 자율주행차 기업으로, 실제 도로 실험만으로는 모든 사고 가능성을 재현할 수 없어 시뮬레이션 모델을 활용합니다. Reference Driver는 인간 운전자의 '인지 지연', '놀람 반응', '조작 시간' 등 현실적인 반응을 반영해 만들어진 비교 기준 모델입니다. - 개발 배경: 자율주행 안전성 검증을 위한 객관적 기준 마련 - 시뮬레이션 방식: 실제 사고 데이터를 바탕으로 인간 운전자의 반응 패턴 적용 - 주요 활용: 자율주행차와 인간 운전자의 위험 회피 능력 비교 - 적용 기관: Waymo, 미국 교통 안전 연. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1704919262575-a692bebb4fcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxzYWZldHklMjBwdWJsaWMlMjBzZXJ2aWNlfGVufDF8MHx8fDE3ODE2MTQ0MTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
