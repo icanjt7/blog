@@ -163,10 +163,8 @@ class WriterAgent:
                 return self._write_fallback(topic)
             except Exception:
                 raise
-        sources = "\n".join(
-            f"- {source.title}: {source.url}\n  내용: {source.summary[:400]}"
-            for source in topic.sources
-        )
+        today = datetime.now().strftime("%Y-%m-%d")
+        sources = "\n".join(self._source_prompt_line(source) for source in topic.sources)
         tourism_instruction = ""
         if self._has_tourapi_source(topic):
             tourism_instruction = f"""
@@ -199,11 +197,15 @@ class WriterAgent:
 - 제목은 30자 이내로 압축한다.
 
 [글 작성 지침]
+- 오늘 기준일: {today}
 - 도입부: {hook_style}
 - 문장 길이를 의도적으로 섞는다. 짧은 문장(5~10자)과 긴 문장(40~60자)을 번갈아 쓴다.
 - '이번 포스팅에서는', '알아보겠습니다', '결론적으로', '매우 중요합니다', '다양한' 금지.
 - 직접 경험하지 않은 일을 경험한 것처럼 쓰지 않는다.
 - 출처에 없는 구체 수치는 추가하지 않는다.
+- 출처 제목, 요약, 발행일에 없는 연도나 월을 만들지 않는다.
+- "2024년 기준", "2024년 6월 기준", "2024년부터" 같은 과거 기준일은 출처가 해당 연도를 명시할 때만 쓴다.
+- 최신 안내를 말해야 하는데 출처 발행일이 불명확하면 연도를 임의로 넣지 말고 "원문 공개일 기준" 또는 "공식 안내 기준"이라고 쓴다.
 - "A사/B사/C사", "제품 A", "가상의 모델"처럼 실제 출처를 확인할 수 없는 익명 비교표를 만들지 않는다.
 - 핵심 키워드 "{topic.keyword}"는 4~7회만 자연스럽게 쓴다.
 - 본문 1,400~1,800자. 표 1개 이상 포함.
@@ -1155,6 +1157,13 @@ BODY:
             os.getenv("REFINE_LLM_PROVIDER_ORDER", "motif,groq,gemini,openrouter,openai,github"),
         )
         return [item.strip().lower() for item in raw.split(",") if item.strip()]
+
+    @staticmethod
+    def _source_prompt_line(source) -> str:
+        published = ""
+        if source.published_at:
+            published = f" (발행일: {source.published_at:%Y-%m-%d})"
+        return f"- {source.title}{published}: {source.url}\n  내용: {source.summary[:400]}"
 
     @staticmethod
     def _env_int(name: str, default: int) -> int:

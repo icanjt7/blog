@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 import re
+from datetime import datetime
 
 from openai import OpenAI
 
@@ -153,19 +154,21 @@ class SeoEditorAgent:
         if not self._providers:
             return self.review(draft)
         reviewed = self.review(draft)
-        sources = "\n".join(
-            f"- {source.title}: {source.url} ({source.summary[:180]})"
-            for source in reviewed.topic.sources
-        )
+        today = datetime.now().strftime("%Y-%m-%d")
+        sources = "\n".join(self._source_prompt_line(source) for source in reviewed.topic.sources)
         prompt = f"""
 아래 한국어 블로그 초안을 편집해 주세요.
 
 목표:
+- 오늘 기준일은 {today}입니다.
 - 제목이 클릭하고 싶어지는지 먼저 확인한다. 아래 기준으로 더 좋은 제목으로 바꿔도 된다:
   · 숫자, 반전, 궁금증, 독자 공감 상황, 구체적 혜택 중 하나를 활용
   · '핵심 정리', '알아보자', '총정리' 같은 진부한 표현은 교체
   · 30자 이내
 - 사실은 유지하고, 출처에 없는 구체 수치나 경험담은 추가하지 않는다.
+- 출처 제목, 요약, 발행일에 없는 연도나 월을 만들지 않는다.
+- "2024년 기준", "2024년 6월 기준", "2024년부터" 같은 과거 기준일은 출처가 해당 연도를 명시할 때만 유지한다.
+- 최신 안내를 말해야 하는데 출처 발행일이 불명확하면 연도를 임의로 넣지 말고 "원문 공개일 기준" 또는 "공식 안내 기준"이라고 쓴다.
 - "A사/B사/C사", "제품 A", "가상의 모델"처럼 실제 출처를 확인할 수 없는 익명 비교표는 제거하고 확인 가능한 기준표로 바꾼다.
 - 글에 등장하는 인물·작품·기업·제도 중 설명이 부족한 것이 있으면 한 줄씩 보완한다.
 - AI가 쓴 것처럼 보이는 반복 표현을 줄인다.
@@ -247,12 +250,16 @@ BODY:
         return any(any(marker in note for marker in severe_markers) for note in draft.review_notes)
 
     def _second_pass(self, draft: Draft, sources: str) -> Draft | None:
+        today = datetime.now().strftime("%Y-%m-%d")
         prompt = f"""
 아래 글은 1차 편집 후 검수에서 아직 품질 기준을 통과하지 못했습니다.
 검수 메모를 모두 해결하도록 제목, 요약, 본문을 다시 작성하세요.
 
 절대 조건:
+- 오늘 기준일은 {today}입니다.
 - 출처에 없는 사실, 수치, 경험담은 만들지 않는다.
+- 출처 제목, 요약, 발행일에 없는 연도나 월을 만들지 않는다.
+- "2024년 기준", "2024년 6월 기준", "2024년부터" 같은 과거 기준일은 출처가 해당 연도를 명시할 때만 유지한다.
 - 본문은 1,300자 이상, ## 헤딩 5개 이상, 표 1개 이상으로 작성한다.
 - 검수 메모에 나온 범용 문장과 AI식 반복 표현은 제거한다.
 - 출처의 고유명사, 수치, 기간, 기관명, 절차를 본문과 표에 반영한다.
@@ -346,6 +353,18 @@ BODY:
         if generic_hits:
             score -= 45
             notes.append("일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.")
+        source_blob = " ".join(
+            f"{source.title} {source.summary} {source.published_at:%Y-%m-%d}" if source.published_at else f"{source.title} {source.summary}"
+            for source in draft.topic.sources
+        )
+        if datetime.now().year >= 2026 and "2024" not in source_blob:
+            stale_year_pattern = (
+                r"2024년\s*(?:0?6월\s*)?"
+                r"(?:기준|현재|최신|공식 자료|공식 안내|신청 전|적용|운영|부터|이후|체결|개최)"
+            )
+            if re.search(stale_year_pattern, combined):
+                score -= 50
+                notes.append("출처에 없는 2024년 기준일이 들어가 최신 글처럼 보이지 않습니다.")
         if draft.topic.category == "핫이슈" and re.search(r"다녀왔|방문했|먹어봤", draft.body_markdown):
             score -= 30
             notes.append("직접 방문한 것처럼 보이는 표현이 있습니다.")
@@ -372,9 +391,7 @@ BODY:
             if self._has_low_information_tech_body(draft.body_markdown):
                 score -= 30
                 notes.append("기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.")
-            source_blob = " ".join(
-                f"{source.title} {source.summary}" for source in draft.topic.sources
-            ).lower()
+            source_blob = source_blob.lower()
             draft_blob = f"{draft.title}\n{draft.body_markdown}".lower()
             if "rivian" in source_blob and re.search(r"\b(carvana|slate auto)\b", draft_blob):
                 score -= 70
@@ -434,6 +451,13 @@ BODY:
             os.getenv("REFINE_LLM_PROVIDER_ORDER", "motif,groq,gemini,openrouter,openai,github"),
         )
         return [item.strip().lower() for item in raw.split(",") if item.strip()]
+
+    @staticmethod
+    def _source_prompt_line(source) -> str:
+        published = ""
+        if source.published_at:
+            published = f" (발행일: {source.published_at:%Y-%m-%d})"
+        return f"- {source.title}{published}: {source.url} ({source.summary[:180]})"
 
     @staticmethod
     def _env_int(name: str, default: int) -> int:
