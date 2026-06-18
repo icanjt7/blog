@@ -1,0 +1,20 @@
+{
+  "run_id": "20260618-183715-d25eb35e",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "robotic-self-driving-toilet-e2979f74",
+      "title": "70억 달러 증액, 미국 DHS 어디에 투자하나?",
+      "keyword": "robotic self driving toilet",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 70억 달러 증액, 미국 DHS 어디에 투자하나?. Keyword: robotic self driving toilet. Concrete visual subject: investment finance growth. Context: ## 미국 DHS 예산 증액, 무엇이 달라지나 최근 미국 국토안보부(DHS)가 70억 달러 추가 예산을 확보하면서 이민 집행, 국경 관리, 감시·사이버안보 기술 투자에 변화가 예상됩니다. DHS는 ICE(이민세관집행국), CBP(국경보호국), TSA(교통보안청), CISA(사이버안보·인프라안보청) 등 여러 핵심 기관을 관리합니다. ## DHS 예산이 집중되는 분야 예산 증액은 단순 행정비를 넘어, 다음과 같은 구체 분야에 쓰입니다. - **이민 집행 강화** ICE와 CBP의 인력 확충, 현장 운영비, 차량·드론 등 이민 단속 장비 확장 (출처: DHS FY2024 예산안) - **첨단 감시 기술 도입** 데이터베이스, 생체정보 인식 시스템, 차량 번호판 인식, CCTV 및 사건 관리 시스템 구축·운영 (출처: DHS 기술 혁신 보고서) - **사이버안보 예산 확대** CISA의 사이버 위협 대응, 인프라 보호, 보안 소프트웨어 및 자동화 시스템 도입 (출처: CISA 공식 홈페이지) - **국경 관리 시스템 업그레이드** 국경 감시용 센서, AI 기반 자동 탐지 기술, 무인 감시 장비 (출처: CBP 신기술 도입 자료) ## 기술과 정책에서 주목할 점 - **감시·데이터 인프라 확장** 예산 증가로 개인 정보와 시민권 논쟁이 심화될 수 있음 - **의회 감독 및 집행 결과** 예산 사용에 대한 의회 감독 장치, 실제 정책 집행 결과. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxpbnZlc3RtZW50JTIwZmluYW5jZSUyMGdyb3d0aHxlbnwxfDB8fHwxNzgxODA4MDgzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
