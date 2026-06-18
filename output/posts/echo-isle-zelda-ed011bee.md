@@ -1,5 +1,5 @@
 ---
-title: Waymo의 가상 운전자, 자율주행 안전 실험
+title: Waymo의 자율주행 기술, Reference Driver 모델로 안전성 평가하기
 date: '2026-06-13T12:07:53.966521'
 category: 기술
 tags:
@@ -10,6 +10,8 @@ tags:
 quality_score: 100.0
 cover_image: https://images.unsplash.com/photo-1762169985718-40919441a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGNhciUyMHNlbnNvciUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4MTM1MjQ4Mnww&ixlib=rb-4.1.0&q=80&w=1080
 cover_image_alt: Waymo의 가상 운전자, 자율주행 안전 실험 — Photo by y mashi on Unsplash
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ![Waymo의 가상 운전자, 자율주행 안전 실험 — Photo by y mashi on Unsplash](https://images.unsplash.com/photo-1762169985718-40919441a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGNhciUyMHNlbnNvciUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4MTM1MjQ4Mnww&ixlib=rb-4.1.0&q=80&w=1080)
@@ -45,4 +47,3 @@ Waymo는 Alphabet 계열 자율주행 기업입니다. 실제 도로에서 모�
 ## 참고한 곳
 
 - [Echo Isle is a pint-sized adventure inspired by classic Zelda](https://www.theverge.com/games/947136/echo-isle-review-pc)
-

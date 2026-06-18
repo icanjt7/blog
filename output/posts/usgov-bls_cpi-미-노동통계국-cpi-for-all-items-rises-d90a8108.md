@@ -1,15 +1,17 @@
 ---
-title: "미 노동통계국, CPI for all items rises"
-date: "2025-12-18T02:18"
-category: "정책"
+title: 미 노동통계국, 11월 소비자 물가지수 상승
+date: 2025-12-18T02:18
+category: 정책
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미 노동통계국"
-  - "정책"
-  - "노동통계국"
-  - "소비자물가"
-cover_image: "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMHBvbGljeSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzgxMzE2MjE4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+- 보도기사
+- 미국정부
+- 미 노동통계국
+- 정책
+- 노동통계국
+- 소비자물가
+cover_image: https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMHBvbGljeSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzgxMzE2MjE4fDA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미 노동통계국가 2025-12-18 공개한 공식 발표를 바탕으로, 한국 독자가 확인할 핵심 맥락을 정리했습니다.
