@@ -1,0 +1,22 @@
+{
+  "run_id": "20260619-213652-61935051",
+  "average_quality": 70.0,
+  "drafts": [
+    {
+      "slug": "nothing-8217-cmf-ram-fff6bcaa",
+      "title": "RAM 가격 폭등에 Nothing CMF 신제품 출시 중단! 소비자 영향은?",
+      "keyword": "Nothing 8217 CMF RAM",
+      "category": "기술",
+      "quality_score": 70.0,
+      "review_notes": [
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 보완 완료",
+        "LLM 2차 보완 실패: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: RAM 가격 폭등에 Nothing CMF 신제품 출시 중단! 소비자 영향은?. Keyword: Nothing 8217 CMF RAM. Concrete visual subject: technology innovation circuit abstract. Context: RAM 가격 상승으로 스마트폰 신제품이 출시되지 않는 상황, 얼마나 심각한 걸까? 2026년 6월 Nothing 공동 창업자 아키스 에반젤리디스(Akis Evangelidis)가 X(구 트위터)를 통해 \"RAM 가격이 감당할 수 없는 수준에 도달해 올해 CMF Phone 후속 모델은 출시하지 않는다\"고 공식 발표했다. Nothing은 2020년대 등장한 영국의 테크 브랜드로, CMF(Colour, Material, Finish) 라인은 합리적인 가격과 독특한 디자인을 내세워 시장에서 입지를 다져왔다. CMF Phone 2 Pro는 Nothing의 대표적인 저가 스마트폰으로, 실사용자를 겨냥한 보급형 제품이다. 이번에 언급된 Nothing 8217 CMF RAM은 Nothing이 2026년 하반기 선보일 예정이던 후속 모델의 내부 코드 네임으로, RAM(임시 저장장치) 가격 폭등이 출시를 직접 막았다. 스마트폰에서 RAM은 앱 실행과 OS 구동에 필수적인 부품으로, 가격 변동이 제품 기획에 큰 영향을 준다. 2026년 상반기 전 세계적으로 RAM 가격이 급등하며, Nothing뿐 아니라 여러 스마트폰 제조사들이 저가형 모델 출시를 취소하거나 지연했다. 아키스 에반젤리디스는 \"메모리 가격이 지금과 같은 상황에서는, 다음 CMF Phone을 만들 수 없다\"고 밝혔다. RAM 가격 폭등으로 Nothing 8217 CMF RAM 출시가 중단되. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1766203551890-2664b619042b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxOTA1MjY3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
