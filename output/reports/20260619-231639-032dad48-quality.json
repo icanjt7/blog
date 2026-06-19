@@ -1,0 +1,20 @@
+{
+  "run_id": "20260619-231639-032dad48",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "nothing-8217-cmf-ram-fff6bcaa",
+      "title": "RAM 가격 급등으로 Nothing CMF폰 올해 출시 취소",
+      "keyword": "Nothing 8217 CMF RAM",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: RAM 가격 급등으로 Nothing CMF폰 올해 출시 취소. Keyword: Nothing 8217 CMF RAM. Concrete visual subject: technology innovation circuit abstract. Context: ## Nothing CMF폰 후속 모델 출시 취소 공식 발표 2026년 6월 19일, 영국 기반 스마트폰 브랜드 Nothing의 공동설립자 Akis Evangelidis는 X(구 트위터)에 CMF Phone 후속 모델의 올해 출시 취소를 공식적으로 알렸다. Evangelidis는 RAM 가격 폭등 현상을 ‘RAMageddon’이라 표현하며, 글로벌 공급망 변화와 원자재 가격 상승이 중저가 스마트폰 시장에 심각한 영향을 주고 있음을 강조했다. ## RAM 가격 폭등, Nothing CMF폰 시장 전략에 직접적 영향 Nothing의 CMF 시리즈는 인도와 유럽 일부 지역에서 가성비를 중시하는 소비자층을 겨냥한 보급형 스마트폰 라인업이다. 이번 취소 결정의 핵심 원인은 RAM 가격의 급격한 상승이다. CMF Phone 2 Pro 후속 모델은 올해 출시가 예정되어 있었으나, RAM 가격 부담이 심화됨에 따라 출시 계획이 전면 중단되었다. Evangelidis는 공급사인 삼성, 마이크론 등 글로벌 1티어 업체들의 RAM 가격 인상이 직접적인 부담으로 작용했다고 밝혔다. ## 취소 모델 및 주요 시장 영향 취소된 모델은 CMF Phone 2 Pro 후속 제품으로, 인도와 유럽 일부 지역에서의 출시가 계획되어 있었다. 기존 CMF Phone 2 Pro 모델은 6GB, 8GB RAM을 탑재하고 약 250달러 가격대로 판매되고 있으나, 후속 모델은 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1766203551890-2664b619042b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxOTExMjY4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
