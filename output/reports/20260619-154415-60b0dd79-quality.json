@@ -1,0 +1,22 @@
+{
+  "run_id": "20260619-154415-60b0dd79",
+  "average_quality": 51.0,
+  "drafts": [
+    {
+      "slug": "nts-radio-player-22ed7a1b",
+      "title": "NTS Radio Player로 집 Hi-Fi 업그레이드하는 5가지 방법",
+      "keyword": "NTS Radio Player",
+      "category": "기술",
+      "quality_score": 51.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: NTS Radio Player로 집 Hi-Fi 업그레이드하는 5가지 방법. Keyword: NTS Radio Player. Concrete visual subject: technology innovation circuit abstract. Context: 토요일 저녁, 익숙한 음악에 지루함을 느낀 적 있으신가요? 알고리즘 추천에서 벗어나 독특한 믹스와 전 세계 DJ 방송을 집에서 즐기고 싶다면 NTS Radio Player가 한 가지 해답이 될 수 있습니다. **NTS Radio Player란?** NTS Radio는 2011년 런던에서 시작된 온라인 라디오 플랫폼으로, 장르에 얽매이지 않는 믹스와 독립 음악, 다양한 DJ 방송으로 유명합니다. 최근 스웨덴 오디오 브랜드 아토네모(Atonemo)와 협력해 전용 플레이어를 출시했습니다. 이 기기는 NTS Radio의 콘텐츠를 집안 Hi-Fi 오디오에 손쉽게 연결해 들을 수 있도록 설계되었습니다. **주요 특징 체크리스트 (2026-06-19, The Verge 출처 기준)** - 연결 방식: RCA, 옵티컬, Wi-Fi 등 다양한 아날로그/디지털 연결 지원 - 방송 콘텐츠: NTS Radio의 실시간 방송, 장르 믹스, DJ 프로그램 등 전용 스트리밍 - 서비스 호환성: AirPlay 2, Google Cast, Spotify Connect, Tidal Connect 등 외부 스트리밍 서비스 연결 가능 - 조작 방법: 전용 앱이나 스마트폰을 통한 컨트롤 (기기 자체 조작 버튼 최소화) - 스테레오/스피커 호환: 대부분의 Hi-Fi 시스템이나 일반 스피커와 연결 가능 - 가격대: 아토네모의 프리미엄 오디오 시장 가격에 준함 - 공식 판매:. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1749006590475-4592a5dbf99f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxODg0MTAzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
