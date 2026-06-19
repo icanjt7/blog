@@ -160,7 +160,9 @@ jobs:
             args+=(--dry-run)
           fi
           args+=(--prefer-rss)
-          args+=(--rewrite-titles)
+          if [ "${INPUT_DRY_RUN}" != "true" ]; then
+            args+=(--rewrite-titles)
+          fi
           batch_count="${INPUT_BATCH_COUNT}"
           if [ "${batch_count}" -lt 1 ]; then
             batch_count=1
