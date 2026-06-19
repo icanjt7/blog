@@ -38,6 +38,17 @@ class BlogPipeline:
 
     def run(self, count: int = 5, dry_run: bool = False, min_quality: float = 65) -> PipelineResult:
         run_id = self.store.new_run(count=count, dry_run=dry_run, publisher=self.settings.publisher)
+        if count <= 0:
+            manifest_path = self.store.write_manifest(run_id, [], [], [])
+            report_path = self.reports.write_quality_report(run_id, [])
+            self.store.finish_run(run_id, "completed")
+            return PipelineResult(
+                run_id=run_id,
+                drafts=[],
+                publish_results=[],
+                manifest_path=str(manifest_path),
+                report_path=str(report_path),
+            )
         # 여유분 포함해서 스카우트. 예약 실행에서는 외부 API/LLM 지연이 누적되지 않도록
         # 환경변수로 후보 수를 제한한다.
         multiplier = self._env_int("BLOG_CANDIDATE_MULTIPLIER", 3, minimum=1)
