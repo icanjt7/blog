@@ -42,7 +42,7 @@ jobs:
       - name: Install
         run: pip install -e .
 
-      - name: Generate posts and publish to WordPress
+      - name: Generate posts and publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
@@ -73,9 +73,14 @@ jobs:
           WORDPRESS_APP_PASSWORD: ${{ secrets.WORDPRESS_APP_PASSWORD }}
           WORDPRESS_STATUS: ${{ github.event.inputs.wordpress_status || vars.WORDPRESS_STATUS || 'publish' }}
         run: |
+          publisher="both"
+          if [ -z "${WORDPRESS_URL}" ] || [ -z "${WORDPRESS_USERNAME}" ] || [ -z "${WORDPRESS_APP_PASSWORD}" ]; then
+            publisher="markdown"
+            echo "::notice::WordPress secrets are incomplete; Hybrid publish will generate markdown and deploy GitHub Pages only."
+          fi
           python -m blog_agent.cli run \
             --count "${{ github.event.inputs.count || vars.HYBRID_POST_COUNT || '1' }}" \
-            --publisher both \
+            --publisher "${publisher}" \
             --min-quality "${{ github.event.inputs.min_quality || vars.HYBRID_MIN_QUALITY || '65' }}" \
             --require-publish-success
 

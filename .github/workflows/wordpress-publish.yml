@@ -73,6 +73,14 @@ jobs:
           WORDPRESS_APP_PASSWORD: ${{ secrets.WORDPRESS_APP_PASSWORD }}
           WORDPRESS_STATUS: ${{ github.event.inputs.status || vars.WORDPRESS_STATUS || 'publish' }}
         run: |
+          if [ -z "${WORDPRESS_URL}" ] || [ -z "${WORDPRESS_USERNAME}" ] || [ -z "${WORDPRESS_APP_PASSWORD}" ]; then
+            echo "::notice::WordPress publish skipped because WORDPRESS_URL, WORDPRESS_USERNAME, or WORDPRESS_APP_PASSWORD is missing."
+            mkdir -p output/reports
+            cat > output/reports/wordpress-publish-skipped.json <<'JSON'
+          {"ok": true, "skipped": true, "reason": "missing WordPress secrets"}
+          JSON
+            exit 0
+          fi
           python -m blog_agent.cli run \
             --count "${{ github.event.inputs.count || vars.WORDPRESS_POST_COUNT || '1' }}" \
             --publisher wordpress \

@@ -9,14 +9,17 @@ from __future__ import annotations
 import argparse
 import hashlib
 import html
+import os
 import re
 import sys
 import time
 from dataclasses import dataclass
 from datetime import datetime
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import urljoin
 
+import feedparser
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -40,7 +43,9 @@ from blog_agent.images import ImageAgent  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://www.korea.kr"
 LIST_URL = f"{BASE}/briefing/pressReleaseList.do"
-TIMEOUT = 20
+PRESS_RSS_URL = f"{BASE}/rss/pressrelease.xml"
+TIMEOUT = float(os.getenv("KOREA_POLICY_REQUEST_TIMEOUT", "8"))
+ATTEMPTS = max(1, int(os.getenv("KOREA_POLICY_REQUEST_ATTEMPTS", "2")))
 USER_AGENT = "Mozilla/5.0 (compatible; BriefWaveKoreaPolicyImporter/1.0)"
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": USER_AGENT})
@@ -59,23 +64,40 @@ class Agency:
     code: str
     name: str
     section: str
+    rss_url: str = ""
 
+
+AGENCY_RSS_BY_CODE = {
+    "A00001": f"{BASE}/rss/dept_moel.xml",
+    "A00002": f"{BASE}/rss/dept_moe.xml",
+    "A00005": f"{BASE}/rss/dept_mnd.xml",
+    "A00006": f"{BASE}/rss/dept_molit.xml",
+    "A00009": f"{BASE}/rss/dept_mcst.xml",
+    "A00012": f"{BASE}/rss/dept_mw.xml",
+    "A00013": f"{BASE}/rss/dept_mogef.xml",
+    "A00033": f"{BASE}/rss/dept_msit.xml",
+    "A00038": f"{BASE}/rss/dept_mods.xml",
+    "A00039": f"{BASE}/rss/dept_moip.xml",
+    "B00022": f"{BASE}/rss/dept_nfa.xml",
+    "B00023": f"{BASE}/rss/dept_kdca.xml",
+    "C00012": f"{BASE}/rss/dept_nssc.xml",
+}
 
 FALLBACK_AGENCIES = (
-    Agency("A00001", "고용노동부", "부처"),
-    Agency("A00002", "교육부", "부처"),
+    Agency("A00001", "고용노동부", "부처", AGENCY_RSS_BY_CODE["A00001"]),
+    Agency("A00002", "교육부", "부처", AGENCY_RSS_BY_CODE["A00002"]),
     Agency("A00004", "국무조정실", "부처"),
-    Agency("A00005", "국방부", "부처"),
-    Agency("A00006", "국토교통부", "부처"),
-    Agency("A00009", "문화체육관광부", "부처"),
-    Agency("A00012", "보건복지부", "부처"),
-    Agency("A00013", "성평등가족부", "부처"),
-    Agency("A00033", "과학기술정보통신부", "부처"),
-    Agency("A00038", "국가데이터처", "부처"),
-    Agency("A00039", "지식재산처", "부처"),
-    Agency("B00022", "소방청", "청"),
-    Agency("B00023", "질병관리청", "청"),
-    Agency("C00012", "원자력안전위원회", "위원회"),
+    Agency("A00005", "국방부", "부처", AGENCY_RSS_BY_CODE["A00005"]),
+    Agency("A00006", "국토교통부", "부처", AGENCY_RSS_BY_CODE["A00006"]),
+    Agency("A00009", "문화체육관광부", "부처", AGENCY_RSS_BY_CODE["A00009"]),
+    Agency("A00012", "보건복지부", "부처", AGENCY_RSS_BY_CODE["A00012"]),
+    Agency("A00013", "성평등가족부", "부처", AGENCY_RSS_BY_CODE["A00013"]),
+    Agency("A00033", "과학기술정보통신부", "부처", AGENCY_RSS_BY_CODE["A00033"]),
+    Agency("A00038", "국가데이터처", "부처", AGENCY_RSS_BY_CODE["A00038"]),
+    Agency("A00039", "지식재산처", "부처", AGENCY_RSS_BY_CODE["A00039"]),
+    Agency("B00022", "소방청", "청", AGENCY_RSS_BY_CODE["B00022"]),
+    Agency("B00023", "질병관리청", "청", AGENCY_RSS_BY_CODE["B00023"]),
+    Agency("C00012", "원자력안전위원회", "위원회", AGENCY_RSS_BY_CODE["C00012"]),
 )
 
 
@@ -90,7 +112,7 @@ class ListItem:
 
 def request(url: str, *, params: dict[str, str] | None = None) -> str:
     last_error: Exception | None = None
-    for attempt in range(3):
+    for attempt in range(ATTEMPTS):
         try:
             resp = SESSION.get(url, params=params, timeout=TIMEOUT)
             resp.raise_for_status()
@@ -98,7 +120,7 @@ def request(url: str, *, params: dict[str, str] | None = None) -> str:
             return resp.text
         except requests.RequestException as exc:
             last_error = exc
-            if attempt < 2:
+            if attempt < ATTEMPTS - 1:
                 time.sleep(1.5 * (attempt + 1))
     raise RuntimeError(f"request failed: {url}") from last_error
 
@@ -139,7 +161,7 @@ def extract_agencies(page: str) -> list[Agency]:
             if not name or code in seen:
                 continue
             seen.add(code)
-            agencies.append(Agency(code=code, name=name, section=section))
+            agencies.append(Agency(code=code, name=name, section=section, rss_url=AGENCY_RSS_BY_CODE.get(code, "")))
     return agencies
 
 
@@ -207,6 +229,68 @@ def agency_items(
                 return items
         if "list_type" not in page:
             break
+    return items
+
+
+def _rss_date(entry) -> str:
+    raw = entry.get("published") or entry.get("updated") or ""
+    if raw:
+        try:
+            return parsedate_to_datetime(raw).date().isoformat()
+        except (TypeError, ValueError):
+            pass
+    parsed = entry.get("published_parsed") or entry.get("updated_parsed")
+    if parsed:
+        return datetime(*parsed[:6]).date().isoformat()
+    return datetime.now().date().isoformat()
+
+
+def _rss_agency_from_title(title: str) -> tuple[str, str]:
+    match = re.match(r"\s*\[([^\]]+)\]\s*(.+)", title)
+    if not match:
+        return "", clean_text(html.unescape(title))
+    return clean_text(match.group(1)), clean_text(html.unescape(match.group(2)))
+
+
+def rss_agency_items(
+    agency: Agency,
+    limit: int,
+    start_date: str = "2025-01-01",
+    end_date: str | None = None,
+) -> list[ListItem]:
+    rss_urls = [url for url in (agency.rss_url, PRESS_RSS_URL) if url]
+    start = datetime.fromisoformat(start_date).date()
+    end = datetime.fromisoformat(end_date or datetime.now().strftime("%Y-%m-%d")).date()
+    items: list[ListItem] = []
+    seen: set[str] = set()
+    for rss_url in rss_urls:
+        try:
+            parsed = feedparser.parse(request(rss_url).encode("utf-8"))
+        except Exception as exc:
+            print(f"  ! RSS 실패: {rss_url} ({exc})")
+            continue
+        for entry in parsed.entries:
+            link = entry.get("link", "")
+            if "pressReleaseView.do" not in link or link in seen:
+                continue
+            raw_title = clean_text(html.unescape(entry.get("title", "")))
+            prefixed_agency, title = _rss_agency_from_title(raw_title)
+            if prefixed_agency and prefixed_agency != agency.name:
+                continue
+            if not prefixed_agency and rss_url == PRESS_RSS_URL and agency.name not in raw_title:
+                continue
+            date = _rss_date(entry)
+            try:
+                item_date = datetime.fromisoformat(date).date()
+            except ValueError:
+                item_date = datetime.now().date()
+            if item_date < start or item_date > end:
+                continue
+            lead = html_to_text(entry.get("summary", "") or entry.get("description", ""))
+            seen.add(link)
+            items.append(ListItem(title=title, date=date, agency=agency.name, url=link, lead=lead))
+            if len(items) >= limit:
+                return items
     return items
 
 
@@ -290,6 +374,7 @@ def main() -> None:
     parser.add_argument("--new-only", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--rewrite-titles", action="store_true", help="LLM으로 제목과 본문 품질을 보강")
+    parser.add_argument("--prefer-rss", action="store_true", help="HTML 기관별 목록보다 RSS를 먼저 사용")
     args = parser.parse_args()
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -332,13 +417,26 @@ def main() -> None:
                 if args.new_only
                 else max(args.per_agency * 3, args.per_agency + 8)
             )
-            items = agency_items(
-                agency,
-                item_limit,
-                scan_pages=args.scan_pages,
-                start_date=args.start_date,
-                end_date=end_date,
-            )
+            items: list[ListItem] = []
+            if args.prefer_rss:
+                items = rss_agency_items(agency, item_limit, start_date=args.start_date, end_date=end_date)
+                if items:
+                    print(f"  RSS 목록 사용: {len(items)}건")
+            if not items:
+                try:
+                    items = agency_items(
+                        agency,
+                        item_limit,
+                        scan_pages=args.scan_pages,
+                        start_date=args.start_date,
+                        end_date=end_date,
+                    )
+                except Exception:
+                    items = rss_agency_items(agency, item_limit, start_date=args.start_date, end_date=end_date)
+                    if items:
+                        print(f"  HTML 목록 실패 후 RSS fallback 사용: {len(items)}건")
+                    else:
+                        raise
         except Exception as exc:
             errors.append(f"{agency.name} 목록 실패: {exc}")
             print(f"  x 목록 실패: {exc}")
