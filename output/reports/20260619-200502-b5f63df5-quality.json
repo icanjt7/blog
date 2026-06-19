@@ -1,0 +1,21 @@
+{
+  "run_id": "20260619-200502-b5f63df5",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "nasa-eric-schmidt-8217-866b9f5b",
+      "title": "2028년 화성 임무, NASA가 Eric Schmidt를 선택한 이유 5가지",
+      "keyword": "NASA Eric Schmidt 8217",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2028년 화성 임무, NASA가 Eric Schmidt를 선택한 이유 5가지. Keyword: NASA Eric Schmidt 8217. Concrete visual subject: technology innovation circuit abstract. Context: 34억 km. NASA가 2028년 화성 Aeolus 임무에서 도달해야 할 거리다. 이번 임무의 수송은 Relativity Space가 담당하며, 이 회사의 CEO는 구글 전임 회장 Eric Schmidt다. Relativity Space는 3D 프린팅 기반 로켓 부품 생산으로 유명하다. NASA는 이 혁신적 방식 덕분에 더 빠르고 유연한 임무 준비가 가능하다고 평가했다. ### Eric Schmidt와 Relativity Space Eric Schmidt는 구글의 전 CEO이자 회장으로, 현재 첨단 기술 기업 투자와 자문을 맡고 있다. 최근에는 우주 산업 투자자로 주목받고 있다. Relativity Space는 화성 임무를 위한 우주선 제작, 발사, 크루즈 운용까지 전담하며, 단순한 로켓 제작을 넘어선 솔루션을 제공한다. ### NASA의 민간 파트너십 확대 NASA는 기술적 리스크와 비용을 줄이기 위해 SpaceX, Blue Origin 등 기존 우주 기업 외에도 다양한 민간 기업과 협력한다. 이번 Relativity Space 선정으로 기술적 다양성과 민간 혁신이 한층 확대됐다. ### Aeolus 임무의 특징 Aeolus는 화성 대기 관측용 특수 페이로드로, 기존 임무보다 가볍고 자동화된 분석 기능을 갖췄다. 이 페이로드를 안전하게 운송하고 장시간 운용할 수 있는 민간 기술이 요구되었다. ### 기술과 운용 측면 변화 Rela. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxODk5NzMzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
