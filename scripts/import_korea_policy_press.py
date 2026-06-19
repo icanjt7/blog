@@ -448,16 +448,20 @@ def main() -> None:
                 print(f"  = 기존 글 건너뜀: {item.title[:45]}")
                 continue
             try:
+                if args.dry_run:
+                    print(f"  ? {item.date} {item.title[:60]}")
+                    seq += 1
+                    count += 1
+                    if count >= args.per_agency:
+                        break
+                    continue
                 release = release_from_item(item)
                 if writer:
                     _enrich_release(release, writer)
                 prefix = prefix_for(agency)
-                if args.dry_run:
-                    print(f"  ? {release.date} {release.title[:60]}")
-                else:
-                    path = write_post(release, prefix, seq, image_agent=image_agent)
-                    written.append(path)
-                    print(f"  + {release.date} {release.title[:55]}")
+                path = write_post(release, prefix, seq, image_agent=image_agent)
+                written.append(path)
+                print(f"  + {release.date} {release.title[:55]}")
                 seq += 1
                 count += 1
                 if max_total and len(written) >= max_total:
