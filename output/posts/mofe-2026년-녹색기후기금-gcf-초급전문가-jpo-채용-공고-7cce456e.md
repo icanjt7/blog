@@ -1,15 +1,17 @@
 ---
-title: "2026년 녹색기후기금(GCF) 초급전문가(JPO) 채용 공고"
-date: "2026-06-11T00:26"
-category: "생활"
+title: 2026년 녹색기후기금 초급전문가 채용 공고 내용 정리
+date: 2026-06-11T00:26
+category: 생활
 tags:
-  - "보도기사"
-  - "재정경제부"
-  - "생활"
+- 보도기사
+- 재정경제부
+- 생활
 quality_score: 92.0
-cover_image: "https://images.unsplash.com/photo-1545121436-87364761152c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxjbGltYXRlJTIwZW52aXJvbm1lbnQlMjBncmVlbnxlbnwxfDB8fHwxNzgxMzQ5OTM2fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "2026년 녹색기후기금(GCF) 초급전문가(JPO) 채용 공고 — Photo by Ed van duijn on Unsplash"
-author: "재정경제부"
+cover_image: https://images.unsplash.com/photo-1545121436-87364761152c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxjbGltYXRlJTIwZW52aXJvbm1lbnQlMjBncmVlbnxlbnwxfDB8fHwxNzgxMzQ5OTM2fDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 2026년 녹색기후기금(GCF) 초급전문가(JPO) 채용 공고 — Photo by Ed van duijn on Unsplash
+author: 재정경제부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 재정경제부가 2026-06-11 공개한 자료를 바탕으로 2026년 녹색기후기금(GCF) 초급전문가(JPO) 채용 공고의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

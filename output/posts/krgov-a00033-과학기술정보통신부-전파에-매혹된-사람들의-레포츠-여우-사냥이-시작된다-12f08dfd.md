@@ -1,15 +1,17 @@
 ---
-title: "전파에 매혹된 사람들의 레포츠, \"여우 사냥이 시작된다!!\""
-date: "2026-06-12T00:02"
-category: "기술"
+title: 전파 탐지 레포츠, 여우 사냥 전국대회 개최
+date: 2026-06-12T00:02
+category: 기술
 tags:
-  - "보도기사"
-  - "과학기술정보통신부"
-  - "기술"
+- 보도기사
+- 과학기술정보통신부
+- 기술
 quality_score: 92.0
-cover_image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxMzA4NjkwfDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "전파에 매혹된 사람들의 레포츠, \"여우 사냥이 시작된다!!\""
-author: "과학기술정보통신부"
+cover_image: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxMzA4NjkwfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 전파에 매혹된 사람들의 레포츠, "여우 사냥이 시작된다!!"
+author: 과학기술정보통신부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 과학기술정보통신부가 2026-06-12 공개한 자료를 바탕으로 전파에 매혹된 사람들의 레포츠, "여우 사냥이 시작된다!!"의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

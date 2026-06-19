@@ -1,15 +1,17 @@
 ---
-title: "제269차 대외경제장관회의 개최"
-date: "2026-06-10T00:32"
-category: "정책"
+title: 제269차 대외경제장관회의 주요 내용
+date: 2026-06-10T00:32
+category: 정책
 tags:
-  - "보도기사"
-  - "재정경제부"
-  - "정책"
+- 보도기사
+- 재정경제부
+- 정책
 quality_score: 92.0
-cover_image: "https://images.unsplash.com/photo-1740933084056-078fac872bff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxjb25mZXJlbmNlJTIwbWVldGluZyUyMHRhYmxlfGVufDF8MHx8fDE3ODE2MTQzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "제269차 대외경제장관회의 개최 — Photo by Colin White on Unsplash"
-author: "재정경제부"
+cover_image: https://images.unsplash.com/photo-1740933084056-078fac872bff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxjb25mZXJlbmNlJTIwbWVldGluZyUyMHRhYmxlfGVufDF8MHx8fDE3ODE2MTQzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 제269차 대외경제장관회의 개최 — Photo by Colin White on Unsplash
+author: 재정경제부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 재정경제부가 2026-06-10 공개한 자료를 바탕으로 제269차 대외경제장관회의 개최의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

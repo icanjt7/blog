@@ -1,15 +1,18 @@
 ---
-title: "‘태강릉 세계유산영향평가’ 대비 국제 전문가들과 부처 합동 기술 자문 실시"
-date: "2026-06-04T00:59"
-category: "생활"
+title: 국가유산청, 태강릉 세계유산영향평가 기술 자문 실시
+date: 2026-06-04T00:59
+category: 생활
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "생활"
+- 보도기사
+- 국가유산청
+- 생활
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=a71f5cabdb394bd4a15d267704d6cac9"
-cover_image_alt: "3. 세계유산영향평가 대비 기술 자문 위해 태릉 방문한 아나톨 우데이-디트하트 (가운데, 유네스코 세계유산센터), 리처드 맥케이 (오른쪽, 이코모스) (‘26.6.1, 태릉)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=a71f5cabdb394bd4a15d267704d6cac9
+cover_image_alt: 3. 세계유산영향평가 대비 기술 자문 위해 태릉 방문한 아나톨 우데이-디트하트 (가운데, 유네스코 세계유산센터), 리처드
+  맥케이 (오른쪽, 이코모스) (‘26.6.1, 태릉)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-06-04 공개한 자료를 바탕으로 ‘태강릉 세계유산영향평가’ 대비 국제 전문가들과 부처 합동 기술 자문 실시의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

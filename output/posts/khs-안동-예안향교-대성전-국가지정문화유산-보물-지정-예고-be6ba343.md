@@ -1,14 +1,16 @@
 ---
-title: "「안동 예안향교 대성전」 국가지정문화유산 보물 지정 예고"
-date: "2026-06-05T00:13"
-category: "정책"
+title: 안동 예안향교 대성전 보물 지정 예정
+date: 2026-06-05T00:13
+category: 정책
 tags:
-  - "보도기사"
-  - "국가유산청"
+- 보도기사
+- 국가유산청
 quality_score: 90.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=029e194f7e29466193934c8f9ad8c629"
-cover_image_alt: "안동 예안향교 대성전 정면 사진"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=029e194f7e29466193934c8f9ad8c629
+cover_image_alt: 안동 예안향교 대성전 정면 사진
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-06-05 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. 원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다.
