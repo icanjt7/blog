@@ -1,5 +1,5 @@
 ---
-title: 미 DHS 700억 달러 증액, 어디에 쓰이나
+title: 미국 국토안보부 예산 증액과 기술 영향
 date: '2026-06-12T10:45:06.021511'
 category: 기술
 tags:
@@ -11,6 +11,8 @@ tags:
 quality_score: 100.0
 cover_image: https://images.unsplash.com/photo-1749006590324-d6b2e90ab1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxMTY2MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080
 cover_image_alt: 미 DHS 700억 달러 증액, 어디에 쓰이나 — Photo by Omar:. Lopez-Rincon on Unsplash
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ![미 DHS 700억 달러 증액, 어디에 쓰이나 — Photo by Omar:. Lopez-Rincon on Unsplash](https://images.unsplash.com/photo-1749006590324-d6b2e90ab1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxMTY2MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080)
@@ -46,4 +48,3 @@ DHS는 미국 국토안보부로 ICE, CBP, TSA, CISA 같은 기관을 거느립�
 ## 참고한 곳
 
 - [Logitech’s awesome MX Master 3S mouse drops to under $100](https://www.theverge.com/gadgets/948204/logitech-mx-master-3s-mouse-sale-deal)
-

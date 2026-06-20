@@ -1,15 +1,17 @@
 ---
-title: "미국 백악관, Presidential Message on"
-date: "2026-05-24T01:48"
-category: "정치"
+title: 미국 백악관, 오순절 대통령 메시지 발표
+date: 2026-05-24T01:48
+category: 정치
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미국 백악관"
-  - "정치"
-  - "백악관"
-  - "브리핑"
-cover_image: "https://images.unsplash.com/photo-1765151462977-758b36c25b90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgxMjEwMzgyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+- 보도기사
+- 미국정부
+- 미국 백악관
+- 정치
+- 백악관
+- 브리핑
+cover_image: https://images.unsplash.com/photo-1765151462977-758b36c25b90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgxMjEwMzgyfDA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미국 백악관가 2026-05-24 공개한 공식 발표를 바탕으로, 한국 독자가 확인할 핵심 맥락을 정리했습니다.

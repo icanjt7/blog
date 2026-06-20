@@ -1,15 +1,17 @@
 ---
-title: "미 노동통계국, CPI for all items rises"
-date: "2025-07-15T02:22"
-category: "정책"
+title: 미국 노동통계국, 소비자물가지수 6월 0.3% 상승
+date: 2025-07-15T02:22
+category: 정책
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미 노동통계국"
-  - "정책"
-  - "노동통계국"
-  - "소비자물가"
-cover_image: "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODEzMTYyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+- 보도기사
+- 미국정부
+- 미 노동통계국
+- 정책
+- 노동통계국
+- 소비자물가
+cover_image: https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODEzMTYyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미 노동통계국가 2025-07-15 공개한 공식 발표를 바탕으로, 한국 독자가 확인할 핵심 맥락을 정리했습니다.

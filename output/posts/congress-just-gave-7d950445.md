@@ -1,5 +1,5 @@
 ---
-title: "미 DHS 700억 달러 증액, 어디에 쓰이나"
+title: 미국 국토안보부에 700억 달러 추가 예산 배정
 date: '2026-06-10T04:52:58.604209'
 category: 정책
 tags:
@@ -10,7 +10,9 @@ tags:
 - 예산
 quality_score: 94.0
 cover_image: https://images.unsplash.com/photo-1779788131533-3b044ac53911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwOTMwOTcyfDA&ixlib=rb-4.1.0&q=80&w=1080
-cover_image_alt: "US DHS funding and enforcement technology — Photo by Victor on Unsplash"
+cover_image_alt: US DHS funding and enforcement technology — Photo by Victor on Unsplash
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ![US DHS funding and enforcement technology — Photo by Victor on Unsplash](https://images.unsplash.com/photo-1779788131533-3b044ac53911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwOTMwOTcyfDA&ixlib=rb-4.1.0&q=80&w=1080)

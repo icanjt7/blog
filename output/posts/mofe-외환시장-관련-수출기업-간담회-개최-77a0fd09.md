@@ -1,15 +1,17 @@
 ---
-title: "외환시장 관련 수출기업 간담회 개최"
-date: "2026-06-11T00:29"
-category: "정책"
+title: 수출기업 간담회에서 외환시장 변동성 완화 논의
+date: 2026-06-11T00:29
+category: 정책
 tags:
-  - "보도기사"
-  - "재정경제부"
-  - "정책"
+- 보도기사
+- 재정경제부
+- 정책
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxnbG9iYWwlMjB0cmFkZSUyMGV4cG9ydCUyMHNoaXBwaW5nfGVufDF8MHx8fDE3ODEzNTAwMTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "외환시장 관련 수출기업 간담회 개최 — Photo by Bent Van Aeken on Unsplash"
-author: "재정경제부"
+cover_image: https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxnbG9iYWwlMjB0cmFkZSUyMGV4cG9ydCUyMHNoaXBwaW5nfGVufDF8MHx8fDE3ODEzNTAwMTh8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 외환시장 관련 수출기업 간담회 개최 — Photo by Bent Van Aeken on Unsplash
+author: 재정경제부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 재정경제부가 2026-06-11 공개한 자료를 바탕으로 외환시장 관련 수출기업 간담회 개최의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

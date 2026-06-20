@@ -1,15 +1,17 @@
 ---
-title: "「고래뼈에 박힌 사슴뿔 작살촉」 국가민속문화유산 지정 예고"
-date: "2026-06-08T00:54"
-category: "핫이슈"
+title: 신석기 울산 고래뼈·사슴뿔 작살촉, 국가민속문화유산 지정 예고
+date: 2026-06-08T00:54
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=c8b8b3e2f7a24c21b4ea8537861ed7a3"
-cover_image_alt: "고래뼈(어깨뼈)에 박힌 사슴뿔 작살촉(사진제공_울산광역시)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=c8b8b3e2f7a24c21b4ea8537861ed7a3
+cover_image_alt: 고래뼈(어깨뼈)에 박힌 사슴뿔 작살촉(사진제공_울산광역시)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-06-08 공개한 자료를 바탕으로 「고래뼈에 박힌 사슴뿔 작살촉」 국가민속문화유산 지정 예고의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

@@ -1,15 +1,17 @@
 ---
-title: "「한국의 갯벌 2단계」 유네스코 세계유산 ‘등재 권고’"
-date: "2026-06-05T00:21"
-category: "정책"
+title: 한국의 갯벌, 유네스코 세계유산 확대 등재 권고 받다
+date: 2026-06-05T00:21
+category: 정책
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "정책"
+- 보도기사
+- 국가유산청
+- 정책
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=e1732e761e90425b9382e252edae81d5"
-cover_image_alt: "「한국의 갯벌 2단계」 확대 등재 구성요소 중 하나인 무안갯벌 사진((재)한국의갯벌세계유산등재추진단 제공)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=e1732e761e90425b9382e252edae81d5
+cover_image_alt: 「한국의 갯벌 2단계」 확대 등재 구성요소 중 하나인 무안갯벌 사진((재)한국의갯벌세계유산등재추진단 제공)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-06-05 공개한 자료를 바탕으로 「한국의 갯벌 2단계」 유네스코 세계유산 ‘등재 권고’의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
