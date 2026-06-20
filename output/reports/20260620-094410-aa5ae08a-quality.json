@@ -1,0 +1,22 @@
+{
+  "run_id": "20260620-094410-aa5ae08a",
+  "average_quality": 51.0,
+  "drafts": [
+    {
+      "slug": "switchbot-standing-circulator-fan-e055d494",
+      "title": "SwitchBot Standing Circulator Fan 핵심 기능과 실제 사용 정보",
+      "keyword": "SwitchBot Standing Circulator Fan",
+      "category": "기술",
+      "quality_score": 51.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: SwitchBot Standing Circulator Fan 핵심 기능과 실제 사용 정보. Keyword: SwitchBot Standing Circulator Fan. Concrete visual subject: technology innovation circuit abstract. Context: ## SwitchBot Standing Circulator Fan 주요 사양과 특징 SwitchBot Standing Circulator Fan은 스마트홈 IoT 전문 브랜드 SwitchBot에서 출시한 배터리 기반 서큘레이터다. 공식 안내에 따르면, 7,000mAh 리튬 배터리로 최대 28시간 무선 사용이 가능하며, USB-C 포트로 4~5시간 만에 완충된다. 좌우 115도, 상하 105도의 3D 회전 기능을 지원해 공간 전체의 공기 순환을 도와준다. Bluetooth를 통한 SwitchBot 앱 연동으로 스마트폰에서 제어할 수 있으며, 온도·습도 센서와 연동한 자동화 규칙 설정이 가능하다. ## 스마트 자동화와 앱 연동 기능 SwitchBot 앱을 활용하면 온도 센서와 연동하여 실내 온도가 특정 기준을 초과할 때 자동으로 팬이 작동하도록 설정할 수 있다. 예를 들어, 실내 온도가 28도를 넘으면 자동으로 서큘레이터가 켜지도록 규칙을 만들 수 있다. 앱에서는 각도, 풍속, 타이머 등 다양한 기능을 직관적으로 조작할 수 있다. Bluetooth 기반 연결이므로 연결 거리는 공식 안내 기준으로 제한적이다. ## 무선 이동성과 충전 방식 무선 이동이 가능하다는 점은 기존 서큘레이터와 가장 큰 차별점이다. 배터리 내장으로 방 이동이나 청소 시 전원 케이블을 신경 쓸 필요가 없으며, USB-C 포트로 충전이 가능해 돼지코 없이 다양한 환경에. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1749006590324-d6b2e90ab1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxOTQ4ODk4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
