@@ -1,0 +1,21 @@
+{
+  "run_id": "20260620-044228-52f08100",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "nts-radio-player-ea8ababf",
+      "title": "NTS Radio Player: 하이파이 오디오로 즐기는 192kHz 스트리밍",
+      "keyword": "NTS Radio Player",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: NTS Radio Player: 하이파이 오디오로 즐기는 192kHz 스트리밍. Keyword: NTS Radio Player. Concrete visual subject: technology innovation circuit abstract. Context: 최대 192kHz, 24비트 음질. 이 수치만으로 NTS Radio Player는 기존 인터넷 라디오의 한계를 뛰어넘는다. 2026년 6월 19일 기준, NTS Radio와 스웨덴 오디오 전문 기업 아토네모(Atonemo)가 협업해 공개한 이 기기는, 거실 스테레오나 하이파이 오디오 시스템에 바로 연결해 NTS Radio의 독창적인 믹스와 라이브 방송을 고음질로 스트리밍할 수 있다. NTS Radio는 런던 기반 온라인 라디오 방송국으로, 장르에 얽매이지 않는 믹스와 라이브로 유명하다. 아토네모는 스트림플레이어 등 고음질 전용 오디오 기기 분야에서 마니아층을 확보한 스웨덴 브랜드다. **간편한 사용, 복잡함 없는 연결** NTS Radio Player는 검은색 박스 형태에 버튼 2개만 있는 미니멀한 디자인을 채택했다. 앱 설치나 추가 인증 없이, 하이파이 앰프 또는 스피커에 연결하면 바로 NTS의 콘텐츠를 들을 수 있다. 복잡한 메뉴 없이 원하는 방송이나 믹스를 직관적으로 선택 가능하다. **폭넓은 스트리밍 호환성** - AirPlay 2 - Google Cast - Spotify Connect - Tidal Connect 총 4가지 연결 방식을 지원해 스마트폰이나 PC에서 음악을 공유하거나, NTS 방송 이외의 스트리밍 서비스도 하이파이로 재생할 수 있다. **음질의 차이** 아토네모의 DAC(디지털-아날로그 변환기) 설계가 적용되. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxOTMwNzk4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
