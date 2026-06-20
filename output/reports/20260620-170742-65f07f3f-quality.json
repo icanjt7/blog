@@ -1,0 +1,22 @@
+{
+  "run_id": "20260620-170742-65f07f3f",
+  "average_quality": 84.0,
+  "drafts": [
+    {
+      "slug": "musician-youtuber-hainbach-breath-7545405a",
+      "title": "Hainbach의 실험음악",
+      "keyword": "Musician YouTuber Hainbach Breath",
+      "category": "기술",
+      "quality_score": 84.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Hainbach의 실험음악. Keyword: Musician YouTuber Hainbach Breath. Concrete visual subject: artificial intelligence neural network. Context: ### Hainbach 소개 Hainbach는 독일 출신의 실험음악 작곡가, 아티스트, 유튜버입니다. 그는 실험실 장비와 과학적 기구를 사용하여 음악을 만드는 것으로 유명합니다. 이러한 그의 음악적 접근 방식은 \"Dark Souls of synthesis\"로 불리며, 어려운 기술과 복잡한 기법을 사용하여 음악을 창조한다는 것을 의미합니다. Hainbach의 본명은 Stefan Paul Goetsch이며, 그는 독일에서 활동하는 실험음악 아티스트입니다. ### 음악적 특징 Hainbach는 전화선 테스트 장비와 같은 독특한 기구를 사용하여 음악을 만듭니다. 이러한 기법으로 그는 전통적인 음악과는 다른 독특한 실험음악을 창조합니다. 또한, 그는 유튜브에서 자신의 음악과 제작 과정을 공유하며, 실험음악에 대한 지식을 전달하고 있습니다. 그의 음악은 실험적이고 창의적인 접근 방식을 통해 새로운 음악적 경험을 제공합니다. ### 배경과 영향 Hainbach의 실험음악에 대한 관심은 어린 시절 음악과 과학을 접하며 시작되었습니다. 12세 때부터 음악을 만들기 시작한 그는 오늘날 가장 혁신적이고 창의적인 실험음악 아티스트 중 한 명으로 인정받고 있습니다. 그의 음악적 영향은 다양한 실험음악 아티스트와 과학적 기구의 사용에서 비롯됩니다. ### 프로필 | 카테고리 | 설명 | | --- | --- | | 이름 | Hainbach | | 본명 | S. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1744640326166-433469d102f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgxOTc1NjExfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
