@@ -1,0 +1,21 @@
+{
+  "run_id": "20260620-233813-1ca027fe",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "moves-diamond-hand-rpg-d999c839",
+      "title": "미완성인데도 화제! Moves Diamond Hand RPG가 특별한 5가지 이유",
+      "keyword": "Moves Diamond Hand RPG",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 미완성인데도 화제! Moves Diamond Hand RPG가 특별한 5가지 이유. Keyword: Moves Diamond Hand RPG. Concrete visual subject: technology innovation circuit abstract. Context: ## Moves Diamond Hand RPG, 왜 미완성인데 주목받을까? Moves Diamond Hand RPG는 2026년 6월 20일, 게임 전문 매체 더버지(The Verge)에서 소개된 주사위 기반 RPG입니다. 이 게임은 완성되지 않은 상태임에도 불구하고, 플레이어가 직접 대화와 주사위 굴리기를 반복하며 사건을 추적하는 구조가 눈길을 끕니다. ### 게임의 핵심: 대화와 주사위 Moves Diamond Hand RPG는 화면엔 대사와 선택지만 가득하고, 빠른 전투나 화려한 그래픽은 없습니다. 특히 모든 상호작용—탐색, 관계 형성, 정보 획득—에 주사위가 개입합니다. 주사위 판정 결과에 따라 캐릭터의 운명과 스토리 분기가 달라지죠. 범죄 현장 조사, 협상, 심지어 농담까지 모두 주사위 판정에 의해 흐름이 결정됩니다. 실패조차 스토리의 일부로 남아, 플레이어마다 다른 경험을 만들어냅니다. ### 배경: Jazz Noir 게임의 배경은 Jazz Noir로, 어두운 미스터리와 즉흥적인 재즈 분위기가 혼합된 독특한 장르를 구현합니다. 누아르(NOIR)는 범죄와 미스터리를 중심으로 한 어두운 분위기의 장르이며, 재즈의 즉흥성과 혼돈이 더해져 예측 불가한 전개를 보여줍니다. ### 시스템의 차별점 Moves Diamond Hand RPG는 테이블탑 RPG의 감성을 디지털로 옮긴 것이 특징입니다. 더버지 리뷰에서는 \"가장 창의적인 RP. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1750365919971-7dd273e7b317?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxOTk4OTM1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
