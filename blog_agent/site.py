@@ -3,6 +3,7 @@ from __future__ import annotations
 import html
 import hashlib
 import json
+import os
 import re
 import shutil
 import struct
@@ -1474,20 +1475,48 @@ class StaticSiteBuilder:
         (self.public_dir / static_name).write_text(_urlset(static_entries), encoding="utf-8")
         sitemap_files.append(static_name)
 
-        post_entries = []
-        for post in posts:
-            post_entries.append(_entry(
+        def _post_entry(post: Post, changefreq: str, priority: str) -> str:
+            return _entry(
                 self._page_url(self._localized_post_filename(post, "ko")),
                 post.date,
-                "monthly",
-                "0.7",
+                changefreq,
+                priority,
                 self._post_alternate_urls(post),
                 self._absolute_url(post.cover_image) if post.cover_image else None,
                 post.cover_image_alt or post.title,
-            ))
-        posts_name = "sitemap-posts-ko.xml"
-        (self.public_dir / posts_name).write_text(_urlset(post_entries), encoding="utf-8")
-        sitemap_files.append(posts_name)
+            )
+
+        priority_limit = max(100, self._env_int("BLOG_PRIORITY_SITEMAP_LIMIT", 500))
+        priority_max = max(priority_limit, self._env_int("BLOG_PRIORITY_SITEMAP_MAX", 2500))
+        recent_days = max(1, self._env_int("BLOG_PRIORITY_RECENT_DAYS", 21))
+        government_days = max(recent_days, self._env_int("BLOG_PRIORITY_GOVERNMENT_DAYS", 60))
+        recent_cutoff = (now - timedelta(days=recent_days)).date()
+        government_cutoff = (now - timedelta(days=government_days)).date()
+
+        priority_posts_by_slug: dict[str, Post] = {}
+        for post in posts[:priority_limit]:
+            priority_posts_by_slug[post.slug] = post
+        for post in posts:
+            post_date = post.date.date()
+            if post_date >= recent_cutoff or (
+                self._is_government_post(post) and post_date >= government_cutoff
+            ):
+                priority_posts_by_slug.setdefault(post.slug, post)
+
+        priority_posts = sorted(priority_posts_by_slug.values(), key=lambda post: post.date, reverse=True)[:priority_max]
+        priority_slugs = {post.slug for post in priority_posts}
+        archive_posts = [post for post in posts if post.slug not in priority_slugs]
+
+        priority_entries = [_post_entry(post, "weekly", "0.9") for post in priority_posts]
+        priority_name = "sitemap-posts-priority.xml"
+        (self.public_dir / priority_name).write_text(_urlset(priority_entries), encoding="utf-8")
+        sitemap_files.append(priority_name)
+
+        if archive_posts:
+            archive_entries = [_post_entry(post, "monthly", "0.5") for post in archive_posts]
+            archive_name = "sitemap-posts-archive.xml"
+            (self.public_dir / archive_name).write_text(_urlset(archive_entries), encoding="utf-8")
+            sitemap_files.append(archive_name)
 
         sitemap_index_entries = "\n".join(
             f"  <sitemap>\n"
@@ -1503,6 +1532,13 @@ class StaticSiteBuilder:
             + "\n</sitemapindex>\n"
         )
         (self.public_dir / "sitemap.xml").write_text(sitemap_index, encoding="utf-8")
+
+    @staticmethod
+    def _env_int(name: str, default: int) -> int:
+        try:
+            return int(os.getenv(name, str(default)))
+        except ValueError:
+            return default
 
     def _write_html(
         self,
@@ -2357,6 +2393,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
         content = (
             "User-agent: *\n"
             "Allow: /\n"
+            f"Sitemap: {self.site_url}/sitemap-posts-priority.xml\n"
             f"Sitemap: {self.site_url}/sitemap.xml\n"
         )
         (self.public_dir / "robots.txt").write_text(content, encoding="utf-8")

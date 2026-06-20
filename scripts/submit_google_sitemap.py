@@ -13,6 +13,7 @@ from google.oauth2 import service_account
 SCOPE = "https://www.googleapis.com/auth/webmasters"
 DEFAULT_SITE_URL = "https://briefwave.kr/"
 DEFAULT_SITEMAP_URL = "https://briefwave.kr/sitemap.xml"
+DEFAULT_EXTRA_SITEMAP_URLS = "https://briefwave.kr/sitemap-posts-priority.xml"
 
 
 def _load_service_account_info() -> dict | None:
@@ -46,6 +47,7 @@ def submit_sitemap(site_url: str, sitemap_url: str, service_account_info: dict) 
 def main() -> int:
     site_url = os.getenv("GOOGLE_SEARCH_CONSOLE_SITE_URL", DEFAULT_SITE_URL).strip() or DEFAULT_SITE_URL
     sitemap_url = os.getenv("GOOGLE_SITEMAP_URL", DEFAULT_SITEMAP_URL).strip() or DEFAULT_SITEMAP_URL
+    extra_raw = os.getenv("GOOGLE_EXTRA_SITEMAP_URLS", DEFAULT_EXTRA_SITEMAP_URLS).strip()
     if not site_url.endswith("/") and not site_url.startswith("sc-domain:"):
         site_url += "/"
 
@@ -57,9 +59,16 @@ def main() -> int:
         )
         return 0
 
-    ok, message = submit_sitemap(site_url, sitemap_url, service_account_info)
-    print(message)
-    return 0 if ok else 1
+    sitemap_urls = [sitemap_url]
+    sitemap_urls.extend(item.strip() for item in extra_raw.replace("\n", ",").split(",") if item.strip())
+    sitemap_urls = list(dict.fromkeys(sitemap_urls))
+
+    failed = False
+    for url in sitemap_urls:
+        ok, message = submit_sitemap(site_url, url, service_account_info)
+        print(message)
+        failed = failed or not ok
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":
