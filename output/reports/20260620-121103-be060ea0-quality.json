@@ -1,0 +1,21 @@
+{
+  "run_id": "20260620-121103-be060ea0",
+  "average_quality": 85.0,
+  "drafts": [
+    {
+      "slug": "toy-story-55a0a203",
+      "title": "Toy Story가 알려준 IT 기기 선택법 5가지",
+      "keyword": "Toy Story",
+      "category": "기술",
+      "quality_score": 85.0,
+      "review_notes": [
+        "핵심 키워드 반복이 과합니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Toy Story가 알려준 IT 기기 선택법 5가지. Keyword: Toy Story. Concrete visual subject: technology innovation circuit abstract. Context: 1995년, Pixar는 약 9,800만 달러를 투자해 세계 최초의 전편 3D CGI 장편 애니메이션 \"Toy Story\"를 선보였습니다. 감독 John Lasseter와 디즈니·픽사의 첫 협업작으로, 기술과 스토리텔링 모두에서 혁신을 이뤘죠. 2026년에도 \"Toy Story\"는 기술을 바라보는 관점에서 여전히 의미 있는 메시지를 던집니다. The Verge(2026-06-20)의 \"Toy Story has the right take on tech\" 기사에 따르면, Toy Story가 기술에 대해 제시하는 관점은 실제 IT 기기 선택에도 적용할 수 있습니다. ### Toy Story가 제시하는 3가지 기술 기준 1. **기술의 목적은 즐거움** Woody(카우보이 인형)와 Buzz Lightyear(우주인 피규어)는 자신이 장난감임을 잊지 않습니다. 기술은 복잡한 스펙보다, 사용자에게 즐거움을 주는 경험이 더 중요합니다. 2. **교감이 우선** Toy Story는 장난감과 아이의 연결을 강조합니다. IT 기기 역시 신기능보다 실제 생활 속 소통과 편리함이 핵심입니다. 가족 모두가 쉽게 이해하고 사용할 수 있는 UX(User Experience)가 중요하죠. 3. **변하지 않는 가치** Toy Story는 여러 편이 이어져도 '장난감=친구'라는 본질을 유지합니다. IT 트렌드는 빠르게 변하지만, 결국 사람에게 유익한 기술이 선택받. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxOTU3NzA2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
