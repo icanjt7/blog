@@ -1,0 +1,72 @@
+{
+  "run_id": "20260620-195843-05d0046d",
+  "topics": [
+    {
+      "keyword": "Atlantic AI",
+      "title_hint": "The Atlantic created a searchable database of the music used to train AI",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "The Atlantic created a searchable database of the music used to train AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
+          "published_at": "2026-06-20T18:46:48",
+          "summary": "Atlantic reporter Alex Reisner recently uncovered four datasets of music being used to train AI models and made them fully searchable for the public. Two of the sets are absolutely enormous at 12 million and 9 million tracks. The other two are much smaller, but still represent a significant amount of training data at over [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Atlantic AI",
+        "title_hint": "The Atlantic created a searchable database of the music used to train AI",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "The Atlantic created a searchable database of the music used to train AI",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data",
+            "published_at": "2026-06-20T18:46:48",
+            "summary": "Atlantic reporter Alex Reisner recently uncovered four datasets of music being used to train AI models and made them fully searchable for the public. Two of the sets are absolutely enormous at 12 million and 9 million tracks. The other two are much smaller, but still represent a significant amount of training data at over [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "2,100만 곡 공개: 내 음악이 AI 학습에 쓰였는지 확인하는 방법",
+      "slug": "atlantic-ai-c805f2c9",
+      "excerpt": "Atlantic AI가 2,100만 곡의 음악 데이터베이스를 공개했습니다. 내가 만든 음악이나 좋아하는 곡이 AI 모델 훈련에 사용됐는지 누구나 검색할 수 있습니다.",
+      "body_markdown": "최근 미국의 뉴스·문화 매체 The Atlantic는 AI 모델 훈련에 사용된 음악 데이터를 대규모로 공개했습니다. Atlantic AI 프로젝트는 기자 Alex Reisner가 직접 조사한 4개의 음악 데이터셋을 포함하며, 총 21,000,000곡의 트랙을 누구나 검색할 수 있도록 만들었습니다.\n\nAtlantic은 1857년 창간된 미국의 대표적 시사·문화 매체입니다. Atlantic AI는 음악 창작자, 일반 이용자, AI 개발자 모두가 자신의 음악이 AI 학습에 사용됐는지 공식적으로 확인할 수 있도록 설계된 시스템입니다.\n\n### Atlantic AI 데이터베이스 주요 정보\n\n- **트랙 수**: 12,000,000곡(데이터셋 1), 9,000,000곡(데이터셋 2), 수만 곡(데이터셋 3, 4)\n- **데이터셋 종류**: 4개(메이저 음원 플랫폼, 인디 음악, 틈새 장르, 전통/희귀 레코드)\n- **검색 기능**: 곡명, 아티스트명, 앨범명으로 검색 가능\n- **공개 범위**: 대부분 전체 검색 가능, 일부 데이터셋은 제한적 검색\n- **제공 정보**: 해당 곡이 AI 학습 데이터에 포함됐는지 여부, 데이터셋 특징\n\n#### Atlantic AI 데이터셋 비교 표\n\n| 데이터셋명   | 트랙 수      | 특징                              | 검색 가능 범위    | 조사자/기관        |\n|--------------|-------------|-----------------------------------|------------------|--------------------|\n| Dataset 1    | 12,000,000  | 메이저 음원 플랫폼 기반, 대규모   | 전체 검색 가능   | The Atlantic/Alex Reisner |\n| Dataset 2    | 9,000,000   | 인디 음악 포함, 저작권 논란 가능   | 전체 검색 가능   | The Atlantic/Alex Reisner |\n| Dataset 3    | 수만 곡      | 틈새 장르 중심                    | 일부 검색 가능   | The Atlantic/Alex Reisner |\n| Dataset 4    | 수만 곡      | 전통/희귀 레코드 중심             | 일부 검색 가능   | The Atlantic/Alex Reisner |\n\n### Atlantic AI 검색 방법\n\n1. Atlantic AI 공식 홈페이지 접속  \n2. 검색창에 곡 제목, 아티스트명, 앨범명 입력  \n3. 검색 결과에서 해당 곡이 어느 데이터셋에 포함됐는지 확인  \n4. 데이터셋 특징과 트랙 수, 공개 범위 비교  \n5. 저작권 침해 의심 시 상세 정보 참고\n\n### Atlantic AI가 가져온 변화\n\n- 창작자는 자신의 음악이 AI 훈련에 포함됐는지 직접 검증 가능  \n- 음악 저작권 침해 논란이 데이터 기반으로 심층 논의 가능  \n- 일반 이용자도 좋아하는 곡의 AI 학습 여부 확인  \n- AI 개발자와 법조계는 데이터셋 근거로 저작권 대응 가능\n\nAtlantic AI의 공개로 음악 데이터셋 투명성이 새로운 기준이 되었습니다. 이전에는 AI 학습곡 목록이 비공개였지만, 이제 누구나 실명으로 검색해 증거를 확보할 수 있습니다.\n\n**Atlantic AI 관련 공식 안내 및 데이터는 The Atlantic의 Alex Reisner가 2026년 6월 20일 공개했습니다.**  \n출처: [The Atlantic created a searchable database of the music used to train AI](https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data)\n\nAtlantic AI에서 직접 검색해보면 내 음악이 AI 학습에 쓰였는지 쉽게 확인할 수 있습니다.",
+      "tags": [
+        "기술",
+        "Atlantic",
+        "AI"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgxOTg1NzU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "2,100만 곡 공개: 내 음악이 AI 학습에 쓰였는지 확인하는 방법 — Photo by Growtika on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgxOTg1NzU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "2,100만 곡 공개: 내 음악이 AI 학습에 쓰였는지 확인하는 방법 본문 보조 이미지 — Photo by Steve A Johnson on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2,100만 곡 공개: 내 음악이 AI 학습에 쓰였는지 확인하는 방법. Keyword: Atlantic AI. Concrete visual subject: artificial intelligence neural network. Context: 최근 미국의 뉴스·문화 매체 The Atlantic는 AI 모델 훈련에 사용된 음악 데이터를 대규모로 공개했습니다. Atlantic AI 프로젝트는 기자 Alex Reisner가 직접 조사한 4개의 음악 데이터셋을 포함하며, 총 21,000,000곡의 트랙을 누구나 검색할 수 있도록 만들었습니다. Atlantic은 1857년 창간된 미국의 대표적 시사·문화 매체입니다. Atlantic AI는 음악 창작자, 일반 이용자, AI 개발자 모두가 자신의 음악이 AI 학습에 사용됐는지 공식적으로 확인할 수 있도록 설계된 시스템입니다. ### Atlantic AI 데이터베이스 주요 정보 - **트랙 수**: 12,000,000곡(데이터셋 1), 9,000,000곡(데이터셋 2), 수만 곡(데이터셋 3, 4) - **데이터셋 종류**: 4개(메이저 음원 플랫폼, 인디 음악, 틈새 장르, 전통/희귀 레코드) - **검색 기능**: 곡명, 아티스트명, 앨범명으로 검색 가능 - **공개 범위**: 대부분 전체 검색 가능, 일부 데이터셋은 제한적 검색 - **제공 정보**: 해당 곡이 AI 학습 데이터에 포함됐는지 여부, 데이터셋 특징 #### Atlantic AI 데이터셋 비교 표 | 데이터셋명 | 트랙 수 | 특징 | 검색 가능 범위 | 조사자/기관 | |--------------|-------------|------------------------. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 2,100만 곡 공개: 내 음악이 AI 학습에 쓰였는지 확인하는 방법. Keyword: Atlantic AI. Concrete visual subject: artificial intelligence neural network. Article context: 최근 미국의 뉴스·문화 매체 The Atlantic는 AI 모델 훈련에 사용된 음악 데이터를 대규모로 공개했습니다. Atlantic AI 프로젝트는 기자 Alex Reisner가 직접 조사한 4개의 음악 데이터셋을 포함하며, 총 21,000,000곡의 트랙을 누구나 검색할 수 있도록 만들었습니다. Atlantic은 1857년 창간된 미국의 대표적 시사·문화 매체입니다. Atlantic AI는 음악 창작자, 일반 이용자, AI 개발자 모두가 자신의 음악이 AI 학습에 사용됐는지 공식적으로 확인할 수 있도록 설계된 시스템입니다. ### Atlantic AI 데이터베이스 주요 정보 - **트랙 수**: 12,000,000곡(데이터셋 1), 9,000,000곡(데이터셋 2), 수만 곡(데이터셋 3, 4) - **데이터셋 종류**: 4개(메이저 음원 플랫폼, 인디 음악, 틈새 장르, 전통/희귀 레코드) - **검색 기능**: 곡명, 아티스트명, 앨범명으로 검색 가능 - **공개 범위**: 대부분 전체 검색 가능, 일부 데이터셋은 제한적 검색 - **제공 정보**: 해당 곡이 AI 학습 데이터에 포함됐는지 여부, 데이터셋 특징 #### Atlantic AI 데이터셋 비교 표 | 데이터셋명 | 트랙 수 | 특징 | 검색 가능 범위 | 조사자/기관 | |--------------|-------------|-----------------------------------|------------------|--------------------| | Dataset 1 | 12,000,000 | 메이저 음원 플랫폼 기반, 대규모 | 전체 검색 가능 | The Atlantic/Alex Reisner | | Dataset 2 | 9,000,000 | 인디 음악 포함, 저작권 논란 가능 | 전체 검색 가능 | T. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-06-20T20:02:30.810279",
+      "quality_score": 85.0,
+      "review_notes": [
+        "핵심 키워드 반복이 과합니다.",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 85.0"
+    }
+  ]
+}
