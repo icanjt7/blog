@@ -1,18 +1,20 @@
 ---
-title: "미국 백악관, 미국 백악관, Fact Sheet: Pres"
-date: "2026-06-03T02:27"
-category: "정책"
+title: 트럼프 대통령, 연방 직원 책임성 강화 행정명령 서명
+date: 2026-06-03T02:27
+category: 정책
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미국 백악관"
-  - "정책"
-  - "백악관"
-  - "팩트시트"
-author: "미국 백악관"
+- 보도기사
+- 미국정부
+- 미국 백악관
+- 정책
+- 백악관
+- 팩트시트
+author: 미국 백악관
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1554224155-3a58922a22c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODEzMTYyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "미국 백악관, Fact Sheet: President Do"
+cover_image: https://images.unsplash.com/photo-1554224155-3a58922a22c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODEzMTYyMTh8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: '미국 백악관, Fact Sheet: President Do'
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미국 백악관이(The White House) 2026-06-03 공개한 '미국 백악관, Fact Sheet: President Do' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.

@@ -1,5 +1,5 @@
 ---
-title: "Waymo의 가상 운전자, 자율주행 안전 실험"
+title: Waymo, 자율주행차 안전성 평가를 위한 가상 운전자 모델 개발
 date: '2026-06-10T10:43:45.040939'
 category: 기술
 tags:
@@ -10,7 +10,10 @@ tags:
 - AI
 quality_score: 95.0
 cover_image: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxMDY3MTc5fDA&ixlib=rb-4.1.0&q=80&w=1080
-cover_image_alt: "Waymo virtual driver autonomous safety model — Photo by Adi Goldstein on Unsplash"
+cover_image_alt: Waymo virtual driver autonomous safety model — Photo by Adi Goldstein
+  on Unsplash
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ![Waymo virtual driver autonomous safety model — Photo by Adi Goldstein on Unsplash](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxMDY3MTc5fDA&ixlib=rb-4.1.0&q=80&w=1080)
