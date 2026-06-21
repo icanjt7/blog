@@ -1,0 +1,21 @@
+{
+  "run_id": "20260621-100647-092f02c9",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "moves-diamond-hand-rpg-0ee2de86",
+      "title": "미완성인데 더 끌리는 Moves Diamond Hand RPG, 왜?",
+      "keyword": "Moves Diamond Hand RPG",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 미완성인데 더 끌리는 Moves Diamond Hand RPG, 왜?. Keyword: Moves Diamond Hand RPG. Concrete visual subject: technology innovation circuit abstract. Context: 밤 늦게 게임을 고를 때, 완성도 높은 작품만 찾으셨나요? Moves Diamond Hand RPG는 그런 선택 기준을 뒤흔드는 인디 롤플레잉 게임입니다. ## Moves Diamond Hand RPG는 어떤 게임? Moves Diamond Hand RPG(영문: Moves of the Diamond Hand)는 아직 개발이 끝나지 않은 주사위 기반 RPG입니다. 공식적으로는 완성 전 공개 상태이며, 1940년대 재즈 누아르 스타일을 차용해 어두운 분위기와 음악적 감성이 돋보입니다. 플레이어는 'Diamond Hand'라는 미지의 조직에 속한 이방인으로 시작하며, 게임 내내 특이한 대화와 잦은 주사위 굴림을 경험합니다. ## 주요 특징과 플레이 방식 - **미완성의 자유로움:** 공식 안내 기준, Moves Diamond Hand RPG는 완전한 룰북이나 UI 없이 공개됐습니다. 버그가 발생할 수 있지만, 플레이어가 직접 세계관과 규칙을 해석하며 진행합니다. - **대화 중심 진행:** NPC와의 대화가 게임의 핵심입니다. 주사위 결과에 따라 NPC 반응이 달라지고, 즉흥적이며 암시적 표현이 많아 기존 RPG와는 다른 몰입감을 제공합니다. - **주사위 시스템:** 상황에 따라 6면체 주사위(D6)를 굴리며, 숫자에 따라 대화와 스토리 진행이 변화합니다. 예측 불가능한 결과가 게임의 재미를 더합니다. - **재즈 누아르 분위기:** . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyMDM2NjcyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
