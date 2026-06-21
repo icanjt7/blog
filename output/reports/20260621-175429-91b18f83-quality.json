@@ -1,0 +1,21 @@
+{
+  "run_id": "20260621-175429-91b18f83",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "polymarket-reportedly-paid-people-84f0dee5",
+      "title": "Polymarket, 1,100개 가짜 베팅 영상 논란 전모",
+      "keyword": "Polymarket reportedly paid people",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Polymarket, 1,100개 가짜 베팅 영상 논란 전모. Keyword: Polymarket reportedly paid people. Concrete visual subject: artificial intelligence neural network. Context: ## Polymarket 가짜 베팅 영상 논란의 전개 2026년 6월 21일, Wall Street Journal(WSJ)은 블록체인 기반 예측 시장 플랫폼 Polymarket이 소셜 미디어에 유포된 가짜 베팅 영상 제작을 주도했다고 보도했다. WSJ 조사에 따르면, Polymarket reportedly paid people to film themselves placing fake bets and celebrating fake wins on social media. 영상 속 참가자들은 실제로 베팅을 하지 않았음에도 불구하고, 마치 베팅을 통해 큰돈을 딴 것처럼 연출했다. ## WSJ가 확인한 주요 사실 WSJ는 Polymarket이 최소 1,100개 이상의 가짜 베팅 영상을 제작하도록 비용을 지급한 정황을 포착했다. 조사 과정에서 영상 제작자들은 Polymarket으로부터 직접 금전적 보상을 받은 사실을 인정했다. 이 영상들은 트위터, 인스타그램 등 소셜 미디어를 중심으로 확산되었으며, 실제 베팅이나 당첨이 없는 연출임에도 불구하고 ‘실제 성공담’처럼 소비자에게 전달됐다. ## Polymarket의 플랫폼 구조와 영상 연출 방식 Polymarket은 정치, 스포츠, 경제 등 다양한 현안에 대해 베팅이 가능한 블록체인 예측 시장이다. 사용자는 특정 결과에 자금을 걸고, 결과에 따라 수익을 얻는 구조다. 그러나 WSJ가 확인한 영상들은. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1744640326166-433469d102f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgyMDY0NzE0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
