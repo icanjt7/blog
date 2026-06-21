@@ -1,0 +1,20 @@
+{
+  "run_id": "20260621-234616-1c95e5c7",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "sony-xperia-viii-f641d6ee",
+      "title": "Sony Xperia VIII, 왜 아직도 ‘팬 전용’ 스마트폰일까?",
+      "keyword": "Sony Xperia VIII",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Sony Xperia VIII, 왜 아직도 ‘팬 전용’ 스마트폰일까?. Keyword: Sony Xperia VIII. Concrete visual subject: smartphone modern minimal screen. Context: Sony Xperia VIII는 2026년 6월 21일 공개된 리뷰에서도 ‘팬을 위한 폰’이라는 평가를 받고 있습니다. 이 제품은 Sony의 스마트폰 플래그십 시리즈로, 특정 마니아층을 겨냥한 기능과 디자인이 특징입니다. Sony는 일본의 대표 전자기업으로, 오디오·디스플레이·카메라 기술에서 강점을 가진 브랜드입니다. Xperia 시리즈 역시 독특한 디자인과 전문 기능으로 꾸준히 차별화를 시도해 왔습니다. ### Xperia VIII, 무엇이 달라졌나? - **디자인** 2026년 모델에서 프레임이 각지고, 전면·후면 모두 미니멀하게 리뉴얼되었습니다. 전체적으로 슬림하지만, 손에 덜 붙는 질감이 단점으로 지적됩니다. - **카메라** 이번에는 ‘연속 광학줌(telephoto continuous optical zoom)’ 기능이 삭제되었습니다. Sony가 이전 4세대에서 이 기능을 강조했으나, 실제로 일반 사용자에게는 활용도가 낮았다는 점이 반영됐습니다. 대신, 전문 사진가나 영상 제작자가 선호하는 수동 조작, RAW 촬영, 색상 프로파일 조정 등 DSLR 스타일의 기능은 여전히 제공됩니다. - **디스플레이** 색감과 해상도는 업계 최고 수준으로 평가받지만, 밝기 자동 조절이 과민하게 반응한다는 리뷰가 있습니다. - **소프트웨어** 거의 순정 Android UI를 제공하며, Sony 고유 앱과 기능이 포함되어 있습니다. 보안 업데이. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1470350576089-539d5a852bf7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxzbWFydHBob25lJTIwbW9kZXJuJTIwbWluaW1hbCUyMHNjcmVlbnxlbnwxfDB8fHwxNzgyMDg1ODEyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
