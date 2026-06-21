@@ -1,0 +1,74 @@
+{
+  "run_id": "20260621-052013-46555348",
+  "topics": [
+    {
+      "keyword": "Moves Diamond Hand RPG",
+      "title_hint": "Moves of the Diamond Hand is an unfinished, irresistibly weird dice-based RPG",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Moves of the Diamond Hand is an unfinished, irresistibly weird dice-based RPG",
+          "url": "https://www.theverge.com/games/949875/moves-of-the-diamond-hand-rpg-dice-jazz-noir",
+          "published_at": "2026-06-20T14:00:00",
+          "summary": "From its opening minutes, Moves of the Diamond Hand is upfront about what it offers: You're going to have a lot of strange conversations, and you're going to roll a lot of dice. Get on board with this proposition, and the reward is one of the most creative roleplaying games I've seen in years, even [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Moves Diamond Hand RPG",
+        "title_hint": "Moves of the Diamond Hand is an unfinished, irresistibly weird dice-based RPG",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Moves of the Diamond Hand is an unfinished, irresistibly weird dice-based RPG",
+            "url": "https://www.theverge.com/games/949875/moves-of-the-diamond-hand-rpg-dice-jazz-noir",
+            "published_at": "2026-06-20T14:00:00",
+            "summary": "From its opening minutes, Moves of the Diamond Hand is upfront about what it offers: You're going to have a lot of strange conversations, and you're going to roll a lot of dice. Get on board with this proposition, and the reward is one of the most creative roleplaying games I've seen in years, even [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Moves of the Diamond Hand RPG, 미완성작의 독특함 분석",
+      "slug": "moves-diamond-hand-rpg-0ee2de86",
+      "excerpt": "Moves of the Diamond Hand는 2026년 6월 기준 미완성 상태임에도 불구하고, 즉흥적인 대화 시스템과 주사위 기반 진행 방식, 재즈 노아르 분위기로 주목받고 있다. 인디 개발팀이 제작한 이 게임의 핵심 특징, 일반 RPG와의 차이점, 주의할 점을 표와 함께 상세히 살펴본다.",
+      "body_markdown": "## Moves of the Diamond Hand: 미완성작의 존재감\n\n2026년 6월 20일 The Verge의 게임 전문 리뷰에 따르면, ‘Moves of the Diamond Hand’는 출시 전부터 독특한 분위기와 시스템으로 강한 인상을 남기고 있다. 이 게임은 공식적으로 미완성 상태임을 인정하고 있으며, 플레이어는 익숙한 게임 튜토리얼 없이 곧바로 특이한 대화와 주사위 굴림을 경험하게 된다.\n\n## 재즈 노아르와 즉흥 대화 시스템\n\nMoves of the Diamond Hand는 ‘재즈 노아르(Jazz Noir)’라는 특유의 분위기를 전면에 내세운다. 재즈 노아르는 자유롭고 어두운 음악 장르에서 영감을 받은 스타일로, 게임 내 대화 역시 예측 불가능하고 즉석에서 변화한다. 플레이어는 정해진 선택지 대신, 상황에 따라 즉흥적으로 반응하는 캐릭터와의 상호작용을 반복하게 된다.\n\n## 주사위 중심의 게임 플레이\n\n이 게임의 또 다른 핵심은 주사위 기반 시스템이다. 플레이어의 주요 행동과 그 결과가 주사위 굴림에 크게 의존하며, 이로 인해 게임의 전개가 매번 달라진다. 전통적인 RPG의 경우 주사위가 일부 시스템에만 사용되는 반면, Moves of the Diamond Hand는 거의 모든 진행이 주사위 결과에 따라 결정된다. 이 때문에 예측 불가한 전개와 높은 변수가 게임 내내 유지된다.\n\n## 공식 안내 기준 미완성: 주의 사항\n\nThe Verge의 2026년 6월 20일 기사에 따르면, Moves of the Diamond Hand는 인디 개발팀이 제작했으며, 아직 공식적으로 완성되지 않았다. 이로 인해 버그와 기능 누락이 빈번하게 발생할 수 있다. 게임의 개발자 정보 역시 신원이 공개되지 않았고, 공식 안내에 따르면 적용 플랫폼은 현재 PC에 한정되어 있다.\n\n## Moves of the Diamond Hand와 일반 RPG 비교\n\n아래 표는 Moves of the Diamond Hand의 주요 특징을 일반적인 RPG와 비교해 정리한 것이다. (출처: The Verge, 2026-06-20)\n\n| 항목            | Moves of the Diamond Hand           | 일반 RPG                                     |\n|-----------------|------------------------------------|----------------------------------------------|\n| 완성도          | 미완성, 공식 인정                   | 출시 시점 완성                               |\n| 대화 시스템     | 즉흥적, 재즈 노아르 스타일          | 정해진 분기/선택지 제공                      |\n| 주사위 활용     | 모든 진행의 핵심, 운에 크게 의존    | 일부 시스템에만 사용                         |\n| 버그/기능 누락  | 공식 안내 기준 빈번                 | 출시 후 패치로 보완                           |\n| 개발자 정보     | 인디 개발팀, 신원 비공개            | 대형 제작사 또는 공개된 개발자               |\n| 몰입감          | 창의적이지만 불완전                 | 일관된 스토리와 안정적 진행                  |\n| 적용 플랫폼     | PC(공식 안내 기준)                  | PC, 콘솔, 모바일 등 다양                     |\n\n## 플레이 전 확인해야 할 점\n\nMoves of the Diamond Hand는 실험적이고 예술적인 게임 경험을 원하는 플레이어에게 알맞다. 즉흥적인 대화와 운에 의존하는 시스템, 미완성된 구조는 일반적인 RPG와는 다른 몰입감을 제공하지만, 완성도와 안정성을 중시하는 유저라면 공식 커뮤니티, 플레이 영상, 최신 패치 정보를 반드시 확인하는 것이 필요하다.\n\n## 결론\n\n2026년 6월 21일 기준, Moves of the Diamond Hand는 미완성임에도 불구하고 강렬한 개성과 실험정신으로 게임 커뮤니티에서 화제를 모으고 있다. 구매 전에는 공식 안내와 실제 플레이 후기를 충분히 참고하는 것이 바람직하다.\n\n**출처:**  \nMoves of the Diamond Hand is an unfinished, irresistibly weird dice-based RPG / The Verge / 2026-06-20  \nhttps://www.theverge.com/games/949875/moves-of-the-diamond-hand-rpg-dice-jazz-noir",
+      "tags": [
+        "기술",
+        "Moves",
+        "Diamond",
+        "Hand",
+        "RPG"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyMDE5NDY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Moves of the Diamond Hand RPG, 미완성작의 독특함 분석 — Photo by Omar:. Lopez-Rincon on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyMDE5NDY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "Moves of the Diamond Hand RPG, 미완성작의 독특함 분석 본문 보조 이미지 — Photo by Ludovico Ceroseis on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Moves of the Diamond Hand RPG, 미완성작의 독특함 분석. Keyword: Moves Diamond Hand RPG. Concrete visual subject: technology innovation circuit abstract. Context: ## Moves of the Diamond Hand: 미완성작의 존재감 2026년 6월 20일 The Verge의 게임 전문 리뷰에 따르면, ‘Moves of the Diamond Hand’는 출시 전부터 독특한 분위기와 시스템으로 강한 인상을 남기고 있다. 이 게임은 공식적으로 미완성 상태임을 인정하고 있으며, 플레이어는 익숙한 게임 튜토리얼 없이 곧바로 특이한 대화와 주사위 굴림을 경험하게 된다. ## 재즈 노아르와 즉흥 대화 시스템 Moves of the Diamond Hand는 ‘재즈 노아르(Jazz Noir)’라는 특유의 분위기를 전면에 내세운다. 재즈 노아르는 자유롭고 어두운 음악 장르에서 영감을 받은 스타일로, 게임 내 대화 역시 예측 불가능하고 즉석에서 변화한다. 플레이어는 정해진 선택지 대신, 상황에 따라 즉흥적으로 반응하는 캐릭터와의 상호작용을 반복하게 된다. ## 주사위 중심의 게임 플레이 이 게임의 또 다른 핵심은 주사위 기반 시스템이다. 플레이어의 주요 행동과 그 결과가 주사위 굴림에 크게 의존하며, 이로 인해 게임의 전개가 매번 달라진다. 전통적인 RPG의 경우 주사위가 일부 시스템에만 사용되는 반면, Moves of the Diamond Hand는 거의 모든 진행이 주사위 결과에 따라 결정된다. 이 때문에 예측 불가한 전개와 높은 변수가 게임 내내 유지된다. ## 공식 안내 기준 미완성: 주의 사항 The . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: Moves of the Diamond Hand RPG, 미완성작의 독특함 분석. Keyword: Moves Diamond Hand RPG. Concrete visual subject: technology innovation circuit abstract. Article context: ## Moves of the Diamond Hand: 미완성작의 존재감 2026년 6월 20일 The Verge의 게임 전문 리뷰에 따르면, ‘Moves of the Diamond Hand’는 출시 전부터 독특한 분위기와 시스템으로 강한 인상을 남기고 있다. 이 게임은 공식적으로 미완성 상태임을 인정하고 있으며, 플레이어는 익숙한 게임 튜토리얼 없이 곧바로 특이한 대화와 주사위 굴림을 경험하게 된다. ## 재즈 노아르와 즉흥 대화 시스템 Moves of the Diamond Hand는 ‘재즈 노아르(Jazz Noir)’라는 특유의 분위기를 전면에 내세운다. 재즈 노아르는 자유롭고 어두운 음악 장르에서 영감을 받은 스타일로, 게임 내 대화 역시 예측 불가능하고 즉석에서 변화한다. 플레이어는 정해진 선택지 대신, 상황에 따라 즉흥적으로 반응하는 캐릭터와의 상호작용을 반복하게 된다. ## 주사위 중심의 게임 플레이 이 게임의 또 다른 핵심은 주사위 기반 시스템이다. 플레이어의 주요 행동과 그 결과가 주사위 굴림에 크게 의존하며, 이로 인해 게임의 전개가 매번 달라진다. 전통적인 RPG의 경우 주사위가 일부 시스템에만 사용되는 반면, Moves of the Diamond Hand는 거의 모든 진행이 주사위 결과에 따라 결정된다. 이 때문에 예측 불가한 전개와 높은 변수가 게임 내내 유지된다. ## 공식 안내 기준 미완성: 주의 사항 The Verge의 2026년 6월 20일 기사에 따르면, Moves of the Diamond Hand는 인디 개발팀이 제작했으며, 아직 공식적으로 완성되지 않았다. 이로 인해 버그와 기능 누락이 빈번하게 발생할 수 있다. 게임의 개발자 정보 역시 신원이 공개되지 않았고, 공식 안내에 따르면 적용 플랫폼은 현재 PC에 한정되어 있다. ## Moves of the. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-06-21T05:24:03.166507",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 55.0"
+    }
+  ]
+}

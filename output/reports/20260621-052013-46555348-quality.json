@@ -1,0 +1,21 @@
+{
+  "run_id": "20260621-052013-46555348",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "moves-diamond-hand-rpg-0ee2de86",
+      "title": "Moves of the Diamond Hand RPG, 미완성작의 독특함 분석",
+      "keyword": "Moves Diamond Hand RPG",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Moves of the Diamond Hand RPG, 미완성작의 독특함 분석. Keyword: Moves Diamond Hand RPG. Concrete visual subject: technology innovation circuit abstract. Context: ## Moves of the Diamond Hand: 미완성작의 존재감 2026년 6월 20일 The Verge의 게임 전문 리뷰에 따르면, ‘Moves of the Diamond Hand’는 출시 전부터 독특한 분위기와 시스템으로 강한 인상을 남기고 있다. 이 게임은 공식적으로 미완성 상태임을 인정하고 있으며, 플레이어는 익숙한 게임 튜토리얼 없이 곧바로 특이한 대화와 주사위 굴림을 경험하게 된다. ## 재즈 노아르와 즉흥 대화 시스템 Moves of the Diamond Hand는 ‘재즈 노아르(Jazz Noir)’라는 특유의 분위기를 전면에 내세운다. 재즈 노아르는 자유롭고 어두운 음악 장르에서 영감을 받은 스타일로, 게임 내 대화 역시 예측 불가능하고 즉석에서 변화한다. 플레이어는 정해진 선택지 대신, 상황에 따라 즉흥적으로 반응하는 캐릭터와의 상호작용을 반복하게 된다. ## 주사위 중심의 게임 플레이 이 게임의 또 다른 핵심은 주사위 기반 시스템이다. 플레이어의 주요 행동과 그 결과가 주사위 굴림에 크게 의존하며, 이로 인해 게임의 전개가 매번 달라진다. 전통적인 RPG의 경우 주사위가 일부 시스템에만 사용되는 반면, Moves of the Diamond Hand는 거의 모든 진행이 주사위 결과에 따라 결정된다. 이 때문에 예측 불가한 전개와 높은 변수가 게임 내내 유지된다. ## 공식 안내 기준 미완성: 주의 사항 The . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyMDE5NDY4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
