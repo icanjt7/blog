@@ -1,0 +1,20 @@
+{
+  "run_id": "20260622-122746-e8844c66",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "read-before-you-vibe-8a322acd",
+      "title": "‘Vibe 코드’ 앱, 출시 후 사용자가 겪는 5가지 변화",
+      "keyword": "Read before you vibe",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: ‘Vibe 코드’ 앱, 출시 후 사용자가 겪는 5가지 변화. Keyword: Read before you vibe. Concrete visual subject: mobile app software interface. Context: ## 출시 후 바로 알아야 할 ‘Vibe 코드’ 앱 변화 ‘Read this before you vibe-code another app’(The Verge, 2026-06-22)은 Bob Starr가 ‘Boomberg’라는 웹사이트를 개발해 즉시 공개한 후, 예상치 못한 보안 문제를 경험한 사례를 소개합니다. 이 웹사이트는 미국 내 기술 기업에 집행된 세금 정보를 보여주는 서비스로, Starr는 개발 직후 곧바로 온라인에 배포했습니다. ## 실제 사용자가 겪는 주요 변화 - 앱 출시 후 몇 달이 지나서야 SQL 취약점 등 숨겨진 보안 문제가 발견됨 - 기술 기업에 대한 공공 데이터 활용이 늘면서 사용자 정보 및 플랫폼 안전성에 대한 우려가 커짐 - ‘Boomberg’는 미국 세금 집행 내역을 공개하지만, 데이터 보안 및 관리에 대한 추가 조치가 필요함 - 개발자와 운영팀은 즉시 배포가 가능한 ‘Vibe 코드’ 방식의 장점과 함께, 사후 보안 점검의 중요성을 인식해야 함 - 사용자는 서비스 이용 전 보안 상태, 데이터 출처, 적용 범위 등을 직접 확인해야 함 ## 체크리스트: 출시 후 반드시 확인할 5가지 | 기준 | 상세 내용 | |------------------|----------------------------------------------------------| | 적용 대상 | 미국 기술 기업 정보 제공 웹사이트 사용자, . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1609921141835-710b7fa6e438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxtb2JpbGUlMjBhcHAlMjBzb2Z0d2FyZSUyMGludGVyZmFjZXxlbnwxfDB8fHwxNzgyMTMxNTQyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
