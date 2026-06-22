@@ -1,0 +1,20 @@
+{
+  "run_id": "20260622-185929-28679a3e",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "학교-아파트-청소차-안전-1add8cc8",
+      "title": "학교 아파트 청소차 안전",
+      "keyword": "학교 아파트 청소차 안전",
+      "category": "생활",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 학교 아파트 청소차 안전. Keyword: 학교 아파트 청소차 안전. Concrete visual subject: safety public service. Context: ## 학교 아파트 청소차 안전 강화 학교·아파트 청소차 안전 강화…후방카메라·경보장치 의무화 소식은 2026년 6월 22일 발표되었습니다. 이 소식은 세대와 직접 연결되는 생활 정보입니다. 학교·어린이집·300세대 이상 아파트 단지에서 청소차 안전을 강화하기 위해 후방영상장치와 경보장치 설치를 의무화합니다. ## 대상과 기간 확인 이번 소식에서 확인해야 할 내용은 다음과 같습니다. | 항목 | 내용 | | --- | --- | | 대상 | 학교·어린이집·300세대 이상 아파트 단지 | | 기간 | 11월부터 | | 처리 방식 | 후방영상장치와 경보장치 설치 의무화 | | 담당 주체 | 기후에너지환경부 | ## 확인 순서 1. 대상이 실제 대상에 포함되는지 확인합니다. 2. 기간이 시행 기간인지, 적용 기간인지 확인합니다. 3. 처리 방식이 확대 적용 시점 확인인지 확인합니다. 4. 담당 주체가 기후에너지환경부인지 확인합니다. ## 학교 아파트 청소차 안전 강화의 필요성 학교 아파트 청소차 안전 강화는 어린이와 주민들의 안전을 위해 필요합니다. 후방영상장치와 경보장치 설치로 인해 청소차의 사고 위험이 줄어들 것입니다. 또한, 기후에너지환경부의 안전 강화 조치는 청소차 운전자의 안전도 향상시킬 것입니다. ## 안전 강화 조치의 효과 안전 강화 조치는 다음과 같은 효과를 가져올 것입니다. * 청소차 사고 위험 감소 * 어린이와 주민들의 안. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1622612063021-116cc3407145?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxzYWZldHklMjBwdWJsaWMlMjBzZXJ2aWNlfGVufDF8MHx8fDE3ODIxNTQ5MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
