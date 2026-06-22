@@ -1,0 +1,21 @@
+{
+  "run_id": "20260622-221719-5d3a3d58",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "valve-ram-2026-60d5be9e",
+      "title": "Valve Steam Machine 2026 RAM 공급 협상과 가격 변화",
+      "keyword": "Valve RAM 2026",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Valve Steam Machine 2026 RAM 공급 협상과 가격 변화. Keyword: Valve RAM 2026. Concrete visual subject: technology innovation circuit abstract. Context: ## 1. Valve Steam Machine 2026: 가격 인상 배경 Valve는 미국 시애틀에 본사를 둔 세계 최대 게임 플랫폼 ‘Steam’ 운영사로, ‘Half-Life’, ‘Portal’ 등의 대표작을 보유하고 있다. Steam Machine은 PC와 콘솔의 장점을 결합한 게이밍 컴퓨터로, 2026년에는 RAM 공급망 협상 이슈로 인해 가격이 크게 올랐다. 2026년 6월 22일 The Verge 기사에 따르면, Valve의 RAM 협상은 “brutal(가혹했다)”고 표현될 정도로 공급사와의 가격 협상 과정이 극심했다. 특히 삼성, 마이크론 등 대형 제조사 중심의 폐쇄적 공급망에서 Valve가 중소 제조사와의 접근이 어려워 RAM 단가 협상력이 약화되었다. ## 2. 공식 가격 및 사양 변화 2026년 Steam Machine은 RAM 용량이 512GB~2TB로 확대되었으며, 공식 가격은 다음과 같다: - 512GB 모델: $1,049 - 2TB 모델: $1,349 (컨트롤러 별도 구매, 추가 비용 발생) 이전 모델 대비 약 30% 가격 인상이 이루어졌으며, RAM 용량 증가와 공급망 구조 변화가 주요 원인으로 지목된다. ## 3. RAM 공급망 구조와 협상 방식 Valve는 2026년 RAM 공급 협상에서 대형 제조사 중심의 폐쇄적 공급망에 직면했다. 과거에는 다수 공급사와 일괄 구매가 가능했으나, 2026년에는 삼성, . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1749006590324-d6b2e90ab1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dGVjaG5vbG9neSUyMGlubm92YXRpb24lMjBjaXJjdWl0JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc4MjE2NjkwMnww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
