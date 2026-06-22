@@ -1,15 +1,18 @@
 ---
-title: "이 땅의 모든 신명이 한데 어우러지는 3일간의 무악 대제전_이 땅의 굿-무악대전 공연 개최(260519)"
-date: "2026-05-19T00:28"
-category: "핫이슈"
+title: 이 땅의 모든 신명이 한데 어우러지는 무악 대제전
+date: 2026-05-19T00:28
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산진흥원"
-  - "핫이슈"
+- 보도기사
+- 국가유산진흥원
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1539964604210-db87088e0c2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxwZXJmb3JtYW5jZSUyMHN0YWdlJTIwYXJ0c3xlbnwxfDB8fHwxNzgyMDk2OTk5fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "이 땅의 모든 신명이 한데 어우러지는 3일간의 무악 대제전_이 땅의 굿-무악대전 공연 개최(260519) — Photo by Annie Tray-Gavin on Unsplash"
-author: "국가유산진흥원"
+cover_image: https://images.unsplash.com/photo-1539964604210-db87088e0c2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxwZXJmb3JtYW5jZSUyMHN0YWdlJTIwYXJ0c3xlbnwxfDB8fHwxNzgyMDk2OTk5fDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 이 땅의 모든 신명이 한데 어우러지는 3일간의 무악 대제전_이 땅의 굿-무악대전 공연 개최(260519) — Photo
+  by Annie Tray-Gavin on Unsplash
+author: 국가유산진흥원
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산진흥원이 2026-05-19 공개한 자료를 바탕으로 이 땅의 모든 신명이 한데 어우러지는 3일간의 무악 대제전_이 땅의 굿-무악대전 공연 개최의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

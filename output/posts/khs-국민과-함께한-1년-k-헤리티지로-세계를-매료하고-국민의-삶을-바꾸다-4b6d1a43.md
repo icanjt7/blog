@@ -1,15 +1,17 @@
 ---
-title: "“국민과 함께한 1년, K-헤리티지로 세계를 매료하고 국민의 삶을 바꾸다”"
-date: "2026-06-01T00:14"
-category: "핫이슈"
+title: 국가유산청, K-헤리티지로 세계 매료하고 국민 삶 바꾸다
+date: 2026-06-01T00:14
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=807fde7ef1b4419981108400155e62d7"
-cover_image_alt: "국민주권정부 출범 1주년 국가유산청 핵심성과 한컷이미지1"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=807fde7ef1b4419981108400155e62d7
+cover_image_alt: 국민주권정부 출범 1주년 국가유산청 핵심성과 한컷이미지1
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-06-01 공개한 자료를 바탕으로 “국민과 함께한 1년, K-헤리티지로 세계를 매료하고 국민의 삶을 바꾸다”의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

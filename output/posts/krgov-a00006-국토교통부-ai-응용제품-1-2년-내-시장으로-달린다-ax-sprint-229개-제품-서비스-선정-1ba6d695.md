@@ -1,15 +1,17 @@
 ---
-title: "\"AI 응용제품, 1~2년 내 시장으로 달린다\" AX-Sprint 229개 제품·서비스 선정"
-date: "2026-06-19T00:07"
-category: "기술"
+title: 국토교통부, 229개 AI 제품·서비스에 7,540억원 지원
+date: 2026-06-19T00:07
+category: 기술
 tags:
-  - "보도기사"
-  - "국토교통부"
-  - "기술"
+- 보도기사
+- 국토교통부
+- 기술
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgxOTE0MzQ5fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "\"AI 응용제품, 1~2년 내 시장으로 달린다\" AX-Sprint 229개 제품·서비스 선정"
-author: "국토교통부"
+cover_image: https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgxOTE0MzQ5fDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: '"AI 응용제품, 1~2년 내 시장으로 달린다" AX-Sprint 229개 제품·서비스 선정'
+author: 국토교통부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 사업 개요  
