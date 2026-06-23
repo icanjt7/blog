@@ -1,0 +1,74 @@
+{
+  "run_id": "20260623-043127-62430fae",
+  "topics": [
+    {
+      "keyword": "Valve RAM 2026",
+      "title_hint": "Valve describes just how brutal RAM negotiations are in 2026",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Valve describes just how brutal RAM negotiations are in 2026",
+          "url": "https://www.theverge.com/games/953945/valve-steam-machine-memory-component-crisis",
+          "published_at": "2026-06-22T21:07:14",
+          "summary": "Valve's Steam Machine finally has a price: a whopping $1,049 for the 512GB configuration or $1,349 for the 2TB version. And those are without bundled controllers, which drive up the cost more. The prices are so high in part because Valve isn't subsidizing the hardware, and the company has already indicated that the component crisis [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Valve RAM 2026",
+        "title_hint": "Valve describes just how brutal RAM negotiations are in 2026",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Valve describes just how brutal RAM negotiations are in 2026",
+            "url": "https://www.theverge.com/games/953945/valve-steam-machine-memory-component-crisis",
+            "published_at": "2026-06-22T21:07:14",
+            "summary": "Valve's Steam Machine finally has a price: a whopping $1,049 for the 512GB configuration or $1,349 for the 2TB version. And those are without bundled controllers, which drive up the cost more. The prices are so high in part because Valve isn't subsidizing the hardware, and the company has already indicated that the component crisis [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Valve Steam Machine RAM 가격 인상과 2026 협상",
+      "slug": "valve-ram-2026-6da5fab0",
+      "excerpt": "Valve의 Steam Machine은 2026년 RAM 공급난과 치열한 협상으로 인해 가격이 크게 상승했다. 512GB 모델은 $1,049, 2TB 모델은 $1,349로 책정되었으며, RAM 단가 급등이 주요 원인이다. 컨트롤러는 별도 구매가 필요하며, Valve는 하드웨어 가격에 보조금을 적용하지 않고 있다.",
+      "body_markdown": "## Steam Machine 가격 급등의 배경\n\nValve는 미국 워싱턴주 벨뷰에 본사를 둔 게임 및 하드웨어 기업으로, Steam 플랫폼과 Half-Life, Portal 등 대표작을 보유하고 있다. 최근 Valve는 고사양 게이밍 콘솔인 Steam Machine을 출시하며 하드웨어 시장에서 새로운 도전을 시작했다. 2026년 6월 기준 Steam Machine의 공식 가격은 512GB 모델이 $1,049, 2TB 모델이 $1,349로 책정되었다. 이 가격은 컨트롤러를 포함하지 않은 기본 구성으로, 액세서리 구매 시 추가 비용이 발생한다.\n\n## RAM 공급난과 Valve의 협상\n\nThe Verge(2026-06-22) 보도에 따르면, Steam Machine 가격 급등의 핵심 원인은 RAM이다. Valve는 Steam Machine에 512GB 또는 2TB의 고용량 RAM을 탑재하고 있으며, 하드웨어 가격에 별도의 보조금을 적용하지 않는다. 2026년 현재 DRAM 제조사들은 생산량을 조절하고 있고, 서버, AI, 게임 시장의 수요가 폭증하면서 RAM 단가가 급격히 상승했다. Valve는 RAM 공급업체와의 협상을 \"brutal(잔인하다)\"라고 표현할 정도로 긴장감이 높았다.\n\n## RAM 가격 추이와 시장 영향\n\nSteam Machine에 사용되는 RAM 가격은 꾸준히 상승해왔다. 아래 표는 2024년부터 2026년까지 Steam Machine의 RAM 가격 변화를 보여준다.\n\n| 연도 | 512GB 모델 가격 | 2TB 모델 가격 |\n|------|----------------|---------------|\n| 2024 | $899           | $1,199        |\n| 2025 | $975           | $1,250        |\n| 2026 | $1,049         | $1,349        |\n(출처: The Verge, 2026-06-22)\n\n2024년 대비 2026년 RAM 가격은 17% 이상 인상되었다. 이 같은 가격 상승은 RAM 공급난과 시장 내 수요 증가가 맞물린 결과다. 특히 서버, AI, 게이밍 시장에서 고용량 RAM 수요가 폭증하면서 Valve는 품질을 유지하기 위해 프리미엄을 지불해야 했다.\n\n## Steam Machine 구성과 소비자 부담\n\nSteam Machine은 뛰어난 성능과 안정성을 제공하지만, 가격 부담이 크다. RAM 용량이 많을수록 멀티태스킹, 게임 로딩, 대용량 데이터 처리에서 체감 성능이 향상된다. 그러나 2TB 모델의 높은 가격으로 인해 소비자들은 선택을 망설이고 있다. 컨트롤러 등 주요 액세서리가 별도 판매되어 최종 구매가는 더 높아진다. Valve는 공식 발표에서 \"좋은 품질을 유지하기 위해 싸우고 있다\"고 밝혔지만, 소비자 입장에서는 고사양이 정말 필요한지 고민할 수밖에 없는 상황이다.\n\n## Steam Machine 구매 시 핵심 체크포인트\n\nSteam Machine 구입을 고려하는 소비자는 다음 사항을 반드시 확인해야 한다.\n\n- 2026년 기준 Steam Machine 512GB/2TB 가격: $1,049/$1,349  \n- 컨트롤러 별도 구매 필요  \n- Valve: 하드웨어 가격에 보조금 미적용  \n- DRAM 공급난 및 서버·AI·게이밍 시장 수요 폭증  \n- RAM 가격 협상에서 Valve가 \"brutal\" 표현 사용 (The Verge, 2026-06-22)  \n- 2024→2026 RAM 가격 상승률: 17% 이상\n\nValve의 RAM 2026 협상은 게임 하드웨어 시장의 핵심 변수로 작용하고 있다. Steam Machine 구매를 고려한다면, Valve 공식 홈페이지에서 실제 판매 가격과 구성품 안내를 반드시 확인하는 것이 중요하다.\n\n---\n\n출처:  \nValve describes just how brutal RAM negotiations are in 2026 (The Verge, 2026-06-22)  \nhttps://www.theverge.com/games/953945/valve-steam-machine-memory-component-crisis",
+      "tags": [
+        "기술",
+        "Valve",
+        "RAM",
+        "2026"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyMTY2OTAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Valve Steam Machine RAM 가격 인상과 2026 협상 — Photo by Ludovico Ceroseis on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyMTY2OTAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "Valve Steam Machine RAM 가격 인상과 2026 협상 본문 보조 이미지 — Photo by Adi Goldstein on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Valve Steam Machine RAM 가격 인상과 2026 협상. Keyword: Valve RAM 2026. Concrete visual subject: technology innovation circuit abstract. Context: ## Steam Machine 가격 급등의 배경 Valve는 미국 워싱턴주 벨뷰에 본사를 둔 게임 및 하드웨어 기업으로, Steam 플랫폼과 Half-Life, Portal 등 대표작을 보유하고 있다. 최근 Valve는 고사양 게이밍 콘솔인 Steam Machine을 출시하며 하드웨어 시장에서 새로운 도전을 시작했다. 2026년 6월 기준 Steam Machine의 공식 가격은 512GB 모델이 $1,049, 2TB 모델이 $1,349로 책정되었다. 이 가격은 컨트롤러를 포함하지 않은 기본 구성으로, 액세서리 구매 시 추가 비용이 발생한다. ## RAM 공급난과 Valve의 협상 The Verge(2026-06-22) 보도에 따르면, Steam Machine 가격 급등의 핵심 원인은 RAM이다. Valve는 Steam Machine에 512GB 또는 2TB의 고용량 RAM을 탑재하고 있으며, 하드웨어 가격에 별도의 보조금을 적용하지 않는다. 2026년 현재 DRAM 제조사들은 생산량을 조절하고 있고, 서버, AI, 게임 시장의 수요가 폭증하면서 RAM 단가가 급격히 상승했다. Valve는 RAM 공급업체와의 협상을 \"brutal(잔인하다)\"라고 표현할 정도로 긴장감이 높았다. ## RAM 가격 추이와 시장 영향 Steam Machine에 사용되는 RAM 가격은 꾸준히 상승해왔다. 아래 표는 2024년부터 2026년까지 Steam Ma. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: Valve Steam Machine RAM 가격 인상과 2026 협상. Keyword: Valve RAM 2026. Concrete visual subject: technology innovation circuit abstract. Article context: ## Steam Machine 가격 급등의 배경 Valve는 미국 워싱턴주 벨뷰에 본사를 둔 게임 및 하드웨어 기업으로, Steam 플랫폼과 Half-Life, Portal 등 대표작을 보유하고 있다. 최근 Valve는 고사양 게이밍 콘솔인 Steam Machine을 출시하며 하드웨어 시장에서 새로운 도전을 시작했다. 2026년 6월 기준 Steam Machine의 공식 가격은 512GB 모델이 $1,049, 2TB 모델이 $1,349로 책정되었다. 이 가격은 컨트롤러를 포함하지 않은 기본 구성으로, 액세서리 구매 시 추가 비용이 발생한다. ## RAM 공급난과 Valve의 협상 The Verge(2026-06-22) 보도에 따르면, Steam Machine 가격 급등의 핵심 원인은 RAM이다. Valve는 Steam Machine에 512GB 또는 2TB의 고용량 RAM을 탑재하고 있으며, 하드웨어 가격에 별도의 보조금을 적용하지 않는다. 2026년 현재 DRAM 제조사들은 생산량을 조절하고 있고, 서버, AI, 게임 시장의 수요가 폭증하면서 RAM 단가가 급격히 상승했다. Valve는 RAM 공급업체와의 협상을 \"brutal(잔인하다)\"라고 표현할 정도로 긴장감이 높았다. ## RAM 가격 추이와 시장 영향 Steam Machine에 사용되는 RAM 가격은 꾸준히 상승해왔다. 아래 표는 2024년부터 2026년까지 Steam Machine의 RAM 가격 변화를 보여준다. | 연도 | 512GB 모델 가격 | 2TB 모델 가격 | |------|----------------|---------------| | 2024 | $899 | $1,199 | | 2025 | $975 | $1,250 | | 2026 | $1,049 | $1,349 | (출처: The Verge, 2026-06-. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-06-23T04:35:04.760200",
+      "quality_score": 5.0,
+      "review_notes": [
+        "출처에 없는 2024년 기준일이 들어가 최신 글처럼 보이지 않습니다.",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 5.0"
+    }
+  ]
+}

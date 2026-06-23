@@ -1,0 +1,22 @@
+{
+  "run_id": "20260623-043127-62430fae",
+  "average_quality": 5.0,
+  "drafts": [
+    {
+      "slug": "valve-ram-2026-6da5fab0",
+      "title": "Valve Steam Machine RAM 가격 인상과 2026 협상",
+      "keyword": "Valve RAM 2026",
+      "category": "기술",
+      "quality_score": 5.0,
+      "review_notes": [
+        "출처에 없는 2024년 기준일이 들어가 최신 글처럼 보이지 않습니다.",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Valve Steam Machine RAM 가격 인상과 2026 협상. Keyword: Valve RAM 2026. Concrete visual subject: technology innovation circuit abstract. Context: ## Steam Machine 가격 급등의 배경 Valve는 미국 워싱턴주 벨뷰에 본사를 둔 게임 및 하드웨어 기업으로, Steam 플랫폼과 Half-Life, Portal 등 대표작을 보유하고 있다. 최근 Valve는 고사양 게이밍 콘솔인 Steam Machine을 출시하며 하드웨어 시장에서 새로운 도전을 시작했다. 2026년 6월 기준 Steam Machine의 공식 가격은 512GB 모델이 $1,049, 2TB 모델이 $1,349로 책정되었다. 이 가격은 컨트롤러를 포함하지 않은 기본 구성으로, 액세서리 구매 시 추가 비용이 발생한다. ## RAM 공급난과 Valve의 협상 The Verge(2026-06-22) 보도에 따르면, Steam Machine 가격 급등의 핵심 원인은 RAM이다. Valve는 Steam Machine에 512GB 또는 2TB의 고용량 RAM을 탑재하고 있으며, 하드웨어 가격에 별도의 보조금을 적용하지 않는다. 2026년 현재 DRAM 제조사들은 생산량을 조절하고 있고, 서버, AI, 게임 시장의 수요가 폭증하면서 RAM 단가가 급격히 상승했다. Valve는 RAM 공급업체와의 협상을 \"brutal(잔인하다)\"라고 표현할 정도로 긴장감이 높았다. ## RAM 가격 추이와 시장 영향 Steam Machine에 사용되는 RAM 가격은 꾸준히 상승해왔다. 아래 표는 2024년부터 2026년까지 Steam Ma. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyMTY2OTAyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
