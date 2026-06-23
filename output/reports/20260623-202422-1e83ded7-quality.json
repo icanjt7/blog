@@ -1,0 +1,21 @@
+{
+  "run_id": "20260623-202422-1e83ded7",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "prime-day-4k-tvs-914c0ebb",
+      "title": "최대 40% 할인! 2026 프라임 데이 4K TV 가격·모델 변화 한눈에",
+      "keyword": "Prime Day 4K TVs",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 최대 40% 할인! 2026 프라임 데이 4K TV 가격·모델 변화 한눈에. Keyword: Prime Day 4K TVs. Concrete visual subject: technology innovation circuit abstract. Context: ## 2026년 프라임 데이 4K TV 할인, 올해 어떤 변화가 있나 아마존 프라임 데이(2026년 6월 23일 기준)에서는 다양한 4K TV가 큰 폭의 할인 혜택을 받고 있습니다. 이번 행사에서 소비자가 실제로 경험할 수 있는 가격 변화와 주요 모델별 특징을 정리했습니다. --- ### 1. 할인 대상 모델과 브랜드 - **삼성, LG, Sony, TCL 등 주요 브랜드** - 43~85인치까지 다양한 크기 - OLED, QLED, Mini LED 등 최신 패널 탑재 - 2026년형 신제품 포함 - HDR, Dolby Vision, 스마트 기능 지원 모델 확대 --- ### 2. 할인 폭과 가격 변동 | 브랜드 | 대표 모델 | 행사 전 가격 | 프라임 데이 할인 가격 | 할인율 | |-------|-----------|-------------|-----------------------|--------| | 삼성 | QN90C 65인치 | $1,399 | $899 | 약 36% | | LG | C3 OLED 55인치 | $1,299 | $799 | 약 38% | | Sony | X90L 75인치 | $1,599 | $999 | 약 37% | | TCL | QM8 65인치 | $899 | $549 | 약 39% | ※ 출처: [The Verge - Prime Day has served up several great deals on 4. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyMjA5MjczfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
