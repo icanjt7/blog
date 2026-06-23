@@ -585,11 +585,25 @@ class StaticSiteBuilder:
         match = re.search(r"[가-힣A-Za-z0-9]", label)
         return match.group(0) if match else "브"
 
+    @staticmethod
+    def _image_src_for_width(source: str, width: int) -> str:
+        if not source or "images.unsplash.com" not in source:
+            return source
+        if "w=" in source:
+            return re.sub(r"([?&])w=\d+", lambda match: f"{match.group(1)}w={width}", source)
+        separator = "&" if "?" in source else "?"
+        return f"{source}{separator}w={width}"
+
     def _write_post(self, post: Post) -> None:
         alternates = self._post_alternate_urls(post)
         cover_html = ""
         if post.cover_image:
-            cover_html = f'<img class="cover" src="{html.escape(post.cover_image)}" alt="{html.escape(post.cover_image_alt)}" loading="lazy">'
+            cover_src = self._image_src_for_width(post.cover_image, 1200)
+            cover_html = (
+                f'<img class="cover" src="{html.escape(cover_src)}" '
+                f'alt="{html.escape(post.cover_image_alt)}" width="1200" height="675" '
+                'loading="eager" fetchpriority="high" decoding="async">'
+            )
         ad_slot = self._ad_slot()
         display_author = self._display_author(post)
         content = f"""
@@ -694,6 +708,9 @@ class StaticSiteBuilder:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://images.pexels.com">
+  <link rel="preconnect" href="https://cdn.pixabay.com">
   <title>{html.escape(title)}</title>
   <meta name="description" content="{html.escape(description)}">
   <meta property="og:type" content="article">
@@ -739,11 +756,15 @@ class StaticSiteBuilder:
           <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
         </div>"""
 
-    def _card_html(self, post: Post) -> str:
+    def _card_html(self, post: Post, priority: bool = False) -> str:
+        loading = "eager" if priority else "lazy"
+        fetchpriority = ' fetchpriority="high"' if priority else ""
+        thumb_src = self._image_src_for_width(post.cover_image, 720)
         thumb = (
             f'<a class="card-thumb" href="./{post.slug}.html">'
-            f'<img class="card-img" src="{html.escape(post.cover_image)}" '
-            f'alt="{html.escape(post.cover_image_alt)}" loading="lazy"></a>'
+            f'<img class="card-img" src="{html.escape(thumb_src)}" '
+            f'alt="{html.escape(post.cover_image_alt)}" width="720" height="405" '
+            f'loading="{loading}"{fetchpriority} decoding="async"></a>'
             if post.cover_image else ""
         )
         display_author = self._display_author(post)
@@ -784,7 +805,7 @@ class StaticSiteBuilder:
             start = (page - 1) * per_page
             end = start + per_page
             page_posts = posts[start:end]
-            cards = "\n".join(self._card_html(p) for p in page_posts)
+            cards = "\n".join(self._card_html(p, priority=(page == 1 and i == 0)) for i, p in enumerate(page_posts))
 
             nav_html = self._pagination_html(page, total_pages)
 
@@ -1559,11 +1580,24 @@ class StaticSiteBuilder:
     ) -> None:
         gtm_id = html.escape(GTM_CONTAINER_ID)
         gtm_head = f"""  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
-  new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  }})(window,document,'script','dataLayer','{gtm_id}');</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function briefwaveLoadGtm(){{
+      if(window.__briefwaveGtmLoading)return;
+      window.__briefwaveGtmLoading=true;
+      window.dataLayer.push({{'gtm.start': new Date().getTime(), event:'gtm.js'}});
+      var firstScript=document.getElementsByTagName('script')[0];
+      var tag=document.createElement('script');
+      tag.async=true;
+      tag.src='https://www.googletagmanager.com/gtm.js?id={gtm_id}';
+      firstScript.parentNode.insertBefore(tag,firstScript);
+    }}
+    if('requestIdleCallback' in window){{
+      requestIdleCallback(briefwaveLoadGtm, {{timeout: 2500}});
+    }}else{{
+      setTimeout(briefwaveLoadGtm, 1500);
+    }}
+  </script>
   <!-- End Google Tag Manager -->"""
         gtm_body = f"""  <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={gtm_id}"
@@ -1573,18 +1607,49 @@ class StaticSiteBuilder:
         if self.ga_measurement_id:
             mid = html.escape(self.ga_measurement_id)
             ga_script = f"""
-  <script async src="https://www.googletagmanager.com/gtag/js?id={mid}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){{dataLayer.push(arguments);}}
     gtag('js', new Date());
     gtag('config', '{mid}');
+    function briefwaveLoadGtag(){{
+      if(window.__briefwaveGtagLoading)return;
+      window.__briefwaveGtagLoading=true;
+      var script=document.createElement('script');
+      script.async=true;
+      script.src='https://www.googletagmanager.com/gtag/js?id={mid}';
+      document.head.appendChild(script);
+    }}
+    if('requestIdleCallback' in window){{
+      requestIdleCallback(briefwaveLoadGtag, {{timeout: 2500}});
+    }}else{{
+      setTimeout(briefwaveLoadGtag, 1500);
+    }}
   </script>"""
 
         pub = html.escape(self.adsense_publisher_id or "ca-pub-3870943054399059")
         adsense_script = (
             f'\n  <meta name="google-adsense-account" content="{pub}">'
-            "\n  <script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3870943054399059\"\n             crossorigin=\"anonymous\"></script>\n"
+            f"""
+  <script>
+    (function(){{
+      function loadAds(){{
+        if(window.__briefwaveAdsLoading)return;
+        window.__briefwaveAdsLoading=true;
+        var s=document.createElement('script');
+        s.async=true;
+        s.crossOrigin='anonymous';
+        s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={pub}';
+        document.head.appendChild(s);
+      }}
+      if('requestIdleCallback' in window){{
+        requestIdleCallback(loadAds, {{timeout: 3000}});
+      }}else{{
+        setTimeout(loadAds, 1800);
+      }}
+    }})();
+  </script>
+"""
         )
 
         if page_url is None:
@@ -1647,6 +1712,9 @@ class StaticSiteBuilder:
   <meta charset="utf-8">
 {gtm_head}
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://images.pexels.com">
+  <link rel="preconnect" href="https://cdn.pixabay.com">
   <title>{html.escape(title)}</title>
   <meta name="description" content="{html.escape(description)}">
   <meta name="robots" content="{html.escape(robots)}">
@@ -1775,6 +1843,21 @@ class StaticSiteBuilder:
       var match=raw.match(/^\\/(?:auto|ko)\\/([^/]+)$/);
       return match ? match[1] : sourceLang;
     }}
+    function loadTranslateScript(){{
+      if(window.__briefwaveTranslateLoading)return;
+      window.__briefwaveTranslateLoading=true;
+      var script=document.createElement('script');
+      script.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+      script.defer=true;
+      document.head.appendChild(script);
+    }}
+    function loadTranslateWhenQuiet(){{
+      if('requestIdleCallback' in window){{
+        requestIdleCallback(loadTranslateScript, {{timeout: 3500}});
+      }}else{{
+        setTimeout(loadTranslateScript, 2200);
+      }}
+    }}
     function normalizeLanguage(code){{
       if(!code)return '';
       var cleaned=String(code).trim();
@@ -1814,6 +1897,8 @@ class StaticSiteBuilder:
         }}
         location.reload();
       }});
+      select.addEventListener('focus', loadTranslateScript, {{once:true}});
+      select.addEventListener('pointerdown', loadTranslateScript, {{once:true}});
     }}
     window.googleTranslateElementInit=function(){{
       if(!window.google||!window.google.translate)return;
@@ -1824,9 +1909,13 @@ class StaticSiteBuilder:
         layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
       }}, 'google_translate_element');
     }};
+    if(initialLang!==sourceLang){{
+      loadTranslateScript();
+    }}else{{
+      loadTranslateWhenQuiet();
+    }}
   }})();
   </script>
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
 </body>
 </html>
 """
@@ -2070,6 +2159,9 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  contain: layout paint;
+  content-visibility: auto;
+  contain-intrinsic-size: 420px;
   transition: box-shadow .2s, transform .18s;
 }
 .card:hover { box-shadow: 0 6px 28px rgba(0,0,0,.09); transform: translateY(-3px); }
@@ -2314,6 +2406,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   object-fit: cover;
   object-position: center center;
   border-radius: 8px;
+  background: #ece7da;
 }
 
 /* ── post content ── */
@@ -2334,7 +2427,15 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .content th { background: #ece7da; }
 
 /* ── ad slot ── */
-.ad-slot { margin: 20px 0; overflow: hidden; }
+.ad-slot {
+  display: block;
+  min-height: 112px;
+  margin: 20px 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: rgba(222,216,202,.22);
+}
+.ad-slot:empty { display: none; }
 
 /* ── dashboard ── */
 .empty { padding: 24px 0; color: var(--muted); }
@@ -2356,7 +2457,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   .site-nav { padding: 0 4px; }
   .hero { padding: 10px 16px 8px; }
   .grid { grid-template-columns: 1fr; gap: 10px; padding: 10px 12px 0; }
-  .card { border-radius: 10px; }
+  .card { border-radius: 10px; contain-intrinsic-size: 390px; }
   .card-body { padding: 12px 14px 14px; }
 	  .post { border-radius: 0; border-left: none; border-right: none; padding: 16px; }
 	  .search-page { max-width: none; }
@@ -2368,6 +2469,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 	  .tag-overview { padding: 16px; }
 	  .results-summary { align-items: flex-start; flex-direction: column; gap: 4px; }
 	  .cover { border-radius: 0; aspect-ratio: 16 / 9; object-fit: cover; object-position: center center; max-height: 200px; }
+  .ad-slot { min-height: 96px; margin: 16px 0; border-radius: 6px; }
   .content table { font-size: 0.82rem; }
   .content th, .content td { padding: 6px 8px; }
   .stats { grid-template-columns: 1fr; }
