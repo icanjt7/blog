@@ -146,12 +146,78 @@ tags:
             self.assertIn('<meta name="robots" content="noindex,follow">', search)
 
             static_sitemap = (root / "public" / "sitemap-static.xml").read_text(encoding="utf-8")
-            post_sitemap = (root / "public" / "sitemap-posts-ko.xml").read_text(encoding="utf-8")
+            post_sitemap = (root / "public" / "sitemap-posts-priority.xml").read_text(encoding="utf-8")
             self.assertNotIn("search.html", static_sitemap)
             self.assertNotIn("page2.html", static_sitemap)
             self.assertNotIn("category-%EA%B8%B0%EC%88%A0-2.html", static_sitemap)
             self.assertIn("category-%EA%B8%B0%EC%88%A0.html", static_sitemap)
             self.assertIn("%ED%95%9C%EA%B8%80-%EA%B8%80-0.html", post_sitemap)
+
+    def test_build_adds_adsense_quality_signals(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            posts_dir = root / "posts"
+            posts_dir.mkdir()
+            (posts_dir / "source-post.md").write_text(
+                """---
+title: '출처 글'
+date: '2026-06-01T09:30:00'
+category: 정책
+tags:
+- 보도자료
+- 정부
+---
+
+## 핵심
+
+공식 발표를 독자 관점으로 풀어 쓴 본문입니다.
+
+## 참고한 곳
+
+- [공식 원문](https://example.com/source)
+""",
+                encoding="utf-8",
+            )
+            (posts_dir / "related-post.md").write_text(
+                """---
+title: '관련 글'
+date: '2026-06-02T09:30:00'
+category: 정책
+tags:
+- 정부
+---
+
+## 본문
+
+관련 글입니다.
+""",
+                encoding="utf-8",
+            )
+            builder = StaticSiteBuilder(
+                posts_dir=posts_dir,
+                public_dir=root / "public",
+                site_title="테스트",
+                site_description="테스트 설명",
+                custom_domain="example.com",
+                categories=["정책"],
+            )
+
+            builder.build()
+
+            html = (root / "public" / "source-post.html").read_text(encoding="utf-8")
+            self.assertIn("참고 출처", html)
+            self.assertIn("공식 원문", html)
+            self.assertIn("편집 기준", html)
+            self.assertIn("함께 보면 좋은 글", html)
+            self.assertIn("관련 글", html)
+            self.assertLess(html.index('<div class="content">'), html.index('<div class="ad-slot">'))
+
+            for filename in ("about.html", "editorial-policy.html", "privacy.html", "contact.html"):
+                self.assertTrue((root / "public" / filename).exists())
+            footer_html = (root / "public" / "index.html").read_text(encoding="utf-8")
+            self.assertIn('href="./privacy.html"', footer_html)
+            sitemap = (root / "public" / "sitemap-static.xml").read_text(encoding="utf-8")
+            self.assertIn("privacy.html", sitemap)
 
 if __name__ == "__main__":
     unittest.main()

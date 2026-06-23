@@ -32,6 +32,7 @@ class Post:
     cover_image: str = ""
     cover_image_alt: str = ""
     author: str = ""
+    source_links: list[tuple[str, str]] | None = None
 
 
 AUTHOR_NAMES = [
@@ -355,7 +356,7 @@ class StaticSiteBuilder:
           if cat and cat not in self.categories:
               self.categories.append(cat)
       for post in posts:
-        self._write_post(post)
+        self._write_post(post, posts)
 
       self._write_index(posts)
       # generate search index and page
@@ -363,6 +364,7 @@ class StaticSiteBuilder:
       self._write_search_page(posts)
       self._write_global_government_pages(posts)
       self._write_category_pages(posts)
+      self._write_static_pages()
 
       # self._write_dashboard(posts)  # 관리자 전용 — 일반 사용자에게 노출하지 않음
       self._write_feed(posts)
@@ -423,6 +425,7 @@ class StaticSiteBuilder:
             cover_image=cover_image,
             cover_image_alt=str(meta.get("cover_image_alt") or f"{title} 관련 대표 이미지"),
             author=str(meta.get("author") or self._author_for_slug(path.stem)),
+            source_links=self._extract_source_links(body),
         )
 
     def _slugify(self, value: str) -> str:
@@ -594,7 +597,7 @@ class StaticSiteBuilder:
         separator = "&" if "?" in source else "?"
         return f"{source}{separator}w={width}"
 
-    def _write_post(self, post: Post) -> None:
+    def _write_post(self, post: Post, posts: list[Post]) -> None:
         alternates = self._post_alternate_urls(post)
         cover_html = ""
         if post.cover_image:
@@ -606,6 +609,9 @@ class StaticSiteBuilder:
             )
         ad_slot = self._ad_slot()
         display_author = self._display_author(post)
+        source_links_html = self._source_links_html(post)
+        related_html = self._related_posts_html(post, posts)
+        editorial_note = self._editorial_note_html(post)
         content = f"""
         <article class="post">
           <a class="back" href="./index.html">전체 글</a>
@@ -619,8 +625,10 @@ class StaticSiteBuilder:
             </div>
             <div class="tags">{self._tag_html(post.tags)}</div>
           </header>
-          {ad_slot}
           <div class="content">{post.body_html}</div>
+          {source_links_html}
+          {editorial_note}
+          {related_html}
           {ad_slot}
         </article>
         """
@@ -755,6 +763,84 @@ class StaticSiteBuilder:
                data-ad-format="auto" data-full-width-responsive="true"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
         </div>"""
+
+    @staticmethod
+    def _extract_source_links(markdown_text: str) -> list[tuple[str, str]]:
+        links: list[tuple[str, str]] = []
+        for label, url in re.findall(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", markdown_text):
+            clean_label = re.sub(r"\s+", " ", label).strip()
+            clean_url = url.strip()
+            if not clean_label or any(existing_url == clean_url for _existing_label, existing_url in links):
+                continue
+            links.append((clean_label[:90], clean_url))
+            if len(links) >= 8:
+                break
+        return links
+
+    def _source_links_html(self, post: Post) -> str:
+        links = post.source_links or []
+        if not links:
+            return ""
+        items = "\n".join(
+            f'<li><a href="{html.escape(url)}" rel="nofollow noopener" target="_blank">{html.escape(label)}</a></li>'
+            for label, url in links
+        )
+        return f"""
+          <section class="source-box" aria-label="참고 출처">
+            <h2>참고 출처</h2>
+            <p>본문은 아래 원문과 공개 자료를 기준으로 편집했습니다. 날짜, 신청 조건, 운영 여부처럼 바뀔 수 있는 정보는 원문에서 다시 확인하세요.</p>
+            <ul>{items}</ul>
+          </section>
+        """
+
+    def _editorial_note_html(self, post: Post) -> str:
+        if self._is_government_post(post):
+            note = "공식 발표를 그대로 옮기기보다 독자가 확인해야 할 대상, 시점, 절차, 후속 확인 경로를 중심으로 다시 정리했습니다."
+        elif post.category == "기술":
+            note = "제품·서비스 발표는 기능 설명과 실제 사용자 영향을 나누고, 출처에 없는 성능·가격·출시일은 임의로 보태지 않습니다."
+        elif post.category in {"핫이슈", "생활"}:
+            note = "방문·신청·구매 판단에 필요한 조건을 중심으로 정리하며, 직접 경험하지 않은 내용을 후기처럼 쓰지 않습니다."
+        else:
+            note = "확인 가능한 공개 자료와 원문 기준으로 사실과 해석을 구분해 편집합니다."
+        return f"""
+          <section class="editorial-note" aria-label="편집 기준">
+            <h2>편집 기준</h2>
+            <p>{html.escape(note)}</p>
+          </section>
+        """
+
+    def _related_posts_html(self, post: Post, posts: list[Post]) -> str:
+        candidates: list[tuple[int, Post]] = []
+        post_tags = set(post.tags)
+        for other in posts:
+            if other.slug == post.slug:
+                continue
+            score = 0
+            if other.category == post.category:
+                score += 3
+            score += len(post_tags.intersection(other.tags)) * 2
+            if score:
+                candidates.append((score, other))
+        related = [item for _score, item in sorted(candidates, key=lambda pair: (pair[0], pair[1].date), reverse=True)[:4]]
+        if not related:
+            related = [item for item in posts if item.slug != post.slug][:4]
+        if not related:
+            return ""
+        cards = "\n".join(
+            f"""
+              <li>
+                <a href="./{html.escape(item.slug)}.html">{html.escape(item.title)}</a>
+                <span>{html.escape(item.category)} · {item.date:%Y-%m-%d}</span>
+              </li>
+            """
+            for item in related
+        )
+        return f"""
+          <section class="related-posts" aria-label="관련 글">
+            <h2>함께 보면 좋은 글</h2>
+            <ul>{cards}</ul>
+          </section>
+        """
 
     def _card_html(self, post: Post, priority: bool = False) -> str:
         loading = "eager" if priority else "lazy"
@@ -1417,6 +1503,77 @@ class StaticSiteBuilder:
                     if page == 1 else "noindex,follow",
                 )
 
+    def _write_static_pages(self) -> None:
+        pages = {
+            "about.html": {
+                "title": "브리핑웨이브 소개",
+                "description": "브리핑웨이브의 운영 목적과 콘텐츠 범위를 안내합니다.",
+                "body": """
+          <h1>브리핑웨이브 소개</h1>
+          <p>브리핑웨이브는 정책, 기술, 생활, 지역 이슈를 독자가 빠르게 판단할 수 있도록 정리하는 정보형 블로그입니다.</p>
+          <h2>무엇을 다루나요</h2>
+          <p>정부와 공공기관 발표, 기술 서비스 변화, 생활 혜택, 여행·지역 정보를 원문 확인 경로와 함께 정리합니다. 단순 보도자료 재게시가 아니라 대상, 시점, 절차, 독자가 확인해야 할 조건을 중심으로 다시 편집합니다.</p>
+          <h2>어떻게 작성하나요</h2>
+          <p>공식 발표, 공개 자료, 신뢰할 수 있는 원문 링크를 우선 확인합니다. 직접 경험하지 않은 방문 후기나 구매 후기를 꾸며 쓰지 않으며, 출처에 없는 가격, 일정, 수치, 효능은 임의로 추가하지 않습니다.</p>
+                """,
+            },
+            "editorial-policy.html": {
+                "title": "편집정책",
+                "description": "브리핑웨이브의 출처 표기, AI 활용, 수정 기준을 안내합니다.",
+                "body": """
+          <h1>편집정책</h1>
+          <p>브리핑웨이브는 자동화 도구를 활용하더라도 독자가 실제로 확인할 수 있는 정보와 원문 링크를 중심으로 콘텐츠를 구성합니다.</p>
+          <h2>출처와 검증</h2>
+          <p>정책·공공기관 글은 공식 발표와 담당 기관 자료를 우선합니다. 기술·생활 글은 원문 기사, 공식 안내, 제품·서비스 공지를 기준으로 하며, 본문 하단에 참고 출처를 표시합니다.</p>
+          <h2>AI 활용 원칙</h2>
+          <p>AI는 초안 작성과 요약 보조에 사용될 수 있습니다. 다만 없는 경험, 없는 수치, 출처에 없는 단정 표현을 만들지 않도록 제한하고, 독자에게 필요한 확인 기준을 추가하는 방향으로 편집합니다.</p>
+          <h2>수정과 삭제</h2>
+          <p>오류, 오래된 정보, 출처 누락을 발견하면 확인 후 수정합니다. 문의는 contact 페이지의 연락처로 보내주세요.</p>
+                """,
+            },
+            "privacy.html": {
+                "title": "개인정보처리방침",
+                "description": "브리핑웨이브의 개인정보 처리와 외부 서비스 사용을 안내합니다.",
+                "body": """
+          <h1>개인정보처리방침</h1>
+          <p>브리핑웨이브는 회원가입 기능을 운영하지 않으며, 방문자가 댓글이나 계정을 통해 개인정보를 직접 제출하는 구조를 두고 있지 않습니다.</p>
+          <h2>자동 수집 정보</h2>
+          <p>사이트 품질 개선과 보안 확인을 위해 GitHub Pages, Google Analytics, Google Tag Manager, Google AdSense 등 외부 서비스가 접속 로그, 쿠키, 기기 정보, 페이지 이용 정보를 처리할 수 있습니다.</p>
+          <h2>광고와 쿠키</h2>
+          <p>Google AdSense가 승인되어 광고가 표시되는 경우 Google 및 파트너가 쿠키를 사용해 광고 측정과 맞춤 광고를 제공할 수 있습니다. 사용자는 브라우저 설정이나 Google 광고 설정에서 맞춤 광고 사용을 관리할 수 있습니다.</p>
+          <h2>문의</h2>
+          <p>개인정보나 사이트 운영 관련 문의는 contact 페이지의 연락처로 보내주세요.</p>
+                """,
+            },
+            "contact.html": {
+                "title": "문의",
+                "description": "브리핑웨이브 운영 문의와 오류 제보 방법을 안내합니다.",
+                "body": """
+          <h1>문의</h1>
+          <p>오류 제보, 출처 정정, 게시 중단 요청, 제휴 문의는 아래 이메일로 보내주세요.</p>
+          <h2>연락처</h2>
+          <p><a href="mailto:icanjt7@gmail.com">icanjt7@gmail.com</a></p>
+          <h2>빠른 확인을 위해</h2>
+          <p>문의할 때는 문제가 있는 페이지 주소, 수정이 필요한 문장, 근거가 되는 공식 자료 링크를 함께 보내주시면 더 빠르게 확인할 수 있습니다.</p>
+                """,
+            },
+        }
+        for filename, page in pages.items():
+            content = f"""
+        <article class="post static-page">
+          <a class="back" href="./index.html">블로그 홈</a>
+          {page["body"]}
+        </article>
+            """
+            self._write_html(
+                filename,
+                page["title"],
+                content,
+                active=None,
+                page_url=self._page_url(filename),
+                description=page["description"],
+            )
+
     def _write_sitemap(self, posts: list[Post]) -> None:
         now = datetime.now()
 
@@ -1473,6 +1630,8 @@ class StaticSiteBuilder:
 
         static_entries: list[str] = []
         static_entries.append(_entry(self._page_url("index.html"), now, "daily", "1.0"))
+        for filename in ("about.html", "editorial-policy.html", "privacy.html", "contact.html"):
+            static_entries.append(_entry(self._page_url(filename), now, "monthly", "0.6"))
         government_alternates = {lang: self._page_url(copy["filename"]) for lang, copy in GOVERNMENT_GLOBAL_PAGES.items()}
         government_alternates["x-default"] = self._page_url(GOVERNMENT_GLOBAL_PAGES["en"]["filename"])
         for lang, copy in GOVERNMENT_GLOBAL_PAGES.items():
@@ -1775,6 +1934,12 @@ class StaticSiteBuilder:
   </div>
   <footer class="site-footer">
     <div class="page-shell">
+      <nav class="footer-links" aria-label="사이트 정보">
+        <a href="{asset_prefix}about.html">소개</a>
+        <a href="{asset_prefix}editorial-policy.html">편집정책</a>
+        <a href="{asset_prefix}privacy.html">개인정보처리방침</a>
+        <a href="{asset_prefix}contact.html">문의</a>
+      </nav>
       <p>© 2024 BriefWave. All rights reserved.</p>
     </div>
   </footer>
@@ -2144,6 +2309,9 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 /* footer */
 .site-footer { border-top: 1px solid var(--line); background: var(--paper); margin-top: 32px; }
 .site-footer .page-shell { padding: 24px 0; text-align: center; color: var(--muted); font-size: 0.82rem; }
+.footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 8px; }
+.footer-links a { color: var(--muted); }
+.footer-links a:hover { color: var(--accent); }
 
 /* ── index grid ── */
 .grid {
@@ -2212,6 +2380,40 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   word-break: keep-all;
 }
 .back { display: inline-block; margin-bottom: 20px; color: var(--muted); font-size: 0.9rem; }
+.source-box,
+.editorial-note,
+.related-posts {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.source-box h2,
+.editorial-note h2,
+.related-posts h2 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+.source-box p,
+.editorial-note p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.source-box ul,
+.related-posts ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+.source-box li,
+.related-posts li {
+  margin: 0 0 7px;
+}
+.related-posts li span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
 
 /* ── search and tag pages ── */
 .search-page {
