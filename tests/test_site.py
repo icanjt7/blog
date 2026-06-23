@@ -205,6 +205,8 @@ tags:
             builder.build()
 
             html = (root / "public" / "source-post.html").read_text(encoding="utf-8")
+            self.assertIn("읽는 기준", html)
+            self.assertIn("관련 발표는", html)
             self.assertIn("참고 출처", html)
             self.assertIn("공식 원문", html)
             self.assertIn("편집 기준", html)

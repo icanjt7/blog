@@ -609,6 +609,7 @@ class StaticSiteBuilder:
             )
         ad_slot = self._ad_slot()
         display_author = self._display_author(post)
+        reader_context_html = self._reader_context_html(post)
         source_links_html = self._source_links_html(post)
         related_html = self._related_posts_html(post, posts)
         editorial_note = self._editorial_note_html(post)
@@ -626,6 +627,7 @@ class StaticSiteBuilder:
             <div class="tags">{self._tag_html(post.tags)}</div>
           </header>
           <div class="content">{post.body_html}</div>
+          {reader_context_html}
           {source_links_html}
           {editorial_note}
           {related_html}
@@ -792,6 +794,68 @@ class StaticSiteBuilder:
             <ul>{items}</ul>
           </section>
         """
+
+    def _reader_context_html(self, post: Post) -> str:
+        primary_tag = self._primary_context_tag(post)
+        source_count = len(post.source_links or [])
+        source_note = (
+            f"본문에 연결된 원문 {source_count}개를 기준으로 확인합니다."
+            if source_count
+            else "본문에 원문 링크가 적은 글이므로 최신 조건은 공식 안내에서 한 번 더 확인하는 편이 좋습니다."
+        )
+        if self._is_government_post(post) or post.category in {"정책", "정치"}:
+            lead = f"{primary_tag} 관련 발표는 제목의 결론보다 대상, 시행 시점, 담당 기관의 후속 안내를 나눠 읽어야 합니다."
+            points = [
+                "발표일과 실제 적용일이 같은지 먼저 봅니다.",
+                "개인, 사업자, 기관 중 누구에게 영향을 주는지 분리합니다.",
+                "신청, 단속, 지원, 설명자료 중 어떤 단계의 소식인지 확인합니다.",
+            ]
+        elif post.category == "기술":
+            lead = f"{primary_tag} 이슈는 새 기능 자체보다 실제 사용자에게 바뀌는 조건을 보는 쪽이 유용합니다."
+            points = [
+                "지원 기기, 지역, 요금제, 출시 시점처럼 제한 조건을 먼저 봅니다.",
+                "회사 발표와 실제 사용 후기를 구분합니다.",
+                "보안, 개인정보, 호환성처럼 나중에 비용이 될 수 있는 항목을 따로 확인합니다.",
+            ]
+        elif post.category in {"생활", "핫이슈"}:
+            lead = f"{primary_tag} 정보는 바로 따라 하기보다 내 상황에 맞는 조건인지 먼저 걸러 보는 편이 좋습니다."
+            points = [
+                "신청·방문·구매 전에 필요한 준비물과 예외 조건을 확인합니다.",
+                "가격, 운영시간, 대상 조건처럼 바뀌기 쉬운 정보는 최신 안내를 다시 봅니다.",
+                "직접 경험담과 공개 자료 기반 안내를 구분해서 읽습니다.",
+            ]
+        elif post.category == "스포츠":
+            lead = f"{primary_tag} 글은 전망과 확정 정보를 나눠 읽어야 경기 전 판단이 흔들리지 않습니다."
+            points = [
+                "일정, 명단, 기록처럼 확정된 정보와 해석을 구분합니다.",
+                "현지 시간, 부상, 징계, 이동 거리 같은 변수를 함께 봅니다.",
+                "대회 규정이나 조 편성은 공식 발표 기준으로 다시 확인합니다.",
+            ]
+        else:
+            lead = f"{primary_tag} 관련 글은 사실, 해석, 다음 확인 경로를 나눠 읽으면 더 안전합니다."
+            points = [
+                "본문의 핵심 주장과 근거를 따로 확인합니다.",
+                "날짜와 출처가 있는 정보부터 우선해서 봅니다.",
+                "내 상황에 바로 적용되는 내용인지 한 번 더 걸러 봅니다.",
+            ]
+        items = "\n".join(f"<li>{html.escape(point)}</li>" for point in points)
+        return f"""
+          <section class="reader-context" aria-label="읽는 기준">
+            <h2>읽는 기준</h2>
+            <p>{html.escape(lead)}</p>
+            <ul>{items}</ul>
+            <p class="source-note">{html.escape(source_note)}</p>
+          </section>
+        """
+
+    @staticmethod
+    def _primary_context_tag(post: Post) -> str:
+        skip = {"보도자료", "보도기사", post.category, "정부", "공공기관"}
+        for tag in post.tags:
+            clean = str(tag).strip()
+            if clean and clean not in skip:
+                return clean
+        return post.category or "이 주제"
 
     def _editorial_note_html(self, post: Post) -> str:
         if self._is_government_post(post):
@@ -2381,6 +2445,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 }
 .back { display: inline-block; margin-bottom: 20px; color: var(--muted); font-size: 0.9rem; }
 .source-box,
+.reader-context,
 .editorial-note,
 .related-posts {
   margin-top: 28px;
@@ -2388,6 +2453,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   border-top: 1px solid var(--line);
 }
 .source-box h2,
+.reader-context h2,
 .editorial-note h2,
 .related-posts h2 {
   margin: 0 0 10px;
@@ -2395,19 +2461,32 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   line-height: 1.35;
 }
 .source-box p,
+.reader-context p,
 .editorial-note p {
   margin: 0 0 10px;
   color: var(--muted);
   font-size: 0.9rem;
 }
 .source-box ul,
+.reader-context ul,
 .related-posts ul {
   margin: 0;
   padding-left: 1.15rem;
 }
 .source-box li,
+.reader-context li,
 .related-posts li {
   margin: 0 0 7px;
+}
+.reader-context {
+  background: #f8fbf8;
+  border: 1px solid rgba(15,118,110,.18);
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+.reader-context .source-note {
+  margin-top: 10px;
+  font-size: 0.84rem;
 }
 .related-posts li span {
   display: block;
