@@ -1,0 +1,20 @@
+{
+  "run_id": "20260624-123014-f1c4c05b",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "star-fox-switch-61269b50",
+      "title": "4K 레이 트레이싱, Star Fox Switch 2가 바꾼 5가지",
+      "keyword": "Star Fox Switch",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 4K 레이 트레이싱, Star Fox Switch 2가 바꾼 5가지. Keyword: Star Fox Switch. Concrete visual subject: technology innovation circuit abstract. Context: 새로운 콘솔을 구매하고 첫 게임을 고를 때, 시각적 완성도가 결정적입니다. 2026년 6월 24일 기준, Nintendo Switch 2에서 독점 출시된 ‘Star Fox Switch’는 기존과 차별화된 비주얼로 주목받고 있습니다. ‘Star Fox’는 1993년 슈퍼패미컴과 닌텐도64에서 시작된 닌텐도 슈팅 액션 시리즈입니다. 주인공 Fox McCloud와 동료들이 우주를 탐험하며 적을 격퇴하는 스토리로, 간결한 조작과 빠른 전투가 특징입니다. 이번 Switch 2 리메이크는 다음과 같은 기술적 변화를 적용했습니다. **Star Fox Switch 2 vs N64 원작 비교표** | 항목 | Switch 2 ‘Star Fox’ 리메이크 | N64 원작 | |--------------------|----------------------------------------|---------------------------| | 해상도 | 4K (3840×2160) | 480×240 | | 프레임 레이트 | 60fps 고정 | 30fps 변동 | | 레이 트레이싱 | 실시간 반사·그림자 | 해당 없음 | | 텍스처 품질 | 4K HDR 지원 | 256KB | | 사운드 | 3D 오디오, Dolby Atmos | 스테레오 | | 배터리 소모 | 기존 대비 약 15% 빠른 감소 (Switch 2) | 표준 | | 가격 | 69달러(정가, 번들 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782088385104-039b7c454b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyMjA5MjczfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
