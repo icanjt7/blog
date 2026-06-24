@@ -1,0 +1,20 @@
+{
+  "run_id": "20260624-163434-6512f191",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "figma-ai-529e75d8",
+      "title": "Figma AI 모션 그래픽 출시! 사용자에게 달라지는 5가지",
+      "keyword": "Figma AI",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Figma AI 모션 그래픽 출시! 사용자에게 달라지는 5가지. Keyword: Figma AI. Concrete visual subject: artificial intelligence neural network. Context: ## Figma AI 모션 그래픽, 어떤 변화가 생겼나? 2026년 6월 24일, Figma가 연례 Config 컨퍼런스에서 AI 모션 그래픽 및 셰이더 도구 출시를 공식 발표했습니다. 이 업데이트는 디자이너와 개발자들이 반복적인 작업을 줄이고, 아이디어를 빠르게 시각화할 수 있도록 지원하는 것이 핵심입니다. ## Figma, 어떤 회사인가? Figma는 실시간 협업 디자인 플랫폼을 제공하는 기업으로, 웹 기반 UI/UX 디자인 도구 시장에서 대표적인 위치를 점하고 있습니다. ## 사용자에게 달라지는 주요 포인트 | 기준 | 변화 내용 | |--------------|-----------------------------------------------------------------------------------------| | 적용 대상 | Figma 제품 사용자, 디자이너, 개발자, 팀 단위 프로젝트 | | 새 기능 | AI로 자동 생성되는 모션 그래픽, 셰이더(Shader) 효과 편집 도구 추가 | | 공식 발표 | 2026-06-24, Config 컨퍼런스에서 발표 | | 실제 영향 | 반복 작업 자동화, 디자인 시각화 속도 향상, 코드 연결 기능 강화 | | 접근 조건 | Figma 공식 웹·앱 서비스에서 바로 사용 가능, 별도 추가 요금 안내는 발표에 포함되지 않음 | ## 체크리스트: 실제 사용자 입장 - 자동 모션 그. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgyMjk3OTk5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
