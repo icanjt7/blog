@@ -1,15 +1,17 @@
 ---
-title: "시각장애인 대상 궁궐·왕릉 해설 프로그램 운영"
-date: "2026-06-11T00:33"
-category: "핫이슈"
+title: 국가유산청, 4대궁궐·왕릉 시각장애인 대상 현장영상해설 서비스 운영
+date: 2026-06-11T00:33
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=e249c65062cf443ab4a1d6c3834f74e3"
-cover_image_alt: "2025년 궁능 현장영상해설 (경복궁, ‘25.10.1.)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=e249c65062cf443ab4a1d6c3834f74e3
+cover_image_alt: 2025년 궁능 현장영상해설 (경복궁, ‘25.10.1.)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-06-11 공개한 자료를 바탕으로 시각장애인 대상 궁궐·왕릉 해설 프로그램 운영의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

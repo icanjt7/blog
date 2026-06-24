@@ -1,15 +1,17 @@
 ---
-title: "국가유산청, ‘2026년도 우수행정 및 정책사례 선발대회’에서 최우수상·장려상 수상"
-date: "2026-05-20T00:18"
-category: "핫이슈"
+title: 국가유산청, 우수행정 및 정책사례 선발대회서 최우수상·장려상 수상
+date: 2026-05-20T00:18
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=87a49ccf292342dfb07087b289371a37"
-cover_image_alt: "우수 행정 및 정책사례 선발대회 시상식 (‘26.5.14. 국회의원회관 제2소회의실)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=87a49ccf292342dfb07087b289371a37
+cover_image_alt: 우수 행정 및 정책사례 선발대회 시상식 (‘26.5.14. 국회의원회관 제2소회의실)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-05-20 공개한 자료를 바탕으로 국가유산청, ‘2026년도 우수행정 및 정책사례 선발대회’에서 최우수상·장려상 수상의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

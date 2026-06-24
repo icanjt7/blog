@@ -1,15 +1,17 @@
 ---
-title: "‘시민·어린이와 함께하는 국가유산돌봄’ 체험·교육 프로그램 운영"
-date: "2026-06-18T00:07"
-category: "핫이슈"
+title: 국가유산돌봄 체험·교육 프로그램 운영 예정
+date: 2026-06-18T00:07
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=eae6d3cd7729449dbe476aa06b9abd1a"
-cover_image_alt: "지역 시민 대상 국가유산돌봄사업 체험 기회 제공 (‘26.4월)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=eae6d3cd7729449dbe476aa06b9abd1a
+cover_image_alt: 지역 시민 대상 국가유산돌봄사업 체험 기회 제공 (‘26.4월)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-06-18 공개한 자료를 바탕으로 ‘시민·어린이와 함께하는 국가유산돌봄’ 체험·교육 프로그램 운영의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
