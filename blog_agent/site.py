@@ -784,10 +784,65 @@ class StaticSiteBuilder:
             links.append((clean_label[:90], clean_url))
             if len(links) >= 8:
                 break
+        for url in re.findall(r"(?<!\]\()https?://[^\s<>)]+", markdown_text):
+            clean_url = url.rstrip(".,)]")
+            if any(existing_url == clean_url for _existing_label, existing_url in links):
+                continue
+            links.append((StaticSiteBuilder._source_label_for_url(clean_url), clean_url))
+            if len(links) >= 8:
+                break
+        return links
+
+    @staticmethod
+    def _source_label_for_url(url: str) -> str:
+        host = urlsplit(url).netloc.lower().removeprefix("www.")
+        if "korea.kr" in host:
+            return "정책브리핑 원문"
+        if "visitkorea.or.kr" in host:
+            return "한국관광공사 VisitKorea"
+        if "whitehouse.gov" in host:
+            return "미국 백악관 원문"
+        if "nasa.gov" in host:
+            return "NASA 원문"
+        if "ftc.gov" in host:
+            return "FTC 원문"
+        if "bls.gov" in host:
+            return "BLS 원문"
+        if "ed.gov" in host:
+            return "미 교육부 원문"
+        return host or "원문 링크"
+
+    def _enriched_source_links(self, post: Post) -> list[tuple[str, str]]:
+        links = list(post.source_links or [])
+
+        def add(label: str, url: str) -> None:
+            if len(links) >= 8:
+                return
+            if any(existing_url == url for _existing_label, existing_url in links):
+                return
+            links.append((label, url))
+
+        urls = " ".join(url for _label, url in links).lower()
+        if self._is_government_post(post):
+            add("정책브리핑 보도자료 목록", "https://www.korea.kr/briefing/pressReleaseList.do")
+            add("대한민국 정책브리핑", "https://www.korea.kr/")
+        elif "visitkorea.or.kr" in urls or post.category == "생활":
+            add("한국관광공사 VisitKorea", "https://korean.visitkorea.or.kr/")
+            add("한국관광공사 기관 안내", "https://knto.or.kr/")
+        elif post.category == "기술":
+            add("Google Search Central", "https://developers.google.com/search")
+            add("Google Trends", "https://trends.google.com/trends/")
+        elif any(host in urls for host in ("whitehouse.gov", "nasa.gov", "ftc.gov", "bls.gov", "ed.gov")):
+            add("USA.gov", "https://www.usa.gov/")
+            add("Federal Register", "https://www.federalregister.gov/")
+        else:
+            add("브리핑웨이브 편집정책", f"{self.site_url}/editorial-policy.html")
+            add("브리핑웨이브 소개", f"{self.site_url}/about.html")
+
         return links
 
     def _source_links_html(self, post: Post) -> str:
-        links = post.source_links or []
+        links = self._enriched_source_links(post)
         if not links:
             return ""
         items = "\n".join(
@@ -795,8 +850,8 @@ class StaticSiteBuilder:
             for label, url in links
         )
         return f"""
-          <section class="source-box" aria-label="참고 출처">
-            <h2>참고 출처</h2>
+          <section class="source-box" aria-label="참고 자료">
+            <h2>참고 자료</h2>
             <p>본문은 아래 원문과 공개 자료를 기준으로 편집했습니다. 날짜, 신청 조건, 운영 여부처럼 바뀔 수 있는 정보는 원문에서 다시 확인하세요.</p>
             <ul>{items}</ul>
           </section>
@@ -804,28 +859,28 @@ class StaticSiteBuilder:
 
     def _reader_context_html(self, post: Post) -> str:
         primary_tag = self._primary_context_tag(post)
-        source_count = len(post.source_links or [])
+        source_count = len(self._enriched_source_links(post))
         source_note = (
-            f"본문에 연결된 원문 {source_count}개를 기준으로 확인합니다."
+            f"본문은 원문과 보조 참고 자료 {source_count}개를 대조해 읽을 수 있게 정리했습니다."
             if source_count
             else "본문에 원문 링크가 적은 글이므로 최신 조건은 공식 안내에서 한 번 더 확인하는 편이 좋습니다."
         )
         if self._is_government_post(post) or post.category in {"정책", "정치"}:
-            lead = f"{primary_tag} 관련 발표는 제목의 결론보다 대상, 시행 시점, 담당 기관의 후속 안내를 나눠 읽어야 합니다."
+            lead = f"{primary_tag} 관련 발표는 제목의 결론보다 대상, 시행 시점, 담당 기관의 후속 안내를 함께 봐야 맥락이 분명해집니다."
             points = [
-                "발표일과 실제 적용일이 같은지 먼저 봅니다.",
-                "개인, 사업자, 기관 중 누구에게 영향을 주는지 분리합니다.",
-                "신청, 단속, 지원, 설명자료 중 어떤 단계의 소식인지 확인합니다.",
+                "발표일과 실제 적용일이 다를 수 있어 날짜 표현을 따로 봅니다.",
+                "개인, 사업자, 기관 중 누구에게 직접 영향을 주는 내용인지 구분합니다.",
+                "신청, 단속, 지원, 설명자료 중 어느 단계의 소식인지 확인합니다.",
             ]
         elif post.category == "기술":
-            lead = f"{primary_tag} 이슈는 새 기능 자체보다 실제 사용자에게 바뀌는 조건을 보는 쪽이 유용합니다."
+            lead = f"{primary_tag} 이슈는 새 기능 자체보다 실제 사용자에게 달라지는 조건을 같이 볼 때 판단하기 쉽습니다."
             points = [
-                "지원 기기, 지역, 요금제, 출시 시점처럼 제한 조건을 먼저 봅니다.",
+                "지원 기기, 지역, 요금제, 출시 시점처럼 제한 조건을 먼저 확인합니다.",
                 "회사 발표와 실제 사용 후기를 구분합니다.",
-                "보안, 개인정보, 호환성처럼 나중에 비용이 될 수 있는 항목을 따로 확인합니다.",
+                "보안, 개인정보, 호환성처럼 나중에 비용이 될 수 있는 항목을 따로 봅니다.",
             ]
         elif post.category in {"생활", "핫이슈"}:
-            lead = f"{primary_tag} 정보는 바로 따라 하기보다 내 상황에 맞는 조건인지 먼저 걸러 보는 편이 좋습니다."
+            lead = f"{primary_tag} 정보는 바로 따라 하기보다 내 상황에 맞는 조건인지 먼저 걸러 보면 시행착오를 줄일 수 있습니다."
             points = [
                 "신청·방문·구매 전에 필요한 준비물과 예외 조건을 확인합니다.",
                 "가격, 운영시간, 대상 조건처럼 바뀌기 쉬운 정보는 최신 안내를 다시 봅니다.",
@@ -847,8 +902,8 @@ class StaticSiteBuilder:
             ]
         items = "\n".join(f"<li>{html.escape(point)}</li>" for point in points)
         return f"""
-          <section class="reader-context" aria-label="읽는 기준">
-            <h2>읽는 기준</h2>
+          <section class="reader-context" aria-label="맥락 짚기">
+            <h2>맥락 짚기</h2>
             <p>{html.escape(lead)}</p>
             <ul>{items}</ul>
             <p class="source-note">{html.escape(source_note)}</p>
