@@ -133,6 +133,7 @@ tags:
                 '<link rel="canonical" href="https://example.com/%ED%95%9C%EA%B8%80-%EA%B8%80-0.html">',
                 first_post,
             )
+            self.assertNotIn('href="./index.html"', first_post)
             self.assertIn(
                 '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
                 first_post,

@@ -445,9 +445,14 @@ class StaticSiteBuilder:
             return value
         return f"{self.site_url}/{value.lstrip('./')}"
 
+    @staticmethod
+    def _home_href(prefix: str = "./") -> str:
+        return prefix if prefix.endswith("/") else f"{prefix}/"
+
     def _nav_html(self, active: str | None = None, prefix: str = "./") -> str:
+        home_href = self._home_href(prefix)
         items = [
-            f'<a href="{prefix}index.html" class="' + ("active" if active == "홈" else "") + '">홈</a>'
+            f'<a href="{home_href}" class="' + ("active" if active == "홈" else "") + '">홈</a>'
         ]
         for category in self.categories:
             href = f"{prefix}category-{self._slugify(category)}.html"
@@ -544,6 +549,8 @@ class StaticSiteBuilder:
 
     @staticmethod
     def _page_href(page: int, base: str = "index.html") -> str:
+        if page == 1 and base == "index.html":
+            return "./"
         return base if page == 1 else f"page{page}.html"
 
     @staticmethod
@@ -615,7 +622,7 @@ class StaticSiteBuilder:
         editorial_note = self._editorial_note_html(post)
         content = f"""
         <article class="post">
-          <a class="back" href="./index.html">전체 글</a>
+          <a class="back" href="./">전체 글</a>
           {cover_html}
           <header>
             <p class="meta">{html.escape(post.category)} · {post.date:%Y-%m-%d}</p>
@@ -1001,7 +1008,7 @@ class StaticSiteBuilder:
         )
         content = f"""
         <article class="post">
-          <a class="back" href="./index.html">블로그 홈</a>
+          <a class="back" href="./">블로그 홈</a>
           <header>
             <p class="meta">브리핑웨이브 운영 현황</p>
             <h1>채널 대시보드</h1>
@@ -1625,7 +1632,7 @@ class StaticSiteBuilder:
         for filename, page in pages.items():
             content = f"""
         <article class="post static-page">
-          <a class="back" href="./index.html">블로그 홈</a>
+          <a class="back" href="./">블로그 홈</a>
           {page["body"]}
         </article>
             """
@@ -1968,7 +1975,7 @@ class StaticSiteBuilder:
   <header class="site-header">
     <div class="page-shell">
       <div class="header-top">
-        <a class="brand" href="{asset_prefix}index.html" aria-label="{html.escape(self.site_title)}">
+        <a class="brand" href="{self._home_href(asset_prefix)}" aria-label="{html.escape(self.site_title)}">
           <svg class="brand-icon" width="34" height="34" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
             <rect width="32" height="32" rx="7" fill="#0f766e"/>
             <rect x="6" y="7" width="20" height="2.8" rx="1.4" fill="white" opacity="0.92"/>

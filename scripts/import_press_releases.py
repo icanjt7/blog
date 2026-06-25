@@ -594,7 +594,7 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
 - 제목을 반복하는 "이번 보도자료의 핵심은..." 문장 금지
 - "원문 보도자료에는 세부 정보가 있습니다"처럼 뭉뚱그린 문장 금지
 - 원문에서 확인한 장소, 참여 기관, 대상, 일정, 수치가 있으면 반드시 반영
-- 마지막 섹션은 '## 확인할 점'으로 두고, 이 발표를 보고 독자가 확인할 구체 항목 3개를 적기
+- 마지막 섹션은 '## 원문에서 함께 볼 부분'으로 두고, 원문을 다시 열어볼 때 도움이 되는 구체 항목 3개를 적기
 - 자료 출처 기관: {release.institution}
 - 원문 URL: {release.url}
 
@@ -714,7 +714,7 @@ def make_article_body(release: PressRelease) -> str:
         fact_block,
         "## 배경과 의미",
         detail,
-        "## 독자가 확인할 점",
+        "## 원문에서 함께 볼 부분",
         concrete_reader_checks(release, facts, detail_lines),
         "## 원문",
         f"- [{release.institution} 보도자료]({release.url})",
@@ -725,16 +725,18 @@ def make_article_body(release: PressRelease) -> str:
 def concrete_reader_checks(release: PressRelease, facts: list[str], detail_lines: list[str]) -> str:
     source = "\n".join([release.title, release.body_text])
     checks: list[str] = []
+    clean_title = re.sub(r"\(\d{6}\)\s*$", "", release.title).strip()
+    topic = shorten(clean_title or release.institution, 52)
     if re.search(r"신청|접수|공모|모집|예약|참여", source):
-        checks.append("신청·접수형 사안이면 원문에서 접수 기간, 제출 서류, 담당 부서 안내를 먼저 확인합니다.")
+        checks.append(f"{topic}에 참여하거나 신청할 수 있는 사안이라면 접수 기간, 제출 서류, 담당 부서 안내가 원문에 어떻게 적혀 있는지 먼저 봅니다.")
     if re.search(r"지원|보조|예산|금액|원|억|조|감면|혜택|쿠폰|바우처", source):
-        checks.append("지원·예산 관련 내용은 대상 조건, 금액 기준, 중복 수혜 가능 여부를 원문 표기대로 확인합니다.")
+        checks.append("예산이나 지원 규모가 언급된 경우에는 실제 대상, 금액 산정 방식, 다른 제도와의 관계가 원문에 명시됐는지 확인하면 좋습니다.")
     if re.search(r"시행|개정|적용|일부터|월부터|년부터|기간", source):
-        checks.append("시행일이나 적용 기간이 있는 발표이므로 실제 적용 시작일과 유예기간을 따로 확인합니다.")
+        checks.append("제도 시행이나 적용 기간이 붙은 발표라면 발표일과 실제 적용 시작일이 다를 수 있어 날짜 표현을 따로 확인합니다.")
     if re.search(r"지역|전국|서울|부산|대구|광주|인천|대전|울산|세종|제주|현장|장소", source):
-        checks.append("지역·현장 관련 내용은 내가 이용할 지역이 포함되는지와 방문 가능 시간을 확인합니다.")
+        checks.append("지역이나 현장 일정이 포함된 내용은 대상 지역, 운영 장소, 방문 가능 시간이 원문에 구체적으로 나오는지 살펴봅니다.")
     if re.search(r"기업|기관|학교|대학|청년|아동|가족|어르신|장애|소상공인|농가", source):
-        checks.append("대상자가 특정되어 있으므로 개인, 기업, 기관 중 누구에게 적용되는 발표인지 구분해서 봅니다.")
+        checks.append("대상이 특정된 발표는 개인, 기업, 기관 가운데 누구에게 직접 적용되는 내용인지 구분해 읽는 편이 안전합니다.")
     for fact in [*facts, *detail_lines]:
         if len(checks) >= 3:
             break
@@ -742,9 +744,9 @@ def concrete_reader_checks(release: PressRelease, facts: list[str], detail_lines
             checks.append(f"원문 핵심 문장으로는 '{shorten(fact, 110)}' 부분을 함께 확인합니다.")
     if not checks:
         checks = [
-            f"{release.institution} 발표 원문에서 후속 공지나 첨부자료가 있는지 확인합니다.",
-            f"발표일 {release.date} 이후 내용이 바뀌었을 수 있으므로 최신 공지 기준으로 다시 봅니다.",
-            "신청, 참여, 방문이 필요한 사안이면 담당 기관 안내와 연락처를 확인합니다.",
+            f"{release.institution} 발표 원문에서 후속 공지나 첨부자료가 붙어 있는지 확인합니다.",
+            f"발표일 {release.date} 이후 일정이나 세부 조건이 바뀌었을 수 있어 최신 공지도 함께 봅니다.",
+            "신청, 참여, 방문이 필요한 내용이면 담당 기관 안내와 연락처까지 확인합니다.",
         ]
     return "\n".join(f"- {item}" for item in checks[:3])
 
