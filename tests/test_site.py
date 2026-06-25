@@ -215,7 +215,9 @@ tags:
             self.assertIn("편집 기준", html)
             self.assertIn("함께 보면 좋은 글", html)
             self.assertIn("관련 글", html)
-            self.assertLess(html.index('<div class="content">'), html.index('<div class="ad-slot">'))
+            self.assertIn('aria-label="광고 영역"', html)
+            self.assertIn('<div class="ad-label">광고</div>', html)
+            self.assertLess(html.index('<div class="content">'), html.index('<div class="ad-slot"'))
 
             for filename in ("about.html", "editorial-policy.html", "privacy.html", "contact.html"):
                 self.assertTrue((root / "public" / filename).exists())
@@ -225,6 +227,10 @@ tags:
             self.assertIn('href="mailto:jungteck@gmail.com"', contact_html)
             self.assertIn(">jungteck@gmail.com<", contact_html)
             self.assertNotIn("icanjt7@gmail.com", contact_html)
+            privacy_html = (root / "public" / "privacy.html").read_text(encoding="utf-8")
+            self.assertIn("Google 광고 설정", privacy_html)
+            editorial_html = (root / "public" / "editorial-policy.html").read_text(encoding="utf-8")
+            self.assertIn("광고와 편집 분리", editorial_html)
             sitemap = (root / "public" / "sitemap-static.xml").read_text(encoding="utf-8")
             self.assertIn("privacy.html", sitemap)
 

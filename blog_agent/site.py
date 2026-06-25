@@ -767,7 +767,8 @@ class StaticSiteBuilder:
 
     def _ad_slot(self) -> str:
         pub = html.escape(self.adsense_publisher_id or "ca-pub-3870943054399059")
-        return f"""<div class="ad-slot">
+        return f"""<div class="ad-slot" aria-label="광고 영역">
+          <div class="ad-label">광고</div>
           <ins class="adsbygoogle" style="display:block" data-ad-client="{pub}"
                data-ad-format="auto" data-full-width-responsive="true"></ins>
           <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
@@ -1653,6 +1654,8 @@ class StaticSiteBuilder:
           <p>정책·공공기관 글은 공식 발표와 담당 기관 자료를 우선합니다. 기술·생활 글은 원문 기사, 공식 안내, 제품·서비스 공지를 기준으로 하며, 본문 하단에 참고 출처를 표시합니다.</p>
           <h2>AI 활용 원칙</h2>
           <p>AI는 초안 작성과 요약 보조에 사용될 수 있습니다. 다만 없는 경험, 없는 수치, 출처에 없는 단정 표현을 만들지 않도록 제한하고, 독자에게 필요한 확인 기준을 추가하는 방향으로 편집합니다.</p>
+          <h2>광고와 편집 분리</h2>
+          <p>광고 영역은 본문, 메뉴, 다운로드 링크처럼 보이지 않도록 구분해 표시합니다. 광고 클릭이나 조회를 유도하는 문구를 넣지 않으며, 편집 내용은 광고 게재 여부와 분리해 작성합니다.</p>
           <h2>수정과 삭제</h2>
           <p>오류, 오래된 정보, 출처 누락을 발견하면 확인 후 수정합니다. 문의는 contact 페이지의 연락처로 보내주세요.</p>
                 """,
@@ -1666,7 +1669,9 @@ class StaticSiteBuilder:
           <h2>자동 수집 정보</h2>
           <p>사이트 품질 개선과 보안 확인을 위해 GitHub Pages, Google Analytics, Google Tag Manager, Google AdSense 등 외부 서비스가 접속 로그, 쿠키, 기기 정보, 페이지 이용 정보를 처리할 수 있습니다.</p>
           <h2>광고와 쿠키</h2>
-          <p>Google AdSense가 승인되어 광고가 표시되는 경우 Google 및 파트너가 쿠키를 사용해 광고 측정과 맞춤 광고를 제공할 수 있습니다. 사용자는 브라우저 설정이나 Google 광고 설정에서 맞춤 광고 사용을 관리할 수 있습니다.</p>
+          <p>Google AdSense가 승인되어 광고가 표시되는 경우 Google 및 파트너가 쿠키를 사용해 광고 측정, 부정 사용 방지, 맞춤 광고 제공을 처리할 수 있습니다. 사용자는 브라우저 설정, <a href="https://adssettings.google.com/" rel="nofollow noopener">Google 광고 설정</a>, <a href="https://policies.google.com/technologies/ads?hl=ko" rel="nofollow noopener">Google 광고 쿠키 안내</a>에서 맞춤 광고와 쿠키 사용을 관리할 수 있습니다.</p>
+          <h2>외부 서비스</h2>
+          <p>Google Analytics, Google Tag Manager, Google AdSense, GitHub Pages 등 외부 서비스는 각 서비스의 개인정보 처리방침과 보안 기준에 따라 데이터를 처리합니다. 브리핑웨이브는 회원가입, 결제, 댓글 기능을 직접 운영하지 않습니다.</p>
           <h2>문의</h2>
           <p>개인정보나 사이트 운영 관련 문의는 contact 페이지의 연락처로 보내주세요.</p>
                 """,
@@ -2777,6 +2782,13 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   overflow: hidden;
   border-radius: 8px;
   background: rgba(222,216,202,.22);
+}
+.ad-label {
+  padding: 6px 10px 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1;
+  text-align: center;
 }
 .ad-slot:empty { display: none; }
 
