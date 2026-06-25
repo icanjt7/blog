@@ -221,6 +221,10 @@ tags:
                 self.assertTrue((root / "public" / filename).exists())
             footer_html = (root / "public" / "index.html").read_text(encoding="utf-8")
             self.assertIn('href="./privacy.html"', footer_html)
+            contact_html = (root / "public" / "contact.html").read_text(encoding="utf-8")
+            self.assertIn('href="mailto:jungteck@gmail.com"', contact_html)
+            self.assertIn(">jungteck@gmail.com<", contact_html)
+            self.assertNotIn("icanjt7@gmail.com", contact_html)
             sitemap = (root / "public" / "sitemap-static.xml").read_text(encoding="utf-8")
             self.assertIn("privacy.html", sitemap)
 

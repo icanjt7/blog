@@ -1678,7 +1678,7 @@ class StaticSiteBuilder:
           <h1>문의</h1>
           <p>오류 제보, 출처 정정, 게시 중단 요청, 제휴 문의는 아래 이메일로 보내주세요.</p>
           <h2>연락처</h2>
-          <p><a href="mailto:icanjt7@gmail.com">icanjt7@gmail.com</a></p>
+          <p><a href="mailto:jungteck@gmail.com">jungteck@gmail.com</a></p>
           <h2>빠른 확인을 위해</h2>
           <p>문의할 때는 문제가 있는 페이지 주소, 수정이 필요한 문장, 근거가 되는 공식 자료 링크를 함께 보내주시면 더 빠르게 확인할 수 있습니다.</p>
                 """,
