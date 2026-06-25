@@ -1,0 +1,21 @@
+{
+  "run_id": "20260625-173357-3dad4e2f",
+  "average_quality": 94.0,
+  "drafts": [
+    {
+      "slug": "새출발기금-재산심사-강화-가상자산-085f277d",
+      "title": "새출발기금 재산심사 강화, 가상자산은?",
+      "keyword": "새출발기금 재산심사 강화 가상자산",
+      "category": "생활",
+      "quality_score": 94.0,
+      "review_notes": [
+        "표가 없어 스캔성이 약합니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 새출발기금 재산심사 강화, 가상자산은?. Keyword: 새출발기금 재산심사 강화 가상자산. Concrete visual subject: everyday lifestyle public information. Context: ### 새출발기금 재산심사 강화 2026년 6월 25일, 정부는 새출발기금 지원대상 심사 시 신청인의 재산을 보다 철저히 파악하여 재산심사에 반영하고, 채무조정 시에는 변제능력에 따른 채무조정 지원 수준을 합리적으로 차등화한다고 밝혔다. ### 새출발기금이란? 새출발기금이란 채무조정 지원을 받기 위해 신청할 수 있는 정부 지원 정책이다. ### 새출발기금 재산심사 강화의 주요 내용 1. **재산심사 시 가상자산과 비상장주식 등 확인**: 재산심사 시 가상자산과 비상장주식 등도 면밀히 확인한다. 2. **채무조정 시 변제능력에 따른 차등화**: 채무조정 시에는 변제능력에 따른 채무조정 지원 수준을 합리적으로 차등화한다. ### 새출발기금 재산심사 강화의 대상 새출발기금 지원대상자이다. 새출발기금 지원대상자는 경제적으로 어려운 상황에 있는 개인이나 사업자로, 채무조정 지원을 받기 위해 신청할 수 있다. ### 새출발기금 재산심사 강화의 영향 1. **재산심사 시 가상자산과 비상장주식 등 확인**: 지원대상자의 재산을 보다 정확하게 파악할 수 있다. 2. **채무조정 시 변제능력에 따른 차등화**: 지원대상자의 경제적인 어려움을 더 효과적으로 해결할 수 있다. ### 새출발기금 재산심사 강화의 확인 방법 새출발기금 지원대상 심사 시 신청인의 재산을 보다 철저히 파악하여 재산심사에 반영하고, 채무조정 시에는 변제능력에 따른 채무조정 지원 수. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1698132979679-f188396e56a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODI0MDU1NTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
