@@ -1,0 +1,71 @@
+name: Nara Bid test post
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Number of bid notices to include"
+        required: false
+        default: "50"
+      days:
+        description: "Lookback days"
+        required: false
+        default: "1"
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      BIDPUBLICINFOSERVICE: ${{ secrets.BIDPUBLICINFOSERVICE }}
+      BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
+      BLOG_CUSTOM_DOMAIN: ${{ vars.BLOG_CUSTOM_DOMAIN }}
+      GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+      ADSENSE_PUBLISHER_ID: ${{ secrets.ADSENSE_PUBLISHER_ID }}
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Generate Nara Bid markdown
+        run: |
+          python scripts/generate_narabid_post.py \
+            --limit "${{ inputs.limit }}" \
+            --days "${{ inputs.days }}" \
+            --overwrite
+
+      - name: Build site preview
+        run: python -m blog_agent.cli build-site
+
+      - name: Commit generated Nara Bid post
+        run: |
+          git config user.name "blog-agent"
+          git config user.email "actions@github.com"
+          git add output/posts public
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: publish Nara Bid test post"
+          git pull --rebase origin main
+          git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
