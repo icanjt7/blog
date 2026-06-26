@@ -1,0 +1,20 @@
+{
+  "run_id": "20260626-162933-cd8e3d2e",
+  "average_quality": 89.0,
+  "drafts": [
+    {
+      "slug": "you-8217-ipad-apple-a6817f1a",
+      "title": "미 DHS 700억 달러 증액, 어디에 쓰이나",
+      "keyword": "You 8217 iPad Apple",
+      "category": "기술",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 미 DHS 700억 달러 증액, 어디에 쓰이나. Keyword: You 8217 iPad Apple. Concrete visual subject: apple device minimal design. Context: ## 무슨 소식인가 You won&#8217;t have long to get these iPad deals before Apple&#8217;s price hike 소식입니다. Apple just raised prices across its iPad and MacBook lineup. The good news is that many retailers are still selling their inventory at the old prices or far less, which means you can still score some of the best iPad deals we may see in awhile — if ever again. So if you’ve been... ## 먼저 알아둘 배경 DHS는 미국 국토안보부로 ICE, CBP, TSA, CISA 같은 기관을 거느립니다. 예산은 이민 집행뿐 아니라 공항 보안, 사이버 방어, 국경 관리, 재난 대응까지 연결됩니다. 따라서 DHS 예산 증액은 단순 행정비보다 넓은 정책·기술 이슈입니다. ## 왜 기술 이슈인가 대규모 이민 집행 예산은 현장 인력만 늘리는 문제가 아닙니다. 데이터베이스, 생체정보, 카메라, 드론, 차량 번호판 인식, 사건 관리 시스템 같은 기술 인프라 확장과 연결될 수 있습니다. 동시에 CISA 같은 사이버안보 기능의 우선순위가 어떻게 달라지는지도 봐야 합니다.. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1758348844311-e18ac3aea30f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ258ZW58MXwwfHx8MTc4MjQwNTYwNnww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
