@@ -169,10 +169,19 @@ author: "조달청"
 
 def render_service_digest(notices: list[BidNotice], *, generated_at: datetime | None = None) -> str:
     now = generated_at or datetime.now()
-    title = f"{now:%Y-%m-%d} 나라장터 용역 입찰공고 {len(notices)}건"
-    sections = "\n\n".join(_service_section(index, notice) for index, notice in enumerate(notices, start=1))
-    if not sections:
-        sections = "조회된 용역 공고가 없습니다."
+    title = _service_digest_title(notices, now)
+    briefing = _service_briefing(notices)
+    highlights = "\n\n".join(
+        _highlight_section(index, notice) for index, notice in enumerate(_highlight_notices(notices), start=1)
+    )
+    if not highlights:
+        highlights = "조회된 용역 공고가 없습니다."
+    trend_rows = "\n".join(_trend_row(label, grouped) for label, grouped in _service_groups(notices).items())
+    if not trend_rows:
+        trend_rows = "| - | - | - |\n"
+    table_rows = "\n".join(_service_table_row(index, notice) for index, notice in enumerate(notices, start=1))
+    if not table_rows:
+        table_rows = "| - | - | 조회된 공고가 없습니다. | - | - | - |\n"
 
     return f"""---
 title: "{title}"
@@ -187,11 +196,27 @@ tags:
 author: "조달청"
 ---
 
-조달청 나라장터 입찰공고정보서비스 공개 데이터를 기준으로 최근 용역 입찰공고를 정리했습니다. 아래 요약은 공고 목록에 공개된 공고명, 공고기관, 수요기관, 마감일시, 계약방법을 바탕으로 작성한 안내입니다. 실제 과업 범위, 참가자격, 제출서류, 배점 기준은 반드시 나라장터 원문 공고와 첨부파일에서 다시 확인해야 합니다.
+조달청 나라장터 입찰공고정보서비스 공개 데이터를 기준으로 오늘 확인할 만한 용역 입찰공고를 정리했습니다. 공고명, 공고기관, 수요기관, 마감일시, 계약방법을 바탕으로 한 브리핑이므로 실제 과업 범위, 참가자격, 제출서류, 배점 기준은 반드시 나라장터 원문 공고와 첨부파일에서 다시 확인해야 합니다.
 
-## 용역 공고 요약
+## 오늘의 흐름
 
-{sections}
+{briefing}
+
+## 주목할 공고
+
+{highlights}
+
+## 유형별 현황
+
+| 유형 | 건수 | 먼저 볼 내용 |
+|---|---:|---|
+{trend_rows}
+
+## 전체 20건
+
+| 번호 | 유형 | 공고명 | 수요기관 | 마감일시 | 계약방법 |
+|---:|---|---|---|---|---|
+{table_rows}
 
 ## 공통 확인사항
 
@@ -262,19 +287,55 @@ def _escape_cell(value: str) -> str:
     return value.replace("|", "\\|").replace("\n", " ").strip()
 
 
-def _service_section(index: int, notice: BidNotice) -> str:
+def _service_digest_title(notices: list[BidNotice], now: datetime) -> str:
+    labels = [label for label, grouped in _service_groups(notices).items() if grouped]
+    if labels:
+        return f"나라장터 용역 입찰 {len(notices)}건 정리: {', '.join(labels[:3])} 중심"
+    return f"{now:%Y-%m-%d} 나라장터 용역 입찰공고 {len(notices)}건"
+
+
+def _service_briefing(notices: list[BidNotice]) -> str:
+    if not notices:
+        return "오늘 조회된 용역 입찰공고가 없습니다."
+    groups = _service_groups(notices)
+    active_groups = [(label, grouped) for label, grouped in groups.items() if grouped]
+    group_text = ", ".join(f"{label} {len(grouped)}건" for label, grouped in active_groups[:4])
+    close_dates = [_short_date(notice.bid_close_at) for notice in notices if notice.bid_close_at]
+    close_text = _date_range(close_dates)
+    methods = _top_values([notice.contract_method for notice in notices if notice.contract_method], limit=3)
+    method_text = ", ".join(methods) if methods else "계약방법 미표기 공고"
+    return (
+        f"이번 목록은 {group_text or '여러 용역 분야'}이 중심입니다. "
+        f"마감일은 {close_text}에 분포하고, 계약방법은 {method_text} 등이 섞여 있습니다. "
+        "먼저 같은 유형의 공고를 묶어 과업 범위와 참가자격을 비교해 보는 것이 좋습니다."
+    )
+
+
+def _highlight_notices(notices: list[BidNotice], *, limit: int = 5) -> list[BidNotice]:
+    return sorted(notices, key=_highlight_score, reverse=True)[:limit]
+
+
+def _highlight_score(notice: BidNotice) -> tuple[int, str]:
+    title = notice.title
+    score = 0
+    for keyword in ("AI", "인공지능", "데이터", "정보시스템", "유지관리", "연구", "위탁", "긴급"):
+        if keyword.lower() in title.lower():
+            score += 3
+    if "제한경쟁" in notice.contract_method:
+        score += 2
+    if any(name in (notice.notice_inst + notice.demand_inst) for name in ("조달청", "국가", "광역", "한국", "공단", "진흥원")):
+        score += 1
+    return (score, _sort_date(notice.bid_close_at))
+
+
+def _highlight_section(index: int, notice: BidNotice) -> str:
     title = notice.title or "(공고명 없음)"
-    original = f"\n- 원문: [나라장터 공고]({notice.detail_url})" if notice.detail_url else ""
+    original = f" [원문 공고]({notice.detail_url})" if notice.detail_url else ""
     return f"""### {index}. {_escape_heading(title)}
 
-- 공고기관: {notice.notice_inst or '-'}
-- 수요기관: {notice.demand_inst or '-'}
-- 마감일시: {notice.bid_close_at or '-'}
-- 계약방법: {notice.contract_method or '-'}{original}
+{_service_summary(notice)}
 
-요약: {_service_summary(notice)}
-
-확인할 점: {_service_checkpoints(notice)}"""
+확인할 점은 {_service_checkpoints(notice)}입니다. 마감일시는 {notice.bid_close_at or '공고 원문 확인 필요'}, 계약방법은 {notice.contract_method or '공고 원문 확인 필요'}입니다.{original}"""
 
 
 def _service_summary(notice: BidNotice) -> str:
@@ -283,7 +344,7 @@ def _service_summary(notice: BidNotice) -> str:
     topic = _service_topic(title)
     return (
         f"{owner}에서 추진하는 {title}입니다. "
-        f"공고명 기준으로는 {topic} 관련 업무를 맡을 수행업체를 찾는 공고로 볼 수 있습니다."
+        f"{topic} 성격의 과업으로 보이며, 관련 실적과 수행 범위를 먼저 확인할 필요가 있습니다."
     )
 
 
@@ -344,3 +405,76 @@ def _service_checkpoints(notice: BidNotice) -> str:
 
 def _escape_heading(value: str) -> str:
     return value.replace("\n", " ").strip()
+
+
+def _service_groups(notices: list[BidNotice]) -> dict[str, list[BidNotice]]:
+    groups: dict[str, list[BidNotice]] = {}
+    for notice in notices:
+        label = _service_group_label(notice.title)
+        groups.setdefault(label, []).append(notice)
+    return dict(sorted(groups.items(), key=lambda item: len(item[1]), reverse=True))
+
+
+def _service_group_label(title: str) -> str:
+    if any(keyword in title for keyword in ("폐기물", "쓰레기", "처리용역")):
+        return "폐기물·환경"
+    if any(keyword in title for keyword in ("유지관리", "정비", "수리", "보수")):
+        return "유지관리·정비"
+    if any(keyword in title for keyword in ("연구", "조사", "진단", "데이터", "AI", "인공지능")):
+        return "연구·데이터"
+    if any(keyword in title for keyword in ("행사", "축전", "홍보", "워크숍", "교육")):
+        return "행사·교육"
+    if any(keyword in title for keyword in ("운영", "위탁", "임차", "임대", "서비스")):
+        return "운영·임차"
+    return "기타 용역"
+
+
+def _trend_row(label: str, notices: list[BidNotice]) -> str:
+    checkpoints = _group_checkpoints(label)
+    return f"| {_escape_cell(label)} | {len(notices)} | {_escape_cell(checkpoints)} |"
+
+
+def _group_checkpoints(label: str) -> str:
+    checks = {
+        "폐기물·환경": "폐기물 종류, 예상 물량, 운반·처리 허가 기준",
+        "유지관리·정비": "대상 시설·장비, 장애 대응 시간, 투입 인력",
+        "연구·데이터": "분석 범위, 데이터 제공 조건, 보고서 산출물",
+        "행사·교육": "행사 일정, 운영 범위, 성과물 기준",
+        "운영·임차": "운영 기간, 제공 장비·차량 규격, 유지관리 책임",
+        "기타 용역": "과업 범위, 참가자격, 제출서류",
+    }
+    return checks.get(label, "과업 범위, 참가자격, 제출서류")
+
+
+def _service_table_row(index: int, notice: BidNotice) -> str:
+    title = _escape_cell(notice.title or "(공고명 없음)")
+    if notice.detail_url:
+        title = f"[{title}]({notice.detail_url})"
+    return (
+        f"| {index} | {_escape_cell(_service_group_label(notice.title))} | {title} | "
+        f"{_escape_cell(notice.demand_inst or notice.notice_inst or '-')} | "
+        f"{_escape_cell(notice.bid_close_at or '-')} | {_escape_cell(notice.contract_method or '-')} |"
+    )
+
+
+def _short_date(value: str) -> str:
+    match = re.match(r"(\d{4})-(\d{2})-(\d{2})", value)
+    if match:
+        return f"{int(match.group(2))}월 {int(match.group(3))}일"
+    return value[:8] if value else ""
+
+
+def _date_range(values: list[str]) -> str:
+    unique = sorted(dict.fromkeys(value for value in values if value))
+    if not unique:
+        return "공고별 마감일 확인 필요"
+    if len(unique) == 1:
+        return unique[0]
+    return f"{unique[0]}부터 {unique[-1]}까지"
+
+
+def _top_values(values: list[str], *, limit: int) -> list[str]:
+    counts: dict[str, int] = {}
+    for value in values:
+        counts[value] = counts.get(value, 0) + 1
+    return [value for value, _ in sorted(counts.items(), key=lambda item: item[1], reverse=True)[:limit]]

@@ -135,7 +135,11 @@ class NaraBidTest(unittest.TestCase):
             generated_at=datetime(2026, 6, 26, 9, 0),
         )
 
-        self.assertIn('title: "2026-06-26 나라장터 용역 입찰공고 1건"', body)
+        self.assertIn('title: "나라장터 용역 입찰 1건 정리: 유지관리·정비 중심"', body)
+        self.assertIn("## 오늘의 흐름", body)
+        self.assertIn("## 주목할 공고", body)
+        self.assertIn("## 유형별 현황", body)
+        self.assertIn("## 전체 20건", body)
         self.assertIn("### 1. 2026년 정보시스템 유지관리 용역", body)
         self.assertIn("시설·장비·시스템 유지관리", body)
         self.assertIn("나라장터 원문 공고와 첨부파일", body)
