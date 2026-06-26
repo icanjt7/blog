@@ -18,6 +18,11 @@ class FakeResponse:
         return {"response": {"body": {"items": {"item": self.items}}}}
 
 
+class FakeListResponse(FakeResponse):
+    def json(self) -> dict:
+        return {"response": {"body": {"items": self.items}}}
+
+
 class NaraBidTest(unittest.TestCase):
     @patch("blog_agent.narabid.requests.get")
     def test_fetch_goods_uses_public_search_operation_and_secret_param(self, mock_get) -> None:
@@ -47,6 +52,24 @@ class NaraBidTest(unittest.TestCase):
         self.assertEqual(params["type"], "json")
         self.assertIn("inqryBgnDt", params)
         self.assertIn("inqryEndDt", params)
+
+    @patch("blog_agent.narabid.requests.get")
+    def test_fetch_accepts_body_items_list_shape(self, mock_get) -> None:
+        mock_get.return_value = FakeListResponse(
+            [
+                {
+                    "bidNtceNo": "20260626002",
+                    "bidNtceOrd": "0",
+                    "bidNtceNm": "리스트 형태 응답",
+                    "bidClseDt": "2026-06-27 10:00",
+                }
+            ]
+        )
+
+        notices = NaraBidClient("secret").fetch_by_work_type("service", num_rows=5, days=2)
+
+        self.assertEqual(len(notices), 1)
+        self.assertEqual(notices[0].title, "리스트 형태 응답")
 
     @patch("blog_agent.narabid.requests.get")
     def test_fetch_recent_deduplicates_and_limits(self, mock_get) -> None:

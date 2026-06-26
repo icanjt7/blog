@@ -107,11 +107,17 @@ class NaraBidClient:
         return [_notice_from_item(label, item) for item in items]
 
     def _get_items(self, url: str, params: dict[str, str]) -> list[dict]:
-        response = requests.get(url, params=params, timeout=self.timeout)
-        response.raise_for_status()
-        data = response.json()
+        try:
+            response = requests.get(url, params=params, timeout=self.timeout)
+            response.raise_for_status()
+            data = response.json()
+        except requests.RequestException as exc:
+            status = getattr(getattr(exc, "response", None), "status_code", "unknown")
+            raise RuntimeError(f"Nara Bid API request failed with status {status}") from exc
         body = data.get("response", {}).get("body", {})
         items = body.get("items", {})
+        if isinstance(items, list):
+            return [value for value in items if isinstance(value, dict)]
         if not isinstance(items, dict):
             return []
         item = items.get("item", [])
