@@ -167,9 +167,53 @@ author: "조달청"
 """
 
 
+def render_service_digest(notices: list[BidNotice], *, generated_at: datetime | None = None) -> str:
+    now = generated_at or datetime.now()
+    title = f"{now:%Y-%m-%d} 나라장터 용역 입찰공고 {len(notices)}건"
+    sections = "\n\n".join(_service_section(index, notice) for index, notice in enumerate(notices, start=1))
+    if not sections:
+        sections = "조회된 용역 공고가 없습니다."
+
+    return f"""---
+title: "{title}"
+date: "{now:%Y-%m-%dT%H:%M}"
+category: "정책"
+tags:
+  - "나라장터"
+  - "용역입찰"
+  - "입찰공고"
+  - "공공조달"
+  - "조달청"
+author: "조달청"
+---
+
+조달청 나라장터 입찰공고정보서비스 공개 데이터를 기준으로 최근 용역 입찰공고를 정리했습니다. 아래 요약은 공고 목록에 공개된 공고명, 공고기관, 수요기관, 마감일시, 계약방법을 바탕으로 작성한 안내입니다. 실제 과업 범위, 참가자격, 제출서류, 배점 기준은 반드시 나라장터 원문 공고와 첨부파일에서 다시 확인해야 합니다.
+
+## 용역 공고 요약
+
+{sections}
+
+## 공통 확인사항
+
+- 과업지시서와 제안요청서에서 실제 수행 범위와 산출물을 확인합니다.
+- 참가자격, 면허·실적 제한, 공동수급 허용 여부를 공고별로 확인합니다.
+- 제출 마감일시와 전자입찰 방식은 나라장터 원문 공고 기준으로 다시 확인합니다.
+
+## 출처
+
+- [조달청 나라장터 입찰공고정보서비스]({DATASET_URL})
+"""
+
+
 def write_bid_digest(path: Path, notices: list[BidNotice], *, generated_at: datetime | None = None) -> Path:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(render_bid_digest(notices, generated_at=generated_at), encoding="utf-8")
+    return path
+
+
+def write_service_digest(path: Path, notices: list[BidNotice], *, generated_at: datetime | None = None) -> Path:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(render_service_digest(notices, generated_at=generated_at), encoding="utf-8")
     return path
 
 
@@ -216,3 +260,87 @@ def _table_row(index: int, notice: BidNotice) -> str:
 
 def _escape_cell(value: str) -> str:
     return value.replace("|", "\\|").replace("\n", " ").strip()
+
+
+def _service_section(index: int, notice: BidNotice) -> str:
+    title = notice.title or "(공고명 없음)"
+    original = f"\n- 원문: [나라장터 공고]({notice.detail_url})" if notice.detail_url else ""
+    return f"""### {index}. {_escape_heading(title)}
+
+- 공고기관: {notice.notice_inst or '-'}
+- 수요기관: {notice.demand_inst or '-'}
+- 마감일시: {notice.bid_close_at or '-'}
+- 계약방법: {notice.contract_method or '-'}{original}
+
+요약: {_service_summary(notice)}
+
+확인할 점: {_service_checkpoints(notice)}"""
+
+
+def _service_summary(notice: BidNotice) -> str:
+    title = notice.title or "공고명 미상"
+    owner = notice.demand_inst or notice.notice_inst or "수요기관"
+    topic = _service_topic(title)
+    return (
+        f"{owner}에서 추진하는 {title}입니다. "
+        f"공고명 기준으로는 {topic} 관련 업무를 맡을 수행업체를 찾는 공고로 볼 수 있습니다."
+    )
+
+
+def _service_topic(title: str) -> str:
+    rules: tuple[tuple[str, str], ...] = (
+        ("폐기물", "건설폐기물 또는 사업장 폐기물 처리"),
+        ("쓰레기", "폐기물 수거·운반·처리"),
+        ("처리용역", "처리 대상 물량의 운반·처리"),
+        ("유지관리", "시설·장비·시스템 유지관리"),
+        ("정비", "시설 정비 또는 개선"),
+        ("수리", "장비·시설 수리"),
+        ("임차", "차량·장비·공간 임차"),
+        ("임대", "차량·장비·공간 임차"),
+        ("전송서비스", "메시지 전송 서비스 운영"),
+        ("데이터", "데이터 구축·분석"),
+        ("운영", "사업 운영 또는 현장 운영 지원"),
+        ("행사", "행사 기획·운영"),
+        ("축전", "행사 기획·운영"),
+        ("홍보", "홍보·마케팅"),
+        ("연구", "조사·분석·연구"),
+        ("조사", "현황 조사와 자료 분석"),
+        ("설계", "설계와 기술 검토"),
+        ("감리", "공사·사업 감리"),
+        ("청소", "청소·환경관리"),
+        ("교육", "교육 운영 또는 역량 강화"),
+        ("위탁", "업무 위탁 운영"),
+        ("시스템", "정보시스템 구축·운영"),
+        ("정보화", "정보화 사업"),
+        ("진단", "안전·품질 진단"),
+    )
+    for keyword, topic in rules:
+        if keyword in title:
+            return topic
+    return "해당 기관이 공고명에 제시한 과업"
+
+
+def _service_checkpoints(notice: BidNotice) -> str:
+    title = notice.title
+    checks = ["과업 범위", "수행 기간", "제출서류", "참가자격"]
+    if "폐기물" in title:
+        checks.extend(["폐기물 종류", "처리 물량", "운반·처리 허가 기준"])
+    elif "쓰레기" in title or "처리용역" in title:
+        checks.extend(["처리 대상", "예상 물량", "운반·처리 기준"])
+    elif "유지관리" in title or "시스템" in title:
+        checks.extend(["장애 대응 시간", "투입 인력", "유지보수 대상"])
+    elif "수리" in title or "정비" in title:
+        checks.extend(["수리 범위", "부품·장비 기준", "검수 조건"])
+    elif "임차" in title or "임대" in title:
+        checks.extend(["임차 기간", "제공 장비·차량 규격", "유지관리 책임"])
+    elif "행사" in title or "축전" in title or "홍보" in title:
+        checks.extend(["행사 일정", "대행 범위", "성과물 기준"])
+    elif "연구" in title or "조사" in title:
+        checks.extend(["연구 범위", "보고서 산출물", "전문인력 기준"])
+    elif "설계" in title or "감리" in title:
+        checks.extend(["기술자격", "설계·감리 범위", "현장 조건"])
+    return ", ".join(dict.fromkeys(checks))
+
+
+def _escape_heading(value: str) -> str:
+    return value.replace("\n", " ").strip()

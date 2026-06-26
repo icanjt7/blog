@@ -1,16 +1,18 @@
-name: Nara Bid test post
+name: Nara Bid service posts
 
 on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "Number of bid notices to include"
+        description: "Number of service bid notices to include"
         required: false
-        default: "50"
+        default: "20"
       days:
         description: "Lookback days"
         required: false
         default: "1"
+  schedule:
+    - cron: "20 22 * * *"  # 07:20 KST daily
 
 jobs:
   generate:
@@ -44,20 +46,22 @@ jobs:
       - name: Generate Nara Bid markdown
         run: |
           python scripts/generate_narabid_post.py \
-            --limit "${{ inputs.limit }}" \
-            --days "${{ inputs.days }}" \
+            --format service-summary \
+            --work-types service \
+            --limit "${{ github.event.inputs.limit || '20' }}" \
+            --days "${{ github.event.inputs.days || '1' }}" \
             --overwrite
 
-      - name: Build site preview
+      - name: Build site
         run: python -m blog_agent.cli build-site
 
-      - name: Commit generated Nara Bid post
+      - name: Commit generated Nara Bid service post
         run: |
           git config user.name "blog-agent"
           git config user.email "actions@github.com"
-          git add output/posts public
+          git add output/posts
           git diff --cached --quiet && exit 0
-          git commit -m "chore: publish Nara Bid test post"
+          git commit -m "chore: publish Nara Bid service post"
           git pull --rebase origin main
           git push
 

@@ -4,7 +4,7 @@ import unittest
 from datetime import datetime
 from unittest.mock import patch
 
-from blog_agent.narabid import BidNotice, NaraBidClient, render_bid_digest
+from blog_agent.narabid import BidNotice, NaraBidClient, render_bid_digest, render_service_digest
 
 
 class FakeResponse:
@@ -115,6 +115,30 @@ class NaraBidTest(unittest.TestCase):
         self.assertIn("| 1 | 물품 | [테스트 물품 구매](https://example.go.kr/notice) | 조달청 | 수요기관 |", body)
         self.assertIn("조달청 나라장터 입찰공고정보서비스 공개 데이터", body)
         self.assertNotIn("어디로", body)
+        self.assertNotIn("단독", body)
+
+    def test_render_service_digest_summarizes_each_notice(self) -> None:
+        body = render_service_digest(
+            [
+                BidNotice(
+                    work_type="용역",
+                    bid_no="20260626003",
+                    bid_ord="0",
+                    title="2026년 정보시스템 유지관리 용역",
+                    notice_inst="조달청",
+                    demand_inst="수요기관",
+                    bid_close_at="2026-07-01 10:00",
+                    contract_method="제한경쟁",
+                    detail_url="https://example.go.kr/service",
+                )
+            ],
+            generated_at=datetime(2026, 6, 26, 9, 0),
+        )
+
+        self.assertIn('title: "2026-06-26 나라장터 용역 입찰공고 1건"', body)
+        self.assertIn("### 1. 2026년 정보시스템 유지관리 용역", body)
+        self.assertIn("시설·장비·시스템 유지관리", body)
+        self.assertIn("나라장터 원문 공고와 첨부파일", body)
         self.assertNotIn("단독", body)
 
 
