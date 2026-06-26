@@ -1,0 +1,20 @@
+{
+  "run_id": "20260626-214136-c037584d",
+  "average_quality": 89.0,
+  "drafts": [
+    {
+      "slug": "our-prime-day-100-09997b54",
+      "title": "아버지날 기프트 가이드, 기기는 이렇게 고르기",
+      "keyword": "Our Prime Day 100",
+      "category": "기술",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 아버지날 기프트 가이드, 기기는 이렇게 고르기. Keyword: Our Prime Day 100. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 Our favorite Prime Day gadgets under $100 you don&#8217;t need but will really want 소식입니다. Prime Day has a funny way of convincing you to buy things you weren’t shopping for in the first place. You sign on intending to buy something sensible you actually need, like a pack of USB-C cables, and an hour later you’ve also added a gadget that can press your coffee maker’s... ## 먼저 알아둘 배경 기술 매체의 선물 가이드는 이어폰, 배터리, 스마트홈, 게임 기기처럼 실제 구매 후보를 묶어 보여줍니다. Our favorite Prime Day gadgets under $100 you는 신제품 발표가 아니라 선물 상황에서 어떤 기기가 실패 확률이 낮은지 보는 글입니다. ## 왜 기술 이슈인가 기술 선물은 사양보다 사용 습관과 유지관리 난이도가 더 중요합니다. 좋은 제품이라도 충전 방식, 앱 연동, 계정 설정, 호환 기기가 맞지 않으면 서랍에 들어갈 수 있습니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | |. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyNDQ5MTUxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
