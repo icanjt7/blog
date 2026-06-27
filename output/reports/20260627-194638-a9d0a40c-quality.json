@@ -1,0 +1,20 @@
+{
+  "run_id": "20260627-194638-a9d0a40c",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "margaret-atwood-ai-8216-f8874881",
+      "title": "AI의 미래, 마거릿 애트우드가 밝힌 사용자가 겪을 진짜 변화 5가지",
+      "keyword": "Margaret Atwood AI 8216",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: AI의 미래, 마거릿 애트우드가 밝힌 사용자가 겪을 진짜 변화 5가지. Keyword: Margaret Atwood AI 8216. Concrete visual subject: artificial intelligence neural network. Context: ## 마거릿 애트우드가 짚은 AI 문제, 무엇이 달라지나? 2026년 6월 27일 원문 공개 기준, 《시녀 이야기(The Handmaid's Tale)》와 《블라인드 암살자(The Blind Assassin)》로 유명한 작가 마거릿 애트우드가 포르투갈 Babell 문학·문화 페스티벌에서 AI의 핵심 문제를 언급했습니다. 애트우드는 \"garbage in, garbage out(쓰레기 입력, 쓰레기 출력)\"이라는 표현으로, AI가 제공하는 결과물의 질이 입력 데이터에 따라 결정된다고 강조했습니다. ## 실제 사용자에게 미치는 변화 마거릿 애트우드의 발언은 AI를 사용하는 일반 사용자와 기업, 개발자 모두에게 다음과 같은 실질적 영향을 시사합니다: ### 체크리스트: Margaret Atwood AI 8216이 지적한 사용자 변화 | 기준 | 내용 | |------------|----------------------------------------------------------------------------------------| | 적용 대상 | AI 기능을 사용하는 일반 사용자, 기업, 개발·운영팀 | | 핵심 문제 | 입력 데이터 품질 저하 시 AI 결과물의 신뢰성·유용성 하락 | | 실질 영향 | 업무 자동화·추천·의사결정 시스템의 정확도 감소 | | 주의점 | AI 활용 시 데이터 검증 및 입력 관리 필요 | | 참고 기관 |. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1696272440000-0808a203c852?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMG5ldXJhbCUyMG5ldHdvcmt8ZW58MXwwfHx8MTc4MjU1NDY1Nnww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
