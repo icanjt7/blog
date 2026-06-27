@@ -1,0 +1,74 @@
+{
+  "run_id": "20260627-154025-c87e250d",
+  "topics": [
+    {
+      "keyword": "Guardian 8217 Kai Wright",
+      "title_hint": "The Guardian&#8217;s Kai Wright refuses to buy a new phone",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "The Guardian&#8217;s Kai Wright refuses to buy a new phone",
+          "url": "https://www.theverge.com/report/958695/kai-wright-npr-guardian-interview-questionnaire",
+          "published_at": "2026-06-27T15:15:00",
+          "summary": "Kai Wright is the co-host of Stateside with Kai and Carter over at the Guardian. But Wright has been bringing his unique insights to listeners for years. He's also hosted Notes From America, The United States of Anxiety, and Indivisible. He's a Peabody Award-winning journalist who has profiled powerful men, explored what it means to [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Guardian 8217 Kai Wright",
+        "title_hint": "The Guardian&#8217;s Kai Wright refuses to buy a new phone",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "The Guardian&#8217;s Kai Wright refuses to buy a new phone",
+            "url": "https://www.theverge.com/report/958695/kai-wright-npr-guardian-interview-questionnaire",
+            "published_at": "2026-06-27T15:15:00",
+            "summary": "Kai Wright is the co-host of Stateside with Kai and Carter over at the Guardian. But Wright has been bringing his unique insights to listeners for years. He's also hosted Notes From America, The United States of Anxiety, and Indivisible. He's a Peabody Award-winning journalist who has profiled powerful men, explored what it means to [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "자율주행차 안전, 인간 운전자와 어떻게 비교할까?",
+      "slug": "guardian-8217-kai-wright-7477220b",
+      "excerpt": "Guardian 8217 Kai Wright의 인터뷰를 바탕으로, 자율주행차 안전 기준과 Waymo의 Reference Driver 모델이 인간 운전자와의 비교에 어떻게 활용되는지 정리합니다.",
+      "body_markdown": "## 오늘의 주요 소식\n\n2026-06-27 공개된 The Guardian 8217 Kai Wright 인터뷰를 참고합니다.  \nKai Wright는 Stateside with Kai and Carter의 공동 진행자이자, Notes From America 등 다양한 사회 이슈 프로그램을 이끌어온 Peabody Award 수상 저널리스트입니다.\n\n## 자율주행차 안전 기준, 왜 논란인가?\n\nWaymo(Alphabet 계열 자율주행 기업)는 실제 도로에서 모든 사고 상황을 시험할 수 없기에 시뮬레이션이 필수적입니다.  \n이때 사용되는 Reference Driver(인간 운전자 모델)는 완벽한 운전자가 아니라, 실제 인간의 인지 속도와 반응 지연, 놀람 행동 등을 반영해 자율주행차와 현실적 비교가 가능하도록 설계됐습니다.\n\n### 기술적 맥락  \n- 자율주행 시뮬레이션에서 인간 운전자 모델이 반드시 필요  \n- 단순 주행거리나 무사고 기록만으로 안전성을 평가하기 어렵기 때문  \n- Reference Driver는 위험 상황에서 인간이 보일 법한 반응을 수치로 구현\n\n## 기준표에서 확인할 점\n\n| 기준 항목         | 구체 내용                                                               |\n|------------------|------------------------------------------------------------------------|\n| 적용 대상        | 로보택시 이용자, 교통 안전 연구자, 자율주행 기술 관심자                |\n| 사용 기술        | 인간 운전자 시뮬레이션, 위험 인지/회피 모델, 안전 벤치마크              |\n| 평가 방식        | 실제 사고 데이터와 시뮬레이션 비교, 규제기관 검증, 연구자 외부 평가      |\n| 영향 범위        | 로보택시 서비스 안전성, 규제기관 채택 가능성, 사고 설명 기준 변화        |\n| 참고 기관 및 절차| Waymo 공식 발표, 교통 안전 관련 연구, Guardian 8217 Kai Wright 인터뷰    |\n\n## 독자가 기억할 세 가지\n\n- Reference Driver는 Waymo 차량의 직접 운전 기능이 아니라, 인간 운전자와의 비교를 위한 기준 모델이다.\n- 자율주행차의 안전성은 단순 사고 건수나 총 주행거리만으로 판단할 수 없으며, 상황별 인간 반응과 비교가 필수적이다.\n- 실제 적용 및 공식 검증 사례는 Waymo 발표, 교통 안전 연구, Guardian 8217 Kai Wright의 인터뷰 등에서 확인 가능하다.\n\n## 참고 출처\n\n- [The Guardian&#8217;s Kai Wright refuses to buy a new phone](https://www.theverge.com/report/958695/kai-wright-npr-guardian-interview-questionnaire) (2026-06-27 공개)",
+      "tags": [
+        "기술",
+        "Guardian",
+        "8217",
+        "Kai",
+        "Wright"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1629445614962-1c815ad46986?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGNhciUyMHNlbnNvciUyMHRlY2hub2xvZ3klMjBkZXZpY2VzJTIwY29tcGFyaXNvbiUyMHJldmlldyUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBuZXVyYWwlMjBuZXR3b3JrJTIwc2FmZXR5JTIwcHVibGljJTIwc2VydmljZXxlbnwxfDB8fHwxNzgyNTc1MTIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "자율주행차 안전, 인간 운전자와 어떻게 비교할까? — Photo by N C on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1685984351037-f5c0926a716e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGNhciUyMHNlbnNvciUyMHRlY2hub2xvZ3klMjBkZXZpY2VzJTIwY29tcGFyaXNvbiUyMHJldmlldyUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBuZXVyYWwlMjBuZXR3b3JrJTIwc2FmZXR5JTIwcHVibGljJTIwc2VydmljZXxlbnwxfDB8fHwxNzgyNTc1MTIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "자율주행차 안전, 인간 운전자와 어떻게 비교할까? 본문 보조 이미지 — Photo by Timo Wielink on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 자율주행차 안전, 인간 운전자와 어떻게 비교할까?. Keyword: Guardian 8217 Kai Wright. Concrete visual subject: autonomous vehicle car sensor technology devices comparison review artificial intelligence neural network safety public service. Context: ## 오늘의 주요 소식 2026-06-27 공개된 The Guardian 8217 Kai Wright 인터뷰를 참고합니다. Kai Wright는 Stateside with Kai and Carter의 공동 진행자이자, Notes From America 등 다양한 사회 이슈 프로그램을 이끌어온 Peabody Award 수상 저널리스트입니다. ## 자율주행차 안전 기준, 왜 논란인가? Waymo(Alphabet 계열 자율주행 기업)는 실제 도로에서 모든 사고 상황을 시험할 수 없기에 시뮬레이션이 필수적입니다. 이때 사용되는 Reference Driver(인간 운전자 모델)는 완벽한 운전자가 아니라, 실제 인간의 인지 속도와 반응 지연, 놀람 행동 등을 반영해 자율주행차와 현실적 비교가 가능하도록 설계됐습니다. ### 기술적 맥락 - 자율주행 시뮬레이션에서 인간 운전자 모델이 반드시 필요 - 단순 주행거리나 무사고 기록만으로 안전성을 평가하기 어렵기 때문 - Reference Driver는 위험 상황에서 인간이 보일 법한 반응을 수치로 구현 ## 기준표에서 확인할 점 | 기준 항목 | 구체 내용 | |------------------|------------------------------------------------------------------------| | 적용 대상 | 로보택시 이용자, 교통 안전 연구자, 자율주행 기술 관심자. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 자율주행차 안전, 인간 운전자와 어떻게 비교할까?. Keyword: Guardian 8217 Kai Wright. Concrete visual subject: autonomous vehicle car sensor technology devices comparison review artificial intelligence neural network safety public service. Article context: ## 오늘의 주요 소식 2026-06-27 공개된 The Guardian 8217 Kai Wright 인터뷰를 참고합니다. Kai Wright는 Stateside with Kai and Carter의 공동 진행자이자, Notes From America 등 다양한 사회 이슈 프로그램을 이끌어온 Peabody Award 수상 저널리스트입니다. ## 자율주행차 안전 기준, 왜 논란인가? Waymo(Alphabet 계열 자율주행 기업)는 실제 도로에서 모든 사고 상황을 시험할 수 없기에 시뮬레이션이 필수적입니다. 이때 사용되는 Reference Driver(인간 운전자 모델)는 완벽한 운전자가 아니라, 실제 인간의 인지 속도와 반응 지연, 놀람 행동 등을 반영해 자율주행차와 현실적 비교가 가능하도록 설계됐습니다. ### 기술적 맥락 - 자율주행 시뮬레이션에서 인간 운전자 모델이 반드시 필요 - 단순 주행거리나 무사고 기록만으로 안전성을 평가하기 어렵기 때문 - Reference Driver는 위험 상황에서 인간이 보일 법한 반응을 수치로 구현 ## 기준표에서 확인할 점 | 기준 항목 | 구체 내용 | |------------------|------------------------------------------------------------------------| | 적용 대상 | 로보택시 이용자, 교통 안전 연구자, 자율주행 기술 관심자 | | 사용 기술 | 인간 운전자 시뮬레이션, 위험 인지/회피 모델, 안전 벤치마크 | | 평가 방식 | 실제 사고 데이터와 시뮬레이션 비교, 규제기관 검증, 연구자 외부 평가 | | 영향 범위 | 로보택시 서비스 안전성, 규제기관 채택 가능성, 사고 설명 기준 변화 | | 참고 기관 및 절차| Waymo 공식 발표, 교통 안전 관련 연구, Guardia. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-06-27T15:45:10.005914",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/guardian-8217-kai-wright-7477220b.md",
+      "message": "draft saved"
+    }
+  ]
+}
