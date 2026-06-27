@@ -1,0 +1,20 @@
+{
+  "run_id": "20260627-090626-2e08d6ae",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "24-prime-day-verge-32306c5d",
+      "title": "2026 프라임데이, Verge 독자들이 선택한 베스트 딜 5가지",
+      "keyword": "24 Prime Day Verge",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2026 프라임데이, Verge 독자들이 선택한 베스트 딜 5가지. Keyword: 24 Prime Day Verge. Concrete visual subject: technology innovation circuit abstract. Context: ## 2026 프라임데이, 어떤 제품이 인기였나 Amazon 프라임데이(Prime Day)는 매년 수많은 할인 제품이 쏟아지는 이벤트입니다. 2026년 6월 27일 기준, The Verge가 공개한 '24 Prime Day deals Verge readers are grabbing' 기사에서는 독자들이 실제로 구매한 대표 상품과 그 특징을 소개하고 있습니다. ## 세부 기준: 공개된 인기 제품과 변화 아래 표는 The Verge 기사와 공식 Amazon 안내를 바탕으로, 2026 프라임데이에서 독자들이 많이 구매한 제품과 관련 정보를 정리한 것입니다. | 항목 | 구체 내용 | |-----------------|-------------------------------------------------------------------| | 이벤트 기간 | 2026년 6월 25일~27일 (The Verge 기사 기준) | | 주요 인기 제품 | Echo 스마트 스피커, Kindle Paperwhite, Fire TV Stick, AirPods Pro, Instant Pot | | 할인율 | 최대 60% (제품별 상이, 공식 안내 기준) | | 구매 대상 | Amazon Prime 회원, 미국 및 일부 해외 지역 | | 적용 방식 | Amazon 공식 홈페이지 및 앱에서 직접 구매 | | 추가 혜택 | 일부 제품은 무료 배송, 멤버십 전용 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1779788131533-3b044ac53911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyNTUxNDUxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
