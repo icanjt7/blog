@@ -1,0 +1,22 @@
+{
+  "run_id": "20260627-164442-cfc16c79",
+  "average_quality": 66.0,
+  "drafts": [
+    {
+      "slug": "why-apple-big-tech-5f08db8f",
+      "title": "애플의 가격 인상",
+      "keyword": "Why Apple Big Tech",
+      "category": "기술",
+      "quality_score": 66.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 애플의 가격 인상. Keyword: Why Apple Big Tech. Concrete visual subject: apple device minimal design. Context: 애플의 가격 인상이 빅 테크의 AI 기술 개발에 따른 비용 증가 때문이라는 것을 알고 있는가? 최근 Tim Cook 최고경영자는 가격 인상을 \"避けられない\"라고 말했으며, 회사 가격 정책을 \"지속 불가능한\" 것으로描述했다. ### 가격 인상 내역 | 제품 | 이전 가격 | 새로운 가격 | 가격 증가 | | --- | --- | --- | --- | | 16인치 MacBook Pro | - | +300 | 300달러 | | 11인치 iPad Air | 599달러 | 749달러 | 150달러 | | HomePod Mini | 99달러 | 129달러 | 30달러 | 이러한 가격 인상의 이유는 빅 테크의 AI 기술 개발에 따른 비용 증가 때문이다. 애플은 AI 기술 개발을 위해大量의 투자를 하고 있으며, 이는 제품 가격에 반영되고 있다. ### 행동 요령 * 애플의 가격 인상에 대한 정보를 확인한다. * 제품 구매 시 가격을 고려한다. * 빅 테크의 AI 기술 개발에 대한 정보를 확인한다. ### AI 기술 개발의 영향 빅 테크의 AI 기술 개발은 다양한 산업에 영향을 미치고 있다. 애플의 경우, AI 기술을 활용하여 제품의 성능과 기능을 향상시키고 있다. 그러나 이러한 개발에는大量의 비용이 필요하며, 이는 제품 가격에 반영되고 있다. ### 가격 인상에 대한 반응 애플의 가격 인상에 대한 반응은 다양하다. 일부 고객은 가격 인상을 이해하며. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1766503206581-6824e98f49de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ258ZW58MXwwfHx8MTc4MjQwNTYwNnww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
