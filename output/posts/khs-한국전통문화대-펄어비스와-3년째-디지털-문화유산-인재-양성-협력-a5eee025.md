@@ -1,15 +1,17 @@
 ---
-title: "한국전통문화대, 펄어비스와 3년째 디지털 문화유산 인재 양성 협력"
-date: "2026-06-15T00:14"
-category: "기술"
+title: 한국전통문화대, 펄어비스와 디지털 문화유산 인재 양성 협력
+date: 2026-06-15T00:14
+category: 기술
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "기술"
+- 보도기사
+- 국가유산청
+- 기술
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=ddfa3e0f2cfc4316aadc6e9e750b0a05"
-cover_image_alt: "한국전통문화대-펄어비스 기탁식(‘26.6.11.)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=ddfa3e0f2cfc4316aadc6e9e750b0a05
+cover_image_alt: 한국전통문화대-펄어비스 기탁식(‘26.6.11.)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 국가유산청, 2026‑06‑15 발표 – 디지털 문화유산 인재 양성 및 교육·연구 사업 발전기금 기탁식

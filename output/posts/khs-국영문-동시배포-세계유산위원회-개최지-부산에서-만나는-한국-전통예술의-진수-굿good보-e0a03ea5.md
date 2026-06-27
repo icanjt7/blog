@@ -1,15 +1,17 @@
 ---
-title: "(국영문 동시배포) 세계유산위원회 개최지 부산에서 만나는 한국 전통예술의 진수, ‘굿GOOD보러가자’"
-date: "2026-06-15T00:15"
-category: "핫이슈"
+title: 부산에서 만나는 한국 전통예술의 진수 ‘굿GOOD보러가자’
+date: 2026-06-15T00:15
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=8f22b41a3c204a5da94128e9cb63f08e"
-cover_image_alt: "홍보물"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=8f22b41a3c204a5da94128e9cb63f08e
+cover_image_alt: 홍보물
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청(청장 허민)은 2026‑06‑15에 제48차 세계유산위원회 부산 개최를 기념한 특별공연 ‘굿보러가자’ 개최 계획을 발표했습니다. 이번 행사는 7월 26일(수) 오후 7시 30분 부산 벡스코 오디토리움에서 진행되며, 전통예술을 한 무대에 모은 옴니버스 형태의 공연으로 전 세계 유산 전문가와 일반 관객에게 한국 무형문화유산의 매력을 전달하고자 합니다.

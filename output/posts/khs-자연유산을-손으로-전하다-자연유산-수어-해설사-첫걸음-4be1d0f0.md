@@ -1,15 +1,17 @@
 ---
-title: "자연유산을 손으로 전하다… ‘자연유산 수어 해설사’ 첫걸음"
-date: "2026-06-17T00:09"
-category: "핫이슈"
+title: 자연유산 수어 해설사 5명 첫 임명
+date: 2026-06-17T00:09
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=cd6f607f4e8d40219baba64117357140"
-cover_image_alt: "자연유산 수어 해설사 양성과정 해설시연(26.5.27.)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=cd6f607f4e8d40219baba64117357140
+cover_image_alt: 자연유산 수어 해설사 양성과정 해설시연(26.5.27.)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 국가유산청 보도자료
