@@ -1,0 +1,23 @@
+{
+  "run_id": "20260628-115919-8fa05916",
+  "average_quality": 59.0,
+  "drafts": [
+    {
+      "slug": "puzzle-game-8217-simple-02ce9a67",
+      "title": "What's the Password? 퍼즐 게임의 핵심 특징과 공식 정보",
+      "keyword": "puzzle game 8217 simple",
+      "category": "기술",
+      "quality_score": 59.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "기술 글이 원문 제목의 핵심 대상을 충분히 설명하지 않습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: What's the Password? 퍼즐 게임의 핵심 특징과 공식 정보. Keyword: puzzle game 8217 simple. Concrete visual subject: gaming esports interactive. Context: ## 1. 개발사와 출시 플랫폼: TrampolineTales의 신작 'What's the Password?'는 TrampolineTales의 Dan DiIorio가 개발한 1인 인디 퍼즐 게임이다. 공식 출시일은 2026년 6월 27일로, PC, iOS, Android 등 3개 플랫폼에서 동시 출시되었다. 각 플랫폼에서 동일한 인터페이스와 입력 방식(터치 또는 키보드)을 제공하여, 플레이 경험이 일관적이다. 출처(The Verge)에 따르면, 플랫폼별 차이가 거의 없으며, 누구나 쉽게 접근할 수 있는 점이 장점으로 언급된다. ## 2. 게임 규칙과 설계: 네 자리 숫자 입력 게임의 규칙은 단순하다. 각 퍼즐에서 플레이어는 네 자리 숫자를 입력해 정답을 맞추면 된다. 숫자판은 직관적으로 구성되어 있어 별도의 튜토리얼 없이 바로 플레이가 가능하다. 복잡한 조작이나 시간 제한이 없으며, 모든 퍼즐은 동일한 입력 방식으로 진행된다. 이 단순한 구조는 공식 안내 기준 '쉬운 접근성'과 '플랫폼별 유사한 경험'으로 강조된다. ## 3. 퍼즐 구성과 난이도: 100개 이상의 독창적 문제 공식 안내에 따르면, 'What's the Password?'에는 100개가 넘는 퍼즐이 수록되어 있다. 각 퍼즐은 반복적이지 않고, 스테이지마다 새로운 아이디어와 사고방식을 요구한다. 초반에는 직관적인 문제로 시작하지만, 후반으로 갈수록 기존 패턴을 뒤집는 문. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1758410473735-c76baff30a79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxnYW1pbmclMjBlc3BvcnRzJTIwaW50ZXJhY3RpdmV8ZW58MXwwfHx8MTc4MjY0ODIxN3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
