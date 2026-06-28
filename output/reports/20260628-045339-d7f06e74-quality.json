@@ -1,0 +1,34 @@
+{
+  "run_id": "20260628-045339-d7f06e74",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "한국형-장거리-자폭-드론-15fc0895",
+      "title": "50만 드론 전사, 누가 될 수 있을까? 조건과 혜택 한눈에",
+      "keyword": "한국형 장거리 자폭 드론",
+      "category": "생활",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 50만 드론 전사, 누가 될 수 있을까? 조건과 혜택 한눈에. Keyword: 한국형 장거리 자폭 드론. Concrete visual subject: drone aerial sky modern public service checklist. Context: 한국형 장거리 자폭 드론 전력화 추진 소식이 발표되면서 \"50만 드론 전사 양성\"이라는 대규모 목표가 공개됐습니다. 많은 사람들이 \"나도 지원할 수 있는지\" 궁금해하지만, 실제 대상과 조건은 구체적으로 정해져 있습니다. ### 한국형 장거리 자폭 드론이란? 국방부(대한민국 군사 정책을 담당하는 정부부처)가 공개한 신규 무인 전투 장비입니다. 기존의 단거리 정찰용 드론과 달리, 원격 조정으로 장거리 목표에 접근해 임무를 수행할 수 있습니다. 이 장비는 군사 작전의 효율성과 범위를 크게 넓힐 수 있도록 설계되었습니다. ### 드론 전사란? ‘드론 전사’는 드론 운용에 특화된 군 인력으로, 기존 병사나 장교와 구분됩니다. 국방부는 각 군(육군, 해군, 공군) 드론작전 수행 능력 강화를 위해 이 인력을 대규모로 양성할 계획입니다. ### 지원 대상과 조건 아래 표는 국방부 공식 안내(2026년 6월 26일 기준)를 바탕으로 정리한 드론 전사 양성 대상과 주요 조건입니다. | 구분 | 대상 범위 | 주요 조건 | 혜택/지원 내용 | 관련 기관 | |---------------------|----------------------------|---------------------------|---------------------------|------------------| | 군 복무자(현역) | 각 군 병사, 장교, 부사관 | 드론 운용 교육. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1514043454212-14c181f46583?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxkcm9uZSUyMGFlcmlhbCUyMHNreSUyMG1vZGVybiUyMHB1YmxpYyUyMHNlcnZpY2UlMjBjaGVja2xpc3R8ZW58MXwwfHx8MTc4MjYyMjUwM3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "inside-matter-b649e474",
+      "title": "스마트홈 'Matter'의 현재: 2026 애플 사용자는 무엇이 달라질까?",
+      "keyword": "Inside Matter",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 스마트홈 'Matter'의 현재: 2026 애플 사용자는 무엇이 달라질까?. Keyword: Inside Matter. Concrete visual subject: technology innovation circuit abstract. Context: ## 스마트홈 표준 Matter, 지금 어디까지 왔나 2026-06-27 공개된 [Inside the room where the smart home industry is still betting on Matter](https://www.theverge.com/tech/958008/matter-unify-conference-csa-apple-google-amazon-samsung-smart-home-interoperability)에서는 스마트홈 업계가 여전히 Matter 표준에 기대를 걸고 있다는 점이 강조됩니다. Matter는 2022년 암스테르담에서 업계가 공동 발표한 스마트홈 기기 통합 규격입니다. 주요 기업(애플, 구글, 아마존, 삼성 등)이 참여해 기기 간 호환성을 높이는 것을 목표로 삼았고, CSA(Connectivity Standards Alliance)가 주도합니다. ## 애플 사용자를 위한 핵심 변화 WWDC(Apple Worldwide Developers Conference)는 매년 애플의 운영체제(iOS, iPadOS, macOS 등) 신규 기능과 지원 기기 변화가 공개되는 행사입니다. Matter와 애플의 연동은 단순 신기능 발표가 아니라, 지원 기기 목록과 실제 사용 환경의 변화까지 함께 확인해야 합니다. ## 체크포인트: Matter & 애플 생태계 변화 | 항목 | 세부내용 | |----------------. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1750365919971-7dd273e7b317?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyNTUxNDUxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
