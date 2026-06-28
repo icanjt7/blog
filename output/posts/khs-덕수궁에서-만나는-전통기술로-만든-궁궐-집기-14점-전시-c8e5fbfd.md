@@ -1,15 +1,17 @@
 ---
-title: "덕수궁에서 만나는 전통기술로 만든 궁궐 집기 14점 전시"
-date: "2026-06-08T00:02"
-category: "핫이슈"
+title: 전통 기술로 만든 덕수궁 집기 전시회 열린다
+date: 2026-06-08T00:02
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=2d8197fbd81b40ff9a1bc4c099aa7ba0"
-cover_image_alt: "즉조당 재현집기"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=2d8197fbd81b40ff9a1bc4c099aa7ba0
+cover_image_alt: 즉조당 재현집기
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 소개
