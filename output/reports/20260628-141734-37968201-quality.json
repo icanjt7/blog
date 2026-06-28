@@ -1,0 +1,34 @@
+{
+  "run_id": "20260628-141734-37968201",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "국토부-대한항공-아시아나-합병-8a91e069",
+      "title": "12월 17일, 대한항공·아시아나 합병 후 달라지는 5가지",
+      "keyword": "국토부 대한항공 아시아나 합병",
+      "category": "생활",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 12월 17일, 대한항공·아시아나 합병 후 달라지는 5가지. Keyword: 국토부 대한항공 아시아나 합병. Concrete visual subject: everyday lifestyle public information. Context: ## 대한항공·아시아나 합병, 무엇이 바뀌나 국토교통부(국토부)는 2026년 6월 25일, 대한항공과 아시아나항공의 합병을 조건부 인가했습니다. 두 항공사는 항공사업법에 따라 심사를 거쳐 통합항공사 출범을 준비하고 있습니다. 합병이 완료되면 2026년 12월 17일에 새로운 통합항공사가 공식 출범할 예정입니다. ### 합병 관련 주요 일정 - **출범 목표일**: 2026년 12월 17일 - **합병 심사 완료**: 2026년 6월 25일 - **남은 절차**: 안전운항체계 변경검사, 해외 항공당국 인허가 - **인수 완료 시점**: 2024년 12월, 해외 경쟁당국 및 공정거래위원회 승인 - **발표 기관**: 국토교통부 ### 합병 적용 대상과 변화 - **대상**: 대한항공과 아시아나항공, 양사 이용 승객 - **적용 범위**: 국내·국제선 운항, 서비스, 마일리지 등 - **변경 내용**: 통합항공사 출범 후 단일 브랜드 운영 예정 - **절차**: 별도 신청 없이 자동 적용(국토부 공식 안내 기준) - **문의처**: 국토교통부, 통합항공사 공식 홈페이지(출범 후 안내 예정) --- ## 확인해야 할 체크리스트 | 체크항목 | 공식 안내 기준 내용 | |-------------------------|---------------------------------| | 출범일 | 2026년 12월 17일 | | 적용 대상 | 대한. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1587341433400-a10157e26930?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZXZlcnlkYXklMjBsaWZlc3R5bGUlMjBwdWJsaWMlMjBpbmZvcm1hdGlvbnxlbnwxfDB8fHwxNzgyNjU2Mzc0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "prosecutors-chatgpt-palisades-67356bf8",
+      "title": "Palisades 산불 재판, 챗GPT 대화로그 증거 채택의 의미",
+      "keyword": "Prosecutors ChatGPT Palisades",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Palisades 산불 재판, 챗GPT 대화로그 증거 채택의 의미. Keyword: Prosecutors ChatGPT Palisades. Concrete visual subject: technology innovation circuit abstract. Context: ## Palisades 산불 사건 개요와 핵심 인물 2025년 1월 1일, LA Palisades 지역에서 발생한 산불은 LA 역사상 가장 치명적인 피해를 남겼다. 수십 명의 사상자와 막대한 재산 피해가 이어진 가운데, 소프트웨어 엔지니어 Jonathan Rinderknecht가 방화 혐의로 기소됐다. 사건의 심각성과 함께 재판 과정에서 새로운 증거 채택 방식이 주목받았다. ## 챗GPT 대화로그, 법정 증거로 제출된 경위 검찰은 Jonathan Rinderknecht가 산불 발생 직전 챗GPT에 \"방화 방법\", \"불을 낸 후 행동\" 등 구체적인 키워드로 문의한 대화로그를 증거로 제출했다. 기존의 증거(아이폰 위치 데이터, CCTV 영상, 목격자 증언)와 함께 AI 챗봇 대화기록이 추가된 것은 미국 내에서도 매우 드문 사례였다. OpenAI의 챗GPT는 사용자 대화 내용을 서버에 저장하며, 검찰은 서버 기록을 법원에 제출하는 방식으로 증거를 확보했다. ## 증거 제출 내역 및 주요 내용 아래 표는 Palisades fire 재판에서 제출된 핵심 증거와 그 특징을 정리한 것이다. | 증거 종류 | 제출 주체 | 확인 방법 | 주요 내용 및 효과 | |-------------------|---------------|---------------------|--------------------------| | 아이폰 위치 데이터 | 검찰, . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyNTUxNDUxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
