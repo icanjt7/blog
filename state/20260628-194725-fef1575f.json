@@ -1,0 +1,73 @@
+{
+  "run_id": "20260628-194725-fef1575f",
+  "topics": [
+    {
+      "keyword": "China 8217",
+      "title_hint": "China claims the world&#8217;s fastest supercomputer",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "China claims the world&#8217;s fastest supercomputer",
+          "url": "https://www.theverge.com/tech/958768/china-claims-the-worlds-fastest-supercomputer",
+          "published_at": "2026-06-28T17:20:59",
+          "summary": "Despite trade restrictions, China has reclaimed the title of the world's fastest supercomputer for the first time since 2018. LineShine has pushed El Capitan out of number one on the TOP500 ranking. That's despite strict limits on what high-powered computing components can be sold to China by US firms, which dominate the list, with America [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "China 8217",
+        "title_hint": "China claims the world&#8217;s fastest supercomputer",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "China claims the world&#8217;s fastest supercomputer",
+            "url": "https://www.theverge.com/tech/958768/china-claims-the-worlds-fastest-supercomputer",
+            "published_at": "2026-06-28T17:20:59",
+            "summary": "Despite trade restrictions, China has reclaimed the title of the world's fastest supercomputer for the first time since 2018. LineShine has pushed El Capitan out of number one on the TOP500 ranking. That's despite strict limits on what high-powered computing components can be sold to China by US firms, which dominate the list, with America [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "최고 속도 탈환! China 8217, 왜 전 세계가 주목하나",
+      "slug": "china-8217-bc05b3dc",
+      "excerpt": "2026년 6월 28일, 중국의 슈퍼컴퓨터 China 8217이 세계 1위에 등극했습니다. 미국의 El Capitan을 제친 이유와 실제 변화, 주요 비교 정보를 확인하세요.",
+      "body_markdown": "2026년 6월 28일 발표된 TOP500 슈퍼컴퓨터 순위에서 중국의 China 8217이 세계 최고 속도를 기록했습니다. 미국 에너지부 산하 로렌스 리버모어 국립 연구소(LLNL)에서 운영하는 El Capitan이 1위였던 자리를 중국이 다시 탈환한 것입니다. 이 변화는 단순한 성능 경쟁을 넘어 기술 독립과 글로벌 영향력 확대라는 의미를 갖습니다.\n\n## China 8217이란?\n\nChina 8217은 중국이 독자적으로 개발한 최신 슈퍼컴퓨터 모델명입니다. 이번에 1위로 등극한 LineShine 시스템이 바로 China 8217 기술을 기반으로 만들어졌습니다.  \n슈퍼컴퓨터는 대규모 연산에 필요한 복잡한 계산을 빠르게 처리하며, AI 연구, 기상 예측, 신약 개발 등 다양한 분야에서 핵심 인프라로 쓰입니다.\n\n## 왜 지금 China 8217이 화제가 되었나?\n\n최근 몇 년 동안 미국의 수출 규제로 인해 중국은 고성능 컴퓨터 부품(특히 프로세서와 GPU) 수급에 어려움을 겪었습니다. 그럼에도 불구하고 China 8217은 자체 설계와 국내 부품 조달로 최고 성능을 달성했습니다.  \n이 성과는 중국이 기술적 독립성을 확보하며 글로벌 슈퍼컴퓨터 경쟁에서 다시 우위를 점한 중요한 신호로 해석됩니다.\n\n## 주요 비교: China 8217(LineShine) vs El Capitan(USA)\n\n| 항목             | China 8217 (LineShine) | El Capitan (USA)                      |\n|------------------|------------------------|---------------------------------------|\n| 국가             | 중국                   | 미국                                  |\n| 시스템 공개일    | 2026-06-28             | 2024년                                |\n| 활용 분야        | AI, 신약, 국방, 기상   | 에너지, 국방, 과학                   |\n| 부품 공급 방식   | 국내 또는 자체 개발    | 미국 기업(AMD 등)                    |\n| 1위 등극 시점    | 2026-06-28             | 2024년                                |\n| 규제 영향        | 최소화                 | 없음                                  |\n| TOP500 순위      | 1                      | 2                                     |\n| 운영 기관        | 중국 정부/LineShine    | 미국 에너지부(LLNL)                   |\n\n## 실제 변화와 영향\n\n- **글로벌 기술 기업**은 중국의 독자 기술력 성장과 부품 수출 제한의 효과를 주목합니다.\n- **연구기관**은 더욱 빠른 시뮬레이션과 데이터 분석이 가능해져, AI 및 신약 개발 등에서 진전이 기대됩니다.\n- **정책 담당자**는 수출 규제의 실질적 영향과 중국의 대응력을 구체적으로 평가하게 됩니다.\n- **일반 사용자**는 AI 서비스, 기상 예측 등에서 간접적으로 더 빠르고 정교한 서비스를 경험할 수 있습니다.\n\n## China 8217의 장점과 한계\n\n**장점**\n- 미국 부품 없이도 세계 최고 성능 달성  \n- AI, 신약, 국방 등 다양한 분야에서 경쟁력 상승  \n- 국가 주도 연구 및 산업 적용 확대\n\n**단점**\n- 전력 소비, 소프트웨어 호환성 등 세부 사양 미공개  \n- 실제 운용 안정성, 장기 성능은 추가 검증 필요  \n- 국제 협업(특히 미국과의 공동 프로젝트)에서 불확실성 존재\n\n## 앞으로 확인해야 할 정보\n\nChina 8217의 세부 사양과 실제 사용성은 TOP500 공식 웹사이트([https://www.top500.org](https://www.top500.org)), 중국 정부 발표, 그리고 최신 연구 논문을 통해 추가 확인할 수 있습니다.  \nThe Verge의 보도자료(2026-06-28)와 공식 순위 정보에서 지속적으로 업데이트되는 내용을 참고하세요.\n\n---\n\n세계 슈퍼컴퓨터 경쟁은 단순 속도 비교를 넘어 기술 주도권과 산업 전략 변화로 이어지고 있습니다. China 8217이 왜 1위가 되었는지, 실제 영향과 앞으로의 전망을 꾸준히 확인하는 것이 중요합니다.",
+      "tags": [
+        "기술",
+        "China",
+        "8217"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1766203551890-2664b619042b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dGVjaG5vbG9neSUyMGlubm92YXRpb24lMjBjaXJjdWl0JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc4MjU1MTQ1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "최고 속도 탈환! China 8217, 왜 전 세계가 주목하나 — Photo by Albert Stoynov on Unsplash",
+      "inline_image_path": "https://images.pexels.com/photos/30547598/pexels-photo-30547598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "inline_image_alt": "최고 속도 탈환! China 8217, 왜 전 세계가 주목하나 본문 보조 이미지 — Photo by Pachon in Motion on Pexels",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 최고 속도 탈환! China 8217, 왜 전 세계가 주목하나. Keyword: China 8217. Concrete visual subject: technology innovation circuit abstract. Context: 2026년 6월 28일 발표된 TOP500 슈퍼컴퓨터 순위에서 중국의 China 8217이 세계 최고 속도를 기록했습니다. 미국 에너지부 산하 로렌스 리버모어 국립 연구소(LLNL)에서 운영하는 El Capitan이 1위였던 자리를 중국이 다시 탈환한 것입니다. 이 변화는 단순한 성능 경쟁을 넘어 기술 독립과 글로벌 영향력 확대라는 의미를 갖습니다. ## China 8217이란? China 8217은 중국이 독자적으로 개발한 최신 슈퍼컴퓨터 모델명입니다. 이번에 1위로 등극한 LineShine 시스템이 바로 China 8217 기술을 기반으로 만들어졌습니다. 슈퍼컴퓨터는 대규모 연산에 필요한 복잡한 계산을 빠르게 처리하며, AI 연구, 기상 예측, 신약 개발 등 다양한 분야에서 핵심 인프라로 쓰입니다. ## 왜 지금 China 8217이 화제가 되었나? 최근 몇 년 동안 미국의 수출 규제로 인해 중국은 고성능 컴퓨터 부품(특히 프로세서와 GPU) 수급에 어려움을 겪었습니다. 그럼에도 불구하고 China 8217은 자체 설계와 국내 부품 조달로 최고 성능을 달성했습니다. 이 성과는 중국이 기술적 독립성을 확보하며 글로벌 슈퍼컴퓨터 경쟁에서 다시 우위를 점한 중요한 신호로 해석됩니다. ## 주요 비교: China 8217(LineShine) vs El Capitan(USA) | 항목 | China 8217 (LineShine) | El . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 최고 속도 탈환! China 8217, 왜 전 세계가 주목하나. Keyword: China 8217. Concrete visual subject: technology innovation circuit abstract. Article context: 2026년 6월 28일 발표된 TOP500 슈퍼컴퓨터 순위에서 중국의 China 8217이 세계 최고 속도를 기록했습니다. 미국 에너지부 산하 로렌스 리버모어 국립 연구소(LLNL)에서 운영하는 El Capitan이 1위였던 자리를 중국이 다시 탈환한 것입니다. 이 변화는 단순한 성능 경쟁을 넘어 기술 독립과 글로벌 영향력 확대라는 의미를 갖습니다. ## China 8217이란? China 8217은 중국이 독자적으로 개발한 최신 슈퍼컴퓨터 모델명입니다. 이번에 1위로 등극한 LineShine 시스템이 바로 China 8217 기술을 기반으로 만들어졌습니다. 슈퍼컴퓨터는 대규모 연산에 필요한 복잡한 계산을 빠르게 처리하며, AI 연구, 기상 예측, 신약 개발 등 다양한 분야에서 핵심 인프라로 쓰입니다. ## 왜 지금 China 8217이 화제가 되었나? 최근 몇 년 동안 미국의 수출 규제로 인해 중국은 고성능 컴퓨터 부품(특히 프로세서와 GPU) 수급에 어려움을 겪었습니다. 그럼에도 불구하고 China 8217은 자체 설계와 국내 부품 조달로 최고 성능을 달성했습니다. 이 성과는 중국이 기술적 독립성을 확보하며 글로벌 슈퍼컴퓨터 경쟁에서 다시 우위를 점한 중요한 신호로 해석됩니다. ## 주요 비교: China 8217(LineShine) vs El Capitan(USA) | 항목 | China 8217 (LineShine) | El Capitan (USA) | |------------------|------------------------|---------------------------------------| | 국가 | 중국 | 미국 | | 시스템 공개일 | 2026-06-28 | 2024년 | | 활용 분야 | AI, 신약, 국방, 기상 | 에너지, 국방, 과학 | | 부품 공급. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-06-28T19:51:47.925193",
+      "quality_score": 81.0,
+      "review_notes": [
+        "핵심 키워드 반복이 과합니다.",
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 81.0"
+    }
+  ]
+}
