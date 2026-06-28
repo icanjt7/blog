@@ -1,0 +1,22 @@
+{
+  "run_id": "20260628-164731-3a92636c",
+  "average_quality": 84.0,
+  "drafts": [
+    {
+      "slug": "nest-8217-e42a9093",
+      "title": "네스트의 스마트 홈 기술",
+      "keyword": "Nest 8217",
+      "category": "기술",
+      "quality_score": 84.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 네스트의 스마트 홈 기술. Keyword: Nest 8217. Concrete visual subject: technology innovation circuit abstract. Context: ### 네스트의 시작 네스트의 시작은 전설적인 제품 제작자 Tony Fadell이 iPhone의 성공을 이끌어낸 후, 새로운 도전을 시작한 것입니다. 네스트는 스마트 테라스토탈을 개발하여 에너지 소비를 줄이고, 사용자의 편의성을 높여주었습니다. ### 네스트의 기술 개발 네스트는 다음과 같은 주요 모델과 기능을 개발했습니다. | 연도 | 모델 | 주요 기능 | | --- | --- | --- | | 2011 | Nest Learning Thermostat | 학습 능력, 에너지 보고서 | | 2012 | Nest Protect | 화재 감지, 공기질 모니터링 | | 2014 | Nest Cam | 실시간 영상 모니터링, 이동 감지 | ### 네스트의 기술 발전 네스트는 이러한 기술의 발전을 기반으로 하여, 더욱 향상된 기능을 제공할 수 있습니다. 에너지 소비를 줄이고, 사용자의 편의성을 높여주는 새로운 기술이 무엇일까요? 더 향상된 에너지 소비 감소, 더 편리한 사용자 인터페이스, 더 정확한 학습 능력 등이 포함될 수 있습니다. ### 최신 기술 개발 네스트의 최신 기술 개발을 더 자세히 살펴보면, 사용자의 편의성과 에너지 소비를 줄이는 것을 목표로 합니다. 이를 위해, 학습 능력, 에너지 보고서, 화재 감지, 공기질 모니터링, 실시간 영상 모니터링 등 다양한 기술을 개발하여, 사용자의 생활을 편리하게 만들어주고 있습니다. ### 네. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1750365919878-2735d30fa3d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyNTM0MDc1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
