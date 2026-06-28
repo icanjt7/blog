@@ -1,0 +1,34 @@
+{
+  "run_id": "20260628-173626-72e4f2c2",
+  "average_quality": 89.0,
+  "drafts": [
+    {
+      "slug": "공식-로고-김구-탄생-주년-41099546",
+      "title": "공식 로고 김구 탄생 주년, 신청 전 확인할 것",
+      "keyword": "공식 로고 김구 탄생 주년",
+      "category": "생활",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 공식 로고 김구 탄생 주년, 신청 전 확인할 것. Keyword: 공식 로고 김구 탄생 주년. Concrete visual subject: application form document. Context: ## 무엇이 달라졌나 김구 탄생 150주년 유네스코 기념 '공식 로고' 공개 소식은 공식 로고 김구 탄생 주년과 직접 연결되는지 확인해야 하는 생활 정보입니다. 먼저 제목의 혜택 표현보다 실제로 누가, 언제, 어떤 절차로 움직여야 하는지 나눠 보는 편이 좋습니다. 정부는 26일 '김구 탄생 150주년 유네스코 기념해'의 공식 로고를 공개했다. 공식 로고는 김구 선생의 온화한 초상과 한글 '김구', 숫자 '150'을 결합해 '김구 탄생 150주년 유네스코 기념해'의 의미를 직관적으로 전달할 수 있도록 제작됐다. 또한 지난 4월 27일 국무총리 주재 국가보훈위원회에서 확정한 슬로건 '나의 소원, 평화의 문화'를 반영해 백범 사상의 핵심 가치를 표현했다. '김구 탄생 150주년 유네스코 기념해' 기념사업 로고(이미지=국무조정실 제공) 이번 로고는 지난 4월... ## 이번 글에서 바로 볼 항목 | 항목 | 이번 소식에서 확인할 내용 | | --- | --- | | 핵심 대상 | 공식 로고 김구 탄생 주년 | | 확인할 수치 | 4월 27일, 4월 | | 처리 방식 | 신청·방문·자동 적용 여부를 원문에서 확인 | | 담당 주체 | 국가보훈위원회 | ## 숫자와 대상은 이렇게 읽으면 쉽습니다 이번 소식에서 먼저 볼 숫자는 4월 27일, 4월입니다. 4월 27일만 따로 보면 실제 조건을 놓칠 수 있습니다. 4월처럼 함께 나온 기간·비율·단위가. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1631651693480-97f1132e333d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcHBsaWNhdGlvbiUyMGZvcm0lMjBkb2N1bWVudHxlbnwxfDB8fHwxNzgyNjY4Mjk3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "china-8217-bc05b3dc",
+      "title": "Waymo의 가상 운전자, 자율주행 안전 실험",
+      "keyword": "China 8217",
+      "category": "기술",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Waymo의 가상 운전자, 자율주행 안전 실험. Keyword: China 8217. Concrete visual subject: autonomous vehicle car sensor safety public service. Context: ## 무슨 소식인가 China claims the world&#8217;s fastest supercomputer 소식입니다. Despite trade restrictions, China has reclaimed the title of the world's fastest supercomputer for the first time since 2018. LineShine has pushed El Capitan out of number one on the TOP500 ranking. That's despite strict limits on what high-powered computing components can be... ## 먼저 알아둘 배경 Waymo는 Alphabet 계열 자율주행 기업입니다. 실제 도로에서 모든 사고 가능성을 직접 시험할 수 없기 때문에 자율주행 개발에는 시뮬레이션이 필수입니다. Reference Driver는 완벽한 운전자가 아니라 사람이 가진 인지 지연, 놀람, 조작 지연을 넣어 위험 상황의 비교 기준을 만들려는 모델입니다. ## 왜 기술 이슈인가 자율주행 안전 논쟁에서 어려운 질문은 '무엇과 비교해 안전한가'입니다. 회사가 자체 기준만 내세우면 신뢰를 얻기 어렵고, 무사고만 요구하면 기술 검증이 멈춥니다. 인간 운전자 반응을 현실적으로 모델링하면 자율주행차가 위험을 얼마나 일찍 보고 피했는지 더 구체적으로 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1773977000589-3160d77cdf0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8YXV0b25vbW91cyUyMHZlaGljbGUlMjBjYXIlMjBzZW5zb3IlMjBzYWZldHklMjBwdWJsaWMlMjBzZXJ2aWNlfGVufDF8MHx8fDE3ODI2NjgzMjN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
