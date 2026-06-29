@@ -1,0 +1,71 @@
+{
+  "run_id": "20260629-050059-fa57403a",
+  "topics": [
+    {
+      "keyword": "China 8217",
+      "title_hint": "China claims the world&#8217;s fastest supercomputer",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "China claims the world&#8217;s fastest supercomputer",
+          "url": "https://www.theverge.com/tech/958768/china-claims-the-worlds-fastest-supercomputer",
+          "published_at": "2026-06-28T17:20:59",
+          "summary": "Despite trade restrictions, China has reclaimed the title of the world's fastest supercomputer for the first time since 2018. LineShine has pushed El Capitan out of number one on the TOP500 ranking. That's despite strict limits on what high-powered computing components can be sold to China by US firms, which dominate the list, with America [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "China 8217",
+        "title_hint": "China claims the world&#8217;s fastest supercomputer",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "China claims the world&#8217;s fastest supercomputer",
+            "url": "https://www.theverge.com/tech/958768/china-claims-the-worlds-fastest-supercomputer",
+            "published_at": "2026-06-28T17:20:59",
+            "summary": "Despite trade restrictions, China has reclaimed the title of the world's fastest supercomputer for the first time since 2018. LineShine has pushed El Capitan out of number one on the TOP500 ranking. That's despite strict limits on what high-powered computing components can be sold to China by US firms, which dominate the list, with America [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "2026년, 세계 1위 슈퍼컴퓨터 ‘China 8217’의 반전",
+      "slug": "china-8217-3d2e81ba",
+      "excerpt": "2026년 6월, 중국이 ‘China 8217’ 슈퍼컴퓨터로 세계 최고 속도를 다시 확보했습니다. 최신 발표와 주요 기준을 정리합니다.",
+      "body_markdown": "## 2026년 6월, 슈퍼컴퓨터 순위에 반전\n\n중국이 2026년 6월 28일 발표에서 ‘China 8217’로 세계에서 가장 빠른 슈퍼컴퓨터 타이틀을 탈환했습니다.  \n이는 미국의 ‘El Capitan’을 제치고 2018년 이후 처음으로 TOP500 순위 1위에 오른 결과입니다.  \n[관련 기사 원문](https://www.theverge.com/tech/958768/china-claims-the-worlds-fastest-supercomputer)\n\n## 주요 기준으로 본 ‘China 8217’\n\n| 기준 항목         | 세부 내용                                                                |\n| ----------------- | ------------------------------------------------------------------------ |\n| 순위 발표 기관    | TOP500 공식 발표                                                         |\n| 1위 슈퍼컴퓨터    | China 8217 (중국)                                                        |\n| 2위 슈퍼컴퓨터    | El Capitan (미국)                                                        |\n| 발표일            | 2026년 6월 28일                                                          |\n| 성능 지표         | FLOPS(초당 연산 횟수) 기준, 구체 수치 공식 발표에서 확인 가능            |\n| 개발 기관         | LineShine (중국 대표 슈퍼컴퓨터 개발사)                                 |\n| 영향 대상         | 글로벌 연구기관, AI·기상·에너지 등 고성능 컴퓨팅 활용 분야               |\n| 제한 요소         | 미국 등 서방의 첨단 부품 수출 규제에도 불구하고 성능 달성                |\n\n## 독자가 알아야 할 포인트\n\n- ‘China 8217’은 기존의 제약 속에서도 기술력으로 1위에 오른 중국의 대표 슈퍼컴퓨터입니다.\n- 이번 발표는 TOP500 공식 집계 기준으로 확인되며, 성능 수치와 순위 변동은 공개 자료를 통해 검증 가능합니다.\n- 슈퍼컴퓨터 순위는 AI, 과학연구, 산업계에 직접적인 영향력을 미치므로 발표 후 활용 분야 변화에 주목해야 합니다.\n- 최신 발표와 실제 적용 사례는 원문과 공식 기관 공지에서 확인하는 것이 가장 정확합니다.\n\n## 참고 출처\n\n- [China claims the world&#8217;s fastest supercomputer](https://www.theverge.com/tech/958768/china-claims-the-worlds-fastest-supercomputer) (2026-06-28)  \n  : 중국이 ‘China 8217’로 세계 슈퍼컴퓨터 1위에 등극한 공식 발표 기사",
+      "tags": [
+        "기술",
+        "China",
+        "8217"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1782088385104-039b7c454b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyNjc2MzE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "2026년, 세계 1위 슈퍼컴퓨터 ‘China 8217’의 반전 — Photo by Brecht Corbeel on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1750365919971-7dd273e7b317?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyNjc2MzE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "2026년, 세계 1위 슈퍼컴퓨터 ‘China 8217’의 반전 본문 보조 이미지 — Photo by Omar:. Lopez-Rincon on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2026년, 세계 1위 슈퍼컴퓨터 ‘China 8217’의 반전. Keyword: China 8217. Concrete visual subject: technology innovation circuit abstract. Context: ## 2026년 6월, 슈퍼컴퓨터 순위에 반전 중국이 2026년 6월 28일 발표에서 ‘China 8217’로 세계에서 가장 빠른 슈퍼컴퓨터 타이틀을 탈환했습니다. 이는 미국의 ‘El Capitan’을 제치고 2018년 이후 처음으로 TOP500 순위 1위에 오른 결과입니다. [관련 기사 원문](https://www.theverge.com/tech/958768/china-claims-the-worlds-fastest-supercomputer) ## 주요 기준으로 본 ‘China 8217’ | 기준 항목 | 세부 내용 | | ----------------- | ------------------------------------------------------------------------ | | 순위 발표 기관 | TOP500 공식 발표 | | 1위 슈퍼컴퓨터 | China 8217 (중국) | | 2위 슈퍼컴퓨터 | El Capitan (미국) | | 발표일 | 2026년 6월 28일 | | 성능 지표 | FLOPS(초당 연산 횟수) 기준, 구체 수치 공식 발표에서 확인 가능 | | 개발 기관 | LineShine (중국 대표 슈퍼컴퓨터 개발사) | | 영향 대상 | 글로벌 연구기관, AI·기상·에너지 등 고성능 컴퓨팅 활용 분야 | | 제한 요소 | 미국 등 서방의 첨단 부품 수출 규제에도 불구하고 성능 달성 | ## 독자가 알아야. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 2026년, 세계 1위 슈퍼컴퓨터 ‘China 8217’의 반전. Keyword: China 8217. Concrete visual subject: technology innovation circuit abstract. Article context: ## 2026년 6월, 슈퍼컴퓨터 순위에 반전 중국이 2026년 6월 28일 발표에서 ‘China 8217’로 세계에서 가장 빠른 슈퍼컴퓨터 타이틀을 탈환했습니다. 이는 미국의 ‘El Capitan’을 제치고 2018년 이후 처음으로 TOP500 순위 1위에 오른 결과입니다. [관련 기사 원문](https://www.theverge.com/tech/958768/china-claims-the-worlds-fastest-supercomputer) ## 주요 기준으로 본 ‘China 8217’ | 기준 항목 | 세부 내용 | | ----------------- | ------------------------------------------------------------------------ | | 순위 발표 기관 | TOP500 공식 발표 | | 1위 슈퍼컴퓨터 | China 8217 (중국) | | 2위 슈퍼컴퓨터 | El Capitan (미국) | | 발표일 | 2026년 6월 28일 | | 성능 지표 | FLOPS(초당 연산 횟수) 기준, 구체 수치 공식 발표에서 확인 가능 | | 개발 기관 | LineShine (중국 대표 슈퍼컴퓨터 개발사) | | 영향 대상 | 글로벌 연구기관, AI·기상·에너지 등 고성능 컴퓨팅 활용 분야 | | 제한 요소 | 미국 등 서방의 첨단 부품 수출 규제에도 불구하고 성능 달성 | ## 독자가 알아야 할 포인트 - ‘China 8217’은 기존의 제약 속에서도 기술력으로 1위에 오른 중국의 대표 슈퍼컴퓨터입니다. - 이번 발표는 TOP500 공식 집계 기준으로 확인되며, 성능 수치와 순위 변동은 공개 자료를 통해 검증 가능합니다. - 슈퍼컴퓨터 순위는 AI, 과학연구, 산업계에 직접적인 영향력을 미치므로 발표 후 활용 분야 변화에 주목해야 합니다. -. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-06-29T05:04:53.209203",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/china-8217-3d2e81ba.md",
+      "message": "draft saved"
+    }
+  ]
+}
