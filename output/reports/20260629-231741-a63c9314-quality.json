@@ -1,0 +1,20 @@
+{
+  "run_id": "20260629-231741-a63c9314",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "after-dc-a11248d4",
+      "title": "2026년 DC 유니버스, 슈퍼걸 단독 영화 지연? 변화와 이유",
+      "keyword": "After DC",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2026년 DC 유니버스, 슈퍼걸 단독 영화 지연? 변화와 이유. Keyword: After DC. Concrete visual subject: technology innovation circuit abstract. Context: ## DC 유니버스, 최근 현황과 주요 변화 2026년 6월 29일 기준, DC의 새로운 시네마틱 유니버스(DCU)가 초기 기대와 달리 속도가 느려지고 있습니다. 특히, 제임스 건 감독의 슈퍼맨 영화 마지막에 등장한 카라 조-엘(슈퍼걸)은 팬들에게 신선한 충격을 주었지만, 워너 브라더스 디스커버리(Warner Bros. Discovery)의 슈퍼걸 단독 영화 추진은 예상보다 빠르게 진행되지 않고 있습니다. ### 슈퍼걸 단독 영화, 왜 늦어졌나? - 워너 브라더스 디스커버리는 슈퍼맨 이후 슈퍼걸의 독립 영화 제작을 빠르게 추진하겠다고 밝혔으나, 박스오피스 기대치와 시장 반응이 예상보다 낮아 제작 일정이 늦춰지고 있습니다. - 카라 조-엘(슈퍼걸)은 DC 코믹스의 대표 여성 슈퍼히어로로, 이번 영화에서 새로운 DCU의 핵심 인물로 주목받았습니다. - DCU는 DC 코믹스 원작을 기반으로 영화·드라마 세계관을 통합하려는 프로젝트입니다. ### 실제 사용자와 팬이 겪는 변화 체크리스트 | 기준 | 구체 내용 | |-------------------|--------------------------------------------------------------------------| | 적용 시점 | 2026년 6월 29일, 공식 안내 기준 | | 주요 인물 | 제임스 건 감독, 카라 조-엘(슈퍼걸), 워너 브라더스 디스커버리 | | 변화 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyNzY5ODAyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
