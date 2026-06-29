@@ -403,6 +403,7 @@ class StaticSiteBuilder:
         tags = [str(tag) for tag in meta.get("tags", [])]
         raw_cover_image = str(meta.get("cover_image") or "")
         body = self._strip_leading_image(body)
+        body = self._normalize_body_markdown(body)
         body_html = markdown.markdown(
             body,
             extensions=["tables", "fenced_code", "toc"],
@@ -583,6 +584,17 @@ class StaticSiteBuilder:
     @staticmethod
     def _strip_leading_image(markdown_text: str) -> str:
         return re.sub(r"^\s*!\[[^\]]*\]\([^)]+\)\s*", "", markdown_text, count=1)
+
+    @staticmethod
+    def _normalize_body_markdown(markdown_text: str) -> str:
+        match = re.fullmatch(
+            r"\s*```(?:markdown|md)?[ \t]*\r?\n(.*?)\r?\n```[ \t]*\s*",
+            markdown_text,
+            flags=re.S | re.I,
+        )
+        if match:
+            return match.group(1).strip() + "\n"
+        return markdown_text
 
     @staticmethod
     def _display_author(post: Post) -> str:

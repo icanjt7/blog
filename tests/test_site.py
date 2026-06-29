@@ -41,6 +41,49 @@ tags:
         self.assertEqual(post.title, "제목에 표가 포함됨 | 항목 | 값 | |------|------|")
         self.assertIn("정상적으로 읽혀야 합니다.", post.body_html)
 
+    def test_parse_post_unwraps_body_wrapped_in_markdown_fence(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            post_path = root / "posts" / "wrapped.md"
+            post_path.parent.mkdir()
+            post_path.write_text(
+                """---
+title: '김구 탄생 150주년 공식 로고'
+date: '2026-06-28T23:22:13'
+category: 생활
+tags:
+- 생활
+---
+
+![대표 이미지](https://example.com/cover.jpg)
+
+```markdown
+## 공식 로고 사용 기준
+
+| 항목 | 내용 |
+| --- | --- |
+| 대상 | 공공 목적 |
+
+본문이 코드블록이 아니라 일반 본문으로 보여야 합니다.
+```
+""",
+                encoding="utf-8",
+            )
+            builder = StaticSiteBuilder(
+                posts_dir=post_path.parent,
+                public_dir=root / "public",
+                site_title="테스트",
+                site_description="테스트",
+            )
+
+            post = builder._parse_post(post_path)
+
+        self.assertIn("<h2", post.body_html)
+        self.assertIn("<table>", post.body_html)
+        self.assertIn("공식 로고 사용 기준", post.excerpt)
+        self.assertNotIn("<pre>", post.body_html)
+        self.assertNotIn("language-markdown", post.body_html)
+
     def test_build_writes_optimized_rss_feeds(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

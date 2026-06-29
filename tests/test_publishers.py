@@ -36,6 +36,32 @@ class MarkdownPublisherTest(unittest.TestCase):
         self.assertEqual(meta["cover_image_alt"], 'alt with "quote"')
         self.assertIn('![alt with "quote"]', body)
 
+    def test_publish_unwraps_body_wrapped_in_markdown_fence(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            publisher = MarkdownPublisher(Path(tmp))
+            topic = Topic(keyword="공식 로고", title_hint="김구 로고", category="생활")
+            draft = Draft(
+                topic=topic,
+                title="김구 탄생 150주년 공식 로고",
+                slug="logo-test",
+                excerpt="",
+                body_markdown="""```markdown
+## 공식 로고 사용 기준
+
+본문이 코드블록으로 저장되면 안 됩니다.
+```""",
+                tags=["생활"],
+                cover_image_path="https://example.com/cover.jpg",
+                cover_image_alt="대표 이미지",
+            )
+
+            publisher.publish(draft)
+            raw = (Path(tmp) / "logo-test.md").read_text(encoding="utf-8")
+
+        self.assertIn("![대표 이미지](https://example.com/cover.jpg)", raw)
+        self.assertIn("## 공식 로고 사용 기준", raw)
+        self.assertNotIn("```markdown", raw)
+
 
 if __name__ == "__main__":
     unittest.main()

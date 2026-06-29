@@ -50,7 +50,7 @@ class MarkdownPublisher(Publisher):
 
     @staticmethod
     def _body_with_images(draft: Draft) -> str:
-        body = draft.body_markdown
+        body = MarkdownPublisher._normalize_body_markdown(draft.body_markdown)
         if draft.inline_image_path:
             body = MarkdownPublisher._insert_inline_image(
                 body,
@@ -61,6 +61,17 @@ class MarkdownPublisher(Publisher):
             alt = MarkdownPublisher._clean_scalar(draft.cover_image_alt or draft.title)
             body = f"![{alt}]({MarkdownPublisher._image_ref(draft.cover_image_path)})\n\n{body}"
         return body
+
+    @staticmethod
+    def _normalize_body_markdown(markdown_text: str) -> str:
+        match = re.fullmatch(
+            r"\s*```(?:markdown|md)?[ \t]*\r?\n(.*?)\r?\n```[ \t]*\s*",
+            markdown_text,
+            flags=re.S | re.I,
+        )
+        if match:
+            return match.group(1).strip() + "\n"
+        return markdown_text
 
     @staticmethod
     def _image_ref(path_or_url: str) -> str:
