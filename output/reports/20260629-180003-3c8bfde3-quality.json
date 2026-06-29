@@ -1,0 +1,20 @@
+{
+  "run_id": "20260629-180003-3c8bfde3",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "at-499-apple-8217-44a53ce9",
+      "title": "애플 M3 아이패드 에어",
+      "keyword": "At 499 Apple 8217",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 애플 M3 아이패드 에어. Keyword: At 499 Apple 8217. Concrete visual subject: apple device minimal design. Context: ## 소개 최근 애플의 가격 인상으로 아이패드와 다른 제품들의 가격이 수백 달러 이상 오르면서, 많은 사람들이 이 가격에 아이패드를 구매하는 것이 좋은 선택인지 고민하고 있습니다. 애플의 M3 프로세서는 빠른 성능과 효율적인 전력 소모로 알려져 있습니다. 특히, 아이패드 에어는 이전 모델에 비해 성능이 개선되고, 배터리 수명도 길어졌습니다. ## 주요 스펙 다음은 At $499, Apple’s M3-powered iPad Air의 주요 스펙입니다. | 스펙 | 내용 | | --- | --- | | 프로세서 | M3 | | 저장공간 | 128GB | | 가격 | $499 | | 연결 | 5G, WiFi | ## 가격 비교 이 제품은 현재 $499에 판매되고 있습니다. 이는 최근 애플의 가격 인상으로 인해 다른 제품들의 가격이 수백 달러 이상 오른 상황에서, 비교적 합리적인 가격입니다. 하지만, 이 가격에 아이패드를 구매하는 것이 좋은 선택인지 결정하기 위해서는, 개인의需求과 예산을 고려해야 합니다. ## 구매 결정 요인 특히, 아이패드를 어떤 용도로 사용할지, 그리고 다른 제품들과의 비교를 통해, 이 가격에 아이패드를 구매하는 것이 좋은 거래인지 결정할 수 있습니다. 예를 들어, 아이패드를 작업이나 교육용으로 사용할 계획이라면, 높은 성능과 효율적인 전력 소모가 중요한 요소입니다. 반면, 개인용으로 사용할 계획이라면, 가격과 저장공간이. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1760597371632-bbd930d6b844?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ258ZW58MXwwfHx8MTc4Mjc1NjM2NHww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
