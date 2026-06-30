@@ -1,0 +1,20 @@
+{
+  "run_id": "20260630-043531-c907fe3c",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "leaked-iphone-18-pro-f1e695a1",
+      "title": "iPhone 18 Pro 유출, Waymo 자율주행 안전 비교 기준은?",
+      "keyword": "Leaked iPhone 18 Pro",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: iPhone 18 Pro 유출, Waymo 자율주행 안전 비교 기준은?. Keyword: Leaked iPhone 18 Pro. Concrete visual subject: autonomous vehicle car sensor technology devices comparison review safety public service. Context: ## 최신 이슈: Leaked iPhone 18 Pro 사진, 다크웹에 등장 2026-06-29, Reuters 보도에 따르면 Apple의 주요 공급업체 데이터 유출로 iPhone 18 Pro의 사진과 부품 리스트가 다크웹에 올라왔습니다. 유출된 이미지에는 iPhone 18 Pro의 드롭 테스트 장면이 포함되어 있어 신제품 정보에 관심이 집중되고 있습니다. ## Waymo Reference Driver: 자율주행 안전 비교의 새로운 기준 Waymo는 Alphabet(구 Google)의 자율주행차 개발 기업으로, 로보택시와 자율주행 기술을 실도로 및 시뮬레이션 환경에서 검증 중입니다. Reference Driver(이하 ReD)는 실제 인간 운전자의 인지 지연, 놀람 반응, 조작 시간 등을 반영하여 자율주행차와 사람 운전자 간의 안전성을 비교할 수 있도록 설계된 모델입니다. ### Reference Driver의 적용 맥락 - **대상**: 자율주행 기술 연구자, 로보택시 이용자, 교통 안전 평가 담당자 - **기술 요소**: 시뮬레이션 기반 위험 인지, 충돌 회피, 인간 운전자 반응 모델링 - **사용자 영향**: 로보택시 안전성 평가, 규제기관의 검증 기준, 사고 설명 방식에 변화 - **검증 절차**: 모델 공개 범위, 외부 연구자 실험, 실제 사고 데이터와의 비교, 규제기관 채택 여부 - **기관명**: Waymo(Alphabe. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1552898538-2177882e9bbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGNhciUyMHNlbnNvciUyMHRlY2hub2xvZ3klMjBkZXZpY2VzJTIwY29tcGFyaXNvbiUyMHJldmlldyUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4Mjc5NDM4N3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
