@@ -461,6 +461,55 @@ class StaticSiteBuilder:
             items.append(f'<a href="{href}" class="{active_class}">{html.escape(category)}</a>')
         return '<nav class="site-nav">' + "".join(items) + '</nav>'
 
+    def _footer_category_links(self, prefix: str = "./") -> str:
+        if not self.categories:
+            return ""
+        links = "\n".join(
+            f'        <a href="{prefix}category-{self._slugify(category)}.html">{html.escape(category)}</a>'
+            for category in self.categories
+        )
+        return f"""      <nav class="footer-category-links" aria-label="주요 카테고리">
+{links}
+      </nav>"""
+
+    def _breadcrumb_html(self, items: list[tuple[str, str]]) -> str:
+        if len(items) < 2:
+            return ""
+        parts: list[str] = []
+        last_index = len(items) - 1
+        for idx, (label, href) in enumerate(items):
+            if idx == last_index:
+                parts.append(f'<li><span aria-current="page">{html.escape(label)}</span></li>')
+            else:
+                parts.append(f'<li><a href="{html.escape(href)}">{html.escape(label)}</a></li>')
+        return '<nav class="breadcrumb" aria-label="탐색 경로"><ol>' + "".join(parts) + "</ol></nav>"
+
+    def _breadcrumb_schema(self, items: list[tuple[str, str]]) -> dict:
+        def schema_url(href: str) -> str:
+            absolute = self._absolute_url(href)
+            parts = urlsplit(absolute)
+            encoded_path = quote(parts.path, safe="/%")
+            return urlunsplit((parts.scheme, parts.netloc, encoded_path, parts.query, parts.fragment))
+
+        return {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": idx,
+                    "name": label,
+                    "item": schema_url(href),
+                }
+                for idx, (label, href) in enumerate(items, start=1)
+            ],
+        }
+
+    def _document_title(self, title: str) -> str:
+        if title == self.site_title or title.endswith(f" - {self.site_title}"):
+            return title
+        return f"{title} - {self.site_title}"
+
     def _language_switcher_html(self) -> str:
         options = "\n".join(
             f'            <option value="{html.escape(code)}">{html.escape(label)}</option>'
@@ -632,9 +681,15 @@ class StaticSiteBuilder:
         source_links_html = self._source_links_html(post)
         related_html = self._related_posts_html(post, posts)
         editorial_note = self._editorial_note_html(post)
+        breadcrumb_items = [
+            ("홈", "./"),
+            (post.category, f"./{self._category_page_filename(post.category)}"),
+            (post.title, f"./{post.slug}.html"),
+        ]
+        breadcrumb_html = self._breadcrumb_html(breadcrumb_items)
         content = f"""
         <article class="post">
-          <a class="back" href="./">전체 글</a>
+          {breadcrumb_html}
           {cover_html}
           <header>
             <p class="meta">{html.escape(post.category)} · {post.date:%Y-%m-%d}</p>
@@ -663,7 +718,7 @@ class StaticSiteBuilder:
             og_image=post.cover_image,
             og_type="article",
             meta_extra=self._article_meta_tags(post),
-            structured_data=[self._news_article_schema(post)],
+            structured_data=[self._news_article_schema(post), self._breadcrumb_schema(breadcrumb_items)],
             alternate_urls=alternates,
         )
         # 애드센스 심사 전에는 얇은 언어별 복제 페이지를 만들지 않는다.
@@ -1623,7 +1678,10 @@ class StaticSiteBuilder:
                     or '<p class="empty">이 카테고리에는 아직 글이 없습니다.</p>'
                 nav_html = self._pagination_html(page, total_pages, cat_base)
                 stats = f" — {total}개 기사" if page == 1 else f" — {page}/{total_pages} 페이지"
+                breadcrumb_items = [("홈", "./"), (category, f"./{cat_base}")]
+                breadcrumb_html = self._breadcrumb_html(breadcrumb_items)
                 content = f"""
+            {breadcrumb_html}
             <section class="hero">
               <p class="hero-tagline"><strong>{html.escape(category)}</strong>{stats}</p>
             </section>
@@ -1640,6 +1698,7 @@ class StaticSiteBuilder:
                     description=f"{category} 관련 최신 글과 분석을 모아둔 페이지입니다.",
                     robots="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
                     if page == 1 else "noindex,follow",
+                    structured_data=[self._breadcrumb_schema(breadcrumb_items)],
                 )
 
     def _write_static_pages(self) -> None:
@@ -1702,9 +1761,11 @@ class StaticSiteBuilder:
             },
         }
         for filename, page in pages.items():
+            breadcrumb_items = [("홈", "./"), (page["title"], f"./{filename}")]
+            breadcrumb_html = self._breadcrumb_html(breadcrumb_items)
             content = f"""
         <article class="post static-page">
-          <a class="back" href="./">블로그 홈</a>
+          {breadcrumb_html}
           {page["body"]}
         </article>
             """
@@ -1715,6 +1776,7 @@ class StaticSiteBuilder:
                 active=None,
                 page_url=self._page_url(filename),
                 description=page["description"],
+                structured_data=[self._breadcrumb_schema(breadcrumb_items)],
             )
 
     def _write_sitemap(self, posts: list[Post]) -> None:
@@ -1958,6 +2020,7 @@ class StaticSiteBuilder:
             page_url = self._page_url(filename)
         if description is None:
             description = self.site_description
+        document_title = self._document_title(title)
         image_url = self._absolute_url(og_image or "og-default.png")
         og_image_tag = (
             f'\n  <meta property="og:image" content="{html.escape(image_url)}">'
@@ -1996,6 +2059,7 @@ class StaticSiteBuilder:
             structured_scripts.append(f'<script type="application/ld+json">{item_json}</script>')
         structured_json = "\n  ".join(structured_scripts)
         nav_html = self._nav_html(active, prefix=asset_prefix)
+        footer_category_links = self._footer_category_links(asset_prefix)
         language_switcher = self._language_switcher_html()
         language_codes_json = json.dumps([code for code, _ in LANGUAGE_OPTIONS], ensure_ascii=False)
         language_aliases_json = json.dumps(LANGUAGE_BASE_ALIASES, ensure_ascii=False)
@@ -2017,7 +2081,7 @@ class StaticSiteBuilder:
   <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="preconnect" href="https://images.pexels.com">
   <link rel="preconnect" href="https://cdn.pixabay.com">
-  <title>{html.escape(title)}</title>
+  <title>{html.escape(document_title)}</title>
   <meta name="description" content="{html.escape(description)}">
   <meta name="robots" content="{html.escape(robots)}">
   <meta property="og:type" content="{html.escape(og_type)}">
@@ -2083,6 +2147,7 @@ class StaticSiteBuilder:
         <a href="{asset_prefix}privacy.html">개인정보처리방침</a>
         <a href="{asset_prefix}contact.html">문의</a>
       </nav>
+{footer_category_links}
       <p>© 2024 BriefWave. All rights reserved.</p>
     </div>
   </footer>
@@ -2455,6 +2520,23 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 8px; }
 .footer-links a { color: var(--muted); }
 .footer-links a:hover { color: var(--accent); }
+.footer-category-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin: 0 0 10px;
+}
+.footer-category-links a { color: var(--muted); font-size: 0.78rem; }
+.footer-category-links a:hover { color: var(--accent); }
+
+/* ── breadcrumb ── */
+.breadcrumb { margin: 0 0 14px; color: var(--muted); font-size: 0.82rem; }
+.breadcrumb ol { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.breadcrumb li { display: inline-flex; align-items: center; min-width: 0; }
+.breadcrumb li + li::before { content: "/"; margin-right: 6px; color: #9b9589; }
+.breadcrumb a { color: var(--muted); }
+.breadcrumb span[aria-current="page"] { color: var(--ink); }
 
 /* ── index grid ── */
 .grid {
@@ -2863,6 +2945,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
             "User-agent: *\n"
             "Allow: /\n"
             f"Sitemap: {self.site_url}/sitemap-posts-priority.xml\n"
+            f"Sitemap: {self.site_url}/sitemap-static.xml\n"
             f"Sitemap: {self.site_url}/sitemap.xml\n"
         )
         (self.public_dir / "robots.txt").write_text(content, encoding="utf-8")

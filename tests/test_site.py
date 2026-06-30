@@ -172,6 +172,7 @@ tags:
             builder.build()
 
             first_post = (root / "public" / "한글-글-0.html").read_text(encoding="utf-8")
+            self.assertIn("<title>색인 테스트 0 - 테스트</title>", first_post)
             self.assertIn(
                 '<link rel="canonical" href="https://example.com/%ED%95%9C%EA%B8%80-%EA%B8%80-0.html">',
                 first_post,
@@ -181,6 +182,9 @@ tags:
                 '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
                 first_post,
             )
+            self.assertIn('<nav class="breadcrumb" aria-label="탐색 경로">', first_post)
+            self.assertIn('"@type": "BreadcrumbList"', first_post)
+            self.assertIn('"item": "https://example.com/category-%EA%B8%B0%EC%88%A0.html"', first_post)
 
             page_two = (root / "public" / "page2.html").read_text(encoding="utf-8")
             category_two = (root / "public" / "category-기술-2.html").read_text(encoding="utf-8")
@@ -191,11 +195,14 @@ tags:
 
             static_sitemap = (root / "public" / "sitemap-static.xml").read_text(encoding="utf-8")
             post_sitemap = (root / "public" / "sitemap-posts-priority.xml").read_text(encoding="utf-8")
+            robots = (root / "public" / "robots.txt").read_text(encoding="utf-8")
             self.assertNotIn("search.html", static_sitemap)
             self.assertNotIn("page2.html", static_sitemap)
             self.assertNotIn("category-%EA%B8%B0%EC%88%A0-2.html", static_sitemap)
             self.assertIn("category-%EA%B8%B0%EC%88%A0.html", static_sitemap)
             self.assertIn("%ED%95%9C%EA%B8%80-%EA%B8%80-0.html", post_sitemap)
+            self.assertIn("Allow: /", robots)
+            self.assertIn("Sitemap: https://example.com/sitemap-static.xml", robots)
 
     def test_build_adds_adsense_quality_signals(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -266,6 +273,8 @@ tags:
                 self.assertTrue((root / "public" / filename).exists())
             footer_html = (root / "public" / "index.html").read_text(encoding="utf-8")
             self.assertIn('href="./privacy.html"', footer_html)
+            self.assertIn('class="footer-category-links"', footer_html)
+            self.assertIn('href="./category-정책.html"', footer_html)
             contact_html = (root / "public" / "contact.html").read_text(encoding="utf-8")
             self.assertIn('href="mailto:jungteck@gmail.com"', contact_html)
             self.assertIn(">jungteck@gmail.com<", contact_html)
