@@ -1,0 +1,24 @@
+{
+  "run_id": "20260630-172807-2150ce75",
+  "average_quality": 29.0,
+  "drafts": [
+    {
+      "slug": "netflix-ai-gene-wilder-7b44e947",
+      "title": "네트플릭스 윌리 원카 리얼리티 쇼",
+      "keyword": "Netflix AI Gene Wilder",
+      "category": "기술",
+      "quality_score": 29.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "기술 글이 원문 제목의 핵심 대상을 충분히 설명하지 않습니다.",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 네트플릭스 윌리 원카 리얼리티 쇼. Keyword: Netflix AI Gene Wilder. Concrete visual subject: artificial intelligence neural network. Context: ### 네트플릭스의 새로운 도전 네트플릭스에서 최근 윌리 원카 리얼리티 쇼에 대한 티저 트레일러를 공개했습니다. 이 트레일러에서 진 와일더의 목소리가 AI 기술로 생성되어 사용된다는 사실이 확인되었습니다. 이 기술은 배우의 목소리를 복원하고, 새로운 컨텐츠에 적용할 수 있습니다. ### 진 와일더 소개 진 와일더는 미국의 배우, 작가, 감독으로 잘 알려져 있습니다. 그는 윌리 원카와 초콜릿 공장을 만든 윌리 원카 역할로 가장 잘 알려져 있습니다. 그의 유니크한 목소리와 연기 스타일은 많은 팬들에게 사랑받았습니다. 진 와일더는 2005년부터 2016년까지 활동했습니다. ### AI 생성 목소리 기술 이번에 네트플릭스가 AI 생성 진 와일더 목소리를 사용하는 것은 기술의 발전과 엔터테인먼트 산업에서의 적용 가능성을 보여주는 예입니다. 이 기술은 배우의 목소리를 복원하고, 새로운 컨텐츠에 적용할 수 있습니다. AI 생성 목소리 기술은 음성 합성 기술과 함께 다양한 분야에서 적용될 수 있습니다. #### 기술의 특징과 적용 예 | 기술 | 설명 | 적용 예 | | --- | --- | --- | | AI 생성 목소리 | AI 알고리즘을 사용하여 목소리를 생성하는 기술 | 영화, 드라마, 광고 등에서 목소리 대역으로 사용 | | 음성 합성 | 텍스트를 음성으로 변환하는 기술 | 가상 보조자, 음성 안내 시스템 등에서 사용 | #### 기술의 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgyODIyNjEwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
