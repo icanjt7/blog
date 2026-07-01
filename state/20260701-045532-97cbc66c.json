@@ -1,0 +1,389 @@
+{
+  "run_id": "20260701-045532-97cbc66c",
+  "topics": [
+    {
+      "keyword": "07월 지원금",
+      "title_hint": "07월 지원금 핵심 정리",
+      "category": "생활",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "대한민국 정책브리핑",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "07월 AI",
+      "title_hint": "07월 AI 핵심 정리",
+      "category": "기술",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "07월 금리",
+      "title_hint": "07월 금리 핵심 정리",
+      "category": "정책",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "금융위원회 보도자료",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "07월 지방선거",
+      "title_hint": "07월 지방선거 핵심 정리",
+      "category": "정치",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "중앙선거관리위원회 선거통계시스템",
+          "url": "https://info.nec.go.kr/",
+          "published_at": null,
+          "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "07월 서울 맛집",
+      "title_hint": "07월 서울 맛집 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "07월 축구 대표팀 명단",
+      "title_hint": "최종 명단 발표 전 예비 명단을 읽는 법",
+      "category": "스포츠",
+      "trend_score": 78.0,
+      "competition_score": 0.35,
+      "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+      "sources": [
+        {
+          "title": "최종 명단 발표 전 예비 명단을 읽는 법",
+          "url": "https://www.fifa.com/",
+          "published_at": null,
+          "summary": "예비 명단과 최종 명단, 부상 대체, 포지션 균형, 소속팀 출전 시간을 다룬다.",
+          "authority": 4
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "07월 지원금",
+        "title_hint": "07월 지원금 핵심 정리",
+        "category": "생활",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "대한민국 정책브리핑",
+            "url": "https://www.korea.kr/",
+            "published_at": null,
+            "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "07월 지원금, 신청 전 확인할 것",
+      "slug": "07월-지원금-ee13ed8b",
+      "excerpt": "07월 지원금를 실제로 이용하기 전 적용 대상, 기간, 비용 조건을 나눠 정리했습니다.",
+      "body_markdown": "## 무엇이 달라졌나\n\n대한민국 정책브리핑 소식은 07월 지원금과 직접 연결되는지 확인해야 하는 생활 정보입니다. 먼저 제목의 혜택 표현보다 실제로 누가, 언제, 어떤 절차로 움직여야 하는지 나눠 보는 편이 좋습니다.\n\n정부 정책과 생활 혜택 확인용 공식 포털\n\n## 이번 글에서 바로 볼 항목\n\n| 항목 | 이번 소식에서 확인할 내용 |\n| --- | --- |\n| 핵심 대상 | 07월 지원금 |\n| 확인할 수치 | 원문에 표시된 금액, 비율, 기간 |\n| 처리 방식 | 신청·방문·자동 적용 여부를 원문에서 확인 |\n| 담당 주체 | 운영 주체 |\n\n## 숫자와 대상은 이렇게 읽으면 쉽습니다\n\n이번 소식은 숫자가 제목에 크게 드러나지 않더라도 원문 안의 기준일과 대상 조건을 함께 봐야 합니다. 발표문에 나온 기준만 따로 보면 실제 조건을 놓칠 수 있습니다. 적용 시점처럼 함께 나온 기간·비율·단위가 무엇을 기준으로 하는지 같이 봐야 합니다.\n\n07월 지원금은 누구에게 적용되는지 원문 제목과 본문 첫 문단에서 먼저 확인해야 합니다. 07월 지원금처럼 생활과 연결되는 정보는 전체 국민 대상인지, 특정 세대·가구·업종·연령대 대상인지가 다르면 행동이 달라집니다.\n\n별도 신청인지, 안내를 확인만 하면 되는지, 기관이 자동으로 적용하는지는 원문 링크에서 한 번 더 봐야 합니다. 특히 운영 주체가 운영하거나 발표한 사안이라면 원문 페이지의 첨부자료, 신청 페이지, 문의처가 실제 행동 기준이 됩니다.\n\n## 실제 확인 순서\n\n1. 07월 지원금이 실제 대상에 포함되는지 원문 첫 문단에서 확인합니다.\n2. '원문 기준일' 표현이 금액인지, 비율인지, 시행 기간인지 단위를 나눠 적습니다.\n3. 처리 방식은 '공식 안내 확인' 기준으로 보고 필요한 준비물을 역으로 확인합니다.\n4. 마지막으로 운영 주체 원문 링크에서 첨부자료나 문의처가 있는지 확인합니다.\n\n## 마무리\n\n07월 지원금은 '발표문에 나온 기준' 같은 눈에 띄는 표현보다 대상과 처리 방식이 더 중요합니다. 실제 신청이나 이용 전에는 운영 주체의 원문 안내에서 최신 기준을 확인하세요.\n\n## 참고한 곳\n\n- [대한민국 정책브리핑](https://www.korea.kr/)\n",
+      "tags": [
+        "생활",
+        "07월",
+        "지원금"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxwdWJsaWMlMjBzZXJ2aWNlJTIwZG9jdW1lbnRzJTIwYXBwbGljYXRpb24lMjBmb3JtJTIwZG9jdW1lbnR8ZW58MXwwfHx8MTc4Mjg4MTk1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "07월 지원금, 신청 전 확인할 것 — Photo by Kelly Sikkema on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1631557776808-91908aba7ca0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxwdWJsaWMlMjBzZXJ2aWNlJTIwZG9jdW1lbnRzJTIwYXBwbGljYXRpb24lMjBmb3JtJTIwZG9jdW1lbnR8ZW58MXwwfHx8MTc4Mjg4MTk1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "07월 지원금, 신청 전 확인할 것 본문 보조 이미지 — Photo by 2H Media on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 지원금, 신청 전 확인할 것. Keyword: 07월 지원금. Concrete visual subject: public service documents application form document. Context: ## 무엇이 달라졌나 대한민국 정책브리핑 소식은 07월 지원금과 직접 연결되는지 확인해야 하는 생활 정보입니다. 먼저 제목의 혜택 표현보다 실제로 누가, 언제, 어떤 절차로 움직여야 하는지 나눠 보는 편이 좋습니다. 정부 정책과 생활 혜택 확인용 공식 포털 ## 이번 글에서 바로 볼 항목 | 항목 | 이번 소식에서 확인할 내용 | | --- | --- | | 핵심 대상 | 07월 지원금 | | 확인할 수치 | 원문에 표시된 금액, 비율, 기간 | | 처리 방식 | 신청·방문·자동 적용 여부를 원문에서 확인 | | 담당 주체 | 운영 주체 | ## 숫자와 대상은 이렇게 읽으면 쉽습니다 이번 소식은 숫자가 제목에 크게 드러나지 않더라도 원문 안의 기준일과 대상 조건을 함께 봐야 합니다. 발표문에 나온 기준만 따로 보면 실제 조건을 놓칠 수 있습니다. 적용 시점처럼 함께 나온 기간·비율·단위가 무엇을 기준으로 하는지 같이 봐야 합니다. 07월 지원금은 누구에게 적용되는지 원문 제목과 본문 첫 문단에서 먼저 확인해야 합니다. 07월 지원금처럼 생활과 연결되는 정보는 전체 국민 대상인지, 특정 세대·가구·업종·연령대 대상인지가 다르면 행동이 달라집니다. 별도 신청인지, 안내를 확인만 하면 되는지, 기관이 자동으로 적용하는지는 원문 링크에서 한 번 더 봐야 합니다. 특히 운영 주체가 운영하거나 발표한 사안이라면 원문 페이지의 첨부자료, 신청 페. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 07월 지원금, 신청 전 확인할 것. Keyword: 07월 지원금. Concrete visual subject: public service documents application form document. Article context: ## 무엇이 달라졌나 대한민국 정책브리핑 소식은 07월 지원금과 직접 연결되는지 확인해야 하는 생활 정보입니다. 먼저 제목의 혜택 표현보다 실제로 누가, 언제, 어떤 절차로 움직여야 하는지 나눠 보는 편이 좋습니다. 정부 정책과 생활 혜택 확인용 공식 포털 ## 이번 글에서 바로 볼 항목 | 항목 | 이번 소식에서 확인할 내용 | | --- | --- | | 핵심 대상 | 07월 지원금 | | 확인할 수치 | 원문에 표시된 금액, 비율, 기간 | | 처리 방식 | 신청·방문·자동 적용 여부를 원문에서 확인 | | 담당 주체 | 운영 주체 | ## 숫자와 대상은 이렇게 읽으면 쉽습니다 이번 소식은 숫자가 제목에 크게 드러나지 않더라도 원문 안의 기준일과 대상 조건을 함께 봐야 합니다. 발표문에 나온 기준만 따로 보면 실제 조건을 놓칠 수 있습니다. 적용 시점처럼 함께 나온 기간·비율·단위가 무엇을 기준으로 하는지 같이 봐야 합니다. 07월 지원금은 누구에게 적용되는지 원문 제목과 본문 첫 문단에서 먼저 확인해야 합니다. 07월 지원금처럼 생활과 연결되는 정보는 전체 국민 대상인지, 특정 세대·가구·업종·연령대 대상인지가 다르면 행동이 달라집니다. 별도 신청인지, 안내를 확인만 하면 되는지, 기관이 자동으로 적용하는지는 원문 링크에서 한 번 더 봐야 합니다. 특히 운영 주체가 운영하거나 발표한 사안이라면 원문 페이지의 첨부자료, 신청 페이지, 문의처가 실제 행동 기준이 됩니다. ## 실제 확인 순서 1. 07월 지원금이 실제 대상에 포함되는지 원문 첫 문단에서 확인합니다. 2. '원문 기준일' 표현이 금액인지, 비율인지, 시행 기간인지 단위를 나눠 적습니다. 3. 처리 방식은 '공식 안내 확인' 기준으로 보고 필요한 준비물을 역으로 확인합니다. 4. 마지막으로 운영 주체 원문 링크에서 첨. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-01T04:59:09.564243",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "07월 AI",
+        "title_hint": "07월 AI 핵심 정리",
+        "category": "기술",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "제조사 공식 홈페이지와 개발자 블로그",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "제품/기술 발표 원문 확인용",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화",
+      "slug": "07월-ai-b73636a4",
+      "excerpt": "제조사 공식 홈페이지와 개발자 블로그 소식을 제품 변화와 실제 사용자 영향 중심으로 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\n제조사 공식 홈페이지와 개발자 블로그 소식입니다. 제품/기술 발표 원문 확인용\n\n## 먼저 알아둘 배경\n\n제조사 공식 홈페이지와 개발자 블로그는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다.\n\n## 왜 기술 이슈인가\n\n제조사 공식 홈페이지와 개발자 블로그 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다.\n\n## 확인할 기준\n\n| 항목 | 구체 내용 |\n| --- | --- |\n| 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 |\n| 기술 맥락 | 제품 기능 변화, 서비스 안정성, 가격·구독 구조, 플랫폼 의존성 |\n| 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 |\n| 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 |\n\n## 독자가 이해해야 할 포인트\n\n1. 제조사 공식 홈페이지와 개발자 블로그의 핵심은 제목보다 어떤 기능·비용·운영 조건이 달라졌는지입니다.\n2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다.\n3. AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다.\n4. 원문 요약만으로 부족하면 공식 보도자료, 후속 공지, 실제 적용 사례까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [제조사 공식 홈페이지와 개발자 블로그](https://developers.googleblog.com/)\n",
+      "tags": [
+        "기술",
+        "07월",
+        "AI"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135131-4d7c123aef1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgyODIyNjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화 — Photo by Steve A Johnson on Unsplash",
+      "inline_image_path": "https://images.pexels.com/photos/17483868/pexels-photo-17483868.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "inline_image_alt": "제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화 본문 보조 이미지 — Photo by Google DeepMind on Pexels",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화. Keyword: 07월 AI. Concrete visual subject: artificial intelligence neural network. Context: ## 무슨 소식인가 제조사 공식 홈페이지와 개발자 블로그 소식입니다. 제품/기술 발표 원문 확인용 ## 먼저 알아둘 배경 제조사 공식 홈페이지와 개발자 블로그는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다. ## 왜 기술 이슈인가 제조사 공식 홈페이지와 개발자 블로그 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 | | 기술 맥락 | 제품 기능 변화, 서비스 안정성, 가격·구독 구조, 플랫폼 의존성 | | 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 | | 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 | ## 독자가 이해해야 할 포인트 1. 제조사 공식 홈페이지와 개발자 블로그의 핵심은 제목보다 어떤 기능·비용·운영 조건이 달라졌는지입니다. 2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다. 3. AI·클라우드 기. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화. Keyword: 07월 AI. Concrete visual subject: artificial intelligence neural network. Article context: ## 무슨 소식인가 제조사 공식 홈페이지와 개발자 블로그 소식입니다. 제품/기술 발표 원문 확인용 ## 먼저 알아둘 배경 제조사 공식 홈페이지와 개발자 블로그는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다. ## 왜 기술 이슈인가 제조사 공식 홈페이지와 개발자 블로그 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 | | 기술 맥락 | 제품 기능 변화, 서비스 안정성, 가격·구독 구조, 플랫폼 의존성 | | 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 | | 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 | ## 독자가 이해해야 할 포인트 1. 제조사 공식 홈페이지와 개발자 블로그의 핵심은 제목보다 어떤 기능·비용·운영 조건이 달라졌는지입니다. 2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다. 3. AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다. 4. 원문 요약만으로 부족하면 공식 보도자료, 후속 공지, 실제 적용 사례까지 같이 확인하는 편이 안전합니다. ## 참고한 곳 - [제조사 공식 홈페이지와 개발자 블로그](https://developers.googleblog.com/). The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-01T04:59:23.649944",
+      "quality_score": 0.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '사용자가 볼 변화' 포함",
+        "핵심 키워드 노출이 적습니다.",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "기술 글이 범용 기술 뉴스 템플릿에 머물러 기사별 차이가 부족합니다.",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "07월 금리",
+        "title_hint": "07월 금리 핵심 정리",
+        "category": "정책",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "금융위원회 보도자료",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "07월 금리, 적용 범위가 핵심",
+      "slug": "07월-금리-6b549cfd",
+      "excerpt": "07월 금리 이슈를 담당 기관, 적용 대상, 실제 집행 단계 중심으로 정리했습니다.",
+      "body_markdown": "## 이 이슈의 핵심\n\n금융위원회 보도자료는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 07월 금리를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다.\n\n금융 정책과 제도 변경 확인용 공식 포털\n\n## 정책 읽는 순서\n\n| 구분 | 봐야 할 질문 |\n| --- | --- |\n| 대상 | 개인, 가구, 사업자, 기관 중 누구에게 적용되는지 |\n| 시점 | 발표일과 시행일이 같은지, 유예 기간이 있는지 |\n| 영향 | 지원 규모, 부담 변화, 신청 또는 신고 절차 |\n| 예외 | 소득, 지역, 업종, 기존 이용자 여부에 따른 예외 |\n\n## 독자가 이해해야 할 배경\n\n정책 발표는 방향과 실제 집행 사이에 시간이 생길 수 있습니다. 보도자료의 문장만 보지 말고 시행령, 고시, 신청 페이지가 열렸는지까지 이어서 봐야 합니다.\n\n숫자가 있는 정책은 기준을 함께 봐야 합니다. 지원 금액, 비율, 한도, 적용 기간 중 어느 값인지 구분하지 않으면 실제 체감과 다르게 이해하기 쉽습니다.\n\n세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 07월 금리도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다.\n\n## 확인 포인트\n\n1. 담당 기관과 발표일을 확인합니다.\n2. 개인, 사업자, 기관 중 누구에게 영향을 주는지 나눕니다.\n3. 단속, 지원, 신고, 신청 중 어떤 행동으로 이어지는지 봅니다.\n4. 금액이나 비율이 있다면 한도와 기간을 함께 확인합니다.\n5. 원문 자료의 후속 링크나 담당 부서를 확인합니다.\n\n## 마무리\n\n07월 금리는 자극적인 제목보다 적용 범위가 중요합니다. 실제 행동이 필요한지는 원문에서 시행일, 대상, 담당 기관을 확인한 뒤 판단하는 것이 좋습니다.\n\n## 참고한 곳\n\n- [금융위원회 보도자료](https://www.fsc.go.kr/)\n",
+      "tags": [
+        "정책",
+        "07월",
+        "금리"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1736751035793-353baaa416cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmaW5hbmNpYWwlMjBjaGFydCUyMGRlc2t8ZW58MXwwfHx8MTc4Mjg4MTk4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "07월 금리, 적용 범위가 핵심 — Photo by Jakub Żerdzicki on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1768055104895-e6185762f2a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxmaW5hbmNpYWwlMjBjaGFydCUyMGRlc2t8ZW58MXwwfHx8MTc4Mjg4MTk4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "07월 금리, 적용 범위가 핵심 본문 보조 이미지 — Photo by Jakub Żerdzicki on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 금리, 적용 범위가 핵심. Keyword: 07월 금리. Concrete visual subject: financial chart desk. Context: ## 이 이슈의 핵심 금융위원회 보도자료는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 07월 금리를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 금융 정책과 제도 변경 확인용 공식 포털 ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 개인, 가구, 사업자, 기관 중 누구에게 적용되는지 | | 시점 | 발표일과 시행일이 같은지, 유예 기간이 있는지 | | 영향 | 지원 규모, 부담 변화, 신청 또는 신고 절차 | | 예외 | 소득, 지역, 업종, 기존 이용자 여부에 따른 예외 | ## 독자가 이해해야 할 배경 정책 발표는 방향과 실제 집행 사이에 시간이 생길 수 있습니다. 보도자료의 문장만 보지 말고 시행령, 고시, 신청 페이지가 열렸는지까지 이어서 봐야 합니다. 숫자가 있는 정책은 기준을 함께 봐야 합니다. 지원 금액, 비율, 한도, 적용 기간 중 어느 값인지 구분하지 않으면 실제 체감과 다르게 이해하기 쉽습니다. 세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 07월 금리도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다. ## 확인 포인트 1. 담당 기관과 발표일을 확인합니다. 2. 개인, 사업자, 기관 중 누. Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 07월 금리, 적용 범위가 핵심. Keyword: 07월 금리. Concrete visual subject: financial chart desk. Article context: ## 이 이슈의 핵심 금융위원회 보도자료는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 07월 금리를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 금융 정책과 제도 변경 확인용 공식 포털 ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 개인, 가구, 사업자, 기관 중 누구에게 적용되는지 | | 시점 | 발표일과 시행일이 같은지, 유예 기간이 있는지 | | 영향 | 지원 규모, 부담 변화, 신청 또는 신고 절차 | | 예외 | 소득, 지역, 업종, 기존 이용자 여부에 따른 예외 | ## 독자가 이해해야 할 배경 정책 발표는 방향과 실제 집행 사이에 시간이 생길 수 있습니다. 보도자료의 문장만 보지 말고 시행령, 고시, 신청 페이지가 열렸는지까지 이어서 봐야 합니다. 숫자가 있는 정책은 기준을 함께 봐야 합니다. 지원 금액, 비율, 한도, 적용 기간 중 어느 값인지 구분하지 않으면 실제 체감과 다르게 이해하기 쉽습니다. 세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 07월 금리도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다. ## 확인 포인트 1. 담당 기관과 발표일을 확인합니다. 2. 개인, 사업자, 기관 중 누구에게 영향을 주는지 나눕니다. 3. 단속, 지원, 신고, 신청 중 어떤 행동으로 이어지는지 봅니다. 4. 금액이나 비율이 있다면 한도와 기간을 함께 확인합니다. 5. 원문 자료의 후속 링크나 담당 부서를 확인합니다. ## 마무리 07월 금리는 자극적인 제목보다 적용 범위가 중요합니다. 실제 행동이 필요한지는 원문에서 시행일, 대상, 담당 기관을 확인한 뒤. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-01T04:59:39.248675",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "07월 지방선거",
+        "title_hint": "07월 지방선거 핵심 정리",
+        "category": "정치",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "중앙선거관리위원회 선거통계시스템",
+            "url": "https://info.nec.go.kr/",
+            "published_at": null,
+            "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "07월 지방선거, 발언보다 맥락 보기",
+      "slug": "07월-지방선거-acdf1261",
+      "excerpt": "07월 지방선거 이슈를 발언 배경, 이해관계자, 후속 일정 중심으로 정리했습니다.",
+      "body_markdown": "## 이 이슈의 핵심\n\n중앙선거관리위원회 선거통계시스템는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 07월 지방선거를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다.\n\n선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스\n\n## 정책 읽는 순서\n\n| 구분 | 봐야 할 질문 |\n| --- | --- |\n| 대상 | 정부, 국회, 정당, 부처, 외교 상대국 중 어느 주체가 관련되는지 |\n| 시점 | 발표일, 회담일, 법안 처리 일정, 후속 브리핑 여부 |\n| 영향 | 예산, 산업 영향, 외교 협력, 규제 변화 가능성 |\n| 예외 | 정치적 해석과 확정된 제도 변화를 구분할 필요 |\n\n## 독자가 이해해야 할 배경\n\n정치 이슈는 찬반 평가보다 확인 가능한 사실을 먼저 봐야 합니다. 공식 발표, 회의 결과, 법안 문안, 후속 브리핑이 있는지 확인하세요.\n\n외교나 산업 이슈가 섞인 정치 뉴스는 구체적인 협력 분야와 실제 실행 일정이 중요합니다. 수사적 표현과 실행 계획을 분리해서 보는 편이 안전합니다.\n\n세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 07월 지방선거도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다.\n\n## 확인 포인트\n\n1. 담당 기관과 발표일을 확인합니다.\n2. 개인, 사업자, 기관 중 누구에게 영향을 주는지 나눕니다.\n3. 단속, 지원, 신고, 신청 중 어떤 행동으로 이어지는지 봅니다.\n4. 금액이나 비율이 있다면 한도와 기간을 함께 확인합니다.\n5. 원문 자료의 후속 링크나 담당 부서를 확인합니다.\n\n## 마무리\n\n07월 지방선거는 자극적인 제목보다 적용 범위가 중요합니다. 실제 행동이 필요한지는 원문에서 시행일, 대상, 담당 기관을 확인한 뒤 판단하는 것이 좋습니다.\n\n## 참고한 곳\n\n- [중앙선거관리위원회 선거통계시스템](https://info.nec.go.kr/)\n",
+      "tags": [
+        "정치",
+        "07월",
+        "지방선거"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1598802777393-751e5387ecd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxlbGVjdGlvbiUyMGNpdmljJTIwZ292ZXJubWVudHxlbnwxfDB8fHwxNzgyODgyMDA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "07월 지방선거, 발언보다 맥락 보기 — Photo by Cyrus Crossan on Unsplash",
+      "inline_image_path": "https://images.pexels.com/photos/8849340/pexels-photo-8849340.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "inline_image_alt": "07월 지방선거, 발언보다 맥락 보기 본문 보조 이미지 — Photo by Tara Winstead on Pexels",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 지방선거, 발언보다 맥락 보기. Keyword: 07월 지방선거. Concrete visual subject: election civic government. Context: ## 이 이슈의 핵심 중앙선거관리위원회 선거통계시스템는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 07월 지방선거를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스 ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 정부, 국회, 정당, 부처, 외교 상대국 중 어느 주체가 관련되는지 | | 시점 | 발표일, 회담일, 법안 처리 일정, 후속 브리핑 여부 | | 영향 | 예산, 산업 영향, 외교 협력, 규제 변화 가능성 | | 예외 | 정치적 해석과 확정된 제도 변화를 구분할 필요 | ## 독자가 이해해야 할 배경 정치 이슈는 찬반 평가보다 확인 가능한 사실을 먼저 봐야 합니다. 공식 발표, 회의 결과, 법안 문안, 후속 브리핑이 있는지 확인하세요. 외교나 산업 이슈가 섞인 정치 뉴스는 구체적인 협력 분야와 실제 실행 일정이 중요합니다. 수사적 표현과 실행 계획을 분리해서 보는 편이 안전합니다. 세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 07월 지방선거도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다. ## 확인 포인트 1. 담당 기관과 발표일을 확인합니다. Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 07월 지방선거, 발언보다 맥락 보기. Keyword: 07월 지방선거. Concrete visual subject: election civic government. Article context: ## 이 이슈의 핵심 중앙선거관리위원회 선거통계시스템는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 07월 지방선거를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스 ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 정부, 국회, 정당, 부처, 외교 상대국 중 어느 주체가 관련되는지 | | 시점 | 발표일, 회담일, 법안 처리 일정, 후속 브리핑 여부 | | 영향 | 예산, 산업 영향, 외교 협력, 규제 변화 가능성 | | 예외 | 정치적 해석과 확정된 제도 변화를 구분할 필요 | ## 독자가 이해해야 할 배경 정치 이슈는 찬반 평가보다 확인 가능한 사실을 먼저 봐야 합니다. 공식 발표, 회의 결과, 법안 문안, 후속 브리핑이 있는지 확인하세요. 외교나 산업 이슈가 섞인 정치 뉴스는 구체적인 협력 분야와 실제 실행 일정이 중요합니다. 수사적 표현과 실행 계획을 분리해서 보는 편이 안전합니다. 세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 07월 지방선거도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다. ## 확인 포인트 1. 담당 기관과 발표일을 확인합니다. 2. 개인, 사업자, 기관 중 누구에게 영향을 주는지 나눕니다. 3. 단속, 지원, 신고, 신청 중 어떤 행동으로 이어지는지 봅니다. 4. 금액이나 비율이 있다면 한도와 기간을 함께 확인합니다. 5. 원문 자료의 후속 링크나 담당 부서를 확인합니다. ## 마무리 07월 지방선거는 자극적인 제목보다 적용 범위가 중요합니다. 실제 행동이 필요한지는 원문에서. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-01T04:59:55.376610",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "07월 서울 맛집",
+        "title_hint": "07월 서울 맛집 핵심 정리",
+        "category": "핫이슈",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "07월 서울 맛집, 효율 동선으로 실패 없는 여행",
+      "slug": "07월-서울-맛집-ab2a2970",
+      "excerpt": "07월 서울 맛집을 계획할 때, 동선과 운영 조건을 공식 안내 중심으로 꼼꼼하게 확인하는 방법을 소개합니다.",
+      "body_markdown": "## 이동 동선이 중요한 이유\n\n07월 서울 맛집을 찾을 때는 단순히 유명한 식당을 나열하기보다, 이동이 자연스럽고 피로도가 적은 일정이 중요합니다. 한국관광공사 VisitKorea와 같은 공식 포털에서는 시간대, 휴무, 예약 조건 등을 안내하므로 실제 방문이 가능한 곳을 중심으로 계획해야 합니다.\n\n## 공식 안내 기준 비교 체크리스트\n\n| 항목        | 공식 안내에서 꼭 확인할 점                |\n|------------|-------------------------------------|\n| 운영 시간   | 식당별 영업 시작/마감 시간, 계절별 변동           |\n| 휴무 정보   | 정기 휴무일, 임시 휴무 여부, 공휴일 운영           |\n| 예약 조건   | 사전 예약 필수 여부, 예약 마감 시간, 예약 방법       |\n| 비용        | 메뉴 가격, 입장료, 주차비, 예약금 등 공식 안내 숫자   |\n| 기타 변수   | 우천 시 대체 장소, 반려동물 동반 가능 여부, 대중교통 접근성 |\n\n*출처: 한국관광공사 VisitKorea 공식 여행 정보*\n\n## 07월 서울 맛집 동선 추천 팁\n\n- 대표 관광지(예: 서울타워, 북촌한옥마을 등)를 일정의 중심에 두고, 도보나 대중교통으로 이동 가능한 맛집을 2~3곳만 선정합니다.\n- 동선 중간에 식사와 휴식 시간을 반드시 포함합니다.\n- 아이, 가족, 반려동물 동반 시에는 실내 대체 장소와 화장실, 식사 대기 시간을 미리 확인합니다.\n- 주차장/대중교통 정보와 우천 시 대체 계획을 공식 안내에서 미리 확인하세요.\n- 예약이 필요한 곳은 공식 홈페이지에서 운영 시간과 예약 가능 여부를 바로 체크합니다.\n\n## 여행 계획을 세울 때 꼭 참고할 공식 정보\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/): 서울 지역별 인기 맛집, 운영 시간, 휴무, 예약 안내, 주차 및 교통 정보 등 최신 공식 데이터 제공.\n\n---\n\n07월 서울 맛집을 방문할 때는 공식 안내 기준으로 운영 시간, 동선, 비용, 예약 조건을 꼼꼼히 확인하세요. 동선이 잘 짜여 있으면 여행의 만족도가 높아집니다.",
+      "tags": [
+        "핫이슈",
+        "07월",
+        "서울",
+        "맛집"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1603545959692-78ab733058c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxrb3JlYW4lMjByZXN0YXVyYW50JTIwZm9vZCUyMHRhYmxlJTIwZGluaW5nJTIwdHJhdmVsJTIwZGVzdGluYXRpb24lMjBsYW5kbWFyayUyMHdhbGtpbmclMjBzZW91bCUyMHN0cmVldCUyMGNpdHl8ZW58MXwwfHx8MTc4Mjg4MjA0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "07월 서울 맛집, 효율 동선으로 실패 없는 여행 — Photo by Matt Rogers on Unsplash",
+      "inline_image_path": "https://images.pexels.com/photos/35491992/pexels-photo-35491992.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "inline_image_alt": "07월 서울 맛집, 효율 동선으로 실패 없는 여행 본문 보조 이미지 — Photo by Luiz M on Pexels",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 서울 맛집, 효율 동선으로 실패 없는 여행. Keyword: 07월 서울 맛집. Concrete visual subject: korean restaurant food table dining travel destination landmark walking seoul street city. Context: ## 이동 동선이 중요한 이유 07월 서울 맛집을 찾을 때는 단순히 유명한 식당을 나열하기보다, 이동이 자연스럽고 피로도가 적은 일정이 중요합니다. 한국관광공사 VisitKorea와 같은 공식 포털에서는 시간대, 휴무, 예약 조건 등을 안내하므로 실제 방문이 가능한 곳을 중심으로 계획해야 합니다. ## 공식 안내 기준 비교 체크리스트 | 항목 | 공식 안내에서 꼭 확인할 점 | |------------|-------------------------------------| | 운영 시간 | 식당별 영업 시작/마감 시간, 계절별 변동 | | 휴무 정보 | 정기 휴무일, 임시 휴무 여부, 공휴일 운영 | | 예약 조건 | 사전 예약 필수 여부, 예약 마감 시간, 예약 방법 | | 비용 | 메뉴 가격, 입장료, 주차비, 예약금 등 공식 안내 숫자 | | 기타 변수 | 우천 시 대체 장소, 반려동물 동반 가능 여부, 대중교통 접근성 | *출처: 한국관광공사 VisitKorea 공식 여행 정보* ## 07월 서울 맛집 동선 추천 팁 - 대표 관광지(예: 서울타워, 북촌한옥마을 등)를 일정의 중심에 두고, 도보나 대중교통으로 이동 가능한 맛집을 2~3곳만 선정합니다. - 동선 중간에 식사와 휴식 시간을 반드시 포함합니다. - 아이, 가족, 반려동물 동반 시에는 실내 대체 장소와 화장실, 식사 대기 시간을 미리 확인합니다. - 주차장/대중교통 정보. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 07월 서울 맛집, 효율 동선으로 실패 없는 여행. Keyword: 07월 서울 맛집. Concrete visual subject: korean restaurant food table dining travel destination landmark walking seoul street city. Article context: ## 이동 동선이 중요한 이유 07월 서울 맛집을 찾을 때는 단순히 유명한 식당을 나열하기보다, 이동이 자연스럽고 피로도가 적은 일정이 중요합니다. 한국관광공사 VisitKorea와 같은 공식 포털에서는 시간대, 휴무, 예약 조건 등을 안내하므로 실제 방문이 가능한 곳을 중심으로 계획해야 합니다. ## 공식 안내 기준 비교 체크리스트 | 항목 | 공식 안내에서 꼭 확인할 점 | |------------|-------------------------------------| | 운영 시간 | 식당별 영업 시작/마감 시간, 계절별 변동 | | 휴무 정보 | 정기 휴무일, 임시 휴무 여부, 공휴일 운영 | | 예약 조건 | 사전 예약 필수 여부, 예약 마감 시간, 예약 방법 | | 비용 | 메뉴 가격, 입장료, 주차비, 예약금 등 공식 안내 숫자 | | 기타 변수 | 우천 시 대체 장소, 반려동물 동반 가능 여부, 대중교통 접근성 | *출처: 한국관광공사 VisitKorea 공식 여행 정보* ## 07월 서울 맛집 동선 추천 팁 - 대표 관광지(예: 서울타워, 북촌한옥마을 등)를 일정의 중심에 두고, 도보나 대중교통으로 이동 가능한 맛집을 2~3곳만 선정합니다. - 동선 중간에 식사와 휴식 시간을 반드시 포함합니다. - 아이, 가족, 반려동물 동반 시에는 실내 대체 장소와 화장실, 식사 대기 시간을 미리 확인합니다. - 주차장/대중교통 정보와 우천 시 대체 계획을 공식 안내에서 미리 확인하세요. - 예약이 필요한 곳은 공식 홈페이지에서 운영 시간과 예약 가능 여부를 바로 체크합니다. ## 여행 계획을 세울 때 꼭 참고할 공식 정보 - [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/): 서울 지역별 인기 맛집, 운영 시간, 휴무, 예약 안내, 주차. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-01T05:00:35.356215",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "07월 축구 대표팀 명단",
+        "title_hint": "최종 명단 발표 전 예비 명단을 읽는 법",
+        "category": "스포츠",
+        "trend_score": 78.0,
+        "competition_score": 0.35,
+        "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+        "sources": [
+          {
+            "title": "최종 명단 발표 전 예비 명단을 읽는 법",
+            "url": "https://www.fifa.com/",
+            "published_at": null,
+            "summary": "예비 명단과 최종 명단, 부상 대체, 포지션 균형, 소속팀 출전 시간을 다룬다.",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "07월 축구 대표팀 명단, 꼭 알아야 할 5가지 체크포인트",
+      "slug": "07월-축구-대표팀-명단-80260190",
+      "excerpt": "2026년 7월 기준 07월 축구 대표팀 명단은 월드컵 일정, 조별리그 구조, 명단 발표 시점 등 핵심 정보를 중심으로 정리합니다.",
+      "body_markdown": "## 2026 월드컵, 대표팀 명단을 먼저 보는 이유\n\n2026 FIFA 월드컵은 6월 11일부터 7월 19일까지 캐나다, 멕시코, 미국에서 열립니다. 이번 대회는 참가국이 48개로 늘어나고, 총 104경기가 치러집니다.  \n07월 축구 대표팀 명단은 경기 일정과 조별리그 구조, 선수단 구성부터 확인해야 실수 없이 관전할 수 있습니다.\n\n## 대회 주요 정보\n\n| 항목           | 2026 월드컵 기준           |\n| -------------- | -------------------------- |\n| 개최 기간      | 2026년 6월 11일~7월 19일   |\n| 개최국         | 캐나다, 멕시코, 미국       |\n| 참가국         | 48개국                     |\n| 총 경기 수     | 104경기                    |\n| 핵심 변화      | 48개국 확대, 32강 토너먼트 |\n\n## 대표팀 명단, 꼭 체크해야 할 5가지\n\n1. **경기 시간**  \n   현지 날짜와 한국 시간이 다르니, FIFA 공식 페이지에서 최신 경기 시간을 확인합니다.\n\n2. **조별리그 순위 조건**  \n   조별리그에서는 각 조 3위 팀의 승점, 골득실 등 순위 결정 조건을 함께 봅니다.\n\n3. **이동 거리**  \n   개최 도시 이동 거리가 긴 팀은 선수단 운영 부담이 크므로, 조 편성과 이동 일정도 체크합니다.\n\n4. **최종 명단과 부상 변수**  \n   예비 명단과 최종 명단은 발표 시점이 다르며, 부상 대체 여부는 경기 직전까지 변동될 수 있습니다.\n\n5. **기록과 공식 일정**  \n   일정과 명단, 출전 기록은 FIFA 공식 사이트를 기준으로 확인합니다.\n\n## 참고 사항\n\n- 2026년 대회는 2022 카타르 월드컵과 구조가 다릅니다. 32개 팀 기준 설명은 최신 정보가 아닐 수 있습니다.\n- 예비 명단, 최종 명단, 경기 당일 엔트리는 각각 발표 시점과 구성원이 다릅니다.\n- 발표 시점마다 명단이 변경될 수 있으니, 원문 공개일 기준으로 확인합니다.\n\n## 참고 출처\n\n- [최종 명단 발표 전 예비 명단을 읽는 법 - FIFA 공식 안내](https://www.fifa.com/)  \n  (예비 명단, 최종 명단, 부상 대체, 포지션 균형, 소속팀 출전 시간 등 명단 구성 기준 안내)\n\n---\n\n07월 축구 대표팀 명단을 확인할 때는 경기 일정, 조별리그 구조, 명단 발표 시점 등 핵심 요소를 체크하면 실시간 관전에도 도움이 됩니다.",
+      "tags": [
+        "스포츠",
+        "07월",
+        "축구",
+        "대표팀",
+        "명단"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxmb290YmFsbCUyMHN0YWRpdW0lMjBwbGF5ZXIlMjBtYXRjaCUyMGFjdGlvbnxlbnwxfDB8fHwxNzgyODgyMDgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "07월 축구 대표팀 명단, 꼭 알아야 할 5가지 체크포인트 — Photo by Jannes Glas on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1706675780107-7c43cc487928?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8Zm9vdGJhbGwlMjBzdGFkaXVtJTIwcGxheWVyJTIwbWF0Y2glMjBhY3Rpb258ZW58MXwwfHx8MTc4Mjg4MjA4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "07월 축구 대표팀 명단, 꼭 알아야 할 5가지 체크포인트 본문 보조 이미지 — Photo by Alex Simpson on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 축구 대표팀 명단, 꼭 알아야 할 5가지 체크포인트. Keyword: 07월 축구 대표팀 명단. Concrete visual subject: football stadium player match action. Context: ## 2026 월드컵, 대표팀 명단을 먼저 보는 이유 2026 FIFA 월드컵은 6월 11일부터 7월 19일까지 캐나다, 멕시코, 미국에서 열립니다. 이번 대회는 참가국이 48개로 늘어나고, 총 104경기가 치러집니다. 07월 축구 대표팀 명단은 경기 일정과 조별리그 구조, 선수단 구성부터 확인해야 실수 없이 관전할 수 있습니다. ## 대회 주요 정보 | 항목 | 2026 월드컵 기준 | | -------------- | -------------------------- | | 개최 기간 | 2026년 6월 11일~7월 19일 | | 개최국 | 캐나다, 멕시코, 미국 | | 참가국 | 48개국 | | 총 경기 수 | 104경기 | | 핵심 변화 | 48개국 확대, 32강 토너먼트 | ## 대표팀 명단, 꼭 체크해야 할 5가지 1. **경기 시간** 현지 날짜와 한국 시간이 다르니, FIFA 공식 페이지에서 최신 경기 시간을 확인합니다. 2. **조별리그 순위 조건** 조별리그에서는 각 조 3위 팀의 승점, 골득실 등 순위 결정 조건을 함께 봅니다. 3. **이동 거리** 개최 도시 이동 거리가 긴 팀은 선수단 운영 부담이 크므로, 조 편성과 이동 일정도 체크합니다. 4. **최종 명단과 부상 변수** 예비 명단과 최종 명단은 발표 시점이 다르며, 부상 대체 여부는 경기 직전까지 변동될 수 있습니다. 5. **기록과 공식 일정** 일정과. Visual mood: clean editorial news briefing. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 07월 축구 대표팀 명단, 꼭 알아야 할 5가지 체크포인트. Keyword: 07월 축구 대표팀 명단. Concrete visual subject: football stadium player match action. Article context: ## 2026 월드컵, 대표팀 명단을 먼저 보는 이유 2026 FIFA 월드컵은 6월 11일부터 7월 19일까지 캐나다, 멕시코, 미국에서 열립니다. 이번 대회는 참가국이 48개로 늘어나고, 총 104경기가 치러집니다. 07월 축구 대표팀 명단은 경기 일정과 조별리그 구조, 선수단 구성부터 확인해야 실수 없이 관전할 수 있습니다. ## 대회 주요 정보 | 항목 | 2026 월드컵 기준 | | -------------- | -------------------------- | | 개최 기간 | 2026년 6월 11일~7월 19일 | | 개최국 | 캐나다, 멕시코, 미국 | | 참가국 | 48개국 | | 총 경기 수 | 104경기 | | 핵심 변화 | 48개국 확대, 32강 토너먼트 | ## 대표팀 명단, 꼭 체크해야 할 5가지 1. **경기 시간** 현지 날짜와 한국 시간이 다르니, FIFA 공식 페이지에서 최신 경기 시간을 확인합니다. 2. **조별리그 순위 조건** 조별리그에서는 각 조 3위 팀의 승점, 골득실 등 순위 결정 조건을 함께 봅니다. 3. **이동 거리** 개최 도시 이동 거리가 긴 팀은 선수단 운영 부담이 크므로, 조 편성과 이동 일정도 체크합니다. 4. **최종 명단과 부상 변수** 예비 명단과 최종 명단은 발표 시점이 다르며, 부상 대체 여부는 경기 직전까지 변동될 수 있습니다. 5. **기록과 공식 일정** 일정과 명단, 출전 기록은 FIFA 공식 사이트를 기준으로 확인합니다. ## 참고 사항 - 2026년 대회는 2022 카타르 월드컵과 구조가 다릅니다. 32개 팀 기준 설명은 최신 정보가 아닐 수 있습니다. - 예비 명단, 최종 명단, 경기 당일 엔트리는 각각 발표 시점과 구성원이 다릅니다. - 발표 시점마다 명단이 변경될 수 있으니, 원문 공개일 기준으로 확인. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-01T05:01:13.295403",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 89.0"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 0.0"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 89.0"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 89.0"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/07월-서울-맛집-ab2a2970.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/07월-축구-대표팀-명단-80260190.md",
+      "message": "draft saved"
+    }
+  ]
+}
