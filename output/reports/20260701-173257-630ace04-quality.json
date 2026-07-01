@@ -1,0 +1,20 @@
+{
+  "run_id": "20260701-173257-630ace04",
+  "average_quality": 89.0,
+  "drafts": [
+    {
+      "slug": "장시간-노동-의심-사업장-기획-f8fbe068",
+      "title": "장시간 노동 의심 사업장 기획, 신청 전 확인할 것",
+      "keyword": "장시간 노동 의심 사업장 기획",
+      "category": "생활",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 장시간 노동 의심 사업장 기획, 신청 전 확인할 것. Keyword: 장시간 노동 의심 사업장 기획. Concrete visual subject: application form document. Context: ## 무엇이 달라졌나 '장시간 노동' 의심 사업장 100곳 기획 감독 실시 소식은 장시간 노동 의심 사업장 기획과 직접 연결되는지 확인해야 하는 생활 정보입니다. 먼저 제목의 혜택 표현보다 실제로 누가, 언제, 어떤 절차로 움직여야 하는지 나눠 보는 편이 좋습니다. 고용노동부는 1일 장시간 노동 관행을 근절하기 위해 전국 100개 사업장을 대상으로 기획감독을 일제히 실시한다고 밝혔다. 이번 기획감독은 올해 사업장 감독 종합계획에 따라 반기별 1회 추진하는 맞춤형 감독으로, 장시간 노동 환경에 따른 노동자의 건강권에 대한 사회적 우려가 지속해서 제기됨에 따라 현장의 위법 행위를 엄단하기 위해 추진한다. 특히 이번 감독은 지난해 12월 30일 노사정이 합의·발표한 실노동시간 단축 로드맵 추진과제의 하나인 '특별연장근로 사후 감독체계 마련, 운영 개선' 관련... ## 이번 글에서 바로 볼 항목 | 항목 | 이번 소식에서 확인할 내용 | | --- | --- | | 핵심 대상 | 장시간 노동 의심 사업장 기획 | | 확인할 수치 | 12월 30일, 12월, 100곳, 100개 | | 처리 방식 | 신청·방문·자동 적용 여부를 원문에서 확인 | | 담당 주체 | 고용노동부 | | 추가로 볼 숫자 | 1회 | ## 숫자와 대상은 이렇게 읽으면 쉽습니다 이번 소식에서 먼저 볼 숫자는 12월 30일, 12월, 100곳, 100개, 1회입니다. 1. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1631651693480-97f1132e333d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcHBsaWNhdGlvbiUyMGZvcm0lMjBkb2N1bWVudHxlbnwxfDB8fHwxNzgyOTI3MjU5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
