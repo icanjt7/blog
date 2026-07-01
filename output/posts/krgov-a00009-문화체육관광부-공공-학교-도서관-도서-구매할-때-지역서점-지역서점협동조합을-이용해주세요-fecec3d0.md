@@ -1,15 +1,17 @@
 ---
-title: "공공·학교 도서관, 도서 구매할 때 지역서점·지역서점협동조합을 이용해주세요"
-date: "2026-07-01T00:11"
-category: "핫이슈"
+title: 지역서점 이용 활성화 가이드라인 배포
+date: 2026-07-01T00:11
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://images.unsplash.com/photo-1544827503-673e2a2c4c00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxrb3JlYW4lMjBjaXR5JTIwbmV3cyUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzgyODczNjQ5fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "공공·학교 도서관, 도서 구매할 때 지역서점·지역서점협동조합을 이용해주세요"
-author: "문화체육관광부"
+cover_image: https://images.unsplash.com/photo-1544827503-673e2a2c4c00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxrb3JlYW4lMjBjaXR5JTIwbmV3cyUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzgyODczNjQ5fDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 공공·학교 도서관, 도서 구매할 때 지역서점·지역서점협동조합을 이용해주세요
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 문화체육관광부가 2026-07-01 공개한 자료를 바탕으로 공공·학교 도서관, 도서 구매할 때 지역서점·지역서점협동조합을 이용해주세요의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
