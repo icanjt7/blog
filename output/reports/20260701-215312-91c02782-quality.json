@@ -1,0 +1,77 @@
+{
+  "run_id": "20260701-215312-91c02782",
+  "average_quality": 97.6,
+  "drafts": [
+    {
+      "slug": "07월-신청방법-f2149aa3",
+      "title": "07월 신청방법, 5가지 핵심 체크포인트",
+      "keyword": "07월 신청방법",
+      "category": "생활",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 5.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 신청방법, 5가지 핵심 체크포인트. Keyword: 07월 신청방법. Concrete visual subject: application form document. Context: ## 07월 신청, 무엇을 꼭 확인해야 할까? 대한민국 정책브리핑을 통해 공개된 07월 신청방법 안내는 실제 적용 대상과 절차를 먼저 파악하는 것이 중요합니다. 단순히 '혜택'만 보는 것보다, 누가 언제 어떻게 신청할 수 있는지 구체적으로 확인해야 시행착오를 줄일 수 있습니다. 정책브리핑은 정부 정책과 생활 혜택을 공식적으로 안내하는 포털입니다. --- ## 07월 신청방법 체크포인트 | 항목 | 확인 내용 | |-----------------|-----------------------------------------------------| | 적용 대상 | 전체 국민, 특정 세대/가구/업종/연령대 중 어디인지 | | 신청 기간 | 원문에 명시된 시작일, 마감일, 또는 지속 기간 | | 비용 조건 | 금액, 지원 비율, 자격 조건 등 수치 안내 | | 담당 기관 | 정책 운영 주체(정부, 지자체, 부처 등) | | 처리 방식 | 신청, 방문, 자동 적용, 온라인/오프라인 구분 | 이 표는 정책브리핑 원문 기준 핵심 정보를 바탕으로 작성되었습니다. --- ## 실제 확인 방법 - 07월 신청방법이 자신에게 적용되는지 정책브리핑 원문 첫 문단에서 확인합니다. - 안내에 표시된 금액, 비율, 기간 등 수치와 단위를 정확히 구분합니다. - 신청 절차(온라인 신청, 방문 접수, 자동 적용 등)를 원문 설명에서 체크하세요. - 담당 기관의 공식. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1632152133952-98b268dc4b86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxhcHBsaWNhdGlvbiUyMGZvcm0lMjBkb2N1bWVudHxlbnwxfDB8fHwxNzgyOTI3MjU5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "07월-갤럭시-aeced3b0",
+      "title": "갤럭시 7월 신제품, 3가지 변화 체크포인트",
+      "keyword": "07월 갤럭시",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 갤럭시 7월 신제품, 3가지 변화 체크포인트. Keyword: 07월 갤럭시. Concrete visual subject: samsung smartphone modern display. Context: 삼성전자 갤럭시 시리즈는 매년 7월 신제품을 공개하며, 이번 07월 갤럭시 모델은 공식 홈페이지 발표와 개발자 블로그를 통해 세 가지 핵심 변화가 소개됐습니다. --- ## 07월 갤럭시, 공식 발표된 주요 변화 삼성전자는 글로벌 IT기업으로, 매년 하반기 프리미엄 스마트폰을 출시합니다. 07월 갤럭시 신제품에 적용된 변화는 다음과 같습니다. 1. **AI 카메라 기능 업그레이드** - 실시간 인물 분리 기능이 새롭게 추가되었습니다. - 복잡한 배경에서도 인물을 자동으로 또렷하게 촬영할 수 있습니다. - 개발자 블로그에 따르면 기존 딥러닝 이미지 처리 방식이 한 단계 고도화되었습니다. - 저조도 촬영 시 자동 보정이 강하게 적용되어 원본과 차이가 발생할 수 있습니다. 2. **배터리 절약 모드 자동 적용** - 사용자의 패턴을 감지해 배터리 절약 모드가 자동으로 전환됩니다. - 화면 밝기, 백그라운드 앱 실행, 위치 서비스 사용량 등을 실시간 분석합니다. - 장시간 외출 시 배터리 소모가 줄어드는 효과가 있습니다. - 고사양 게임이나 동영상 스트리밍 환경에서는 절약 효과를 크게 느끼기 어렵습니다. 3. **실시간 음성 번역 기능** - 영상 통화, 전화, 녹음 앱에서 실시간으로 음성 번역이 지원됩니다. - 한-영, 영-한 번역은 정확도가 높지만, 중국어·일본어 등 아시아권 언어는 일부 오차가 있습니다. - 지원 언어는 향후 업데이트 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1778010955462-5b1c52059848?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8c2Ftc3VuZyUyMHNtYXJ0cGhvbmUlMjBtb2Rlcm4lMjBkaXNwbGF5fGVufDF8MHx8fDE3ODI5NDMxMDF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "07월-연금-118db5bb",
+      "title": "7월 연금, 내게 해당되는지 빠르게 확인하는 법",
+      "keyword": "07월 연금",
+      "category": "정책",
+      "quality_score": 88.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 5.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 7월 연금, 내게 해당되는지 빠르게 확인하는 법. Keyword: 07월 연금. Concrete visual subject: retirement finance documents. Context: ## 7월 연금, 무엇이 달라지나? 금융위원회는 정책 발표와 동시에 시행 대상, 적용 시점, 집행 방식 등 구체적 정보를 공개합니다. 7월 연금 관련 이슈는 발표 내용보다 실제 적용 범위와 절차를 정확히 확인하는 것이 중요합니다. ## 정책 확인 체크리스트 아래 표는 금융위원회 보도자료 기준, 7월 연금 정책을 이해할 때 반드시 확인해야 할 주요 항목입니다. | 항목 | 확인 내용 | 출처 기준 정보 | |---------|-----------------------------------|---------------------------| | 담당 기관 | 정책을 집행하는 부처 및 기관 | 금융위원회 공식 포털 명시 | | 적용 대상 | 개인, 가구, 사업자, 기관 여부 | 보도자료 내 구체적 대상 언급 | | 시행일 | 실제 적용 시작일과 발표일 차이 | 시행일/유예기간 명시 | | 지원 규모 | 연금 지급 금액, 한도, 비율 등 | 수치·기간·비율 등 명확 기재 | | 신청 방법 | 온라인/오프라인, 자동/수동 구분 | 담당 부서·신청 페이지 안내 | | 예외 사항 | 소득, 지역, 업종, 기존 이용자별 제외 조건 | 예외 대상 및 조건 표기 | ## 정책 해석의 핵심 - 정책 발표와 실제 집행 사이에는 시차가 있을 수 있습니다. - 발표문만으로 판단하지 말고, 시행령·고시·신청 페이지 오픈 여부를 함께 확인해야 합니다. - 지원 . Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1604594849809-dfedbc827105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxyZXRpcmVtZW50JTIwZmluYW5jZSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzgyOTQzMTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "07월-정당-94e373c7",
+      "title": "07월 정당, 실제 적용 대상과 집행 방식 한눈에 보기",
+      "keyword": "07월 정당",
+      "category": "정치",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 5.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 정당, 실제 적용 대상과 집행 방식 한눈에 보기. Keyword: 07월 정당. Concrete visual subject: neutral election civic public office. Context: ## 07월 정당 이슈, 어디부터 확인할까? 중앙선거관리위원회 선거통계시스템은 선거 결과, 당선인, 득표율 등 공식 데이터를 제공합니다. 07월 정당 관련 논의에서는 발언 내용보다 실제 적용 대상과 집행 방식, 후속 일정이 핵심입니다. ## 정책 확인 체크포인트 | 구분 | 확인 질문 | | ------ | ------------------------------------------------------------------ | | 기관 | 중앙선거관리위원회, 정부, 국회, 정당 등 어느 주체가 관여하는가? | | 시점 | 발표일, 회담 일정, 법안 처리, 후속 브리핑 등 주요 일정은 언제인가?| | 영향 | 예산, 산업, 외교, 규제 변화 등 실질적 영향은 무엇인가? | | 대상 | 개인, 사업자, 기관 중 누구에게 직접 영향을 주는가? | | 절차 | 단속, 지원, 신고, 신청 등 구체적 집행 방식은 어떻게 진행되는가? | ## 07월 정당 이슈의 배경 정치 현안은 찬반 평가보다 먼저 공식 발표와 실제 집행 자료를 확인해야 합니다. - 공식 발표문, 회의 결과, 법안 문안, 후속 브리핑 여부를 체크하세요. - 외교·산업 이슈가 섞인 경우 협력 분야와 실행 일정, 담당 기관을 구체적으로 따져봐야 합니다. - 같은 용어라도 세금, 지원, 규제 등 행정 단계가 다를 수 있으므로, ‘발표’와 ‘집행’을 구분해 읽는 것이 중요합니다. ##. Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1733282218946-979cd67ec354?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgyOTQzMTgzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "07월-전주-맛집-45efd481",
+      "title": "07월 전주 맛집, 실속 동선 5가지 체크포인트",
+      "keyword": "07월 전주 맛집",
+      "category": "핫이슈",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 전주 맛집, 실속 동선 5가지 체크포인트. Keyword: 07월 전주 맛집. Concrete visual subject: korean restaurant food table dining jeonju hanok village. Context: ## 전주 맛집, 동선이 중요한 이유 07월 전주 맛집을 찾을 때는 유명 장소만 나열하기보다, 실제로 이동이 편리한지 먼저 고려해야 만족도가 높습니다. 시간대, 휴무일, 예약 여부에 따라 계획이 달라질 수 있으니, 공식 안내에서 운영 정보를 확인하세요. 한국관광공사 VisitKorea는 전주 지역 맛집과 관광지 정보, 운영 시간, 휴무일, 주차 등 여행에 필요한 조건을 제공합니다. --- ## 전주 맛집 여행 전 비교 체크표 | 항목 | 확인 기준 | |--------------|--------------------------------------| | 동선 | 가족·아이·반려동물 동반 여부, 주요 관광지 거리, 혼잡 시간대 | | 운영 시간 | 식당·카페·관광지 공식 운영 시간, 휴무일, 계절별 변동 | | 비용 | 입장료, 주차비, 식사 예산, 예약금 | | 예약 | 예약 가능 여부, 예약 마감 시간, 대기 예상 시간 | | 기타 변수 | 우천 시 대체 장소, 반려동물 입장 가능, 성수기 대기 | *출처: 한국관광공사 VisitKorea 공식 안내* --- ## 동선 설계 팁 - 가족 또는 아이 동반 여행이라면 이동 거리를 짧게 하고, 쉬는 장소와 식사 시간을 중간에 배치하세요. - 대표 관광지(예: 전주한옥마을) 주변에서 2~3곳의 맛집·카페·실내 대체 장소를 묶으면 일정이 효율적입니다. - 반려동물과 함께라면 입장 가능한 식당. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1653230674619-2c92936be020?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxrb3JlYW4lMjByZXN0YXVyYW50JTIwZm9vZCUyMHRhYmxlJTIwZGluaW5nJTIwamVvbmp1JTIwaGFub2slMjB2aWxsYWdlfGVufDF8MHx8fDE3ODI5NDMyMTl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
