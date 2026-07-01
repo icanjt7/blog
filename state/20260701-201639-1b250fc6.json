@@ -1,0 +1,341 @@
+{
+  "run_id": "20260701-201639-1b250fc6",
+  "topics": [
+    {
+      "keyword": "전기차 공공충전요금 개편 완속",
+      "title_hint": "전기차 공공충전요금 개편…완속, kWh당 29.4원 인하",
+      "category": "생활",
+      "trend_score": 105.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "전기차 공공충전요금 개편…완속, kWh당 29.4원 인하",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148967451&call_from=rsslink",
+          "published_at": "2026-07-01T08:48:00",
+          "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148967451&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>기후에너지환경부는 '전기차 공공충전요금 체계 개편안'을 확정해 8월 1일부터 시행한다고 밝혔다.</p>\n\n<p>이번 개편으로 공공충전요금 체계는 기존 2단계에서 완속 구간과 초급속 구간을 포함한 5단계로 나뉜다.</p>\n\n<p>또한, 요금 단가는 충전기 운영에 드는 전기요금, 운영비, 법정검사비 등을 반영해 산정했다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>서울 한 건물의 전기차 충전소 모습. 2026.4.19. (ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>전체 충전기의 90%를 차지하는 완속충전기(30kW 미만)는 이번 개편으로 기존 공공충전요금 체계보다 kWh당 요금이 29.4원(9.1%) 인하한다.</p>\n\n<p>급속충전기는 설치·운영 비용이 높고 초급속 충전·전력분배 등 충전서비스 품질 향상을 위해 지속적인 기술개발 투자가 필요한 점을 고려해 요금을 일부 인상했다.</p>\n\n<p>전체 충전기의 2.3%를 차지하는 초급속 충전기(200kW 이상)는 기존 공공충전요금 체계보다 kWh당 요금이 45.9원(약 13.2%) 인상했다.</p>\n\n<p>개편된 요금체계는 기후부가 설치해 운영하는 공공충전기를 이용하거나, 정부와 협약을 체결한 민간충전기에서 기후부 회원카드로 결제하는 경우(로밍)에 적용한다.</p>\n\n<p>기후부는 이번 충전요금 개편을 시작으로 향후 요금체계를 지속해서 고도화해 나갈 방침이다.</p>\n\n<p>특히 계시별 전기요금과 전기차 충전요금을 연동하는 요금체계 개편으로 재생에너지 출력이 많은 시간대에 사용자가 싸게 충전할 수 있게 할 예정이다.</p>\n\n<p>정선화 기후부 녹색전환정책관은 \"이번 요금체계 개편은 충전기 운영 비용을 현행화하는 동시에 시장에 충전요금의 기준을 제시하는 의미가 있다\"고 밝히고 \"향후 계시별 연동 요금제로 재생에너지 활용을 극대화하고 전기차 소비자의 요금 부담을 완화할 수 있게 요금체계를 개편해 나가겠다\"고 덧붙였다.</p>\n\n<p>문의: 기후에너지환경부 탈탄소녹색수송혁신과(044-201-6885)</p>\n\n<p><br /></p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "피지컬 AI 1강 청사진 나왔다 핵심",
+      "title_hint": "'피지컬 AI 1강' 청사진 나왔다…핵심 경쟁력 확보 전략 공개",
+      "category": "기술",
+      "trend_score": 105.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "'피지컬 AI 1강' 청사진 나왔다…핵심 경쟁력 확보 전략 공개",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148967446&call_from=rsslink",
+          "published_at": "2026-07-01T08:01:00",
+          "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148967446&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>우리나라가 '피지컬 AI 1강' 도약을 위한&nbsp;데이터, 기술, 확산, 생태계 등 4대 추진 전략을 담은 청사진이 마련됐다.&nbsp;</p>\n\n<p>과학기술정보통신부는 지난달 29일 대한민국 대도약 3대 메가프로젝트 국민보고회에서 피지컬 AI 정책 추진 방향을 발표한 데 이어, 1일 K-문샷 프로젝트의 일환으로 대한민국을 명실상부한 피지컬 AI 1강으로 끌어올릴 구체적인 방안을 담은 피지컬 AI 핵심 경쟁력 확보 전략을 공개했다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>서울 강남구 코엑스에서 열린 '2026 월드IT쇼'(WIS 2026)를 찾은 관람객들이 KT 부스에서 K-RaaS 플랫폼을 활용한 산업 현장 피지컬 AI 시연을 지켜보고 있다. 2026.4.22 (ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>피지컬 AI는 아직 태동 중인 초기 시장이며, 우리나라도 양질의 현장 데이터, 최적의 실증 현장, 국민의 AI 수용성 등을 바탕으로 피지컬 AI 1강이 되기 위한 잠재력을 충분히 지니고 있다.</p>\n\n<p>이에 따라 정부는 대한민국을 피지컬 AI 1강으로 이끌기 위해 글로벌 최고 수준의 피지컬 AI 풀스택 기술 확보와 제조·농업·국방·돌봄 등 전 영역으로의 확산을 목표로 구체적인 추진 방안을 마련했다</p>\n\n<p>정부는 먼저, 다양한 분야에서 생성되는 실데이터와 합성데이터를 수집하고 분야별 플랫폼 등을 통해 피지컬 AI 기술개발에 활용할 수 있는 체계를 마련하기로 했다.</p>\n\n<p>구체적으로, 정부 사업으로 생성되는 로봇 행동데이터 등 범용 데이터와 분야별 데이터를 한 곳에 집적하고, 데이터의 유효성 검증, 상호운용성 표준 제정 등 품질을 관리할 수 있는 체계를 구축해 양질의 데이터에 대한 종합적인 관리체계를 구축할 예정이다.</p>\n\n<p>아울러, 기업이 찾아와서 필요한 범용 행동 데이터를 자유롭게 획득·학습·실증할 수 있게 지원할 뿐만 아니라, 제조, 모빌리티, 농업 등 현장의 행동 데이터 등 특화 데이터도 확보하고 활용할 수 있게 범부처 협력 기반의 피지컬 AI 범용·특화 데이터 수집·활용 체계도 함께 구축하기로 했다.</p>\n\n<p>정부는 이어서, 글로벌 선도 국가의 기술력에 종속되지 않고 우리만의 독자적인 피지컬 AI 기술력을 확보하기 위해 근간이 되는 기술들을 확보해 나가기로 했다.</p>\n\n<p>이를 위해 우선, 사람처럼 스스로 계획을 수립하고 장기 작업과 정밀 조작이 가능한 범용성을 갖춘 피지컬 AI 파운데이션 모델과 세상의 변화를 예측하고 시뮬레이션해 AI 학습과 의사결정을 지원하는 월드모델, 온디바이스에서 AI 모델이 지연 없이 작동할 수 있는 컴퓨팅 플랫폼 등 3대 공통 기반 기술을 확보해 피지컬 AI 풀스택 체계를 갖출 계획이다.</p>\n\n<p>그 첫 단추로, 올해부터 LG전자, 마음AI, KT, 카이스트, 서울대 등으로 구성된 컨소시엄이 월드모델을 중심으로 기반 기술 확보에 본격 착수한 바 있다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"><img alt=\"피지컬 AI 풀스택 체계.(자료=과학기술정보통신부)\" src=\"https://www.korea.kr/newsWeb/resources/attaches/2026.07/01/dgfdsgfd.jpg\" /></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>피지컬 AI 풀스택 체계.(자료=과학기술정보통신부)</b></figcaption></figure></div>\n\n<p>더불어, 피지컬 AI 핵심기술을 제조 장비가 공정 상태를 예측하고 스스로 최적 제어하는 자율 정밀 제조 기술이나 공장 상황 변화에 맞춰 미래 상태를 예측하고 유연하게 생산하는 공장 운영 기술 등 지역 제조 현장에 선도적으로 실증하고, 성과를 타 산업 분야로 확산하는 한편, 피지컬 AI 핵심기술이 탑재될 디바이스 기술과 안전·신뢰 확보를 위한 통신·보안 기술도 함께 개발할 예정이다.</p>\n\n<p>정부는 또한, 부처별·분야별 피지컬 AI 적용 수요를 발굴하고 필요한 기술을 수요와 연결해 신속하게 실증하고 확산할 수 있게 범부처 협력체계를 구축하기로 했다.</p>\n\n<p>이를 통해 기술개발, 데이터 구축·활용, 실증·상용화까지 전 주기에 걸쳐 범부처의 정책을 서로 연계해 효과적으로 지원할 예정이다.</p>\n\n<p>구체적으로는, 과기정통부의 기술 개발·지원과 도메인 부처의 수요 발굴의 연계 등을 바탕으로 개별 작업·공정 단위에 기술을 적용해 성과를 빠르게 창출할 수 있는 프로젝트와 안전·국방·돌봄·농업 등 다양한 분야의 수요에 개발된 기술을 적용해 완결된 자율지능을 구현할 수 있는 프로젝트 등을 추진해 피지컬 AI가 우리 생활을 실질적으로 변화시킬 수 있도록 지원할 예정이다.</p>\n\n<p>정부는 이와 함께, 기술개발, 실증·상용화, 산업 육성 등을 종합적으로 지원하기 위한 법적 기반을 마련하고, 관계부처와 협의해&nbsp;유망 스타트업부터 핵심 기업에 이르는 맞춤형 투자를 지원하기로 했다.</p>\n\n<p>아울러, 피지컬 AI를 활용할 수 있는 실무인재부터 모델을 개발할 수 있는 고급인재까지 전방위 인재 양성체계를 갖추는 등 성장 기반을 구축할 예정이다.</p>\n\n<p>또&nbsp;지난달 19일 출범한 피지컬 AI 얼라이언스 2기 등을 통해 모델, 솔루션뿐만 아니라 통신망, 시스템 통합, 데이터센터, 보안, 운영 등 피지컬 AI의 모든 측면을 아우르는 풀스택을 국산화하고 이를 수출 산업으로 이어질 수 있게 하는 생태계를 구축해 나갈 계획이다.</p>\n\n<p>배경훈 부총리 겸 과기정통부 장관은 \"피지컬 AI 산업을 제대로 육성하기 위해서는 글로벌 선도 국가인 미국과 중국 등의 기술력에 종속되지 않고 우리만의 기술력을 확보하는 것이 중요하다\"고 강조하면서 \"민간의 창의적인 도전과 정부의 전폭적인 지원이 시너지를 내어 대한민국이 피지컬 AI 경쟁력을 확보하고 세계로 수출하는 명실상부한 1강이 되도록 적극 뒷받침하겠다\"고 밝혔다.</p>\n\n<p>문의 : 과학기술정보통신부 정보통신산업정책관(044-202-6221), 디바이스AX혁신팀(6254, 6251)</p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "07월 대출",
+      "title_hint": "07월 대출 핵심 정리",
+      "category": "정책",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "금융위원회 보도자료",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "07월 국회",
+      "title_hint": "07월 국회 핵심 정리",
+      "category": "정치",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "중앙선거관리위원회 선거통계시스템",
+          "url": "https://info.nec.go.kr/",
+          "published_at": null,
+          "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "07월 강릉 여행",
+      "title_hint": "07월 강릉 여행 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드 / TourAPI 연관 관광지 10건 활용",
+      "sources": [
+        {
+          "title": "한국관광공사 TourAPI 관광지별 연관 관광지 정보",
+          "url": "https://www.data.go.kr/data/15128560/openapi.do",
+          "published_at": null,
+          "summary": "TourAPI 관광지별 연관 관광지 정보에서 가져온 공개 데이터입니다. 글에서는 연관 관광지, 주변에서 함께 묶기 좋은 지점, 카테고리 흐름을 우선 반영하세요. 조회 키워드: 07월 강릉 여행. 결과: 기준 관광지 BTS버스정류장 · 연관 관광지 아들바위공원 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 1 / 기준 관광지 BTS버스정류장 · 연관 관광지 도깨비촬영지/(영진해변) · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 2 / 기준 관광지 BTS버스정류장 · 연관 관광지 주문진항 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 3 / 기준 관광지 BTS버스정류장 · 연관 관광지 주문진수산시장 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 4 / 기준 관광지 BTS버스정류장 · 연관 관광지 강릉커피거리 · 분류 음식 · 지역 강원특별자치도 · 연관 순위 5 / 기준 관광지 BTS버스정류장 · 연관 관광지 휴휴암 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 6 / 기준 관광지 BTS버스정류장 · 연관 관광지 철뚝소머리집 · 분류 음식 · 지역 강원특별자치도 · 연관 순위 7 / 기준 관광지 BTS버스정류장 · 연관 관광지 남애항전망대 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 8",
+          "authority": 5
+        },
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "전기차 공공충전요금 개편 완속",
+        "title_hint": "전기차 공공충전요금 개편…완속, kWh당 29.4원 인하",
+        "category": "생활",
+        "trend_score": 105.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "전기차 공공충전요금 개편…완속, kWh당 29.4원 인하",
+            "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148967451&call_from=rsslink",
+            "published_at": "2026-07-01T08:48:00",
+            "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148967451&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>기후에너지환경부는 '전기차 공공충전요금 체계 개편안'을 확정해 8월 1일부터 시행한다고 밝혔다.</p>\n\n<p>이번 개편으로 공공충전요금 체계는 기존 2단계에서 완속 구간과 초급속 구간을 포함한 5단계로 나뉜다.</p>\n\n<p>또한, 요금 단가는 충전기 운영에 드는 전기요금, 운영비, 법정검사비 등을 반영해 산정했다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>서울 한 건물의 전기차 충전소 모습. 2026.4.19. (ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>전체 충전기의 90%를 차지하는 완속충전기(30kW 미만)는 이번 개편으로 기존 공공충전요금 체계보다 kWh당 요금이 29.4원(9.1%) 인하한다.</p>\n\n<p>급속충전기는 설치·운영 비용이 높고 초급속 충전·전력분배 등 충전서비스 품질 향상을 위해 지속적인 기술개발 투자가 필요한 점을 고려해 요금을 일부 인상했다.</p>\n\n<p>전체 충전기의 2.3%를 차지하는 초급속 충전기(200kW 이상)는 기존 공공충전요금 체계보다 kWh당 요금이 45.9원(약 13.2%) 인상했다.</p>\n\n<p>개편된 요금체계는 기후부가 설치해 운영하는 공공충전기를 이용하거나, 정부와 협약을 체결한 민간충전기에서 기후부 회원카드로 결제하는 경우(로밍)에 적용한다.</p>\n\n<p>기후부는 이번 충전요금 개편을 시작으로 향후 요금체계를 지속해서 고도화해 나갈 방침이다.</p>\n\n<p>특히 계시별 전기요금과 전기차 충전요금을 연동하는 요금체계 개편으로 재생에너지 출력이 많은 시간대에 사용자가 싸게 충전할 수 있게 할 예정이다.</p>\n\n<p>정선화 기후부 녹색전환정책관은 \"이번 요금체계 개편은 충전기 운영 비용을 현행화하는 동시에 시장에 충전요금의 기준을 제시하는 의미가 있다\"고 밝히고 \"향후 계시별 연동 요금제로 재생에너지 활용을 극대화하고 전기차 소비자의 요금 부담을 완화할 수 있게 요금체계를 개편해 나가겠다\"고 덧붙였다.</p>\n\n<p>문의: 기후에너지환경부 탈탄소녹색수송혁신과(044-201-6885)</p>\n\n<p><br /></p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "8월부터 전기차 완속 충전요금 29.4원 인하, 누구에게 적용될까?",
+      "slug": "전기차-공공충전요금-개편-완속-e6a63f7f",
+      "excerpt": "2026년 8월 1일부터 전기차 완속 공공충전요금이 kWh당 29.4원 내려갑니다. 적용 대상과 절차, 주요 수치를 표로 정리했습니다.",
+      "body_markdown": "## 주요 변경사항\n\n기후에너지환경부는 2026년 8월 1일부터 전기차 공공충전요금 체계를 개편한다고 발표했습니다.  \n완속충전기(30kW 미만) 이용 시 kWh당 29.4원 인하가 적용됩니다.  \n기존 2단계였던 요금 체계는 완속과 초급속 등 5단계로 세분화됩니다.  \n요금 산정에는 충전기 운영비, 전기요금, 법정검사비 등이 반영되었습니다.\n\n완속충전기는 전체 공공충전기의 90%를 차지합니다.\n\n## 적용 조건과 핵심 정보 한눈에 보기\n\n| 항목            | 내용                                              |\n|----------------|---------------------------------------------------|\n| 시행일         | 2026년 8월 1일                                    |\n| 적용 구분      | 완속충전기(30kW 미만)                             |\n| 인하 폭        | kWh당 29.4원 인하                                 |\n| 전체 비중      | 완속충전기가 공공충전기 중 90%                    |\n| 요금 체계      | 기존 2단계 → 5단계(완속·초급속 등)                |\n| 담당 기관      | 기후에너지환경부                                  |\n| 절차           | 별도 신청 없이 자동 적용(공식 안내 기준)           |\n| 출처           | [기후에너지환경부 정책뉴스](https://www.korea.kr/news/policyNewsView.do?newsId=148967451&call_from=rsslink) |\n\n## 꼭 확인해야 할 부분\n\n- 인하된 요금은 완속충전기(30kW 미만) 공공충전소에서 자동 적용됩니다.\n- 전체 공공충전기의 90%가 완속충전기에 해당하므로 대부분의 이용자가 혜택을 받습니다.\n- 2026년 8월 1일부터 시행되며, 별도의 신청 절차는 필요 없습니다.\n- 기후에너지환경부에서 공식 발표한 정책이므로, 최신 안내는 원문 링크에서 확인하세요.\n\n## 참고 출처\n\n- [전기차 공공충전요금 개편…완속, kWh당 29.4원 인하](https://www.korea.kr/news/policyNewsView.do?newsId=148967451&call_from=rsslink)  \n(2026-07-01 공개)",
+      "tags": [
+        "생활",
+        "전기차",
+        "공공충전요금",
+        "개편",
+        "완속"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1567409378873-888d6fa7debc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxlbGVjdHJpYyUyMHZlaGljbGUlMjBjYXIlMjBjbGVhbiUyMGVuZXJneSUyMGNoYXJnaW5nJTIwd2lyZWxlc3MlMjBwb3dlciUyMHRlY2h8ZW58MXwwfHx8MTc4MjkzNzA5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "8월부터 전기차 완속 충전요금 29.4원 인하, 누구에게 적용될까? — Photo by Andrew Roberts on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1615901555268-839b7a1ede54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZWxlY3RyaWMlMjB2ZWhpY2xlJTIwY2FyJTIwY2xlYW4lMjBlbmVyZ3klMjBjaGFyZ2luZyUyMHdpcmVsZXNzJTIwcG93ZXIlMjB0ZWNofGVufDF8MHx8fDE3ODI5MzcwOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "8월부터 전기차 완속 충전요금 29.4원 인하, 누구에게 적용될까? 본문 보조 이미지 — Photo by myenergi on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 8월부터 전기차 완속 충전요금 29.4원 인하, 누구에게 적용될까?. Keyword: 전기차 공공충전요금 개편 완속. Concrete visual subject: electric vehicle car clean energy charging wireless power tech. Context: ## 주요 변경사항 기후에너지환경부는 2026년 8월 1일부터 전기차 공공충전요금 체계를 개편한다고 발표했습니다. 완속충전기(30kW 미만) 이용 시 kWh당 29.4원 인하가 적용됩니다. 기존 2단계였던 요금 체계는 완속과 초급속 등 5단계로 세분화됩니다. 요금 산정에는 충전기 운영비, 전기요금, 법정검사비 등이 반영되었습니다. 완속충전기는 전체 공공충전기의 90%를 차지합니다. ## 적용 조건과 핵심 정보 한눈에 보기 | 항목 | 내용 | |----------------|---------------------------------------------------| | 시행일 | 2026년 8월 1일 | | 적용 구분 | 완속충전기(30kW 미만) | | 인하 폭 | kWh당 29.4원 인하 | | 전체 비중 | 완속충전기가 공공충전기 중 90% | | 요금 체계 | 기존 2단계 → 5단계(완속·초급속 등) | | 담당 기관 | 기후에너지환경부 | | 절차 | 별도 신청 없이 자동 적용(공식 안내 기준) | | 출처 | [기후에너지환경부 정책뉴스](https://www.korea.kr/news/policyNewsView.do?newsId=148967451&call_from=rsslink) | ## 꼭 확인해야 할 부분 - 인하된 요금은 완속충전기(30kW 미만) 공공충전소에서 자동 적용됩니다. - 전체 공공충전기의 90%가 완속충전. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 8월부터 전기차 완속 충전요금 29.4원 인하, 누구에게 적용될까?. Keyword: 전기차 공공충전요금 개편 완속. Concrete visual subject: electric vehicle car clean energy charging wireless power tech. Article context: ## 주요 변경사항 기후에너지환경부는 2026년 8월 1일부터 전기차 공공충전요금 체계를 개편한다고 발표했습니다. 완속충전기(30kW 미만) 이용 시 kWh당 29.4원 인하가 적용됩니다. 기존 2단계였던 요금 체계는 완속과 초급속 등 5단계로 세분화됩니다. 요금 산정에는 충전기 운영비, 전기요금, 법정검사비 등이 반영되었습니다. 완속충전기는 전체 공공충전기의 90%를 차지합니다. ## 적용 조건과 핵심 정보 한눈에 보기 | 항목 | 내용 | |----------------|---------------------------------------------------| | 시행일 | 2026년 8월 1일 | | 적용 구분 | 완속충전기(30kW 미만) | | 인하 폭 | kWh당 29.4원 인하 | | 전체 비중 | 완속충전기가 공공충전기 중 90% | | 요금 체계 | 기존 2단계 → 5단계(완속·초급속 등) | | 담당 기관 | 기후에너지환경부 | | 절차 | 별도 신청 없이 자동 적용(공식 안내 기준) | | 출처 | [기후에너지환경부 정책뉴스](https://www.korea.kr/news/policyNewsView.do?newsId=148967451&call_from=rsslink) | ## 꼭 확인해야 할 부분 - 인하된 요금은 완속충전기(30kW 미만) 공공충전소에서 자동 적용됩니다. - 전체 공공충전기의 90%가 완속충전기에 해당하므로 대부분의 이용자가 혜택을 받습니다. - 2026년 8월 1일부터 시행되며, 별도의 신청 절차는 필요 없습니다. - 기후에너지환경부에서 공식 발표한 정책이므로, 최신 안내는 원문 링크에서 확인하세요. ## 참고 출처 - [전기차 공공충전요금 개편…완속, kWh당 29.4원 인하](https://www.korea.kr/news/policyNew. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-01T20:18:03.077315",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "피지컬 AI 1강 청사진 나왔다 핵심",
+        "title_hint": "'피지컬 AI 1강' 청사진 나왔다…핵심 경쟁력 확보 전략 공개",
+        "category": "기술",
+        "trend_score": 105.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "'피지컬 AI 1강' 청사진 나왔다…핵심 경쟁력 확보 전략 공개",
+            "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148967446&call_from=rsslink",
+            "published_at": "2026-07-01T08:01:00",
+            "summary": "<a href=\"https://www.korea.kr/news/policyNewsView.do?newsId=148967446&amp;call_from=rsslink\" target=\"_blank\"><img align=\"right\" src=\"https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif\" style=\"border-width: 5; border-color: white;\" /></a><br /><br /><p>우리나라가 '피지컬 AI 1강' 도약을 위한&nbsp;데이터, 기술, 확산, 생태계 등 4대 추진 전략을 담은 청사진이 마련됐다.&nbsp;</p>\n\n<p>과학기술정보통신부는 지난달 29일 대한민국 대도약 3대 메가프로젝트 국민보고회에서 피지컬 AI 정책 추진 방향을 발표한 데 이어, 1일 K-문샷 프로젝트의 일환으로 대한민국을 명실상부한 피지컬 AI 1강으로 끌어올릴 구체적인 방안을 담은 피지컬 AI 핵심 경쟁력 확보 전략을 공개했다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>서울 강남구 코엑스에서 열린 '2026 월드IT쇼'(WIS 2026)를 찾은 관람객들이 KT 부스에서 K-RaaS 플랫폼을 활용한 산업 현장 피지컬 AI 시연을 지켜보고 있다. 2026.4.22 (ⓒ뉴스1, 무단 전재-재배포 금지)</b></figcaption></figure></div>\n\n<p>피지컬 AI는 아직 태동 중인 초기 시장이며, 우리나라도 양질의 현장 데이터, 최적의 실증 현장, 국민의 AI 수용성 등을 바탕으로 피지컬 AI 1강이 되기 위한 잠재력을 충분히 지니고 있다.</p>\n\n<p>이에 따라 정부는 대한민국을 피지컬 AI 1강으로 이끌기 위해 글로벌 최고 수준의 피지컬 AI 풀스택 기술 확보와 제조·농업·국방·돌봄 등 전 영역으로의 확산을 목표로 구체적인 추진 방안을 마련했다</p>\n\n<p>정부는 먼저, 다양한 분야에서 생성되는 실데이터와 합성데이터를 수집하고 분야별 플랫폼 등을 통해 피지컬 AI 기술개발에 활용할 수 있는 체계를 마련하기로 했다.</p>\n\n<p>구체적으로, 정부 사업으로 생성되는 로봇 행동데이터 등 범용 데이터와 분야별 데이터를 한 곳에 집적하고, 데이터의 유효성 검증, 상호운용성 표준 제정 등 품질을 관리할 수 있는 체계를 구축해 양질의 데이터에 대한 종합적인 관리체계를 구축할 예정이다.</p>\n\n<p>아울러, 기업이 찾아와서 필요한 범용 행동 데이터를 자유롭게 획득·학습·실증할 수 있게 지원할 뿐만 아니라, 제조, 모빌리티, 농업 등 현장의 행동 데이터 등 특화 데이터도 확보하고 활용할 수 있게 범부처 협력 기반의 피지컬 AI 범용·특화 데이터 수집·활용 체계도 함께 구축하기로 했다.</p>\n\n<p>정부는 이어서, 글로벌 선도 국가의 기술력에 종속되지 않고 우리만의 독자적인 피지컬 AI 기술력을 확보하기 위해 근간이 되는 기술들을 확보해 나가기로 했다.</p>\n\n<p>이를 위해 우선, 사람처럼 스스로 계획을 수립하고 장기 작업과 정밀 조작이 가능한 범용성을 갖춘 피지컬 AI 파운데이션 모델과 세상의 변화를 예측하고 시뮬레이션해 AI 학습과 의사결정을 지원하는 월드모델, 온디바이스에서 AI 모델이 지연 없이 작동할 수 있는 컴퓨팅 플랫폼 등 3대 공통 기반 기술을 확보해 피지컬 AI 풀스택 체계를 갖출 계획이다.</p>\n\n<p>그 첫 단추로, 올해부터 LG전자, 마음AI, KT, 카이스트, 서울대 등으로 구성된 컨소시엄이 월드모델을 중심으로 기반 기술 확보에 본격 착수한 바 있다.</p>\n\n<div class=\"imageWrap\"><figure class=\"center\" style=\"width: 720px;\"><span class=\"imageSpan\"><img alt=\"피지컬 AI 풀스택 체계.(자료=과학기술정보통신부)\" src=\"https://www.korea.kr/newsWeb/resources/attaches/2026.07/01/dgfdsgfd.jpg\" /></span><figcaption class=\"captions\" style=\"font-size: 12pt;\"><b>피지컬 AI 풀스택 체계.(자료=과학기술정보통신부)</b></figcaption></figure></div>\n\n<p>더불어, 피지컬 AI 핵심기술을 제조 장비가 공정 상태를 예측하고 스스로 최적 제어하는 자율 정밀 제조 기술이나 공장 상황 변화에 맞춰 미래 상태를 예측하고 유연하게 생산하는 공장 운영 기술 등 지역 제조 현장에 선도적으로 실증하고, 성과를 타 산업 분야로 확산하는 한편, 피지컬 AI 핵심기술이 탑재될 디바이스 기술과 안전·신뢰 확보를 위한 통신·보안 기술도 함께 개발할 예정이다.</p>\n\n<p>정부는 또한, 부처별·분야별 피지컬 AI 적용 수요를 발굴하고 필요한 기술을 수요와 연결해 신속하게 실증하고 확산할 수 있게 범부처 협력체계를 구축하기로 했다.</p>\n\n<p>이를 통해 기술개발, 데이터 구축·활용, 실증·상용화까지 전 주기에 걸쳐 범부처의 정책을 서로 연계해 효과적으로 지원할 예정이다.</p>\n\n<p>구체적으로는, 과기정통부의 기술 개발·지원과 도메인 부처의 수요 발굴의 연계 등을 바탕으로 개별 작업·공정 단위에 기술을 적용해 성과를 빠르게 창출할 수 있는 프로젝트와 안전·국방·돌봄·농업 등 다양한 분야의 수요에 개발된 기술을 적용해 완결된 자율지능을 구현할 수 있는 프로젝트 등을 추진해 피지컬 AI가 우리 생활을 실질적으로 변화시킬 수 있도록 지원할 예정이다.</p>\n\n<p>정부는 이와 함께, 기술개발, 실증·상용화, 산업 육성 등을 종합적으로 지원하기 위한 법적 기반을 마련하고, 관계부처와 협의해&nbsp;유망 스타트업부터 핵심 기업에 이르는 맞춤형 투자를 지원하기로 했다.</p>\n\n<p>아울러, 피지컬 AI를 활용할 수 있는 실무인재부터 모델을 개발할 수 있는 고급인재까지 전방위 인재 양성체계를 갖추는 등 성장 기반을 구축할 예정이다.</p>\n\n<p>또&nbsp;지난달 19일 출범한 피지컬 AI 얼라이언스 2기 등을 통해 모델, 솔루션뿐만 아니라 통신망, 시스템 통합, 데이터센터, 보안, 운영 등 피지컬 AI의 모든 측면을 아우르는 풀스택을 국산화하고 이를 수출 산업으로 이어질 수 있게 하는 생태계를 구축해 나갈 계획이다.</p>\n\n<p>배경훈 부총리 겸 과기정통부 장관은 \"피지컬 AI 산업을 제대로 육성하기 위해서는 글로벌 선도 국가인 미국과 중국 등의 기술력에 종속되지 않고 우리만의 기술력을 확보하는 것이 중요하다\"고 강조하면서 \"민간의 창의적인 도전과 정부의 전폭적인 지원이 시너지를 내어 대한민국이 피지컬 AI 경쟁력을 확보하고 세계로 수출하는 명실상부한 1강이 되도록 적극 뒷받침하겠다\"고 밝혔다.</p>\n\n<p>문의 : 과학기술정보통신부 정보통신산업정책관(044-202-6221), 디바이스AX혁신팀(6254, 6251)</p><br />[자료제공 :<a href=\"https://www.korea.kr\"><img src=\"https://www.korea.kr/newsWeb/resources/rss/icon_logo.gif\" style=\"vertical-align: middle; border-color: white;\" />(www.korea.kr)</a>]<br />",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "2026년 피지컬 AI 1강 전략, 무엇이 바뀌나?",
+      "slug": "피지컬-ai-1강-청사진-나왔다-핵심-a8eddf57",
+      "excerpt": "2026년 '피지컬 AI 1강' 청사진이 공개되었습니다. 데이터 보호부터 생성 AI 활용까지, 핵심 경쟁력 확보 전략의 주요 기준을 정리합니다.",
+      "body_markdown": "## 1. 2026년 피지컬 AI 1강 청사진 공개\n\n과학기술정보통신부는 2026년 7월 1일, 대한민국을 피지컬 AI 1강으로 도약시키기 위한 경쟁력 확보 전략을 발표했습니다.  \n이번 전략은 데이터, 기술, 확산, 생태계 등 4대 추진 방향을 구체적으로 제시하며, 대한민국 대도약 3대 메가프로젝트의 하나로 추진되고 있습니다.\n\n## 2. 주요 추진 배경\n\n- 글로벌 플랫폼 기업(Google 등)은 검색·클라우드뿐 아니라 이미지, 영상, 생산성 도구에 생성 AI를 통합하고 있습니다.\n- 이번 청사진은 단순한 서비스 이름보다, 입력 데이터와 결과물 활용 방식에 초점을 맞추고 있습니다.\n\n## 3. 생성 AI 활용 시 꼭 체크할 기준\n\n| 항목                 | 구체 내용                                                                                   |\n|----------------------|--------------------------------------------------------------------------------------------|\n| 적용 대상            | AI 이미지 도구 이용자, 크리에이터, 플랫폼 사용자                                          |\n| 기술 맥락            | 생성형 이미지 모델, 개인화 콘텐츠, 데이터 보호, 플랫폼 내 AI 기능 통합                   |\n| 사용자 영향          | 사진 변환, 캐릭터 생성, SNS 공유, 데이터 저장·보관 설정 필요                              |\n| 공식 적용 지역       | 대한민국, 주요 글로벌 플랫폼(공식 안내 기준)                                              |\n| 데이터 보관 정책     | 입력 데이터 저장 기간, 개인정보 보호, 삭제·공유 설정                                      |\n| 상업적 이용 가능 여부| 서비스 약관 기반, 일부 기능은 상업적 활용 제한                                            |\n| 워터마크 및 표시 정책| 결과물에 자동 워터마크 삽입, 저작권 안내 표시                                              |\n| 절차 및 기관명       | 과학기술정보통신부, K-문샷 프로젝트, 월드IT쇼(WIS 2026)                                   |\n\n## 4. 독자가 알아야 할 핵심 포인트\n\n- '피지컬 AI 1강 청사진'의 핵심은 내 사진과 생활 데이터의 활용 방식에 있습니다.\n- 무료 AI 기능이라도 결과물 공유와 데이터 보관 조건은 서비스 약관에 따라 달라집니다.\n- 크리에이터에겐 빠른 시안 제작 도구가 되지만, 원본성·저작권 논란이 함께 발생할 수 있습니다.\n- 공식 보도자료, 후속 공지, 실제 적용 사례까지 꼼꼼히 확인하는 것이 안전합니다.\n\n## 5. 참고 출처\n\n- ['피지컬 AI 1강' 청사진 나왔다…핵심 경쟁력 확보 전략 공개](https://www.korea.kr/news/policyNewsView.do?newsId=148967446&call_from=rsslink) (2026-07-01)\n\n---\n\n**피지컬 AI 1강 청사진 나왔다 핵심**: 2026년 최신 전략의 변화와 기준을 확인하세요.",
+      "tags": [
+        "기술",
+        "피지컬",
+        "AI",
+        "1강",
+        "청사진"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgyOTM3MTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "2026년 피지컬 AI 1강 전략, 무엇이 바뀌나? — Photo by Numan Ali on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgyOTM3MTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "2026년 피지컬 AI 1강 전략, 무엇이 바뀌나? 본문 보조 이미지 — Photo by Steve A Johnson on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2026년 피지컬 AI 1강 전략, 무엇이 바뀌나?. Keyword: 피지컬 AI 1강 청사진 나왔다 핵심. Concrete visual subject: artificial intelligence neural network. Context: ## 1. 2026년 피지컬 AI 1강 청사진 공개 과학기술정보통신부는 2026년 7월 1일, 대한민국을 피지컬 AI 1강으로 도약시키기 위한 경쟁력 확보 전략을 발표했습니다. 이번 전략은 데이터, 기술, 확산, 생태계 등 4대 추진 방향을 구체적으로 제시하며, 대한민국 대도약 3대 메가프로젝트의 하나로 추진되고 있습니다. ## 2. 주요 추진 배경 - 글로벌 플랫폼 기업(Google 등)은 검색·클라우드뿐 아니라 이미지, 영상, 생산성 도구에 생성 AI를 통합하고 있습니다. - 이번 청사진은 단순한 서비스 이름보다, 입력 데이터와 결과물 활용 방식에 초점을 맞추고 있습니다. ## 3. 생성 AI 활용 시 꼭 체크할 기준 | 항목 | 구체 내용 | |----------------------|--------------------------------------------------------------------------------------------| | 적용 대상 | AI 이미지 도구 이용자, 크리에이터, 플랫폼 사용자 | | 기술 맥락 | 생성형 이미지 모델, 개인화 콘텐츠, 데이터 보호, 플랫폼 내 AI 기능 통합 | | 사용자 영향 | 사진 변환, 캐릭터 생성, SNS 공유, 데이터 저장·보관 설정 필요 | | 공식 적용 지역 | 대한민국, 주요 글로벌 플랫폼(공식 안내 기준) | | 데이터 보관 정책 | 입력 데이터 저장. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 2026년 피지컬 AI 1강 전략, 무엇이 바뀌나?. Keyword: 피지컬 AI 1강 청사진 나왔다 핵심. Concrete visual subject: artificial intelligence neural network. Article context: ## 1. 2026년 피지컬 AI 1강 청사진 공개 과학기술정보통신부는 2026년 7월 1일, 대한민국을 피지컬 AI 1강으로 도약시키기 위한 경쟁력 확보 전략을 발표했습니다. 이번 전략은 데이터, 기술, 확산, 생태계 등 4대 추진 방향을 구체적으로 제시하며, 대한민국 대도약 3대 메가프로젝트의 하나로 추진되고 있습니다. ## 2. 주요 추진 배경 - 글로벌 플랫폼 기업(Google 등)은 검색·클라우드뿐 아니라 이미지, 영상, 생산성 도구에 생성 AI를 통합하고 있습니다. - 이번 청사진은 단순한 서비스 이름보다, 입력 데이터와 결과물 활용 방식에 초점을 맞추고 있습니다. ## 3. 생성 AI 활용 시 꼭 체크할 기준 | 항목 | 구체 내용 | |----------------------|--------------------------------------------------------------------------------------------| | 적용 대상 | AI 이미지 도구 이용자, 크리에이터, 플랫폼 사용자 | | 기술 맥락 | 생성형 이미지 모델, 개인화 콘텐츠, 데이터 보호, 플랫폼 내 AI 기능 통합 | | 사용자 영향 | 사진 변환, 캐릭터 생성, SNS 공유, 데이터 저장·보관 설정 필요 | | 공식 적용 지역 | 대한민국, 주요 글로벌 플랫폼(공식 안내 기준) | | 데이터 보관 정책 | 입력 데이터 저장 기간, 개인정보 보호, 삭제·공유 설정 | | 상업적 이용 가능 여부| 서비스 약관 기반, 일부 기능은 상업적 활용 제한 | | 워터마크 및 표시 정책| 결과물에 자동 워터마크 삽입, 저작권 안내 표시 | | 절차 및 기관명 | 과학기술정보통신부, K-문샷 프로젝트, 월드IT쇼(WIS 2026) | ## 4. 독자가 알아야 할 핵심 포인트 - '피지컬 A. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-01T20:18:40.086847",
+      "quality_score": 92.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '무엇이 바뀌나' 포함",
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "07월 대출",
+        "title_hint": "07월 대출 핵심 정리",
+        "category": "정책",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "금융위원회 보도자료",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "07월 대출, 실제 적용 대상과 한도 꼭 확인하세요",
+      "slug": "07월-대출-d0184ddc",
+      "excerpt": "2026년 7월 대출 정책은 담당 기관, 적용 대상, 지원 한도 등 구체적 기준을 확인하는 것이 중요합니다.",
+      "body_markdown": "## 07월 대출, 무엇을 먼저 확인해야 할까?\n\n금융위원회 보도자료는 새로운 대출 정책이나 공공 금융 지원의 변화를 공식적으로 안내합니다. 07월 대출 관련 내용은 발표만 보는 것이 아니라, 실제로 누구에게 적용되는지와 집행 방식, 세부 조건을 꼼꼼히 살펴야 합니다.\n\n---\n\n### 정책 적용 기준 체크리스트\n\n| 항목         | 세부 내용                                                              |\n|--------------|-----------------------------------------------------------------------|\n| 담당 기관    | 금융위원회 (공식 정책 안내 및 집행)                                   |\n| 적용 대상    | 개인, 가구, 사업자, 기관 등 구체적으로 명시                           |\n| 시행일       | 보도자료 발표일과 정책 시행일 일치 여부, 유예 기간 존재 여부           |\n| 지원 한도     | 금액, 비율, 대출 한도 등 구체적 수치 공개                             |\n| 신청 절차    | 직접 신청, 자동 적용, 별도 신고 등 방식 명확화                         |\n| 예외 기준    | 소득, 지역, 업종, 기존 대출 이용자 등 예외 조건                        |\n| 후속 안내    | 추가 자료, 담당 부서, 공식 홈페이지 등 후속 확인 경로                  |\n\n---\n\n## 정책 발표와 실제 집행의 차이\n\n금융 정책은 발표 후 실제 집행까지 시간이 소요될 수 있습니다. 시행령, 고시, 그리고 신청 페이지 오픈 여부까지 확인해야 정책이 현실에서 어떻게 적용되는지 알 수 있습니다.\n\n대출 정책의 지원 금액, 비율, 한도, 적용 기간 등 구체적 기준을 파악하지 않으면 실제 혜택과 체감에 차이가 생길 수 있습니다.\n\n---\n\n## 07월 대출 정책 확인 방법\n\n- 금융위원회 공식 포털([fsc.go.kr](https://www.fsc.go.kr/))에서 최신 보도자료와 정책 세부 기준을 확인합니다.\n- 시행일, 적용 대상, 지원 한도, 신청 절차, 예외 조건 등 주요 정보를 체크합니다.\n- 정책 발표와 실제 집행 단계의 차이를 이해하고, 후속 안내를 반드시 확인합니다.\n\n---\n\n## 결론\n\n07월 대출 정책은 제목보다 실제 적용 범위와 구체적 기준이 핵심입니다. 정책 시행일, 적용 대상, 담당 기관, 지원 한도 등 공식 안내 기준을 꼼꼼히 확인하세요.\n\n---\n\n### 참고 출처\n\n- [금융위원회 보도자료](https://www.fsc.go.kr/)  \n금융 정책 및 대출 제도 변경 시 공식 안내를 제공합니다.",
+      "tags": [
+        "정책",
+        "07월",
+        "대출"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxsb2FuJTIwZG9jdW1lbnRzJTIwZmluYW5jZXxlbnwxfDB8fHwxNzgyOTM3MTc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "07월 대출, 실제 적용 대상과 한도 꼭 확인하세요 — Photo by Kelly Sikkema on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1632433105322-e410c2a20e49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxsb2FuJTIwZG9jdW1lbnRzJTIwZmluYW5jZXxlbnwxfDB8fHwxNzgyOTM3MTc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "07월 대출, 실제 적용 대상과 한도 꼭 확인하세요 본문 보조 이미지 — Photo by 2H Media on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 대출, 실제 적용 대상과 한도 꼭 확인하세요. Keyword: 07월 대출. Concrete visual subject: loan documents finance. Context: ## 07월 대출, 무엇을 먼저 확인해야 할까? 금융위원회 보도자료는 새로운 대출 정책이나 공공 금융 지원의 변화를 공식적으로 안내합니다. 07월 대출 관련 내용은 발표만 보는 것이 아니라, 실제로 누구에게 적용되는지와 집행 방식, 세부 조건을 꼼꼼히 살펴야 합니다. --- ### 정책 적용 기준 체크리스트 | 항목 | 세부 내용 | |--------------|-----------------------------------------------------------------------| | 담당 기관 | 금융위원회 (공식 정책 안내 및 집행) | | 적용 대상 | 개인, 가구, 사업자, 기관 등 구체적으로 명시 | | 시행일 | 보도자료 발표일과 정책 시행일 일치 여부, 유예 기간 존재 여부 | | 지원 한도 | 금액, 비율, 대출 한도 등 구체적 수치 공개 | | 신청 절차 | 직접 신청, 자동 적용, 별도 신고 등 방식 명확화 | | 예외 기준 | 소득, 지역, 업종, 기존 대출 이용자 등 예외 조건 | | 후속 안내 | 추가 자료, 담당 부서, 공식 홈페이지 등 후속 확인 경로 | --- ## 정책 발표와 실제 집행의 차이 금융 정책은 발표 후 실제 집행까지 시간이 소요될 수 있습니다. 시행령, 고시, 그리고 신청 페이지 오픈 여부까지 확인해야 정책이 현실에서 어떻게 적용되는지 알 수 있습니다. 대출 정책의 지원 금액, 비율. Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 07월 대출, 실제 적용 대상과 한도 꼭 확인하세요. Keyword: 07월 대출. Concrete visual subject: loan documents finance. Article context: ## 07월 대출, 무엇을 먼저 확인해야 할까? 금융위원회 보도자료는 새로운 대출 정책이나 공공 금융 지원의 변화를 공식적으로 안내합니다. 07월 대출 관련 내용은 발표만 보는 것이 아니라, 실제로 누구에게 적용되는지와 집행 방식, 세부 조건을 꼼꼼히 살펴야 합니다. --- ### 정책 적용 기준 체크리스트 | 항목 | 세부 내용 | |--------------|-----------------------------------------------------------------------| | 담당 기관 | 금융위원회 (공식 정책 안내 및 집행) | | 적용 대상 | 개인, 가구, 사업자, 기관 등 구체적으로 명시 | | 시행일 | 보도자료 발표일과 정책 시행일 일치 여부, 유예 기간 존재 여부 | | 지원 한도 | 금액, 비율, 대출 한도 등 구체적 수치 공개 | | 신청 절차 | 직접 신청, 자동 적용, 별도 신고 등 방식 명확화 | | 예외 기준 | 소득, 지역, 업종, 기존 대출 이용자 등 예외 조건 | | 후속 안내 | 추가 자료, 담당 부서, 공식 홈페이지 등 후속 확인 경로 | --- ## 정책 발표와 실제 집행의 차이 금융 정책은 발표 후 실제 집행까지 시간이 소요될 수 있습니다. 시행령, 고시, 그리고 신청 페이지 오픈 여부까지 확인해야 정책이 현실에서 어떻게 적용되는지 알 수 있습니다. 대출 정책의 지원 금액, 비율, 한도, 적용 기간 등 구체적 기준을 파악하지 않으면 실제 혜택과 체감에 차이가 생길 수 있습니다. --- ## 07월 대출 정책 확인 방법 - 금융위원회 공식 포털([fsc.go.kr](https://www.fsc.go.kr/))에서 최신 보도자료와 정책 세부 기준을 확인합니다. - 시행일, 적용 대상, 지원 한도, 신청 절차, 예외 조건 등 주요 정보. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-01T20:19:26.079819",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "07월 국회",
+        "title_hint": "07월 국회 핵심 정리",
+        "category": "정치",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "중앙선거관리위원회 선거통계시스템",
+            "url": "https://info.nec.go.kr/",
+            "published_at": null,
+            "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "07월 국회, 달라진 5가지 체크포인트",
+      "slug": "07월-국회-9b4e9f03",
+      "excerpt": "2026년 07월 국회 개원 후 달라진 인물 구성과 정당 의석, 입법 절차의 변화를 공식 통계로 확인할 수 있습니다. 실제로 누구에게 영향을 미치는지, 꼭 알아야 할 핵심을 정리합니다.",
+      "body_markdown": "의외로 중요한 변화는 국회 개원 이후에 드러납니다. 많은 사람들이 당선인 명단만 확인하지만, 실제로는 인물 구성, 정당별 의석 분포, 입법 절차 변화까지 꼼꼼히 살펴야 자신에게 영향을 미치는 부분을 알 수 있습니다.\n\n**1. 당선인 경력과 비율 변화**  \n중앙선거관리위원회 선거통계시스템([https://info.nec.go.kr/](https://info.nec.go.kr/))에서 07월 국회에 입성한 의원들의 초선, 재선, 삼선 비율과 경력을 확인할 수 있습니다. 초선 의원이 많아지면 새로운 시각이 입법에 반영될 가능성이 높아지고, 재선·삼선 의원 비율이 높으면 기존 관행이 유지될 수 있습니다.\n\n**2. 정당별 의석 분포**  \n이번 07월 국회에서는 일부 정당이 새롭게 의석을 확보했습니다. 정당은 시민의 정치적 의사를 대표하는 조직으로, 의석 수에 따라 법안 발의와 예산 심사 권한이 달라집니다. 특히 중소정당의 입지 변화는 국회 내 협상 구조와 정책 추진 방향에 직접 영향을 줍니다.\n\n**3. 위원회 구성과 절차 변화**  \n상임위원회는 각 분야별로 법안과 예산을 심사하는 조직입니다. 07월 국회부터 일부 위원회의 구성 방식과 위원장 선출, 법안 심사 기준이 변경되어 법안 처리 속도가 달라질 수 있습니다. 이런 변화는 국회 공식 홈페이지 및 보도자료에서 확인할 수 있습니다.\n\n**4. 주요 입법 안건 우선순위**  \n국회 홈페이지에서 우선 처리되는 법안과 예산 배정 분야를 확인할 수 있습니다. 복지, 경제, 교육 등 각 분야별로 정책 수혜 계층이 달라지므로, 예산안과 입법 예고안을 비교하는 것이 중요합니다.\n\n**5. 정책 예산 배정**  \n행정기관의 예산안에서는 복지·경제 분야 확대 여부를 확인할 수 있습니다. 예산 배정은 취약 계층, 청년, 자영업자 등 다양한 유권자에게 직접적인 영향을 줍니다.\n\n아래 표로 07월 국회 핵심 변화와 공식 확인 경로를 한눈에 볼 수 있습니다.\n\n| 변화 항목           | 달라진 점                 | 영향 받는 대상           | 공식 확인 경로                    | 추가 확인 방법          |\n|--------------------|--------------------------|--------------------------|------------------------------------|-------------------------|\n| 당선인 경력        | 초선·재선 비율 변화       | 입법 과정, 정책 방향     | 중앙선거관리위원회 선거통계시스템  | 의원 프로필 검색       |\n| 정당별 의석 분포   | 중소정당 입지 확대        | 협상 구조, 정책 다양화   | 중앙선거관리위원회 선거통계시스템  | 각 정당 공약 확인      |\n| 위원회 구성 방식   | 위원장, 심사 절차 변화    | 법안 처리 속도           | 국회 홈페이지 및 보도자료          | 위원회 회의록 열람     |\n| 주요 입법 안건     | 우선 처리 분야 변경       | 정책 수혜 계층           | 국회 홈페이지                      | 입법 예고안 비교       |\n| 정책 예산 배정     | 복지/경제 분야 확대 여부  | 유권자, 사업자           | 행정기관 예산안                    | 예산안 설명회 영상     |\n\n**왜 확인해야 할까?**  \n07월 국회는 앞으로 1년간 법률과 예산을 결정하는 핵심 시기입니다. 정책과 절차의 변화는 학생, 취업 준비생, 자영업자, 기업 등 모든 사회 계층에 직접 영향을 미칩니다. 특히 공약 실현 여부, 입법 방향, 예산 배정은 미리 점검해둘 필요가 있습니다.\n\n**무엇을 확인해야 할까?**  \n- 중앙선거관리위원회 선거통계시스템에서 당선인 경력과 정당별 의석 구성을 점검  \n- 국회 공식 홈페이지에서 위원회 구성, 주요 법안 예고, 정책 예산 배정 변화 확인  \n- 각 정당 공약과 위원회 회의록 참고해 실제 논의 과정 살펴보기\n\n공식 자료를 활용하면 언론 보도만으로는 놓칠 수 있는 실제 변화와 정책 정보를 빠르게 확인할 수 있습니다.  \n07월 국회에 관심이 있다면, 공식 경로를 통해 직접 확인하는 것이 가장 확실합니다.",
+      "tags": [
+        "정치",
+        "07월",
+        "국회"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1772452515931-461c180378e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgyOTM3MjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "07월 국회, 달라진 5가지 체크포인트 — Photo by Alessandro Cesar Santos on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1781500415381-aa9c3664a2d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgyOTM3MjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "07월 국회, 달라진 5가지 체크포인트 본문 보조 이미지 — Photo by William Ducret on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 국회, 달라진 5가지 체크포인트. Keyword: 07월 국회. Concrete visual subject: neutral election civic public office. Context: 의외로 중요한 변화는 국회 개원 이후에 드러납니다. 많은 사람들이 당선인 명단만 확인하지만, 실제로는 인물 구성, 정당별 의석 분포, 입법 절차 변화까지 꼼꼼히 살펴야 자신에게 영향을 미치는 부분을 알 수 있습니다. **1. 당선인 경력과 비율 변화** 중앙선거관리위원회 선거통계시스템([https://info.nec.go.kr/](https://info.nec.go.kr/))에서 07월 국회에 입성한 의원들의 초선, 재선, 삼선 비율과 경력을 확인할 수 있습니다. 초선 의원이 많아지면 새로운 시각이 입법에 반영될 가능성이 높아지고, 재선·삼선 의원 비율이 높으면 기존 관행이 유지될 수 있습니다. **2. 정당별 의석 분포** 이번 07월 국회에서는 일부 정당이 새롭게 의석을 확보했습니다. 정당은 시민의 정치적 의사를 대표하는 조직으로, 의석 수에 따라 법안 발의와 예산 심사 권한이 달라집니다. 특히 중소정당의 입지 변화는 국회 내 협상 구조와 정책 추진 방향에 직접 영향을 줍니다. **3. 위원회 구성과 절차 변화** 상임위원회는 각 분야별로 법안과 예산을 심사하는 조직입니다. 07월 국회부터 일부 위원회의 구성 방식과 위원장 선출, 법안 심사 기준이 변경되어 법안 처리 속도가 달라질 수 있습니다. 이런 변화는 국회 공식 홈페이지 및 보도자료에서 확인할 수 있습니다. **4. 주요 입법 안건 우선순위** 국회 홈페이지에서 우선 처리되. Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 07월 국회, 달라진 5가지 체크포인트. Keyword: 07월 국회. Concrete visual subject: neutral election civic public office. Article context: 의외로 중요한 변화는 국회 개원 이후에 드러납니다. 많은 사람들이 당선인 명단만 확인하지만, 실제로는 인물 구성, 정당별 의석 분포, 입법 절차 변화까지 꼼꼼히 살펴야 자신에게 영향을 미치는 부분을 알 수 있습니다. **1. 당선인 경력과 비율 변화** 중앙선거관리위원회 선거통계시스템([https://info.nec.go.kr/](https://info.nec.go.kr/))에서 07월 국회에 입성한 의원들의 초선, 재선, 삼선 비율과 경력을 확인할 수 있습니다. 초선 의원이 많아지면 새로운 시각이 입법에 반영될 가능성이 높아지고, 재선·삼선 의원 비율이 높으면 기존 관행이 유지될 수 있습니다. **2. 정당별 의석 분포** 이번 07월 국회에서는 일부 정당이 새롭게 의석을 확보했습니다. 정당은 시민의 정치적 의사를 대표하는 조직으로, 의석 수에 따라 법안 발의와 예산 심사 권한이 달라집니다. 특히 중소정당의 입지 변화는 국회 내 협상 구조와 정책 추진 방향에 직접 영향을 줍니다. **3. 위원회 구성과 절차 변화** 상임위원회는 각 분야별로 법안과 예산을 심사하는 조직입니다. 07월 국회부터 일부 위원회의 구성 방식과 위원장 선출, 법안 심사 기준이 변경되어 법안 처리 속도가 달라질 수 있습니다. 이런 변화는 국회 공식 홈페이지 및 보도자료에서 확인할 수 있습니다. **4. 주요 입법 안건 우선순위** 국회 홈페이지에서 우선 처리되는 법안과 예산 배정 분야를 확인할 수 있습니다. 복지, 경제, 교육 등 각 분야별로 정책 수혜 계층이 달라지므로, 예산안과 입법 예고안을 비교하는 것이 중요합니다. **5. 정책 예산 배정** 행정기관의 예산안에서는 복지·경제 분야 확대 여부를 확인할 수 있습니다. 예산 배정은 취약 계층, 청년, 자영업자 등 다양한 유권자에게 직접적인 영향을 줍니다. 아. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-01T20:19:57.068492",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "07월 강릉 여행",
+        "title_hint": "07월 강릉 여행 핵심 정리",
+        "category": "핫이슈",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드 / TourAPI 연관 관광지 10건 활용",
+        "sources": [
+          {
+            "title": "한국관광공사 TourAPI 관광지별 연관 관광지 정보",
+            "url": "https://www.data.go.kr/data/15128560/openapi.do",
+            "published_at": null,
+            "summary": "TourAPI 관광지별 연관 관광지 정보에서 가져온 공개 데이터입니다. 글에서는 연관 관광지, 주변에서 함께 묶기 좋은 지점, 카테고리 흐름을 우선 반영하세요. 조회 키워드: 07월 강릉 여행. 결과: 기준 관광지 BTS버스정류장 · 연관 관광지 아들바위공원 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 1 / 기준 관광지 BTS버스정류장 · 연관 관광지 도깨비촬영지/(영진해변) · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 2 / 기준 관광지 BTS버스정류장 · 연관 관광지 주문진항 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 3 / 기준 관광지 BTS버스정류장 · 연관 관광지 주문진수산시장 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 4 / 기준 관광지 BTS버스정류장 · 연관 관광지 강릉커피거리 · 분류 음식 · 지역 강원특별자치도 · 연관 순위 5 / 기준 관광지 BTS버스정류장 · 연관 관광지 휴휴암 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 6 / 기준 관광지 BTS버스정류장 · 연관 관광지 철뚝소머리집 · 분류 음식 · 지역 강원특별자치도 · 연관 순위 7 / 기준 관광지 BTS버스정류장 · 연관 관광지 남애항전망대 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 8",
+            "authority": 5
+          },
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "07월 강릉 여행, BTS버스정류장 중심 추천 코스 8곳",
+      "slug": "07월-강릉-여행-cab92db6",
+      "excerpt": "2026년 7월 강릉 여행을 계획할 때 TourAPI 연관 관광지 데이터를 기준으로 BTS버스정류장 주변 주요 명소와 효율적인 동선을 소개합니다.",
+      "body_markdown": "## 07월 강릉 여행, 동선 잡는 법\n\n07월 강릉 여행은 명소 한 곳만 방문하는 것보다 대표 지점을 중심으로 여러 관광지를 연결하는 방식이 효율적입니다. 한국관광공사 TourAPI의 연관 관광지 데이터를 활용하면, BTS버스정류장을 기준으로 주변에서 함께 둘러보기 좋은 장소를 쉽게 찾을 수 있습니다.\n\n### 추천 동선 체크리스트\n\n| 순서 | 장소명             | 분류   | 연관 순위 | 지역             | 안내 기준 |\n|------|-------------------|--------|-----------|------------------|-----------|\n| 1    | BTS버스정류장      | 관광지 | 기준점    | 강원특별자치도   | 대표 지점 |\n| 2    | 아들바위공원       | 관광지 | 1         | 강원특별자치도   | 연관 지점 |\n| 3    | 도깨비촬영지(영진해변) | 관광지 | 2         | 강원특별자치도   | 연관 지점 |\n| 4    | 주문진항           | 관광지 | 3         | 강원특별자치도   | 연관 지점 |\n| 5    | 주문진수산시장     | 관광지 | 4         | 강원특별자치도   | 연관 지점 |\n| 6    | 강릉커피거리       | 음식   | 5         | 강원특별자치도   | 휴식·카페 |\n| 7    | 휴휴암             | 관광지 | 6         | 강원특별자치도   | 연관 지점 |\n| 8    | 남애항전망대       | 관광지 | 8         | 강원특별자치도   | 야경·산책 |\n\n- **BTS버스정류장:** 방탄소년단(BTS)이 촬영한 명소로 최근 팬과 관광객이 많이 찾는 곳입니다.\n- **아들바위공원:** 자연경관이 뛰어나 산책하기 좋습니다.\n- **도깨비촬영지(영진해변):** 인기 드라마 촬영장으로 유명하며 해변 산책이 가능합니다.\n- **주문진항/주문진수산시장:** 해산물과 현지 시장 분위기를 경험할 수 있습니다.\n- **강릉커피거리:** 강릉의 대표 카페 거리로 다양한 커피 전문점을 만날 수 있습니다.\n- **휴휴암:** 바다와 암석이 어우러진 풍경이 인상적인 명소입니다.\n- **남애항전망대:** 바다 전망과 사진 촬영에 적합한 장소입니다.\n\n### 동선 계획 팁\n\n- 대표 관광지(BTS버스정류장)를 시작점으로 잡으면 주변 연관 명소를 2~3곳 선택해 이동이 편리합니다.\n- 카페와 식사는 동선 중간에 배치하면 체력 유지에 도움이 됩니다.\n- 최종 방문지는 야경이나 산책이 가능한 전망대로 잡아 마무리하기 좋습니다.\n- 각 관광지의 주소, 운영시간, 주차, 혼잡도 등은 공식 안내 기준에서 확인 가능합니다.\n- 외국인 여행객이라면 영문 정보와 지도 앱을 함께 활용하면 편리합니다.\n\n### 참고 출처\n\n- [한국관광공사 TourAPI 관광지별 연관 관광지 정보](https://www.data.go.kr/data/15128560/openapi.do)\n- [한국관광공사 VisitKorea 공식 포털](https://korean.visitkorea.or.kr/)\n\n2026년 7월 기준 최신 공식 데이터에 따라 여행 계획을 세우면, 강릉의 대표 명소와 주변 관광지, 카페 거리 등 다양한 체험을 효율적으로 즐길 수 있습니다.",
+      "tags": [
+        "핫이슈",
+        "07월",
+        "강릉",
+        "여행"
+      ],
+      "cover_image_path": "https://images.pexels.com/photos/18721436/pexels-photo-18721436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "cover_image_alt": "07월 강릉 여행, BTS버스정류장 중심 추천 코스 8곳 — Photo by 정규송 Nui MALAMA on Pexels",
+      "inline_image_path": "https://images.pexels.com/photos/14980149/pexels-photo-14980149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "inline_image_alt": "07월 강릉 여행, BTS버스정류장 중심 추천 코스 8곳 본문 보조 이미지 — Photo by 정규송 Nui MALAMA on Pexels",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 강릉 여행, BTS버스정류장 중심 추천 코스 8곳. Keyword: 07월 강릉 여행. Concrete visual subject: travel destination landmark walking gangneung beach coffee street. Context: ## 07월 강릉 여행, 동선 잡는 법 07월 강릉 여행은 명소 한 곳만 방문하는 것보다 대표 지점을 중심으로 여러 관광지를 연결하는 방식이 효율적입니다. 한국관광공사 TourAPI의 연관 관광지 데이터를 활용하면, BTS버스정류장을 기준으로 주변에서 함께 둘러보기 좋은 장소를 쉽게 찾을 수 있습니다. ### 추천 동선 체크리스트 | 순서 | 장소명 | 분류 | 연관 순위 | 지역 | 안내 기준 | |------|-------------------|--------|-----------|------------------|-----------| | 1 | BTS버스정류장 | 관광지 | 기준점 | 강원특별자치도 | 대표 지점 | | 2 | 아들바위공원 | 관광지 | 1 | 강원특별자치도 | 연관 지점 | | 3 | 도깨비촬영지(영진해변) | 관광지 | 2 | 강원특별자치도 | 연관 지점 | | 4 | 주문진항 | 관광지 | 3 | 강원특별자치도 | 연관 지점 | | 5 | 주문진수산시장 | 관광지 | 4 | 강원특별자치도 | 연관 지점 | | 6 | 강릉커피거리 | 음식 | 5 | 강원특별자치도 | 휴식·카페 | | 7 | 휴휴암 | 관광지 | 6 | 강원특별자치도 | 연관 지점 | | 8 | 남애항전망대 | 관광지 | 8 | 강원특별자치도 | 야경·산책 | - **BTS버스정류장:** 방탄소년단(BTS)이 촬영한 명소로 최근 팬과 관광객. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 07월 강릉 여행, BTS버스정류장 중심 추천 코스 8곳. Keyword: 07월 강릉 여행. Concrete visual subject: travel destination landmark walking gangneung beach coffee street. Article context: ## 07월 강릉 여행, 동선 잡는 법 07월 강릉 여행은 명소 한 곳만 방문하는 것보다 대표 지점을 중심으로 여러 관광지를 연결하는 방식이 효율적입니다. 한국관광공사 TourAPI의 연관 관광지 데이터를 활용하면, BTS버스정류장을 기준으로 주변에서 함께 둘러보기 좋은 장소를 쉽게 찾을 수 있습니다. ### 추천 동선 체크리스트 | 순서 | 장소명 | 분류 | 연관 순위 | 지역 | 안내 기준 | |------|-------------------|--------|-----------|------------------|-----------| | 1 | BTS버스정류장 | 관광지 | 기준점 | 강원특별자치도 | 대표 지점 | | 2 | 아들바위공원 | 관광지 | 1 | 강원특별자치도 | 연관 지점 | | 3 | 도깨비촬영지(영진해변) | 관광지 | 2 | 강원특별자치도 | 연관 지점 | | 4 | 주문진항 | 관광지 | 3 | 강원특별자치도 | 연관 지점 | | 5 | 주문진수산시장 | 관광지 | 4 | 강원특별자치도 | 연관 지점 | | 6 | 강릉커피거리 | 음식 | 5 | 강원특별자치도 | 휴식·카페 | | 7 | 휴휴암 | 관광지 | 6 | 강원특별자치도 | 연관 지점 | | 8 | 남애항전망대 | 관광지 | 8 | 강원특별자치도 | 야경·산책 | - **BTS버스정류장:** 방탄소년단(BTS)이 촬영한 명소로 최근 팬과 관광객이 많이 찾는 곳입니다. - **아들바위공원:** 자연경관이 뛰어나 산책하기 좋습니다. - **도깨비촬영지(영진해변):** 인기 드라마 촬영장으로 유명하며 해변 산책이 가능합니다. - **주문진항/주문진수산시장:** 해산물과 현지 시장 분위기를 경험할 수 있습니다. - **강릉커피거리:** 강릉의 대표 카페 거리로 다양한 커피 전문점을 만날 수 있습니다. . The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-01T20:21:07.903799",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/전기차-공공충전요금-개편-완속-e6a63f7f.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/피지컬-ai-1강-청사진-나왔다-핵심-a8eddf57.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/07월-대출-d0184ddc.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/07월-국회-9b4e9f03.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/07월-강릉-여행-cab92db6.md",
+      "message": "draft saved"
+    }
+  ]
+}

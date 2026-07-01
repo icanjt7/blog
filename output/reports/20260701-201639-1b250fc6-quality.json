@@ -1,0 +1,79 @@
+{
+  "run_id": "20260701-201639-1b250fc6",
+  "average_quality": 96.8,
+  "drafts": [
+    {
+      "slug": "전기차-공공충전요금-개편-완속-e6a63f7f",
+      "title": "8월부터 전기차 완속 충전요금 29.4원 인하, 누구에게 적용될까?",
+      "keyword": "전기차 공공충전요금 개편 완속",
+      "category": "생활",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 8월부터 전기차 완속 충전요금 29.4원 인하, 누구에게 적용될까?. Keyword: 전기차 공공충전요금 개편 완속. Concrete visual subject: electric vehicle car clean energy charging wireless power tech. Context: ## 주요 변경사항 기후에너지환경부는 2026년 8월 1일부터 전기차 공공충전요금 체계를 개편한다고 발표했습니다. 완속충전기(30kW 미만) 이용 시 kWh당 29.4원 인하가 적용됩니다. 기존 2단계였던 요금 체계는 완속과 초급속 등 5단계로 세분화됩니다. 요금 산정에는 충전기 운영비, 전기요금, 법정검사비 등이 반영되었습니다. 완속충전기는 전체 공공충전기의 90%를 차지합니다. ## 적용 조건과 핵심 정보 한눈에 보기 | 항목 | 내용 | |----------------|---------------------------------------------------| | 시행일 | 2026년 8월 1일 | | 적용 구분 | 완속충전기(30kW 미만) | | 인하 폭 | kWh당 29.4원 인하 | | 전체 비중 | 완속충전기가 공공충전기 중 90% | | 요금 체계 | 기존 2단계 → 5단계(완속·초급속 등) | | 담당 기관 | 기후에너지환경부 | | 절차 | 별도 신청 없이 자동 적용(공식 안내 기준) | | 출처 | [기후에너지환경부 정책뉴스](https://www.korea.kr/news/policyNewsView.do?newsId=148967451&call_from=rsslink) | ## 꼭 확인해야 할 부분 - 인하된 요금은 완속충전기(30kW 미만) 공공충전소에서 자동 적용됩니다. - 전체 공공충전기의 90%가 완속충전. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1567409378873-888d6fa7debc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxlbGVjdHJpYyUyMHZlaGljbGUlMjBjYXIlMjBjbGVhbiUyMGVuZXJneSUyMGNoYXJnaW5nJTIwd2lyZWxlc3MlMjBwb3dlciUyMHRlY2h8ZW58MXwwfHx8MTc4MjkzNzA5M3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "피지컬-ai-1강-청사진-나왔다-핵심-a8eddf57",
+      "title": "2026년 피지컬 AI 1강 전략, 무엇이 바뀌나?",
+      "keyword": "피지컬 AI 1강 청사진 나왔다 핵심",
+      "category": "기술",
+      "quality_score": 92.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '무엇이 바뀌나' 포함",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2026년 피지컬 AI 1강 전략, 무엇이 바뀌나?. Keyword: 피지컬 AI 1강 청사진 나왔다 핵심. Concrete visual subject: artificial intelligence neural network. Context: ## 1. 2026년 피지컬 AI 1강 청사진 공개 과학기술정보통신부는 2026년 7월 1일, 대한민국을 피지컬 AI 1강으로 도약시키기 위한 경쟁력 확보 전략을 발표했습니다. 이번 전략은 데이터, 기술, 확산, 생태계 등 4대 추진 방향을 구체적으로 제시하며, 대한민국 대도약 3대 메가프로젝트의 하나로 추진되고 있습니다. ## 2. 주요 추진 배경 - 글로벌 플랫폼 기업(Google 등)은 검색·클라우드뿐 아니라 이미지, 영상, 생산성 도구에 생성 AI를 통합하고 있습니다. - 이번 청사진은 단순한 서비스 이름보다, 입력 데이터와 결과물 활용 방식에 초점을 맞추고 있습니다. ## 3. 생성 AI 활용 시 꼭 체크할 기준 | 항목 | 구체 내용 | |----------------------|--------------------------------------------------------------------------------------------| | 적용 대상 | AI 이미지 도구 이용자, 크리에이터, 플랫폼 사용자 | | 기술 맥락 | 생성형 이미지 모델, 개인화 콘텐츠, 데이터 보호, 플랫폼 내 AI 기능 통합 | | 사용자 영향 | 사진 변환, 캐릭터 생성, SNS 공유, 데이터 저장·보관 설정 필요 | | 공식 적용 지역 | 대한민국, 주요 글로벌 플랫폼(공식 안내 기준) | | 데이터 보관 정책 | 입력 데이터 저장. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgyOTM3MTMwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "07월-대출-d0184ddc",
+      "title": "07월 대출, 실제 적용 대상과 한도 꼭 확인하세요",
+      "keyword": "07월 대출",
+      "category": "정책",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 5.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 대출, 실제 적용 대상과 한도 꼭 확인하세요. Keyword: 07월 대출. Concrete visual subject: loan documents finance. Context: ## 07월 대출, 무엇을 먼저 확인해야 할까? 금융위원회 보도자료는 새로운 대출 정책이나 공공 금융 지원의 변화를 공식적으로 안내합니다. 07월 대출 관련 내용은 발표만 보는 것이 아니라, 실제로 누구에게 적용되는지와 집행 방식, 세부 조건을 꼼꼼히 살펴야 합니다. --- ### 정책 적용 기준 체크리스트 | 항목 | 세부 내용 | |--------------|-----------------------------------------------------------------------| | 담당 기관 | 금융위원회 (공식 정책 안내 및 집행) | | 적용 대상 | 개인, 가구, 사업자, 기관 등 구체적으로 명시 | | 시행일 | 보도자료 발표일과 정책 시행일 일치 여부, 유예 기간 존재 여부 | | 지원 한도 | 금액, 비율, 대출 한도 등 구체적 수치 공개 | | 신청 절차 | 직접 신청, 자동 적용, 별도 신고 등 방식 명확화 | | 예외 기준 | 소득, 지역, 업종, 기존 대출 이용자 등 예외 조건 | | 후속 안내 | 추가 자료, 담당 부서, 공식 홈페이지 등 후속 확인 경로 | --- ## 정책 발표와 실제 집행의 차이 금융 정책은 발표 후 실제 집행까지 시간이 소요될 수 있습니다. 시행령, 고시, 그리고 신청 페이지 오픈 여부까지 확인해야 정책이 현실에서 어떻게 적용되는지 알 수 있습니다. 대출 정책의 지원 금액, 비율. Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxsb2FuJTIwZG9jdW1lbnRzJTIwZmluYW5jZXxlbnwxfDB8fHwxNzgyOTM3MTc3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "07월-국회-9b4e9f03",
+      "title": "07월 국회, 달라진 5가지 체크포인트",
+      "keyword": "07월 국회",
+      "category": "정치",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 5.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 국회, 달라진 5가지 체크포인트. Keyword: 07월 국회. Concrete visual subject: neutral election civic public office. Context: 의외로 중요한 변화는 국회 개원 이후에 드러납니다. 많은 사람들이 당선인 명단만 확인하지만, 실제로는 인물 구성, 정당별 의석 분포, 입법 절차 변화까지 꼼꼼히 살펴야 자신에게 영향을 미치는 부분을 알 수 있습니다. **1. 당선인 경력과 비율 변화** 중앙선거관리위원회 선거통계시스템([https://info.nec.go.kr/](https://info.nec.go.kr/))에서 07월 국회에 입성한 의원들의 초선, 재선, 삼선 비율과 경력을 확인할 수 있습니다. 초선 의원이 많아지면 새로운 시각이 입법에 반영될 가능성이 높아지고, 재선·삼선 의원 비율이 높으면 기존 관행이 유지될 수 있습니다. **2. 정당별 의석 분포** 이번 07월 국회에서는 일부 정당이 새롭게 의석을 확보했습니다. 정당은 시민의 정치적 의사를 대표하는 조직으로, 의석 수에 따라 법안 발의와 예산 심사 권한이 달라집니다. 특히 중소정당의 입지 변화는 국회 내 협상 구조와 정책 추진 방향에 직접 영향을 줍니다. **3. 위원회 구성과 절차 변화** 상임위원회는 각 분야별로 법안과 예산을 심사하는 조직입니다. 07월 국회부터 일부 위원회의 구성 방식과 위원장 선출, 법안 심사 기준이 변경되어 법안 처리 속도가 달라질 수 있습니다. 이런 변화는 국회 공식 홈페이지 및 보도자료에서 확인할 수 있습니다. **4. 주요 입법 안건 우선순위** 국회 홈페이지에서 우선 처리되. Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1772452515931-461c180378e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgyOTM3MjEwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "07월-강릉-여행-cab92db6",
+      "title": "07월 강릉 여행, BTS버스정류장 중심 추천 코스 8곳",
+      "keyword": "07월 강릉 여행",
+      "category": "핫이슈",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 2,
+      "source_authority_avg": 4.5,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 강릉 여행, BTS버스정류장 중심 추천 코스 8곳. Keyword: 07월 강릉 여행. Concrete visual subject: travel destination landmark walking gangneung beach coffee street. Context: ## 07월 강릉 여행, 동선 잡는 법 07월 강릉 여행은 명소 한 곳만 방문하는 것보다 대표 지점을 중심으로 여러 관광지를 연결하는 방식이 효율적입니다. 한국관광공사 TourAPI의 연관 관광지 데이터를 활용하면, BTS버스정류장을 기준으로 주변에서 함께 둘러보기 좋은 장소를 쉽게 찾을 수 있습니다. ### 추천 동선 체크리스트 | 순서 | 장소명 | 분류 | 연관 순위 | 지역 | 안내 기준 | |------|-------------------|--------|-----------|------------------|-----------| | 1 | BTS버스정류장 | 관광지 | 기준점 | 강원특별자치도 | 대표 지점 | | 2 | 아들바위공원 | 관광지 | 1 | 강원특별자치도 | 연관 지점 | | 3 | 도깨비촬영지(영진해변) | 관광지 | 2 | 강원특별자치도 | 연관 지점 | | 4 | 주문진항 | 관광지 | 3 | 강원특별자치도 | 연관 지점 | | 5 | 주문진수산시장 | 관광지 | 4 | 강원특별자치도 | 연관 지점 | | 6 | 강릉커피거리 | 음식 | 5 | 강원특별자치도 | 휴식·카페 | | 7 | 휴휴암 | 관광지 | 6 | 강원특별자치도 | 연관 지점 | | 8 | 남애항전망대 | 관광지 | 8 | 강원특별자치도 | 야경·산책 | - **BTS버스정류장:** 방탄소년단(BTS)이 촬영한 명소로 최근 팬과 관광객. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.pexels.com/photos/18721436/pexels-photo-18721436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  ]
+}
