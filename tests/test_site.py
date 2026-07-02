@@ -152,11 +152,12 @@ date: '2026-06-{idx + 1:02d}T09:30:00'
 category: 기술
 tags:
 - 테스트
+quality_score: 95.0
 ---
 
 ## 본문
 
-색인 규칙을 검증하는 본문입니다.
+""" + " ".join(["색인 규칙과 독자 탐색 기준을 검증하는 충분한 본문입니다."] * 80) + """
 """,
                     encoding="utf-8",
                 )
@@ -213,15 +214,19 @@ tags:
                 """---
 title: '출처 글'
 date: '2026-06-01T09:30:00'
-category: 정책
+category: 기술
 tags:
-- 보도자료
-- 정부
+- 기술
+quality_score: 95.0
 ---
 
 ## 핵심
 
 공식 발표를 독자 관점으로 풀어 쓴 본문입니다.
+
+## 판단 기준
+
+""" + " ".join(["지원 조건과 실제 이용 절차를 독자가 직접 확인할 수 있게 설명합니다."] * 70) + """
 
 ## 참고한 곳
 
@@ -233,14 +238,15 @@ tags:
                 """---
 title: '관련 글'
 date: '2026-06-02T09:30:00'
-category: 정책
+category: 기술
 tags:
-- 정부
+- 기술
+quality_score: 95.0
 ---
 
 ## 본문
 
-관련 글입니다.
+""" + " ".join(["관련 글입니다."] * 180) + """
 """,
                 encoding="utf-8",
             )
@@ -250,7 +256,7 @@ tags:
                 site_title="테스트",
                 site_description="테스트 설명",
                 custom_domain="example.com",
-                categories=["정책"],
+                categories=["기술"],
             )
 
             builder.build()
@@ -258,10 +264,10 @@ tags:
             html = (root / "public" / "source-post.html").read_text(encoding="utf-8")
             self.assertNotIn("읽는 기준", html)
             self.assertIn("맥락 짚기", html)
-            self.assertIn("관련 발표는", html)
+            self.assertIn("지원 기기", html)
             self.assertIn("참고 자료", html)
             self.assertIn("공식 원문", html)
-            self.assertIn("정책브리핑 보도자료 목록", html)
+            self.assertIn("Google Search Central", html)
             self.assertIn("편집 기준", html)
             self.assertIn("함께 보면 좋은 글", html)
             self.assertIn("관련 글", html)
@@ -274,7 +280,7 @@ tags:
             footer_html = (root / "public" / "index.html").read_text(encoding="utf-8")
             self.assertIn('href="./privacy.html"', footer_html)
             self.assertIn('class="footer-category-links"', footer_html)
-            self.assertIn('href="./category-정책.html"', footer_html)
+            self.assertIn('href="./category-기술.html"', footer_html)
             contact_html = (root / "public" / "contact.html").read_text(encoding="utf-8")
             self.assertIn('href="mailto:jungteck@gmail.com"', contact_html)
             self.assertIn(">jungteck@gmail.com<", contact_html)
@@ -285,6 +291,92 @@ tags:
             self.assertIn("광고와 편집 분리", editorial_html)
             sitemap = (root / "public" / "sitemap-static.xml").read_text(encoding="utf-8")
             self.assertIn("privacy.html", sitemap)
+
+    def test_adsense_review_mode_limits_low_value_auto_posts(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            posts_dir = root / "posts"
+            posts_dir.mkdir()
+            rich_body = " ".join(["실제 선택 기준과 확인 절차를 설명합니다."] * 80)
+            (posts_dir / "useful-guide.md").write_text(
+                f"""---
+title: '실제로 확인할 수 있는 생활 가이드'
+date: '2026-06-03T09:30:00'
+category: 생활
+tags:
+- 생활
+quality_score: 95.0
+---
+
+## 판단 기준
+
+{rich_body}
+""",
+                encoding="utf-8",
+            )
+            (posts_dir / "krgov-auto-summary.md").write_text(
+                """---
+title: '자동 보도자료 요약'
+date: '2026-06-04T09:30:00'
+category: 정책
+tags:
+- 보도자료
+quality_score: 96.0
+---
+
+## 요약
+
+정부 발표를 짧게 옮긴 글입니다.
+""",
+                encoding="utf-8",
+            )
+            (posts_dir / "thin-guide.md").write_text(
+                """---
+title: '짧은 안내'
+date: '2026-06-05T09:30:00'
+category: 생활
+tags:
+- 생활
+quality_score: 95.0
+---
+
+## 안내
+
+아직 내용이 충분하지 않습니다.
+""",
+                encoding="utf-8",
+            )
+            builder = StaticSiteBuilder(
+                posts_dir=posts_dir,
+                public_dir=root / "public",
+                site_title="테스트",
+                site_description="테스트 설명",
+                custom_domain="example.com",
+                categories=["생활", "정책"],
+            )
+
+            builder.build()
+
+            index_html = (root / "public" / "index.html").read_text(encoding="utf-8")
+            search_json = (root / "public" / "search.json").read_text(encoding="utf-8")
+            priority_sitemap = (root / "public" / "sitemap-posts-priority.xml").read_text(encoding="utf-8")
+            auto_html = (root / "public" / "krgov-auto-summary.html").read_text(encoding="utf-8")
+            thin_html = (root / "public" / "thin-guide.html").read_text(encoding="utf-8")
+            useful_html = (root / "public" / "useful-guide.html").read_text(encoding="utf-8")
+
+            self.assertIn("실제로 확인할 수 있는 생활 가이드", index_html)
+            self.assertNotIn("자동 보도자료 요약", index_html)
+            self.assertNotIn("짧은 안내", index_html)
+            self.assertIn("useful-guide.html", priority_sitemap)
+            self.assertNotIn("krgov-auto-summary.html", priority_sitemap)
+            self.assertNotIn("thin-guide.html", priority_sitemap)
+            self.assertIn("useful-guide", search_json)
+            self.assertNotIn("krgov-auto-summary", search_json)
+            self.assertIn('<meta name="robots" content="index,follow', useful_html)
+            self.assertIn('<meta name="google-adsense-account"', useful_html)
+            self.assertIn('<meta name="robots" content="noindex,follow">', auto_html)
+            self.assertNotIn("google-adsense-account", auto_html)
+            self.assertIn('<meta name="robots" content="noindex,follow">', thin_html)
 
 if __name__ == "__main__":
     unittest.main()

@@ -33,6 +33,8 @@ class Post:
     cover_image_alt: str = ""
     author: str = ""
     source_links: list[tuple[str, str]] | None = None
+    word_count: int = 0
+    quality_score: float = 0.0
 
 
 AUTHOR_NAMES = [
@@ -344,31 +346,33 @@ class StaticSiteBuilder:
         self.ga_measurement_id = ga_measurement_id
         self.adsense_publisher_id = adsense_publisher_id
         self.site_url = f"https://{self.custom_domain.strip()}" if self.custom_domain else "https://briefwave.kr"
+        self.adsense_review_mode = os.getenv("ADSENSE_REVIEW_MODE", "1").strip().lower() not in {"0", "false", "no", "off"}
 
     def build(self) -> None:
       if self.public_dir.exists():
         shutil.rmtree(self.public_dir)
       self.public_dir.mkdir(parents=True, exist_ok=True)
       posts = self._load_posts()
+      index_posts = self._review_index_posts(posts)
       # Auto-extend nav categories with any category found in posts but not yet listed.
-      seen_cats = {p.category for p in posts}
+      seen_cats = {p.category for p in index_posts}
       for cat in seen_cats:
           if cat and cat not in self.categories:
               self.categories.append(cat)
       for post in posts:
-        self._write_post(post, posts)
+        self._write_post(post, index_posts)
 
-      self._write_index(posts)
+      self._write_index(index_posts)
       # generate search index and page
-      self._write_search_index(posts)
+      self._write_search_index(index_posts)
       self._write_search_page(posts)
       self._write_global_government_pages(posts)
-      self._write_category_pages(posts)
+      self._write_category_pages(index_posts)
       self._write_static_pages()
 
       # self._write_dashboard(posts)  # 관리자 전용 — 일반 사용자에게 노출하지 않음
-      self._write_feed(posts)
-      self._write_sitemap(posts)
+      self._write_feed(index_posts)
+      self._write_sitemap(posts, index_posts)
       self._write_css()
       self._write_favicon()
       self._write_robots()
@@ -401,9 +405,11 @@ class StaticSiteBuilder:
         category = str(meta.get("category") or "생활")
         category = _cat_map.get(category, category)
         tags = [str(tag) for tag in meta.get("tags", [])]
+        quality_score = self._safe_float(meta.get("quality_score"), 0.0)
         raw_cover_image = str(meta.get("cover_image") or "")
         body = self._strip_leading_image(body)
         body = self._normalize_body_markdown(body)
+        word_count = self._word_count(body)
         body_html = markdown.markdown(
             body,
             extensions=["tables", "fenced_code", "toc"],
@@ -427,7 +433,58 @@ class StaticSiteBuilder:
             cover_image_alt=str(meta.get("cover_image_alt") or f"{title} 관련 대표 이미지"),
             author=str(meta.get("author") or self._author_for_slug(path.stem)),
             source_links=self._extract_source_links(body),
+            word_count=word_count,
+            quality_score=quality_score,
         )
+
+    @staticmethod
+    def _safe_float(value: object, default: float = 0.0) -> float:
+        try:
+            return float(value)
+        except (TypeError, ValueError):
+            return default
+
+    @staticmethod
+    def _word_count(markdown_text: str) -> int:
+        return len(re.findall(r"[가-힣A-Za-z0-9]+", markdown_text))
+
+    def _is_automated_feed_post(self, post: Post) -> bool:
+        automated_prefixes = (
+            "krgov-",
+            "mois-",
+            "msit-",
+            "mofe-",
+            "mcst-",
+            "khs-",
+            "kh-",
+            "usgov-",
+            "narabid-",
+        )
+        return (
+            post.slug.startswith(automated_prefixes)
+            or any(tag in post.tags for tag in ("보도기사", "보도자료", "입찰공고"))
+        )
+
+    def _is_review_index_post(self, post: Post) -> bool:
+        if not self.adsense_review_mode:
+            return True
+        if self._is_automated_feed_post(post):
+            return False
+        if post.word_count < self._env_int("ADSENSE_REVIEW_MIN_WORDS", 300):
+            return False
+        min_quality = self._env_int("ADSENSE_REVIEW_MIN_QUALITY", 85)
+        if post.quality_score and post.quality_score < min_quality:
+            return False
+        return True
+
+    def _review_index_posts(self, posts: list[Post]) -> list[Post]:
+        if not self.adsense_review_mode:
+            return posts
+        selected = [post for post in posts if self._is_review_index_post(post)]
+        if selected:
+            limit = max(30, self._env_int("ADSENSE_REVIEW_INDEX_LIMIT", 120))
+            return selected[:limit]
+        return [post for post in posts if not self._is_automated_feed_post(post)] or posts[:60]
 
     def _slugify(self, value: str) -> str:
         normalized = value.strip().lower()
@@ -667,6 +724,7 @@ class StaticSiteBuilder:
 
     def _write_post(self, post: Post, posts: list[Post]) -> None:
         alternates = self._post_alternate_urls(post)
+        review_indexed = self._is_review_index_post(post)
         cover_html = ""
         if post.cover_image:
             cover_src = self._image_src_for_width(post.cover_image, 1200)
@@ -675,7 +733,7 @@ class StaticSiteBuilder:
                 f'alt="{html.escape(post.cover_image_alt)}" width="1200" height="675" '
                 'loading="eager" fetchpriority="high" decoding="async">'
             )
-        ad_slot = self._ad_slot()
+        ad_slot = self._ad_slot() if review_indexed else ""
         display_author = self._display_author(post)
         reader_context_html = self._reader_context_html(post)
         source_links_html = self._source_links_html(post)
@@ -718,8 +776,11 @@ class StaticSiteBuilder:
             og_image=post.cover_image,
             og_type="article",
             meta_extra=self._article_meta_tags(post),
+            robots="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+            if review_indexed else "noindex,follow",
             structured_data=[self._news_article_schema(post), self._breadcrumb_schema(breadcrumb_items)],
             alternate_urls=alternates,
+            monetize=review_indexed,
         )
         # 애드센스 심사 전에는 얇은 언어별 복제 페이지를 만들지 않는다.
         # 다국어 독자 경험은 상단 번역 선택기로 제공하고, 검색 색인용 다국어 포스트는
@@ -1065,7 +1126,7 @@ class StaticSiteBuilder:
         if total == 0:
             content = """
             <section class="hero">
-              <p class="hero-tagline">지금 알아야 할 소식을 빠르게 브리핑합니다</p>
+              <p class="hero-tagline">직접 판단에 도움이 되는 선별 브리핑을 모았습니다</p>
             </section>
             <p class="empty">아직 발행된 글이 없습니다.</p>
             """
@@ -1089,10 +1150,10 @@ class StaticSiteBuilder:
 
             nav_html = self._pagination_html(page, total_pages)
 
-            hero_stats = f'<p class="hero-stats">기사 {total}개 · {datetime.now():%Y.%m.%d} 업데이트</p>' if page == 1 else ""
+            hero_stats = f'<p class="hero-stats">선별 글 {total}개 · {datetime.now():%Y.%m.%d} 업데이트</p>' if page == 1 else ""
             content = f"""
             <section class="hero">
-              <p class="hero-tagline">지금 알아야 할 소식을 빠르게 브리핑합니다</p>
+              <p class="hero-tagline">직접 판단에 도움이 되는 선별 브리핑을 모았습니다</p>
               {hero_stats}
             </section>
             <section class="grid">{cards}</section>
@@ -1593,6 +1654,7 @@ class StaticSiteBuilder:
             page_url=self._page_url("search.html"),
             description="브리핑웨이브에서 원하는 글을 빠르게 찾을 수 있는 검색 페이지입니다.",
             robots="noindex,follow",
+            monetize=False,
         )
 
     def _write_global_government_pages(self, posts: list[Post]) -> None:
@@ -1630,6 +1692,8 @@ class StaticSiteBuilder:
                 description=copy["description"],
                 html_lang=lang,
                 alternate_urls=alternates,
+                robots="noindex,follow",
+                monetize=False,
             )
 
     def _global_government_item_html(self, post: Post, lang: str) -> str:
@@ -1779,8 +1843,9 @@ class StaticSiteBuilder:
                 structured_data=[self._breadcrumb_schema(breadcrumb_items)],
             )
 
-    def _write_sitemap(self, posts: list[Post]) -> None:
+    def _write_sitemap(self, posts: list[Post], index_posts: list[Post] | None = None) -> None:
         now = datetime.now()
+        sitemap_posts = index_posts if index_posts is not None else posts
 
         def _sitemap_loc(loc: str) -> str:
             parts = urlsplit(loc)
@@ -1837,19 +1902,20 @@ class StaticSiteBuilder:
         static_entries.append(_entry(self._page_url("index.html"), now, "daily", "1.0"))
         for filename in ("about.html", "editorial-policy.html", "privacy.html", "contact.html"):
             static_entries.append(_entry(self._page_url(filename), now, "monthly", "0.6"))
-        government_alternates = {lang: self._page_url(copy["filename"]) for lang, copy in GOVERNMENT_GLOBAL_PAGES.items()}
-        government_alternates["x-default"] = self._page_url(GOVERNMENT_GLOBAL_PAGES["en"]["filename"])
-        for lang, copy in GOVERNMENT_GLOBAL_PAGES.items():
-            static_entries.append(_entry(
-                self._page_url(copy["filename"]),
-                now,
-                "daily",
-                "0.6",
-                government_alternates,
-            ))
+        if not self.adsense_review_mode:
+            government_alternates = {lang: self._page_url(copy["filename"]) for lang, copy in GOVERNMENT_GLOBAL_PAGES.items()}
+            government_alternates["x-default"] = self._page_url(GOVERNMENT_GLOBAL_PAGES["en"]["filename"])
+            for lang, copy in GOVERNMENT_GLOBAL_PAGES.items():
+                static_entries.append(_entry(
+                    self._page_url(copy["filename"]),
+                    now,
+                    "daily",
+                    "0.6",
+                    government_alternates,
+                ))
 
         category_posts: dict[str, list[Post]] = {}
-        for post in posts:
+        for post in sitemap_posts:
             category_posts.setdefault(post.category, []).append(post)
         for category, cposts in category_posts.items():
             cat_base = self._category_page_filename(category)
@@ -1879,9 +1945,9 @@ class StaticSiteBuilder:
         government_cutoff = (now - timedelta(days=government_days)).date()
 
         priority_posts_by_slug: dict[str, Post] = {}
-        for post in posts[:priority_limit]:
+        for post in sitemap_posts[:priority_limit]:
             priority_posts_by_slug[post.slug] = post
-        for post in posts:
+        for post in sitemap_posts:
             post_date = post.date.date()
             if post_date >= recent_cutoff or (
                 self._is_government_post(post) and post_date >= government_cutoff
@@ -1890,7 +1956,7 @@ class StaticSiteBuilder:
 
         priority_posts = sorted(priority_posts_by_slug.values(), key=lambda post: post.date, reverse=True)[:priority_max]
         priority_slugs = {post.slug for post in priority_posts}
-        archive_posts = [post for post in posts if post.slug not in priority_slugs]
+        archive_posts = [] if self.adsense_review_mode else [post for post in posts if post.slug not in priority_slugs]
 
         priority_entries = [_post_entry(post, "weekly", "0.9") for post in priority_posts]
         priority_name = "sitemap-posts-priority.xml"
@@ -1941,6 +2007,7 @@ class StaticSiteBuilder:
         html_lang: str = "ko",
         alternate_urls: dict[str, str] | None = None,
         asset_prefix: str = "./",
+        monetize: bool = True,
     ) -> None:
         gtm_id = html.escape(GTM_CONTAINER_ID)
         gtm_head = f"""  <!-- Google Tag Manager -->
@@ -1991,10 +2058,12 @@ class StaticSiteBuilder:
     }}
   </script>"""
 
-        pub = html.escape(self.adsense_publisher_id or "ca-pub-3870943054399059")
-        adsense_script = (
-            f'\n  <meta name="google-adsense-account" content="{pub}">'
-            f"""
+        adsense_script = ""
+        if monetize:
+            pub = html.escape(self.adsense_publisher_id or "ca-pub-3870943054399059")
+            adsense_script = (
+                f'\n  <meta name="google-adsense-account" content="{pub}">'
+                f"""
   <script>
     (function(){{
       function loadAds(){{
@@ -2014,7 +2083,7 @@ class StaticSiteBuilder:
     }})();
   </script>
 """
-        )
+            )
 
         if page_url is None:
             page_url = self._page_url(filename)
