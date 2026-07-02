@@ -1,0 +1,22 @@
+{
+  "run_id": "20260702-171750-d1b20a3e",
+  "average_quality": 84.0,
+  "drafts": [
+    {
+      "slug": "07월-혜택-8e787ffc",
+      "title": "7월 최대 절약 혜택",
+      "keyword": "07월 혜택",
+      "category": "생활",
+      "quality_score": 84.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 5.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 7월 최대 절약 혜택. Keyword: 07월 혜택. Concrete visual subject: public service checklist. Context: ### 7월 혜택 개요 2026년 7월 기준, 대한민국은 총 150억원의 예산을 지원하여 다양한 계층에게 혜택을 제공한다. 이 혜택에는 청년층을 위한 취업 지원, 중장년층을 위한 직업훈련 지원 등이 포함되어 있다. 이러한 지원 정책은 경제적으로 어려움을 겪는 계층에게 도움을 주기 위해 마련되었다. ### 지원 정책 정리 다음 표는 7월 혜택의 주요 지원 정책을 정리한 것이다. | 지원 정책 | 대상 | 지원 내용 | | --- | --- | --- | | 취업 지원 | 청년층 | 취업 멘토링, 취업 준비 교육 | | 직업훈련 지원 | 중장년층 | 직업훈련 과정, 취업 지원 | | 생활 지원 | 저소득층 | 생활비 지원, 의료비 지원 | ### 신청 방법 7월 혜택의 신청 방법은 간단하다. 인터넷으로 신청하면 심사 결과가 나오고, 통과하면 지원 정책을 받을 수 있다. 대상자 여부를 먼저 확인한 후, 신청 절차를 밟아야 한다. 또한, 신청 시 필요한 서류와 절차를 확인하여 빠르게 지원을 받을 수 있도록 해야 한다. ### 추가 정보 7월 혜택에 대한 더 자세한 정보는 [대한민국 정책브리핑](https://www.korea.kr/)에서 확인할 수 있다. 원문 공개일 기준, 지원 정책과 신청 방법이 명시되어 있으므로 먼저 원문을 확인한 후 신청 절차를 밟는 것이 좋다.这样 하면 최대 절약이 가능하며, 많은 혜택을 받을 수 있다. ### 지원. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1605152276897-4f618f831968?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxwdWJsaWMlMjBzZXJ2aWNlJTIwY2hlY2tsaXN0fGVufDF8MHx8fDE3ODMwMTI4ODl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
