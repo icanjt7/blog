@@ -1,0 +1,34 @@
+{
+  "run_id": "20260702-233120-c2ccae78",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "07월-청년도약계좌-유지-317ad98e",
+      "title": "07월 청년도약계좌 유지, 해지 전 꼭 확인할 5가지",
+      "keyword": "07월 청년도약계좌 유지",
+      "category": "정책",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 청년도약계좌 유지, 해지 전 꼭 확인할 5가지. Keyword: 07월 청년도약계좌 유지. Concrete visual subject: young professionals city. Context: ## 07월 청년도약계좌 유지, 무엇을 체크해야 할까? 청년도약계좌는 만 19~34세 청년이 자산 형성을 위해 가입할 수 있는 정책 금융 상품입니다. 해지 전에는 적용 대상과 실제 집행 단계별 조건을 꼼꼼히 확인해야 손해를 막을 수 있습니다. 07월 기준, 단순한 제도 설명보다 실제 적용 범위와 지원 요건, 집행 방식에 주목해야 합니다. --- ## 핵심 체크리스트 | 항목 | 확인 내용 | | ------------- | ------------------------------------------------------ | | 제출 기관 | 금융위원회(https://www.fsc.go.kr/) | | 납입 기간 | 최소 5년(60개월)까지 납입 시 정부 기여금 전액 수령 가능 | | 정부 기여금 | 월 최대 40만원까지, 소득에 따라 차등 지급 | | 소득 요건 | 직전 과세기간 기준 중위소득 180% 이하(1인 가구 약 3,800만 원) | | 중도해지 사유 | 원칙적으로 불가, 예외는 취업·질병·이사 등 사전 고시된 사유만 인정 | | 만기 전략 | 만기까지 유지 시 이자와 정부 지원금 동시 수령 | --- ## 실제 집행 단계 구분 - **정책 발표**: 제도 방향 및 요건 안내 - **시행령·고시**: 세부 조건 명시 - **신청 접수**: 은행 및 공식 온라인 페이지에서 진행 - **지원금 집행**: 정기 납입 및 요건 충족. Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1593797353564-1a7dc24cfdbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx5b3VuZyUyMHByb2Zlc3Npb25hbHMlMjBjaXR5fGVufDF8MHx8fDE3ODMwMzUzNzV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    {
+      "slug": "07월-와이파이-7-공유기-07210d9f",
+      "title": "와이파이 7 공유기, 바꿔야 할 집 5가지 조건",
+      "keyword": "07월 와이파이 7 공유기",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 와이파이 7 공유기, 바꿔야 할 집 5가지 조건. Keyword: 07월 와이파이 7 공유기. Concrete visual subject: router wifi network device. Context: ## 07월 와이파이 7 공유기, 내 집이 바꿔야 할 때는? 2026년 7월 2일 기준, 와이파이 7 공유기는 모든 집에 필요한 변화가 아닙니다. 기존 공유기에서 꼭 바꿔야 하는 집에는 몇 가지 공통점이 있습니다. 공식 안내와 기술 사양을 바탕으로, 교체 전 반드시 점검해야 할 조건을 정리합니다. --- ### 와이파이 7, 기존 세대와 무엇이 다른가 - **6GHz 대역 지원** 와이파이 7 공유기는 6GHz 주파수 대역을 지원합니다. 기존 와이파이 6E도 6GHz 대역이 도입됐으나, 와이파이 7은 데이터 전송 속도와 안정성이 한 단계 더 향상됐습니다. - **더 넓은 채널 폭** 최대 320MHz 채널 폭을 지원해, 여러 단말이 동시 접속해도 속도 저하가 적습니다. - **호환 단말 필요** 6GHz 대역은 2023년 이후 출시된 일부 스마트폰, 노트북 등에서만 지원합니다. 구형 단말기는 속도 향상 효과를 체감하기 어렵습니다. - **멀티 링크(MLO)와 백홀 구성** 여러 대역을 동시에 묶어 연결(멀티 링크)이 가능해, 대형 주택이나 복층 구조에서 속도 저하를 줄입니다. ‘백홀’은 공유기 여러 대를 설치할 때 서로 간 통신 전용 채널을 두는 방식으로, 와이파이 7에서 더욱 효율적으로 작동합니다. --- ### 와이파이 7 공유기, 교체가 꼭 필요한 집 | 조건 | 체크 포인트 | |-----|--------------------. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxyb3V0ZXIlMjB3aWZpJTIwbmV0d29yayUyMGRldmljZXxlbnwxfDB8fHwxNzgzMDM1NDE4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
