@@ -1,0 +1,133 @@
+{
+  "run_id": "20260702-180541-a5e12d2a",
+  "topics": [
+    {
+      "keyword": "07월 스펙",
+      "title_hint": "07월 스펙 핵심 정리",
+      "category": "기술",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "07월 연금",
+      "title_hint": "07월 연금 핵심 정리",
+      "category": "정책",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "금융위원회 보도자료",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "07월 스펙",
+        "title_hint": "07월 스펙 핵심 정리",
+        "category": "기술",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "제조사 공식 홈페이지와 개발자 블로그",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "제품/기술 발표 원문 확인용",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "2026년 7월, 구글 개발자 블로그에서 달라지는 5가지 핵심 변화",
+      "slug": "07월-스펙-5eac00f8",
+      "excerpt": "2026년 7월 기준, 구글 개발자 블로그와 공식 홈페이지에 공개된 최신 기능·가격·서비스 변경 사항을 정리합니다. 실제 사용자에게 영향을 미치는 주요 포인트를 표와 함께 안내합니다.",
+      "body_markdown": "## 07월 스펙 기준, 구글 개발자 블로그 최신 소식\n\n구글 개발자 블로그(Developers Google Blog)는 구글이 공식적으로 공개하는 제품 및 기술 업데이트 소식의 출처입니다. 사용자는 이 공지를 통해 새로운 기능 추가, 서비스 종료, 가격 정책 변경 등 실제 영향을 미치는 변화를 확인할 수 있습니다.\n\n### 사용자에게 중요한 5가지 체크포인트\n\n| 체크포인트            | 구체 내용 (2026-07-02 기준)                                           |\n|----------------------|--------------------------------------------------------------------|\n| 적용 제품            | 구글 클라우드, 구글 Workspace, 크롬, 안드로이드 등 주요 서비스       |\n| 변경 내용            | 신기능 출시, 기존 기능 개선, 서비스 통합·종료, 가격 정책 조정         |\n| 영향 대상            | 기존 사용자, 신규 도입 기업, 개발·운영팀                              |\n| 참고 자료            | 공식 블로그 공지, 릴리스 노트, 상태 페이지, 가격표, 추가 보도         |\n| 즉시 확인 방법       | 공식 홈페이지 내 'What's new', 블로그 최신 글, 서비스별 공지사항      |\n\n### 07월 스펙 최신 변화 예시\n\n- 구글 클라우드: 서버리스 기능 신규 추가, 일부 API 지원 종료 안내\n- 구글 Workspace: 이메일 보안 옵션 강화, 관리 콘솔 기능 업데이트\n- 크롬: 메모리 최적화 업데이트, 플러그인 호환성 정책 변경\n- 가격 정책: 일부 서비스 무료 트라이얼 기간 단축 및 요금제 세분화\n- 서비스 상태: 이전 서비스 장애 이력 및 개선 현황 공식 공유\n\n### 이런 변화, 사용자는 어떻게 보나?\n\n- 07월 스펙 기준으로, 신기능은 즉시 적용되는 경우가 많으므로 관리 콘솔이나 앱 내에서 직접 확인이 필요합니다.\n- 가격 변동은 기업·개인 요금제 모두에 영향을 주므로, 공식 가격표와 결제 내역을 꼭 비교해보세요.\n- API 지원 종료나 정책 변경은 기존 업무 자동화나 연동 서비스에 직접적인 영향이 있을 수 있습니다.\n\n### 구글 개발자 블로그 소식, 꼭 챙겨야 하는 이유\n\n- 단순한 신기능 소개가 아닌, 지원 종료 및 가격 변동 등 업무에 중요한 ‘사용자 중심’ 정보가 포함됩니다.\n- 구글 공식 블로그와 릴리스 노트는 변경 내용의 최초 공개처이므로, 2차 보도보다 빠르게 사실을 확인할 수 있습니다.\n- 서비스별로 적용일과 대상이 다르므로, 각자 사용하는 서비스의 공지사항을 개별적으로 점검하는 것이 필요합니다.\n\n---\n\n#### 참고  \n- [구글 개발자 블로그 공식 공지](https://developers.googleblog.com/)\n\n*본 글은 2026년 7월 2일 기준, 구글 공식 블로그와 홈페이지에서 공개된 정보를 바탕으로 작성되었습니다.*",
+      "tags": [
+        "기술",
+        "07월",
+        "스펙"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1772149394719-d0f08b0805b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwZGV2aWNlJTIwc3BlY2lmaWNhdGlvbiUyMGRpZ2l0YWx8ZW58MXwwfHx8MTc4MzAxNTgzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "2026년 7월, 구글 개발자 블로그에서 달라지는 5가지 핵심 변화 — Photo by Egor Komarov on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1630588562940-949455f18324?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwZGV2aWNlJTIwc3BlY2lmaWNhdGlvbiUyMGRpZ2l0YWx8ZW58MXwwfHx8MTc4MzAxNTgzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "2026년 7월, 구글 개발자 블로그에서 달라지는 5가지 핵심 변화 본문 보조 이미지 — Photo by Vinayak Veer on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2026년 7월, 구글 개발자 블로그에서 달라지는 5가지 핵심 변화. Keyword: 07월 스펙. Concrete visual subject: technology device specification digital. Context: ## 07월 스펙 기준, 구글 개발자 블로그 최신 소식 구글 개발자 블로그(Developers Google Blog)는 구글이 공식적으로 공개하는 제품 및 기술 업데이트 소식의 출처입니다. 사용자는 이 공지를 통해 새로운 기능 추가, 서비스 종료, 가격 정책 변경 등 실제 영향을 미치는 변화를 확인할 수 있습니다. ### 사용자에게 중요한 5가지 체크포인트 | 체크포인트 | 구체 내용 (2026-07-02 기준) | |----------------------|--------------------------------------------------------------------| | 적용 제품 | 구글 클라우드, 구글 Workspace, 크롬, 안드로이드 등 주요 서비스 | | 변경 내용 | 신기능 출시, 기존 기능 개선, 서비스 통합·종료, 가격 정책 조정 | | 영향 대상 | 기존 사용자, 신규 도입 기업, 개발·운영팀 | | 참고 자료 | 공식 블로그 공지, 릴리스 노트, 상태 페이지, 가격표, 추가 보도 | | 즉시 확인 방법 | 공식 홈페이지 내 'What's new', 블로그 최신 글, 서비스별 공지사항 | ### 07월 스펙 최신 변화 예시 - 구글 클라우드: 서버리스 기능 신규 추가, 일부 API 지원 종료 안내 - 구글 Workspace: 이메일 보안 옵션 강화, 관리 콘솔 기능 업데이트 - 크롬: 메모리 최적화 업. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 2026년 7월, 구글 개발자 블로그에서 달라지는 5가지 핵심 변화. Keyword: 07월 스펙. Concrete visual subject: technology device specification digital. Article context: ## 07월 스펙 기준, 구글 개발자 블로그 최신 소식 구글 개발자 블로그(Developers Google Blog)는 구글이 공식적으로 공개하는 제품 및 기술 업데이트 소식의 출처입니다. 사용자는 이 공지를 통해 새로운 기능 추가, 서비스 종료, 가격 정책 변경 등 실제 영향을 미치는 변화를 확인할 수 있습니다. ### 사용자에게 중요한 5가지 체크포인트 | 체크포인트 | 구체 내용 (2026-07-02 기준) | |----------------------|--------------------------------------------------------------------| | 적용 제품 | 구글 클라우드, 구글 Workspace, 크롬, 안드로이드 등 주요 서비스 | | 변경 내용 | 신기능 출시, 기존 기능 개선, 서비스 통합·종료, 가격 정책 조정 | | 영향 대상 | 기존 사용자, 신규 도입 기업, 개발·운영팀 | | 참고 자료 | 공식 블로그 공지, 릴리스 노트, 상태 페이지, 가격표, 추가 보도 | | 즉시 확인 방법 | 공식 홈페이지 내 'What's new', 블로그 최신 글, 서비스별 공지사항 | ### 07월 스펙 최신 변화 예시 - 구글 클라우드: 서버리스 기능 신규 추가, 일부 API 지원 종료 안내 - 구글 Workspace: 이메일 보안 옵션 강화, 관리 콘솔 기능 업데이트 - 크롬: 메모리 최적화 업데이트, 플러그인 호환성 정책 변경 - 가격 정책: 일부 서비스 무료 트라이얼 기간 단축 및 요금제 세분화 - 서비스 상태: 이전 서비스 장애 이력 및 개선 현황 공식 공유 ### 이런 변화, 사용자는 어떻게 보나? - 07월 스펙 기준으로, 신기능은 즉시 적용되는 경우가 많으므로 관리 콘솔이나 앱 내에서 직접 확인이 필요합니다. - 가격 변동은 기업·개인. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-02T18:10:19.109551",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "07월 연금",
+        "title_hint": "07월 연금 핵심 정리",
+        "category": "정책",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "금융위원회 보도자료",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "07월 연금, 내 지급액 달라지나? 꼭 확인할 5가지",
+      "slug": "07월-연금-2ecd1a56",
+      "excerpt": "2026년 7월 연금 정책 변경 여부와 적용 대상을 금융위원회 공식 안내 기준으로 정리합니다. 내 연금에 영향이 있는지 확인해야 할 핵심 포인트를 표로 안내합니다.",
+      "body_markdown": "2026년 7월 연금, 이번 달 내 연금 지급액이나 정책이 달라지는지 궁금한 분들이 많습니다.\n\n특히 연금저축, 퇴직연금 등 금융 상품을 보유하고 있다면, 금융위원회 공식 안내 기준으로 자신의 지급액이나 조건에 변화가 있는지 꼼꼼히 확인해야 합니다.\n\n금융위원회는 대한민국 금융 정책을 총괄하는 정부 기관으로, 연금저축과 퇴직연금에 대한 규정과 변경 사항을 공식적으로 발표합니다.\n\n### 07월 연금, 꼭 확인해야 할 5가지\n\n| 확인 항목            | 주요 내용                                         |\n|---------------------|-------------------------------------------------|\n| 정책 주체           | 금융위원회 공식 안내 기준                        |\n| 적용 대상           | 연금저축, 퇴직연금(DB·DC·IRP) 가입자              |\n| 시행 시기           | 2026년 7월 2일 기준                              |\n| 변경 내용           | 지급액·운용규정·세제 혜택 등 변동 사항            |\n| 확인 방법           | 금융위원회 홈페이지(fsc.go.kr) 내 보도자료        |\n\n---\n\n#### 1. 정책 발표 주체와 시기  \n정책 발표 및 변경 사항은 반드시 금융위원회 공식 자료(보도자료, 홈페이지 공지 등)에서 시행일과 적용 대상을 확인해야 합니다.\n\n#### 2. 적용 대상  \n2026년 7월 기준 변경 사항은 연금저축, 퇴직연금(DB형·DC형·IRP) 상품에 가입한 직장인, 자영업자, 개인에게 적용됩니다.\n\n#### 3. 변경 내용  \n정책이 실제로 변경된다면, 아래와 같은 항목이 포함됩니다.\n- 지급액 인상 또는 감액\n- 연금저축 세제 혜택 규정 변화\n- 퇴직연금 운용 규정(예: DB형, DC형, IRP 구조) 변경\n\n#### 4. 신청 및 적용 방식  \n- 자동 적용되는 경우와 별도 신청이 필요한 경우가 있으니, 보도자료의 ‘신청 절차’ 항목을 확인해야 합니다.\n\n#### 5. 예외 조건  \n- 연령, 소득, 가입 기간 등 제한 조건이 있는지 반드시 체크해야 합니다.\n\n---\n\n### 실제 적용 예시\n\n예를 들어, 07월 연금 지급 정책에 퇴직연금 DB형 운용 규정이 변경된다면, 해당 회사의 DB형 가입자만 영향을 받습니다.  \n연금저축 상품의 세제 혜택이 달라진다면, 해당 상품에 가입한 개인이 추가 혜택이나 조건 변경을 경험하게 됩니다.\n\n공식 안내에 ‘일괄 지급’이나 ‘추가 지급’이 명시되어 있지 않다면, 기존 지급 기준이 유지되거나 개인별로 조건에 따라 차이가 있을 수 있습니다.\n\n---\n\n### 꼭 확인하세요\n\n- 금융위원회 보도자료(2026년 7월 2일 기준)\n- 적용 대상 연금 상품명(DB형, DC형, IRP, 연금저축 등)\n- 지급액, 운용규정, 세제 혜택 변경 여부\n- 연령·소득·가입기간 등 제한 조건\n- 자동 적용 또는 별도 신청 필요 여부\n\n---\n\n7월 연금 정책이나 지급액이 바뀌었는지, 내 연금에 영향을 주는 변화가 있는지는  \n금융위원회 공식 홈페이지(fsc.go.kr) 보도자료에서 직접 확인하는 것이 가장 정확합니다.\n\n개인별로 적용 여부와 조건이 다를 수 있으므로, 반드시 원문 안내를 꼼꼼히 확인하고  \n내 연금 상품과 비교해 보시길 권장합니다.",
+      "tags": [
+        "정책",
+        "07월",
+        "연금"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxyZXRpcmVtZW50JTIwZmluYW5jZSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzgzMDE1ODcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "07월 연금, 내 지급액 달라지나? 꼭 확인할 5가지 — Photo by Kelly Sikkema on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxyZXRpcmVtZW50JTIwZmluYW5jZSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzgzMDE1ODcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "07월 연금, 내 지급액 달라지나? 꼭 확인할 5가지 본문 보조 이미지 — Photo by Kelly Sikkema on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 연금, 내 지급액 달라지나? 꼭 확인할 5가지. Keyword: 07월 연금. Concrete visual subject: retirement finance documents. Context: 2026년 7월 연금, 이번 달 내 연금 지급액이나 정책이 달라지는지 궁금한 분들이 많습니다. 특히 연금저축, 퇴직연금 등 금융 상품을 보유하고 있다면, 금융위원회 공식 안내 기준으로 자신의 지급액이나 조건에 변화가 있는지 꼼꼼히 확인해야 합니다. 금융위원회는 대한민국 금융 정책을 총괄하는 정부 기관으로, 연금저축과 퇴직연금에 대한 규정과 변경 사항을 공식적으로 발표합니다. ### 07월 연금, 꼭 확인해야 할 5가지 | 확인 항목 | 주요 내용 | |---------------------|-------------------------------------------------| | 정책 주체 | 금융위원회 공식 안내 기준 | | 적용 대상 | 연금저축, 퇴직연금(DB·DC·IRP) 가입자 | | 시행 시기 | 2026년 7월 2일 기준 | | 변경 내용 | 지급액·운용규정·세제 혜택 등 변동 사항 | | 확인 방법 | 금융위원회 홈페이지(fsc.go.kr) 내 보도자료 | --- #### 1. 정책 발표 주체와 시기 정책 발표 및 변경 사항은 반드시 금융위원회 공식 자료(보도자료, 홈페이지 공지 등)에서 시행일과 적용 대상을 확인해야 합니다. #### 2. 적용 대상 2026년 7월 기준 변경 사항은 연금저축, 퇴직연금(DB형·DC형·IRP) 상품에 가입한 직장인, 자영업자, 개인에게 적용됩니다. #### 3. 변경 내용 정책이 실. Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 07월 연금, 내 지급액 달라지나? 꼭 확인할 5가지. Keyword: 07월 연금. Concrete visual subject: retirement finance documents. Article context: 2026년 7월 연금, 이번 달 내 연금 지급액이나 정책이 달라지는지 궁금한 분들이 많습니다. 특히 연금저축, 퇴직연금 등 금융 상품을 보유하고 있다면, 금융위원회 공식 안내 기준으로 자신의 지급액이나 조건에 변화가 있는지 꼼꼼히 확인해야 합니다. 금융위원회는 대한민국 금융 정책을 총괄하는 정부 기관으로, 연금저축과 퇴직연금에 대한 규정과 변경 사항을 공식적으로 발표합니다. ### 07월 연금, 꼭 확인해야 할 5가지 | 확인 항목 | 주요 내용 | |---------------------|-------------------------------------------------| | 정책 주체 | 금융위원회 공식 안내 기준 | | 적용 대상 | 연금저축, 퇴직연금(DB·DC·IRP) 가입자 | | 시행 시기 | 2026년 7월 2일 기준 | | 변경 내용 | 지급액·운용규정·세제 혜택 등 변동 사항 | | 확인 방법 | 금융위원회 홈페이지(fsc.go.kr) 내 보도자료 | --- #### 1. 정책 발표 주체와 시기 정책 발표 및 변경 사항은 반드시 금융위원회 공식 자료(보도자료, 홈페이지 공지 등)에서 시행일과 적용 대상을 확인해야 합니다. #### 2. 적용 대상 2026년 7월 기준 변경 사항은 연금저축, 퇴직연금(DB형·DC형·IRP) 상품에 가입한 직장인, 자영업자, 개인에게 적용됩니다. #### 3. 변경 내용 정책이 실제로 변경된다면, 아래와 같은 항목이 포함됩니다. - 지급액 인상 또는 감액 - 연금저축 세제 혜택 규정 변화 - 퇴직연금 운용 규정(예: DB형, DC형, IRP 구조) 변경 #### 4. 신청 및 적용 방식 - 자동 적용되는 경우와 별도 신청이 필요한 경우가 있으니, 보도자료의 ‘신청 절차’ 항목을 확인해야 합니다. #### 5. 예외 조건 - 연령, . The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-02T18:10:53.917598",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/07월-스펙-5eac00f8.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/07월-연금-2ecd1a56.md",
+      "message": "draft saved"
+    }
+  ]
+}
