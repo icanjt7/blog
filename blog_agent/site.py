@@ -463,7 +463,19 @@ class StaticSiteBuilder:
         return (
             post.slug.startswith(automated_prefixes)
             or any(tag in post.tags for tag in ("보도기사", "보도자료", "입찰공고"))
+            or "보도자료" in post.excerpt
+            or "보도자료" in post.body_html
+            or any(self._is_public_agency_source(url) for _label, url in (post.source_links or []))
         )
+
+    @staticmethod
+    def _is_public_agency_source(url: str) -> bool:
+        host = urlsplit(url).netloc.lower().removeprefix("www.")
+        if not host:
+            return False
+        if "korea.kr" in host:
+            return True
+        return host.endswith(".go.kr")
 
     def _is_review_index_post(self, post: Post) -> bool:
         if not self.adsense_review_mode:
