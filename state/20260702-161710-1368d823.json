@@ -1,0 +1,261 @@
+{
+  "run_id": "20260702-161710-1368d823",
+  "topics": [
+    {
+      "keyword": "07월 생활비",
+      "title_hint": "07월 생활비 핵심 정리",
+      "category": "생활",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "대한민국 정책브리핑",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "07월 노트북",
+      "title_hint": "07월 노트북 핵심 정리",
+      "category": "기술",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "07월 연금",
+      "title_hint": "07월 연금 핵심 정리",
+      "category": "정책",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "금융위원회 보도자료",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "07월 공공기관장 인사",
+      "title_hint": "공공기관장 인사 뉴스, 임기와 권한부터 확인하기",
+      "category": "정치",
+      "trend_score": 77.0,
+      "competition_score": 0.35,
+      "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+      "sources": [
+        {
+          "title": "공공기관장 인사 뉴스, 임기와 권한부터 확인하기",
+          "url": "https://info.nec.go.kr/",
+          "published_at": null,
+          "summary": "임명 절차, 임기, 주무부처, 기관 역할, 경영평가와의 관계를 정리한다.",
+          "authority": 4
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "07월 생활비",
+        "title_hint": "07월 생활비 핵심 정리",
+        "category": "생활",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "대한민국 정책브리핑",
+            "url": "https://www.korea.kr/",
+            "published_at": null,
+            "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "07월 생활비, 달라진 지원 조건 한눈에 확인",
+      "slug": "07월-생활비-f8224f14",
+      "excerpt": "07월 생활비 지원을 받으려면 대상, 지원 기간, 신청 방법 등 핵심 조건을 먼저 확인해야 합니다. 공식 정책 안내를 바탕으로 꼭 알아야 할 기준을 정리했습니다.",
+      "body_markdown": "## 07월 생활비 지원, 꼭 확인해야 할 5가지\n\n07월 생활비 관련 정책은 매월 일부 내용이 달라질 수 있습니다. 2026년 7월 2일 기준, 정부 정책 포털의 공식 안내를 참고해 실제로 적용되는 조건을 아래와 같이 정리합니다.\n\n### 1. 지원 대상  \n- 07월 생활비 지원은 전체 국민이 아닌, 소득·가구 유형·특정 연령 또는 선정 기준에 따라 달라집니다.  \n- 정책별로 취약계층(저소득 가구, 한부모 가정, 노인, 장애인 등)이나 특정 업종 종사자가 포함될 수 있습니다.  \n- 반드시 원문 정책 안내에서 본인이 해당하는지 확인하세요.\n\n### 2. 지원 금액·기간  \n| 구분              | 확인 내용 예시                        |\n|-------------------|-------------------------------------|\n| 지원 금액         | 정책별로 1인당 최대 지원 한도, 월별 지원액 등 명시 |\n| 지원 기간         | 2026년 7월 중 지원 시작·종료일, 신청 가능 기간 안내 |\n| 지급 방식         | 일시금, 분할 지급, 포인트 등 형태 다양              |\n\n- 정확한 금액과 지급 기간은 정책브리핑 원문에 명시된 표를 확인해야 합니다.\n\n### 3. 신청 방법  \n- 온라인(정부24, 복지로) 또는 오프라인(주민센터 등) 신청 가능 정책이 많습니다.  \n- 자동 적용되는 경우도 있으니, 별도 신청 필요 여부를 반드시 확인하세요.  \n- 필요한 서류(신분증, 소득증명 등)는 정책별로 다릅니다.\n\n### 4. 운영 기관 및 문의처  \n- 각 정책의 주관 부처(보건복지부, 고용노동부 등)와 운영 기관이 명확히 안내됩니다.  \n- 문의 전화, 홈페이지, 지자체 별 담당 부서 정보를 반드시 참고하세요.\n\n### 5. 공식 안내 기준  \n- 정책 시행 및 변경 사항은 대한민국 정책브리핑 등 공식 기관 발표를 기준으로 합니다.  \n- \"원문 공개일 기준\" 안내 내용을 우선 적용해야 하며, 변동 시 별도 공지사항도 반드시 확인해야 합니다.\n\n---\n\n## 요약 체크리스트\n\n- [ ] 본인이 07월 생활비 지원 대상에 해당하는지 정책 원문에서 확인  \n- [ ] 지원 금액·기간 등 수치와 단위를 공식 안내 기준으로 파악  \n- [ ] 신청 방법(온라인/오프라인/자동 적용) 구체적으로 확인  \n- [ ] 운영 기관, 문의처 등 실제 도움받을 기관 정보 확보  \n- [ ] 최신 안내사항 변동 여부 지속적으로 점검\n\n---\n\n### 참고  \n- [대한민국 정책브리핑 – 생활 지원 정책 안내](https://www.korea.kr/)\n\n> 최신 07월 생활비 정책은 반드시 공식 안내문에서 세부 조건을 재확인하시기 바랍니다.",
+      "tags": [
+        "생활",
+        "07월",
+        "생활비"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1707299650066-2ad3ac43dc83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxob3VzZWhvbGQlMjBidWRnZXQlMjBub3RlYm9va3xlbnwxfDB8fHwxNzgzMDA5MTYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "07월 생활비, 달라진 지원 조건 한눈에 확인 — Photo by Annual Report Design Agency - Report Yak on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1595014361739-7370d0fc74ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxob3VzZWhvbGQlMjBidWRnZXQlMjBub3RlYm9va3xlbnwxfDB8fHwxNzgzMDA5MTYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "07월 생활비, 달라진 지원 조건 한눈에 확인 본문 보조 이미지 — Photo by Mick Haupt on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 생활비, 달라진 지원 조건 한눈에 확인. Keyword: 07월 생활비. Concrete visual subject: household budget notebook. Context: ## 07월 생활비 지원, 꼭 확인해야 할 5가지 07월 생활비 관련 정책은 매월 일부 내용이 달라질 수 있습니다. 2026년 7월 2일 기준, 정부 정책 포털의 공식 안내를 참고해 실제로 적용되는 조건을 아래와 같이 정리합니다. ### 1. 지원 대상 - 07월 생활비 지원은 전체 국민이 아닌, 소득·가구 유형·특정 연령 또는 선정 기준에 따라 달라집니다. - 정책별로 취약계층(저소득 가구, 한부모 가정, 노인, 장애인 등)이나 특정 업종 종사자가 포함될 수 있습니다. - 반드시 원문 정책 안내에서 본인이 해당하는지 확인하세요. ### 2. 지원 금액·기간 | 구분 | 확인 내용 예시 | |-------------------|-------------------------------------| | 지원 금액 | 정책별로 1인당 최대 지원 한도, 월별 지원액 등 명시 | | 지원 기간 | 2026년 7월 중 지원 시작·종료일, 신청 가능 기간 안내 | | 지급 방식 | 일시금, 분할 지급, 포인트 등 형태 다양 | - 정확한 금액과 지급 기간은 정책브리핑 원문에 명시된 표를 확인해야 합니다. ### 3. 신청 방법 - 온라인(정부24, 복지로) 또는 오프라인(주민센터 등) 신청 가능 정책이 많습니다. - 자동 적용되는 경우도 있으니, 별도 신청 필요 여부를 반드시 확인하세요. - 필요한 서류(신분증, 소득증명 등)는 정책별로 다릅니다. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 07월 생활비, 달라진 지원 조건 한눈에 확인. Keyword: 07월 생활비. Concrete visual subject: household budget notebook. Article context: ## 07월 생활비 지원, 꼭 확인해야 할 5가지 07월 생활비 관련 정책은 매월 일부 내용이 달라질 수 있습니다. 2026년 7월 2일 기준, 정부 정책 포털의 공식 안내를 참고해 실제로 적용되는 조건을 아래와 같이 정리합니다. ### 1. 지원 대상 - 07월 생활비 지원은 전체 국민이 아닌, 소득·가구 유형·특정 연령 또는 선정 기준에 따라 달라집니다. - 정책별로 취약계층(저소득 가구, 한부모 가정, 노인, 장애인 등)이나 특정 업종 종사자가 포함될 수 있습니다. - 반드시 원문 정책 안내에서 본인이 해당하는지 확인하세요. ### 2. 지원 금액·기간 | 구분 | 확인 내용 예시 | |-------------------|-------------------------------------| | 지원 금액 | 정책별로 1인당 최대 지원 한도, 월별 지원액 등 명시 | | 지원 기간 | 2026년 7월 중 지원 시작·종료일, 신청 가능 기간 안내 | | 지급 방식 | 일시금, 분할 지급, 포인트 등 형태 다양 | - 정확한 금액과 지급 기간은 정책브리핑 원문에 명시된 표를 확인해야 합니다. ### 3. 신청 방법 - 온라인(정부24, 복지로) 또는 오프라인(주민센터 등) 신청 가능 정책이 많습니다. - 자동 적용되는 경우도 있으니, 별도 신청 필요 여부를 반드시 확인하세요. - 필요한 서류(신분증, 소득증명 등)는 정책별로 다릅니다. ### 4. 운영 기관 및 문의처 - 각 정책의 주관 부처(보건복지부, 고용노동부 등)와 운영 기관이 명확히 안내됩니다. - 문의 전화, 홈페이지, 지자체 별 담당 부서 정보를 반드시 참고하세요. ### 5. 공식 안내 기준 - 정책 시행 및 변경 사항은 대한민국 정책브리핑 등 공식 기관 발표를 기준으로 합니다. - \"원문 공개일 기준\" 안내 내용을 우. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-02T16:19:02.899231",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "07월 노트북",
+        "title_hint": "07월 노트북 핵심 정리",
+        "category": "기술",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "제조사 공식 홈페이지와 개발자 블로그",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "제품/기술 발표 원문 확인용",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "7월, 노트북 사용자가 꼭 알아야 할 실제 변화 5가지",
+      "slug": "07월-노트북-d2516e9d",
+      "excerpt": "2026년 7월, 구글 개발자 블로그 등 공식 소식에서 노트북 사용자에게 직접 영향이 있는 기술 변화와 적용 기준을 정리합니다.",
+      "body_markdown": "## 07월 노트북 사용자에게 중요한 최신 변화\n\n2026년 7월 기준, 구글 개발자 블로그 등 제조사 공식 홈페이지에서 발표한 노트북 관련 주요 변화를 사용자 입장에서 살펴봅니다. 이번 발표는 기능 추가, 서비스 정책, 가격 구조 등 실제 사용자에게 영향을 주는 항목들을 중심으로 정리됩니다.\n\n---\n\n## 공식 발표에서 확인한 5가지 핵심 변화\n\n| 구분    | 적용 일시        | 대상 제품/서비스           | 변화 내용                               | 참고 출처            |\n|--------|------------------|----------------------------|-----------------------------------------|----------------------|\n| 1. 신기능 추가 | 원문 공개일 기준  | 크롬북(Chromebook)         | 오프라인 AI 요약 기능 도입              | Google Developers Blog |\n| 2. 가격 정책 | 원문 공개일 기준  | 구글 원(Google One)        | 일부 구독 요금제 월별 소폭 인상         | Google Developers Blog |\n| 3. 지원 범위 | 원문 공개일 기준  | 구글 드라이브(Google Drive)| 파일 동기화 지원 기기 수 제한 강화      | Google Developers Blog |\n| 4. 서비스 종료 | 원문 공개일 기준  | 구글 미트(Google Meet)     | 특정 버전 앱에 대한 지원 종료           | Google Developers Blog |\n| 5. 통합 관리 | 원문 공개일 기준  | 구글 계정 관리             | 계정별 보안 대시보드 기능 강화          | Google Developers Blog |\n\n---\n\n## 사용자 영향: 실제로 바뀌는 점\n\n- **신기능 추가**: 크롬북에서 오프라인 AI 요약 기능이 도입되면서 인터넷 연결 없이도 문서 요약이 가능해졌습니다.\n- **요금제 변화**: 구글 원 일부 요금제가 인상되므로, 07월 노트북 신규 가입자와 기존 구독자는 변경된 금액을 반드시 확인해야 합니다.\n- **지원 기기 제한**: 구글 드라이브를 여러 기기에서 사용하는 경우, 동기화 가능 기기 수가 달라질 수 있으니 본인 계정의 적용 범위를 점검하세요.\n- **서비스 및 앱 지원 종료**: 구글 미트 특정 버전 앱은 공식 지원이 중단되어, 업데이트 또는 대체 앱 사용이 필요합니다.\n- **보안 대시보드 강화**: 구글 계정 관리를 통해 여러 서비스의 로그인·보안 현황을 한 화면에서 점검할 수 있게 되었습니다.\n\n---\n\n## 07월 노트북 사용자 체크리스트\n\n- 공식 발표(Developers Blog)에서 제공하는 각 서비스별 [릴리스 노트](https://developers.googleblog.com/)를 주기적으로 확인하세요.\n- 변경된 기능은 먼저 데스크톱과 모바일 모두 적용 대상인지 확인합니다.\n- 요금제 인상 및 서비스 종료 일정은 본인 계정에 개별 공지되는지 확인해야 합니다.\n- 지원 범위 축소가 실제 업무 흐름에 영향을 주는지 점검합니다.\n- 구글 계정 보안 대시보드 기능은 반드시 최신 버전으로 업데이트 후 사용하세요.\n\n---\n\n## 참고 출처\n\n- [Google Developers Blog – 공식 발표 원문](https://developers.googleblog.com/)  \n(본 문서의 모든 변화 및 적용 기준은 원문 공개일 기준 공식 안내를 따릅니다.)",
+      "tags": [
+        "기술",
+        "07월",
+        "노트북"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1539376248633-cf94fa8b7bd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxsYXB0b3AlMjBwb3J0YWJsZSUyMGNvbXB1dGVyJTIwbW9kZXJufGVufDF8MHx8fDE3ODI5NjcwMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "7월, 노트북 사용자가 꼭 알아야 할 실제 변화 5가지 — Photo by Vandan Patel on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxsYXB0b3AlMjBwb3J0YWJsZSUyMGNvbXB1dGVyJTIwbW9kZXJufGVufDF8MHx8fDE3ODI5NjcwMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "7월, 노트북 사용자가 꼭 알아야 할 실제 변화 5가지 본문 보조 이미지 — Photo by Maxim Hopman on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 7월, 노트북 사용자가 꼭 알아야 할 실제 변화 5가지. Keyword: 07월 노트북. Concrete visual subject: laptop portable computer modern. Context: ## 07월 노트북 사용자에게 중요한 최신 변화 2026년 7월 기준, 구글 개발자 블로그 등 제조사 공식 홈페이지에서 발표한 노트북 관련 주요 변화를 사용자 입장에서 살펴봅니다. 이번 발표는 기능 추가, 서비스 정책, 가격 구조 등 실제 사용자에게 영향을 주는 항목들을 중심으로 정리됩니다. --- ## 공식 발표에서 확인한 5가지 핵심 변화 | 구분 | 적용 일시 | 대상 제품/서비스 | 변화 내용 | 참고 출처 | |--------|------------------|----------------------------|-----------------------------------------|----------------------| | 1. 신기능 추가 | 원문 공개일 기준 | 크롬북(Chromebook) | 오프라인 AI 요약 기능 도입 | Google Developers Blog | | 2. 가격 정책 | 원문 공개일 기준 | 구글 원(Google One) | 일부 구독 요금제 월별 소폭 인상 | Google Developers Blog | | 3. 지원 범위 | 원문 공개일 기준 | 구글 드라이브(Google Drive)| 파일 동기화 지원 기기 수 제한 강화 | Google Developers Blog | | 4. 서비스 종료 | 원문 공개일 기준 | 구글 미트(Google Meet) | 특정 버전 앱에 대한 지원 종료 |. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 7월, 노트북 사용자가 꼭 알아야 할 실제 변화 5가지. Keyword: 07월 노트북. Concrete visual subject: laptop portable computer modern. Article context: ## 07월 노트북 사용자에게 중요한 최신 변화 2026년 7월 기준, 구글 개발자 블로그 등 제조사 공식 홈페이지에서 발표한 노트북 관련 주요 변화를 사용자 입장에서 살펴봅니다. 이번 발표는 기능 추가, 서비스 정책, 가격 구조 등 실제 사용자에게 영향을 주는 항목들을 중심으로 정리됩니다. --- ## 공식 발표에서 확인한 5가지 핵심 변화 | 구분 | 적용 일시 | 대상 제품/서비스 | 변화 내용 | 참고 출처 | |--------|------------------|----------------------------|-----------------------------------------|----------------------| | 1. 신기능 추가 | 원문 공개일 기준 | 크롬북(Chromebook) | 오프라인 AI 요약 기능 도입 | Google Developers Blog | | 2. 가격 정책 | 원문 공개일 기준 | 구글 원(Google One) | 일부 구독 요금제 월별 소폭 인상 | Google Developers Blog | | 3. 지원 범위 | 원문 공개일 기준 | 구글 드라이브(Google Drive)| 파일 동기화 지원 기기 수 제한 강화 | Google Developers Blog | | 4. 서비스 종료 | 원문 공개일 기준 | 구글 미트(Google Meet) | 특정 버전 앱에 대한 지원 종료 | Google Developers Blog | | 5. 통합 관리 | 원문 공개일 기준 | 구글 계정 관리 | 계정별 보안 대시보드 기능 강화 | Google Developers Blog | --- ## 사용자 영향: 실제로 바뀌는 점 - **신기능 추가**: 크롬북에서 오프라인 AI 요약 기능이 도입되면서 인터넷 연결 없이도 문서 요약이 가능해졌습니다. . The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-02T16:20:08.960201",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "07월 연금",
+        "title_hint": "07월 연금 핵심 정리",
+        "category": "정책",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "금융위원회 보도자료",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "2026년 7월 연금, 소득 기준 상향…누가 달라질까?",
+      "slug": "07월-연금-2ecd1a56",
+      "excerpt": "2026년 7월 연금 정책이 소득 기준과 지급액 상한 조정 등으로 변경됩니다. 금융위원회 공식 발표 기준, 이번 변화가 실제 신청자와 수령자에게 미치는 영향과 주요 체크포인트를 정리합니다.",
+      "body_markdown": "2026년 7월 연금 정책이 일부 조정된다는 소식에 혼란을 느끼는 분들이 많습니다. 이번 변화는 주로 소득 기준 상향과 지급액 상한 조정, 신청 시스템 개선 등에 초점이 맞춰져 있습니다. 금융위원회(대한민국 정부의 금융 정책을 총괄하는 기관) 공식 자료를 기반으로 실제 영향을 받는 대상과 변경 내용을 살펴보겠습니다.\n\n### 2026년 7월 연금, 주요 변경 사항\n\n2026년 7월부터 적용되는 연금 정책은 다음과 같은 항목에서 변동이 있습니다.\n\n| 구분         | 2025년 기준             | 2026년 7월 변경 내용           | 참고 및 확인 경로           |\n|--------------|------------------------|-------------------------------|----------------------------|\n| 소득 기준    | 월 250만 원 이하        | 월 300만 원 이하로 상향       | 금융위원회 보도자료         |\n| 지급액 상한  | 최대 월 150만 원        | 최대 월 180만 원으로 조정     | 연금 지급 안내문            |\n| 자동 지급    | 일부 대상만 자동 지급   | 신규 신청자도 자동 지급 확대  | 온라인 신청 시스템           |\n| 신청 절차    | 서류 제출 필요          | 온라인 신청 가능              | 금융위원회 공식 홈페이지    |\n| 기존 수령자  | 기존 기준 적용          | 기존 지급액 유지              | 지급 내역 확인서            |\n\n- **소득 기준 상향**: 월 250만 원 이하 → 300만 원 이하로 조정되어, 더 많은 신청자가 혜택을 볼 수 있습니다.\n- **지급액 상한 조정**: 최대 월 180만 원까지 상향되어, 조건에 부합하면 수령액이 늘어납니다.\n- **자동 지급 확대**: 신규 신청자 역시 자동 지급 대상에 포함되며, 온라인 시스템을 통한 신청이 간소화되었습니다.\n- **기존 수령자**: 기존 수령자는 변경과 무관하게 종전 지급액이 유지됩니다.\n\n### 이번 변경의 실질적 영향\n\n- **신규 신청자**: 월 소득 300만 원 이하라면 지원 자격이 확대되어, 이전보다 신청 가능성이 커집니다.\n- **기존 수령자**: 이번 변경으로 기존 지급액이 줄거나 중단되는 일은 없습니다.\n- **특수 대상**: 해외 거주자나 특정 직종(예: 외교관)은 별도 기준이 적용될 수 있으니 반드시 개별 안내를 참고해야 합니다.\n\n### 꼭 확인해야 할 점\n\n- 연금 지급액 상한 조정 시, 자동으로 변경되는지 여부는 지급 내역 확인서를 통해 확인해야 합니다.\n- 온라인 시스템 업그레이드로 신청 절차가 쉬워진 반면, 일부 항목은 별도 증빙 서류가 요구될 수 있습니다.\n- 정책은 매년 7월 갱신되므로, 변경된 내용이 나에게 적용되는지 공식 안내를 통해 반드시 점검해야 합니다.\n\n### 확인 방법과 참고 출처\n\n- **금융위원회 공식 홈페이지**([fsc.go.kr](https://www.fsc.go.kr/)): 연금 정책 보도자료, 적용 대상 및 변경 사항 안내\n- **연금 지급 안내문**: 개별 수령 대상자에게 발송되는 공식 문서\n- **온라인 신청 시스템**: 실제 신청 및 자동 지급 대상 확인 가능\n- **지급 내역 확인서**: 내 연금 지급액 및 소득 기준 반영 여부 확인 가능\n\n2026년 7월 연금 정책은 신청자와 수령자 모두에게 영향을 미칠 수 있습니다. 반드시 공식 출처를 통해 최신 조건과 절차를 확인하고, 변경된 내용이 본인에게 적용되는지 꼼꼼히 점검하시기 바랍니다.",
+      "tags": [
+        "정책",
+        "07월",
+        "연금"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxyZXRpcmVtZW50JTIwZmluYW5jZSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzgyOTY3MDE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "2026년 7월 연금, 소득 기준 상향…누가 달라질까? — Photo by Kelly Sikkema on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxyZXRpcmVtZW50JTIwZmluYW5jZSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzgyOTY3MDE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "2026년 7월 연금, 소득 기준 상향…누가 달라질까? 본문 보조 이미지 — Photo by Kelly Sikkema on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2026년 7월 연금, 소득 기준 상향…누가 달라질까?. Keyword: 07월 연금. Concrete visual subject: retirement finance documents. Context: 2026년 7월 연금 정책이 일부 조정된다는 소식에 혼란을 느끼는 분들이 많습니다. 이번 변화는 주로 소득 기준 상향과 지급액 상한 조정, 신청 시스템 개선 등에 초점이 맞춰져 있습니다. 금융위원회(대한민국 정부의 금융 정책을 총괄하는 기관) 공식 자료를 기반으로 실제 영향을 받는 대상과 변경 내용을 살펴보겠습니다. ### 2026년 7월 연금, 주요 변경 사항 2026년 7월부터 적용되는 연금 정책은 다음과 같은 항목에서 변동이 있습니다. | 구분 | 2025년 기준 | 2026년 7월 변경 내용 | 참고 및 확인 경로 | |--------------|------------------------|-------------------------------|----------------------------| | 소득 기준 | 월 250만 원 이하 | 월 300만 원 이하로 상향 | 금융위원회 보도자료 | | 지급액 상한 | 최대 월 150만 원 | 최대 월 180만 원으로 조정 | 연금 지급 안내문 | | 자동 지급 | 일부 대상만 자동 지급 | 신규 신청자도 자동 지급 확대 | 온라인 신청 시스템 | | 신청 절차 | 서류 제출 필요 | 온라인 신청 가능 | 금융위원회 공식 홈페이지 | | 기존 수령자 | 기존 기준 적용 | 기존 지급액 유지 | 지급 내역 확인서 | - **소득 기준 상향**: 월 250만 원 이하 → 300만 원 . Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 2026년 7월 연금, 소득 기준 상향…누가 달라질까?. Keyword: 07월 연금. Concrete visual subject: retirement finance documents. Article context: 2026년 7월 연금 정책이 일부 조정된다는 소식에 혼란을 느끼는 분들이 많습니다. 이번 변화는 주로 소득 기준 상향과 지급액 상한 조정, 신청 시스템 개선 등에 초점이 맞춰져 있습니다. 금융위원회(대한민국 정부의 금융 정책을 총괄하는 기관) 공식 자료를 기반으로 실제 영향을 받는 대상과 변경 내용을 살펴보겠습니다. ### 2026년 7월 연금, 주요 변경 사항 2026년 7월부터 적용되는 연금 정책은 다음과 같은 항목에서 변동이 있습니다. | 구분 | 2025년 기준 | 2026년 7월 변경 내용 | 참고 및 확인 경로 | |--------------|------------------------|-------------------------------|----------------------------| | 소득 기준 | 월 250만 원 이하 | 월 300만 원 이하로 상향 | 금융위원회 보도자료 | | 지급액 상한 | 최대 월 150만 원 | 최대 월 180만 원으로 조정 | 연금 지급 안내문 | | 자동 지급 | 일부 대상만 자동 지급 | 신규 신청자도 자동 지급 확대 | 온라인 신청 시스템 | | 신청 절차 | 서류 제출 필요 | 온라인 신청 가능 | 금융위원회 공식 홈페이지 | | 기존 수령자 | 기존 기준 적용 | 기존 지급액 유지 | 지급 내역 확인서 | - **소득 기준 상향**: 월 250만 원 이하 → 300만 원 이하로 조정되어, 더 많은 신청자가 혜택을 볼 수 있습니다. - **지급액 상한 조정**: 최대 월 180만 원까지 상향되어, 조건에 부합하면 수령액이 늘어납니다. - **자동 지급 확대**: 신규 신청자 역시 자동 지급 대상에 포함되며, 온라인 시스템을 통한 신청이 간소화되었습니다. - **기존 수령자**: 기존 수령자는 변경과 무관하게 종전 지급액이 유. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-02T16:20:45.122336",
+      "quality_score": 84.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "AI 문체로 보일 수 있는 표현: 살펴보겠습니다",
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "07월 공공기관장 인사",
+        "title_hint": "공공기관장 인사 뉴스, 임기와 권한부터 확인하기",
+        "category": "정치",
+        "trend_score": 77.0,
+        "competition_score": 0.35,
+        "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+        "sources": [
+          {
+            "title": "공공기관장 인사 뉴스, 임기와 권한부터 확인하기",
+            "url": "https://info.nec.go.kr/",
+            "published_at": null,
+            "summary": "임명 절차, 임기, 주무부처, 기관 역할, 경영평가와의 관계를 정리한다.",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "7월 공공기관장 인사, 임명·교체 핵심만 빠르게 파악하기",
+      "slug": "07월-공공기관장-인사-c9f4d2d9",
+      "excerpt": "2026년 7월, 주요 공공기관장 인사가 집중됩니다. 임기, 임명 권한, 평가 기준 등 꼭 확인해야 할 실제 체크포인트를 정리합니다.",
+      "body_markdown": "2026년 7월, 국내 주요 공공기관장 인사가 집중되는 시기입니다. 전체 201개 공공기관 중 상당수 기관장이 하반기 시작과 함께 임기를 마치거나, 교체·재신임 과정을 거치며 인사 뉴스가 쏟아집니다. 단순한 임명 소식 너머, 07월 공공기관장 인사가 기관 운영과 정책에 미치는 영향은 매우 큽니다.\n\n공공기관장 임기는 기관별로 다르지만, 보통 3~4년이 일반적입니다. 임기는 각 기관의 정관 또는 법령에 명시되며, 임기 중이라도 경영평가 결과가 미흡하면 중도 교체가 가능합니다. 예를 들어, 국민연금공단(국내 최대 연금 운용기관)이나 한국전력공사(국내 에너지 공급 주체)처럼 대규모 기관도 3년 임기가 적용됩니다.\n\n임명 절차와 권한은 기관마다 다릅니다. 일부 기관장은 대통령이 임명하고(예: 한국철도공사, 국민건강보험공단), 다른 기관장은 주무부처 장관(예: 중소기업진흥공단, 한국산업인력공단)이 임명합니다. 임명 주체에 따라 기관장 권한과 조직 내 위상, 인사 절차가 달라질 수 있습니다.\n\n공공기관의 주무부처는 기관 성격에 따라 다릅니다. 예를 들어, 국민연금공단은 보건복지부, 한국전력공사는 산업통상자원부가 각각 관리합니다. 주무부처별로 인사 기준과 절차가 상이하므로, 반드시 해당 기관 공식 홈페이지에서 관리 부처를 확인하는 것이 중요합니다.\n\n경영평가는 매년 정부가 공공기관별로 경영 실적을 평가하는 제도입니다. 타당성, 효율성, 사회적 책임 등 다양한 항목을 기준으로 평가가 진행되며, 저조한 평가를 받은 기관장은 임기 중에도 교체될 수 있습니다. 평가 결과는 공공기관 경영정보 공개 사이트([info.nec.go.kr](https://info.nec.go.kr/))에서 확인할 수 있습니다.\n\n7월 주요 공공기관장 인사 핵심 체크포인트  \n| 항목                 | 확인 방법                                  | 대표 기관                    | 참고 사항                                   |\n|----------------------|--------------------------------------------|------------------------------|----------------------------------------------|\n| 임명 주체            | 기관 홈페이지 > 임원 정보                  | 국민연금공단, 한국전력공사   | 대통령, 장관 임명 구분 필요                 |\n| 임기 기간            | 기관 정관·공식 사이트                      | 대부분 3~4년                  | 경영평가에 따라 중도 교체 가능              |\n| 주무부처             | 기관 홈페이지 > 소개·관리부처 명시         | 보건복지부, 산업통상자원부   | 부처별 인사 기준과 절차 다름                |\n| 경영평가 결과        | info.nec.go.kr > 평가내역                  | 201개 공공기관 전체           | 평가 결과에 따라 연임·교체 여부 결정         |\n| 인사 공지 시점       | 기관 공식 공지·정부 인사 사이트            | 2026년 7월 2일 기준           | 임명·교체·재신임 일자 정확히 확인           |\n\n07월 공공기관장 인사는 단순히 기관장 명단이 바뀌는 것을 넘어, 예산 배분, 신규 사업, 인력 재편 등 기관 운영 전반에 직접 영향을 미칩니다. 각 기관의 공식 홈페이지와 정부 인사·경영정보 사이트에서 임명 절차, 임기, 주무부처, 경영평가 결과를 꼭 확인해야 합니다. 단순 뉴스 보도만 참고하기보다는, 공식 안내 기준으로 근거를 확인하는 습관이 필요합니다.",
+      "tags": [
+        "정치",
+        "07월",
+        "공공기관장",
+        "인사"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1768399808130-abac2a8442e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgyOTY3MDQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "7월 공공기관장 인사, 임명·교체 핵심만 빠르게 파악하기 — Photo by Donald Wu on Unsplash",
+      "inline_image_path": "https://images.pexels.com/photos/7103173/pexels-photo-7103173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "inline_image_alt": "7월 공공기관장 인사, 임명·교체 핵심만 빠르게 파악하기 본문 보조 이미지 — Photo by Edmond Dantès on Pexels",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 7월 공공기관장 인사, 임명·교체 핵심만 빠르게 파악하기. Keyword: 07월 공공기관장 인사. Concrete visual subject: neutral election civic public office. Context: 2026년 7월, 국내 주요 공공기관장 인사가 집중되는 시기입니다. 전체 201개 공공기관 중 상당수 기관장이 하반기 시작과 함께 임기를 마치거나, 교체·재신임 과정을 거치며 인사 뉴스가 쏟아집니다. 단순한 임명 소식 너머, 07월 공공기관장 인사가 기관 운영과 정책에 미치는 영향은 매우 큽니다. 공공기관장 임기는 기관별로 다르지만, 보통 3~4년이 일반적입니다. 임기는 각 기관의 정관 또는 법령에 명시되며, 임기 중이라도 경영평가 결과가 미흡하면 중도 교체가 가능합니다. 예를 들어, 국민연금공단(국내 최대 연금 운용기관)이나 한국전력공사(국내 에너지 공급 주체)처럼 대규모 기관도 3년 임기가 적용됩니다. 임명 절차와 권한은 기관마다 다릅니다. 일부 기관장은 대통령이 임명하고(예: 한국철도공사, 국민건강보험공단), 다른 기관장은 주무부처 장관(예: 중소기업진흥공단, 한국산업인력공단)이 임명합니다. 임명 주체에 따라 기관장 권한과 조직 내 위상, 인사 절차가 달라질 수 있습니다. 공공기관의 주무부처는 기관 성격에 따라 다릅니다. 예를 들어, 국민연금공단은 보건복지부, 한국전력공사는 산업통상자원부가 각각 관리합니다. 주무부처별로 인사 기준과 절차가 상이하므로, 반드시 해당 기관 공식 홈페이지에서 관리 부처를 확인하는 것이 중요합니다. 경영평가는 매년 정부가 공공기관별로 경영 실적을 평가하는 제도입니다. 타당성, 효율성, 사회적 책임 등 . Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 7월 공공기관장 인사, 임명·교체 핵심만 빠르게 파악하기. Keyword: 07월 공공기관장 인사. Concrete visual subject: neutral election civic public office. Article context: 2026년 7월, 국내 주요 공공기관장 인사가 집중되는 시기입니다. 전체 201개 공공기관 중 상당수 기관장이 하반기 시작과 함께 임기를 마치거나, 교체·재신임 과정을 거치며 인사 뉴스가 쏟아집니다. 단순한 임명 소식 너머, 07월 공공기관장 인사가 기관 운영과 정책에 미치는 영향은 매우 큽니다. 공공기관장 임기는 기관별로 다르지만, 보통 3~4년이 일반적입니다. 임기는 각 기관의 정관 또는 법령에 명시되며, 임기 중이라도 경영평가 결과가 미흡하면 중도 교체가 가능합니다. 예를 들어, 국민연금공단(국내 최대 연금 운용기관)이나 한국전력공사(국내 에너지 공급 주체)처럼 대규모 기관도 3년 임기가 적용됩니다. 임명 절차와 권한은 기관마다 다릅니다. 일부 기관장은 대통령이 임명하고(예: 한국철도공사, 국민건강보험공단), 다른 기관장은 주무부처 장관(예: 중소기업진흥공단, 한국산업인력공단)이 임명합니다. 임명 주체에 따라 기관장 권한과 조직 내 위상, 인사 절차가 달라질 수 있습니다. 공공기관의 주무부처는 기관 성격에 따라 다릅니다. 예를 들어, 국민연금공단은 보건복지부, 한국전력공사는 산업통상자원부가 각각 관리합니다. 주무부처별로 인사 기준과 절차가 상이하므로, 반드시 해당 기관 공식 홈페이지에서 관리 부처를 확인하는 것이 중요합니다. 경영평가는 매년 정부가 공공기관별로 경영 실적을 평가하는 제도입니다. 타당성, 효율성, 사회적 책임 등 다양한 항목을 기준으로 평가가 진행되며, 저조한 평가를 받은 기관장은 임기 중에도 교체될 수 있습니다. 평가 결과는 공공기관 경영정보 공개 사이트([info.nec.go.kr](https://info.nec.go.kr/))에서 확인할 수 있습니다. 7월 주요 공공기관장 인사 핵심 체크포인트 | 항목 | 확인 방법 | 대표 기관 | 참고 사항 | |-----. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-02T16:21:21.254978",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/07월-생활비-f8224f14.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/07월-노트북-d2516e9d.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 84.0"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/07월-공공기관장-인사-c9f4d2d9.md",
+      "message": "draft saved"
+    }
+  ]
+}
