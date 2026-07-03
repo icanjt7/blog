@@ -1,15 +1,17 @@
 ---
-title: "세계인과 나누는 무형유산의 가치... 10일간의 ‘무형유산축제 in 부산’"
-date: "2026-06-15T00:13"
-category: "핫이슈"
+title: 한국 무형유산의 예술성 세계에 알린다…부산 축제 개최
+date: 2026-06-15T00:13
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=d8f6c92d860842a2a32441bb645942c0"
-cover_image_alt: "홍보물"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=d8f6c92d860842a2a32441bb645942c0
+cover_image_alt: 홍보물
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청은 2026‑06‑15에 발표한 바와 같이, 오는 7월 부산에서 제48차 유네스코 세계유산위원회를 맞아 “무형유산축제 in 부산”을 7월 20일(월)부터 29일(수)까지 개최합니다. 이번 행사는 세계 각국 대표단·국제기구 관계자·국내외 관광객에게 한국 무형유산의 예술성과 전승 가치를 직접 선보이는 것이 주요 목표입니다.

@@ -1,15 +1,17 @@
 ---
-title: "명승 「장성 백양사 백학봉」 지정구역 확대 지정 및 지정명칭 변경"
-date: "2026-06-29T00:36"
-category: "핫이슈"
+title: 백암산 일대의 자연경관과 백양사의 역사문화적 가치 보존
+date: 2026-06-29T00:36
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=257a9b0aa83b4885b19f035d4a316d1b"
-cover_image_alt: "백양사 대웅전에서 바라본 백학봉"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=257a9b0aa83b4885b19f035d4a316d1b
+cover_image_alt: 백양사 대웅전에서 바라본 백학봉
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-06-29 공개한 자료를 바탕으로 명승 「장성 백양사 백학봉」 지정구역 확대 지정 및 지정명칭 변경의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

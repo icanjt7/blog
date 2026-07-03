@@ -1,15 +1,17 @@
 ---
-title: "일일 탐정 되어 옛 가야인 뼈 연구 체험"
-date: "2026-06-24T00:44"
-category: "핫이슈"
+title: 국립가야역사문화센터에서 청소년을 위한 가야인 뼈 연구 체험 운영
+date: 2026-06-24T00:44
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=675a2ac20f27431fa7c054dc38566c6a"
-cover_image_alt: "홍보물"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=675a2ac20f27431fa7c054dc38566c6a
+cover_image_alt: 홍보물
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-06-24 공개한 자료를 바탕으로 일일 탐정 되어 옛 가야인 뼈 연구 체험의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
