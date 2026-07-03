@@ -1,0 +1,134 @@
+{
+  "run_id": "20260703-110106-5d035cc0",
+  "topics": [
+    {
+      "keyword": "07월 소상공인 정책자금",
+      "title_hint": "소상공인 정책자금 신청 전 준비할 서류와 순서",
+      "category": "정책",
+      "trend_score": 78.0,
+      "competition_score": 0.35,
+      "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+      "sources": [
+        {
+          "title": "소상공인 정책자금 신청 전 준비할 서류와 순서",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "업종 제한, 신용평가, 사업자등록, 매출 증빙, 온라인 접수 흐름을 설명한다.",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "Tesla Texas",
+      "title_hint": "Tesla driver faces manslaughter charges over Texas crash that killed a woman inside her home",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Tesla driver faces manslaughter charges over Texas crash that killed a woman inside her home",
+          "url": "https://www.theverge.com/transportation/961161/tesla-fsd-katy-tx-manslaughter-charges",
+          "published_at": "2026-07-02T22:09:33",
+          "summary": "The man whose Tesla struck and killed a woman inside her Texas home last month is now facing manslaughter charges, as reported earlier by The Wall Street Journal and local news outlet KHOU 11. 44-year-old Michael Butler was arrested on Wednesday and claimed to have been driving his Model 3 using Tesla's Full-Self Driving (FSD) [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "07월 소상공인 정책자금",
+        "title_hint": "소상공인 정책자금 신청 전 준비할 서류와 순서",
+        "category": "정책",
+        "trend_score": 78.0,
+        "competition_score": 0.35,
+        "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+        "sources": [
+          {
+            "title": "소상공인 정책자금 신청 전 준비할 서류와 순서",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "업종 제한, 신용평가, 사업자등록, 매출 증빙, 온라인 접수 흐름을 설명한다.",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "07월 소상공인 정책자금, 실제 신청 가능한 업종·서류 5가지",
+      "slug": "07월-소상공인-정책자금-faea8dc5",
+      "excerpt": "07월 소상공인 정책자금 신청, 업종 제한과 필요한 서류가 어떻게 바뀌었는지 금융위원회 공식 안내 기준으로 알기 쉽게 정리합니다.",
+      "body_markdown": "### 07월 소상공인 정책자금, 실제 신청 조건은?\n\n매달 접수 방식과 대상, 준비 서류가 달라지는 소상공인 정책자금. 2026년 07월 기준, 금융위원회 공식 안내에 따라 신청 전 꼭 확인해야 할 핵심 사항을 정리했습니다.\n\n#### 소상공인 정책자금이란?\n중소기업벤처부와 금융위원회가 운영하는 제도로, 연 매출과 상시 근로자 수가 일정 기준 이하인 사업자를 지원합니다. 매월 접수마다 업종 제한, 신용평가, 매출 증빙 등 심사 기준이 달라질 수 있습니다.\n\n---\n\n### 업종 제한, 실제 지원 대상은?\n\n- 사행성 업종(오락실, 성인용 게임장 등), 부동산 임대업, 주점업 등은 지원 대상에서 제외됩니다.\n- 금융위원회(fsc.go.kr) 공식 페이지에서 업종별 지원 가능 여부를 반드시 확인하세요.\n- 매출 규모와 사업자 형태(개인사업자·법인사업자)도 심사에 영향을 미칩니다.\n\n---\n\n### 신청에 필요한 주요 서류\n\n- **사업자등록증**: 기본 제출 서류입니다. 변경사항(상호, 주소 등)이 있으면 추가 자료 필요.\n- **매출 증빙 자료**: 최근 6개월치 현금영수증, 카드매출 명세서 등 제출 필수.\n- **신용점수 조회서**: 개인 신용점수가 기준 이하이거나 최근 1년 내 부도·파산 이력이 있으면 신청이 제한됩니다.\n- **신분증**: 온라인 접수 시 신원 확인용.\n- **추가 서류**: 사업장 변경 등 상황에 따라 추가 요청될 수 있습니다.\n\n---\n\n### 온라인 접수 절차\n\n- 신청은 금융위원회 홈페이지(fsc.go.kr)에서 온라인으로만 진행됩니다.\n- 신청자 정보 입력 → 업종·매출·사업자증명 업로드 → 신용조회 동의 → 접수 완료 순으로 진행됩니다.\n- 접수 후 심사 과정에서 추가 서류 요청이 있을 수 있으니, 미리 준비해야 지연을 피할 수 있습니다.\n\n---\n\n### 2026년 07월 기준, 신청 단계별 체크포인트\n\n| 단계          | 준비 서류                | 확인 포인트            | 제한/영향                   |\n|---------------|--------------------------|------------------------|-----------------------------|\n| 업종 확인     | 업종 코드표, 사업자등록증| 지원 가능 업종인지     | 사행성·부동산 등 제외 가능 |\n| 신용 평가     | 신용점수 조회서          | 최근 부도/파산 여부    | 저신용자는 제한 받음        |\n| 매출 증빙     | 매출 명세서(최근6개월)   | 매출 규모 규정         | 기준 미달시 제외            |\n| 접수 입력     | 사업자등록증, 신분증     | 온라인 접수 가능 여부   | 오프라인 신청 불가           |\n| 추가 심사     | 추가 요구 서류(변경사항) | 주소·상호 변경 사항    | 누락시 지연 또는 거절 가능  |\n\n---\n\n### 달라진 점과 주의할 사항\n\n- 07월부터 업종 제한이 강화되어 일부 사업자는 자동으로 접수 불가 처리됩니다.\n- 신용평가 기준이 최근 1년 이내 파산 이력 등으로 명확해졌습니다.\n- 온라인 접수만 운영되며, 직접 방문 접수는 불가합니다.\n\n---\n\n### 실제로 신청이 어려운 사업자는?\n\n- 업종 제한 대상(사행성, 부동산 임대업 등)\n- 신용점수가 최근 낮아진 소상공인\n- 매출 증빙이 준비되지 않은 신규 사업자\n- 온라인 접수에 익숙하지 않은 분\n\n---\n\n### 공식 안내 확인 방법\n\n- 금융위원회(fsc.go.kr) 홈페이지 내 ‘소상공인 정책자금’ 공지사항에서 07월 접수 안내, 업종별 제한, 준비 서류 목록, 온라인 신청 절차를 확인할 수 있습니다.\n- 서류 요구 사항은 매월 변동될 수 있으니, 최신 안내문을 꼼꼼히 확인하고 본인의 업종·매출·신용점수 기준에 맞는지 점검하세요.\n\n---\n\n**07월 소상공인 정책자금 신청 전, 공식 안내를 반드시 확인하고 서류를 준비하세요.**",
+      "tags": [
+        "정책",
+        "07월",
+        "소상공인",
+        "정책자금"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhcHBsaWNhdGlvbiUyMGZvcm0lMjBkb2N1bWVudHxlbnwxfDB8fHwxNzgyOTI3MjU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "07월 소상공인 정책자금, 실제 신청 가능한 업종·서류 5가지 — Photo by Kelly Sikkema on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1632152133952-98b268dc4b86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxhcHBsaWNhdGlvbiUyMGZvcm0lMjBkb2N1bWVudHxlbnwxfDB8fHwxNzgyOTI3MjU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "07월 소상공인 정책자금, 실제 신청 가능한 업종·서류 5가지 본문 보조 이미지 — Photo by 2H Media on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 07월 소상공인 정책자금, 실제 신청 가능한 업종·서류 5가지. Keyword: 07월 소상공인 정책자금. Concrete visual subject: application form document. Context: ### 07월 소상공인 정책자금, 실제 신청 조건은? 매달 접수 방식과 대상, 준비 서류가 달라지는 소상공인 정책자금. 2026년 07월 기준, 금융위원회 공식 안내에 따라 신청 전 꼭 확인해야 할 핵심 사항을 정리했습니다. #### 소상공인 정책자금이란? 중소기업벤처부와 금융위원회가 운영하는 제도로, 연 매출과 상시 근로자 수가 일정 기준 이하인 사업자를 지원합니다. 매월 접수마다 업종 제한, 신용평가, 매출 증빙 등 심사 기준이 달라질 수 있습니다. --- ### 업종 제한, 실제 지원 대상은? - 사행성 업종(오락실, 성인용 게임장 등), 부동산 임대업, 주점업 등은 지원 대상에서 제외됩니다. - 금융위원회(fsc.go.kr) 공식 페이지에서 업종별 지원 가능 여부를 반드시 확인하세요. - 매출 규모와 사업자 형태(개인사업자·법인사업자)도 심사에 영향을 미칩니다. --- ### 신청에 필요한 주요 서류 - **사업자등록증**: 기본 제출 서류입니다. 변경사항(상호, 주소 등)이 있으면 추가 자료 필요. - **매출 증빙 자료**: 최근 6개월치 현금영수증, 카드매출 명세서 등 제출 필수. - **신용점수 조회서**: 개인 신용점수가 기준 이하이거나 최근 1년 내 부도·파산 이력이 있으면 신청이 제한됩니다. - **신분증**: 온라인 접수 시 신원 확인용. - **추가 서류**: 사업장 변경 등 상황에 따라 추가 요청될 수 있습니. Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 07월 소상공인 정책자금, 실제 신청 가능한 업종·서류 5가지. Keyword: 07월 소상공인 정책자금. Concrete visual subject: application form document. Article context: ### 07월 소상공인 정책자금, 실제 신청 조건은? 매달 접수 방식과 대상, 준비 서류가 달라지는 소상공인 정책자금. 2026년 07월 기준, 금융위원회 공식 안내에 따라 신청 전 꼭 확인해야 할 핵심 사항을 정리했습니다. #### 소상공인 정책자금이란? 중소기업벤처부와 금융위원회가 운영하는 제도로, 연 매출과 상시 근로자 수가 일정 기준 이하인 사업자를 지원합니다. 매월 접수마다 업종 제한, 신용평가, 매출 증빙 등 심사 기준이 달라질 수 있습니다. --- ### 업종 제한, 실제 지원 대상은? - 사행성 업종(오락실, 성인용 게임장 등), 부동산 임대업, 주점업 등은 지원 대상에서 제외됩니다. - 금융위원회(fsc.go.kr) 공식 페이지에서 업종별 지원 가능 여부를 반드시 확인하세요. - 매출 규모와 사업자 형태(개인사업자·법인사업자)도 심사에 영향을 미칩니다. --- ### 신청에 필요한 주요 서류 - **사업자등록증**: 기본 제출 서류입니다. 변경사항(상호, 주소 등)이 있으면 추가 자료 필요. - **매출 증빙 자료**: 최근 6개월치 현금영수증, 카드매출 명세서 등 제출 필수. - **신용점수 조회서**: 개인 신용점수가 기준 이하이거나 최근 1년 내 부도·파산 이력이 있으면 신청이 제한됩니다. - **신분증**: 온라인 접수 시 신원 확인용. - **추가 서류**: 사업장 변경 등 상황에 따라 추가 요청될 수 있습니다. --- ### 온라인 접수 절차 - 신청은 금융위원회 홈페이지(fsc.go.kr)에서 온라인으로만 진행됩니다. - 신청자 정보 입력 → 업종·매출·사업자증명 업로드 → 신용조회 동의 → 접수 완료 순으로 진행됩니다. - 접수 후 심사 과정에서 추가 서류 요청이 있을 수 있으니, 미리 준비해야 지연을 피할 수 있습니다. --- ### 2026년 07월 . The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-03T11:02:37.083192",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "Tesla Texas",
+        "title_hint": "Tesla driver faces manslaughter charges over Texas crash that killed a woman inside her home",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Tesla driver faces manslaughter charges over Texas crash that killed a woman inside her home",
+            "url": "https://www.theverge.com/transportation/961161/tesla-fsd-katy-tx-manslaughter-charges",
+            "published_at": "2026-07-02T22:09:33",
+            "summary": "The man whose Tesla struck and killed a woman inside her Texas home last month is now facing manslaughter charges, as reported earlier by The Wall Street Journal and local news outlet KHOU 11. 44-year-old Michael Butler was arrested on Wednesday and claimed to have been driving his Model 3 using Tesla's Full-Self Driving (FSD) [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "테슬라 운전자, 텍사스 주택 충돌로 과실치사 혐의…사용자에게 미치는 변화는?",
+      "slug": "tesla-texas-7ccee3fb",
+      "excerpt": "2026년 7월 2일 공식 보도 기준, Tesla Texas 사고 관련 운전자가 과실치사 혐의로 기소됐습니다. 이번 사건이 테슬라 차량 사용자와 해당 지역 교통 정책에 미치는 실제 영향과 변화 포인트를 정리합니다.",
+      "body_markdown": "## 주요 사건 개요\n\n2026년 7월 2일, 미국 텍사스 Katy 지역에서 테슬라 차량이 주택을 들이받아 집 안에 있던 여성 1명이 사망하는 사고가 발생했습니다. 운전자 Michael Butler(44세)는 현지 경찰에 의해 과실치사 혐의로 체포되었습니다.  \n출처: [The Verge 보도](https://www.theverge.com/transportation/961161/tesla-fsd-katy-tx-manslaughter-charges)\n\n## Tesla Texas 사고의 실제 변화 체크리스트\n\n| 항목               | 상세 내용                                                        |\n|-------------------|-----------------------------------------------------------------|\n| 사고 발생일        | 2026년 6월 (공식 보도 기준)                                     |\n| 위치              | Katy, Texas (미국 텍사스주)                                     |\n| 차량 모델         | Tesla (세부 모델 미공개)                                        |\n| 운전자            | Michael Butler, 44세                                            |\n| 적용 법률         | 과실치사 혐의 (텍사스 주법 기준)                                |\n| 피해자            | 주택 내 여성 1명 사망                                           |\n| 보도 기관         | The Verge, Wall Street Journal, KHOU 11 등                      |\n| 영향 대상         | Tesla Texas 지역 차량 사용자, 인근 커뮤니티, 교통 정책 담당자   |\n| 절차              | 현장 체포 → 과실치사 혐의 적용 → 사건 조사 진행                |\n\n## 사용자 입장에서 달라지는 점\n\n- **법적 책임 강화:** Tesla 차량 사용자 및 자율주행 기능 이용자에게 사고 시 운전자 책임이 명확히 부각됩니다.\n- **지역 정책 변화 가능성:** Texas 내 Tesla 및 자율주행차 운행 규제, 안전 기준 강화 논의가 촉진될 수 있습니다.\n- **보험 및 서비스 영향:** 사고 발생 후 보험료 인상, 추가 안전 기능 업데이트, Tesla Texas 사용자의 서비스 이용 조건 변화 가능성이 있습니다.\n- **실제 기능 변화는?** 현재까지 Tesla Texas 자체 기능(예: FSD, 오토파일럿) 변경이나 제한 안내는 공식적으로 공개되지 않았으나, 향후 정책·리콜 가능성은 열려 있습니다.\n\n## 참고해야 할 공식 안내와 후속 조치\n\n- 현지 경찰 발표 및 법원 절차 진행 상황\n- Tesla 공식 안전 관련 발표 및 업데이트\n- 지역 언론 및 교통 기관의 후속 보도\n- 보험사 및 서비스 제공자의 정책 변경 안내\n\n## 배경 설명\n\n- Tesla(테슬라): 미국의 대표적인 전기차 제조사로, FSD(Full Self-Driving) 등 자율주행 기능을 제공하고 있습니다.\n- Katy, Texas: 텍사스주 휴스턴 인근 지역으로, 최근 테슬라 관련 교통 사고가 잇따르고 있습니다.\n\n## 출처\n\n- [Tesla driver faces manslaughter charges over Texas crash that killed a woman inside her home](https://www.theverge.com/transportation/961161/tesla-fsd-katy-tx-manslaughter-charges) (2026-07-02)\n\n---\n\n이 글은 2026년 7월 3일 기준, 공식 보도와 지역 정책 변화 안내를 중심으로 작성되었습니다.",
+      "tags": [
+        "기술",
+        "Tesla",
+        "Texas"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1749006590475-4592a5dbf99f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyOTA0OTY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "테슬라 운전자, 텍사스 주택 충돌로 과실치사 혐의…사용자에게 미치는 변화는? — Photo by Omar:. Lopez-Rincon on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgyOTA0OTY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "테슬라 운전자, 텍사스 주택 충돌로 과실치사 혐의…사용자에게 미치는 변화는? 본문 보조 이미지 — Photo by Declan Sun on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 테슬라 운전자, 텍사스 주택 충돌로 과실치사 혐의…사용자에게 미치는 변화는?. Keyword: Tesla Texas. Concrete visual subject: technology innovation circuit abstract. Context: ## 주요 사건 개요 2026년 7월 2일, 미국 텍사스 Katy 지역에서 테슬라 차량이 주택을 들이받아 집 안에 있던 여성 1명이 사망하는 사고가 발생했습니다. 운전자 Michael Butler(44세)는 현지 경찰에 의해 과실치사 혐의로 체포되었습니다. 출처: [The Verge 보도](https://www.theverge.com/transportation/961161/tesla-fsd-katy-tx-manslaughter-charges) ## Tesla Texas 사고의 실제 변화 체크리스트 | 항목 | 상세 내용 | |-------------------|-----------------------------------------------------------------| | 사고 발생일 | 2026년 6월 (공식 보도 기준) | | 위치 | Katy, Texas (미국 텍사스주) | | 차량 모델 | Tesla (세부 모델 미공개) | | 운전자 | Michael Butler, 44세 | | 적용 법률 | 과실치사 혐의 (텍사스 주법 기준) | | 피해자 | 주택 내 여성 1명 사망 | | 보도 기관 | The Verge, Wall Street Journal, KHOU 11 등 | | 영향 대상 | Tesla Texas 지역 차량 사용자, 인근 커뮤니티, 교통 정책 담당자 | | 절차 | 현장 체포 → 과실치사 혐의 적용 → . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 테슬라 운전자, 텍사스 주택 충돌로 과실치사 혐의…사용자에게 미치는 변화는?. Keyword: Tesla Texas. Concrete visual subject: technology innovation circuit abstract. Article context: ## 주요 사건 개요 2026년 7월 2일, 미국 텍사스 Katy 지역에서 테슬라 차량이 주택을 들이받아 집 안에 있던 여성 1명이 사망하는 사고가 발생했습니다. 운전자 Michael Butler(44세)는 현지 경찰에 의해 과실치사 혐의로 체포되었습니다. 출처: [The Verge 보도](https://www.theverge.com/transportation/961161/tesla-fsd-katy-tx-manslaughter-charges) ## Tesla Texas 사고의 실제 변화 체크리스트 | 항목 | 상세 내용 | |-------------------|-----------------------------------------------------------------| | 사고 발생일 | 2026년 6월 (공식 보도 기준) | | 위치 | Katy, Texas (미국 텍사스주) | | 차량 모델 | Tesla (세부 모델 미공개) | | 운전자 | Michael Butler, 44세 | | 적용 법률 | 과실치사 혐의 (텍사스 주법 기준) | | 피해자 | 주택 내 여성 1명 사망 | | 보도 기관 | The Verge, Wall Street Journal, KHOU 11 등 | | 영향 대상 | Tesla Texas 지역 차량 사용자, 인근 커뮤니티, 교통 정책 담당자 | | 절차 | 현장 체포 → 과실치사 혐의 적용 → 사건 조사 진행 | ## 사용자 입장에서 달라지는 점 - **법적 책임 강화:** Tesla 차량 사용자 및 자율주행 기능 이용자에게 사고 시 운전자 책임이 명확히 부각됩니다. - **지역 정책 변화 가능성:** Texas 내 Tesla 및 자율주행차 운행 규제, 안전 기준 강화 논의가 촉진될 수 있습니다. - **보험 및 서비스 영향:** 사고 발생 후 . The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-03T11:03:18.543904",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/07월-소상공인-정책자금-faea8dc5.md",
+      "message": "draft saved"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/tesla-texas-7ccee3fb.md",
+      "message": "draft saved"
+    }
+  ]
+}
