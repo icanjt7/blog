@@ -1,0 +1,23 @@
+{
+  "run_id": "20260703-195147-1f666e9e",
+  "average_quality": 25.0,
+  "drafts": [
+    {
+      "slug": "amazon-2023-fire-hd-2038aaad",
+      "title": "2026년, Amazon Fire HD 10 RAM 업그레이드…실제 변화는?",
+      "keyword": "Amazon 2023 Fire HD",
+      "category": "기술",
+      "quality_score": 25.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 보완 완료",
+        "LLM 2차 보완 실패: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2026년, Amazon Fire HD 10 RAM 업그레이드…실제 변화는?. Keyword: Amazon 2023 Fire HD. Concrete visual subject: cloud ecommerce technology. Context: ## Amazon Fire HD 10 최신 업데이트, 무엇이 달라졌나? 2026년 7월 3일 공식 안내 기준, Amazon이 2023년에 출시한 Fire HD 10 태블릿의 사양을 조용히 업그레이드했습니다. 기존에는 여러 저장 용량 모델이 모두 3GB RAM으로 제공되었으나, 이번 업데이트로 4GB RAM이 적용되었습니다. ## 비교: Fire HD 8 vs Fire HD 10 - Fire HD 8: 2024년 출시, Amazon의 보급형 태블릿 라인업 마지막 신제품 - Fire HD 10: 2023년 출시, 2026년 7월 RAM 업그레이드 - RAM 변화: 기존 3GB → 4GB - 저장 공간: 다중 구성 가능 - 공식 판매: Amazon 웹사이트 및 주요 리테일러 ## 체크리스트: 2026년 기준 주요 변경 사항 | 기준 항목 | 2026년 7월 3일 공식 안내 내용 | |-------------------|----------------------------------------------| | 적용 모델 | Amazon 2023 Fire HD 10 태블릿 | | RAM 용량 | 기존 3GB에서 4GB로 업그레이드 | | 업데이트 방식 | 공식 웹사이트 및 리테일러 판매분에 적용 | | 출시 연도 | Fire HD 10: 2023년, Fire HD 8: 2024년 | | 대상 소비자 | 예산형 태블릿 찾는 사용자, Amazon . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1667984390533-64bdefe719ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxjbG91ZCUyMGVjb21tZXJjZSUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc4MzEwMTI2Nnww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}

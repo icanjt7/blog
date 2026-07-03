@@ -1,0 +1,76 @@
+{
+  "run_id": "20260703-195147-1f666e9e",
+  "topics": [
+    {
+      "keyword": "Amazon 2023 Fire HD",
+      "title_hint": "Amazon updated 2023’s Fire HD 10 tablet with 4GB of RAM",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Amazon updated 2023’s Fire HD 10 tablet with 4GB of RAM",
+          "url": "https://www.theverge.com/tech/961387/amazon-2023-fire-hd-10-tablet-4gb-update",
+          "published_at": "2026-07-03T17:33:55",
+          "summary": "The Fire HD 8 that launched in 2024 was the last new addition to Amazon's budget-minded tablet lineup, but the company has quietly updated the Fire HD 10 that debuted the year before. In 2023 it was offered with multiple storage configurations that each came with 3GB of RAM, but the 32GB version now ships [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Amazon 2023 Fire HD",
+        "title_hint": "Amazon updated 2023’s Fire HD 10 tablet with 4GB of RAM",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Amazon updated 2023’s Fire HD 10 tablet with 4GB of RAM",
+            "url": "https://www.theverge.com/tech/961387/amazon-2023-fire-hd-10-tablet-4gb-update",
+            "published_at": "2026-07-03T17:33:55",
+            "summary": "The Fire HD 8 that launched in 2024 was the last new addition to Amazon's budget-minded tablet lineup, but the company has quietly updated the Fire HD 10 that debuted the year before. In 2023 it was offered with multiple storage configurations that each came with 3GB of RAM, but the 32GB version now ships [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "2026년, Amazon Fire HD 10 RAM 업그레이드…실제 변화는?",
+      "slug": "amazon-2023-fire-hd-2038aaad",
+      "excerpt": "2026년 7월 3일 기준, Amazon이 2023 Fire HD 10 태블릿의 RAM을 4GB로 조용히 업그레이드했습니다. 기존 모델과 비교해 달라진 점과 주요 체크포인트를 정리합니다.",
+      "body_markdown": "## Amazon Fire HD 10 최신 업데이트, 무엇이 달라졌나?\n\n2026년 7월 3일 공식 안내 기준, Amazon이 2023년에 출시한 Fire HD 10 태블릿의 사양을 조용히 업그레이드했습니다. 기존에는 여러 저장 용량 모델이 모두 3GB RAM으로 제공되었으나, 이번 업데이트로 4GB RAM이 적용되었습니다.\n\n## 비교: Fire HD 8 vs Fire HD 10\n\n- Fire HD 8: 2024년 출시, Amazon의 보급형 태블릿 라인업 마지막 신제품  \n- Fire HD 10: 2023년 출시, 2026년 7월 RAM 업그레이드  \n- RAM 변화: 기존 3GB → 4GB  \n- 저장 공간: 다중 구성 가능  \n- 공식 판매: Amazon 웹사이트 및 주요 리테일러\n\n## 체크리스트: 2026년 기준 주요 변경 사항\n\n| 기준 항목         | 2026년 7월 3일 공식 안내 내용                    |\n|-------------------|----------------------------------------------|\n| 적용 모델         | Amazon 2023 Fire HD 10 태블릿                  |\n| RAM 용량          | 기존 3GB에서 4GB로 업그레이드                   |\n| 업데이트 방식     | 공식 웹사이트 및 리테일러 판매분에 적용          |\n| 출시 연도         | Fire HD 10: 2023년, Fire HD 8: 2024년          |\n| 대상 소비자       | 예산형 태블릿 찾는 사용자, Amazon 서비스 이용자   |\n\n## 소비자 입장에서 주목할 점\n\n- RAM이 4GB로 늘어나면서 동영상 시청이나 앱 실행 시 더 안정적인 성능 기대\n- 기존 Amazon 2023 Fire HD 10 모델 구매자라면, RAM 차이에 따라 제품 선택에 신경 쓸 필요 있음\n- Fire HD 8과 비교해 화면 크기와 성능 면에서 차별화된 선택지\n- 공식 안내 기준, 추가적인 저장 용량 옵션은 기존과 동일\n\n## 참고 출처\n\n- [Amazon updated 2023’s Fire HD 10 tablet with 4GB of RAM](https://www.theverge.com/tech/961387/amazon-2023-fire-hd-10-tablet-4gb-update) (2026-07-03 공개)",
+      "tags": [
+        "기술",
+        "Amazon",
+        "2023",
+        "Fire",
+        "HD"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1667984390533-64bdefe719ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxjbG91ZCUyMGVjb21tZXJjZSUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc4MzEwMTI2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "2026년, Amazon Fire HD 10 RAM 업그레이드…실제 변화는? — Photo by Growtika on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1690627931320-16ac56eb2588?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxjbG91ZCUyMGVjb21tZXJjZSUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc4MzEwMTI2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "2026년, Amazon Fire HD 10 RAM 업그레이드…실제 변화는? 본문 보조 이미지 — Photo by Hazel Z on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2026년, Amazon Fire HD 10 RAM 업그레이드…실제 변화는?. Keyword: Amazon 2023 Fire HD. Concrete visual subject: cloud ecommerce technology. Context: ## Amazon Fire HD 10 최신 업데이트, 무엇이 달라졌나? 2026년 7월 3일 공식 안내 기준, Amazon이 2023년에 출시한 Fire HD 10 태블릿의 사양을 조용히 업그레이드했습니다. 기존에는 여러 저장 용량 모델이 모두 3GB RAM으로 제공되었으나, 이번 업데이트로 4GB RAM이 적용되었습니다. ## 비교: Fire HD 8 vs Fire HD 10 - Fire HD 8: 2024년 출시, Amazon의 보급형 태블릿 라인업 마지막 신제품 - Fire HD 10: 2023년 출시, 2026년 7월 RAM 업그레이드 - RAM 변화: 기존 3GB → 4GB - 저장 공간: 다중 구성 가능 - 공식 판매: Amazon 웹사이트 및 주요 리테일러 ## 체크리스트: 2026년 기준 주요 변경 사항 | 기준 항목 | 2026년 7월 3일 공식 안내 내용 | |-------------------|----------------------------------------------| | 적용 모델 | Amazon 2023 Fire HD 10 태블릿 | | RAM 용량 | 기존 3GB에서 4GB로 업그레이드 | | 업데이트 방식 | 공식 웹사이트 및 리테일러 판매분에 적용 | | 출시 연도 | Fire HD 10: 2023년, Fire HD 8: 2024년 | | 대상 소비자 | 예산형 태블릿 찾는 사용자, Amazon . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 2026년, Amazon Fire HD 10 RAM 업그레이드…실제 변화는?. Keyword: Amazon 2023 Fire HD. Concrete visual subject: cloud ecommerce technology. Article context: ## Amazon Fire HD 10 최신 업데이트, 무엇이 달라졌나? 2026년 7월 3일 공식 안내 기준, Amazon이 2023년에 출시한 Fire HD 10 태블릿의 사양을 조용히 업그레이드했습니다. 기존에는 여러 저장 용량 모델이 모두 3GB RAM으로 제공되었으나, 이번 업데이트로 4GB RAM이 적용되었습니다. ## 비교: Fire HD 8 vs Fire HD 10 - Fire HD 8: 2024년 출시, Amazon의 보급형 태블릿 라인업 마지막 신제품 - Fire HD 10: 2023년 출시, 2026년 7월 RAM 업그레이드 - RAM 변화: 기존 3GB → 4GB - 저장 공간: 다중 구성 가능 - 공식 판매: Amazon 웹사이트 및 주요 리테일러 ## 체크리스트: 2026년 기준 주요 변경 사항 | 기준 항목 | 2026년 7월 3일 공식 안내 내용 | |-------------------|----------------------------------------------| | 적용 모델 | Amazon 2023 Fire HD 10 태블릿 | | RAM 용량 | 기존 3GB에서 4GB로 업그레이드 | | 업데이트 방식 | 공식 웹사이트 및 리테일러 판매분에 적용 | | 출시 연도 | Fire HD 10: 2023년, Fire HD 8: 2024년 | | 대상 소비자 | 예산형 태블릿 찾는 사용자, Amazon 서비스 이용자 | ## 소비자 입장에서 주목할 점 - RAM이 4GB로 늘어나면서 동영상 시청이나 앱 실행 시 더 안정적인 성능 기대 - 기존 Amazon 2023 Fire HD 10 모델 구매자라면, RAM 차이에 따라 제품 선택에 신경 쓸 필요 있음 - Fire HD 8과 비교해 화면 크기와 성능 면에서 차별화된 선택지 - 공식 안내 기준, 추가적인 저. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-03T19:56:25.487907",
+      "quality_score": 25.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 보완 완료",
+        "LLM 2차 보완 실패: RateLimitError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 25.0"
+    }
+  ]
+}
