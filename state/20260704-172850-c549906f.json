@@ -1,0 +1,73 @@
+{
+  "run_id": "20260704-172850-c549906f",
+  "topics": [
+    {
+      "keyword": "White House US",
+      "title_hint": "White House deletes thousands of web pages about energy conservation as heatwave slams US",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "White House deletes thousands of web pages about energy conservation as heatwave slams US",
+          "url": "https://www.theverge.com/policy/961449/white-house-mamdani-heatwave-deletion",
+          "published_at": "2026-07-04T16:19:06",
+          "summary": "The US Department of Energy reportedly deleted about 6,000 pages related to energy conservation as a historic heatwave tears across the country. The deletion was suspiciously timed, following Republican outrage over Mayor Zohran Mamdani asking New Yorkers to help reduce strain on the grid by setting their AC to 78 degrees. Republicans like Ted Cruz [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "White House US",
+        "title_hint": "White House deletes thousands of web pages about energy conservation as heatwave slams US",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "White House deletes thousands of web pages about energy conservation as heatwave slams US",
+            "url": "https://www.theverge.com/policy/961449/white-house-mamdani-heatwave-deletion",
+            "published_at": "2026-07-04T16:19:06",
+            "summary": "The US Department of Energy reportedly deleted about 6,000 pages related to energy conservation as a historic heatwave tears across the country. The deletion was suspiciously timed, following Republican outrage over Mayor Zohran Mamdani asking New Yorkers to help reduce strain on the grid by setting their AC to 78 degrees. Republicans like Ted Cruz [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "미국 에너지 절약 정보, 폭염 와중에 왜 사라졌나?",
+      "slug": "white-house-us-e0668fdf",
+      "excerpt": "미국 전역이 기록적 폭염을 겪는 가운데, White House US 공식 웹사이트에서 에너지 절약 관련 자료 약 6,000개가 갑자기 삭제되었습니다. 삭제 시점과 정치 논란, 실제 영향까지 구체적으로 정리합니다.",
+      "body_markdown": "미국에서 에너지 절약 자료를 찾으려다 갑자기 사라진 페이지를 마주했다면, 최근 White House US 웹사이트의 대규모 삭제 조치를 주목해야 합니다.\n\n### White House US 웹사이트, 에너지 자료 대량 삭제\n\n2026년 7월 4일, The Verge 보도에 따르면 White House US와 미국 에너지부(Department of Energy)는 에너지 절약·효율 및 실생활 활용 팁을 담은 웹페이지 약 6,000개를 삭제했습니다. 이 삭제는 미국 전역에서 기록적인 폭염이 이어지는 가운데 이루어져, 단순한 시스템 개편을 넘어선 정책적 의미가 있다는 해석이 나옵니다.\n\n#### 삭제 배경: 정치적 논란과 시기\n\n삭제는 뉴욕 시장 Zohran Mamdani(조란 맘다니)가 “에어컨 온도를 78도로 맞추고 전력 사용을 줄여 달라”고 시민들에게 요청한 직후 이루어졌습니다. Mamdani는 환경 정책을 적극 추진하는 정치인으로, 폭염 속 전력망 부담 완화를 강조해왔습니다.\n\n이후 텍사스의 공화당 소속 Ted Cruz(테드 크루즈) 등 정치인은 “과도한 정책 개입”을 비판하며 공방이 이어졌습니다. 이처럼 에너지 정책을 둘러싼 진보·보수 논쟁이 삭제 조치와 맞물려 논란이 커졌습니다.\n\n#### 삭제로 인한 실제 변화\n\n기존에는 White House US에서 다음과 같은 정보를 확인할 수 있었습니다.\n\n| 구분                 | 삭제 전 White House US         | 삭제 후 변화               |\n|----------------------|-------------------------------|----------------------------|\n| 에너지 효율 자료      | 약 6,000여 페이지 제공         | 대부분 접근 불가            |\n| 생활 속 절약 팁       | 에어컨, 조명, 난방 등 상세 안내 | 공식 안내 삭제              |\n| 정책 근거            | 공개 자료로 투명하게 안내      | 일부 비공개 전환            |\n| 정보 갱신 빈도        | 정기적 업데이트                | 업데이트 여부 불명확         |\n| 시민 행동 가이드      | 직접 행동 요청·실행법 안내      | 권장 내용 다수 사라짐        |\n\n미국 거주민, 특히 뉴욕과 텍사스 등 폭염 피해가 심각한 지역에서는 정부 공식 자료가 실생활에서 중요한 참고 기준이었습니다. 삭제 이후에는 신뢰할 수 있는 정부 안내 대신 각자 민간 자료나 지역별 공지에 의존해야 하며, 정보 격차 우려가 커졌습니다. 고령자나 저소득층처럼 정보 접근이 어려운 계층은 더 큰 영향을 받을 수 있습니다.\n\n#### 공식 입장 및 안내 상황\n\nWhite House US와 미국 에너지부는 삭제 이유나 대체 안내에 대해 공식적인 입장을 밝히지 않은 상태입니다. 삭제가 정치적 논란 직후 이루어졌다는 점에서 다양한 해석이 제기되고 있지만, “원문 공개일 기준”으로 명확한 정책 변화나 대체 자료는 확인되지 않고 있습니다.\n\n#### 주요 체크포인트\n\n- 삭제 규모: 에너지 절약·효율 자료 약 6,000개 페이지\n- 삭제 시점: 미국 전역 폭염 및 전력 수요 급증 시기\n- 정치적 영향: Zohran Mamdani(뉴욕 시장), Ted Cruz(텍사스 의원) 등 논쟁\n- 안내 공백: 공식 대체 자료 및 설명 미공개\n- 영향 대상: 미국 거주민, 특히 폭염 피해 지역 및 정보 취약 계층\n\n#### 자료 확인 및 대처 방법\n\n- White House US 공식 웹사이트(whitehouse.gov)에서 에너지 관련 페이지 검색  \n- 미국 에너지부 공식 홈페이지(energy.gov)에서 최신 안내 모니터링  \n- 정책 변동 시 공식 SNS 등 공공 채널 참고\n\n폭염과 에너지 정책이 일상에 직접 영향을 주는 만큼, 공식 채널을 통한 정보 확인이 무엇보다 중요합니다.\n\n##### 참고 출처  \n- [White House deletes thousands of web pages about energy conservation as heatwave slams US (The Verge, 2026-07-04)](https://www.theverge.com/policy/961449/white-house-mamdani-heatwave-deletion)",
+      "tags": [
+        "기술",
+        "White",
+        "House",
+        "US"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1782330389129-fd3a236e00e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzMDUyMTYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "미국 에너지 절약 정보, 폭염 와중에 왜 사라졌나? — Photo by Brecht Corbeel on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzMDUyMTYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "미국 에너지 절약 정보, 폭염 와중에 왜 사라졌나? 본문 보조 이미지 — Photo by Ludovico Ceroseis on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 미국 에너지 절약 정보, 폭염 와중에 왜 사라졌나?. Keyword: White House US. Concrete visual subject: technology innovation circuit abstract. Context: 미국에서 에너지 절약 자료를 찾으려다 갑자기 사라진 페이지를 마주했다면, 최근 White House US 웹사이트의 대규모 삭제 조치를 주목해야 합니다. ### White House US 웹사이트, 에너지 자료 대량 삭제 2026년 7월 4일, The Verge 보도에 따르면 White House US와 미국 에너지부(Department of Energy)는 에너지 절약·효율 및 실생활 활용 팁을 담은 웹페이지 약 6,000개를 삭제했습니다. 이 삭제는 미국 전역에서 기록적인 폭염이 이어지는 가운데 이루어져, 단순한 시스템 개편을 넘어선 정책적 의미가 있다는 해석이 나옵니다. #### 삭제 배경: 정치적 논란과 시기 삭제는 뉴욕 시장 Zohran Mamdani(조란 맘다니)가 “에어컨 온도를 78도로 맞추고 전력 사용을 줄여 달라”고 시민들에게 요청한 직후 이루어졌습니다. Mamdani는 환경 정책을 적극 추진하는 정치인으로, 폭염 속 전력망 부담 완화를 강조해왔습니다. 이후 텍사스의 공화당 소속 Ted Cruz(테드 크루즈) 등 정치인은 “과도한 정책 개입”을 비판하며 공방이 이어졌습니다. 이처럼 에너지 정책을 둘러싼 진보·보수 논쟁이 삭제 조치와 맞물려 논란이 커졌습니다. #### 삭제로 인한 실제 변화 기존에는 White House US에서 다음과 같은 정보를 확인할 수 있었습니다. | 구분 | 삭제 전 White House U. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 미국 에너지 절약 정보, 폭염 와중에 왜 사라졌나?. Keyword: White House US. Concrete visual subject: technology innovation circuit abstract. Article context: 미국에서 에너지 절약 자료를 찾으려다 갑자기 사라진 페이지를 마주했다면, 최근 White House US 웹사이트의 대규모 삭제 조치를 주목해야 합니다. ### White House US 웹사이트, 에너지 자료 대량 삭제 2026년 7월 4일, The Verge 보도에 따르면 White House US와 미국 에너지부(Department of Energy)는 에너지 절약·효율 및 실생활 활용 팁을 담은 웹페이지 약 6,000개를 삭제했습니다. 이 삭제는 미국 전역에서 기록적인 폭염이 이어지는 가운데 이루어져, 단순한 시스템 개편을 넘어선 정책적 의미가 있다는 해석이 나옵니다. #### 삭제 배경: 정치적 논란과 시기 삭제는 뉴욕 시장 Zohran Mamdani(조란 맘다니)가 “에어컨 온도를 78도로 맞추고 전력 사용을 줄여 달라”고 시민들에게 요청한 직후 이루어졌습니다. Mamdani는 환경 정책을 적극 추진하는 정치인으로, 폭염 속 전력망 부담 완화를 강조해왔습니다. 이후 텍사스의 공화당 소속 Ted Cruz(테드 크루즈) 등 정치인은 “과도한 정책 개입”을 비판하며 공방이 이어졌습니다. 이처럼 에너지 정책을 둘러싼 진보·보수 논쟁이 삭제 조치와 맞물려 논란이 커졌습니다. #### 삭제로 인한 실제 변화 기존에는 White House US에서 다음과 같은 정보를 확인할 수 있었습니다. | 구분 | 삭제 전 White House US | 삭제 후 변화 | |----------------------|-------------------------------|----------------------------| | 에너지 효율 자료 | 약 6,000여 페이지 제공 | 대부분 접근 불가 | | 생활 속 절약 팁 | 에어컨, 조명, 난방 등 상세 안내 | 공식 안내 삭제 | | 정책 근거 |. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-04T17:30:21.050614",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/white-house-us-e0668fdf.md",
+      "message": "draft saved"
+    }
+  ]
+}

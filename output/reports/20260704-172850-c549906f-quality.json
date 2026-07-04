@@ -1,0 +1,21 @@
+{
+  "run_id": "20260704-172850-c549906f",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "white-house-us-e0668fdf",
+      "title": "미국 에너지 절약 정보, 폭염 와중에 왜 사라졌나?",
+      "keyword": "White House US",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 미국 에너지 절약 정보, 폭염 와중에 왜 사라졌나?. Keyword: White House US. Concrete visual subject: technology innovation circuit abstract. Context: 미국에서 에너지 절약 자료를 찾으려다 갑자기 사라진 페이지를 마주했다면, 최근 White House US 웹사이트의 대규모 삭제 조치를 주목해야 합니다. ### White House US 웹사이트, 에너지 자료 대량 삭제 2026년 7월 4일, The Verge 보도에 따르면 White House US와 미국 에너지부(Department of Energy)는 에너지 절약·효율 및 실생활 활용 팁을 담은 웹페이지 약 6,000개를 삭제했습니다. 이 삭제는 미국 전역에서 기록적인 폭염이 이어지는 가운데 이루어져, 단순한 시스템 개편을 넘어선 정책적 의미가 있다는 해석이 나옵니다. #### 삭제 배경: 정치적 논란과 시기 삭제는 뉴욕 시장 Zohran Mamdani(조란 맘다니)가 “에어컨 온도를 78도로 맞추고 전력 사용을 줄여 달라”고 시민들에게 요청한 직후 이루어졌습니다. Mamdani는 환경 정책을 적극 추진하는 정치인으로, 폭염 속 전력망 부담 완화를 강조해왔습니다. 이후 텍사스의 공화당 소속 Ted Cruz(테드 크루즈) 등 정치인은 “과도한 정책 개입”을 비판하며 공방이 이어졌습니다. 이처럼 에너지 정책을 둘러싼 진보·보수 논쟁이 삭제 조치와 맞물려 논란이 커졌습니다. #### 삭제로 인한 실제 변화 기존에는 White House US에서 다음과 같은 정보를 확인할 수 있었습니다. | 구분 | 삭제 전 White House U. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330389129-fd3a236e00e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzMDUyMTYxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
