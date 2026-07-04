@@ -1,0 +1,21 @@
+{
+  "run_id": "20260704-102658-c86b6258",
+  "average_quality": 85.0,
+  "drafts": [
+    {
+      "slug": "qi-fan-fan-36b28338",
+      "title": "발열 걱정 끝? Qi fan fan 무선 충전 도크, 써볼 만한 이유",
+      "keyword": "Qi fan fan",
+      "category": "기술",
+      "quality_score": 85.0,
+      "review_notes": [
+        "핵심 키워드 반복이 과합니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 발열 걱정 끝? Qi fan fan 무선 충전 도크, 써볼 만한 이유. Keyword: Qi fan fan. Concrete visual subject: charging wireless power tech. Context: ### Qi fan fan이란? Qi fan fan은 무선 충전 표준(Qi)에 냉각 팬을 더한 신기술입니다. 충전 중 발생하는 열을 팬이 자동으로 낮춰줘, 배터리 손상과 속도 저하를 줄여줍니다. 기존 무선 충전기는 충전 속도가 빨라질수록 발열이 심해져, 스마트폰이 뜨거워지거나 충전 속도가 느려지는 문제가 있었습니다. Qi fan fan은 이 점을 개선해 최근 주목받고 있습니다. Kuxiu는 중국의 모바일 액세서리 전문 브랜드로, Qi fan fan 기술을 적용한 대표적 제품이 D5 Qi2.2(가격: 59.99달러)입니다. --- ### Qi fan fan vs 일반 Qi 무선 충전 도크 | 구분 | Qi fan fan (Kuxiu D5) | 일반 Qi 도크 | |--------------|--------------------------|------------------------| | 충전 속도 | 일정하게 유지됨 | 발열 시 속도 저하 | | 발열 관리 | 팬이 즉시 열을 식힘 | 기기 자체만 냉각 | | 소음 | 소형 팬 소리가 약간 들림 | 소음 없음 | | 가격 | 59.99달러 | 보통 30~40달러 | | 사용감 | 시원함·안정성 높음 | 불안정·과열 우려 | - **Kuxiu D5 Qi2.2**: Qi fan fan 기술 탑재, 공식 가격 59.99달러. - **팬 작동**: 충전 중 온도가 높아지면 자동으로 팬이 구동되. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1557767382-97b28f5488e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxjaGFyZ2luZyUyMHdpcmVsZXNzJTIwcG93ZXIlMjB0ZWNofGVufDF8MHx8fDE3ODMxNjEwODd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
