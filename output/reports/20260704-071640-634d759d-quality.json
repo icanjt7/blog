@@ -1,0 +1,22 @@
+{
+  "run_id": "20260704-071640-634d759d",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "qi-fan-fan-36b28338",
+      "title": "이 팬 달린 Qi 충전기, 진짜 효과 있나?",
+      "keyword": "Qi fan fan",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "핵심 키워드 반복이 과합니다.",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 이 팬 달린 Qi 충전기, 진짜 효과 있나?. Keyword: Qi fan fan. Concrete visual subject: charging wireless power tech. Context: 최대 22W. Qi fan fan이 적용된 Kuxiu D5 Qi2.2는 공식 스펙상 이 정도 출력까지 지원한다. 그런데 실제로 쓸 때 더 중요한 건 온도다. 무선 충전 중 열이 올라가는 순간 스마트폰 성능이 떨어진다. 고속 충전이면 15분 만에 표면 온도가 40도 가까이 오른 사례도 흔하다. Qi fan fan의 핵심은 바로 이 부분이다. Qi는 무선 전력 전송 표준인데, 여기에 'fan fan'이라는 액티브 냉각(팬 내장) 기능을 넣은 제품이 늘고 있다. 지금 주목받는 이유는 단순하다. 충전 중 발열로 인한 성능 저하, 배터리 수명 감소, 과열로 인한 자동 충전 중지까지 직접 막아준다. 이번에 실제 사용 후기를 공개한 Kuxiu D5 Qi2.2는 $59.99 가격대에서 팬이 달린 Qi 무선 충전기 중 가장 최신 모델로 꼽힌다. Kuxiu는 중국 선전 소재의 모바일 액세서리 전문 브랜드다. 2010년대 초부터 케이스, 충전기, 모바일 주변기기로 성장했다. Qi fan fan을 적용한 D5 Qi2.2 충전기는 이 회사가 최근 해외 시장에 적극적으로 알리고 있는 제품이다. 이번 리뷰는 The Verge의 테크 에디터가 2026-07-04 기준 직접 일주일 동안 사용한 결과를 바탕으로 한다. Qi fan fan을 경험하기 전, 기자는 크게 세 가지를 의심했다. 팬 소음, 냉각 효과, gimmick(그저 보여주기식 기능) 여부다. 그런데 실. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1557767382-97b28f5488e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxjaGFyZ2luZyUyMHdpcmVsZXNzJTIwcG93ZXIlMjB0ZWNofGVufDF8MHx8fDE3ODMxNDk2NzV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
