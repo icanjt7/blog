@@ -1,0 +1,21 @@
+{
+  "run_id": "20260704-231510-6008f18d",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "hey-number-pad-lovers-2da0f5bd",
+      "title": "숫자 키패드 마니아, Epomaker RT98에서 찾은 결정적 변화 5가지",
+      "keyword": "Hey number pad lovers",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 숫자 키패드 마니아, Epomaker RT98에서 찾은 결정적 변화 5가지. Keyword: Hey number pad lovers. Concrete visual subject: technology innovation circuit abstract. Context: Hey number pad lovers, 숫자 키패드를 포기할 수 없는 분들에게 새로운 선택지가 등장했습니다. Epomaker RT98은 오랜만에 숫자 키패드 사용자들의 요구를 한 번에 반영한 기계식 키보드로, 2026년 7월 4일 공식 공개 소식이 전해졌습니다. ## Epomaker RT98, 무엇이 다른가 Epomaker는 2016년 설립된 중국의 기계식 키보드 전문 브랜드입니다. 이번 RT98 모델은 일체형 숫자 키패드, CRT 모니터를 연상시키는 소형 화면, 그리고 VIA(오픈소스 키맵핑 툴) 호환성이라는 세 가지 특징으로 주목받고 있습니다. 특히 숫자 키패드를 키보드 본체에 통합해, 별도 모듈 없이 자연스러운 입력이 가능합니다. 기존의 텐키리스(TKL)나 75% 배열 키보드에서는 숫자 입력이 잦은 사용자들에게 불편함이 컸지만, RT98은 이 부분을 개선했습니다. CRT 스타일의 화면은 단순 장식이 아니라, 현재 입력 상태나 키맵핑 설정을 실시간으로 보여주는 용도입니다. 여러 작업 환경을 오가거나 커스텀 키맵이 많은 사용자에게 실용적입니다. VIA 호환성 역시 큰 장점입니다. 키 배치 변경, 매크로 설정을 자유롭게 할 수 있어 엑셀, 회계, 게임 등에서 단축키를 자주 쓰는 사용자에게 효율적입니다. ## 주요 특징 비교표 | 항목 | Epomaker RT98 | 기존 기계식 키보드 | |--------------------|--. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330298761-3e41cd894295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzMjA3MTU3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
