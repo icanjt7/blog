@@ -1,15 +1,18 @@
 ---
-title: "태안해양유물전시관 K-Heritage Store 홍보존 조성(260617)"
-date: "2026-06-17T00:29"
-category: "핫이슈"
+title: 국립태안해양유물전시관에 K-Heritage Store 홍보존 개설
+date: 2026-06-17T00:29
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산진흥원"
-  - "핫이슈"
+- 보도기사
+- 국가유산진흥원
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1507643179773-3e975d7ac515?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxleGhpYml0aW9uJTIwZ2FsbGVyeSUyMGFydHxlbnwxfDB8fHwxNzgxNzAxNDUyfDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "태안해양유물전시관 K-Heritage Store 홍보존 조성(260617) — Photo by Eric Park on Unsplash"
-author: "국가유산진흥원"
+cover_image: https://images.unsplash.com/photo-1507643179773-3e975d7ac515?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxleGhpYml0aW9uJTIwZ2FsbGVyeSUyMGFydHxlbnwxfDB8fHwxNzgxNzAxNDUyfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 태안해양유물전시관 K-Heritage Store 홍보존 조성(260617) — Photo by Eric Park on
+  Unsplash
+author: 국가유산진흥원
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 개요

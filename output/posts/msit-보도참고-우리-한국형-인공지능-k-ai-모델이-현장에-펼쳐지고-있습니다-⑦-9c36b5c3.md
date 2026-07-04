@@ -1,15 +1,17 @@
 ---
-title: "[보도참고] 우리 한국형 인공지능(K-AI) 모델이 현장에 펼쳐지고 있습니다 ⑦"
-date: "2026-06-22T00:05"
-category: "기술"
+title: 한국형 인공지능, 암 치료와 조선 산업에 적용된다
+date: 2026-06-22T00:05
+category: 기술
 tags:
-  - "보도기사"
-  - "과학기술정보통신부"
-  - "기술"
+- 보도기사
+- 과학기술정보통신부
+- 기술
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1677442135131-4d7c123aef1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgyMTM5NTIxfDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "[보도참고] 우리 한국형 인공지능(K-AI) 모델이 현장에 펼쳐지고 있습니다 ⑦"
-author: "과학기술정보통신부"
+cover_image: https://images.unsplash.com/photo-1677442135131-4d7c123aef1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgyMTM5NTIxfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: '[보도참고] 우리 한국형 인공지능(K-AI) 모델이 현장에 펼쳐지고 있습니다 ⑦'
+author: 과학기술정보통신부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 과학기술정보통신부가 2026-06-22 공개한 자료를 바탕으로 우리 한국형 인공지능(K-AI) 모델이 현장에 펼쳐지고 있습니다 ⑦의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
