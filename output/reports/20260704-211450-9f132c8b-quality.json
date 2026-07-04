@@ -1,0 +1,20 @@
+{
+  "run_id": "20260704-211450-9f132c8b",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "matic-250-september-e470fd47",
+      "title": "9월 9일, Matic 로봇청소기 250달러 인상…지금 사야 하는 이유",
+      "keyword": "Matic 250 September",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 9월 9일, Matic 로봇청소기 250달러 인상…지금 사야 하는 이유. Keyword: Matic 250 September. Concrete visual subject: robot automation future. Context: Matic 250 September 이슈, 9월 9일이 분기점입니다. Matic 로봇청소기가 2026년 9월 9일부터 250달러 인상됩니다. 올여름 구매를 고민 중이었다면, 이번 가격 변동을 반드시 확인해야 합니다. **Matic은 어떤 제품인가?** Matic은 미국 스마트홈 스타트업이 개발한 하이브리드 로봇청소기입니다. 진공 청소와 모핑(자동 물걸레질) 모두 지원하며, AI 기반 경로 최적화, 자동 충전 기능을 갖췄습니다. IT 매체 The Verge도 \"가장 뛰어난 로봇청소기\"로 평가한 바 있습니다. ### Matic 250 September 인상 핵심 정보 | 구분 | 내용 | | -------------- | -------------------------------------------- | | 인상 시행일 | 2026년 9월 9일 | | 기존 가격 | $1,245 | | 인상 후 가격 | $1,495 | | 인상폭 | $250 | | 구매 경로 | 공식 홈페이지, 해외 직구 | | 주요 기능 | 진공+모핑, AI 경로 최적화, 자동 충전 | | 브랜드 배경 | 미국 스마트홈 스타트업, 2020년대 시장 진출 | | 공식 출처 | The Verge, 2026-07-04 | ### 왜 이번 인상이 중요한가? - **구매 타이밍의 차이** 9월 8일까지는 기존 가격($1,245)로 구입할 수 있습니다. 9일부터는 $1,495로 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1647427060118-4911c9821b82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxyb2JvdCUyMGF1dG9tYXRpb24lMjBmdXR1cmV8ZW58MXwwfHx8MTc4MzE5OTk3Mnww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
