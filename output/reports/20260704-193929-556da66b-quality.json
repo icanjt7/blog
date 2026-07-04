@@ -1,0 +1,20 @@
+{
+  "run_id": "20260704-193929-556da66b",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "nasa-swift-observatory-earth-be4834f2",
+      "title": "NASA Swift 위성, 추락 위기—지구에서 사용자가 겪을 변화 3가지",
+      "keyword": "NASA Swift Observatory Earth",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: NASA Swift 위성, 추락 위기—지구에서 사용자가 겪을 변화 3가지. Keyword: NASA Swift Observatory Earth. Concrete visual subject: technology innovation circuit abstract. Context: ## NASA Swift Observatory, 왜 위기에 처했나? Swift Observatory는 2004년 NASA가 감마선 폭발(GRB)과 같은 우주 현상 관측을 위해 발사한 우주 망원경입니다. 최근 강력한 태양 폭풍이 Swift의 궤도를 크게 낮췄고, 이로 인해 2026년 내로 대기권에 진입해 소멸할 위험이 커졌습니다. 이에 NASA는 Swift Observatory의 추락을 막기 위해 Katalyst Space Technologies와 협력, 긴급 구조 미션을 진행하고 있습니다. (출처: The Verge, 2026-07-04) --- ## 이번 사태가 사용·연구자에게 주는 변화 | 체크포인트 | 세부 내용 | |----------------------|----------| | **발생 시점** | 2026년 7월 4일 기준 위기 공식 발표 | | **주요 원인** | 최근 태양 폭풍(솔라 스톰)으로 Swift 위성 궤도 하강 | | **당사자** | NASA(미국 항공우주국), Katalyst Space Technologies(구조 기술 제공사) | | **사용자 영향** | Swift Observatory 기반 우주 관측 데이터 수집 지연/중단 우려 | | **연구 영향** | 감마선 폭발 등 실시간 천체 데이터 확보 어려움, 대체 관측 자원 모색 필요 | | **향후 일정** | NASA의 구조 미션 성공 시 데이터 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzMTg2MjM3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
