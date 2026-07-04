@@ -1,0 +1,73 @@
+{
+  "run_id": "20260704-153249-12b08f31",
+  "topics": [
+    {
+      "keyword": "Flatbush Zombies Erick Architect",
+      "title_hint": "Flatbush Zombies’ Erick the Architect misses his BlackBerry keyboard",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Flatbush Zombies’ Erick the Architect misses his BlackBerry keyboard",
+          "url": "https://www.theverge.com/entertainment/960958/flatbush-zombies-erick-the-architect-interview",
+          "published_at": "2026-07-04T15:00:00",
+          "summary": "Erick the Architect is a founding member of, and the primary producer for, the legendary Flatbush Zombies. He's toured the world, performed on Kimmel and Fallon, played Coachella, and collaborated with everyone from Joey Bada$$ and the Rza to James Blake and hardcore punk band Trash Talk. But perhaps the most unexpected collab was with [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Flatbush Zombies Erick Architect",
+        "title_hint": "Flatbush Zombies’ Erick the Architect misses his BlackBerry keyboard",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Flatbush Zombies’ Erick the Architect misses his BlackBerry keyboard",
+            "url": "https://www.theverge.com/entertainment/960958/flatbush-zombies-erick-the-architect-interview",
+            "published_at": "2026-07-04T15:00:00",
+            "summary": "Erick the Architect is a founding member of, and the primary producer for, the legendary Flatbush Zombies. He's toured the world, performed on Kimmel and Fallon, played Coachella, and collaborated with everyone from Joey Bada$$ and the Rza to James Blake and hardcore punk band Trash Talk. But perhaps the most unexpected collab was with [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "자율주행차, 사람과 얼마나 비슷하게 위험을 피할까?",
+      "slug": "flatbush-zombies-erick-architect-ad880d84",
+      "excerpt": "Waymo의 Reference Driver 모델은 인간 운전자 반응을 시뮬레이션해 자율주행차 안전성을 현실적으로 비교할 수 있게 합니다. 2026년 7월 4일 기준, 기술 검증과 안전 논쟁에 중요한 기준으로 주목받고 있습니다.",
+      "body_markdown": "## Flatbush Zombies’ Erick the Architect, 그리고 자율주행 안전 기준\n\nFlatbush Zombies는 뉴욕 브루클린 출신의 힙합 그룹입니다. Erick the Architect는 이 그룹의 창립 멤버이자 주요 프로듀서로, 전 세계 투어와 유명 페스티벌 무대를 경험한 아티스트입니다. [(출처)](https://www.theverge.com/entertainment/960958/flatbush-zombies-erick-the-architect-interview)\n\n이번 글에서는 Erick the Architect 인터뷰 소식과 함께, 자율주행차 안전 검증에서 인간 운전자 반응을 어떻게 활용하는지 살펴봅니다.\n\n---\n\n## Waymo Reference Driver란?\n\nWaymo는 구글의 모회사 Alphabet 산하 자율주행 기술 기업입니다.  \n실제 도로에서 모든 위험 상황을 실험하는 것은 현실적으로 불가능하기 때문에, Waymo는 ‘Reference Driver’(ReD) 모델을 개발해 자율주행차의 안전성을 평가합니다.\n\nReference Driver는 완벽한 운전자 모델이 아니라, 사람의 인지 지연, 놀람, 조작 지연 등을 반영한 시뮬레이션 기준입니다. 이 모델은 자율주행차가 위험 상황을 얼마나 효과적으로 인지하고 회피하는지, 인간 운전자와 직접 비교할 수 있게 돕습니다.\n\n---\n\n## 자율주행 안전 논쟁에서 왜 중요한가?\n\n- ‘자율주행차는 얼마나 안전해야 하는가?’라는 질문에 명확한 답을 내리기 위해서는 비교 기준이 필요합니다.\n- 단순히 주행 거리나 무사고 기록만으로는 기술의 실제 안전성을 설명하기 어렵습니다.\n- Reference Driver를 활용하면, 자율주행차의 위험 회피 능력을 사람 운전자와 구체적으로 비교할 수 있습니다.\n\n---\n\n## 체크리스트: Waymo Reference Driver의 핵심 정보\n\n| 항목              | 내용                                                                 |\n|-------------------|---------------------------------------------------------------------|\n| 개발기관          | Waymo (Alphabet 산하)                                               |\n| 적용 기술         | 자율주행차 시뮬레이션, 인간 운전자 반응 모델링                      |\n| 비교 기준         | 인지 지연, 놀람, 조작 반응 등 사람의 실제 운전 패턴 반영           |\n| 평가 목적         | 자율주행차의 위험 인지와 충돌 회피 능력, 안전성 벤치마크 제공       |\n| 영향 대상         | 로보택시 이용자, 교통 안전 연구자, 규제기관                        |\n| 검증 방법         | 시뮬레이션 결과와 실제 사고 데이터 비교, 외부 연구자 검증 가능성    |\n| 참고 출처         | The Verge, 2026-07-04 인터뷰 기사                                   |\n\n---\n\n## 독자가 알아야 할 4가지 포인트\n\n1. Waymo Reference Driver는 실제 차량을 운전하는 소프트웨어가 아니라, 사람 운전자와 비교하기 위한 기준 모델입니다.\n2. 주행 거리 등 숫자 지표만으로는 자율주행 안전성을 충분히 설명할 수 없습니다.\n3. 인간 기준을 반영한 비교가 늘어날수록, ‘자율주행차가 사람보다 더 안전한가?’라는 논쟁이 구체적 근거를 가질 수 있습니다.\n4. 원문 기사(2026년 7월 4일 공개)를 비롯해 공식 자료, 규제기관 발표를 함께 참고하는 것이 좋습니다.\n\n---\n\n## 참고 출처\n\n- [Flatbush Zombies’ Erick the Architect misses his BlackBerry keyboard (The Verge, 2026-07-04)](https://www.theverge.com/entertainment/960958/flatbush-zombies-erick-the-architect-interview)  \n  (Erick the Architect는 Flatbush Zombies의 창립 멤버이자 주요 프로듀서입니다.)",
+      "tags": [
+        "기술",
+        "Flatbush",
+        "Zombies",
+        "Erick",
+        "Architect"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1516579486067-6d7ef4d67c1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8YXV0b25vbW91cyUyMHZlaGljbGUlMjBjYXIlMjBzZW5zb3J8ZW58MXwwfHx8MTc4MzE3OTQzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "자율주행차, 사람과 얼마나 비슷하게 위험을 피할까? — Photo by Hannes Egler on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1647733258571-f001185e80c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGNhciUyMHNlbnNvcnxlbnwxfDB8fHwxNzgzMTc5NDM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "자율주행차, 사람과 얼마나 비슷하게 위험을 피할까? 본문 보조 이미지 — Photo by Remy Gieling on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 자율주행차, 사람과 얼마나 비슷하게 위험을 피할까?. Keyword: Flatbush Zombies Erick Architect. Concrete visual subject: autonomous vehicle car sensor. Context: ## Flatbush Zombies’ Erick the Architect, 그리고 자율주행 안전 기준 Flatbush Zombies는 뉴욕 브루클린 출신의 힙합 그룹입니다. Erick the Architect는 이 그룹의 창립 멤버이자 주요 프로듀서로, 전 세계 투어와 유명 페스티벌 무대를 경험한 아티스트입니다. [(출처)](https://www.theverge.com/entertainment/960958/flatbush-zombies-erick-the-architect-interview) 이번 글에서는 Erick the Architect 인터뷰 소식과 함께, 자율주행차 안전 검증에서 인간 운전자 반응을 어떻게 활용하는지 살펴봅니다. --- ## Waymo Reference Driver란? Waymo는 구글의 모회사 Alphabet 산하 자율주행 기술 기업입니다. 실제 도로에서 모든 위험 상황을 실험하는 것은 현실적으로 불가능하기 때문에, Waymo는 ‘Reference Driver’(ReD) 모델을 개발해 자율주행차의 안전성을 평가합니다. Reference Driver는 완벽한 운전자 모델이 아니라, 사람의 인지 지연, 놀람, 조작 지연 등을 반영한 시뮬레이션 기준입니다. 이 모델은 자율주행차가 위험 상황을 얼마나 효과적으로 인지하고 회피하는지, 인간 운전자와 직접 비교할 수 있게 돕습니다. --- ## 자율주행 안전 논쟁에서 왜 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 자율주행차, 사람과 얼마나 비슷하게 위험을 피할까?. Keyword: Flatbush Zombies Erick Architect. Concrete visual subject: autonomous vehicle car sensor. Article context: ## Flatbush Zombies’ Erick the Architect, 그리고 자율주행 안전 기준 Flatbush Zombies는 뉴욕 브루클린 출신의 힙합 그룹입니다. Erick the Architect는 이 그룹의 창립 멤버이자 주요 프로듀서로, 전 세계 투어와 유명 페스티벌 무대를 경험한 아티스트입니다. [(출처)](https://www.theverge.com/entertainment/960958/flatbush-zombies-erick-the-architect-interview) 이번 글에서는 Erick the Architect 인터뷰 소식과 함께, 자율주행차 안전 검증에서 인간 운전자 반응을 어떻게 활용하는지 살펴봅니다. --- ## Waymo Reference Driver란? Waymo는 구글의 모회사 Alphabet 산하 자율주행 기술 기업입니다. 실제 도로에서 모든 위험 상황을 실험하는 것은 현실적으로 불가능하기 때문에, Waymo는 ‘Reference Driver’(ReD) 모델을 개발해 자율주행차의 안전성을 평가합니다. Reference Driver는 완벽한 운전자 모델이 아니라, 사람의 인지 지연, 놀람, 조작 지연 등을 반영한 시뮬레이션 기준입니다. 이 모델은 자율주행차가 위험 상황을 얼마나 효과적으로 인지하고 회피하는지, 인간 운전자와 직접 비교할 수 있게 돕습니다. --- ## 자율주행 안전 논쟁에서 왜 중요한가? - ‘자율주행차는 얼마나 안전해야 하는가?’라는 질문에 명확한 답을 내리기 위해서는 비교 기준이 필요합니다. - 단순히 주행 거리나 무사고 기록만으로는 기술의 실제 안전성을 설명하기 어렵습니다. - Reference Driver를 활용하면, 자율주행차의 위험 회피 능력을 사람 운전자와 구체적으로 비교할 수 있습니다. --- ## 체크리스트: Wa. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-04T15:36:59.168315",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/flatbush-zombies-erick-architect-ad880d84.md",
+      "message": "draft saved"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "run_id": "20260704-153249-12b08f31",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "flatbush-zombies-erick-architect-ad880d84",
+      "title": "자율주행차, 사람과 얼마나 비슷하게 위험을 피할까?",
+      "keyword": "Flatbush Zombies Erick Architect",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 자율주행차, 사람과 얼마나 비슷하게 위험을 피할까?. Keyword: Flatbush Zombies Erick Architect. Concrete visual subject: autonomous vehicle car sensor. Context: ## Flatbush Zombies’ Erick the Architect, 그리고 자율주행 안전 기준 Flatbush Zombies는 뉴욕 브루클린 출신의 힙합 그룹입니다. Erick the Architect는 이 그룹의 창립 멤버이자 주요 프로듀서로, 전 세계 투어와 유명 페스티벌 무대를 경험한 아티스트입니다. [(출처)](https://www.theverge.com/entertainment/960958/flatbush-zombies-erick-the-architect-interview) 이번 글에서는 Erick the Architect 인터뷰 소식과 함께, 자율주행차 안전 검증에서 인간 운전자 반응을 어떻게 활용하는지 살펴봅니다. --- ## Waymo Reference Driver란? Waymo는 구글의 모회사 Alphabet 산하 자율주행 기술 기업입니다. 실제 도로에서 모든 위험 상황을 실험하는 것은 현실적으로 불가능하기 때문에, Waymo는 ‘Reference Driver’(ReD) 모델을 개발해 자율주행차의 안전성을 평가합니다. Reference Driver는 완벽한 운전자 모델이 아니라, 사람의 인지 지연, 놀람, 조작 지연 등을 반영한 시뮬레이션 기준입니다. 이 모델은 자율주행차가 위험 상황을 얼마나 효과적으로 인지하고 회피하는지, 인간 운전자와 직접 비교할 수 있게 돕습니다. --- ## 자율주행 안전 논쟁에서 왜 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1516579486067-6d7ef4d67c1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8YXV0b25vbW91cyUyMHZlaGljbGUlMjBjYXIlMjBzZW5zb3J8ZW58MXwwfHx8MTc4MzE3OTQzOXww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
