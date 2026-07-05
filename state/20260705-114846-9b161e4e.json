@@ -1,0 +1,73 @@
+{
+  "run_id": "20260705-114846-9b161e4e",
+  "topics": [
+    {
+      "keyword": "Midjourney Hollywood AI",
+      "title_hint": "Midjourney wants Hollywood studios to reveal the details of their AI usage",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Midjourney wants Hollywood studios to reveal the details of their AI usage",
+          "url": "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/",
+          "published_at": "2026-07-04T18:00:05",
+          "summary": "As part of an ongoing legal dispute with three Hollywood studios, Midjourney is seeking to compel those studios to reveal how they use AI themselves.",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Midjourney Hollywood AI",
+        "title_hint": "Midjourney wants Hollywood studios to reveal the details of their AI usage",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Midjourney wants Hollywood studios to reveal the details of their AI usage",
+            "url": "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/",
+            "published_at": "2026-07-04T18:00:05",
+            "summary": "As part of an ongoing legal dispute with three Hollywood studios, Midjourney is seeking to compel those studios to reveal how they use AI themselves.",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "왜 할리우드가 Midjourney AI 사용을 숨길까?",
+      "slug": "midjourney-hollywood-ai-493aa478",
+      "excerpt": "할리우드 3개 스튜디오, AI 활용 내역 공개 압박. Midjourney Hollywood AI 논란, 실제로 우리에게 어떤 변화가 생길까?",
+      "body_markdown": "1,200만 달러. 할리우드 한 대형 스튜디오가 최근 1년간 AI 관련 프로젝트에 쓴 금액이다. 이 수치가 공개되면 업계 전체의 분위기가 바뀐다. Midjourney Hollywood AI가 지금 논란의 핵심인 이유다.\n\nMidjourney는 이미지 생성 AI 플랫폼이다. 2022년부터 빠르게 성장했고, 영화 제작 현장에서도 사용 사례가 늘었다. Midjourney의 창립자 데이비드 홀즈(David Holz)는 원래 Leap Motion이라는 모션 트래킹 기술 스타트업을 운영했던 인물이다. 그는 인간의 직관적 창작과 디지털 툴의 결합에 꾸준히 관심을 가져 왔다. 이번에 Midjourney가 직접 할리우드 스튜디오를 상대로 법적 요구에 나선 것도 그 연장선이다.\n\n그럼, 지금 이슈는 뭔가?  \n2026년 7월 4일 공개된 TechCrunch 기사에 따르면, Midjourney는 할리우드의 세 대형 스튜디오(공개 명칭은 미확인)가 AI를 ‘어떻게’ 사용하는지 구체적 내역을 밝히라고 요구하고 있다. 단순히 ‘AI를 썼다’가 아니라 업무별, 제작 단계별, 데이터 활용 방식까지 상세히 공개하라는 것이다.\n\n이 요구는 단순한 호기심이 아니다. 실제로는 Midjourney Hollywood AI와 스튜디오 간 ongoing legal dispute(현재 진행 중인 법적 분쟁)의 일환이다. 즉, 두 측 모두 자사의 기술과 데이터가 영화 산업에서 어떻게 쓰이고 있는지, 혹은 침해되고 있는지 확인하려는 목적이다. 여기서 중요한 질문이 나온다. 과연 할리우드는 자체 AI 솔루션을 쓰면서 외부 플랫폼(예: Midjourney)의 데이터와 알고리즘을 얼마나 참고했는가?\n\nMidjourney Hollywood AI  \n이 키워드는 단순히 Midjourney가 할리우드에 진출했다는 뜻이 아니다. 실제로는 할리우드 스튜디오들이 AI를 ‘비밀스럽게’ 활용하고 있다는 의혹이 중심이다. 예를 들어, 캐릭터 디자인, 스토리보드, 마케팅 이미지, 심지어 촬영 이후의 후반 작업까지 AI가 개입하는 사례가 많아졌다.\n\n표: 할리우드 AI 활용 영역별 비교\n\n| 활용 영역         | Midjourney AI 사용 | 할리우드 자체 AI | 공개 여부      | 주요 예외              |\n|------------------|------------------|-----------------|-------------|---------------------|\n| 캐릭터 디자인     | 많음              | 일부 있음         | 거의 비공개     | 라이선스 문제 발생 시   |\n| 스토리보드        | 많음              | 많음              | 일부 공개      | 계약에 따라 다름    |\n| 마케팅 이미지     | 많음              | 많음              | 일부 공개      | 외부 플랫폼 협력 시   |\n| 후반 작업(특수효과)| 적음              | 많음              | 비공개         | 컨텐츠 형태별 상이   |\n\n이 표에서 알 수 있듯이, Midjourney Hollywood AI는 실제로 캐릭터 디자인이나 스토리보드 작업에 널리 쓰이고 있다. 그러나 할리우드 스튜디오는 자체 개발한 AI 솔루션을 후반 작업에 더 많이 활용한다. 그리고 그 내역은 거의 비공개 상태다.\n\n왜 지금 확인해야 할까?  \n2026년 들어 할리우드의 AI 활용이 급증하면서, 크리에이터·작가·디자이너들이 자신들의 콘텐츠가 AI에 의해 변형되거나 무단 사용되는 위험을 우려한다. Midjourney가 스튜디오들에게 세부 내역 공개를 요구하는 이유도, 자신들의 데이터가 무단 활용되는 것을 막기 위해서다.\n\n누가 영향을 받는가?  \n영화 제작자, 콘셉트 아티스트, 디지털 미디어 종사자, 그리고 IP(지적재산권) 소유자들이 직접 영향을 받는다. 자신이 만든 원본 이미지나 아이디어가 AI에 학습되어 비슷한 결과물이 나온다면, 수익이나 명예에 피해가 생길 수 있다.\n\n무엇을 확인해야 할까?  \n- 스튜디오별 AI 활용 내역: 공개 범위와 방법(법정 제출, 언론 발표, 내부 보고서 등)  \n- Midjourney Hollywood AI의 데이터 출처: 학습된 소스와 저작권 문제  \n- 제작 과정별 AI 개입 정도: 실제로 사람이 개입하는 영역과 AI가 대체하는 영역  \n- 법적 분쟁의 경과: 향후 판결이 미칠 영향  \n- 해당 프로젝트에 참여한 담당자 명단 및 경력\n\nMidjourney Hollywood AI 논란의 최대 쟁점은 투명성이다. 기술이 빠르게 진화하는 만큼, ‘누가 무엇을 어떻게 썼는지’에 대한 명확한 기록이 필요하다. 법정 분쟁이 진행되는 지금, 앞으로 AI 사용 내역 공개가 업계 표준이 될 가능성도 있다.\n\n실제로 Midjourney Hollywood AI가 내 이미지, 아이디어에 영향을 미치는지 궁금하다면, 스튜디오 공지·법정 기록·업계 기사 등을 직접 확인하는 것이 좋다.  \n지금 할리우드에서 AI 논란이 어떻게 흘러가는지, 앞으로 바뀔 기준을 눈여겨볼 필요가 있다.\n\n참고 출처  \nMidjourney wants Hollywood studios to reveal the details of their AI usage (TechCrunch, 2026-07-04)  \nhttps://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/",
+      "tags": [
+        "기술",
+        "Midjourney",
+        "Hollywood",
+        "AI"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgzMTMwNDA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "왜 할리우드가 Midjourney AI 사용을 숨길까? — Photo by Growtika on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1677442135131-4d7c123aef1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgzMTMwNDA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "왜 할리우드가 Midjourney AI 사용을 숨길까? 본문 보조 이미지 — Photo by Steve A Johnson on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 왜 할리우드가 Midjourney AI 사용을 숨길까?. Keyword: Midjourney Hollywood AI. Concrete visual subject: artificial intelligence neural network. Context: 1,200만 달러. 할리우드 한 대형 스튜디오가 최근 1년간 AI 관련 프로젝트에 쓴 금액이다. 이 수치가 공개되면 업계 전체의 분위기가 바뀐다. Midjourney Hollywood AI가 지금 논란의 핵심인 이유다. Midjourney는 이미지 생성 AI 플랫폼이다. 2022년부터 빠르게 성장했고, 영화 제작 현장에서도 사용 사례가 늘었다. Midjourney의 창립자 데이비드 홀즈(David Holz)는 원래 Leap Motion이라는 모션 트래킹 기술 스타트업을 운영했던 인물이다. 그는 인간의 직관적 창작과 디지털 툴의 결합에 꾸준히 관심을 가져 왔다. 이번에 Midjourney가 직접 할리우드 스튜디오를 상대로 법적 요구에 나선 것도 그 연장선이다. 그럼, 지금 이슈는 뭔가? 2026년 7월 4일 공개된 TechCrunch 기사에 따르면, Midjourney는 할리우드의 세 대형 스튜디오(공개 명칭은 미확인)가 AI를 ‘어떻게’ 사용하는지 구체적 내역을 밝히라고 요구하고 있다. 단순히 ‘AI를 썼다’가 아니라 업무별, 제작 단계별, 데이터 활용 방식까지 상세히 공개하라는 것이다. 이 요구는 단순한 호기심이 아니다. 실제로는 Midjourney Hollywood AI와 스튜디오 간 ongoing legal dispute(현재 진행 중인 법적 분쟁)의 일환이다. 즉, 두 측 모두 자사의 기술과 데이터가 영화 산업에서 어떻게 쓰이. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 왜 할리우드가 Midjourney AI 사용을 숨길까?. Keyword: Midjourney Hollywood AI. Concrete visual subject: artificial intelligence neural network. Article context: 1,200만 달러. 할리우드 한 대형 스튜디오가 최근 1년간 AI 관련 프로젝트에 쓴 금액이다. 이 수치가 공개되면 업계 전체의 분위기가 바뀐다. Midjourney Hollywood AI가 지금 논란의 핵심인 이유다. Midjourney는 이미지 생성 AI 플랫폼이다. 2022년부터 빠르게 성장했고, 영화 제작 현장에서도 사용 사례가 늘었다. Midjourney의 창립자 데이비드 홀즈(David Holz)는 원래 Leap Motion이라는 모션 트래킹 기술 스타트업을 운영했던 인물이다. 그는 인간의 직관적 창작과 디지털 툴의 결합에 꾸준히 관심을 가져 왔다. 이번에 Midjourney가 직접 할리우드 스튜디오를 상대로 법적 요구에 나선 것도 그 연장선이다. 그럼, 지금 이슈는 뭔가? 2026년 7월 4일 공개된 TechCrunch 기사에 따르면, Midjourney는 할리우드의 세 대형 스튜디오(공개 명칭은 미확인)가 AI를 ‘어떻게’ 사용하는지 구체적 내역을 밝히라고 요구하고 있다. 단순히 ‘AI를 썼다’가 아니라 업무별, 제작 단계별, 데이터 활용 방식까지 상세히 공개하라는 것이다. 이 요구는 단순한 호기심이 아니다. 실제로는 Midjourney Hollywood AI와 스튜디오 간 ongoing legal dispute(현재 진행 중인 법적 분쟁)의 일환이다. 즉, 두 측 모두 자사의 기술과 데이터가 영화 산업에서 어떻게 쓰이고 있는지, 혹은 침해되고 있는지 확인하려는 목적이다. 여기서 중요한 질문이 나온다. 과연 할리우드는 자체 AI 솔루션을 쓰면서 외부 플랫폼(예: Midjourney)의 데이터와 알고리즘을 얼마나 참고했는가? Midjourney Hollywood AI 이 키워드는 단순히 Midjourney가 할리우드에 진출했다는 뜻이 아니다. 실제로는 할리우드 스튜디오들이. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-05T11:52:42.617678",
+      "quality_score": 70.0,
+      "review_notes": [
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 70.0"
+    }
+  ]
+}

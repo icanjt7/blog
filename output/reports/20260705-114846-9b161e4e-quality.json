@@ -1,0 +1,21 @@
+{
+  "run_id": "20260705-114846-9b161e4e",
+  "average_quality": 70.0,
+  "drafts": [
+    {
+      "slug": "midjourney-hollywood-ai-493aa478",
+      "title": "왜 할리우드가 Midjourney AI 사용을 숨길까?",
+      "keyword": "Midjourney Hollywood AI",
+      "category": "기술",
+      "quality_score": 70.0,
+      "review_notes": [
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 왜 할리우드가 Midjourney AI 사용을 숨길까?. Keyword: Midjourney Hollywood AI. Concrete visual subject: artificial intelligence neural network. Context: 1,200만 달러. 할리우드 한 대형 스튜디오가 최근 1년간 AI 관련 프로젝트에 쓴 금액이다. 이 수치가 공개되면 업계 전체의 분위기가 바뀐다. Midjourney Hollywood AI가 지금 논란의 핵심인 이유다. Midjourney는 이미지 생성 AI 플랫폼이다. 2022년부터 빠르게 성장했고, 영화 제작 현장에서도 사용 사례가 늘었다. Midjourney의 창립자 데이비드 홀즈(David Holz)는 원래 Leap Motion이라는 모션 트래킹 기술 스타트업을 운영했던 인물이다. 그는 인간의 직관적 창작과 디지털 툴의 결합에 꾸준히 관심을 가져 왔다. 이번에 Midjourney가 직접 할리우드 스튜디오를 상대로 법적 요구에 나선 것도 그 연장선이다. 그럼, 지금 이슈는 뭔가? 2026년 7월 4일 공개된 TechCrunch 기사에 따르면, Midjourney는 할리우드의 세 대형 스튜디오(공개 명칭은 미확인)가 AI를 ‘어떻게’ 사용하는지 구체적 내역을 밝히라고 요구하고 있다. 단순히 ‘AI를 썼다’가 아니라 업무별, 제작 단계별, 데이터 활용 방식까지 상세히 공개하라는 것이다. 이 요구는 단순한 호기심이 아니다. 실제로는 Midjourney Hollywood AI와 스튜디오 간 ongoing legal dispute(현재 진행 중인 법적 분쟁)의 일환이다. 즉, 두 측 모두 자사의 기술과 데이터가 영화 산업에서 어떻게 쓰이. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgzMTMwNDA5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
