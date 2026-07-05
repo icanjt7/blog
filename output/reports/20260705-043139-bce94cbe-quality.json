@@ -1,0 +1,21 @@
+{
+  "run_id": "20260705-043139-bce94cbe",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "fanfiction-community-at-war-37d2cfca",
+      "title": "팬픽 커뮤니티, AI 탐지 논란의 현장 5가지",
+      "keyword": "fanfiction community at war",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 팬픽 커뮤니티, AI 탐지 논란의 현장 5가지. Keyword: fanfiction community at war. Concrete visual subject: artificial intelligence neural network. Context: ## 팬픽 커뮤니티, AI와 갈등 시작 2026년 7월 4일 기준, 팬픽 커뮤니티(fanfiction community at war)가 생성형 AI 도구 사용 논란으로 분열되고 있습니다. 최근 일주일 동안, AI 활용 작가를 찾아내려는 새로운 운동이 시작됐으나, 탐지 방식에 대한 신뢰성과 공정성 문제가 제기되고 있습니다. ## 논란의 배경 - 팬픽은 기존 작품 세계관을 바탕으로 팬들이 창작하는 이야기를 말합니다. - 최근 AO3(Archive of Our Own) 등 주요 팬픽 플랫폼에서 AI 생성 작품을 금지 또는 제한하는 움직임이 나타났습니다. - 일부 커뮤니티에서는 Claude, ChatGPT 등 AI가 쓴 글을 판별하려는 탐지 도구를 도입했지만, 오탐률과 작가 권리 침해 우려가 커졌습니다. ## 체크리스트: 팬픽 커뮤니티 AI 탐지 논란 | 항목 | 내용 | |------------------|-----------------------------------------------------------------------| | 적용 기간 | 2026년 6월 말~7월 첫째 주 | | 주요 플랫폼 | AO3, Reddit, Tumblr 등 팬픽 사이트 | | 탐지 방법 | 자동화된 AI 감지 도구, 커뮤니티 투표, 신고 시스템 | | 논란 핵심 | 탐지 정확도 부족, 정당한 작가까지 피해, AI 작품 표시 기준 불명확 | | 영향 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgzMjI2MTg5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
