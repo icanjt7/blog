@@ -1,0 +1,21 @@
+{
+  "run_id": "20260705-194332-adabb4ba",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "mr-lif-emergency-rations-f27b50e0",
+      "title": "9·11 이후 힙합을 바꾼 Mr Lif Emergency Rations EP의 5가지 영향",
+      "keyword": "Mr Lif Emergency Rations",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 9·11 이후 힙합을 바꾼 Mr Lif Emergency Rations EP의 5가지 영향. Keyword: Mr Lif Emergency Rations. Concrete visual subject: technology innovation circuit abstract. Context: Mr Lif Emergency Rations EP는 단순한 힙합 앨범을 넘어, 9·11 이후 미국 사회와 힙합 씬에 강렬한 질문을 던진 작품입니다. Definitive Jux(디피니티브 작스)는 2000년대 초 뉴욕 언더그라운드 힙합의 미래로 평가받던 독립 레이블로, 대표 El-P(엘-피)의 실험적 프로듀싱과 검열 없는 메시지 지원이 특징이었습니다. **Mr Lif(제프리 헤인즈)는 누구인가?** 보스턴 출신 래퍼로, 90년대 후반부터 사회적·정치적 이슈를 직접 가사에 담는 '컨셔스 래퍼'의 대표 주자입니다. Emergency Rations EP에서는 미국의 불안, 정부 비판, 개인의 무력감 등 당시 사회 분위기를 직설적으로 표현했습니다. **왜 지금 Mr Lif Emergency Rations EP가 다시 주목받는가?** 아래 5가지 변화에 주목해볼 수 있습니다. 1. **힙합 실험성의 기준 변화** - 기존 샘플링 중심에서 벗어나, 불협화음과 날카로운 비트로 사회적 메시지를 전달 - 9·11 이후 힙합이 더 이상 안전지대가 아님을 보여줌 2. **청자의 태도 변화 촉발** - \"Home Of The Brave\" 등 주요 트랙에서 미국 정부와 자유의 허구를 비판 - 듣는 사람에게 사회적 행동과 고민을 요구 3. **레이블의 역할 확장** - Definitive Jux(El-P 운영)는 실험적·정치적 힙합을 적극 지원 - 정치적 메시. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330389129-fd3a236e00e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzMjcwMDQyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
