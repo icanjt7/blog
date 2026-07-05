@@ -1,0 +1,21 @@
+{
+  "run_id": "20260705-212846-7c8bf308",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "mr-lif-emergency-rations-f27b50e0",
+      "title": "Mr. Lif의 Emergency Rations EP: 9/11 이후 힙합의 변곡점",
+      "keyword": "Mr Lif Emergency Rations",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Mr. Lif의 Emergency Rations EP: 9/11 이후 힙합의 변곡점. Keyword: Mr Lif Emergency Rations. Concrete visual subject: technology innovation circuit abstract. Context: ## 1. Definitive Jux와 Mr. Lif: EP의 역사적 배경 Emergency Rations EP는 2002년 Definitive Jux(Def Jux)에서 발매된 Mr. Lif(본명: Jeffrey Haynes)의 대표작이다. Definitive Jux는 El-P가 설립한 뉴욕 기반 인디 레이블로, 2000년대 초반 실험적이고 정치적 메시지 중심의 힙합을 선도했다. 당시 Def Jux는 Mr. Lif, El-P, Cannibal Ox, Aesop Rock 등 사회적 이슈와 현실 비판을 음악에 담는 아티스트들이 모여, 미국 언더그라운드 힙합의 미래로 주목받았다. ## 2. Emergency Rations EP의 트랙 구성과 사운드 EP는 총 7곡, 약 30분 분량으로 구성되어 있다. 대표 트랙인 \"Home of the Brave\"와 \"Emergency Rations\"는 9/11 이후 미국 사회의 불안과 정부 감시, 시민 각성이라는 주제를 직접적으로 다룬다. 사운드는 El-P 특유의 건조하고 미니멀한 비트, 샘플링이 특징적이다. 트랙마다 날카로운 가사와 서늘한 분위기가 청취 내내 긴장감을 유지한다. ## 3. 9/11 이후 미국 사회와 힙합의 변화 Emergency Rations EP는 2001년 9/11 테러 이후 미국 사회의 불안과 경계, 정부의 감시 강화, 시민의 각성 등 현실적 문제를 음악으로 전달한다. 당시 De. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330389129-fd3a236e00e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzMjcwMDQyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
