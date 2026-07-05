@@ -1,0 +1,20 @@
+{
+  "run_id": "20260705-173300-c1e896ec",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "sourdough-sidekick-84caf1ec",
+      "title": "6시간 절약? Sourdough Sidekick 자동 발효 관리의 모든 것",
+      "keyword": "Sourdough Sidekick",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 6시간 절약? Sourdough Sidekick 자동 발효 관리의 모든 것. Keyword: Sourdough Sidekick. Concrete visual subject: technology innovation circuit abstract. Context: ## Sourdough Sidekick란? Sourdough Sidekick는 미국의 제빵 재료 기업 King Arthur Flour에서 공식 지원하는 발효 스타터 자동 관리 기기입니다. King Arthur Flour는 200년 역사의 밀가루 및 발효 전문 브랜드로, 품질과 교육에서 높은 신뢰를 얻고 있습니다. 사워도우(Sourdough) 빵은 자연 발효로 만들어지며, 효모와 박테리아가 밀가루 속에서 성장합니다. 이 과정에서 스타터(효모덩어리)를 매일 관리해야 하지만, 반복되는 물·밀가루 투입과 환경 조절은 시간과 노력이 많이 듭니다. ## 자동화의 실제 작동 방식 Sourdough Sidekick는 - 스타터 용기를 자동 감지 - 물과 밀가루 투입 자동화 - 온도, 습도 센서로 발효 환경 일정 유지 - 앱 연동을 통한 상태 모니터링 - 관리 알림 제공 등의 기능을 갖췄습니다. 특히 King Arthur Flour 시범 베이커들은 “빵 굽기에 집중할 수 있다”, “최대 6시간 관리 시간을 절약했다”는 평가를 내놓았습니다. ## 직접 관리 vs Sourdough Sidekick 비교 | 관리 항목 | 직접 관리 | Sourdough Sidekick 사용 | |---------------------|-------------------|--------------------------------------| | 물·밀가루 투입 | 수동, . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330298761-3e41cd894295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzMTg2MjM3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
