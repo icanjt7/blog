@@ -1,0 +1,21 @@
+{
+  "run_id": "20260706-044119-0f617024",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "mr-lif-emergency-rations-4b3ea071",
+      "title": "Mr. Lif ‘Emergency Rations’ EP와 Definitive Jux의 9·11 이후 힙합 혁신",
+      "keyword": "Mr Lif Emergency Rations",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Mr. Lif ‘Emergency Rations’ EP와 Definitive Jux의 9·11 이후 힙합 혁신. Keyword: Mr Lif Emergency Rations. Concrete visual subject: technology innovation circuit abstract. Context: ## Definitive Jux의 등장과 역할 2000년대 초반, Definitive Jux(Def Jux)는 El-P가 설립한 독립 힙합 레이블로, 미국 힙합의 새로운 방향을 제시하는 주역으로 부상했습니다. 실험적이고 정치적 색채가 강한 음악을 지속적으로 발표하며, 당시 주류 힙합과 차별화된 독립적 움직임을 이끌었습니다. Definitive Jux는 Mr. Lif, El-P, Cannibal Ox 등 혁신적 아티스트들을 중심으로, 기존 힙합의 틀을 깨는 음악을 선보였습니다. ## Mr. Lif의 ‘Emergency Rations’ EP 개요 Mr. Lif의 ‘Emergency Rations’ EP는 9·11 테러 이후 발표된 작품으로, 사회적 불안과 정부의 통제, 감시를 핵심 주제로 삼았습니다. The Verge는 2026년 7월 5일 리뷰에서 이 EP를 \"9·11 이후 힙합의 가장 대담한 작품\"으로 평가했습니다. Mr. Lif는 사회적 메시지와 의식 있는 랩을 강조하며, Definitive Jux의 실험적 사운드를 적극 활용했습니다. ## EP의 구체적 특징 및 참여 아티스트 | 구분 | 내용 | |----------------|-------------------------------------------------------------| | 발매 시기 | 9·11 테러 직후 발표(원문 기준) | | 레이블 | Definitive. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzMzEzMTcwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
