@@ -1,0 +1,73 @@
+{
+  "run_id": "20260706-182130-170ade7f",
+  "topics": [
+    {
+      "keyword": "Former Xbox Double Fine",
+      "title_hint": "Former Xbox studios Double Fine and Compulsion will keep games after going indie",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Former Xbox studios Double Fine and Compulsion will keep games after going indie",
+          "url": "https://www.theverge.com/games/961749/xbox-layoffs-compulsion-double-fine-indie",
+          "published_at": "2026-07-06T16:22:34",
+          "summary": "Microsoft is spinning off four of its Xbox game studios - Compulsion Games, Double Fine Productions, Ninja Theory, and Undead Labs - as part of the restructuring announced today. However, two that are going independent, Double Fine and Compulsion, will get to keep their franchises and games catalogs, according to Xbox CEO Asha Sharma. \"Compulsion [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Former Xbox Double Fine",
+        "title_hint": "Former Xbox studios Double Fine and Compulsion will keep games after going indie",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Former Xbox studios Double Fine and Compulsion will keep games after going indie",
+            "url": "https://www.theverge.com/games/961749/xbox-layoffs-compulsion-double-fine-indie",
+            "published_at": "2026-07-06T16:22:34",
+            "summary": "Microsoft is spinning off four of its Xbox game studios - Compulsion Games, Double Fine Productions, Ninja Theory, and Undead Labs - as part of the restructuring announced today. However, two that are going independent, Double Fine and Compulsion, will get to keep their franchises and games catalogs, according to Xbox CEO Asha Sharma. \"Compulsion [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "‘Double Fine’ 독립 이후, 사용자가 직접 느낄 변화 5가지",
+      "slug": "former-xbox-double-fine-8a5be1f5",
+      "excerpt": "2026년 7월 6일 발표된 Xbox 스튜디오 재편 소식에서 Double Fine과 Compulsion Games가 독립 후에도 게임을 계속 유지합니다. 실제 사용자에게 어떤 변화가 있을지 구체적으로 살펴봅니다.",
+      "body_markdown": "## 주요 변화 요약\n\n2026년 7월 6일, Microsoft는 Xbox 게임 스튜디오 4곳(Compulsion Games, Double Fine Productions, Ninja Theory, Undead Labs)의 독립을 공식 발표했습니다. 특히 Double Fine과 Compulsion Games는 독립 후에도 기존 게임에 대한 소유권과 운영 권한을 유지하게 됩니다.\n\n## Double Fine, Compulsion Games란?\n\n- **Double Fine Productions**: ‘Psychonauts’, ‘Broken Age’ 등 창의적인 게임으로 유명한 미국 샌프란시스코 기반 개발사.\n- **Compulsion Games**: ‘We Happy Few’ 등을 개발한 캐나다 몬트리올 소재 게임 스튜디오.\n\n## 사용자가 직접 느낄 변화 체크리스트\n\n| 기준            | 상세 내용                                                                                       |\n|-----------------|-----------------------------------------------------------------------------------------------|\n| 적용 대상       | Double Fine 및 Compulsion Games의 기존 게임 구매자, 신규 게임 출시를 기다리는 유저             |\n| 운영 변화       | 독립 이후에도 기존 게임 업데이트와 지원이 계속됨 (공식 안내 기준)                              |\n| 소유권 유지     | 두 스튜디오가 기존 IP(지적재산권)와 게임 관리 권한을 보유함                                   |\n| 플랫폼 영향     | Xbox 및 PC 등 기존 플랫폼에서 게임 서비스 유지, 단 신규 게임은 플랫폼 별 출시 일정 변동 가능   |\n| 후속 절차       | 공식 발표문, 각 스튜디오의 웹사이트 및 커뮤니티를 통한 추가 안내 예정                         |\n\n## 실제 사용자에게 의미 있는 변화\n\n- 독립 이후에도 ‘Psychonauts’ 등 Double Fine의 기존 게임은 업데이트 및 지원을 계속 받습니다.\n- 신규 게임의 출시 일정과 플랫폼 정책은 각 스튜디오가 직접 결정합니다.\n- 기존 Xbox Game Pass 내 제공 게임은 당분간 유지될 예정(공식 안내 기준).\n- 가격 정책이나 서비스 방식은 변경될 수 있으니 각 스튜디오의 공식 채널 확인이 필요합니다.\n- Ninja Theory, Undead Labs는 소유권 이전 없이 분리되며, 해당 스튜디오 게임의 향후 지원 방식은 별도 안내 예정입니다.\n\n## 참고 출처\n\n- [Former Xbox studios Double Fine and Compulsion will keep games after going indie](https://www.theverge.com/games/961749/xbox-layoffs-compulsion-double-fine-indie) (2026-07-06)",
+      "tags": [
+        "기술",
+        "Former",
+        "Xbox",
+        "Double",
+        "Fine"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxnYW1pbmclMjBjb25zb2xlJTIwY29udHJvbGxlcnxlbnwxfDB8fHwxNzgzMzYyMTk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "‘Double Fine’ 독립 이후, 사용자가 직접 느낄 변화 5가지 — Photo by Javier Martínez on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1507457379470-08b800bebc67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxnYW1pbmclMjBjb25zb2xlJTIwY29udHJvbGxlcnxlbnwxfDB8fHwxNzgzMzYyMTk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "‘Double Fine’ 독립 이후, 사용자가 직접 느낄 변화 5가지 본문 보조 이미지 — Photo by Nikita Kachanovsky on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: ‘Double Fine’ 독립 이후, 사용자가 직접 느낄 변화 5가지. Keyword: Former Xbox Double Fine. Concrete visual subject: gaming console controller. Context: ## 주요 변화 요약 2026년 7월 6일, Microsoft는 Xbox 게임 스튜디오 4곳(Compulsion Games, Double Fine Productions, Ninja Theory, Undead Labs)의 독립을 공식 발표했습니다. 특히 Double Fine과 Compulsion Games는 독립 후에도 기존 게임에 대한 소유권과 운영 권한을 유지하게 됩니다. ## Double Fine, Compulsion Games란? - **Double Fine Productions**: ‘Psychonauts’, ‘Broken Age’ 등 창의적인 게임으로 유명한 미국 샌프란시스코 기반 개발사. - **Compulsion Games**: ‘We Happy Few’ 등을 개발한 캐나다 몬트리올 소재 게임 스튜디오. ## 사용자가 직접 느낄 변화 체크리스트 | 기준 | 상세 내용 | |-----------------|-----------------------------------------------------------------------------------------------| | 적용 대상 | Double Fine 및 Compulsion Games의 기존 게임 구매자, 신규 게임 출시를 기다리는 유저 | | 운영 변화 | 독립 이후에도 기존 게임 업데이트와 지원이 계속됨 (공식 안내 기준) | | 소유권 유지 | 두 스튜디. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: ‘Double Fine’ 독립 이후, 사용자가 직접 느낄 변화 5가지. Keyword: Former Xbox Double Fine. Concrete visual subject: gaming console controller. Article context: ## 주요 변화 요약 2026년 7월 6일, Microsoft는 Xbox 게임 스튜디오 4곳(Compulsion Games, Double Fine Productions, Ninja Theory, Undead Labs)의 독립을 공식 발표했습니다. 특히 Double Fine과 Compulsion Games는 독립 후에도 기존 게임에 대한 소유권과 운영 권한을 유지하게 됩니다. ## Double Fine, Compulsion Games란? - **Double Fine Productions**: ‘Psychonauts’, ‘Broken Age’ 등 창의적인 게임으로 유명한 미국 샌프란시스코 기반 개발사. - **Compulsion Games**: ‘We Happy Few’ 등을 개발한 캐나다 몬트리올 소재 게임 스튜디오. ## 사용자가 직접 느낄 변화 체크리스트 | 기준 | 상세 내용 | |-----------------|-----------------------------------------------------------------------------------------------| | 적용 대상 | Double Fine 및 Compulsion Games의 기존 게임 구매자, 신규 게임 출시를 기다리는 유저 | | 운영 변화 | 독립 이후에도 기존 게임 업데이트와 지원이 계속됨 (공식 안내 기준) | | 소유권 유지 | 두 스튜디오가 기존 IP(지적재산권)와 게임 관리 권한을 보유함 | | 플랫폼 영향 | Xbox 및 PC 등 기존 플랫폼에서 게임 서비스 유지, 단 신규 게임은 플랫폼 별 출시 일정 변동 가능 | | 후속 절차 | 공식 발표문, 각 스튜디오의 웹사이트 및 커뮤니티를 통한 추가 안내 예정 | ## 실제 사용자에게 의미 있는 변화 - 독립 이후에도 ‘Psychonaut. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-06T18:23:09.679025",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/former-xbox-double-fine-8a5be1f5.md",
+      "message": "draft saved"
+    }
+  ]
+}
