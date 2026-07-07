@@ -1,0 +1,20 @@
+{
+  "run_id": "20260707-123921-c068ce22",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "marshall-upgrades-bass-repairability-96f6a2da",
+      "title": "Marshall, 7월에 무선 스피커 베이스·수리성 2배 업그레이드!",
+      "keyword": "Marshall upgrades bass repairability",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Marshall, 7월에 무선 스피커 베이스·수리성 2배 업그레이드!. Keyword: Marshall upgrades bass repairability. Concrete visual subject: artificial intelligence neural network. Context: ## Marshall upgrades bass repairability: 무엇이 달라졌나 2026년 7월 7일, Marshall은 Acton IV 및 Stanmore IV 블루투스 스피커 신제품을 공식 발표했습니다. 이번 모델은 기존 4년 된 제품을 대체하며 다음과 같은 구체적 개선 사항이 적용되었습니다. ### 주요 업그레이드 체크리스트 | 항목 | 상세 내용 | |---------------------|------------------------------------------------------------------| | 발표일 | 2026년 7월 7일 (원문 공개일 기준) | | 모델명 | Acton IV, Stanmore IV | | 주요 개선점 | 업그레이드된 트위터, 베이스 포트, 내부 설계 | | 음향 성능 | 방 전체를 더 풍부하게 채우는 사운드 구현 | | 수리성 향상 | 내부 구조 개선으로 유지보수 및 부품 교체가 더 쉬워짐 | | 공식 출처 | The Verge - Marshall upgrades the bass and repairability | | 대상 사용자 | 음악 애호가, 무선 스피커 관심자, 수리 및 관리에 신경 쓰는 소비자 | ### 제품별 특징 보강 - **Acton IV**: 소형 스피커지만 베이스와 음장 개선으로 중소형 공간에서도 강력한 음향을 제공합니다. - **Stanmore IV**: 중. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgzNDI4MjYxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
