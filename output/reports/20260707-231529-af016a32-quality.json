@@ -1,0 +1,21 @@
+{
+  "run_id": "20260707-231529-af016a32",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "course-viewers-giving-up-203001a1",
+      "title": "넷플릭스 시리즈, 시즌2에서 시청자 70%가 떠난 이유",
+      "keyword": "course viewers giving up",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 넷플릭스 시리즈, 시즌2에서 시청자 70%가 떠난 이유. Keyword: course viewers giving up. Concrete visual subject: technology innovation circuit abstract. Context: ## 넷플릭스 시리즈, 왜 시청자들이 떠날까? 2026년 7월 7일 공개된 [The Verge 원문](https://www.theverge.com/entertainment/962382/netflix-season-two-viewrship-dropoff-beef-avatar-one-piece-tiktok)에 따르면, 넷플릭스는 세계에서 가장 인기 있는 유료 스트리밍 서비스이지만, 시리즈 첫 시즌 이후 시청자 유지에 큰 어려움을 겪고 있습니다. 대표적으로, 앤솔로지 시리즈 ‘Beef’는 두 번째 시즌에서 시청자의 70%가 이탈한 것으로 나타났습니다. ## 주요 배경과 시청자 이탈 현황 - 넷플릭스는 ‘Beef’, ‘Avatar’, ‘One Piece’ 등 다양한 시리즈를 제작하고 있음 - 첫 시즌 이후 시청률이 급감하는 course viewers giving up 현상이 반복 - ‘Beef’ 두 번째 시즌의 시청률은 첫 시즌 대비 70% 감소 - 글로벌 시청자 규모는 압도적이지만, 시즌 지속 시 시청자 관심 하락 - TikTok 등 타 플랫폼으로 시청자 이동도 관찰됨 ## 시청자 이탈 주요 체크포인트 | 항목 | 내용 | |---------------------|-------------------------------------------------------------| | 출처 | The Verge 원문 (2026-07-07 공개) |. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzMzUzNDYzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
