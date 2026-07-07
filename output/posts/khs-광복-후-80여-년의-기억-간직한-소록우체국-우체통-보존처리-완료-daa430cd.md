@@ -1,15 +1,17 @@
 ---
-title: "광복 후 80여 년의 기억 간직한 「소록우체국 우체통」 보존처리 완료"
-date: "2026-07-01T00:40"
-category: "핫이슈"
+title: 국가등록문화유산 소록우체국 우체통 보존 완료
+date: 2026-07-01T00:40
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=b6e25d4020bc4cba86efccb70c6101c4"
-cover_image_alt: "소록우체국 우체통"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=b6e25d4020bc4cba86efccb70c6101c4
+cover_image_alt: 소록우체국 우체통
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 국가유산청, 2026‑07‑01 발표 – 소록우체국 우체통 보존처리 완료 소식

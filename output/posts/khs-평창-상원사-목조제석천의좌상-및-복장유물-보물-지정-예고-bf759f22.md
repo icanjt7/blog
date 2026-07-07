@@ -1,15 +1,17 @@
 ---
-title: "「평창 상원사 목조제석천의좌상 및 복장유물」 보물 지정 예고"
-date: "2026-07-02T00:34"
-category: "핫이슈"
+title: 국가유산청, 「평창 상원사 목조제석천의좌상」 보물 지정 예고
+date: 2026-07-02T00:34
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=702b2934c98e4e379c751b784b3dae1c"
-cover_image_alt: "평창 상원사 목조제석천의좌상 및 복장유물"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=702b2934c98e4e379c751b784b3dae1c
+cover_image_alt: 평창 상원사 목조제석천의좌상 및 복장유물
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-07-02 공개한 자료를 바탕으로 「평창 상원사 목조제석천의좌상 및 복장유물」 보물 지정 예고의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
