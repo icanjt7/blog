@@ -1,0 +1,74 @@
+{
+  "run_id": "20260707-214613-4870c513",
+  "topics": [
+    {
+      "keyword": "Meta Muse Image Instagram",
+      "title_hint": "Meta’s new Muse Image model can pull other Instagram users into AI photos",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Meta’s new Muse Image model can pull other Instagram users into AI photos",
+          "url": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
+          "published_at": "2026-07-07T20:31:58",
+          "summary": "Meta is launching the first AI image generation model made by its Superintelligence Labs division. The Muse Image model now powers the image-making tools across the Meta AI app, Instagram, and WhatsApp, and it's coming soon to Facebook and Messenger, according to an announcement on Tuesday. It's part of the growing Muse family of AI [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Meta Muse Image Instagram",
+        "title_hint": "Meta’s new Muse Image model can pull other Instagram users into AI photos",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Meta’s new Muse Image model can pull other Instagram users into AI photos",
+            "url": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
+            "published_at": "2026-07-07T20:31:58",
+            "summary": "Meta is launching the first AI image generation model made by its Superintelligence Labs division. The Muse Image model now powers the image-making tools across the Meta AI app, Instagram, and WhatsApp, and it's coming soon to Facebook and Messenger, according to an announcement on Tuesday. It's part of the growing Muse family of AI [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Meta Muse Image: 인스타그램 프로필 AI 이미지 자동 활용 핵심 안내",
+      "slug": "meta-muse-image-instagram-dde3078f",
+      "excerpt": "Meta의 Superintelligence Labs가 개발한 Muse Image 모델은 인스타그램, WhatsApp, Meta AI 앱에서 사용자와 친구의 프로필 사진을 AI 이미지에 자동 반영한다. 공식 안내 기준, 기능, 적용 플랫폼, 개인정보 처리, 동의 절차 등 주요 체크포인트와 기존 AI툴과의 차이점을 정리한다.",
+      "body_markdown": "## Meta Muse Image 모델 공식 발표: 핵심 개요\n\n2026년 7월 7일, Meta는 Superintelligence Labs에서 개발한 Muse Image 모델을 공개했다. 이 모델은 인스타그램, WhatsApp, Meta AI 앱에서 AI 이미지 생성 기능을 제공하며, 기존 AI 이미지 생성툴과 달리 인스타그램 사용자의 프로필 사진과 친구·팔로워의 프로필 사진을 자동으로 불러와 합성 이미지에 반영한다. Muse Image 모델은 최초로 Meta의 공식 서비스에서 사용자 네트워크의 프로필을 AI 이미지에 활용하는 기술을 도입했다.\n\n## 인스타그램 프로필 사진 자동 반영: 기능과 적용 범위\n\nMuse Image 모델은 인스타그램 내 친구 및 팔로워의 프로필 사진을 AI가 자동으로 불러온다. 사용자는 텍스트 프롬프트(예: “해변에서 친구들과 놀고 있는 모습”)를 입력하면, 내 프로필과 친구들의 얼굴이 AI가 생성한 이미지에 자연스럽게 등장한다. 별도의 이미지 업로드 과정 없이 인스타그램 계정과 연결된 프로필 사진이 바로 사용된다. 현재 적용 플랫폼은 Meta AI 앱, 인스타그램, WhatsApp이며, 페이스북과 메신저에도 기능 확대가 예정되어 있다.\n\n## 공식 안내 기준: 개인정보 처리 및 동의 절차\n\nThe Verge의 공식 보도에 따르면, Muse Image 모델은 인스타그램 사용자와 친구·팔로워의 프로필 사진을 자동으로 활용하지만, 프로필 사진 사용에 대한 사전 동의 또는 거부 절차는 공식 안내 기준에서 명확히 공개되지 않았다. 개인정보 보호와 관련해, 사용자는 프로필 사진이 AI 이미지에 등장할 수 있음을 인지해야 하며, 향후 기능 확대(페이스북·메신저) 시 개인정보 처리 방침이 어떻게 바뀔지 주의가 필요하다.\n\n## Meta Muse Image와 기존 AI 이미지 생성툴 비교\n\n아래 표는 Meta Muse Image 모델과 기존 AI 이미지 생성툴의 주요 차이점을 정리한 것이다.\n\n| 비교 항목           | Meta Muse Image Instagram                                   | 기존 AI 이미지 생성툴            |\n|--------------------|-------------------------------------------------------------|-----------------------------------|\n| 프로필 사진 활용    | 인스타그램 친구·팔로워 프로필 자동 불러오기                 | 직접 이미지 업로드 필요           |\n| 적용 플랫폼        | Instagram, WhatsApp, Meta AI 앱 (페이스북·메신저 예정)      | 독립 서비스, 웹사이트 등           |\n| 이미지 생성 방식   | 텍스트 프롬프트 입력                                        | 텍스트 프롬프트 및 이미지 업로드   |\n| 개인정보 처리      | 자동 프로필 활용, 동의/거부 절차 미공개                     | 사용자가 직접 이미지 선택 및 업로드|\n| 생성 속도          | 빠른 합성 이미지 생성                                       | 보통~느림                         |\n\n## 사용자 체크포인트: 공식 안내 기준 5가지\n\nMeta Muse Image 모델을 사용할 때, 다음과 같은 공식 안내 기준 체크포인트를 반드시 확인해야 한다.\n\n1. **프로필 사진 자동 반영 여부**  \n   인스타그램 내 내 프로필 및 친구·팔로워 프로필 사진이 AI 이미지 생성에 자동으로 사용된다.\n\n2. **동의 또는 거부 절차 공개 여부**  \n   프로필 사진 활용에 대한 사전 동의, 거부 방법이 공식 안내 기준에서는 공개되지 않았다.\n\n3. **생성 이미지 공개 범위**  \n   AI가 합성한 이미지는 인스타그램, WhatsApp 등 플랫폼 내에서 저장·공유될 수 있다.\n\n4. **개인정보 처리 방침 변화 가능성**  \n   기능이 페이스북, 메신저 등으로 확대될 때 개인정보 처리 방침이 바뀔 수 있다.\n\n5. **텍스트 프롬프트 사용 방식**  \n   이미지 생성은 텍스트 프롬프트 입력 방식이며, 별도의 이미지 업로드는 필요하지 않다.\n\n## 향후 전망 및 사용자 주의사항\n\nMeta Muse Image 모델은 AI 이미지 합성의 편의성을 높였지만, 공식 안내 기준에서 개인정보 보호와 동의 절차가 충분히 설명되지 않았다. 인스타그램, WhatsApp, Meta AI 앱 사용자라면, 내 프로필 사진이 AI 이미지에 자동 반영될 수 있다는 점을 반드시 확인해야 한다. 기능 확대에 따라 개인정보 처리 방침이 변경될 수 있으므로, 공식 안내 및 플랫폼 정책을 지속적으로 모니터링하는 것이 중요하다.\n\n## 출처\n\nMeta’s new Muse Image model can pull other Instagram users into AI photos  \nThe Verge, 2026-07-07  \nhttps://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
+      "tags": [
+        "기술",
+        "Meta",
+        "Muse",
+        "Image",
+        "Instagram"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxzb2NpYWwlMjB2aXJ0dWFsJTIwdGVjaG5vbG9neSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBuZXVyYWwlMjBuZXR3b3JrfGVufDF8MHx8fDE3ODM0NjA4NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Meta Muse Image: 인스타그램 프로필 AI 이미지 자동 활용 핵심 안내 — Photo by Steve A Johnson on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1674027215016-0a4abfdbf1cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxzb2NpYWwlMjB2aXJ0dWFsJTIwdGVjaG5vbG9neSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBuZXVyYWwlMjBuZXR3b3JrfGVufDF8MHx8fDE3ODM0NjA4NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "Meta Muse Image: 인스타그램 프로필 AI 이미지 자동 활용 핵심 안내 본문 보조 이미지 — Photo by Growtika on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Meta Muse Image: 인스타그램 프로필 AI 이미지 자동 활용 핵심 안내. Keyword: Meta Muse Image Instagram. Concrete visual subject: social virtual technology artificial intelligence neural network. Context: ## Meta Muse Image 모델 공식 발표: 핵심 개요 2026년 7월 7일, Meta는 Superintelligence Labs에서 개발한 Muse Image 모델을 공개했다. 이 모델은 인스타그램, WhatsApp, Meta AI 앱에서 AI 이미지 생성 기능을 제공하며, 기존 AI 이미지 생성툴과 달리 인스타그램 사용자의 프로필 사진과 친구·팔로워의 프로필 사진을 자동으로 불러와 합성 이미지에 반영한다. Muse Image 모델은 최초로 Meta의 공식 서비스에서 사용자 네트워크의 프로필을 AI 이미지에 활용하는 기술을 도입했다. ## 인스타그램 프로필 사진 자동 반영: 기능과 적용 범위 Muse Image 모델은 인스타그램 내 친구 및 팔로워의 프로필 사진을 AI가 자동으로 불러온다. 사용자는 텍스트 프롬프트(예: “해변에서 친구들과 놀고 있는 모습”)를 입력하면, 내 프로필과 친구들의 얼굴이 AI가 생성한 이미지에 자연스럽게 등장한다. 별도의 이미지 업로드 과정 없이 인스타그램 계정과 연결된 프로필 사진이 바로 사용된다. 현재 적용 플랫폼은 Meta AI 앱, 인스타그램, WhatsApp이며, 페이스북과 메신저에도 기능 확대가 예정되어 있다. ## 공식 안내 기준: 개인정보 처리 및 동의 절차 The Verge의 공식 보도에 따르면, Muse Image 모델은 인스타그램 사용자와 친구·팔로워의 프로필 사진을 자동으로 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: Meta Muse Image: 인스타그램 프로필 AI 이미지 자동 활용 핵심 안내. Keyword: Meta Muse Image Instagram. Concrete visual subject: social virtual technology artificial intelligence neural network. Article context: ## Meta Muse Image 모델 공식 발표: 핵심 개요 2026년 7월 7일, Meta는 Superintelligence Labs에서 개발한 Muse Image 모델을 공개했다. 이 모델은 인스타그램, WhatsApp, Meta AI 앱에서 AI 이미지 생성 기능을 제공하며, 기존 AI 이미지 생성툴과 달리 인스타그램 사용자의 프로필 사진과 친구·팔로워의 프로필 사진을 자동으로 불러와 합성 이미지에 반영한다. Muse Image 모델은 최초로 Meta의 공식 서비스에서 사용자 네트워크의 프로필을 AI 이미지에 활용하는 기술을 도입했다. ## 인스타그램 프로필 사진 자동 반영: 기능과 적용 범위 Muse Image 모델은 인스타그램 내 친구 및 팔로워의 프로필 사진을 AI가 자동으로 불러온다. 사용자는 텍스트 프롬프트(예: “해변에서 친구들과 놀고 있는 모습”)를 입력하면, 내 프로필과 친구들의 얼굴이 AI가 생성한 이미지에 자연스럽게 등장한다. 별도의 이미지 업로드 과정 없이 인스타그램 계정과 연결된 프로필 사진이 바로 사용된다. 현재 적용 플랫폼은 Meta AI 앱, 인스타그램, WhatsApp이며, 페이스북과 메신저에도 기능 확대가 예정되어 있다. ## 공식 안내 기준: 개인정보 처리 및 동의 절차 The Verge의 공식 보도에 따르면, Muse Image 모델은 인스타그램 사용자와 친구·팔로워의 프로필 사진을 자동으로 활용하지만, 프로필 사진 사용에 대한 사전 동의 또는 거부 절차는 공식 안내 기준에서 명확히 공개되지 않았다. 개인정보 보호와 관련해, 사용자는 프로필 사진이 AI 이미지에 등장할 수 있음을 인지해야 하며, 향후 기능 확대(페이스북·메신저) 시 개인정보 처리 방침이 어떻게 바뀔지 주의가 필요하다. ## Meta Muse Image와 기존 AI 이미지 생성툴. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-07T21:47:31.861956",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 55.0"
+    }
+  ]
+}

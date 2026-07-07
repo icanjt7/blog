@@ -1,0 +1,21 @@
+{
+  "run_id": "20260707-214613-4870c513",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "meta-muse-image-instagram-dde3078f",
+      "title": "Meta Muse Image: 인스타그램 프로필 AI 이미지 자동 활용 핵심 안내",
+      "keyword": "Meta Muse Image Instagram",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Meta Muse Image: 인스타그램 프로필 AI 이미지 자동 활용 핵심 안내. Keyword: Meta Muse Image Instagram. Concrete visual subject: social virtual technology artificial intelligence neural network. Context: ## Meta Muse Image 모델 공식 발표: 핵심 개요 2026년 7월 7일, Meta는 Superintelligence Labs에서 개발한 Muse Image 모델을 공개했다. 이 모델은 인스타그램, WhatsApp, Meta AI 앱에서 AI 이미지 생성 기능을 제공하며, 기존 AI 이미지 생성툴과 달리 인스타그램 사용자의 프로필 사진과 친구·팔로워의 프로필 사진을 자동으로 불러와 합성 이미지에 반영한다. Muse Image 모델은 최초로 Meta의 공식 서비스에서 사용자 네트워크의 프로필을 AI 이미지에 활용하는 기술을 도입했다. ## 인스타그램 프로필 사진 자동 반영: 기능과 적용 범위 Muse Image 모델은 인스타그램 내 친구 및 팔로워의 프로필 사진을 AI가 자동으로 불러온다. 사용자는 텍스트 프롬프트(예: “해변에서 친구들과 놀고 있는 모습”)를 입력하면, 내 프로필과 친구들의 얼굴이 AI가 생성한 이미지에 자연스럽게 등장한다. 별도의 이미지 업로드 과정 없이 인스타그램 계정과 연결된 프로필 사진이 바로 사용된다. 현재 적용 플랫폼은 Meta AI 앱, 인스타그램, WhatsApp이며, 페이스북과 메신저에도 기능 확대가 예정되어 있다. ## 공식 안내 기준: 개인정보 처리 및 동의 절차 The Verge의 공식 보도에 따르면, Muse Image 모델은 인스타그램 사용자와 친구·팔로워의 프로필 사진을 자동으로 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxzb2NpYWwlMjB2aXJ0dWFsJTIwdGVjaG5vbG9neSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBuZXVyYWwlMjBuZXR3b3JrfGVufDF8MHx8fDE3ODM0NjA4NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
