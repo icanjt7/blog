@@ -1,0 +1,70 @@
+{
+  "run_id": "20260707-041815-543eb646",
+  "topics": [
+    {
+      "keyword": "spy",
+      "title_hint": "I spy",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "I spy",
+          "url": "https://www.theverge.com/column/961707/smart-glasses-ai-wearables-meta-surveillance-privacy",
+          "published_at": "2026-07-06T16:00:00",
+          "summary": "I've long argued that Hollywood has simultaneously set and ruined our expectations for smart glasses. But after binge-watching two seasons of Netflix's A Man on the Inside, this is perhaps the first time I've seen Hollywood, perhaps inadvertently, illustrate the biggest cultural problem with smart glasses as they stand today. In a nutshell, Ted Danson [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "spy",
+        "title_hint": "I spy",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "I spy",
+            "url": "https://www.theverge.com/column/961707/smart-glasses-ai-wearables-meta-surveillance-privacy",
+            "published_at": "2026-07-06T16:00:00",
+            "summary": "I've long argued that Hollywood has simultaneously set and ruined our expectations for smart glasses. But after binge-watching two seasons of Netflix's A Man on the Inside, this is perhaps the first time I've seen Hollywood, perhaps inadvertently, illustrate the biggest cultural problem with smart glasses as they stand today. In a nutshell, Ted Danson [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "‘I spy’ 스마트 글라스, 실제 사용자에게 달라지는 5가지",
+      "slug": "spy-a0179c31",
+      "excerpt": "2026년 7월 기준, ‘I spy’ 스마트 글라스의 변화가 사용자에게 미치는 구체적 영향과 체크포인트를 정리합니다.",
+      "body_markdown": "## ‘I spy’ 스마트 글라스, 실제 변화는?\n\n2026년 7월 6일 공개된 [The Verge 칼럼](https://www.theverge.com/column/961707/smart-glasses-ai-wearables-meta-surveillance-privacy)에서는 넷플릭스 드라마 ‘A Man on the Inside’와 현실의 스마트 글라스 기술이 어떻게 맞물리는지 분석했습니다.  \n‘I spy’는 AI 기반 웨어러블 스마트 글라스 제품으로, 실제 사용자의 프라이버시, 가격, 기능의 변화가 주목받고 있습니다.\n\n## 주요 변화 체크리스트 (2026년 7월 기준)\n\n| 기준            | 내용                                              |\n|-----------------|---------------------------------------------------|\n| 적용 대상       | 스마트 글라스 사용자, 기업 도입 검토자, 개발팀      |\n| 주요 기능 변화  | AI 음성 인식, 실시간 영상 분석, 자동 기록 기능      |\n| 가격 정책       | 구독제 도입, 초기 구매 비용 공개, 추가 서비스 요금  |\n| 플랫폼 연동     | Meta, Google 등 주요 플랫폼과 호환성               |\n| 프라이버시 이슈 | 녹화·감시 기능 강화로 개인정보 관리 필요성 증가    |\n\n## 사용자가 꼭 알아야 할 5가지\n\n1. AI 기반 영상·음성 분석 기능이 추가되어 일상 사용 시 데이터 기록 범위가 넓어집니다.\n2. 구독제 도입 등 가격 구조가 바뀌면서 초기 비용 외에 지속 비용을 고려해야 합니다.\n3. Meta, Google 등 외부 플랫폼과 연동 시 개인정보가 제3자 서버로 전송될 수 있습니다.\n4. 실시간 감시 기능 강화로 업무 현장이나 공공장소에서 프라이버시 논란이 커질 수 있습니다.\n5. 공식 안내, 릴리스 노트, 가격표, 플랫폼 호환성 등 최신 정보를 반드시 직접 확인해야 합니다.\n\n## 넷플릭스 ‘A Man on the Inside’ 참고\n\n‘A Man on the Inside’는 첨단 감시 기술을 소재로 한 넷플릭스 드라마입니다.  \n드라마 속 ‘spy’ 기술이 현실 스마트 글라스와 맞닿아 있다는 점이 이번 칼럼에서 주요하게 다뤄집니다.\n\n## 참고 출처\n\n- [The Verge: I spy](https://www.theverge.com/column/961707/smart-glasses-ai-wearables-meta-surveillance-privacy) (2026-07-06 공개)  \n- 넷플릭스 ‘A Man on the Inside’ (감시 기술을 다루는 드라마)\n\n---\n\n2026년 7월 기준, 스마트 글라스 ‘I spy’의 기능, 가격, 프라이버시 변화를 반드시 최신 공식 자료로 확인하세요.",
+      "tags": [
+        "기술",
+        "spy"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzMzk4MDI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "‘I spy’ 스마트 글라스, 실제 사용자에게 달라지는 5가지 — Photo by Declan Sun on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1782338936796-0ebf0a6a1068?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzMzk4MDI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "‘I spy’ 스마트 글라스, 실제 사용자에게 달라지는 5가지 본문 보조 이미지 — Photo by Brecht Corbeel on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: ‘I spy’ 스마트 글라스, 실제 사용자에게 달라지는 5가지. Keyword: spy. Concrete visual subject: technology innovation circuit abstract. Context: ## ‘I spy’ 스마트 글라스, 실제 변화는? 2026년 7월 6일 공개된 [The Verge 칼럼](https://www.theverge.com/column/961707/smart-glasses-ai-wearables-meta-surveillance-privacy)에서는 넷플릭스 드라마 ‘A Man on the Inside’와 현실의 스마트 글라스 기술이 어떻게 맞물리는지 분석했습니다. ‘I spy’는 AI 기반 웨어러블 스마트 글라스 제품으로, 실제 사용자의 프라이버시, 가격, 기능의 변화가 주목받고 있습니다. ## 주요 변화 체크리스트 (2026년 7월 기준) | 기준 | 내용 | |-----------------|---------------------------------------------------| | 적용 대상 | 스마트 글라스 사용자, 기업 도입 검토자, 개발팀 | | 주요 기능 변화 | AI 음성 인식, 실시간 영상 분석, 자동 기록 기능 | | 가격 정책 | 구독제 도입, 초기 구매 비용 공개, 추가 서비스 요금 | | 플랫폼 연동 | Meta, Google 등 주요 플랫폼과 호환성 | | 프라이버시 이슈 | 녹화·감시 기능 강화로 개인정보 관리 필요성 증가 | ## 사용자가 꼭 알아야 할 5가지 1. AI 기반 영상·음성 분석 기능이 추가되어 일상 사용 시 데이터 기록 범위가 넓어집니다. 2. 구독제 도입 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: ‘I spy’ 스마트 글라스, 실제 사용자에게 달라지는 5가지. Keyword: spy. Concrete visual subject: technology innovation circuit abstract. Article context: ## ‘I spy’ 스마트 글라스, 실제 변화는? 2026년 7월 6일 공개된 [The Verge 칼럼](https://www.theverge.com/column/961707/smart-glasses-ai-wearables-meta-surveillance-privacy)에서는 넷플릭스 드라마 ‘A Man on the Inside’와 현실의 스마트 글라스 기술이 어떻게 맞물리는지 분석했습니다. ‘I spy’는 AI 기반 웨어러블 스마트 글라스 제품으로, 실제 사용자의 프라이버시, 가격, 기능의 변화가 주목받고 있습니다. ## 주요 변화 체크리스트 (2026년 7월 기준) | 기준 | 내용 | |-----------------|---------------------------------------------------| | 적용 대상 | 스마트 글라스 사용자, 기업 도입 검토자, 개발팀 | | 주요 기능 변화 | AI 음성 인식, 실시간 영상 분석, 자동 기록 기능 | | 가격 정책 | 구독제 도입, 초기 구매 비용 공개, 추가 서비스 요금 | | 플랫폼 연동 | Meta, Google 등 주요 플랫폼과 호환성 | | 프라이버시 이슈 | 녹화·감시 기능 강화로 개인정보 관리 필요성 증가 | ## 사용자가 꼭 알아야 할 5가지 1. AI 기반 영상·음성 분석 기능이 추가되어 일상 사용 시 데이터 기록 범위가 넓어집니다. 2. 구독제 도입 등 가격 구조가 바뀌면서 초기 비용 외에 지속 비용을 고려해야 합니다. 3. Meta, Google 등 외부 플랫폼과 연동 시 개인정보가 제3자 서버로 전송될 수 있습니다. 4. 실시간 감시 기능 강화로 업무 현장이나 공공장소에서 프라이버시 논란이 커질 수 있습니다. 5. 공식 안내, 릴리스 노트, 가격표, 플랫폼 호환성 등 최신 정보를 반드시 직접 확인해. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-07T04:20:15.707321",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/spy-a0179c31.md",
+      "message": "draft saved"
+    }
+  ]
+}
