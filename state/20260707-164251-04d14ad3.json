@@ -1,0 +1,72 @@
+{
+  "run_id": "20260707-164251-04d14ad3",
+  "topics": [
+    {
+      "keyword": "Doom Xbox",
+      "title_hint": "Doom developer id reportedly cut in half as part of Xbox layoffs",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Doom developer id reportedly cut in half as part of Xbox layoffs",
+          "url": "https://www.theverge.com/games/962223/doom-id-software-xbox-layoffs",
+          "published_at": "2026-07-07T16:09:48",
+          "summary": "As part of the mass layoffs hitting Xbox, Doom developer id Software has laid off around 50 percent of its staff, according to Game Developer. One source claimed to the publication that the cuts equate to more than 90 redundancies. Another source said that id's QA department was significantly impacted. The report was published the [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Doom Xbox",
+        "title_hint": "Doom developer id reportedly cut in half as part of Xbox layoffs",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Doom developer id reportedly cut in half as part of Xbox layoffs",
+            "url": "https://www.theverge.com/games/962223/doom-id-software-xbox-layoffs",
+            "published_at": "2026-07-07T16:09:48",
+            "summary": "As part of the mass layoffs hitting Xbox, Doom developer id Software has laid off around 50 percent of its staff, according to Game Developer. One source claimed to the publication that the cuts equate to more than 90 redundancies. Another source said that id's QA department was significantly impacted. The report was published the [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Doom Xbox, 개발사 id Software 직원 절반 감축 충격",
+      "slug": "doom-xbox-1d04d9a5",
+      "excerpt": "2026년 7월, Xbox 대규모 구조조정으로 Doom 개발사 id Software가 직원의 약 50%를 감축했습니다. 이 변화의 구체적 수치와 파장, 게임 업계에 미치는 영향을 정리합니다.",
+      "body_markdown": "## Doom Xbox, 구조조정으로 id Software 직원 50% 감축\n\n2026년 7월 7일, Xbox를 운영하는 Microsoft의 대규모 인력 감축이 진행되었습니다. 이로 인해 대표적인 FPS 게임 'Doom'을 개발한 id Software 역시 큰 타격을 받았습니다.  \nGame Developer에 따르면 id Software는 전체 직원의 약 절반, 즉 50%가 해고되었습니다.  \n한 소식통은 해고된 인원이 90명 이상이라고 전했습니다.\n\n## 핵심 체크리스트\n\n| 항목            | 구체 내용                                                               |\n|----------------|------------------------------------------------------------------------|\n| 시행일         | 2026년 7월 7일                                                          |\n| 감축 규모      | 직원 약 50% 해고(90명 이상)                                             |\n| 적용 대상      | id Software(‘Doom’ 개발사), Xbox 부문 전체                             |\n| 기관명         | Microsoft, id Software, Game Developer(취재 출처)                      |\n| 주요 절차      | 대규모 구조조정, 공식 발표, 언론 취재                                   |\n\n## id Software란?\n\nid Software는 1990년대부터 ‘Doom’, ‘Quake’, ‘Wolfenstein’ 등 혁신적인 FPS 게임을 개발한 미국의 게임 개발사입니다. Microsoft의 Xbox 부문에 소속되어 있습니다.\n\n## 이 구조조정의 영향\n\n- Doom Xbox 시리즈 개발 일정 및 품질에 차질이 예상됩니다.\n- QA(품질관리) 부서도 감축되어 게임 테스트 및 안정성 확보에 어려움이 생길 수 있습니다.\n- 게임업계 전반적으로 구조조정 및 인력 이동이 확산될 가능성이 있습니다.\n\n## 독자가 확인할 포인트\n\n1. 이번 감축은 Xbox 전체 구조조정의 일환으로 진행되었습니다.\n2. 50%라는 구체적 수치와 90명 이상 해고라는 근거는 Game Developer의 보도에서 확인할 수 있습니다.\n3. id Software의 핵심 인력 및 QA 부서에도 직접적인 영향이 있습니다.\n4. Doom Xbox 시리즈와 관련한 향후 개발 동향은 추가 공식 안내를 통해 확인하는 것이 필요합니다.\n\n## 참고 출처\n\n- [Doom developer id reportedly cut in half as part of Xbox layoffs](https://www.theverge.com/games/962223/doom-id-software-xbox-layoffs) (2026-07-07, Game Developer 인용)",
+      "tags": [
+        "기술",
+        "Doom",
+        "Xbox"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBjb25zb2xlJTIwY29udHJvbGxlciUyMHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnQlMjBjb2RlfGVufDF8MHx8fDE3ODM0NDI2NjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Doom Xbox, 개발사 id Software 직원 절반 감축 충격 — Photo by Javier Martínez on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxnYW1pbmclMjBjb25zb2xlJTIwY29udHJvbGxlciUyMHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnQlMjBjb2RlfGVufDF8MHx8fDE3ODM0NDI2NjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "Doom Xbox, 개발사 id Software 직원 절반 감축 충격 본문 보조 이미지 — Photo by Fábio Magalhães on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Doom Xbox, 개발사 id Software 직원 절반 감축 충격. Keyword: Doom Xbox. Concrete visual subject: gaming console controller software development code. Context: ## Doom Xbox, 구조조정으로 id Software 직원 50% 감축 2026년 7월 7일, Xbox를 운영하는 Microsoft의 대규모 인력 감축이 진행되었습니다. 이로 인해 대표적인 FPS 게임 'Doom'을 개발한 id Software 역시 큰 타격을 받았습니다. Game Developer에 따르면 id Software는 전체 직원의 약 절반, 즉 50%가 해고되었습니다. 한 소식통은 해고된 인원이 90명 이상이라고 전했습니다. ## 핵심 체크리스트 | 항목 | 구체 내용 | |----------------|------------------------------------------------------------------------| | 시행일 | 2026년 7월 7일 | | 감축 규모 | 직원 약 50% 해고(90명 이상) | | 적용 대상 | id Software(‘Doom’ 개발사), Xbox 부문 전체 | | 기관명 | Microsoft, id Software, Game Developer(취재 출처) | | 주요 절차 | 대규모 구조조정, 공식 발표, 언론 취재 | ## id Software란? id Software는 1990년대부터 ‘Doom’, ‘Quake’, ‘Wolfenstein’ 등 혁신적인 FPS 게임을 개발한 미국의 게임 개발사입니다. Microsoft의 Xbox 부문에 소속되어 있습니다. ## . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: Doom Xbox, 개발사 id Software 직원 절반 감축 충격. Keyword: Doom Xbox. Concrete visual subject: gaming console controller software development code. Article context: ## Doom Xbox, 구조조정으로 id Software 직원 50% 감축 2026년 7월 7일, Xbox를 운영하는 Microsoft의 대규모 인력 감축이 진행되었습니다. 이로 인해 대표적인 FPS 게임 'Doom'을 개발한 id Software 역시 큰 타격을 받았습니다. Game Developer에 따르면 id Software는 전체 직원의 약 절반, 즉 50%가 해고되었습니다. 한 소식통은 해고된 인원이 90명 이상이라고 전했습니다. ## 핵심 체크리스트 | 항목 | 구체 내용 | |----------------|------------------------------------------------------------------------| | 시행일 | 2026년 7월 7일 | | 감축 규모 | 직원 약 50% 해고(90명 이상) | | 적용 대상 | id Software(‘Doom’ 개발사), Xbox 부문 전체 | | 기관명 | Microsoft, id Software, Game Developer(취재 출처) | | 주요 절차 | 대규모 구조조정, 공식 발표, 언론 취재 | ## id Software란? id Software는 1990년대부터 ‘Doom’, ‘Quake’, ‘Wolfenstein’ 등 혁신적인 FPS 게임을 개발한 미국의 게임 개발사입니다. Microsoft의 Xbox 부문에 소속되어 있습니다. ## 이 구조조정의 영향 - Doom Xbox 시리즈 개발 일정 및 품질에 차질이 예상됩니다. - QA(품질관리) 부서도 감축되어 게임 테스트 및 안정성 확보에 어려움이 생길 수 있습니다. - 게임업계 전반적으로 구조조정 및 인력 이동이 확산될 가능성이 있습니다. ## 독자가 확인할 포인트 1. 이번 감축은 Xbox 전체 구조조정의 일환으로 진행되었습니다. 2.. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-07T16:44:16.147050",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 55.0"
+    }
+  ]
+}
