@@ -1,0 +1,20 @@
+{
+  "run_id": "20260708-233100-9d9b6cea",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "meta-reportedly-working-smart-e57afd04",
+      "title": "\"Meta의 '항상 켜진' AI 스마트글라스, 무엇이 달라지나?\"",
+      "keyword": "Meta reportedly working smart",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: \"Meta의 '항상 켜진' AI 스마트글라스, 무엇이 달라지나?\". Keyword: Meta reportedly working smart. Concrete visual subject: social virtual technology artificial intelligence neural network. Context: ## 새로운 AI 웨어러블, Meta 스마트글라스 2026년 7월 8일 The Verge 보도에 따르면, Meta reportedly working smart glasses that would be recording all the time. 이 스마트글라스는 \"super sensing\" 기능을 갖춰, 오디오를 지속적으로 녹음하고 몇 초마다 사진을 자동으로 촬영하는 프로토타입이 개발 중입니다. Meta는 기존 AI 웨어러블과 차별화된 '항상 켜진' 기능으로, 사용자가 음성 명령 없이도 일상 정보를 수집할 수 있게 한다고 밝혔습니다. ## 핵심 기술과 적용 맥락 - **항상 켜진 녹음**: 스마트글라스가 착용자의 주변 소리를 24시간 녹음합니다. - **자동 사진 촬영**: 일정 간격(수초마다)으로 주변 사진을 자동 저장합니다. - **AI 처리**: 기록된 데이터는 AI가 실시간 분석하여, 사용자가 질문하면 즉시 답변을 제공합니다. - **Meta의 개발 현황**: 실제 제품은 아직 프로토타입 단계이며, 상용화 일정은 미정입니다. - **출처**: [Meta is reportedly working on smart glasses that would be recording all the time](https://www.theverge.com/tech/963138/meta-smart-glasses-recording-super-sensing-. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135131-4d7c123aef1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxzb2NpYWwlMjB2aXJ0dWFsJTIwdGVjaG5vbG9neSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBuZXVyYWwlMjBuZXR3b3JrfGVufDF8MHx8fDE3ODM1NTM1NTd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
