@@ -1,0 +1,73 @@
+{
+  "run_id": "20260708-034659-a24e4c5d",
+  "topics": [
+    {
+      "keyword": "Meta glasses will turn",
+      "title_hint": "Meta’s glasses will turn off the camera if you tamper with the privacy light",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Meta’s glasses will turn off the camera if you tamper with the privacy light",
+          "url": "https://www.theverge.com/gadgets/962514/meta-privacy-light-tampering-smart-glasses-update",
+          "published_at": "2026-07-07T23:55:19",
+          "summary": "Amid public backlash over its smart glasses, Meta announced that it will be updating its glasses with a new feature that will disable the camera when it detects that someone has tampered with or destroyed the glasses' privacy LED light. The update is meant to address modders who have taken actions such as physically drilling [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Meta glasses will turn",
+        "title_hint": "Meta’s glasses will turn off the camera if you tamper with the privacy light",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Meta’s glasses will turn off the camera if you tamper with the privacy light",
+            "url": "https://www.theverge.com/gadgets/962514/meta-privacy-light-tampering-smart-glasses-update",
+            "published_at": "2026-07-07T23:55:19",
+            "summary": "Amid public backlash over its smart glasses, Meta announced that it will be updating its glasses with a new feature that will disable the camera when it detects that someone has tampered with or destroyed the glasses' privacy LED light. The update is meant to address modders who have taken actions such as physically drilling [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "‘Meta 스마트글라스’ 카메라 자동 차단, 프라이버시 논란에 대응?",
+      "slug": "meta-glasses-will-turn-26b3aede",
+      "excerpt": "Meta는 2026-07-07 공식 안내를 통해, 프라이버시 LED를 임의로 조작할 경우 스마트글라스 카메라를 자동으로 비활성화하는 새로운 기능을 도입한다고 밝혔습니다. 공공장소 촬영 논란에 대응한 이번 업데이트는 이용자와 규제기관 모두에게 중요한 변화입니다.",
+      "body_markdown": "## 어떤 변화인가?\n\nMeta의 스마트글라스가 프라이버시 LED(등)를 임의로 훼손하거나 조작하면, 카메라가 자동으로 꺼지는 기능이 추가됩니다.  \n2026-07-07 Meta 공식 안내에 따르면, 최근 공개된 이 업데이트는 공공장소 촬영에 대한 우려와 이용자 안전을 반영한 조치입니다.\n\n## 배경과 맥락\n\nMeta는 Facebook, Instagram 등 소셜미디어 플랫폼을 운영하며, 스마트글라스와 같은 웨어러블 기기 개발에도 투자하고 있습니다.  \n최근 스마트글라스가 프라이버시 침해 논란에 휘말리면서, LED를 숨기거나 없애는 개조가 문제로 지적되었습니다.\n\n## 왜 중요한가?\n\n- 프라이버시 LED는 촬영 여부를 알리는 핵심 표시 장치입니다.\n- LED를 임의로 제거하거나 가리면 주변인이 촬영 사실을 알기 어렵습니다.\n- 이번 카메라 자동 차단 기능은, LED가 정상 작동하지 않을 때마다 촬영을 즉시 중단시킵니다.\n\n## 체크리스트로 보는 주요 기준\n\n| 항목                | 구체 내용                                                         |\n|---------------------|-------------------------------------------------------------------|\n| 적용 기기           | Meta 스마트글라스(공식 모델 기준)                                |\n| 적용 시점           | 2026-07-07 공식 안내 기준                                        |\n| 차단 방식           | 프라이버시 LED 조작 감지 시 카메라 자동 비활성화                |\n| 대상 사용자         | 스마트글라스 이용자, 공공장소 촬영 관련 이해관계자              |\n| 규제 및 영향        | 개인정보 보호, 공공장소 촬영 규제, 이용자 신뢰도 개선             |\n\n## 독자가 알아야 할 핵심 포인트\n\n1. Meta glasses will turn off the camera if you tamper with the privacy light—LED를 숨기거나 훼손하면 자동으로 촬영이 중단됩니다.\n2. 이번 업데이트는 일반 이용자뿐 아니라 규제기관의 요구와 사회적 우려를 반영한 조치입니다.\n3. 스마트글라스 사용 시 프라이버시 LED가 정상 작동하는지 반드시 확인해야 합니다.\n4. 공식 안내 기준이므로, 실제 적용 모델과 기능 변경은 Meta 홈페이지 또는 추가 공지에서 확인이 필요합니다.\n\n## 참고 출처\n\n- [Meta’s glasses will turn off the camera if you tamper with the privacy light](https://www.theverge.com/gadgets/962514/meta-privacy-light-tampering-smart-glasses-update) (2026-07-07)",
+      "tags": [
+        "기술",
+        "Meta",
+        "glasses",
+        "will",
+        "turn"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1594807929862-aa3a564c92c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxjYW1lcmElMjBwaG90b2dyYXBoeSUyMGxlbnMlMjBkaWdpdGFsJTIwc29jaWFsJTIwdmlydHVhbCUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc4MzQ4MjY3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "‘Meta 스마트글라스’ 카메라 자동 차단, 프라이버시 논란에 대응? — Photo by Irham Setyaki on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1494251268800-9ca078482168?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8Y2FtZXJhJTIwcGhvdG9ncmFwaHklMjBsZW5zJTIwZGlnaXRhbCUyMHNvY2lhbCUyMHZpcnR1YWwlMjB0ZWNobm9sb2d5fGVufDF8MHx8fDE3ODM0ODI2Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "‘Meta 스마트글라스’ 카메라 자동 차단, 프라이버시 논란에 대응? 본문 보조 이미지 — Photo by Miss Zhang on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: ‘Meta 스마트글라스’ 카메라 자동 차단, 프라이버시 논란에 대응?. Keyword: Meta glasses will turn. Concrete visual subject: camera photography lens digital social virtual technology. Context: ## 어떤 변화인가? Meta의 스마트글라스가 프라이버시 LED(등)를 임의로 훼손하거나 조작하면, 카메라가 자동으로 꺼지는 기능이 추가됩니다. 2026-07-07 Meta 공식 안내에 따르면, 최근 공개된 이 업데이트는 공공장소 촬영에 대한 우려와 이용자 안전을 반영한 조치입니다. ## 배경과 맥락 Meta는 Facebook, Instagram 등 소셜미디어 플랫폼을 운영하며, 스마트글라스와 같은 웨어러블 기기 개발에도 투자하고 있습니다. 최근 스마트글라스가 프라이버시 침해 논란에 휘말리면서, LED를 숨기거나 없애는 개조가 문제로 지적되었습니다. ## 왜 중요한가? - 프라이버시 LED는 촬영 여부를 알리는 핵심 표시 장치입니다. - LED를 임의로 제거하거나 가리면 주변인이 촬영 사실을 알기 어렵습니다. - 이번 카메라 자동 차단 기능은, LED가 정상 작동하지 않을 때마다 촬영을 즉시 중단시킵니다. ## 체크리스트로 보는 주요 기준 | 항목 | 구체 내용 | |---------------------|-------------------------------------------------------------------| | 적용 기기 | Meta 스마트글라스(공식 모델 기준) | | 적용 시점 | 2026-07-07 공식 안내 기준 | | 차단 방식 | 프라이버시 LED 조작 감지 시 카메라 자동 비활성화 | | 대상 사용자 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: ‘Meta 스마트글라스’ 카메라 자동 차단, 프라이버시 논란에 대응?. Keyword: Meta glasses will turn. Concrete visual subject: camera photography lens digital social virtual technology. Article context: ## 어떤 변화인가? Meta의 스마트글라스가 프라이버시 LED(등)를 임의로 훼손하거나 조작하면, 카메라가 자동으로 꺼지는 기능이 추가됩니다. 2026-07-07 Meta 공식 안내에 따르면, 최근 공개된 이 업데이트는 공공장소 촬영에 대한 우려와 이용자 안전을 반영한 조치입니다. ## 배경과 맥락 Meta는 Facebook, Instagram 등 소셜미디어 플랫폼을 운영하며, 스마트글라스와 같은 웨어러블 기기 개발에도 투자하고 있습니다. 최근 스마트글라스가 프라이버시 침해 논란에 휘말리면서, LED를 숨기거나 없애는 개조가 문제로 지적되었습니다. ## 왜 중요한가? - 프라이버시 LED는 촬영 여부를 알리는 핵심 표시 장치입니다. - LED를 임의로 제거하거나 가리면 주변인이 촬영 사실을 알기 어렵습니다. - 이번 카메라 자동 차단 기능은, LED가 정상 작동하지 않을 때마다 촬영을 즉시 중단시킵니다. ## 체크리스트로 보는 주요 기준 | 항목 | 구체 내용 | |---------------------|-------------------------------------------------------------------| | 적용 기기 | Meta 스마트글라스(공식 모델 기준) | | 적용 시점 | 2026-07-07 공식 안내 기준 | | 차단 방식 | 프라이버시 LED 조작 감지 시 카메라 자동 비활성화 | | 대상 사용자 | 스마트글라스 이용자, 공공장소 촬영 관련 이해관계자 | | 규제 및 영향 | 개인정보 보호, 공공장소 촬영 규제, 이용자 신뢰도 개선 | ## 독자가 알아야 할 핵심 포인트 1. Meta glasses will turn off the camera if you tamper with the privacy light—LED를 숨기거나 훼손하면 자동으로 촬영이. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-08T03:51:07.805657",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/meta-glasses-will-turn-26b3aede.md",
+      "message": "draft saved"
+    }
+  ]
+}
