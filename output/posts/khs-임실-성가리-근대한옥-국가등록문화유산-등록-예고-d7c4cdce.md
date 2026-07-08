@@ -1,15 +1,17 @@
 ---
-title: "「임실 성가리 근대한옥」 국가등록문화유산 등록 예고"
-date: "2026-07-03T00:25"
-category: "핫이슈"
+title: 임실 성가리 근대한옥 국가등록문화유산 등록 예정
+date: 2026-07-03T00:25
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=595d0512d9994fb8b612cf56ffb59025"
-cover_image_alt: "임실 성가리 근대한옥 (안채 정면)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=595d0512d9994fb8b612cf56ffb59025
+cover_image_alt: 임실 성가리 근대한옥 (안채 정면)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-07-03 공개한 자료를 바탕으로 「임실 성가리 근대한옥」 국가등록문화유산 등록 예고의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
