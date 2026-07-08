@@ -1,0 +1,23 @@
+{
+  "run_id": "20260708-170617-a89f23df",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "chatgpt-upgraded-voice-mode-69c70c8e",
+      "title": "ChatGPT, 대화의 방향을 바꾸다: 업그레이드 음성 모드 등장",
+      "keyword": "ChatGPT upgraded voice mode",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "본문 길이가 짧습니다.",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 보완 완료",
+        "LLM 2차 보완 실패: APITimeoutError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: ChatGPT, 대화의 방향을 바꾸다: 업그레이드 음성 모드 등장. Keyword: ChatGPT upgraded voice mode. Concrete visual subject: technology innovation circuit abstract. Context: ### ChatGPT의 새로운 음성 모드: GPT-Live-1 ChatGPT의 업그레이드 음성 모드, GPT-Live-1은 인공지능 대화의 새로운 방향을 제시합니다. OpenAI 연구 책임자인 Kundan Kumar는 GPT-Live-1을 회사에서 개발한 가장 진보된 음성 모드라고 소개했습니다. ### 주요 특징 이 새로운 모드는 사용자와 더 자연스럽게 대화할 수 있도록 설계되었으며, 대화 중간에 잠시 멈추더라도 대화를 계속 이어갈 수 있도록 설정되었습니다. 주요 특징은 다음과 같습니다. | 특징 | 설명 | | --- | --- | | 자연스러운 대화 | 사용자와 더 자연스럽게 대화할 수 있도록 설계됨 | | 대화 중간 멈춤 | 대화 중간에 잠시 멈추더라도 대화를 계속 이어갈 수 있도록 설정됨 | | 적극적인 대화 제안 제한 | 사용자에게 더 적극적으로 끊임없이 대화를 제안하지 않음 | ### 기대 효과 이 새로운 모드는 사용자에게 더 편리하고 자연스러운 대화 경험을 제공할 것으로 기대됩니다. 또한, 인공지능 대화의 새로운 가능성을 열어줌으로써, 더 많은 사용자가 인공지능 기술을 활용할 수 있도록 도와줄 것입니다. ### 추가 정보 ChatGPT upgraded voice mode는 현재 사용자들에게 제공되고 있으며, 더 많은 정보를 원하시면 OpenAI의 공식 웹사이트를 방문하시기 바랍니다. 또한, GPT-Live-1의 최신 소식. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNDY4ODcxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
