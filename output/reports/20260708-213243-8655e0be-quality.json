@@ -1,0 +1,20 @@
+{
+  "run_id": "20260708-213243-8655e0be",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "get-30-samsung-galaxy-3b6744aa",
+      "title": "삼성 갤럭시 Z 시리즈 사전예약 30달러 크레딧 혜택 안내",
+      "keyword": "Get 30 Samsung Galaxy",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 삼성 갤럭시 Z 시리즈 사전예약 30달러 크레딧 혜택 안내. Keyword: Get 30 Samsung Galaxy. Concrete visual subject: samsung smartphone modern display device public service checklist. Context: ## 2026년 삼성 Galaxy Z 시리즈 사전예약 이벤트 개요 삼성은 2026년 7월 8일부터 7월 22일까지, Galaxy Z Fold 등 차세대 갤럭시 폰을 공식 홈페이지에서 사전예약하면 $30 크레딧을 제공하는 이벤트를 진행합니다. 해당 혜택은 Galaxy Unpacked 행사에서 신제품이 공개되기 전, 미국을 포함한 공식 적용 국가에서만 이용할 수 있습니다. 아직 공식 발표 전임에도, 예약만으로 결제 할인 형태의 크레딧을 받을 수 있습니다. ## 사전예약 혜택 상세 및 적용 모델 이번 이벤트는 Galaxy Z Fold를 비롯한 삼성의 최신 폴더블폰 시리즈에 적용됩니다. The Verge 공식 안내에 따르면, 예약자에게 지급되는 $30 크레딧은 실제 구매 결제 단계에서 할인으로 사용되며, 환불이나 현금 지급은 불가합니다. 크레딧은 예약한 신제품 구매에 한해 적용되며, 사전예약은 삼성 공식 홈페이지에서만 진행됩니다. ## Galaxy Unpacked 행사 일정과 신제품 공개 2026년 7월 22일 열리는 Galaxy Unpacked 행사에서는 Galaxy Z Fold 등 새로운 폴더블폰 모델이 정식 공개될 예정입니다. 사전예약 이벤트는 행사 이전까지이며, 행사 이후에는 $30 크레딧 혜택이 종료됩니다. 행사에서 신제품의 상세 사양과 판매 일정이 발표될 것으로 예측됩니다. ## 사전예약 절차 및 유의사항 사전예약은 삼성 공식 홈. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1738830223726-151adcd58131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8c2Ftc3VuZyUyMHNtYXJ0cGhvbmUlMjBtb2Rlcm4lMjBkaXNwbGF5JTIwZGV2aWNlJTIwcHVibGljJTIwc2VydmljZSUyMGNoZWNrbGlzdHxlbnwxfDB8fHwxNzgzNTQ2NTA4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
