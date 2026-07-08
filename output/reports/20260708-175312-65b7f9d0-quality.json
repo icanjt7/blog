@@ -1,0 +1,21 @@
+{
+  "run_id": "20260708-175312-65b7f9d0",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "cockroaches-switchbot-bot-rechargeable-9e667a97",
+      "title": "\"스위치봇 충전식 로봇, 바퀴벌레 퇴치에 직접 써보니 생긴 변화 5가지\"",
+      "keyword": "Cockroaches SwitchBot Bot Rechargeable",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: \"스위치봇 충전식 로봇, 바퀴벌레 퇴치에 직접 써보니 생긴 변화 5가지\". Keyword: Cockroaches SwitchBot Bot Rechargeable. Concrete visual subject: robot automation future charging wireless power tech. Context: ## SwitchBot Bot Rechargeable, 바퀴벌레 퇴치에 효과 있을까? 2026년 7월 8일 기준, The Verge에서 공개된 리뷰([원문](https://www.theverge.com/gadgets/962163/switchbot-bot-rechargeable-hands-on-review))에 따르면, SwitchBot Bot Rechargeable는 일상에서 바퀴벌레 퇴치에 활용할 수 있는 충전식 로봇 제품입니다. 기존에 어둠 속에서 조심스럽게 걸어야 했던 상황이, 버튼 하나로 조명을 켜주는 자동화 덕분에 바뀌었다는 실제 사용 후기가 소개되었습니다. ## 제품의 주요 변화와 실제 영향 체크리스트 | 기준 | 구체 내용 | |--------------|------------------------------------------------------------------------------------------| | 출시일 | 2026년 7월 8일 (The Verge 리뷰 기준) | | 대상 | SwitchBot Bot Rechargeable 사용자, 스마트홈 자동화 관심자, 바퀴벌레 문제 겪는 가정 | | 핵심 기능 | 충전식 배터리, 자동 스위치 조작, 앱 연동, 물리적 버튼 누르기 | | 변화 포인트 | 기존 모델 대비 배터리 교체 필요 없음, 설치 위치 자유로움, 반복 사용에 적합 | | 사용자 효과 | 야간 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1542222216855-78ff1bcf9252?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxyb2JvdCUyMGF1dG9tYXRpb24lMjBmdXR1cmUlMjBjaGFyZ2luZyUyMHdpcmVsZXNzJTIwcG93ZXIlMjB0ZWNofGVufDF8MHx8fDE3ODM1MzM0NDh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
