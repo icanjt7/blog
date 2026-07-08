@@ -1,0 +1,20 @@
+{
+  "run_id": "20260708-103106-298dfdb3",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "samsung-july-22nd-3003d6f2",
+      "title": "7월 22일 공개! 삼성 폴더블폰 신형, 무엇이 달라질까?",
+      "keyword": "Samsung July 22nd",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 7월 22일 공개! 삼성 폴더블폰 신형, 무엇이 달라질까?. Keyword: Samsung July 22nd. Concrete visual subject: samsung device display modern. Context: ## 삼성, 7월 22일 폴더블폰 신형 발표 2026년 7월 8일 공식 안내 기준, 삼성은 Galaxy Unpacked 행사를 7월 22일에 개최한다고 밝혔습니다. 슬로건은 \"A new shape unfolds\"이며, 그동안 소문만 무성했던 더 넓고 짧은 형태의 신형 폴더블폰이 공개될 예정입니다. ### 체크포인트 - 행사명: Galaxy Unpacked - 발표일: 2026년 7월 22일 - 제품: 새로운 Wide Foldable - 슬로건: \"A new shape unfolds\" - 기관: Samsung Electronics - 출처: [The Verge 공식 기사](https://www.theverge.com/tech/962658/samsung-galaxy-unpacked-wide-foldable-watch-july) ## Waymo의 Reference Driver란? Waymo는 미국 구글(Alphabet) 계열의 자율주행 기업입니다. 실제 도로에서 모든 사고를 시험할 수 없어, 시뮬레이션과 가상 운전자 모델이 필수로 활용됩니다. Reference Driver(이하 ReD)는 완벽한 운전자가 아닌, 인간의 인지 지연과 놀람 반응, 조작 지연 등 현실적인 요소를 반영한 기준 모델입니다. ## 자율주행 안전 검증, 왜 중요한가? 자율주행차의 안전성 논란은 \"무엇과 비교해야 안전한가?\"라는 질문에서 시작합니다. - 자체 기준만 내세. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1774767701234-408f546ce52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8c2Ftc3VuZyUyMGRldmljZSUyMGRpc3BsYXklMjBtb2Rlcm58ZW58MXwwfHx8MTc4MzUwNjgyN3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
