@@ -1,0 +1,74 @@
+{
+  "run_id": "20260709-200555-6cfd4b3d",
+  "topics": [
+    {
+      "keyword": "OpenAI GPT ChatGPT Work",
+      "title_hint": "OpenAI rolls out GPT-5.6 after government greenlight — and announces ‘ChatGPT Work’",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "OpenAI rolls out GPT-5.6 after government greenlight — and announces ‘ChatGPT Work’",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
+          "published_at": "2026-07-09T17:00:00",
+          "summary": "About two weeks after OpenAI's GPT-5.6 was caught up in regulatory drama - rolled out only to government-approved organizations during a \"limited preview\" period - the company has received the Trump administration's greenlight for a public rollout of the model. OpenAI CEO Sam Altman called it \"the best model we have ever produced.\" To celebrate, [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "OpenAI GPT ChatGPT Work",
+        "title_hint": "OpenAI rolls out GPT-5.6 after government greenlight — and announces ‘ChatGPT Work’",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "OpenAI rolls out GPT-5.6 after government greenlight — and announces ‘ChatGPT Work’",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
+            "published_at": "2026-07-09T17:00:00",
+            "summary": "About two weeks after OpenAI's GPT-5.6 was caught up in regulatory drama - rolled out only to government-approved organizations during a \"limited preview\" period - the company has received the Trump administration's greenlight for a public rollout of the model. OpenAI CEO Sam Altman called it \"the best model we have ever produced.\" To celebrate, [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "GPT‑5.6, 정부 승인 뒤 달라진 5가지 변화",
+      "slug": "openai-gpt-chatgpt-work-e83ffb0a",
+      "excerpt": "2026년 7월 9일 기준, OpenAI가 GPT‑5.6과 ChatGPT Work를 공식 공개했습니다. 주요 변화와 실제 업무 적용 시 체크해야 할 사항을 정리합니다.",
+      "body_markdown": "새벽에 OpenAI의 공식 발표가 있었습니다.  \n정부 승인 후 GPT‑5.6과 새로운 업무용 AI 서비스 ‘ChatGPT Work’가 공개된 것입니다.\n\nGPT‑5.6은 약 2주간 규제 심사를 거쳐, 원문 공개일 기준으로 미국 연방 정부의 최종 허가를 받아 일반 기업과 조직에도 출시되었습니다.\n\n#### OpenAI GPT‑5.6 & ChatGPT Work: 핵심 정보\n\n- **모델 공개일**: 2026년 7월 9일  \n- **적용 대상**: 스타트업, 대기업, 프리랜서 등 업무 자동화 필요 조직  \n- **정부 승인**: 연방 정부 보안·윤리 검증 완료  \n- **제한 미리보기**: 초기에 정부 승인 조직만 사용  \n- **트럼프 행정부**: 2025~2026년 미국 대통령 행정부, AI 규제 정책 주도  \n- **ChatGPT Work**: 문서 요약, 코드 리뷰, 일정 관리 등 업무용 AI 어시스턴트  \n- **공개 API**: 파트너 프로그램 제공, 기업별 맞춤 연동 지원\n\n#### 실제 업무 적용 시 주목할 점\n\nGPT‑5.6은 복잡한 문서 처리, 예를 들어 법률 분석이나 회의록 요약 등에서 기존 모델보다 빠르고 정확한 결과를 제공합니다.  \n‘ChatGPT Work’는 팀 내 커뮤니케이션 비용을 절감하고, 다양한 협업 툴(예: 슬랙, Notion)과 연동할 수 있도록 설계되었습니다.\n\n하지만 아래 사항도 꼭 확인해야 합니다.\n\n- 베타 단계라 가격 정책이 아직 공개되지 않음  \n- 데이터 프라이버시 보호가 완전하지 않으니, 민감 정보는 별도 암호화 필요  \n- 일부 기업용 툴과 통합이 제한적이라 초기 도입 시 개발 비용이 발생할 수 있음\n\n#### 장점 vs 단점\n\n| 항목        | 장점                                                | 단점                                     |\n|-------------|----------------------------------------------------|------------------------------------------|\n| 성능        | 추론 속도 및 정확도 상승                            | 가격·정책 불투명(베타 단계)              |\n| 보안        | 정부 승인·보안 검증 완료                            | 민감 데이터 암호화 필요                  |\n| 업무 지원   | 문서 요약, 코드 리뷰, 일정 관리 등 다목적 기능      | 일부 기업 툴과 통합 제한                |\n| 접근성      | 공개 API, 파트너 프로그램 운영                      | 초기 도입 시 개발 비용 발생              |\n\n#### 도입 전 체크리스트\n\n- **자동화 필요성**: 반복 업무가 많은 조직일수록 ROI 상승  \n- **보안·규제**: 자체 정책과 정부 승인 모델의 보안 수준 비교  \n- **예산**: 베타 가격 미공개, 파일럿 프로젝트로 예산 추산 필요  \n- **생태계**: 슬랙, Notion 등 기존 협업 툴과 연동 가능성 확인  \n- **공식 절차**: OpenAI 공식 웹사이트에서 ChatGPT Work 베타 신청\n\n#### 도입 방법\n\nOpenAI 공식 페이지에서 ‘ChatGPT Work’ 베타 신청이 가능합니다.  \n실제 적용 전, 2주간 파일럿 프로젝트를 통해 비용과 효율을 직접 측정하는 것이 추천됩니다.\n\n2026년 7월 9일 기준, 최신 안내와 신청 절차는 **OpenAI 공식 홈페이지**에서 확인할 수 있습니다.  \nOpenAI GPT‑5.6과 ChatGPT Work는 업무 혁신을 원하는 조직에 새로운 선택지를 제시합니다.",
+      "tags": [
+        "기술",
+        "OpenAI",
+        "GPT",
+        "ChatGPT",
+        "Work"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgzNjI3ODE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "GPT‑5.6, 정부 승인 뒤 달라진 5가지 변화 — Photo by Steve A Johnson on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgzNjI3ODE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "GPT‑5.6, 정부 승인 뒤 달라진 5가지 변화 본문 보조 이미지 — Photo by Steve A Johnson on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: GPT‑5.6, 정부 승인 뒤 달라진 5가지 변화. Keyword: OpenAI GPT ChatGPT Work. Concrete visual subject: artificial intelligence neural network. Context: 새벽에 OpenAI의 공식 발표가 있었습니다. 정부 승인 후 GPT‑5.6과 새로운 업무용 AI 서비스 ‘ChatGPT Work’가 공개된 것입니다. GPT‑5.6은 약 2주간 규제 심사를 거쳐, 원문 공개일 기준으로 미국 연방 정부의 최종 허가를 받아 일반 기업과 조직에도 출시되었습니다. #### OpenAI GPT‑5.6 & ChatGPT Work: 핵심 정보 - **모델 공개일**: 2026년 7월 9일 - **적용 대상**: 스타트업, 대기업, 프리랜서 등 업무 자동화 필요 조직 - **정부 승인**: 연방 정부 보안·윤리 검증 완료 - **제한 미리보기**: 초기에 정부 승인 조직만 사용 - **트럼프 행정부**: 2025~2026년 미국 대통령 행정부, AI 규제 정책 주도 - **ChatGPT Work**: 문서 요약, 코드 리뷰, 일정 관리 등 업무용 AI 어시스턴트 - **공개 API**: 파트너 프로그램 제공, 기업별 맞춤 연동 지원 #### 실제 업무 적용 시 주목할 점 GPT‑5.6은 복잡한 문서 처리, 예를 들어 법률 분석이나 회의록 요약 등에서 기존 모델보다 빠르고 정확한 결과를 제공합니다. ‘ChatGPT Work’는 팀 내 커뮤니케이션 비용을 절감하고, 다양한 협업 툴(예: 슬랙, Notion)과 연동할 수 있도록 설계되었습니다. 하지만 아래 사항도 꼭 확인해야 합니다. - 베타 단계라 가격 정책이 아직 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: GPT‑5.6, 정부 승인 뒤 달라진 5가지 변화. Keyword: OpenAI GPT ChatGPT Work. Concrete visual subject: artificial intelligence neural network. Article context: 새벽에 OpenAI의 공식 발표가 있었습니다. 정부 승인 후 GPT‑5.6과 새로운 업무용 AI 서비스 ‘ChatGPT Work’가 공개된 것입니다. GPT‑5.6은 약 2주간 규제 심사를 거쳐, 원문 공개일 기준으로 미국 연방 정부의 최종 허가를 받아 일반 기업과 조직에도 출시되었습니다. #### OpenAI GPT‑5.6 & ChatGPT Work: 핵심 정보 - **모델 공개일**: 2026년 7월 9일 - **적용 대상**: 스타트업, 대기업, 프리랜서 등 업무 자동화 필요 조직 - **정부 승인**: 연방 정부 보안·윤리 검증 완료 - **제한 미리보기**: 초기에 정부 승인 조직만 사용 - **트럼프 행정부**: 2025~2026년 미국 대통령 행정부, AI 규제 정책 주도 - **ChatGPT Work**: 문서 요약, 코드 리뷰, 일정 관리 등 업무용 AI 어시스턴트 - **공개 API**: 파트너 프로그램 제공, 기업별 맞춤 연동 지원 #### 실제 업무 적용 시 주목할 점 GPT‑5.6은 복잡한 문서 처리, 예를 들어 법률 분석이나 회의록 요약 등에서 기존 모델보다 빠르고 정확한 결과를 제공합니다. ‘ChatGPT Work’는 팀 내 커뮤니케이션 비용을 절감하고, 다양한 협업 툴(예: 슬랙, Notion)과 연동할 수 있도록 설계되었습니다. 하지만 아래 사항도 꼭 확인해야 합니다. - 베타 단계라 가격 정책이 아직 공개되지 않음 - 데이터 프라이버시 보호가 완전하지 않으니, 민감 정보는 별도 암호화 필요 - 일부 기업용 툴과 통합이 제한적이라 초기 도입 시 개발 비용이 발생할 수 있음 #### 장점 vs 단점 | 항목 | 장점 | 단점 | |-------------|----------------------------------------------------|----. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-09T20:10:00.443620",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/openai-gpt-chatgpt-work-e83ffb0a.md",
+      "message": "draft saved"
+    }
+  ]
+}
