@@ -1,0 +1,21 @@
+{
+  "run_id": "20260709-233840-bda244ca",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "fidji-simo-openai-agi-31e5dbdf",
+      "title": "Fidji Simo의 AGI 퇴진, OpenAI에 미칠 5가지 영향",
+      "keyword": "Fidji Simo OpenAI AGI",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Fidji Simo의 AGI 퇴진, OpenAI에 미칠 5가지 영향. Keyword: Fidji Simo OpenAI AGI. Concrete visual subject: artificial intelligence neural network. Context: 8년 전만 해도 AGI(Artificial General Intelligence, 인간 수준의 사고와 문제 해결이 가능한 인공지능)는 먼 미래처럼 느껴졌습니다. 하지만 OpenAI는 AGI를 실제 서비스에 적용할 준비를 시작했고, 2026년 7월 9일 기준으로 AGI 프로젝트를 이끌던 Fidji Simo가 공식적으로 총책임자에서 물러나 '파트타임 어드바이저' 역할로 전환합니다. Fidji Simo는 프랑스 출신 경영자로 Facebook에서 프로덕트 총괄, Instacart CEO를 거친 후 OpenAI AGI 개발을 책임졌습니다. 이 역할은 연구뿐 아니라 AGI를 실제 서비스와 비즈니스에 적용하는 전략적 판단을 담당하는 자리입니다. 이번 리더십 변화는 단순한 인사 이동이 아닌, AGI 개발 방식과 투자, 안전성 기준 등 핵심 구조에 직접적인 영향을 줍니다. ### Fidji Simo의 AGI 퇴진, 무엇이 달라질까? 2026년 4월 Simo는 신경-면역계 질환으로 휴직을 공개했고, 이후 복귀 대신 파트타임 조언자로 전환했습니다. 이 결정은 OpenAI AGI의 공식 의사결정 구조와 프로젝트 추진 방식에 변화를 예고합니다. #### 리더 교체가 미치는 주요 영향 | 구분 | Simo 리더십(이전) | 변화 후 예상 영향 | |----------------|-----------------------------|---------------. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgzNjQwNTc5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
