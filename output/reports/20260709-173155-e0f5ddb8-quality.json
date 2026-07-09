@@ -1,0 +1,20 @@
+{
+  "run_id": "20260709-173155-e0f5ddb8",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "microsoft-tuesdays-10c0629f",
+      "title": "마이크로소프트 보안 업데이트 확대",
+      "keyword": "Microsoft Tuesdays",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 마이크로소프트 보안 업데이트 확대. Keyword: Microsoft Tuesdays. Concrete visual subject: software windows technology. Context: 마이크로소프트는 2026년 7월 9일에 공개된 블로그 글에서 AI를 이용해 보안 취약점을 조기에 식별하고, 이를 기반으로 Microsoft Tuesdays에서 더 많은 업데이트를 한 번에 제공한다는 계획을 발표했습니다. 이로 인해 Windows 11 사용자들은 보안 업데이트를 통해 더 많은 보안 이슈를 한 번에 해결할 수 있게 됩니다. ### 핵심 용어 정리 - **Microsoft Tuesdays**: 마이크로소프트가 매주 화요일에 배포하는 정기 보안 업데이트 프로그램입니다. - **AI**: 인공지능 기술로, 보안 취약점 탐지를 자동화하고 속도를 높이는 역할을 합니다. - **보안 업데이트**: 운영체제와 소프트웨어의 보안 결함을 수정하는 패치입니다. ### 이전 vs 이후 비교 | 구분 | 이전 방식 | 이후 방식 | |-------------------|----------|----------| | 보안 이슈 식별 | 수동 검토 | AI 자동 탐지 | | 업데이트 규모 | 소규모 | 대규모 한 번에 | | 적용 대상 OS | Windows 10·11 일부 | Windows 11 전 버전 포함 | | 배포 주기 | 매주 화요일 | 매주 화요일 (AI 기반 확대) | | 발표 일자 | - | 2026년 7월 9일 (원문 공개일) | ### 주요 포인트 체크리스트 - **원문 공개일**: 2026년 7월 9일 - **출처**: The. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1662947036644-ecfde1221ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMHdpbmRvd3MlMjB0ZWNobm9sb2d5fGVufDF8MHx8fDE3ODM2MTg2MDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
