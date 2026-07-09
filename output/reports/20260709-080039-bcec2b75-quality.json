@@ -1,0 +1,20 @@
+{
+  "run_id": "20260709-080039-bcec2b75",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "if-microsoft-xbox-b2168052",
+      "title": "마이크로소프트 Xbox 매각설, 사용자에 닥칠 5가지 변화",
+      "keyword": "If Microsoft Xbox",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 마이크로소프트 Xbox 매각설, 사용자에 닥칠 5가지 변화. Keyword: If Microsoft Xbox. Concrete visual subject: software windows technology gaming console controller. Context: ## 핵심 뉴스 한눈에 2026년 7월 8일, 마이크로소프트(Microsoft)가 Xbox 사업에 대대적인 구조조정을 발표했습니다. · 1,600명 즉시 해고 · 추가 1,600명 내년까지 추가 해고 · 4개 게임 스튜디오 폐쇄 이와 함께 \"If Microsoft Xbox 매각설\"이 본격적으로 거론되고 있습니다. ## 배경과 맥락 Xbox는 마이크로소프트의 대표 게임 콘솔 브랜드로, 온라인 구독 서비스인 Xbox Game Pass, 개발사와 협력한 독점 게임, 클라우드 게이밍 등으로 게임 산업을 선도해왔습니다. 이번 발표에서는 Xbox CEO 아샤 샤르마(Asha Sharma)가 직접 매각 가능성과 사업 축소 이유를 언급했습니다. ## 사용자와 기업에 미치는 5가지 영향 | 항목 | 구체 내용 | |---------------|----------------------------------------------------------------| | 해고 인원 | 2026년 현재 발표된 총 3,200명 규모의 인력 감축 (즉시 + 내년 추가) | | 스튜디오 폐쇄 | 4개 게임 개발 스튜디오가 폐쇄되어 신작 개발 일정 및 독점작 출시 차질 예상 | | 구독 서비스 | Xbox Game Pass 등 구독 서비스의 가격·제공 범위 조정 가능성 공식 안내 기준 | | 플랫폼 의존성 | Xbox 콘솔 및 클라우드 게이밍을 사용하는 유저와 기업의. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxzb2Z0d2FyZSUyMHdpbmRvd3MlMjB0ZWNobm9sb2d5JTIwZ2FtaW5nJTIwY29uc29sZSUyMGNvbnRyb2xsZXJ8ZW58MXwwfHx8MTc4MzU0MDg3MHww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
