@@ -1,0 +1,21 @@
+{
+  "run_id": "20260709-214741-ffc51719",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "chatgpt-browser-already-dead-e677e12b",
+      "title": "9개월 만에 사라진 ChatGPT Atlas 브라우저, 무엇이 달라지나",
+      "keyword": "ChatGPT browser already dead",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 9개월 만에 사라진 ChatGPT Atlas 브라우저, 무엇이 달라지나. Keyword: ChatGPT browser already dead. Concrete visual subject: technology innovation circuit abstract. Context: ## OpenAI, ChatGPT Atlas 브라우저 서비스 종료 발표 2026년 7월 9일, OpenAI가 공식적으로 ChatGPT Atlas 브라우저의 'sunsetting(서비스 종료)'을 발표했습니다. Atlas는 2025년 10월에 출시된 인공지능 기반 브라우저로, 사용자가 명령 한 번으로 다양한 웹 작업을 자동 처리할 수 있다는 점이 특징이었습니다. Atlas를 통해 일정 정리, 예약, 정보 수집 등 여러 업무를 AI가 대신 처리해주는 방식은 기존의 크롬, 엣지, 사파리 등 브라우저와 비교해 큰 차별점이었죠. ## 왜 빠르게 종료됐을까? Atlas 브라우저는 출시 후 9개월 만에 종료 결정이 내려졌습니다. 공식 안내에 따르면, OpenAI는 ChatGPT Work라는 새로운 업무용 AI 솔루션에 Atlas의 일부 기능을 통합하는 방안을 검토 중입니다. 다만, 현재까지 구체적인 후속 서비스나 데이터 이전 절차는 공개되지 않았습니다. ## Atlas 브라우저와 기존 브라우저 비교 | 구분 | Atlas 브라우저 | 기존 브라우저(Chrome, Edge 등) | |-----------------|-----------------------------------------------|--------------------------------------| | 자동화 기능 | 명령어로 복수 작업 자동 처리 | 대부분 수동 작업 | | . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330300479-02550a1a3c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNDY4ODcxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
