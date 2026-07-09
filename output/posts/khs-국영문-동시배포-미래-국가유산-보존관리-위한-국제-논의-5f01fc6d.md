@@ -1,15 +1,17 @@
 ---
-title: "(국영문 동시배포) 미래 국가유산 보존관리 위한 국제 논의"
-date: "2026-07-01T00:14"
-category: "핫이슈"
+title: 국가유산 보존관리 국제 학술대회 열린다
+date: 2026-07-01T00:14
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=d732b58acdb34b328ca51683fa7e3e41"
-cover_image_alt: "홍보물"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=d732b58acdb34b328ca51683fa7e3e41
+cover_image_alt: 홍보물
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 소개

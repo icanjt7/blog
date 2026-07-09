@@ -1,15 +1,17 @@
 ---
-title: "야영장(캠핑장) 분양·회원권 투자 광고, 명백한 불법입니다"
-date: "2026-07-09T00:05"
-category: "핫이슈"
+title: 야영장 분양·회원권 투자, 불법입니다.
+date: 2026-07-09T00:05
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 84.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_00.png"
-cover_image_alt: "공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락"
-author: "문화체육관광부"
+cover_image: https://www.mcst.go.kr/site/images/sub/openright_00.png
+cover_image_alt: 공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 소개

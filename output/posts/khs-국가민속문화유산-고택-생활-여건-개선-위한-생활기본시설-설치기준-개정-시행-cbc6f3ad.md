@@ -1,15 +1,17 @@
 ---
-title: "국가민속문화유산 고택 생활 여건 개선 위한 「생활기본시설 설치기준」 개정 시행"
-date: "2026-06-30T00:17"
-category: "핫이슈"
+title: 국가민속문화유산 고택의 생활 여건 개선
+date: 2026-06-30T00:17
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=81b54e4f1b22445fa4ec6ba3d52819dd"
-cover_image_alt: "안동 진성이씨 종택(물사용공간 증축 현황)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=81b54e4f1b22445fa4ec6ba3d52819dd
+cover_image_alt: 안동 진성이씨 종택(물사용공간 증축 현황)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 소개

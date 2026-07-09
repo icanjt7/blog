@@ -1,15 +1,17 @@
 ---
-title: "독창적 문양 「분청사기 음각선어문 편병」 보물 지정"
-date: "2026-06-26T00:17"
-category: "핫이슈"
+title: 분청사기 음각선어문 편병 보물 지정 발표
+date: 2026-06-26T00:17
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=be66f7fbd875429c9c3039b65e7bd68b"
-cover_image_alt: "분청사기 음각선어문 편병"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=be66f7fbd875429c9c3039b65e7bd68b
+cover_image_alt: 분청사기 음각선어문 편병
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-06-26 공개한 자료를 바탕으로 독창적 문양 「분청사기 음각선어문 편병」 보물 지정의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
