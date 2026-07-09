@@ -1,0 +1,20 @@
+{
+  "run_id": "20260709-153518-70e5a842",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "sonos-ace-f260bf22",
+      "title": "Sonos Ace 헤드폰, 279달러 특가의 숨겨진 조건",
+      "keyword": "Sonos Ace",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Sonos Ace 헤드폰, 279달러 특가의 숨겨진 조건. Keyword: Sonos Ace. Concrete visual subject: headphones audio wireless. Context: ### Sonos Ace, 공식 할인 판매 시작 2026년 7월 9일 공개된 The Verge 안내에 따르면, Sonos Ace 무선 헤드폰이 주요 판매처에서 279달러로 할인 판매되고 있습니다. 정가 399달러에서 120달러 할인된 가격으로, 여름철 노이즈캔슬링 헤드폰을 찾는 소비자에게 유리한 조건입니다. #### Sonos Ace란? - Sonos는 미국 캘리포니아 산타바버라에 본사를 둔 오디오 전문 기업입니다. - 멀티룸 스피커로 유명하며, 최근 프리미엄 헤드폰 시장에 진출했습니다. - Sonos Ace는 액티브 노이즈캔슬링(ANC)과 블루투스 연결을 지원하는 무선 헤드폰입니다. #### 할인 조건과 주요 사양 - **할인 적용 색상:** 블랙 한정 - **판매처:** Sonos 공식 웹사이트, Amazon, Best Buy, Walmart 등 - **할인 기간:** 공식 안내 기준, 종료 시점 미정 - **정가:** 399달러 → **할인가:** 279달러 - **무게:** 312g - **배터리:** 최대 24시간 사용, USB-C 급속 충전(5분 충전 시 최대 3시간 사용) - **기능:** 액티브 노이즈캔슬링, Sonos TV 사운드 서라운드 연동(스피커 보유 시 가능) #### 실제 사용 시 주의점 - 멀티포인트(두 기기 동시 연결) 기능은 미지원 - 장시간 착용 시 무게감이나 땀을 느낄 수 있음 - Sonos TV 연. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1593121925328-369cc8459c08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxoZWFkcGhvbmVzJTIwYXVkaW8lMjB3aXJlbGVzc3xlbnwxfDB8fHwxNzgzNjExNDE5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
