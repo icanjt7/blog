@@ -1,0 +1,20 @@
+{
+  "run_id": "20260709-112026-3107251a",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "twelve-south-airfly-pro-e4929c3d",
+      "title": "여행 필수템! AirFly Pro, 지금 $40에 할인 중",
+      "keyword": "Twelve South AirFly Pro",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 여행 필수템! AirFly Pro, 지금 $40에 할인 중. Keyword: Twelve South AirFly Pro. Concrete visual subject: travel destination landmark walking artificial intelligence neural network. Context: ## 지금 살 만한 여행 아이템 2026년 7월 8일 기준, Twelve South AirFly Pro가 $40(정가보다 $15 저렴)로 할인 판매 중입니다. 이 제품은 무선 헤드폰을 비행기 등 엔터테인먼트 시스템에 연결해주는 여행용 가젯입니다. 긴 비행에서도 편하게 음악이나 영화를 즐길 수 있습니다. ## AirFly Pro란? Twelve South는 미국의 가전 액세서리 브랜드입니다. AirFly Pro는 블루투스 송수신 기능을 갖춘 동글로, 무선 헤드폰이나 이어폰을 항공기, 헬스장, 자동차 등 유선 단자에 연결할 수 있게 해줍니다. ## 어떤 상황에 유용한가 - 장거리 비행 시 기내 엔터테인먼트와 무선 이어폰 사용 가능 - 가족 여행, 선물용 아이템으로 실용성 높음 - 충전식 배터리 내장, USB-C 케이블로 간편 충전 - 여러 기기와 호환: AirPods, Bose, Sony 등 대부분의 블루투스 이어폰 지원 ## 체크리스트 | 항목 | 상세 내용 | |-------------|--------------------------------------------| | 판매 가격 | $39.99 (2026-07-08 기준, $15 할인) | | 연결 방식 | 블루투스 송수신 / 유선 3.5mm 단자 지원 | | 충전 규격 | USB-C 케이블 사용 | | 호환 기기 | 주요 블루투스 헤드폰/이어폰 (AirPods 등) | | 대상 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1762725709664-e9ac5e812937?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMGxhbmRtYXJrJTIwd2Fsa2luZyUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBuZXVyYWwlMjBuZXR3b3JrfGVufDF8MHx8fDE3ODM1OTYxNDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
