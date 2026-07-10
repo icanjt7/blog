@@ -1,0 +1,22 @@
+{
+  "run_id": "20260710-150319-9cd50a5e",
+  "average_quality": 70.0,
+  "drafts": [
+    {
+      "slug": "spent-week-using-trump-b7c9454d",
+      "title": "트럼프폰 직접 써보니, 사용자가 경험할 5가지 불편",
+      "keyword": "spent week using Trump",
+      "category": "기술",
+      "quality_score": 70.0,
+      "review_notes": [
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 보완 완료",
+        "LLM 2차 보완 실패: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 트럼프폰 직접 써보니, 사용자가 경험할 5가지 불편. Keyword: spent week using Trump. Concrete visual subject: technology innovation circuit abstract. Context: ## 트럼프폰, 일주일 사용 후기 공개 2026년 7월 10일 The Verge 원문(I spent a week using the Trump phone — it sucks)에서는 트럼프폰을 실제로 일주일간 사용한 체험을 중심으로 제품의 문제점과 사용자 불편을 구체적으로 다룹니다. ## 트럼프폰이란? 트럼프폰은 미국 전 대통령 도널드 트럼프의 이름을 딴 스마트폰으로, 보수층을 겨냥해 출시된 제품입니다. 주요 특징은 자체 운영체제, 보안 기능 강조, 일부 앱 제한 등이 포함되어 있습니다. ## 사용자 체험에서 드러난 변화 - **성능 저하**: 앱 실행 및 화면 전환 시 느린 반응, 과도한 렉 발생 - **앱 호환성 부족**: 구글 플레이스토어 미지원, 주요 앱 설치 제한 - **UI 불편**: 조작법과 인터페이스가 기존 안드로이드·아이폰과 달라 적응에 어려움 - **보안 정책 과도**: 일부 기능은 보안 강화 명목으로 제한되어 사용 불편 - **가격 대비 품질 미흡**: 출고가가 499달러로 책정됐으나, 품질 대비 만족도가 낮음 ## 실제 사용자에 미치는 영향 | 확인 기준 | 구체 내용 | |---|---| | 적용 대상 | 트럼프폰 구매자 및 잠재 소비자 | | 주요 불편 | 느린 성능, 앱 호환성 부족, UI 미숙, 보안 제한, 가격 불만 | | 공식 발표 | 트럼프폰 공식 홈페이지, The Verge 리뷰, 제품 설명서 | | . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782088385104-039b7c454b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNjk2MTA4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}

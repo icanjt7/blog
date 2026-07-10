@@ -1,0 +1,75 @@
+{
+  "run_id": "20260710-150319-9cd50a5e",
+  "topics": [
+    {
+      "keyword": "spent week using Trump",
+      "title_hint": "I spent a week using the Trump phone — it sucks",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "I spent a week using the Trump phone — it sucks",
+          "url": "https://www.theverge.com/tech/963382/trump-mobile-t1-phone-review",
+          "published_at": "2026-07-10T14:19:59",
+          "summary": "I spent a week using the Trump phone — it sucks | The Verge Skip to main content The homepage The Verge The Verge logo. The homepage The Verge The Verge logo. Notifications Notifications Hamburger Navigation Button Navigation Drawer The Verge The Verge logo. Login / Sign Up close Close Search Light System Dark",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "spent week using Trump",
+        "title_hint": "I spent a week using the Trump phone — it sucks",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "I spent a week using the Trump phone — it sucks",
+            "url": "https://www.theverge.com/tech/963382/trump-mobile-t1-phone-review",
+            "published_at": "2026-07-10T14:19:59",
+            "summary": "I spent a week using the Trump phone — it sucks | The Verge Skip to main content The homepage The Verge The Verge logo. The homepage The Verge The Verge logo. Notifications Notifications Hamburger Navigation Button Navigation Drawer The Verge The Verge logo. Login / Sign Up close Close Search Light System Dark",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "트럼프폰 직접 써보니, 사용자가 경험할 5가지 불편",
+      "slug": "spent-week-using-trump-b7c9454d",
+      "excerpt": "2026년 7월 10일 기준, 트럼프폰을 일주일간 사용한 실제 리뷰에서 확인된 불편함과 사용자에게 미치는 영향을 구체적으로 정리합니다.",
+      "body_markdown": "## 트럼프폰, 일주일 사용 후기 공개\n\n2026년 7월 10일 The Verge 원문(I spent a week using the Trump phone — it sucks)에서는 트럼프폰을 실제로 일주일간 사용한 체험을 중심으로 제품의 문제점과 사용자 불편을 구체적으로 다룹니다.\n\n## 트럼프폰이란?\n\n트럼프폰은 미국 전 대통령 도널드 트럼프의 이름을 딴 스마트폰으로, 보수층을 겨냥해 출시된 제품입니다.  \n주요 특징은 자체 운영체제, 보안 기능 강조, 일부 앱 제한 등이 포함되어 있습니다.\n\n## 사용자 체험에서 드러난 변화\n\n- **성능 저하**: 앱 실행 및 화면 전환 시 느린 반응, 과도한 렉 발생\n- **앱 호환성 부족**: 구글 플레이스토어 미지원, 주요 앱 설치 제한\n- **UI 불편**: 조작법과 인터페이스가 기존 안드로이드·아이폰과 달라 적응에 어려움\n- **보안 정책 과도**: 일부 기능은 보안 강화 명목으로 제한되어 사용 불편\n- **가격 대비 품질 미흡**: 출고가가 499달러로 책정됐으나, 품질 대비 만족도가 낮음\n\n## 실제 사용자에 미치는 영향\n\n| 확인 기준 | 구체 내용 |\n|---|---|\n| 적용 대상 | 트럼프폰 구매자 및 잠재 소비자 |\n| 주요 불편 | 느린 성능, 앱 호환성 부족, UI 미숙, 보안 제한, 가격 불만 |\n| 공식 발표 | 트럼프폰 공식 홈페이지, The Verge 리뷰, 제품 설명서 |\n| 절차 | 온라인 구매, 보수 성향 커뮤니티 추천, 직접 체험 후기 |\n| 기관명 | 트럼프폰 제조사(Trump Mobile), 리뷰 출처(The Verge) |\n\n## 사용자가 꼭 알아야 할 점\n\n- 트럼프폰은 기존 안드로이드·아이폰 사용자 입장에서 적응이 쉽지 않습니다.\n- 구글 및 애플 앱 생태계와 호환이 불가능해 업무·생활에 제약이 큽니다.\n- 실제 사용 후기는 광고와 달리 체감 성능 및 편의성에서 불만족이 많았습니다.\n- 보안 정책이 지나치게 엄격해 일상적인 기능 사용에도 제한이 있습니다.\n- 구매 전, 공식 리뷰(예: The Verge)와 제품 설명서를 반드시 확인할 필요가 있습니다.\n\n## 참고 출처\n\n- [I spent a week using the Trump phone — it sucks (The Verge, 2026-07-10)](https://www.theverge.com/tech/963382/trump-mobile-t1-phone-review)",
+      "tags": [
+        "기술",
+        "spent",
+        "week",
+        "using",
+        "Trump"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1782088385104-039b7c454b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNjk2MTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "트럼프폰 직접 써보니, 사용자가 경험할 5가지 불편 — Photo by Brecht Corbeel on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNjk2MTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "트럼프폰 직접 써보니, 사용자가 경험할 5가지 불편 본문 보조 이미지 — Photo by Declan Sun on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 트럼프폰 직접 써보니, 사용자가 경험할 5가지 불편. Keyword: spent week using Trump. Concrete visual subject: technology innovation circuit abstract. Context: ## 트럼프폰, 일주일 사용 후기 공개 2026년 7월 10일 The Verge 원문(I spent a week using the Trump phone — it sucks)에서는 트럼프폰을 실제로 일주일간 사용한 체험을 중심으로 제품의 문제점과 사용자 불편을 구체적으로 다룹니다. ## 트럼프폰이란? 트럼프폰은 미국 전 대통령 도널드 트럼프의 이름을 딴 스마트폰으로, 보수층을 겨냥해 출시된 제품입니다. 주요 특징은 자체 운영체제, 보안 기능 강조, 일부 앱 제한 등이 포함되어 있습니다. ## 사용자 체험에서 드러난 변화 - **성능 저하**: 앱 실행 및 화면 전환 시 느린 반응, 과도한 렉 발생 - **앱 호환성 부족**: 구글 플레이스토어 미지원, 주요 앱 설치 제한 - **UI 불편**: 조작법과 인터페이스가 기존 안드로이드·아이폰과 달라 적응에 어려움 - **보안 정책 과도**: 일부 기능은 보안 강화 명목으로 제한되어 사용 불편 - **가격 대비 품질 미흡**: 출고가가 499달러로 책정됐으나, 품질 대비 만족도가 낮음 ## 실제 사용자에 미치는 영향 | 확인 기준 | 구체 내용 | |---|---| | 적용 대상 | 트럼프폰 구매자 및 잠재 소비자 | | 주요 불편 | 느린 성능, 앱 호환성 부족, UI 미숙, 보안 제한, 가격 불만 | | 공식 발표 | 트럼프폰 공식 홈페이지, The Verge 리뷰, 제품 설명서 | | . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 트럼프폰 직접 써보니, 사용자가 경험할 5가지 불편. Keyword: spent week using Trump. Concrete visual subject: technology innovation circuit abstract. Article context: ## 트럼프폰, 일주일 사용 후기 공개 2026년 7월 10일 The Verge 원문(I spent a week using the Trump phone — it sucks)에서는 트럼프폰을 실제로 일주일간 사용한 체험을 중심으로 제품의 문제점과 사용자 불편을 구체적으로 다룹니다. ## 트럼프폰이란? 트럼프폰은 미국 전 대통령 도널드 트럼프의 이름을 딴 스마트폰으로, 보수층을 겨냥해 출시된 제품입니다. 주요 특징은 자체 운영체제, 보안 기능 강조, 일부 앱 제한 등이 포함되어 있습니다. ## 사용자 체험에서 드러난 변화 - **성능 저하**: 앱 실행 및 화면 전환 시 느린 반응, 과도한 렉 발생 - **앱 호환성 부족**: 구글 플레이스토어 미지원, 주요 앱 설치 제한 - **UI 불편**: 조작법과 인터페이스가 기존 안드로이드·아이폰과 달라 적응에 어려움 - **보안 정책 과도**: 일부 기능은 보안 강화 명목으로 제한되어 사용 불편 - **가격 대비 품질 미흡**: 출고가가 499달러로 책정됐으나, 품질 대비 만족도가 낮음 ## 실제 사용자에 미치는 영향 | 확인 기준 | 구체 내용 | |---|---| | 적용 대상 | 트럼프폰 구매자 및 잠재 소비자 | | 주요 불편 | 느린 성능, 앱 호환성 부족, UI 미숙, 보안 제한, 가격 불만 | | 공식 발표 | 트럼프폰 공식 홈페이지, The Verge 리뷰, 제품 설명서 | | 절차 | 온라인 구매, 보수 성향 커뮤니티 추천, 직접 체험 후기 | | 기관명 | 트럼프폰 제조사(Trump Mobile), 리뷰 출처(The Verge) | ## 사용자가 꼭 알아야 할 점 - 트럼프폰은 기존 안드로이드·아이폰 사용자 입장에서 적응이 쉽지 않습니다. - 구글 및 애플 앱 생태계와 호환이 불가능해 업무·생활에 제약이 큽니다. - 실제 사용. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-10T15:07:34.932814",
+      "quality_score": 70.0,
+      "review_notes": [
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 보완 완료",
+        "LLM 2차 보완 실패: RateLimitError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 70.0"
+    }
+  ]
+}
