@@ -1,0 +1,73 @@
+{
+  "run_id": "20260710-180255-08e11987",
+  "topics": [
+    {
+      "keyword": "Nvidia 8217 RAM Wall",
+      "title_hint": "Nvidia&#8217;s biggest RAM supplier just had a trillion-dollar debut on Wall Street",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Nvidia&#8217;s biggest RAM supplier just had a trillion-dollar debut on Wall Street",
+          "url": "https://www.theverge.com/tech/964121/sk-hynix-nvidia-ram-stock-market-debut",
+          "published_at": "2026-07-10T17:31:35",
+          "summary": "As the AI boom boosts demand for RAM, SK Hynix - one of the world's biggest suppliers of memory chips - launched on Wall Street Friday. The South Korean chipmaker opened at $170 per share and raised $26.5 billion, surpassing Alibaba's record as the largest debut of a foreign company, according to reports from Associated [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Nvidia 8217 RAM Wall",
+        "title_hint": "Nvidia&#8217;s biggest RAM supplier just had a trillion-dollar debut on Wall Street",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Nvidia&#8217;s biggest RAM supplier just had a trillion-dollar debut on Wall Street",
+            "url": "https://www.theverge.com/tech/964121/sk-hynix-nvidia-ram-stock-market-debut",
+            "published_at": "2026-07-10T17:31:35",
+            "summary": "As the AI boom boosts demand for RAM, SK Hynix - one of the world's biggest suppliers of memory chips - launched on Wall Street Friday. The South Korean chipmaker opened at $170 per share and raised $26.5 billion, surpassing Alibaba's record as the largest debut of a foreign company, according to reports from Associated [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "SK하이닉스, 1조 달러 상장…Nvidia RAM 가격 영향은?",
+      "slug": "nvidia-8217-ram-wall-c18f5bd6",
+      "excerpt": "SK하이닉스가 뉴욕증시에서 1조 달러 규모로 데뷔하면서 Nvidia 8217 RAM Wall 관련 제품 가격과 공급에 어떤 변화가 생길지 정리합니다.",
+      "body_markdown": "## SK하이닉스, 뉴욕증시에서 기록적 상장\n\n2026년 7월 10일, SK하이닉스가 뉴욕증시에서 1조 달러(26.5억 달러 조달) 규모로 상장하며 세계 메모리 시장에 큰 변화를 예고했습니다. SK하이닉스는 Nvidia의 대표적인 RAM 공급업체로, 이번 상장으로 글로벌 AI 및 데이터센터 시장에서의 영향력이 더욱 확대될 전망입니다.\n\n- **상장 가격:** 주당 170달러  \n- **조달 금액:** 265억 달러  \n- **기록:** 외국계 기업 상장 사상 최대 규모 (기존 알리바바 기록 경신)  \n- **공급처:** Nvidia, 글로벌 데이터센터, AI 반도체 시장  \n- **발행일:** 2026-07-10 (The Verge 기사 기준)\n\n## Nvidia 8217 RAM Wall, 사용자에게 미치는 영향\n\nSK하이닉스의 상장이 실제 Nvidia 8217 RAM Wall 사용 환경에 어떤 변화를 가져올지 살펴봅니다.\n\n### 체크리스트: 상장 이후 실제 변화\n\n| 기준              | 내용                                                          |\n|-------------------|--------------------------------------------------------------|\n| 공급 안정성       | 대규모 자본 조달로 생산 확대, RAM 재고 안정 가능성 증가      |\n| 가격 변동         | 투자 확대에 따라 단기 가격 변동 가능성, 장기 공급 경쟁 심화 |\n| 주요 적용처       | Nvidia GPU, AI 서버, 클라우드 인프라                         |\n| 사용자 대상       | 엔터프라이즈 서버, 데이터센터 운영자, AI 개발팀               |\n| 공식 채널         | SK하이닉스·Nvidia 공식 발표, 가격표, 시장 동향 보고서        |\n\n### 실제로 바뀌는 점\n\n- **RAM 공급량이 늘어날 가능성**  \n  SK하이닉스의 자본력 강화로 Nvidia 8217 RAM Wall에 필요한 메모리 공급이 원활해질 전망입니다.\n\n- **가격 정책 변화 가능성**  \n  단기적으로는 투자 효과로 가격 변동이 있을 수 있지만, 장기적으로는 경쟁력 있는 가격과 안정적 공급을 기대할 수 있습니다.\n\n- **AI 인프라 확대**  \n  데이터센터 및 AI 서비스 기업들이 SK하이닉스 RAM을 더 적극적으로 도입할 수 있게 됩니다.\n\n## SK하이닉스와 Nvidia, 어떤 회사인가?\n\n- **SK하이닉스:**  \n  대한민국의 대표 메모리 반도체 제조업체로, 세계 최대 DRAM·NAND 공급사 중 하나입니다.\n\n- **Nvidia:**  \n  미국의 그래픽 및 AI 반도체 기업으로, GPU 및 RAM 등 고성능 컴퓨팅 시장을 선도하고 있습니다.\n\n## 참고 출처\n\n- [Nvidia’s biggest RAM supplier just had a trillion-dollar debut on Wall Street – The Verge, 2026-07-10](https://www.theverge.com/tech/964121/sk-hynix-nvidia-ram-stock-market-debut)",
+      "tags": [
+        "기술",
+        "Nvidia",
+        "8217",
+        "RAM",
+        "Wall"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNzA2ODMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "SK하이닉스, 1조 달러 상장…Nvidia RAM 가격 영향은? — Photo by Ludovico Ceroseis on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1782330300479-02550a1a3c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNzA2ODMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "SK하이닉스, 1조 달러 상장…Nvidia RAM 가격 영향은? 본문 보조 이미지 — Photo by Brecht Corbeel on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: SK하이닉스, 1조 달러 상장…Nvidia RAM 가격 영향은?. Keyword: Nvidia 8217 RAM Wall. Concrete visual subject: technology innovation circuit abstract. Context: ## SK하이닉스, 뉴욕증시에서 기록적 상장 2026년 7월 10일, SK하이닉스가 뉴욕증시에서 1조 달러(26.5억 달러 조달) 규모로 상장하며 세계 메모리 시장에 큰 변화를 예고했습니다. SK하이닉스는 Nvidia의 대표적인 RAM 공급업체로, 이번 상장으로 글로벌 AI 및 데이터센터 시장에서의 영향력이 더욱 확대될 전망입니다. - **상장 가격:** 주당 170달러 - **조달 금액:** 265억 달러 - **기록:** 외국계 기업 상장 사상 최대 규모 (기존 알리바바 기록 경신) - **공급처:** Nvidia, 글로벌 데이터센터, AI 반도체 시장 - **발행일:** 2026-07-10 (The Verge 기사 기준) ## Nvidia 8217 RAM Wall, 사용자에게 미치는 영향 SK하이닉스의 상장이 실제 Nvidia 8217 RAM Wall 사용 환경에 어떤 변화를 가져올지 살펴봅니다. ### 체크리스트: 상장 이후 실제 변화 | 기준 | 내용 | |-------------------|--------------------------------------------------------------| | 공급 안정성 | 대규모 자본 조달로 생산 확대, RAM 재고 안정 가능성 증가 | | 가격 변동 | 투자 확대에 따라 단기 가격 변동 가능성, 장기 공급 경쟁 심화 | | 주요 적용처 | Nvidia GPU, AI 서버,. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: SK하이닉스, 1조 달러 상장…Nvidia RAM 가격 영향은?. Keyword: Nvidia 8217 RAM Wall. Concrete visual subject: technology innovation circuit abstract. Article context: ## SK하이닉스, 뉴욕증시에서 기록적 상장 2026년 7월 10일, SK하이닉스가 뉴욕증시에서 1조 달러(26.5억 달러 조달) 규모로 상장하며 세계 메모리 시장에 큰 변화를 예고했습니다. SK하이닉스는 Nvidia의 대표적인 RAM 공급업체로, 이번 상장으로 글로벌 AI 및 데이터센터 시장에서의 영향력이 더욱 확대될 전망입니다. - **상장 가격:** 주당 170달러 - **조달 금액:** 265억 달러 - **기록:** 외국계 기업 상장 사상 최대 규모 (기존 알리바바 기록 경신) - **공급처:** Nvidia, 글로벌 데이터센터, AI 반도체 시장 - **발행일:** 2026-07-10 (The Verge 기사 기준) ## Nvidia 8217 RAM Wall, 사용자에게 미치는 영향 SK하이닉스의 상장이 실제 Nvidia 8217 RAM Wall 사용 환경에 어떤 변화를 가져올지 살펴봅니다. ### 체크리스트: 상장 이후 실제 변화 | 기준 | 내용 | |-------------------|--------------------------------------------------------------| | 공급 안정성 | 대규모 자본 조달로 생산 확대, RAM 재고 안정 가능성 증가 | | 가격 변동 | 투자 확대에 따라 단기 가격 변동 가능성, 장기 공급 경쟁 심화 | | 주요 적용처 | Nvidia GPU, AI 서버, 클라우드 인프라 | | 사용자 대상 | 엔터프라이즈 서버, 데이터센터 운영자, AI 개발팀 | | 공식 채널 | SK하이닉스·Nvidia 공식 발표, 가격표, 시장 동향 보고서 | ### 실제로 바뀌는 점 - **RAM 공급량이 늘어날 가능성** SK하이닉스의 자본력 강화로 Nvidia 8217 RAM Wall에 필요한 메모리 공급이 원활해질 전망입니다.. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-10T18:06:57.284487",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/nvidia-8217-ram-wall-c18f5bd6.md",
+      "message": "draft saved"
+    }
+  ]
+}
