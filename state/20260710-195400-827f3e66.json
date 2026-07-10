@@ -1,0 +1,71 @@
+{
+  "run_id": "20260710-195400-827f3e66",
+  "topics": [
+    {
+      "keyword": "Pok Go",
+      "title_hint": "A decade later, Pokémon Go finally made good on its original promise",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "A decade later, Pokémon Go finally made good on its original promise",
+          "url": "https://www.theverge.com/games/964022/pokemon-go-10th-anniversary-mewtwo-nyc-go-fest-2026",
+          "published_at": "2026-07-10T19:51:10",
+          "summary": "When Niantic dropped the first Pok&#233;mon Go trailer in 2015, it was hard to grasp how a bunch of players could work together to catch a pok&#233;mon like Mewtwo. But this week at the game's 10th anniversary event in New York City, Pok&#233;mon Go showed the world how it's done. Almost 2,000 players (many of [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Pok Go",
+        "title_hint": "A decade later, Pokémon Go finally made good on its original promise",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "A decade later, Pokémon Go finally made good on its original promise",
+            "url": "https://www.theverge.com/games/964022/pokemon-go-10th-anniversary-mewtwo-nyc-go-fest-2026",
+            "published_at": "2026-07-10T19:51:10",
+            "summary": "When Niantic dropped the first Pok&#233;mon Go trailer in 2015, it was hard to grasp how a bunch of players could work together to catch a pok&#233;mon like Mewtwo. But this week at the game's 10th anniversary event in New York City, Pok&#233;mon Go showed the world how it's done. Almost 2,000 players (many of [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "2,000명이 모였다—Pokémon Go 10주년, 현실이 된 대규모 협동",
+      "slug": "pok-go-0fff68f1",
+      "excerpt": "Pokémon Go 출시 10년 만에 뉴욕에서 2,000명 실시간 협력 플레이가 실제로 이루어졌습니다. 이번 행사에서 기존과 달라진 핵심 변화와 참가 조건을 구체적으로 짚습니다.",
+      "body_markdown": "2015년 Pokémon Go 트레일러에는 수백 명이 함께 ‘뮤츠(Mewtwo)’를 포획하는 장면이 등장했습니다. 그때는 광고에 불과하다는 반응이 많았고, 현실에서 이처럼 대규모로 협동하는 플레이가 가능할지 의심하는 목소리가 컸습니다. 실제로 지난 10년간 Pokémon Go는 “원래 약속”과 현실 사이의 간극을 꾸준히 지적받아왔습니다. 하지만 2026년 7월, 뉴욕에서 열린 10주년 행사에서는 이 간극이 처음으로 좁혀졌습니다.\n\nPokémon Go는 미국 IT기업 Niantic(나이앤틱)이 2016년에 출시한 증강현실(AR) 기반 모바일 게임입니다. 현실 지도와 GPS를 활용해 실제로 걸으며 포켓몬을 잡는 콘셉트가 특징입니다. Niantic은 구글 지도·위치 서비스 부서에서 분리된 회사로, 증강현실과 위치 기반 게임 개발에 특화되어 있습니다. 초기에는 소규모 플레이가 중심이었고, 전설 포켓몬 잡기와 글로벌 협동 이벤트는 “광고 속 이야기”로 여겨지는 경우가 많았습니다.\n\n이번 10주년 뉴욕 행사에서는 약 2,000명의 유저가 한 장소에 직접 모여 ‘실시간 협력 레이드’를 경험했습니다. 공식 안내에 따르면, 기존에는 20명 이하 그룹 단위로만 가능했던 레이드가 이번에는 공공 광장 전체에서 수백 명이 동시에 참여하는 형태로 확장됐습니다. 특히 뮤츠(Mewtwo)와 같은 전설 포켓몬이 대규모 협동 이벤트에서 집중적으로 등장했습니다. 뮤츠는 Pokémon Go에서 강력한 전설 포켓몬으로, 평소에는 혼자 잡기 어려워 특별한 이벤트에서만 출현합니다.\n\n### 10주년 행사 변화 비교  \n| 항목                   | 기존 레이드              | 2026 NYC 10주년 레이드         |\n|------------------------|--------------------------|--------------------------------|\n| 참가 인원 제한         | 최대 20명 그룹           | 약 2,000명 동시 참여           |\n| 장소                   | 체육관(Gym)              | 공공 광장, 오프라인 행사장     |\n| 전설 포켓몬 등장 방식  | 정기 이벤트 한정         | 대형 협력 이벤트 집중 출현     |\n| 협력 플레이 방식       | 그룹 내 텍스트/버튼 소통 | 집단 실시간 행동 및 현장 반응  |\n| 기술적 지원            | 서버 개별 처리           | 대규모 현장 동기화, AR 강화    |\n\n이전에는 “친구 몇 명과 함께하는 소규모 협동”이 일반적이었지만, 이번 뉴욕 행사에서는 수천 명이 동시에 공격, 회피, 포획을 경험했습니다. 각자의 스마트폰 화면에 뮤츠가 등장하고, 동시에 AR 환경에서 행동하는 순간이 현실화된 것입니다. 서버 지연이나 오류 없이 모두가 함께 플레이하는 경험은 Pokémon Go가 처음 약속한 “현실 속 집단 협동”을 완전히 구현한 첫 사례로 평가됩니다.\n\nNiantic은 이번 행사에 맞춰 AR 동기화, 실시간 집단 분산처리, 서버 안정화, 고밀도 GPS 집계 등 여러 기술을 적용해 2,000명 동시 접속에도 게임이 끊김 없이 운영되었습니다. 이 같은 대규모 협동 플레이는 일상적인 게임 환경에서는 아직 어렵지만, 오프라인 축제나 지역 이벤트에서는 새로운 현실이 되었습니다.\n\n대형 협력 플레이가 앞으로도 계속될지는 확실하지 않지만, 이번 뉴욕 이벤트는 “광고 속 장면”이 아닌 실제 플레이 경험으로 남게 되었습니다. Pokémon Go가 내세운 집단 협동, AR 몰입, 현실 속 전설 포켓몬이라는 핵심 약속이 완전히 이행된 첫 사례입니다.\n\n### 참가 시 꼭 확인할 것  \n- **행사 참석 인원 및 장소:** 공식 홈페이지와 SNS 채널에서 사전 예약 및 현장 참여 정보를 확인  \n- **서버 지원 규모:** 대형 이벤트 한정 기술이므로 일상 플레이와는 다름  \n- **등장 포켓몬 종류:** 행사별로 등장하는 전설 포켓몬이 다르니 사전 체크  \n- **협력 플레이 방식:** 기존 그룹 레이드와 대규모 현장 협동 이벤트의 차이 이해  \n- **이벤트 일정:** 2026년 7월 뉴욕 외에도 연말·내년 예정 대형 이벤트 정보는 Niantic 공식 사이트에서 확인\n\nPokémon Go 10주년 이벤트는 “언제쯤 현실이 될까?”라는 질문에 명확한 답을 제시했습니다. 대규모 오프라인 협동 플레이에 관심 있다면, Niantic 공식 홈페이지에서 다음 행사 일정과 참가 방법을 확인하는 것이 좋습니다.\n\n**참고 출처:**  \n[A decade later, Pokémon Go finally made good on its original promise (2026-07-10)](https://www.theverge.com/games/964022/pokemon-go-10th-anniversary-mewtwo-nyc-go-fest-2026)",
+      "tags": [
+        "기술",
+        "Pok",
+        "Go"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1782338936796-0ebf0a6a1068?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNjMzOTE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "2,000명이 모였다—Pokémon Go 10주년, 현실이 된 대규모 협동 — Photo by Brecht Corbeel on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNjMzOTE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "2,000명이 모였다—Pokémon Go 10주년, 현실이 된 대규모 협동 본문 보조 이미지 — Photo by Adi Goldstein on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2,000명이 모였다—Pokémon Go 10주년, 현실이 된 대규모 협동. Keyword: Pok Go. Concrete visual subject: technology innovation circuit abstract. Context: 2015년 Pokémon Go 트레일러에는 수백 명이 함께 ‘뮤츠(Mewtwo)’를 포획하는 장면이 등장했습니다. 그때는 광고에 불과하다는 반응이 많았고, 현실에서 이처럼 대규모로 협동하는 플레이가 가능할지 의심하는 목소리가 컸습니다. 실제로 지난 10년간 Pokémon Go는 “원래 약속”과 현실 사이의 간극을 꾸준히 지적받아왔습니다. 하지만 2026년 7월, 뉴욕에서 열린 10주년 행사에서는 이 간극이 처음으로 좁혀졌습니다. Pokémon Go는 미국 IT기업 Niantic(나이앤틱)이 2016년에 출시한 증강현실(AR) 기반 모바일 게임입니다. 현실 지도와 GPS를 활용해 실제로 걸으며 포켓몬을 잡는 콘셉트가 특징입니다. Niantic은 구글 지도·위치 서비스 부서에서 분리된 회사로, 증강현실과 위치 기반 게임 개발에 특화되어 있습니다. 초기에는 소규모 플레이가 중심이었고, 전설 포켓몬 잡기와 글로벌 협동 이벤트는 “광고 속 이야기”로 여겨지는 경우가 많았습니다. 이번 10주년 뉴욕 행사에서는 약 2,000명의 유저가 한 장소에 직접 모여 ‘실시간 협력 레이드’를 경험했습니다. 공식 안내에 따르면, 기존에는 20명 이하 그룹 단위로만 가능했던 레이드가 이번에는 공공 광장 전체에서 수백 명이 동시에 참여하는 형태로 확장됐습니다. 특히 뮤츠(Mewtwo)와 같은 전설 포켓몬이 대규모 협동 이벤트에서 집중적으로 등장했습니다. 뮤츠는 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 2,000명이 모였다—Pokémon Go 10주년, 현실이 된 대규모 협동. Keyword: Pok Go. Concrete visual subject: technology innovation circuit abstract. Article context: 2015년 Pokémon Go 트레일러에는 수백 명이 함께 ‘뮤츠(Mewtwo)’를 포획하는 장면이 등장했습니다. 그때는 광고에 불과하다는 반응이 많았고, 현실에서 이처럼 대규모로 협동하는 플레이가 가능할지 의심하는 목소리가 컸습니다. 실제로 지난 10년간 Pokémon Go는 “원래 약속”과 현실 사이의 간극을 꾸준히 지적받아왔습니다. 하지만 2026년 7월, 뉴욕에서 열린 10주년 행사에서는 이 간극이 처음으로 좁혀졌습니다. Pokémon Go는 미국 IT기업 Niantic(나이앤틱)이 2016년에 출시한 증강현실(AR) 기반 모바일 게임입니다. 현실 지도와 GPS를 활용해 실제로 걸으며 포켓몬을 잡는 콘셉트가 특징입니다. Niantic은 구글 지도·위치 서비스 부서에서 분리된 회사로, 증강현실과 위치 기반 게임 개발에 특화되어 있습니다. 초기에는 소규모 플레이가 중심이었고, 전설 포켓몬 잡기와 글로벌 협동 이벤트는 “광고 속 이야기”로 여겨지는 경우가 많았습니다. 이번 10주년 뉴욕 행사에서는 약 2,000명의 유저가 한 장소에 직접 모여 ‘실시간 협력 레이드’를 경험했습니다. 공식 안내에 따르면, 기존에는 20명 이하 그룹 단위로만 가능했던 레이드가 이번에는 공공 광장 전체에서 수백 명이 동시에 참여하는 형태로 확장됐습니다. 특히 뮤츠(Mewtwo)와 같은 전설 포켓몬이 대규모 협동 이벤트에서 집중적으로 등장했습니다. 뮤츠는 Pokémon Go에서 강력한 전설 포켓몬으로, 평소에는 혼자 잡기 어려워 특별한 이벤트에서만 출현합니다. ### 10주년 행사 변화 비교 | 항목 | 기존 레이드 | 2026 NYC 10주년 레이드 | |------------------------|--------------------------|--------------------------------|. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-10T19:56:02.311909",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/pok-go-0fff68f1.md",
+      "message": "draft saved"
+    }
+  ]
+}

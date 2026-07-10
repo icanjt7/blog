@@ -1,0 +1,20 @@
+{
+  "run_id": "20260710-195400-827f3e66",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "pok-go-0fff68f1",
+      "title": "2,000명이 모였다—Pokémon Go 10주년, 현실이 된 대규모 협동",
+      "keyword": "Pok Go",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2,000명이 모였다—Pokémon Go 10주년, 현실이 된 대규모 협동. Keyword: Pok Go. Concrete visual subject: technology innovation circuit abstract. Context: 2015년 Pokémon Go 트레일러에는 수백 명이 함께 ‘뮤츠(Mewtwo)’를 포획하는 장면이 등장했습니다. 그때는 광고에 불과하다는 반응이 많았고, 현실에서 이처럼 대규모로 협동하는 플레이가 가능할지 의심하는 목소리가 컸습니다. 실제로 지난 10년간 Pokémon Go는 “원래 약속”과 현실 사이의 간극을 꾸준히 지적받아왔습니다. 하지만 2026년 7월, 뉴욕에서 열린 10주년 행사에서는 이 간극이 처음으로 좁혀졌습니다. Pokémon Go는 미국 IT기업 Niantic(나이앤틱)이 2016년에 출시한 증강현실(AR) 기반 모바일 게임입니다. 현실 지도와 GPS를 활용해 실제로 걸으며 포켓몬을 잡는 콘셉트가 특징입니다. Niantic은 구글 지도·위치 서비스 부서에서 분리된 회사로, 증강현실과 위치 기반 게임 개발에 특화되어 있습니다. 초기에는 소규모 플레이가 중심이었고, 전설 포켓몬 잡기와 글로벌 협동 이벤트는 “광고 속 이야기”로 여겨지는 경우가 많았습니다. 이번 10주년 뉴욕 행사에서는 약 2,000명의 유저가 한 장소에 직접 모여 ‘실시간 협력 레이드’를 경험했습니다. 공식 안내에 따르면, 기존에는 20명 이하 그룹 단위로만 가능했던 레이드가 이번에는 공공 광장 전체에서 수백 명이 동시에 참여하는 형태로 확장됐습니다. 특히 뮤츠(Mewtwo)와 같은 전설 포켓몬이 대규모 협동 이벤트에서 집중적으로 등장했습니다. 뮤츠는 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782338936796-0ebf0a6a1068?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNjMzOTE0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
