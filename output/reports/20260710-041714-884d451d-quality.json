@@ -1,0 +1,20 @@
+{
+  "run_id": "20260710-041714-884d451d",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "microsoft-25-8173072a",
+      "title": "MS 탄소 배출량 25% 증가, 사용자가 체감할 변화는?",
+      "keyword": "Microsoft 25",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: MS 탄소 배출량 25% 증가, 사용자가 체감할 변화는?. Keyword: Microsoft 25. Concrete visual subject: software windows technology. Context: ## 주요 내용 2026년 7월 10일 공개된 Microsoft의 지속가능성 보고서에 따르면, 2025년에 탄소 배출량이 전년 대비 25% 늘어 총 3,400만 미터톤에 달했습니다. 이는 Microsoft가 설정한 기후 목표 달성에 다시 어려움을 겪고 있다는 신호입니다. (출처: [The Verge, Microsoft’s carbon emissions went up 25 percent last year](https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026)) ## Microsoft 25% 배출 증가, 실제 의미 이 배출량 증가는 주로 데이터센터 확장과 AI·클라우드 서비스 수요 급증에 따라 발생했습니다. Microsoft는 2030년까지 탄소 중립을 목표로 하고 있지만, 이번 보고서에선 목표와 실제 간의 격차가 커진 점이 강조됩니다. ## 사용자·기업이 확인할 체크리스트 | 기준 | 구체 항목 | |--------------|------------------------------------------------------| | 배출량 수치 | 3,400만 미터톤 (2025년 한 해 기준) | | 주요 원인 | 데이터센터 확대, AI·클라우드 서비스 이용 증가 | | 적용 대상 | Microsoft 제품 사용자, 기업 고객, 개발·운영팀 | | 공식 기관 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1721475246144-98e4f01f3a6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxzb2Z0d2FyZSUyMHdpbmRvd3MlMjB0ZWNobm9sb2d5fGVufDF8MHx8fDE3ODM2NTcxMzR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
