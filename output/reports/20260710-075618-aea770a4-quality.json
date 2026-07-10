@@ -1,0 +1,22 @@
+{
+  "run_id": "20260710-075618-aea770a4",
+  "average_quality": 5.0,
+  "drafts": [
+    {
+      "slug": "fidji-simo-openai-agi-e9525c02",
+      "title": "Fidji Simo, OpenAI AGI 총괄직 사임…사용자가 체감할 변화 5가지",
+      "keyword": "Fidji Simo OpenAI AGI",
+      "category": "기술",
+      "quality_score": 5.0,
+      "review_notes": [
+        "출처에 없는 2024년 기준일이 들어가 최신 글처럼 보이지 않습니다.",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Fidji Simo, OpenAI AGI 총괄직 사임…사용자가 체감할 변화 5가지. Keyword: Fidji Simo OpenAI AGI. Concrete visual subject: artificial intelligence neural network. Context: ## Fidji Simo 사임, OpenAI AGI 부문 변화 2026년 7월 9일 공식 안내 기준, OpenAI의 AGI(Artificial General Intelligence) 총괄 Fidji Simo가 건강 문제로 인해 풀타임 역할에서 물러나고, 파트타임 고문(advisor)으로 전환했습니다. 이 소식은 Simo 본인이 X(구 트위터)에서 직접 밝혔으며, 4월부터 의료 휴직을 진행해왔던 점이 배경입니다. Fidji Simo는 Meta(구 Facebook)에서 제품 총괄을 맡았던 경력을 바탕으로 2024년부터 OpenAI AGI 부문을 이끌었습니다. AGI는 인간 수준의 인공지능 개발을 목표로 하는 OpenAI의 핵심 프로젝트입니다. ## 주요 변화 체크리스트 | 항목 | 구체 내용 | | ------------- | ---------------------------------------------------- | | 적용 기준 | 2026년 7월 9일 공식 안내 기준 | | 영향 대상 | OpenAI AGI 제품 사용자, 도입 검토 기업, 개발팀 | | 조직 변화 | AGI 총괄직 공석 → 파트타임 고문 체제로 전환 | | 직접 영향 | AGI 관련 제품·서비스의 의사결정 및 전략 변화 가능 | | 공식 채널 | X(트위터), OpenAI 블로그, 릴리스 노트, 상태 페이지 | ## 사용자가 체감할 실제 변화 1. **제품 업. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgzNjcwNDU4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
