@@ -1,0 +1,20 @@
+{
+  "run_id": "20260710-112027-cb6192ba",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "polestar-ev-us-16e28e07",
+      "title": "미국에서 Polestar EV가 사라진 이유와 소유자 영향은?",
+      "keyword": "Polestar EV US",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 미국에서 Polestar EV가 사라진 이유와 소유자 영향은?. Keyword: Polestar EV US. Concrete visual subject: technology innovation circuit abstract. Context: ## Polestar EV, 미국 시장 철수…소유자에 남은 과제 지난달, 스웨덴 전기차 브랜드 Polestar가 미국에서 사업을 중단한다고 발표해 자동차 업계에 큰 충격을 주었습니다. 미국 연방정부가 Polestar에 중국산 연결 차량 판매 금지 규정을 적용하면서, 신규 판매 및 서비스 운영이 모두 중단되었습니다. (출처: [The Verge, 2026-07-10](https://www.theverge.com/transportation/963399/polestar-owners-ban-dealers-service-warranty-lease)) --- ## Polestar EV 미국 철수 후, 실제 변화 체크리스트 | 항목 | 내용 | | ------------ | ------------------------------------------------------------ | | 적용 시점 | 공식 안내 기준, 2026년 7월부터 미국 내 신규 판매 중단 | | 영향 대상 | 기존 Polestar EV 소유자, 리스 이용자, 신규 구매 희망자 | | 서비스 현황 | 공식 딜러 및 서비스센터 운영 종료, 보증 및 수리 지원 불확실 | | 리스 계약 | 기존 리스 계약은 유지되나, 만기 후 처분 및 서비스에 제한 발생 | | 규제 기관 | 미국 연방정부, Polestar 공식 발표 기준 | --- ## 독자가 꼭 알아야 할 점 - Poles. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNjMzOTE0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
