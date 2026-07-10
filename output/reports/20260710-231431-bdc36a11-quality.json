@@ -1,0 +1,21 @@
+{
+  "run_id": "20260710-231431-bdc36a11",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "fcc-dji-4153f30a",
+      "title": "FCC, Xtra·Skyrover 통한 DJI 기술 우회 유통 단속 본격화",
+      "keyword": "FCC DJI",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: FCC, Xtra·Skyrover 통한 DJI 기술 우회 유통 단속 본격화. Keyword: FCC DJI. Concrete visual subject: technology innovation circuit abstract. Context: ## FCC, DJI 기술 우회 유통 강력 단속 발표 2026년 7월 10일, 미국 연방통신위원회(FCC)는 DJI 기술이 Xtra, Skyrover 등 별도의 브랜드로 위장되어 미국 내에 유통되는 사례를 공식적으로 확인하고, 이들에 대한 본격적인 단속에 착수한다고 밝혔다. 이번 조치는 DJI 본사뿐 아니라, SGS Lab 등 인증 대행 기관까지 단속 범위에 포함시킨 것이 특징이다. FCC는 무선통신 기기의 인증과 시장 유통을 담당하는 미국 정부 기관이다. ## 위장 브랜드 Xtra, Skyrover의 역할과 적발 경위 FCC는 Xtra가 DJI의 카메라를, Skyrover가 DJI 드론을 각각 미국 내에 별도 브랜드로 판매한 정황을 포착했다. 이는 기존 외국산 드론 및 기술에 대한 미국 정부의 공식 유통 제한 정책을 우회하려는 시도로 분석된다. 또한 SGS Lab은 이 과정에서 DJI 기술의 FCC 인증을 대행하거나 우회하는 역할을 한 것으로 조사되고 있다. ## FCC 단속의 주요 내용 및 적용 범위 FCC가 밝힌 단속의 핵심 내용은 다음과 같다. - Xtra, Skyrover 등 위장 브랜드를 통한 DJI 기술의 ‘변장’ 유통 정황 적발 - SGS Lab 등 인증 대행 업체의 역할에 대한 조사 착수 - FCC 인증 절차 위반 여부 집중 조사 - 단속 범위는 드론뿐 아니라 카메라 등 DJI 기술 전반으로 확대 ## 소비자·업계에 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1779788131533-3b044ac53911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNzA2ODMwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "run_id": "20260710-231431-bdc36a11",
+  "topics": [
+    {
+      "keyword": "FCC DJI",
+      "title_hint": "The FCC is cracking down on DJI tech that dodged the foreign drone ban",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "The FCC is cracking down on DJI tech that dodged the foreign drone ban",
+          "url": "https://www.theverge.com/policy/964342/fcc-crack-down-dji-front-companies-xtra-skyrover-sgs-lab",
+          "published_at": "2026-07-10T22:35:18",
+          "summary": "Last year, we told you about Xtra, the company that lets DJI sneak its popular cameras into the US, and Skyrover, a brand seemingly selling DJI drones in disguise. They're just two of the many firms DJI is suspected of starting to skirt the United States' foreign drone ban. But it appears the FCC is [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "FCC DJI",
+        "title_hint": "The FCC is cracking down on DJI tech that dodged the foreign drone ban",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "The FCC is cracking down on DJI tech that dodged the foreign drone ban",
+            "url": "https://www.theverge.com/policy/964342/fcc-crack-down-dji-front-companies-xtra-skyrover-sgs-lab",
+            "published_at": "2026-07-10T22:35:18",
+            "summary": "Last year, we told you about Xtra, the company that lets DJI sneak its popular cameras into the US, and Skyrover, a brand seemingly selling DJI drones in disguise. They're just two of the many firms DJI is suspected of starting to skirt the United States' foreign drone ban. But it appears the FCC is [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "FCC, Xtra·Skyrover 통한 DJI 기술 우회 유통 단속 본격화",
+      "slug": "fcc-dji-4153f30a",
+      "excerpt": "2026년 7월 10일, 미국 연방통신위원회(FCC)가 Xtra, Skyrover 등 위장 브랜드를 통한 DJI 드론 및 카메라의 우회 유통을 집중 단속한다고 발표했다. FCC의 단속 대상과 절차, 소비자·업계 영향, 인증 현황을 표와 함께 상세히 정리한다.",
+      "body_markdown": "## FCC, DJI 기술 우회 유통 강력 단속 발표\n\n2026년 7월 10일, 미국 연방통신위원회(FCC)는 DJI 기술이 Xtra, Skyrover 등 별도의 브랜드로 위장되어 미국 내에 유통되는 사례를 공식적으로 확인하고, 이들에 대한 본격적인 단속에 착수한다고 밝혔다. 이번 조치는 DJI 본사뿐 아니라, SGS Lab 등 인증 대행 기관까지 단속 범위에 포함시킨 것이 특징이다. FCC는 무선통신 기기의 인증과 시장 유통을 담당하는 미국 정부 기관이다.\n\n## 위장 브랜드 Xtra, Skyrover의 역할과 적발 경위\n\nFCC는 Xtra가 DJI의 카메라를, Skyrover가 DJI 드론을 각각 미국 내에 별도 브랜드로 판매한 정황을 포착했다. 이는 기존 외국산 드론 및 기술에 대한 미국 정부의 공식 유통 제한 정책을 우회하려는 시도로 분석된다. 또한 SGS Lab은 이 과정에서 DJI 기술의 FCC 인증을 대행하거나 우회하는 역할을 한 것으로 조사되고 있다.\n\n## FCC 단속의 주요 내용 및 적용 범위\n\nFCC가 밝힌 단속의 핵심 내용은 다음과 같다.\n\n- Xtra, Skyrover 등 위장 브랜드를 통한 DJI 기술의 ‘변장’ 유통 정황 적발\n- SGS Lab 등 인증 대행 업체의 역할에 대한 조사 착수\n- FCC 인증 절차 위반 여부 집중 조사\n- 단속 범위는 드론뿐 아니라 카메라 등 DJI 기술 전반으로 확대\n\n## 소비자·업계에 미치는 영향과 대응 방안\n\nFCC의 이번 조치로 인해 미국 내 드론·카메라 구매자와 관련 업체는 다음과 같은 영향을 받을 수 있다.\n\n- Xtra, Skyrover 등 위장 브랜드 제품의 FCC 인증 상태 불확실\n- 기존 구매자는 서비스(AS) 및 지원 제한 가능성\n- 신규 구매 시, 제조사·브랜드·FCC 인증서 확인 필수\n- 드론 관련 업체는 FCC 조사 대상 명단 및 인증 절차 강화 여부 점검 필요\n\n## 브랜드·기관별 FCC 단속 및 영향 현황 표\n\n| 구분           | 브랜드/기관   | 기술/제품               | FCC 인증 상태         | 소비자·업계 영향         |\n|:--------------:|:------------:|:-----------------------:|:---------------------:|:------------------------:|\n| 공식 DJI       | DJI          | 드론, 카메라            | FCC 인증 제한         | 구매·서비스 제한 가능    |\n| Xtra           | Xtra         | DJI 카메라              | 인증 재심사 진행      | 기존 구매자 불안정       |\n| Skyrover       | Skyrover     | DJI 드론(위장)          | 인증 조사 중          | 판매·AS 불확실           |\n| SGS Lab        | SGS Lab      | 인증 대행               | FCC 조사 대상         | 간접 영향               |\n| 미국 내 소비자 | 드론 사용자  | Xtra·Skyrover 제품      | 인증 상태 직접 확인   | 지원·수리 제한 가능성    |\n\n## FCC 단속 관련 체크포인트 5가지\n\n1. Xtra, Skyrover 제품 보유자는 FCC 인증 상태를 공식 사이트에서 직접 확인해야 한다.\n2. 신규 구매 시 제조사, 브랜드, FCC 인증서가 명확히 공개된 제품만 선택하는 것이 안전하다.\n3. FCC 인증이 없는 제품은 무선통신 사용 및 판매·AS가 제한될 수 있다.\n4. 드론·카메라 관련 업체는 FCC 조사 대상 명단과 인증 절차 강화 여부를 반드시 점검해야 한다.\n5. 향후 서비스 및 지원 정책 변화에 대비해 FCC와 각 브랜드의 공식 안내를 수시로 확인해야 한다.\n\n## 향후 전망 및 주의사항\n\nFCC의 이번 조치는 단순히 특정 브랜드에 국한되지 않고, 미국 내 드론 및 카메라 시장의 전반적인 투명성과 안전성을 강화하는 방향으로 진행되고 있다. 위장 브랜드를 통한 우회 유통 구조가 밝혀지면서, 향후 인증 절차가 더욱 엄격해질 전망이다. 2026년 7월 10일 기준, FCC 및 각 브랜드의 공식 안내와 인증·AS 공지를 반드시 참고해 최신 상황을 확인하는 것이 중요하다.\n\n[참고 출처]  \n- The FCC is cracking down on DJI tech that dodged the foreign drone ban (2026-07-10): https://www.theverge.com/policy/964342/fcc-crack-down-dji-front-companies-xtra-skyrover-sgs-lab",
+      "tags": [
+        "기술",
+        "FCC",
+        "DJI"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1779788131533-3b044ac53911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNzA2ODMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "FCC, Xtra·Skyrover 통한 DJI 기술 우회 유통 단속 본격화 — Photo by Victor on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1782088385104-039b7c454b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNzA2ODMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "FCC, Xtra·Skyrover 통한 DJI 기술 우회 유통 단속 본격화 본문 보조 이미지 — Photo by Brecht Corbeel on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: FCC, Xtra·Skyrover 통한 DJI 기술 우회 유통 단속 본격화. Keyword: FCC DJI. Concrete visual subject: technology innovation circuit abstract. Context: ## FCC, DJI 기술 우회 유통 강력 단속 발표 2026년 7월 10일, 미국 연방통신위원회(FCC)는 DJI 기술이 Xtra, Skyrover 등 별도의 브랜드로 위장되어 미국 내에 유통되는 사례를 공식적으로 확인하고, 이들에 대한 본격적인 단속에 착수한다고 밝혔다. 이번 조치는 DJI 본사뿐 아니라, SGS Lab 등 인증 대행 기관까지 단속 범위에 포함시킨 것이 특징이다. FCC는 무선통신 기기의 인증과 시장 유통을 담당하는 미국 정부 기관이다. ## 위장 브랜드 Xtra, Skyrover의 역할과 적발 경위 FCC는 Xtra가 DJI의 카메라를, Skyrover가 DJI 드론을 각각 미국 내에 별도 브랜드로 판매한 정황을 포착했다. 이는 기존 외국산 드론 및 기술에 대한 미국 정부의 공식 유통 제한 정책을 우회하려는 시도로 분석된다. 또한 SGS Lab은 이 과정에서 DJI 기술의 FCC 인증을 대행하거나 우회하는 역할을 한 것으로 조사되고 있다. ## FCC 단속의 주요 내용 및 적용 범위 FCC가 밝힌 단속의 핵심 내용은 다음과 같다. - Xtra, Skyrover 등 위장 브랜드를 통한 DJI 기술의 ‘변장’ 유통 정황 적발 - SGS Lab 등 인증 대행 업체의 역할에 대한 조사 착수 - FCC 인증 절차 위반 여부 집중 조사 - 단속 범위는 드론뿐 아니라 카메라 등 DJI 기술 전반으로 확대 ## 소비자·업계에 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: FCC, Xtra·Skyrover 통한 DJI 기술 우회 유통 단속 본격화. Keyword: FCC DJI. Concrete visual subject: technology innovation circuit abstract. Article context: ## FCC, DJI 기술 우회 유통 강력 단속 발표 2026년 7월 10일, 미국 연방통신위원회(FCC)는 DJI 기술이 Xtra, Skyrover 등 별도의 브랜드로 위장되어 미국 내에 유통되는 사례를 공식적으로 확인하고, 이들에 대한 본격적인 단속에 착수한다고 밝혔다. 이번 조치는 DJI 본사뿐 아니라, SGS Lab 등 인증 대행 기관까지 단속 범위에 포함시킨 것이 특징이다. FCC는 무선통신 기기의 인증과 시장 유통을 담당하는 미국 정부 기관이다. ## 위장 브랜드 Xtra, Skyrover의 역할과 적발 경위 FCC는 Xtra가 DJI의 카메라를, Skyrover가 DJI 드론을 각각 미국 내에 별도 브랜드로 판매한 정황을 포착했다. 이는 기존 외국산 드론 및 기술에 대한 미국 정부의 공식 유통 제한 정책을 우회하려는 시도로 분석된다. 또한 SGS Lab은 이 과정에서 DJI 기술의 FCC 인증을 대행하거나 우회하는 역할을 한 것으로 조사되고 있다. ## FCC 단속의 주요 내용 및 적용 범위 FCC가 밝힌 단속의 핵심 내용은 다음과 같다. - Xtra, Skyrover 등 위장 브랜드를 통한 DJI 기술의 ‘변장’ 유통 정황 적발 - SGS Lab 등 인증 대행 업체의 역할에 대한 조사 착수 - FCC 인증 절차 위반 여부 집중 조사 - 단속 범위는 드론뿐 아니라 카메라 등 DJI 기술 전반으로 확대 ## 소비자·업계에 미치는 영향과 대응 방안 FCC의 이번 조치로 인해 미국 내 드론·카메라 구매자와 관련 업체는 다음과 같은 영향을 받을 수 있다. - Xtra, Skyrover 등 위장 브랜드 제품의 FCC 인증 상태 불확실 - 기존 구매자는 서비스(AS) 및 지원 제한 가능성 - 신규 구매 시, 제조사·브랜드·FCC 인증서 확인 필수 - 드론 관련 업체는 FCC 조사 대. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-10T23:18:20.399536",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 55.0"
+    }
+  ]
+}
