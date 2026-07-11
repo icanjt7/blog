@@ -1,0 +1,20 @@
+{
+  "run_id": "20260711-062754-af7ed8ca",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "meta-instagram-ai-bd775526",
+      "title": "공개 인스타 사진, AI 딥페이크 차단…Meta의 긴급 결단",
+      "keyword": "Meta Instagram AI",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 공개 인스타 사진, AI 딥페이크 차단…Meta의 긴급 결단. Keyword: Meta Instagram AI. Concrete visual subject: social virtual technology artificial intelligence neural network. Context: 인스타그램에 올린 내 사진이 AI 딥페이크로 변형된다면 걱정이 앞설 수밖에 없습니다. 실제로 Meta가 최근 Instagram에 도입한 AI 이미지 생성 기능은 공개 계정의 사진을 태그만으로 AI가 재가공할 수 있게 했습니다. 그러나 사용자 동의 없이 이미지가 AI로 변형되는 점이 논란을 일으켰고, 2026-07-10 공식 안내 기준 Meta는 해당 기능을 즉시 중단했습니다. 주요 중단 이유는 다음과 같습니다. **1. 프라이버시 침해 우려** 공개 계정이라도, 본인 동의 없는 사진 활용은 개인정보 보호에 위협이 됩니다. 특히 AI 딥페이크 기술이 악용될 경우, 이미지가 예기치 않게 퍼질 수 있습니다. **2. 플랫폼 신뢰 하락** 사용자들은 새로운 경험에 기대를 가졌지만, 내 콘텐츠가 허락 없이 AI로 가공될 수 있다는 불신이 커졌습니다. 이로 인해 Instagram 전체의 신뢰도가 타격을 받았습니다. **3. 규제 강화 압박** 최근 여러 국가에서 AI 딥페이크 관련 법적·윤리적 규제를 강화하고 있습니다. Meta는 선제적으로 기능을 비활성화해 법적 리스크를 줄이고자 했습니다. 아래 표에서 이번 조치의 핵심 정보를 확인할 수 있습니다. | 구분 | 내용 | 공식 출처(2026-07-10) | |--------------------|---------------------------------------------------|----. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzb2NpYWwlMjB2aXJ0dWFsJTIwdGVjaG5vbG9neSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBuZXVyYWwlMjBuZXR3b3JrfGVufDF8MHx8fDE3ODM3NTE1NDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
