@@ -1,0 +1,22 @@
+{
+  "run_id": "20260711-151744-7a886c09",
+  "average_quality": 51.0,
+  "drafts": [
+    {
+      "slug": "fl-studio-constantin-koehncke-a00175d2",
+      "title": "FL Studio CEO Constantin Koehncke의 Reddit 직접 소통",
+      "keyword": "FL Studio Constantin Koehncke",
+      "category": "기술",
+      "quality_score": 51.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: FL Studio CEO Constantin Koehncke의 Reddit 직접 소통. Keyword: FL Studio Constantin Koehncke. Concrete visual subject: technology innovation circuit abstract. Context: ## 1. CEO Constantin Koehncke의 Reddit 등장 배경 2026년 7월 11일 기준, FL Studio 개발사 Image Line의 CEO Constantin Koehncke가 Reddit FL Studio 서브레딧에서 사용자와 직접 소통하고 있다. The Verge의 인터뷰에 따르면, Koehncke는 FL Studio의 발전을 위해 실제 사용자 경험과 의견을 제품 개발에 반영하는 전략을 택했다. FL Studio는 Fruity Loops라는 이름으로 1990년대 후반 출시된 디지털 오디오 워크스테이션(DAW)으로, 아마추어부터 프로듀서까지 폭넓게 사용되고 있다. ## 2. Reddit에서 진행되는 피드백 수집 방식 Koehncke는 공식 계정으로 FL Studio 서브레딧에 등장해 기술적 문의, 버그 제보, UI 개선 제안 등 다양한 주제에 직접 답변하고 있다. 답변은 단순한 안내를 넘어서, 실제 개발 우선 순위 공개, 기능 요청 검토, 베타 테스트 안내 등 구체적이다. Reddit은 FL Studio 공식 포럼이나 Twitter와 달리, 다양한 연령대와 솔직한 피드백이 활발하게 이루어지는 공간으로 평가된다. ## 3. CEO의 답변 유형과 커뮤니티 신뢰 구축 Koehncke의 답변 방식은 친근함과 신뢰를 강조한다. 밈(meme), 농담, 유행어를 활용한 캐주얼한 소통으로 커뮤니티 내 신뢰를 쌓고 있다. 기. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNjMzOTE0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
