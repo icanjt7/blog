@@ -1,0 +1,20 @@
+{
+  "run_id": "20260711-193344-20f440a7",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "oregon-attorney-general-paramount-c20ca426",
+      "title": "오리건 법무장관, 파라마운트-워너브라더스 합병 연기 요청 철회",
+      "keyword": "Oregon Attorney General Paramount",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 오리건 법무장관, 파라마운트-워너브라더스 합병 연기 요청 철회. Keyword: Oregon Attorney General Paramount. Concrete visual subject: technology innovation circuit abstract. Context: ## 오리건 법무장관의 합병 연기 요청 배경 2026년 7월 11일 기준, 오리건 주 법무장관 Dan Rayfield는 파라마운트의 워너브라더스 디스커버리 인수 합병과 관련해 중요한 법적 움직임을 보였다. Rayfield는 합병 과정에서 파라마운트 측에 관련 서류 제출을 요구하며, 오리건 주 법원에 60일간 합병 일정 연기를 공식 신청했다. 이 절차의 목적은 합병이 오리건 소비자와 지역 미디어 사업자, 그리고 경쟁 환경에 미치는 영향을 검토하기 위함이었다. ## 주요 인물 및 기업 정보 Dan Rayfield는 오리건 주의 법률 정책을 총괄하는 Attorney General로서, 대형 미디어 기업의 합병에 직접적으로 개입한 사례다. 파라마운트는 글로벌 영화 및 TV 제작사이며, 워너브라더스 디스커버리는 워너브라더스와 디스커버리의 합병으로 탄생한 미국 미디어 대기업이다. 두 기업의 합병은 미디어 산업 내 경쟁 구조와 콘텐츠 제공 방식에 변화를 예고하고 있다. ## 합병 연기 요청과 법적 절차 Rayfield의 합병 연기 요청은 파라마운트의 워너브라더스 인수 관련 서류 확보와 법원의 60일 연기 신청으로 구체화됐다. 이 과정에서 오리건 주 소비자, 미디어 사업자, 그리고 주주들이 합병으로 인한 직접적 영향을 받을 수 있다는 점이 강조됐다. Rayfield는 합병이 지역 시장의 경쟁 환경에 미칠 잠재적 영향에 대해 우려를 표명하며, 공식적. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330389129-fd3a236e00e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNzQxNzMwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
