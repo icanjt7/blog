@@ -1,0 +1,20 @@
+{
+  "run_id": "20260711-210828-188901e5",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "after-nopia-0b695102",
+      "title": "Nopia 신디사이저 완성 발표와 주요 특징 분석",
+      "keyword": "After Nopia",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Nopia 신디사이저 완성 발표와 주요 특징 분석. Keyword: After Nopia. Concrete visual subject: technology innovation circuit abstract. Context: ## 1. Nopia 신디사이저 개발 현황 2023년 첫 바이럴 영상 공개 이후 음악 장비 커뮤니티에서 큰 화제를 모은 Nopia 신디사이저가 2026년 7월 11일 ‘사실상 완성(basically finished)’ 단계에 진입했다는 공식 발표가 나왔다. 개발자는 Martin Grieco와 Rocío Gal로, 신디사이저 하드웨어 및 소프트웨어, 인터페이스 디자인 분야에서 전문성을 가진 인디 크리에이터로 알려져 있다. MusicRadar 사무실에서 진행된 실물 시연을 통해 Nopia의 주요 기능과 완성도가 공개되었다. 그러나 가격과 구체적인 출시 일정은 아직 발표되지 않았다. ## 2. Nopia의 주요 기술 및 인터페이스 특징 Nopia는 기존 디지털 신디사이저와 달리 터치와 기계식 피드백을 결합한 조작 방식을 채택했다. 사용자는 조작부에서 촉각과 시각 피드백을 동시에 경험할 수 있다. 이 시스템은 음악 작업 시 감각적 몰입감을 높이고, 기존 버튼이나 노브 중심의 조작 방식과 차별화된다. 실제 시연에서는 터치와 메카닉 조합의 인터페이스가 직관적이며, 음악 제작 환경에서 새로운 사용자 경험을 제공하는 것으로 평가됐다. 하드웨어 중심 설계로 DAW(디지털 오디오 워크스테이션)와의 연동 방식은 공식 안내를 통해 확인할 수 있다. ## 3. 크리에이터 및 브랜드 배경 Nopia의 개발자인 Martin Grieco와 Rocío Gal은 인. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNzgzMTgzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
