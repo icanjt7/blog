@@ -1,0 +1,20 @@
+{
+  "run_id": "20260711-034444-e4aab3da",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "no-flock-8217-f1b726fb",
+      "title": "1,000명 공유한 ‘No Flock 8217’ 논란, 진짜 상황은?",
+      "keyword": "No Flock 8217",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 1,000명 공유한 ‘No Flock 8217’ 논란, 진짜 상황은?. Keyword: No Flock 8217. Concrete visual subject: technology innovation circuit abstract. Context: 뉴포트비치 지역 강연 시리즈 인스타그램 계정이 공개한 ‘법적 조치 요구(cease and desist)’ 서한 사진이 1,000명 넘게 공유되며 논란이 시작됐습니다. 이 사건은 감시 기술 기업 Flock Safety와 관련된 No Flock 8217 해시태그 이슈와 직접 연결되어 있습니다. **Flock Safety와 No Flock 8217 논란의 배경** Flock Safety는 미국 전역의 경찰서와 도시에서 차량 번호판 인식 시스템(LPR)을 공급하는 기술 기업입니다. 최근 몇 년간 이 회사의 시스템 도입을 둘러싸고 시민 프라이버시 침해, 감시 확대 등에 대한 우려가 반복적으로 제기되었습니다. No Flock 8217 해시태그는 Flock Safety의 감시 기술에 반대하는 커뮤니티에서 사용되고 있으며, SNS를 통해 논란이 급속히 확산되는 중입니다. **법적 조치 요구 사진의 진실** 논란의 핵심은 강연 계정이 올린 ‘법적 조치 요구’ 서한 사진입니다. 일부에서는 Flock Safety가 공개 토론을 위협하거나 법적 조치를 취했다고 주장하지만, 2026년 7월 11일자 공식 안내에 따르면 Flock Safety는 실제로 토론 자체를 위협하거나 법적 절차를 진행한 적이 없다고 명확히 밝혔습니다. **SNS 확산과 지역 커뮤니티 반응** 이번 사안이 다시 부각된 이유는 다음과 같습니다: - 지역 커뮤니티가 Flock Safety의. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782338936796-0ebf0a6a1068?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNzQxNzMwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
