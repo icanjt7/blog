@@ -1,0 +1,23 @@
+{
+  "run_id": "20260711-231156-544630f8",
+  "average_quality": 45.0,
+  "drafts": [
+    {
+      "slug": "white-house-ufo-9a17d7c2",
+      "title": "400건 UAP 보고, 과학자 아비 로엡이 White House UFO 조사 이끈다",
+      "keyword": "White House UFO",
+      "category": "기술",
+      "quality_score": 45.0,
+      "review_notes": [
+        "표가 없어 스캔성이 약합니다.",
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 400건 UAP 보고, 과학자 아비 로엡이 White House UFO 조사 이끈다. Keyword: White House UFO. Concrete visual subject: science research laboratory. Context: 2026년 7월 11일 기준, 미국 대통령 집무실(White House)은 Pentagon(국방부), FBI, 국가정보국(ODNI) 등 주요 정보기관과 함께 새로운 과학 자문위원회를 설립했다. 이 위원회(UAP Science Advisory Council)의 책임자로 하버드 천체물리학자 아비 로엡(Avi Loeb)이 공식 임명됐다. #### 아비 로엡, 왜 주목받나? 아비 로엡은 하버드대학교 천체물리학과 교수로, 2018년 태양계에 진입한 미확인 천체 '오우무아무아'의 외계 기원 가능성을 제시해 전 세계에 알려진 인물이다. 기존 과학계의 틀을 넘어, 관측 데이터 기반의 가설 제시와 검증을 반복하는 연구 스타일로 유명하다. #### White House UFO 자문위원회, 무엇을 바꾸나? 이 위원회는 UAP Governing Board(미확인 비행현상 관리위원회)에 보고서를 제출하며, FBI, Pentagon, ODNI 등 각 기관이 수집한 UAP 현상 데이터를 과학적으로 분석한다. 기존에는 군사적 관점(레이더, 조종사 목격 등)에 집중했지만, 앞으로는 광학·레이더·센서 등 다양한 과학 데이터가 통합 분석된다. #### 변화 체크리스트 - 공식 책임자: 아비 로엡(하버드 천체물리학자) - 설립 기관: White House, Pentagon, FBI, ODNI - 보고 체계: UAP Governing Board에 공식 보고, 각 기관과 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1581093577421-f561a654a353?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3ODM4MTE2MjR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
