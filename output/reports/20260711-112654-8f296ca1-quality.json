@@ -1,0 +1,20 @@
+{
+  "run_id": "20260711-112654-8f296ca1",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "you-filthy-enough-700-c9525a70",
+      "title": "700달러 휴대용 온수 샤워, 살 만한 이유는?",
+      "keyword": "you filthy enough 700",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 700달러 휴대용 온수 샤워, 살 만한 이유는?. Keyword: you filthy enough 700. Concrete visual subject: technology innovation circuit abstract. Context: 캠핑이나 음악 페스티벌에서 며칠 동안 샤워를 못 하면 불편함이 극심해집니다. 이럴 때 “내가 정말 **you filthy enough 700** 할까?”라는 고민이 생깁니다. 특히 백컨트리 현장 근무나 여름 오버랜드 여행처럼 핫워터가 없는 환경에서는 온수 샤워의 필요성이 커집니다. Joolca(줄카)는 미국 캘리포니아에 본사를 둔 캠핑·아웃도어 장비 스타트업입니다. 2026년 7월 11일 The Verge 리뷰([링크](https://www.theverge.com/reviews/963814/joolca-hottap-portable-shower-review))에 따르면 신제품 “Hottap Portable Shower”가 700달러에 출시되었습니다. 핫워터는 전기처럼 쉽게 당연히 여기지만, 야외에서는 그만큼 소중한 사치이기도 합니다. ### 주요 판단 기준 - **여름철 야외 활동 증가**: 기존 간이 샤워는 온도 조절이 어려워 불편함이 큽니다. - **주요 대상**: 장시간 야외 근무자, 페스티벌 참가자, 오버랜드 여행자, 온수에 민감한 가족 캠퍼. - **확인해야 할 조건**: 물 용량, 가열 시간, 배터리·연료 소모량, 내구성, 실제 사용 시 만족도. ### Joolca Hottap 리뷰 기반 주요 스펙 | 항목 | 수치/특징 | 장점 | 단점 | |----------------|----------------------------. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782088385104-039b7c454b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNzY5NDkyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
