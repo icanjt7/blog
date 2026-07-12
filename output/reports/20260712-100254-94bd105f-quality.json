@@ -1,0 +1,20 @@
+{
+  "run_id": "20260712-100254-94bd105f",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "white-house-ufo-f28b7fc9",
+      "title": "미국 정부, UFO 조사 책임자에 '외계인 주장' 하버드 교수 임명!",
+      "keyword": "White House UFO",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 미국 정부, UFO 조사 책임자에 '외계인 주장' 하버드 교수 임명!. Keyword: White House UFO. Concrete visual subject: technology innovation circuit abstract. Context: 미국 행정부가 'White House UFO' 이슈에 새로운 변화를 가져왔습니다. 2026년 7월 11일, White House와 Pentagon(미 국방부), FBI, 정보기관이 공동으로 설립한 UAP Science Advisory Council의 수장으로 하버드 천체물리학자 Avi Loeb이 임명되었습니다. Avi Loeb은 Oumuamua(오무아무아) 천체를 외계 문명 탐사선일 수 있다고 주장하며 논란의 중심에 있었던 과학자입니다. 그는 기존 학계에서 '외계 생명체 존재 가능성'을 공개적으로 언급해온 인물로, 이번 임명은 미국 정부가 과학적 검증에 방점을 두기 시작했다는 신호입니다. ### White House UFO 조사팀, 무엇이 달라졌나? 과거에는 군과 정보기관 중심으로 진행되던 UFO(UAP) 관련 조사가 이제 과학자 중심으로 변화합니다. 공식 보고서 작성, 데이터 검증, 정부와 학계 공동 참여 등 투명성과 근거 중심의 절차가 도입됩니다. 아래 표는 2026년 현재 White House UFO 조사 방식의 주요 변화입니다. | 구분 | 기존(2024년 이전) | 2026년 변화 | |-----------------------|---------------------------|------------------------------------------| | 책임자 | 군·정보기관 인사 | 천체물리학자 Avi Loeb | |. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNzY5NDkyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
