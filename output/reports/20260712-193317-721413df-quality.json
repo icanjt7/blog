@@ -1,0 +1,22 @@
+{
+  "run_id": "20260712-193317-721413df",
+  "average_quality": 81.0,
+  "drafts": [
+    {
+      "slug": "philips-hue-c704c9e3",
+      "title": "Philips Hue, 스마트홈 입문자도 쉽게 바꾸는 5가지 이유",
+      "keyword": "Philips Hue",
+      "category": "기술",
+      "quality_score": 81.0,
+      "review_notes": [
+        "핵심 키워드 반복이 과합니다.",
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Philips Hue, 스마트홈 입문자도 쉽게 바꾸는 5가지 이유. Keyword: Philips Hue. Concrete visual subject: technology innovation circuit abstract. Context: 새벽에 거실 불을 끄러 갔다가 다친 적 있나요? 스마트홈 조명에 관심은 있지만, 설치와 설정의 복잡함 때문에 시도조차 어려웠던 경험이 흔합니다. Philips Hue는 이런 불편을 해소한 대표적인 스마트 조명 브랜드입니다. Philips Hue는 네덜란드의 글로벌 조명기업 Signify(구 Philips Lighting)가 만든 스마트 조명 시리즈입니다. Signify는 100년 이상의 조명 기술 노하우를 바탕으로, IoT 기반 스마트홈 시장에서 실용성과 호환성을 강조해왔습니다. ## Philips Hue, 무엇이 다를까? - **쉬운 설치** 기존 전구 소켓에 새로운 Philips Hue 전구만 장착하면 바로 사용 가능합니다. 벽 스위치나 배선 공사 없이 시작할 수 있습니다. - **통합 제어** Hue 앱 하나로 집안 전체 조명을 제어할 수 있습니다. 무선 브릿지(Hue Bridge)는 Wi-Fi 및 Zigbee 프로토콜을 활용해 여러 전구와 연결됩니다. - **폭넓은 호환성** Alexa, Google Home, Apple HomeKit 등 주요 음성 비서와 공식 연동됩니다. 앱과 음성으로 자유롭게 조명을 조절할 수 있습니다. - **자동화 기능** 위치 센서, 시간표 등 다양한 자동화 옵션을 지원해, 사용자의 행동에 맞춰 빛이 바뀝니다. - **편리한 펌웨어 업데이트** Hue 앱에서 자동으로 최신 펌웨어를 받을 수 있어, 별. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzODg0ODg5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
