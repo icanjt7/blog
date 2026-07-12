@@ -1,0 +1,21 @@
+{
+  "run_id": "20260712-064708-43b06c98",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "white-house-ufo-f28b7fc9",
+      "title": "White House, Avi Loeb 임명…UAP 과학자문기구 5기관 협력",
+      "keyword": "White House UFO",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: White House, Avi Loeb 임명…UAP 과학자문기구 5기관 협력. Keyword: White House UFO. Concrete visual subject: science research laboratory. Context: ## White House, UAP 과학자문기구 신설 및 Avi Loeb 임명 2026년 7월 11일, White House는 UFO 및 미확인 비행현상(UAP) 대응을 위한 새로운 조직인 UAP Science Advisory Council 설립을 공식 발표했다. 이 조직의 수장으로 하버드 천체물리학자 Avi Loeb가 임명되었다. Loeb는 태양계를 통과한 ‘오우무아무아’ 천체를 외계 문명 탐사선일 수 있다고 주장한 바 있으며, 외계 생명체 연구 분야에서 공개적 활동과 논의로 주목받아 왔다. ## 5개 핵심 기관 협력 구조 이번 조직은 White House, 미국 국방부(Pentagon), 연방수사국(FBI), 국가정보국장실(Office of the Director of National Intelligence, ODNI), 정보 커뮤니티 등 총 5개 기관이 공동 운영한다. 각 기관은 UAP 조사, 정책 자문, 정보 공유, 실무 조정 등 역할을 분담한다. 기존 군·정보기관 중심의 구조에서 White House가 주도권을 가진 점과 기관 협력 범위가 확대된 점이 특징이다. ## 과학자 주도 UAP 조사 체계 도입 UAP Science Advisory Council은 과학적 조사와 정책 자문을 담당한다. Loeb가 수장을 맡아 과학적 방법론, 데이터 분석, 연구 결과 보고서 작성 등 실증적 접근이 강조된다. 이 자문기구는 UAP Gove. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1578496480240-32d3e0c04525?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5fGVufDF8MHx8fDE3ODM4MzkwNzl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
