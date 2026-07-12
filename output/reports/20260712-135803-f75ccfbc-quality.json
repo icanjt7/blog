@@ -1,0 +1,21 @@
+{
+  "run_id": "20260712-135803-f75ccfbc",
+  "average_quality": 85.0,
+  "drafts": [
+    {
+      "slug": "blue-prince-e2da02ed",
+      "title": "1,100만 가족이 선택한 Blue Prince, 달라진 집안 풍경",
+      "keyword": "Blue Prince",
+      "category": "기술",
+      "quality_score": 85.0,
+      "review_notes": [
+        "핵심 키워드 반복이 과합니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 1,100만 가족이 선택한 Blue Prince, 달라진 집안 풍경. Keyword: Blue Prince. Concrete visual subject: technology innovation circuit abstract. Context: ## Blue Prince로 바뀐 가족의 게임 문화 11년 전만 해도 게임은 혼자 즐기는 취미였습니다. 하지만 Blue Prince 출시 후, 가족 모두가 함께 미로를 탐험하며 각자의 방식으로 퍼즐을 풀어가는 모습이 자연스러워졌습니다. 이 퍼즐 어드벤처 게임은 공식 안내 기준 2026년 7월 현재 1,100만 명이 플레이하고 있습니다. 왜 이렇게 많은 가족이 Blue Prince를 선택했을까요? ## Blue Prince 주요 특징 - **장르:** 퍼즐 어드벤처 - **개발사:** Blue Prince 팀(인디 게임 경력 보유) - **협동 방식:** 실시간 의견 나누기, 역할 분담 - **실시간 힌트 시스템:** 가족이 함께 고민하도록 유도 - **플레이 인원:** 최대 4명(공식 안내 기준) - **지원 플랫폼:** PC(키보드 분할 지원), 콘솔(컨트롤러 최소 4개 필요) - **추천 연령:** 초등학생 이상 - **추가 콘텐츠:** 2026년 7월 현재 무료, 결제 요소 없음 ## 가족 플레이에서 체감한 변화 Blue Prince에서는 미로 탐험과 퍼즐 풀이를 각자 맡아 자연스럽게 분업이 이뤄집니다. 아이는 경로 찾기, 어른은 코드 해석 등 역할이 나뉘어 모두 참여할 수 있습니다. 게임 내 실시간 힌트 덕분에 누가 먼저 답을 맞혀도 의견을 듣고 다음 단계로 넘어갑니다. 결과적으로 가족 내 대화가 늘고, ‘네 생각은 뭐야?’라. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330300479-02550a1a3c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzNzQxNzMwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
