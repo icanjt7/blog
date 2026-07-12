@@ -1,0 +1,73 @@
+{
+  "run_id": "20260712-163357-21f0c033",
+  "topics": [
+    {
+      "keyword": "Apple AI",
+      "title_hint": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
+          "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+          "published_at": "2026-07-12T16:27:06",
+          "summary": "Apple's self-driving car program never really got off the ground, but it may have been what made the company's chips the powerful AI performers they are. Early in the development of the self-driving platform, Apple realized that it would need powerful on-device AI processing. While the car processor was never finished, as Mark Gurman details [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Apple AI",
+        "title_hint": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
+            "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+            "published_at": "2026-07-12T16:27:06",
+            "summary": "Apple's self-driving car program never really got off the ground, but it may have been what made the company's chips the powerful AI performers they are. Early in the development of the self-driving platform, Apple realized that it would need powerful on-device AI processing. While the car processor was never finished, as Mark Gurman details [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "애플 AI 칩",
+      "slug": "apple-ai-dff34488",
+      "excerpt": "애플의 자율주행차 프로그램은 실패했지만, 이를 통해 개발된 강력한 AI 칩이 현재 다양한 분야에서 사용되고 있다. 특히 M7 울트라는 매우 강력한 성능을 보이고 있다.",
+      "body_markdown": "### 애플의 자율주행차 프로그램과 AI 칩 개발\n애플의 자율주행차 프로그램은 초기에 강력한 온디바이스 AI 처리가 필요하다는 것을 깨달았다. 이 과정에서 개발된 기술이 현재의 애플 AI 칩에 큰 기여를 했다.\n\n### 기술 개발의 과정과 결과\n자율주행칩은 완성되지 않았지만, 이 과정에서 개발된 기술이 현재의 애플 AI 칩에 큰 기여를 했다. 현재 애플의 AI 칩은 다양한 분야에서 사용되고 있으며, 향후 더 많은 발전이 기대된다. M7 울트라는 특히 강력한 성능을 보이고 있다.\n\n### 애플의 AI 칩과 자율주행차 프로그램의 연관성\n다음은 애플의 AI 칩과 자율주행차 프로그램의 연관성을 보여주는 표이다.\n\n| 기술 | 자율주행차 프로그램 | 현재 AI 칩 |\n| --- | --- | --- |\n| 온디바이스 AI 처리 | 필수 기술 | 강력한 성능 |\n| 칩 개발 | 중단 | 성공적 출시 |\n| 응용 분야 | 자율주행차 | 다양한 분야 |\n\n### M7 울트라 칩의 특징\nM7 울트라 칩은 특히 강력한 성능을 보이고 있다. 이는 애플의 자율주행차 프로그램에서 개발된 기술의 직접적인 결과이다. 이 칩은 다양한 산업 분야에서 혁신을 일어나게 할 것으로 기대된다.\n\n### 애플 AI 칩의 미래\n애플의 AI 칩은 앞으로 더 많은 발전이 기대된다. 이는 기술 개발의 과정에서 실패가 항상 실패만은 아니라는 것을 보여준다. 애플의 AI 칩은 다양한 산업 분야에서 혁신을 일어나게 할 것으로 기대된다.\n\n### 결론\n애플의 자율주행차 프로그램은 실패했지만, 이를 통해 개발된 강력한 AI 칩은 현재 많은 분야에서 사용되고 있다. 이는 기술 개발의 과정에서 실패가 항상 실패만은 아니라는 것을 보여준다. 애플의 AI 칩은 앞으로 더 많은 발전이 기대되며, 이를 통해 다양한 산업 분야에서 혁신이 일어나게 될 것이다.\n\n참고 출처: Apple’s failed self-driving car program left a legacy of powerful AI chips (발행일: 2026-07-12): https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+      "tags": [
+        "기술",
+        "Apple",
+        "AI"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1662946834880-99adabd21f80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ24lMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgzODc0NDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "애플 AI 칩 — Photo by BoliviaInteligente on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1540726811314-7648cc1b4426?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ24lMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzgzODc0NDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "애플 AI 칩 본문 보조 이미지 — Photo by Mohamed M on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 애플 AI 칩. Keyword: Apple AI. Concrete visual subject: apple device minimal design artificial intelligence neural network. Context: ### 애플의 자율주행차 프로그램과 AI 칩 개발 애플의 자율주행차 프로그램은 초기에 강력한 온디바이스 AI 처리가 필요하다는 것을 깨달았다. 이 과정에서 개발된 기술이 현재의 애플 AI 칩에 큰 기여를 했다. ### 기술 개발의 과정과 결과 자율주행칩은 완성되지 않았지만, 이 과정에서 개발된 기술이 현재의 애플 AI 칩에 큰 기여를 했다. 현재 애플의 AI 칩은 다양한 분야에서 사용되고 있으며, 향후 더 많은 발전이 기대된다. M7 울트라는 특히 강력한 성능을 보이고 있다. ### 애플의 AI 칩과 자율주행차 프로그램의 연관성 다음은 애플의 AI 칩과 자율주행차 프로그램의 연관성을 보여주는 표이다. | 기술 | 자율주행차 프로그램 | 현재 AI 칩 | | --- | --- | --- | | 온디바이스 AI 처리 | 필수 기술 | 강력한 성능 | | 칩 개발 | 중단 | 성공적 출시 | | 응용 분야 | 자율주행차 | 다양한 분야 | ### M7 울트라 칩의 특징 M7 울트라 칩은 특히 강력한 성능을 보이고 있다. 이는 애플의 자율주행차 프로그램에서 개발된 기술의 직접적인 결과이다. 이 칩은 다양한 산업 분야에서 혁신을 일어나게 할 것으로 기대된다. ### 애플 AI 칩의 미래 애플의 AI 칩은 앞으로 더 많은 발전이 기대된다. 이는 기술 개발의 과정에서 실패가 항상 실패만은 아니라는 것을 보여준다. 애플의 AI 칩은 다양한 산업 분. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 애플 AI 칩. Keyword: Apple AI. Concrete visual subject: apple device minimal design artificial intelligence neural network. Article context: ### 애플의 자율주행차 프로그램과 AI 칩 개발 애플의 자율주행차 프로그램은 초기에 강력한 온디바이스 AI 처리가 필요하다는 것을 깨달았다. 이 과정에서 개발된 기술이 현재의 애플 AI 칩에 큰 기여를 했다. ### 기술 개발의 과정과 결과 자율주행칩은 완성되지 않았지만, 이 과정에서 개발된 기술이 현재의 애플 AI 칩에 큰 기여를 했다. 현재 애플의 AI 칩은 다양한 분야에서 사용되고 있으며, 향후 더 많은 발전이 기대된다. M7 울트라는 특히 강력한 성능을 보이고 있다. ### 애플의 AI 칩과 자율주행차 프로그램의 연관성 다음은 애플의 AI 칩과 자율주행차 프로그램의 연관성을 보여주는 표이다. | 기술 | 자율주행차 프로그램 | 현재 AI 칩 | | --- | --- | --- | | 온디바이스 AI 처리 | 필수 기술 | 강력한 성능 | | 칩 개발 | 중단 | 성공적 출시 | | 응용 분야 | 자율주행차 | 다양한 분야 | ### M7 울트라 칩의 특징 M7 울트라 칩은 특히 강력한 성능을 보이고 있다. 이는 애플의 자율주행차 프로그램에서 개발된 기술의 직접적인 결과이다. 이 칩은 다양한 산업 분야에서 혁신을 일어나게 할 것으로 기대된다. ### 애플 AI 칩의 미래 애플의 AI 칩은 앞으로 더 많은 발전이 기대된다. 이는 기술 개발의 과정에서 실패가 항상 실패만은 아니라는 것을 보여준다. 애플의 AI 칩은 다양한 산업 분야에서 혁신을 일어나게 할 것으로 기대된다. ### 결론 애플의 자율주행차 프로그램은 실패했지만, 이를 통해 개발된 강력한 AI 칩은 현재 많은 분야에서 사용되고 있다. 이는 기술 개발의 과정에서 실패가 항상 실패만은 아니라는 것을 보여준다. 애플의 AI 칩은 앞으로 더 많은 발전이 기대되며, 이를 통해 다양한 산업 분야에서 혁신이 일어나게 될 것이다. 참. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-12T16:38:29.547991",
+      "quality_score": 66.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 2차 검수 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/apple-ai-dff34488.md",
+      "message": "draft saved"
+    }
+  ]
+}
