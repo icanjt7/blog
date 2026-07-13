@@ -1,0 +1,20 @@
+{
+  "run_id": "20260713-231438-d32a0ab3",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "microsoft-windows-search-c5460c87",
+      "title": "Windows 11 검색창, 광고 없는 실험판 직접 써보는 법",
+      "keyword": "Microsoft Windows Search",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Windows 11 검색창, 광고 없는 실험판 직접 써보는 법. Keyword: Microsoft Windows Search. Concrete visual subject: software windows technology. Context: 최근 Windows 11에서 검색창을 열 때 광고나 뉴스, 추천 앱이 보여 불편했던 사용자라면 주목할 만한 변화가 있습니다. Microsoft가 공식 블로그를 통해, 광고와 추천 콘텐츠를 뺀 '깨끗한 Windows Search 메뉴'를 Windows Insiders Experimental Channel에서 테스트한다고 발표했습니다. Microsoft는 세계 최대 소프트웨어 기업으로, 1985년부터 Windows 운영체제를 개발해오고 있습니다. ### 실험판 적용 조건과 확인 방법 Windows Insiders는 Microsoft가 직접 운영하는 테스트 프로그램입니다. 신규 기능이나 UI를 먼저 체험하고 피드백을 제공할 수 있습니다. 그 중 Experimental Channel은 가장 빠르고 실험적인 업데이트가 제공되는 채널로, 일반 사용자에게는 자동 적용되지 않습니다. 아래 표에서 실제 적용 조건을 확인할 수 있습니다: | 채널명 | 적용 대상 | 주요 변화 | 확인 방법 | 안내 기준 | |----------------------------------|-----------------------------------|------------------------------------------|------------------------------------|-------------------------| | Windows Inside. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1704089272382-201cf5c1bbbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxzb2Z0d2FyZSUyMHdpbmRvd3MlMjB0ZWNobm9sb2d5fGVufDF8MHx8fDE3ODM5ODQ1ODF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
