@@ -1,0 +1,21 @@
+{
+  "run_id": "20260713-074119-0db4e652",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "lorde-ray-ban-meta-b0845b23",
+      "title": "Lorde가 말한 Ray-Ban Meta AI 안경의 진짜 변화: 사용자에게 미치는 5가지 영향",
+      "keyword": "Lorde Ray Ban Meta",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Lorde가 말한 Ray-Ban Meta AI 안경의 진짜 변화: 사용자에게 미치는 5가지 영향. Keyword: Lorde Ray Ban Meta. Concrete visual subject: social virtual technology artificial intelligence neural network. Context: ## Lorde가 Ray-Ban Meta AI 안경에 던진 질문 2026년 7월 12일, 마드리드 Real Cool Festival 무대에서 뉴질랜드 출신 싱어송라이터 Lorde는 Ray-Ban Meta AI 안경이 \"섹시하지 않다(not sexy)\"고 공개적으로 언급했습니다. 해당 안경은 Ray-Ban과 Meta(구 Meta/Facebook)가 협업한 AI 스마트 글래스 제품으로, 페스티벌 공식 후원사이기도 했습니다. Lorde의 발언은 특정 브랜드를 명시하지는 않았지만, 현장 분위기와 후원사 맥락상 Ray-Ban Meta AI 안경을 겨냥한 것으로 해석됩니다. ## Ray-Ban Meta AI 안경: 주요 기능과 배경 - **제품명:** Ray-Ban Meta AI Glasses - **협력사:** Ray-Ban(이탈리아 명품 안경 브랜드), Meta(글로벌 IT 기업) - **주요 기능:** AI 기반 음성비서, 사진 촬영, 실시간 번역, SNS 연동 - **출시 맥락:** Meta의 AI 기술을 일상에 접목한 웨어러블 기기 - **적용 대상:** 일반 소비자, 기업, 페스티벌 참가자 등 ## Lorde의 발언이 사용자에게 미치는 5가지 변화 | 기준 | 구체 내용 | |---|---| | 1. 기능 사용 | AI 음성비서, 번역 등 신기능의 실제 필요성에 대한 재검토 | | 2. 디자인 평가 | 유명 가수의 '매력 부족' 지적. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1674027215016-0a4abfdbf1cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxzb2NpYWwlMjB2aXJ0dWFsJTIwdGVjaG5vbG9neSUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBuZXVyYWwlMjBuZXR3b3JrfGVufDF8MHx8fDE3ODM4OTA3NTB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
