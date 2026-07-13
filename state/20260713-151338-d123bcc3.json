@@ -1,0 +1,72 @@
+{
+  "run_id": "20260713-151338-d123bcc3",
+  "topics": [
+    {
+      "keyword": "Even Nvidia Nvidia",
+      "title_hint": "Even Nvidia’s head of automotive fights with Nvidia for compute",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Even Nvidia’s head of automotive fights with Nvidia for compute",
+          "url": "https://www.theverge.com/podcast/964614/nvidia-auto-xinzhou-wu-ev-ai-hyperion-autonomy-cars-tesla",
+          "published_at": "2026-07-13T15:00:00",
+          "summary": "Today, I’m talking with Xinzhou Wu, who is the head of automotive at Nvidia.&#160; Nvidia is obviously in the news constantly because of the AI boom — it’s one of the most valuable companies in the world, because the AI industry can’t get enough of the company’s GPUs. But Nvidia is also a key supplier [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Even Nvidia Nvidia",
+        "title_hint": "Even Nvidia’s head of automotive fights with Nvidia for compute",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Even Nvidia’s head of automotive fights with Nvidia for compute",
+            "url": "https://www.theverge.com/podcast/964614/nvidia-auto-xinzhou-wu-ev-ai-hyperion-autonomy-cars-tesla",
+            "published_at": "2026-07-13T15:00:00",
+            "summary": "Today, I’m talking with Xinzhou Wu, who is the head of automotive at Nvidia.&#160; Nvidia is obviously in the news constantly because of the AI boom — it’s one of the most valuable companies in the world, because the AI industry can’t get enough of the company’s GPUs. But Nvidia is also a key supplier [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Nvidia 자동차 책임자도 내부 자원 경쟁? 사용자가 겪는 5가지 변화",
+      "slug": "even-nvidia-nvidia-fd4666fa",
+      "excerpt": "Nvidia 자동차 부문 책임자 Xinzhou Wu의 내부 컴퓨팅 자원 경쟁 이슈를 중심으로, 실제 사용자와 기업이 체감할 변화 5가지를 정리합니다.",
+      "body_markdown": "## Nvidia 내부에서 벌어지는 컴퓨팅 자원 경쟁\n\n2026년 7월 13일 기준, Nvidia의 자동차 부문 책임자 Xinzhou Wu가 직접 Nvidia 내부에서 컴퓨팅 자원 확보를 위해 경쟁하고 있다는 사실이 공개되었습니다.  \nNvidia는 AI 붐으로 세계에서 가장 가치 있는 기업 중 하나로 꼽히며, 자사의 GPU에 대한 수요가 폭발적으로 증가하고 있습니다.\n\n## 배경: Nvidia와 자동차, 그리고 AI\n\n- **Nvidia**는 그래픽 카드와 AI 연산 플랫폼 분야에서 세계적인 기업입니다.\n- **Xinzhou Wu**는 Nvidia의 자동차 사업 총괄 책임자로, EV(전기차), AI 기반 자율주행, Hyperion 플랫폼 개발을 주도하고 있습니다.\n- AI 산업 성장으로 Nvidia의 GPU 및 컴퓨팅 리소스가 자동차, 클라우드, 데이터센터 등 다양한 분야에서 동시에 요구되고 있습니다.\n\n## 실제 사용자가 겪을 변화 체크리스트\n\n| 기준          | 구체 내용(출처: The Verge, 2026-07-13)                  |\n|--------------|------------------------------------------------------|\n| 적용 대상    | Nvidia 기반 자동차 플랫폼 도입 기업, 개발팀, 엔드 유저            |\n| 경쟁 자원    | GPU, AI 연산 서버, Hyperion 시스템                     |\n| 변화 시점    | 원문 공개일 기준(2026-07-13), 공식 발표 및 릴리즈 노트 참조         |\n| 주요 영향    | 컴퓨팅 자원 배분 지연, 신제품·신기능 출시 일정 변동, 서비스 안정성 변화 |\n| 확인 방법    | 공식 발표, 상태 페이지, 후속 보도, 가격표, 제품별 지원 정책           |\n\n## 사용자가 체감할 5가지 실제 변화\n\n1. **신규 기능 출시 지연 가능성**  \n   자동차, 자율주행 등 AI 기능 도입 시 GPU 자원 배분 경쟁으로 일정이 늦어질 수 있습니다.\n\n2. **서비스 안정성 변동**  \n   자원 부족 시 Hyperion 플랫폼 등에서 일시적 성능 저하나 서비스 중단 가능성이 있습니다.\n\n3. **가격 및 구독 비용 변화**  \n   컴퓨팅 자원 수요 증가로 인해 자동차 플랫폼 관련 가격이 오르거나 구독 구조가 복잡해질 수 있습니다.\n\n4. **대체 서비스 선택권 확대**  \n   Nvidia 내부 경쟁이 심화되면, 기업이나 개발팀이 AMD, Qualcomm 등 대체 솔루션을 고려할 수 있습니다.\n\n5. **운영팀의 업무 흐름 변화**  \n   자원 확보를 위한 별도 요청, 일정 관리, 릴리즈 노트 검토 등 추가 절차가 필요해질 수 있습니다.\n\n## 인물 및 용어 설명\n\n- **Xinzhou Wu**: Nvidia의 자동차 사업 책임자로, EV 및 자율주행 기술 개발을 총괄합니다.\n- **Hyperion**: Nvidia가 개발한 자동차용 AI 및 자율주행 시스템 플랫폼입니다.\n- **GPU**: 그래픽 처리 장치로, AI 연산에 필수적인 하드웨어입니다.\n\n## 참고 출처\n\n- [Even Nvidia’s head of automotive fights with Nvidia for compute (The Verge, 2026-07-13)](https://www.theverge.com/podcast/964614/nvidia-auto-xinzhou-wu-ev-ai-hyperion-autonomy-cars-tesla)\n\n---\n\n이상, Nvidia 내부 자원 경쟁이 실제 사용자와 기업에 어떤 영향을 미칠지 5가지 변화 중심으로 정리했습니다.",
+      "tags": [
+        "기술",
+        "Even",
+        "Nvidia"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzODY0NzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Nvidia 자동차 책임자도 내부 자원 경쟁? 사용자가 겪는 5가지 변화 — Photo by Declan Sun on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1779788131533-3b044ac53911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzODY0NzY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "Nvidia 자동차 책임자도 내부 자원 경쟁? 사용자가 겪는 5가지 변화 본문 보조 이미지 — Photo by Victor on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Nvidia 자동차 책임자도 내부 자원 경쟁? 사용자가 겪는 5가지 변화. Keyword: Even Nvidia Nvidia. Concrete visual subject: technology innovation circuit abstract. Context: ## Nvidia 내부에서 벌어지는 컴퓨팅 자원 경쟁 2026년 7월 13일 기준, Nvidia의 자동차 부문 책임자 Xinzhou Wu가 직접 Nvidia 내부에서 컴퓨팅 자원 확보를 위해 경쟁하고 있다는 사실이 공개되었습니다. Nvidia는 AI 붐으로 세계에서 가장 가치 있는 기업 중 하나로 꼽히며, 자사의 GPU에 대한 수요가 폭발적으로 증가하고 있습니다. ## 배경: Nvidia와 자동차, 그리고 AI - **Nvidia**는 그래픽 카드와 AI 연산 플랫폼 분야에서 세계적인 기업입니다. - **Xinzhou Wu**는 Nvidia의 자동차 사업 총괄 책임자로, EV(전기차), AI 기반 자율주행, Hyperion 플랫폼 개발을 주도하고 있습니다. - AI 산업 성장으로 Nvidia의 GPU 및 컴퓨팅 리소스가 자동차, 클라우드, 데이터센터 등 다양한 분야에서 동시에 요구되고 있습니다. ## 실제 사용자가 겪을 변화 체크리스트 | 기준 | 구체 내용(출처: The Verge, 2026-07-13) | |--------------|------------------------------------------------------| | 적용 대상 | Nvidia 기반 자동차 플랫폼 도입 기업, 개발팀, 엔드 유저 | | 경쟁 자원 | GPU, AI 연산 서버, Hyperion 시스템 | | 변화 시점 | 원문 공개일 기준(2026. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: Nvidia 자동차 책임자도 내부 자원 경쟁? 사용자가 겪는 5가지 변화. Keyword: Even Nvidia Nvidia. Concrete visual subject: technology innovation circuit abstract. Article context: ## Nvidia 내부에서 벌어지는 컴퓨팅 자원 경쟁 2026년 7월 13일 기준, Nvidia의 자동차 부문 책임자 Xinzhou Wu가 직접 Nvidia 내부에서 컴퓨팅 자원 확보를 위해 경쟁하고 있다는 사실이 공개되었습니다. Nvidia는 AI 붐으로 세계에서 가장 가치 있는 기업 중 하나로 꼽히며, 자사의 GPU에 대한 수요가 폭발적으로 증가하고 있습니다. ## 배경: Nvidia와 자동차, 그리고 AI - **Nvidia**는 그래픽 카드와 AI 연산 플랫폼 분야에서 세계적인 기업입니다. - **Xinzhou Wu**는 Nvidia의 자동차 사업 총괄 책임자로, EV(전기차), AI 기반 자율주행, Hyperion 플랫폼 개발을 주도하고 있습니다. - AI 산업 성장으로 Nvidia의 GPU 및 컴퓨팅 리소스가 자동차, 클라우드, 데이터센터 등 다양한 분야에서 동시에 요구되고 있습니다. ## 실제 사용자가 겪을 변화 체크리스트 | 기준 | 구체 내용(출처: The Verge, 2026-07-13) | |--------------|------------------------------------------------------| | 적용 대상 | Nvidia 기반 자동차 플랫폼 도입 기업, 개발팀, 엔드 유저 | | 경쟁 자원 | GPU, AI 연산 서버, Hyperion 시스템 | | 변화 시점 | 원문 공개일 기준(2026-07-13), 공식 발표 및 릴리즈 노트 참조 | | 주요 영향 | 컴퓨팅 자원 배분 지연, 신제품·신기능 출시 일정 변동, 서비스 안정성 변화 | | 확인 방법 | 공식 발표, 상태 페이지, 후속 보도, 가격표, 제품별 지원 정책 | ## 사용자가 체감할 5가지 실제 변화 1. **신규 기능 출시 지연 가능성** 자동차, 자율주행 등 AI 기능 도입 시. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-13T15:15:03.234745",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/even-nvidia-nvidia-fd4666fa.md",
+      "message": "draft saved"
+    }
+  ]
+}
