@@ -1,0 +1,20 @@
+{
+  "run_id": "20260713-195131-6e33a68d",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "states-paramount-53ec859e",
+      "title": "1100억 달러 합병, 영화값 오를까? States Paramount 논란",
+      "keyword": "States Paramount",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 1100억 달러 합병, 영화값 오를까? States Paramount 논란. Keyword: States Paramount. Concrete visual subject: technology innovation circuit abstract. Context: ## States Paramount, 합병 논란의 핵심 2026년 7월 13일 기준, Paramount와 Warner Bros Discovery의 1100억 달러 합병을 미국 12개 주 법무장관이 막으려 하고 있습니다. 이들은 이번 합병이 영화 가격 인상과 케이블 TV 배급사에 불리하게 작용할 수 있다고 경고합니다. 합병 반대에 나선 주는 다음과 같습니다: - 캘리포니아 - 애리조나 - 콜로라도 - 코네티컷 - 매사추세츠 - 미네소타 - 네바다 - 뉴저지 - 뉴욕 - 오리건 - 워싱턴 - 워싱턴 D.C. ## 왜 문제가 되는가? States Paramount는 미국의 주요 미디어 기업으로, Warner Bros Discovery와 합병 시 시장 지배력이 크게 커집니다. ### 주요 쟁점 - **합병 금액**: 1100억 달러(USD) - **영화 가격**: 소비자 가격 인상 우려 - **케이블 TV**: 배급사 경쟁 약화 가능성 - **소비자 선택권**: 콘텐츠 독점화로 선택권 감소 위험 - **법적 대응**: 주 법무장관 집단 소송 추진 ## 체크리스트: 합병 관련 주요 기준 | 항목 | 구체 내용 | | ---------------- | -------------------------------------------------------------------------- | | 합병 금액 | 1100억 달러 | | 대상 기업 | P. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330300479-02550a1a3c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzOTcyNTMzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
