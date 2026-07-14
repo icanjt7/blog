@@ -1,0 +1,72 @@
+{
+  "run_id": "20260714-141529-8d78c0f4",
+  "topics": [
+    {
+      "keyword": "Sam Altman",
+      "title_hint": "Sam Altman didn’t need another lawsuit",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Sam Altman didn’t need another lawsuit",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/965294/openai-apple-trade-secrets-lawsuit-sam-altman-ipo",
+          "published_at": "2026-07-14T14:01:07",
+          "summary": "OpenAI has spent the better part of the year involved in lawsuit after lawsuit, including one from the world's richest man. But last Friday, the company was hit with one of the highest-profile legal actions yet - from Apple. OpenAI's expensive hardware bet is what's on the line. Apple's lawsuit against OpenAI, filed in Northern [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Sam Altman",
+        "title_hint": "Sam Altman didn’t need another lawsuit",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Sam Altman didn’t need another lawsuit",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/965294/openai-apple-trade-secrets-lawsuit-sam-altman-ipo",
+            "published_at": "2026-07-14T14:01:07",
+            "summary": "OpenAI has spent the better part of the year involved in lawsuit after lawsuit, including one from the world's richest man. But last Friday, the company was hit with one of the highest-profile legal actions yet - from Apple. OpenAI's expensive hardware bet is what's on the line. Apple's lawsuit against OpenAI, filed in Northern [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Sam Altman didn't need another lawsuit, 애플 사용자 변화",
+      "slug": "sam-altman-d9ec88c7",
+      "excerpt": "Sam Altman didn't need another lawsuit 소식을 WWDC 업데이트, 지원 기기, 실제 사용 변화 중심으로 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\nSam Altman didn’t need another lawsuit 소식입니다. OpenAI has spent the better part of the year involved in lawsuit after lawsuit, including one from the world's richest man. But last Friday, the company was hit with one of the highest-profile legal actions yet - from Apple. OpenAI's expensive hardware bet is what's on the line....\n\n## 먼저 알아둘 배경\n\nWWDC는 애플이 iOS, iPadOS, macOS, watchOS, visionOS 같은 운영체제 변화를 개발자와 사용자에게 공개하는 행사입니다. Sam Altman didn't need another lawsuit는 새 기능 자체뿐 아니라 어떤 기기가 업데이트 대상에서 빠지는지까지 함께 봐야 합니다.\n\n## 왜 기술 이슈인가\n\n애플 운영체제 업데이트는 앱 호환성, 보안 패치, 배터리 체감, 건강·피트니스 기능에 직접 영향을 줍니다. Sam Altman didn't need another lawsuit를 볼 때는 신기능 목록보다 내 기기가 지원되는지, Siri AI 같은 기능이 지역·언어 제한을 받는지 확인하는 것이 먼저입니다.\n\n## 확인할 기준\n\n| 항목 | 구체 내용 |\n| --- | --- |\n| 직접 대상 | 아이폰·아이패드·애플워치 사용자, iOS 앱 개발자, 애플 생태계 구매 예정자 |\n| 기술 맥락 | 운영체제 업데이트, 지원 기기 변경, Siri AI, 앱 호환성, 보안 패치 |\n| 사용자 영향 | 업데이트 가능 여부, 새 기능 사용 가능성, 오래된 기기 교체 판단에 영향 |\n| 다음 확인 | 공식 지원 기기 목록, 베타 릴리스 노트, 가을 정식 배포 일정, 지역별 AI 기능 제공 여부 |\n\n## 독자가 이해해야 할 포인트\n\n1. Sam Altman didn't need another lawsuit에서 가장 먼저 볼 것은 새 기능보다 내 기기가 업데이트 대상인지입니다.\n2. Siri AI 같은 기능은 발표됐더라도 언어, 지역, 기기 칩셋 조건에 따라 체감 시점이 달라질 수 있습니다.\n3. 지원 종료 기기는 당장 못 쓰게 되는 것이 아니라 향후 보안 패치와 앱 호환성에서 점점 불리해집니다.\n4. 원문 요약만으로 부족하면 공식 보도자료, 후속 공지, 실제 적용 사례까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [Sam Altman didn’t need another lawsuit](https://www.theverge.com/ai-artificial-intelligence/965294/openai-apple-trade-secrets-lawsuit-sam-altman-ipo)\n",
+      "tags": [
+        "기술",
+        "Sam",
+        "Altman"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0MDM4NzE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Sam Altman didn't need another lawsuit, 애플 사용자 변화 — Photo by Adi Goldstein on Unsplash",
+      "inline_image_path": "https://images.pexels.com/photos/8108728/pexels-photo-8108728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "inline_image_alt": "Sam Altman didn't need another lawsuit, 애플 사용자 변화 본문 보조 이미지 — Photo by Mikhail Nilov on Pexels",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Sam Altman didn't need another lawsuit, 애플 사용자 변화. Keyword: Sam Altman. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 Sam Altman didn’t need another lawsuit 소식입니다. OpenAI has spent the better part of the year involved in lawsuit after lawsuit, including one from the world's richest man. But last Friday, the company was hit with one of the highest-profile legal actions yet - from Apple. OpenAI's expensive hardware bet is what's on the line.... ## 먼저 알아둘 배경 WWDC는 애플이 iOS, iPadOS, macOS, watchOS, visionOS 같은 운영체제 변화를 개발자와 사용자에게 공개하는 행사입니다. Sam Altman didn't need another lawsuit는 새 기능 자체뿐 아니라 어떤 기기가 업데이트 대상에서 빠지는지까지 함께 봐야 합니다. ## 왜 기술 이슈인가 애플 운영체제 업데이트는 앱 호환성, 보안 패치, 배터리 체감, 건강·피트니스 기능에 직접 영향을 줍니다. Sam Altman didn't need another lawsuit를 볼 때는 신기능 목록보다 내 기기가 지원되는지, Siri AI 같은 기능이 지역·언어 제한을 받는지 확인하는 것이. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: Sam Altman didn't need another lawsuit, 애플 사용자 변화. Keyword: Sam Altman. Concrete visual subject: technology innovation circuit abstract. Article context: ## 무슨 소식인가 Sam Altman didn’t need another lawsuit 소식입니다. OpenAI has spent the better part of the year involved in lawsuit after lawsuit, including one from the world's richest man. But last Friday, the company was hit with one of the highest-profile legal actions yet - from Apple. OpenAI's expensive hardware bet is what's on the line.... ## 먼저 알아둘 배경 WWDC는 애플이 iOS, iPadOS, macOS, watchOS, visionOS 같은 운영체제 변화를 개발자와 사용자에게 공개하는 행사입니다. Sam Altman didn't need another lawsuit는 새 기능 자체뿐 아니라 어떤 기기가 업데이트 대상에서 빠지는지까지 함께 봐야 합니다. ## 왜 기술 이슈인가 애플 운영체제 업데이트는 앱 호환성, 보안 패치, 배터리 체감, 건강·피트니스 기능에 직접 영향을 줍니다. Sam Altman didn't need another lawsuit를 볼 때는 신기능 목록보다 내 기기가 지원되는지, Siri AI 같은 기능이 지역·언어 제한을 받는지 확인하는 것이 먼저입니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | 아이폰·아이패드·애플워치 사용자, iOS 앱 개발자, 애플 생태계 구매 예정자 | | 기술 맥락 | 운영체제 업데이트, 지원 기기 변경, Siri AI, 앱 호환성, 보안 패치 | | 사용자 영향 | 업데이트 가능 여부, 새 기능 사용 가능성, 오래된 기기. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-14T14:17:57.906994",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 55.0"
+    }
+  ]
+}
