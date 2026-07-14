@@ -1,0 +1,73 @@
+{
+  "run_id": "20260714-194508-4829897a",
+  "topics": [
+    {
+      "keyword": "SpaceXAI 8217 Grok 8217",
+      "title_hint": "SpaceXAI&#8217;s Grok programming tool was uploading its users&#8217; entire codebase to cloud storage",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "SpaceXAI&#8217;s Grok programming tool was uploading its users&#8217; entire codebase to cloud storage",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload",
+          "published_at": "2026-07-14T19:25:00",
+          "summary": "SpaceXAI's Grok Build AI coding tool was spotted uploading users' entire codebases to Google Cloud before it was reported, and the company turned it off. The Register reports that Cereblab published findings on Monday showing how the Grok Build CLI was packaging and uploading entire code repositories, \"including files it was told not to open [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "SpaceXAI 8217 Grok 8217",
+        "title_hint": "SpaceXAI&#8217;s Grok programming tool was uploading its users&#8217; entire codebase to cloud storage",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "SpaceXAI&#8217;s Grok programming tool was uploading its users&#8217; entire codebase to cloud storage",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload",
+            "published_at": "2026-07-14T19:25:00",
+            "summary": "SpaceXAI's Grok Build AI coding tool was spotted uploading users' entire codebases to Google Cloud before it was reported, and the company turned it off. The Register reports that Cereblab published findings on Monday showing how the Grok Build CLI was packaging and uploading entire code repositories, \"including files it was told not to open [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "SpaceXAI Grok, 전체 코드 저장 이슈…클라우드 비용 누구 책임?",
+      "slug": "spacexai-8217-grok-8217-4bb4e376",
+      "excerpt": "SpaceXAI의 Grok 빌드 툴이 사용자 코드를 전체 업로드한 사실이 공개됐습니다. Google Cloud 계약, 인프라 비용, 사용자 영향 등 핵심 쟁점을 정리합니다.",
+      "body_markdown": "## SpaceXAI Grok, 전체 코드 업로드 논란\n\n2026년 7월 14일 공개된 보도에 따르면, SpaceXAI의 AI 코딩 툴 ‘Grok Build’가 사용자 전체 코드베이스를 Google Cloud에 업로드한 사실이 확인됐습니다. 이 문제는 Cereblab이 Grok Build CLI의 동작을 분석해 월요일에 발표하면서 드러났고, 이후 SpaceXAI 측은 해당 기능을 중단했습니다.\n\n## 핵심 이슈: 클라우드 비용과 인프라 의존성\n\nAI 앱이 인기를 얻을수록  \n- 모델 호출  \n- 데이터 저장  \n- 빌드·배포  \n- 보안 로그  \n등 인프라 전반에 걸친 클라우드 비용이 급격히 늘어납니다. 특히 SpaceXAI Grok처럼 대규모 Google Cloud 계약을 맺은 경우, 제품의 성공이 곧 인프라 비용 부담으로 이어질 수 있습니다.\n\n## 왜 중요한가?  \nAI 스타트업에겐  \n- 기능 출시 속도  \n- 클라우드 비용 관리  \n- 장기 벤더 의존성  \n이 모두 사업의 핵심 지표입니다. 사용량이 5배로 늘어나는 것은 성장의 신호일 수 있지만, 동시에 단위 경제성과 비용 구조를 꼼꼼히 점검할 필요가 있습니다.\n\n## 체크리스트: 이번 사안의 핵심 기준\n\n| 구분          | 내용                                                                 |\n|---------------|-------------------------------------------------------------------|\n| 문제 발생일    | 2026-07-14(원문 공개일 기준)                                         |\n| 영향 대상      | Grok Build 사용자, 스타트업 투자자, 개발팀                            |\n| 관련 기관      | SpaceXAI, Google Cloud, Cereblab                                    |\n| 주요 경로      | Grok Build CLI를 통한 전체 코드베이스 Google Cloud 업로드           |\n| 사용자 영향    | 서비스 속도 저하, 요금제 변화, 데이터 보안 우려, 장애 대응 이슈 가능   |\n| 확인 포인트    | 계약 기간, 사용량 변화, Google Cloud 의존도, 가격 정책, 사용자 증가 수치 |\n\n## 알아둬야 할 점\n\n- Grok의 전체 코드 업로드는 사용자 보안·비용 문제와 직결됩니다.\n- 장기 클라우드 계약은 안정성을 주지만, 특정 벤더 의존 위험이 커집니다.\n- 공식 보도자료와 후속 공지, 실제 사례까지 확인하는 것이 중요합니다.\n\n## 참고 출처\n\n- [SpaceXAI’s Grok programming tool was uploading its users’ entire codebase to cloud storage (2026-07-14, The Verge)](https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload)",
+      "tags": [
+        "기술",
+        "SpaceXAI",
+        "8217",
+        "Grok"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0MDU4NTg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "SpaceXAI Grok, 전체 코드 저장 이슈…클라우드 비용 누구 책임? — Photo by Ecliptic Graphic on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0MDU4NTg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "SpaceXAI Grok, 전체 코드 저장 이슈…클라우드 비용 누구 책임? 본문 보조 이미지 — Photo by Growtika on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: SpaceXAI Grok, 전체 코드 저장 이슈…클라우드 비용 누구 책임?. Keyword: SpaceXAI 8217 Grok 8217. Concrete visual subject: artificial intelligence neural network. Context: ## SpaceXAI Grok, 전체 코드 업로드 논란 2026년 7월 14일 공개된 보도에 따르면, SpaceXAI의 AI 코딩 툴 ‘Grok Build’가 사용자 전체 코드베이스를 Google Cloud에 업로드한 사실이 확인됐습니다. 이 문제는 Cereblab이 Grok Build CLI의 동작을 분석해 월요일에 발표하면서 드러났고, 이후 SpaceXAI 측은 해당 기능을 중단했습니다. ## 핵심 이슈: 클라우드 비용과 인프라 의존성 AI 앱이 인기를 얻을수록 - 모델 호출 - 데이터 저장 - 빌드·배포 - 보안 로그 등 인프라 전반에 걸친 클라우드 비용이 급격히 늘어납니다. 특히 SpaceXAI Grok처럼 대규모 Google Cloud 계약을 맺은 경우, 제품의 성공이 곧 인프라 비용 부담으로 이어질 수 있습니다. ## 왜 중요한가? AI 스타트업에겐 - 기능 출시 속도 - 클라우드 비용 관리 - 장기 벤더 의존성 이 모두 사업의 핵심 지표입니다. 사용량이 5배로 늘어나는 것은 성장의 신호일 수 있지만, 동시에 단위 경제성과 비용 구조를 꼼꼼히 점검할 필요가 있습니다. ## 체크리스트: 이번 사안의 핵심 기준 | 구분 | 내용 | |---------------|-------------------------------------------------------------------| | 문제 발생일 | 2026-07-14(원문. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: SpaceXAI Grok, 전체 코드 저장 이슈…클라우드 비용 누구 책임?. Keyword: SpaceXAI 8217 Grok 8217. Concrete visual subject: artificial intelligence neural network. Article context: ## SpaceXAI Grok, 전체 코드 업로드 논란 2026년 7월 14일 공개된 보도에 따르면, SpaceXAI의 AI 코딩 툴 ‘Grok Build’가 사용자 전체 코드베이스를 Google Cloud에 업로드한 사실이 확인됐습니다. 이 문제는 Cereblab이 Grok Build CLI의 동작을 분석해 월요일에 발표하면서 드러났고, 이후 SpaceXAI 측은 해당 기능을 중단했습니다. ## 핵심 이슈: 클라우드 비용과 인프라 의존성 AI 앱이 인기를 얻을수록 - 모델 호출 - 데이터 저장 - 빌드·배포 - 보안 로그 등 인프라 전반에 걸친 클라우드 비용이 급격히 늘어납니다. 특히 SpaceXAI Grok처럼 대규모 Google Cloud 계약을 맺은 경우, 제품의 성공이 곧 인프라 비용 부담으로 이어질 수 있습니다. ## 왜 중요한가? AI 스타트업에겐 - 기능 출시 속도 - 클라우드 비용 관리 - 장기 벤더 의존성 이 모두 사업의 핵심 지표입니다. 사용량이 5배로 늘어나는 것은 성장의 신호일 수 있지만, 동시에 단위 경제성과 비용 구조를 꼼꼼히 점검할 필요가 있습니다. ## 체크리스트: 이번 사안의 핵심 기준 | 구분 | 내용 | |---------------|-------------------------------------------------------------------| | 문제 발생일 | 2026-07-14(원문 공개일 기준) | | 영향 대상 | Grok Build 사용자, 스타트업 투자자, 개발팀 | | 관련 기관 | SpaceXAI, Google Cloud, Cereblab | | 주요 경로 | Grok Build CLI를 통한 전체 코드베이스 Google Cloud 업로드 | | 사용자 영향 | 서비스 속도 저하, 요금제 변화, 데이터 보안 우려, 장애 대. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-14T19:49:28.065412",
+      "quality_score": 88.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 88.0"
+    }
+  ]
+}

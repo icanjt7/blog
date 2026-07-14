@@ -1,0 +1,21 @@
+{
+  "run_id": "20260714-194508-4829897a",
+  "average_quality": 88.0,
+  "drafts": [
+    {
+      "slug": "spacexai-8217-grok-8217-4bb4e376",
+      "title": "SpaceXAI Grok, 전체 코드 저장 이슈…클라우드 비용 누구 책임?",
+      "keyword": "SpaceXAI 8217 Grok 8217",
+      "category": "기술",
+      "quality_score": 88.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: SpaceXAI Grok, 전체 코드 저장 이슈…클라우드 비용 누구 책임?. Keyword: SpaceXAI 8217 Grok 8217. Concrete visual subject: artificial intelligence neural network. Context: ## SpaceXAI Grok, 전체 코드 업로드 논란 2026년 7월 14일 공개된 보도에 따르면, SpaceXAI의 AI 코딩 툴 ‘Grok Build’가 사용자 전체 코드베이스를 Google Cloud에 업로드한 사실이 확인됐습니다. 이 문제는 Cereblab이 Grok Build CLI의 동작을 분석해 월요일에 발표하면서 드러났고, 이후 SpaceXAI 측은 해당 기능을 중단했습니다. ## 핵심 이슈: 클라우드 비용과 인프라 의존성 AI 앱이 인기를 얻을수록 - 모델 호출 - 데이터 저장 - 빌드·배포 - 보안 로그 등 인프라 전반에 걸친 클라우드 비용이 급격히 늘어납니다. 특히 SpaceXAI Grok처럼 대규모 Google Cloud 계약을 맺은 경우, 제품의 성공이 곧 인프라 비용 부담으로 이어질 수 있습니다. ## 왜 중요한가? AI 스타트업에겐 - 기능 출시 속도 - 클라우드 비용 관리 - 장기 벤더 의존성 이 모두 사업의 핵심 지표입니다. 사용량이 5배로 늘어나는 것은 성장의 신호일 수 있지만, 동시에 단위 경제성과 비용 구조를 꼼꼼히 점검할 필요가 있습니다. ## 체크리스트: 이번 사안의 핵심 기준 | 구분 | 내용 | |---------------|-------------------------------------------------------------------| | 문제 발생일 | 2026-07-14(원문. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0MDU4NTg2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
