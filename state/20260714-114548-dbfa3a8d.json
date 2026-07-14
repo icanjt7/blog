@@ -1,0 +1,74 @@
+{
+  "run_id": "20260714-114548-dbfa3a8d",
+  "topics": [
+    {
+      "keyword": "Google Demis Hassabis AI",
+      "title_hint": "Google’s Demis Hassabis says it’s time for a global AI watchdog — led by the US",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Google’s Demis Hassabis says it’s time for a global AI watchdog — led by the US",
+          "url": "https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog",
+          "published_at": "2026-07-14T11:43:29",
+          "summary": "Demis Hassabis thinks the world needs an AI watchdog with the power to hit the brakes if frontier models become too dangerous. Writing in a blog post, the Google DeepMind CEO and cofounder said the US should lead the initiative, arguing that the country is the best placed to set global standards \"given its economic [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Google Demis Hassabis AI",
+        "title_hint": "Google’s Demis Hassabis says it’s time for a global AI watchdog — led by the US",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Google’s Demis Hassabis says it’s time for a global AI watchdog — led by the US",
+            "url": "https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog",
+            "published_at": "2026-07-14T11:43:29",
+            "summary": "Demis Hassabis thinks the world needs an AI watchdog with the power to hit the brakes if frontier models become too dangerous. Writing in a blog post, the Google DeepMind CEO and cofounder said the US should lead the initiative, arguing that the country is the best placed to set global standards \"given its economic [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "구글 CEO가 제안한 ‘글로벌 AI 감시기구’, 사용자에게 어떤 변화가 올까?",
+      "slug": "google-demis-hassabis-ai-eee8044f",
+      "excerpt": "2026년 7월 14일 기준, Google DeepMind CEO 데미스 하사비스가 미국 주도 글로벌 AI 감시기구 설립을 제안했습니다. 실제 이용자와 기업에 미칠 영향과 주요 쟁점을 정리합니다.",
+      "body_markdown": "## 데미스 하사비스, “미국이 주도하는 글로벌 AI 감시기구 필요”\n\n2026년 7월 14일, Google DeepMind의 CEO 데미스 하사비스(Demis Hassabis)가 공식 블로그를 통해 ‘글로벌 AI 감시기구(Global AI Watchdog)’의 필요성을 공개적으로 강조했습니다. 그는 AI가 더 강력해질수록 국제적인 감독 기구가 필요하며, 미국이 이 역할을 이끌 적임국이라고 주장했습니다.\n\n하사비스는 “AI 프런티어 모델이 위험 수준에 도달할 경우, 감시기구가 즉각적으로 개발을 중단시킬 수 있는 권한이 필요하다”고 밝혔습니다.  \nGoogle DeepMind는 알파고 등 혁신적 AI를 개발한 구글의 인공지능 연구 자회사로, 하사비스는 공동 창업자이자 CEO입니다.\n\n## 이번 논의의 핵심 쟁점은?\n\n- **감시기구 설립 주체**: 미국이 주도하는 글로벌 조직을 제안  \n- **역할과 권한**: 잠재적으로 위험한 AI 모델 개발 ‘일시 정지’ 권한 포함  \n- **국제 협력 필요성**: 미국뿐 아니라 각국과의 협업 강조  \n- **사용자·기업 영향**: 기술 개발 방향, 서비스 이용 환경, 규제 준수 방식 변화 가능성  \n\n## 실제 사용자에게 생길 변화\n\n| 구분       | 주요 내용                                                                 |\n|------------|--------------------------------------------------------------------------|\n| 적용 대상  | Google AI 서비스 사용자, 기업용 AI 도입을 검토 중인 기업 · 기관              |\n| 영향 시점  | 감시기구 설립 및 규제안 도입 후 순차적 적용 예상                           |\n| 예상 변화  | 서비스 기능 제한, 새로운 인증·점검 절차 도입, 일부 AI 기능 일시 중단 가능성   |\n| 관련 기관  | Google DeepMind, 미국 정부, 국제 규제 협의체                              |\n| 확인 방법  | 공식 블로그, 구글 뉴스룸, 미국 정부 발표, 국제 기술 협의체 보도 자료 등     |\n\n## Google Demis Hassabis AI에 대한 추가 설명\n\n- **Demis Hassabis**: 인공지능 분야의 세계적 전문가. Google DeepMind 창업자이자 현재 CEO.\n- **Google DeepMind**: 구글 산하의 AI 연구 조직. 자율 학습형 AI, 의료, 게임 등 다양한 분야에서 연구 성과를 내고 있음.\n- **AI 감시기구 논의**: AI의 잠재적 위험성을 억제하고, 기술 발전의 투명성과 안전성을 확보하기 위한 국제적 논의.\n\n## 참고 출처\n\n- [Google’s Demis Hassabis says it’s time for a global AI watchdog — led by the US (2026-07-14, The Verge)](https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog)\n\n---\n\n**요약**:  \nGoogle Demis Hassabis AI 관련, 미국이 주도하는 글로벌 AI 감시기구 설립 논의가 본격화되고 있습니다. 실제 서비스 이용자와 기업에게는 기능 제한, 규제 대응 등 실질적 변화가 예고됩니다. 공식 발표와 각 기관의 후속 지침을 주기적으로 확인하는 것이 중요합니다.",
+      "tags": [
+        "기술",
+        "Google",
+        "Demis",
+        "Hassabis",
+        "AI"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzZWFyY2glMjBjbG91ZCUyMHRlY2hub2xvZ3klMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0MDI5ODM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "구글 CEO가 제안한 ‘글로벌 AI 감시기구’, 사용자에게 어떤 변화가 올까? — Photo by Steve A Johnson on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1753513291124-4f615bf1f6de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxzZWFyY2glMjBjbG91ZCUyMHRlY2hub2xvZ3klMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0MDI5ODM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "구글 CEO가 제안한 ‘글로벌 AI 감시기구’, 사용자에게 어떤 변화가 올까? 본문 보조 이미지 — Photo by Sumaid pal Singh Bakshi on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 구글 CEO가 제안한 ‘글로벌 AI 감시기구’, 사용자에게 어떤 변화가 올까?. Keyword: Google Demis Hassabis AI. Concrete visual subject: search cloud technology artificial intelligence neural network. Context: ## 데미스 하사비스, “미국이 주도하는 글로벌 AI 감시기구 필요” 2026년 7월 14일, Google DeepMind의 CEO 데미스 하사비스(Demis Hassabis)가 공식 블로그를 통해 ‘글로벌 AI 감시기구(Global AI Watchdog)’의 필요성을 공개적으로 강조했습니다. 그는 AI가 더 강력해질수록 국제적인 감독 기구가 필요하며, 미국이 이 역할을 이끌 적임국이라고 주장했습니다. 하사비스는 “AI 프런티어 모델이 위험 수준에 도달할 경우, 감시기구가 즉각적으로 개발을 중단시킬 수 있는 권한이 필요하다”고 밝혔습니다. Google DeepMind는 알파고 등 혁신적 AI를 개발한 구글의 인공지능 연구 자회사로, 하사비스는 공동 창업자이자 CEO입니다. ## 이번 논의의 핵심 쟁점은? - **감시기구 설립 주체**: 미국이 주도하는 글로벌 조직을 제안 - **역할과 권한**: 잠재적으로 위험한 AI 모델 개발 ‘일시 정지’ 권한 포함 - **국제 협력 필요성**: 미국뿐 아니라 각국과의 협업 강조 - **사용자·기업 영향**: 기술 개발 방향, 서비스 이용 환경, 규제 준수 방식 변화 가능성 ## 실제 사용자에게 생길 변화 | 구분 | 주요 내용 | |------------|--------------------------------------------------------------------------| | 적. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 구글 CEO가 제안한 ‘글로벌 AI 감시기구’, 사용자에게 어떤 변화가 올까?. Keyword: Google Demis Hassabis AI. Concrete visual subject: search cloud technology artificial intelligence neural network. Article context: ## 데미스 하사비스, “미국이 주도하는 글로벌 AI 감시기구 필요” 2026년 7월 14일, Google DeepMind의 CEO 데미스 하사비스(Demis Hassabis)가 공식 블로그를 통해 ‘글로벌 AI 감시기구(Global AI Watchdog)’의 필요성을 공개적으로 강조했습니다. 그는 AI가 더 강력해질수록 국제적인 감독 기구가 필요하며, 미국이 이 역할을 이끌 적임국이라고 주장했습니다. 하사비스는 “AI 프런티어 모델이 위험 수준에 도달할 경우, 감시기구가 즉각적으로 개발을 중단시킬 수 있는 권한이 필요하다”고 밝혔습니다. Google DeepMind는 알파고 등 혁신적 AI를 개발한 구글의 인공지능 연구 자회사로, 하사비스는 공동 창업자이자 CEO입니다. ## 이번 논의의 핵심 쟁점은? - **감시기구 설립 주체**: 미국이 주도하는 글로벌 조직을 제안 - **역할과 권한**: 잠재적으로 위험한 AI 모델 개발 ‘일시 정지’ 권한 포함 - **국제 협력 필요성**: 미국뿐 아니라 각국과의 협업 강조 - **사용자·기업 영향**: 기술 개발 방향, 서비스 이용 환경, 규제 준수 방식 변화 가능성 ## 실제 사용자에게 생길 변화 | 구분 | 주요 내용 | |------------|--------------------------------------------------------------------------| | 적용 대상 | Google AI 서비스 사용자, 기업용 AI 도입을 검토 중인 기업 · 기관 | | 영향 시점 | 감시기구 설립 및 규제안 도입 후 순차적 적용 예상 | | 예상 변화 | 서비스 기능 제한, 새로운 인증·점검 절차 도입, 일부 AI 기능 일시 중단 가능성 | | 관련 기관 | Google DeepMind, 미국 정부, 국제 규제 협의체 | |. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-14T11:50:15.287515",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/google-demis-hassabis-ai-eee8044f.md",
+      "message": "draft saved"
+    }
+  ]
+}

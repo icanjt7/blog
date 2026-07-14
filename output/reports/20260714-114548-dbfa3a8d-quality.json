@@ -1,0 +1,21 @@
+{
+  "run_id": "20260714-114548-dbfa3a8d",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "google-demis-hassabis-ai-eee8044f",
+      "title": "구글 CEO가 제안한 ‘글로벌 AI 감시기구’, 사용자에게 어떤 변화가 올까?",
+      "keyword": "Google Demis Hassabis AI",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 구글 CEO가 제안한 ‘글로벌 AI 감시기구’, 사용자에게 어떤 변화가 올까?. Keyword: Google Demis Hassabis AI. Concrete visual subject: search cloud technology artificial intelligence neural network. Context: ## 데미스 하사비스, “미국이 주도하는 글로벌 AI 감시기구 필요” 2026년 7월 14일, Google DeepMind의 CEO 데미스 하사비스(Demis Hassabis)가 공식 블로그를 통해 ‘글로벌 AI 감시기구(Global AI Watchdog)’의 필요성을 공개적으로 강조했습니다. 그는 AI가 더 강력해질수록 국제적인 감독 기구가 필요하며, 미국이 이 역할을 이끌 적임국이라고 주장했습니다. 하사비스는 “AI 프런티어 모델이 위험 수준에 도달할 경우, 감시기구가 즉각적으로 개발을 중단시킬 수 있는 권한이 필요하다”고 밝혔습니다. Google DeepMind는 알파고 등 혁신적 AI를 개발한 구글의 인공지능 연구 자회사로, 하사비스는 공동 창업자이자 CEO입니다. ## 이번 논의의 핵심 쟁점은? - **감시기구 설립 주체**: 미국이 주도하는 글로벌 조직을 제안 - **역할과 권한**: 잠재적으로 위험한 AI 모델 개발 ‘일시 정지’ 권한 포함 - **국제 협력 필요성**: 미국뿐 아니라 각국과의 협업 강조 - **사용자·기업 영향**: 기술 개발 방향, 서비스 이용 환경, 규제 준수 방식 변화 가능성 ## 실제 사용자에게 생길 변화 | 구분 | 주요 내용 | |------------|--------------------------------------------------------------------------| | 적. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzZWFyY2glMjBjbG91ZCUyMHRlY2hub2xvZ3klMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0MDI5ODM1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
