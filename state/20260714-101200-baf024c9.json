@@ -1,0 +1,72 @@
+{
+  "run_id": "20260714-101200-baf024c9",
+  "topics": [
+    {
+      "keyword": "New York",
+      "title_hint": "New York becomes the first state to enact a data center moratorium",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "New York becomes the first state to enact a data center moratorium",
+          "url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
+          "published_at": "2026-07-14T09:00:00",
+          "summary": "New hyperscale data centers can't set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation's first statewide moratorium. But a bill passed by the state legislature that could restrict even more developments still awaits her signature. The order blocks new environmental permits for data [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "New York",
+        "title_hint": "New York becomes the first state to enact a data center moratorium",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "New York becomes the first state to enact a data center moratorium",
+            "url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
+            "published_at": "2026-07-14T09:00:00",
+            "summary": "New hyperscale data centers can't set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation's first statewide moratorium. But a bill passed by the state legislature that could restrict even more developments still awaits her signature. The order blocks new environmental permits for data [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "뉴욕, 미국 첫 데이터센터 신규 중단…1년간 어떤 변화?",
+      "slug": "new-york-532e6fb6",
+      "excerpt": "2026년 7월 14일, 뉴욕주가 미국 최초로 대형 데이터센터 신규 설립을 최대 1년간 중단하는 법안을 시행합니다. 개인정보 보호와 데이터 접근 통제 등 주요 변화를 표로 정리했습니다.",
+      "body_markdown": "## 뉴욕, 데이터센터 신규 설립 1년간 중단\n\n2026년 7월 14일, 뉴욕주가 미국 최초로 대형 데이터센터 신규 설립을 최대 1년간 일시 중단하는 모라토리엄(moratorium)을 시행합니다.  \n이 조치는 Kathy Hochul 주지사가 전국 최초로 서명하면서 공식화됐습니다.  \n현재 추가로 데이터센터 개발을 더 엄격히 제한하는 법안도 주지사 서명을 대기 중입니다.\n\n### 왜 중요한가?\n\n- 대형 데이터센터는 클라우드, AI, 웨어러블 등 주요 서비스의 핵심 인프라입니다.\n- 데이터센터 설립 제한은 개인정보, 기업 데이터, 내부 운영 도구 접근권한 등 다양한 보안 이슈와 직접 연결됩니다.\n\n### 주요 변화와 영향\n\n| 항목         | 세부 내용                                                                                   |\n| ------------ | ----------------------------------------------------------------------------------------- |\n| 시행일       | 2026년 7월 14일                                                                           |\n| 적용 지역    | 미국 뉴욕주(State of New York)                                                             |\n| 중단 기간    | 최대 1년(법안에 명시)                                                                      |\n| 적용 대상    | 신규 하이퍼스케일(hyperscale) 데이터센터 설립                                              |\n| 발의·시행자  | 뉴욕주 의회(입법), Kathy Hochul 주지사(서명)                                               |\n| 예외 사항    | 기존 데이터센터 운영은 계속, 신규 대형 데이터센터만 일시 제한                              |\n| 잠재적 영향  | 데이터센터 관련 스타트업, 보안 담당자, 개인정보 처리 기업 등                                |\n| 추가 조치    | 추가 제한 법안이 통과될 경우 범위 확대 가능                                                 |\n| 참고 출처    | [The Verge, 2026-07-14](https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium) |\n\n### 체크포인트\n\n- 신규 데이터센터 설립이 제한되는 동안, 서비스 확장·이전 계획이 있는 기업은 일정 조정이 필요합니다.\n- 개인정보 보관, 내부 도구 접근 권한, 침해사고 대응 체계 등에서 더욱 엄격한 기준이 적용될 수 있습니다.\n- 이용자는 서비스사로부터 데이터 보관 및 활용 방식, 보안 강화 관련 안내를 꼭 확인해야 합니다.\n- 현재 시행 중인 조치 외 추가 법안으로 범위·기간이 연장될 수 있으니 공식 공지사항을 꾸준히 살펴야 합니다.\n\n---\n\n#### 참고  \n- [New York becomes the first state to enact a data center moratorium (The Verge, 2026-07-14)](https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium)\n\n뉴욕주의 이번 결정은 미국 내 데이터 인프라 정책 변화의 신호탄이 될 수 있습니다.  \n개인정보 보호와 기술 인프라 확장 간 균형에 관심 있다면 계속 주목해야 할 이슈입니다.",
+      "tags": [
+        "기술",
+        "New",
+        "York"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1782330389129-fd3a236e00e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzOTU1NzE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "뉴욕, 미국 첫 데이터센터 신규 중단…1년간 어떤 변화? — Photo by Brecht Corbeel on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1782088385104-039b7c454b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzOTU1NzE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "뉴욕, 미국 첫 데이터센터 신규 중단…1년간 어떤 변화? 본문 보조 이미지 — Photo by Brecht Corbeel on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 뉴욕, 미국 첫 데이터센터 신규 중단…1년간 어떤 변화?. Keyword: New York. Concrete visual subject: technology innovation circuit abstract. Context: ## 뉴욕, 데이터센터 신규 설립 1년간 중단 2026년 7월 14일, 뉴욕주가 미국 최초로 대형 데이터센터 신규 설립을 최대 1년간 일시 중단하는 모라토리엄(moratorium)을 시행합니다. 이 조치는 Kathy Hochul 주지사가 전국 최초로 서명하면서 공식화됐습니다. 현재 추가로 데이터센터 개발을 더 엄격히 제한하는 법안도 주지사 서명을 대기 중입니다. ### 왜 중요한가? - 대형 데이터센터는 클라우드, AI, 웨어러블 등 주요 서비스의 핵심 인프라입니다. - 데이터센터 설립 제한은 개인정보, 기업 데이터, 내부 운영 도구 접근권한 등 다양한 보안 이슈와 직접 연결됩니다. ### 주요 변화와 영향 | 항목 | 세부 내용 | | ------------ | ----------------------------------------------------------------------------------------- | | 시행일 | 2026년 7월 14일 | | 적용 지역 | 미국 뉴욕주(State of New York) | | 중단 기간 | 최대 1년(법안에 명시) | | 적용 대상 | 신규 하이퍼스케일(hyperscale) 데이터센터 설립 | | 발의·시행자 | 뉴욕주 의회(입법), Kathy Hochul 주지사(서명) | | 예외 사항 | 기존 데이터센터 운영은 계속, 신규 대형 데이터센터만 일시 제한 | | 잠재적 영향. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 뉴욕, 미국 첫 데이터센터 신규 중단…1년간 어떤 변화?. Keyword: New York. Concrete visual subject: technology innovation circuit abstract. Article context: ## 뉴욕, 데이터센터 신규 설립 1년간 중단 2026년 7월 14일, 뉴욕주가 미국 최초로 대형 데이터센터 신규 설립을 최대 1년간 일시 중단하는 모라토리엄(moratorium)을 시행합니다. 이 조치는 Kathy Hochul 주지사가 전국 최초로 서명하면서 공식화됐습니다. 현재 추가로 데이터센터 개발을 더 엄격히 제한하는 법안도 주지사 서명을 대기 중입니다. ### 왜 중요한가? - 대형 데이터센터는 클라우드, AI, 웨어러블 등 주요 서비스의 핵심 인프라입니다. - 데이터센터 설립 제한은 개인정보, 기업 데이터, 내부 운영 도구 접근권한 등 다양한 보안 이슈와 직접 연결됩니다. ### 주요 변화와 영향 | 항목 | 세부 내용 | | ------------ | ----------------------------------------------------------------------------------------- | | 시행일 | 2026년 7월 14일 | | 적용 지역 | 미국 뉴욕주(State of New York) | | 중단 기간 | 최대 1년(법안에 명시) | | 적용 대상 | 신규 하이퍼스케일(hyperscale) 데이터센터 설립 | | 발의·시행자 | 뉴욕주 의회(입법), Kathy Hochul 주지사(서명) | | 예외 사항 | 기존 데이터센터 운영은 계속, 신규 대형 데이터센터만 일시 제한 | | 잠재적 영향 | 데이터센터 관련 스타트업, 보안 담당자, 개인정보 처리 기업 등 | | 추가 조치 | 추가 제한 법안이 통과될 경우 범위 확대 가능 | | 참고 출처 | [The Verge, 2026-07-14](https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium) | ### 체크포인트 . The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-14T10:16:06.062570",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/new-york-532e6fb6.md",
+      "message": "draft saved"
+    }
+  ]
+}
