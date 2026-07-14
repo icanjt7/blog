@@ -1,0 +1,21 @@
+{
+  "run_id": "20260714-173531-bcd9b55d",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "plex-down-19f5d6b6",
+      "title": "Plex 서버 장애, 오늘 전국적인 접속 불가 사태",
+      "keyword": "Plex down",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Plex 서버 장애, 오늘 전국적인 접속 불가 사태. Keyword: Plex down. Concrete visual subject: technology innovation circuit abstract. Context: ## Plex down, 무슨 일이 있었나? 2026년 7월 14일 기준, Plex 서비스에서 전국적으로 심각한 장애가 발생했습니다. Plex는 사용자가 직접 저장한 영화와 TV 프로그램을 스트리밍할 수 있게 해주는 대표적인 미디어 서버 플랫폼입니다. 오늘 다수의 이용자가 Plex 공식 포럼과 Reddit을 통해 접속 불가, 스트리밍 중단, 라이브러리 열람 오류 등 다양한 문제를 보고하고 있습니다. ## 장애 현황과 주요 이슈 - **서비스 상태**: Plex 공식 서버에 광범위한 접속 장애 발생 - **이용자 반응**: 수백 건 이상의 실시간 장애 제보가 Plex 커뮤니티와 Reddit에 올라옴 - **영향 범위**: Plex를 통해 집에서 미디어를 스트리밍하는 사용자 전반에 영향 - **주요 증상**: - 서버에 접속 시도 시 오류 메시지 표시 - 라이브러리 항목 로딩 실패 - 원격 접속 및 모바일 앱 기능 일부 제한 - **장애 발생 시각**: 2026년 7월 14일 오전(현지 기준), 이후 수 시간째 지속 ## Plex down, 사용자에게 미치는 영향 - 많은 이용자가 집에서 Plex로 영화, 드라마, 음악 등 다양한 미디어를 관리해왔으나, 서비스 장애로 인해 평소처럼 스트리밍이 불가능해졌습니다. - Plex Pass(유료 구독) 이용자 역시 동일한 장애를 겪고 있으며, 커뮤니티 내에서 환불, 보상 등 문의가 이어지고 있습니. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782088385104-039b7c454b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgzOTAwOTY4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
