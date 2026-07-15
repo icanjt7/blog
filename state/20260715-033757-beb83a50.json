@@ -1,0 +1,73 @@
+{
+  "run_id": "20260715-033757-beb83a50",
+  "topics": [
+    {
+      "keyword": "Google Epic Android",
+      "title_hint": "Google and Epic give up fighting — third-party Android app stores are coming next week",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Google and Epic give up fighting — third-party Android app stores are coming next week",
+          "url": "https://www.theverge.com/policy/965792/google-epic-withdraw-injunction-third-party-app-stores-coming-google-play",
+          "published_at": "2026-07-15T03:28:53",
+          "summary": "Epic Games and Google have just jointly withdrawn their attempt to retroactively settle the lawsuit that's changing how Android app stores work in the United States - and that means Google will be forced to carry rival app stores inside of its own. In fact, Google tells the court, it's ready to begin carrying third-party [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Google Epic Android",
+        "title_hint": "Google and Epic give up fighting — third-party Android app stores are coming next week",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Google and Epic give up fighting — third-party Android app stores are coming next week",
+            "url": "https://www.theverge.com/policy/965792/google-epic-withdraw-injunction-third-party-app-stores-coming-google-play",
+            "published_at": "2026-07-15T03:28:53",
+            "summary": "Epic Games and Google have just jointly withdrawn their attempt to retroactively settle the lawsuit that's changing how Android app stores work in the United States - and that means Google will be forced to carry rival app stores inside of its own. In fact, Google tells the court, it's ready to begin carrying third-party [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "구글 플레이에 경쟁 앱스토어 등장! 사용자가 바뀌는 5가지",
+      "slug": "google-epic-android-2a578b52",
+      "excerpt": "Epic과 Google의 소송 합의로, 미국 Android 사용자들은 다음 주부터 구글 플레이에서 다른 앱스토어를 직접 설치할 수 있게 됩니다. 이 변화가 실제로 어떤 영향을 미칠지 핵심 기준별로 정리했습니다.",
+      "body_markdown": "## 주요 변화 요약\n\n2026년 7월 15일, Epic Games와 Google이 미국에서 진행 중이던 Android 앱스토어 관련 소송을 공식적으로 합의했습니다. 이로 인해 미국 내 Android 기기 사용자들은 구글 플레이(Google Play)에서 경쟁 앱스토어를 설치할 수 있게 됩니다.  \n이는 기존 구글 독점 구조를 깨는 첫 사례이며, 앱 배포 방식과 수수료 정책, 개발자 선택권에 직접적인 변화가 예상됩니다.\n\n## Epic Games와 Google이란?\n\n- **Epic Games**: 대표작 '포트나이트'로 유명한 미국 게임 개발사.\n- **Google**: Android 운영체제와 구글 플레이 앱스토어를 운영하는 글로벌 IT 기업.\n\n## 사용자가 볼 변화 체크리스트\n\n| 체크포인트        | 구체 내용                                 |\n|------------------|------------------------------------------|\n| 적용 지역        | 미국 내 Android 사용자                    |\n| 시행 시점        | 2026년 7월 22일(원문 공개일 기준 다음 주) |\n| 핵심 변화        | 구글 플레이 내 경쟁 앱스토어 설치 가능    |\n| 공식 기관        | Epic Games, Google                       |\n| 절차             | 앱스토어 설치 시 구글 플레이를 통한 접근  |\n| 영향 대상        | 일반 사용자, 앱 개발자, 중소 퍼블리셔     |\n| 수수료 구조      | 구글 독점 수수료 체계에 변화 기대         |\n| 후속 안내        | 공식 발표, 구글 플레이 정책 업데이트      |\n\n## 실제 사용자에게 생기는 변화\n\n- 구글 플레이 외에 Epic 등 다양한 앱스토어를 직접 설치 가능\n- 앱스토어별 가격, 결제 방식, 앱 심사 기준 등 비교 선택 가능\n- 개발자들은 구글 외 앱스토어에 앱을 등록해 수수료 부담 완화 기대\n- 경쟁 앱스토어 등장으로 앱의 품질·서비스 다양성 증가 예상\n- 사용자 데이터 및 결제 방식이 앱스토어별로 달라질 수 있으니 주의 필요\n\n## 참고 출처\n\n- [Google and Epic give up fighting — third-party Android app stores are coming next week](https://www.theverge.com/policy/965792/google-epic-withdraw-injunction-third-party-app-stores-coming-google-play) (2026-07-15, The Verge)\n\n---\n\n이제 미국 내 Android 사용자들은 구글 플레이 내에서 경쟁 앱스토어를 자유롭게 설치할 수 있습니다. Epic Games와 Google의 합의가 가져올 실제 변화와, 사용자가 직접 확인해야 할 핵심 기준을 위 표에서 정리했습니다.",
+      "tags": [
+        "기술",
+        "Google",
+        "Epic",
+        "Android"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1477013743164-ffc3a5e556da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxzZWFyY2glMjBjbG91ZCUyMHRlY2hub2xvZ3klMjBtb2JpbGUlMjBhcHAlMjBzb2Z0d2FyZSUyMGludGVyZmFjZXxlbnwxfDB8fHwxNzg0MDg2ODAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "구글 플레이에 경쟁 앱스토어 등장! 사용자가 바뀌는 5가지 — Photo by Edho Pratama on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1649709918912-8f3ec0be2d3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxzZWFyY2glMjBjbG91ZCUyMHRlY2hub2xvZ3klMjBtb2JpbGUlMjBhcHAlMjBzb2Z0d2FyZSUyMGludGVyZmFjZXxlbnwxfDB8fHwxNzg0MDg2ODAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "구글 플레이에 경쟁 앱스토어 등장! 사용자가 바뀌는 5가지 본문 보조 이미지 — Photo by Terrillo Walls on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 구글 플레이에 경쟁 앱스토어 등장! 사용자가 바뀌는 5가지. Keyword: Google Epic Android. Concrete visual subject: search cloud technology mobile app software interface. Context: ## 주요 변화 요약 2026년 7월 15일, Epic Games와 Google이 미국에서 진행 중이던 Android 앱스토어 관련 소송을 공식적으로 합의했습니다. 이로 인해 미국 내 Android 기기 사용자들은 구글 플레이(Google Play)에서 경쟁 앱스토어를 설치할 수 있게 됩니다. 이는 기존 구글 독점 구조를 깨는 첫 사례이며, 앱 배포 방식과 수수료 정책, 개발자 선택권에 직접적인 변화가 예상됩니다. ## Epic Games와 Google이란? - **Epic Games**: 대표작 '포트나이트'로 유명한 미국 게임 개발사. - **Google**: Android 운영체제와 구글 플레이 앱스토어를 운영하는 글로벌 IT 기업. ## 사용자가 볼 변화 체크리스트 | 체크포인트 | 구체 내용 | |------------------|------------------------------------------| | 적용 지역 | 미국 내 Android 사용자 | | 시행 시점 | 2026년 7월 22일(원문 공개일 기준 다음 주) | | 핵심 변화 | 구글 플레이 내 경쟁 앱스토어 설치 가능 | | 공식 기관 | Epic Games, Google | | 절차 | 앱스토어 설치 시 구글 플레이를 통한 접근 | | 영향 대상 | 일반 사용자, 앱 개발자, 중소 퍼블리셔 | | 수수료 구조 | 구글 독점 수수료 체계에 변화 기대 | . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 구글 플레이에 경쟁 앱스토어 등장! 사용자가 바뀌는 5가지. Keyword: Google Epic Android. Concrete visual subject: search cloud technology mobile app software interface. Article context: ## 주요 변화 요약 2026년 7월 15일, Epic Games와 Google이 미국에서 진행 중이던 Android 앱스토어 관련 소송을 공식적으로 합의했습니다. 이로 인해 미국 내 Android 기기 사용자들은 구글 플레이(Google Play)에서 경쟁 앱스토어를 설치할 수 있게 됩니다. 이는 기존 구글 독점 구조를 깨는 첫 사례이며, 앱 배포 방식과 수수료 정책, 개발자 선택권에 직접적인 변화가 예상됩니다. ## Epic Games와 Google이란? - **Epic Games**: 대표작 '포트나이트'로 유명한 미국 게임 개발사. - **Google**: Android 운영체제와 구글 플레이 앱스토어를 운영하는 글로벌 IT 기업. ## 사용자가 볼 변화 체크리스트 | 체크포인트 | 구체 내용 | |------------------|------------------------------------------| | 적용 지역 | 미국 내 Android 사용자 | | 시행 시점 | 2026년 7월 22일(원문 공개일 기준 다음 주) | | 핵심 변화 | 구글 플레이 내 경쟁 앱스토어 설치 가능 | | 공식 기관 | Epic Games, Google | | 절차 | 앱스토어 설치 시 구글 플레이를 통한 접근 | | 영향 대상 | 일반 사용자, 앱 개발자, 중소 퍼블리셔 | | 수수료 구조 | 구글 독점 수수료 체계에 변화 기대 | | 후속 안내 | 공식 발표, 구글 플레이 정책 업데이트 | ## 실제 사용자에게 생기는 변화 - 구글 플레이 외에 Epic 등 다양한 앱스토어를 직접 설치 가능 - 앱스토어별 가격, 결제 방식, 앱 심사 기준 등 비교 선택 가능 - 개발자들은 구글 외 앱스토어에 앱을 등록해 수수료 부담 완화 기대 - 경쟁 앱스토어 등장으로 앱의 품질·서비스 다양성 증가 . The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-15T03:39:49.410626",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/google-epic-android-2a578b52.md",
+      "message": "draft saved"
+    }
+  ]
+}
