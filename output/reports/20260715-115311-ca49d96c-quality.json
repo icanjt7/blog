@@ -1,0 +1,20 @@
+{
+  "run_id": "20260715-115311-ca49d96c",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "samsung-new-foldable-display-9928071c",
+      "title": "접히는 자국 줄인 삼성 폴더블, 2026년 달라진 5가지",
+      "keyword": "Samsung new foldable display",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 접히는 자국 줄인 삼성 폴더블, 2026년 달라진 5가지. Keyword: Samsung new foldable display. Concrete visual subject: samsung device display modern. Context: ## 삼성 폴더블 신기술, 무엇이 달라졌나? 2026년 7월 15일 공식 발표 기준, 삼성은 새로운 접이식 스마트폰 디스플레이 기술 'Flex Titanium'을 공개했습니다. 이 기술은 기존보다 더 얇고, 내구성이 높으며, 접히는 자국(크리즈)과 손상에 강하도록 설계된 것이 특징입니다. ### Flex Titanium이란? - **Flex Titanium**: 삼성전자 Display 부문이 7세대 폴더블 경험을 바탕으로 개발한 신형 폴더블 디스플레이 소재. - **적용 제품**: 향후 출시될 갤럭시 폴더블 스마트폰에 순차 적용 예정. ## 사용자가 직접 느낄 변화 5가지 | 기준 | 구체 내용 | |----------------|-------------------------------------------------------------------| | 1. 접힘 자국 감소 | 화면 중앙 크리즈 현상(접힘 자국)이 기존보다 현저히 줄어듦 | | 2. 내구성 강화 | 일상 사용에서 긁힘, 충격, 구부림에 대한 내구력이 개선됨 | | 3. 두께 감소 | 폴더블 디바이스의 전체 두께가 얇아져 휴대성과 그립감이 향상됨 | | 4. 장기 사용 효과| 반복 접힘에도 손상이나 변형이 덜 발생함 | | 5. 적용 시기 및 대상| 공식 발표 기준, 신제품(2026년 하반기 갤럭시 폴더블 라인업)부터 순차 적용 | ## 기술적 배경과 실제 영향 - . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1662947995643-0007c2b5ebb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzYW1zdW5nJTIwZGV2aWNlJTIwZGlzcGxheSUyMG1vZGVybnxlbnwxfDB8fHwxNzg0MTE2NjY2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
