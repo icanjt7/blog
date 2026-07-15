@@ -1,0 +1,20 @@
+{
+  "run_id": "20260715-211627-f80d9404",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "roblox-shutting-down-its-57f69168",
+      "title": "Roblox, 2026년 7월부터 아바타 영상채팅 종료",
+      "keyword": "Roblox shutting down its",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Roblox, 2026년 7월부터 아바타 영상채팅 종료. Keyword: Roblox shutting down its. Concrete visual subject: technology innovation circuit abstract. Context: ## Roblox Connect 영상채팅 종료 소식 Roblox is shutting down its video chat service. 2026년 7월 15일 기준, Roblox는 2023년 도입한 영상채팅 서비스 Roblox Connect를 공식적으로 종료한다고 발표했습니다. Roblox Connect는 사용자가 자신의 아바타를 통해 실시간으로 영상채팅을 할 수 있도록 만든 기능입니다. 실제 움직임이 아바타에 반영되어, 친구들과 대화뿐 아니라 함께 게임 내에서 이동하며 소통할 수 있었습니다. ## 주요 서비스 특징 - **도입 시점:** 2023년 Roblox Connect 출시 - **기능:** 아바타를 통한 실시간 영상채팅, 움직임 반영 - **대상:** Roblox 플랫폼 이용자 - **종료일:** 2026년 7월 15일 공식 안내 기준 - **기관:** Roblox Corporation - **관련 절차:** 공식 공지에 따라 서비스 중단 ## 사용자에 미치는 영향 - 영상채팅 방식으로 아바타를 활용해 소통하던 기능이 사라짐 - 기존 커뮤니티 내 영상 기반 소통 방식 변화 - 게임 내 실시간 대화 기능은 기존 텍스트·음성 채팅으로 대체 가능 - 플랫폼 내 보안 및 개인정보 관리 정책 변화 가능성 ## 확인할 체크리스트 | 항목 | 구체 내용 | |----------------|--------------------------. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330389129-fd3a236e00e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0MTMwODg4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
