@@ -1,0 +1,20 @@
+{
+  "run_id": "20260715-174025-fa57c1ca",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "lucid-ev-169d4db8",
+      "title": "Lucid EV 파산설, 전기차 시장에 미치는 5가지 영향",
+      "keyword": "Lucid EV",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Lucid EV 파산설, 전기차 시장에 미치는 5가지 영향. Keyword: Lucid EV. Concrete visual subject: electric vehicle car clean energy. Context: ## Lucid EV 파산설, 어떤 일이 있었나? 2026년 7월 15일 기준, Lucid Motors는 파산 루머에 휩싸이며 주가가 크게 하락했습니다. The Verge 보도에 따르면 Lucid 측은 \"완전히 근거 없는 소문\"이라며 즉각 부인했고, 충분한 현금 흐름을 근거로 재정 안정성을 강조했습니다. ## Lucid Motors란? Lucid Motors는 미국의 전기차 제조사로, 고성능 럭셔리 EV 모델을 주력으로 생산하고 있습니다. 최근 전기차 시장의 주요 플레이어로 부상했으나 재정 및 공급망 이슈로 흔들린 바 있습니다. ## 파산설이 EV 산업에 끼치는 영향 체크리스트 | 항목 | 구체 내용 | |--------------|-------------------------------------------------------------------------------------------| | 루머 발생 시점 | 2026년 7월 15일, The Verge 공식 보도 기준 | | 주가 변동 | 루머 직후 Lucid Motors 주가 급락 | | 공식 입장 | Lucid 측 \"완전히 근거 없는 소문\" 및 현금 흐름을 근거로 재정 안정성 강조 | | 투자자 반응 | 시장 불확실성 확대, EV 투자자 신뢰 하락 | | 업계 파장 | 전기차 시장 전체에 불안감 확산, 경쟁사 및 기술 투자 환경에도 영향 | ## Lucid EV 파산설이 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxlbGVjdHJpYyUyMHZlaGljbGUlMjBjYXIlMjBjbGVhbiUyMGVuZXJneXxlbnwxfDB8fHwxNzg0MTM3MzYzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
