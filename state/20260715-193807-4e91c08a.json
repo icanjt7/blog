@@ -1,0 +1,70 @@
+{
+  "run_id": "20260715-193807-4e91c08a",
+  "topics": [
+    {
+      "keyword": "Enshittification",
+      "title_hint": "Enshittification",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Enshittification",
+          "url": "https://www.theverge.com/policy/966111/cyclospora-explosive-diarrhea-parasite-fda-cdc-taco-bell",
+          "published_at": "2026-07-15T18:40:00",
+          "summary": "The rise in cyclosporiasis cases goes beyond Taco Bell | The Verge Skip to main content The homepage The Verge The Verge logo. The homepage The Verge The Verge logo. Notifications Notifications Hamburger Navigation Button Navigation Drawer The Verge The Verge logo. Login / Sign Up close Close Search Light System Dark",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Enshittification",
+        "title_hint": "Enshittification",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Enshittification",
+            "url": "https://www.theverge.com/policy/966111/cyclospora-explosive-diarrhea-parasite-fda-cdc-taco-bell",
+            "published_at": "2026-07-15T18:40:00",
+            "summary": "The rise in cyclosporiasis cases goes beyond Taco Bell | The Verge Skip to main content The homepage The Verge The Verge logo. The homepage The Verge The Verge logo. Notifications Notifications Hamburger Navigation Button Navigation Drawer The Verge The Verge logo. Login / Sign Up close Close Search Light System Dark",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Enshittification, 2026년 사용자에게 닥칠 5가지 변화",
+      "slug": "enshittification-619b0dc8",
+      "excerpt": "2026-07-15 공식 안내 기준, Enshittification로 인한 실제 사용자 영향과 변화 항목을 구체적으로 정리합니다.",
+      "body_markdown": "## Enshittification, 무엇이 달라지나\n\n2026-07-15 공개된 The Verge의 공식 안내에 따르면, Enshittification는 IT·서비스 분야에서 제품과 플랫폼이 사용자에게 불리하게 변화하는 현상을 가리킵니다. 최근 cyclosporiasis(식중독 원인 기생충) 증가와 Taco Bell 등 실제 브랜드 사례와 함께 주목받고 있습니다.\n\n## 주요 변화 항목\n\n아래 표는 공식 안내 기준, Enshittification로 인한 사용자 영향과 확인할 핵심 정보를 모았습니다.\n\n| 항목              | 구체 내용                                                          |\n|-------------------|-------------------------------------------------------------------|\n| 적용 시점         | 2026-07-15 공식 안내 기준                                         |\n| 영향 대상         | 제품 사용자, 기업 도입 담당자, 개발·운영팀                        |\n| 변화 유형         | 기능 축소, 가격 인상, 서비스 안정성 저하, 플랫폼 의존성 강화      |\n| 확인 방법         | 공식 발표문, 릴리스 노트, 상태 페이지, 가격표, 후속 보도           |\n| 실제 사례         | Taco Bell 등 브랜드, cyclosporiasis 사례, FDA·CDC 공식 통계 활용  |\n\n## Enshittification이 사용자를 어떻게 바꿀까?\n\n- 기존에 무료였던 기능이 유료로 전환되거나, 서비스 안정성이 떨어질 수 있습니다.\n- 플랫폼 내 독점적 기능 강화로 대체 서비스 선택이 어려워질 수 있습니다.\n- 정책 변경 시 공식 릴리스 노트와 가격표를 반드시 확인해야 실제 조건을 알 수 있습니다.\n- FDA와 CDC 등 기관의 공식 통계는 사용자 안전·위생까지 영향을 미칠 수 있습니다.\n\n## 배경 설명\n\n- Taco Bell: 미국의 대표 패스트푸드 브랜드로, cyclosporiasis 사례와 함께 Enshittification의 실제 영향이 보도되고 있습니다.\n- Cyclosporiasis: 기생충 감염으로 인한 식중독 질환, 최근 미국 내 발생이 증가해 FDA·CDC 공식 안내가 이뤄졌습니다.\n- The Verge: IT·정책 전문 미디어로 2026-07-15 Enshittification 관련 보도를 공개했습니다.\n\n## 참고 출처\n\n- [The Verge - Enshittification 공식 안내](https://www.theverge.com/policy/966111/cyclospora-explosive-diarrhea-parasite-fda-cdc-taco-bell)",
+      "tags": [
+        "기술",
+        "Enshittification"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1782330298761-3e41cd894295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0MTQ0MzcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Enshittification, 2026년 사용자에게 닥칠 5가지 변화 — Photo by Brecht Corbeel on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1782330299602-8dcca2aea607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dGVjaG5vbG9neSUyMGlubm92YXRpb24lMjBjaXJjdWl0JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc4NDE0NDM3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "Enshittification, 2026년 사용자에게 닥칠 5가지 변화 본문 보조 이미지 — Photo by Brecht Corbeel on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Enshittification, 2026년 사용자에게 닥칠 5가지 변화. Keyword: Enshittification. Concrete visual subject: technology innovation circuit abstract. Context: ## Enshittification, 무엇이 달라지나 2026-07-15 공개된 The Verge의 공식 안내에 따르면, Enshittification는 IT·서비스 분야에서 제품과 플랫폼이 사용자에게 불리하게 변화하는 현상을 가리킵니다. 최근 cyclosporiasis(식중독 원인 기생충) 증가와 Taco Bell 등 실제 브랜드 사례와 함께 주목받고 있습니다. ## 주요 변화 항목 아래 표는 공식 안내 기준, Enshittification로 인한 사용자 영향과 확인할 핵심 정보를 모았습니다. | 항목 | 구체 내용 | |-------------------|-------------------------------------------------------------------| | 적용 시점 | 2026-07-15 공식 안내 기준 | | 영향 대상 | 제품 사용자, 기업 도입 담당자, 개발·운영팀 | | 변화 유형 | 기능 축소, 가격 인상, 서비스 안정성 저하, 플랫폼 의존성 강화 | | 확인 방법 | 공식 발표문, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 | | 실제 사례 | Taco Bell 등 브랜드, cyclosporiasis 사례, FDA·CDC 공식 통계 활용 | ## Enshittification이 사용자를 어떻게 바꿀까? - 기존에 무료였던 기능이 유료로 전환되거나, 서비스 안정성이 떨어질 수 있습니다. - . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: Enshittification, 2026년 사용자에게 닥칠 5가지 변화. Keyword: Enshittification. Concrete visual subject: technology innovation circuit abstract. Article context: ## Enshittification, 무엇이 달라지나 2026-07-15 공개된 The Verge의 공식 안내에 따르면, Enshittification는 IT·서비스 분야에서 제품과 플랫폼이 사용자에게 불리하게 변화하는 현상을 가리킵니다. 최근 cyclosporiasis(식중독 원인 기생충) 증가와 Taco Bell 등 실제 브랜드 사례와 함께 주목받고 있습니다. ## 주요 변화 항목 아래 표는 공식 안내 기준, Enshittification로 인한 사용자 영향과 확인할 핵심 정보를 모았습니다. | 항목 | 구체 내용 | |-------------------|-------------------------------------------------------------------| | 적용 시점 | 2026-07-15 공식 안내 기준 | | 영향 대상 | 제품 사용자, 기업 도입 담당자, 개발·운영팀 | | 변화 유형 | 기능 축소, 가격 인상, 서비스 안정성 저하, 플랫폼 의존성 강화 | | 확인 방법 | 공식 발표문, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 | | 실제 사례 | Taco Bell 등 브랜드, cyclosporiasis 사례, FDA·CDC 공식 통계 활용 | ## Enshittification이 사용자를 어떻게 바꿀까? - 기존에 무료였던 기능이 유료로 전환되거나, 서비스 안정성이 떨어질 수 있습니다. - 플랫폼 내 독점적 기능 강화로 대체 서비스 선택이 어려워질 수 있습니다. - 정책 변경 시 공식 릴리스 노트와 가격표를 반드시 확인해야 실제 조건을 알 수 있습니다. - FDA와 CDC 등 기관의 공식 통계는 사용자 안전·위생까지 영향을 미칠 수 있습니다. ## 배경 설명 - Taco Bell: 미국의 대표 패스트푸드 브랜드로, cyclosporiasis . The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-15T19:39:22.194333",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/enshittification-619b0dc8.md",
+      "message": "draft saved"
+    }
+  ]
+}
