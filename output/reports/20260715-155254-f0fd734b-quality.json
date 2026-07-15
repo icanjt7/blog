@@ -1,0 +1,20 @@
+{
+  "run_id": "20260715-155254-f0fd734b",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "daylight-us-b7100647",
+      "title": "미국 하원, 일광 절약시간제 연중 시행법 308:117로 통과",
+      "keyword": "Daylight US",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 미국 하원, 일광 절약시간제 연중 시행법 308:117로 통과. Keyword: Daylight US. Concrete visual subject: technology innovation circuit abstract. Context: ## 미국 하원, Sunshine Protection Act 308:117로 통과 2026년 7월 15일, 미국 하원이 Sunshine Protection Act를 308표 찬성, 117표 반대로 통과시켰다. 이 법안은 미국 내 일광 절약시간제(Daylight Saving Time, DST)를 연중 시행하는 내용을 담고 있다. 기존에는 매년 봄과 가을 시계 조정이 필요했으나, 법안이 최종 승인될 경우 미국 전역에서 연중 1시간 앞선 표준시간이 유지된다. ## Sunshine Protection Act의 핵심 내용 Sunshine Protection Act는 미국의 표준시간을 연중 일광 절약시간으로 고정하는 법안이다. 법안이 적용되면 시계 조정이 사라지고, 미국 전역의 시간 체계가 변화한다. 다만, 일부 주(예: 애리조나, 하와이)는 기존처럼 예외가 가능하다. 법안은 하원을 통과한 이후 상원 검토와 대통령 서명 절차를 남겨두고 있다. ## 주요 절차 및 적용 대상 법안 통과 후에는 다음과 같은 절차가 진행된다. 1. 하원 통과(완료) 2. 상원 검토 3. 대통령 서명 법안이 최종적으로 승인되면 미국 전체가 적용 대상이 되지만, 주별 예외 가능성은 남아 있다. ## 연중 일광 절약시간제 시행 시 변화 Sunshine Protection Act가 시행되면 미국의 시간 체계는 다음과 같이 달라진다. - 시계 조정(봄/가을)이 불필요해진다. . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330299602-8dcca2aea607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dGVjaG5vbG9neSUyMGlubm92YXRpb24lMjBjaXJjdWl0JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc4NDEzMDg4OHww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
