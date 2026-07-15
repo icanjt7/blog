@@ -1,0 +1,72 @@
+{
+  "run_id": "20260715-141222-dfc1ec72",
+  "topics": [
+    {
+      "keyword": "tiniest MMO",
+      "title_hint": "The tiniest MMO",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "The tiniest MMO",
+          "url": "https://www.theverge.com/entertainment/965621/playdate-mmo-pointlessquest",
+          "published_at": "2026-07-15T13:00:00",
+          "summary": "At its peak, around 12 million people subscribed to World of Warcraft so that they could explore the realm of Azeroth together. The audience for PointlessQuest is quite a bit smaller. On launch day, the game hit a peak of 15 concurrent players… and no, that sentence isn't missing a word. Then again, basically everything [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "tiniest MMO",
+        "title_hint": "The tiniest MMO",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "The tiniest MMO",
+            "url": "https://www.theverge.com/entertainment/965621/playdate-mmo-pointlessquest",
+            "published_at": "2026-07-15T13:00:00",
+            "summary": "At its peak, around 12 million people subscribed to World of Warcraft so that they could explore the realm of Azeroth together. The audience for PointlessQuest is quite a bit smaller. On launch day, the game hit a peak of 15 concurrent players… and no, that sentence isn't missing a word. Then again, basically everything [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "15명이 모인 'The tiniest MMO'… 월드 오브 워크래프트와 무엇이 달라졌나",
+      "slug": "tiniest-mmo-afa54f5d",
+      "excerpt": "2026년 7월 15일, 'The tiniest MMO' PointlessQuest가 출시 첫날 최대 동시접속자 15명으로 화제를 모았습니다. 대형 MMO와 비교해 실제 사용자 경험이 어떻게 달라지는지 주요 변화와 영향 중심으로 정리했습니다.",
+      "body_markdown": "## 'The tiniest MMO' 출시, 무엇이 다를까?\n\n2026년 7월 15일, 'The tiniest MMO'로 불리는 PointlessQuest가 정식 공개되었습니다.  \n출시 당일, 최대 동시접속자는 15명으로 기록되어 MMO(대규모 다중 접속 온라인 게임) 중에서도 가장 작은 규모임을 보여줍니다.\n\n### 비교: 대형 MMO vs. PointlessQuest\n\n- **월드 오브 워크래프트(Blizzard Entertainment):**  \n  · 전성기 구독자 1,200만 명  \n  · 아제로스라는 방대한 세계에서 수백만 명이 동시에 플레이  \n  · 복잡한 시스템과 다양한 협업 콘텐츠\n\n- **PointlessQuest:**  \n  · 최대 동시접속자 15명  \n  · 미니멀한 게임 구조  \n  · 소규모 커뮤니티 중심  \n  · Playdate 플랫폼에서 운영\n\n### 실제 사용자에게 나타나는 변화\n\n| 기준             | 월드 오브 워크래프트         | PointlessQuest                    |\n|-----------------|-----------------------------|-----------------------------------|\n| 최대 동시접속자 | 1,200만 명                  | 15명                              |\n| 운영 플랫폼     | PC, Mac                     | Playdate(휴대용 콘솔)             |\n| 가입 방식       | 월 구독                     | 단일 구매 또는 무료 배포(공식 미정) |\n| 커뮤니티 규모   | 글로벌, 대규모 길드          | 소규모, 친밀한 대화 중심          |\n| 게임 특징       | 복잡한 협동, 경쟁, 레이드     | 단순한 탐험, 협업 요소 대폭 축소   |\n\n### 변화가 미치는 영향\n\n- **게임 내 상호작용:**  \n  대규모 MMO와 달리 소수의 플레이어가 직접 소통하며 협업이 더욱 간소화됨.\n- **플레이 환경:**  \n  Playdate 같은 휴대용 콘솔에서 경험하는 미니멀함과 접근성 강조.\n- **비용 구조:**  \n  월드 오브 워크래프트는 구독 기반, PointlessQuest는 Playdate 구매자에게 제공(비용 정책은 공식 안내 기준).\n- **운영 안정성:**  \n  서버 관리가 비교적 단순, 장애 발생 시 대응 속도도 빠를 가능성.\n\n### 체크리스트: 실제 확인할 항목\n\n- 공식 최대 동시접속자: 15명 (출시일 기준)\n- 운영 플랫폼: Playdate\n- 구매 및 이용 방식: Playdate 사용자 대상, 상세 정책은 공식 안내 참고\n- 커뮤니티 규모: 소규모, 최대 15명 동시 플레이 지원\n- 참고 출처: [The tiniest MMO(The Verge, 2026-07-15)](https://www.theverge.com/entertainment/965621/playdate-mmo-pointlessquest)\n\n---\n\n#### 핵심 포인트\n\n- 'The tiniest MMO'는 기존 대형 MMO와 달리, 소규모 커뮤니티 중심으로 운영되는 미니멀형 온라인 게임입니다.\n- 실제로 플레이어가 경험하는 변화는 동시접속자 수, 플랫폼, 게임 방식, 비용 구조 등에서 나타납니다.\n- 공식 안내 기준으로, Playdate를 소유한 사용자가 PointlessQuest를 즐길 수 있으며, 상세 정책은 추후 업데이트 예정입니다.\n\n---\n\n#### 참고\n\n- [The tiniest MMO](https://www.theverge.com/entertainment/965621/playdate-mmo-pointlessquest) (The Verge, 2026-07-15)",
+      "tags": [
+        "기술",
+        "tiniest",
+        "MMO"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0MDczMjUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "15명이 모인 'The tiniest MMO'… 월드 오브 워크래프트와 무엇이 달라졌나 — Photo by Ludovico Ceroseis on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1782330298761-3e41cd894295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0MDczMjUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "15명이 모인 'The tiniest MMO'… 월드 오브 워크래프트와 무엇이 달라졌나 본문 보조 이미지 — Photo by Brecht Corbeel on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 15명이 모인 'The tiniest MMO'… 월드 오브 워크래프트와 무엇이 달라졌나. Keyword: tiniest MMO. Concrete visual subject: technology innovation circuit abstract. Context: ## 'The tiniest MMO' 출시, 무엇이 다를까? 2026년 7월 15일, 'The tiniest MMO'로 불리는 PointlessQuest가 정식 공개되었습니다. 출시 당일, 최대 동시접속자는 15명으로 기록되어 MMO(대규모 다중 접속 온라인 게임) 중에서도 가장 작은 규모임을 보여줍니다. ### 비교: 대형 MMO vs. PointlessQuest - **월드 오브 워크래프트(Blizzard Entertainment):** · 전성기 구독자 1,200만 명 · 아제로스라는 방대한 세계에서 수백만 명이 동시에 플레이 · 복잡한 시스템과 다양한 협업 콘텐츠 - **PointlessQuest:** · 최대 동시접속자 15명 · 미니멀한 게임 구조 · 소규모 커뮤니티 중심 · Playdate 플랫폼에서 운영 ### 실제 사용자에게 나타나는 변화 | 기준 | 월드 오브 워크래프트 | PointlessQuest | |-----------------|-----------------------------|-----------------------------------| | 최대 동시접속자 | 1,200만 명 | 15명 | | 운영 플랫폼 | PC, Mac | Playdate(휴대용 콘솔) | | 가입 방식 | 월 구독 | 단일 구매 또는 무료 배포(공식 미정) | | 커뮤니티 규모 | 글로벌, 대규모 길드 | 소규모, 친밀한 대화. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 15명이 모인 'The tiniest MMO'… 월드 오브 워크래프트와 무엇이 달라졌나. Keyword: tiniest MMO. Concrete visual subject: technology innovation circuit abstract. Article context: ## 'The tiniest MMO' 출시, 무엇이 다를까? 2026년 7월 15일, 'The tiniest MMO'로 불리는 PointlessQuest가 정식 공개되었습니다. 출시 당일, 최대 동시접속자는 15명으로 기록되어 MMO(대규모 다중 접속 온라인 게임) 중에서도 가장 작은 규모임을 보여줍니다. ### 비교: 대형 MMO vs. PointlessQuest - **월드 오브 워크래프트(Blizzard Entertainment):** · 전성기 구독자 1,200만 명 · 아제로스라는 방대한 세계에서 수백만 명이 동시에 플레이 · 복잡한 시스템과 다양한 협업 콘텐츠 - **PointlessQuest:** · 최대 동시접속자 15명 · 미니멀한 게임 구조 · 소규모 커뮤니티 중심 · Playdate 플랫폼에서 운영 ### 실제 사용자에게 나타나는 변화 | 기준 | 월드 오브 워크래프트 | PointlessQuest | |-----------------|-----------------------------|-----------------------------------| | 최대 동시접속자 | 1,200만 명 | 15명 | | 운영 플랫폼 | PC, Mac | Playdate(휴대용 콘솔) | | 가입 방식 | 월 구독 | 단일 구매 또는 무료 배포(공식 미정) | | 커뮤니티 규모 | 글로벌, 대규모 길드 | 소규모, 친밀한 대화 중심 | | 게임 특징 | 복잡한 협동, 경쟁, 레이드 | 단순한 탐험, 협업 요소 대폭 축소 | ### 변화가 미치는 영향 - **게임 내 상호작용:** 대규모 MMO와 달리 소수의 플레이어가 직접 소통하며 협업이 더욱 간소화됨. - **플레이 환경:** Playdate 같은 휴대용 콘솔에서 경험하는 미니멀함과 접근성 강조. - **비용 구조:** 월드. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-15T14:16:35.657308",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/tiniest-mmo-afa54f5d.md",
+      "message": "draft saved"
+    }
+  ]
+}
