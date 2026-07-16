@@ -1,17 +1,19 @@
 ---
-title: "미국 백악관, Presidential Message on"
-date: "2026-07-05T00:03"
-category: "정치"
+title: 미국 백악관, 미국 비밀 서비스 창립 161주년 축사 발표
+date: 2026-07-05T00:03
+category: 정치
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미국 백악관"
-  - "정치"
-  - "백악관"
-  - "브리핑"
-author: "미국 백악관"
+- 보도기사
+- 미국정부
+- 미국 백악관
+- 정치
+- 백악관
+- 브리핑
+author: 미국 백악관
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1733282218946-979cd67ec354?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgzNDAwOTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: https://images.unsplash.com/photo-1733282218946-979cd67ec354?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgzNDAwOTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미국 백악관이(The White House) 2026-07-05 공개한 'Presidential Message on the Anniversary of the United States Secret Service' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.

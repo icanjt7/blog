@@ -1,17 +1,19 @@
 ---
-title: "미 연방거래위원회, FTC Approves Final Order"
-date: "2026-07-02T00:03"
-category: "생활"
+title: 미 연방거래위원회, Publishing.com에 150만 달러 과징금 부과
+date: 2026-07-02T00:03
+category: 생활
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미 연방거래위원회"
-  - "생활"
-  - "FTC"
-  - "소비자보호"
-author: "미 연방거래위원회"
+- 보도기사
+- 미국정부
+- 미 연방거래위원회
+- 생활
+- FTC
+- 소비자보호
+author: 미 연방거래위원회
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1576640476223-ec784a781f4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODMxNDA4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: https://images.unsplash.com/photo-1576640476223-ec784a781f4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODMxNDA4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미 연방거래위원회가(Federal Trade Commission) 2026-07-02 공개한 'FTC Approves Final Order Against Publishing.com, Settling Allegations It Misled Consumers' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
