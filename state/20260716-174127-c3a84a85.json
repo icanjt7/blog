@@ -1,0 +1,72 @@
+{
+  "run_id": "20260716-174127-c3a84a85",
+  "topics": [
+    {
+      "keyword": "Google EU",
+      "title_hint": "Google is better at playing the EU regulations game",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Google is better at playing the EU regulations game",
+          "url": "https://www.theverge.com/policy/966588/eu-dma-ai-android-siri-ai",
+          "published_at": "2026-07-16T16:55:54",
+          "summary": "Today, the European Union ordered Google to give its AI rivals greater access to Android, the open-source operating system that powers billions of devices worldwide. The demand is hardly surprising. It may look like a defeat on paper for Google, which has spent years resisting exactly this kind of access, but it is a regulatory [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Google EU",
+        "title_hint": "Google is better at playing the EU regulations game",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Google is better at playing the EU regulations game",
+            "url": "https://www.theverge.com/policy/966588/eu-dma-ai-android-siri-ai",
+            "published_at": "2026-07-16T16:55:54",
+            "summary": "Today, the European Union ordered Google to give its AI rivals greater access to Android, the open-source operating system that powers billions of devices worldwide. The demand is hardly surprising. It may look like a defeat on paper for Google, which has spent years resisting exactly this kind of access, but it is a regulatory [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "EU, 구글에 AI 경쟁사 안드로이드 접근 요구…무슨 변화?",
+      "slug": "google-eu-731ccbfe",
+      "excerpt": "2026년 7월 16일, EU가 Google에 AI 경쟁사에게 안드로이드 접근을 확대하라고 공식 요구했습니다. 이번 조치가 구글, AI 업계, 사용자에 미치는 영향과 핵심 기준을 정리합니다.",
+      "body_markdown": "## 무슨 일이 있었나?\n\n2026년 7월 16일, 유럽연합(EU)이 Google에 공식적으로 요구했습니다.  \nAI 경쟁사들이 안드로이드(전 세계 수십억 기기에 탑재된 오픈소스 운영체제)에 더 쉽게 접근할 수 있게 하라는 내용입니다.  \n이는 EU의 디지털 시장법(DMA) 적용 사례로, Google에 대한 규제 강화 움직임입니다.\n\n## Google EU 규제 배경\n\nGoogle은 검색, 광고, 안드로이드 등에서 유럽 시장점유율이 높습니다.  \nEU는 공정 경쟁을 위해 대형 IT 기업에 데이터 접근, 운영체제 개방, 경쟁사 진입 장벽 완화 등을 요구하고 있습니다.  \n이번 조치는 Google이 AI 서비스 분야에서도 규제에 대응해야 하는 상황을 보여줍니다.\n\n## 주요 변화 체크리스트\n\n| 기준               | 내용                                                                |\n|-------------------|--------------------------------------------------------------------|\n| 적용 기관         | EU 집행위원회, Google                                              |\n| 시행 일자         | 2026년 7월 16일                                                     |\n| 요구 사항         | AI 경쟁사에 안드로이드 접근 확대, 기술 인터페이스 공개             |\n| 대상 기기         | 안드로이드 운영체제 기반 스마트폰, 태블릿, IoT 등 수십억 기기      |\n| 관련 법률         | 디지털 시장법(DMA), EU 경쟁법                                      |\n| 사용자 영향       | AI 앱 선택권 확대, 개인정보 및 보안 논의 강화                      |\n| Google 대응       | 규제 준수 방안 모색, 기술 개방 정책 조정                          |\n| 업계 반응         | AI 경쟁사 신규 서비스 진출 가능성, 기술 협력 요구 증가             |\n\n## 독자가 알아야 할 핵심\n\n- EU의 요구는 구글이 AI 경쟁사와 협력 또는 개방을 더 강화해야 한다는 신호입니다.\n- 안드로이드 기기 사용자는 앞으로 다양한 AI 앱을 더 쉽게 선택하고 이용할 수 있게 됩니다.\n- 이번 조치는 DMA(디지털 시장법) 시행에 따른 대표 사례이며, 향후 추가 규제 가능성도 있습니다.\n- 개인정보 보호, 보안, 기술 표준 등 실질적 변화는 공식 안내와 후속 조치에서 계속 확인해야 합니다.\n\n## 참고 출처\n\n- [Google is better at playing the EU regulations game](https://www.theverge.com/policy/966588/eu-dma-ai-android-siri-ai) (2026-07-16)",
+      "tags": [
+        "기술",
+        "Google",
+        "EU"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxzZWFyY2glMjBjbG91ZCUyMHRlY2hub2xvZ3klMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0MjIzOTYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "EU, 구글에 AI 경쟁사 안드로이드 접근 요구…무슨 변화? — Photo by Growtika on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1674027444636-ce7379d51252?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxzZWFyY2glMjBjbG91ZCUyMHRlY2hub2xvZ3klMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0MjIzOTYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "EU, 구글에 AI 경쟁사 안드로이드 접근 요구…무슨 변화? 본문 보조 이미지 — Photo by Growtika on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: EU, 구글에 AI 경쟁사 안드로이드 접근 요구…무슨 변화?. Keyword: Google EU. Concrete visual subject: search cloud technology artificial intelligence neural network. Context: ## 무슨 일이 있었나? 2026년 7월 16일, 유럽연합(EU)이 Google에 공식적으로 요구했습니다. AI 경쟁사들이 안드로이드(전 세계 수십억 기기에 탑재된 오픈소스 운영체제)에 더 쉽게 접근할 수 있게 하라는 내용입니다. 이는 EU의 디지털 시장법(DMA) 적용 사례로, Google에 대한 규제 강화 움직임입니다. ## Google EU 규제 배경 Google은 검색, 광고, 안드로이드 등에서 유럽 시장점유율이 높습니다. EU는 공정 경쟁을 위해 대형 IT 기업에 데이터 접근, 운영체제 개방, 경쟁사 진입 장벽 완화 등을 요구하고 있습니다. 이번 조치는 Google이 AI 서비스 분야에서도 규제에 대응해야 하는 상황을 보여줍니다. ## 주요 변화 체크리스트 | 기준 | 내용 | |-------------------|--------------------------------------------------------------------| | 적용 기관 | EU 집행위원회, Google | | 시행 일자 | 2026년 7월 16일 | | 요구 사항 | AI 경쟁사에 안드로이드 접근 확대, 기술 인터페이스 공개 | | 대상 기기 | 안드로이드 운영체제 기반 스마트폰, 태블릿, IoT 등 수십억 기기 | | 관련 법률 | 디지털 시장법(DMA), EU 경쟁법 | | 사용자 영향 | AI 앱 선택권 확대, 개인정보 및 보안 논의 강. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: EU, 구글에 AI 경쟁사 안드로이드 접근 요구…무슨 변화?. Keyword: Google EU. Concrete visual subject: search cloud technology artificial intelligence neural network. Article context: ## 무슨 일이 있었나? 2026년 7월 16일, 유럽연합(EU)이 Google에 공식적으로 요구했습니다. AI 경쟁사들이 안드로이드(전 세계 수십억 기기에 탑재된 오픈소스 운영체제)에 더 쉽게 접근할 수 있게 하라는 내용입니다. 이는 EU의 디지털 시장법(DMA) 적용 사례로, Google에 대한 규제 강화 움직임입니다. ## Google EU 규제 배경 Google은 검색, 광고, 안드로이드 등에서 유럽 시장점유율이 높습니다. EU는 공정 경쟁을 위해 대형 IT 기업에 데이터 접근, 운영체제 개방, 경쟁사 진입 장벽 완화 등을 요구하고 있습니다. 이번 조치는 Google이 AI 서비스 분야에서도 규제에 대응해야 하는 상황을 보여줍니다. ## 주요 변화 체크리스트 | 기준 | 내용 | |-------------------|--------------------------------------------------------------------| | 적용 기관 | EU 집행위원회, Google | | 시행 일자 | 2026년 7월 16일 | | 요구 사항 | AI 경쟁사에 안드로이드 접근 확대, 기술 인터페이스 공개 | | 대상 기기 | 안드로이드 운영체제 기반 스마트폰, 태블릿, IoT 등 수십억 기기 | | 관련 법률 | 디지털 시장법(DMA), EU 경쟁법 | | 사용자 영향 | AI 앱 선택권 확대, 개인정보 및 보안 논의 강화 | | Google 대응 | 규제 준수 방안 모색, 기술 개방 정책 조정 | | 업계 반응 | AI 경쟁사 신규 서비스 진출 가능성, 기술 협력 요구 증가 | ## 독자가 알아야 할 핵심 - EU의 요구는 구글이 AI 경쟁사와 협력 또는 개방을 더 강화해야 한다는 신호입니다. - 안드로이드 기기 사용자는 앞으로 다양한 AI 앱을 더 쉽게 선택하고 이용할. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-16T17:45:49.762255",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/google-eu-731ccbfe.md",
+      "message": "draft saved"
+    }
+  ]
+}
