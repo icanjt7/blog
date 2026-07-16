@@ -1,0 +1,72 @@
+{
+  "run_id": "20260716-231214-8a4e751a",
+  "topics": [
+    {
+      "keyword": "Fortnite AI",
+      "title_hint": "Fortnite is getting a bunch of AI-powered ‘personas’",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Fortnite is getting a bunch of AI-powered ‘personas’",
+          "url": "https://www.theverge.com/games/966815/epic-games-fortnite-ai-powered-personas",
+          "published_at": "2026-07-16T21:30:35",
+          "summary": "Get ready for more AI characters in Fortnite. Developer Epic Games is going to let Fortnite creators publish experiences featuring characters with AI-powered voices starting on July 30th, and ahead of that launch, it's created 36 characters with \"consistent voices and personas\" that creators can use as NPCs. The characters include Fortnite staples like Agent [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Fortnite AI",
+        "title_hint": "Fortnite is getting a bunch of AI-powered ‘personas’",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Fortnite is getting a bunch of AI-powered ‘personas’",
+            "url": "https://www.theverge.com/games/966815/epic-games-fortnite-ai-powered-personas",
+            "published_at": "2026-07-16T21:30:35",
+            "summary": "Get ready for more AI characters in Fortnite. Developer Epic Games is going to let Fortnite creators publish experiences featuring characters with AI-powered voices starting on July 30th, and ahead of that launch, it's created 36 characters with \"consistent voices and personas\" that creators can use as NPCs. The characters include Fortnite staples like Agent [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Fortnite AI NPC, 7월 30일부터 크리에이터만 쓴다!",
+      "slug": "fortnite-ai-dadd6d09",
+      "excerpt": "2026년 7월 30일부터 Fortnite Creative 모드에서 AI 음성과 페르소나를 가진 NPC가 공개됩니다. 일반 플레이어가 즉시 활용할 수 없고, 크리에이터만 맵 제작에 사용할 수 있으니 주요 기준을 꼭 확인하세요.",
+      "body_markdown": "Fortnite에 AI 캐릭터가 등장한다는 소식, 실제로 누구에게 어떤 변화가 있을까요?\n\nEpic Games는 2026년 7월 30일부터 Fortnite Creative 모드에서 AI 기반 NPC(Non-Player Character)를 사용할 수 있다고 공식 발표했습니다. AI NPC는 음성, 말투, 성격 등 다양한 페르소나를 갖고 있으며, 초기에는 36개의 캐릭터가 제공됩니다. 이 캐릭터에는 Fortnite의 인기 인물(예: Agent, Peely 등)과 신규 캐릭터가 포함되어 있습니다.\n\n**Epic Games**  \n미국의 대표적인 게임 개발사로, 배틀로얄 장르 Fortnite를 서비스하고 있습니다.\n\n이번 Fortnite AI 업데이트의 핵심은 일반 플레이어가 아니라 **크리에이터**가 맵 제작에 AI NPC를 활용할 수 있다는 점입니다. 크리에이터란 Fortnite Creative 모드에서 직접 맵이나 게임을 만드는 유저를 의미합니다. 일반 플레이어가 AI NPC와 직접 대화하거나 즉시 경험할 수는 없습니다.\n\nAI NPC의 특징은 다음과 같습니다:\n\n- AI가 제작한 고유 음성과 성격을 가진 페르소나 제공  \n- 초기에는 Epic Games가 만든 36개 캐릭터만 사용 가능  \n- 크리에이터가 맵 제작시 NPC를 자유롭게 포함 가능  \n- 별도의 승인 절차 없이 AI NPC를 맵에 추가할 수 있음  \n- NPC의 대화 및 반응은 각 맵마다 맞춤 설정 가능  \n\n아래 표에서 기존 NPC와 Fortnite AI NPC의 주요 차이를 정리했습니다.\n\n| 기준            | 기존 NPC           | Fortnite AI NPC (2026-07-30부터) |\n|-----------------|-------------------|----------------------------------|\n| 음성/성격       | 텍스트/고정 음성   | AI 기반 음성·페르소나            |\n| 이용 가능 대상  | 모든 플레이어      | Fortnite 크리에이터               |\n| 캐릭터 종류     | 제한적             | 36개 공식 캐릭터                  |\n| 커스텀 가능성   | 제한적             | 초기엔 공식 캐릭터만 가능         |\n| 적용 시점       | 상시               | 2026년 7월 30일 공식 안내 기준    |\n\n**체크포인트: Fortnite AI NPC 활용 조건**\n\n- [ ] Epic Games가 제공한 36개 AI 캐릭터만 사용 가능 (공식 안내 기준)\n- [ ] 2026년 7월 30일부터 Fortnite Creative 모드에서 적용\n- [ ] 일반 플레이어는 직접 활용 불가, 크리에이터만 가능\n- [ ] 크리에이터가 맵 제작 시 별도 승인 불필요\n- [ ] NPC의 대화·반응은 각 맵마다 맞춤 설정\n\n크리에이터라면 7월 30일 이후 바로 AI NPC를 맵에 넣을 수 있습니다. 일반 플레이어는 크리에이터가 만든 신규 맵에서 AI NPC를 경험할 수 있을 때까지 기다려야 합니다.\n\nEpic Games의 공식 안내에 따르면, 향후 일반 플레이어에게도 AI NPC 기능이 확대될 가능성은 있지만, 현재는 크리에이터 전용입니다. 최신 업데이트와 AI NPC 맵 공개 여부는 Epic Games 공식 홈페이지에서 확인할 수 있습니다.",
+      "tags": [
+        "기술",
+        "Fortnite",
+        "AI"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0MjIwOTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Fortnite AI NPC, 7월 30일부터 크리에이터만 쓴다! — Photo by Steve A Johnson on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1696272440000-0808a203c852?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMG5ldXJhbCUyMG5ldHdvcmt8ZW58MXwwfHx8MTc4NDIyMDk4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "Fortnite AI NPC, 7월 30일부터 크리에이터만 쓴다! 본문 보조 이미지 — Photo by Andres Siimon on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Fortnite AI NPC, 7월 30일부터 크리에이터만 쓴다!. Keyword: Fortnite AI. Concrete visual subject: artificial intelligence neural network. Context: Fortnite에 AI 캐릭터가 등장한다는 소식, 실제로 누구에게 어떤 변화가 있을까요? Epic Games는 2026년 7월 30일부터 Fortnite Creative 모드에서 AI 기반 NPC(Non-Player Character)를 사용할 수 있다고 공식 발표했습니다. AI NPC는 음성, 말투, 성격 등 다양한 페르소나를 갖고 있으며, 초기에는 36개의 캐릭터가 제공됩니다. 이 캐릭터에는 Fortnite의 인기 인물(예: Agent, Peely 등)과 신규 캐릭터가 포함되어 있습니다. **Epic Games** 미국의 대표적인 게임 개발사로, 배틀로얄 장르 Fortnite를 서비스하고 있습니다. 이번 Fortnite AI 업데이트의 핵심은 일반 플레이어가 아니라 **크리에이터**가 맵 제작에 AI NPC를 활용할 수 있다는 점입니다. 크리에이터란 Fortnite Creative 모드에서 직접 맵이나 게임을 만드는 유저를 의미합니다. 일반 플레이어가 AI NPC와 직접 대화하거나 즉시 경험할 수는 없습니다. AI NPC의 특징은 다음과 같습니다: - AI가 제작한 고유 음성과 성격을 가진 페르소나 제공 - 초기에는 Epic Games가 만든 36개 캐릭터만 사용 가능 - 크리에이터가 맵 제작시 NPC를 자유롭게 포함 가능 - 별도의 승인 절차 없이 AI NPC를 맵에 추가할 수 있음 - NPC의 대화 및 반응은 각 맵마다 맞춤 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: Fortnite AI NPC, 7월 30일부터 크리에이터만 쓴다!. Keyword: Fortnite AI. Concrete visual subject: artificial intelligence neural network. Article context: Fortnite에 AI 캐릭터가 등장한다는 소식, 실제로 누구에게 어떤 변화가 있을까요? Epic Games는 2026년 7월 30일부터 Fortnite Creative 모드에서 AI 기반 NPC(Non-Player Character)를 사용할 수 있다고 공식 발표했습니다. AI NPC는 음성, 말투, 성격 등 다양한 페르소나를 갖고 있으며, 초기에는 36개의 캐릭터가 제공됩니다. 이 캐릭터에는 Fortnite의 인기 인물(예: Agent, Peely 등)과 신규 캐릭터가 포함되어 있습니다. **Epic Games** 미국의 대표적인 게임 개발사로, 배틀로얄 장르 Fortnite를 서비스하고 있습니다. 이번 Fortnite AI 업데이트의 핵심은 일반 플레이어가 아니라 **크리에이터**가 맵 제작에 AI NPC를 활용할 수 있다는 점입니다. 크리에이터란 Fortnite Creative 모드에서 직접 맵이나 게임을 만드는 유저를 의미합니다. 일반 플레이어가 AI NPC와 직접 대화하거나 즉시 경험할 수는 없습니다. AI NPC의 특징은 다음과 같습니다: - AI가 제작한 고유 음성과 성격을 가진 페르소나 제공 - 초기에는 Epic Games가 만든 36개 캐릭터만 사용 가능 - 크리에이터가 맵 제작시 NPC를 자유롭게 포함 가능 - 별도의 승인 절차 없이 AI NPC를 맵에 추가할 수 있음 - NPC의 대화 및 반응은 각 맵마다 맞춤 설정 가능 아래 표에서 기존 NPC와 Fortnite AI NPC의 주요 차이를 정리했습니다. | 기준 | 기존 NPC | Fortnite AI NPC (2026-07-30부터) | |-----------------|-------------------|----------------------------------| | 음성/성격 | 텍스트/고정 음성 | A. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-16T23:16:36.180856",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/fortnite-ai-dadd6d09.md",
+      "message": "draft saved"
+    }
+  ]
+}
