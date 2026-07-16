@@ -1,0 +1,72 @@
+{
+  "run_id": "20260716-193511-43777bda",
+  "topics": [
+    {
+      "keyword": "Kalshi Trump 8217",
+      "title_hint": "Kalshi says it caught Trump&#8217;s teleprompter operator insider trading",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Kalshi says it caught Trump&#8217;s teleprompter operator insider trading",
+          "url": "https://www.theverge.com/news/966676/trump-teleprompter-operator-kalshi-bets-mention-markets-investigation",
+          "published_at": "2026-07-16T18:43:14",
+          "summary": "Kalshi users betting on what President Donald Trump would say during his speeches were reportedly up against tough competition: the president's teleprompter operator. ABC News reports that federal investigators believe Gabriel Perez - Trump's teleprompter operator since 2016 - used inside information to make bets on Kalshi, a major prediction market platform that allows users [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Kalshi Trump 8217",
+        "title_hint": "Kalshi says it caught Trump&#8217;s teleprompter operator insider trading",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Kalshi says it caught Trump&#8217;s teleprompter operator insider trading",
+            "url": "https://www.theverge.com/news/966676/trump-teleprompter-operator-kalshi-bets-mention-markets-investigation",
+            "published_at": "2026-07-16T18:43:14",
+            "summary": "Kalshi users betting on what President Donald Trump would say during his speeches were reportedly up against tough competition: the president's teleprompter operator. ABC News reports that federal investigators believe Gabriel Perez - Trump's teleprompter operator since 2016 - used inside information to make bets on Kalshi, a major prediction market platform that allows users [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Waymo의 가상 운전자, 자율주행 안전 실험",
+      "slug": "kalshi-trump-8217-b0c23a3b",
+      "excerpt": "Waymo의 Reference Driver 모델을 자율주행 안전 검증과 인간 운전자 비교 기준으로 설명했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\nKalshi says it caught Trump&#8217;s teleprompter operator insider trading 소식입니다. Kalshi users betting on what President Donald Trump would say during his speeches were reportedly up against tough competition: the president's teleprompter operator. ABC News reports that federal investigators believe Gabriel Perez - Trump's teleprompter operator since 2016 -...\n\n## 먼저 알아둘 배경\n\nWaymo는 Alphabet 계열 자율주행 기업입니다. 실제 도로에서 모든 사고 가능성을 직접 시험할 수 없기 때문에 자율주행 개발에는 시뮬레이션이 필수입니다. Reference Driver는 완벽한 운전자가 아니라 사람이 가진 인지 지연, 놀람, 조작 지연을 넣어 위험 상황의 비교 기준을 만들려는 모델입니다.\n\n## 왜 기술 이슈인가\n\n자율주행 안전 논쟁에서 어려운 질문은 '무엇과 비교해 안전한가'입니다. 회사가 자체 기준만 내세우면 신뢰를 얻기 어렵고, 무사고만 요구하면 기술 검증이 멈춥니다. 인간 운전자 반응을 현실적으로 모델링하면 자율주행차가 위험을 얼마나 일찍 보고 피했는지 더 구체적으로 비교할 수 있습니다.\n\n## 확인할 기준\n\n| 항목 | 구체 내용 |\n| --- | --- |\n| 직접 대상 | 자율주행 기술을 보는 독자, 로보택시 이용자, 교통 안전 연구자 |\n| 기술 맥락 | 자율주행 시뮬레이션, 인간 운전자 모델, 위험 인지, 충돌 회피, 안전 벤치마크 |\n| 사용자 영향 | 로보택시 안전성 평가, 규제기관 검증 방식, 사고 설명 기준에 영향 |\n| 다음 확인 | 모델 공개 범위, 연구자 검증, 실제 사고 데이터와의 비교, 규제기관 채택 여부 |\n\n## 독자가 이해해야 할 포인트\n\n1. ReD는 Waymo 차량을 직접 운전하는 기능이 아니라 사람 운전자와 비교하기 위한 기준 모델입니다.\n2. 주행거리 숫자만으로 자율주행 안전성을 판단하기 어렵기 때문에 상황별 비교 기준이 필요합니다.\n3. 한국에서도 자율주행 실증이 늘면 '사람이라면 피했을까'를 설명할 기준이 중요해집니다.\n4. 원문 요약만으로 부족하면 공식 보도자료, 후속 공지, 실제 적용 사례까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [Kalshi says it caught Trump&#8217;s teleprompter operator insider trading](https://www.theverge.com/news/966676/trump-teleprompter-operator-kalshi-bets-mention-markets-investigation)\n",
+      "tags": [
+        "기술",
+        "Kalshi",
+        "Trump",
+        "8217"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1768059518809-00f6d45abfbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGNhciUyMHNlbnNvciUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4NDIzMDc2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Waymo의 가상 운전자, 자율주행 안전 실험 — Photo by Egor Myznik on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1780577155225-2538e595d1a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGNhciUyMHNlbnNvciUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4NDIzMDc2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "Waymo의 가상 운전자, 자율주행 안전 실험 본문 보조 이미지 — Photo by lee daxin on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Waymo의 가상 운전자, 자율주행 안전 실험. Keyword: Kalshi Trump 8217. Concrete visual subject: autonomous vehicle car sensor safety public service. Context: ## 무슨 소식인가 Kalshi says it caught Trump&#8217;s teleprompter operator insider trading 소식입니다. Kalshi users betting on what President Donald Trump would say during his speeches were reportedly up against tough competition: the president's teleprompter operator. ABC News reports that federal investigators believe Gabriel Perez - Trump's teleprompter operator since 2016 -... ## 먼저 알아둘 배경 Waymo는 Alphabet 계열 자율주행 기업입니다. 실제 도로에서 모든 사고 가능성을 직접 시험할 수 없기 때문에 자율주행 개발에는 시뮬레이션이 필수입니다. Reference Driver는 완벽한 운전자가 아니라 사람이 가진 인지 지연, 놀람, 조작 지연을 넣어 위험 상황의 비교 기준을 만들려는 모델입니다. ## 왜 기술 이슈인가 자율주행 안전 논쟁에서 어려운 질문은 '무엇과 비교해 안전한가'입니다. 회사가 자체 기준만 내세우면 신뢰를 얻기 어렵고, 무사고만 요구하면 기술 검증이 멈춥니다. 인간 운전자 반응을 현실적으로 모델링하면 자율주행차가 위험을 얼. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: Waymo의 가상 운전자, 자율주행 안전 실험. Keyword: Kalshi Trump 8217. Concrete visual subject: autonomous vehicle car sensor safety public service. Article context: ## 무슨 소식인가 Kalshi says it caught Trump&#8217;s teleprompter operator insider trading 소식입니다. Kalshi users betting on what President Donald Trump would say during his speeches were reportedly up against tough competition: the president's teleprompter operator. ABC News reports that federal investigators believe Gabriel Perez - Trump's teleprompter operator since 2016 -... ## 먼저 알아둘 배경 Waymo는 Alphabet 계열 자율주행 기업입니다. 실제 도로에서 모든 사고 가능성을 직접 시험할 수 없기 때문에 자율주행 개발에는 시뮬레이션이 필수입니다. Reference Driver는 완벽한 운전자가 아니라 사람이 가진 인지 지연, 놀람, 조작 지연을 넣어 위험 상황의 비교 기준을 만들려는 모델입니다. ## 왜 기술 이슈인가 자율주행 안전 논쟁에서 어려운 질문은 '무엇과 비교해 안전한가'입니다. 회사가 자체 기준만 내세우면 신뢰를 얻기 어렵고, 무사고만 요구하면 기술 검증이 멈춥니다. 인간 운전자 반응을 현실적으로 모델링하면 자율주행차가 위험을 얼마나 일찍 보고 피했는지 더 구체적으로 비교할 수 있습니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | 자율주행 기술을 보는 독자, 로보택시 이용자, 교통 안전 연구자 | | 기술 맥락 | 자율주행 시뮬레이션, 인간 운전자 모델, 위험 인지, 충돌 회피, 안전 벤치마크 | | 사용자 영향 | 로보택시 안전성 평가. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-16T19:39:14.372955",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 89.0"
+    }
+  ]
+}

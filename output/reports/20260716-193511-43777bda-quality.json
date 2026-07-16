@@ -1,0 +1,20 @@
+{
+  "run_id": "20260716-193511-43777bda",
+  "average_quality": 89.0,
+  "drafts": [
+    {
+      "slug": "kalshi-trump-8217-b0c23a3b",
+      "title": "Waymo의 가상 운전자, 자율주행 안전 실험",
+      "keyword": "Kalshi Trump 8217",
+      "category": "기술",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: RateLimitError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Waymo의 가상 운전자, 자율주행 안전 실험. Keyword: Kalshi Trump 8217. Concrete visual subject: autonomous vehicle car sensor safety public service. Context: ## 무슨 소식인가 Kalshi says it caught Trump&#8217;s teleprompter operator insider trading 소식입니다. Kalshi users betting on what President Donald Trump would say during his speeches were reportedly up against tough competition: the president's teleprompter operator. ABC News reports that federal investigators believe Gabriel Perez - Trump's teleprompter operator since 2016 -... ## 먼저 알아둘 배경 Waymo는 Alphabet 계열 자율주행 기업입니다. 실제 도로에서 모든 사고 가능성을 직접 시험할 수 없기 때문에 자율주행 개발에는 시뮬레이션이 필수입니다. Reference Driver는 완벽한 운전자가 아니라 사람이 가진 인지 지연, 놀람, 조작 지연을 넣어 위험 상황의 비교 기준을 만들려는 모델입니다. ## 왜 기술 이슈인가 자율주행 안전 논쟁에서 어려운 질문은 '무엇과 비교해 안전한가'입니다. 회사가 자체 기준만 내세우면 신뢰를 얻기 어렵고, 무사고만 요구하면 기술 검증이 멈춥니다. 인간 운전자 반응을 현실적으로 모델링하면 자율주행차가 위험을 얼. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1768059518809-00f6d45abfbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGNhciUyMHNlbnNvciUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4NDIzMDc2Mnww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
