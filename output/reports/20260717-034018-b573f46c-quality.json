@@ -1,0 +1,20 @@
+{
+  "run_id": "20260717-034018-b573f46c",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "netflix-300-ai-048e162d",
+      "title": "Netflix 300 AI, 실제 적용 작품은 얼마나?",
+      "keyword": "Netflix 300 AI",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Netflix 300 AI, 실제 적용 작품은 얼마나?. Keyword: Netflix 300 AI. Concrete visual subject: artificial intelligence neural network. Context: ## 넷플릭스, 300개 작품에 생성형 AI 활용 2026년 2분기 실적 보고서에서 넷플릭스(Netflix)는 약 300개의 타이틀에 생성형 AI(Generative AI)를 사용했다고 공개했습니다. 적용 대부분은 후반 제작(post-production) 단계에서 이루어졌으며, 넷플릭스는 \"이 도구를 점점 더 효과적으로 활용하고 있다\"고 밝혔습니다. ## 생성형 AI 도입의 주요 배경 넷플릭스는 글로벌 스트리밍 플랫폼으로, AI 및 기술 혁신에 적극적인 기업입니다. 이번 발표는 콘텐츠 제작 효율과 품질 개선을 위한 도입임을 강조하고 있습니다. ## 적용 범위와 특징 표 | 구분 | 내용 | |---------------------|-----------------------------------------------------------| | 적용 작품 수 | 약 300개 타이틀 | | 활용 단계 | 후반 제작(Post-production)이 주로 해당 | | 공식 발표 시점 | 2026년 2분기 실적 보고서(2026-07-16 공개) | | 출처 | The Verge, Netflix 공식 보고서 | | 주요 활용 목적 | 품질 개선, 제작 효율 증대 | | 기업명 | 넷플릭스(Netflix) | | 기술 종류 | 생성형 AI(Generative AI) | | 추가 공지 여부 | 실적 발표에서 최초 공개, 세부 적용 사례는 미공개 | . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1770233621425-5d9ee7a0a700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMG5ldXJhbCUyMG5ldHdvcmt8ZW58MXwwfHx8MTc4NDI1OTcyMnww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
