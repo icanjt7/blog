@@ -1,0 +1,20 @@
+{
+  "run_id": "20260717-173207-636f04a6",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "asus-4k-qd-oled-1ce5f08a",
+      "title": "400달러 할인! Asus 4K QD-OLED 게이밍 모니터, 지금 살 이유",
+      "keyword": "Asus 4K QD OLED",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 400달러 할인! Asus 4K QD-OLED 게이밍 모니터, 지금 살 이유. Keyword: Asus 4K QD OLED. Concrete visual subject: monitor display screen modern. Context: ### Asus ROG Swift 4K QD-OLED, 왜 주목받나? Asus는 대만 타이베이에서 설립된 글로벌 IT 기업으로, 특히 게이밍 기기 분야에서 높은 평가를 받고 있습니다. ROG(Republic of Gamers)는 Asus의 프리미엄 게이밍 브랜드로, 고성능 하드웨어를 제공합니다. 이번 할인 대상은 **Asus ROG Swift 32인치 4K QD-OLED 게이밍 모니터**입니다. QD-OLED(Quantum Dot OLED) 패널은 기존 OLED의 뛰어난 블랙 표현에 퀀텀닷 필름을 더해 색상 정확도와 밝기를 크게 향상시킨 기술입니다. - OLED: 각 픽셀이 자체 발광, 완전한 블랙 표현 - QD-OLED: 퀀텀닷 추가로 색감·밝기 개선 이 기술은 PC 게임과 콘솔 게임 모두에서 LCD가 따라잡기 힘든 명암비와 정확한 색감을 제공합니다. HDR(High Dynamic Range)과 4K 해상도의 조합으로 시각적 몰입감이 뛰어납니다. --- ### 할인 가격과 주요 판매처 2026-07-17 기준으로 미국 주요 판매처에서 아래와 같이 할인 중입니다. | 판매처 | 기존가(USD) | 할인가(USD) | 할인폭(USD) | 적용 기간(공개일 기준) | |-------------|-------------|-------------|-------------|---------------------------| | Amazon |. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1552831388-6a0b3575b32a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxtb25pdG9yJTIwZGlzcGxheSUyMHNjcmVlbiUyMG1vZGVybnxlbnwxfDB8fHwxNzg0MzA5NjE2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
