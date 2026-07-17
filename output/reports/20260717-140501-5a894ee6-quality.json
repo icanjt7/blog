@@ -1,0 +1,20 @@
+{
+  "run_id": "20260717-140501-5a894ee6",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "even-microsoft-windows-11-7fd9c256",
+      "title": "8GB 램, 선물용 노트북 선택 실수 줄이는 5가지 체크포인트",
+      "keyword": "Even Microsoft Windows 11",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 8GB 램, 선물용 노트북 선택 실수 줄이는 5가지 체크포인트. Keyword: Even Microsoft Windows 11. Concrete visual subject: laptop portable computer modern software windows technology. Context: ## 8GB RAM, Even Microsoft Windows 11도 무거웠다 2026년 7월 17일 The Verge 리뷰에 따르면, Microsoft의 13인치 Surface Laptop(8GB RAM)은 MacBook Air와 견줄 만한 빌드 퀄리티와 배터리 성능에도 불구하고 Windows 11 환경에서 원활한 사용이 어려웠습니다. $900 가격에 추천할 만했지만, 실제로는 기본적인 멀티태스킹과 소프트웨어 실행에서 속도 저하와 버벅임이 잦았습니다. ## 선물용 노트북, 사양만 보지 말아야 하는 이유 노트북을 선물할 때 단순히 브랜드와 가격, 스펙만 믿고 고르면 실패 확률이 높습니다. 특히 Even Microsoft Windows 11처럼 최신 OS에서도 8GB RAM은 일상적인 사용에 부족함이 드러나고 있습니다. ## 꼭 체크할 5가지 기준 The Verge 리뷰와 공식 안내 기준으로, 노트북 선물 전 반드시 확인해야 할 사항을 표로 정리했습니다. | 체크포인트 | 구체 내용 | |----------------|-------------------------------------------------------------------| | RAM 용량 | 8GB는 Windows 11에서 원활한 사용이 어려워 최소 16GB 권장 | | 제품 가격 | Surface Laptop 13인치 모델 기준 $900, 국내 판매가/AS 조건 별도. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBwb3J0YWJsZSUyMGNvbXB1dGVyJTIwbW9kZXJuJTIwc29mdHdhcmUlMjB3aW5kb3dzJTIwdGVjaG5vbG9neXxlbnwxfDB8fHwxNzg0Mjk3MjE5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
