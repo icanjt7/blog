@@ -1,0 +1,20 @@
+{
+  "run_id": "20260717-193422-53a6d298",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "pebble-eric-migicovsky-30-8cce816c",
+      "title": "Pebble, 30일 워런티 전격 도입—사용자에겐 어떤 변화?",
+      "keyword": "Pebble Eric Migicovsky 30",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Pebble, 30일 워런티 전격 도입—사용자에겐 어떤 변화?. Keyword: Pebble Eric Migicovsky 30. Concrete visual subject: technology innovation circuit abstract. Context: ## Pebble 30일 워런티, 무엇이 달라졌나? 2026년 7월 17일, Pebble 창립자 Eric Migicovsky가 자사의 신형 e-paper 스마트워치에 30일 워런티 정책을 도입한다고 밝혔습니다. 그는 구매자가 제품에 대해 충분히 이해하고, 문제가 생길 경우 Pebble이 책임을 다할 것임을 신뢰해달라고 강조했습니다. ## Eric Migicovsky는 누구인가? Eric Migicovsky는 Pebble 스마트워치의 창립자이자 대표입니다. Pebble은 최초의 e-paper 기반 스마트워치로, 기술 혁신과 사용자 친화적인 디자인으로 알려져 있습니다. ## 실제 사용자에게 적용되는 변화 체크리스트 | 기준 | 세부 내용 | |-----------------|--------------------------------------------------------| | 적용 제품 | Pebble 신형 e-paper 스마트워치 | | 워런티 기간 | 30일 | | 발표 일자 | 2026-07-17 (원문 공개일 기준) | | 정책 발표자 | Eric Migicovsky (Pebble 창립자) | | 보장 내용 | 제품에 문제가 생기면 Pebble이 직접 해결을 약속 | | 신뢰 강조 | 짧은 워런티가 오히려 투명성과 신뢰를 기반으로 한다고 설명 | | 대상 | 스마트워치 구매자, 도입 검토 중인 기업 및 개발팀 | ## 사용자가. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330300479-02550a1a3c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0MjAwMTczfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
