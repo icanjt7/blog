@@ -1,0 +1,20 @@
+{
+  "run_id": "20260717-114217-017346dd",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "war-woke-science-comes-2eb7a045",
+      "title": "미국 과학 예산에 무슨 일이? ‘woke science’ 논쟁의 진짜 영향",
+      "keyword": "war woke science comes",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 미국 과학 예산에 무슨 일이? ‘woke science’ 논쟁의 진짜 영향. Keyword: war woke science comes. Concrete visual subject: science research laboratory government budget finance. Context: ## 주요 이슈 The war on ‘woke science’ comes for space research(2026-07-17) 기사에 따르면, 미국 정부는 과학 정책에 대한 문화적 논쟁을 본격화하고 있습니다. 최근 미국 예산관리국(OMB)의 제안은 NASA 등 우주 연구와 관련된 과학 예산의 미래를 좌우할 수 있다는 평가를 받고 있습니다. ## 배경 설명 - **OMB(Office of Management and Budget):** 미국 정부 예산을 총괄하는 기관으로, 모든 연방 예산의 승인과 관리 역할을 맡고 있습니다. - **NASA(National Aeronautics and Space Administration):** 미국의 항공우주 연구 및 개발을 담당하는 대표적 과학기관입니다. - ‘woke science’란 다양성, 포용성 등 사회적 가치를 과학 연구에 적극 반영하려는 흐름을 지칭합니다. ## 논쟁의 핵심 - 이번 OMB 제안은 과학 연구 지원금(Grant)에 대한 심사 기준을 재정비하며, 정치적 가치가 과학 정책에 반영될 수 있다는 우려가 나왔습니다. - 특히 우주 연구와 관련된 프로젝트, NASA의 예산 집행, Planetary Society(우주 과학 비영리 단체)의 활동에 적지 않은 영향을 줄 수 있습니다. ## 체크리스트: 정책 변화 주요 기준 | 항목 | 내용 | |------------------|-----. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1581093577421-f561a654a353?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwZ292ZXJubWVudCUyMGJ1ZGdldCUyMGZpbmFuY2V8ZW58MXwwfHx8MTc4NDI4ODgxNHww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
