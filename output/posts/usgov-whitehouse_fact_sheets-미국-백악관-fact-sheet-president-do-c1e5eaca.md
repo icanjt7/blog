@@ -1,17 +1,19 @@
 ---
-title: "미국 백악관, Fact Sheet: President Do"
-date: "2026-06-22T00:04"
-category: "정책"
+title: 트럼프 대통령, 미국의 데이터 보호 강화 위한 행정 명령 서명
+date: 2026-06-22T00:04
+category: 정책
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미국 백악관"
-  - "정책"
-  - "백악관"
-  - "팩트시트"
-author: "미국 백악관"
+- 보도기사
+- 미국정부
+- 미국 백악관
+- 정책
+- 백악관
+- 팩트시트
+author: 미국 백악관
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1468779036391-52341f60b55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODIxNTI0ODh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: https://images.unsplash.com/photo-1468779036391-52341f60b55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODIxNTI0ODh8MA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미국 백악관이(The White House) 2026-06-22 공개한 'Fact Sheet: President Donald J. Trump Secures the Nation Against Advanced Cryptographic Attacks' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
