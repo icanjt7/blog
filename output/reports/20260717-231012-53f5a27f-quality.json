@@ -1,0 +1,22 @@
+{
+  "run_id": "20260717-231012-53f5a27f",
+  "average_quality": 40.0,
+  "drafts": [
+    {
+      "slug": "taylor-farms-us-5df7e084",
+      "title": "Taylor Farms US 멕시코산 양상추 회수와 Cyclospora 대응",
+      "keyword": "Taylor Farms US",
+      "category": "기술",
+      "quality_score": 40.0,
+      "review_notes": [
+        "핵심 키워드 반복이 과합니다.",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Taylor Farms US 멕시코산 양상추 회수와 Cyclospora 대응. Keyword: Taylor Farms US. Concrete visual subject: technology innovation circuit abstract. Context: ## Cyclospora 집단 감염과 Taylor Farms US의 회수 결정 2026년 7월 17일, Taylor Farms US는 공식 발표를 통해 미국 시장에서 중부 멕시코산 아이스버그 양상추를 전면 회수한다고 밝혔습니다. 이번 조치는 Cyclospora 감염 집단 발생과 직접적으로 연관되어 있습니다. Cyclospora는 신선 채소에서 감염될 수 있는 원생생물로, 설사, 복통 등 위장 질환을 유발할 수 있습니다. 미국 내 대형 식품 공급업체인 Taylor Farms US의 결정은 Taco Bell, Sysco 등 주요 고객사와 미국 내 식품 유통망 전체에 영향을 미치고 있습니다. ## 회수 대상과 적용 범위 Taylor Farms US의 발표에 따르면, 회수 대상은 중부 멕시코에서 생산된 아이스버그 양상추입니다. 멕시코산 전체가 아닌, 특정 지역 생산품만 해당되며, 타 지역에서 공급되는 양상추는 정상적으로 유통됩니다. 회수는 2026년 7월 17일 공식적으로 시작되었으며, 공급망 전체에 즉각 적용되었습니다. ## 주요 고객사와 소비자 영향 Taylor Farms US의 멕시코산 양상추는 Taco Bell, Sysco 등 대형 프랜차이즈와 식당, 미국 내 소매점에 납품되고 있습니다. 회수 조치로 인해 해당 고객사들은 메뉴 변경, 품절, 대체 채소 사용 등 실질적인 영향을 받고 있습니다. 소비자들은 식당 메뉴에서 아이스버그 양상추. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782088385104-039b7c454b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0MjgzNDI5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}

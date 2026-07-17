@@ -1,0 +1,74 @@
+{
+  "run_id": "20260717-231012-53f5a27f",
+  "topics": [
+    {
+      "keyword": "Taylor Farms US",
+      "title_hint": "Taylor Farms pulls iceberg lettuce from the US market after cyclosporiasis outbreak",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Taylor Farms pulls iceberg lettuce from the US market after cyclosporiasis outbreak",
+          "url": "https://www.theverge.com/science/967563/cyclospora-taylor-farms-taco-bell-iceberg-lettuce",
+          "published_at": "2026-07-17T22:09:47",
+          "summary": "Food producer Taylor Farms released a statement on the Cyclospora outbreak Friday, confirming that it's \"voluntarily removing all iceberg lettuce sourced from central Mexico from the US market.\" Reuters reports that, according to a source, Taylor Farms told customers like Yum Brands owner Taco Bell and the food distributor Sysco on Thursday to pull shredded [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Taylor Farms US",
+        "title_hint": "Taylor Farms pulls iceberg lettuce from the US market after cyclosporiasis outbreak",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Taylor Farms pulls iceberg lettuce from the US market after cyclosporiasis outbreak",
+            "url": "https://www.theverge.com/science/967563/cyclospora-taylor-farms-taco-bell-iceberg-lettuce",
+            "published_at": "2026-07-17T22:09:47",
+            "summary": "Food producer Taylor Farms released a statement on the Cyclospora outbreak Friday, confirming that it's \"voluntarily removing all iceberg lettuce sourced from central Mexico from the US market.\" Reuters reports that, according to a source, Taylor Farms told customers like Yum Brands owner Taco Bell and the food distributor Sysco on Thursday to pull shredded [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Taylor Farms US 멕시코산 양상추 회수와 Cyclospora 대응",
+      "slug": "taylor-farms-us-5df7e084",
+      "excerpt": "2026년 7월 17일, Taylor Farms US는 Cyclospora 집단 감염 발생으로 인해 미국 시장에서 중부 멕시코산 아이스버그 양상추를 자발적으로 회수한다고 발표했습니다. Taco Bell, Sysco 등 주요 고객사와 미국 내 식품 유통망에 미친 영향, 회수 절차, 공식 기관의 조사 현황을 정리합니다.",
+      "body_markdown": "## Cyclospora 집단 감염과 Taylor Farms US의 회수 결정\n\n2026년 7월 17일, Taylor Farms US는 공식 발표를 통해 미국 시장에서 중부 멕시코산 아이스버그 양상추를 전면 회수한다고 밝혔습니다. 이번 조치는 Cyclospora 감염 집단 발생과 직접적으로 연관되어 있습니다. Cyclospora는 신선 채소에서 감염될 수 있는 원생생물로, 설사, 복통 등 위장 질환을 유발할 수 있습니다. 미국 내 대형 식품 공급업체인 Taylor Farms US의 결정은 Taco Bell, Sysco 등 주요 고객사와 미국 내 식품 유통망 전체에 영향을 미치고 있습니다.\n\n## 회수 대상과 적용 범위\n\nTaylor Farms US의 발표에 따르면, 회수 대상은 중부 멕시코에서 생산된 아이스버그 양상추입니다. 멕시코산 전체가 아닌, 특정 지역 생산품만 해당되며, 타 지역에서 공급되는 양상추는 정상적으로 유통됩니다. 회수는 2026년 7월 17일 공식적으로 시작되었으며, 공급망 전체에 즉각 적용되었습니다.\n\n## 주요 고객사와 소비자 영향\n\nTaylor Farms US의 멕시코산 양상추는 Taco Bell, Sysco 등 대형 프랜차이즈와 식당, 미국 내 소매점에 납품되고 있습니다. 회수 조치로 인해 해당 고객사들은 메뉴 변경, 품절, 대체 채소 사용 등 실질적인 영향을 받고 있습니다. 소비자들은 식당 메뉴에서 아이스버그 양상추 품절 또는 대체 채소(로메인, 그린리프 등) 적용을 경험할 수 있으며, 식품 안전 관련 안내를 확인해야 합니다.\n\n## 유통망과 정부 기관 조사 현황\n\n멕시코산 아이스버그 양상추 입고가 중단됨에 따라 미국과 멕시코의 식품 유통업자들도 공급망 조정에 나섰습니다. Cyclospora 감염 경로와 확산 범위에 대한 조사와 후속 조치는 CDC(미국 질병관리청)와 FDA(식품의약국)가 담당하고 있습니다. 정부 기관은 감염 사례를 모니터링하며, 회수 범위와 안전 기준에 대한 추가 안내를 제공할 예정입니다.\n\n## 회수 조치 핵심 정보 요약\n\n아래 표는 2026년 7월 17일 공식 발표 기준, 회수 조치의 주요 적용 대상과 영향, 조사 현황을 정리한 것입니다.\n\n| 구분         | 적용 시점   | 영향 대상                  | 조치 내용                               | 확인 경로                   |\n|--------------|-------------|----------------------------|------------------------------------------|-----------------------------|\n| 공급사       | 7월 17일    | Taylor Farms US            | 멕시코산 아이스버그 양상추 자발 회수    | 공식 발표                   |\n| 고객사       | 7월 16~17일 | Taco Bell, Sysco           | 회수 요청, 메뉴 변경 가능성              | 고객사 공지                 |\n| 소비자       | 7월 중      | 미국 내 식당·가정          | 양상추 품절, 대체 채소 사용 안내         | 매장 안내, 식당 공지         |\n| 유통망       | 7월 중      | 미국·멕시코 식품 유통업자  | 멕시코산 양상추 입고 중단                | 유통사 발표                 |\n| 감염 조사    | 7월 17일 이후| CDC, FDA                   | Cyclospora 감염 경로 조사 확대           | 정부 기관 공식 자료         |\n\n## 소비자 체크포인트와 후속 조치\n\n- 최근 Taylor Farms US 멕시코산 양상추를 섭취한 경우, 건강 상태를 확인하고 이상 증상 발생 시 의료기관에 문의해야 합니다.\n- 회수된 매장에서는 Cyclospora 감염 위험이 낮으므로 안내를 확인할 필요가 있습니다.\n- 대체 채소 사용 시 알레르기, 선호도를 고려하여 메뉴 선택을 신중히 해야 합니다.\n- 추가 안내와 감염 조사 결과는 CDC, FDA, Taylor Farms US 공식 웹사이트에서 확인 가능합니다.\n\n## 결론 및 참고 안내\n\nTaylor Farms US의 이번 회수 조치는 미국 내 식품 안전을 위한 즉각적인 대응입니다. 소비자와 업계는 공급망 변화, 메뉴 조정, 정부 기관의 감염 조사 결과를 지속적으로 확인해야 합니다. 공식 발표와 안내를 토대로, 식품 안전 관련 최신 정보를 참고하는 것이 중요합니다.\n\n참고 출처:  \n[The Verge - Taylor Farms pulls iceberg lettuce from the US market after cyclosporiasis outbreak (2026-07-17)](https://www.theverge.com/science/967563/cyclospora-taylor-farms-taco-bell-iceberg-lettuce)",
+      "tags": [
+        "기술",
+        "Taylor",
+        "Farms",
+        "US"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1782088385104-039b7c454b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0MjgzNDI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Taylor Farms US 멕시코산 양상추 회수와 Cyclospora 대응 — Photo by Brecht Corbeel on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1782330299602-8dcca2aea607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dGVjaG5vbG9neSUyMGlubm92YXRpb24lMjBjaXJjdWl0JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc4NDI4MzQyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "Taylor Farms US 멕시코산 양상추 회수와 Cyclospora 대응 본문 보조 이미지 — Photo by Brecht Corbeel on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Taylor Farms US 멕시코산 양상추 회수와 Cyclospora 대응. Keyword: Taylor Farms US. Concrete visual subject: technology innovation circuit abstract. Context: ## Cyclospora 집단 감염과 Taylor Farms US의 회수 결정 2026년 7월 17일, Taylor Farms US는 공식 발표를 통해 미국 시장에서 중부 멕시코산 아이스버그 양상추를 전면 회수한다고 밝혔습니다. 이번 조치는 Cyclospora 감염 집단 발생과 직접적으로 연관되어 있습니다. Cyclospora는 신선 채소에서 감염될 수 있는 원생생물로, 설사, 복통 등 위장 질환을 유발할 수 있습니다. 미국 내 대형 식품 공급업체인 Taylor Farms US의 결정은 Taco Bell, Sysco 등 주요 고객사와 미국 내 식품 유통망 전체에 영향을 미치고 있습니다. ## 회수 대상과 적용 범위 Taylor Farms US의 발표에 따르면, 회수 대상은 중부 멕시코에서 생산된 아이스버그 양상추입니다. 멕시코산 전체가 아닌, 특정 지역 생산품만 해당되며, 타 지역에서 공급되는 양상추는 정상적으로 유통됩니다. 회수는 2026년 7월 17일 공식적으로 시작되었으며, 공급망 전체에 즉각 적용되었습니다. ## 주요 고객사와 소비자 영향 Taylor Farms US의 멕시코산 양상추는 Taco Bell, Sysco 등 대형 프랜차이즈와 식당, 미국 내 소매점에 납품되고 있습니다. 회수 조치로 인해 해당 고객사들은 메뉴 변경, 품절, 대체 채소 사용 등 실질적인 영향을 받고 있습니다. 소비자들은 식당 메뉴에서 아이스버그 양상추. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: Taylor Farms US 멕시코산 양상추 회수와 Cyclospora 대응. Keyword: Taylor Farms US. Concrete visual subject: technology innovation circuit abstract. Article context: ## Cyclospora 집단 감염과 Taylor Farms US의 회수 결정 2026년 7월 17일, Taylor Farms US는 공식 발표를 통해 미국 시장에서 중부 멕시코산 아이스버그 양상추를 전면 회수한다고 밝혔습니다. 이번 조치는 Cyclospora 감염 집단 발생과 직접적으로 연관되어 있습니다. Cyclospora는 신선 채소에서 감염될 수 있는 원생생물로, 설사, 복통 등 위장 질환을 유발할 수 있습니다. 미국 내 대형 식품 공급업체인 Taylor Farms US의 결정은 Taco Bell, Sysco 등 주요 고객사와 미국 내 식품 유통망 전체에 영향을 미치고 있습니다. ## 회수 대상과 적용 범위 Taylor Farms US의 발표에 따르면, 회수 대상은 중부 멕시코에서 생산된 아이스버그 양상추입니다. 멕시코산 전체가 아닌, 특정 지역 생산품만 해당되며, 타 지역에서 공급되는 양상추는 정상적으로 유통됩니다. 회수는 2026년 7월 17일 공식적으로 시작되었으며, 공급망 전체에 즉각 적용되었습니다. ## 주요 고객사와 소비자 영향 Taylor Farms US의 멕시코산 양상추는 Taco Bell, Sysco 등 대형 프랜차이즈와 식당, 미국 내 소매점에 납품되고 있습니다. 회수 조치로 인해 해당 고객사들은 메뉴 변경, 품절, 대체 채소 사용 등 실질적인 영향을 받고 있습니다. 소비자들은 식당 메뉴에서 아이스버그 양상추 품절 또는 대체 채소(로메인, 그린리프 등) 적용을 경험할 수 있으며, 식품 안전 관련 안내를 확인해야 합니다. ## 유통망과 정부 기관 조사 현황 멕시코산 아이스버그 양상추 입고가 중단됨에 따라 미국과 멕시코의 식품 유통업자들도 공급망 조정에 나섰습니다. Cyclospora 감염 경로와 확산 범위에 대한 조사와 후속 조치는 CDC(미국 질병관리청)와 F. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-17T23:12:01.944811",
+      "quality_score": 40.0,
+      "review_notes": [
+        "핵심 키워드 반복이 과합니다.",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 40.0"
+    }
+  ]
+}
