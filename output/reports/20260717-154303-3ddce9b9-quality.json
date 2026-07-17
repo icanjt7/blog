@@ -1,0 +1,20 @@
+{
+  "run_id": "20260717-154303-3ddce9b9",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "florida-200-000-steam-3920fdd3",
+      "title": "Steam 게임 악성코드로 22만 달러 암호화폐 도난, 실제 사용자 영향은?",
+      "keyword": "Florida 200 000 Steam",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Steam 게임 악성코드로 22만 달러 암호화폐 도난, 실제 사용자 영향은?. Keyword: Florida 200 000 Steam. Concrete visual subject: gaming esports interactive. Context: ## 사건 개요 2026년 7월 17일, 미국 플로리다에서 21세의 Zyaire Wilkins가 Steam 게임을 통해 악성코드를 배포, 22만 달러 이상의 암호화폐를 탈취한 혐의로 연방 당국에 체포되었습니다. 이 사건은 The Verge 및 지역 뉴스(Local10)에서 보도되었습니다. ## Steam 게임 악성코드 사건 주요 체크포인트 | 항목 | 구체 내용 | |------------------|-------------------------------------------------------------------| | 피해 금액 | 최소 $220,000 (미국 연방 당국 공식 발표 기준) | | 사용된 플랫폼 | Valve사의 Steam(PC 게임 유통 플랫폼) | | 범죄 방식 | 악성코드가 포함된 게임을 배포하여 암호화폐 지갑 정보 탈취 | | 피의자 정보 | 플로리다 거주 21세 Zyaire Wilkins 및 공범 | | 대상 사용자 | Steam 게임을 다운로드 및 설치한 일반 사용자 | | 주요 영향 | 암호화폐 지갑 해킹 위험 증가, Steam 내 보안 경고 강화 | | 공식 대응 | 연방 당국 수사 진행, Steam 플랫폼 보안 안내 강화 | ## 실제 사용자에게 미치는 영향 - **Steam 게임 설치 시 주의**: 악성코드가 포함된 게임을 설치할 경우 암호화폐 지갑 정보가 도난당할 수 있습니다. - **보안 경. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1759493464913-014fdf4b4980?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxnYW1pbmclMjBlc3BvcnRzJTIwaW50ZXJhY3RpdmV8ZW58MXwwfHx8MTc4NDMwMzI2N3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
