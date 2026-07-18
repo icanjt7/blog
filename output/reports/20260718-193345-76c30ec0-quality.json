@@ -1,0 +1,20 @@
+{
+  "run_id": "20260718-193345-76c30ec0",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "google-pixel-11a-e17894af",
+      "title": "Pixel 11a, Tensor G6 탑재 유출 및 주요 변화 분석",
+      "keyword": "Google Pixel 11a",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Pixel 11a, Tensor G6 탑재 유출 및 주요 변화 분석. Keyword: Google Pixel 11a. Concrete visual subject: smartphone google modern screen search cloud technology. Context: ## Pixel 11a, Tensor G6 탑재 가능성 2026년 7월 18일 The Verge 기사에 따르면, 업계 팁스터 Mystic Leaks는 Pixel 11a에 구글 최신 Tensor G6 칩셋이 적용될 것이라는 정보를 공개했다. 기존 Pixel 10a는 Tensor G4, Pixel 10/10 Pro는 Tensor G5를 사용했으나, Pixel 11a는 동시기 플래그십 모델과 동일한 고성능 프로세서를 탑재할 것으로 전망된다. 이는 Pixel a 시리즈 최초로 플래그십 칩셋이 적용되는 사례다. ## Tensor G6 도입의 의미 Tensor G6는 구글이 직접 설계한 최신 칩셋으로, 연산 능력과 AI 처리 성능이 Tensor G5 대비 크게 향상된 것으로 알려졌다. The Verge는 \"Pixel 11a가 더 이상 구형 프로세서로 제한되지 않을 것\"이라며, 앱 실행 속도, 카메라 기능, AI 기반 서비스의 품질이 개선될 수 있다고 평가했다. Tensor G6 적용은 업데이트 지원 기간과 버그 대응력에도 긍정적 영향을 줄 수 있다. ## Pixel a 라인업 칩셋 및 전략 비교 Pixel a 시리즈는 그동안 한 세대 이전 칩셋을 사용해왔으며, 지원 기간이나 성능 면에서 플래그십 모델과 차별화되어 왔다. Pixel 10a는 Tensor G4를 탑재했고, Pixel 10 및 10 Pro는 Tensor G5를 적용했다. 이에 따라 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1603791452906-af1740e171bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxzbWFydHBob25lJTIwZ29vZ2xlJTIwbW9kZXJuJTIwc2NyZWVuJTIwc2VhcmNoJTIwY2xvdWQlMjB0ZWNobm9sb2d5fGVufDF8MHx8fDE3ODQ0MDM0ODF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
