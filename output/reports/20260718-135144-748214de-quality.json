@@ -1,0 +1,22 @@
+{
+  "run_id": "20260718-135144-748214de",
+  "average_quality": 51.0,
+  "drafts": [
+    {
+      "slug": "sony-rgb-led-tv-5b482fb5",
+      "title": "Sony Bravia 9 II RGB LED TV 공식 리뷰 핵심 분석",
+      "keyword": "Sony RGB LED TV",
+      "category": "기술",
+      "quality_score": 51.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Sony Bravia 9 II RGB LED TV 공식 리뷰 핵심 분석. Keyword: Sony RGB LED TV. Concrete visual subject: technology innovation circuit abstract. Context: ## Sony Bravia 9 II, 공식 리뷰로 본 RGB LED TV의 핵심 2026년 7월 18일 The Verge에서 공개된 ‘Sony’s flagship RGB LED TV is incredible’ 리뷰는 Sony Bravia 9 II가 최근 TV 시장에서 가장 주목받는 신제품임을 강조한다. Sony는 영상·음향 기술 분야에서 오랜 혁신을 이어온 글로벌 기업으로, 이번 Bravia 9 II 모델에 RGB LED 백라이트 기술을 적용하며 기존 OLED/QLED와 차별화를 꾀했다. ## RGB LED 백라이트 기술의 특징과 효과 Bravia 9 II는 RGB(레드, 그린, 블루) LED를 각각 독립적으로 제어하는 백라이트 구조를 채택했다. 이 기술은 다음과 같은 장점을 제공한다: - 각 색상별 LED 제어로 색 정확도와 명암비가 극대화됨 - 어두운 장면에서 디테일 손실이 적고, 밝은 장면에서는 색상 표현이 자연스러움 - 미세한 화면 변화와 색채의 경계가 부드럽게 구현됨 The Verge 리뷰에서는 판타지 영화 ‘Dungeons & Dragons: Honor Among Thieves’를 Bravia 9 II로 시청한 경험을 구체적으로 언급했다. 실제로, 영화 속 배경과 세트의 구분이 거의 느껴지지 않을 정도로 몰입도가 높았다는 평가를 받고 있다. ## OLED·QLED·일반 LED TV와의 비교 Bravia 9 II의 RGB L. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0MzE3MTEzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
