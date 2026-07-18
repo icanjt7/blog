@@ -1,0 +1,21 @@
+{
+  "run_id": "20260718-151635-8e86db8b",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "gopro-8217-max-100-59324872",
+      "title": "9초 만에 품절? GoPro Max 2 한정 번들, 진짜 혜택은",
+      "keyword": "GoPro 8217 Max 100",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 9초 만에 품절? GoPro Max 2 한정 번들, 진짜 혜택은. Keyword: GoPro 8217 Max 100. Concrete visual subject: public service checklist. Context: 2026년 7월 18일, GoPro Max 2 액션캠과 액세서리 번들이 공식 홈페이지 및 The Verge 등 주요 테크 매체에서 한정 수량으로 선보였습니다. 액세서리 총합 $100 상당이 포함된 이번 번들은 9초 만에 품절될 정도로 많은 관심을 받았습니다. 이 제품은 2002년 미국에서 창업된 액션카메라 브랜드 GoPro(고프로)의 신형 모델로, VR과 360도 촬영 기능까지 탑재하며 촬영 전문성을 강화한 점이 특징입니다. 이번 번들의 실제 구성품은 삼각대, 추가 배터리, 케이스, 마운트 등 촬영 시 바로 활용할 수 있는 필수 액세서리들로 이루어져 있습니다. 단품 기준 약 $499이었던 Max 2 모델에 $100 상당의 액세서리팩이 추가되어, 첫 구매자에게 경제적입니다. 공식 안내 기준, 번들 내 액세서리는 개별 구매 시 정가로 환산되며, 신제품 초기엔 별도 구매보다 번들 구성이 실질적 이득이 됩니다. 구매를 고민하는 분이라면 아래 비교표를 참고하세요. | 구분 | Max 2 단품 | Max 2 번들 (GoPro 8217 Max 100) | |----------------|-----------------------------|----------------------------------------| | 가격 | $499 | $499 (액세서리 $100 포함) | | 구성품 | 본체 + 기본 배터리 | 본체 + 기본 배터리 + 삼각대. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1631540697666-8e10f3108722?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxwdWJsaWMlMjBzZXJ2aWNlJTIwY2hlY2tsaXN0fGVufDF8MHx8fDE3ODQzODgwNDh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
