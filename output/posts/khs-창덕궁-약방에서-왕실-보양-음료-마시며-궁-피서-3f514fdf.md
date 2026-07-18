@@ -1,15 +1,17 @@
 ---
-title: "창덕궁 약방에서 왕실 보양 음료 마시며 ‘궁 피서’"
-date: "2026-07-09T00:06"
-category: "핫이슈"
+title: 창덕궁 약방, 여름철 무더위 쉼터로 개방 및 전통 체험 프로그램 운영
+date: 2026-07-09T00:06
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=b22c1f09bb1440c68470fd01b282025a"
-cover_image_alt: "지난해 창덕궁 약방 개방 현장(‘25.8.)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=b22c1f09bb1440c68470fd01b282025a
+cover_image_alt: 지난해 창덕궁 약방 개방 현장(‘25.8.)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 보도자료 발표

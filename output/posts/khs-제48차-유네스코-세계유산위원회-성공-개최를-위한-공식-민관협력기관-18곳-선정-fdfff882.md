@@ -1,15 +1,18 @@
 ---
-title: "제48차 유네스코 세계유산위원회 성공 개최를 위한 공식 민관협력기관 18곳 선정"
-date: "2026-07-09T00:08"
-category: "핫이슈"
+title: 제48차 유네스코 세계유산위원회 공식 민관협력 기관 선정
+date: 2026-07-09T00:08
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://images.unsplash.com/photo-1517868674985-0525518ae392?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxrb3JlYW4lMjBoZXJpdGFnZSUyMGFyY2hpdGVjdHVyZSUyMGludGVybmF0aW9uYWwlMjBvcmdhbml6YXRpb258ZW58MXwwfHx8MTc4MzU2MjczMXww&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "제48차 유네스코 세계유산위원회 성공 개최를 위한 공식 민관협력기관 18곳 선정 — Photo by Drew Dizzy Graham on Unsplash"
-author: "국가유산청"
+cover_image: https://images.unsplash.com/photo-1517868674985-0525518ae392?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxrb3JlYW4lMjBoZXJpdGFnZSUyMGFyY2hpdGVjdHVyZSUyMGludGVybmF0aW9uYWwlMjBvcmdhbml6YXRpb258ZW58MXwwfHx8MTc4MzU2MjczMXww&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 제48차 유네스코 세계유산위원회 성공 개최를 위한 공식 민관협력기관 18곳 선정 — Photo by Drew Dizzy
+  Graham on Unsplash
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 소개
