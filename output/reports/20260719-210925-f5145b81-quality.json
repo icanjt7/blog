@@ -1,0 +1,21 @@
+{
+  "run_id": "20260719-210925-f5145b81",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "kieran-hebden-four-tet-fac9edf9",
+      "title": "Kieran Hebden(Four Tet)의 미지의 프로젝트, 왜 화제인가?",
+      "keyword": "Kieran Hebden Four Tet",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Kieran Hebden(Four Tet)의 미지의 프로젝트, 왜 화제인가?. Keyword: Kieran Hebden Four Tet. Concrete visual subject: technology innovation circuit abstract. Context: ## 독특한 프로젝트, 무엇이 다른가? Kieran Hebden은 영국 출신의 일렉트로닉 뮤지션이자 Four Tet이라는 이름으로 잘 알려져 있습니다. 이번 신작은 발음조차 어려운 기호와 글리프 시리즈로 제목부터 호기심을 자극합니다. 공식 출처(The Verge, 2026-07-19)에서도 \"구글로 검색이 불가능하다\"는 반응이 나올 정도로 독창적인 컨셉을 선보이고 있습니다. ## 작품 배경 및 특징 - **아티스트**: Kieran Hebden(Four Tet), 영국 일렉트로닉 프로듀서 - **프로젝트명**: 발음할 수 없는 기호(원문 기준) - **출시일**: 2026년 7월 19일(출처 기준) - **음악 장르**: 실험적 일렉트로닉, 미니멀리즘, 글리치 - **컨셉**: 제목과 트랙명이 기호와 윙딩스로 표기되어 검색이나 발음이 어렵고, 음원 자체도 독특한 구조를 갖춤 ## 체크리스트로 보는 작품 주요 포인트 | 항목 | 구체 내용 | |--------------|---------------------------------------------| | 아티스트 | Kieran Hebden(Four Tet) | | 발매일 | 2026년 7월 19일 (The Verge 리뷰 기준) | | 트랙 특징 | 윙딩스, 기호, 발음 불가 | | 장르 | 실험적 일렉트로닉, 글리치 | | 반응 | 평론가 호기심, 검색 불가, 독창성 극찬 | |. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330300479-02550a1a3c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0MzkyNTkzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
