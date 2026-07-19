@@ -1,5 +1,5 @@
 ---
-title: 중장기전략위원회 거버넌스개혁반 분과회의 개최
+title: 기획예산처, 중장기전략위원회와 거버넌스개혁반 회의 개최
 date: 2026-05-15T03:45
 category: 정책
 tags:
@@ -12,6 +12,7 @@ cover_image_alt: 중장기전략위원회 거버넌스개혁반 분과회의 개
 author: 기획예산처
 expanded_by_llm: true
 search_index_improved: true
+title_improved_by_llm: true
 ---
 
 ## 중장기전략위원회 거버넌스개혁반 분과회의 개요  

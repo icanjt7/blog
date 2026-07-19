@@ -1,15 +1,18 @@
 ---
-title: "세계유산위원회 개최지 부산에서 만나는 한국 전통예술의 진수, ‘굿GOOD보러가자’(260615)[국가유산청 배포]"
-date: "2026-06-15T00:00"
-category: "핫이슈"
+title: 부산에서 만나는 한국 전통예술 '굿GOOD보러가자' 공연 개최
+date: 2026-06-15T00:00
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산진흥원"
-  - "핫이슈"
+- 보도기사
+- 국가유산진흥원
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1709391593523-4c21e5bf0dc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxidXNhbiUyMGhhZXVuZGFlJTIwYmVhY2glMjBza3lsaW5lJTIwb2NlYW4lMjBrb3JlYW4lMjBoZXJpdGFnZSUyMGFyY2hpdGVjdHVyZXxlbnwxfDB8fHwxNzgxNDkxOTEyfDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "세계유산위원회 개최지 부산에서 만나는 한국 전통예술의 진수, ‘굿GOOD보러가자’(260615)[국가유산청 배포] — Photo by Hoang Trinh on Unsplash"
-author: "국가유산진흥원"
+cover_image: https://images.unsplash.com/photo-1709391593523-4c21e5bf0dc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxidXNhbiUyMGhhZXVuZGFlJTIwYmVhY2glMjBza3lsaW5lJTIwb2NlYW4lMjBrb3JlYW4lMjBoZXJpdGFnZSUyMGFyY2hpdGVjdHVyZXxlbnwxfDB8fHwxNzgxNDkxOTEyfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 세계유산위원회 개최지 부산에서 만나는 한국 전통예술의 진수, ‘굿GOOD보러가자’(260615)[국가유산청 배포] —
+  Photo by Hoang Trinh on Unsplash
+author: 국가유산진흥원
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산진흥원이 2026-06-15 공개한 자료를 바탕으로 세계유산위원회 개최지 부산에서 만나는 한국 전통예술의 진수, ‘굿GOOD보러가자’(260615)[국가유산청 배포]의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

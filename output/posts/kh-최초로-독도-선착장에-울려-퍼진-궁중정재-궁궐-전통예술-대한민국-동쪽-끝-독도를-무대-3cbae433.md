@@ -1,15 +1,18 @@
 ---
-title: "최초로 독도 선착장에 울려 퍼진 ‘궁중정재' 궁궐 전통예술, 대한민국 동쪽 끝 독도를 무대 삼다(260615)"
-date: "2026-06-15T00:01"
-category: "핫이슈"
+title: 궁중정재, 독도 선착장에서 처음 공개된다
+date: 2026-06-15T00:01
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산진흥원"
-  - "핫이슈"
+- 보도기사
+- 국가유산진흥원
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://images.unsplash.com/photo-1597552571860-136a103d5eb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxrb3JlYW4lMjBjaXR5JTIwbmV3cyUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzgxNDkxOTE3fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "최초로 독도 선착장에 울려 퍼진 ‘궁중정재' 궁궐 전통예술, 대한민국 동쪽 끝 독도를 무대 삼다(260615) — Photo by Yu Kato on Unsplash"
-author: "국가유산진흥원"
+cover_image: https://images.unsplash.com/photo-1597552571860-136a103d5eb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxrb3JlYW4lMjBjaXR5JTIwbmV3cyUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzgxNDkxOTE3fDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 최초로 독도 선착장에 울려 퍼진 ‘궁중정재' 궁궐 전통예술, 대한민국 동쪽 끝 독도를 무대 삼다(260615) — Photo
+  by Yu Kato on Unsplash
+author: 국가유산진흥원
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산진흥원이 2026-06-15 공개한 자료를 바탕으로 최초로 독도 선착장에 울려 퍼진 ‘궁중정재' 궁궐 전통예술, 대한민국 동쪽 끝 독도를 무대 삼다의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

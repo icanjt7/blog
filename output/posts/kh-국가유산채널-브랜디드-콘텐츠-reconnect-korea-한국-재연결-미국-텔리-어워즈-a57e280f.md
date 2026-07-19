@@ -1,15 +1,18 @@
 ---
-title: "국가유산채널 브랜디드 콘텐츠 「Reconnect KOREA(한국 재연결)」 미국 텔리 어워즈 ‘은상’ 수상(260528)"
-date: "2026-05-28T00:11"
-category: "핫이슈"
+title: 국가유산채널 콘텐츠, 미국 텔리 어워즈 은상 수상
+date: 2026-05-28T00:11
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산진흥원"
-  - "핫이슈"
+- 보도기사
+- 국가유산진흥원
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1485186667901-c039c19ecac3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxrb3JlYW4lMjBoZXJpdGFnZSUyMGFyY2hpdGVjdHVyZXxlbnwxfDB8fHwxNzgxMjMyMTUyfDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "국가유산채널 브랜디드 콘텐츠 「Reconnect KOREA(한국 재연결)」 미국 텔리 어워즈 ‘은상’ 수상(260528) — Photo by Timothy Ries on Unsplash"
-author: "국가유산진흥원"
+cover_image: https://images.unsplash.com/photo-1485186667901-c039c19ecac3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxrb3JlYW4lMjBoZXJpdGFnZSUyMGFyY2hpdGVjdHVyZXxlbnwxfDB8fHwxNzgxMjMyMTUyfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 국가유산채널 브랜디드 콘텐츠 「Reconnect KOREA(한국 재연결)」 미국 텔리 어워즈 ‘은상’ 수상(260528)
+  — Photo by Timothy Ries on Unsplash
+author: 국가유산진흥원
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산진흥원이 2026-05-28 공개한 자료를 바탕으로 국가유산채널 브랜디드 콘텐츠 「Reconnect KOREA(한국 재연결)」 미국 텔리 어워즈 ‘은상’ 수상의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
