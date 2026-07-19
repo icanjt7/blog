@@ -1,0 +1,21 @@
+{
+  "run_id": "20260719-171759-940661fa",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "fbi-ice-00414185",
+      "title": "FBI, ICE 요원 사건 수사 중단 논란 현황 정리",
+      "keyword": "FBI ICE",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: FBI, ICE 요원 사건 수사 중단 논란 현황 정리. Keyword: FBI ICE. Concrete visual subject: technology innovation circuit abstract. Context: ## 1. FBI의 ICE 사건 수사 중단 논란 개요 2026년 7월 19일, The Verge는 New York Times를 인용해 FBI(연방수사국)가 ICE(이민세관집행국) 요원이 연루된 폭력 사건에 대해 더 이상 수사하지 않는다는 내부 지침이 연방 요원들에게 전달되었다고 보도했습니다. 이 지침은 ICE 요원과 시민 간의 충돌, 폭행 등 사건에 대한 연방 수사권의 변화와 관련된 것으로, 미국 법집행기관 내 권한 분배와 책임 소재에 대한 논란을 촉발하고 있습니다. ## 2. 기관별 공식 입장 및 역할 변화 - **FBI(연방수사국)**: 미국 내 연방 범죄, 공무원 부패 등 다양한 사건을 수사하는 기관으로, 기존에는 ICE 요원이 연루된 폭력 사건도 조사해왔습니다. 이번 내부 지침이 실제 적용된다면 ICE 사건 수사에서 FBI의 역할이 축소될 수 있습니다. - **ICE(이민세관집행국)**: 이민법 집행과 추방, 국경 단속을 담당하며, 최근 시민과의 충돌 사건이 잦아졌습니다. FBI의 수사 중단이 현실화될 경우, ICE 요원 관련 사건에서 독립 수사의 기회가 줄어들 수 있습니다. - **DHS(국토안보부)**: FBI와 ICE를 감독하는 기관으로, 이번 논란에 대해 ‘정책 변경 없다’는 공식 입장을 밝혔습니다. - **DOJ(법무부)**: 법적 감독과 해석을 담당하며, 정책 변경을 부인했습니다. ## 3. 논란의 쟁점과 현장 혼란. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782338936796-0ebf0a6a1068?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0NDc5MTA3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
