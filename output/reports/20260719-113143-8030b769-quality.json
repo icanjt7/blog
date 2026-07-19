@@ -1,0 +1,20 @@
+{
+  "run_id": "20260719-113143-8030b769",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "grueling-630-mile-race-d6b7c6d8",
+      "title": "햇빛만으로 1,014km? 텍사스 고교생의 태양광 도로 레이스",
+      "keyword": "grueling 630 mile race",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 햇빛만으로 1,014km? 텍사스 고교생의 태양광 도로 레이스. Keyword: grueling 630 mile race. Concrete visual subject: technology innovation circuit abstract. Context: 햇빛만으로 1,014km(630마일)를 달린다는 것, 상상해보셨나요? 2026년 7월 19일, 텍사스 포트워스부터 포트스톡튼까지 이어지는 도로에서 미국 고등학생들이 직접 만든 태양광 자동차로 ‘grueling 630 mile race’에 도전합니다. 이 대회(Solar Car Challenge)는 1995년부터 매년 열리는 학생 중심 이벤트입니다. 참가팀은 5일 동안 실제 도로를 달리며, 오직 태양광만으로 자동차를 움직여야 합니다. 연료나 외부 배터리 충전이 허용되지 않는다는 점이 이 레이스의 가장 큰 특징입니다. ### 주요 조건과 특징 - **참가자**: 미국 고등학생 팀(직접 설계·제작) - **코스**: 포트워스~포트스톡튼, 630마일(약 1,014km), 5일간 실도로 주행 - **에너지**: 햇빛만 사용, 중간 배터리 충전이나 연료 공급 불가 - **차량 제작**: 시중 부품, 3D 프린터 등 학생이 직접 설계·조립 - **운영 방식**: 각 팀은 날씨, 태양광 효율, 고장 등 변수에 대응하며 주행 전략을 세워야 함 - **주최기관**: Solar Car Challenge Foundation [공식 안내 바로가기](https://www.solarcarchallenge.org/) ### grueling 630 mile race에서 요구되는 기술적 난이도 - 태양광 패널 효율은 날씨, 각도, 시간대에 따라 달라짐 - 장거리 주. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0MzkyNTkzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
