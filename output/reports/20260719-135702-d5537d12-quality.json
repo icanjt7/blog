@@ -1,0 +1,20 @@
+{
+  "run_id": "20260719-135702-d5537d12",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "clapper-bad-smart-home-8e657417",
+      "title": "‘Clapper’가 왜 실패한 스마트홈 선물이 됐나? 5가지 체크포인트",
+      "keyword": "Clapper bad smart home",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: ‘Clapper’가 왜 실패한 스마트홈 선물이 됐나? 5가지 체크포인트. Keyword: Clapper bad smart home. Concrete visual subject: technology innovation circuit abstract. Context: ## Clapper: 실패한 스마트홈 선물의 대표 사례 The Verge의 ‘The Clapper was a bad smart home gadget — and a viral sensation’(2026-07-19)에서는 Clapper라는 스마트홈 기기가 왜 사용자의 기대를 충족하지 못했는지 상세히 다룹니다. - Clapper는 박수를 치면 전원을 켜고 끄는 방식으로 유명했으나, 실제로는 박수 타이밍이 맞지 않거나, 소리 크기가 일정하지 않으면 작동하지 않아 ‘bad smart home’의 대표적 실패 사례가 됐습니다. ## Clapper 실패에서 배운 스마트홈 선물 선택 기준 선물용 스마트홈 기기를 고를 때 단순한 기능보다 실제 사용의 편리함과 실패 가능성을 꼼꼼하게 따져야 합니다. ### 꼭 확인할 체크리스트 | 기준 항목 | 구체 정보 | |-------------------|-------------------------------------------------------------------| | 적용 대상 | 가족, IT 입문자, 스마트홈 초보 사용자 | | 주요 기능 | 자동 제어, 음성 또는 박수 인식, 앱 연동, 수동 조작 가능 여부 | | 실패 원인 | 인식 오류(타이밍, 소리 크기), 복잡한 설치, 사용 설명 부족 | | 구매 전 체크 | 반품 기간, 국내 판매처, AS 정책, 충전 규격(USB-C, Qi2 등), . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0MzY2NTcwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
