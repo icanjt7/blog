@@ -1,0 +1,21 @@
+{
+  "run_id": "20260720-170727-44045975",
+  "average_quality": 75.0,
+  "drafts": [
+    {
+      "slug": "lg-8217-oled-400-c4961973",
+      "title": "LG 27GX704A-B OLED 게임 모니터",
+      "keyword": "LG 8217 OLED 400",
+      "category": "기술",
+      "quality_score": 75.0,
+      "review_notes": [
+        "기술 글이 원문 제목의 핵심 대상을 충분히 설명하지 않습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: LG 27GX704A-B OLED 게임 모니터. Keyword: LG 8217 OLED 400. Concrete visual subject: monitor display screen modern gaming esports interactive. Context: ### LG 27GX704A-B OLED 게임 모니터 소개 2026년 7월 현재, LG의 27인치 27GX704A-B OLED 게임 모니터는 400달러 미만의 OLED 게임 모니터 중에서는 드문 제품입니다. 이 모니터는 글로시 WOLED 패널과 빠른 리프레시율을 결합하여 게임 환경을 향상시킵니다. ### 주요 사양 다음 표는 LG 27GX704A-B OLED 게임 모니터의 주요 사양을 요약한 것입니다. | 사양 | 내용 | | --- | --- | | 패널 크기 | 27인치 | | 패널 종류 | WOLED | | 리프레시율 | 240Hz | | 응답 시간 | 1ms | | 색상 깊이 | 10비트 | ### 게임 모니터로서의 성능 이 모니터는 빠른 리프레시율과 글로시 패널로 인해 게임에 적합합니다. 특히,高速 응답 시간과 높은 명도는 게임을 더 현실적으로 만들어줍니다. 또한, LG의 Ultragear 시리즈는 게임 모니터 시장에서 높은 평가를 받고 있습니다. ### 구매 정보 LG 27GX704A-B OLED 게임 모니터는 게임 모니터 업그레이드의 좋은 선택입니다. 현재 아마존과 LG에서 379.99달러에 판매 중으로, 원래 가격 799.99달러 대비 약 53% 할인된 가격입니다. 따라서, 게임 모니터를 업그레이드하고 싶은 사람에게는 LG 27GX704A-B OLED 게임 모니터를 고려해 볼 수 있습니다. 아마존과 LG에서 현재 판매 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1763986365305-109ad3ddbf2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxtb25pdG9yJTIwZGlzcGxheSUyMHNjcmVlbiUyMG1vZGVybiUyMGdhbWluZyUyMGVzcG9ydHMlMjBpbnRlcmFjdGl2ZXxlbnwxfDB8fHwxNzg0NTY3NDAxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
