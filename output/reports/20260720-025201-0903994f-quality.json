@@ -1,0 +1,22 @@
+{
+  "run_id": "20260720-025201-0903994f",
+  "average_quality": 51.0,
+  "drafts": [
+    {
+      "slug": "kieran-hebden-four-tet-aec28b04",
+      "title": "읽을 수 없는 앨범명? Kieran Hebden Four Tet 신작의 5가지 놀라움",
+      "keyword": "Kieran Hebden Four Tet",
+      "category": "기술",
+      "quality_score": 51.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 읽을 수 없는 앨범명? Kieran Hebden Four Tet 신작의 5가지 놀라움. Keyword: Kieran Hebden Four Tet. Concrete visual subject: technology innovation circuit abstract. Context: 영국 전자음악 프로듀서 Kieran Hebden, Four Tet으로 잘 알려진 그는 2000년대부터 혁신적인 사운드와 샘플링으로 평가받아 왔습니다. 이번 신작은 그 이름조차 발음 불가한 기호들의 조합—The Verge(2026-07-19)에서 \"읽을 수 없는 문자들의 놀라운 부 프로젝트\"라고 소개될 만큼 독특합니다. 이번 프로젝트에서 가장 먼저 눈에 띄는 점은 앨범명과 트랙명이 모두 해독이 불가능한 기호로만 구성되어 있다는 사실입니다. 스트리밍 서비스에서는 일반 텍스트 검색이 거의 불가능하기 때문에, 듣기 위해서는 URL 복사 또는 공식 홈페이지를 직접 찾아야 하는 상황입니다. Four Tet 특유의 미니멀하고 입체적인 사운드는 여전히 살아 있습니다. 특히 앨범을 플레이할 때, 아트워크 역시 난해한 기호로 가득해 시각적 경험마저 달라집니다. 청취 환경에 따라 음질 차이도 뚜렷하게 드러납니다—스마트폰 스트리밍과 DAC(디지털-아날로그 컨버터) 연결 재생 시 해상도 차이가 크다는 점은 IT 관점에서 중요한 포인트입니다. 아래 표는 이번 부호 앨범과 기존 Four Tet 프로젝트의 주요 차별점을 정리한 것입니다. | 비교 기준 | 부호 앨범 (2026) | 기존 Four Tet 앨범 | |-----------------------|-----------------------------|------------------------------. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782338936796-0ebf0a6a1068?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0NDY5NjYxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
