@@ -1,0 +1,21 @@
+{
+  "run_id": "20260720-143421-95dbe9f1",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "avengers-doomsday-90bf343b",
+      "title": "‘Avengers: Doomsday’ 첫 트레일러 공개 핵심 정보",
+      "keyword": "Avengers Doomsday",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: ‘Avengers: Doomsday’ 첫 트레일러 공개 핵심 정보. Keyword: Avengers Doomsday. Concrete visual subject: technology innovation circuit abstract. Context: ## 2026년 7월 20일, 트레일러 공개 정식 발표 Marvel Studios는 2026년 7월 20일, ‘Avengers: Doomsday’의 첫 공식 트레일러를 발표했습니다. The Verge는 이번 트레일러가 수개월간의 티저 이후 처음으로 전체 캐스팅과 핵심 장면을 공개했다고 보도했습니다. Marvel은 트레일러를 통해 영화의 주요 빌런과 대규모 출연진을 강조하며, 시리즈 내 긴장감과 확장된 세계관을 선보였습니다. ## Doctor Doom 등장: Robert Downey Jr.의 새로운 역할 트레일러에서 가장 큰 변화는 Robert Downey Jr.가 Doctor Doom을 연기한다는 점입니다. 기존 Avengers 시리즈에서 Iron Man으로 활약했던 Downey Jr.가 이번에는 강력한 빌런으로 등장해, 시리즈 내 갈등 구조를 크게 변화시킬 것으로 보입니다. The Verge 기사에 따르면, Doctor Doom은 ‘Avengers: Doomsday’에서 혼란의 중심이 될 전망입니다. ## 대규모 캐스팅과 기존 멤버 복귀 이번 트레일러는 Avengers 시리즈 특유의 대규모 캐스팅을 다시 한 번 강조했습니다. 기존 Avengers 멤버들이 대거 복귀하며, 새로운 인물들과의 협력·대립 구도가 트레일러 내 주요 장면으로 등장합니다. Marvel Studios는 Avengers: Doomsday를 통해 시리즈의 세계관을 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0NDc5MTA3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
