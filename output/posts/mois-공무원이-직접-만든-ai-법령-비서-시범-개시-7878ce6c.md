@@ -1,15 +1,17 @@
 ---
-title: "공무원이 직접 만든 ‘AI 법령 비서’ 시범 개시"
-date: "2026-07-13T00:06"
-category: "기술"
+title: 공무원 개발 AI, 법령 질문에 즉시 응답한다
+date: 2026-07-13T00:06
+category: 기술
 tags:
-  - "보도기사"
-  - "행정안전부"
-  - "기술"
+- 보도기사
+- 행정안전부
+- 기술
 quality_score: 96.0
-cover_image: "https://mois.go.kr/images/og_logo.jpg"
-cover_image_alt: "공무원이 직접 만든 ‘AI 법령 비서’ 시범 개시"
-author: "행정안전부"
+cover_image: https://mois.go.kr/images/og_logo.jpg
+cover_image_alt: 공무원이 직접 만든 ‘AI 법령 비서’ 시범 개시
+author: 행정안전부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 행정안전부가 2026-07-13 공개한 자료를 바탕으로 공무원이 직접 만든 ‘AI 법령 비서’ 시범 개시의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

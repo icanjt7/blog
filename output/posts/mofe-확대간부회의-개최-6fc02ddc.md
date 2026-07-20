@@ -1,5 +1,5 @@
 ---
-title: 확대간부회의 개최
+title: 재정경제부, 확대간부회의 개최 및 경제정책 방향 논의
 date: 2026-06-03T12:43
 category: 정책
 tags:
@@ -11,6 +11,7 @@ cover_image_alt: 확대간부회의 개최 관련 보도자료 이미지
 author: 재정경제부
 expanded_by_llm: true
 search_index_improved: true
+title_improved_by_llm: true
 ---
 
 ## 확대간부회의 개최 개요

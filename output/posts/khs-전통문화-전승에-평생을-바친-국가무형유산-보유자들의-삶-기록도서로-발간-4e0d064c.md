@@ -1,15 +1,17 @@
 ---
-title: "전통문화 전승에 평생을 바친 국가무형유산 보유자들의 삶, 기록도서로 발간"
-date: "2026-07-15T00:28"
-category: "핫이슈"
+title: 국가무형유산 보유자 3인의 삶과 전승 이야기 기록도서로 발간
+date: 2026-07-15T00:28
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 84.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=33772031d18d45efa262ec918ad47f4e"
-cover_image_alt: "『소반장 보유자 김춘식』, 『판소리 보유자 김일구』, 『판소리 보유자 정순임』 표지"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=33772031d18d45efa262ec918ad47f4e
+cover_image_alt: 『소반장 보유자 김춘식』, 『판소리 보유자 김일구』, 『판소리 보유자 정순임』 표지
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 소개
