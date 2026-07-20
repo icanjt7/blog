@@ -1,0 +1,20 @@
+{
+  "run_id": "20260720-231607-76539ee8",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "here-30-000-sony-ae4234c6",
+      "title": "소니가 3만 곡으로 AI 음악에 소송, 사용자에게 미치는 5가지 변화",
+      "keyword": "Here 30 000 Sony",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 소니가 3만 곡으로 AI 음악에 소송, 사용자에게 미치는 5가지 변화. Keyword: Here 30 000 Sony. Concrete visual subject: artificial intelligence neural network. Context: ## 소니, AI 음악 생성기 Udio에 30,000곡 저작권 소송 2026년 7월 20일, Sony Music Entertainment(세계 최대 음악 레이블 중 하나)는 AI 음악 생성 플랫폼 Udio를 상대로 3만 곡의 저작권 침해 혐의로 소송을 제기했습니다. 이 곡에는 엘비스 프레슬리의 'Hound Dog', 비욘세의 'Say My Name', 해리 스타일스의 'As It Was' 등 유명 아티스트의 대표곡이 포함되어 있습니다. 출처: [The Verge 기사](https://www.theverge.com/tech/968375/sony-udio-lawsuit-songs-ai-copyright) --- ## 사용자와 기업이 겪을 주요 변화 체크리스트 | 항목 | 구체적 내용 | |-------------------|--------------------------------------------------------------------| | 적용 범위 | Udio 플랫폼 전체 이용자 및 음악 생성 관련 API를 사용하는 기업·개발팀 | | 영향 곡수 | 30,000곡 (소니가 공식적으로 언급한 수치) | | 적용 시점 | 2026년 7월 20일 소송 접수 이후, 법적 처리 및 플랫폼 대응에 따라 변동 | | 주요 아티스트 | Elvis Presley, Beyoncé, Harry Styles 등 소니 소속 아티스트 다수 | | 절. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0NTQ4MTYyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
