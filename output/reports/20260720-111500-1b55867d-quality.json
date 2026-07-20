@@ -1,0 +1,20 @@
+{
+  "run_id": "20260720-111500-1b55867d",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "china-america-ai-0d10a805",
+      "title": "중국 AI 모델 출격, 미국 사용자에게 닥칠 변화 5가지",
+      "keyword": "China America AI",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 중국 AI 모델 출격, 미국 사용자에게 닥칠 변화 5가지. Keyword: China America AI. Concrete visual subject: artificial intelligence neural network. Context: ## 주요 소식 2026년 7월 20일, 중국 대표 AI 기업 Moonshot과 Alibaba가 신형 AI 모델(Moonshot Kimi, Alibaba Qwen)을 공개했습니다. 두 회사는 자사 모델이 OpenAI 및 Anthropic과 비교해 성능은 비슷하지만 비용은 훨씬 저렴하다고 주장했습니다. 이번 발표는 실리콘밸리 AI 경쟁에 직접적인 압박을 더합니다. ## 배경 설명 Moonshot은 중국 내에서 자연어처리와 대화형 AI 개발로 주목받는 스타트업이며, Alibaba는 세계적 인터넷·클라우드 기업입니다. 이번 공개 모델은 기존 미국 중심 AI 시장에 실질적 대안을 제시하는 첫 사례로 평가받고 있습니다. ## 실제 사용자 변화 체크리스트 | 기준 항목 | 구체 내용 및 출처 반영 | |--------------------|-----------------------------------------------| | 적용 대상 | 미국 내 AI 솔루션을 도입하는 기업 및 일반 사용자 | | 모델명 | Moonshot Kimi, Alibaba Qwen (공식 명칭) | | 비용 구조 | 기존 OpenAI·Anthropic 대비 저렴한 공개 주장 | | 기능 범위 | 대화형 AI, 자연어처리, 오픈소스 지원 확대 | | 공급 기관 | Moonshot, Alibaba (2026년 7월 20일 발표 기준) | | 경쟁 상황 | 실리콘밸리 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0NTQ2MzU2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
