@@ -1,0 +1,21 @@
+{
+  "run_id": "20260720-182125-97fc9e9e",
+  "average_quality": 92.0,
+  "drafts": [
+    {
+      "slug": "judge-paramount-warner-bros-afa4550c",
+      "title": "1100억 달러 합병 ‘잠정 중단’…Paramount-Warner Bros. 사용자가 볼 변화",
+      "keyword": "Judge Paramount Warner Bros",
+      "category": "기술",
+      "quality_score": 92.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '사용자가 볼 변화' 포함",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 1100억 달러 합병 ‘잠정 중단’…Paramount-Warner Bros. 사용자가 볼 변화. Keyword: Judge Paramount Warner Bros. Concrete visual subject: technology innovation circuit abstract. Context: ## 주요 결정 요약 2026년 7월 20일, 미국 연방 지방법원 Araceli Martínez-Olguín 판사는 12개 주 법무장관의 요청을 받아 Paramount와 Warner Bros. Discovery의 1100억 달러 규모 합병을 일시 중단했습니다. 이 판결은 두 회사의 콘텐츠, 서비스, 가격 정책 그리고 업계 경쟁 구도에 직접적인 영향을 줄 수 있습니다. ## 핵심 체크포인트 | 항목 | 구체 내용 | |-------------------|------------------------------------------------------------------------------------------| | 합병 규모 | 1100억 달러 (미국 기준) | | 결정 주체 | 미국 연방 지방법원, 판사 Araceli Martínez-Olguín | | 발행일 | 2026년 7월 20일 | | 합병 당사자 | Paramount, Warner Bros. Discovery | | 중단 요청 기관 | 12개 주 법무장관 | | 적용 방식 | 일시 중단(잠정적), 추후 법원 추가 심리 예정 | | 사용자 영향 | 스트리밍 서비스 통합 지연, 가격·콘텐츠 정책 변동 가능성, 기존 서비스 유지 가능성 | | 업계 영향 | 경쟁사(넷플릭스, 디즈니 등) 시장 점유율 변화, 콘텐츠 공급망 조정 | ## 사용자에게 미치는 변화 - **스트리밍 통. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330389129-fd3a236e00e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0NDY5NjYxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
