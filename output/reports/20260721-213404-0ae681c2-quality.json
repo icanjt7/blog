@@ -1,0 +1,20 @@
+{
+  "run_id": "20260721-213404-0ae681c2",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "substack-ai-cb8ef74f",
+      "title": "Substack, AI 댓글 감지 도입! 창작자에게 생기는 5가지 변화",
+      "keyword": "Substack AI",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Substack, AI 댓글 감지 도입! 창작자에게 생기는 5가지 변화. Keyword: Substack AI. Concrete visual subject: artificial intelligence neural network. Context: ## Substack, AI 탐지 기능으로 댓글 관리 강화 2026년 7월 21일, Substack은 플랫폼 내 게시물, 답글, 댓글, 노트에 AI 작성 여부를 판단하는 탐지 도구를 도입한다고 밝혔습니다. 이제 창작자와 구독자는 글이 AI에 의해 생성되었는지, AI의 도움을 받았는지 직접 확인할 수 있습니다. [출처: Substack adds an AI detector to help spot blogs written by no one] ## Substack 플랫폼이란? Substack은 누구나 뉴스레터를 만들고 유료 구독자를 모집할 수 있는 글로벌 창작자 플랫폼입니다. 특히 댓글, 토론, 유료 커뮤니티 기능이 창작자의 수익과 운영에 깊이 연결되어 있습니다. ## AI 탐지 도구 도입, 왜 중요한가? 최근 뉴스레터와 커뮤니티의 신뢰성은 단순한 콘텐츠 품질을 넘어, 댓글과 커뮤니티 대화의 진정성까지 요구받고 있습니다. AI가 자동으로 생성한 댓글이나 답글이 늘어나면서, 유료 구독자의 경험과 창작자의 운영 효율성에 영향을 미치고 있습니다. ## 창작자와 구독자에게 생기는 변화 | 구분 | 주요 변화 요약 | | -------------- | ----------------------------------------------------------------------------------------------- | | 적용 대상 | Subs. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0NjY5NzYwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
