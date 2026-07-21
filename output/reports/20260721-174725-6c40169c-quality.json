@@ -1,0 +1,20 @@
+{
+  "run_id": "20260721-174725-6c40169c",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "nearly-kindle-best-buy-83061e57",
+      "title": "베스트바이, 킨들 역대급 할인! 지금 사도 될까요?",
+      "keyword": "Nearly Kindle Best Buy",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 베스트바이, 킨들 역대급 할인! 지금 사도 될까요?. Keyword: Nearly Kindle Best Buy. Concrete visual subject: technology innovation circuit abstract. Context: ## 주요 소식 베스트바이가 2026년 7월 'Black Friday in July' 프로모션을 통해 인기 전자책 리더기 킨들 시리즈를 대폭 할인합니다. Nearly Kindle Best Buy 관련 소식 중에서도, 이번 할인 폭과 적용 모델이 특히 주목받고 있습니다. ## 할인 대상 및 조건 | 할인 모델 | 할인 전 가격 | 할인 후 가격 | 할인 금액 | 출처 기준 주요 특징 | |------------------|-------------|-------------|-----------|--------------------| | Kindle Paperwhite| $159.99 | $124.99 | $35 | 6.8인치 디스플레이, 방수 기능 | | Kindle Scribe | (비공개) | (가격 변동) | (할인 적용) | 필기 기능 지원, 대형 화면 | | Kindle 기본형 | (비공개) | (가격 변동) | (할인 적용) | 경량, 기본 전자책 용도 | | 기타 모델 | 대부분 | 할인 적용 | 최대 $35 이상| 베스트바이 한정 할인 | *출처: [The Verge, 2026-07-21](https://www.theverge.com/gadgets/968356/kindle-paperwhite-colorsoft-scribe-deal-sale)* ## 실제 사용자에게 중요한 포인트 - **이번 할인은 주로 킨들 페이퍼화이트와 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330298761-3e41cd894295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0NTcxNzgxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
