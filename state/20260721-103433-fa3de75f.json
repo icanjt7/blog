@@ -1,0 +1,71 @@
+{
+  "run_id": "20260721-103433-fa3de75f",
+  "topics": [
+    {
+      "keyword": "Who GPU",
+      "title_hint": "Who’s afraid of the big, bad GPU?",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Who’s afraid of the big, bad GPU?",
+          "url": "https://www.theverge.com/cs/features/937356/ai-data-center-gpu-environmental-impact",
+          "published_at": "2026-07-21T10:00:01",
+          "summary": "How does AI make you feel? Are you excited to “vibe-code” your smart home? Or anxious about all the added pollution and billions of gallons of water used by data centers? Dig a little deeper and you’ll start to question the actual value of the GPUs that underpin all the leaps and promises of generative [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Who GPU",
+        "title_hint": "Who’s afraid of the big, bad GPU?",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Who’s afraid of the big, bad GPU?",
+            "url": "https://www.theverge.com/cs/features/937356/ai-data-center-gpu-environmental-impact",
+            "published_at": "2026-07-21T10:00:01",
+            "summary": "How does AI make you feel? Are you excited to “vibe-code” your smart home? Or anxious about all the added pollution and billions of gallons of water used by data centers? Dig a little deeper and you’ll start to question the actual value of the GPUs that underpin all the leaps and promises of generative [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "데이터센터 GPU, 환경과 개인정보 모두 위험할까?",
+      "slug": "who-gpu-442b5718",
+      "excerpt": "AI 데이터센터의 GPU 사용이 환경오염과 개인정보 유출 논란을 동시에 키우고 있습니다. 실제 문제 핵심과 확인할 기준을 정리했습니다.",
+      "body_markdown": "## 이슈 개요\n\nAI와 데이터센터의 확산으로 GPU(Graphics Processing Unit)가 환경과 개인정보 보호 모두에서 논란의 중심에 섰습니다. The Verge의 〈Who’s afraid of the big, bad GPU?〉는 스마트홈·생산성 앱 운영에 필수인 GPU가 오히려 수십억 갤런의 물 소모, 대기오염, 그리고 보안 리스크를 가져온다고 지적합니다.\n\n## 왜 중요한가?\n\nGPU 기반 서비스는 앱 화면 뒤에서 계정 관리, 내부 운영 도구, 고객 데이터 저장소 등 복잡한 시스템을 돌립니다. 한 번 해킹이 발생하면 해커가 어떤 내부 도구에 어떤 권한으로 접근했는지, 그리고 어떤 데이터가 노출됐는지가 핵심 쟁점입니다.\n\n## 주요 쟁점 요약\n\n웨어러블·헬스케어·생산성 앱 등은 단순 연락처 정보보다 더 민감한 생활 패턴과 건강 데이터를 다룹니다. 이 때문에 최신 GPU 이슈는 단순 기능 개선이 아니라 데이터 최소화, 내부 접근권한 분리, 사고 발생 시 통지 체계 확립이 주요 과제로 떠오릅니다.\n\n## 점검해야 할 기준\n\n| 항목           | 구체 내용                                                                 |\n|----------------|--------------------------------------------------------------------------|\n| 영향 대상      | 서비스 이용자, 보안 담당자, 개인정보 처리 스타트업                        |\n| 기술 환경      | 내부 관리도구 보안, 데이터 접근권한, 침해사고 대응, 개인정보 최소화 방침    |\n| 사용자 영향    | 계정 정보 노출, 건강/활동 데이터 유출, 알림·비밀번호 재설정 필요성          |\n| 확인 포인트    | 침해 범위, 노출 데이터 항목, 사용자 통지 여부, 비밀번호·토큰 재설정, 규제기관 신고    |\n| 환경 문제      | 데이터센터 운영에 따른 대규모 물 사용, 추가 에너지 소비, 이산화탄소 배출       |\n\n## 독자가 알아야 할 핵심\n\n- GPU가 늘어날수록 환경 부담과 개인정보 유출 위험도 커집니다.\n- 침해사고 시 ‘누가, 어떤 내부 도구에 접근했는지’가 가장 중요합니다.\n- 데이터 유출 시, 노출된 정보의 종류와 보관 기간까지 꼼꼼히 확인해야 합니다.\n- 헬스케어·웨어러블 데이터는 광고 데이터보다 훨씬 민감할 수 있습니다.\n- 공식 발표나 후속 안내, 실제 적용 사례를 반드시 추가로 확인하는 것이 안전합니다.\n\n## 참고 출처\n\n- [Who’s afraid of the big, bad GPU? (The Verge, 2026-07-21)](https://www.theverge.com/cs/features/937356/ai-data-center-gpu-environmental-impact)  \n  (AI 데이터센터 GPU의 환경 및 보안 이슈 심층 분석)",
+      "tags": [
+        "기술",
+        "Who",
+        "GPU"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxlbnZpcm9ubWVudCUyMG5hdHVyZSUyMGdyZWVufGVufDF8MHx8fDE3ODQ2MzAyMjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "데이터센터 GPU, 환경과 개인정보 모두 위험할까? — Photo by Matthew Smith on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1621157281949-65e2de4ba88b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxlbnZpcm9ubWVudCUyMG5hdHVyZSUyMGdyZWVufGVufDF8MHx8fDE3ODQ2MzAyMjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "데이터센터 GPU, 환경과 개인정보 모두 위험할까? 본문 보조 이미지 — Photo by Vyacheslav Shatskiy on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 데이터센터 GPU, 환경과 개인정보 모두 위험할까?. Keyword: Who GPU. Concrete visual subject: environment nature green. Context: ## 이슈 개요 AI와 데이터센터의 확산으로 GPU(Graphics Processing Unit)가 환경과 개인정보 보호 모두에서 논란의 중심에 섰습니다. The Verge의 〈Who’s afraid of the big, bad GPU?〉는 스마트홈·생산성 앱 운영에 필수인 GPU가 오히려 수십억 갤런의 물 소모, 대기오염, 그리고 보안 리스크를 가져온다고 지적합니다. ## 왜 중요한가? GPU 기반 서비스는 앱 화면 뒤에서 계정 관리, 내부 운영 도구, 고객 데이터 저장소 등 복잡한 시스템을 돌립니다. 한 번 해킹이 발생하면 해커가 어떤 내부 도구에 어떤 권한으로 접근했는지, 그리고 어떤 데이터가 노출됐는지가 핵심 쟁점입니다. ## 주요 쟁점 요약 웨어러블·헬스케어·생산성 앱 등은 단순 연락처 정보보다 더 민감한 생활 패턴과 건강 데이터를 다룹니다. 이 때문에 최신 GPU 이슈는 단순 기능 개선이 아니라 데이터 최소화, 내부 접근권한 분리, 사고 발생 시 통지 체계 확립이 주요 과제로 떠오릅니다. ## 점검해야 할 기준 | 항목 | 구체 내용 | |----------------|--------------------------------------------------------------------------| | 영향 대상 | 서비스 이용자, 보안 담당자, 개인정보 처리 스타트업 | | 기술 환경 | 내부 관리도구 보안, 데이터 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 데이터센터 GPU, 환경과 개인정보 모두 위험할까?. Keyword: Who GPU. Concrete visual subject: environment nature green. Article context: ## 이슈 개요 AI와 데이터센터의 확산으로 GPU(Graphics Processing Unit)가 환경과 개인정보 보호 모두에서 논란의 중심에 섰습니다. The Verge의 〈Who’s afraid of the big, bad GPU?〉는 스마트홈·생산성 앱 운영에 필수인 GPU가 오히려 수십억 갤런의 물 소모, 대기오염, 그리고 보안 리스크를 가져온다고 지적합니다. ## 왜 중요한가? GPU 기반 서비스는 앱 화면 뒤에서 계정 관리, 내부 운영 도구, 고객 데이터 저장소 등 복잡한 시스템을 돌립니다. 한 번 해킹이 발생하면 해커가 어떤 내부 도구에 어떤 권한으로 접근했는지, 그리고 어떤 데이터가 노출됐는지가 핵심 쟁점입니다. ## 주요 쟁점 요약 웨어러블·헬스케어·생산성 앱 등은 단순 연락처 정보보다 더 민감한 생활 패턴과 건강 데이터를 다룹니다. 이 때문에 최신 GPU 이슈는 단순 기능 개선이 아니라 데이터 최소화, 내부 접근권한 분리, 사고 발생 시 통지 체계 확립이 주요 과제로 떠오릅니다. ## 점검해야 할 기준 | 항목 | 구체 내용 | |----------------|--------------------------------------------------------------------------| | 영향 대상 | 서비스 이용자, 보안 담당자, 개인정보 처리 스타트업 | | 기술 환경 | 내부 관리도구 보안, 데이터 접근권한, 침해사고 대응, 개인정보 최소화 방침 | | 사용자 영향 | 계정 정보 노출, 건강/활동 데이터 유출, 알림·비밀번호 재설정 필요성 | | 확인 포인트 | 침해 범위, 노출 데이터 항목, 사용자 통지 여부, 비밀번호·토큰 재설정, 규제기관 신고 | | 환경 문제 | 데이터센터 운영에 따른 대규모 물 사용, 추가 에너지 소비, 이산화탄소 배출 | . The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-21T10:36:50.092952",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/who-gpu-442b5718.md",
+      "message": "draft saved"
+    }
+  ]
+}
