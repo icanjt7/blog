@@ -1,0 +1,72 @@
+{
+  "run_id": "20260721-064255-f07b1a02",
+  "topics": [
+    {
+      "keyword": "FCC DJI",
+      "title_hint": "The FCC is planning to retroactively ban disguised DJI gadgets",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "The FCC is planning to retroactively ban disguised DJI gadgets",
+          "url": "https://www.theverge.com/news/968310/fcc-dji-drone-camera-ban-skyrover-xtra",
+          "published_at": "2026-07-20T22:16:14",
+          "summary": "Last October, we told you how the FCC had given itself the power to retroactively ban gadgets that have already received its approval to be imported and sold in the United States. Now, the FCC's getting ready to wield that power for the first time, by cracking down on the \"DJI front companies\" suspected of [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "FCC DJI",
+        "title_hint": "The FCC is planning to retroactively ban disguised DJI gadgets",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "The FCC is planning to retroactively ban disguised DJI gadgets",
+            "url": "https://www.theverge.com/news/968310/fcc-dji-drone-camera-ban-skyrover-xtra",
+            "published_at": "2026-07-20T22:16:14",
+            "summary": "Last October, we told you how the FCC had given itself the power to retroactively ban gadgets that have already received its approval to be imported and sold in the United States. Now, the FCC's getting ready to wield that power for the first time, by cracking down on the \"DJI front companies\" suspected of [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "아버지날 기프트 가이드, 기기는 이렇게 고르기",
+      "slug": "fcc-dji-53166e79",
+      "excerpt": "The Verge의 Father's Day 기프트 가이드를 실사용 기준과 기기 선택 체크포인트로 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\nThe FCC is planning to retroactively ban disguised DJI gadgets 소식입니다. Last October, we told you how the FCC had given itself the power to retroactively ban gadgets that have already received its approval to be imported and sold in the United States. Now, the FCC's getting ready to wield that power for the first time, by cracking down on the \"DJI...\n\n## 먼저 알아둘 배경\n\n기술 매체의 선물 가이드는 이어폰, 배터리, 스마트홈, 게임 기기처럼 실제 구매 후보를 묶어 보여줍니다. The FCC is planning to retroactively ban는 신제품 발표가 아니라 선물 상황에서 어떤 기기가 실패 확률이 낮은지 보는 글입니다.\n\n## 왜 기술 이슈인가\n\n기술 선물은 사양보다 사용 습관과 유지관리 난이도가 더 중요합니다. 좋은 제품이라도 충전 방식, 앱 연동, 계정 설정, 호환 기기가 맞지 않으면 서랍에 들어갈 수 있습니다.\n\n## 확인할 기준\n\n| 항목 | 구체 내용 |\n| --- | --- |\n| 직접 대상 | 선물을 고르는 독자, 가젯 입문자, 가족용 IT 기기를 찾는 사용자 |\n| 기술 맥락 | 소비자 가전, 배터리·충전 규격, 앱 연동, 호환성, 선물용 기기 선택 |\n| 사용자 영향 | 구매 실패 확률을 줄이고 실제로 오래 쓰는 기기를 고르는 데 도움 |\n| 다음 확인 | 반품 기간, 충전 규격, 스마트폰 호환성, 앱 계정 필요 여부, 국내 판매 여부 |\n\n## 독자가 이해해야 할 포인트\n\n1. 선물용 기기는 최고 사양보다 받는 사람이 혼자 설정할 수 있는지가 중요합니다.\n2. 배터리 제품은 USB-C, Qi2, 전용 충전기 여부를 확인해야 합니다.\n3. 해외 추천 목록은 국내 가격과 AS 조건이 달라질 수 있어 구매 전 한 번 더 확인해야 합니다.\n4. 원문 요약만으로 부족하면 공식 보도자료, 후속 공지, 실제 적용 사례까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [The FCC is planning to retroactively ban disguised DJI gadgets](https://www.theverge.com/news/968310/fcc-dji-drone-camera-ban-skyrover-xtra)\n",
+      "tags": [
+        "기술",
+        "FCC",
+        "DJI"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0NjE2NDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "아버지날 기프트 가이드, 기기는 이렇게 고르기 — Photo by Ludovico Ceroseis on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1782330299602-8dcca2aea607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dGVjaG5vbG9neSUyMGlubm92YXRpb24lMjBjaXJjdWl0JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc4NDYxNjQ0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "아버지날 기프트 가이드, 기기는 이렇게 고르기 본문 보조 이미지 — Photo by Brecht Corbeel on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 아버지날 기프트 가이드, 기기는 이렇게 고르기. Keyword: FCC DJI. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 The FCC is planning to retroactively ban disguised DJI gadgets 소식입니다. Last October, we told you how the FCC had given itself the power to retroactively ban gadgets that have already received its approval to be imported and sold in the United States. Now, the FCC's getting ready to wield that power for the first time, by cracking down on the \"DJI... ## 먼저 알아둘 배경 기술 매체의 선물 가이드는 이어폰, 배터리, 스마트홈, 게임 기기처럼 실제 구매 후보를 묶어 보여줍니다. The FCC is planning to retroactively ban는 신제품 발표가 아니라 선물 상황에서 어떤 기기가 실패 확률이 낮은지 보는 글입니다. ## 왜 기술 이슈인가 기술 선물은 사양보다 사용 습관과 유지관리 난이도가 더 중요합니다. 좋은 제품이라도 충전 방식, 앱 연동, 계정 설정, 호환 기기가 맞지 않으면 서랍에 들어갈 수 있습니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | 선물을 고르는 독자, 가젯 입문자. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 아버지날 기프트 가이드, 기기는 이렇게 고르기. Keyword: FCC DJI. Concrete visual subject: technology innovation circuit abstract. Article context: ## 무슨 소식인가 The FCC is planning to retroactively ban disguised DJI gadgets 소식입니다. Last October, we told you how the FCC had given itself the power to retroactively ban gadgets that have already received its approval to be imported and sold in the United States. Now, the FCC's getting ready to wield that power for the first time, by cracking down on the \"DJI... ## 먼저 알아둘 배경 기술 매체의 선물 가이드는 이어폰, 배터리, 스마트홈, 게임 기기처럼 실제 구매 후보를 묶어 보여줍니다. The FCC is planning to retroactively ban는 신제품 발표가 아니라 선물 상황에서 어떤 기기가 실패 확률이 낮은지 보는 글입니다. ## 왜 기술 이슈인가 기술 선물은 사양보다 사용 습관과 유지관리 난이도가 더 중요합니다. 좋은 제품이라도 충전 방식, 앱 연동, 계정 설정, 호환 기기가 맞지 않으면 서랍에 들어갈 수 있습니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | 선물을 고르는 독자, 가젯 입문자, 가족용 IT 기기를 찾는 사용자 | | 기술 맥락 | 소비자 가전, 배터리·충전 규격, 앱 연동, 호환성, 선물용 기기 선택 | | 사용자 영향 | 구매 실패 확률을 줄이고 실제로 오래 쓰는 기기를 고르는 데 도움 | | 다음 확인 | 반품 기간, 충전 규격, 스마트폰 호환성, 앱 계정 필요 여부, 국내 판매 여부 | ## 독자가 이해해야 할 포인트 1. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-21T06:46:56.699296",
+      "quality_score": 70.0,
+      "review_notes": [
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 70.0"
+    }
+  ]
+}
