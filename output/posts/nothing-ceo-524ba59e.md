@@ -1,5 +1,5 @@
 ---
-title: 미 DHS 700억 달러 증액, 어디에 쓰이나
+title: 미 국토안보부 예산 증액의 기술적 의미
 date: '2026-06-12T23:57:59.477865'
 category: 기술
 tags:
@@ -9,6 +9,8 @@ tags:
 quality_score: 100.0
 cover_image: https://images.unsplash.com/photo-1766203551890-2664b619042b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxMTY2MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080
 cover_image_alt: 미 DHS 700억 달러 증액, 어디에 쓰이나 — Photo by Albert Stoynov on Unsplash
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ![미 DHS 700억 달러 증액, 어디에 쓰이나 — Photo by Albert Stoynov on Unsplash](https://images.unsplash.com/photo-1766203551890-2664b619042b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgxMTY2MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080)
@@ -44,4 +46,3 @@ DHS는 미국 국토안보부로 ICE, CBP, TSA, CISA 같은 기관을 거느립�
 ## 참고한 곳
 
 - [Nothing CEO says phone prices are going to keep going up](https://www.theverge.com/gadgets/949403/nothing-carl-pei-ram-phone-prices)
-

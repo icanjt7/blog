@@ -1,15 +1,17 @@
 ---
-title: "궁궐과 조선왕릉, 한여름 안전한 관람 환경 조성에 총력"
-date: "2026-07-16T00:19"
-category: "핫이슈"
+title: 궁궐과 조선왕릉, 폭염 대비 안전 관리 조치 실시
+date: 2026-07-16T00:19
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=af33e44686c8417c887e98bde2ba6817"
-cover_image_alt: "흥례문 광장 무더위 쉼터"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=af33e44686c8417c887e98bde2ba6817
+cover_image_alt: 흥례문 광장 무더위 쉼터
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-07-16 공개한 자료를 바탕으로 궁궐과 조선왕릉, 한여름 안전한 관람 환경 조성에 총력의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

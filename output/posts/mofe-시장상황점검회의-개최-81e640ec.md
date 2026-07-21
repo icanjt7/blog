@@ -1,5 +1,5 @@
 ---
-title: 시장상황점검회의 개최
+title: '시장 상황 점검 회의: 경제 정책 방향 논의'
 date: 2026-07-08T00:14
 category: 정책
 tags:
@@ -12,6 +12,7 @@ cover_image_alt: 시장상황점검회의 개최 — Photo by Danielle Cerullo o
 author: 재정경제부
 expanded_by_llm: true
 search_index_improved: true
+title_improved_by_llm: true
 ---
 
 ## 시장상황점검회의 개최 개요

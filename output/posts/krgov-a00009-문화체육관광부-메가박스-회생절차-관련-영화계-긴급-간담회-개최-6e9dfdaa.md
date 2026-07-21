@@ -1,15 +1,17 @@
 ---
-title: "메가박스 회생절차 관련 영화계 긴급 간담회 개최"
-date: "2026-07-10T00:11"
-category: "핫이슈"
+title: 메가박스중앙 회생절차 관련 영화산업 대응 방안 간담회 개최
+date: 2026-07-10T00:11
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1758570814213-4020e1b79e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxrb3JlYW4lMjBjaXR5JTIwbmV3cyUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzgzOTAwNzk5fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "메가박스 회생절차 관련 영화계 긴급 간담회 개최"
-author: "문화체육관광부"
+cover_image: https://images.unsplash.com/photo-1758570814213-4020e1b79e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxrb3JlYW4lMjBjaXR5JTIwbmV3cyUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzgzOTAwNzk5fDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 메가박스 회생절차 관련 영화계 긴급 간담회 개최
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 문화체육관광부, 2026‑07‑10 발표 · 메가박스중앙 회생절차와 영화산업 대응 방안 긴급 간담회 개최
