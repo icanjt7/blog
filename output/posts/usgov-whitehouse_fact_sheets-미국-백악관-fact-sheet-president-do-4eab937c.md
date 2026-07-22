@@ -1,17 +1,19 @@
 ---
-title: "미국 백악관, Fact Sheet: President Do"
-date: "2026-07-13T00:03"
-category: "정책"
+title: 트럼프, 유타주 국립공원 2곳 규모 축소 발표
+date: 2026-07-13T00:03
+category: 정책
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미국 백악관"
-  - "정책"
-  - "백악관"
-  - "팩트시트"
-author: "미국 백악관"
+- 보도기사
+- 미국정부
+- 미국 백악관
+- 정책
+- 백악관
+- 팩트시트
+author: 미국 백악관
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1635859890085-ec8cb5466806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODQyNjI0MzB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: https://images.unsplash.com/photo-1635859890085-ec8cb5466806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODQyNjI0MzB8MA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미국 백악관이(The White House) 2026-07-13 공개한 'Fact Sheet: President Donald J. Trump Modifies Two National Monuments, Restoring Sensible Land Management' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.

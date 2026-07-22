@@ -1,5 +1,5 @@
 ---
-title: 중장기전략위원회 혁신성장반 분과회의 개최
+title: 중장기전략위원회, 미래 기술·산업 혁신과 경제안보 논의
 date: 2026-06-11T00:15
 category: 생활
 tags:
@@ -12,6 +12,7 @@ cover_image_alt: 중장기전략위원회 혁신성장반 분과회의 개최
 author: 기획예산처
 expanded_by_llm: true
 search_index_improved: true
+title_improved_by_llm: true
 ---
 
 ## 중장기전략위원회 혁신성장반 분과회의 개요

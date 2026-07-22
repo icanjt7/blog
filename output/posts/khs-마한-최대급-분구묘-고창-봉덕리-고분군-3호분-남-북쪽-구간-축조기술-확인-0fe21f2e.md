@@ -1,15 +1,17 @@
 ---
-title: "마한 최대급 분구묘 「고창 봉덕리 고분군 3호분」 남·북쪽 구간 축조기술 확인"
-date: "2026-07-14T00:45"
-category: "핫이슈"
+title: 고창 봉덕리 고분군 3호분의 축조기술 확인
+date: 2026-07-14T00:45
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=6b3a1a9523bb44b4a679faec1e76ef81"
-cover_image_alt: "「고창 봉덕리 고분군 3호분」 조사 완료 후 전경"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=6b3a1a9523bb44b4a679faec1e76ef81
+cover_image_alt: 「고창 봉덕리 고분군 3호분」 조사 완료 후 전경
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청(청장 허민)은 2026‑07‑14에 고창군(군수 심덕섭)과 공동으로 「고창 봉덕리 고분군 3호분」 3차 발굴조사 성과를 일반 국민에게 공유하기 위해 현장 공개회를 개최한다는 내용을 발표했습니다. 이번 발표는 고창 봉덕리 고분군 3호분(이하 ‘3호분’)의 최신 발굴 결과와 현장 공개 일정·참여 방법을 알리는 것이 주된 목적입니다.  
