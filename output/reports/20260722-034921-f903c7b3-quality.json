@@ -1,0 +1,21 @@
+{
+  "run_id": "20260722-034921-f903c7b3",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "samsung-galaxy-unpacked-july-0a1062a1",
+      "title": "700억 달러, 미국 DHS 예산 증액의 진짜 의미는?",
+      "keyword": "Samsung Galaxy Unpacked July",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 700억 달러, 미국 DHS 예산 증액의 진짜 의미는?. Keyword: Samsung Galaxy Unpacked July. Concrete visual subject: samsung device display modern government budget finance. Context: ## 2026년 7월, 미국 DHS 예산 증액의 핵심 미국 국토안보부(DHS, Department of Homeland Security)는 ICE(이민세관집행국), CBP(국경관리국), TSA(교통보안청), CISA(사이버·인프라보안청) 등 다양한 기관을 관할합니다. 최근 700억 달러 추가 예산이 편성되면서 이민 집행, 국경 관리, 감시 기술, 사이버안보 등 여러 분야에 변화가 예상됩니다. ## 예산 증액이 주는 변화 DHS 예산은 단순 행정비를 넘어 공항 보안, 사이버 방어, 재난 대응 등 광범위한 정책과 기술에 쓰입니다. 이번 증액은 인력뿐 아니라 데이터베이스, 생체정보 인식, 카메라·드론 등 첨단 감시 인프라와 사건 관리 시스템 확장에 직접 연결될 수 있습니다. CISA의 사이버안보 예산 역시 주목할 만한 변화가 예상됩니다. ## 주요 체크포인트 | 항목 | 구체 내용 | |------------------|------------------------------------------------------------------------| | 예산 규모 | 700억 달러 추가 편성 (2026년 7월 기준 공식 안내) | | 기관 명칭 | DHS, ICE, CBP, TSA, CISA 등 미국 국토안보부 산하 주요 기관 | | 핵심 분야 | 이민 집행, 국경 관리, 공항 보안, 사이버안보, 재난 대응 | | 기술 투자 | 생체정보 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8c2Ftc3VuZyUyMGRldmljZSUyMGRpc3BsYXklMjBtb2Rlcm4lMjBnb3Zlcm5tZW50JTIwYnVkZ2V0JTIwZmluYW5jZXxlbnwxfDB8fHwxNzg0NjkyMjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
