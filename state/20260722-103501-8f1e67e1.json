@@ -1,0 +1,73 @@
+{
+  "run_id": "20260722-103501-8f1e67e1",
+  "topics": [
+    {
+      "keyword": "Utility AI",
+      "title_hint": "Utility companies are promising to spare us from AI’s energy bill",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Utility companies are promising to spare us from AI’s energy bill",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/969137/us-utility-ai-electricty-data-center-rate-pledge-trump",
+          "published_at": "2026-07-22T10:12:13",
+          "summary": "In the face of backlash to concerns the AI boom will increase consumer electricity bills, the largest utility companies and data center developers in the US are now promising to do something about it. The Wall Street Journal reports that nearly 200 organizations have signed President Donald Trump's \"rate payer protection pledge\" that's meant to [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Utility AI",
+        "title_hint": "Utility companies are promising to spare us from AI’s energy bill",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Utility companies are promising to spare us from AI’s energy bill",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/969137/us-utility-ai-electricty-data-center-rate-pledge-trump",
+            "published_at": "2026-07-22T10:12:13",
+            "summary": "In the face of backlash to concerns the AI boom will increase consumer electricity bills, the largest utility companies and data center developers in the US are now promising to do something about it. The Wall Street Journal reports that nearly 200 organizations have signed President Donald Trump's \"rate payer protection pledge\" that's meant to [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "왜 AI 때문에 전기요금 걱정 안 해도 될까",
+      "slug": "utility-ai-eb93e2d6",
+      "excerpt": "AI 기술 확대에 따라 전기요금이 급등할 거란 우려가 나왔지만, 미국 최대 유틸리티 기업들과 데이터센터 개발사들이 ‘Utility AI’ 대응에 나섰다. 지금 어떤 변화가 진행 중인지, 직접 확인할 수 있는 기준을 정리했다.",
+      "body_markdown": "미국에서 200개 기관이 AI 전기요금 인상 방지 서약에 참여했다. 상위 5개 유틸리티 기업과 데이터센터 개발사들이 포함된다. 공신력 있는 기관들이 'Utility AI' 문제 해결을 직접 약속한 셈이다.\n\nUtility AI란?  \nAI(Artificial Intelligence)가 전기를 더 많이 쓰면서, 공급·요금·관리 방식에 AI 기술을 적용해 효율을 높이거나 비용을 줄이는 전략을 말한다. 유틸리티란 에너지(전기, 가스, 수도 등)를 공급하는 기업 또는 서비스다. Utility AI는 이들 기업이 데이터센터 같은 대형 시설, 그리고 일반 소비자의 요금에 영향을 주는 AI 활용 방법을 뜻한다.\n\n다음 표에서 주요 변화와 영향 범위를 정리한다.\n\n| 기관명                     | 서약 내용                               | 영향 대상                  | 확인 방법            | 후속 절차               |\n|--------------------------|----------------------------------------|-------------------------|--------------------|----------------------|\n| 미국 최대 유틸리티 기업 (ex: Xcel Energy, Duke Energy, Southern Company) | AI 관련 전기요금 인상 방지 및 효율 개선 | 일반 가정, 사업용 사용자 | 공식 홈페이지, 보도자료 | 연간 요금 공개, 에너지 리포트 |\n| 데이터센터 개발사 (ex: Equinix, Digital Realty) | AI 서버 확장에 따른 에너지 부담 최소화 | 입주 기업, 클라우드 가입자 | 계약서, 서비스 약관     | 에너지 사용량 통지      |\n| 트럼프 정부              | 'Rate payer protection pledge' 추진     | 전국 유틸리티 이용자      | 정부 공문, WSJ 기사   | 서약 기관 목록 발표     |\n\n이 표에 등장하는 ‘Rate payer protection pledge’는 2026년 대통령 도널드 트럼프가 내놓은 정책이다. 전기요금이 AI 증가로 급등한다는 비판에 대응하기 위한 조치다. 트럼프는 부동산 개발자 출신으로, 대통령 취임 후 에너지 분야 규제 완화를 주장해 왔다. 이번 서약은 이전 정책과 달리, 실제 요금 인상 억제에 민간 기업들이 직접 동참한 점이 특징이다.\n\n미국 대형 유틸리티 기업들(Xcel Energy: 중서부 중심 전력공급사 / Duke Energy: 남동부 대형 전력기업 / Southern Company: 남부 전체 전력·가스 공급사)은 AI 확대가 소비자 요금에 미치는 영향력을 인정했다. 실제로 AI 모델 학습에는 엄청난 데이터와 전력(1초당 수십MW)이 필요하다. 데이터센터 개발사인 Equinix, Digital Realty 역시 AI 서버 확장에 따른 에너지 부담이 커짐을 공표한 바 있다.\n\n미국 전기요금의 평균은 kWh당 0.16달러(2026년 기준). AI 서버가 늘어나면 대형 데이터센터의 월 사용량이 1000만 kWh까지 치솟고, 이 비용이 소비자에게 전가될 수 있다는 우려가 높아졌다. 그러나 Utility AI 기술 도입과 요금 인상 억제 약속이 동시에 나온 점이 의미 있다.\n\nUtility AI의 실제적 장점과 단점  \n장점은 AI가 공급·배분 최적화에 쓰일 때, 전력 흐름을 실시간 제어해 과잉 사용을 줄이고 요금을 예측하는 데 도움이 된다는 점이다. 예를 들어, AI가 데이터센터의 냉방·서버 가동 시간을 자동 조절하면 에너지 손실이 줄고, 전기요금이 오르지 않는 효과가 있다.\n\n단점은 아직 AI가 에너지 공급 전체를 통제하지 못한다는 점이다. 그리고 AI 가동률이 급격히 늘어나면 지역별 전력망에 압박이 생길 수 있다. Utility AI가 실제로 모든 소비자 요금 인상까지 막아줄지는 서약 내용과 기술 적용 범위에 따라 다르다.\n\n이제 소비자가 확인할 것은 무엇인가?  \n먼저 각 유틸리티 기업의 공식 홈페이지에서 Utility AI 도입 계획과 요금 인상 여부를 투명하게 발표하는지 확인할 필요가 있다. 데이터센터 개발사도 계약서나 서비스 약관에서 AI 서버 확장 관련 에너지 부담을 어떻게 설명하는지 점검해야 한다. 정부의 서약 기관 목록(WSJ 보도자료 및 대통령 공문)도 참고하면 좋다.\n\nUtility AI가 요금 인상 자체를 완전히 막아주진 않는다. 하지만 이번 서약과 기술 도입은 소비자 입장에서 직접 체감할 수 있는 변화다. 궁극적으로, AI가 에너지 정책에 미치는 영향과 각 기업의 대응 방식을 비교해 보는 것이 유리하다.\n\nUtility AI에 관심이 있다면, 우선 본인이 사용하는 유틸리티 기업의 공식 안내를 찾아 실제 요금 변동, AI 적용 범위, 서약 참여 여부를 확인해 보라. 이 정보가 앞으로 에너지 정책 변화에 가장 직접적인 기준이 될 수 있다.\n\n참고 출처:  \n- The Verge, \"Utility companies are promising to spare us from AI’s energy bill\" (2026-07-22)  \n- WSJ, \"Rate payer protection pledge\" 관련 보도  \n- 각 유틸리티 기업 공식 홈페이지",
+      "tags": [
+        "기술",
+        "Utility",
+        "AI"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0NzE2NzY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "왜 AI 때문에 전기요금 걱정 안 해도 될까 — Photo by Steve A Johnson on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0NzE2NzY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "왜 AI 때문에 전기요금 걱정 안 해도 될까 본문 보조 이미지 — Photo by Growtika on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 왜 AI 때문에 전기요금 걱정 안 해도 될까. Keyword: Utility AI. Concrete visual subject: artificial intelligence neural network. Context: 미국에서 200개 기관이 AI 전기요금 인상 방지 서약에 참여했다. 상위 5개 유틸리티 기업과 데이터센터 개발사들이 포함된다. 공신력 있는 기관들이 'Utility AI' 문제 해결을 직접 약속한 셈이다. Utility AI란? AI(Artificial Intelligence)가 전기를 더 많이 쓰면서, 공급·요금·관리 방식에 AI 기술을 적용해 효율을 높이거나 비용을 줄이는 전략을 말한다. 유틸리티란 에너지(전기, 가스, 수도 등)를 공급하는 기업 또는 서비스다. Utility AI는 이들 기업이 데이터센터 같은 대형 시설, 그리고 일반 소비자의 요금에 영향을 주는 AI 활용 방법을 뜻한다. 다음 표에서 주요 변화와 영향 범위를 정리한다. | 기관명 | 서약 내용 | 영향 대상 | 확인 방법 | 후속 절차 | |--------------------------|----------------------------------------|-------------------------|--------------------|----------------------| | 미국 최대 유틸리티 기업 (ex: Xcel Energy, Duke Energy, Southern Company) | AI 관련 전기요금 인상 방지 및 효율 개선 | 일반 가정, 사업용 사용자 | 공식 홈페이지, 보도자료 | 연간 요금 공개, 에너지 리포트 | | 데이터센터 개발. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 왜 AI 때문에 전기요금 걱정 안 해도 될까. Keyword: Utility AI. Concrete visual subject: artificial intelligence neural network. Article context: 미국에서 200개 기관이 AI 전기요금 인상 방지 서약에 참여했다. 상위 5개 유틸리티 기업과 데이터센터 개발사들이 포함된다. 공신력 있는 기관들이 'Utility AI' 문제 해결을 직접 약속한 셈이다. Utility AI란? AI(Artificial Intelligence)가 전기를 더 많이 쓰면서, 공급·요금·관리 방식에 AI 기술을 적용해 효율을 높이거나 비용을 줄이는 전략을 말한다. 유틸리티란 에너지(전기, 가스, 수도 등)를 공급하는 기업 또는 서비스다. Utility AI는 이들 기업이 데이터센터 같은 대형 시설, 그리고 일반 소비자의 요금에 영향을 주는 AI 활용 방법을 뜻한다. 다음 표에서 주요 변화와 영향 범위를 정리한다. | 기관명 | 서약 내용 | 영향 대상 | 확인 방법 | 후속 절차 | |--------------------------|----------------------------------------|-------------------------|--------------------|----------------------| | 미국 최대 유틸리티 기업 (ex: Xcel Energy, Duke Energy, Southern Company) | AI 관련 전기요금 인상 방지 및 효율 개선 | 일반 가정, 사업용 사용자 | 공식 홈페이지, 보도자료 | 연간 요금 공개, 에너지 리포트 | | 데이터센터 개발사 (ex: Equinix, Digital Realty) | AI 서버 확장에 따른 에너지 부담 최소화 | 입주 기업, 클라우드 가입자 | 계약서, 서비스 약관 | 에너지 사용량 통지 | | 트럼프 정부 | 'Rate payer protection pledge' 추진 | 전국 유틸리티 이용자 | 정부 공문, WSJ 기사 | 서약 기관 목록 발표 | 이 표에. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-22T10:38:51.393590",
+      "quality_score": 55.0,
+      "review_notes": [
+        "핵심 키워드 반복이 과합니다.",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 55.0"
+    }
+  ]
+}
