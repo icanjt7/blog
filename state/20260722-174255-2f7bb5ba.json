@@ -1,0 +1,72 @@
+{
+  "run_id": "20260722-174255-2f7bb5ba",
+  "topics": [
+    {
+      "keyword": "Here 8217 Samsung 8217",
+      "title_hint": "Here&#8217;s what Samsung&#8217;s smart glasses actually look like",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Here&#8217;s what Samsung&#8217;s smart glasses actually look like",
+          "url": "https://www.theverge.com/tech/969382/samsung-google-smart-glasses-gentle-monster-warby-parker",
+          "published_at": "2026-07-22T16:35:34",
+          "summary": "Samsung has given us our first chance to check out its upcoming smart glasses in person, revealing two new designs and the first specs in the process, including an impressive 9-hour battery life. The glasses, developed in collaboration with Google and the eyewear brands Gentle Monster and Warby Parker, are due to launch this fall. [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Here 8217 Samsung 8217",
+        "title_hint": "Here&#8217;s what Samsung&#8217;s smart glasses actually look like",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Here&#8217;s what Samsung&#8217;s smart glasses actually look like",
+            "url": "https://www.theverge.com/tech/969382/samsung-google-smart-glasses-gentle-monster-warby-parker",
+            "published_at": "2026-07-22T16:35:34",
+            "summary": "Samsung has given us our first chance to check out its upcoming smart glasses in person, revealing two new designs and the first specs in the process, including an impressive 9-hour battery life. The glasses, developed in collaboration with Google and the eyewear brands Gentle Monster and Warby Parker, are due to launch this fall. [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "삼성 스마트 안경, 9시간 배터리와 실물 디자인 최초 공개",
+      "slug": "here-8217-samsung-8217-b3f3fff3",
+      "excerpt": "2026년 7월 22일 공개된 삼성 스마트 안경의 첫 실물 디자인과 주요 사양, 선물 선택 시 체크할 구체 기준을 정리했습니다.",
+      "body_markdown": "## 삼성 스마트 안경 첫 실물 공개\n\n2026년 7월 22일, The Verge가 삼성의 스마트 안경 실물 디자인과 최초 사양을 공개했습니다. 이번 제품은 구글(Google), Gentle Monster, Warby Parker와 협업해 개발되었으며 두 가지 새로운 디자인이 선보였습니다. 특히 9시간 연속 사용 가능한 배터리 성능이 눈에 띄었습니다.\n\n## 주요 사양과 협력사 설명\n\n- **협력사**: 구글(IT 기업), Gentle Monster(패션 아이웨어 브랜드), Warby Parker(온라인 안경 브랜드)\n- **디자인**: 두 가지 스타일, 실생활 착용에 적합\n- **배터리**: 최대 9시간 사용(공식 안내 기준)\n- **기능**: 스마트폰 연동, 앱 지원(구체 기능은 추가 공개 예정)\n- **공개 방식**: 실제 착용 사진과 공식 사양 최초 공개\n\n## 선물용 스마트 기기 선택 체크리스트\n\n| 기준 항목        | 실제 내용 (2026-07-22 기준)                |\n|-----------------|-------------------------------------------|\n| 배터리 성능     | 최대 9시간 지속(공식 안내 기준)            |\n| 호환 스마트폰   | 구글, 삼성 스마트폰과 연동 가능            |\n| 앱 연동         | 기본 앱 지원(세부 정보는 후속 공개 예정)    |\n| 디자인 선택     | Gentle Monster, Warby Parker 스타일 각각 제공 |\n| 구매 가능 지역  | 미국 공식 발표 기준, 국내 출시 일정 미정     |\n\n## 독자가 꼭 확인해야 할 5가지\n\n1. **배터리**: 9시간 연속 사용이 가능하므로 일상에서 끊김 없이 활용할 수 있습니다.\n2. **호환성**: 삼성, 구글 스마트폰 사용자라면 연동이 쉬운 편입니다.\n3. **디자인**: Gentle Monster, Warby Parker 스타일 중 선택 가능하며 패션과 실용성 모두 고려됨.\n4. **앱 지원**: 기본 앱 연동이 가능하지만, 추가 기능은 후속 공지 필요.\n5. **구매 조건**: 미국 공식 발표 기준으로, 국내 판매 및 AS 조건은 별도 확인 필요.\n\n## 참고 출처\n\n- [Here&#8217;s what Samsung&#8217;s smart glasses actually look like (The Verge, 2026-07-22)](https://www.theverge.com/tech/969382/samsung-google-smart-glasses-gentle-monster-warby-parker)\n\n---\n\n**삼성 스마트 안경은 Here 8217 Samsung 8217 협업을 통해 디자인과 기술을 모두 강화했습니다. 공식 안내 기준 최신 정보로 선물 선택 시 꼭 참고하세요.**",
+      "tags": [
+        "기술",
+        "Here",
+        "8217",
+        "Samsung"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1778010955388-d9e59633bb26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxiYXR0ZXJ5JTIwcG93ZXIlMjBlbmVyZ3klMjB0ZWNoJTIwc2Ftc3VuZyUyMGRldmljZSUyMGRpc3BsYXklMjBtb2Rlcm58ZW58MXwwfHx8MTc4NDc0MjMwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "삼성 스마트 안경, 9시간 배터리와 실물 디자인 최초 공개 — Photo by Gavin Phillips on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1662947995689-ec5165848ad0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxiYXR0ZXJ5JTIwcG93ZXIlMjBlbmVyZ3klMjB0ZWNoJTIwc2Ftc3VuZyUyMGRldmljZSUyMGRpc3BsYXklMjBtb2Rlcm58ZW58MXwwfHx8MTc4NDc0MjMwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "삼성 스마트 안경, 9시간 배터리와 실물 디자인 최초 공개 본문 보조 이미지 — Photo by BoliviaInteligente on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 삼성 스마트 안경, 9시간 배터리와 실물 디자인 최초 공개. Keyword: Here 8217 Samsung 8217. Concrete visual subject: battery power energy tech samsung device display modern. Context: ## 삼성 스마트 안경 첫 실물 공개 2026년 7월 22일, The Verge가 삼성의 스마트 안경 실물 디자인과 최초 사양을 공개했습니다. 이번 제품은 구글(Google), Gentle Monster, Warby Parker와 협업해 개발되었으며 두 가지 새로운 디자인이 선보였습니다. 특히 9시간 연속 사용 가능한 배터리 성능이 눈에 띄었습니다. ## 주요 사양과 협력사 설명 - **협력사**: 구글(IT 기업), Gentle Monster(패션 아이웨어 브랜드), Warby Parker(온라인 안경 브랜드) - **디자인**: 두 가지 스타일, 실생활 착용에 적합 - **배터리**: 최대 9시간 사용(공식 안내 기준) - **기능**: 스마트폰 연동, 앱 지원(구체 기능은 추가 공개 예정) - **공개 방식**: 실제 착용 사진과 공식 사양 최초 공개 ## 선물용 스마트 기기 선택 체크리스트 | 기준 항목 | 실제 내용 (2026-07-22 기준) | |-----------------|-------------------------------------------| | 배터리 성능 | 최대 9시간 지속(공식 안내 기준) | | 호환 스마트폰 | 구글, 삼성 스마트폰과 연동 가능 | | 앱 연동 | 기본 앱 지원(세부 정보는 후속 공개 예정) | | 디자인 선택 | Gentle Monster, Warby Parker 스타일 각각 제. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 삼성 스마트 안경, 9시간 배터리와 실물 디자인 최초 공개. Keyword: Here 8217 Samsung 8217. Concrete visual subject: battery power energy tech samsung device display modern. Article context: ## 삼성 스마트 안경 첫 실물 공개 2026년 7월 22일, The Verge가 삼성의 스마트 안경 실물 디자인과 최초 사양을 공개했습니다. 이번 제품은 구글(Google), Gentle Monster, Warby Parker와 협업해 개발되었으며 두 가지 새로운 디자인이 선보였습니다. 특히 9시간 연속 사용 가능한 배터리 성능이 눈에 띄었습니다. ## 주요 사양과 협력사 설명 - **협력사**: 구글(IT 기업), Gentle Monster(패션 아이웨어 브랜드), Warby Parker(온라인 안경 브랜드) - **디자인**: 두 가지 스타일, 실생활 착용에 적합 - **배터리**: 최대 9시간 사용(공식 안내 기준) - **기능**: 스마트폰 연동, 앱 지원(구체 기능은 추가 공개 예정) - **공개 방식**: 실제 착용 사진과 공식 사양 최초 공개 ## 선물용 스마트 기기 선택 체크리스트 | 기준 항목 | 실제 내용 (2026-07-22 기준) | |-----------------|-------------------------------------------| | 배터리 성능 | 최대 9시간 지속(공식 안내 기준) | | 호환 스마트폰 | 구글, 삼성 스마트폰과 연동 가능 | | 앱 연동 | 기본 앱 지원(세부 정보는 후속 공개 예정) | | 디자인 선택 | Gentle Monster, Warby Parker 스타일 각각 제공 | | 구매 가능 지역 | 미국 공식 발표 기준, 국내 출시 일정 미정 | ## 독자가 꼭 확인해야 할 5가지 1. **배터리**: 9시간 연속 사용이 가능하므로 일상에서 끊김 없이 활용할 수 있습니다. 2. **호환성**: 삼성, 구글 스마트폰 사용자라면 연동이 쉬운 편입니다. 3. **디자인**: Gentle Monster, Warby Parker . The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-22T17:44:52.843697",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/here-8217-samsung-8217-b3f3fff3.md",
+      "message": "draft saved"
+    }
+  ]
+}
