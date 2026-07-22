@@ -1,0 +1,20 @@
+{
+  "run_id": "20260722-231700-4d8a31c9",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "meta-won-have-face-7e263387",
+      "title": "Meta, 소셜 미디어 중독 재판 취소…사용자에 미치는 변화는?",
+      "keyword": "Meta won have face",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Meta, 소셜 미디어 중독 재판 취소…사용자에 미치는 변화는?. Keyword: Meta won have face. Concrete visual subject: social virtual technology. Context: ## 주요 소식 2026년 7월 22일 기준, Meta(페이스북·인스타그램을 운영하는 글로벌 IT 기업)는 계획된 '소셜 미디어 중독' 관련 재판을 진행하지 않게 됐습니다. 플로리다의 15세 청소년(R.K.C. 이니셜)이 Meta를 상대로 제기한 이번 소송은, 법정 출석 일주일을 남기고 원고 측이 자진 취하하면서 종료되었습니다. 이 사건은 Meta의 플랫폼이 사용자에게 정신적 피해를 끼쳤다는 주장에 근거했으며, 연속적인 중독 관련 소송 중 두 번째로 예정되어 있었습니다. ## 어떤 변화가 생기는가? - **Meta won have face**의 의미: Meta는 이번 중독 관련 소송의 법적 책임을 피하게 되어 플랫폼 운영 및 기능에 즉각적인 변화가 없습니다. - **사용자 영향**: 단기적으로 서비스 이용 조건이나 기능에는 변동이 없으나, 유사한 피해 주장에 대한 법적 대응 방식이 바뀔 수 있습니다. ## 체크포인트: 실제 사용자에게 적용되는 기준 | 기준 | 상세 내용 | | ------------ | --------------------------------------------------------------------------------------- | | 적용 기관 | Meta Platforms (페이스북, 인스타그램 등) | | 주요 사건 | 원고(R.K.C.)의 소셜 미디어 중독 피해 주장, 재판 취하 | | 적용 대상. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1558685555-bcdb675f9b9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzb2NpYWwlMjB2aXJ0dWFsJTIwdGVjaG5vbG9neXxlbnwxfDB8fHwxNzg0NzYyMzU0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
