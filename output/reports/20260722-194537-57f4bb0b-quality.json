@@ -1,0 +1,20 @@
+{
+  "run_id": "20260722-194537-57f4bb0b",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "price-ipads-25eadaee",
+      "title": "2026년 iPad Pro M5 가격 인상 후 할인 정보 정리",
+      "keyword": "Price iPads",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2026년 iPad Pro M5 가격 인상 후 할인 정보 정리. Keyword: Price iPads. Concrete visual subject: technology innovation circuit abstract. Context: ## Apple iPad Pro M5, 2026년 가격 인상 후 할인 판매 현황 2026년 7월 기준, Apple은 iPad Pro M5 등 여러 제품의 가격을 인상했습니다. 특히 고성능 모델인 13인치 iPad Pro M5(512GB)는 원래 $1,699로 책정되어 있습니다. 그러나 현재 일부 공식 판매처와 인증 리셀러에서 한시적으로 할인된 가격에 판매되고 있어, 고급형 태블릿을 찾는 소비자들에게 중요한 기회가 되고 있습니다. 이 할인은 최근 가격 인상에도 불구하고 적용되는 것으로, 제품별 조건과 재고 상황에 따라 구매 가능 여부가 달라질 수 있습니다. ## 주요 할인 적용 모델 및 가격 할인 대상이 되는 대표 모델은 13인치 iPad Pro M5(512GB)입니다. 이 모델은 Apple의 공식 스토어 기준 원래 가격이 $1,699입니다. 할인 폭과 최종 가격은 판매처에 따라 다르며, 재고 상황에 따라 상시 변동될 수 있습니다. 아래 표는 2026-07-22 기준 할인 적용 현황을 정리한 것입니다. | 모델명 | 원래 가격 | 할인 적용 여부 | 할인 적용 판매처 | 비고 | |----------------------|------------|---------------|-------------------------|--------------| | iPad Pro M5 13인치 512GB | $1,699 | 예 | Apple 공식 스. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330299602-8dcca2aea607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dGVjaG5vbG9neSUyMGlubm92YXRpb24lMjBjaXJjdWl0JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc4NDYxNjQ0Nnww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
