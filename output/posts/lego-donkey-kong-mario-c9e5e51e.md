@@ -1,0 +1,54 @@
+---
+title: 직접 해본 듯 생생한 레고 동키콩 아케이드 출시 소식
+date: '2026-07-23T03:49:15.311973'
+category: 기술
+tags:
+- 기술
+- Lego
+- Donkey
+- Kong
+- Mario
+quality_score: 100.0
+cover_image: https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0NjMyMzkyfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 직접 해본 듯 생생한 레고 동키콩 아케이드 출시 소식 — Photo by Ludovico Ceroseis on Unsplash
+inline_image: https://images.unsplash.com/photo-1782330300479-02550a1a3c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0NjMyMzkyfDA&ixlib=rb-4.1.0&q=80&w=1080
+inline_image_alt: 직접 해본 듯 생생한 레고 동키콩 아케이드 출시 소식 본문 보조 이미지 — Photo by Brecht Corbeel
+  on Unsplash
+---
+
+![직접 해본 듯 생생한 레고 동키콩 아케이드 출시 소식 — Photo by Ludovico Ceroseis on Unsplash](https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0NjMyMzkyfDA&ixlib=rb-4.1.0&q=80&w=1080)
+
+## 레고 동키콩 아케이드 머신, 무엇이 새로울까
+
+2026년 7월 23일 기준, 레고가 ‘Lego Donkey Kong arcade machine’ 세트를 출시했습니다. 이번 신제품은 닌텐도의 대표 게임 동키콩의 아케이드 머신을 정교하게 재현한 것이 특징입니다. 마리오가 통을 점프하며 피하는 원작의 명장면이 레고 브릭 위에서 구현됩니다.
+
+![직접 해본 듯 생생한 레고 동키콩 아케이드 출시 소식 본문 보조 이미지 — Photo by Brecht Corbeel on Unsplash](https://images.unsplash.com/photo-1782330300479-02550a1a3c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0NjMyMzkyfDA&ixlib=rb-4.1.0&q=80&w=1080)
+
+## 실제로 어떻게 만들어졌나
+
+이번 세트의 설계는 레고 디자이너 칼 메리엄(Carl Merriam)이 맡았습니다. 그는 레고 닌텐도 게임보이, 파iranha plant, 라이온 나이츠 캐슬 등 복고풍 게임 및 클래식 시리즈를 디자인해온 인물입니다. 참고로, 동키콩은 닌텐도가 1981년에 출시한 아케이드 게임으로, 마리오의 첫 등장이기도 합니다.
+
+## 구매와 세트 정보 한눈에
+
+| 항목                | 세부 내용                                                       |
+|---------------------|----------------------------------------------------------------|
+| 공식 명칭           | Lego Donkey Kong arcade machine                                |
+| 공개 기준           | 2026년 7월 23일, 공식 안내 기준                                |
+| 가격                | 약 200달러(공식 홈페이지 참고)                                 |
+| 설계자              | 칼 메리엄(Carl Merriam)                                       |
+| 포함 캐릭터         | 마리오, 동키콩 등                                              |
+| 재현 기능           | 통 점프 기믹, 아케이드 조작부, 원작 장면 연출                  |
+| 참고 기관           | 레고그룹, 닌텐도                                               |
+| 공식 반응           | 미야모토 시게루(동키콩·마리오 원작자)도 “만족” 소식 전해짐         |
+
+## 주목할 만한 점
+
+- 마리오가 실제로 통을 점프해 피하는 기믹이 적용되어 원작 감성을 살렸습니다.
+- 닌텐도와 레고의 협업으로, 이전의 레고 닌텐도 게임보이·피라냐 플랜트 등 복각 시리즈의 맥을 잇습니다.
+- 미야모토 시게루(Shigeru Miyamoto)는 슈퍼 마리오와 동키콩을 만든 일본의 대표 게임 개발자입니다.
+
+## 참고 출처
+
+- [Lego’s Donkey Kong arcade machine lets Mario jump endless barrels — Miyamoto is reportedly happy](https://www.theverge.com/gadgets/969668/lego-donkey-kong-arcade-machine) (2026-07-23)
+
+**Lego Donkey Kong Mario** 시리즈 팬이라면, 이번 세트는 소장 가치가 높을 듯합니다.
