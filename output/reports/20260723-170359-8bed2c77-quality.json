@@ -1,0 +1,23 @@
+{
+  "run_id": "20260723-170359-8bed2c77",
+  "average_quality": 54.0,
+  "drafts": [
+    {
+      "slug": "geekbench-will-push-your-7db7c3ae",
+      "title": "Geekbench 7",
+      "keyword": "Geekbench will push your",
+      "category": "기술",
+      "quality_score": 54.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Geekbench 7. Keyword: Geekbench will push your. Concrete visual subject: technology innovation circuit abstract. Context: ### 최신 벤치마크 도구, Geekbench 7 Primate Labs에서 출시한 Geekbench 7은 컴퓨터나 폰의 성능을 더 엄격하게 테스트하는 최신 버전의 벤치마크 도구입니다. Geekbench 7의 새로운 기능을 살펴보면, 새로운 비디오 및 오디오 인코딩/디코딩 테스트, 재설계된 멀티코어 테스트, 더 큰 데이터셋이 포함되어 있습니다. 이러한 기능으로 인해 Geekbench 7은 컴퓨터나 폰의 성능을 더 정확하게 평가할 수 있습니다. ### Geekbench 7의 특징 Geekbench 7은 이전 버전인 Geekbench 6과 비슷한 사용자 인터페이스를 가지고 있지만, 더 엄격한 테스트를 통해 컴퓨터나 폰의 성능을 더 정확하게 평가할 수 있습니다. Pro 라이센스를 구매하면 추가 기능을 사용할 수 있습니다. Geekbench 7의 주요 특징은 다음과 같습니다. * 새로운 비디오 인코딩/디코딩 테스트 * 새로운 오디오 인코딩/디코딩 테스트 * 재설계된 멀티코어 테스트 * 더 큰 데이터셋 #### Geekbench 6과 7의 비교 | 기능 | Geekbench 6 | Geekbench 7 | | --- | --- | --- | | 비디오 인코딩/디코딩 테스트 | | | | 오디오 인코딩/디코딩 테스트 | | | | 멀티코어 테스트 | | | | 데이터셋 크기 | 작음 | 크음 | ### Geekbench 7의 활용 Geekben. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0NzU2MDAyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
