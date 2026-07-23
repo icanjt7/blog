@@ -1,0 +1,20 @@
+{
+  "run_id": "20260723-212940-53b33001",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "alexa-plus-ai-d169baf6",
+      "title": "Alexa Plus AI 업데이트, 스마트홈 연결이 달라진다",
+      "keyword": "Alexa Plus AI",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Alexa Plus AI 업데이트, 스마트홈 연결이 달라진다. Keyword: Alexa Plus AI. Concrete visual subject: artificial intelligence neural network. Context: ## 이번에 달라지는 점 Amazon이 2026년 7월 23일 공식 발표를 통해 Alexa Plus에 인공지능(AI) 기능을 대폭 강화하는 업데이트를 공개했습니다. 이번 업데이트로 Alexa Plus는 더 복잡한 음성 명령을 이해하고, 스마트홈 기기와의 연결 방식을 한층 업그레이드합니다. ## 주요 지원 브랜드와 연동 확대 Alexa Plus AI는 다음과 같은 글로벌 스마트홈 브랜드와 공식 연동이 가능합니다. | 브랜드 | 주요 제품군 | 연동 방식 | 참고 내용 | 업데이트 반영 시점 | |-------------|----------------------|---------------|-------------------------|-------------------| | Bosch | 가전, 보안 | 직접 연결 | 공식 지원 브랜드 | 2026-07-23 | | Delta | 수전, IoT | 기기 자동 인식 | 공식 발표 반영 | 2026-07-23 | | Ecovacs | 로봇청소기 | 명령 자동화 | AI 명령 상세 지원 | 2026-07-23 | | iRobot | 로봇청소기 | 일괄 컨트롤 | 복수 기기 동시 제어 | 2026-07-23 | | Yale Home | 스마트 도어락 | 보안 연동 | 음성 잠금/해제 지원 | 2026-07-23 | | Whirlpool | 주방가전 | 상태 알림 | 기기별 상태 응답 | 202. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1770233621425-5d9ee7a0a700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMG5ldXJhbCUyMG5ldHdvcmt8ZW58MXwwfHx8MTc4NDgwNTIxMXww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}

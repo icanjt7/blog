@@ -1,0 +1,72 @@
+{
+  "run_id": "20260723-212940-53b33001",
+  "topics": [
+    {
+      "keyword": "Alexa Plus AI",
+      "title_hint": "Alexa Plus is getting an AI update to handle more complicated instructions",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Alexa Plus is getting an AI update to handle more complicated instructions",
+          "url": "https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices",
+          "published_at": "2026-07-23T21:15:06",
+          "summary": "Amazon is launching an update to its Alexa Plus assistant that will allow it to connect to smart home devices in new ways. With the update, Alexa Plus can link up with tech from Bosch, Delta, Ecovacs, iRobot, Yale Home, Whirlpool, Tapo, Eufy, and others, while automatically routing requests to the correct device. In an [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Alexa Plus AI",
+        "title_hint": "Alexa Plus is getting an AI update to handle more complicated instructions",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Alexa Plus is getting an AI update to handle more complicated instructions",
+            "url": "https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices",
+            "published_at": "2026-07-23T21:15:06",
+            "summary": "Amazon is launching an update to its Alexa Plus assistant that will allow it to connect to smart home devices in new ways. With the update, Alexa Plus can link up with tech from Bosch, Delta, Ecovacs, iRobot, Yale Home, Whirlpool, Tapo, Eufy, and others, while automatically routing requests to the correct device. In an [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Alexa Plus AI 업데이트, 스마트홈 연결이 달라진다",
+      "slug": "alexa-plus-ai-d169baf6",
+      "excerpt": "Alexa Plus AI가 복잡한 명령을 이해하고, 다양한 스마트홈 기기와 연동이 쉬워집니다. 공식 발표 기준, 지원 브랜드와 기술 변화 포인트를 간단히 정리합니다.",
+      "body_markdown": "## 이번에 달라지는 점\n\nAmazon이 2026년 7월 23일 공식 발표를 통해 Alexa Plus에 인공지능(AI) 기능을 대폭 강화하는 업데이트를 공개했습니다. 이번 업데이트로 Alexa Plus는 더 복잡한 음성 명령을 이해하고, 스마트홈 기기와의 연결 방식을 한층 업그레이드합니다.\n\n## 주요 지원 브랜드와 연동 확대\n\nAlexa Plus AI는 다음과 같은 글로벌 스마트홈 브랜드와 공식 연동이 가능합니다.\n\n| 브랜드      | 주요 제품군           | 연동 방식      | 참고 내용                | 업데이트 반영 시점 |\n|-------------|----------------------|---------------|-------------------------|-------------------|\n| Bosch       | 가전, 보안           | 직접 연결     | 공식 지원 브랜드        | 2026-07-23        |\n| Delta       | 수전, IoT            | 기기 자동 인식 | 공식 발표 반영          | 2026-07-23        |\n| Ecovacs     | 로봇청소기            | 명령 자동화    | AI 명령 상세 지원       | 2026-07-23        |\n| iRobot      | 로봇청소기            | 일괄 컨트롤    | 복수 기기 동시 제어     | 2026-07-23        |\n| Yale Home   | 스마트 도어락         | 보안 연동      | 음성 잠금/해제 지원     | 2026-07-23        |\n| Whirlpool   | 주방가전              | 상태 알림      | 기기별 상태 응답        | 2026-07-23        |\n| Tapo        | IoT 플러그, 카메라    | 자동 설정      | AI 기반 기기 탐지       | 2026-07-23        |\n| Eufy        | 카메라, 센서          | 이벤트 알림    | 실시간 알림 기능 강화   | 2026-07-23        |\n\n## 사용자에게 생기는 변화\n\n- 복잡한 명령(예: \"퇴근하면 불 끄고, 로봇청소기 돌려줘\")도 한 번에 처리\n- 여러 브랜드 기기를 한 번에 연결하고 자동화 가능\n- 음성만으로 도어락 잠금, 가전 상태 확인 등 활용도 확대\n\n## 참고할 공식 변화 포인트\n\n1. **출시일**: 2026년 7월 23일 공식 발표 기준\n2. **지원 브랜드**: Bosch, Delta, Ecovacs, iRobot, Yale Home, Whirlpool, Tapo, Eufy 등\n3. **새로운 기능**: AI 기반 복합 명령 이해, 멀티 기기 연동 자동화\n4. **적용 환경**: Amazon Alexa Plus 지원 기기 및 앱\n5. **공식 출처**: [The Verge 기사 원문](https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices)\n\n## 정리\n\nAlexa Plus AI 업데이트로, 스마트홈의 기기 연결과 자동화가 한층 쉬워집니다. 지원 브랜드 확대와 함께, AI 명령 인식력이 강화되어 일상 속 스마트홈 경험이 더 자연스러워질 전망입니다. 공식 발표와 지원 리스트를 꼭 확인하세요.",
+      "tags": [
+        "기술",
+        "Alexa",
+        "Plus",
+        "AI"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1770233621425-5d9ee7a0a700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMG5ldXJhbCUyMG5ldHdvcmt8ZW58MXwwfHx8MTc4NDgwNTIxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Alexa Plus AI 업데이트, 스마트홈 연결이 달라진다 — Photo by Zach M on Unsplash",
+      "inline_image_path": "https://images.pexels.com/photos/17485657/pexels-photo-17485657.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "inline_image_alt": "Alexa Plus AI 업데이트, 스마트홈 연결이 달라진다 본문 보조 이미지 — Photo by Google DeepMind on Pexels",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Alexa Plus AI 업데이트, 스마트홈 연결이 달라진다. Keyword: Alexa Plus AI. Concrete visual subject: artificial intelligence neural network. Context: ## 이번에 달라지는 점 Amazon이 2026년 7월 23일 공식 발표를 통해 Alexa Plus에 인공지능(AI) 기능을 대폭 강화하는 업데이트를 공개했습니다. 이번 업데이트로 Alexa Plus는 더 복잡한 음성 명령을 이해하고, 스마트홈 기기와의 연결 방식을 한층 업그레이드합니다. ## 주요 지원 브랜드와 연동 확대 Alexa Plus AI는 다음과 같은 글로벌 스마트홈 브랜드와 공식 연동이 가능합니다. | 브랜드 | 주요 제품군 | 연동 방식 | 참고 내용 | 업데이트 반영 시점 | |-------------|----------------------|---------------|-------------------------|-------------------| | Bosch | 가전, 보안 | 직접 연결 | 공식 지원 브랜드 | 2026-07-23 | | Delta | 수전, IoT | 기기 자동 인식 | 공식 발표 반영 | 2026-07-23 | | Ecovacs | 로봇청소기 | 명령 자동화 | AI 명령 상세 지원 | 2026-07-23 | | iRobot | 로봇청소기 | 일괄 컨트롤 | 복수 기기 동시 제어 | 2026-07-23 | | Yale Home | 스마트 도어락 | 보안 연동 | 음성 잠금/해제 지원 | 2026-07-23 | | Whirlpool | 주방가전 | 상태 알림 | 기기별 상태 응답 | 202. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: Alexa Plus AI 업데이트, 스마트홈 연결이 달라진다. Keyword: Alexa Plus AI. Concrete visual subject: artificial intelligence neural network. Article context: ## 이번에 달라지는 점 Amazon이 2026년 7월 23일 공식 발표를 통해 Alexa Plus에 인공지능(AI) 기능을 대폭 강화하는 업데이트를 공개했습니다. 이번 업데이트로 Alexa Plus는 더 복잡한 음성 명령을 이해하고, 스마트홈 기기와의 연결 방식을 한층 업그레이드합니다. ## 주요 지원 브랜드와 연동 확대 Alexa Plus AI는 다음과 같은 글로벌 스마트홈 브랜드와 공식 연동이 가능합니다. | 브랜드 | 주요 제품군 | 연동 방식 | 참고 내용 | 업데이트 반영 시점 | |-------------|----------------------|---------------|-------------------------|-------------------| | Bosch | 가전, 보안 | 직접 연결 | 공식 지원 브랜드 | 2026-07-23 | | Delta | 수전, IoT | 기기 자동 인식 | 공식 발표 반영 | 2026-07-23 | | Ecovacs | 로봇청소기 | 명령 자동화 | AI 명령 상세 지원 | 2026-07-23 | | iRobot | 로봇청소기 | 일괄 컨트롤 | 복수 기기 동시 제어 | 2026-07-23 | | Yale Home | 스마트 도어락 | 보안 연동 | 음성 잠금/해제 지원 | 2026-07-23 | | Whirlpool | 주방가전 | 상태 알림 | 기기별 상태 응답 | 2026-07-23 | | Tapo | IoT 플러그, 카메라 | 자동 설정 | AI 기반 기기 탐지 | 2026-07-23 | | Eufy | 카메라, 센서 | 이벤트 알림 | 실시간 알림 기능 강화 | 2026-07-23 | ## 사용자에게 생기는 변화 - 복잡한 명령(예: \"퇴근하면 불 끄고, 로봇청소기 돌려줘\")도 한 번에 처리 - 여러 브랜드 기기를 한. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-23T21:31:20.665869",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/alexa-plus-ai-d169baf6.md",
+      "message": "draft saved"
+    }
+  ]
+}
