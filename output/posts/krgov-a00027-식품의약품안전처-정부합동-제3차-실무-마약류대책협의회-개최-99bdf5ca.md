@@ -1,22 +1,22 @@
 ---
-title: "[정부합동] 제3차 실무 마약류대책협의회 개최"
-date: "2026-06-09T00:31"
-category: "생활"
+title: '[정부합동] 제3차 실무 마약류대책협의회 개최'
+date: 2026-06-09T00:31
+category: 생활
 tags:
-  - "보도기사"
-  - "식품의약품안전처"
-  - "생활"
+- 보도기사
+- 식품의약품안전처
+- 생활
 quality_score: 90.0
-cover_image: "https://images.unsplash.com/photo-1724923170448-f8411c8d7e8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODEwMTEyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "[정부합동] 제3차 실무 마약류대책협의회 개최"
-author: "식품의약품안전처"
+cover_image: https://images.unsplash.com/photo-1724923170448-f8411c8d7e8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODEwMTEyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: '[정부합동] 제3차 실무 마약류대책협의회 개최'
+author: 식품의약품안전처
+expanded_by_llm: true
+search_index_improved: true
 ---
-
-식품의약품안전처가 2026-06-09 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. 원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다.
 
 ## 한눈에 보기
 
-이번 보도자료의 핵심은 '[정부합동] 제3차 실무 마약류대책협의회 개최'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
+식품의약품안전처가 2026년 6월 9일 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. 이 보도자료의 핵심은 '[정부합동] 제3차 실무 마약류대책협의회 개최'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
 
 ## 핵심 포인트
 
@@ -27,15 +27,20 @@ author: "식품의약품안전처"
 ## 더 살펴볼 내용
 
 먼저, 마약류 근절을 위한 예방교육 및 홍보의 효과성을 높이기 위해 범정부적으로 활용할 일관된 핵심 메시지를 식약처에서 검토 중이다.
-
 문화체육관광부, 교육부 등 관계부처는 이를 토대로 광고 제작, 추가 교육자료 개발 등에 나설 계획이다.
+또한, 마약류 대응을 위한 과학장비 개발·구축 현황 및 계획에 대해 자세히 살펴볼 필요가 있습니다. 이는 마약류 근절을 위한 정부의 노력과 추진 방향을 이해하는 데 중요한 요소입니다.
 
 ## 확인 메모
 
 - 발표 기관: 식품의약품안전처
 - 발표일: 2026-06-09
 - 자료 성격: 기관 보도자료 기반 브리핑
+- 관련 기관: 교육부, 과기정통부, 법무부, 문체부, 복지부, 노동부, 국방부, 방미통위, 대검찰청, 경찰청, 해경청, 관세청, 식약처, 국정원, 인천국제공항공사
 
 ## 원문
 
 - [식품의약품안전처 보도자료](https://www.korea.kr/briefing/pressReleaseView.do?newsId=156765688)
+
+## 추가 정보
+
+마약류 근절을 위한 정부의 노력은 지속적으로 진행 중입니다. 이에 따라 관련 기관과 부처들은 협력하여 마약류 대응을 위한 다양한 방안을 모색하고 있습니다. 이러한 노력의 일환으로 마약퇴치주간(6.22~6.26) 홍보계획이 수립되어 관련 홍보 활동이 진행될 예정입니다. 이는 마약류에 대한 인식 개선과 예방교육의 중요성을 강조하는 데 중요한 역할을 할 것입니다.
