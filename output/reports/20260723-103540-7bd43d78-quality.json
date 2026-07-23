@@ -1,0 +1,21 @@
+{
+  "run_id": "20260723-103540-7bd43d78",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "google-now-lets-you-505bb5de",
+      "title": "700억 달러 증액, 미국 DHS 예산 변화 핵심 체크",
+      "keyword": "Google now lets you",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 700억 달러 증액, 미국 DHS 예산 변화 핵심 체크. Keyword: Google now lets you. Concrete visual subject: search cloud technology government budget finance. Context: ## 미국 DHS 예산 700억 달러 증액, 무엇이 달라지나 미국 국토안보부(DHS)는 ICE(이민세관집행국), CBP(세관국경보호국), TSA(교통안전청), CISA(사이버·인프라보안국) 등 다양한 기관을 총괄하는 정부 부처입니다. 이번 700억 달러 예산 증액은 단순한 행정비 확장이 아니라, 이민 집행과 국경 보안, 첨단 감시 기술, 사이버보안까지 영향을 미칩니다. ## 기술·정책 변화의 핵심 DHS 예산 증액은 다음과 같은 분야로 이어집니다. - **이민 집행 강화** ICE와 CBP 등 현장 인력 확충뿐 아니라, 이민자 데이터베이스와 사건관리 시스템 고도화 등에 쓰입니다. - **첨단 감시·감독 기술 도입** 카메라, 드론, 차량 번호판 인식 등 감시 인프라 확장과 생체정보 시스템 업그레이드가 포함됩니다. - **사이버보안 예산 확대** CISA의 사이버 방어 역량 강화, 국가 핵심 인프라 보호를 위한 예산이 늘어납니다. - **공공 보안 투자** 공항·항만 보안, 재난 대응 시스템 등 다양한 분야로 예산 활용이 확대됩니다. ## 이해를 위한 필수 체크포인트 | 항목 | 내용 및 기관명 예시 | |----------------|------------------------------------------| | 증액 규모 | 700억 달러 (미국 연방 예산 기준) | | 주요 집행 기관 | ICE, CBP, TSA, CISA (미. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8c2VhcmNoJTIwY2xvdWQlMjB0ZWNobm9sb2d5JTIwZ292ZXJubWVudCUyMGJ1ZGdldCUyMGZpbmFuY2V8ZW58MXwwfHx8MTc4NDgwMzA1N3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
