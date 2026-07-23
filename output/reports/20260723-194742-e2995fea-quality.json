@@ -1,0 +1,20 @@
+{
+  "run_id": "20260723-194742-e2995fea",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "fcc-chairman-brendan-carr-df1c1720",
+      "title": "방송사·인터넷까지…FCC Carr 의장, 표현의 자유 논란 핵심 변화 5가지",
+      "keyword": "FCC Chairman Brendan Carr",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 방송사·인터넷까지…FCC Carr 의장, 표현의 자유 논란 핵심 변화 5가지. Keyword: FCC Chairman Brendan Carr. Concrete visual subject: artificial intelligence neural network. Context: ## FCC Chairman Brendan Carr, 무엇이 달라졌나 2026년 7월 23일 공개된 원문에 따르면, Brendan Carr는 미국 연방통신위원회(Federal Communications Commission, FCC) 의장으로서 텔레비전, 라디오, 인터넷 전반에 대한 규제 권한을 가지고 있습니다. 특히, 도널드 트럼프 대통령의 두 번째 임기 이후 Carr 의장은 언론사와 인터넷 기업의 표현의 자유(First Amendment) 문제에 적극 개입하며 논란의 중심에 섰습니다. ## 사용자에게 실제로 영향을 주는 5가지 변화 아래 표는 The Verge 기사(2026-07-23) 기준, FCC Chairman Brendan Carr의 정책 변화가 방송사·인터넷 사용자에게 미치는 주요 영향과 관련 절차를 요약한 것입니다. | 구분 | 변화 내용 | 적용 기간 | 영향 대상 | 관련 기관/법제 | 주요 절차 | |----------------|-------------------------------------------------------------------|----------------------|-----------------------------------|-----------------------|-------------------------------| | 1. 방송사 경고 | 특정 방송사에 대해 자유로운 보도 내용. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0Njg0OTc5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
