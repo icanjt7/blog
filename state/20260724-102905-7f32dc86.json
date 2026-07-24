@@ -1,0 +1,73 @@
+{
+  "run_id": "20260724-102905-7f32dc86",
+  "topics": [
+    {
+      "keyword": "Microsoft LG McAfee",
+      "title_hint": "Microsoft pressures LG into killing unwanted McAfee ads",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Microsoft pressures LG into killing unwanted McAfee ads",
+          "url": "https://www.theverge.com/tech/970489/lg-mcafee-ads-windows-microsoft-crackdown",
+          "published_at": "2026-07-24T09:20:09",
+          "summary": "Microsoft has intervened to stop Windows 11 users with LG monitors from being bombarded with annoying McAfee trial pop-ups. In response to complaints about the LG bloatware, Microsoft's Windows chief, Pavan Davuluri, said that LG has agreed to immediately disable the McAfee pop-up from its LG Monitor App Installer, and pledged that Microsoft will \"keep [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Microsoft LG McAfee",
+        "title_hint": "Microsoft pressures LG into killing unwanted McAfee ads",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Microsoft pressures LG into killing unwanted McAfee ads",
+            "url": "https://www.theverge.com/tech/970489/lg-mcafee-ads-windows-microsoft-crackdown",
+            "published_at": "2026-07-24T09:20:09",
+            "summary": "Microsoft has intervened to stop Windows 11 users with LG monitors from being bombarded with annoying McAfee trial pop-ups. In response to complaints about the LG bloatware, Microsoft's Windows chief, Pavan Davuluri, said that LG has agreed to immediately disable the McAfee pop-up from its LG Monitor App Installer, and pledged that Microsoft will \"keep [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "LG 모니터 사용자, 이제 더 이상 McAfee 팝업 안 뜬다! Microsoft의 변화",
+      "slug": "microsoft-lg-mcafee-a229c1c6",
+      "excerpt": "2026년 7월 24일, Microsoft가 LG와 협력해 Windows 11 기반 LG 모니터에서 McAfee 체험 광고 팝업이 중단됐다. 실제 사용자에게 어떤 변화가 생겼는지 주요 기준과 함께 정리했다.",
+      "body_markdown": "## 주요 이슈: LG 모니터의 McAfee 팝업 광고 중단\n\n2026년 7월 24일, Microsoft는 Windows 11 사용자들이 LG 모니터에서 반복적으로 McAfee 체험판 팝업 광고를 겪는 문제를 해결하기 위해 직접 개입했습니다. LG는 Microsoft의 요청에 따라 해당 광고 소프트웨어를 즉시 비활성화하기로 결정했습니다.\n\n## 배경 설명\n\n- **LG전자**: 글로벌 전자제품 제조업체로, 모니터 및 다양한 IT 기기를 생산합니다.\n- **Microsoft**: Windows 운영체제를 개발·운영하는 세계적인 소프트웨어 기업입니다.\n- **McAfee**: 미국의 대표적인 보안 소프트웨어 브랜드로, 주로 바이러스 백신 솔루션을 제공합니다.\n\n최근 LG 모니터를 사용하는 Windows 11 사용자들은 McAfee 체험판 설치를 유도하는 팝업이 반복적으로 나타나 불편을 겪었습니다. 이 문제는 운영체제와 모니터 제조사, 그리고 보안 소프트웨어 간의 협업 구조에서 발생한 것으로, 사용자 불만이 커지자 Microsoft가 직접 조치를 취했습니다.\n\n## 사용자에게 생기는 변화\n\n| 기준 항목      | 구체 내용                                                              |\n| -------------- | ---------------------------------------------------------------------- |\n| 적용 대상      | Windows 11 기반 LG 모니터 사용자                                      |\n| 중단 시점      | 2026년 7월 24일 공식 안내 기준                                         |\n| 주요 조치      | LG 측이 McAfee 체험판 팝업 광고를 즉시 비활성화                       |\n| 불편 해소      | 앞으로 LG 모니터 사용자는 McAfee 광고 팝업에 더 이상 방해받지 않음    |\n| 관련 기업      | Microsoft, LG전자, McAfee                                             |\n\n## 꼭 알아둘 포인트\n\n- **실제 영향**: 기존에 지속적으로 나타나던 McAfee 광고 팝업이 사라져, 모니터 사용 환경이 개선됩니다.\n- **적용 범위**: Windows 11이 설치된 LG 모니터에만 해당됩니다.\n- **비용 변화 없음**: 광고 팝업 중단만 해당되며 별도의 요금 변화는 없습니다.\n- **향후 안내**: 추가적인 소프트웨어 변경이나 업데이트는 Microsoft와 LG 공식 채널을 통해 확인 가능합니다.\n\n## 참고 출처\n\n- [Microsoft pressures LG into killing unwanted McAfee ads (2026-07-24, The Verge)](https://www.theverge.com/tech/970489/lg-mcafee-ads-windows-microsoft-crackdown)\n\n---\n\n이제 LG 모니터 사용자들은 McAfee 체험판 팝업 광고로부터 자유로워졌습니다. Windows 11 환경에서 모니터 사용 경험이 한층 쾌적해질 것으로 기대됩니다.",
+      "tags": [
+        "기술",
+        "Microsoft",
+        "LG",
+        "McAfee"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1545665277-5937489579f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxtb25pdG9yJTIwZGlzcGxheSUyMHNjcmVlbiUyMG1vZGVybiUyMHNvZnR3YXJlJTIwd2luZG93cyUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc4NDg4OTI0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "LG 모니터 사용자, 이제 더 이상 McAfee 팝업 안 뜬다! Microsoft의 변화 — Photo by Joshua Aragon on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxtb25pdG9yJTIwZGlzcGxheSUyMHNjcmVlbiUyMG1vZGVybiUyMHNvZnR3YXJlJTIwd2luZG93cyUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc4NDg4OTI0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "LG 모니터 사용자, 이제 더 이상 McAfee 팝업 안 뜬다! Microsoft의 변화 본문 보조 이미지 — Photo by Fotis Fotopoulos on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: LG 모니터 사용자, 이제 더 이상 McAfee 팝업 안 뜬다! Microsoft의 변화. Keyword: Microsoft LG McAfee. Concrete visual subject: monitor display screen modern software windows technology. Context: ## 주요 이슈: LG 모니터의 McAfee 팝업 광고 중단 2026년 7월 24일, Microsoft는 Windows 11 사용자들이 LG 모니터에서 반복적으로 McAfee 체험판 팝업 광고를 겪는 문제를 해결하기 위해 직접 개입했습니다. LG는 Microsoft의 요청에 따라 해당 광고 소프트웨어를 즉시 비활성화하기로 결정했습니다. ## 배경 설명 - **LG전자**: 글로벌 전자제품 제조업체로, 모니터 및 다양한 IT 기기를 생산합니다. - **Microsoft**: Windows 운영체제를 개발·운영하는 세계적인 소프트웨어 기업입니다. - **McAfee**: 미국의 대표적인 보안 소프트웨어 브랜드로, 주로 바이러스 백신 솔루션을 제공합니다. 최근 LG 모니터를 사용하는 Windows 11 사용자들은 McAfee 체험판 설치를 유도하는 팝업이 반복적으로 나타나 불편을 겪었습니다. 이 문제는 운영체제와 모니터 제조사, 그리고 보안 소프트웨어 간의 협업 구조에서 발생한 것으로, 사용자 불만이 커지자 Microsoft가 직접 조치를 취했습니다. ## 사용자에게 생기는 변화 | 기준 항목 | 구체 내용 | | -------------- | ---------------------------------------------------------------------- | | 적용 대상 | Windows 11 기반 LG 모니터 사용자 | . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: LG 모니터 사용자, 이제 더 이상 McAfee 팝업 안 뜬다! Microsoft의 변화. Keyword: Microsoft LG McAfee. Concrete visual subject: monitor display screen modern software windows technology. Article context: ## 주요 이슈: LG 모니터의 McAfee 팝업 광고 중단 2026년 7월 24일, Microsoft는 Windows 11 사용자들이 LG 모니터에서 반복적으로 McAfee 체험판 팝업 광고를 겪는 문제를 해결하기 위해 직접 개입했습니다. LG는 Microsoft의 요청에 따라 해당 광고 소프트웨어를 즉시 비활성화하기로 결정했습니다. ## 배경 설명 - **LG전자**: 글로벌 전자제품 제조업체로, 모니터 및 다양한 IT 기기를 생산합니다. - **Microsoft**: Windows 운영체제를 개발·운영하는 세계적인 소프트웨어 기업입니다. - **McAfee**: 미국의 대표적인 보안 소프트웨어 브랜드로, 주로 바이러스 백신 솔루션을 제공합니다. 최근 LG 모니터를 사용하는 Windows 11 사용자들은 McAfee 체험판 설치를 유도하는 팝업이 반복적으로 나타나 불편을 겪었습니다. 이 문제는 운영체제와 모니터 제조사, 그리고 보안 소프트웨어 간의 협업 구조에서 발생한 것으로, 사용자 불만이 커지자 Microsoft가 직접 조치를 취했습니다. ## 사용자에게 생기는 변화 | 기준 항목 | 구체 내용 | | -------------- | ---------------------------------------------------------------------- | | 적용 대상 | Windows 11 기반 LG 모니터 사용자 | | 중단 시점 | 2026년 7월 24일 공식 안내 기준 | | 주요 조치 | LG 측이 McAfee 체험판 팝업 광고를 즉시 비활성화 | | 불편 해소 | 앞으로 LG 모니터 사용자는 McAfee 광고 팝업에 더 이상 방해받지 않음 | | 관련 기업 | Microsoft, LG전자, McAfee | ## 꼭 알아둘 포인트 - **실제 영향**: 기존에 지. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-24T10:33:49.165730",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/microsoft-lg-mcafee-a229c1c6.md",
+      "message": "draft saved"
+    }
+  ]
+}

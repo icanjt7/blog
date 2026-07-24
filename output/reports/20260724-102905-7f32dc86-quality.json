@@ -1,0 +1,21 @@
+{
+  "run_id": "20260724-102905-7f32dc86",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "microsoft-lg-mcafee-a229c1c6",
+      "title": "LG 모니터 사용자, 이제 더 이상 McAfee 팝업 안 뜬다! Microsoft의 변화",
+      "keyword": "Microsoft LG McAfee",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: LG 모니터 사용자, 이제 더 이상 McAfee 팝업 안 뜬다! Microsoft의 변화. Keyword: Microsoft LG McAfee. Concrete visual subject: monitor display screen modern software windows technology. Context: ## 주요 이슈: LG 모니터의 McAfee 팝업 광고 중단 2026년 7월 24일, Microsoft는 Windows 11 사용자들이 LG 모니터에서 반복적으로 McAfee 체험판 팝업 광고를 겪는 문제를 해결하기 위해 직접 개입했습니다. LG는 Microsoft의 요청에 따라 해당 광고 소프트웨어를 즉시 비활성화하기로 결정했습니다. ## 배경 설명 - **LG전자**: 글로벌 전자제품 제조업체로, 모니터 및 다양한 IT 기기를 생산합니다. - **Microsoft**: Windows 운영체제를 개발·운영하는 세계적인 소프트웨어 기업입니다. - **McAfee**: 미국의 대표적인 보안 소프트웨어 브랜드로, 주로 바이러스 백신 솔루션을 제공합니다. 최근 LG 모니터를 사용하는 Windows 11 사용자들은 McAfee 체험판 설치를 유도하는 팝업이 반복적으로 나타나 불편을 겪었습니다. 이 문제는 운영체제와 모니터 제조사, 그리고 보안 소프트웨어 간의 협업 구조에서 발생한 것으로, 사용자 불만이 커지자 Microsoft가 직접 조치를 취했습니다. ## 사용자에게 생기는 변화 | 기준 항목 | 구체 내용 | | -------------- | ---------------------------------------------------------------------- | | 적용 대상 | Windows 11 기반 LG 모니터 사용자 | . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1545665277-5937489579f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxtb25pdG9yJTIwZGlzcGxheSUyMHNjcmVlbiUyMG1vZGVybiUyMHNvZnR3YXJlJTIwd2luZG93cyUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc4NDg4OTI0MXww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
