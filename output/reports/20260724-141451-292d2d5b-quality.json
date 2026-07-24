@@ -1,0 +1,21 @@
+{
+  "run_id": "20260724-141451-292d2d5b",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "what-track-day-eb66e07b",
+      "title": "‘What I track in a day’가 말하는 2026년 웨어러블 변화 5가지",
+      "keyword": "What track day",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: ‘What I track in a day’가 말하는 2026년 웨어러블 변화 5가지. Keyword: What track day. Concrete visual subject: technology innovation circuit abstract. Context: ## 2026년 최신 건강 트래킹, 무엇이 바뀌었나 ‘What I track in a day’는 Verge의 시니어 리뷰어 Victoria Song이 매주 전하는 기술 뉴스레터입니다. 2026년 7월 공개된 이번 원문에서는 최신 웨어러블 기기와 건강 트래킹 서비스가 실제 사용자에게 어떤 변화를 만들어내는지 구체적으로 다룹니다. ## 주요 변화 체크리스트 | 체크 항목 | 구체 내용 | |------------------------|------------------------------------------------------------------------| | 발행일 | 2026-07-24 (The Verge 공식 뉴스레터) | | 주요 제품 | Fitbit, Apple Watch, Garmin 등 건강 트래킹 기능을 제공하는 웨어러블 기기 | | 기능 변화 | 수면, 심박수, 스트레스, 혈당 등 일상 건강 데이터 자동 기록 확대 | | 사용자 영향 | 개별 맞춤 알림, 데이터 기반 건강 관리, 보험·의료 서비스 연동 가능성 | | 플랫폼 연동 | iOS, Android, 자체 앱 및 클라우드 연동 | | 비용 구조 | 무료 기본 기능 + 프리미엄 구독 옵션(원문 기준, 가격표 세부 공개 없음) | ## 사용자에게 달라진 점 - **더 많은 건강 데이터 기록:** 심박수, 수면 시간, 스트레스 지수 등 일상에서 자동으로 기록되는 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0ODc1Mzc2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
