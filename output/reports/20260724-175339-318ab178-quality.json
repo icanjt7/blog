@@ -1,0 +1,20 @@
+{
+  "run_id": "20260724-175339-318ab178",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "blade-runner-2099-amazon-91d3d3f8",
+      "title": "11월 공개! Blade Runner 2099, 아마존에서 달라진 AI 활용법",
+      "keyword": "Blade Runner 2099 Amazon",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 11월 공개! Blade Runner 2099, 아마존에서 달라진 AI 활용법. Keyword: Blade Runner 2099 Amazon. Concrete visual subject: cloud ecommerce technology artificial intelligence neural network. Context: ## Blade Runner 2099, Amazon에서 2026년 11월 공개 아마존이 Blade Runner 2099의 스트리밍 일정을 공식 발표했습니다. · 공개일: 2026년 11월 25일 · 플랫폼: Amazon Prime Video · 총 에피소드: 8편(동시 공개) · 최초 트레일러 및 시리즈 이미지도 함께 공개됨 (출처: [The Verge, 2026-07-24](https://www.theverge.com/entertainment/970524/blade-runner-2099-date-trailer-amazon-prime-video)) ## Blade Runner 2099와 생성 AI, 무엇이 달라졌나 최근 Google, Amazon 등 주요 플랫폼은 이미지·영상·생산성 도구에 생성 AI를 적극 적용하고 있습니다. Blade Runner 2099도 공개 이미지, 트레일러에서 AI 기반 영상·콘텐츠 제작 기술이 눈에 띕니다. ## 개인정보와 저작권, 꼭 확인해야 할 기준 Blade Runner 2099 Amazon 시리즈와 함께 AI 도구를 사용할 때 꼭 체크해야 할 기준입니다. | 기준 | 구체 내용 | |----------------------|-------------------------------------------------------------------| | 공개 플랫폼 | Amazon Prime Video . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxjbG91ZCUyMGVjb21tZXJjZSUyMHRlY2hub2xvZ3klMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0OTE1NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
