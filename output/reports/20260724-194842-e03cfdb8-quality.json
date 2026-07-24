@@ -1,0 +1,20 @@
+{
+  "run_id": "20260724-194842-e03cfdb8",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "meta-created-moderation-nightmare-a246d162",
+      "title": "‘Meta 스마트 글라스’ 논란, 개인정보 유출 위험 5가지",
+      "keyword": "Meta created moderation nightmare",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: ‘Meta 스마트 글라스’ 논란, 개인정보 유출 위험 5가지. Keyword: Meta created moderation nightmare. Concrete visual subject: social virtual technology. Context: ## 논란의 중심: Meta 스마트 글라스의 ‘Moderation Nightmare’ 2026년 7월 24일 공개된 The Verge 보도에 따르면, Meta의 스마트 글라스가 예상치 못한 ‘moderation nightmare(관리 악몽)’를 만들고 있습니다. 이 제품은 실제로 PR 위기를 초래했으며, 공개 이후 이용자와 사회 전반에서 프라이버시 침해와 감시 확대에 대한 우려가 빠르게 확산되고 있습니다. 특히 일부 사용자가 스마트 글라스로 타인을 몰래 촬영하거나 ‘Prank(장난)’ 영상을 만들면서, 개인정보 유출과 악의적 사용이 문제가 되고 있습니다. ## Meta 스마트 글라스, 왜 위험한가? Meta 스마트 글라스는 웨어러블 기기로, 사용자 활동과 건강 데이터 등 민감 정보를 수집합니다. 이 정보는 단순 연락처보다 훨씬 개인의 생활 패턴을 자세히 드러낼 수 있으며, 내부 관리 도구나 데이터 저장소에 접근한 경우 보안 사고로 이어질 수 있습니다. ## 핵심 체크포인트: 위험 요소 5가지 | 항목 | 구체 내용 | |------------------|-------------------------------------------------------------------| | 적용 대상 | 스마트 글라스 이용자, 개인정보 처리 기업, 보안 담당자 | | 보안 이슈 | 내부 도구 권한 관리, 고객 데이터 접근, 사고 대응 체계 | |. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1777589895180-cc5506d99419?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxzb2NpYWwlMjB2aXJ0dWFsJTIwdGVjaG5vbG9neXxlbnwxfDB8fHwxNzg0NzYyMzU0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
