@@ -1,0 +1,21 @@
+{
+  "run_id": "20260724-212950-d6d5895d",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "qualcomm-8217-d4a1e603",
+      "title": "9월부터 Qualcomm 8217 가격 인상, 소비자에 미칠 영향은?",
+      "keyword": "Qualcomm 8217",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 9월부터 Qualcomm 8217 가격 인상, 소비자에 미칠 영향은?. Keyword: Qualcomm 8217. Concrete visual subject: technology innovation circuit abstract. Context: ## 2026년 9월, Qualcomm 8217 가격 인상 소식 Qualcomm이 2026년 7월 24일 고객들에게 공지한 바에 따르면, Qualcomm 8217 등 주요 제품 가격이 \"두 자릿수 비율\"로 인상될 예정입니다. Bloomberg 보도에 따르면, 이 가격 인상은 2026년 9월 1일 이후 출하되는 제품부터 적용됩니다. ## Qualcomm 8217 가격 인상이 중요한 이유 Qualcomm은 스마트폰, 태블릿, IoT 기기 등 다양한 전자제품에 필수적인 칩셋을 공급하는 글로벌 반도체 기업입니다. Qualcomm 8217은 최근 출시된 프리미엄 칩으로, 고성능 모바일 디바이스와 AI, 5G 지원 제품에 널리 사용됩니다. ## 가격 인상 기준, 적용 범위 | 구체 항목 | 내용 | |------------------|------------------------------------------------------------| | 인상 시기 | 2026년 9월 1일 이후 출하 제품 | | 인상 대상 | Qualcomm 8217 등 주요 칩셋 | | 인상 폭 | 두 자릿수 비율(공식 안내 기준) | | 적용 기관 | Qualcomm 직접 공급, 글로벌 제조사 | | 영향 대상 | 스마트폰·태블릿 제조사, 소비자, B2B 전자제품 업체 | | 절차 | 공식 고객 공지 후 자동 적용 | ## 소비자와 업계에 미칠 영향 - 스마트폰, . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330298761-3e41cd894295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0ODY0OTE3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
