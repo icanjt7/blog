@@ -1,0 +1,20 @@
+{
+  "run_id": "20260724-064048-703cba5a",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "patreon-20-5ef56a5f",
+      "title": "Patreon 직원 20% 감축, 사용자에게 미치는 5가지 변화",
+      "keyword": "Patreon 20",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Patreon 직원 20% 감축, 사용자에게 미치는 5가지 변화. Keyword: Patreon 20. Concrete visual subject: technology innovation circuit abstract. Context: ## Patreon 직원 20% 감축, 무엇이 바뀌나? 2026년 7월 23일, Patreon CEO 잭 콘테(Jack Conte)는 전체 직원의 20%인 약 93명을 해고한다고 공식 메모를 통해 밝혔습니다. 해당 발표는 404 Media와 The Verge 등 주요 매체를 통해 보도되었습니다. Patreon은 창작자와 후원자를 연결하는 글로벌 크라우드펀딩 플랫폼입니다. ## 주요 변화 체크리스트 | 항목 | 구체적 내용 | |------------------|---------------------------------------------------------------------------| | 감축 인원 | 전체 직원의 약 20%, 93명 (2026-07-23 공식 발표 기준) | | 적용 시점 | 2026년 7월 23일 이후 공식 발표와 함께 즉시 시행 | | 영향 대상 | Patreon 플랫폼 이용자, 크리에이터, 후원자, 개발 및 운영팀 | | 플랫폼 안정성 | 서비스 운영팀 축소에 따른 일부 기능 지원·고객 응대 지연 가능성 | | AI 활용 언급 | \"AI가 인간을 대체한다고 믿어서가 아니라, AI로 업무 방식이 근본적으로 변화\" | | 공식 안내 채널 | CEO 메모, The Verge, 404 Media 등 공식 보도자료 및 상태 페이지 | ## 사용자가 느낄 수 있는 변화 - **고객 지원 속도**: 직원 감축으로. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0NzU2MDAyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
