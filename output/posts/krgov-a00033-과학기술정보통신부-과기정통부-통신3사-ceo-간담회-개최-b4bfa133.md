@@ -1,15 +1,17 @@
 ---
-title: "「과기정통부-통신3사 CEO 간담회」 개최"
-date: "2026-07-23T00:02"
-category: "기술"
+title: 과기정통부, 통신3사와 AI시대 네트워크 고도화 논의
+date: 2026-07-23T00:02
+category: 기술
 tags:
-  - "보도기사"
-  - "과학기술정보통신부"
-  - "기술"
+- 보도기사
+- 과학기술정보통신부
+- 기술
 quality_score: 92.0
-cover_image: "https://images.unsplash.com/photo-1667984550708-a6beba23cb4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxuZXR3b3JrJTIwY29tbXVuaWNhdGlvbiUyMGluZnJhc3RydWN0dXJlfGVufDF8MHx8fDE3ODQ4NTEyNTR8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "「과기정통부-통신3사 CEO 간담회」 개최"
-author: "과학기술정보통신부"
+cover_image: https://images.unsplash.com/photo-1667984550708-a6beba23cb4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxuZXR3b3JrJTIwY29tbXVuaWNhdGlvbiUyMGluZnJhc3RydWN0dXJlfGVufDF8MHx8fDE3ODQ4NTEyNTR8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 「과기정통부-통신3사 CEO 간담회」 개최
+author: 과학기술정보통신부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 과학기술정보통신부가 2026-07-23 공개한 자료를 바탕으로 「과기정통부-통신3사 CEO 간담회」 개최의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

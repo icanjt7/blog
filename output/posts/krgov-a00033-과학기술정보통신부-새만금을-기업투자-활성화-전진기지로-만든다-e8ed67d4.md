@@ -1,15 +1,17 @@
 ---
-title: "\"새만금을 기업투자 활성화 전진기지로 만든다\""
-date: "2026-07-24T00:02"
-category: "기술"
+title: 한성숙 국무총리, 새만금 투자활성화 기업간담회 개최
+date: 2026-07-24T00:02
+category: 기술
 tags:
-  - "보도기사"
-  - "과학기술정보통신부"
-  - "기술"
+- 보도기사
+- 과학기술정보통신부
+- 기술
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1618044733300-9472054094ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8aW52ZXN0bWVudCUyMGZpbmFuY2UlMjBncm93dGh8ZW58MXwwfHx8MTc4NDg4ODA1OHww&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "\"새만금을 기업투자 활성화 전진기지로 만든다\""
-author: "과학기술정보통신부"
+cover_image: https://images.unsplash.com/photo-1618044733300-9472054094ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8aW52ZXN0bWVudCUyMGZpbmFuY2UlMjBncm93dGh8ZW58MXwwfHx8MTc4NDg4ODA1OHww&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: '"새만금을 기업투자 활성화 전진기지로 만든다"'
+author: 과학기술정보통신부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 과학기술정보통신부가 2026-07-24 공개한 자료를 바탕으로 "새만금을 기업투자 활성화 전진기지로 만든다"의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

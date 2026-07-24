@@ -1,15 +1,17 @@
 ---
-title: "한국전통문화대, 우즈베키스탄 연수단 초청해 국가유산 디지털 관리 역량 강화"
-date: "2026-07-13T00:21"
-category: "기술"
+title: 한국전통문화대, 우즈베키스탄 연수단과 국가유산 디지털 관리 협력 논의
+date: 2026-07-13T00:21
+category: 기술
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "기술"
+- 보도기사
+- 국가유산청
+- 기술
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=a9aa0f6d3cb548e9817ffc02c95beecb"
-cover_image_alt: "전통문화대 디지털헤리티지학과 연구실(IDHLAB)에서 디지털 콘텐츠 연구 현황 청취하는 연수단 (‘26.7.7.)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=a9aa0f6d3cb548e9817ffc02c95beecb
+cover_image_alt: 전통문화대 디지털헤리티지학과 연구실(IDHLAB)에서 디지털 콘텐츠 연구 현황 청취하는 연수단 (‘26.7.7.)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 소개

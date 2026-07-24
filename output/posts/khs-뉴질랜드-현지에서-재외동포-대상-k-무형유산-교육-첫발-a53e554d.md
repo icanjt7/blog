@@ -1,15 +1,17 @@
 ---
-title: "뉴질랜드 현지에서 재외동포 대상 K-무형유산 교육 첫발"
-date: "2026-07-13T00:18"
-category: "핫이슈"
+title: 뉴질랜드에서 재외동포를 위한 무형유산 교육 실시
+date: 2026-07-13T00:18
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=2f0e3dcd214047c98f95d83608574ff4"
-cover_image_alt: "뉴질랜드 재외동포 대상 무형유산 교육 – 탈춤 강의(‘26.7.6.~11, 오클랜드 한인회관)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=2f0e3dcd214047c98f95d83608574ff4
+cover_image_alt: 뉴질랜드 재외동포 대상 무형유산 교육 – 탈춤 강의(‘26.7.6.~11, 오클랜드 한인회관)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 소개

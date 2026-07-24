@@ -1,5 +1,5 @@
 ---
-title: 홈플러스 관련 관계기관 전담반(TF) 회의 개최
+title: 재정경제부, 홈플러스 전담 TF 회의 진행
 date: 2026-07-10T00:26
 category: 정책
 tags:
@@ -12,6 +12,7 @@ cover_image_alt: 홈플러스 관련 관계기관 전담반(TF) 회의 개최 �
 author: 재정경제부
 expanded_by_llm: true
 search_index_improved: true
+title_improved_by_llm: true
 ---
 
 ## 회의 개요  
