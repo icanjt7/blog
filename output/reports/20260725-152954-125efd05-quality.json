@@ -1,0 +1,20 @@
+{
+  "run_id": "20260725-152954-125efd05",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "synth-oli-freke-8ad7d894",
+      "title": "Oli Freke의 신디사이저 연구와 음악 수학적 접근",
+      "keyword": "Synth Oli Freke",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Oli Freke의 신디사이저 연구와 음악 수학적 접근. Keyword: Synth Oli Freke. Concrete visual subject: technology innovation circuit abstract. Context: ## Oli Freke의 프로필과 주요 활동 Oli Freke는 영국 출신의 음악가이자 저널리스트로, 신디사이저와 드럼 머신을 중심으로 전자음악의 역사와 기술을 연구한다. 그의 글은 Sound on Sound, The Quietus, Mixmag 등 음악 전문 매체에 실렸으며, 인터뷰와 저서에서 신디사이저의 구조, 기능, 역사적 변천을 심도 있게 다뤘다. 특히 Freke는 전자악기 분야에서 수학적 분석을 통해 음악 이론에 새로운 관점을 제시하고 있다. ## 수학적 접근을 통한 음악 이론 연구 Oli Freke가 주목받는 이유 중 하나는 서양 12음계(Western 12-tone scale)의 멜로디 잠재력을 수학적으로 탐구하는 방식이다. 그는 음계의 조합과 패턴을 수학적으로 분류하고, 이를 바탕으로 신디사이저 사운드의 설계와 창작에 응용한다. 이 연구는 전통적 음악 이론의 한계를 넘어 전자음악 작곡과 악기 개발에 실질적인 영향을 미치고 있다. ## 저널리즘과 저서 Freke는 신디사이저와 드럼 머신의 발전사를 정리한 책을 집필했으며, 해당 저서는 전자음악 애호가와 관련 연구자들 사이에서 높은 평가를 받고 있다. 그는 Bjooks 출판사와 협업하여 Beat Gems Drum Machine Book 등 전문서 제작에 참여했다. 이러한 활동을 통해 Freke는 전자음악 기술의 발전 과정과 문화적 변화를 기록하고, 신디사이저의 기능적·역사적. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330299602-8dcca2aea607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0ODY0OTE3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
