@@ -1,0 +1,20 @@
+{
+  "run_id": "20260725-113654-5cd70aeb",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "dji-xtra-56f44e27",
+      "title": "Xtra, DJI 카메라 클론 제품 전액 환불 결정! 사용자에 미치는 5가지 변화",
+      "keyword": "DJI Xtra",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Xtra, DJI 카메라 클론 제품 전액 환불 결정! 사용자에 미치는 5가지 변화. Keyword: DJI Xtra. Concrete visual subject: camera photography lens digital. Context: ## Xtra, 모든 클론 카메라 사전주문 전격 취소 2026-07-25 기준, DJI Osmo Pocket 3를 모방해 미국에 출시했던 'Xtra Technology'가 모든 신제품(예: Xtra Muse 2 Pro) 사전주문을 중단하고 환불 절차에 들어갔습니다. 2025년에 barely disguised(거의 구분이 힘든) DJI Osmo Pocket 3 클론을 판매해 시장의 주목을 받았던 Xtra는, 차세대 듀얼 렌즈 신제품까지 예고했지만 갑작스럽게 모든 판매와 개발을 멈췄습니다. ## 이번 조치가 사용자에게 의미하는 점 사전주문자와 예비 구매자, 관련 업계에 실제로 미치는 변화를 5가지로 요약합니다. | 구분 | 상세 내용 | |--------------|-----------------------------------------------------------------------------------------------| | 적용 대상 | 모든 Xtra 제품 사전주문자, 예비 구매자, 소형 카메라 도입 검토 기업 | | 환불 정책 | 공식 안내 기준, 전액 환불 조치(신청 절차는 Xtra 공식 웹사이트 별도 공지 참고) | | 제품 공급 | Xtra Muse 2 Pro 등 신제품 출시 계획 전면 중단, 기존 제품의 추가 생산·유통 계획 없음 | | 시장 영향 | DJI 정품(Osmo Pocket 시리즈) 외 대체재 선택지 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1582994254571-52c62d96ebab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxjYW1lcmElMjBwaG90b2dyYXBoeSUyMGxlbnMlMjBkaWdpdGFsfGVufDF8MHx8fDE3ODQ5Nzk1Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
