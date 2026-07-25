@@ -1,0 +1,73 @@
+{
+  "run_id": "20260725-211023-b51e027a",
+  "topics": [
+    {
+      "keyword": "reader case gun",
+      "title_hint": "Is this e-reader case a gun?",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Is this e-reader case a gun?",
+          "url": "https://www.theverge.com/tech/970343/e-reader-case-3d-printed-gun",
+          "published_at": "2026-07-25T13:00:00",
+          "summary": "Is an e-reader case as dangerous as a Glock 19? Last month, Louisville, Kentucky-based creator Luke The Maker showed off a bizarre, 3D-printed, pistol-shaped case design for the popular minimalist Xteink X4 e-reader. The X4 lies vertically atop the plastic gun's slide, with a cutout on the side to access its buttons. Though the frame [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "reader case gun",
+        "title_hint": "Is this e-reader case a gun?",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Is this e-reader case a gun?",
+            "url": "https://www.theverge.com/tech/970343/e-reader-case-3d-printed-gun",
+            "published_at": "2026-07-25T13:00:00",
+            "summary": "Is an e-reader case as dangerous as a Glock 19? Last month, Louisville, Kentucky-based creator Luke The Maker showed off a bizarre, 3D-printed, pistol-shaped case design for the popular minimalist Xteink X4 e-reader. The X4 lies vertically atop the plastic gun's slide, with a cutout on the side to access its buttons. Though the frame [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "3D 프린트 권총형 e-reader 케이스의 실제 위험과 법적 쟁점",
+      "slug": "reader-case-gun-7ef9e811",
+      "excerpt": "루이빌 제작자 루크 더 메이커가 공개한 3D 프린트 권총 모양 e-reader 케이스는 글락 19와 유사한 외관으로 논란을 불러일으키고 있다. 실제 총기로 오인될 위험, 법적 쟁점, Xteink X4 전용 설계, 공공장소 사용 제한 등 근거 있는 정보를 정리한다.",
+      "body_markdown": "## 1. 3D 프린트 권총형 e-reader 케이스 등장 배경\n\n2026년 7월 25일, The Verge는 루이빌(켄터키주) 기반 제작자 Luke The Maker가 선보인 독특한 e-reader 케이스를 조명했다. 이 케이스는 Xteink X4라는 미니멀 전자책 단말기에 맞춰 설계됐으며, 외관이 권총 글락 19와 거의 동일하다. 글락 19는 미국 경찰과 민간인 사이에서 널리 사용되는 중형 권총으로, 그 형태를 모방한 케이스는 시각적 혼란과 안전 논란을 촉발했다.\n\n## 2. 제품 구조와 주요 특징\n\nreader case gun은 3D 프린트 플라스틱으로 제작됐다. Xteink X4 단말기를 슬라이드 위에 장착하며, 측면 홈을 통해 버튼을 조작하도록 설계됐다. 실제 글락 19와 비슷한 무게감과 크기를 구현해 전자책 케이스임에도 불구하고 멀리서 보면 권총처럼 보인다. 공식 Xteink 브랜드 인증 상품이 아니며, 3D 프린트 파일 형태로 비공식 유통되고 있다.\n\n### 표: reader case gun vs 일반 e-reader 케이스\n\n| 항목         | reader case gun (3D 프린트)   | 일반 e-reader 케이스 |\n|--------------|------------------------------|----------------------|\n| 외관         | 글락 19 권총형, 오인 위험    | 직사각형, 오인 없음  |\n| 소재         | 3D 프린트 플라스틱           | 실리콘, 가죽 등      |\n| 장착 기기    | Xteink X4 전용               | 다양한 모델 호환     |\n| 버튼 접근성  | 측면 홈, 조작 불편           | 직접 노출, 조작 편리 |\n| 공공장소 사용| 오인 가능, 법적 문제 위험    | 사용 제한 없음       |\n\n## 3. 실제 위험성과 오인 가능성\n\n출처 기사에서는 “글락 19만큼 위험한가?”라는 질문을 던진다. reader case gun은 실제 총기 기능이 없지만, 외형상의 유사성 때문에 공공장소에서 경찰이나 일반인이 진짜 총기로 오인할 수 있다. 특히 야간이나 실내 조명에서는 구분이 어려워, 긴급 제재나 조사, 벌금 등 법적 위험이 발생할 수 있다.\n\n## 4. 법적 쟁점과 공공장소 사용 제한\n\n켄터키주를 비롯한 미국 각지에서는 총기 유사 제품 소지가 경찰의 즉각적 제재를 부를 수 있다. 공항, 학교, 관공서 등에서는 총기 모양 제품 소지와 사용이 금지되거나 제한된다. Xteink 공식 인증이 없는 비공식 제품이므로, 구매 시 보증이나 사후 서비스가 제공되지 않는다. 규정 위반 시 불이익이 발생할 수 있으며, 법적 조사 대상이 될 수 있다.\n\n## 5. 구매 및 사용 시 주의사항\n\nreader case gun은 기발한 아이디어이지만, 실제 생활에서는 안전과 규정 준수가 필수다. 구매 전 해당 지역의 총기 및 모형 관련 법령, 공공장소 이용 규정 등을 반드시 확인해야 한다. The Verge 기사와 Luke The Maker의 디자인 안내 범위를 꼼꼼히 검토하고, 법적·안전상의 위험을 사전에 점검하는 것이 중요하다.\n\n---\n\n이상으로 3D 프린트 권총형 e-reader 케이스의 실제 위험, 법적 쟁점, 구조적 특징, 공공장소 사용 제한 등 근거에 기반한 정보를 정리했다. 출처: [Is this e-reader case a gun?](https://www.theverge.com/tech/970343/e-reader-case-3d-printed-gun), The Verge, 2026-07-25.",
+      "tags": [
+        "기술",
+        "reader",
+        "case",
+        "gun"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1782330299602-8dcca2aea607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dGVjaG5vbG9neSUyMGlubm92YXRpb24lMjBjaXJjdWl0JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc4NTAxMzk2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "3D 프린트 권총형 e-reader 케이스의 실제 위험과 법적 쟁점 — Photo by Brecht Corbeel on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1782330300479-02550a1a3c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg1MDEzOTYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "3D 프린트 권총형 e-reader 케이스의 실제 위험과 법적 쟁점 본문 보조 이미지 — Photo by Brecht Corbeel on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 3D 프린트 권총형 e-reader 케이스의 실제 위험과 법적 쟁점. Keyword: reader case gun. Concrete visual subject: technology innovation circuit abstract. Context: ## 1. 3D 프린트 권총형 e-reader 케이스 등장 배경 2026년 7월 25일, The Verge는 루이빌(켄터키주) 기반 제작자 Luke The Maker가 선보인 독특한 e-reader 케이스를 조명했다. 이 케이스는 Xteink X4라는 미니멀 전자책 단말기에 맞춰 설계됐으며, 외관이 권총 글락 19와 거의 동일하다. 글락 19는 미국 경찰과 민간인 사이에서 널리 사용되는 중형 권총으로, 그 형태를 모방한 케이스는 시각적 혼란과 안전 논란을 촉발했다. ## 2. 제품 구조와 주요 특징 reader case gun은 3D 프린트 플라스틱으로 제작됐다. Xteink X4 단말기를 슬라이드 위에 장착하며, 측면 홈을 통해 버튼을 조작하도록 설계됐다. 실제 글락 19와 비슷한 무게감과 크기를 구현해 전자책 케이스임에도 불구하고 멀리서 보면 권총처럼 보인다. 공식 Xteink 브랜드 인증 상품이 아니며, 3D 프린트 파일 형태로 비공식 유통되고 있다. ### 표: reader case gun vs 일반 e-reader 케이스 | 항목 | reader case gun (3D 프린트) | 일반 e-reader 케이스 | |--------------|------------------------------|----------------------| | 외관 | 글락 19 권총형, 오인 위험 | 직사각형, 오인 없음 | | 소재 | 3D. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 3D 프린트 권총형 e-reader 케이스의 실제 위험과 법적 쟁점. Keyword: reader case gun. Concrete visual subject: technology innovation circuit abstract. Article context: ## 1. 3D 프린트 권총형 e-reader 케이스 등장 배경 2026년 7월 25일, The Verge는 루이빌(켄터키주) 기반 제작자 Luke The Maker가 선보인 독특한 e-reader 케이스를 조명했다. 이 케이스는 Xteink X4라는 미니멀 전자책 단말기에 맞춰 설계됐으며, 외관이 권총 글락 19와 거의 동일하다. 글락 19는 미국 경찰과 민간인 사이에서 널리 사용되는 중형 권총으로, 그 형태를 모방한 케이스는 시각적 혼란과 안전 논란을 촉발했다. ## 2. 제품 구조와 주요 특징 reader case gun은 3D 프린트 플라스틱으로 제작됐다. Xteink X4 단말기를 슬라이드 위에 장착하며, 측면 홈을 통해 버튼을 조작하도록 설계됐다. 실제 글락 19와 비슷한 무게감과 크기를 구현해 전자책 케이스임에도 불구하고 멀리서 보면 권총처럼 보인다. 공식 Xteink 브랜드 인증 상품이 아니며, 3D 프린트 파일 형태로 비공식 유통되고 있다. ### 표: reader case gun vs 일반 e-reader 케이스 | 항목 | reader case gun (3D 프린트) | 일반 e-reader 케이스 | |--------------|------------------------------|----------------------| | 외관 | 글락 19 권총형, 오인 위험 | 직사각형, 오인 없음 | | 소재 | 3D 프린트 플라스틱 | 실리콘, 가죽 등 | | 장착 기기 | Xteink X4 전용 | 다양한 모델 호환 | | 버튼 접근성 | 측면 홈, 조작 불편 | 직접 노출, 조작 편리 | | 공공장소 사용| 오인 가능, 법적 문제 위험 | 사용 제한 없음 | ## 3. 실제 위험성과 오인 가능성 출처 기사에서는 “글락 19만큼 위험한가?”라는 질문을 던진다. re. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-25T21:12:13.003400",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 2차 검수 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/reader-case-gun-7ef9e811.md",
+      "message": "draft saved"
+    }
+  ]
+}
