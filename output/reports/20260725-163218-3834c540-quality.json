@@ -1,0 +1,22 @@
+{
+  "run_id": "20260725-163218-3834c540",
+  "average_quality": 66.0,
+  "drafts": [
+    {
+      "slug": "teenage-engineering-30-0a9865cd",
+      "title": "Teenage Engineering 할인",
+      "keyword": "Teenage Engineering 30",
+      "category": "기술",
+      "quality_score": 66.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Teenage Engineering 할인. Keyword: Teenage Engineering 30. Concrete visual subject: technology innovation circuit abstract. Context: ### Teenage Engineering 소개 Teenage Engineering은 2005년에 설립된 스웨덴의 전자 회사로, 음악 제작을 위해 고유한 기기들을 개발하고 판매합니다. 특히 그루브박스(groovebox)라는 시리즈가 유명합니다. 그루브박스는 신시사이저, 루퍼, 이펙트 페달의 기능을 결합하여 음악 제작자들이 다양한 사운드와 리듬을 쉽게 제작할 수 있도록 해줍니다. ### 그루브박스의 특징 그루브박스는 음악 제작자들이 쉽게 사용할 수 있도록 설계되었습니다. 신시사이저, 루퍼, 이펙트 페달의 기능을 결합하여 음악 제작자들이 자신만의 음악을 제작할 수 있도록 해줍니다. 또한, 그루브박스는 현대 미술의 한 부분으로도 볼 수 있습니다. 그들은 독특한 디자인과 기능으로 유명하여, 많은 음악 제작자들이 자신만의 음악을 제작하기 위해 사용합니다. ### 할인 판매 중인 기기 현재 30% 할인 판매 중인 기기들은 다음과 같습니다. | 기기명 | 원래 가격 | 할인 가격 | | --- | --- | --- | | OP-1 | $1,299 | $909 | | OP-Z | $599 | $419 | | PO-12 | $199 | $139 | ### 구매처 및 특징 이번 할인 판매는 Teenage Engineering의 공식 웹사이트와 다른 온라인 판매처에서 진행 중입니다. 음악 제작자들은 이 기회를 이용하여 자신만의 음악을 제작할 수 있는 유. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330300479-02550a1a3c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0OTkzNTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
