@@ -1,0 +1,21 @@
+{
+  "run_id": "20260725-034046-d35c9229",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "midjourney-co-star-066b22e9",
+      "title": "Midjourney, Co-Star 인수로 AI 점성술 진출",
+      "keyword": "Midjourney Co Star",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Midjourney, Co-Star 인수로 AI 점성술 진출. Keyword: Midjourney Co Star. Concrete visual subject: artificial intelligence neural network. Context: ## Midjourney, Co-Star 인수 소식 AI 스타트업 Midjourney가 2026년 7월 24일, 개인화 점성술 애플리케이션 Co-Star를 인수했다고 공식 발표했습니다. Midjourney는 AI 기반 이미지 생성 서비스로 잘 알려져 있으며, 최근에는 초음파 스캔 등 의료 분야까지 그 활용 범위를 넓혀 왔습니다. 이번 인수를 통해 Midjourney는 점성술(astroloy) 영역에 본격 진출하게 되었습니다. ## Co-Star란? Co-Star는 사용자의 생년월일, 출생지 등 개인 정보를 바탕으로 AI가 일간 운세와 인생 조언을 제공하는 앱입니다. 2017년 출시 이후 젊은 층을 중심으로 인기를 끌며, 무료로 다운로드할 수 있습니다. ## Midjourney와 Co-Star의 결합, 무엇이 달라지나? Midjourney는 이번 인수를 통해 기존의 이미지, 의료 AI 기술에 점성술 알고리즘을 접목할 계획이라고 밝혔습니다. 이를 통해 다음과 같은 변화가 예상됩니다. - **개인 맞춤형 서비스 강화:** Co-Star의 방대한 사용자 데이터를 Midjourney의 AI 분석력과 결합해 더욱 정교한 운세 제공 가능 - **AI 점성술 시장 확대:** 기존 이미지 생성에서 라이프스타일·자기계발 분야까지 Midjourney의 서비스 영역 확장 - **앱 통합 또는 신규 서비스 출시:** Midjourney 플랫폼 내에서 Co-. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg0OTUxMDAxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
