@@ -1,15 +1,17 @@
 ---
-title: "세계유산위원회 안전 개최 위한 대테러·안전관리 협업체계 구축 완료"
-date: "2026-07-07T00:09"
-category: "핫이슈"
+title: 제48차 유네스코 세계유산위원회 안전 확보를 위한 협업체계 구축 및 훈련 실시
+date: 2026-07-07T00:09
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=5dff29f057bd4fc1912b18e8381ef6f8"
-cover_image_alt: "세계유산위원회 대비 11개 기관 대테러 합동훈련 (‘26.7.6. 부산 벡스코)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=5dff29f057bd4fc1912b18e8381ef6f8
+cover_image_alt: 세계유산위원회 대비 11개 기관 대테러 합동훈련 (‘26.7.6. 부산 벡스코)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 국가유산청, 2026‑07‑07 발표 – 제48차 유네스코 세계유산위원회 안전 확보를 위한 대테러 합동훈련 실시

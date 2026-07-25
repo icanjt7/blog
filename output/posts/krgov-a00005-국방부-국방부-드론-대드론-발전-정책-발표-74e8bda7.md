@@ -1,15 +1,17 @@
 ---
-title: "국방부, 드론·대드론 발전 정책 발표"
-date: "2026-06-26T00:06"
-category: "기술"
+title: 국방부, 무인전투체계 강군 전환을 위한 드론·대드론 정책 발표
+date: 2026-06-26T00:06
+category: 기술
 tags:
-  - "보도기사"
-  - "국방부"
-  - "기술"
+- 보도기사
+- 국방부
+- 기술
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1607867992871-34951585c280?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxkcm9uZSUyMGFlcmlhbCUyMHNreSUyMG1vZGVybnxlbnwxfDB8fHwxNzg0ODg4Mjg2fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "국방부, 드론·대드론 발전 정책 발표"
-author: "국방부"
+cover_image: https://images.unsplash.com/photo-1607867992871-34951585c280?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxkcm9uZSUyMGFlcmlhbCUyMHNreSUyMG1vZGVybnxlbnwxfDB8fHwxNzg0ODg4Mjg2fDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 국방부, 드론·대드론 발전 정책 발표
+author: 국방부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 무인전투체계 강군 전환을 위한 정책 발표  

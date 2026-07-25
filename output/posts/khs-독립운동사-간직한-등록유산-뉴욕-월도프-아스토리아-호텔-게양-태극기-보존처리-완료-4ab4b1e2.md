@@ -1,15 +1,17 @@
 ---
-title: "독립운동사 간직한 등록유산 「뉴욕 월도프 아스토리아 호텔 게양 태극기」 보존처리 완료"
-date: "2026-07-09T00:05"
-category: "핫이슈"
+title: 뉴욕 월도프 아스토리아 호텔 태극기, 1930년대 제작·1942년 사용 보존 완료
+date: 2026-07-09T00:05
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=d2c60fb45f74483ca780452cd6fe0960"
-cover_image_alt: "보존처리한 「뉴욕 월도프 아스토리아 호텔 게양 태극기」 앞면"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=d2c60fb45f74483ca780452cd6fe0960
+cover_image_alt: 보존처리한 「뉴욕 월도프 아스토리아 호텔 게양 태극기」 앞면
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 소개

@@ -1,15 +1,17 @@
 ---
-title: "부산 벡스코 세계유산위 ‘대한민국관’에서 K-컬처의 정수 느껴보세요"
-date: "2026-07-14T00:04"
-category: "핫이슈"
+title: 부산 벡스코에서 열리는 제48차 유네스코 세계유산위원회 기간에 다양한 기관이 참여하는 대한민국관에서 특별 전시와 행사 열린다.
+date: 2026-07-14T00:04
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=b7bcd25896034af19b659d060a1ee46b"
-cover_image_alt: "k-헤리티지 스테이지 공연 프로그램 안내"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=b7bcd25896034af19b659d060a1ee46b
+cover_image_alt: k-헤리티지 스테이지 공연 프로그램 안내
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 보도자료 발표
