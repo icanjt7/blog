@@ -1,0 +1,20 @@
+{
+  "run_id": "20260725-171735-c11223d5",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "warner-bros-amazon-2bf67ee6",
+      "title": "150명 이직, Warner Bros가 Amazon을 고소한 이유는?",
+      "keyword": "Warner Bros Amazon",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 150명 이직, Warner Bros가 Amazon을 고소한 이유는?. Keyword: Warner Bros Amazon. Concrete visual subject: cloud ecommerce technology. Context: 150명. Warner Bros Discovery가 Amazon을 상대로 제기한 소송에서 공개된 직원 유출 인원입니다. 이 숫자는 단순한 퇴사 통계를 넘어, 현재 할리우드 전체의 인력 이동 현황을 상징적으로 보여줍니다. 2026년 7월 25일, Warner Bros Discovery는 Amazon이 자사 핵심 인력을 부적절하게 채용했다며 '불법 직원 포획'(poaching) 소송을 제기했다고 <The Verge>가 보도했습니다. **두 회사의 배경** Warner Bros Discovery는 DC, 해리포터, HBO 등 유명 브랜드를 보유한 미국의 대표적 영화·TV 콘텐츠 제작사입니다. Amazon은 세계 최대 전자상거래 기업으로 시작해, 현재는 Prime Video와 Amazon Studios를 통해 미디어·엔터테인먼트 산업에서도 큰 영향력을 행사하고 있습니다. **소송의 직접 계기: Pia Barlow의 이직** 이번 소송은 Pia Barlow의 이직에서 비롯됐습니다. Pia Barlow는 Warner Bros Discovery에서 오리지널 마케팅 부문 수석부사장(SVP for Originals Marketing)으로 근무하다가 최근 Amazon으로 이직했습니다. Warner Bros Discovery는 Amazon이 Barlow를 비롯한 다수의 핵심 인력을 조직적으로 스카우트했다고 주장합니다. 소장에는 \"Amazon has ch. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1667984390535-6d03cff0b11a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxjbG91ZCUyMGVjb21tZXJjZSUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc4NDk5OTk3NXww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
