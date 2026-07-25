@@ -1,0 +1,22 @@
+{
+  "run_id": "20260725-140346-d508f92a",
+  "average_quality": 25.0,
+  "drafts": [
+    {
+      "slug": "reader-case-gun-7ef9e811",
+      "title": "Is this e-reader case a gun?, 생성 AI의 다음 실험",
+      "keyword": "reader case gun",
+      "category": "기술",
+      "quality_score": 25.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Is this e-reader case a gun?, 생성 AI의 다음 실험. Keyword: reader case gun. Concrete visual subject: artificial intelligence neural network. Context: ## 무슨 소식인가 Is this e-reader case a gun? 소식입니다. Is an e-reader case as dangerous as a Glock 19? Last month, Louisville, Kentucky-based creator Luke The Maker showed off a bizarre, 3D-printed, pistol-shaped case design for the popular minimalist Xteink X4 e-reader. The X4 lies vertically atop the plastic gun's slide, with a... ## 먼저 알아둘 배경 Google 같은 플랫폼 기업은 검색·클라우드뿐 아니라 이미지, 영상, 생산성 도구에 생성 AI를 붙이고 있습니다. Is this e-reader case a gun?는 이름보다 어떤 입력 데이터를 받아 어떤 결과물을 만드는지가 더 중요합니다. ## 왜 기술 이슈인가 생성 AI 도구는 재미있는 기능처럼 보이지만, 사진·얼굴·취향 데이터를 다룰 때 개인정보와 저작권 문제가 함께 생깁니다. Is this e-reader case a gun?를 볼 때는 결과물 품질뿐 아니라 학습·저장·공유 설정을 확인해야 합니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | AI 이미지 도구 이용자, 크리에이터, G. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1770233621425-5d9ee7a0a700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMG5ldXJhbCUyMG5ldHdvcmt8ZW58MXwwfHx8MTc4NDk4ODM1Nnww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
