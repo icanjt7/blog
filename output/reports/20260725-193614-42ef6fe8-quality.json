@@ -1,0 +1,20 @@
+{
+  "run_id": "20260725-193614-42ef6fe8",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "google-pixel-11-a7ee7497",
+      "title": "Pixel 11, 왜 더 비싸질까? 구글 공식 입장 공개",
+      "keyword": "Google Pixel 11",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Pixel 11, 왜 더 비싸질까? 구글 공식 입장 공개. Keyword: Google Pixel 11. Concrete visual subject: smartphone google modern screen search cloud technology. Context: 2026년 7월 25일, 구글의 차기 스마트폰 Pixel 11의 가격 인상이 공식적으로 확인됐습니다. 구글 디바이스·서비스 부문 부사장 Shakil Barkat은 9to5 Google과의 인터뷰에서 Pixel 11이 Pixel 10보다 더 비쌀 것임을 사실상 인정했습니다. 이 내용은 The Verge의 보도로 확인되었습니다. ### 구글 Pixel 11 가격 인상, 왜 일어날까? 가장 큰 원인은 RAM(임시 저장장치) 공급난입니다. RAM은 스마트폰에서 앱 실행과 멀티태스킹에 필수적인 부품입니다. 최근 인공지능(AI) 데이터센터가 급격히 늘어나면서 고성능 RAM 수요가 폭증했습니다. 그 결과, 스마트폰 제조사들도 고품질 RAM을 확보하는 데 어려움을 겪고 있습니다. Shakil Barkat 부사장은 이 RAM 공급난이 Pixel 11의 원가 상승에 직접적인 영향을 미쳤다고 언급했습니다. 단순한 루머가 아니라 구글의 공식 입장이라는 점이 이번 인상 소식의 신뢰도를 높입니다. ### Pixel 11 vs Pixel 10: 주요 변화 비교 | 항목 | Pixel 10 | Pixel 11 (예상) | |---------------|---------------------|----------------------------| | 출시 가격 | $699 | $749~$799 (The Verge 보도) | | RAM 용량 | 8GB | 8GB 또는. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1603791452906-af1740e171bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxzbWFydHBob25lJTIwZ29vZ2xlJTIwbW9kZXJuJTIwc2NyZWVuJTIwc2VhcmNoJTIwY2xvdWQlMjB0ZWNobm9sb2d5fGVufDF8MHx8fDE3ODUwMDgzMDB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
