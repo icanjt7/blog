@@ -1,0 +1,20 @@
+{
+  "run_id": "20260726-211305-4964daa6",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "apple-banking-privacy-set-8d0ae4aa",
+      "title": "애플 스마트글래스, 프라이버시 혁신과 출시 일정 분석",
+      "keyword": "Apple banking privacy set",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 애플 스마트글래스, 프라이버시 혁신과 출시 일정 분석. Keyword: Apple banking privacy set. Concrete visual subject: apple device minimal design. Context: ## 1. 애플 스마트글래스 공개 및 출시 일정 마크 거먼(Mark Gurman)의 2026-07-26 보도에 따르면, 애플은 2026년 6월 WWDC에서 첫 스마트글래스를 공식 공개할 예정이다. 제품의 실제 출시 시점은 2027년 말로 예상된다. 이 일정은 애플이 신제품의 기술적 완성도와 프라이버시 기준을 확립하는 데 시간이 필요함을 시사한다. ## 2. 개인정보 보호 기술: Apple banking privacy set 애플은 스마트글래스의 핵심 경쟁력으로 개인정보 보호 기능을 내세우고 있다. Apple banking privacy set는 온디바이스 데이터 처리와 Private Cloud Compute(분산 클라우드 개인정보 보호 기술)를 결합해 사용자 정보의 안전성을 강화한다. 이 기술은 사용자의 데이터가 기기 내에서 처리되고, 클라우드 전송 시에도 보호가 이루어진다. ## 3. 적용 환경과 애플 생태계 통합 스마트글래스는 애플의 iPhone, iPad, Mac 등 기존 제품군과 긴밀하게 연동될 예정이다. 개인정보 보호 기술은 스마트글래스뿐 아니라, 애플 생태계 전체에 적용된다. 앱 개발자와 iOS·macOS 사용자, 개인정보 보호에 민감한 소비자를 주 대상으로 삼는다. 애플은 공식 발표에서 지원 언어와 지역 제한 등 구체 정보를 안내할 계획이다. ## 4. 정책 준수 및 지역 제한 애플은 스마트글래스의 개인정보 보호 기준이 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1758348844327-b70d25c7589c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ258ZW58MXwwfHx8MTc4NTEwMDUwM3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
