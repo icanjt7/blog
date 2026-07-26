@@ -1,0 +1,20 @@
+{
+  "run_id": "20260726-135926-68aac7a1",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "vertical-video-takeover-here-84225434",
+      "title": "\"2026년, 세로 영상 대세: 사용자가 직접 겪는 변화 5가지\"",
+      "keyword": "vertical video takeover here",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: \"2026년, 세로 영상 대세: 사용자가 직접 겪는 변화 5가지\". Keyword: vertical video takeover here. Concrete visual subject: technology innovation circuit abstract. Context: ## 2026년, 세로 영상이 대세가 된 이유 2026년 7월 26일, The Verge의 [The vertical video takeover is here](https://www.theverge.com/column/970756/vertical-video-tiktok-youtube-instagram-streaming-facebook) 기사에 따르면 TikTok, 유튜브, 인스타그램, 페이스북 등 주요 플랫폼이 세로 영상(Vertical Video) 중심으로 서비스를 전환하고 있습니다. 이 변화는 단순한 UI 개선을 넘어, 창작 방식과 사용자 경험 전반에 영향을 줍니다. ## 실제 사용자가 겪는 변화 체크리스트 | 기준 | 구체 내용 | |----------------|----------------------------------------------------------------------------| | 적용 플랫폼 | TikTok, YouTube Shorts, Instagram Reels, Facebook Watch 등 주요 서비스 | | 콘텐츠 포맷 | 가로 영상보다 세로 영상 우선 노출, 창작 도구도 세로형 중심으로 개선 | | 사용자 영향 | 시청 환경 최적화, 추천 알고리즘 변화, 영상 업로드 방식 변경 | | 크리에이터 대응| 세로 영상 제작 필수, 광고/협업 포맷도 세로형으로 재편 | | 기업·브랜드 | 마케팅 영상,. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg1MDEzOTYzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
