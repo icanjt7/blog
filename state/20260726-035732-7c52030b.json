@@ -1,0 +1,74 @@
+{
+  "run_id": "20260726-035732-7c52030b",
+  "topics": [
+    {
+      "keyword": "Folding flipping phones getting",
+      "title_hint": "Folding and flipping phones are getting seriously good",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Folding and flipping phones are getting seriously good",
+          "url": "https://www.theverge.com/tech/971004/z-fold8-xteink-x4-light-flip-installer",
+          "published_at": "2026-07-25T12:00:00",
+          "summary": "Hi, friends! Welcome to Installer No. 137, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, happy phone season, and also you can read all the old editions at the Installer homepage.) This week, I've been reading about Google Zero and armored cars for rich people, watching a [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Folding flipping phones getting",
+        "title_hint": "Folding and flipping phones are getting seriously good",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Folding and flipping phones are getting seriously good",
+            "url": "https://www.theverge.com/tech/971004/z-fold8-xteink-x4-light-flip-installer",
+            "published_at": "2026-07-25T12:00:00",
+            "summary": "Hi, friends! Welcome to Installer No. 137, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, happy phone season, and also you can read all the old editions at the Installer homepage.) This week, I've been reading about Google Zero and armored cars for rich people, watching a [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "2026년 자율주행차 안전, 인간 운전자와 어떻게 비교하나?",
+      "slug": "folding-flipping-phones-getting-632c2489",
+      "excerpt": "Waymo가 공개한 Reference Driver 모델은 자율주행차와 인간 운전자의 실제 반응을 비교하는 새로운 안전 기준을 제시합니다. 규제기관과 로보택시 이용자 모두에게 중요한 변화입니다.",
+      "body_markdown": "## 최신 기술 소식  \n2026년 7월 25일 기준, \"Folding and flipping phones are getting seriously good\"라는 주제로 다양한 신제품과 기술 트렌드가 공개되었습니다. 특히 자율주행 분야에서는 Waymo의 Reference Driver 모델이 주목받고 있습니다.\n\n## Waymo와 Reference Driver란?  \nWaymo는 Alphabet(구글 모회사) 산하의 자율주행차 개발 기업입니다. Reference Driver는 자율주행차의 안전성을 검증하기 위해 만든 인간 운전자 모델입니다. 이 모델은 실제 운전자의 인지 지연, 놀람 반응, 조작 지연 등 현실적인 요소를 반영하여, 자율주행차와 비교할 수 있는 기준점을 제공합니다.\n\n- **Waymo**: 미국에서 로보택시 서비스를 운영하며, 자율주행 기술 상용화에 앞장서고 있습니다.\n- **Reference Driver**: 완벽한 운전자 대신, 실제 사람의 반응을 시뮬레이션한 기준 모델로 개발됨.\n\n## 왜 중요한가?  \n자율주행차의 안전성을 평가할 때, 단순히 무사고 기록만으로는 충분하지 않습니다.  \n규제기관과 이용자는 \"사람이라면 이 상황에서 어떻게 반응했을까?\"라는 현실적인 비교 기준을 요구합니다.  \nReference Driver를 활용하면, 자율주행차가 위험을 얼마나 빨리 인지하고 회피했는지 구체적으로 분석할 수 있습니다.\n\n## 실제 적용 기준 체크리스트  \n\n| 기준 항목            | 상세 내용                                                                 |\n|----------------------|---------------------------------------------------------------------------|\n| 적용 대상            | 로보택시 이용자, 교통 안전 연구자, 규제기관                              |\n| 기술적 요소          | 자율주행 시뮬레이션, 인간 운전자 반응, 위험 인지, 충돌 회피              |\n| 비교 방식            | Reference Driver 모델 vs 자율주행차 실제 반응                             |\n| 검증 절차            | 시뮬레이션 결과 공개, 실제 사고 데이터와 비교, 외부 연구자 검토            |\n| 규제기관 활용 여부   | 공식 안전 기준 채택 및 검증에 활용                                         |\n\n## 독자가 알아둘 포인트  \n- Reference Driver는 자율주행차와 사람 운전자의 차이를 객관적으로 보여주는 모델입니다.  \n- 주행거리만으로 안전성을 판단하기 어렵기 때문에, 상황별 반응 비교가 필수적입니다.  \n- 한국에서도 자율주행차 실증이 확산되면, \"사람 기준에서 피했을까?\"라는 설명이 더 중요해질 전망입니다.  \n- 원문 공개일 기준 정보이므로, 공식 자료와 후속 공지를 추가로 확인하는 것이 안전합니다.\n\n## 참고 출처  \n- [Folding and flipping phones are getting seriously good](https://www.theverge.com/tech/971004/z-fold8-xteink-x4-light-flip-installer) (2026-07-25 공개)",
+      "tags": [
+        "기술",
+        "Folding",
+        "flipping",
+        "phones",
+        "getting"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1721013348897-70a35ef28cb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8YXV0b25vbW91cyUyMHZlaGljbGUlMjBjYXIlMjBzZW5zb3IlMjB0ZWNobm9sb2d5JTIwZGV2aWNlcyUyMGNvbXBhcmlzb24lMjByZXZpZXclMjBzYWZldHklMjBwdWJsaWMlMjBzZXJ2aWNlfGVufDF8MHx8fDE3ODUwMzg0MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "2026년 자율주행차 안전, 인간 운전자와 어떻게 비교하나? — Photo by rawkkim on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1609444074490-a4eb06f5ebf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGNhciUyMHNlbnNvciUyMHRlY2hub2xvZ3klMjBkZXZpY2VzJTIwY29tcGFyaXNvbiUyMHJldmlldyUyMHNhZmV0eSUyMHB1YmxpYyUyMHNlcnZpY2V8ZW58MXwwfHx8MTc4NTAzODQxNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "2026년 자율주행차 안전, 인간 운전자와 어떻게 비교하나? 본문 보조 이미지 — Photo by Clay Banks on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2026년 자율주행차 안전, 인간 운전자와 어떻게 비교하나?. Keyword: Folding flipping phones getting. Concrete visual subject: autonomous vehicle car sensor technology devices comparison review safety public service. Context: ## 최신 기술 소식 2026년 7월 25일 기준, \"Folding and flipping phones are getting seriously good\"라는 주제로 다양한 신제품과 기술 트렌드가 공개되었습니다. 특히 자율주행 분야에서는 Waymo의 Reference Driver 모델이 주목받고 있습니다. ## Waymo와 Reference Driver란? Waymo는 Alphabet(구글 모회사) 산하의 자율주행차 개발 기업입니다. Reference Driver는 자율주행차의 안전성을 검증하기 위해 만든 인간 운전자 모델입니다. 이 모델은 실제 운전자의 인지 지연, 놀람 반응, 조작 지연 등 현실적인 요소를 반영하여, 자율주행차와 비교할 수 있는 기준점을 제공합니다. - **Waymo**: 미국에서 로보택시 서비스를 운영하며, 자율주행 기술 상용화에 앞장서고 있습니다. - **Reference Driver**: 완벽한 운전자 대신, 실제 사람의 반응을 시뮬레이션한 기준 모델로 개발됨. ## 왜 중요한가? 자율주행차의 안전성을 평가할 때, 단순히 무사고 기록만으로는 충분하지 않습니다. 규제기관과 이용자는 \"사람이라면 이 상황에서 어떻게 반응했을까?\"라는 현실적인 비교 기준을 요구합니다. Reference Driver를 활용하면, 자율주행차가 위험을 얼마나 빨리 인지하고 회피했는지 구체적으로 분석할 수 있습니다. ## 실제 적용 기준 체. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 2026년 자율주행차 안전, 인간 운전자와 어떻게 비교하나?. Keyword: Folding flipping phones getting. Concrete visual subject: autonomous vehicle car sensor technology devices comparison review safety public service. Article context: ## 최신 기술 소식 2026년 7월 25일 기준, \"Folding and flipping phones are getting seriously good\"라는 주제로 다양한 신제품과 기술 트렌드가 공개되었습니다. 특히 자율주행 분야에서는 Waymo의 Reference Driver 모델이 주목받고 있습니다. ## Waymo와 Reference Driver란? Waymo는 Alphabet(구글 모회사) 산하의 자율주행차 개발 기업입니다. Reference Driver는 자율주행차의 안전성을 검증하기 위해 만든 인간 운전자 모델입니다. 이 모델은 실제 운전자의 인지 지연, 놀람 반응, 조작 지연 등 현실적인 요소를 반영하여, 자율주행차와 비교할 수 있는 기준점을 제공합니다. - **Waymo**: 미국에서 로보택시 서비스를 운영하며, 자율주행 기술 상용화에 앞장서고 있습니다. - **Reference Driver**: 완벽한 운전자 대신, 실제 사람의 반응을 시뮬레이션한 기준 모델로 개발됨. ## 왜 중요한가? 자율주행차의 안전성을 평가할 때, 단순히 무사고 기록만으로는 충분하지 않습니다. 규제기관과 이용자는 \"사람이라면 이 상황에서 어떻게 반응했을까?\"라는 현실적인 비교 기준을 요구합니다. Reference Driver를 활용하면, 자율주행차가 위험을 얼마나 빨리 인지하고 회피했는지 구체적으로 분석할 수 있습니다. ## 실제 적용 기준 체크리스트 | 기준 항목 | 상세 내용 | |----------------------|---------------------------------------------------------------------------| | 적용 대상 | 로보택시 이용자, 교통 안전 연구자, 규제기관 | | 기술적 요소 | 자율주행 시뮬레이션, 인간 운전자 반응, 위험 인. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-26T04:00:03.411594",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/folding-flipping-phones-getting-632c2489.md",
+      "message": "draft saved"
+    }
+  ]
+}
