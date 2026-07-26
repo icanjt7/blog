@@ -1,17 +1,19 @@
 ---
-title: "미국 백악관, Fact Sheet: President Do"
-date: "2026-07-20T00:04"
-category: "정책"
+title: 트럼프 대통령, 캐나다에 추가 관세 부과 발표
+date: 2026-07-20T00:04
+category: 정책
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미국 백악관"
-  - "정책"
-  - "백악관"
-  - "팩트시트"
-author: "미국 백악관"
+- 보도기사
+- 미국정부
+- 미국 백악관
+- 정책
+- 백악관
+- 팩트시트
+author: 미국 백악관
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1631651693480-97f1132e333d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODQ2MDg1MzF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: https://images.unsplash.com/photo-1631651693480-97f1132e333d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODQ2MDg1MzF8MA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미국 백악관이(The White House) 2026-07-20 공개한 'Fact Sheet: President Donald J. Trump Imposes Additional Tariffs on Canada' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
