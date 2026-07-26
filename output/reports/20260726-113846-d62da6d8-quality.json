@@ -1,0 +1,21 @@
+{
+  "run_id": "20260726-113846-d62da6d8",
+  "average_quality": 92.0,
+  "drafts": [
+    {
+      "slug": "elon-musk-boring-company-8d927272",
+      "title": "20억 달러 가치, Boring Company 투자 소식에 사용자가 볼 변화",
+      "keyword": "Elon Musk Boring Company",
+      "category": "기술",
+      "quality_score": 92.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '사용자가 볼 변화' 포함",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 20억 달러 가치, Boring Company 투자 소식에 사용자가 볼 변화. Keyword: Elon Musk Boring Company. Concrete visual subject: investment finance growth. Context: ## Boring Company, 20억 달러 가치로 투자 유치 협상 중 2026년 7월 25일 기준, TechCrunch에 따르면 Elon Musk가 설립한 터널링 기업 Boring Company가 20억 달러 평가로 신규 투자 라운드를 협상 중입니다. Boring Company는 지하 터널을 통해 교통 문제 해결을 목표로 하는 혁신 스타트업입니다. ## 주요 변화와 사용자 영향 이번 투자 유치 소식이 실제 사용자와 관련 기업에 미치는 영향을 아래 표로 정리했습니다. | 기준 | 구체 내용 | |-------------|-------------------------------------------------------------------| | 평가 가치 | 20억 달러(TechCrunch 보도 기준) | | 협상 진행 | 신규 투자 라운드 진행 중(2026년 7월 25일 보도) | | 주요 대상 | 도시 교통 인프라 담당 기관, 터널 프로젝트 도입 검토 기업, 일반 사용자 | | 기술 변화 | 지하 터널 네트워크 확장 가능성, 대중교통 대체 솔루션 확대 | | 기대 효과 | 교통 혼잡 완화, 이동 시간 단축, 도시 내 신규 노선 개발 | ## 사용자와 기업이 주목할 포인트 - 투자 유치가 확정되면, Boring Company의 도심 터널 프로젝트가 더 빠르게 확장될 가능성이 높아집니다. - 교통 인프라 담당 기관과 도입을 검토하는. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxpbnZlc3RtZW50JTIwZmluYW5jZSUyMGdyb3d0aHxlbnwxfDB8fHwxNzg1MDY2MDg3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
