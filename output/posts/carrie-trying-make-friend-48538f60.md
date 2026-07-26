@@ -1,0 +1,64 @@
+---
+title: ‘Carrie’ 새 예고편 공개, 10월 Amazon 첫방…사용자에 달라지는 5가지
+date: '2026-07-26T17:20:03.494346'
+category: 기술
+tags:
+- 기술
+- Carrie
+- trying
+- make
+- friend
+quality_score: 100.0
+cover_image: https://images.unsplash.com/photo-1667372283496-893f0b1e7c16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8Y2xvdWQlMjBlY29tbWVyY2UlMjB0ZWNobm9sb2d5fGVufDF8MHx8fDE3ODUwODY0MTd8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: ‘Carrie’ 새 예고편 공개, 10월 Amazon 첫방…사용자에 달라지는 5가지 — Photo by Growtika
+  on Unsplash
+inline_image: https://images.pexels.com/photos/4968391/pexels-photo-4968391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+inline_image_alt: ‘Carrie’ 새 예고편 공개, 10월 Amazon 첫방…사용자에 달라지는 5가지 본문 보조 이미지 — Photo
+  by www.kaboompics.com on Pexels
+---
+
+![‘Carrie’ 새 예고편 공개, 10월 Amazon 첫방…사용자에 달라지는 5가지 — Photo by Growtika on Unsplash](https://images.unsplash.com/photo-1667372283496-893f0b1e7c16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8Y2xvdWQlMjBlY29tbWVyY2UlMjB0ZWNobm9sb2d5fGVufDF8MHx8fDE3ODUwODY0MTd8MA&ixlib=rb-4.1.0&q=80&w=1080)
+
+## ‘Carrie’ 새 예고편, 어떤 점이 바뀌었나?
+
+2026년 7월 26일, 코믹콘에서 공개된 ‘Carrie is just trying to make a friend in the new trailer’는 Amazon Prime에서 10월 7일 첫 방송 예정입니다.  
+이 작품은 마이크 플래너건(Mike Flanagan)이 연출한 네 번째 스티븐 킹(Stephen King) 원작 드라마입니다.
+
+Carrie는 초능력을 가진 소녀의 고독과 성장, 그리고 친구를 만들기 위한 시도를 그린 호러 작품으로, 이번 시즌에서는 ‘Carrie trying make friend’라는 키워드가 강조됩니다.
+
+---
+
+![‘Carrie’ 새 예고편 공개, 10월 Amazon 첫방…사용자에 달라지는 5가지 본문 보조 이미지 — Photo by www.kaboompics.com on Pexels](https://images.pexels.com/photos/4968391/pexels-photo-4968391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+
+## Amazon Prime에서 ‘Carrie’ 시청자가 직접 느낄 변화 체크리스트
+
+| 기준           | 구체 내용                                                                              |
+| -------------- | ------------------------------------------------------------------------------------- |
+| 공개일         | 2026년 10월 7일, Amazon Prime에서 첫 공개 (The Verge 공식 안내 기준)                 |
+| 연출진         | Mike Flanagan: Netflix ‘The Haunting’ 시리즈 등 호러 연출로 유명한 감독               |
+| 원작/작품      | Stephen King 원작 ‘Carrie’, 플래너건의 네 번째 각색                                   |
+| 예고편 공개    | 2026년 7월 26일, 샌디에이고 코믹콘에서 최초 공개                                       |
+| 주요 변화      | 기존 공포 중심에서 ‘Carrie trying make friend’ 등 인간관계와 성장에 초점 이동         |
+| 시청 대상      | Amazon Prime 구독자, 스티븐 킹/플래너건 팬, 신작 호러 드라마 관심자                   |
+| 시청 방법      | Amazon Prime 정식 구독으로 시청 가능                                                  |
+| 추가 정보      | 예고편은 기존 스토리와 큰 차이 없이, 인간적 공감과 관계 맺기 장면이 부각됨            |
+
+---
+
+## 이번 ‘Carrie’의 사용자 변화 포인트
+
+1. **공개 플랫폼**: 기존 영화/드라마와 달리 Amazon Prime에서 독점 공개.  
+2. **감독의 연출 색깔**: Mike Flanagan의 호러+심리극 스타일, 기존 ‘Haunting’ 시리즈와 유사한 분위기.  
+3. **주제 변화**: 단순 공포보다 ‘Carrie trying make friend’ 등 인간관계와 성장에 초점.  
+4. **시청자 영향**: Amazon Prime 구독이 필수, 예고편에서 느껴지는 감정선 변화로 팬층 확대 기대.  
+5. **공식 정보 확인**: [The Verge 예고편 기사](https://www.theverge.com/entertainment/971069/carrie-amazon-mike-flanagan-trailer-comic-con)에서 최신 소식 확인 가능.
+
+---
+
+## 한 줄로 요약  
+2026년 10월, Amazon Prime에서 새롭게 공개되는 ‘Carrie’는 ‘Carrie trying make friend’라는 새로운 주제로, 기존 팬과 신규 시청자 모두에게 변화된 경험을 제공합니다.
+
+---
+
+## 참고 출처  
+- [Carrie is just trying to make a friend in the new trailer](https://www.theverge.com/entertainment/971069/carrie-amazon-mike-flanagan-trailer-comic-con) (발행일: 2026-07-26)
