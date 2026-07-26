@@ -1,0 +1,22 @@
+{
+  "run_id": "20260726-153119-b332f1b4",
+  "average_quality": 51.0,
+  "drafts": [
+    {
+      "slug": "you-xbox-game-pass-036ec53c",
+      "title": "Xbox Game Pass Ultimate, 3개월 39달러 실구매법",
+      "keyword": "You Xbox Game Pass",
+      "category": "기술",
+      "quality_score": 51.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Xbox Game Pass Ultimate, 3개월 39달러 실구매법. Keyword: You Xbox Game Pass. Concrete visual subject: gaming console controller. Context: ## Xbox Game Pass Ultimate, 3개월 할인 실구매 안내 2026-07-26 기준, Xbox Game Pass Ultimate 3개월 코드를 정가 69달러 대신 39.01달러에 구매할 수 있습니다. Microsoft의 최근 가격 인하에도 불구하고, Eneba 디지털 코드 할인은 공식 구독 대비 약 44% 절감 효과를 제공합니다. ### Xbox Game Pass Ultimate란? Xbox Game Pass Ultimate는 Microsoft의 대표 게임 구독 서비스입니다. - 지원 플랫폼: Xbox Series X/S, Xbox One, Windows PC, 클라우드 스트리밍 - 주요 기능: 100개 이상의 게임 라이브러리, 신규 게임 출시 당일 플레이, EA Play 포함, 온라인 멀티플레이 - Ultimate 버전만의 혜택: 다양한 플랫폼 통합 지원, 추가 콘텐츠 이용 가능 ### Microsoft 공식 가격 정책 변화 - 2026-07-26 공식 안내 기준 - 월 구독료: $29.99 → $22.99 (최근 인하) - 3개월 공식 정가: $69 - 할인 코드 사용 시: 3개월 $39.01 (Eneba 기준) - 할인율: 약 44% ### Eneba 할인 코드 구매 절차 1. Eneba 공식 사이트에서 Xbox Game Pass Ultimate 3개월 코드를 선택 2. 결제(카드, PayPal 등) 후 이메일로. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1604846887565-640d2f52d564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8Z2FtaW5nJTIwY29uc29sZSUyMGNvbnRyb2xsZXJ8ZW58MXwwfHx8MTc4NTA4MDEzMHww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
