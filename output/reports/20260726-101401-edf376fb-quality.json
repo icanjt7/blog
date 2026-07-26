@@ -1,0 +1,21 @@
+{
+  "run_id": "20260726-101401-edf376fb",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "hacker-who-humiliated-spyware-0aeff974",
+      "title": "Phineas Fisher의 스파이웨어 해킹, 2026년 영향 분석",
+      "keyword": "hacker who humiliated spyware",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Phineas Fisher의 스파이웨어 해킹, 2026년 영향 분석. Keyword: hacker who humiliated spyware. Concrete visual subject: technology innovation circuit abstract. Context: ## Phineas Fisher: 스파이웨어 제작사 해킹의 주역 2026년 7월 25일 TechCrunch 기사 ‘The hacker who humiliated spyware makers and was never caught’는 Phineas Fisher가 두 곳의 논란 많은 스파이웨어 제작사, Hacking Team(이탈리아)과 Gamma Group(독일·영국)에 대한 해킹을 성공적으로 수행한 사례를 집중 분석합니다. Phineas Fisher는 자신을 해킹티스트(hacktivist)로 정의하며, 사회적 목적을 내세운 해킹 활동을 공개적으로 수행했습니다. 그는 내부 네트워크 침투, 소스코드 및 고객 정보 유출, 이메일 공개 등 구체적이고 직접적인 공격을 감행했으며, 이로 인해 두 기업의 신뢰도와 사업적 기반에 실제 변화가 발생했습니다. ## 주요 공격 대상과 해킹 방식 Phineas Fisher의 공격 대상은 Hacking Team과 Gamma Group으로, 두 기업 모두 정부와 수사기관에 감시용 스파이웨어를 공급해 논란을 일으킨 바 있습니다. Fisher는 오픈 소스 해킹 툴을 활용해 내부 시스템에 접근했고, 해킹 과정 및 방법을 투명하게 공개했습니다. 그는 Github, 개인 블로그, 언론 특집 등을 통해 작업 기록과 기술적 세부사항을 설명했습니다. 공격 방식은 네트워크 취약점 분석, 데이터 및 소스코드 추출, 내부 이메일 유. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330389129-fd3a236e00e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg0OTkzNTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
