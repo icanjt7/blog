@@ -1,0 +1,21 @@
+{
+  "run_id": "20260726-193611-6ff8e91b",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "us-american-a45305b5",
+      "title": "미국 시민 Sam Tunick, 공항서 duress password 사용 기소",
+      "keyword": "US American",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 미국 시민 Sam Tunick, 공항서 duress password 사용 기소. Keyword: US American. Concrete visual subject: technology innovation circuit abstract. Context: ## Sam Tunick 사건 개요 2026년 7월 26일, 미국 시민 Sam Tunick은 아틀란타 허츠필드-잭슨 국제공항에서 연방 요원에게 스마트폰을 압수당할 상황에 직면했다. Tunick은 스마트폰에 설정된 ‘duress password’를 입력해 내부 데이터를 자동 삭제했다. 이 기능은 강제 상황에서 데이터 삭제를 위해 설계된 보안 옵션으로, 일부 iOS 및 Android 기기, 보안 앱에서 제공된다. 사건 직후 미국 정부는 Tunick을 증거 인멸 혐의로 기소했다. ## 미국 국경의 전자기기 검문 권한 미국 세관 및 국경보호청(CBP)은 미국 시민을 포함해 입국자들의 스마트폰, 태블릿 등 전자기기를 검문할 권한을 가진다. ‘국경 예외(border exception)’ 규정에 따라, 미국 법원은 국경에서의 개인정보 보호 권리를 일반적인 수사 상황보다 제한적으로 인정한다. 의심이 드는 경우, CBP와 FBI는 기기 내 데이터 확인을 요구할 수 있다. ## duress password 기능과 법적 해석 duress password는 강제 상황에서 입력 시 스마트폰 데이터를 자동 삭제하는 기능이다. Tunick의 사례에서 이 기능은 연방 요원들이 기기를 확보하려 할 때 사용됐으며, 데이터가 즉시 삭제됐다. 미국 정부는 이 행동을 증거 인멸로 간주했다. 미국 연방법에서는 수사에 필요한 정보를 고의적으로 삭제하거나 은폐하는 행위를 ‘수. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1778399759103-b4d307bd5a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg1MDI0Mzg3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
