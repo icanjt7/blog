@@ -1,0 +1,21 @@
+{
+  "run_id": "20260727-213602-49e9f16a",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "razer-huntsman-v3-pro-280771f6",
+      "title": "Razer Huntsman V3 Pro, 20% 할인 소식! 지금 살만할까?",
+      "keyword": "Razer Huntsman V3 Pro",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Razer Huntsman V3 Pro, 20% 할인 소식! 지금 살만할까?. Keyword: Razer Huntsman V3 Pro. Concrete visual subject: technology innovation circuit abstract. Context: ## 최신 할인 소식 2026년 7월 27일 기준, Razer Huntsman V3 Pro 게이밍 키보드가 20% 이상 할인 중입니다. 이 제품은 Razer의 최신 아날로그 옵티컬 스위치를 탑재해 세밀한 입력 조절이 가능한 것이 특징입니다. ## Razer Huntsman V3 Pro의 주요 특징 - **아날로그 옵티컬 스위치**: 기계식과 달리 입력 압력에 따라 다양한 명령을 실행할 수 있는 스위치로, 게임에서 더 섬세한 컨트롤이 가능합니다. - **RGB LED 백라이트**: 1,680만 컬러를 지원하는 화려한 조명 효과. - **프로그래머블 노브와 추가 키**: 볼륨 조절 등 다양한 기능을 커스터마이즈할 수 있어 실사용에 편리합니다. - **TKL(텐키리스) 디자인**: 숫자 패드를 없애 공간을 절약하고, 마우스 이동이 많은 사용자에게 적합합니다. - **내구성**: 공식 안내에 따르면 1억 회 이상의 키 입력 수명을 제공합니다. ## 할인 정보 한눈에 보기 | 기준 | 내용 | |------------------|--------------------------------------------------------------| | 할인율 | 20% 이상 | | 제품명 | Razer Huntsman V3 Pro | | 판매처 | 공식 Razer, 주요 전자상거래몰 (예: Best Buy 등) | | 적용 기간 | 2026년 7월 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg1MTI1MTg4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
