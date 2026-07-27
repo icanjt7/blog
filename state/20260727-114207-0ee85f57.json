@@ -1,0 +1,75 @@
+{
+  "run_id": "20260727-114207-0ee85f57",
+  "topics": [
+    {
+      "keyword": "Champagne Bullets Mount Rushmore",
+      "title_hint": "Champagne and Bullets belongs on the Mount Rushmore of bad movies",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Champagne and Bullets belongs on the Mount Rushmore of bad movies",
+          "url": "https://www.theverge.com/column/971103/champagne-and-bullets-bad-movies-review",
+          "published_at": "2026-07-26T21:24:07",
+          "summary": "There's something about a movie like The Room, Troll 2, or Fateful Findings that I find irresistible. These sorts of \"so bad they're good\" films are marvelous curiosities where ambition far outstrips resources, ability, and self-awareness to become something much greater than the sum of their parts. Champagne and Bullets (also released as GetEven and [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Champagne Bullets Mount Rushmore",
+        "title_hint": "Champagne and Bullets belongs on the Mount Rushmore of bad movies",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Champagne and Bullets belongs on the Mount Rushmore of bad movies",
+            "url": "https://www.theverge.com/column/971103/champagne-and-bullets-bad-movies-review",
+            "published_at": "2026-07-26T21:24:07",
+            "summary": "There's something about a movie like The Room, Troll 2, or Fateful Findings that I find irresistible. These sorts of \"so bad they're good\" films are marvelous curiosities where ambition far outstrips resources, ability, and self-awareness to become something much greater than the sum of their parts. Champagne and Bullets (also released as GetEven and [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "\"Champagne Bullets Mount Rushmore\"와 AI 노트: 출처 신뢰, 어디까지 달라졌나",
+      "slug": "champagne-bullets-mount-rushmore-8849c8a0",
+      "excerpt": "2026년 7월 27일 기준, Gemini 업그레이드로 달라진 NotebookLM의 출처 신뢰와 실제 사용자에게 중요한 체크포인트를 정리했습니다.",
+      "body_markdown": "## 최신 소식: \"Champagne Bullets Mount Rushmore\"와 AI 노트 도구의 변화\n\n\"The Room\", \"Troll 2\", \"Fateful Findings\"처럼 컬트적인 명성을 얻은 영화들에는 공통점이 있습니다. [Champagne and Bullets belongs on the Mount Rushmore of bad movies](https://www.theverge.com/column/971103/champagne-and-bullets-bad-movies-review) 기사에서는 이 영화가 \"최악의 영화 사대천왕\"에 오를 만큼 괴상한 매력을 지녔다고 평합니다.\n\n이런 반전 매력의 영화처럼, AI 노트 도구도 기술의 한계와 가능성이 교차하는 지점에서 새로운 기준을 만들어가고 있습니다.\n\n## 배경: NotebookLM과 Gemini 업그레이드\n\nNotebookLM은 Google이 제공하는 AI 기반 노트 서비스로, 사용자가 올린 문서를 바탕으로 요약, 질의응답, 학습 노트를 생성합니다. 최신 Gemini 모델로 업그레이드되면서, 답변의 근거와 출처 연결 방식이 한층 강화되었습니다.\n\n## 왜 출처가 중요한가\n\nAI 노트 앱에서는 단순히 답변의 품질만큼이나, 그 답변이 어떤 문서를 기반으로 하는지 투명하게 보여주는 것이 핵심입니다.\n\n\"Champagne Bullets Mount Rushmore\"처럼 데이터와 평가 기준이 명확해야 신뢰를 얻을 수 있습니다. Gemini 업그레이드 이후, 사용자는 다음과 같은 기준을 확인할 필요가 있습니다.\n\n## 체크포인트: 2026년 7월 27일 기준, 꼭 확인할 5가지\n\n| 항목         | 세부 내용                                                                    |\n|--------------|----------------------------------------------------------------------------|\n| 적용 대상    | 학생, 연구자, 문서 기반 업무 담당자, Google Workspace 계정 사용자           |\n| 기술 환경    | RAG(검색 기반 생성), Gemini 모델, 출처 탐색, 클라우드 기반 작업공간         |\n| 주요 변화    | 자료 요약 정확도 향상, 출처 표시 방식 개선, 사용자별 리서치 흐름 지원        |\n| 필수 확인    | 지원 계정 유형, 업로드 가능 파일 형식·용량, 출처 표시 방식, 데이터 보관 정책, 유료 기능 여부 |\n| 기관 및 참고 | Google 공식 블로그, The Verge 기사, Workspace 지원 문서 등                 |\n\n## 사용자에게 중요한 4가지 포인트\n\n1. NotebookLM은 웹 전체가 아니라 사용자가 직접 지정한 문서 내에서만 답변을 제공합니다.\n2. Gemini 업그레이드의 핵심은 답변의 품질보다 출처 연결과 자료 추적의 정확성에 있습니다.\n3. 회사나 기관 자료를 업로드할 경우, 계정 종류(개인/업무)와 데이터 사용·보관 정책을 반드시 확인해야 합니다.\n4. 공식 보도자료, 기술 지원 문서 등 다양한 출처를 함께 참고하면 실제 적용에 도움이 됩니다.\n\n## 참고 출처\n\n- [Champagne and Bullets belongs on the Mount Rushmore of bad movies](https://www.theverge.com/column/971103/champagne-and-bullets-bad-movies-review) (2026-07-26)\n- Google Workspace 공식 블로그 및 지원 문서\n\n---\n\n이처럼 \"Champagne Bullets Mount Rushmore\"와 같은 명확한 기준과 출처의 중요성은, AI 노트 앱을 활용할 때도 유효합니다. 업그레이드된 NotebookLM의 기능을 제대로 활용하려면, 출처 확인과 데이터 정책 숙지는 필수입니다.",
+      "tags": [
+        "기술",
+        "Champagne",
+        "Bullets",
+        "Mount",
+        "Rushmore"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1MTUyNjY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "\"Champagne Bullets Mount Rushmore\"와 AI 노트: 출처 신뢰, 어디까지 달라졌나 — Photo by Growtika on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1MTUyNjY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "\"Champagne Bullets Mount Rushmore\"와 AI 노트: 출처 신뢰, 어디까지 달라졌나 본문 보조 이미지 — Photo by Steve A Johnson on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: \"Champagne Bullets Mount Rushmore\"와 AI 노트: 출처 신뢰, 어디까지 달라졌나. Keyword: Champagne Bullets Mount Rushmore. Concrete visual subject: artificial intelligence neural network. Context: ## 최신 소식: \"Champagne Bullets Mount Rushmore\"와 AI 노트 도구의 변화 \"The Room\", \"Troll 2\", \"Fateful Findings\"처럼 컬트적인 명성을 얻은 영화들에는 공통점이 있습니다. [Champagne and Bullets belongs on the Mount Rushmore of bad movies](https://www.theverge.com/column/971103/champagne-and-bullets-bad-movies-review) 기사에서는 이 영화가 \"최악의 영화 사대천왕\"에 오를 만큼 괴상한 매력을 지녔다고 평합니다. 이런 반전 매력의 영화처럼, AI 노트 도구도 기술의 한계와 가능성이 교차하는 지점에서 새로운 기준을 만들어가고 있습니다. ## 배경: NotebookLM과 Gemini 업그레이드 NotebookLM은 Google이 제공하는 AI 기반 노트 서비스로, 사용자가 올린 문서를 바탕으로 요약, 질의응답, 학습 노트를 생성합니다. 최신 Gemini 모델로 업그레이드되면서, 답변의 근거와 출처 연결 방식이 한층 강화되었습니다. ## 왜 출처가 중요한가 AI 노트 앱에서는 단순히 답변의 품질만큼이나, 그 답변이 어떤 문서를 기반으로 하는지 투명하게 보여주는 것이 핵심입니다. \"Champagne Bullets Mount Rushmore\"처럼 데이터와 평가 기준이 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: \"Champagne Bullets Mount Rushmore\"와 AI 노트: 출처 신뢰, 어디까지 달라졌나. Keyword: Champagne Bullets Mount Rushmore. Concrete visual subject: artificial intelligence neural network. Article context: ## 최신 소식: \"Champagne Bullets Mount Rushmore\"와 AI 노트 도구의 변화 \"The Room\", \"Troll 2\", \"Fateful Findings\"처럼 컬트적인 명성을 얻은 영화들에는 공통점이 있습니다. [Champagne and Bullets belongs on the Mount Rushmore of bad movies](https://www.theverge.com/column/971103/champagne-and-bullets-bad-movies-review) 기사에서는 이 영화가 \"최악의 영화 사대천왕\"에 오를 만큼 괴상한 매력을 지녔다고 평합니다. 이런 반전 매력의 영화처럼, AI 노트 도구도 기술의 한계와 가능성이 교차하는 지점에서 새로운 기준을 만들어가고 있습니다. ## 배경: NotebookLM과 Gemini 업그레이드 NotebookLM은 Google이 제공하는 AI 기반 노트 서비스로, 사용자가 올린 문서를 바탕으로 요약, 질의응답, 학습 노트를 생성합니다. 최신 Gemini 모델로 업그레이드되면서, 답변의 근거와 출처 연결 방식이 한층 강화되었습니다. ## 왜 출처가 중요한가 AI 노트 앱에서는 단순히 답변의 품질만큼이나, 그 답변이 어떤 문서를 기반으로 하는지 투명하게 보여주는 것이 핵심입니다. \"Champagne Bullets Mount Rushmore\"처럼 데이터와 평가 기준이 명확해야 신뢰를 얻을 수 있습니다. Gemini 업그레이드 이후, 사용자는 다음과 같은 기준을 확인할 필요가 있습니다. ## 체크포인트: 2026년 7월 27일 기준, 꼭 확인할 5가지 | 항목 | 세부 내용 | |--------------|-----------------------------------------------------------------. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-27T11:44:08.481351",
+      "quality_score": 51.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 51.0"
+    }
+  ]
+}

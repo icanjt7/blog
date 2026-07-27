@@ -1,0 +1,22 @@
+{
+  "run_id": "20260727-114207-0ee85f57",
+  "average_quality": 51.0,
+  "drafts": [
+    {
+      "slug": "champagne-bullets-mount-rushmore-8849c8a0",
+      "title": "\"Champagne Bullets Mount Rushmore\"와 AI 노트: 출처 신뢰, 어디까지 달라졌나",
+      "keyword": "Champagne Bullets Mount Rushmore",
+      "category": "기술",
+      "quality_score": 51.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: \"Champagne Bullets Mount Rushmore\"와 AI 노트: 출처 신뢰, 어디까지 달라졌나. Keyword: Champagne Bullets Mount Rushmore. Concrete visual subject: artificial intelligence neural network. Context: ## 최신 소식: \"Champagne Bullets Mount Rushmore\"와 AI 노트 도구의 변화 \"The Room\", \"Troll 2\", \"Fateful Findings\"처럼 컬트적인 명성을 얻은 영화들에는 공통점이 있습니다. [Champagne and Bullets belongs on the Mount Rushmore of bad movies](https://www.theverge.com/column/971103/champagne-and-bullets-bad-movies-review) 기사에서는 이 영화가 \"최악의 영화 사대천왕\"에 오를 만큼 괴상한 매력을 지녔다고 평합니다. 이런 반전 매력의 영화처럼, AI 노트 도구도 기술의 한계와 가능성이 교차하는 지점에서 새로운 기준을 만들어가고 있습니다. ## 배경: NotebookLM과 Gemini 업그레이드 NotebookLM은 Google이 제공하는 AI 기반 노트 서비스로, 사용자가 올린 문서를 바탕으로 요약, 질의응답, 학습 노트를 생성합니다. 최신 Gemini 모델로 업그레이드되면서, 답변의 근거와 출처 연결 방식이 한층 강화되었습니다. ## 왜 출처가 중요한가 AI 노트 앱에서는 단순히 답변의 품질만큼이나, 그 답변이 어떤 문서를 기반으로 하는지 투명하게 보여주는 것이 핵심입니다. \"Champagne Bullets Mount Rushmore\"처럼 데이터와 평가 기준이 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1MTUyNjY1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
