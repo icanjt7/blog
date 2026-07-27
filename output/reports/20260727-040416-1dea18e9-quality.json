@@ -1,0 +1,23 @@
+{
+  "run_id": "20260727-040416-1dea18e9",
+  "average_quality": 10.0,
+  "drafts": [
+    {
+      "slug": "champagne-bullets-mount-rushmore-8849c8a0",
+      "title": "왜 Champagne Bullets Mount Rushmore에 오를까?",
+      "keyword": "Champagne Bullets Mount Rushmore",
+      "category": "기술",
+      "quality_score": 10.0,
+      "review_notes": [
+        "핵심 키워드 반복이 과합니다.",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 왜 Champagne Bullets Mount Rushmore에 오를까?. Keyword: Champagne Bullets Mount Rushmore. Concrete visual subject: technology innovation circuit abstract. Context: Champagne Bullets Mount Rushmore라는 말을 처음 듣고 클릭했나요? 도대체 이 영화가 왜 그렇게 유명한 '최악의 영화' 반열에 올랐는지 궁금하지 않으세요? 먼저, Champagne and Bullets는 1990년대 액션 영화입니다. 감독과 각본, 그리고 주연 모두를 맡은 John De Hart. 그는 변호사 출신으로 영화계에서는 거의 신인이나 다름없었습니다. 그런데, 이 영화가 평범한 저예산 영화에서 '고전적 괴작'으로 거론되는 이유가 있습니다. Mount Rushmore라는 표현, 미국 대통령 네 명의 얼굴이 새겨진 유명한 산입니다. 여기선 '최악의 영화 명예의 전당'이라는 비유로 씁니다. 즉, Champagne Bullets Mount Rushmore는 \"최악의 영화들 중에서도 꼭 들어가야 한다\"는 의미죠. 진짜로 이 영화, 얼마나 심각하게 '못 만든' 걸까요? The Verge의 원문은 The Room, Troll 2, Fateful Findings 같은 'so bad they're good' 영화들과 비교합니다. 즉, 너무 어색하고 능력이나 예산이 모자라서 오히려 독특한 재미가 생긴 작품들을 언급하죠. 제가 직접 영화 리뷰어로서 느낀, Champagne Bullets Mount Rushmore에 오를 만한 핵심 포인트는 다음과 같습니다. ■ Champagne Bullets Mount Rushmore급 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330389129-fd3a236e00e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg1MDI0MjY5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
