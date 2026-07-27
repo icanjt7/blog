@@ -1,15 +1,17 @@
 ---
-title: "국가유산청, 한-몽골 정상회담 계기 몽골 관계기관과 양해각서 체결"
-date: "2026-07-10T00:11"
-category: "핫이슈"
+title: 국가유산청, 몽골과 수중문화유산·문화자연유산 협력 양해각서 체결
+date: 2026-07-10T00:11
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=a6e264ba00004982842911c95c769525"
-cover_image_alt: "0. ‘수중문화유산분야 협력에 관한 양해각서’ 체결식(‘26.7.9, 몽골 정부청사).png"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=a6e264ba00004982842911c95c769525
+cover_image_alt: 0. ‘수중문화유산분야 협력에 관한 양해각서’ 체결식(‘26.7.9, 몽골 정부청사).png
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 소개

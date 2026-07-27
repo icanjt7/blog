@@ -1,15 +1,17 @@
 ---
-title: "가야 건국 신화부터 가야 괴물 이야기까지, 5인의 작가들과 가야사 펼쳐보기"
-date: "2026-07-07T00:07"
-category: "핫이슈"
+title: 국가유산청, 7~11월 '가야 이야기, 책으로 펼치다' 북콘서트 개최
+date: 2026-07-07T00:07
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=9706b4a418894f4eb08830f5d9b70b51"
-cover_image_alt: "홍보물"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=9706b4a418894f4eb08830f5d9b70b51
+cover_image_alt: 홍보물
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청은 2026‑07‑07에 발표한 바와 같이, 국립문화유산연구원 국립가야문화유산연구소(소장 권택장)가 7월부터 11월까지 매월 마지막 주 수요일, 총 5회에 걸쳐 국립가야역사문화센터 강당에서 ‘가야 이야기, 책으로 펼치다’ 북콘서트를 개최한다고 알렸습니다. 이번 행사는 가야사에 대한 이해를 높이고자 책·강연·대화를 결합한 새로운 형식으로 진행되며, 지역민 및 가야 문화에 관심 있는 모든 국민이 무료로 참여할 수 있습니다.  

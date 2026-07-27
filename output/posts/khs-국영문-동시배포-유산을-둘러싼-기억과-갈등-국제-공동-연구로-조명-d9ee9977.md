@@ -1,15 +1,18 @@
 ---
-title: "(국영문 동시배포) 유산을 둘러싼 기억과 갈등, 국제 공동 연구로 조명"
-date: "2026-07-22T00:11"
-category: "핫이슈"
+title: 트랜스내셔널 헤리티지 국제 공동연구 성과 공유 행사 개최
+date: 2026-07-22T00:11
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=11441c2f5817410aa2716ceb0fb6be61"
-cover_image_alt: "기념사진 촬영하는 ‘트랜스내셔널 헤리티기념사진 촬영하는 ‘트랜스내셔널 헤리티지’ 연구 성과 공유 행사 참석자들(‘26.7.21, 벡스코)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=11441c2f5817410aa2716ceb0fb6be61
+cover_image_alt: 기념사진 촬영하는 ‘트랜스내셔널 헤리티기념사진 촬영하는 ‘트랜스내셔널 헤리티지’ 연구 성과 공유 행사 참석자들(‘26.7.21,
+  벡스코)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 행사 개요

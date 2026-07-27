@@ -1,15 +1,17 @@
 ---
-title: "광화문 현판, 국민이 하루 종일 머리 맞댔다... 첫 ‘모두의 토론회’ 마무리"
-date: "2026-07-27T00:02"
-category: "핫이슈"
+title: 행정안전부와 문화체육관광부, '모두의 토론회'를 열어 광화문 한글 현판 병기에 대한 의견 수렴했다.
+date: 2026-07-27T00:02
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "행정안전부"
-  - "핫이슈"
+- 보도기사
+- 행정안전부
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://mois.go.kr/images/og_logo.jpg"
-cover_image_alt: "광화문 현판, 국민이 하루 종일 머리 맞댔다... 첫 ‘모두의 토론회’ 마무리"
-author: "행정안전부"
+cover_image: https://mois.go.kr/images/og_logo.jpg
+cover_image_alt: 광화문 현판, 국민이 하루 종일 머리 맞댔다... 첫 ‘모두의 토론회’ 마무리
+author: 행정안전부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 행정안전부가 2026-07-27 공개한 자료를 바탕으로 광화문 현판, 국민이 하루 종일 머리 맞댔다... 첫 ‘모두의 토론회’ 마무리의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

@@ -1,15 +1,17 @@
 ---
-title: "광화문 현판, 국민이 하루 종일 머리 맞댔다... 첫 ‘모두의 토론회’ 마무리"
-date: "2026-07-27T00:09"
-category: "핫이슈"
+title: 모두의 토론회'에서 광화문 한글 현판 병기 논의
+date: 2026-07-27T00:09
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_00.png"
-cover_image_alt: "공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락"
-author: "문화체육관광부"
+cover_image: https://www.mcst.go.kr/site/images/sub/openright_00.png
+cover_image_alt: 공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 보도자료 발표

@@ -1,15 +1,17 @@
 ---
-title: "과기정통부-AMD, 개방형 AI 컴퓨팅 인프라 생태계 구축을 위해 손잡는다"
-date: "2026-07-27T00:02"
-category: "기술"
+title: 과기정통부, AMD와 AI 반도체 생태계 협력 양해각서 체결
+date: 2026-07-27T00:02
+category: 기술
 tags:
-  - "보도기사"
-  - "과학기술정보통신부"
-  - "기술"
+- 보도기사
+- 과학기술정보통신부
+- 기술
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1744640326166-433469d102f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1MTUxMTE1fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "과기정통부-AMD, 개방형 AI 컴퓨팅 인프라 생태계 구축을 위해 손잡는다"
-author: "과학기술정보통신부"
+cover_image: https://images.unsplash.com/photo-1744640326166-433469d102f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1MTUxMTE1fDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 과기정통부-AMD, 개방형 AI 컴퓨팅 인프라 생태계 구축을 위해 손잡는다
+author: 과학기술정보통신부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 과학기술정보통신부가 2026-07-27 공개한 자료를 바탕으로 과기정통부-AMD, 개방형 AI 컴퓨팅 인프라 생태계 구축을 위해 손잡는다의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
