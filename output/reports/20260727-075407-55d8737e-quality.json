@@ -1,0 +1,21 @@
+{
+  "run_id": "20260727-075407-55d8737e",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "champagne-bullets-mount-rushmore-8849c8a0",
+      "title": "이 영화가 ‘최악의 명작’에 오른 이유, Champagne Bullets Mount Rushmore",
+      "keyword": "Champagne Bullets Mount Rushmore",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 이 영화가 ‘최악의 명작’에 오른 이유, Champagne Bullets Mount Rushmore. Keyword: Champagne Bullets Mount Rushmore. Concrete visual subject: technology innovation circuit abstract. Context: ## ‘Champagne and Bullets’, 최악이지만 잊을 수 없는 명작 영화 ‘Champagne and Bullets’가 “최악의 영화 명예의 전당”이라 불리는 Mount Rushmore에 올랐다는 소식입니다. Mount Rushmore는 미국 사우스다코타 주에 있는 대통령 조각상으로, 여기서는 ‘역사에 남을 만한 대표작’ 의미로 쓰입니다. The Verge의 2026년 7월 26일자 칼럼에서는 이 영화를 ‘The Room’, ‘Troll 2’, ‘Fateful Findings’와 함께 언급합니다. 이들 작품은 모두 ‘너무 엉성해서 오히려 매력적인 영화(so bad they're good)’로 사랑받고 있습니다. ## 왜 ‘Champagne and Bullets’에 시선이 쏠릴까? 이 영화들은 - 감독의 과한 야망 - 한계가 분명한 제작비 - 어색한 연기와 대사 등이 겹쳐, 일반적인 완성도와 다르면서도 독특한 재미를 줍니다. 특히 Champagne and Bullets는 - 예측 불허의 전개 - 진지하지만 엉뚱한 연출 - 평범한 액션과 엉뚱한 대사 로 인해, 영화 팬들 사이에서 ‘못 만든 걸 알지만 자꾸 다시 보게 되는’ 작품으로 자리 잡았습니다. ## ‘최악의 명작’이 되는 조건 체크리스트 | 항목 | Champagne and Bullets에서 확인된 특징 | |----------------|-----------------. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330389129-fd3a236e00e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg1MTM5MTI5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
