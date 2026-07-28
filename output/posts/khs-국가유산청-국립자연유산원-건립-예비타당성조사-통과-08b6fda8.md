@@ -1,15 +1,17 @@
 ---
-title: "국가유산청, ‘국립자연유산원’ 건립 예비타당성조사 통과"
-date: "2026-07-08T00:14"
-category: "핫이슈"
+title: 국립자연유산원 건립 사업 예비타당성 조사 통과
+date: 2026-07-08T00:14
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=cc91346a012c4ed892e8c2df8a333fc3"
-cover_image_alt: "국립자연유산원 건립 대상부지 현장점검하는 허민 국가유산청장(´26.7.6. 부산 을숙도)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=cc91346a012c4ed892e8c2df8a333fc3
+cover_image_alt: 국립자연유산원 건립 대상부지 현장점검하는 허민 국가유산청장(´26.7.6. 부산 을숙도)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 보도자료 발표

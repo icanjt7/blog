@@ -1,15 +1,17 @@
 ---
-title: "과기정통부 과장급 인사"
-date: "2026-05-22T00:53"
-category: "기술"
+title: 과학기술정보통신부 감사담당관·연구윤리권익보호과장 인사 발표
+date: 2026-05-22T00:53
+category: 기술
 tags:
-  - "보도기사"
-  - "과학기술정보통신부"
-  - "기술"
+- 보도기사
+- 과학기술정보통신부
+- 기술
 quality_score: 90.0
-cover_image: "https://images.unsplash.com/photo-1749006590475-4592a5dbf99f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwODI1Njc1fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "과기정통부 과장급 인사"
-author: "과학기술정보통신부"
+cover_image: https://images.unsplash.com/photo-1749006590475-4592a5dbf99f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzgwODI1Njc1fDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 과기정통부 과장급 인사
+author: 과학기술정보통신부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 과학기술정보통신부가 2026-05-22 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. 원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다.

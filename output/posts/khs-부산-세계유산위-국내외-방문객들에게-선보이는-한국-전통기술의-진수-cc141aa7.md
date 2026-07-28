@@ -1,15 +1,17 @@
 ---
-title: "부산 세계유산위 국내외 방문객들에게 선보이는 한국 전통기술의 진수"
-date: "2026-07-13T00:12"
-category: "핫이슈"
+title: 부산 벡스코, 무형문화유산 보유자 14인 전통기술 공개
+date: 2026-07-13T00:12
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=757f8d3ee237430d9fe5137e54cdd0bd"
-cover_image_alt: "홍보물"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=757f8d3ee237430d9fe5137e54cdd0bd
+cover_image_alt: 홍보물
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 소개
