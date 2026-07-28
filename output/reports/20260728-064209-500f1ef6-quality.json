@@ -1,0 +1,22 @@
+{
+  "run_id": "20260728-064209-500f1ef6",
+  "average_quality": 88.0,
+  "drafts": [
+    {
+      "slug": "amazon-8217-2028-54e4628a",
+      "title": "2028년 Amazon 위성폰 네트워크, 무엇이 바뀌나",
+      "keyword": "Amazon 8217 2028",
+      "category": "기술",
+      "quality_score": 88.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '무엇이 바뀌나' 포함",
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2028년 Amazon 위성폰 네트워크, 무엇이 바뀌나. Keyword: Amazon 8217 2028. Concrete visual subject: cloud ecommerce technology. Context: ## Amazon 8217 2028 위성폰 네트워크 추진 소식 2026년 7월 27일 공식 안내에 따르면, Amazon이 FCC(미국 연방통신위원회)에 Low Earth Orbit(LEO) 위성망 구축 신청서를 제출했습니다. 이 네트워크는 2028년부터 전 세계를 대상으로 직접 휴대폰에 위성 서비스를 제공할 예정입니다. 서비스 범위에는 음성, 메시지, 데이터, 긴급 통신 등이 포함됩니다. Amazon은 5,105개의 LEO 위성을 발사하는 계획을 공개했습니다. ## 관련 정책과 기술 배경 Amazon의 위성 네트워크 추진은 단순 기술 개발에 그치지 않습니다. 미국 국토안보부(DHS, Department of Homeland Security)는 ICE(이민 집행), CBP(국경 관리), TSA(공항 보안), CISA(사이버안보) 등 다양한 기관을 관리합니다. 이들 기관의 예산 증액과 기술 투자 결정은 공공 감시, 데이터 관리, 사이버 방어 등 광범위한 정책 변화와 연결됩니다. ## 위성 네트워크와 기술·정책 변화 기준표 | 기준 항목 | 구체 내용 | |------------------|------------------------------------------------------------------------| | 계획 발행 기관 | Amazon (FCC 공식 신청) | | 위성 수량 | 5,105개 (LEO 위성) | | 서비스. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1667984390527-850f63192709?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxjbG91ZCUyMGVjb21tZXJjZSUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc4NTIyMTIzOXww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
