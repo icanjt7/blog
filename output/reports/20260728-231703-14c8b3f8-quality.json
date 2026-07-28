@@ -1,0 +1,20 @@
+{
+  "run_id": "20260728-231703-14c8b3f8",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "us-banning-foreign-robots-af3c4ec4",
+      "title": "미국, 2026년 외국 로봇 수입 전면 금지…누가 영향받나?",
+      "keyword": "US banning foreign robots",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 미국, 2026년 외국 로봇 수입 전면 금지…누가 영향받나?. Keyword: US banning foreign robots. Concrete visual subject: robot automation future. Context: ## 미국, 외국 로봇 및 전력 인버터 수입 금지 발표 미국 정부는 2026년 7월 28일, 외국산 첨단 로봇(advanced robotic devices)과 전력 인버터 수입을 공식적으로 금지한다고 발표했습니다. 이번 조치는 특히 중국을 겨냥한 것으로, Federal Communications Commission(FCC)에서 발표했으며, 이동식 로봇까지 포함됩니다. (출처: [The US is banning foreign robots](https://www.theverge.com/tech/972259/us-foreign-robots-power-inverter-ban)) ## 왜 이런 조치가 나왔나? 미국 국토안보부(DHS)는 ICE(이민·관세 집행국), CBP(국경보호국), TSA(교통안전청), CISA(사이버·인프라 보안청) 등 여러 기관을 관리합니다. DHS 예산은 이민 집행, 공항·국경 보안, 재난 대응, 사이버 방어까지 폭넓게 쓰이며, 최근에는 첨단 감시 기술과 데이터 시스템에 대한 투자도 확대되고 있습니다. ## US banning foreign robots: 주요 체크포인트 | 항목 | 구체 내용 | |----------------|--------------------------------------------------------------------------| | 시행일 | 2026년 7월 28일 공식 발표 | | . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxyb2JvdCUyMGF1dG9tYXRpb24lMjBmdXR1cmV8ZW58MXwwfHx8MTc4NTI4MDczOXww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
