@@ -1,0 +1,72 @@
+{
+  "run_id": "20260728-144004-fa933afe",
+  "topics": [
+    {
+      "keyword": "Apple HomePad October",
+      "title_hint": "Apple’s reported ‘HomePad’ may launch as early as October",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Apple’s reported ‘HomePad’ may launch as early as October",
+          "url": "https://www.theverge.com/tech/971790/apple-homepad-rumor-launch",
+          "published_at": "2026-07-28T14:39:42",
+          "summary": "For years, we've heard rumors of a new home hub device from Apple, meant to take on smart home devices like the Google Nest Hub Mini and Amazon's Echo Show. Besides \"HomePod with a screen,\" details have been sparse. But now, a new report from Bloomberg's Mark Gurman sheds some light on the alleged device, [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Apple HomePad October",
+        "title_hint": "Apple’s reported ‘HomePad’ may launch as early as October",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Apple’s reported ‘HomePad’ may launch as early as October",
+            "url": "https://www.theverge.com/tech/971790/apple-homepad-rumor-launch",
+            "published_at": "2026-07-28T14:39:42",
+            "summary": "For years, we've heard rumors of a new home hub device from Apple, meant to take on smart home devices like the Google Nest Hub Mini and Amazon's Echo Show. Besides \"HomePod with a screen,\" details have been sparse. But now, a new report from Bloomberg's Mark Gurman sheds some light on the alleged device, [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "2026년 10월, Apple HomePad 출시설의 진실은?",
+      "slug": "apple-homepad-october-9f5dad92",
+      "excerpt": "Apple HomePad가 2026년 10월 출시될 가능성이 언급됐습니다. 구체적으로 알려진 기능, 경쟁 구도, 공식 발표 시점 등 최신 루머를 정리합니다.",
+      "body_markdown": "## Apple HomePad, 10월 출시설 등장\n\n2026년 7월 28일 기준, The Verge 등 주요 IT 매체에서 Apple의 신형 스마트 홈 허브 ‘HomePad’가 10월 내 출시될 수 있다는 보도가 나왔습니다. 그동안 'HomePod with a screen'이라는 별칭 외에는 세부 정보가 부족했으나, 이번 보도로 실제 제품 공개 가능성이 크게 높아졌습니다.\n\n## HomePad란 무엇인가?\n\nApple HomePad는 Apple이 기존 HomePod 스피커와는 차별화된 스마트 홈 허브 기기입니다.  \n- **경쟁 제품**: Google Nest Hub Mini, Amazon Echo Show 등과 직접 경쟁  \n- **주요 특징**: 화면 탑재, 스마트 홈 기기 제어 가능, Siri 연동  \n- **추정 기능**: 음성 제어, 영상 통화, 스마트 가전 연결, Apple 생태계와의 통합\n\n## 주요 체크포인트\n\n| 항목           | 내용                                                      |\n|---------------|-----------------------------------------------------------|\n| 출시 예상 시점 | 2026년 10월 (The Verge, Bloomberg 보도 기준)             |\n| 공식 출처     | Bloomberg의 Mark Gurman, The Verge                        |\n| 경쟁 구도     | Google, Amazon의 스마트 홈 허브와 직접 비교               |\n| 적용 대상     | Apple 사용자, 스마트 홈 구축 소비자, IT 업계              |\n| 기능 요약     | 화면 탑재, Siri 음성 인식, 홈 기기 통합 제어              |\n| 발표 방식     | 공식 발표 전 루머 단계, Apple 행사 가능성 있음            |\n\n## 독자가 궁금해할 점\n\n- HomePad는 단순 오디오 기기가 아닌, 스마트 홈 통합 허브라는 점에서 의미가 있습니다.\n- 2026년 10월 출시설이 있지만, 아직 Apple의 공식 발표는 없는 상태입니다.\n- 실제 기능, 가격, 출시 국가 등은 공식 안내에서 추가 확인이 필요합니다.\n\n## 참고 출처\n\n- [Apple’s reported ‘HomePad’ may launch as early as October](https://www.theverge.com/tech/971790/apple-homepad-rumor-launch) (2026-07-28 공개)\n\n---\n\n**핵심 키워드**: Apple HomePad October  \nApple HomePad의 10월 출시설은 공식 발표 전 루머 단계이며, 최신 정보는 공식 안내 기준으로 업데이트해야 합니다.",
+      "tags": [
+        "기술",
+        "Apple",
+        "HomePad",
+        "October"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1766503206581-6824e98f49de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ258ZW58MXwwfHx8MTc4NTI0OTg2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "2026년 10월, Apple HomePad 출시설의 진실은? — Photo by Default Cameraman on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1760597371632-bbd930d6b844?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcHBsZSUyMGRldmljZSUyMG1pbmltYWwlMjBkZXNpZ258ZW58MXwwfHx8MTc4NTI0OTg2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "2026년 10월, Apple HomePad 출시설의 진실은? 본문 보조 이미지 — Photo by Daniel Romero on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 2026년 10월, Apple HomePad 출시설의 진실은?. Keyword: Apple HomePad October. Concrete visual subject: apple device minimal design. Context: ## Apple HomePad, 10월 출시설 등장 2026년 7월 28일 기준, The Verge 등 주요 IT 매체에서 Apple의 신형 스마트 홈 허브 ‘HomePad’가 10월 내 출시될 수 있다는 보도가 나왔습니다. 그동안 'HomePod with a screen'이라는 별칭 외에는 세부 정보가 부족했으나, 이번 보도로 실제 제품 공개 가능성이 크게 높아졌습니다. ## HomePad란 무엇인가? Apple HomePad는 Apple이 기존 HomePod 스피커와는 차별화된 스마트 홈 허브 기기입니다. - **경쟁 제품**: Google Nest Hub Mini, Amazon Echo Show 등과 직접 경쟁 - **주요 특징**: 화면 탑재, 스마트 홈 기기 제어 가능, Siri 연동 - **추정 기능**: 음성 제어, 영상 통화, 스마트 가전 연결, Apple 생태계와의 통합 ## 주요 체크포인트 | 항목 | 내용 | |---------------|-----------------------------------------------------------| | 출시 예상 시점 | 2026년 10월 (The Verge, Bloomberg 보도 기준) | | 공식 출처 | Bloomberg의 Mark Gurman, The Verge | | 경쟁 구도 | Google, Amazon의 스마트 홈 허브와 직접 비교 | | 적용 대상 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 2026년 10월, Apple HomePad 출시설의 진실은?. Keyword: Apple HomePad October. Concrete visual subject: apple device minimal design. Article context: ## Apple HomePad, 10월 출시설 등장 2026년 7월 28일 기준, The Verge 등 주요 IT 매체에서 Apple의 신형 스마트 홈 허브 ‘HomePad’가 10월 내 출시될 수 있다는 보도가 나왔습니다. 그동안 'HomePod with a screen'이라는 별칭 외에는 세부 정보가 부족했으나, 이번 보도로 실제 제품 공개 가능성이 크게 높아졌습니다. ## HomePad란 무엇인가? Apple HomePad는 Apple이 기존 HomePod 스피커와는 차별화된 스마트 홈 허브 기기입니다. - **경쟁 제품**: Google Nest Hub Mini, Amazon Echo Show 등과 직접 경쟁 - **주요 특징**: 화면 탑재, 스마트 홈 기기 제어 가능, Siri 연동 - **추정 기능**: 음성 제어, 영상 통화, 스마트 가전 연결, Apple 생태계와의 통합 ## 주요 체크포인트 | 항목 | 내용 | |---------------|-----------------------------------------------------------| | 출시 예상 시점 | 2026년 10월 (The Verge, Bloomberg 보도 기준) | | 공식 출처 | Bloomberg의 Mark Gurman, The Verge | | 경쟁 구도 | Google, Amazon의 스마트 홈 허브와 직접 비교 | | 적용 대상 | Apple 사용자, 스마트 홈 구축 소비자, IT 업계 | | 기능 요약 | 화면 탑재, Siri 음성 인식, 홈 기기 통합 제어 | | 발표 방식 | 공식 발표 전 루머 단계, Apple 행사 가능성 있음 | ## 독자가 궁금해할 점 - HomePad는 단순 오디오 기기가 아닌, 스마트 홈 통합 허브라는 점에서 의미가 있습니다. - 2026년 10월 . The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-28T14:44:14.531578",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/apple-homepad-october-9f5dad92.md",
+      "message": "draft saved"
+    }
+  ]
+}
