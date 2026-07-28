@@ -1,0 +1,20 @@
+{
+  "run_id": "20260728-213301-0f966527",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "wikimedia-foundation-44e695ca",
+      "title": "위키미디어 파운데이션 직원 노조, 사용자에게 미치는 5가지 변화",
+      "keyword": "Wikimedia Foundation",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 위키미디어 파운데이션 직원 노조, 사용자에게 미치는 5가지 변화. Keyword: Wikimedia Foundation. Concrete visual subject: technology innovation circuit abstract. Context: ## 위키미디어 파운데이션 노조 확대, 실제 변화는? 2026년 6월, 위키백과를 운영하는 비영리 단체 위키미디어 파운데이션(Wikimedia Foundation)의 영국 직원들이 최초로 노조 결성을 발표했습니다. 이어 미국 내 직원들도 이 움직임에 동참하며 노조 조직화가 확대되고 있습니다. 하지만 경영진은 자발적 노조 인정을 거부한 상태입니다. ### 위키미디어 파운데이션이란? - 위키미디어 파운데이션: 위키백과(Wikipedia) 및 관련 프로젝트를 운영하는 글로벌 비영리단체입니다. - 주요 서비스: 위키백과, 위키데이터, 위키미디어 커먼즈 등 전 세계 사용자에게 무료로 지식 정보를 제공합니다. --- ## 사용자에게 미치는 5가지 핵심 변화 | 기준 | 구체 내용 | |---------------|-------------------------------------------------------------------------------------------| | 적용 지역 | 영국·미국 기반 직원 노조 결성 움직임 (원문 공개일 기준) | | 서비스 영향 | 위키백과, 위키데이터 등 주요 프로젝트의 개발·운영 일정에 잠재적 영향 | | 직원 대응 | 노조 활동에 따라 내부 정책 협의, 서비스 안정성에 대한 요구 증가 가능 | | 사용자 체감 | 단기적으로는 서비스 이용 방식 변화 없음. 장기적으로는 공지사항, 기여자 지원 정책. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330300479-02550a1a3c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg1Mjc0NDkzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
