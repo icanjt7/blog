@@ -1,0 +1,21 @@
+{
+  "run_id": "20260728-195434-fff537fa",
+  "average_quality": 96.0,
+  "drafts": [
+    {
+      "slug": "apple-won-turn-any-1a12f714",
+      "title": "아이폰 렌탈, 연체해도 기능 제한 없다? 애플 공식 발표",
+      "keyword": "Apple won turn any",
+      "category": "기술",
+      "quality_score": 96.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 아이폰 렌탈, 연체해도 기능 제한 없다? 애플 공식 발표. Keyword: Apple won turn any. Concrete visual subject: iphone smartphone modern minimal apple device design. Context: 애플(Apple)은 1976년 스티브 잡스와 스티브 워즈니악이 창업한 세계 최대 기술기업 중 하나입니다. 아이폰, 아이패드, 맥북 등 다양한 제품으로 글로벌 시장을 선도하고 있습니다. 최근 애플은 ‘업그레이드 프로그램(Upgrade Program)’을 도입했습니다. 이 프로그램은 사용자가 최신 기기를 월 단위로 렌탈(할부와 유사하게)하고, 일정 기간 후 새 기기로 교체할 수 있도록 마련된 제도입니다. **연체 시 기능 제한, 정말 없나?** 기존 일부 렌탈 서비스에서는 결제 연체 시 ‘제한 모드(restricted mode)’가 자동으로 적용되거나, 기기가 잠시 사용이 불가능해지는 경우가 있었습니다. 제한 모드는 제조사가 기기 기능 일부를 차단하는 방식으로 주로 연체자 관리에 사용됩니다. 하지만 2026-07-28, The Verge에 따르면 애플은 업그레이드 프로그램을 통해 렌탈한 기기에서 결제 연체가 발생해도 기능 제한이나 제한 모드를 적용하지 않는다고 공식 입장을 밝혔습니다. 애플 대변인 Brian Bumbery(브라이언 범버리)는 이메일을 통해 “기기 기능 제한은 없다”고 명확히 설명했습니다. **애플 업그레이드 프로그램 vs 기존 렌탈 서비스** | 항목 | 기존 렌탈 서비스 | 애플 업그레이드 프로그램 | |---------------------|-------------------------|-----------------. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1658060078141-80e89c573b12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxpcGhvbmUlMjBzbWFydHBob25lJTIwbW9kZXJuJTIwbWluaW1hbCUyMGFwcGxlJTIwZGV2aWNlJTIwZGVzaWdufGVufDF8MHx8fDE3ODUyNjg1ODF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
