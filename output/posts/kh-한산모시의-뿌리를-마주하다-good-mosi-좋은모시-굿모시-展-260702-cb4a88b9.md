@@ -1,15 +1,17 @@
 ---
-title: "한산모시의 뿌리를 마주하다 GOOD MOSI, 좋은모시 굿모시 展(260702)"
-date: "2026-07-02T00:06"
-category: "핫이슈"
+title: 한산모시의 뿌리를 마주하다 GOOD MOSI 展
+date: 2026-07-02T00:06
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산진흥원"
-  - "핫이슈"
+- 보도기사
+- 국가유산진흥원
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.kh.or.kr/jnrepo/namo/img/images/000110/20260702091125896_SKC5CKDU.jpg"
-cover_image_alt: "한산모시의 뿌리를 마주하다 GOOD MOSI, 좋은모시 굿모시 展(260702) 관련 보도자료 이미지"
-author: "국가유산진흥원"
+cover_image: https://www.kh.or.kr/jnrepo/namo/img/images/000110/20260702091125896_SKC5CKDU.jpg
+cover_image_alt: 한산모시의 뿌리를 마주하다 GOOD MOSI, 좋은모시 굿모시 展(260702) 관련 보도자료 이미지
+author: 국가유산진흥원
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산진흥원이 2026-07-02 공개한 자료를 바탕으로 한산모시의 뿌리를 마주하다 GOOD MOSI, 좋은모시 굿모시 展의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
