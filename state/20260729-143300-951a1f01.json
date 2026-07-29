@@ -1,0 +1,73 @@
+{
+  "run_id": "20260729-143300-951a1f01",
+  "topics": [
+    {
+      "keyword": "DoorDash going airborne new",
+      "title_hint": "DoorDash is going airborne with new drone delivery division",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "DoorDash is going airborne with new drone delivery division",
+          "url": "https://www.theverge.com/science/970731/doordash-air-drone-delivery-faa",
+          "published_at": "2026-07-29T13:00:00",
+          "summary": "DoorDash is launching a new drone delivery program called DoorDash Air. The largest food delivery app in the US said that it has approval from the Federal Aviation Administration that clears the way for drone delivery in the near future. DoorDash said it has received a Part 135 air carrier certification from the FAA that [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "DoorDash going airborne new",
+        "title_hint": "DoorDash is going airborne with new drone delivery division",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "DoorDash is going airborne with new drone delivery division",
+            "url": "https://www.theverge.com/science/970731/doordash-air-drone-delivery-faa",
+            "published_at": "2026-07-29T13:00:00",
+            "summary": "DoorDash is launching a new drone delivery program called DoorDash Air. The largest food delivery app in the US said that it has approval from the Federal Aviation Administration that clears the way for drone delivery in the near future. DoorDash said it has received a Part 135 air carrier certification from the FAA that [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "DoorDash, 드론 배송으로 하늘을 날다! FAA 승인 주요 체크포인트",
+      "slug": "doordash-going-airborne-new-10d8f706",
+      "excerpt": "DoorDash가 FAA 승인으로 드론 배송 서비스 ‘DoorDash Air’를 시작합니다. 방산 테크 투자 관점에서 실증, 조달, 규제 리스크를 구체적으로 분석합니다.",
+      "body_markdown": "## DoorDash going airborne new: 드론 배송, 공식 승인\n\n2026년 7월 29일 기준, 미국 최대 음식 배달 앱 DoorDash가 새로운 드론 배송 부문 ‘DoorDash Air’ 출범을 공식 발표했습니다.  \n미국 연방항공청(Federal Aviation Administration, FAA)에서 Part 135 승인을 획득해, 드론을 활용한 음식 배송이 실제 운용 단계에 진입합니다.\n\n### 핵심 체크리스트 (공식 안내 기준)\n\n| 체크 항목             | 상세 정보                                                                                         |\n|----------------------|---------------------------------------------------------------------------------------------------|\n| 승인 기관            | 미국 FAA (Federal Aviation Administration)                                                        |\n| 승인 유형            | Part 135 (상업용 드론 배송 허가)                                                                 |\n| 적용 서비스          | DoorDash Air (드론을 활용한 음식 배송)                                                           |\n| 공식 발표일          | 2026-07-29                                                                                        |\n| 대상 지역            | 미국 내 DoorDash 서비스 지역, 초기엔 제한적 테스트 구역                                         |\n| 운용 방식            | 드론 자동 비행, 지정된 배송 구역 내 수령지까지 비접촉 배송                                       |\n| 예상 소비자 혜택      | 빠른 배송, 원거리 주문 가능, 신속한 도심·교외 서비스 확대                                       |\n\n### 방산 테크 투자 관점에서 보는 DoorDash Air\n\n#### 방산 테크란?\n방산 테크는 드론, 자율 시스템, 감시 센서, 사이버 방어 등 군과 안보 기관이 실제로 사용하는 첨단 기술 분야입니다.  \n이런 기술은 민간 SaaS보다 판매 주기가 길고, 정부 조달 규정이나 수출 통제의 영향을 크게 받습니다.\n\n#### 기술 및 투자 리스크 체크포인트\n\n- **실제 운용 환경 실증**  \n  데모 영상이나 시제품보다, 공식 인증·납품 후 유지보수 계약이 중요합니다.\n\n- **정부 조달 절차**  \n  DoorDash Air처럼 공식 기관 허가(FAA Part 135) 획득이 사업화의 핵심 관문입니다.\n\n- **보안 인증 및 규제**  \n  드론 배송은 개인정보 보호, 무인기 운용 안전, 수출 규제 등 복합적인 인증 절차를 거칩니다.\n\n- **투자 열기 vs 실제 성과**  \n  투자금 규모보다는 실제 계약, 양산과 현장 운용 사례를 구체적으로 확인해야 합니다.\n\n#### 실제 확인해야 할 5가지 기준\n\n1. **계약 규모**: 공식 발표, 후속 보도자료에서 실제 납품·매출 수치 확인  \n2. **시제품 vs 양산**: 시범 운용과 일반 서비스 도입의 구분  \n3. **조달 기관 명확성**: FAA 등 정부 기관의 허가 여부  \n4. **수출 통제**: 미국 내 운용에 한정된지, 해외 사업 확장 가능성  \n5. **현장 적용 사례**: 초기 테스트 지역, 소비자 후기, 서비스 확대 일정\n\n### 독자 참고 포인트\n\n- DoorDash의 드론 배송은 민간 소비자에게도 빠른 배송, 신속한 서비스 확대라는 직접적 혜택을 제공합니다.\n- 원문 보도에 나온 공식 승인, 운용 방식, 서비스 지역 등 구체 정보는 반드시 확인하세요.\n- 방산 테크 투자자는 데모 수준이 아닌 공식 인증 및 현장 적용 사례를 중점적으로 검토해야 합니다.\n\n---\n\n**참고 출처**  \n- [DoorDash is going airborne with new drone delivery division (2026-07-29)](https://www.theverge.com/science/970731/doordash-air-drone-delivery-faa)  \n(최신 공식 안내 기준)",
+      "tags": [
+        "기술",
+        "DoorDash",
+        "going",
+        "airborne",
+        "new"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1514598800938-f7125ea1aa1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxkcm9uZSUyMGFlcmlhbCUyMHNreSUyMG1vZGVybiUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjBuZXVyYWwlMjBuZXR3b3JrfGVufDF8MHx8fDE3ODUzMzU4NzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "DoorDash, 드론 배송으로 하늘을 날다! FAA 승인 주요 체크포인트 — Photo by Fikri Rasyid on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1495811853829-7f743aca3770?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZHJvbmUlMjBhZXJpYWwlMjBza3klMjBtb2Rlcm4lMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1MzM1ODczfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "DoorDash, 드론 배송으로 하늘을 날다! FAA 승인 주요 체크포인트 본문 보조 이미지 — Photo by Ricardo Gomez Angel on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: DoorDash, 드론 배송으로 하늘을 날다! FAA 승인 주요 체크포인트. Keyword: DoorDash going airborne new. Concrete visual subject: drone aerial sky modern artificial intelligence neural network. Context: ## DoorDash going airborne new: 드론 배송, 공식 승인 2026년 7월 29일 기준, 미국 최대 음식 배달 앱 DoorDash가 새로운 드론 배송 부문 ‘DoorDash Air’ 출범을 공식 발표했습니다. 미국 연방항공청(Federal Aviation Administration, FAA)에서 Part 135 승인을 획득해, 드론을 활용한 음식 배송이 실제 운용 단계에 진입합니다. ### 핵심 체크리스트 (공식 안내 기준) | 체크 항목 | 상세 정보 | |----------------------|---------------------------------------------------------------------------------------------------| | 승인 기관 | 미국 FAA (Federal Aviation Administration) | | 승인 유형 | Part 135 (상업용 드론 배송 허가) | | 적용 서비스 | DoorDash Air (드론을 활용한 음식 배송) | | 공식 발표일 | 2026-07-29 | | 대상 지역 | 미국 내 DoorDash 서비스 지역, 초기엔 제한적 테스트 구역 | | 운용 방식 | 드론 자동 비행, 지정된 배송 구역 내 수령지까지 비접촉 배송 | | 예상 소비자 혜택 | 빠른 배송, 원거리 주문 가능, 신속한 도심·교외 서비스 확대 | ###. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: DoorDash, 드론 배송으로 하늘을 날다! FAA 승인 주요 체크포인트. Keyword: DoorDash going airborne new. Concrete visual subject: drone aerial sky modern artificial intelligence neural network. Article context: ## DoorDash going airborne new: 드론 배송, 공식 승인 2026년 7월 29일 기준, 미국 최대 음식 배달 앱 DoorDash가 새로운 드론 배송 부문 ‘DoorDash Air’ 출범을 공식 발표했습니다. 미국 연방항공청(Federal Aviation Administration, FAA)에서 Part 135 승인을 획득해, 드론을 활용한 음식 배송이 실제 운용 단계에 진입합니다. ### 핵심 체크리스트 (공식 안내 기준) | 체크 항목 | 상세 정보 | |----------------------|---------------------------------------------------------------------------------------------------| | 승인 기관 | 미국 FAA (Federal Aviation Administration) | | 승인 유형 | Part 135 (상업용 드론 배송 허가) | | 적용 서비스 | DoorDash Air (드론을 활용한 음식 배송) | | 공식 발표일 | 2026-07-29 | | 대상 지역 | 미국 내 DoorDash 서비스 지역, 초기엔 제한적 테스트 구역 | | 운용 방식 | 드론 자동 비행, 지정된 배송 구역 내 수령지까지 비접촉 배송 | | 예상 소비자 혜택 | 빠른 배송, 원거리 주문 가능, 신속한 도심·교외 서비스 확대 | ### 방산 테크 투자 관점에서 보는 DoorDash Air #### 방산 테크란? 방산 테크는 드론, 자율 시스템, 감시 센서, 사이버 방어 등 군과 안보 기관이 실제로 사용하는 첨단 기술 분야입니다. 이런 기술은 민간 SaaS보다 판매 주기가 길고, 정부 조달 규정이나 수출 통제의 영향을 크게 받습니다. #### 기술 및 투자 리스크 체크포인트 - **실제 . The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-29T14:37:40.326400",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/doordash-going-airborne-new-10d8f706.md",
+      "message": "draft saved"
+    }
+  ]
+}
