@@ -1,0 +1,20 @@
+{
+  "run_id": "20260729-174030-24c1125c",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "full-school-day-cellphone-b3f4d816",
+      "title": "미국 학교, 하루 종일 휴대폰 금지…사용자가 겪는 5가지 변화",
+      "keyword": "Full school day cellphone",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 미국 학교, 하루 종일 휴대폰 금지…사용자가 겪는 5가지 변화. Keyword: Full school day cellphone. Concrete visual subject: technology innovation circuit abstract. Context: ## 주요 소식 2026년 7월 29일 공개된 Pew Research Center 설문에 따르면, 미국 중·고등학교에서 Full school day cellphone ban(하루 종일 휴대폰 사용 금지) 정책이 빠르게 확산되고 있습니다. 77%의 미국 성인이 이 정책을 지지한다고 밝혔으며, 이는 최근 들어 가장 높은 지지율입니다. ## 정책 배경 - **Full school day cellphone ban**은 수업 시간뿐 아니라 등교부터 하교까지 학교 내에서 휴대폰 사용을 전면 제한하는 조치입니다. - 미국 내 각 지역 교육청과 학교에서 점진적으로 도입 중입니다. - Pew Research Center는 미국 내 성인 5,000명을 대상으로 설문을 진행해 정책 지지 여부를 조사했습니다. ## 사용자가 겪는 변화 아래 표는 정책 시행 시 학생·교사·학부모가 실제로 경험하게 되는 주요 변화를 정리한 것입니다: | 기준 | 구체 내용 | |---------------------|----------------------------------------------------------| | 적용 대상 | 미국 중·고등학교 학생, 교직원, 방문 학부모 | | 정책 시행 기간 | 2026년 7월 29일 기준, 각 학교별로 단계적 도입 | | 기관명 | 미국 각 지역 교육청, 학교, Pew Research Center | | 절차 | 학교별 안내. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330298761-3e41cd894295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg1MzQ2OTU1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
