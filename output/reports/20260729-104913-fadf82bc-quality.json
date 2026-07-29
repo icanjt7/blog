@@ -1,0 +1,20 @@
+{
+  "run_id": "20260729-104913-fadf82bc",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "ai-ai-7dfccd3c",
+      "title": "AI 기업 7곳, 미국 정부에 ‘AI 개발 속도 조절’ 공식 요청…사용자에게 생길 변화는?",
+      "keyword": "AI AI",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: AI 기업 7곳, 미국 정부에 ‘AI 개발 속도 조절’ 공식 요청…사용자에게 생길 변화는?. Keyword: AI AI. Concrete visual subject: artificial intelligence neural network. Context: ## 주요 내용 2026년 7월 28일, OpenAI, Anthropic, Google, Meta, Thinking Machines, Microsoft, Mistral 등 주요 AI 연구소 직원들이 미국 정부에 ‘AI 개발 및 자동화 속도 조절’을 요청하는 공동 성명을 발표했습니다. 이들은 AI 기술이 사회에 미칠 잠재적 영향을 우려하며, 정부의 적극적 개입과 규제 마련을 촉구했습니다. ## 누가 참여했나? - **기업 및 연구소**: OpenAI, Anthropic, Google, Meta, Thinking Machines, Microsoft, Mistral *이들은 AI 및 자동화 분야의 세계적인 선도 기업들입니다.* - **성명 대상**: 미국 정부, 규제 당국 - **발행일**: 2026년 7월 28일 (원문 공개일 기준) ## 사용자와 기업에 미칠 변화 체크리스트 | 기준 | 구체 내용 | |----------------|-------------------------------------------------------------------------------| | 적용 대상 | AI 기술을 활용 중인 일반 사용자, 기업, 개발·운영팀 | | 요청 내용 | AI의 자동화 및 개발 속도 조절, 정부 주도 규제 마련 | | 예상 변화 | 신기능 출시 지연, 제품 업데이트 속도 감소, 서비스 안정성 강화 가능 | | 공식 절차 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1MzIyMjk0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
