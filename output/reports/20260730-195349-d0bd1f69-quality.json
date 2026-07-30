@@ -1,0 +1,20 @@
+{
+  "run_id": "20260730-195349-d0bd1f69",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "samsung-galaxy-watch-40-3160e6a8",
+      "title": "코스트코 Galaxy Watch 9 예약 혜택 및 상세 조건 안내",
+      "keyword": "Samsung Galaxy Watch 40",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 코스트코 Galaxy Watch 9 예약 혜택 및 상세 조건 안내. Keyword: Samsung Galaxy Watch 40. Concrete visual subject: smartwatch wearable wrist device samsung display modern public service checklist. Context: ## 코스트코 Galaxy Watch 9 예약 프로모션 개요 2026년 8월 7일 공식 출시를 앞두고, 코스트코는 Samsung Galaxy Watch 9 40mm 모델(크림, 그래파이트 색상)의 예약 판매를 진행하고 있습니다. 예약 구매 시 적용되는 주요 혜택은 다음과 같습니다. - 40달러 즉시 할인 - 50달러 코스트코 기프트 카드 제공 - 무선 고속 충전기 2개 증정 - 코스트코 공식 판매 및 사후지원 - 예약 기간: 2026년 7월 30일(출처 기준)부터 Galaxy Watch 9 공식 출시일까지 - 판매 대상: 코스트코 회원(미국 내 판매 기준) 이번 프로모션은 코스트코에서 진행 중인 Galaxy Watch 9 사전 예약 중 가장 많은 혜택을 제공하는 것으로 평가되고 있습니다. ## Galaxy Watch 9 사전 예약 상세 조건 코스트코의 Galaxy Watch 9 예약 프로모션은 다음과 같은 구체적 조건을 포함합니다. | 항목 | 세부 내용 및 조건 | |----------------------|------------------------------------------------------------| | 할인 | 40달러 즉시 할인 | | 추가 혜택 | 50달러 코스트코 기프트 카드, 무선 고속 충전기 2개 | | 모델 및 색상 | 40mm 모델, 크림/그래파이트 색상 | | 판매 및 지원 | 코스트코 공식 판매, . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1733570890170-49be2550189b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxzbWFydHdhdGNoJTIwd2VhcmFibGUlMjB3cmlzdCUyMGRldmljZSUyMHNhbXN1bmclMjBkaXNwbGF5JTIwbW9kZXJuJTIwcHVibGljJTIwc2VydmljZSUyMGNoZWNrbGlzdHxlbnwxfDB8fHwxNzg1NDQxNDA3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
