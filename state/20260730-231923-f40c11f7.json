@@ -1,0 +1,73 @@
+{
+  "run_id": "20260730-231923-f40c11f7",
+  "topics": [
+    {
+      "keyword": "Tim Cook iCloud Plus",
+      "title_hint": "Tim Cook hints at iCloud Plus tier for AI power users",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "Tim Cook hints at iCloud Plus tier for AI power users",
+          "url": "https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai",
+          "published_at": "2026-07-30T22:29:45",
+          "summary": "Apple may allow users to pay to increase their AI usage limits. During an earnings call on Thursday, Apple CEO Tim Cook said that he believes people will want to use Apple Intelligence and the upcoming Siri AI \"a lot,\" adding that \"we will have some kind of upgrade possibilities on iCloud Plus where people [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "Tim Cook iCloud Plus",
+        "title_hint": "Tim Cook hints at iCloud Plus tier for AI power users",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "Tim Cook hints at iCloud Plus tier for AI power users",
+            "url": "https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai",
+            "published_at": "2026-07-30T22:29:45",
+            "summary": "Apple may allow users to pay to increase their AI usage limits. During an earnings call on Thursday, Apple CEO Tim Cook said that he believes people will want to use Apple Intelligence and the upcoming Siri AI \"a lot,\" adding that \"we will have some kind of upgrade possibilities on iCloud Plus where people [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "Siri AI, 이번엔 정말 쓸 만해졌나",
+      "slug": "tim-cook-icloud-plus-d0a84e5c",
+      "excerpt": "WWDC26 이후 Siri AI 초기 사용기를 개인 맥락 이해, 앱 작업 실행, 한국 사용자 제한 조건 중심으로 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\nTim Cook hints at iCloud Plus tier for AI power users 소식입니다. Apple may allow users to pay to increase their AI usage limits. During an earnings call on Thursday, Apple CEO Tim Cook said that he believes people will want to use Apple Intelligence and the upcoming Siri AI \"a lot,\" adding that \"we will have some kind of upgrade possibilities...\n\n## 먼저 알아둘 배경\n\nSiri는 오래된 Apple 음성 비서지만 생성형 AI 경쟁 이후 답답하다는 평가를 받아 왔습니다. Apple은 Apple Intelligence를 통해 Siri가 화면 내용을 이해하고, 앱 안 작업을 수행하고, 일정·메일·사진 같은 개인 맥락을 더 잘 활용하도록 만들겠다고 설명합니다.\n\n## 왜 기술 이슈인가\n\nAI 비서는 답변을 멋지게 쓰는 능력보다 실제 행동을 안정적으로 끝내는지가 중요합니다. 일정 추가, 알림 설정, 메시지 작성 같은 작업에서 실패가 적어야 사용자가 신뢰합니다. Apple은 온디바이스 처리와 Private Cloud Compute를 함께 내세워 편의성과 개인정보 보호를 동시에 강조합니다.\n\n## 확인할 기준\n\n| 항목 | 구체 내용 |\n| --- | --- |\n| 직접 대상 | iPhone·iPad·Mac 사용자, Apple Intelligence 기능을 기다리는 사용자, iOS 앱 개발자 |\n| 기술 맥락 | Siri AI, Apple Intelligence, 개인 맥락 이해, 앱 작업 실행, Private Cloud Compute |\n| 사용자 영향 | 일정·메일·사진·지도 같은 기본 앱 작업 자동화, 지원 언어·기기 조건, 개인정보 처리 신뢰도에 영향 |\n| 다음 확인 | 지원 기기, 한국어 지원 시점, EU 등 지역 제한, 정식 배포 후 작업 성공률 |\n\n## 독자가 이해해야 할 포인트\n\n1. Siri AI는 챗봇 답변보다 iPhone 안의 실제 작업을 얼마나 잘 처리하는지가 관건입니다.\n2. 발표 기능이 있어도 한국어와 국내 계정에서 바로 되는지는 별도로 확인해야 합니다.\n3. Apple의 차별점은 생태계 통합이지만, 기능 지연과 지역 제한이 체감 품질을 좌우합니다.\n4. 원문 요약만으로 부족하면 공식 보도자료, 후속 공지, 실제 적용 사례까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [Tim Cook hints at iCloud Plus tier for AI power users](https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai)\n",
+      "tags": [
+        "기술",
+        "Tim",
+        "Cook",
+        "iCloud",
+        "Plus"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1NDUzNjc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "Siri AI, 이번엔 정말 쓸 만해졌나 — Photo by Growtika on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1NDUzNjc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "Siri AI, 이번엔 정말 쓸 만해졌나 본문 보조 이미지 — Photo by Numan Ali on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Siri AI, 이번엔 정말 쓸 만해졌나. Keyword: Tim Cook iCloud Plus. Concrete visual subject: artificial intelligence neural network. Context: ## 무슨 소식인가 Tim Cook hints at iCloud Plus tier for AI power users 소식입니다. Apple may allow users to pay to increase their AI usage limits. During an earnings call on Thursday, Apple CEO Tim Cook said that he believes people will want to use Apple Intelligence and the upcoming Siri AI \"a lot,\" adding that \"we will have some kind of upgrade possibilities... ## 먼저 알아둘 배경 Siri는 오래된 Apple 음성 비서지만 생성형 AI 경쟁 이후 답답하다는 평가를 받아 왔습니다. Apple은 Apple Intelligence를 통해 Siri가 화면 내용을 이해하고, 앱 안 작업을 수행하고, 일정·메일·사진 같은 개인 맥락을 더 잘 활용하도록 만들겠다고 설명합니다. ## 왜 기술 이슈인가 AI 비서는 답변을 멋지게 쓰는 능력보다 실제 행동을 안정적으로 끝내는지가 중요합니다. 일정 추가, 알림 설정, 메시지 작성 같은 작업에서 실패가 적어야 사용자가 신뢰합니다. Apple은 온디바이스 처리와 Private Cloud Compute를 함께 내세워 편의성과 개인정보 보호를. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: Siri AI, 이번엔 정말 쓸 만해졌나. Keyword: Tim Cook iCloud Plus. Concrete visual subject: artificial intelligence neural network. Article context: ## 무슨 소식인가 Tim Cook hints at iCloud Plus tier for AI power users 소식입니다. Apple may allow users to pay to increase their AI usage limits. During an earnings call on Thursday, Apple CEO Tim Cook said that he believes people will want to use Apple Intelligence and the upcoming Siri AI \"a lot,\" adding that \"we will have some kind of upgrade possibilities... ## 먼저 알아둘 배경 Siri는 오래된 Apple 음성 비서지만 생성형 AI 경쟁 이후 답답하다는 평가를 받아 왔습니다. Apple은 Apple Intelligence를 통해 Siri가 화면 내용을 이해하고, 앱 안 작업을 수행하고, 일정·메일·사진 같은 개인 맥락을 더 잘 활용하도록 만들겠다고 설명합니다. ## 왜 기술 이슈인가 AI 비서는 답변을 멋지게 쓰는 능력보다 실제 행동을 안정적으로 끝내는지가 중요합니다. 일정 추가, 알림 설정, 메시지 작성 같은 작업에서 실패가 적어야 사용자가 신뢰합니다. Apple은 온디바이스 처리와 Private Cloud Compute를 함께 내세워 편의성과 개인정보 보호를 동시에 강조합니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | iPhone·iPad·Mac 사용자, Apple Intelligence 기능을 기다리는 사용자, iOS 앱 개발자 | | 기술 맥락 | Siri AI, Apple Intelligence, 개인 맥락 이해, 앱 작업 실행, Private Cloud C. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-30T23:20:49.422909",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 89.0"
+    }
+  ]
+}
