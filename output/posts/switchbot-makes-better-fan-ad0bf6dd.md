@@ -1,0 +1,66 @@
+---
+title: SwitchBot 신형 팬 가격·성능, 5가지 객관적 비교
+date: '2026-07-30T10:36:25.412363'
+category: 기술
+tags:
+- 기술
+- SwitchBot
+- makes
+- better
+- fan
+quality_score: 100.0
+cover_image: https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwZGV2aWNlcyUyMGNvbXBhcmlzb24lMjByZXZpZXd8ZW58MXwwfHx8MTc4NTQwNzc5N3ww&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: SwitchBot 신형 팬 가격·성능, 5가지 객관적 비교 — Photo by Marvin Meyer on Unsplash
+inline_image: https://images.unsplash.com/photo-1622805199349-ada0338f7c0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwZGV2aWNlcyUyMGNvbXBhcmlzb24lMjByZXZpZXd8ZW58MXwwfHx8MTc4NTQwNzc5N3ww&ixlib=rb-4.1.0&q=80&w=1080
+inline_image_alt: SwitchBot 신형 팬 가격·성능, 5가지 객관적 비교 본문 보조 이미지 — Photo by Yash Mathur
+  on Unsplash
+---
+
+![SwitchBot 신형 팬 가격·성능, 5가지 객관적 비교 — Photo by Marvin Meyer on Unsplash](https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwZGV2aWNlcyUyMGNvbXBhcmlzb24lMjByZXZpZXd8ZW58MXwwfHx8MTc4NTQwNzc5N3ww&ixlib=rb-4.1.0&q=80&w=1080)
+
+## 최신 SwitchBot 팬, 무엇이 바뀌었나?
+
+2026-07-30 원문 공개일 기준, SwitchBot makes better fan 소식이 발표되었습니다.  
+이번 신제품은 Battery Circulator Fan 2 Pro로, 기존 대형 순환 팬 사용자들의 관심을 받고 있습니다.
+
+![SwitchBot 신형 팬 가격·성능, 5가지 객관적 비교 본문 보조 이미지 — Photo by Yash Mathur on Unsplash](https://images.unsplash.com/photo-1622805199349-ada0338f7c0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwZGV2aWNlcyUyMGNvbXBhcmlzb24lMjByZXZpZXd8ZW58MXwwfHx8MTc4NTQwNzc5N3ww&ixlib=rb-4.1.0&q=80&w=1080)
+
+## 바뀐 주요 사양과 가격
+
+- 공식 가격: $119.99  
+- 모델명: SwitchBot Battery Circulator Fan 2 Pro  
+- 배터리 지속 시간: 기존 모델보다 증가  
+- 풍속(throw distance, wind speed): 향상  
+- 높이 조절 스탠드: 미포함  
+- 추가 기능: 배터리 성능 개선, 더 강한 바람 제공
+
+## 주요 체크포인트
+
+| 항목                | 공식 안내 기준 내용                                            |
+|---------------------|-------------------------------------------------------------|
+| 출시일              | 2026-07-30 원문 공개일 기준                                 |
+| 가격                | $119.99                                                     |
+| 제품명              | SwitchBot Battery Circulator Fan 2 Pro                      |
+| 배터리 성능         | 기존보다 향상(구체 수치 미공개)                             |
+| 풍속·거리           | 기존보다 증가(throw distance, wind speed 개선)              |
+| 높이 조절 기능      | 스탠드 미포함                                                |
+| 공식 출처           | The Verge: SwitchBot makes a better fan                     |
+
+## SwitchBot makes better fan이 의미하는 변화
+
+SwitchBot은 기존 순환 팬과 비교해  
+- 이동성과 배터리 성능을 높이고  
+- 풍속과 바람 도달 거리를 강화했습니다.  
+- 높이 조절 기능은 제외했으나, 가격은 $119.99로 책정해 접근성을 고려했습니다.
+
+## 독자가 체크할 실질 정보
+
+1. 신제품의 공식 가격과 모델명 확인  
+2. 배터리 및 풍속 관련 개선점은 구체 수치 없이 공식 안내 기준  
+3. 높이 조절 스탠드가 빠진 점은 구매 결정에 영향  
+4. SwitchBot makes better fan 키워드는 신제품의 기술적 개선을 강조  
+5. 상세 사양 및 추가 기능은 출처(The Verge) 공식 안내로 확인 권장
+
+## 참고 출처
+
+- [SwitchBot makes a better fan - The Verge, 2026-07-30](https://www.theverge.com/tech/972986/switchbot-makes-a-better-fan)

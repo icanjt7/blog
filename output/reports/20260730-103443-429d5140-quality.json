@@ -1,0 +1,20 @@
+{
+  "run_id": "20260730-103443-429d5140",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "switchbot-makes-better-fan-ad0bf6dd",
+      "title": "SwitchBot 신형 팬 가격·성능, 5가지 객관적 비교",
+      "keyword": "SwitchBot makes better fan",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: SwitchBot 신형 팬 가격·성능, 5가지 객관적 비교. Keyword: SwitchBot makes better fan. Concrete visual subject: technology devices comparison review. Context: ## 최신 SwitchBot 팬, 무엇이 바뀌었나? 2026-07-30 원문 공개일 기준, SwitchBot makes better fan 소식이 발표되었습니다. 이번 신제품은 Battery Circulator Fan 2 Pro로, 기존 대형 순환 팬 사용자들의 관심을 받고 있습니다. ## 바뀐 주요 사양과 가격 - 공식 가격: $119.99 - 모델명: SwitchBot Battery Circulator Fan 2 Pro - 배터리 지속 시간: 기존 모델보다 증가 - 풍속(throw distance, wind speed): 향상 - 높이 조절 스탠드: 미포함 - 추가 기능: 배터리 성능 개선, 더 강한 바람 제공 ## 주요 체크포인트 | 항목 | 공식 안내 기준 내용 | |---------------------|-------------------------------------------------------------| | 출시일 | 2026-07-30 원문 공개일 기준 | | 가격 | $119.99 | | 제품명 | SwitchBot Battery Circulator Fan 2 Pro | | 배터리 성능 | 기존보다 향상(구체 수치 미공개) | | 풍속·거리 | 기존보다 증가(throw distance, wind speed 개선) | | 높이 조절 기능 | 스탠드 미포함 | | 공식 출처 | The Verge: SwitchBot. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwZGV2aWNlcyUyMGNvbXBhcmlzb24lMjByZXZpZXd8ZW58MXwwfHx8MTc4NTQwNzc5N3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
