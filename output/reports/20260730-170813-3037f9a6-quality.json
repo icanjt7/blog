@@ -1,0 +1,21 @@
+{
+  "run_id": "20260730-170813-3037f9a6",
+  "average_quality": 70.0,
+  "drafts": [
+    {
+      "slug": "google-chrome-c3ea185b",
+      "title": "구글 크롬 업데이트",
+      "keyword": "Google Chrome",
+      "category": "기술",
+      "quality_score": 70.0,
+      "review_notes": [
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 2차 검수 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 구글 크롬 업데이트. Keyword: Google Chrome. Concrete visual subject: search cloud technology. Context: 구글은 2026년 7월 30일, AI 시대에 버그 수정에 접근하는 방법을 설명하는 포스트를 통해 동적 패치(dynamic patching)에 투자하여 브라우저 재시작의 필요성을 없애고자 하는 계획을 발표했습니다. 이는 구글 크롬 사용자들에게 업데이트를 더 간단하게 적용할 수 있는 방법입니다. ### 구글 크롬의 현재 상태 구글 크롬은 현재 세계에서 가장 많이 사용되는 웹 브라우저 중 하나입니다. 그러나 업데이트를 적용할 때마다 브라우저를 재시작해야 하는 번거로움으로 인해 사용자들이 불편함을 느끼는 경우가 많습니다. ### 업데이트 유형 | 업데이트 유형 | 재시작 필요 여부 | | --- | --- | | 기존 업데이트 | 필요 | | 동적 패치 | 불필요 | 구글의 동적 패치 기술은 업데이트를 적용할 때 브라우저를 재시작하지 않아도 된다는 장점이 있습니다. 이는 사용자들이 업데이트를 더 간단하게 적용할 수 있도록 해주며, 브라우저의 안정성을 높일 수 있습니다. ### 동적 패치의 장점 동적 패치 기술은 사용자들이 업데이트를 더 간단하게 적용할 수 있는 방법을 제공합니다. 이는 브라우저의 안정성을 높이고, 사용자들의 편의성을 향상시킬 수 있습니다. 또한, 동적 패치 기술은 업데이트를 적용할 때 브라우저를 재시작하지 않아도 되므로, 사용자들이 업데이트를 더 빠르게 적용할 수 있습니다. ### 구글의 계획 구글은 동적 패치 기술을 통해 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1730818876657-8015070c5d34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxzZWFyY2glMjBjbG91ZCUyMHRlY2hub2xvZ3l8ZW58MXwwfHx8MTc4NTQzMTQ3OXww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
