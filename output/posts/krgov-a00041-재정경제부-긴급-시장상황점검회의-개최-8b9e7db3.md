@@ -1,5 +1,5 @@
 ---
-title: 긴급 시장상황점검회의 개최
+title: 재정경제부 주관 긴급 시장·외환 상황 점검 회의
 date: 2026-06-07T00:41
 category: 정책
 tags:
@@ -11,6 +11,7 @@ cover_image_alt: 긴급 시장상황점검회의 개최
 author: 재정경제부
 expanded_by_llm: true
 search_index_improved: true
+title_improved_by_llm: true
 ---
 
 ## 배경 및 목적  

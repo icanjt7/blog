@@ -1,15 +1,17 @@
 ---
-title: "훈민정음 · 자개 등 우리 국가유산, 현대적 디자인 입고 재탄생"
-date: "2026-07-16T00:16"
-category: "핫이슈"
+title: 국가유산을 현대 디자인으로 재해석한 K-헤리티지 협력사업
+date: 2026-07-16T00:16
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=88ba721103684c5a8771473a0e92c59b"
-cover_image_alt: "훈민정음 · 자개 등 우리 국가유산, 현대적 디자인 입고 재탄생 관련 보도자료 이미지"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=88ba721103684c5a8771473a0e92c59b
+cover_image_alt: 훈민정음 · 자개 등 우리 국가유산, 현대적 디자인 입고 재탄생 관련 보도자료 이미지
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## K-헤리티지 협력사업 발표  

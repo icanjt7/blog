@@ -1,15 +1,17 @@
 ---
-title: "(국영문 동시배포) 조선·청·응우옌 왕조의 역사 기록 방식, 어떤 점이 같고 다를까"
-date: "2026-07-21T00:15"
-category: "핫이슈"
+title: 동아시아 왕실의 실록 편찬과 위상에 대한 국제 학술대회 개최
+date: 2026-07-21T00:15
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=9af7778fcd6a475d9d99f336a83cb05f"
-cover_image_alt: "국문 홍보물"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=9af7778fcd6a475d9d99f336a83cb05f
+cover_image_alt: 국문 홍보물
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 행사 개요

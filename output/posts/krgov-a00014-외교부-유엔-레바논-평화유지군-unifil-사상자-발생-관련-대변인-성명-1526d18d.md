@@ -1,39 +1,41 @@
 ---
-title: "유엔 레바논 평화유지군(UNIFIL) 사상자 발생 관련 대변인 성명"
-date: "2026-06-05T01:31"
-category: "정책"
+title: 유엔 레바논 평화유지군(UNIFIL) 사상자 발생 관련 대변인 성명
+date: 2026-06-05T01:31
+category: 정책
 tags:
-  - "보도기사"
-  - "외교부"
+- 보도기사
+- 외교부
 quality_score: 90.0
-cover_image: "https://images.unsplash.com/photo-1560523159-fbe43c0b465f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxkaXBsb21hY3klMjBpbnRlcm5hdGlvbmFsJTIwc3VtbWl0fGVufDF8MHx8fDE3ODA4Mzk4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "유엔 레바논 평화유지군(UNIFIL) 사상자 발생 관련 대변인 성명 — Photo by Product School on Unsplash"
-author: "외교부"
+cover_image: https://images.unsplash.com/photo-1560523159-fbe43c0b465f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxkaXBsb21hY3klMjBpbnRlcm5hdGlvbmFsJTIwc3VtbWl0fGVufDF8MHx8fDE3ODA4Mzk4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 유엔 레바논 평화유지군(UNIFIL) 사상자 발생 관련 대변인 성명 — Photo by Product School on
+  Unsplash
+author: 외교부
+expanded_by_llm: true
+search_index_improved: true
 ---
 
-외교부가 2026-06-05 공개한 보도자료를 바탕으로 핵심 내용을 정리했습니다. 원문을 그대로 옮기기보다 일정, 대상, 의미를 빠르게 확인할 수 있도록 브리핑 형식으로 재구성했습니다.
+## 유엔 레바논 평화유지군(UNIFIL) 사상자 발생 관련 대변인 성명
 
-## 한눈에 보기
+외교부는 2026년 6월 5일, 유엔 레바논 평화유지군(UNIFIL) 사상자 발생 관련 대변인 성명을 발표했습니다. 이 성명은 최근 유엔 레바논 평화유지군(UNIFIL) 소속 세르비아군 사망을 포함하여 사상자 발생에 대해 깊은 우려를 표명하며, UNIFIL의 안전을 위협하는 모든 행위를 규탄하는 내용을 담고 있습니다.
 
-이번 보도자료의 핵심은 '유엔 레바논 평화유지군(UNIFIL) 사상자 발생 관련 대변인 성명'입니다. 발표 배경과 주요 일정, 현장에서 확인할 내용을 중심으로 정리했습니다.
+## 핵심 내용
 
-## 핵심 포인트
-
-- 5.(금) 보도시점 배포 즉시 배포 2026.
-- 5.(금) 유엔 레바논 평화유지군(UNIFIL) 사상자 발생 관련 대변인 성명 유엔 레바논 평화유지군(UNIFIL) 사상자 발생 관련 대변인 성명 1.
-- 최근 유엔 레바논 평화유지군(UNIFIL) 소속 세르비아군 사망을 포함하여 사상자 발생에 대해 깊은 우려를 표명하며, UNIFIL의 안전을 위협하는 모든 행위를 규탄한다.
+- 외교부는 2026년 6월 5일, 보도자료를 통해 유엔 레바논 평화유지군(UNIFIL) 사상자 발생 관련 대변인 성명을 발표했습니다.
+- 성명에서는 최근 유엔 레바논 평화유지군(UNIFIL) 소속 세르비아군 사망을 포함하여 사상자 발생에 대해 깊은 우려를 표명하며, UNIFIL의 안전을 위협하는 모든 행위를 규탄했습니다.
+- 우리 정부는 UNIFIL에 대한 공격은 국제인도법과 안보리 결의 1701호 위반임을 상기하며, 어떠한 경우에도 이러한 의무를 준수할 것을 촉구했습니다.
 
 ## 더 살펴볼 내용
 
-우리 정부는 UNIFIL에 대한 공격은 국제인도법과 안보리 결의 1701호 위반임을 상기하며, 어떠한 경우에도 이러한 의무를 준수할 것을 촉구한다.
-
-담당 부서국제기구·원자력국책임자과장김아영(02-2100-7234)유엔과담당자사무관홍성준(02-2100-7238) 담당 부서 국제기구·원자력국 책임자 과장 김아영 (02-2100-7234) 유엔과 담당자 사무관 홍성준 (02-2100-7238)
+- 외교부는 유엔 레바논 평화유지군(UNIFIL) 사상자 발생 관련 대변인 성명을 발표하며, 국제 사회의 평화와 안정을 위해 노력하고 있습니다.
+- 우리 정부는 국제인도법과 안보리 결의 1701호를 준수할 것을 촉구하며, 유엔 레바논 평화유지군(UNIFIL)의 안전을 위협하는 모든 행위를 규탄했습니다.
+- 외교부의 담당 부서인 국제기구·원자력국은 이 성명과 관련하여 필요한 조치를 취하고 있으며, 유엔과 담당자 사무관 홍성준은 관련 업무를 수행하고 있습니다.
 
 ## 확인 메모
 
 - 발표 기관: 외교부
 - 발표일: 2026-06-05
 - 자료 성격: 기관 보도자료 기반 브리핑
+- 관련 연락처: 담당 부서 국제기구·원자력국 책임자 과장 김아영 (02-2100-7234), 유엔과 담당자 사무관 홍성준 (02-2100-7238)
 
 ## 원문
 

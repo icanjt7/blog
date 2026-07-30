@@ -1,15 +1,17 @@
 ---
-title: "세계유산 신라 왕경, 유전자 분석으로 다시 읽다"
-date: "2026-07-08T00:18"
-category: "핫이슈"
+title: 신라 사회를 유전학적으로 재조명하는 국제학술대회 개최
+date: 2026-07-08T00:18
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=c55c5ac627e84d43adbfe3279dc96b45"
-cover_image_alt: "홍보물"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=c55c5ac627e84d43adbfe3279dc96b45
+cover_image_alt: 홍보물
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 국가유산청, 2026‑07‑08 발표 – “유전자 분석으로 본 신라 사회” 국제학술대회 안내  

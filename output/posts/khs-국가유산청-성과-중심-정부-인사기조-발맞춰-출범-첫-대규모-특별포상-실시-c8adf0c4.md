@@ -1,15 +1,17 @@
 ---
-title: "국가유산청, ‘성과 중심’ 정부 인사기조 발맞춰 출범 첫 대규모 특별포상 실시"
-date: "2026-07-15T00:25"
-category: "핫이슈"
+title: 국가유산청, 출범 첫 대규모 특별포상…총 14명 선정
+date: 2026-07-15T00:25
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=3e3d9c40027144069cd3d35b895c2c3b"
-cover_image_alt: "2026년 상반기 공무원 특별포상 시상식 – 수상자 단체사진(‘26.7.15, 정부대전청사)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=3e3d9c40027144069cd3d35b895c2c3b
+cover_image_alt: 2026년 상반기 공무원 특별포상 시상식 – 수상자 단체사진(‘26.7.15, 정부대전청사)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-07-15 공개한 자료를 바탕으로 국가유산청, ‘성과 중심’ 정부 인사기조 발맞춰 출범 첫 대규모 특별포상 실시의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
