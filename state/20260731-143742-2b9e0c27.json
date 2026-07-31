@@ -1,0 +1,71 @@
+{
+  "run_id": "20260731-143742-2b9e0c27",
+  "topics": [
+    {
+      "keyword": "It AI",
+      "title_hint": "It’s time to panic about AI safety",
+      "category": "기술",
+      "trend_score": 65.0,
+      "competition_score": 0.35,
+      "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+      "sources": [
+        {
+          "title": "It’s time to panic about AI safety",
+          "url": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
+          "published_at": "2026-07-31T14:03:04",
+          "summary": "When the phrase \"OpenAI hacked Hugging Face\" has more or less entered mainstream culture, you know we have an AI problem. This week, we learned more about exactly how OpenAI's agent broke out of a sandbox and autonomously traversed the web, including a bunch of other supposedly secure web services, all in the name of [&#8230;]",
+          "authority": 3
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "It AI",
+        "title_hint": "It’s time to panic about AI safety",
+        "category": "기술",
+        "trend_score": 65.0,
+        "competition_score": 0.35,
+        "rationale": "RSS 신규성과 공식/전문 매체 출처 기반",
+        "sources": [
+          {
+            "title": "It’s time to panic about AI safety",
+            "url": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
+            "published_at": "2026-07-31T14:03:04",
+            "summary": "When the phrase \"OpenAI hacked Hugging Face\" has more or less entered mainstream culture, you know we have an AI problem. This week, we learned more about exactly how OpenAI's agent broke out of a sandbox and autonomously traversed the web, including a bunch of other supposedly secure web services, all in the name of [&#8230;]",
+            "authority": 3
+          }
+        ]
+      },
+      "title": "미 DHS 700억 달러 증액, 어디에 쓰이나",
+      "slug": "it-ai-7f250eb8",
+      "excerpt": "미국 DHS 추가 예산을 이민 집행, 국경 관리, 감시 기술, 사이버안보 우선순위 관점에서 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\nIt’s time to panic about AI safety 소식입니다. When the phrase \"OpenAI hacked Hugging Face\" has more or less entered mainstream culture, you know we have an AI problem. This week, we learned more about exactly how OpenAI's agent broke out of a sandbox and autonomously traversed the web, including a bunch of other supposedly...\n\n## 먼저 알아둘 배경\n\nDHS는 미국 국토안보부로 ICE, CBP, TSA, CISA 같은 기관을 거느립니다. 예산은 이민 집행뿐 아니라 공항 보안, 사이버 방어, 국경 관리, 재난 대응까지 연결됩니다. 따라서 DHS 예산 증액은 단순 행정비보다 넓은 정책·기술 이슈입니다.\n\n## 왜 기술 이슈인가\n\n대규모 이민 집행 예산은 현장 인력만 늘리는 문제가 아닙니다. 데이터베이스, 생체정보, 카메라, 드론, 차량 번호판 인식, 사건 관리 시스템 같은 기술 인프라 확장과 연결될 수 있습니다. 동시에 CISA 같은 사이버안보 기능의 우선순위가 어떻게 달라지는지도 봐야 합니다.\n\n## 확인할 기준\n\n| 항목 | 구체 내용 |\n| --- | --- |\n| 직접 대상 | 미국 정책을 보는 독자, 보안·감시 기술 업계, 공공 예산 흐름을 확인하는 독자 |\n| 기술 맥락 | DHS 예산, ICE·CBP 집행 역량, 감시 기술, 데이터 시스템, 사이버안보 예산 |\n| 사용자 영향 | 미국 내 이민 집행 강도, 국경 관리 시스템, 개인정보·시민권 논쟁, 공공 보안 기술 투자에 영향 |\n| 다음 확인 | 세부 예산 항목, 의회 감독 장치, ICE·CBP 집행 결과, CISA 등 사이버안보 예산 변화 |\n\n## 독자가 이해해야 할 포인트\n\n1. 이 이슈는 해킹 사고가 아니라 미국 국토안보 예산과 집행 권한 확대 문제입니다.\n2. 이민 집행 예산은 감시·데이터 기술 확장과 함께 움직일 수 있어 기술 독자도 볼 필요가 있습니다.\n3. 정책 평가는 찬반 구호보다 예산 항목, 감독 장치, 실제 집행 결과를 나눠 봐야 합니다.\n4. 원문 요약만으로 부족하면 공식 보도자료, 후속 공지, 실제 적용 사례까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [It’s time to panic about AI safety](https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast)\n",
+      "tags": [
+        "기술",
+        "It",
+        "AI"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1NTA4Nzk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "미 DHS 700억 달러 증액, 어디에 쓰이나 — Photo by Numan Ali on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1NTA4Nzk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "미 DHS 700억 달러 증액, 어디에 쓰이나 본문 보조 이미지 — Photo by Steve A Johnson on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 미 DHS 700억 달러 증액, 어디에 쓰이나. Keyword: It AI. Concrete visual subject: artificial intelligence neural network. Context: ## 무슨 소식인가 It’s time to panic about AI safety 소식입니다. When the phrase \"OpenAI hacked Hugging Face\" has more or less entered mainstream culture, you know we have an AI problem. This week, we learned more about exactly how OpenAI's agent broke out of a sandbox and autonomously traversed the web, including a bunch of other supposedly... ## 먼저 알아둘 배경 DHS는 미국 국토안보부로 ICE, CBP, TSA, CISA 같은 기관을 거느립니다. 예산은 이민 집행뿐 아니라 공항 보안, 사이버 방어, 국경 관리, 재난 대응까지 연결됩니다. 따라서 DHS 예산 증액은 단순 행정비보다 넓은 정책·기술 이슈입니다. ## 왜 기술 이슈인가 대규모 이민 집행 예산은 현장 인력만 늘리는 문제가 아닙니다. 데이터베이스, 생체정보, 카메라, 드론, 차량 번호판 인식, 사건 관리 시스템 같은 기술 인프라 확장과 연결될 수 있습니다. 동시에 CISA 같은 사이버안보 기능의 우선순위가 어떻게 달라지는지도 봐야 합니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 미 DHS 700억 달러 증액, 어디에 쓰이나. Keyword: It AI. Concrete visual subject: artificial intelligence neural network. Article context: ## 무슨 소식인가 It’s time to panic about AI safety 소식입니다. When the phrase \"OpenAI hacked Hugging Face\" has more or less entered mainstream culture, you know we have an AI problem. This week, we learned more about exactly how OpenAI's agent broke out of a sandbox and autonomously traversed the web, including a bunch of other supposedly... ## 먼저 알아둘 배경 DHS는 미국 국토안보부로 ICE, CBP, TSA, CISA 같은 기관을 거느립니다. 예산은 이민 집행뿐 아니라 공항 보안, 사이버 방어, 국경 관리, 재난 대응까지 연결됩니다. 따라서 DHS 예산 증액은 단순 행정비보다 넓은 정책·기술 이슈입니다. ## 왜 기술 이슈인가 대규모 이민 집행 예산은 현장 인력만 늘리는 문제가 아닙니다. 데이터베이스, 생체정보, 카메라, 드론, 차량 번호판 인식, 사건 관리 시스템 같은 기술 인프라 확장과 연결될 수 있습니다. 동시에 CISA 같은 사이버안보 기능의 우선순위가 어떻게 달라지는지도 봐야 합니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | 미국 정책을 보는 독자, 보안·감시 기술 업계, 공공 예산 흐름을 확인하는 독자 | | 기술 맥락 | DHS 예산, ICE·CBP 집행 역량, 감시 기술, 데이터 시스템, 사이버안보 예산 | | 사용자 영향 | 미국 내 이민 집행 강도, 국경 관리 시스템, 개인정보·시민권 논쟁, 공공 보안 기술 투자에 영향 | | 다음 확인 | 세부 예산 항목, 의회. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-07-31T14:39:15.382162",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 89.0"
+    }
+  ]
+}
