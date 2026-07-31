@@ -1,0 +1,21 @@
+{
+  "run_id": "20260731-175423-3e8abdb5",
+  "average_quality": 55.0,
+  "drafts": [
+    {
+      "slug": "ban-robot-vacuums-won-a016cc87",
+      "title": "The ban on robot vacuums won't make them, 보안 리스크가 핵심",
+      "keyword": "ban robot vacuums won",
+      "category": "기술",
+      "quality_score": 55.0,
+      "review_notes": [
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: The ban on robot vacuums won't make them, 보안 리스크가 핵심. Keyword: ban robot vacuums won. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 The ban on robot vacuums won’t make them safer, only worse 소식입니다. No other gadget knows as much about your home as a robot vacuum. They map your space, learn your routines, and many now carry a camera and microphone into every room in your house. As AI gives them a better understanding of what they see, the privacy and security risks these... ## 먼저 알아둘 배경 The ban on robot vacuums won't make them 같은 디지털 서비스는 앱 화면 뒤에서 계정, 내부 운영 도구, 고객 데이터 저장소가 함께 움직입니다. 보안 사고가 나면 해커가 어떤 권한으로 어디까지 접근했는지가 핵심입니다. ## 왜 기술 이슈인가 웨어러블·헬스케어·생산성 서비스는 단순 연락처보다 민감한 생활 패턴과 건강 지표를 다룰 수 있습니다. 따라서 The ban on robot vacuums won't make them 이슈는 기능 업데이트가 아니라 데이터 최소화, 내부 권한 통제, 사고 통지 체계의 문제로 읽어야 합니다. ## 확인할 기준 | 항목 | 구. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782088385104-039b7c454b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg1NTIwNTg0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
