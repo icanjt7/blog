@@ -1,0 +1,20 @@
+{
+  "run_id": "20260731-035222-c95d6110",
+  "average_quality": 89.0,
+  "drafts": [
+    {
+      "slug": "tim-cook-icloud-plus-13e68f39",
+      "title": "Siri AI, 이번엔 정말 쓸 만해졌나",
+      "keyword": "Tim Cook iCloud Plus",
+      "category": "기술",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: Siri AI, 이번엔 정말 쓸 만해졌나. Keyword: Tim Cook iCloud Plus. Concrete visual subject: artificial intelligence neural network. Context: ## 무슨 소식인가 Tim Cook hints at iCloud Plus tier for AI power users 소식입니다. Apple may allow users to pay to increase their AI usage limits. During an earnings call on Thursday, Apple CEO Tim Cook said that he believes people will want to use Apple Intelligence and the upcoming Siri AI \"a lot,\" adding that \"we will have some kind of upgrade possibilities... ## 먼저 알아둘 배경 Siri는 오래된 Apple 음성 비서지만 생성형 AI 경쟁 이후 답답하다는 평가를 받아 왔습니다. Apple은 Apple Intelligence를 통해 Siri가 화면 내용을 이해하고, 앱 안 작업을 수행하고, 일정·메일·사진 같은 개인 맥락을 더 잘 활용하도록 만들겠다고 설명합니다. ## 왜 기술 이슈인가 AI 비서는 답변을 멋지게 쓰는 능력보다 실제 행동을 안정적으로 끝내는지가 중요합니다. 일정 추가, 알림 설정, 메시지 작성 같은 작업에서 실패가 적어야 사용자가 신뢰합니다. Apple은 온디바이스 처리와 Private Cloud Compute를 함께 내세워 편의성과 개인정보 보호를. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1NDA5ODg1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
