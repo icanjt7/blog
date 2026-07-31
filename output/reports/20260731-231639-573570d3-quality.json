@@ -1,0 +1,24 @@
+{
+  "run_id": "20260731-231639-573570d3",
+  "average_quality": 0.0,
+  "drafts": [
+    {
+      "slug": "switch-iphone-sharge-disk-e8692058",
+      "title": "With Switch 2, iPhone, and laptop tricks, the, 사용자가 볼 변화",
+      "keyword": "Switch iPhone Sharge Disk",
+      "category": "기술",
+      "quality_score": 0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '사용자가 볼 변화' 포함",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "영문 원문 제목이 한국어 기사 제목으로 재해석되지 않았습니다.",
+        "기술 글이 범용 기술 뉴스 템플릿에 머물러 기사별 차이가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 3.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: With Switch 2, iPhone, and laptop tricks, the, 사용자가 볼 변화. Keyword: Switch iPhone Sharge Disk. Concrete visual subject: technology innovation circuit abstract. Context: ## 무슨 소식인가 With Switch 2, iPhone, and laptop tricks, the Sharge Disk Pro 2 is finally a worthy EDC 소식입니다. Sharge, the company that makes delightful retro Mac-shaped chargers and see-inside batteries, is finally impressing me with a portable SSD. I couldn't recommend the Sharge Disk, Disk Plus, or even the Disk Pro, but I'd be happy to own the new Disk Pro 2 Ultra. This isn't just a... ## 먼저 알아둘 배경 With Switch 2, iPhone, and laptop tricks, the는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다. ## 왜 기술 이슈인가 With Switch 2, iPhone, and laptop tricks, the 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1782330300479-02550a1a3c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg1NTM5OTMxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
