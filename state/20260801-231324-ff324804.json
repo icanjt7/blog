@@ -1,0 +1,325 @@
+{
+  "run_id": "20260801-231324-ff324804",
+  "topics": [
+    {
+      "keyword": "08월 청년",
+      "title_hint": "08월 청년 핵심 정리",
+      "category": "생활",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "대한민국 정책브리핑",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "08월 AI",
+      "title_hint": "08월 AI 핵심 정리",
+      "category": "기술",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "08월 금리",
+      "title_hint": "08월 금리 핵심 정리",
+      "category": "정책",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "금융위원회 보도자료",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "08월 지방선거",
+      "title_hint": "08월 지방선거 핵심 정리",
+      "category": "정치",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "중앙선거관리위원회 선거통계시스템",
+          "url": "https://info.nec.go.kr/",
+          "published_at": null,
+          "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "08월 서울 맛집",
+      "title_hint": "08월 서울 맛집 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "08월 청년",
+        "title_hint": "08월 청년 핵심 정리",
+        "category": "생활",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "대한민국 정책브리핑",
+            "url": "https://www.korea.kr/",
+            "published_at": null,
+            "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "08월 청년, 신청 전 확인할 것",
+      "slug": "08월-청년-99f054b1",
+      "excerpt": "08월 청년를 실제로 이용하기 전 적용 대상, 기간, 비용 조건을 나눠 정리했습니다.",
+      "body_markdown": "## 무엇이 달라졌나\n\n대한민국 정책브리핑 소식은 청년과 직접 연결되는지 확인해야 하는 생활 정보입니다. 먼저 제목의 혜택 표현보다 실제로 누가, 언제, 어떤 절차로 움직여야 하는지 나눠 보는 편이 좋습니다.\n\n정부 정책과 생활 혜택 확인용 공식 포털\n\n## 이번 글에서 바로 볼 항목\n\n| 항목 | 이번 소식에서 확인할 내용 |\n| --- | --- |\n| 핵심 대상 | 청년 |\n| 확인할 수치 | 원문에 표시된 금액, 비율, 기간 |\n| 처리 방식 | 신청·방문·자동 적용 여부를 원문에서 확인 |\n| 담당 주체 | 운영 주체 |\n\n## 숫자와 대상은 이렇게 읽으면 쉽습니다\n\n이번 소식은 숫자가 제목에 크게 드러나지 않더라도 원문 안의 기준일과 대상 조건을 함께 봐야 합니다. 발표문에 나온 기준만 따로 보면 실제 조건을 놓칠 수 있습니다. 적용 시점처럼 함께 나온 기간·비율·단위가 무엇을 기준으로 하는지 같이 봐야 합니다.\n\n대상은 '청년'으로 읽히는 부분부터 확인하면 됩니다. 08월 청년처럼 생활과 연결되는 정보는 전체 국민 대상인지, 특정 세대·가구·업종·연령대 대상인지가 다르면 행동이 달라집니다.\n\n별도 신청인지, 안내를 확인만 하면 되는지, 기관이 자동으로 적용하는지는 원문 링크에서 한 번 더 봐야 합니다. 특히 운영 주체가 운영하거나 발표한 사안이라면 원문 페이지의 첨부자료, 신청 페이지, 문의처가 실제 행동 기준이 됩니다.\n\n## 실제 확인 순서\n\n1. 청년이 실제 대상에 포함되는지 원문 첫 문단에서 확인합니다.\n2. '원문 기준일' 표현이 금액인지, 비율인지, 시행 기간인지 단위를 나눠 적습니다.\n3. 처리 방식은 '공식 안내 확인' 기준으로 보고 필요한 준비물을 역으로 확인합니다.\n4. 마지막으로 운영 주체 원문 링크에서 첨부자료나 문의처가 있는지 확인합니다.\n\n## 마무리\n\n08월 청년은 '발표문에 나온 기준' 같은 눈에 띄는 표현보다 대상과 처리 방식이 더 중요합니다. 실제 신청이나 이용 전에는 운영 주체의 원문 안내에서 최신 기준을 확인하세요.\n\n## 참고한 곳\n\n- [대한민국 정책브리핑](https://www.korea.kr/)\n",
+      "tags": [
+        "생활",
+        "08월",
+        "청년"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1762330474636-637ce87b268b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx5b3VuZyUyMHByb2Zlc3Npb25hbHMlMjBjaXR5JTIwYXBwbGljYXRpb24lMjBmb3JtJTIwZG9jdW1lbnR8ZW58MXwwfHx8MTc4NTYyNjEzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "08월 청년, 신청 전 확인할 것 — Photo by Zulfugar Karimov on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1587116987806-a61cd3e0439e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8eW91bmclMjBwcm9mZXNzaW9uYWxzJTIwY2l0eSUyMGFwcGxpY2F0aW9uJTIwZm9ybSUyMGRvY3VtZW50fGVufDF8MHx8fDE3ODU2MjYxMzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "08월 청년, 신청 전 확인할 것 본문 보조 이미지 — Photo by iMattSmart on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 08월 청년, 신청 전 확인할 것. Keyword: 08월 청년. Concrete visual subject: young professionals city application form document. Context: ## 무엇이 달라졌나 대한민국 정책브리핑 소식은 청년과 직접 연결되는지 확인해야 하는 생활 정보입니다. 먼저 제목의 혜택 표현보다 실제로 누가, 언제, 어떤 절차로 움직여야 하는지 나눠 보는 편이 좋습니다. 정부 정책과 생활 혜택 확인용 공식 포털 ## 이번 글에서 바로 볼 항목 | 항목 | 이번 소식에서 확인할 내용 | | --- | --- | | 핵심 대상 | 청년 | | 확인할 수치 | 원문에 표시된 금액, 비율, 기간 | | 처리 방식 | 신청·방문·자동 적용 여부를 원문에서 확인 | | 담당 주체 | 운영 주체 | ## 숫자와 대상은 이렇게 읽으면 쉽습니다 이번 소식은 숫자가 제목에 크게 드러나지 않더라도 원문 안의 기준일과 대상 조건을 함께 봐야 합니다. 발표문에 나온 기준만 따로 보면 실제 조건을 놓칠 수 있습니다. 적용 시점처럼 함께 나온 기간·비율·단위가 무엇을 기준으로 하는지 같이 봐야 합니다. 대상은 '청년'으로 읽히는 부분부터 확인하면 됩니다. 08월 청년처럼 생활과 연결되는 정보는 전체 국민 대상인지, 특정 세대·가구·업종·연령대 대상인지가 다르면 행동이 달라집니다. 별도 신청인지, 안내를 확인만 하면 되는지, 기관이 자동으로 적용하는지는 원문 링크에서 한 번 더 봐야 합니다. 특히 운영 주체가 운영하거나 발표한 사안이라면 원문 페이지의 첨부자료, 신청 페이지, 문의처가 실제 행동 기준이 됩니다. ## 실제 확. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 08월 청년, 신청 전 확인할 것. Keyword: 08월 청년. Concrete visual subject: young professionals city application form document. Article context: ## 무엇이 달라졌나 대한민국 정책브리핑 소식은 청년과 직접 연결되는지 확인해야 하는 생활 정보입니다. 먼저 제목의 혜택 표현보다 실제로 누가, 언제, 어떤 절차로 움직여야 하는지 나눠 보는 편이 좋습니다. 정부 정책과 생활 혜택 확인용 공식 포털 ## 이번 글에서 바로 볼 항목 | 항목 | 이번 소식에서 확인할 내용 | | --- | --- | | 핵심 대상 | 청년 | | 확인할 수치 | 원문에 표시된 금액, 비율, 기간 | | 처리 방식 | 신청·방문·자동 적용 여부를 원문에서 확인 | | 담당 주체 | 운영 주체 | ## 숫자와 대상은 이렇게 읽으면 쉽습니다 이번 소식은 숫자가 제목에 크게 드러나지 않더라도 원문 안의 기준일과 대상 조건을 함께 봐야 합니다. 발표문에 나온 기준만 따로 보면 실제 조건을 놓칠 수 있습니다. 적용 시점처럼 함께 나온 기간·비율·단위가 무엇을 기준으로 하는지 같이 봐야 합니다. 대상은 '청년'으로 읽히는 부분부터 확인하면 됩니다. 08월 청년처럼 생활과 연결되는 정보는 전체 국민 대상인지, 특정 세대·가구·업종·연령대 대상인지가 다르면 행동이 달라집니다. 별도 신청인지, 안내를 확인만 하면 되는지, 기관이 자동으로 적용하는지는 원문 링크에서 한 번 더 봐야 합니다. 특히 운영 주체가 운영하거나 발표한 사안이라면 원문 페이지의 첨부자료, 신청 페이지, 문의처가 실제 행동 기준이 됩니다. ## 실제 확인 순서 1. 청년이 실제 대상에 포함되는지 원문 첫 문단에서 확인합니다. 2. '원문 기준일' 표현이 금액인지, 비율인지, 시행 기간인지 단위를 나눠 적습니다. 3. 처리 방식은 '공식 안내 확인' 기준으로 보고 필요한 준비물을 역으로 확인합니다. 4. 마지막으로 운영 주체 원문 링크에서 첨부자료나 문의처가 있는지 확인합니다. ## 마무리 08월 청년은 . The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-08-01T23:15:04.714604",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "08월 AI",
+        "title_hint": "08월 AI 핵심 정리",
+        "category": "기술",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "제조사 공식 홈페이지와 개발자 블로그",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "제품/기술 발표 원문 확인용",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화",
+      "slug": "08월-ai-ccce244d",
+      "excerpt": "제조사 공식 홈페이지와 개발자 블로그 소식을 제품 변화와 실제 사용자 영향 중심으로 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\n제조사 공식 홈페이지와 개발자 블로그 소식입니다. 제품/기술 발표 원문 확인용\n\n## 먼저 알아둘 배경\n\n제조사 공식 홈페이지와 개발자 블로그는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다.\n\n## 왜 기술 이슈인가\n\n제조사 공식 홈페이지와 개발자 블로그 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다.\n\n## 확인할 기준\n\n| 항목 | 구체 내용 |\n| --- | --- |\n| 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 |\n| 기술 맥락 | 제품 기능 변화, 서비스 안정성, 가격·구독 구조, 플랫폼 의존성 |\n| 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 |\n| 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 |\n\n## 독자가 이해해야 할 포인트\n\n1. 제조사 공식 홈페이지와 개발자 블로그의 핵심은 제목보다 어떤 기능·비용·운영 조건이 달라졌는지입니다.\n2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다.\n3. AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다.\n4. 원문 요약만으로 부족하면 공식 보도자료, 후속 공지, 실제 적용 사례까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [제조사 공식 홈페이지와 개발자 블로그](https://developers.googleblog.com/)\n",
+      "tags": [
+        "기술",
+        "08월",
+        "AI"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1NjI2MjA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화 — Photo by Growtika on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg1NjI2MjA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화 본문 보조 이미지 — Photo by Growtika on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화. Keyword: 08월 AI. Concrete visual subject: artificial intelligence neural network. Context: ## 무슨 소식인가 제조사 공식 홈페이지와 개발자 블로그 소식입니다. 제품/기술 발표 원문 확인용 ## 먼저 알아둘 배경 제조사 공식 홈페이지와 개발자 블로그는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다. ## 왜 기술 이슈인가 제조사 공식 홈페이지와 개발자 블로그 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 | | 기술 맥락 | 제품 기능 변화, 서비스 안정성, 가격·구독 구조, 플랫폼 의존성 | | 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 | | 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 | ## 독자가 이해해야 할 포인트 1. 제조사 공식 홈페이지와 개발자 블로그의 핵심은 제목보다 어떤 기능·비용·운영 조건이 달라졌는지입니다. 2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다. 3. AI·클라우드 기. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화. Keyword: 08월 AI. Concrete visual subject: artificial intelligence neural network. Article context: ## 무슨 소식인가 제조사 공식 홈페이지와 개발자 블로그 소식입니다. 제품/기술 발표 원문 확인용 ## 먼저 알아둘 배경 제조사 공식 홈페이지와 개발자 블로그는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다. ## 왜 기술 이슈인가 제조사 공식 홈페이지와 개발자 블로그 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 | | 기술 맥락 | 제품 기능 변화, 서비스 안정성, 가격·구독 구조, 플랫폼 의존성 | | 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 | | 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 | ## 독자가 이해해야 할 포인트 1. 제조사 공식 홈페이지와 개발자 블로그의 핵심은 제목보다 어떤 기능·비용·운영 조건이 달라졌는지입니다. 2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다. 3. AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다. 4. 원문 요약만으로 부족하면 공식 보도자료, 후속 공지, 실제 적용 사례까지 같이 확인하는 편이 안전합니다. ## 참고한 곳 - [제조사 공식 홈페이지와 개발자 블로그](https://developers.googleblog.com/). The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-08-01T23:16:12.884174",
+      "quality_score": 0.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '사용자가 볼 변화' 포함",
+        "핵심 키워드 노출이 적습니다.",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "기술 글이 범용 기술 뉴스 템플릿에 머물러 기사별 차이가 부족합니다.",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "08월 금리",
+        "title_hint": "08월 금리 핵심 정리",
+        "category": "정책",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "금융위원회 보도자료",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "08월 금리, 적용 범위가 핵심",
+      "slug": "08월-금리-36c6418d",
+      "excerpt": "08월 금리 이슈를 담당 기관, 적용 대상, 실제 집행 단계 중심으로 정리했습니다.",
+      "body_markdown": "## 이 이슈의 핵심\n\n금융위원회 보도자료는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 08월 금리를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다.\n\n금융 정책과 제도 변경 확인용 공식 포털\n\n## 정책 읽는 순서\n\n| 구분 | 봐야 할 질문 |\n| --- | --- |\n| 대상 | 개인, 가구, 사업자, 기관 중 누구에게 적용되는지 |\n| 시점 | 발표일과 시행일이 같은지, 유예 기간이 있는지 |\n| 영향 | 지원 규모, 부담 변화, 신청 또는 신고 절차 |\n| 예외 | 소득, 지역, 업종, 기존 이용자 여부에 따른 예외 |\n\n## 독자가 이해해야 할 배경\n\n정책 발표는 방향과 실제 집행 사이에 시간이 생길 수 있습니다. 보도자료의 문장만 보지 말고 시행령, 고시, 신청 페이지가 열렸는지까지 이어서 봐야 합니다.\n\n숫자가 있는 정책은 기준을 함께 봐야 합니다. 지원 금액, 비율, 한도, 적용 기간 중 어느 값인지 구분하지 않으면 실제 체감과 다르게 이해하기 쉽습니다.\n\n세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 08월 금리도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다.\n\n## 확인 포인트\n\n1. 담당 기관과 발표일을 확인합니다.\n2. 개인, 사업자, 기관 중 누구에게 영향을 주는지 나눕니다.\n3. 단속, 지원, 신고, 신청 중 어떤 행동으로 이어지는지 봅니다.\n4. 금액이나 비율이 있다면 한도와 기간을 함께 확인합니다.\n5. 원문 자료의 후속 링크나 담당 부서를 확인합니다.\n\n## 마무리\n\n08월 금리는 자극적인 제목보다 적용 범위가 중요합니다. 실제 행동이 필요한지는 원문에서 시행일, 대상, 담당 기관을 확인한 뒤 판단하는 것이 좋습니다.\n\n## 참고한 곳\n\n- [금융위원회 보도자료](https://www.fsc.go.kr/)\n",
+      "tags": [
+        "정책",
+        "08월",
+        "금리"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBjaGFydCUyMGRlc2t8ZW58MXwwfHx8MTc4NTU5Mjg3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "08월 금리, 적용 범위가 핵심 — Photo by Towfiqu barbhuiya on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1689732888407-310424e3a372?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxmaW5hbmNpYWwlMjBjaGFydCUyMGRlc2t8ZW58MXwwfHx8MTc4NTU5Mjg3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "08월 금리, 적용 범위가 핵심 본문 보조 이미지 — Photo by Austin Hervias on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 08월 금리, 적용 범위가 핵심. Keyword: 08월 금리. Concrete visual subject: financial chart desk. Context: ## 이 이슈의 핵심 금융위원회 보도자료는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 08월 금리를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 금융 정책과 제도 변경 확인용 공식 포털 ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 개인, 가구, 사업자, 기관 중 누구에게 적용되는지 | | 시점 | 발표일과 시행일이 같은지, 유예 기간이 있는지 | | 영향 | 지원 규모, 부담 변화, 신청 또는 신고 절차 | | 예외 | 소득, 지역, 업종, 기존 이용자 여부에 따른 예외 | ## 독자가 이해해야 할 배경 정책 발표는 방향과 실제 집행 사이에 시간이 생길 수 있습니다. 보도자료의 문장만 보지 말고 시행령, 고시, 신청 페이지가 열렸는지까지 이어서 봐야 합니다. 숫자가 있는 정책은 기준을 함께 봐야 합니다. 지원 금액, 비율, 한도, 적용 기간 중 어느 값인지 구분하지 않으면 실제 체감과 다르게 이해하기 쉽습니다. 세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 08월 금리도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다. ## 확인 포인트 1. 담당 기관과 발표일을 확인합니다. 2. 개인, 사업자, 기관 중 누. Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 08월 금리, 적용 범위가 핵심. Keyword: 08월 금리. Concrete visual subject: financial chart desk. Article context: ## 이 이슈의 핵심 금융위원회 보도자료는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 08월 금리를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 금융 정책과 제도 변경 확인용 공식 포털 ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 개인, 가구, 사업자, 기관 중 누구에게 적용되는지 | | 시점 | 발표일과 시행일이 같은지, 유예 기간이 있는지 | | 영향 | 지원 규모, 부담 변화, 신청 또는 신고 절차 | | 예외 | 소득, 지역, 업종, 기존 이용자 여부에 따른 예외 | ## 독자가 이해해야 할 배경 정책 발표는 방향과 실제 집행 사이에 시간이 생길 수 있습니다. 보도자료의 문장만 보지 말고 시행령, 고시, 신청 페이지가 열렸는지까지 이어서 봐야 합니다. 숫자가 있는 정책은 기준을 함께 봐야 합니다. 지원 금액, 비율, 한도, 적용 기간 중 어느 값인지 구분하지 않으면 실제 체감과 다르게 이해하기 쉽습니다. 세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 08월 금리도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다. ## 확인 포인트 1. 담당 기관과 발표일을 확인합니다. 2. 개인, 사업자, 기관 중 누구에게 영향을 주는지 나눕니다. 3. 단속, 지원, 신고, 신청 중 어떤 행동으로 이어지는지 봅니다. 4. 금액이나 비율이 있다면 한도와 기간을 함께 확인합니다. 5. 원문 자료의 후속 링크나 담당 부서를 확인합니다. ## 마무리 08월 금리는 자극적인 제목보다 적용 범위가 중요합니다. 실제 행동이 필요한지는 원문에서 시행일, 대상, 담당 기관을 확인한 뒤. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-08-01T23:17:06.085838",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "08월 지방선거",
+        "title_hint": "08월 지방선거 핵심 정리",
+        "category": "정치",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "중앙선거관리위원회 선거통계시스템",
+            "url": "https://info.nec.go.kr/",
+            "published_at": null,
+            "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "08월 지방선거, 발언보다 맥락 보기",
+      "slug": "08월-지방선거-6d754c81",
+      "excerpt": "08월 지방선거 이슈를 발언 배경, 이해관계자, 후속 일정 중심으로 정리했습니다.",
+      "body_markdown": "## 이 이슈의 핵심\n\n중앙선거관리위원회 선거통계시스템는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 08월 지방선거를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다.\n\n선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스\n\n## 정책 읽는 순서\n\n| 구분 | 봐야 할 질문 |\n| --- | --- |\n| 대상 | 정부, 국회, 정당, 부처, 외교 상대국 중 어느 주체가 관련되는지 |\n| 시점 | 발표일, 회담일, 법안 처리 일정, 후속 브리핑 여부 |\n| 영향 | 예산, 산업 영향, 외교 협력, 규제 변화 가능성 |\n| 예외 | 정치적 해석과 확정된 제도 변화를 구분할 필요 |\n\n## 독자가 이해해야 할 배경\n\n정치 이슈는 찬반 평가보다 확인 가능한 사실을 먼저 봐야 합니다. 공식 발표, 회의 결과, 법안 문안, 후속 브리핑이 있는지 확인하세요.\n\n외교나 산업 이슈가 섞인 정치 뉴스는 구체적인 협력 분야와 실제 실행 일정이 중요합니다. 수사적 표현과 실행 계획을 분리해서 보는 편이 안전합니다.\n\n세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 08월 지방선거도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다.\n\n## 확인 포인트\n\n1. 담당 기관과 발표일을 확인합니다.\n2. 개인, 사업자, 기관 중 누구에게 영향을 주는지 나눕니다.\n3. 단속, 지원, 신고, 신청 중 어떤 행동으로 이어지는지 봅니다.\n4. 금액이나 비율이 있다면 한도와 기간을 함께 확인합니다.\n5. 원문 자료의 후속 링크나 담당 부서를 확인합니다.\n\n## 마무리\n\n08월 지방선거는 자극적인 제목보다 적용 범위가 중요합니다. 실제 행동이 필요한지는 원문에서 시행일, 대상, 담당 기관을 확인한 뒤 판단하는 것이 좋습니다.\n\n## 참고한 곳\n\n- [중앙선거관리위원회 선거통계시스템](https://info.nec.go.kr/)\n",
+      "tags": [
+        "정치",
+        "08월",
+        "지방선거"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1540908390241-82158ab62887?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxlbGVjdGlvbiUyMGNpdmljJTIwZ292ZXJubWVudHxlbnwxfDB8fHwxNzg1NTkyOTE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "08월 지방선거, 발언보다 맥락 보기 — Photo by Element5 Digital on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1494172961521-33799ddd43a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxlbGVjdGlvbiUyMGNpdmljJTIwZ292ZXJubWVudHxlbnwxfDB8fHwxNzg1NTkyOTE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "08월 지방선거, 발언보다 맥락 보기 본문 보조 이미지 — Photo by Arnaud Jaegers on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 08월 지방선거, 발언보다 맥락 보기. Keyword: 08월 지방선거. Concrete visual subject: election civic government. Context: ## 이 이슈의 핵심 중앙선거관리위원회 선거통계시스템는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 08월 지방선거를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스 ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 정부, 국회, 정당, 부처, 외교 상대국 중 어느 주체가 관련되는지 | | 시점 | 발표일, 회담일, 법안 처리 일정, 후속 브리핑 여부 | | 영향 | 예산, 산업 영향, 외교 협력, 규제 변화 가능성 | | 예외 | 정치적 해석과 확정된 제도 변화를 구분할 필요 | ## 독자가 이해해야 할 배경 정치 이슈는 찬반 평가보다 확인 가능한 사실을 먼저 봐야 합니다. 공식 발표, 회의 결과, 법안 문안, 후속 브리핑이 있는지 확인하세요. 외교나 산업 이슈가 섞인 정치 뉴스는 구체적인 협력 분야와 실제 실행 일정이 중요합니다. 수사적 표현과 실행 계획을 분리해서 보는 편이 안전합니다. 세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 08월 지방선거도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다. ## 확인 포인트 1. 담당 기관과 발표일을 확인합니다. Visual mood: neutral civic election briefing, ballots, public buildings and policy documents without party logos. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 08월 지방선거, 발언보다 맥락 보기. Keyword: 08월 지방선거. Concrete visual subject: election civic government. Article context: ## 이 이슈의 핵심 중앙선거관리위원회 선거통계시스템는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 08월 지방선거를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스 ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 정부, 국회, 정당, 부처, 외교 상대국 중 어느 주체가 관련되는지 | | 시점 | 발표일, 회담일, 법안 처리 일정, 후속 브리핑 여부 | | 영향 | 예산, 산업 영향, 외교 협력, 규제 변화 가능성 | | 예외 | 정치적 해석과 확정된 제도 변화를 구분할 필요 | ## 독자가 이해해야 할 배경 정치 이슈는 찬반 평가보다 확인 가능한 사실을 먼저 봐야 합니다. 공식 발표, 회의 결과, 법안 문안, 후속 브리핑이 있는지 확인하세요. 외교나 산업 이슈가 섞인 정치 뉴스는 구체적인 협력 분야와 실제 실행 일정이 중요합니다. 수사적 표현과 실행 계획을 분리해서 보는 편이 안전합니다. 세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 08월 지방선거도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다. ## 확인 포인트 1. 담당 기관과 발표일을 확인합니다. 2. 개인, 사업자, 기관 중 누구에게 영향을 주는지 나눕니다. 3. 단속, 지원, 신고, 신청 중 어떤 행동으로 이어지는지 봅니다. 4. 금액이나 비율이 있다면 한도와 기간을 함께 확인합니다. 5. 원문 자료의 후속 링크나 담당 부서를 확인합니다. ## 마무리 08월 지방선거는 자극적인 제목보다 적용 범위가 중요합니다. 실제 행동이 필요한지는 원문에서. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-08-01T23:17:48.245742",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "08월 서울 맛집",
+        "title_hint": "08월 서울 맛집 핵심 정리",
+        "category": "핫이슈",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "08월 서울 맛집, 동선부터 잡는 법",
+      "slug": "08월-서울-맛집-9ce377cb",
+      "excerpt": "08월 서울 맛집를 동선, 시간대, 비용, 운영 조건 중심으로 확인하는 방법을 정리했습니다.",
+      "body_markdown": "## 동선부터 잡아야 하는 이유\n\n한국관광공사 VisitKorea를 볼 때는 이름난 장소를 많이 넣는 것보다 이동이 자연스러운지가 더 중요합니다. 08월 서울 맛집 같은 지역·여행 주제는 시간대, 휴무, 예약 여부에 따라 만족도가 크게 달라집니다.\n\n지역 여행 정보 확인용 공식 포털\n\n## 방문 전 비교표\n\n| 구분 | 확인할 점 |\n| --- | --- |\n| 동선 | 아이 동반, 가족 여행, 반려동물 동반, 혼잡 시간대 |\n| 시간 | 운영 시간, 휴무일, 계절별 혼잡 시간 |\n| 비용 | 입장료, 주차비, 예약금, 식사 예산 |\n| 변수 | 우천, 성수기, 대기, 예약 마감, 반려동물 제한 |\n\n## 추천 동선과 주변 포인트\n\n여행 글은 직접 방문 후기와 공개 데이터를 구분해서 봐야 합니다. 이 글은 방문 경험을 꾸미지 않고, 확인해야 할 조건을 중심으로 정리합니다.\n\n가족이나 아이와 함께 움직인다면 이동 거리를 짧게 잡는 것이 우선입니다. 유명 장소를 많이 넣는 것보다 쉬는 지점과 식사 시간을 동선 중간에 두는 편이 만족도가 높습니다.\n\n처음 가는 지역이라면 대표 관광지 하나를 기준으로 주변 포인트를 2~3곳만 묶는 편이 좋습니다. 아이나 가족, 반려동물과 함께라면 이동 거리보다 쉬는 지점, 화장실, 식사 대기 시간, 실내 대체 장소를 먼저 넣어야 일정이 무너지지 않습니다.\n\n## 체크리스트\n\n1. 첫 장소와 마지막 장소를 지도에서 먼저 찍습니다.\n2. 식사와 휴식 시간을 일정 중간에 넣습니다.\n3. 주차, 대중교통, 우천 대안을 함께 확인합니다.\n4. 예약이 필요한 곳은 방문 전날 다시 확인합니다.\n5. 후기는 참고하되 운영 시간은 공식 안내를 기준으로 봅니다.\n\n## 참고한 곳\n\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "핫이슈",
+        "08월",
+        "서울",
+        "맛집"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1710418456233-4bb6686b8857?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxrb3JlYW4lMjByZXN0YXVyYW50JTIwZm9vZCUyMHRhYmxlJTIwZGluaW5nJTIwc2VvdWwlMjBzdHJlZXQlMjBjaXR5fGVufDF8MHx8fDE3ODU2MjYzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "08월 서울 맛집, 동선부터 잡는 법 — Photo by Clark Gu on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1714782380594-d857b46265fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxrb3JlYW4lMjByZXN0YXVyYW50JTIwZm9vZCUyMHRhYmxlJTIwZGluaW5nJTIwc2VvdWwlMjBzdHJlZXQlMjBjaXR5fGVufDF8MHx8fDE3ODU2MjYzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "08월 서울 맛집, 동선부터 잡는 법 본문 보조 이미지 — Photo by Kelvin Zyteng on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 08월 서울 맛집, 동선부터 잡는 법. Keyword: 08월 서울 맛집. Concrete visual subject: korean restaurant food table dining seoul street city. Context: ## 동선부터 잡아야 하는 이유 한국관광공사 VisitKorea를 볼 때는 이름난 장소를 많이 넣는 것보다 이동이 자연스러운지가 더 중요합니다. 08월 서울 맛집 같은 지역·여행 주제는 시간대, 휴무, 예약 여부에 따라 만족도가 크게 달라집니다. 지역 여행 정보 확인용 공식 포털 ## 방문 전 비교표 | 구분 | 확인할 점 | | --- | --- | | 동선 | 아이 동반, 가족 여행, 반려동물 동반, 혼잡 시간대 | | 시간 | 운영 시간, 휴무일, 계절별 혼잡 시간 | | 비용 | 입장료, 주차비, 예약금, 식사 예산 | | 변수 | 우천, 성수기, 대기, 예약 마감, 반려동물 제한 | ## 추천 동선과 주변 포인트 여행 글은 직접 방문 후기와 공개 데이터를 구분해서 봐야 합니다. 이 글은 방문 경험을 꾸미지 않고, 확인해야 할 조건을 중심으로 정리합니다. 가족이나 아이와 함께 움직인다면 이동 거리를 짧게 잡는 것이 우선입니다. 유명 장소를 많이 넣는 것보다 쉬는 지점과 식사 시간을 동선 중간에 두는 편이 만족도가 높습니다. 처음 가는 지역이라면 대표 관광지 하나를 기준으로 주변 포인트를 2~3곳만 묶는 편이 좋습니다. 아이나 가족, 반려동물과 함께라면 이동 거리보다 쉬는 지점, 화장실, 식사 대기 시간, 실내 대체 장소를 먼저 넣어야 일정이 무너지지 않습니다. ## 체크리스트 1. 첫 장소와 마지막 장소를 지도에서 먼저 찍습니. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 08월 서울 맛집, 동선부터 잡는 법. Keyword: 08월 서울 맛집. Concrete visual subject: korean restaurant food table dining seoul street city. Article context: ## 동선부터 잡아야 하는 이유 한국관광공사 VisitKorea를 볼 때는 이름난 장소를 많이 넣는 것보다 이동이 자연스러운지가 더 중요합니다. 08월 서울 맛집 같은 지역·여행 주제는 시간대, 휴무, 예약 여부에 따라 만족도가 크게 달라집니다. 지역 여행 정보 확인용 공식 포털 ## 방문 전 비교표 | 구분 | 확인할 점 | | --- | --- | | 동선 | 아이 동반, 가족 여행, 반려동물 동반, 혼잡 시간대 | | 시간 | 운영 시간, 휴무일, 계절별 혼잡 시간 | | 비용 | 입장료, 주차비, 예약금, 식사 예산 | | 변수 | 우천, 성수기, 대기, 예약 마감, 반려동물 제한 | ## 추천 동선과 주변 포인트 여행 글은 직접 방문 후기와 공개 데이터를 구분해서 봐야 합니다. 이 글은 방문 경험을 꾸미지 않고, 확인해야 할 조건을 중심으로 정리합니다. 가족이나 아이와 함께 움직인다면 이동 거리를 짧게 잡는 것이 우선입니다. 유명 장소를 많이 넣는 것보다 쉬는 지점과 식사 시간을 동선 중간에 두는 편이 만족도가 높습니다. 처음 가는 지역이라면 대표 관광지 하나를 기준으로 주변 포인트를 2~3곳만 묶는 편이 좋습니다. 아이나 가족, 반려동물과 함께라면 이동 거리보다 쉬는 지점, 화장실, 식사 대기 시간, 실내 대체 장소를 먼저 넣어야 일정이 무너지지 않습니다. ## 체크리스트 1. 첫 장소와 마지막 장소를 지도에서 먼저 찍습니다. 2. 식사와 휴식 시간을 일정 중간에 넣습니다. 3. 주차, 대중교통, 우천 대안을 함께 확인합니다. 4. 예약이 필요한 곳은 방문 전날 다시 확인합니다. 5. 후기는 참고하되 운영 시간은 공식 안내를 기준으로 봅니다. ## 참고한 곳 - [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/). The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-08-01T23:18:30.333379",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: NotFoundError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 89.0"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 0.0"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 89.0"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 89.0"
+    },
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 89.0"
+    }
+  ]
+}
