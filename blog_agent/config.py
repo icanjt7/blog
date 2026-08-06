@@ -15,7 +15,7 @@ DEFAULT_GA_MEASUREMENT_ID = "G-X7YV03FBW3"
 
 
 class Settings(BaseModel):
-    # LLM providers — first non-empty key wins: motif → groq → gemini → openrouter → openai → github_token
+    # LLM providers — tried in BLOG_LLM_PROVIDER_ORDER order.
     openai_api_key: str | None = None
     openai_model: str = "gpt-4.1-mini"
     openai_image_model: str = "gpt-image-1-mini"
@@ -24,6 +24,9 @@ class Settings(BaseModel):
     motif_base_url: str = "https://chat.motiftech.io/openapi/v1"
     groq_api_key: str | None = None
     groq_model: str = "groq/compound"
+    nvidia_api_key: str | None = None
+    nvidia_model: str = "meta/llama-3.3-70b-instruct"
+    nvidia_base_url: str = "https://integrate.api.nvidia.com/v1"
     llm_timeout_seconds: float = 20
     github_token: str | None = None
     github_model: str = "openai/gpt-4.1"
@@ -64,7 +67,7 @@ class Settings(BaseModel):
     site_title: str = "브리핑웨이브"
     site_description: str = "브리핑웨이브에서 생활·기술·정책 소식을 쉽고 빠르게 확인하세요."
     custom_domain: str | None = None
-    publisher: str = "markdown"
+    publisher: str = "both"
     wordpress_url: str | None = None
     wordpress_username: str | None = None
     wordpress_app_password: str | None = None
@@ -92,6 +95,9 @@ def load_settings() -> Settings:
         motif_base_url=os.getenv("MOTIF_BASE_URL", "https://chat.motiftech.io/openapi/v1"),
         groq_api_key=os.getenv("GROQ_API_KEY") or None,
         groq_model=os.getenv("GROQ_MODEL", "groq/compound"),
+        nvidia_api_key=os.getenv("NVIDIA_API_KEY") or os.getenv("LLAMA") or None,
+        nvidia_model=os.getenv("NVIDIA_MODEL", "meta/llama-3.3-70b-instruct"),
+        nvidia_base_url=os.getenv("NVIDIA_BASE_URL", "https://integrate.api.nvidia.com/v1"),
         llm_timeout_seconds=float(os.getenv("LLM_TIMEOUT_SECONDS", "20")),
         github_token=os.getenv("GITHUB_TOKEN") or None,
         github_model=os.getenv("GITHUB_MODEL", "openai/gpt-4.1"),

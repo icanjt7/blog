@@ -3,7 +3,9 @@ from __future__ import annotations
 import importlib.util
 import sys
 import unittest
+from datetime import datetime
 from pathlib import Path
+from unittest.mock import patch
 
 
 SCRIPT_PATH = Path(__file__).resolve().parents[1] / "scripts" / "import_press_releases.py"
@@ -15,6 +17,33 @@ SPEC.loader.exec_module(MODULE)
 
 
 class PressReleaseImportTest(unittest.TestCase):
+    def test_import_source_filters_release_date_range(self) -> None:
+        releases = {
+            "old": MODULE.PressRelease("행정안전부", "이전 자료", "2026-07-26", "old", "본문"),
+            "in": MODULE.PressRelease("행정안전부", "지난주 자료", "2026-07-30", "in", "본문"),
+            "new": MODULE.PressRelease("행정안전부", "이후 자료", "2026-08-03", "new", "본문"),
+        }
+
+        with (
+            patch.object(MODULE, "existing_post_for_url", return_value=None),
+            patch.object(MODULE, "write_post", return_value=Path("output/posts/test.md")) as write,
+        ):
+            written, errors, _ = MODULE._import_source(
+                "mois",
+                lambda _limit: ["old", "in", "new"],
+                releases.__getitem__,
+                per_source=3,
+                writer=None,
+                seq_start=0,
+                overwrite=False,
+                start_date=datetime(2026, 7, 27),
+                end_date=datetime(2026, 8, 2),
+            )
+
+        self.assertEqual(written, [Path("output/posts/test.md")])
+        self.assertEqual(errors, [])
+        self.assertEqual(write.call_args.args[0].title, "지난주 자료")
+
     def test_with_particle_uses_final_consonant(self) -> None:
         self.assertEqual(MODULE.with_particle("행정안전부", "이", "가"), "행정안전부가")
         self.assertEqual(MODULE.with_particle("국가유산청", "이", "가"), "국가유산청이")

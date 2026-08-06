@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import os
 import unittest
+from unittest.mock import patch
 
 from blog_agent.config import Settings
 from blog_agent.models import Source, Topic
@@ -8,6 +10,15 @@ from blog_agent.writer import WriterAgent
 
 
 class WriterAgentTest(unittest.TestCase):
+    def test_nvidia_provider_uses_nim_endpoint_and_llama_model(self) -> None:
+        with patch.dict(os.environ, {"BLOG_LLM_PROVIDER_ORDER": "nvidia"}):
+            agent = WriterAgent(Settings(nvidia_api_key="test-key"))
+
+        self.assertEqual(len(agent._providers), 1)
+        client, model = agent._providers[0]
+        self.assertEqual(str(client.base_url), "https://integrate.api.nvidia.com/v1/")
+        self.assertEqual(model, "meta/llama-3.3-70b-instruct")
+
     def test_extract_accepts_markdown_bold_labels(self) -> None:
         response = """**TITLE:**
 Steam Machine, 여름 구매 전 5가지
