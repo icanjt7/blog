@@ -94,6 +94,17 @@ class WriterAgent:
                 ),
                 s.groq_model,
             )
+        if s.nvidia_api_key:
+            add(
+                "nvidia",
+                OpenAI(
+                    api_key=s.nvidia_api_key,
+                    base_url=s.nvidia_base_url,
+                    timeout=timeout,
+                    max_retries=0,
+                ),
+                s.nvidia_model,
+            )
         if s.gemini_api_key:
             add(
                 "gemini",
@@ -1163,7 +1174,7 @@ BODY:
     def _provider_order() -> list[str]:
         raw = os.getenv(
             "BLOG_LLM_PROVIDER_ORDER",
-            os.getenv("REFINE_LLM_PROVIDER_ORDER", "motif,groq,gemini,openrouter,openai,github"),
+            os.getenv("REFINE_LLM_PROVIDER_ORDER", "nvidia,motif,groq,gemini,openrouter,openai,github"),
         )
         return [item.strip().lower() for item in raw.split(",") if item.strip()]
 

@@ -6,7 +6,7 @@ on:
       per_source:
         description: "Posts per agency"
         required: true
-        default: "12"
+        default: "3"
       agencies:
         description: "Optional agency codes separated by spaces, e.g. mois msit"
         required: false
@@ -28,9 +28,8 @@ on:
           - "true"
         default: "false"
   schedule:
-    # Daily 09:00 and 18:00 KST. GitHub cron uses UTC.
-    - cron: "0 0 * * *"
-    - cron: "0 9 * * *"
+    # 주간 보충 수집. 일일 수집과 중복 실행하지 않도록 일요일에만 실행합니다.
+    - cron: "0 0 * * 0"
 
 concurrency:
   group: press-import
@@ -63,6 +62,8 @@ jobs:
           MOTIF_BASE_URL: ${{ vars.MOTIF_BASE_URL || 'https://chat.motiftech.io/openapi/v1' }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: ${{ vars.GROQ_MODEL || 'groq/compound' }}
+          NVIDIA_API_KEY: ${{ secrets.LLAMA }}
+          NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL || 'meta/llama-3.3-70b-instruct' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.1-8b-instruct:free' }}
@@ -70,7 +71,7 @@ jobs:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
-          INPUT_PER_SOURCE: ${{ inputs.per_source || '12' }}
+          INPUT_PER_SOURCE: ${{ inputs.per_source || '3' }}
           INPUT_AGENCIES: ${{ inputs.agencies || '' }}
           INPUT_NEW_ONLY: ${{ inputs.new_only || 'true' }}
           INPUT_OVERWRITE_EXISTING: ${{ inputs.overwrite_existing || 'false' }}

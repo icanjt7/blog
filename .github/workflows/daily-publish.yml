@@ -3,7 +3,7 @@ name: Daily blog publish
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 */2 * * *"  # 2시간마다, GitHub Actions 정각 혼잡을 피함
+    - cron: "17 0 * * *"  # 매일 09:17 KST
 
 concurrency:
   group: blog-publish
@@ -40,11 +40,10 @@ jobs:
           # LLMs — try the configured order until one produces a usable draft/editor pass.
           GITHUB_TOKEN: ${{ github.token }}
           GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'openai/gpt-4.1' }}
-          MOTIF_API: ${{ secrets.MOTIF_API }}
-          MOTIF_MODEL: ${{ vars.MOTIF_MODEL || 'motif-12.7b-reasoning' }}
-          MOTIF_BASE_URL: ${{ vars.MOTIF_BASE_URL || 'https://chat.motiftech.io/openapi/v1' }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: ${{ vars.GROQ_MODEL || 'groq/compound' }}
+          NVIDIA_API_KEY: ${{ secrets.LLAMA }}
+          NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL || 'meta/llama-3.3-70b-instruct' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
@@ -55,31 +54,11 @@ jobs:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
-          TOURAPI_GUIDE: ${{ secrets.TOURAPI_GUIDE }}
-          TOURAPI_RATE: ${{ secrets.TOURAPI_RATE }}
-          TOURAPI_MDC: ${{ secrets.TOURAPI_MDC }}
-          TOURAPI_PET: ${{ secrets.TOURAPI_PET }}
-          TOURAPI_TOUR: ${{ secrets.TOURAPI_TOUR }}
-          TOURAPI_TOUR_EN: ${{ secrets.TOURAPI_TOUR_EN }}
-          TOURAPI_BASE_YM: ${{ vars.TOURAPI_BASE_YM || '202503' }}
-          # Blog settings
-          BLOG_POST_COUNT: ${{ vars.BLOG_POST_COUNT || '6' }}
-          BLOG_CANDIDATE_MULTIPLIER: ${{ vars.BLOG_CANDIDATE_MULTIPLIER || '4' }}
-          BLOG_MAX_CANDIDATES: ${{ vars.BLOG_MAX_CANDIDATES || '24' }}
-          BLOG_MAX_PER_CATEGORY_PER_RUN: ${{ vars.BLOG_MAX_PER_CATEGORY_PER_RUN || '1' }}
-          BLOG_STRICT_CATEGORY_DIVERSITY: ${{ vars.BLOG_STRICT_CATEGORY_DIVERSITY || 'true' }}
-          ENABLE_SPORTS_SEEDS: ${{ vars.ENABLE_SPORTS_SEEDS || 'true' }}
-          BLOG_LLM_PROVIDER_ORDER: ${{ vars.BLOG_LLM_PROVIDER_ORDER || 'github,motif,groq,gemini,openrouter,openai' }}
-          BLOG_LLM_PROVIDER_LIMIT: ${{ vars.BLOG_LLM_PROVIDER_LIMIT || '5' }}
+          # LLM provider settings
+          BLOG_LLM_PROVIDER_ORDER: ${{ vars.BLOG_LLM_PROVIDER_ORDER || 'nvidia,github,groq,gemini,openrouter,openai' }}
+          REFINE_LLM_PROVIDER_ORDER: ${{ vars.REFINE_LLM_PROVIDER_ORDER || 'nvidia,github,groq,gemini,openrouter,openai' }}
           LLM_TIMEOUT_SECONDS: ${{ vars.LLM_TIMEOUT_SECONDS || '20' }}
-          ENABLE_LLM_EDIT: ${{ vars.ENABLE_LLM_EDIT || 'true' }}
-          ENABLE_IMAGE_GENERATION: ${{ vars.ENABLE_IMAGE_GENERATION || 'false' }}
-          PUBLISHER: ${{ vars.PUBLISHER || 'markdown' }}
-          BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
-          WORDPRESS_URL: ${{ secrets.WORDPRESS_URL }}
-          WORDPRESS_USERNAME: ${{ secrets.WORDPRESS_USERNAME }}
-          WORDPRESS_APP_PASSWORD: ${{ secrets.WORDPRESS_APP_PASSWORD }}
-        run: python -m blog_agent.cli run --min-quality 90
+        run: python scripts/import_press_releases.py --rewrite-titles --new-only --per-source 3
 
       - name: Re-fetch missing cover images
         env:

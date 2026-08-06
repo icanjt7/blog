@@ -591,6 +591,7 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
 - 마크다운 헤딩(##)으로 4~5개 섹션 구성
 - 표 1개 포함: 구분 / 확인할 내용
 - '~입니다', '~합니다' 정중체 사용
+- 일반적인 사회적, 기술적 추세와 연결하여 이 보도자료의 내용이 왜 지금 중요한지, 독자가 어떤 더 큰 그림을 이해해야 하는지 설명하는 '배경과 의미' 섹션을 포함하세요.
 - 제목을 반복하는 "이번 보도자료의 핵심은..." 문장 금지
 - "원문 보도자료에는 세부 정보가 있습니다"처럼 뭉뚱그린 문장 금지
 - 원문에서 확인한 장소, 참여 기관, 대상, 일정, 수치가 있으면 반드시 반영
@@ -1317,6 +1318,8 @@ def _import_source(
     overwrite: bool,
     new_only: bool = False,
     image_agent: ImageAgent | None = None,
+    start_date: datetime | None = None,
+    end_date: datetime | None = None,
 ) -> tuple[list[Path], list[str], int]:
     name = AGENCIES[prefix]
     print(f"\n[{name}] 링크 수집 중...")
@@ -1327,6 +1330,9 @@ def _import_source(
     list_limit = per_source
     if new_only and not overwrite:
         list_limit = max(per_source * 4, per_source + 40)
+    if start_date or end_date:
+        # Date-filtered backfills need to scan beyond the newest few entries.
+        list_limit = max(list_limit, per_source * 20, 60)
     try:
         links = list_fn(list_limit)  # type: ignore[call-arg]
     except Exception as e:
@@ -1340,13 +1346,23 @@ def _import_source(
                 print(f"  = 기존 글 건너뜀: {url[:70]}")
                 continue
             release = release_fn(url)  # type: ignore[call-arg]
+            try:
+                release_date = datetime.fromisoformat(release.date[:10])
+            except ValueError:
+                errors.append(f"{url}: 잘못된 발표일 {release.date!r}")
+                print(f"  ✗ 잘못된 발표일: {release.date!r}")
+                continue
+            if start_date and release_date < start_date:
+                continue
+            if end_date and release_date > end_date:
+                continue
             if writer:
                 _enrich_release(release, writer)
             path = write_post(release, prefix, seq, overwrite=overwrite, image_agent=image_agent)
             written.append(path)
             seq += 1
             print(f"  + {release.title[:50]}")
-            if new_only and len(written) >= target:
+            if len(written) >= target:
                 break
         except Exception as e:
             errors.append(f"{url}: {e}")
@@ -1356,8 +1372,8 @@ def _import_source(
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--per-source", type=int, default=12,
-                        help="기관별 수집 상한 (기본값: 12)")
+    parser.add_argument("--per-source", type=int, default=3,
+                        help="기관별 수집 상한 (기본값: 3)")
     parser.add_argument("--agencies", nargs="*", default=None,
                         help="특정 기관만 수집 (예: --agencies mois msit)")
     parser.add_argument("--rewrite-titles", action="store_true",
@@ -1368,7 +1384,14 @@ def main() -> None:
                         help="이미 작성한 URL은 건너뛰고 기관별 신규 글만 지정 수만큼 생성")
     parser.add_argument("--no-search-images", action="store_true",
                         help="원문 이미지가 없는 보도자료에 검색 기반 대표 이미지를 붙이지 않음")
+    parser.add_argument("--start-date", type=datetime.fromisoformat,
+                        help="이 날짜부터 발표된 자료만 수집 (YYYY-MM-DD)")
+    parser.add_argument("--end-date", type=datetime.fromisoformat,
+                        help="이 날짜까지 발표된 자료만 수집 (YYYY-MM-DD)")
     args = parser.parse_args()
+
+    if args.start_date and args.end_date and args.start_date > args.end_date:
+        parser.error("--start-date는 --end-date보다 늦을 수 없습니다")
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
     writer = _init_writer(args.rewrite_titles)
@@ -1391,6 +1414,8 @@ def main() -> None:
             args.overwrite_existing,
             args.new_only,
             image_agent,
+            args.start_date,
+            args.end_date,
         )
         all_written.extend(written)
         all_errors.extend(errors)

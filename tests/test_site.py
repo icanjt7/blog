@@ -4,6 +4,7 @@ import tempfile
 import unittest
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from unittest.mock import patch
 
 from blog_agent.site import StaticSiteBuilder
 
@@ -292,7 +293,10 @@ quality_score: 95.0
             sitemap = (root / "public" / "sitemap-static.xml").read_text(encoding="utf-8")
             self.assertIn("privacy.html", sitemap)
 
-    def test_adsense_review_mode_limits_low_value_auto_posts(self) -> None:
+    def test_all_posts_remain_public_when_legacy_review_mode_is_set(self) -> None:
+        env = patch.dict("os.environ", {"ADSENSE_REVIEW_MODE": "1", "ADSENSE_REVIEW_INDEX_LIMIT": "120"})
+        env.start()
+        self.addCleanup(env.stop)
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             posts_dir = root / "posts"
@@ -365,18 +369,19 @@ quality_score: 95.0
             useful_html = (root / "public" / "useful-guide.html").read_text(encoding="utf-8")
 
             self.assertIn("실제로 확인할 수 있는 생활 가이드", index_html)
-            self.assertNotIn("자동 보도자료 요약", index_html)
-            self.assertNotIn("짧은 안내", index_html)
+            self.assertIn("자동 보도자료 요약", index_html)
+            self.assertIn("짧은 안내", index_html)
             self.assertIn("useful-guide.html", priority_sitemap)
-            self.assertNotIn("krgov-auto-summary.html", priority_sitemap)
-            self.assertNotIn("thin-guide.html", priority_sitemap)
+            self.assertIn("krgov-auto-summary.html", priority_sitemap)
+            self.assertIn("thin-guide.html", priority_sitemap)
             self.assertIn("useful-guide", search_json)
-            self.assertNotIn("krgov-auto-summary", search_json)
+            self.assertIn("krgov-auto-summary", search_json)
+            self.assertIn("thin-guide", search_json)
             self.assertIn('<meta name="robots" content="index,follow', useful_html)
             self.assertIn('<meta name="google-adsense-account"', useful_html)
-            self.assertIn('<meta name="robots" content="noindex,follow">', auto_html)
-            self.assertNotIn("google-adsense-account", auto_html)
-            self.assertIn('<meta name="robots" content="noindex,follow">', thin_html)
+            self.assertIn('<meta name="robots" content="index,follow', auto_html)
+            self.assertIn("google-adsense-account", auto_html)
+            self.assertIn('<meta name="robots" content="index,follow', thin_html)
 
 if __name__ == "__main__":
     unittest.main()

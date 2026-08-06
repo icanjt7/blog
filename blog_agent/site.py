@@ -346,7 +346,9 @@ class StaticSiteBuilder:
         self.ga_measurement_id = ga_measurement_id
         self.adsense_publisher_id = adsense_publisher_id
         self.site_url = f"https://{self.custom_domain.strip()}" if self.custom_domain else "https://briefwave.kr"
-        self.adsense_review_mode = os.getenv("ADSENSE_REVIEW_MODE", "1").strip().lower() not in {"0", "false", "no", "off"}
+        # Every generated post is public. Do not let a deployment environment
+        # variable silently cap listings or remove posts from search/sitemaps.
+        self.adsense_review_mode = False
 
     def build(self) -> None:
       if self.public_dir.exists():
@@ -478,25 +480,10 @@ class StaticSiteBuilder:
         return host.endswith(".go.kr")
 
     def _is_review_index_post(self, post: Post) -> bool:
-        if not self.adsense_review_mode:
-            return True
-        if self._is_automated_feed_post(post):
-            return False
-        if post.word_count < self._env_int("ADSENSE_REVIEW_MIN_WORDS", 300):
-            return False
-        min_quality = self._env_int("ADSENSE_REVIEW_MIN_QUALITY", 85)
-        if post.quality_score and post.quality_score < min_quality:
-            return False
         return True
 
     def _review_index_posts(self, posts: list[Post]) -> list[Post]:
-        if not self.adsense_review_mode:
-            return posts
-        selected = [post for post in posts if self._is_review_index_post(post)]
-        if selected:
-            limit = max(30, self._env_int("ADSENSE_REVIEW_INDEX_LIMIT", 120))
-            return selected[:limit]
-        return [post for post in posts if not self._is_automated_feed_post(post)] or posts[:60]
+        return posts
 
     def _slugify(self, value: str) -> str:
         normalized = value.strip().lower()
