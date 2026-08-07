@@ -1,17 +1,19 @@
 ---
-title: "미국 백악관, Fact Sheet: President Do"
-date: "2026-08-03T00:03"
-category: "정책"
+title: 트럼프 대통령, 군인 배우자 위원회 설립 발표
+date: 2026-08-03T00:03
+category: 정책
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미국 백악관"
-  - "정책"
-  - "백악관"
-  - "팩트시트"
-author: "미국 백악관"
+- 보도기사
+- 미국정부
+- 미국 백악관
+- 정책
+- 백악관
+- 팩트시트
+author: 미국 백악관
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1521791055366-0d553872125f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODU4MDIwOTR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: https://images.unsplash.com/photo-1521791055366-0d553872125f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODU4MDIwOTR8MA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미국 백악관이(The White House) 2026-08-03 공개한 'Fact Sheet: President Donald J. Trump Establishes the President’s Military Spouse Commission' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
