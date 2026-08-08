@@ -1,17 +1,19 @@
 ---
-title: "미 노동통계국, Both payroll employment"
-date: "2026-07-02T00:03"
-category: "정책"
+title: 미 노동통계국, 6월 고용과 실업률 변동 거의 없어
+date: 2026-07-02T00:03
+category: 정책
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미 노동통계국"
-  - "정책"
-  - "노동통계국"
-  - "고용지표"
-author: "미 노동통계국"
+- 보도기사
+- 미국정부
+- 미 노동통계국
+- 정책
+- 노동통계국
+- 고용지표
+author: 미 노동통계국
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1468779036391-52341f60b55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODI5NTEzODR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: https://images.unsplash.com/photo-1468779036391-52341f60b55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODI5NTEzODR8MA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미 노동통계국이(U.S. Bureau of Labor Statistics) 2026-07-02 공개한 'Both payroll employment (+57,000) and unemployment rate (4.2%) change little in June' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.

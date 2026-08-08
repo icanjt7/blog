@@ -1,15 +1,17 @@
 ---
-title: "뉴질랜드 현지에서 재외동포 대상 K-무형유산 교육 첫발"
-date: "2026-07-13T00:15"
-category: "핫이슈"
+title: 오클랜드 한인회관서 재외동포 대상 K-무형유산 탈춤·한글서예·태평무 교육
+date: 2026-07-13T00:15
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=2f0e3dcd214047c98f95d83608574ff4"
-cover_image_alt: "뉴질랜드 재외동포 대상 무형유산 교육 – 탈춤 강의(‘26.7.6.~11, 오클랜드 한인회관)"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=2f0e3dcd214047c98f95d83608574ff4
+cover_image_alt: 뉴질랜드 재외동포 대상 무형유산 교육 – 탈춤 강의(‘26.7.6.~11, 오클랜드 한인회관)
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-07-13 공개한 자료를 바탕으로 뉴질랜드 현지에서 재외동포 대상 K-무형유산 교육 첫발의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

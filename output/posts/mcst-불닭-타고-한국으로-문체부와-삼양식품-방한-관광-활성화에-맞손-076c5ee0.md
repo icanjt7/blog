@@ -1,15 +1,17 @@
 ---
-title: "‘불닭’ 타고 한국으로... 문체부와 삼양식품, 방한 관광 활성화에 맞손"
-date: "2026-07-31T00:07"
-category: "핫이슈"
+title: 문화체육관광부·삼양식품, 불닭볶음면 활용 방한관광 MOU 체결
+date: 2026-07-31T00:07
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_00.png"
-cover_image_alt: "공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락"
-author: "문화체육관광부"
+cover_image: https://www.mcst.go.kr/site/images/sub/openright_00.png
+cover_image_alt: 공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 문화체육관광부가 2026-07-31 공개한 자료를 바탕으로 ‘불닭’ 타고 한국으로... 문체부와 삼양식품, 방한 관광 활성화에 맞손의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
