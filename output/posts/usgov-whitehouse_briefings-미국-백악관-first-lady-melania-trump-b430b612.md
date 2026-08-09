@@ -1,17 +1,19 @@
 ---
-title: "미국 백악관, First Lady Melania Trump"
-date: "2026-07-27T00:04"
-category: "정치"
+title: 백악관, 멜라니아 트럼프 퍼스트 레이디가 크리스마스 자원봉사·공연자 신청 시작
+date: 2026-07-27T00:04
+category: 정치
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미국 백악관"
-  - "정치"
-  - "백악관"
-  - "브리핑"
-author: "미국 백악관"
+- 보도기사
+- 미국정부
+- 미국 백악관
+- 정치
+- 백악관
+- 브리핑
+author: 미국 백악관
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1667964267136-c0256d70b7a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzg1NTU5MTA1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: https://images.unsplash.com/photo-1667964267136-c0256d70b7a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzg1NTU5MTA1fDA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미국 백악관이(The White House) 2026-07-27 공개한 'First Lady Melania Trump Announces Opening of Christmas Volunteer & Performer Applications' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.

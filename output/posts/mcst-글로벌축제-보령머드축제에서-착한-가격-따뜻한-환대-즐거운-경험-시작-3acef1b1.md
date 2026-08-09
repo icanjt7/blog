@@ -1,15 +1,17 @@
 ---
-title: "‘글로벌축제’ 보령머드축제에서 ‘착한 가격, 따뜻한 환대, 즐거운 경험’ 시작"
-date: "2026-07-31T00:08"
-category: "핫이슈"
+title: 2026 글로벌축제 체크인, 보령머드축제서 착한 가격·환대·체험 시작
+date: 2026-07-31T00:08
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_ai.png"
-cover_image_alt: "공공누리의 AI유형(인공지능 학습용) 공공저작물 자유이용허락"
-author: "문화체육관광부"
+cover_image: https://www.mcst.go.kr/site/images/sub/openright_ai.png
+cover_image_alt: 공공누리의 AI유형(인공지능 학습용) 공공저작물 자유이용허락
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 문화체육관광부, 2026‑07‑31 발표 “2026 글로벌축제 체크인” 캠페인 추진
