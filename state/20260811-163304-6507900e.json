@@ -1,0 +1,147 @@
+{
+  "run_id": "20260811-163304-6507900e",
+  "topics": [
+    {
+      "keyword": "08월 AI",
+      "title_hint": "08월 AI 핵심 정리",
+      "category": "기술",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "08월 대출",
+      "title_hint": "08월 대출 핵심 정리",
+      "category": "정책",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "금융위원회 보도자료",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "08월 지방선거",
+      "title_hint": "08월 지방선거 핵심 정리",
+      "category": "정치",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": []
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "08월 AI",
+        "title_hint": "08월 AI 핵심 정리",
+        "category": "기술",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "제조사 공식 홈페이지와 개발자 블로그",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "제품/기술 발표 원문 확인용",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화",
+      "slug": "08월-ai-36a03a63",
+      "excerpt": "제조사 공식 홈페이지와 개발자 블로그 소식을 제품 변화와 실제 사용자 영향 중심으로 정리했습니다.",
+      "body_markdown": "## 무슨 소식인가\n\n제조사 공식 홈페이지와 개발자 블로그 소식입니다. 제품/기술 발표 원문 확인용\n\n## 먼저 알아둘 배경\n\n제조사 공식 홈페이지와 개발자 블로그는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다.\n\n## 왜 기술 이슈인가\n\n제조사 공식 홈페이지와 개발자 블로그 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다.\n\n## 확인할 기준\n\n| 항목 | 구체 내용 |\n| --- | --- |\n| 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 |\n| 기술 맥락 | 제품 기능 변화, 서비스 안정성, 가격·구독 구조, 플랫폼 의존성 |\n| 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 |\n| 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 |\n\n## 독자가 이해해야 할 포인트\n\n1. 제조사 공식 홈페이지와 개발자 블로그의 핵심은 제목보다 어떤 기능·비용·운영 조건이 달라졌는지입니다.\n2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다.\n3. AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다.\n4. 원문 요약만으로 부족하면 공식 보도자료, 후속 공지, 실제 적용 사례까지 같이 확인하는 편이 안전합니다.\n\n## 참고한 곳\n\n- [제조사 공식 홈페이지와 개발자 블로그](https://developers.googleblog.com/)\n",
+      "tags": [
+        "기술",
+        "08월",
+        "AI"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1744640326166-433469d102f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg2NDY2MTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화 — Photo by Immo Wegmann on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg2NDY2MTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화 본문 보조 이미지 — Photo by Numan Ali on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화. Keyword: 08월 AI. Concrete visual subject: artificial intelligence neural network. Context: ## 무슨 소식인가 제조사 공식 홈페이지와 개발자 블로그 소식입니다. 제품/기술 발표 원문 확인용 ## 먼저 알아둘 배경 제조사 공식 홈페이지와 개발자 블로그는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다. ## 왜 기술 이슈인가 제조사 공식 홈페이지와 개발자 블로그 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 | | 기술 맥락 | 제품 기능 변화, 서비스 안정성, 가격·구독 구조, 플랫폼 의존성 | | 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 | | 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 | ## 독자가 이해해야 할 포인트 1. 제조사 공식 홈페이지와 개발자 블로그의 핵심은 제목보다 어떤 기능·비용·운영 조건이 달라졌는지입니다. 2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다. 3. AI·클라우드 기. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 제조사 공식 홈페이지와 개발자 블로그, 사용자가 볼 변화. Keyword: 08월 AI. Concrete visual subject: artificial intelligence neural network. Article context: ## 무슨 소식인가 제조사 공식 홈페이지와 개발자 블로그 소식입니다. 제품/기술 발표 원문 확인용 ## 먼저 알아둘 배경 제조사 공식 홈페이지와 개발자 블로그는 제품명, 회사명, 기능 변화가 함께 묶인 기술 뉴스입니다. 먼저 이 소식이 새 기능인지, 지원 종료인지, 가격 정책인지, 서비스 운영 변화인지 구분해야 실제 영향이 보입니다. ## 왜 기술 이슈인가 제조사 공식 홈페이지와 개발자 블로그 같은 기술 뉴스는 발표 문구보다 사용자가 오늘 바꿔야 할 설정, 구매 판단, 업무 흐름 변화로 이어질 때 의미가 있습니다. 기능 이름보다 적용 대상과 제한 조건을 보는 편이 정확합니다. ## 확인할 기준 | 항목 | 구체 내용 | | --- | --- | | 직접 대상 | 해당 제품 사용자, 도입을 검토하는 기업, 관련 개발·운영팀 | | 기술 맥락 | 제품 기능 변화, 서비스 안정성, 가격·구독 구조, 플랫폼 의존성 | | 사용자 영향 | 기능 사용 가능 여부, 요금 부담, 업무 흐름, 대체 서비스 선택에 영향 가능 | | 다음 확인 | 공식 발표, 릴리스 노트, 상태 페이지, 가격표, 후속 보도 | ## 독자가 이해해야 할 포인트 1. 제조사 공식 홈페이지와 개발자 블로그의 핵심은 제목보다 어떤 기능·비용·운영 조건이 달라졌는지입니다. 2. 신기능인지 장애인지 가격 변화인지에 따라 사용자가 봐야 할 기준이 달라집니다. 3. AI·클라우드 기능은 한 회사의 앱 안에서도 여러 외부 서비스에 의존할 수 있습니다. 4. 원문 요약만으로 부족하면 공식 보도자료, 후속 공지, 실제 적용 사례까지 같이 확인하는 편이 안전합니다. ## 참고한 곳 - [제조사 공식 홈페이지와 개발자 블로그](https://developers.googleblog.com/). The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-08-11T16:34:40.469732",
+      "quality_score": 0.0,
+      "review_notes": [
+        "제목이 클릭을 유도하지 않습니다: '사용자가 볼 변화' 포함",
+        "핵심 키워드 노출이 적습니다.",
+        "일반 fallback 템플릿 문장이 남아 있어 주제별 구체성이 부족합니다.",
+        "기술 글이 범용 기술 뉴스 템플릿에 머물러 기사별 차이가 부족합니다.",
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ]
+    },
+    {
+      "topic": {
+        "keyword": "08월 대출",
+        "title_hint": "08월 대출 핵심 정리",
+        "category": "정책",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "금융위원회 보도자료",
+            "url": "https://www.fsc.go.kr/",
+            "published_at": null,
+            "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "08월 대출, 적용 범위가 핵심",
+      "slug": "08월-대출-6a86fdd4",
+      "excerpt": "08월 대출 이슈를 담당 기관, 적용 대상, 실제 집행 단계 중심으로 정리했습니다.",
+      "body_markdown": "## 이 이슈의 핵심\n\n금융위원회 보도자료는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 08월 대출를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다.\n\n금융 정책과 제도 변경 확인용 공식 포털\n\n## 정책 읽는 순서\n\n| 구분 | 봐야 할 질문 |\n| --- | --- |\n| 대상 | 개인, 가구, 사업자, 기관 중 누구에게 적용되는지 |\n| 시점 | 발표일과 시행일이 같은지, 유예 기간이 있는지 |\n| 영향 | 지원 규모, 부담 변화, 신청 또는 신고 절차 |\n| 예외 | 소득, 지역, 업종, 기존 이용자 여부에 따른 예외 |\n\n## 독자가 이해해야 할 배경\n\n정책 발표는 방향과 실제 집행 사이에 시간이 생길 수 있습니다. 보도자료의 문장만 보지 말고 시행령, 고시, 신청 페이지가 열렸는지까지 이어서 봐야 합니다.\n\n숫자가 있는 정책은 기준을 함께 봐야 합니다. 지원 금액, 비율, 한도, 적용 기간 중 어느 값인지 구분하지 않으면 실제 체감과 다르게 이해하기 쉽습니다.\n\n세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 08월 대출도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다.\n\n## 확인 포인트\n\n1. 담당 기관과 발표일을 확인합니다.\n2. 개인, 사업자, 기관 중 누구에게 영향을 주는지 나눕니다.\n3. 단속, 지원, 신고, 신청 중 어떤 행동으로 이어지는지 봅니다.\n4. 금액이나 비율이 있다면 한도와 기간을 함께 확인합니다.\n5. 원문 자료의 후속 링크나 담당 부서를 확인합니다.\n\n## 마무리\n\n08월 대출는 자극적인 제목보다 적용 범위가 중요합니다. 실제 행동이 필요한지는 원문에서 시행일, 대상, 담당 기관을 확인한 뒤 판단하는 것이 좋습니다.\n\n## 참고한 곳\n\n- [금융위원회 보도자료](https://www.fsc.go.kr/)\n",
+      "tags": [
+        "정책",
+        "08월",
+        "대출"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1554224155-3a58922a22c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxsb2FuJTIwZG9jdW1lbnRzJTIwZmluYW5jZXxlbnwxfDB8fHwxNzg2NDY2MTY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "08월 대출, 적용 범위가 핵심 — Photo by Kelly Sikkema on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxsb2FuJTIwZG9jdW1lbnRzJTIwZmluYW5jZXxlbnwxfDB8fHwxNzg2NDY2MTY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "08월 대출, 적용 범위가 핵심 본문 보조 이미지 — Photo by Kelly Sikkema on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 08월 대출, 적용 범위가 핵심. Keyword: 08월 대출. Concrete visual subject: loan documents finance. Context: ## 이 이슈의 핵심 금융위원회 보도자료는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 08월 대출를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 금융 정책과 제도 변경 확인용 공식 포털 ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 개인, 가구, 사업자, 기관 중 누구에게 적용되는지 | | 시점 | 발표일과 시행일이 같은지, 유예 기간이 있는지 | | 영향 | 지원 규모, 부담 변화, 신청 또는 신고 절차 | | 예외 | 소득, 지역, 업종, 기존 이용자 여부에 따른 예외 | ## 독자가 이해해야 할 배경 정책 발표는 방향과 실제 집행 사이에 시간이 생길 수 있습니다. 보도자료의 문장만 보지 말고 시행령, 고시, 신청 페이지가 열렸는지까지 이어서 봐야 합니다. 숫자가 있는 정책은 기준을 함께 봐야 합니다. 지원 금액, 비율, 한도, 적용 기간 중 어느 값인지 구분하지 않으면 실제 체감과 다르게 이해하기 쉽습니다. 세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 08월 대출도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다. ## 확인 포인트 1. 담당 기관과 발표일을 확인합니다. 2. 개인, 사업자, 기관 중 누. Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 08월 대출, 적용 범위가 핵심. Keyword: 08월 대출. Concrete visual subject: loan documents finance. Article context: ## 이 이슈의 핵심 금융위원회 보도자료는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. 08월 대출를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다. 금융 정책과 제도 변경 확인용 공식 포털 ## 정책 읽는 순서 | 구분 | 봐야 할 질문 | | --- | --- | | 대상 | 개인, 가구, 사업자, 기관 중 누구에게 적용되는지 | | 시점 | 발표일과 시행일이 같은지, 유예 기간이 있는지 | | 영향 | 지원 규모, 부담 변화, 신청 또는 신고 절차 | | 예외 | 소득, 지역, 업종, 기존 이용자 여부에 따른 예외 | ## 독자가 이해해야 할 배경 정책 발표는 방향과 실제 집행 사이에 시간이 생길 수 있습니다. 보도자료의 문장만 보지 말고 시행령, 고시, 신청 페이지가 열렸는지까지 이어서 봐야 합니다. 숫자가 있는 정책은 기준을 함께 봐야 합니다. 지원 금액, 비율, 한도, 적용 기간 중 어느 값인지 구분하지 않으면 실제 체감과 다르게 이해하기 쉽습니다. 세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. 08월 대출도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다. ## 확인 포인트 1. 담당 기관과 발표일을 확인합니다. 2. 개인, 사업자, 기관 중 누구에게 영향을 주는지 나눕니다. 3. 단속, 지원, 신고, 신청 중 어떤 행동으로 이어지는지 봅니다. 4. 금액이나 비율이 있다면 한도와 기간을 함께 확인합니다. 5. 원문 자료의 후속 링크나 담당 부서를 확인합니다. ## 마무리 08월 대출는 자극적인 제목보다 적용 범위가 중요합니다. 실제 행동이 필요한지는 원문에서 시행일, 대상, 담당 기관을 확인한 뒤. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-08-11T16:35:43.145971",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": false,
+      "destination": "markdown",
+      "url": null,
+      "message": "quality score too low: 0.0"
+    },
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/08월-대출-6a86fdd4.md",
+      "message": "draft saved"
+    }
+  ]
+}
