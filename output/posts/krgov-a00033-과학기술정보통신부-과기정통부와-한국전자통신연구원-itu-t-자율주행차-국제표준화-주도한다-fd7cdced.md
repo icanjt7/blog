@@ -1,15 +1,17 @@
 ---
-title: "과기정통부와 한국전자통신연구원, ITU-T 자율주행차 국제표준화 주도한다."
-date: "2026-08-06T00:02"
-category: "기술"
+title: 과기정통부·ETRI, ITU‑T 자율주행 SDV 국제표준 선도
+date: 2026-08-06T00:02
+category: 기술
 tags:
-  - "보도기사"
-  - "과학기술정보통신부"
-  - "기술"
+- 보도기사
+- 과학기술정보통신부
+- 기술
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1737982560475-356e95e2c920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGNhciUyMHNlbnNvciUyMG5ldHdvcmslMjBjb21tdW5pY2F0aW9uJTIwaW5mcmFzdHJ1Y3R1cmV8ZW58MXwwfHx8MTc4NjIzMTY1NXww&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "과기정통부와 한국전자통신연구원, ITU-T 자율주행차 국제표준화 주도한다."
-author: "과학기술정보통신부"
+cover_image: https://images.unsplash.com/photo-1737982560475-356e95e2c920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw1fHxhdXRvbm9tb3VzJTIwdmVoaWNsZSUyMGNhciUyMHNlbnNvciUyMG5ldHdvcmslMjBjb21tdW5pY2F0aW9uJTIwaW5mcmFzdHJ1Y3R1cmV8ZW58MXwwfHx8MTc4NjIzMTY1NXww&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 과기정통부와 한국전자통신연구원, ITU-T 자율주행차 국제표준화 주도한다.
+author: 과학기술정보통신부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 과학기술정보통신부가 2026-08-06 공개한 자료를 바탕으로 과기정통부와 한국전자통신연구원, ITU-T 자율주행차 국제표준화 주도한다.의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
