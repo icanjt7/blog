@@ -1,17 +1,19 @@
 ---
-title: "미 법무부, Justice Department Sues"
-date: "2026-06-26T00:01"
-category: "정책"
+title: 미 법무부, SNAP 데이터 미제공한 주 정부 상대로 소송 제기
+date: 2026-06-26T00:01
+category: 정책
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미 법무부"
-  - "정책"
-  - "법무부"
-  - "사법"
-author: "미 법무부"
+- 보도기사
+- 미국정부
+- 미 법무부
+- 정책
+- 법무부
+- 사법
+author: 미 법무부
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODI1MzQwNzl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3ODI1MzQwNzl8MA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미 법무부가(U.S. Department of Justice) 2026-06-26 공개한 'Justice Department Sues States for Failing to Provide SNAP Data to the U.S. Department of Agriculture' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
