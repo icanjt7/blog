@@ -1,15 +1,17 @@
 ---
-title: "문체부와 부산시, 문화·체육·관광 정책 협력 확대한다"
-date: "2026-08-10T00:08"
-category: "핫이슈"
+title: 문체부·부산시, ‘꿈의 예술단’·‘문화요일’·돔구장 등 문화·체육·관광 협력 확대
+date: 2026-08-10T00:08
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_ai.png"
-cover_image_alt: "공공누리의 AI유형(인공지능 학습용) 공공저작물 자유이용허락"
-author: "문화체육관광부"
+cover_image: https://www.mcst.go.kr/site/images/sub/openright_ai.png
+cover_image_alt: 공공누리의 AI유형(인공지능 학습용) 공공저작물 자유이용허락
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 발표 개요
