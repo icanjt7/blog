@@ -1,15 +1,17 @@
 ---
-title: "과기정통부 인사(과장급)"
-date: "2026-08-14T00:02"
-category: "기술"
+title: 과학기술정보통신부 과장급 인사, 한소희 다자협력담당관 전보
+date: 2026-08-14T00:02
+category: 기술
 tags:
-  - "보도기사"
-  - "과학기술정보통신부"
-  - "기술"
+- 보도기사
+- 과학기술정보통신부
+- 기술
 quality_score: 84.0
-cover_image: "https://images.unsplash.com/photo-1782330298761-3e41cd894295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg2OTIyMzcwfDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "과기정통부 인사(과장급)"
-author: "과학기술정보통신부"
+cover_image: https://images.unsplash.com/photo-1782330298761-3e41cd894295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg2OTIyMzcwfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 과기정통부 인사(과장급)
+author: 과학기술정보통신부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 과학기술정보통신부가 2026-08-14 공개한 자료를 바탕으로 과기정통부 인사(과장급)의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

@@ -1,15 +1,17 @@
 ---
-title: "지역신문의 지속 가능한 발전 기반 강화한다"
-date: "2026-07-31T00:09"
-category: "기술"
+title: 문체부, 2026~2028년 지역신문 3개년 지원계획 발표 (예산 118억)
+date: 2026-07-31T00:09
+category: 기술
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "기술"
+- 보도기사
+- 문화체육관광부
+- 기술
 quality_score: 96.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_00.png"
-cover_image_alt: "공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락"
-author: "문화체육관광부"
+cover_image: https://www.mcst.go.kr/site/images/sub/openright_00.png
+cover_image_alt: 공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 발표 개요  
