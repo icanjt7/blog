@@ -1,15 +1,17 @@
 ---
-title: "‘2026 한복상점’, 광장시장의 한복 제작 문화 조망부터 기업 상담, 판매, 체험까지"
-date: "2026-08-11T00:06"
-category: "핫이슈"
+title: 2026 한복상점, 광장시장의 120년 전통과 B2B 상담·판매·체험
+date: 2026-08-11T00:06
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_ai.png"
-cover_image_alt: "공공누리의 AI유형(인공지능 학습용) 공공저작물 자유이용허락"
-author: "문화체육관광부"
+cover_image: https://www.mcst.go.kr/site/images/sub/openright_ai.png
+cover_image_alt: 공공누리의 AI유형(인공지능 학습용) 공공저작물 자유이용허락
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 문화체육관광부가 2026-08-11 공개한 자료를 바탕으로 ‘2026 한복상점’, 광장시장의 한복 제작 문화 조망부터 기업 상담, 판매, 체험까지의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

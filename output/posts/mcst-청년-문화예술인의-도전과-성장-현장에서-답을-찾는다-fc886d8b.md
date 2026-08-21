@@ -1,15 +1,17 @@
 ---
-title: "청년 문화예술인의 도전과 성장, 현장에서 답을 찾는다"
-date: "2026-08-12T00:08"
-category: "핫이슈"
+title: 청년 문화예술인 현장 목소리 청취·맞춤 지원 논의
+date: 2026-08-12T00:08
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_00.png"
-cover_image_alt: "공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락"
-author: "문화체육관광부"
+cover_image: https://www.mcst.go.kr/site/images/sub/openright_00.png
+cover_image_alt: 공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 행사 개요  
