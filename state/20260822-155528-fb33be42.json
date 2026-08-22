@@ -1,0 +1,112 @@
+{
+  "run_id": "20260822-155528-fb33be42",
+  "topics": [
+    {
+      "keyword": "08월 강릉 여행",
+      "title_hint": "08월 강릉 여행 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드 / TourAPI 연관 관광지 10건 활용",
+      "sources": [
+        {
+          "title": "한국관광공사 TourAPI 관광지별 연관 관광지 정보",
+          "url": "https://www.data.go.kr/data/15128560/openapi.do",
+          "published_at": null,
+          "summary": "TourAPI 관광지별 연관 관광지 정보에서 가져온 공개 데이터입니다. 글에서는 연관 관광지, 주변에서 함께 묶기 좋은 지점, 카테고리 흐름을 우선 반영하세요. 조회 키워드: 08월 강릉 여행. 결과: 기준 관광지 BTS버스정류장 · 연관 관광지 아들바위공원 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 1 / 기준 관광지 BTS버스정류장 · 연관 관광지 도깨비촬영지/(영진해변) · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 2 / 기준 관광지 BTS버스정류장 · 연관 관광지 주문진항 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 3 / 기준 관광지 BTS버스정류장 · 연관 관광지 주문진수산시장 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 4 / 기준 관광지 BTS버스정류장 · 연관 관광지 강릉커피거리 · 분류 음식 · 지역 강원특별자치도 · 연관 순위 5 / 기준 관광지 BTS버스정류장 · 연관 관광지 휴휴암 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 6 / 기준 관광지 BTS버스정류장 · 연관 관광지 철뚝소머리집 · 분류 음식 · 지역 강원특별자치도 · 연관 순위 7 / 기준 관광지 BTS버스정류장 · 연관 관광지 남애항전망대 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 8",
+          "authority": 5
+        },
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "08월 AI",
+      "title_hint": "08월 AI 핵심 정리",
+      "category": "기술",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": []
+    },
+    {
+      "keyword": "08월 전세대출 갈아타기",
+      "title_hint": "전세대출 갈아타기 전 중도상환수수료부터 계산하기",
+      "category": "정책",
+      "trend_score": 82.0,
+      "competition_score": 0.35,
+      "rationale": "예약 발행 안정성을 위한 카테고리별 검색형 보강 주제",
+      "sources": [
+        {
+          "title": "전세대출 갈아타기 전 중도상환수수료부터 계산하기",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금리 차이, 중도상환수수료, 보증기관, 임대차 기간, DSR 영향을 비교한다.",
+          "authority": 4
+        }
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "08월 강릉 여행",
+        "title_hint": "08월 강릉 여행 핵심 정리",
+        "category": "핫이슈",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드 / TourAPI 연관 관광지 10건 활용",
+        "sources": [
+          {
+            "title": "한국관광공사 TourAPI 관광지별 연관 관광지 정보",
+            "url": "https://www.data.go.kr/data/15128560/openapi.do",
+            "published_at": null,
+            "summary": "TourAPI 관광지별 연관 관광지 정보에서 가져온 공개 데이터입니다. 글에서는 연관 관광지, 주변에서 함께 묶기 좋은 지점, 카테고리 흐름을 우선 반영하세요. 조회 키워드: 08월 강릉 여행. 결과: 기준 관광지 BTS버스정류장 · 연관 관광지 아들바위공원 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 1 / 기준 관광지 BTS버스정류장 · 연관 관광지 도깨비촬영지/(영진해변) · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 2 / 기준 관광지 BTS버스정류장 · 연관 관광지 주문진항 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 3 / 기준 관광지 BTS버스정류장 · 연관 관광지 주문진수산시장 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 4 / 기준 관광지 BTS버스정류장 · 연관 관광지 강릉커피거리 · 분류 음식 · 지역 강원특별자치도 · 연관 순위 5 / 기준 관광지 BTS버스정류장 · 연관 관광지 휴휴암 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 6 / 기준 관광지 BTS버스정류장 · 연관 관광지 철뚝소머리집 · 분류 음식 · 지역 강원특별자치도 · 연관 순위 7 / 기준 관광지 BTS버스정류장 · 연관 관광지 남애항전망대 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 8",
+            "authority": 5
+          },
+          {
+            "title": "한국관광공사 VisitKorea",
+            "url": "https://korean.visitkorea.or.kr/",
+            "published_at": null,
+            "summary": "지역 여행 정보 확인용 공식 포털",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "08월 강릉 여행, 처음 가면 이 동선",
+      "slug": "08월-강릉-여행-c508a278",
+      "excerpt": "08월 강릉 여행 방문 전 TourAPI 연관 관광지 데이터를 바탕으로 동선을 잡았습니다.",
+      "body_markdown": "## 한눈에 보기\n\n08월 강릉 여행은 카페나 명소 한 곳만 찍는 글보다 실제로 어떻게 움직이면 좋은지가 더 중요합니다. 한국관광공사 TourAPI의 연관 관광지 데이터를 기준으로 보면, 먼저 대표 지점을 정하고 주변에서 함께 묶을 곳을 고르는 방식이 가장 안전합니다.\n\n## 추천 동선\n\n| 순서 | 볼 것 | 판단 기준 |\n| --- | --- | --- |\n| 1 | 대표 관광지 또는 거리 초입 | 이동 기준점으로 삼기 좋음 |\n| 2 | 국문 관광정보의 주소·분류가 분명한 장소 | 지도에서 실제 이동 순서 확인 |\n| 3 | 카페·식사·휴식 지점 | 오래 머물 곳은 중간에 배치 |\n| 4 | 산책·야경·시장 등 마무리 지점 | 시간대와 혼잡도를 보고 조정 |\n\n08월 강릉 여행를 처음 볼 때는 지도에서 가장 유명한 지점 하나를 먼저 찍고, 그 주변의 연관 장소를 2~3개만 더하는 편이 좋습니다. 동선을 너무 길게 잡으면 이동 시간이 늘어나고, 실제로는 카페나 식사 대기 때문에 뒤 일정이 밀리기 쉽습니다.\n\n## TourAPI에서 본 주변 포인트\n\nTourAPI 관광지별 연관 관광지 정보에서 가져온 공개 데이터입니다. 글에서는 연관 관광지, 주변에서 함께 묶기 좋은 지점, 카테고리 흐름을 우선 반영하세요. 조회 키워드: 08월 강릉 여행. 결과: 기준 관광지 BTS버스정류장 · 연관 관광지 아들바위공원 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 1 / 기준 관광지 BTS버스정류장 · 연관 관광지 도깨비촬영지/(영진해변) · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 2 / 기준 관광지 BTS버스정류장 · 연관 관광지 주문진항 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 3 / 기준 관광지 BTS버스정류장 · 연관 관광지 주문진수산시장 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 4 / 기준 관광지 BTS버스정류장 · 연관 관광지 강릉커피거리 · 분류 음식 · 지역 강원특별자치도 · 연관 순위 5 / 기준 관광지 BTS버스정류장 · 연관 관광지 휴휴암 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 6 / 기준 관광지 BTS버스정류장 · 연관 관광지 철뚝소머리집 · 분류 음식 · 지역 강원특별자치도 · 연관 순위 7 / 기준 관광지 BTS버스정류장 · 연관 관광지 남애항전망대 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 8\n\n## 이렇게 움직이면 편합니다\n\n1. 출발지는 대중교통역이나 주차 가능한 대표 지점으로 잡습니다.\n2. 첫 장소에서 바로 오래 머물기보다 주변 골목과 상권을 먼저 훑습니다.\n3. 카페나 식사는 동선 중간에 넣어 체력을 아낍니다.\n4. 국문 관광정보에 주소, 운영시간, 휴무, 주차가 있으면 동선표의 판단 기준으로 씁니다.\n5. 영문 관광정보가 있으면 외국인 독자가 검색할 수 있는 영문 장소명이나 주소를 함께 적습니다.\n6. 관광지 집중률 데이터가 있으면 혼잡 가능성을 보는 보조 지표로만 참고합니다.\n7. 의료관광 정보가 포함된 경우 예약, 진료 가능 여부, 통역, 비용은 기관에 직접 확인합니다.\n8. 반려동물 동반 정보가 포함된 경우 목줄·이동장, 실내외 가능 구역, 무게·견종 제한, 추가요금은 업체에 다시 확인합니다.\n9. 운영시간과 팝업 여부처럼 바뀌는 정보는 방문 당일 지도 앱에서 다시 확인합니다.\n\n## 참고한 곳\n\n- [한국관광공사 TourAPI 관광지별 연관 관광지 정보](https://www.data.go.kr/data/15128560/openapi.do)\n- [한국관광공사 VisitKorea](https://korean.visitkorea.or.kr/)\n",
+      "tags": [
+        "핫이슈",
+        "08월",
+        "강릉",
+        "여행"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1669303215070-151cc2e5887e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMGxhbmRtYXJrJTIwd2Fsa2luZyUyMGdhbmduZXVuZyUyMGJlYWNoJTIwY29mZmVlJTIwc3RyZWV0fGVufDF8MHx8fDE3ODc0MTQyODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "08월 강릉 여행, 처음 가면 이 동선 — Photo by Seungmin Yoon on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1720252741168-dfa56535b42a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMGxhbmRtYXJrJTIwd2Fsa2luZyUyMGdhbmduZXVuZyUyMGJlYWNoJTIwY29mZmVlJTIwc3RyZWV0fGVufDF8MHx8fDE3ODc0MTQyODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "08월 강릉 여행, 처음 가면 이 동선 본문 보조 이미지 — Photo by Seongil Park on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 08월 강릉 여행, 처음 가면 이 동선. Keyword: 08월 강릉 여행. Concrete visual subject: travel destination landmark walking gangneung beach coffee street. Context: ## 한눈에 보기 08월 강릉 여행은 카페나 명소 한 곳만 찍는 글보다 실제로 어떻게 움직이면 좋은지가 더 중요합니다. 한국관광공사 TourAPI의 연관 관광지 데이터를 기준으로 보면, 먼저 대표 지점을 정하고 주변에서 함께 묶을 곳을 고르는 방식이 가장 안전합니다. ## 추천 동선 | 순서 | 볼 것 | 판단 기준 | | --- | --- | --- | | 1 | 대표 관광지 또는 거리 초입 | 이동 기준점으로 삼기 좋음 | | 2 | 국문 관광정보의 주소·분류가 분명한 장소 | 지도에서 실제 이동 순서 확인 | | 3 | 카페·식사·휴식 지점 | 오래 머물 곳은 중간에 배치 | | 4 | 산책·야경·시장 등 마무리 지점 | 시간대와 혼잡도를 보고 조정 | 08월 강릉 여행를 처음 볼 때는 지도에서 가장 유명한 지점 하나를 먼저 찍고, 그 주변의 연관 장소를 2~3개만 더하는 편이 좋습니다. 동선을 너무 길게 잡으면 이동 시간이 늘어나고, 실제로는 카페나 식사 대기 때문에 뒤 일정이 밀리기 쉽습니다. ## TourAPI에서 본 주변 포인트 TourAPI 관광지별 연관 관광지 정보에서 가져온 공개 데이터입니다. 글에서는 연관 관광지, 주변에서 함께 묶기 좋은 지점, 카테고리 흐름을 우선 반영하세요. 조회 키워드: 08월 강릉 여행. 결과: 기준 관광지 BTS버스정류장 · 연관 관광지 아들바위공원 · 분류 관광지 · 지역 강원특별자치도. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 08월 강릉 여행, 처음 가면 이 동선. Keyword: 08월 강릉 여행. Concrete visual subject: travel destination landmark walking gangneung beach coffee street. Article context: ## 한눈에 보기 08월 강릉 여행은 카페나 명소 한 곳만 찍는 글보다 실제로 어떻게 움직이면 좋은지가 더 중요합니다. 한국관광공사 TourAPI의 연관 관광지 데이터를 기준으로 보면, 먼저 대표 지점을 정하고 주변에서 함께 묶을 곳을 고르는 방식이 가장 안전합니다. ## 추천 동선 | 순서 | 볼 것 | 판단 기준 | | --- | --- | --- | | 1 | 대표 관광지 또는 거리 초입 | 이동 기준점으로 삼기 좋음 | | 2 | 국문 관광정보의 주소·분류가 분명한 장소 | 지도에서 실제 이동 순서 확인 | | 3 | 카페·식사·휴식 지점 | 오래 머물 곳은 중간에 배치 | | 4 | 산책·야경·시장 등 마무리 지점 | 시간대와 혼잡도를 보고 조정 | 08월 강릉 여행를 처음 볼 때는 지도에서 가장 유명한 지점 하나를 먼저 찍고, 그 주변의 연관 장소를 2~3개만 더하는 편이 좋습니다. 동선을 너무 길게 잡으면 이동 시간이 늘어나고, 실제로는 카페나 식사 대기 때문에 뒤 일정이 밀리기 쉽습니다. ## TourAPI에서 본 주변 포인트 TourAPI 관광지별 연관 관광지 정보에서 가져온 공개 데이터입니다. 글에서는 연관 관광지, 주변에서 함께 묶기 좋은 지점, 카테고리 흐름을 우선 반영하세요. 조회 키워드: 08월 강릉 여행. 결과: 기준 관광지 BTS버스정류장 · 연관 관광지 아들바위공원 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 1 / 기준 관광지 BTS버스정류장 · 연관 관광지 도깨비촬영지/(영진해변) · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 2 / 기준 관광지 BTS버스정류장 · 연관 관광지 주문진항 · 분류 관광지 · 지역 강원특별자치도 · 연관 순위 3 / 기준 관광지 BTS버스정류장 · 연관 관광지 주문진수산시장 · 분류 관광지 · 지역 강원특. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-08-22T15:57:39.578455",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/08월-강릉-여행-c508a278.md",
+      "message": "draft saved"
+    }
+  ]
+}

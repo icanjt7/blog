@@ -1,0 +1,20 @@
+{
+  "run_id": "20260822-155528-fb33be42",
+  "average_quality": 89.0,
+  "drafts": [
+    {
+      "slug": "08월-강릉-여행-c508a278",
+      "title": "08월 강릉 여행, 처음 가면 이 동선",
+      "keyword": "08월 강릉 여행",
+      "category": "핫이슈",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ],
+      "source_count": 2,
+      "source_authority_avg": 4.5,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 08월 강릉 여행, 처음 가면 이 동선. Keyword: 08월 강릉 여행. Concrete visual subject: travel destination landmark walking gangneung beach coffee street. Context: ## 한눈에 보기 08월 강릉 여행은 카페나 명소 한 곳만 찍는 글보다 실제로 어떻게 움직이면 좋은지가 더 중요합니다. 한국관광공사 TourAPI의 연관 관광지 데이터를 기준으로 보면, 먼저 대표 지점을 정하고 주변에서 함께 묶을 곳을 고르는 방식이 가장 안전합니다. ## 추천 동선 | 순서 | 볼 것 | 판단 기준 | | --- | --- | --- | | 1 | 대표 관광지 또는 거리 초입 | 이동 기준점으로 삼기 좋음 | | 2 | 국문 관광정보의 주소·분류가 분명한 장소 | 지도에서 실제 이동 순서 확인 | | 3 | 카페·식사·휴식 지점 | 오래 머물 곳은 중간에 배치 | | 4 | 산책·야경·시장 등 마무리 지점 | 시간대와 혼잡도를 보고 조정 | 08월 강릉 여행를 처음 볼 때는 지도에서 가장 유명한 지점 하나를 먼저 찍고, 그 주변의 연관 장소를 2~3개만 더하는 편이 좋습니다. 동선을 너무 길게 잡으면 이동 시간이 늘어나고, 실제로는 카페나 식사 대기 때문에 뒤 일정이 밀리기 쉽습니다. ## TourAPI에서 본 주변 포인트 TourAPI 관광지별 연관 관광지 정보에서 가져온 공개 데이터입니다. 글에서는 연관 관광지, 주변에서 함께 묶기 좋은 지점, 카테고리 흐름을 우선 반영하세요. 조회 키워드: 08월 강릉 여행. 결과: 기준 관광지 BTS버스정류장 · 연관 관광지 아들바위공원 · 분류 관광지 · 지역 강원특별자치도. Visual mood: curated Korean local news guide, city details, food or travel context when relevant. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1669303215070-151cc2e5887e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMGxhbmRtYXJrJTIwd2Fsa2luZyUyMGdhbmduZXVuZyUyMGJlYWNoJTIwY29mZmVlJTIwc3RyZWV0fGVufDF8MHx8fDE3ODc0MTQyODd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
