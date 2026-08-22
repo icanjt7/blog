@@ -1,15 +1,17 @@
 ---
-title: "최휘영 장관, 충북도지사 만나 지역 문화·체육·관광 협력 논의"
-date: "2026-08-19T00:10"
-category: "핫이슈"
+title: 최휘영 장관, 충북도와 청주공항 중심 문화·체육·관광 협력 논의
+date: 2026-08-19T00:10
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://images.unsplash.com/photo-1760726449764-6b53c0bddae6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODcxMjg4MDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "최휘영 장관, 충북도지사 만나 지역 문화·체육·관광 협력 논의"
-author: "문화체육관광부"
+cover_image: https://images.unsplash.com/photo-1760726449764-6b53c0bddae6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODcxMjg4MDV8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 최휘영 장관, 충북도지사 만나 지역 문화·체육·관광 협력 논의
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 문화체육관광부가 2026-08-19 공개한 자료를 바탕으로 최휘영 장관, 충북도지사 만나 지역 문화·체육·관광 협력 논의의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

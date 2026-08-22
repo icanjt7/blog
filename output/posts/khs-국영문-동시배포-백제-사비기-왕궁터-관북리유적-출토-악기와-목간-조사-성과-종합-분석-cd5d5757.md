@@ -1,15 +1,17 @@
 ---
-title: "(국영문 동시배포) 백제 사비기 왕궁터 ‘관북리유적’ 출토 악기와 목간 조사 성과 종합 분석"
-date: "2026-07-21T00:13"
-category: "핫이슈"
+title: 백제 사비기 왕궁터 ‘관북리유적’ 출토 악기와 목간 조사 성과
+date: 2026-07-21T00:13
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=9763251fed4c4a6a8a1b309396f35c37"
-cover_image_alt: "모바일초청장-1.jpg"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=9763251fed4c4a6a8a1b309396f35c37
+cover_image_alt: 모바일초청장-1.jpg
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-07-21 공개한 자료를 바탕으로 (국영문 동시배포) 백제 사비기 왕궁터 ‘관북리유적’ 출토 악기와 목간 조사 성과 종합 분석의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
