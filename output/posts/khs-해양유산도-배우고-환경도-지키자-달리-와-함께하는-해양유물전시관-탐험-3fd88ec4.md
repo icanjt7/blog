@@ -1,15 +1,17 @@
 ---
-title: "해양유산도 배우고 환경도 지키자! ‘달리’와 함께하는 해양유물전시관 탐험"
-date: "2026-07-27T00:02"
-category: "핫이슈"
+title: 목포 해양유물전시관, 달리와 함께하는 도장깨기 체험
+date: 2026-07-27T00:02
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=38171c47190b4ddb860b53d2507a72c2"
-cover_image_alt: "홍보물"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=38171c47190b4ddb860b53d2507a72c2
+cover_image_alt: 홍보물
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-07-27 공개한 자료를 바탕으로 해양유산도 배우고 환경도 지키자! ‘달리’와 함께하는 해양유물전시관 탐험의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

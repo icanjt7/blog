@@ -1,15 +1,17 @@
 ---
-title: "시장상황점검회의 개최"
-date: "2026-07-16T00:26"
-category: "생활"
+title: 재정경제부, 중소기업·청년 창업 지원 정책 발표
+date: 2026-07-16T00:26
+category: 생활
 tags:
-  - "보도기사"
-  - "재정경제부"
-  - "생활"
+- 보도기사
+- 재정경제부
+- 생활
 quality_score: 92.0
-cover_image: "https://images.unsplash.com/photo-1740933084056-078fac872bff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxjb25mZXJlbmNlJTIwbWVldGluZyUyMHRhYmxlfGVufDF8MHx8fDE3ODQzMzIzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "시장상황점검회의 개최 — Photo by Colin White on Unsplash"
-author: "재정경제부"
+cover_image: https://images.unsplash.com/photo-1740933084056-078fac872bff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxjb25mZXJlbmNlJTIwbWVldGluZyUyMHRhYmxlfGVufDF8MHx8fDE3ODQzMzIzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 시장상황점검회의 개최 — Photo by Colin White on Unsplash
+author: 재정경제부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 소개

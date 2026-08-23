@@ -1,18 +1,20 @@
 ---
-title: "미국 백악관, One Year Later: Presiden"
-date: "2026-07-03T00:00"
-category: "정치"
+title: '백악관 발표: 트럼프 대통령의 근로자 세금 감면 1년 차 성과'
+date: 2026-07-03T00:00
+category: 정치
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미국 백악관"
-  - "정치"
-  - "백악관"
-  - "미국정치"
-  - "releases"
-author: "미국 백악관"
+- 보도기사
+- 미국정부
+- 미국 백악관
+- 정치
+- 백악관
+- 미국정치
+- releases
+author: 미국 백악관
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1766102881535-4a1573a7de53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgyOTY5MTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: https://images.unsplash.com/photo-1766102881535-4a1573a7de53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzgyOTY5MTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미국 백악관이(The White House) 2026-07-03 공개한 'One Year Later: President Trump’s Working Families Tax Cuts Are Delivering for American Workers' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
