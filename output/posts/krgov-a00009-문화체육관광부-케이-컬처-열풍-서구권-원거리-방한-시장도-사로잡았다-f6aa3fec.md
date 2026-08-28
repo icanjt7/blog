@@ -1,15 +1,17 @@
 ---
-title: "'케이-컬처' 열풍, 서구권·원거리 방한 시장도 사로잡았다"
-date: "2026-08-06T00:08"
-category: "핫이슈"
+title: 케이컬처, 미·유·대양주 관광객 증가로 방한 시장 다변화
+date: 2026-08-06T00:08
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://images.unsplash.com/photo-1758570814213-4020e1b79e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxrb3JlYW4lMjBjaXR5JTIwbmV3cyUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzg2MjMxODQzfDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "'케이-컬처' 열풍, 서구권·원거리 방한 시장도 사로잡았다"
-author: "문화체육관광부"
+cover_image: https://images.unsplash.com/photo-1758570814213-4020e1b79e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxrb3JlYW4lMjBjaXR5JTIwbmV3cyUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzg2MjMxODQzfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: '''케이-컬처'' 열풍, 서구권·원거리 방한 시장도 사로잡았다'
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 문화체육관광부가 2026-08-06 공개한 자료를 바탕으로 '케이-컬처' 열풍, 서구권·원거리 방한 시장도 사로잡았다의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

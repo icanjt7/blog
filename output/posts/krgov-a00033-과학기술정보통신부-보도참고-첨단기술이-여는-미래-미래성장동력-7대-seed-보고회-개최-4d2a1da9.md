@@ -1,15 +1,17 @@
 ---
-title: "[보도참고] 첨단기술이 여는 미래, 미래성장동력 ｢7대 SEED｣ 보고회 개최"
-date: "2026-08-12T00:02"
-category: "기술"
+title: 과학기술정보통신부, 청와대서 ‘7대 SEED’ 미래 성장엔진 보고회 개최
+date: 2026-08-12T00:02
+category: 기술
 tags:
-  - "보도기사"
-  - "과학기술정보통신부"
-  - "기술"
+- 보도기사
+- 과학기술정보통신부
+- 기술
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg2NTI1ODExfDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "[보도참고] 첨단기술이 여는 미래, 미래성장동력 ｢7대 SEED｣ 보고회 개최"
-author: "과학기술정보통신부"
+cover_image: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg2NTI1ODExfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: '[보도참고] 첨단기술이 여는 미래, 미래성장동력 ｢7대 SEED｣ 보고회 개최'
+author: 과학기술정보통신부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 과학기술정보통신부가 2026-08-12 공개한 자료를 바탕으로 첨단기술이 여는 미래, 미래성장동력 ｢7대 SEED｣ 보고회 개최의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
