@@ -1,15 +1,17 @@
 ---
-title: "여행 부담은 덜고, 지역 활력은 더하고... ‘대한민국 반값 여행’은 가을에도 계속"
-date: "2026-08-27T00:09"
-category: "핫이슈"
+title: 가을에 새롭게 참여하는 9개 지역, 반값 여행 확대
+date: 2026-08-27T00:09
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_00.png"
-cover_image_alt: "공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락"
-author: "문화체육관광부"
+cover_image: https://www.mcst.go.kr/site/images/sub/openright_00.png
+cover_image_alt: 공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 문화체육관광부가 2026-08-27 공개한 자료를 바탕으로 여행 부담은 덜고, 지역 활력은 더하고... ‘대한민국 반값 여행’은 가을에도 계속의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
