@@ -1,15 +1,17 @@
 ---
-title: "국방부·산업부, 「제12회 방위산업발전협의회」 개최"
-date: "2026-06-04T00:05"
-category: "기술"
+title: 국방부·산업부, 방위산업 발전 논의…AI·드론·항공엔진 수출 지원 모색
+date: 2026-06-04T00:05
+category: 기술
 tags:
-  - "보도기사"
-  - "국방부"
-  - "기술"
+- 보도기사
+- 국방부
+- 기술
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg3MjY4MzQyfDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "국방부·산업부, 「제12회 방위산업발전협의회」 개최"
-author: "국방부"
+cover_image: https://images.unsplash.com/photo-1782177597552-dca3ac1f5683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMGNpcmN1aXQlMjBhYnN0cmFjdHxlbnwxfDB8fHwxNzg3MjY4MzQyfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 국방부·산업부, 「제12회 방위산업발전협의회」 개최
+author: 국방부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 개요

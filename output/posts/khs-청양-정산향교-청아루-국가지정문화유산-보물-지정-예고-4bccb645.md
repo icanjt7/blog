@@ -1,15 +1,17 @@
 ---
-title: "「청양 정산향교 청아루」 국가지정문화유산 보물 지정 예고"
-date: "2026-08-14T00:06"
-category: "핫이슈"
+title: 청양 정산향교 청아루 국가 보물로 지정 예고
+date: 2026-08-14T00:06
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산청"
-  - "핫이슈"
+- 보도기사
+- 국가유산청
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=847c51d8d7f04ceeb9ae035e46d7e4be"
-cover_image_alt: "청양 정산향교 청아루"
-author: "국가유산청"
+cover_image: https://www.khs.go.kr/newopen/cmm/seditor/getImageFile.do?seId=847c51d8d7f04ceeb9ae035e46d7e4be
+cover_image_alt: 청양 정산향교 청아루
+author: 국가유산청
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산청이 2026-08-14 공개한 자료를 바탕으로 「청양 정산향교 청아루」 국가지정문화유산 보물 지정 예고의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
