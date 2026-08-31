@@ -1,15 +1,17 @@
 ---
-title: "'함께 만드는 깨끗한 스포츠', 미래세대로 확산"
-date: "2026-08-19T00:09"
-category: "핫이슈"
+title: 2026년 부산 글로벌 도핑 방지 청소년 캠프 개최
+date: 2026-08-19T00:09
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1774916565597-f60d8e9b1c6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxrb3JlYW4lMjBjaXR5JTIwbmV3cyUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzg3Mzg3Mzk3fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "'함께 만드는 깨끗한 스포츠', 미래세대로 확산"
-author: "문화체육관광부"
+cover_image: https://images.unsplash.com/photo-1774916565597-f60d8e9b1c6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxrb3JlYW4lMjBjaXR5JTIwbmV3cyUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzg3Mzg3Mzk3fDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: '''함께 만드는 깨끗한 스포츠'', 미래세대로 확산'
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 문화체육관광부, 2026-08-19 발표 – “2026 글로벌 도핑 방지 청소년 캠프” 개최 안내  

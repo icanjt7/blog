@@ -1,17 +1,19 @@
 ---
-title: "미국 백악관, Presidential Message on"
-date: "2026-07-15T00:04"
-category: "정치"
+title: 미국 백악관, 성 프랜시스 자비에르 카브리니 탄생일 대통령 메시지
+date: 2026-07-15T00:04
+category: 정치
 tags:
-  - "보도기사"
-  - "미국정부"
-  - "미국 백악관"
-  - "정치"
-  - "백악관"
-  - "브리핑"
-author: "미국 백악관"
+- 보도기사
+- 미국정부
+- 미국 백악관
+- 정치
+- 백악관
+- 브리핑
+author: 미국 백악관
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1759169306825-d1d4b832ae3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzg0MTc2MDg2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: https://images.unsplash.com/photo-1759169306825-d1d4b832ae3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzg0MTc2MDg2fDA&ixlib=rb-4.1.0&q=80&w=1080
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 미국 백악관이(The White House) 2026-07-15 공개한 'Presidential Message on the Birthday of Saint Frances Xavier Cabrini' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
