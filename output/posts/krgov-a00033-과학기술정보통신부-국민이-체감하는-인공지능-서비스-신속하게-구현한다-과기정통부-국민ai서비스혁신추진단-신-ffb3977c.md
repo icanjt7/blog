@@ -1,15 +1,17 @@
 ---
-title: "국민이 체감하는 인공지능 서비스 신속하게 구현한다 과기정통부, 국민AI서비스혁신추진단 신설"
-date: "2026-08-26T00:02"
-category: "기술"
+title: 과기정통부, AI 서비스 혁신추진단 신설·민간 전문가 공개 모집
+date: 2026-08-26T00:02
+category: 기술
 tags:
-  - "보도기사"
-  - "과학기술정보통신부"
-  - "기술"
+- 보도기사
+- 과학기술정보통신부
+- 기술
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg3NzAwMzQ5fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "국민이 체감하는 인공지능 서비스 신속하게 구현한다 과기정통부, 국민AI서비스혁신추진단 신설"
-author: "과학기술정보통신부"
+cover_image: https://images.unsplash.com/photo-1674027444484-cf52149ea050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg3NzAwMzQ5fDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 국민이 체감하는 인공지능 서비스 신속하게 구현한다 과기정통부, 국민AI서비스혁신추진단 신설
+author: 과학기술정보통신부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 과학기술정보통신부가 2026-08-26 공개한 자료를 바탕으로 국민이 체감하는 인공지능 서비스 신속하게 구현한다 과기정통부, 국민AI서비스혁신추진단 신설의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

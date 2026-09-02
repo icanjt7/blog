@@ -1,15 +1,18 @@
 ---
-title: "비상경제본부 회의 겸 경제관계장관회의 겸 민생물가 특별관리 관계장관 TF 개최"
-date: "2026-07-31T00:03"
-category: "생활"
+title: 비상경제본부, 민생물가 관리 회의 및 TF 개최
+date: 2026-07-31T00:03
+category: 생활
 tags:
-  - "보도기사"
-  - "재정경제부"
-  - "생활"
+- 보도기사
+- 재정경제부
+- 생활
 quality_score: 92.0
-cover_image: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxlY29ub215JTIwcHJpY2UlMjBtYXJrZXQlMjBzdGF0aXN0aWNzJTIwY29uZmVyZW5jZSUyMG1lZXRpbmclMjB0YWJsZXxlbnwxfDB8fHwxNzg1NDYyODYyfDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "비상경제본부 회의 겸 경제관계장관회의 겸 민생물가 특별관리 관계장관 TF 개최 — Photo by Dane Deaner on Unsplash"
-author: "재정경제부"
+cover_image: https://images.unsplash.com/photo-1517502884422-41eaead166d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxlY29ub215JTIwcHJpY2UlMjBtYXJrZXQlMjBzdGF0aXN0aWNzJTIwY29uZmVyZW5jZSUyMG1lZXRpbmclMjB0YWJsZXxlbnwxfDB8fHwxNzg1NDYyODYyfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 비상경제본부 회의 겸 경제관계장관회의 겸 민생물가 특별관리 관계장관 TF 개최 — Photo by Dane Deaner
+  on Unsplash
+author: 재정경제부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 재정경제부가 2026-07-31 공개한 자료를 바탕으로 비상경제본부 회의 겸 경제관계장관회의 겸 민생물가 특별관리 관계장관 TF 개최의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

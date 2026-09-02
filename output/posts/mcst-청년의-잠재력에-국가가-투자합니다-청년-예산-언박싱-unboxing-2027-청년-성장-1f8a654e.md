@@ -1,15 +1,17 @@
 ---
-title: "청년의 잠재력에 국가가 투자합니다! 청년 예산 언박싱(UNBOXING) 2027, ‘청년 성장단계별 종합투자 추진전략’ 발표"
-date: "2026-08-28T00:09"
-category: "핫이슈"
+title: 청와대서 청년 성장단계별 종합투자 전략 발표, 예산 43조3천억 확대
+date: 2026-08-28T00:09
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "핫이슈"
+- 보도기사
+- 문화체육관광부
+- 핫이슈
 quality_score: 96.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_00.png"
-cover_image_alt: "공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락"
-author: "문화체육관광부"
+cover_image: https://www.mcst.go.kr/site/images/sub/openright_00.png
+cover_image_alt: 공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 문화체육관광부가 2026-08-28 공개한 자료를 바탕으로 청년의 잠재력에 국가가 투자합니다! 청년 예산 언박싱(UNBOXING) 2027, ‘청년 성장단계별 종합투자 추진전략’ 발표의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

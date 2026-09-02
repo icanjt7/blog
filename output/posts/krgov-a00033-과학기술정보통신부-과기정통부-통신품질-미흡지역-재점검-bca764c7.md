@@ -1,15 +1,17 @@
 ---
-title: "과기정통부, 통신품질 미흡지역 재점검"
-date: "2026-08-30T00:02"
-category: "기술"
+title: 과학기술정보통신부, 87개소 중 79곳 통신품질 개선, 8곳 미흡 재점검
+date: 2026-08-30T00:02
+category: 기술
 tags:
-  - "보도기사"
-  - "과학기술정보통신부"
-  - "기술"
+- 보도기사
+- 과학기술정보통신부
+- 기술
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1548544027-1a96c4c24c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxuZXR3b3JrJTIwY29tbXVuaWNhdGlvbiUyMGluZnJhc3RydWN0dXJlfGVufDF8MHx8fDE3ODgxMzg0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "과기정통부, 통신품질 미흡지역 재점검"
-author: "과학기술정보통신부"
+cover_image: https://images.unsplash.com/photo-1548544027-1a96c4c24c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxuZXR3b3JrJTIwY29tbXVuaWNhdGlvbiUyMGluZnJhc3RydWN0dXJlfGVufDF8MHx8fDE3ODgxMzg0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 과기정통부, 통신품질 미흡지역 재점검
+author: 과학기술정보통신부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 과학기술정보통신부, 2026‑08‑30 발표 “2025년 통신서비스 품질평가 결과”
