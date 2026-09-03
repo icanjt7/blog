@@ -912,18 +912,32 @@ class StaticSiteBuilder:
             links.append((clean_label[:90], clean_url))
             if len(links) >= 8:
                 break
-        for url in re.findall(r"(?<!\]\()https?://[^\s<>)]+", markdown_text):
+        # Exclude Markdown delimiters from bare URLs.  In particular, a link
+        # whose label is itself a URL (``[https://example.com](...)``) used to
+        # be captured as one malformed value containing ``](https://``.
+        for url in re.findall(r"(?<!\]\()https?://[^\s<>()\[\]]+", markdown_text):
             clean_url = url.rstrip(".,)]")
             if any(existing_url == clean_url for _existing_label, existing_url in links):
                 continue
-            links.append((StaticSiteBuilder._source_label_for_url(clean_url), clean_url))
+            label = StaticSiteBuilder._source_label_for_url(clean_url)
+            if label is None:
+                continue
+            links.append((label, clean_url))
             if len(links) >= 8:
                 break
         return links
 
     @staticmethod
-    def _source_label_for_url(url: str) -> str:
-        host = urlsplit(url).netloc.lower().removeprefix("www.")
+    def _source_label_for_url(url: str) -> str | None:
+        try:
+            parsed = urlsplit(url)
+            # Accessing hostname performs additional validation (for example,
+            # malformed IPv6 brackets) which netloc alone does not guarantee.
+            host = (parsed.hostname or "").lower().removeprefix("www.")
+        except ValueError:
+            return None
+        if parsed.scheme not in {"http", "https"} or not host:
+            return None
         if "korea.kr" in host:
             return "정책브리핑 원문"
         if "visitkorea.or.kr" in host:
