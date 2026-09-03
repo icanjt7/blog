@@ -1,15 +1,18 @@
 ---
-title: "내가 만든 AI 영상 올가을 궁궐에 걸린다 궁중문화축전 AI 영상 공모전 245편 접수 마감(260824)"
-date: "2026-08-26T00:15"
-category: "기술"
+title: 궁중문화축전 AI 영상 공모전 245편 접수 마감
+date: 2026-08-26T00:15
+category: 기술
 tags:
-  - "보도기사"
-  - "국가유산진흥원"
-  - "기술"
+- 보도기사
+- 국가유산진흥원
+- 기술
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMGN1bHR1cmUlMjBhcnRzJTIwY3JlYXRpdmV8ZW58MXwwfHx8MTc4NzgyMzk4OXww&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "내가 만든 AI 영상 올가을 궁궐에 걸린다 궁중문화축전 AI 영상 공모전 245편 접수 마감(260824) — Photo by Steve A Johnson on Unsplash"
-author: "국가유산진흥원"
+cover_image: https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMGN1bHR1cmUlMjBhcnRzJTIwY3JlYXRpdmV8ZW58MXwwfHx8MTc4NzgyMzk4OXww&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 내가 만든 AI 영상 올가을 궁궐에 걸린다 궁중문화축전 AI 영상 공모전 245편 접수 마감(260824) — Photo
+  by Steve A Johnson on Unsplash
+author: 국가유산진흥원
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산진흥원이 2026-08-26 공개한 자료를 바탕으로 내가 만든 AI 영상 올가을 궁궐에 걸린다 궁중문화축전 AI 영상 공모전 245편 접수 마감의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

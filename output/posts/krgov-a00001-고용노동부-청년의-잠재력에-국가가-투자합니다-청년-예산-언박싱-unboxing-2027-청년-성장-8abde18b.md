@@ -1,15 +1,18 @@
 ---
-title: "청년의 잠재력에 국가가 투자합니다! 청년 예산 언박싱(UNBOXING) 2027, 청년 성장단계별 종합투자 추진전략 발표"
-date: "2026-08-28T00:01"
-category: "생활"
+title: 정부, 청년 예산 언박싱 2027·성장단계별 종합투자 전략 발표
+date: 2026-08-28T00:01
+category: 생활
 tags:
-  - "보도기사"
-  - "고용노동부"
-  - "생활"
+- 보도기사
+- 고용노동부
+- 생활
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1546891224-a80fee313251?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8eW91bmclMjBwcm9mZXNzaW9uYWxzJTIwY2l0eSUyMGdvdmVybm1lbnQlMjBidWRnZXQlMjBmaW5hbmNlJTIwaW52ZXN0bWVudCUyMGdyb3d0aHxlbnwxfDB8fHwxNzg3OTc2MTUzfDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "청년의 잠재력에 국가가 투자합니다! 청년 예산 언박싱(UNBOXING) 2027, 청년 성장단계별 종합투자 추진전략 발표"
-author: "고용노동부"
+cover_image: https://images.unsplash.com/photo-1546891224-a80fee313251?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8eW91bmclMjBwcm9mZXNzaW9uYWxzJTIwY2l0eSUyMGdvdmVybm1lbnQlMjBidWRnZXQlMjBmaW5hbmNlJTIwaW52ZXN0bWVudCUyMGdyb3d0aHxlbnwxfDB8fHwxNzg3OTc2MTUzfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: 청년의 잠재력에 국가가 투자합니다! 청년 예산 언박싱(UNBOXING) 2027, 청년 성장단계별 종합투자 추진전략
+  발표
+author: 고용노동부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 고용노동부가 2026-08-28 공개한 자료를 바탕으로 청년의 잠재력에 국가가 투자합니다! 청년 예산 언박싱(UNBOXING) 2027, 청년 성장단계별 종합투자 추진전략 발표의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.

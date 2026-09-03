@@ -1,5 +1,5 @@
 ---
-title: 법무부 교정공무원 인사
+title: 법무부 교정공무원 승진·전보 현황 발표 내역
 date: 2026-04-27T05:12
 category: 생활
 tags:
@@ -12,6 +12,7 @@ cover_image_alt: 법무부 교정공무원 인사
 author: 법무부
 expanded_by_llm: true
 search_index_improved: true
+title_improved_by_llm: true
 ---
 
 ## 법무부 교정공무원 인사 개요  

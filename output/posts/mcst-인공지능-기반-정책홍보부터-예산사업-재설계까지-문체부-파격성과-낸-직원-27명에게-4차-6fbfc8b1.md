@@ -1,15 +1,17 @@
 ---
-title: "인공지능 기반 정책홍보부터 예산사업 재설계까지 문체부, 파격성과 낸 직원 27명에게 4차 특별성과 포상"
-date: "2026-09-03T00:09"
-category: "기술"
+title: 문체부, 인공지능 기반 정책홍보 및 행정혁신 성과 직원 포상
+date: 2026-09-03T00:09
+category: 기술
 tags:
-  - "보도기사"
-  - "문화체육관광부"
-  - "기술"
+- 보도기사
+- 문화체육관광부
+- 기술
 quality_score: 96.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_00.png"
-cover_image_alt: "공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락"
-author: "문화체육관광부"
+cover_image: https://www.mcst.go.kr/site/images/sub/openright_00.png
+cover_image_alt: 공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락
+author: 문화체육관광부
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 ## 문화체육관광부, 2026‑09‑03 발표 – 업무 추진·행정혁신 특별성과 포상 안내  
