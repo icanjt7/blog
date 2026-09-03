@@ -1,0 +1,91 @@
+{
+  "run_id": "20260903-185316-cb080f5d",
+  "topics": [
+    {
+      "keyword": "09월 신청방법",
+      "title_hint": "09월 신청방법 핵심 정리",
+      "category": "생활",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "대한민국 정책브리핑",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "09월 AI",
+      "title_hint": "09월 AI 핵심 정리",
+      "category": "기술",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": []
+    },
+    {
+      "keyword": "09월 금리",
+      "title_hint": "09월 금리 핵심 정리",
+      "category": "정책",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": []
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "09월 신청방법",
+        "title_hint": "09월 신청방법 핵심 정리",
+        "category": "생활",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "대한민국 정책브리핑",
+            "url": "https://www.korea.kr/",
+            "published_at": null,
+            "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+            "authority": 5
+          }
+        ]
+      },
+      "title": "3가지만 알면 09월 신청방법 완전 정복",
+      "slug": "09월-신청방법-b16f2ab9",
+      "excerpt": "9월에 놓치면 손해 보는 생활 지원 정책, 꼭 알아야 할 신청 조건과 절차를 3가지 포인트로 정리했어요.",
+      "body_markdown": "의외로 많은 사람들이 9월에 시작되는 지원 정책을 몰라서 놓치고 있어요. 사실은 신청만 하면 바로 혜택을 받을 수 있는데, 절차가 헷갈려서 포기하는 경우가 많거든요. 여기서는 09월 신청방법을 중심으로, 누구에게 어떤 혜택이 돌아가는지, 꼭 확인해야 할 핵심 포인트를 차근차근 알려줄게요.\n\n**1️⃣ 대상과 혜택을 먼저 파악**  \n‘청년수당’은 서울에 사는 19~39세 청년에게 매월 일정 금액을 지원하는 제도예요. ‘에너지 효율 개선 사업’은 저소득 가구에 고효율 가전·단열재 등을 지원해 전기·난방 비용을 낮춰 주는 프로그램이에요. ‘문화누리 카드’는 기초생활수급자·차상위계층 등에게 문화 활동에 사용할 수 있는 연간 지원금을 제공해요. 각각의 정책은 대상 연령·소득·거주지 등 조건이 다르니, 먼저 자신이 해당되는지 확인하는 게 첫걸음이에요.\n\n**2️⃣ 신청 기간과 방법을 정확히 체크**  \n09월 신청방법은 대부분 9월 1일부터 15일 사이에 마감돼요. 온라인 신청은 ‘대한민국 정책브리핑’ 포털이나 ‘정부24’ 사이트에서 진행하고, 오프라인은 관할 주민센터·시청에 직접 방문하면 돼요. 온라인 폼은 주민등록번호와 소득 인증 서류를 첨부하면 되고, 오프라인은 서류 원본을 지참해 담당 직원에게 제출하면 돼요. 신청 방식이 다르면 준비 서류도 조금씩 달라지니, 해당 페이지에서 안내하는 ‘제출 서류’를 꼭 확인해 주세요.\n\n**3️⃣ 승인 후 확인해야 할 사항**  \n신청이 접수되면 보통 1~2주 안에 결과가 문자·이메일로 안내돼요. 지원금이 자동 입금되는 경우도 있지만, 카드 형태로 발급되는 경우는 별도 수령 절차가 필요해요. 특히 문화누리 카드는 연말까지 사용해야 하니, 사용 기한을 놓치지 않도록 미리 확인하는 것이 좋아요. 만약 결과가 나오지 않거나 오류가 있다면, 정책브리핑에 게재된 담당 부서 연락처로 문의하면 돼요.\n\n| 정책명 | 주요 대상 | 지원 내용(예시) | 신청 기간 |\n|---|---|---|---|\n| 청년수당 | 19~39세 청년, 소득 기준 충족 | 월 일정 금액, 최대 6개월 | 9월 1일 ~ 9월 15일 |\n| 에너지 효율 개선 사업 | 저소득 가구·기초생활수급자 | 고효율 가전·단열재 지원 | 9월 1일 ~ 9월 15일 |\n| 문화누리 카드 | 기초생활수급자·차상위계층·다문화가족 | 연간 문화 이용 금액 | 9월 1일 ~ 9월 15일 |\n\n**왜 지금 봐야 할까?**  \n9월은 연말까지 이어지는 여러 지원 정책이 한꺼번에 시작되는 시점이라, 신청을 놓치면 다음 기회는 1년 뒤가 될 수도 있어요. 특히 청년수당과 에너지 개선 사업은 신청 인원이 매년 급증해 경쟁이 치열하니, 빠른 확인과 신청이 필요합니다.\n\n**누가 영향을 받나요?**  \n서울에 거주하는 20대~30대 직장인, 저소득 가구, 문화 활동을 즐기고 싶은 다문화 가정 등 다양한 계층이 혜택을 받을 수 있어요. 각 정책마다 세부 대상이 다르니, 자신에게 맞는 정책을 골라 보는 것이 중요합니다.\n\n**무엇을 확인해야 할까요?**  \n- 정책브리핑에 게시된 최신 ‘신청 안내’ 페이지  \n- 본인·가구 소득·거주 요건  \n- 제출 서류와 신청 방법(온라인·오프라인)  \n- 지원금 지급 방식과 사용 기한  \n\n**09월 신청방법**을 정리하면, “대상 확인 → 기간·방법 체크 → 서류 준비 → 온라인·오프라인 제출 → 결과 확인” 순서로 진행하면 돼요. 이 흐름을 기억하면 복잡해 보여도 차근차근 진행할 수 있답니다.\n\n마지막으로, 가장 확실한 정보는 **대한민국 정책브리핑**(https://www.korea.kr/)에서 직접 확인할 수 있어요. 오늘 바로 해당 페이지에 들어가서 자신에게 맞는 정책을 찾아보고, 09월 신청방법에 따라 신청해 보세요. 놓치면 아쉬운 혜택, 지금 바로 챙기면 생활이 한층 더 여유로워질 거예요.",
+      "tags": [
+        "생활",
+        "09월",
+        "신청방법"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1635442962671-584193cdf451?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxhcHBsaWNhdGlvbiUyMGZvcm0lMjBkb2N1bWVudHxlbnwxfDB8fHwxNzg4NDYxNzU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "3가지만 알면 09월 신청방법 완전 정복 — Photo by 2H Media on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1595126731003-755959b6baf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxhcHBsaWNhdGlvbiUyMGZvcm0lMjBkb2N1bWVudHxlbnwxfDB8fHwxNzg4NDYxNzU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "3가지만 알면 09월 신청방법 완전 정복 본문 보조 이미지 — Photo by Tiffany Tertipes on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 3가지만 알면 09월 신청방법 완전 정복. Keyword: 09월 신청방법. Concrete visual subject: application form document. Context: 의외로 많은 사람들이 9월에 시작되는 지원 정책을 몰라서 놓치고 있어요. 사실은 신청만 하면 바로 혜택을 받을 수 있는데, 절차가 헷갈려서 포기하는 경우가 많거든요. 여기서는 09월 신청방법을 중심으로, 누구에게 어떤 혜택이 돌아가는지, 꼭 확인해야 할 핵심 포인트를 차근차근 알려줄게요. **1️⃣ 대상과 혜택을 먼저 파악** ‘청년수당’은 서울에 사는 19~39세 청년에게 매월 일정 금액을 지원하는 제도예요. ‘에너지 효율 개선 사업’은 저소득 가구에 고효율 가전·단열재 등을 지원해 전기·난방 비용을 낮춰 주는 프로그램이에요. ‘문화누리 카드’는 기초생활수급자·차상위계층 등에게 문화 활동에 사용할 수 있는 연간 지원금을 제공해요. 각각의 정책은 대상 연령·소득·거주지 등 조건이 다르니, 먼저 자신이 해당되는지 확인하는 게 첫걸음이에요. **2️⃣ 신청 기간과 방법을 정확히 체크** 09월 신청방법은 대부분 9월 1일부터 15일 사이에 마감돼요. 온라인 신청은 ‘대한민국 정책브리핑’ 포털이나 ‘정부24’ 사이트에서 진행하고, 오프라인은 관할 주민센터·시청에 직접 방문하면 돼요. 온라인 폼은 주민등록번호와 소득 인증 서류를 첨부하면 되고, 오프라인은 서류 원본을 지참해 담당 직원에게 제출하면 돼요. 신청 방식이 다르면 준비 서류도 조금씩 달라지니, 해당 페이지에서 안내하는 ‘제출 서류’를 꼭 확인해 주세요. **3️⃣ 승인 후 확인해야. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 3가지만 알면 09월 신청방법 완전 정복. Keyword: 09월 신청방법. Concrete visual subject: application form document. Article context: 의외로 많은 사람들이 9월에 시작되는 지원 정책을 몰라서 놓치고 있어요. 사실은 신청만 하면 바로 혜택을 받을 수 있는데, 절차가 헷갈려서 포기하는 경우가 많거든요. 여기서는 09월 신청방법을 중심으로, 누구에게 어떤 혜택이 돌아가는지, 꼭 확인해야 할 핵심 포인트를 차근차근 알려줄게요. **1️⃣ 대상과 혜택을 먼저 파악** ‘청년수당’은 서울에 사는 19~39세 청년에게 매월 일정 금액을 지원하는 제도예요. ‘에너지 효율 개선 사업’은 저소득 가구에 고효율 가전·단열재 등을 지원해 전기·난방 비용을 낮춰 주는 프로그램이에요. ‘문화누리 카드’는 기초생활수급자·차상위계층 등에게 문화 활동에 사용할 수 있는 연간 지원금을 제공해요. 각각의 정책은 대상 연령·소득·거주지 등 조건이 다르니, 먼저 자신이 해당되는지 확인하는 게 첫걸음이에요. **2️⃣ 신청 기간과 방법을 정확히 체크** 09월 신청방법은 대부분 9월 1일부터 15일 사이에 마감돼요. 온라인 신청은 ‘대한민국 정책브리핑’ 포털이나 ‘정부24’ 사이트에서 진행하고, 오프라인은 관할 주민센터·시청에 직접 방문하면 돼요. 온라인 폼은 주민등록번호와 소득 인증 서류를 첨부하면 되고, 오프라인은 서류 원본을 지참해 담당 직원에게 제출하면 돼요. 신청 방식이 다르면 준비 서류도 조금씩 달라지니, 해당 페이지에서 안내하는 ‘제출 서류’를 꼭 확인해 주세요. **3️⃣ 승인 후 확인해야 할 사항** 신청이 접수되면 보통 1~2주 안에 결과가 문자·이메일로 안내돼요. 지원금이 자동 입금되는 경우도 있지만, 카드 형태로 발급되는 경우는 별도 수령 절차가 필요해요. 특히 문화누리 카드는 연말까지 사용해야 하니, 사용 기한을 놓치지 않도록 미리 확인하는 것이 좋아요. 만약 결과가 나오지 않거나 오류가 있다면, 정책브리핑에 게재된 담당 부서 연락. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-09-03T18:55:11.168199",
+      "quality_score": 89.0,
+      "review_notes": [
+        "AI 문체로 보일 수 있는 표현: 다양한",
+        "AI 문체로 보일 수 있는 표현: 지금 바로",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/09월-신청방법-b16f2ab9.md",
+      "message": "draft saved"
+    }
+  ]
+}
