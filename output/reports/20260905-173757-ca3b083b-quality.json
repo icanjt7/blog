@@ -1,0 +1,20 @@
+{
+  "run_id": "20260905-173757-ca3b083b",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "09월-생활비-d419f3e9",
+      "title": "09월 생활비 지원, 누가 받고 어떻게 신청하나?",
+      "keyword": "09월 생활비",
+      "category": "생활",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 5.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 09월 생활비 지원, 누가 받고 어떻게 신청하나?. Keyword: 09월 생활비. Concrete visual subject: household budget notebook application form document. Context: ## 09월 생활비 지원, 누가 받고 어떻게 신청하나? 대한민국 정책브리핑(공식 정부 포털)에서는 09월 생활비 지원에 관한 최신 안내를 제공하고 있습니다. 이번 글에서는 지원 대상, 지원 금액·기간, 신청 방법, 담당 기관 등 핵심 정보를 한눈에 볼 수 있도록 정리했습니다. ### 핵심 정보 표 | 항목 | 내용 | 출처·세부 정보 | |---|---|---| | **지원 대상** | 전국민(소득·가구 규모에 관계없이) | 대한민국 정책브리핑, 원문 공개일 기준 | | **지원 금액** | 가구당 월 10만원(구체 금액은 원문에 명시) | 대한민국 정책브리핑, 원문 공개일 기준 | | **지원 기간** | 2026년 9월 1일 ~ 2026년 9월 30일 | 대한민국 정책브리핑, 원문 공개일 기준 | | **신청 방법** | ① 온라인 신청(정책브리핑 사이트) ② 주민센터 방문 신청 | 대한민국 정책브리핑, 원문 공개일 기준 | | **담당 기관** | 보건복지부·지방자치단체(주민센터) | 대한민국 정책브리핑, 원문 공개일 기준 | | **필요 서류** | 주민등록증, 소득·재산 증명서(필요 시) | 대한민국 정책브리핑, 원문 공개일 기준 | > **※ 대한민국 정책브리핑**은 정부 정책·복지·생활 혜택을 공식적으로 제공하는 포털이며, 모든 안내는 원문 공개일 기준으로 최신 정보를 반영합니다. ### 신청 절차 1. **대상 확인**. Visual mood: clear public-service editorial, helpful everyday information. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1595014361739-7370d0fc74ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxob3VzZWhvbGQlMjBidWRnZXQlMjBub3RlYm9vayUyMGFwcGxpY2F0aW9uJTIwZm9ybSUyMGRvY3VtZW50fGVufDF8MHx8fDE3ODg2MzAxNTl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
