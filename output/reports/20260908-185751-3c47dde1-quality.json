@@ -1,0 +1,20 @@
+{
+  "run_id": "20260908-185751-3c47dde1",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "09월-아이폰-95ebba3e",
+      "title": "09월 아이폰 핵심 기능 3가지",
+      "keyword": "09월 아이폰",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 09월 아이폰 핵심 기능 3가지. Keyword: 09월 아이폰. Concrete visual subject: iphone smartphone modern minimal. Context: ```markdown # 09월 아이폰 핵심 기능 3가지 매년 9월, Apple은 새로운 하드웨어와 소프트웨어를 발표해 iPhone 사용 경험을 업데이트합니다. 이번에도 새로운 칩, 카메라, 배터리 개선이 이루어졌습니다. ## 누가 영향을 받나요? - iOS 기반 앱을 사용하는 직장인 - 사진·영상 작업을 하는 크리에이터 - 최신 보안·성능을 요구하는 일반 소비자 ## 무엇을 확인해야 할까요? 1. **속도·배터리 지속시간** – 일상에서 체감하는 속도와 배터리 사용 시간 2. **카메라** – 색 재현 및 저조도 촬영 품질 3. **가격 대비 기능·서비스** – 얻는 기능과 서비스가 실제 필요와 맞는지 ## 주요 변화 포인트 | 구분 | 전작 대비 변화 | 사용자가 체감할 점 | |------|----------------|-------------------| | **칩셋** | A18 Bionic 도입 (성능·전력 효율 개선) | 앱 실행·멀티태스킹이 더 부드러워짐 | | **카메라** | 트리플 렌즈·센서 크기 확대 | 저조도 사진이 밝고 선명해짐 | | **배터리** | 최대 15시간 사용 가능(예상) | 하루 종일 충전 없이 사용 가능 | | **소프트웨어** | iOS 18 새 기능 (위젯·보안 강화) | 개인화된 화면·보안 위험 감소 | ## 실제 사용 감각 - **속도**: 새로운 A18 칩은 CPU와 GPU 코어를 재. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1603184017968-953f59cd2e37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxpcGhvbmUlMjBzbWFydHBob25lJTIwbW9kZXJuJTIwbWluaW1hbHxlbnwxfDB8fHwxNzg4ODk0MTExfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
