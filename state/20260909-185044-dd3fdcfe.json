@@ -1,0 +1,90 @@
+{
+  "run_id": "20260909-185044-dd3fdcfe",
+  "topics": [
+    {
+      "keyword": "09월 갤럭시",
+      "title_hint": "09월 갤럭시 핵심 정리",
+      "category": "기술",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "09월 금리",
+      "title_hint": "09월 금리 핵심 정리",
+      "category": "정책",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": []
+    },
+    {
+      "keyword": "09월 지방선거",
+      "title_hint": "09월 지방선거 핵심 정리",
+      "category": "정치",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": []
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "09월 갤럭시",
+        "title_hint": "09월 갤럭시 핵심 정리",
+        "category": "기술",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "제조사 공식 홈페이지와 개발자 블로그",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "제품/기술 발표 원문 확인용",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "3가지만 알면 09월 갤럭시 선택",
+      "slug": "09월-갤럭시-a4472043",
+      "excerpt": "09월에 출시되는 갤럭시 모델을 실제 사용 관점에서 비교하고, 구매 판단에 필요한 핵심 포인트를 정리했습니다.",
+      "body_markdown": "의외로 09월 갤럭시가  \n새로운 디자인과 소프트웨어가 결합돼 기존 플래그십과는 다른 일상 활용성을 강조한다는 점이 가장 큰 차별점이다.  \n짧은 문장으로 핵심을 잡아보자.  \n공식 발표는 구체적인 수치를 공개하지 않지만, 삼성전자는 “사용자 중심 UI와 배터리 효율 개선”을 주요 목표로 제시했다.  \n\n삼성전자는 세계 최대 스마트폰 제조업체이며, 이번 발표는 2026년 가을 라인업을 재정비하는 전략적 움직임이다.  \nOne UI는 삼성의 사용자 인터페이스 이름으로, ‘One’은 하나의 일관된 경험을 의미한다.  \n스냅드래곤은 퀄컴이 만든 모바일 프로세서 브랜드이며, 최신 세대는 AI 연산과 전력 관리에서 큰 진전을 보인다.  \n\n왜 지금 봐야 하는지?  \n09월 갤럭시가 곧 출시돼 사전 예약과 초기 프로모션이 진행될 예정이기 때문이다.  \n\n누가 영향을 받는지?  \n고화질 영상 촬영을 즐기는 콘텐츠 크리에이터와 배터리 지속 시간을 중시하는 비즈니스 사용자 모두가 대상이다.  \n\n무엇을 확인해야 하는지?  \n공식 홈페이지에 올라온 업데이트 내용, 지원되는 네트워크 밴드, 그리고 보증 정책을 반드시 체크한다.  \n\n짧게 정리하면,  \n디자인, 소프트웨어, 배터리 세 축이 이번 모델의 핵심이다.  \n\n아래 표는 발표된 주요 기능과 기존 모델 대비 기대 효과를 정리한 것이다.\n\n| 구분 | 09월 갤럭시(예정) | 기존 플래그십(전작) |\n|------|-------------------|-------------------|\n| 디스플레이 | Dynamic AMOLED, 120Hz 가변 주사율 | AMOLED, 90Hz 고정 |\n| UI | One UI 6.0, AI 기반 배경 자동 전환 | One UI 5.0 |\n| 배터리 | 고효율 코어·소프트웨어 최적화(정확한 용량 미공개) | 기존 코어·소프트웨어 |\n| 카메라 | 소프트웨어 스테빌라이징 강화(세부 사양 비공개) | 기본 스테빌라이징 |\n| 보안 | 강화된 Knox 보안 모듈 | 기존 Knox |\n\n표에서 보듯, 화면 주사율과 UI가 가장 눈에 띈다.  \n하지만 수치가 공개되지 않은 만큼, 실제 체감 차이는 직접 체험해 보아야 판단할 수 있다.  \n\n실제 사용자는 화면 전환 시 부드러움과 배터리 소모량을 가장 민감하게 느낀다.  \n따라서, 전시장에서 120Hz 전환을 직접 확인하고, 배터리 테스트 앱으로 대기 시간을 측정해 보는 것이 현명한 선택이다.  \n\n마지막으로,  \n공식 홈페이지(https://developers.googleblog.com/)에 접속해 최신 발표 자료와 FAQ를 확인하고, 사전 예약 일정과 혜택을 놓치지 말 것을 권한다.",
+      "tags": [
+        "기술",
+        "09월",
+        "갤럭시"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1662947995643-0007c2b5ebb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxzYW1zdW5nJTIwc21hcnRwaG9uZSUyMG1vZGVybiUyMGRpc3BsYXl8ZW58MXwwfHx8MTc4ODk4MDA5MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "3가지만 알면 09월 갤럭시 선택 — Photo by BoliviaInteligente on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1778010955462-5b1c52059848?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8c2Ftc3VuZyUyMHNtYXJ0cGhvbmUlMjBtb2Rlcm4lMjBkaXNwbGF5fGVufDF8MHx8fDE3ODg5ODAwOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "3가지만 알면 09월 갤럭시 선택 본문 보조 이미지 — Photo by Gavin Phillips on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 3가지만 알면 09월 갤럭시 선택. Keyword: 09월 갤럭시. Concrete visual subject: samsung smartphone modern display. Context: 의외로 09월 갤럭시가 새로운 디자인과 소프트웨어가 결합돼 기존 플래그십과는 다른 일상 활용성을 강조한다는 점이 가장 큰 차별점이다. 짧은 문장으로 핵심을 잡아보자. 공식 발표는 구체적인 수치를 공개하지 않지만, 삼성전자는 “사용자 중심 UI와 배터리 효율 개선”을 주요 목표로 제시했다. 삼성전자는 세계 최대 스마트폰 제조업체이며, 이번 발표는 2026년 가을 라인업을 재정비하는 전략적 움직임이다. One UI는 삼성의 사용자 인터페이스 이름으로, ‘One’은 하나의 일관된 경험을 의미한다. 스냅드래곤은 퀄컴이 만든 모바일 프로세서 브랜드이며, 최신 세대는 AI 연산과 전력 관리에서 큰 진전을 보인다. 왜 지금 봐야 하는지? 09월 갤럭시가 곧 출시돼 사전 예약과 초기 프로모션이 진행될 예정이기 때문이다. 누가 영향을 받는지? 고화질 영상 촬영을 즐기는 콘텐츠 크리에이터와 배터리 지속 시간을 중시하는 비즈니스 사용자 모두가 대상이다. 무엇을 확인해야 하는지? 공식 홈페이지에 올라온 업데이트 내용, 지원되는 네트워크 밴드, 그리고 보증 정책을 반드시 체크한다. 짧게 정리하면, 디자인, 소프트웨어, 배터리 세 축이 이번 모델의 핵심이다. 아래 표는 발표된 주요 기능과 기존 모델 대비 기대 효과를 정리한 것이다. | 구분 | 09월 갤럭시(예정) | 기존 플래그십(전작) | |------|-------------------|--------. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 3가지만 알면 09월 갤럭시 선택. Keyword: 09월 갤럭시. Concrete visual subject: samsung smartphone modern display. Article context: 의외로 09월 갤럭시가 새로운 디자인과 소프트웨어가 결합돼 기존 플래그십과는 다른 일상 활용성을 강조한다는 점이 가장 큰 차별점이다. 짧은 문장으로 핵심을 잡아보자. 공식 발표는 구체적인 수치를 공개하지 않지만, 삼성전자는 “사용자 중심 UI와 배터리 효율 개선”을 주요 목표로 제시했다. 삼성전자는 세계 최대 스마트폰 제조업체이며, 이번 발표는 2026년 가을 라인업을 재정비하는 전략적 움직임이다. One UI는 삼성의 사용자 인터페이스 이름으로, ‘One’은 하나의 일관된 경험을 의미한다. 스냅드래곤은 퀄컴이 만든 모바일 프로세서 브랜드이며, 최신 세대는 AI 연산과 전력 관리에서 큰 진전을 보인다. 왜 지금 봐야 하는지? 09월 갤럭시가 곧 출시돼 사전 예약과 초기 프로모션이 진행될 예정이기 때문이다. 누가 영향을 받는지? 고화질 영상 촬영을 즐기는 콘텐츠 크리에이터와 배터리 지속 시간을 중시하는 비즈니스 사용자 모두가 대상이다. 무엇을 확인해야 하는지? 공식 홈페이지에 올라온 업데이트 내용, 지원되는 네트워크 밴드, 그리고 보증 정책을 반드시 체크한다. 짧게 정리하면, 디자인, 소프트웨어, 배터리 세 축이 이번 모델의 핵심이다. 아래 표는 발표된 주요 기능과 기존 모델 대비 기대 효과를 정리한 것이다. | 구분 | 09월 갤럭시(예정) | 기존 플래그십(전작) | |------|-------------------|-------------------| | 디스플레이 | Dynamic AMOLED, 120Hz 가변 주사율 | AMOLED, 90Hz 고정 | | UI | One UI 6.0, AI 기반 배경 자동 전환 | One UI 5.0 | | 배터리 | 고효율 코어·소프트웨어 최적화(정확한 용량 미공개) | 기존 코어·소프트웨어 | | 카메라 | 소프트웨어 스테빌라이징 강화(세부. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-09-09T18:54:42.424572",
+      "quality_score": 70.0,
+      "review_notes": [
+        "기술 글의 고유명사·수치·구체 행동 정보가 부족합니다.",
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/09월-갤럭시-a4472043.md",
+      "message": "draft saved"
+    }
+  ]
+}
