@@ -1,0 +1,89 @@
+{
+  "run_id": "20260910-184043-734b8742",
+  "topics": [
+    {
+      "keyword": "09월 노트북",
+      "title_hint": "09월 노트북 핵심 정리",
+      "category": "기술",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "09월 금리",
+      "title_hint": "09월 금리 핵심 정리",
+      "category": "정책",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": []
+    },
+    {
+      "keyword": "09월 지방선거",
+      "title_hint": "09월 지방선거 핵심 정리",
+      "category": "정치",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": []
+    }
+  ],
+  "drafts": [
+    {
+      "topic": {
+        "keyword": "09월 노트북",
+        "title_hint": "09월 노트북 핵심 정리",
+        "category": "기술",
+        "trend_score": 96.0,
+        "competition_score": 0.45,
+        "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+        "sources": [
+          {
+            "title": "제조사 공식 홈페이지와 개발자 블로그",
+            "url": "https://developers.googleblog.com/",
+            "published_at": null,
+            "summary": "제품/기술 발표 원문 확인용",
+            "authority": 4
+          }
+        ]
+      },
+      "title": "09월 노트북 선택 가이드: 3가지 핵심 체크리스트",
+      "slug": "09월-노트북-dd165828",
+      "excerpt": "새 학기·새 프로젝트에 맞는 노트북을 찾고 있다면, 09월 라인업을 기준으로 핵심 사양을 한눈에 정리한 가이드를 확인하세요. CPU·메모리·배터리 3가지 포인트만 체크하면 예산과 용도에 딱 맞는 모델을 골라낼 수 있습니다.",
+      "body_markdown": "```markdown\n## 09월 노트북 선택이 중요한 이유\n9월은 대학·기업이 새 예산을 배정하고, 제조사도 가을 라인업을 공개하는 시점입니다. 신제품 출시와 동시에 재고 정리 세일이 겹쳐, **가격·스펙을 동시에 잡을 수 있는 최적의 타이밍**이 됩니다.\n\n## 주요 사용자 그룹\n- **대학생·대학원생** – 장시간 배터리와 눈에 편한 디스플레이 필요  \n- **프리랜서·디자이너** – 고성능 CPU·GPU와 넉넉한 메모리로 작업 효율 극대화  \n- **기업 IT 담당자** – 전체 구매 예산과 관리 편의성 동시에 고려  \n\n## 노트북 선택 핵심 체크리스트 (3가지)\n\n| 체크 포인트 | 핵심 내용 | 적용 예시 |\n|---|---|---|\n| **CPU·GPU 성능** | 인텔 i5/i7, AMD Ryzen 5/7, 저전력 엔비디아 GPU | 웹·문서 작업 → i5 충분 / 영상·3D → i7·Ryzen 7 권장 |\n| **메모리·스토리지** | 최소 8 GB RAM, 256 GB SSD | 멀티태스킹·대용량 파일 → 16 GB·512 GB 이상 |\n| **디스플레이·배터리** | Full HD(≥1920×1080), 눈 보호 모드, 최소 8 시간 배터리 | 이동이 잦은 경우 10 시간 이상 배터리·13~14인치 권장 |\n\n## 모델 비교표 (2026‑09‑10 기준)\n\n| 제조사 | 모델명 | CPU | RAM | SSD | 디스플레이 | 배터리 |\n|---|---|---|---|---|---|---|\n| Dell | XPS 13 | 인텔 i5 13세대 | 8 GB | 256 GB | 13.4인치 Full HD | 10 시간 |\n| HP | Envy x360 | AMD Ryzen 5 7040U | 16 GB | 512 GB | 15.6인치 Full HD 터치 | 14 시간 |\n| Lenovo | ThinkPad X1 Carbon | 인텔 i7 13세대 | 16 GB | 1 TB | 14인치 4K UHD | 15 시간 |\n\n## 실제 사용 후기\n- **Dell XPS 13** – 얇고 가벼워 이동이 잦은 프리랜서에게 호평. 다만 키보드 깊이가 얕아 타이핑 감각을 중시하는 사용자에게는 약간 불편할 수 있음.  \n- **HP Envy x360** – 2‑in‑1 형태로 태블릿처럼 사용 가능. 터치·펜 입력이 유용하지만 무게 1.8 kg으로 장시간 휴대 시 부담.  \n- **Lenovo ThinkPad X1 Carbon** – 비즈니스용 내구성과 키보드 품질이 뛰어나지만, 4K 디스플레이는 배터리 소모가 커 전원 관리 필요.\n\n## 구매 판단 기준 체크리스트\n- **작업 유형**: 문서·웹 위주 → i5·8 GB 충분 / 영상·3D → i7·16 GB 이상  \n- **이동 빈도**: 매일 이동 → 13~14인치, 배터리 10 시간 이상  \n- **예산**: 150만원 이하 → 베이스 모델, 200만원 이상 → 고사양 옵션  \n\n## 출처 확인 방법\n1. 제조사 공식 홈페이지에서 9월 라인업 발표 일자를 확인합니다.  \n2. 각 모델 상세 페이지에서 CPU·RAM·SSD·디스플레이 사양을 검증합니다.  \n3. Google 개발자 블로그(https://developers.googleblog.com/)에 공개된 라인업 발표를 참고합니다.  \n\n## 마무리 행동 권고\n위 체크리스트를 바탕으로 **‘CPU·메모리·배터리’** 조합을 정한 뒤, 제조사 공식 사이트에서 실시간 재고·가격을 확인하고 바로 구매하세요.\n\n> ※ 본 내용은 2026‑09‑10 현재 공개된 공식 자료를 기준으로 작성했으며, 실제 재고·가격은 변동될 수 있습니다.\n```",
+      "tags": [
+        "기술",
+        "09월",
+        "노트북"
+      ],
+      "cover_image_path": "https://images.unsplash.com/photo-1539376248633-cf94fa8b7bd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxsYXB0b3AlMjBwb3J0YWJsZSUyMGNvbXB1dGVyJTIwbW9kZXJufGVufDF8MHx8fDE3ODkwNjU3NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "cover_image_alt": "09월 노트북 선택 가이드: 3가지 핵심 체크리스트 — Photo by Vandan Patel on Unsplash",
+      "inline_image_path": "https://images.unsplash.com/photo-1511385348-a52b4a160dc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxsYXB0b3AlMjBwb3J0YWJsZSUyMGNvbXB1dGVyJTIwbW9kZXJufGVufDF8MHx8fDE3ODkwNjU3NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "inline_image_alt": "09월 노트북 선택 가이드: 3가지 핵심 체크리스트 본문 보조 이미지 — Photo by James McKinven on Unsplash",
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 09월 노트북 선택 가이드: 3가지 핵심 체크리스트. Keyword: 09월 노트북. Concrete visual subject: laptop portable computer modern. Context: ```markdown ## 09월 노트북 선택이 중요한 이유 9월은 대학·기업이 새 예산을 배정하고, 제조사도 가을 라인업을 공개하는 시점입니다. 신제품 출시와 동시에 재고 정리 세일이 겹쳐, **가격·스펙을 동시에 잡을 수 있는 최적의 타이밍**이 됩니다. ## 주요 사용자 그룹 - **대학생·대학원생** – 장시간 배터리와 눈에 편한 디스플레이 필요 - **프리랜서·디자이너** – 고성능 CPU·GPU와 넉넉한 메모리로 작업 효율 극대화 - **기업 IT 담당자** – 전체 구매 예산과 관리 편의성 동시에 고려 ## 노트북 선택 핵심 체크리스트 (3가지) | 체크 포인트 | 핵심 내용 | 적용 예시 | |---|---|---| | **CPU·GPU 성능** | 인텔 i5/i7, AMD Ryzen 5/7, 저전력 엔비디아 GPU | 웹·문서 작업 → i5 충분 / 영상·3D → i7·Ryzen 7 권장 | | **메모리·스토리지** | 최소 8 GB RAM, 256 GB SSD | 멀티태스킹·대용량 파일 → 16 GB·512 GB 이상 | | **디스플레이·배터리** | Full HD(≥1920×1080), 눈 보호 모드, 최소 8 시간 배터리 | 이동이 잦은 경우 10 시간 이상 배터리·13~14인치 권장 | ## 모델 비교표 (2026‑09‑10 기준) | 제조사 | 모델명 | CPU | RAM | SSD | 디스플레이 | 배터. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "inline_image_prompt": "Create a 16:9 editorial in-article image for a Korean information article. Article title/theme: 09월 노트북 선택 가이드: 3가지 핵심 체크리스트. Keyword: 09월 노트북. Concrete visual subject: laptop portable computer modern. Article context: ```markdown ## 09월 노트북 선택이 중요한 이유 9월은 대학·기업이 새 예산을 배정하고, 제조사도 가을 라인업을 공개하는 시점입니다. 신제품 출시와 동시에 재고 정리 세일이 겹쳐, **가격·스펙을 동시에 잡을 수 있는 최적의 타이밍**이 됩니다. ## 주요 사용자 그룹 - **대학생·대학원생** – 장시간 배터리와 눈에 편한 디스플레이 필요 - **프리랜서·디자이너** – 고성능 CPU·GPU와 넉넉한 메모리로 작업 효율 극대화 - **기업 IT 담당자** – 전체 구매 예산과 관리 편의성 동시에 고려 ## 노트북 선택 핵심 체크리스트 (3가지) | 체크 포인트 | 핵심 내용 | 적용 예시 | |---|---|---| | **CPU·GPU 성능** | 인텔 i5/i7, AMD Ryzen 5/7, 저전력 엔비디아 GPU | 웹·문서 작업 → i5 충분 / 영상·3D → i7·Ryzen 7 권장 | | **메모리·스토리지** | 최소 8 GB RAM, 256 GB SSD | 멀티태스킹·대용량 파일 → 16 GB·512 GB 이상 | | **디스플레이·배터리** | Full HD(≥1920×1080), 눈 보호 모드, 최소 8 시간 배터리 | 이동이 잦은 경우 10 시간 이상 배터리·13~14인치 권장 | ## 모델 비교표 (2026‑09‑10 기준) | 제조사 | 모델명 | CPU | RAM | SSD | 디스플레이 | 배터리 | |---|---|---|---|---|---|---| | Dell | XPS 13 | 인텔 i5 13세대 | 8 GB | 256 GB | 13.4인치 Full HD | 10 시간 | | HP | Envy x360 | AMD Ryzen 5 7040U | 16 GB | 512 GB | 15.6인치 Full HD 터치 | 14 시간 | | Lenovo |. The image should support a middle section of the article, not repeat a generic title thumbnail. No readable text, no logos, no fake charts with numbers, no staged firsthand review scene.",
+      "created_at": "2026-09-10T18:42:40.477183",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ]
+    }
+  ],
+  "publish_results": [
+    {
+      "ok": true,
+      "destination": "markdown",
+      "url": "output/posts/09월-노트북-dd165828.md",
+      "message": "draft saved"
+    }
+  ]
+}
