@@ -1,0 +1,20 @@
+{
+  "run_id": "20260912-174942-4513e47d",
+  "average_quality": 100.0,
+  "drafts": [
+    {
+      "slug": "09월-스펙-4f88a97a",
+      "title": "09월 스펙: 구글 개발자 블로그 5대 최신 업데이트",
+      "keyword": "09월 스펙",
+      "category": "기술",
+      "quality_score": 100.0,
+      "review_notes": [
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 09월 스펙: 구글 개발자 블로그 5대 최신 업데이트. Keyword: 09월 스펙. Concrete visual subject: technology device specification digital. Context: ## 무슨 소식인가 구글 개발자 블로그(https://developers.googleblog.com/)는 구글의 제품·기술 발표를 원문 형태로 제공하는 공식 채널입니다. 2026년 9월 현재, 블로그에 올라온 주요 글 5편을 중심으로 최신 변화와 실사용자 영향을 정리했습니다. ## 09월 스펙에 반영할 5대 업데이트 | # | 발표 내용 | 핵심 포인트 | 출처(원문 공개일 기준) | |---|-----------|------------|------------------------| | 1 | **AI Agents Challenge** – 4가지 엔지니어링 패턴이 성공 비결 | 멀티‑에이전트 시스템에 **양방향 MCP**, **비동기 이벤트 버스**, **통합 검증**, **계층 라우팅** 적용 권장 | 2026‑09‑09 | | 2 | **Credentio** – 오픈소스 C++ 라이브러리 for C2PA | 로컬‑퍼스트 검증으로 대용량 미디어 파일도 **즉시** 검증, 클라우드 비용·지연 최소화 | 2026‑09‑09 | | 3 | **HeyGen × Google Cloud** – Avatar IV on TPUs | AI 아바타 생성 작업을 **TPU**에서 실행, 비용·성능 최적화 | 2026‑09‑04 | | 4 | **Agent Plugins 1.0.0** – 벤더‑중립 플러그인 사양 | `plugin.json` 기반 표준 . Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1574887427561-d3d5d58c9273?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0ZWNobm9sb2d5JTIwZGV2aWNlJTIwc3BlY2lmaWNhdGlvbiUyMGRpZ2l0YWx8ZW58MXwwfHx8MTc4OTIzNTYyN3ww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
