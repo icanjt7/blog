@@ -1,0 +1,21 @@
+{
+  "run_id": "20260914-195608-5596c47f",
+  "average_quality": 88.0,
+  "drafts": [
+    {
+      "slug": "09월-비교-062491ab",
+      "title": "9월 최신 비교: 픽셀 태블릿 vs 픽셀 폴드 2",
+      "keyword": "09월 비교",
+      "category": "기술",
+      "quality_score": 88.0,
+      "review_notes": [
+        "핵심 키워드 노출이 적습니다.",
+        "LLM 편집 보완 완료"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 4.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 9월 최신 비교: 픽셀 태블릿 vs 픽셀 폴드 2. Keyword: 09월 비교. Concrete visual subject: tablet touchscreen digital screen technology devices comparison review. Context: ### 9월 최신 비교: 픽셀 태블릿 vs 픽셀 폴드 2 구글이 9월에 발표한 두 신제품, **픽셀 태블릿**과 **픽셀 폴드 2**의 실제 사용감과 주요 특징을 비교합니다. #### 제품 개요 - **픽셀 태블릿**: 12.4인치 대형 LCD 디스플레이와 키보드 커버를 기본 제공, 노트북 대체용으로 설계. - **픽셀 폴드 2**: 7.6인치 내부 OLED와 6.2인치 외부 OLED를 접었다 펼쳤을 때 모두 사용 가능한 폼팩터. 두 제품 모두 최신 **안드로이드 15**를 탑재했으며, 구글 서비스와 AI 기능이 강화되었습니다. #### 사양 비교표 | 구분 | 픽셀 태블릿 | 픽셀 폴드 2 | |------|-------------|------------| | 화면 | 12.4인치 LCD, 2,400 × 1,600 | 7.6인치 OLED, 2,560 × 1,720 (내부) / 6.2인치 OLED, 2,160 × 1,560 (외부) | | 배터리 | 8,000 mAh, 12 시간 연속 사용 | 5,500 mAh, 10 시간 연속 사용 | | 무게 | 620 g | 460 g (접힌 상태) | | 가격(예상) | 1,099 USD | 1,299 USD | | 주요 특징 | 키보드·펜 지원, 멀티 윈도우 | 폴더블 디자인, 손쉬운 휴대성 | #### 장점·단점 **픽셀 태블릿** - *장점*: 넓은 화면으로 문서 작업·동영상 시청이 편하. Visual mood: modern tech magazine cover, clean devices and abstract interface elements. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1557825835-70d97c4aa567?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0YWJsZXQlMjB0b3VjaHNjcmVlbiUyMGRpZ2l0YWwlMjBzY3JlZW4lMjB0ZWNobm9sb2d5JTIwZGV2aWNlcyUyMGNvbXBhcmlzb24lMjByZXZpZXd8ZW58MXwwfHx8MTc4OTQxNTg4MXww&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
