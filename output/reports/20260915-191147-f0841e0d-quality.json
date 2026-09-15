@@ -1,0 +1,20 @@
+{
+  "run_id": "20260915-191147-f0841e0d",
+  "average_quality": 89.0,
+  "drafts": [
+    {
+      "slug": "09월-부동산-fc35fb0b",
+      "title": "09월 부동산, 3가지만 알면 손해?",
+      "keyword": "09월 부동산",
+      "category": "정책",
+      "quality_score": 89.0,
+      "review_notes": [
+        "LLM 편집 실패로 규칙 기반 검수만 적용: APIStatusError"
+      ],
+      "source_count": 1,
+      "source_authority_avg": 5.0,
+      "image_prompt": "Create a 16:9 editorial cover image for a Korean news-style information channel. Article title/theme: 09월 부동산, 3가지만 알면 손해?. Keyword: 09월 부동산. Concrete visual subject: real estate apartment city. Context: 09월 부동산? 금융위원회가 2026년 9월 발표한 보도자료에 따르면 정책이 일부 조정됩니다. 누가 변하나요? LTV 기준이 낮아져 신규 구매자와 기존 대출자 모두 대출 한도 재조정 위험에 놓입니다. 왜 중요한가? LTV는 대출금액을 담보 가액 대비 비율로 나타내며, 낮아질수록 대출 가능 금액이 제한돼 시장 진입이 어려워집니다. 다음은 뭐? 보도자료는 전세자금 대출 금리 인상과 주택청약 가점제 보완을 발표하며, 대상별 차등 적용을 예고했습니다. 누구에게? 전세 세입자와 청약 무주택 가구, 기존 대출 가계가 직접 영향을 받습니다. 어디서 확인? 금융위원회 포털에서 보도자료를 보면 정책 내용·시행 일정·대상을 확인할 수 있습니다. 주의점은? 정책은 단계적으로 적용되고, 일부 지역은 별도 조정이 있어 현지 상황을 확인해야 합니다. 다음은 표. 아래 표는 09월 부동산 정책을 정책·내용·대상으로 정리한 요약표입니다. | 정책 구분 | 주요 내용 | 적용 대상 | |----------|-----------|-----------| | 대출 규제 | LTV·DTI 기준 하향 | 주택 구매·전세자금 대출자 | | 세제 조정 | 소득 기준 세액공제 축소 | 연소득 7천만원 이하 가구 | | 청약 제도 | 가점제 보완·우선순위 조정 | 무주택·청년 가구 | 표를 보니? 대출 규제는 LTV·DTI 기준을 낮추고, 세제 혜택은 소득 이하 가구에 한해 유지. Visual mood: trustworthy finance and policy briefing, charts and documents without readable numbers. No readable text, no brand logos, no fake UI, no people implying firsthand review. Use a polished, credible, news briefing style suitable for a blog thumbnail.",
+      "cover_image_path": "https://images.unsplash.com/photo-1708242152350-4c34d2ee5a4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxyZWFsJTIwZXN0YXRlJTIwYXBhcnRtZW50JTIwY2l0eXxlbnwxfDB8fHwxNzg5NDk5NjMzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+    }
+  ]
+}
