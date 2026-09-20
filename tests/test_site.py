@@ -6,10 +6,18 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from unittest.mock import patch
 
+from blog_agent.product_links import PRODUCT_LINKS
 from blog_agent.site import StaticSiteBuilder
 
 
 class StaticSiteBuilderTest(unittest.TestCase):
+    def test_every_product_link_has_a_toss_image(self) -> None:
+        self.assertEqual(len(PRODUCT_LINKS), 43)
+        self.assertTrue(all(product.image_url for product in PRODUCT_LINKS))
+        self.assertTrue(
+            all(product.image_url.startswith("https://shopping.toss.im/") for product in PRODUCT_LINKS)
+        )
+
     def test_parse_post_recovers_from_inline_llm_response_labels(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -75,6 +83,7 @@ cover_image: https://example.com/cover.jpg
 
         self.assertEqual(selected.url, "https://toss.im/_m/lnQdq7ws")
         self.assertIn("오메가3", selected.name)
+        self.assertTrue(selected.image_url.startswith("https://shopping.toss.im/"))
 
     def test_frontmatter_split_ignores_markdown_rule_inside_quoted_title(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -339,6 +348,9 @@ quality_score: 95.0
             self.assertIn("함께 보면 좋은 글", html)
             self.assertIn("관련 글", html)
             self.assertEqual(html.count('class="product-recommendation"'), 1)
+            self.assertIn('class="product-recommendation-image"', html)
+            self.assertIn('loading="lazy"', html)
+            self.assertIn('referrerpolicy="no-referrer"', html)
             self.assertIn('href="https://toss.im/_m/', html)
             self.assertIn('rel="sponsored nofollow noopener"', html)
             self.assertIn("일정 수수료를 받을 수 있으며", html)

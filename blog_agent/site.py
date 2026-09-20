@@ -856,13 +856,25 @@ class StaticSiteBuilder:
 
     def _product_link_html(self, post: Post) -> str:
         product = self._select_product(post)
+        image_html = ""
+        if product.image_url:
+            image_html = (
+                f'<a class="product-recommendation-image-link" href="{html.escape(product.url)}" '
+                'rel="sponsored nofollow noopener" target="_blank" tabindex="-1" aria-hidden="true">'
+                f'<img class="product-recommendation-image" src="{html.escape(product.image_url)}" '
+                f'alt="{html.escape(product.name)} 상품 이미지" width="220" height="220" '
+                'loading="lazy" decoding="async" referrerpolicy="no-referrer"></a>'
+            )
         return f"""
           <aside class="product-recommendation" aria-label="추천 상품">
-            <p class="product-recommendation-label">추천 상품</p>
-            <p class="product-recommendation-name">{html.escape(product.name)}</p>
-            <a class="product-recommendation-link" href="{html.escape(product.url)}"
-               rel="sponsored nofollow noopener" target="_blank">토스쇼핑에서 상품 보기</a>
-            <p class="product-recommendation-disclosure">이 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>
+            {image_html}
+            <div class="product-recommendation-body">
+              <p class="product-recommendation-label">추천 상품</p>
+              <p class="product-recommendation-name">{html.escape(product.name)}</p>
+              <a class="product-recommendation-link" href="{html.escape(product.url)}"
+                 rel="sponsored nofollow noopener" target="_blank">토스쇼핑에서 상품 보기</a>
+              <p class="product-recommendation-disclosure">이 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>
+            </div>
           </aside>
         """
 
@@ -3033,12 +3045,31 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 
 /* ── featured product ── */
 .product-recommendation {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
   margin: 28px 0 0;
   padding: 18px;
   border: 1px solid rgba(15,118,110,.22);
   border-radius: 10px;
   background: #f4faf8;
 }
+.product-recommendation-image-link {
+  display: block;
+  width: 132px;
+  height: 132px;
+  overflow: hidden;
+  border-radius: 9px;
+  background: #fff;
+}
+.product-recommendation-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.product-recommendation-body { min-width: 0; }
 .product-recommendation-label {
   margin: 0 0 5px;
   color: var(--accent);
@@ -3113,6 +3144,8 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   .grid { grid-template-columns: 1fr; gap: 10px; padding: 10px 12px 0; }
   .card { border-radius: 10px; contain-intrinsic-size: 390px; }
   .card-body { padding: 12px 14px 14px; }
+	  .product-recommendation { grid-template-columns: 96px minmax(0, 1fr); gap: 12px; padding: 14px; }
+	  .product-recommendation-image-link { width: 96px; height: 96px; }
 	  .post { border-radius: 0; border-left: none; border-right: none; padding: 16px; }
 	  .search-page { max-width: none; }
 	  .search-panel { padding: 14px; }

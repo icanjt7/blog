@@ -9,6 +9,10 @@ class ProductLink:
     url: str
     keywords: tuple[str, ...]
 
+    @property
+    def image_url(self) -> str:
+        return PRODUCT_IMAGE_URLS.get(self.url.rsplit("/", 1)[-1], "")
+
 
 def product(name: str, code: str, *keywords: str) -> ProductLink:
     return ProductLink(name=name, url=f"https://toss.im/_m/{code}", keywords=keywords)
@@ -59,3 +63,50 @@ PRODUCT_LINKS: tuple[ProductLink, ...] = (
     product("노랑 곱빼기 왕 떡갈비 160g 5봉", "VyS3wxuy", "떡갈비", "갈비", "고기", "간편식", "식품"),
     product("탐나유 캠벨포도 2kg", "Xw7cyJLD", "포도", "과일", "농산물", "식품"),
 )
+
+
+PRODUCT_IMAGE_URLS: dict[str, str] = {
+    "9FHICi7b": "https://shopping.toss.im/live/temp/2026-06-05/28f63f1a-246e-4e36-82ad-12f0fbb50755.jpeg",
+    "h5pr4yMt": "https://shopping.toss.im/live/temp/2026-03-17/c9028546-ba19-4014-8c8b-c85d37eda844.jpeg",
+    "5wFfPBws": "https://shopping.toss.im/live/taca/ai/MzI0ZDg5/TThBR1RoMlZHeVluYWN4R09jOHpCdWM4L3VBZ253QXlIV1ovL2hIKzhERT0.png",
+    "3PQAFahr": "https://shopping.toss.im/live/temp/2026-09-05/79a1ea10-1db9-4b33-8d21-f63edae43be4.png",
+    "xJVyKiMo": "https://shopping.toss.im/live/product/38416887/079a5cc4-cb45-486d-88a6-80c95f274ad4.jpeg",
+    "rVrJRN2l": "https://shopping.toss.im/live/taca/ai/N2QxNTY5/SUc1RTRlZVV5ZGZxMisxajI3L2E5SFMyV2t1UW04dytUOVFLL09mUUlNQT0.png",
+    "Nia49byd": "https://shopping.toss.im/bcfc2811-ee2b-42b3-bde7-06d7498e4bb4.jpg",
+    "N3xbHSN9": "https://shopping.toss.im/live/temp/2026-07-07/9d81186a-4a50-4721-8e2a-4d8c762a9b33.png",
+    "b8k0T0j7": "https://shopping.toss.im/live/taca/ai/MzFjMjQw/R2xGWkIzUHR0dUdVajZjeExtZzhUTGpLNGJObkpGMFozRE5DQS9mK2Zrdz0.png",
+    "rtWorPL5": "https://shopping.toss.im/live/temp/2026-07-07/9d81186a-4a50-4721-8e2a-4d8c762a9b33.png",
+    "1udvQHy3": "https://shopping.toss.im/live/temp/2026-06-04/8e1e7348-8121-4641-a08a-c44cc17fb846.jpeg",
+    "vvZhux31": "https://shopping.toss.im/live/taca/ai/MzI0ZDg5/TThBR1RoMlZHeVluYWN4R09jOHpCdWM4L3VBZ253QXlIV1ovL2hIKzhERT0.png",
+    "ZMbzByhw": "https://shopping.toss.im/live/taca/ai/v2/ZTEzNGRl/SzNhemRrczIrM1JFMzNiRVptUnVWdXRjcVVhNW5OdE91WnhLYTFhWmxMaz0.png",
+    "FleCbTLt": "https://shopping.toss.im/live/temp/2026-09-08/01499a77-372a-48b9-81b4-56d7aa33fcb5.jpeg",
+    "hpXSfo2q": "https://shopping.toss.im/live/taca/ai/v2/NmY1MTIy/RGJHU1p2L09OdFBDZm0wc21iSGpiRzNCdHBPU0hva3haL2hKYUxBQnR0WT0.png",
+    "TeiSmw0c": "https://shopping.toss.im/live/temp/2026-08-28/4368f403-3673-4fe9-aa1c-6e74293ae2df.jpeg",
+    "jx7ztL1g": "https://shopping.toss.im/live/temp/2025-08-05/0c32948a-5e0e-4d82-8e56-2a74ee2d3196.jpeg",
+    "lkl160ih": "https://shopping.toss.im/live/temp/2025-12-16/1aad062f-3026-4675-9b87-15aa042d873f.jpeg",
+    "ZBKfVyKk": "https://shopping.toss.im/live/temp/2026-04-06/16393d57-2a1d-401b-b19e-7563d3c2640c.jpeg",
+    "PjgLybem": "https://shopping.toss.im/live/temp/2026-06-17/3e1cddbc-6714-42f9-9fbe-fe7f9a27698c.png",
+    "7vyrQSwn": "https://shopping.toss.im/live/temp/2025-05-29/c44ac161-ec23-4a1e-8bd7-2ca71d3bf466.jpeg",
+    "NSfk8Vdr": "https://shopping.toss.im/live/taca/ai/NzMyZDQw/QVBPZi9qZFR6TjV1eHMxWnpUOFpNem44T2MyWjBmRHpkZ3YwcmJ1OVE5Wms.png",
+    "lnQdq7ws": "https://shopping.toss.im/live/temp/2026-07-23/1ca91ba3-3fbc-4d2a-a465-97195ba48b2a.jpeg",
+    "HHjMy3Mt": "https://shopping.toss.im/live/temp/2026-09-18/e0139823-e091-409b-8d2c-6ca119b80bca.jpeg",
+    "FFWBSJ0A": "https://shopping.toss.im/live/taca/ai/MDY3Zjli/YUU3WGMxaXN4bE5ydFk1eThCNlpaViswZXMwUUo5cUV0dnlHbG9BQmJGST0.png",
+    "lyW3jeZA": "https://shopping.toss.im/live/taca/ai/v2/NTM0NzEw/T1pTTmllTWJqR1NtV3hua3hwdGpqQTQySm14NDVzZVlpWnNjT2FWTFlzWT0.png",
+    "b5hTcCvC": "https://shopping.toss.im/live/taca/ai/ZmJhZjEw/SkpMSE04TTVjSXd5ekJqbUhUTENjZWNMWll4QzdKQlduYkNnNldaUEtXMD0.png",
+    "xKBhEny3": "https://shopping.toss.im/live/taca/ai/ODJjMjdi/Zjk4T0RXMiszRHdaaDVqalRKUXVML3Mybk9iK08zNDI0em5nSCtBU2dOZz0.png",
+    "RQeQWW26": "https://shopping.toss.im/live/taca/ai/ODdlMGY5/WnR6a3k4emJsWnJwa3pNZWJiT21NZWptS0dXa3pxR1RrUnpUWTNSWVljST0.png",
+    "t2L5eTh7": "https://shopping.toss.im/live/temp/2026-09-14/37b2d5a3-e1c7-49a2-895b-6fcd9ce94a07.jpeg",
+    "5ebEYiud": "https://shopping.toss.im/live/temp/2025-01-23/a5cec8b0-4ee3-4f3f-ba7e-f6234490df1f.jpeg",
+    "js5A5KJe": "https://shopping.toss.im/live/temp/2026-08-04/900dfa86-ac6c-46b5-87fd-c1ad501781e8.jpeg",
+    "9BtmmW1g": "https://shopping.toss.im/live/taca/ai/NWY2ZGFl/ZEFzSjZBbFU5QjRWL2dBRDZBRW8zQVZVVkN0YXF5Z0JvVUZVL2gvK0lBRT0.png",
+    "Jfi7lCeh": "https://shopping.toss.im/live/taca/ai/OWJjNGYw/QUxIM1NoNU9mS2VmYzQ1NVFiM0RyYWVZZUs0TlRnTkhZSkx6cHJ4cEIybHY.png",
+    "97WU1Sfi": "https://shopping.toss.im/10c/live/product/768502791/10cfc1c2-af54-4ae6-8c7b-18b341703311.jpg",
+    "Ne3H0KKk": "https://shopping.toss.im/live/taca/ai/YTIwNTAw/QUpETGFieVdlbnA4UE02aHNzOW9ucGw1RWVRTFV6Tmt3L09GL2lNOGVSSDg.png",
+    "PJwME6er": "https://shopping.toss.im/10c/live/product/768502791/10cfc1c2-af54-4ae6-8c7b-18b341703311.jpg",
+    "Vo3tJxts": "https://shopping.toss.im/d9a/live/product/757752015/d9ad127b-36d9-4528-895c-15479b6ac0ce.jpg",
+    "f3qbFxMt": "https://shopping.toss.im/f0f/live/product/757486213/f0f5d4f7-23ee-45a3-8131-a005f27e40d5.jpg",
+    "XmJU4qYu": "https://shopping.toss.im/live/taca/ai/v2/NWI5ODQ4/QUx3OEppN0d3ODRabUNRdkhtVGg4K0ErR21qaWltRXFPYVh0NjhWVDlKZ2Y.png",
+    "p7hHp7hw": "https://shopping.toss.im/b39/live/product/840696581/b394d955-7779-40ba-b12c-b7bf184fa00c.jpg",
+    "VyS3wxuy": "https://shopping.toss.im/955d5c28-ce13-4baa-9f0a-f06de476fcc0.jpg",
+    "Xw7cyJLD": "https://shopping.toss.im/live/taca/ai/v2/MWJkZjAx/QUl1SkozcmRlMmtJMUEwMUtRcWxHUWptOVZ5dnZSV3VyVnhVSHJSUkR1Lys.png",
+}
