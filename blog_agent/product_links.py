@@ -1,6 +1,15 @@
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass
+from pathlib import Path
+
+
+_REVIEW_DATA_PATH = Path(__file__).with_name("product_reviews.json")
+try:
+    PRODUCT_REVIEW_DATA: dict[str, dict] = json.loads(_REVIEW_DATA_PATH.read_text(encoding="utf-8"))
+except (OSError, ValueError):
+    PRODUCT_REVIEW_DATA = {}
 
 
 @dataclass(frozen=True)
@@ -12,6 +21,10 @@ class ProductLink:
     @property
     def image_url(self) -> str:
         return PRODUCT_IMAGE_URLS.get(self.url.rsplit("/", 1)[-1], "")
+
+    @property
+    def review_data(self) -> dict:
+        return PRODUCT_REVIEW_DATA.get(self.url.rsplit("/", 1)[-1], {})
 
 
 def product(name: str, code: str, *keywords: str) -> ProductLink:

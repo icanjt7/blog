@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from unittest.mock import patch
 
-from blog_agent.product_links import PRODUCT_LINKS
+from blog_agent.product_links import PRODUCT_LINKS, PRODUCT_REVIEW_DATA
 from blog_agent.site import StaticSiteBuilder
 
 
@@ -16,6 +16,15 @@ class StaticSiteBuilderTest(unittest.TestCase):
         self.assertTrue(all(product.image_url for product in PRODUCT_LINKS))
         self.assertTrue(
             all(product.image_url.startswith("https://shopping.toss.im/") for product in PRODUCT_LINKS)
+        )
+
+    def test_product_review_data_is_from_toss_shopping(self) -> None:
+        self.assertEqual(len(PRODUCT_REVIEW_DATA), len(PRODUCT_LINKS))
+        self.assertTrue(
+            all(
+                data.get("source_url", "").startswith("https://toss.shopping/")
+                for data in PRODUCT_REVIEW_DATA.values()
+            )
         )
 
     def test_parse_post_recovers_from_inline_llm_response_labels(self) -> None:
@@ -352,6 +361,9 @@ quality_score: 95.0
             self.assertIn('class="product-recommendation-description"', html)
             self.assertIn("구성·용량과 현재 가격, 배송 조건", html)
             self.assertIn("현재 가격·상품 정보 확인하기", html)
+            self.assertIn("실제 구매자 후기", html)
+            self.assertIn("토스쇼핑에서 후기 전체 보기", html)
+            self.assertIn("구매자 개인의 경험", html)
             self.assertIn('loading="lazy"', html)
             self.assertIn('referrerpolicy="no-referrer"', html)
             self.assertIn('href="https://toss.im/_m/', html)

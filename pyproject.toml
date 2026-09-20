@@ -28,4 +28,4 @@ where = ["."]
 include = ["blog_agent*"]
 
 [tool.setuptools.package-data]
-blog_agent = ["sources.yml"]
+blog_agent = ["sources.yml", "product_reviews.json"]

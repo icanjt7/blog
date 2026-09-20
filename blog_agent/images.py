@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import base64
 import hashlib
+import re
 import urllib.parse
 from pathlib import Path
 
@@ -157,9 +158,11 @@ def is_public_license_badge(url: str | None, alt: str | None = None) -> bool:
     """Return True for public-license badges that must not be used as article art."""
     normalized_url = (url or "").casefold()
     normalized_alt = (alt or "").casefold()
-    return any(marker in normalized_url for marker in PUBLIC_LICENSE_IMAGE_MARKERS) or any(
-        marker in normalized_alt
-        for marker in ("공공누리", "공공저작물 자유이용허락", "korea open government license")
+    return any(marker in normalized_url for marker in PUBLIC_LICENSE_IMAGE_MARKERS) or bool(
+        re.search(
+            r"공공누리(?!집)|공공저작물\s*자유이용허락|korea open government license",
+            normalized_alt,
+        )
     )
 
 

@@ -897,6 +897,7 @@ class StaticSiteBuilder:
                 f'alt="{html.escape(product.name)} 상품 이미지" width="220" height="220" '
                 'loading="lazy" decoding="async" referrerpolicy="no-referrer"></a>'
             )
+        reviews_html = self._product_reviews_html(product)
         return f"""
           <aside class="product-recommendation" aria-label="추천 상품">
             {image_html}
@@ -908,10 +909,67 @@ class StaticSiteBuilder:
               <p class="product-recommendation-guide">구성·용량과 현재 가격, 배송 조건을 상세 페이지에서 비교해 보세요.</p>
               <a class="product-recommendation-link" href="{html.escape(product.url)}"
                  rel="sponsored nofollow noopener" target="_blank">현재 가격·상품 정보 확인하기 <span aria-hidden="true">→</span></a>
+              {reviews_html}
               <p class="product-recommendation-disclosure">이 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>
             </div>
           </aside>
         """
+
+    @staticmethod
+    def _product_reviews_html(product: ProductLink) -> str:
+        data = product.review_data
+        reviews = data.get("reviews") if isinstance(data, dict) else None
+        if not isinstance(reviews, list) or not reviews:
+            return (
+                '<div class="product-user-reviews">'
+                '<p class="product-user-reviews-title">실제 구매자 후기</p>'
+                f'<p class="product-user-reviews-empty"><a href="{html.escape(product.url)}" '
+                'rel="sponsored nofollow noopener" target="_blank">상품 페이지에서 최신 후기를 확인해 보세요.</a></p>'
+                '</div>'
+            )
+
+        try:
+            rating = float(data.get("rating") or 0)
+        except (TypeError, ValueError):
+            rating = 0
+        try:
+            review_count = int(data.get("review_count") or 0)
+        except (TypeError, ValueError):
+            review_count = 0
+        summary = f"평점 {rating:.1f}점 · 후기 {review_count:,}개" if rating and review_count else "토스쇼핑 구매 후기"
+        items: list[str] = []
+        for review in reviews[:3]:
+            if not isinstance(review, dict):
+                continue
+            text = re.sub(r"\s+", " ", str(review.get("text") or "")).strip()
+            if not text:
+                continue
+            text = text[:220].rstrip()
+            author = str(review.get("author") or "구매자")
+            try:
+                review_rating = int(review.get("rating") or 0)
+            except (TypeError, ValueError):
+                review_rating = 0
+            rating_label = f"★ {review_rating}" if review_rating else "구매 후기"
+            items.append(
+                '<li class="product-user-review">'
+                f'<span class="product-user-review-rating">{rating_label}</span>'
+                f'<q>{html.escape(text)}</q>'
+                f'<span class="product-user-review-author">{html.escape(author)}</span>'
+                '</li>'
+            )
+        if not items:
+            return ""
+        return (
+            '<div class="product-user-reviews">'
+            '<p class="product-user-reviews-title">실제 구매자 후기</p>'
+            f'<p class="product-user-reviews-summary">{html.escape(summary)}</p>'
+            f'<ul>{"".join(items)}</ul>'
+            f'<a class="product-user-reviews-more" href="{html.escape(product.url)}" '
+            'rel="sponsored nofollow noopener" target="_blank">토스쇼핑에서 후기 전체 보기 →</a>'
+            '<p class="product-user-reviews-note">구매자 개인의 경험이며 상품 효과를 보장하지 않습니다.</p>'
+            '</div>'
+        )
 
     def _write_localized_post_pages(self, post: Post, alternates: dict[str, str]) -> None:
         aliases = self._search_aliases(post)
@@ -3155,6 +3213,24 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   font-size: .75rem;
   line-height: 1.55;
 }
+.product-user-reviews {
+  margin: 16px 0 0;
+  padding: 14px;
+  border: 1px solid rgba(15,118,110,.16);
+  border-radius: 8px;
+  background: #fff;
+}
+.product-user-reviews-title { margin: 0; color: var(--ink); font-size: .9rem; font-weight: 800; }
+.product-user-reviews-summary { margin: 3px 0 9px; color: var(--accent); font-size: .8rem; font-weight: 700; }
+.product-user-reviews ul { margin: 0; padding: 0; list-style: none; }
+.product-user-review { padding: 8px 0; border-top: 1px solid var(--line); font-size: .8rem; line-height: 1.5; }
+.product-user-review:first-child { border-top: 0; }
+.product-user-review-rating { margin-right: 7px; color: #b45309; font-weight: 800; }
+.product-user-review q { color: var(--ink); }
+.product-user-review-author { margin-left: 7px; color: var(--muted); font-size: .74rem; }
+.product-user-reviews-more { display: inline-block; margin-top: 7px; font-size: .78rem; font-weight: 700; }
+.product-user-reviews-note,
+.product-user-reviews-empty { margin: 8px 0 0; color: var(--muted); font-size: .72rem; line-height: 1.5; }
 
 /* ── ad slot ── */
 .ad-slot {

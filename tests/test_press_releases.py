@@ -31,6 +31,14 @@ class PressReleaseImportTest(unittest.TestCase):
     def test_placeholder_cover_rejects_public_license_badge(self) -> None:
         self.assertTrue(MODULE.is_placeholder_cover("https://example.go.kr/images/nuri-img01.jpg"))
 
+    def test_public_website_word_is_not_treated_as_license_badge(self) -> None:
+        self.assertFalse(
+            MODULE.is_public_license_badge(
+                "https://images.example.com/meeting.jpg",
+                "공공누리집 UI/UX 위원회 위촉식",
+            )
+        )
+
     def test_import_source_filters_release_date_range(self) -> None:
         releases = {
             "old": MODULE.PressRelease("행정안전부", "이전 자료", "2026-07-26", "old", "본문"),
