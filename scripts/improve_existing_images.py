@@ -149,7 +149,7 @@ def improve_post(
     public_license_badge = is_public_license_badge(old_cover, old_alt)
     if public_license_only and not public_license_badge:
         return False, "skip:not-public-license"
-    if not force and not _is_weak_cover(old_cover):
+    if not force and not public_license_badge and not _is_weak_cover(old_cover):
         return False, "skip:strong-cover"
 
     draft = _build_draft(path, meta, body)
