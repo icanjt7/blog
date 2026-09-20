@@ -7,8 +7,8 @@ tags:
   - "문화체육관광부"
   - "핫이슈"
 quality_score: 96.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_00.png"
-cover_image_alt: "공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락"
+cover_image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlJTIwc2FmZXR5JTIwcHVibGljJTIwc2VydmljZXxlbnwxfDB8fHwxNzg5OTA2Njk0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "고교야구 현장 점검, 폭염 대비 100% 안전 — Photo by shalender kumar on Unsplash"
 author: "문화체육관광부"
 ---
 

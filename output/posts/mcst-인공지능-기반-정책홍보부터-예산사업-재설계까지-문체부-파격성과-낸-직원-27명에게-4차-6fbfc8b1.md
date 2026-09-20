@@ -7,8 +7,8 @@ tags:
 - 문화체육관광부
 - 기술
 quality_score: 96.0
-cover_image: https://www.mcst.go.kr/site/images/sub/openright_00.png
-cover_image_alt: 공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락
+cover_image: "https://images.unsplash.com/flagged/photo-1568896909222-95dcd3b6b265?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMGN1bHR1cmUlMjBhcnRzJTIwY3JlYXRpdmUlMjBhZG1pbmlzdHJhdGlvbiUyMG9mZmljZSUyMHBhcGVyd29ya3xlbnwxfDB8fHwxNzg5OTA2NzA4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "문체부, 인공지능 기반 정책홍보 및 행정혁신 성과 직원 포상 — Photo by Barbara Maier on Unsplash"
 author: 문화체육관광부
 title_improved_by_llm: true
 search_index_improved: true

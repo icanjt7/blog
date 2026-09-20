@@ -7,8 +7,8 @@ tags:
 - 문화체육관광부
 - 핫이슈
 quality_score: 84.0
-cover_image: https://www.mcst.go.kr/site/images/sub/openright_00.png
-cover_image_alt: 공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락
+cover_image: "https://images.unsplash.com/photo-1591172601559-0ec5b777992a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8dG91cmlzbSUyMGRlc3RpbmF0aW9uJTIwdHJhdmVsJTIwaW52ZXN0bWVudCUyMGZpbmFuY2UlMjBncm93dGglMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODk5MDY3MDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "야영장 분양·회원권 투자, 불법입니다. — Photo by Omar Al-Ghosson on Unsplash"
 author: 문화체육관광부
 title_improved_by_llm: true
 search_index_improved: true

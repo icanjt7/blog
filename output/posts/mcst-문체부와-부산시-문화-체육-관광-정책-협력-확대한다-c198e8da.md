@@ -7,8 +7,8 @@ tags:
 - 문화체육관광부
 - 핫이슈
 quality_score: 96.0
-cover_image: https://www.mcst.go.kr/site/images/sub/openright_ai.png
-cover_image_alt: 공공누리의 AI유형(인공지능 학습용) 공공저작물 자유이용허락
+cover_image: "https://images.unsplash.com/photo-1769847770288-d290a1f9d943?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBidXNhbiUyMGhhZXVuZGFlJTIwYmVhY2glMjBza3lsaW5lJTIwb2NlYW4lMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODk5MDY2OTB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "문체부·부산시, ‘꿈의 예술단’·‘문화요일’·돔구장 등 문화·체육·관광 협력 확대 — Photo by Iann kim on Unsplash"
 author: 문화체육관광부
 title_improved_by_llm: true
 search_index_improved: true

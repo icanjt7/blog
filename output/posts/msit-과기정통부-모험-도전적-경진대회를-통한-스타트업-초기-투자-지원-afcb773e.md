@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 96.0
-cover_image: "https://www.msit.go.kr/images/user/nuri-img01.jpg"
-cover_image_alt: "open 공공누리 공공저작물 자유이용허락 출처표시"
+cover_image: "https://images.unsplash.com/photo-1641897037078-e91a4afcce94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZSUyMGludmVzdG1lbnQlMjBmaW5hbmNlJTIwZ3Jvd3RofGVufDF8MHx8fDE3ODk5MDY3MjR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "과기정통부, 모험·도전적 경진대회를 통한 스타트업 초기 투자 지원! — Photo by Julia Kadel on Unsplash"
 author: "과학기술정보통신부"
 ---
 

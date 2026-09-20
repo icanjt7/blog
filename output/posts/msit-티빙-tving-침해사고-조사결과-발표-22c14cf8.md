@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "정책"
 quality_score: 96.0
-cover_image: "https://www.msit.go.kr/images/user/nuri-img01.jpg"
-cover_image_alt: "open 공공누리 공공저작물 자유이용허락 출처표시"
+cover_image: "https://images.unsplash.com/photo-1548544027-1a96c4c24c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzg5OTA2NzE2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "티빙(TVING) 침해사고 조사결과 발표 — Photo by Denny Bú on Unsplash"
 author: "과학기술정보통신부"
 ---
 

@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 96.0
-cover_image: "https://www.msit.go.kr/images/user/nuri-img01.jpg"
-cover_image_alt: "open 공공누리 공공저작물 자유이용허락 출처표시"
+cover_image: "https://images.unsplash.com/photo-1770233621425-5d9ee7a0a700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMHNjaWVuY2UlMjByZXNlYXJjaCUyMGxhYm9yYXRvcnklMjBjb21tdW5pY2F0aW9uJTIwaW5mcmFzdHJ1Y3R1cmV8ZW58MXwwfHx8MTc4OTkwNjcxOHww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "공공데이터 100개 조기 개방, AI 경쟁력 급상승 — Photo by Zach M on Unsplash"
 author: "과학기술정보통신부"
 ---
 

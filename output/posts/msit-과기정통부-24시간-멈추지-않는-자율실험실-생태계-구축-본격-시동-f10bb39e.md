@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 96.0
-cover_image: "https://www.msit.go.kr/images/user/nuri-img01.jpg"
-cover_image_alt: "open 공공누리 공공저작물 자유이용허락 출처표시"
+cover_image: "https://images.unsplash.com/photo-1616996691748-3f5f78093ab0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfDB8fHwxNzg5OTA2NzE2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "과기정통부, 24시간 멈추지 않는 ‘자율실험실’ 생태계 구축 본격 시동 — Photo by RephiLe water on Unsplash"
 author: "과학기술정보통신부"
 ---
 

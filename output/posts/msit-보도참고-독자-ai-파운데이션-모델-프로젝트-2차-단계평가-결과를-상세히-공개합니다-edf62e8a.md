@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 96.0
-cover_image: "https://www.msit.go.kr/images/user/nuri-img01.jpg"
-cover_image_alt: "open 공공누리 공공저작물 자유이용허락 출처표시"
+cover_image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMHNjaWVuY2UlMjByZXNlYXJjaCUyMGxhYm9yYXRvcnklMjBjb21tdW5pY2F0aW9uJTIwaW5mcmFzdHJ1Y3R1cmV8ZW58MXwwfHx8MTc4OTkwNjcxOHww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "(보도참고) ｢독자 AI 파운데이션 모델｣ 프로젝트 2차 단계평가 결과를 상세히 공개합니다. — Photo by Steve A Johnson on Unsplash"
 author: "과학기술정보통신부"
 ---
 

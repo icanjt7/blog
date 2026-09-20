@@ -7,8 +7,8 @@ tags:
   - "문화체육관광부"
   - "핫이슈"
 quality_score: 92.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_00.png"
-cover_image_alt: "공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락"
+cover_image: "https://images.unsplash.com/photo-1763150918906-b18b8273f39a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODk5MDY2ODl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "‘한국관광의 별’ 이어 ‘한국관광의 샛별’ 뜬다 — Photo by Jeffrey Eisen on Unsplash"
 author: "문화체육관광부"
 ---
 

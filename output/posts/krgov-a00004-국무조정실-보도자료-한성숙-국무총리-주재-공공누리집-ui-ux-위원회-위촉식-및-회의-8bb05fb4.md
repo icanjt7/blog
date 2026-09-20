@@ -7,8 +7,8 @@ tags:
   - "국무조정실"
   - "정책"
 quality_score: 92.0
-cover_image: "https://images.unsplash.com/photo-1567176019727-21d0a58f24e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxjb25mZXJlbmNlJTIwbWVldGluZyUyMHRhYmxlfGVufDF8MHx8fDE3ODc3MDA2ODh8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "[보도자료] 한성숙 국무총리 주재 공공누리집 UI/UX 위원회 위촉식 및 회의"
+cover_image: "https://images.unsplash.com/photo-1567176019727-21d0a58f24e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxjb25mZXJlbmNlJTIwbWVldGluZyUyMHRhYmxlfGVufDF8MHx8fDE3ODk5MDY2ODV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "[보도자료] 한성숙 국무총리 주재 공공누리집 UI/UX 위원회 위촉식 및 회의 — Photo by Jud Mackrill on Unsplash"
 author: "국무조정실"
 ---
 

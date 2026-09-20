@@ -7,8 +7,8 @@ tags:
 - 문화체육관광부
 - 핫이슈
 quality_score: 96.0
-cover_image: https://www.mcst.go.kr/site/images/sub/openright_00.png
-cover_image_alt: 공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락
+cover_image: "https://images.unsplash.com/photo-1633533943114-31ed2c4e8601?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjB5b3VuZyUyMHByb2Zlc3Npb25hbHMlMjBjaXR5JTIwZ292ZXJubWVudCUyMGJ1ZGdldCUyMGZpbmFuY2UlMjBpbnZlc3RtZW50JTIwZ3Jvd3RoJTIwY3VsdHVyZSUyMGFydHMlMjBjcmVhdGl2ZXxlbnwxfDB8fHwxNzg5OTA2NzEzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "청와대서 청년 성장단계별 종합투자 전략 발표, 예산 43조3천억 확대 — Photo by McGill Productions on Unsplash"
 author: 문화체육관광부
 title_improved_by_llm: true
 search_index_improved: true

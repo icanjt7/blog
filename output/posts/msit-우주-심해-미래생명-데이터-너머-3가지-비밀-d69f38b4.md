@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 92.0
-cover_image: "https://www.msit.go.kr/images/user/nuri-img01.jpg"
-cover_image_alt: "open 공공누리 공공저작물 자유이용허락 출처표시"
+cover_image: "https://images.pexels.com/photos/7288970/pexels-photo-7288970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "우주·심해·미래생명, 데이터 너머 3가지 비밀 — Photo by TheOther Kev on Pexels"
 author: "과학기술정보통신부"
 ---
 

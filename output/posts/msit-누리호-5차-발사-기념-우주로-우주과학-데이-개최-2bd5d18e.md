@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 96.0
-cover_image: "https://www.msit.go.kr/images/user/nuri-img01.jpg"
-cover_image_alt: "open 공공누리 공공저작물 자유이용허락 출처표시"
+cover_image: "https://images.pexels.com/photos/30226736/pexels-photo-30226736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "누리호 5차 발사 기념 “우주로! 우주과학 데이” 개최 — Photo by Alejandro De Roa on Pexels"
 author: "과학기술정보통신부"
 ---
 

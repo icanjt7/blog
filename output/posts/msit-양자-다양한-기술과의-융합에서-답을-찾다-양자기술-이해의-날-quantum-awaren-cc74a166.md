@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 96.0
-cover_image: "https://www.msit.go.kr/images/user/nuri-img01.jpg"
-cover_image_alt: "open 공공누리 공공저작물 자유이용허락 출처표시"
+cover_image: "https://images.pexels.com/photos/18467634/pexels-photo-18467634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "양자, 다양한 기술과의 융합에서 답을 찾다 - ｢양자기술 이해의 날(Quantum Awareness Day)｣ 개최 - — Photo by Markus Winkler on Pexels"
 author: "과학기술정보통신부"
 ---
 

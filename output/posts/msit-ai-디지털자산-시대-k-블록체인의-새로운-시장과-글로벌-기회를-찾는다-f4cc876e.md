@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 92.0
-cover_image: "https://www.msit.go.kr/images/user/nuri-img01.jpg"
-cover_image_alt: "open 공공누리 공공저작물 자유이용허락 출처표시"
+cover_image: "https://images.unsplash.com/photo-1579684288538-c76a2fab9617?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMGRpZ2l0YWwlMjB0ZWNobm9sb2d5JTIwYWJzdHJhY3QlMjBzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwY29tbXVuaWNhdGlvbiUyMGluZnJhc3RydWN0dXJlfGVufDF8MHx8fDE3ODk5MDY3MTd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "AI·디지털자산 시대, K-블록체인의 새로운 시장과 글로벌 기회를 찾는다 — Photo by National Cancer Institute on Unsplash"
 author: "과학기술정보통신부"
 ---
 

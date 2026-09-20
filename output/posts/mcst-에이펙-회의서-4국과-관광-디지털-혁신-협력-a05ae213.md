@@ -7,8 +7,8 @@ tags:
   - "문화체육관광부"
   - "기술"
 quality_score: 96.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_00.png"
-cover_image_alt: "공공누리 0유형(공공저작물의 자유이용) 공공저작물 자유이용허락"
+cover_image: "https://images.unsplash.com/photo-1787647562031-aedbc5ab7d05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBkaWdpdGFsJTIwdGVjaG5vbG9neSUyMGFic3RyYWN0JTIwY3VsdHVyZSUyMGFydHMlMjBjcmVhdGl2ZSUyMGNvbmZlcmVuY2UlMjBtZWV0aW5nJTIwdGFibGV8ZW58MXwwfHx8MTc4OTkwNjcwNXww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "에이펙 회의서 4국과 관광 디지털 혁신 협력 — Photo by Vitaly Gariev on Unsplash"
 author: "문화체육관광부"
 ---
 

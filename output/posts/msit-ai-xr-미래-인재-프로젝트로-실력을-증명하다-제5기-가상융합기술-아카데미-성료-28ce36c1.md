@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 96.0
-cover_image: "https://www.msit.go.kr/images/user/nuri-img01.jpg"
-cover_image_alt: "open 공공누리 공공저작물 자유이용허락 출처표시"
+cover_image: "https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMG5ldXJhbCUyMG5ldHdvcmslMjBzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwY29tbXVuaWNhdGlvbiUyMGluZnJhc3RydWN0dXJlfGVufDF8MHx8fDE3ODk5MDY3MTh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "AI·XR 미래 인재, 프로젝트로 실력을 증명하다 제5기 「가상융합기술 아카데미」 성료 — Photo by Ecliptic Graphic on Unsplash"
 author: "과학기술정보통신부"
 ---
 

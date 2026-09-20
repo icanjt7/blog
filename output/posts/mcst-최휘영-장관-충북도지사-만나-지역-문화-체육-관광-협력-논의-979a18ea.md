@@ -7,8 +7,8 @@ tags:
   - "문화체육관광부"
   - "핫이슈"
 quality_score: 96.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_ai.png"
-cover_image_alt: "공공누리의 AI유형(인공지능 학습용) 공공저작물 자유이용허락"
+cover_image: "https://images.unsplash.com/photo-1530789253388-582c481c54b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODk5MDY2ODl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "최휘영 장관, 충북도지사 만나 지역 문화·체육·관광 협력 논의 — Photo by Mesut Kaya on Unsplash"
 author: "문화체육관광부"
 ---
 

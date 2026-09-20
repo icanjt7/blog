@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 96.0
-cover_image: "https://www.msit.go.kr/images/user/nuri-img01.jpg"
-cover_image_alt: "open 공공누리 공공저작물 자유이용허락 출처표시"
+cover_image: "https://images.unsplash.com/photo-1732510678572-f09422635a92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw2fHxzY2llbmNlJTIwcmVzZWFyY2glMjBsYWJvcmF0b3J5JTIwbmV0d29yayUyMGNvbW11bmljYXRpb24lMjBpbmZyYXN0cnVjdHVyZSUyMGVudmlyb25tZW50JTIwbmF0dXJlJTIwZ3JlZW58ZW58MXwwfHx8MTc4OTkwNjcyM3ww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "과기정통부, ’26년 상반기 생활제품‧환경 전자파 측정결과 공개 — Photo by arun gnanasegaram on Unsplash"
 author: "과학기술정보통신부"
 ---
 

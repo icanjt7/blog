@@ -7,8 +7,8 @@ tags:
   - "문화체육관광부"
   - "기술"
 quality_score: 84.0
-cover_image: "https://www.mcst.go.kr/site/images/sub/openright_ai.png"
-cover_image_alt: "공공누리의 AI유형(인공지능 학습용) 공공저작물 자유이용허락"
+cover_image: "https://images.unsplash.com/photo-1768227055205-121aa19952b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHx0b3VyaXNtJTIwZGVzdGluYXRpb24lMjB0cmF2ZWwlMjBjdWx0dXJlJTIwYXJ0cyUyMGNyZWF0aXZlfGVufDF8MHx8fDE3ODk5MDY2ODl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image_alt: "내 일(JOB)을 향한 발걸음, ‘2026 관광 일자리페스타’에서 시작하세요 — Photo by Sadikali PM on Unsplash"
 author: "문화체육관광부"
 ---
 

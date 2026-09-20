@@ -7,8 +7,8 @@ tags:
   - "과학기술정보통신부"
   - "기술"
 quality_score: 96.0
-cover_image: "https://www.msit.go.kr/images/user/nuri-img01.jpg"
-cover_image_alt: "open 공공누리 공공저작물 자유이용허락 출처표시"
+cover_image: "https://images.pexels.com/photos/5118460/pexels-photo-5118460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cover_image_alt: "재난 현장의 핵심 정보를 손목 위에서, 재난안전통신망 전용 스마트워치 개발 추진 — Photo by Российский центр  гибкой электроники on Pexels"
 author: "과학기술정보통신부"
 ---
 
