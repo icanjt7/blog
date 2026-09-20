@@ -854,8 +854,40 @@ class StaticSiteBuilder:
 
         return max(PRODUCT_LINKS, key=relevance)
 
+    @staticmethod
+    def _product_description(product: ProductLink) -> str:
+        keywords = {keyword.lower() for keyword in product.keywords}
+        if keywords & {"영양제", "오메가3", "유산균", "비타민", "관절", "혈행", "혈당", "혈압"}:
+            return "건강 관리 루틴에 더하기 전, 섭취 방법과 구성 수량을 비교해 보기 좋은 상품입니다."
+        if keywords & {"뷰티", "스킨케어", "화장품", "헤어", "피부", "모발"}:
+            return "용량과 사용 부위를 살펴보고 자신의 관리 방식에 맞는지 비교해 볼 수 있는 상품입니다."
+        if keywords & {"청소", "세탁", "가전", "생활"}:
+            return "일상 관리의 번거로움을 줄이는 데 도움이 될지 기능과 구성을 확인해 볼 만한 상품입니다."
+        if keywords & {"의류", "패션", "여성"}:
+            return "소재와 사이즈, 활용 장면을 확인해 데일리 아이템으로 비교해 볼 만한 상품입니다."
+        if keywords & {"식품", "요리", "간편식", "과일", "농산물", "고기", "해산물"}:
+            return "구성 용량과 조리·보관 방법을 확인해 식탁 준비에 활용할지 비교해 볼 만한 상품입니다."
+        return "상세 구성과 활용 방법을 확인한 뒤 필요에 맞는지 비교해 볼 수 있는 상품입니다."
+
+    @staticmethod
+    def _product_recommendation_reason(product: ProductLink, post: Post) -> str:
+        article_text = " ".join(
+            (post.title, " ".join(post.tags), post.excerpt, post.body_html)
+        ).lower()
+        matched = [
+            keyword
+            for keyword in product.keywords
+            if len(keyword) >= 2 and keyword.lower() in article_text
+        ]
+        if matched:
+            topics = "·".join(dict.fromkeys(matched[:2]))
+            return f"본문의 {topics} 주제와 함께 살펴보기 좋은 상품을 골랐습니다."
+        return "읽은 내용과 함께 일상에서 활용할 만한 상품을 하나 골랐습니다."
+
     def _product_link_html(self, post: Post) -> str:
         product = self._select_product(post)
+        description = self._product_description(product)
+        recommendation_reason = self._product_recommendation_reason(product, post)
         image_html = ""
         if product.image_url:
             image_html = (
@@ -869,10 +901,13 @@ class StaticSiteBuilder:
           <aside class="product-recommendation" aria-label="추천 상품">
             {image_html}
             <div class="product-recommendation-body">
-              <p class="product-recommendation-label">추천 상품</p>
+              <p class="product-recommendation-label">이 글과 함께 살펴볼 상품</p>
               <p class="product-recommendation-name">{html.escape(product.name)}</p>
+              <p class="product-recommendation-reason">{html.escape(recommendation_reason)}</p>
+              <p class="product-recommendation-description">{html.escape(description)}</p>
+              <p class="product-recommendation-guide">구성·용량과 현재 가격, 배송 조건을 상세 페이지에서 비교해 보세요.</p>
               <a class="product-recommendation-link" href="{html.escape(product.url)}"
-                 rel="sponsored nofollow noopener" target="_blank">토스쇼핑에서 상품 보기</a>
+                 rel="sponsored nofollow noopener" target="_blank">현재 가격·상품 정보 확인하기 <span aria-hidden="true">→</span></a>
               <p class="product-recommendation-disclosure">이 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>
             </div>
           </aside>
@@ -3078,12 +3113,27 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   letter-spacing: .04em;
 }
 .product-recommendation-name {
-  margin: 0 0 12px;
+  margin: 0 0 8px;
   color: var(--ink);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   line-height: 1.45;
 }
+.product-recommendation-reason {
+  margin: 0 0 6px;
+  color: var(--accent);
+  font-size: .86rem;
+  font-weight: 650;
+  line-height: 1.5;
+}
+.product-recommendation-description,
+.product-recommendation-guide {
+  margin: 0 0 7px;
+  color: var(--muted);
+  font-size: .84rem;
+  line-height: 1.55;
+}
+.product-recommendation-guide { margin-bottom: 13px; color: var(--ink); }
 .product-recommendation-link {
   display: inline-flex;
   align-items: center;
@@ -3096,6 +3146,8 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   font-size: .9rem;
   font-weight: 750;
 }
+.product-recommendation-link span { margin-left: 5px; transition: transform .18s; }
+.product-recommendation-link:hover span { transform: translateX(3px); }
 .product-recommendation-link:hover { color: #fff; text-decoration: none; filter: brightness(.94); }
 .product-recommendation-disclosure {
   margin: 11px 0 0;
