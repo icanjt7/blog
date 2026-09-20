@@ -18,6 +18,7 @@ import markdown
 import yaml
 
 from .images import ImageAgent
+from .product_links import PRODUCT_LINKS, ProductLink
 
 
 @dataclass
@@ -401,7 +402,7 @@ class StaticSiteBuilder:
                 meta = yaml.safe_load(frontmatter) or {}
             except yaml.YAMLError as exc:
                 raise ValueError(f"Invalid frontmatter YAML in {path}") from exc
-        title = str(meta.get("title") or path.stem)
+        title = self._normalize_generated_title(str(meta.get("title") or path.stem), path.stem)
         date = self._parse_date(str(meta.get("date") or datetime.now().isoformat()))
         _cat_map = {"tech": "기술", "living": "생활", "finance": "정책", "local": "핫이슈"}
         category = str(meta.get("category") or "생활")
@@ -409,6 +410,7 @@ class StaticSiteBuilder:
         tags = [str(tag) for tag in meta.get("tags", [])]
         quality_score = self._safe_float(meta.get("quality_score"), 0.0)
         raw_cover_image = str(meta.get("cover_image") or "")
+        body = self._strip_generated_body_marker(body)
         body = self._strip_leading_image(body)
         body = self._normalize_body_markdown(body)
         word_count = self._word_count(body)
@@ -438,6 +440,36 @@ class StaticSiteBuilder:
             word_count=word_count,
             quality_score=quality_score,
         )
+
+    @staticmethod
+    def _normalize_generated_title(value: str, fallback: str) -> str:
+        """Keep model response labels from leaking an entire article into the title."""
+        title = re.sub(r"\s+", " ", value).strip()
+        marker = re.search(
+            r"(?i)(?:\*{0,2}\s*)?(?:EXCERPT|SUMMARY|BODY|요약|본문)\s*:\s*(?:\*{0,2})?",
+            title,
+        )
+        if marker:
+            title = title[: marker.start()].strip()
+        title = re.sub(
+            r"(?i)^(?:\*{0,2}\s*)?(?:TITLE|제목)\s*:\s*(?:\*{0,2}\s*)?",
+            "",
+            title,
+        )
+        title = title.strip(" \t\r\n*_`#\"'")
+        return title or fallback
+
+    @staticmethod
+    def _strip_generated_body_marker(body: str) -> str:
+        """Remove response-format labels and dangling Markdown left by an LLM."""
+        cleaned = re.sub(
+            r"\A\s*(?:\*{0,2}\s*)?(?:BODY|본문)\s*:\s*(?:\*{0,2}\s*)?",
+            "",
+            body,
+            count=1,
+            flags=re.I,
+        )
+        return re.sub(r"\A\s*(?:\*{1,3}|_{1,3})\s*(?:\r?\n)+", "", cleaned, count=1)
 
     @staticmethod
     def _safe_float(value: object, default: float = 0.0) -> float:
@@ -738,6 +770,7 @@ class StaticSiteBuilder:
         source_links_html = self._source_links_html(post)
         related_html = self._related_posts_html(post, posts)
         editorial_note = self._editorial_note_html(post)
+        product_link_html = self._product_link_html(post)
         breadcrumb_items = [
             ("홈", "./"),
             (post.category, f"./{self._category_page_filename(post.category)}"),
@@ -758,6 +791,7 @@ class StaticSiteBuilder:
             <div class="tags">{self._tag_html(post.tags)}</div>
           </header>
           <div class="content">{post.body_html}</div>
+          {product_link_html}
           {reader_context_html}
           {source_links_html}
           {editorial_note}
@@ -784,6 +818,53 @@ class StaticSiteBuilder:
         # 애드센스 심사 전에는 얇은 언어별 복제 페이지를 만들지 않는다.
         # 다국어 독자 경험은 상단 번역 선택기로 제공하고, 검색 색인용 다국어 포스트는
         # 전체 본문 번역 품질을 확보한 뒤 별도 생성하는 편이 안전하다.
+
+    _PRODUCT_CATEGORY_HINTS: dict[str, tuple[str, ...]] = {
+        "생활": ("생활", "식품", "건강", "청소", "뷰티", "의류"),
+        "기술": ("기술", "가전", "청소", "생활"),
+        "정책": ("건강", "식품", "농산물", "생활"),
+        "정치": ("건강", "식품", "생활"),
+        "스포츠": ("건강", "운동", "단백질", "영양제"),
+        "핫이슈": ("생활", "건강", "식품", "뷰티"),
+    }
+
+    def _select_product(self, post: Post) -> ProductLink:
+        searchable = " ".join(
+            (post.title, post.category, " ".join(post.tags), post.excerpt, post.body_html)
+        ).lower()
+        searchable = re.sub(r"<[^>]+>", " ", searchable)
+        searchable = re.sub(r"\s+", " ", searchable)
+        article_tokens = set(re.findall(r"[가-힣a-z0-9]{2,}", searchable))
+        category_hints = set(self._PRODUCT_CATEGORY_HINTS.get(post.category, ("생활",)))
+
+        def relevance(product: ProductLink) -> tuple[int, int]:
+            score = 0
+            product_keywords = {keyword.lower() for keyword in product.keywords}
+            for keyword in product_keywords:
+                if keyword in searchable:
+                    score += 12 + min(len(keyword), 8)
+            name_tokens = set(re.findall(r"[가-힣a-z0-9]{2,}", product.name.lower()))
+            score += len(article_tokens & name_tokens) * 7
+            score += len(category_hints & product_keywords) * 2
+            tie_breaker = int(
+                hashlib.md5(f"{post.slug}:{product.url}".encode("utf-8")).hexdigest()[:8],
+                16,
+            )
+            return score, tie_breaker
+
+        return max(PRODUCT_LINKS, key=relevance)
+
+    def _product_link_html(self, post: Post) -> str:
+        product = self._select_product(post)
+        return f"""
+          <aside class="product-recommendation" aria-label="추천 상품">
+            <p class="product-recommendation-label">추천 상품</p>
+            <p class="product-recommendation-name">{html.escape(product.name)}</p>
+            <a class="product-recommendation-link" href="{html.escape(product.url)}"
+               rel="sponsored nofollow noopener" target="_blank">토스쇼핑에서 상품 보기</a>
+            <p class="product-recommendation-disclosure">이 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>
+          </aside>
+        """
 
     def _write_localized_post_pages(self, post: Post, alternates: dict[str, str]) -> None:
         aliases = self._search_aliases(post)
@@ -2949,6 +3030,48 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .content table { width: 100%; min-width: 360px; border-collapse: collapse; font-size: 0.9rem; }
 .content th, .content td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; white-space: nowrap; }
 .content th { background: #ece7da; }
+
+/* ── featured product ── */
+.product-recommendation {
+  margin: 28px 0 0;
+  padding: 18px;
+  border: 1px solid rgba(15,118,110,.22);
+  border-radius: 10px;
+  background: #f4faf8;
+}
+.product-recommendation-label {
+  margin: 0 0 5px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+.product-recommendation-name {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.product-recommendation-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 15px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 750;
+}
+.product-recommendation-link:hover { color: #fff; text-decoration: none; filter: brightness(.94); }
+.product-recommendation-disclosure {
+  margin: 11px 0 0;
+  color: var(--muted);
+  font-size: .75rem;
+  line-height: 1.55;
+}
 
 /* ── ad slot ── */
 .ad-slot {

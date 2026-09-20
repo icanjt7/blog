@@ -10,6 +10,72 @@ from blog_agent.site import StaticSiteBuilder
 
 
 class StaticSiteBuilderTest(unittest.TestCase):
+    def test_parse_post_recovers_from_inline_llm_response_labels(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            post_path = root / "posts" / "broken-generated-post.md"
+            post_path.parent.mkdir()
+            post_path.write_text(
+                """---
+title: '** 09월 지방선거 핵심 정보 총정리 **EXCERPT:** 선거 정보를 정리했습니다. **BODY:** 본문 전체가 잘못 합쳐졌습니다.'
+date: '2026-09-19T18:16:28'
+category: 정치
+tags:
+- 지방선거
+cover_image: https://example.com/cover.jpg
+---
+
+**
+투표일이 다가오면서 핵심 정보를 확인해야 합니다.
+""",
+                encoding="utf-8",
+            )
+            builder = StaticSiteBuilder(
+                posts_dir=post_path.parent,
+                public_dir=root / "public",
+                site_title="테스트",
+                site_description="테스트",
+            )
+
+            post = builder._parse_post(post_path)
+
+        self.assertEqual(post.title, "09월 지방선거 핵심 정보 총정리")
+        self.assertNotIn("EXCERPT", post.title)
+        self.assertNotIn("BODY", post.title)
+        self.assertNotIn("<p>**", post.body_html)
+        self.assertIn("투표일이 다가오면서", post.body_html)
+
+    def test_product_matching_uses_article_content(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            post_path = root / "posts" / "omega-health.md"
+            post_path.parent.mkdir()
+            post_path.write_text(
+                """---
+title: 오메가3로 혈행 건강을 관리하는 방법
+category: 생활
+tags:
+- 오메가3
+- 영양제
+cover_image: https://example.com/cover.jpg
+---
+
+혈행과 면역 건강을 위한 오메가3 선택 기준을 알아봅니다.
+""",
+                encoding="utf-8",
+            )
+            builder = StaticSiteBuilder(
+                posts_dir=post_path.parent,
+                public_dir=root / "public",
+                site_title="테스트",
+                site_description="테스트",
+            )
+
+            selected = builder._select_product(builder._parse_post(post_path))
+
+        self.assertEqual(selected.url, "https://toss.im/_m/lnQdq7ws")
+        self.assertIn("오메가3", selected.name)
+
     def test_frontmatter_split_ignores_markdown_rule_inside_quoted_title(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -272,6 +338,10 @@ quality_score: 95.0
             self.assertIn("편집 기준", html)
             self.assertIn("함께 보면 좋은 글", html)
             self.assertIn("관련 글", html)
+            self.assertEqual(html.count('class="product-recommendation"'), 1)
+            self.assertIn('href="https://toss.im/_m/', html)
+            self.assertIn('rel="sponsored nofollow noopener"', html)
+            self.assertIn("일정 수수료를 받을 수 있으며", html)
             self.assertIn('aria-label="광고 영역"', html)
             self.assertIn('<div class="ad-label">광고</div>', html)
             self.assertLess(html.index('<div class="content">'), html.index('<div class="ad-slot"'))
