@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import os
 import re
+import sys
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
@@ -57,7 +58,19 @@ def normalize_title(title: str) -> str:
 def load_records(glob: str) -> list[PostRecord]:
     records: list[PostRecord] = []
     for path in sorted(ROOT.glob(glob)):
-        split = split_post(path.read_text(encoding="utf-8"))
+        try:
+            split = split_post(path.read_text(encoding="utf-8"))
+        except Exception as exc:
+            # One malformed legacy post must not abort the entire scheduled batch.
+            # The site builder has its own recovery path, while this maintenance
+            # job can safely skip the file and continue with the remaining posts.
+            print(
+                f"warning: skipping malformed post {path.relative_to(ROOT)} "
+                f"({type(exc).__name__}: {exc})",
+                file=sys.stderr,
+                flush=True,
+            )
+            continue
         if split:
             meta, body = split
             records.append(PostRecord(path, meta, body))

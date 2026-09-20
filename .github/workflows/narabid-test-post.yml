@@ -45,12 +45,27 @@ jobs:
 
       - name: Generate Nara Bid markdown
         run: |
-          python scripts/generate_narabid_post.py \
-            --format service-summary \
-            --work-types service \
-            --limit "${{ github.event.inputs.limit || '20' }}" \
-            --days "${{ github.event.inputs.days || '1' }}" \
-            --overwrite
+          status=1
+          for attempt in 1 2 3; do
+            if python scripts/generate_narabid_post.py \
+              --format service-summary \
+              --work-types service \
+              --limit "${{ github.event.inputs.limit || '20' }}" \
+              --days "${{ github.event.inputs.days || '1' }}" \
+              --overwrite; then
+              status=0
+              break
+            fi
+            echo "::warning::나라장터 API 호출 실패 (${attempt}/3)"
+            sleep $((attempt * 5))
+          done
+          if [ "${status}" -ne 0 ]; then
+            if [ "${{ github.event_name }}" = "schedule" ]; then
+              echo "::warning::나라장터 API 일시 장애로 생성을 건너뜁니다. 다음 예약 실행에서 다시 시도합니다."
+            else
+              exit "${status}"
+            fi
+          fi
 
       - name: Build site
         run: python -m blog_agent.cli build-site

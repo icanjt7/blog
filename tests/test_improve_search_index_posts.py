@@ -8,6 +8,7 @@ from scripts.improve_search_index_posts import (
     PostRecord,
     acceptable_expansion,
     duplicate_title_paths,
+    load_records,
     normalize_title,
 )
 
@@ -39,6 +40,25 @@ class ImproveSearchIndexPostsTest(unittest.TestCase):
         self.assertTrue(ok, reason)
         without_link = expanded.replace("https://example.com/source", "")
         self.assertFalse(acceptable_expansion(original, without_link, 800)[0])
+
+    def test_load_records_skips_malformed_frontmatter(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            valid = root / "valid.md"
+            invalid = root / "invalid.md"
+            valid.write_text('---\ntitle: "정상 글"\n---\n\n본문\n', encoding="utf-8")
+            invalid.write_text('---\ntitle: "닫히지 않은 제목\n---\n\n본문\n', encoding="utf-8")
+
+            from scripts import improve_search_index_posts as module
+
+            original_root = module.ROOT
+            module.ROOT = root
+            try:
+                records = load_records("*.md")
+            finally:
+                module.ROOT = original_root
+
+            self.assertEqual([record.path.name for record in records], ["valid.md"])
 
 
 if __name__ == "__main__":

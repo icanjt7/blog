@@ -176,6 +176,10 @@ jobs:
             status="${PIPESTATUS[0]}"
             echo "::endgroup::"
             if [ "${status}" -ne 0 ]; then
+              if [ "${{ github.event_name }}" = "schedule" ]; then
+                echo "::warning::정부 사이트 일시 장애로 수집하지 못했습니다. 다음 예약 실행에서 다시 시도합니다."
+                break
+              fi
               exit "${status}"
             fi
             if [ "${INPUT_DRY_RUN}" = "true" ]; then
