@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import tempfile
 import unittest
 import xml.etree.ElementTree as ET
@@ -88,11 +89,15 @@ cover_image: https://example.com/cover.jpg
                 site_description="테스트",
             )
 
-            selected = builder._select_product(builder._parse_post(post_path))
+            post = builder._parse_post(post_path)
+            selected = builder._select_product(post)
+            candidates = builder._select_products(post)
 
         self.assertEqual(selected.url, "https://toss.im/_m/lnQdq7ws")
         self.assertIn("오메가3", selected.name)
         self.assertTrue(selected.image_url.startswith("https://shopping.toss.im/"))
+        self.assertEqual(len(candidates), 5)
+        self.assertEqual(len({product.url for product in candidates}), 5)
 
     def test_frontmatter_split_ignores_markdown_rule_inside_quoted_title(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -357,6 +362,9 @@ quality_score: 95.0
             self.assertIn("함께 보면 좋은 글", html)
             self.assertIn("관련 글", html)
             self.assertEqual(html.count('class="product-recommendation"'), 1)
+            self.assertIn('class="product-rotation"', html)
+            self.assertIn('class="product-rotation-candidates"', html)
+            self.assertIn("briefwave-product:", html)
             self.assertIn('class="product-recommendation-image"', html)
             self.assertIn('class="product-recommendation-description"', html)
             self.assertIn("구성·용량과 현재 가격, 배송 조건", html)
@@ -372,6 +380,8 @@ quality_score: 95.0
             self.assertIn('aria-label="광고 영역"', html)
             self.assertIn('<div class="ad-label">광고</div>', html)
             self.assertLess(html.index('<div class="content">'), html.index('<div class="ad-slot"'))
+            product_catalog = json.loads((root / "public" / "product-catalog.json").read_text(encoding="utf-8"))
+            self.assertEqual(len(product_catalog), len(PRODUCT_LINKS))
 
             for filename in ("about.html", "editorial-policy.html", "privacy.html", "contact.html"):
                 self.assertTrue((root / "public" / filename).exists())

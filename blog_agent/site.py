@@ -368,6 +368,7 @@ class StaticSiteBuilder:
       self._write_index(index_posts)
       # generate search index and page
       self._write_search_index(index_posts)
+      self._write_product_catalog()
       self._write_search_page(posts)
       self._write_global_government_pages(posts)
       self._write_category_pages(index_posts)
@@ -828,7 +829,7 @@ class StaticSiteBuilder:
         "핫이슈": ("생활", "건강", "식품", "뷰티"),
     }
 
-    def _select_product(self, post: Post) -> ProductLink:
+    def _select_products(self, post: Post, limit: int = 5) -> list[ProductLink]:
         searchable = " ".join(
             (post.title, post.category, " ".join(post.tags), post.excerpt, post.body_html)
         ).lower()
@@ -852,7 +853,10 @@ class StaticSiteBuilder:
             )
             return score, tie_breaker
 
-        return max(PRODUCT_LINKS, key=relevance)
+        return sorted(PRODUCT_LINKS, key=relevance, reverse=True)[: max(1, limit)]
+
+    def _select_product(self, post: Post) -> ProductLink:
+        return self._select_products(post, limit=1)[0]
 
     @staticmethod
     def _product_description(product: ProductLink) -> str:
@@ -885,9 +889,20 @@ class StaticSiteBuilder:
         return "읽은 내용과 함께 일상에서 활용할 만한 상품을 하나 골랐습니다."
 
     def _product_link_html(self, post: Post) -> str:
-        product = self._select_product(post)
+        products = self._select_products(post)
+        product = products[0]
+        candidates = [item.url.rsplit("/", 1)[-1] for item in products]
+        candidates_json = json.dumps(candidates, ensure_ascii=False).replace("<", "\\u003c")
+        card = self._product_card_html(product, self._product_recommendation_reason(product, post))
+        return (
+            f'<div class="product-rotation" data-product-rotation="{html.escape(post.slug)}" '
+            'data-product-catalog="./product-catalog.json">'
+            f'{card}<script type="application/json" class="product-rotation-candidates">{candidates_json}</script>'
+            '</div>'
+        )
+
+    def _product_card_html(self, product: ProductLink, recommendation_reason: str) -> str:
         description = self._product_description(product)
-        recommendation_reason = self._product_recommendation_reason(product, post)
         image_html = ""
         if product.image_url:
             image_html = (
@@ -914,6 +929,21 @@ class StaticSiteBuilder:
             </div>
           </aside>
         """
+
+    def _write_product_catalog(self) -> None:
+        catalog = {
+            product.url.rsplit("/", 1)[-1]: {
+                "html": self._product_card_html(
+                    product,
+                    "이 글과 관련해 함께 비교해 볼 수 있는 상품입니다.",
+                )
+            }
+            for product in PRODUCT_LINKS
+        }
+        (self.public_dir / "product-catalog.json").write_text(
+            json.dumps(catalog, ensure_ascii=False, separators=(",", ":")),
+            encoding="utf-8",
+        )
 
     @staticmethod
     def _product_reviews_html(product: ProductLink) -> str:
@@ -2447,6 +2477,35 @@ class StaticSiteBuilder:
     q.addEventListener('focus',function(){{if(q.value.trim())run();}});
     if(btn)btn.addEventListener('click',function(){{if(q.value.trim())window.location.href=assetPrefix+'search.html?q='+encodeURIComponent(q.value.trim());else q.focus();}});
     document.addEventListener('click',function(e){{if(!q.contains(e.target)&&!box.contains(e.target)&&(!btn||!btn.contains(e.target)))box.hidden=true;}});
+  }})();
+  </script>
+  <script>
+  (function(){{
+    var rotations=document.querySelectorAll('[data-product-rotation]');
+    if(!rotations.length)return;
+    var catalogUrl=rotations[0].getAttribute('data-product-catalog')||'./product-catalog.json';
+    fetch(catalogUrl).then(function(response){{return response.json();}}).then(function(catalog){{
+      rotations.forEach(function(host){{
+        var data=host.querySelector('.product-rotation-candidates');
+        if(!data)return;
+        var candidates=[];
+        try{{candidates=JSON.parse(data.textContent||'[]');}}catch(error){{return;}}
+        candidates=candidates.filter(function(code){{return catalog[code]&&catalog[code].html;}});
+        if(candidates.length<2)return;
+        var storageKey='briefwave-product:'+host.getAttribute('data-product-rotation');
+        var previous='';
+        try{{previous=sessionStorage.getItem(storageKey)||'';}}catch(error){{}}
+        var currentLink=host.querySelector('.product-recommendation-link');
+        var current=currentLink?(currentLink.getAttribute('href')||'').split('/').pop():'';
+        var excluded=previous||current;
+        var choices=candidates.filter(function(code){{return code!==excluded;}});
+        if(!choices.length)choices=candidates;
+        var selected=choices[Math.floor(Math.random()*choices.length)];
+        var candidateScript=data.outerHTML;
+        host.innerHTML=catalog[selected].html+candidateScript;
+        try{{sessionStorage.setItem(storageKey,selected);}}catch(error){{}}
+      }});
+    }}).catch(function(){{}});
   }})();
   </script>
   <script>
