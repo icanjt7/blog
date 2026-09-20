@@ -17,6 +17,20 @@ SPEC.loader.exec_module(MODULE)
 
 
 class PressReleaseImportTest(unittest.TestCase):
+    def test_first_image_skips_public_license_badge(self) -> None:
+        fragment = """
+        <img src="/images/openright_00.png" alt="공공누리 공공저작물 자유이용허락">
+        <img src="/images/article-photo.jpg" alt="행사 현장">
+        """
+
+        image_url, alt = MODULE.first_image(fragment, "https://example.go.kr/press")
+
+        self.assertEqual(image_url, "https://example.go.kr/images/article-photo.jpg")
+        self.assertEqual(alt, "행사 현장")
+
+    def test_placeholder_cover_rejects_public_license_badge(self) -> None:
+        self.assertTrue(MODULE.is_placeholder_cover("https://example.go.kr/images/nuri-img01.jpg"))
+
     def test_import_source_filters_release_date_range(self) -> None:
         releases = {
             "old": MODULE.PressRelease("행정안전부", "이전 자료", "2026-07-26", "old", "본문"),

@@ -26,7 +26,7 @@ import requests
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from blog_agent.config import load_settings
 from blog_agent.hwpx import extract_hwpx_text_bytes
-from blog_agent.images import ImageAgent
+from blog_agent.images import ImageAgent, is_public_license_badge
 from blog_agent.models import Draft, Topic
 from blog_agent.writer import WriterAgent
 
@@ -313,7 +313,10 @@ def first_image(fragment: str, base_url: str) -> tuple[str, str]:
             continue
         alt_m = re.search(r"""(?i)\b(?:alt|title)=["']([^"']*)["']""", attrs)
         alt = clean_text(alt_m.group(1)) if alt_m else ""
-        return urljoin(base_url, src), alt
+        image_url = urljoin(base_url, src)
+        if is_public_license_badge(image_url, alt):
+            continue
+        return image_url, alt
     return "", ""
 
 
@@ -331,6 +334,8 @@ def get_og_image(html_src: str, base_url: str) -> str:
         raw = urljoin(base_url, raw)
     # skip tiny icon-like images
     if any(x in raw.lower() for x in ["logo.gif", "logo.png", "icon", "favicon", "mark"]):
+        return ""
+    if is_public_license_badge(raw):
         return ""
     return raw
 
@@ -856,7 +861,11 @@ def is_placeholder_cover(url: str) -> bool:
         "assets/logos/",
         "/assets/logos/",
     )
-    return url in set(INSTITUTION_LOGOS.values()) or any(marker in url for marker in weak_markers)
+    return (
+        url in set(INSTITUTION_LOGOS.values())
+        or any(marker in url for marker in weak_markers)
+        or is_public_license_badge(url)
+    )
 
 
 def write_post(
@@ -883,18 +892,30 @@ def write_post(
     post_dt = base_dt + timedelta(minutes=sequence)
     category = classify_press_category(release)
     tags = ["보도기사", release.institution, category]
+    release_image = "" if is_public_license_badge(release.image_url, release.image_alt) else release.image_url
+    release_alt = "" if not release_image else release.image_alt
     searched_cover = ""
     searched_alt = ""
-    if not preserved_cover and not release.image_url:
-        searched_cover, searched_alt = search_cover_image(release, prefix, image_agent, category)
+    if not preserved_cover and not release_image:
+        searchable_release = PressRelease(
+            institution=release.institution,
+            title=release.title,
+            date=release.date,
+            url=release.url,
+            body_text=release.body_text,
+            image_url="",
+            image_alt="",
+            article_ready=release.article_ready,
+        )
+        searched_cover, searched_alt = search_cover_image(searchable_release, prefix, image_agent, category)
     img = (
         preserved_cover
-        or release.image_url
+        or release_image
         or searched_cover
         or INSTITUTION_LOGOS.get(release.institution, "")
     )
     cover_line = f"cover_image: {yaml_quote(img)}\n" if img else ""
-    alt = preserved_alt or release.image_alt or searched_alt or f"{release.title} 관련 보도자료 이미지"
+    alt = preserved_alt or release_alt or searched_alt or f"{release.title} 관련 보도자료 이미지"
     article_body = finalize_article_body(release)
     quality_score = estimate_article_quality(article_body)
     frontmatter = (

@@ -144,6 +144,25 @@ CATEGORY_VISUALS = {
 }
 
 
+PUBLIC_LICENSE_IMAGE_MARKERS = (
+    "gonggongnuri",
+    "openright_",
+    "nuri-img",
+    "/kogl/",
+    "kogl_",
+)
+
+
+def is_public_license_badge(url: str | None, alt: str | None = None) -> bool:
+    """Return True for public-license badges that must not be used as article art."""
+    normalized_url = (url or "").casefold()
+    normalized_alt = (alt or "").casefold()
+    return any(marker in normalized_url for marker in PUBLIC_LICENSE_IMAGE_MARKERS) or any(
+        marker in normalized_alt
+        for marker in ("공공누리", "공공저작물 자유이용허락", "korea open government license")
+    )
+
+
 class ImageAgent:
     def __init__(self, settings: Settings) -> None:
         self.settings = settings

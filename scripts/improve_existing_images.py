@@ -14,7 +14,7 @@ from pathlib import Path
 import yaml
 
 from blog_agent.config import load_settings
-from blog_agent.images import ImageAgent
+from blog_agent.images import ImageAgent, is_public_license_badge
 from blog_agent.models import Draft, Topic
 
 
@@ -43,6 +43,11 @@ def _set_frontmatter_field(frontmatter: str, key: str, value: str) -> str:
     return frontmatter.rstrip() + "\n" + line + "\n"
 
 
+def _remove_frontmatter_field(frontmatter: str, key: str) -> str:
+    pattern = rf"^{re.escape(key)}:\s*.*(?:\n[ \t]+.*)*\n?"
+    return re.sub(pattern, "", frontmatter, flags=re.MULTILINE)
+
+
 def _is_weak_cover(url: str | None) -> bool:
     if not url:
         return True
@@ -55,7 +60,7 @@ def _is_weak_cover(url: str | None) -> bool:
         "/assets/logos/",
         "korea_logo_2024.jpg",
     )
-    return any(marker in url for marker in weak_markers)
+    return any(marker in url for marker in weak_markers) or is_public_license_badge(url)
 
 
 def _provider_name(url: str) -> str:
@@ -122,13 +127,17 @@ def improve_post(
     force: bool = False,
     category: str = "",
     tag: str = "",
+    public_license_only: bool = False,
 ) -> tuple[bool, str]:
     raw = path.read_text(encoding="utf-8")
     split = _split_post(raw)
     if not split:
         return False, "skip:no-frontmatter"
     frontmatter, body = split
-    meta = yaml.safe_load(frontmatter) or {}
+    try:
+        meta = yaml.safe_load(frontmatter) or {}
+    except yaml.YAMLError as exc:
+        return False, f"skip:malformed-frontmatter:{type(exc).__name__}"
     post_category = str(meta.get("category") or "").strip('"')
     if category and post_category != category:
         return False, "skip:category"
@@ -136,6 +145,10 @@ def improve_post(
     if tag and tag not in post_tags:
         return False, "skip:tag"
     old_cover = str(meta.get("cover_image") or "")
+    old_alt = str(meta.get("cover_image_alt") or "")
+    public_license_badge = is_public_license_badge(old_cover, old_alt)
+    if public_license_only and not public_license_badge:
+        return False, "skip:not-public-license"
     if not force and not _is_weak_cover(old_cover):
         return False, "skip:strong-cover"
 
@@ -147,6 +160,17 @@ def improve_post(
     updated = image_agent.attach_cover(draft)
     new_cover = updated.cover_image_path or ""
     if not new_cover or _is_weak_cover(new_cover):
+        if public_license_badge:
+            frontmatter = _remove_frontmatter_field(frontmatter, "cover_image")
+            frontmatter = _remove_frontmatter_field(frontmatter, "cover_image_alt")
+            body = re.sub(
+                rf"^\s*!\[[^\]]*\]\({re.escape(old_cover)}\)\s*\n?",
+                "",
+                body,
+                count=1,
+            )
+            path.write_text(f"---\n{frontmatter.strip()}\n---{body}", encoding="utf-8")
+            return True, "removed:public-license-badge"
         return False, "skip:no-better-image"
 
     alt = updated.cover_image_alt or f"{updated.title} 대표 이미지"
@@ -164,6 +188,7 @@ def main() -> None:
     parser.add_argument("--category", default="")
     parser.add_argument("--tag", default="")
     parser.add_argument("--force", action="store_true")
+    parser.add_argument("--public-license-only", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -183,6 +208,7 @@ def main() -> None:
             force=args.force,
             category=args.category,
             tag=args.tag,
+            public_license_only=args.public_license_only,
         )
         scanned += 1
         if ok:
