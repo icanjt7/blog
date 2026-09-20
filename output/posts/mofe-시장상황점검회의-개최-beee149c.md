@@ -1,5 +1,5 @@
 ---
-title: 시장상황점검회의 개최
+title: 재정경제부, 시장 상황 점검·정책 대응 회의 주관 및 개최
 date: 2026-08-21T00:07
 category: 정책
 tags:
@@ -12,6 +12,7 @@ cover_image_alt: 시장상황점검회의 개최 — Photo by NEW DATA SERVICES 
 author: 재정경제부
 expanded_by_llm: true
 search_index_improved: true
+title_improved_by_llm: true
 ---
 
 ## 발표 개요  
