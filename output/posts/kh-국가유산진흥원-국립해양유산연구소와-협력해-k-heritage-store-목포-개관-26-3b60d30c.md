@@ -1,15 +1,17 @@
 ---
-title: "국가유산진흥원 국립해양유산연구소와 협력해 K-Heritage Store 목포 개관(260825)"
-date: "2026-08-26T00:16"
-category: "핫이슈"
+title: 국가유산진흥원·국립해양유산연구소, 목포 K‑Heritage Store 개관
+date: 2026-08-26T00:16
+category: 핫이슈
 tags:
-  - "보도기사"
-  - "국가유산진흥원"
-  - "핫이슈"
+- 보도기사
+- 국가유산진흥원
+- 핫이슈
 quality_score: 92.0
-cover_image: "https://www.kh.or.kr/jnrepo/namo/img/images/000112/20260826094804923_5VPYI29C.jpg"
-cover_image_alt: "국가유산진흥원 국립해양유산연구소와 협력해 K-Heritage Store 목포 개관(260825) 관련 보도자료 이미지"
-author: "국가유산진흥원"
+cover_image: https://www.kh.or.kr/jnrepo/namo/img/images/000112/20260826094804923_5VPYI29C.jpg
+cover_image_alt: 국가유산진흥원 국립해양유산연구소와 협력해 K-Heritage Store 목포 개관(260825) 관련 보도자료 이미지
+author: 국가유산진흥원
+title_improved_by_llm: true
+search_index_improved: true
 ---
 
 국가유산진흥원이 2026-08-26 공개한 자료를 바탕으로 국가유산진흥원 국립해양유산연구소와 협력해 K-Heritage Store 목포 개관의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다.
