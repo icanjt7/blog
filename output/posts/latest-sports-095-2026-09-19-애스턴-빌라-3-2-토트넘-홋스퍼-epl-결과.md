@@ -12,6 +12,7 @@ tags:
 - "Johan Manzambi"
 quality_score: 92.0
 author: "브리핑웨이브 스포츠팀"
+cover_image: "https://images.unsplash.com/photo-1705729371025-468b95e57920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODk5NzE4MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 ## 프리미어리그 경기 결과
 

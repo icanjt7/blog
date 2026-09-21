@@ -10,6 +10,7 @@ tags:
 - 문제해설
 quality_score: 90.0
 author: 브리핑웨이브 학습팀
+cover_image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29yayUyMGRpZ2l0YWwlMjB0ZWNobm9sb2d5JTIwYWJzdHJhY3R8ZW58MXwwfHx8MTc4OTk3MTgyNXww&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 AI 결과 검증을(를) 암기형 문장으로만 공부하면 사례가 바뀌었을 때 판단하기 어렵습니다. 이번 글은 실제 상황에서 어떤 단서를 보고 선택해야 하는지에 초점을 맞춘 새 객관식 연습입니다.

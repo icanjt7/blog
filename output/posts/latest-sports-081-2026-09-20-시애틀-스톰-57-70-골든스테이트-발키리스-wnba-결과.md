@@ -10,6 +10,7 @@ tags:
 - "Kaila Charles"
 quality_score: 92.0
 author: "브리핑웨이브 스포츠팀"
+cover_image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg5OTcxODMxfDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 ## 경기 결과
 

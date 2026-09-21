@@ -10,6 +10,7 @@ tags:
 - 문제해설
 quality_score: 90.0
 author: 브리핑웨이브 학습팀
+cover_image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGRldmVsb3BtZW50JTIwY29kZXxlbnwxfDB8fHwxNzg5OTcxODI2fDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 단위·통합 테스트은(는) 시험에서 짧은 정의 문장으로 자주 다뤄지지만, 현장에서는 조건을 나눠 보는 것이 더 중요합니다. 기존 문제의 문장을 옮기지 않고 핵심 개념을 바탕으로 새 연습문제를 만들었습니다.

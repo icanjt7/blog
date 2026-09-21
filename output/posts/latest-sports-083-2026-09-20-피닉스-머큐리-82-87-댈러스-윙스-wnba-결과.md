@@ -10,6 +10,7 @@ tags:
 - "Paige Bueckers"
 quality_score: 92.0
 author: "브리핑웨이브 스포츠팀"
+cover_image: "https://images.unsplash.com/photo-1770233621425-5d9ee7a0a700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzg5OTcxODMxfDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 ## 경기 결과
 

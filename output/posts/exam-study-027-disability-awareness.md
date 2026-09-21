@@ -10,6 +10,7 @@ tags:
 - 문제해설
 quality_score: 90.0
 author: 브리핑웨이브 학습팀
+cover_image: "https://images.unsplash.com/photo-1485322551133-3a4c27a9d925?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxlZHVjYXRpb24lMjBjbGFzc3Jvb20lMjBib29rc3xlbnwxfDB8fHwxNzg5OTcxODI0fDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 장애인 인식개선은(는) 시험에서 짧은 정의 문장으로 자주 다뤄지지만, 현장에서는 조건을 나눠 보는 것이 더 중요합니다. 기존 문제의 문장을 옮기지 않고 핵심 개념을 바탕으로 새 연습문제를 만들었습니다.

@@ -10,6 +10,7 @@ tags:
 - 문제해설
 quality_score: 90.0
 author: 브리핑웨이브 학습팀
+cover_image: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxzb2Z0d2FyZSUyMGRldmVsb3BtZW50JTIwY29kZXxlbnwxfDB8fHwxNzg5OTcxODI2fDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 폭포수와 반복개발을(를) 암기형 문장으로만 공부하면 사례가 바뀌었을 때 판단하기 어렵습니다. 이번 글은 실제 상황에서 어떤 단서를 보고 선택해야 하는지에 초점을 맞춘 새 객관식 연습입니다.

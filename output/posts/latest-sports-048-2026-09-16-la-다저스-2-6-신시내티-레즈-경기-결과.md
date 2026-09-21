@@ -10,6 +10,7 @@ tags:
 - "Elly De La Cruz"
 quality_score: 92.0
 author: "브리핑웨이브 스포츠팀"
+cover_image: "https://images.unsplash.com/photo-1573369311385-c072b567be88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw5fHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3ODk5NzE4MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 ## 경기 결과
 
