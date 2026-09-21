@@ -145,6 +145,28 @@ class TossProductSyncTest(unittest.TestCase):
         self.assertIn('rel="sponsored nofollow noopener"', strip)
         self.assertNotIn("product.jpg", strip)
 
+    def test_home_product_strip_keeps_all_candidates_for_refresh_rotation(self) -> None:
+        products = tuple(
+            ProductLink(
+                name=f"상품 {index}",
+                url=f"https://toss.im/_m/product-{index}",
+                keywords=("상품",),
+                taca_item_id=index,
+                source="openapi",
+            )
+            for index in range(1, 9)
+        )
+        builder = StaticSiteBuilder(Path("posts"), Path("public"), "테스트", "테스트")
+
+        with patch("blog_agent.site.PRODUCT_LINKS", products):
+            strip = builder._home_product_strip_html(limit=6)
+
+        self.assertEqual(strip.count('class="home-product-card"'), 8)
+        self.assertEqual(strip.count(" hidden rel="), 2)
+        self.assertIn('data-display-count="6"', strip)
+        self.assertIn("briefwave-home-products", strip)
+        self.assertIn("Math.random()", strip)
+
 
 if __name__ == "__main__":
     unittest.main()

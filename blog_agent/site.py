@@ -1375,7 +1375,8 @@ class StaticSiteBuilder:
 
     def _home_product_strip_html(self, limit: int = 6) -> str:
         cards: list[str] = []
-        for product in PRODUCT_LINKS[: max(0, limit)]:
+        display_count = max(1, limit)
+        for index, product in enumerate(PRODUCT_LINKS):
             image_html = ""
             if product.image_url:
                 image_html = (
@@ -1403,7 +1404,9 @@ class StaticSiteBuilder:
                     '</span>'
                 )
             cards.append(
-                f'<a class="home-product-card" href="{html.escape(product.url)}" '
+                f'<a class="home-product-card" data-product-key="{html.escape(product.cache_key, quote=True)}" '
+                f'href="{html.escape(product.url)}" '
+                f'{"hidden " if index >= display_count else ""}'
                 'rel="sponsored nofollow noopener" target="_blank">'
                 f'{image_html}<span class="home-product-info">'
                 f'<span class="home-product-name">{html.escape(product.name)}</span>'
@@ -1418,9 +1421,25 @@ class StaticSiteBuilder:
             '<h2 id="home-products-title">지금 많이 찾는 상품</h2>'
             '<span>토스쇼핑</span>'
             '</div>'
-            f'<div class="home-product-strip">{"".join(cards)}</div>'
+            f'<div class="home-product-strip" data-home-products data-display-count="{display_count}">'
+            f'{"".join(cards)}</div>'
             '<p class="home-products-disclosure">상품 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>'
             '</section>'
+            '<script>(function(){'
+            'var strip=document.querySelector("[data-home-products]");if(!strip)return;'
+            'var cards=Array.prototype.slice.call(strip.querySelectorAll(".home-product-card"));'
+            'var count=Math.min(parseInt(strip.getAttribute("data-display-count"),10)||6,cards.length);'
+            'for(var i=cards.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));'
+            'var swap=cards[i];cards[i]=cards[j];cards[j]=swap;}'
+            'var previous=[];try{previous=(sessionStorage.getItem("briefwave-home-products")||"").split("|").filter(Boolean);}catch(error){}'
+            'var previousSet=new Set(previous);var selected=cards.slice(0,count);'
+            'if(cards.length>count&&previousSet.size&&selected.every(function(card){return previousSet.has(card.dataset.productKey);})){'
+            'var replacement=cards.find(function(card){return !previousSet.has(card.dataset.productKey);});'
+            'if(replacement)selected[count-1]=replacement;}'
+            'var selectedSet=new Set(selected);var ordered=selected.concat(cards.filter(function(card){return !selectedSet.has(card);}));'
+            'ordered.forEach(function(card,index){card.hidden=index>=count;strip.appendChild(card);});'
+            'try{sessionStorage.setItem("briefwave-home-products",selected.map(function(card){return card.dataset.productKey;}).join("|"));}catch(error){}'
+            '})();</script>'
         )
 
     def _write_index(self, posts: list[Post]) -> None:
