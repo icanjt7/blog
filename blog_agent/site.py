@@ -3331,10 +3331,9 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 
 /* ── featured product ── */
 .product-recommendation {
-  display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
-  align-items: center;
-  gap: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   margin: 28px 0 0;
   padding: 18px;
   border: 1px solid rgba(15,118,110,.22);
@@ -3343,8 +3342,8 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 }
 .product-recommendation-image-link {
   display: block;
-  width: 132px;
-  height: 132px;
+  width: 100%;
+  height: clamp(220px, 42vw, 340px);
   overflow: hidden;
   border-radius: 9px;
   background: #fff;
@@ -3477,8 +3476,8 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   .grid { grid-template-columns: 1fr; gap: 10px; padding: 10px 12px 0; }
   .card { border-radius: 10px; contain-intrinsic-size: 390px; }
   .card-body { padding: 12px 14px 14px; }
-	  .product-recommendation { grid-template-columns: 96px minmax(0, 1fr); gap: 12px; padding: 14px; }
-	  .product-recommendation-image-link { width: 96px; height: 96px; }
+	  .product-recommendation { gap: 12px; padding: 14px; }
+	  .product-recommendation-image-link { height: min(72vw, 300px); }
 	  .post { border-radius: 0; border-left: none; border-right: none; padding: 16px; }
 	  .search-page { max-width: none; }
 	  .search-panel { padding: 14px; }
