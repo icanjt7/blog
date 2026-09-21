@@ -891,7 +891,7 @@ class StaticSiteBuilder:
     def _product_link_html(self, post: Post) -> str:
         products = self._select_products(post)
         product = products[0]
-        candidates = [item.url.rsplit("/", 1)[-1] for item in products]
+        candidates = [item.cache_key for item in products]
         candidates_json = json.dumps(candidates, ensure_ascii=False).replace("<", "\\u003c")
         card = self._product_card_html(product, self._product_recommendation_reason(product, post))
         return (
@@ -903,6 +903,7 @@ class StaticSiteBuilder:
 
     def _product_card_html(self, product: ProductLink, recommendation_reason: str) -> str:
         description = self._product_description(product)
+        price_html = self._product_price_html(product)
         image_html = ""
         if product.image_url:
             image_html = (
@@ -919,6 +920,7 @@ class StaticSiteBuilder:
             <div class="product-recommendation-body">
               <p class="product-recommendation-label">이 글과 함께 살펴볼 상품</p>
               <p class="product-recommendation-name">{html.escape(product.name)}</p>
+              {price_html}
               <p class="product-recommendation-reason">{html.escape(recommendation_reason)}</p>
               <p class="product-recommendation-description">{html.escape(description)}</p>
               <p class="product-recommendation-guide">구성·용량과 현재 가격, 배송 조건을 상세 페이지에서 비교해 보세요.</p>
@@ -932,7 +934,7 @@ class StaticSiteBuilder:
 
     def _write_product_catalog(self) -> None:
         catalog = {
-            product.url.rsplit("/", 1)[-1]: {
+            product.cache_key: {
                 "html": self._product_card_html(
                     product,
                     "이 글과 관련해 함께 비교해 볼 수 있는 상품입니다.",
@@ -946,26 +948,48 @@ class StaticSiteBuilder:
         )
 
     @staticmethod
+    def _product_price_html(product: ProductLink) -> str:
+        if not product.display_price:
+            return ""
+        current = f"{product.display_price:,}원"
+        original = (
+            f'<del>{product.original_price:,}원</del> '
+            if product.original_price > product.display_price
+            else ""
+        )
+        discount = f'<strong>{product.discount_rate}% 할인</strong> ' if product.discount_rate else ""
+        return (
+            '<p class="product-recommendation-price">'
+            f'{discount}{original}<span>{current}</span>'
+            '</p>'
+        )
+
+    @staticmethod
     def _product_reviews_html(product: ProductLink) -> str:
         data = product.review_data
         reviews = data.get("reviews") if isinstance(data, dict) else None
+        try:
+            rating = float(data.get("rating") or 0)
+        except (AttributeError, TypeError, ValueError):
+            rating = 0
+        try:
+            review_count = int(data.get("review_count") or 0)
+        except (AttributeError, TypeError, ValueError):
+            review_count = 0
         if not isinstance(reviews, list) or not reviews:
+            summary = (
+                f'<p class="product-user-reviews-summary">평점 {rating:.1f}점 · 후기 {review_count:,}개</p>'
+                if rating and review_count
+                else ""
+            )
             return (
                 '<div class="product-user-reviews">'
-                '<p class="product-user-reviews-title">실제 구매자 후기</p>'
+                '<p class="product-user-reviews-title">토스쇼핑 상품 평가</p>'
+                f'{summary}'
                 f'<p class="product-user-reviews-empty"><a href="{html.escape(product.url)}" '
                 'rel="sponsored nofollow noopener" target="_blank">상품 페이지에서 최신 후기를 확인해 보세요.</a></p>'
                 '</div>'
             )
-
-        try:
-            rating = float(data.get("rating") or 0)
-        except (TypeError, ValueError):
-            rating = 0
-        try:
-            review_count = int(data.get("review_count") or 0)
-        except (TypeError, ValueError):
-            review_count = 0
         summary = f"평점 {rating:.1f}점 · 후기 {review_count:,}개" if rating and review_count else "토스쇼핑 구매 후기"
         items: list[str] = []
         for review in reviews[:3]:
@@ -1349,14 +1373,66 @@ class StaticSiteBuilder:
           </div>
         </article>"""
 
+    def _home_product_strip_html(self, limit: int = 6) -> str:
+        cards: list[str] = []
+        for product in PRODUCT_LINKS[: max(0, limit)]:
+            image_html = ""
+            if product.image_url:
+                image_html = (
+                    f'<img class="home-product-image" src="{html.escape(product.image_url)}" '
+                    f'alt="" width="64" height="64" loading="lazy" decoding="async" '
+                    'referrerpolicy="no-referrer">'
+                )
+            price_html = ""
+            if product.display_price:
+                discount = (
+                    f'<strong>{product.discount_rate}%</strong> '
+                    if product.discount_rate
+                    else ""
+                )
+                price_html = (
+                    '<span class="home-product-price">'
+                    f'{discount}{product.display_price:,}원'
+                    '</span>'
+                )
+            rating_html = ""
+            if product.review_score and product.review_count:
+                rating_html = (
+                    '<span class="home-product-rating">'
+                    f'★ {product.review_score:.1f} · 후기 {product.review_count:,}'
+                    '</span>'
+                )
+            cards.append(
+                f'<a class="home-product-card" href="{html.escape(product.url)}" '
+                'rel="sponsored nofollow noopener" target="_blank">'
+                f'{image_html}<span class="home-product-info">'
+                f'<span class="home-product-name">{html.escape(product.name)}</span>'
+                f'<span class="home-product-meta">{price_html}{rating_html}</span>'
+                '</span></a>'
+            )
+        if not cards:
+            return ""
+        return (
+            '<section class="home-products" aria-labelledby="home-products-title">'
+            '<div class="home-products-heading">'
+            '<h2 id="home-products-title">지금 많이 찾는 상품</h2>'
+            '<span>토스쇼핑</span>'
+            '</div>'
+            f'<div class="home-product-strip">{"".join(cards)}</div>'
+            '<p class="home-products-disclosure">상품 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>'
+            '</section>'
+        )
+
     def _write_index(self, posts: list[Post]) -> None:
         per_page = 9
         total = len(posts)
+        product_strip = self._home_product_strip_html()
         if total == 0:
-            content = """
+            content = f"""
             <section class="hero">
               <p class="hero-tagline">직접 판단에 도움이 되는 선별 브리핑을 모았습니다</p>
             </section>
+            {product_strip}
             <p class="empty">아직 발행된 글이 없습니다.</p>
             """
             self._write_html(
@@ -1385,6 +1461,7 @@ class StaticSiteBuilder:
               <p class="hero-tagline">직접 판단에 도움이 되는 선별 브리핑을 모았습니다</p>
               {hero_stats}
             </section>
+            {product_strip if page == 1 else ""}
             <section class="grid">{cards}</section>
             {nav_html}
             """
@@ -2866,6 +2943,63 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .breadcrumb span[aria-current="page"] { color: var(--ink); }
 
 /* ── index grid ── */
+.home-products {
+  padding: 14px 0 12px;
+  border-bottom: 1px solid var(--line);
+}
+.home-products-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 9px;
+}
+.home-products-heading h2 { margin: 0; font-size: 1rem; line-height: 1.35; }
+.home-products-heading > span { color: var(--muted); font-size: 0.74rem; }
+.home-product-strip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(220px, 1fr);
+  gap: 10px;
+  overflow-x: auto;
+  padding: 1px 1px 7px;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  overscroll-behavior-inline: contain;
+}
+.home-product-card {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  scroll-snap-align: start;
+  text-decoration: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.home-product-card:hover { border-color: var(--accent); box-shadow: 0 3px 14px rgba(0,0,0,.07); text-decoration: none; }
+.home-product-image { width: 64px; height: 64px; flex: 0 0 64px; border-radius: 8px; object-fit: cover; }
+.home-product-info { min-width: 0; display: flex; flex: 1; flex-direction: column; gap: 5px; }
+.home-product-name {
+  min-width: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: .84rem;
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+.home-product-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 3px 8px; font-size: .76rem; line-height: 1.3; }
+.home-product-price { color: var(--ink); font-weight: 700; }
+.home-product-price strong { color: #e5484d; }
+.home-product-rating { color: var(--muted); }
+.home-products-disclosure { margin: 5px 0 0; color: var(--muted); font-size: .68rem; line-height: 1.45; }
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
@@ -3236,6 +3370,16 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   font-weight: 700;
   line-height: 1.45;
 }
+.product-recommendation-price {
+  display: flex;
+  gap: 7px;
+  align-items: baseline;
+  margin: 0 0 8px;
+  font-size: .9rem;
+}
+.product-recommendation-price strong { color: #dc2626; }
+.product-recommendation-price del { color: var(--muted); font-size: .8rem; }
+.product-recommendation-price span { color: var(--ink); font-weight: 800; }
 .product-recommendation-reason {
   margin: 0 0 6px;
   color: var(--accent);
@@ -3328,6 +3472,8 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   .language-switcher select { width: 104px; height: 34px; font-size: 0.78rem; }
   .site-nav { padding: 0 4px; }
   .hero { padding: 10px 16px 8px; }
+  .home-products { padding: 12px 12px 10px; }
+  .home-product-strip { grid-auto-columns: minmax(210px, 82vw); }
   .grid { grid-template-columns: 1fr; gap: 10px; padding: 10px 12px 0; }
   .card { border-radius: 10px; contain-intrinsic-size: 390px; }
   .card-body { padding: 12px 14px 14px; }

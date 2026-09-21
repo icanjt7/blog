@@ -7,26 +7,53 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from unittest.mock import patch
 
-from blog_agent.product_links import PRODUCT_LINKS, PRODUCT_REVIEW_DATA
+from blog_agent.product_links import PRODUCT_LINKS, ProductLink
 from blog_agent.site import StaticSiteBuilder
 
 
 class StaticSiteBuilderTest(unittest.TestCase):
-    def test_every_product_link_has_a_toss_image(self) -> None:
-        self.assertEqual(len(PRODUCT_LINKS), 43)
-        self.assertTrue(all(product.image_url for product in PRODUCT_LINKS))
-        self.assertTrue(
-            all(product.image_url.startswith("https://shopping.toss.im/") for product in PRODUCT_LINKS)
-        )
-
-    def test_product_review_data_is_from_toss_shopping(self) -> None:
-        self.assertEqual(len(PRODUCT_REVIEW_DATA), len(PRODUCT_LINKS))
+    def test_product_catalog_uses_sharelinks_and_only_approved_images(self) -> None:
+        self.assertTrue(PRODUCT_LINKS)
+        self.assertTrue(all(product.url.startswith("https://toss.im/") for product in PRODUCT_LINKS))
         self.assertTrue(
             all(
-                data.get("source_url", "").startswith("https://toss.shopping/")
-                for data in PRODUCT_REVIEW_DATA.values()
+                not product.image_url or product.image_url.startswith("https://shopping.toss.im/")
+                for product in PRODUCT_LINKS
             )
         )
+
+    def test_product_review_data_is_structured(self) -> None:
+        self.assertTrue(all(isinstance(product.review_data, dict) for product in PRODUCT_LINKS))
+
+    def test_openapi_product_card_shows_price_without_unapproved_image(self) -> None:
+        product = ProductLink(
+            name="공식 API 상품",
+            url="https://toss.im/_m/api",
+            keywords=("상품",),
+            thumbnail_url="https://shopping.toss.im/product.jpg",
+            image_allowed=False,
+            display_price=19900,
+            original_price=25000,
+            discount_rate=20,
+            review_score=4.8,
+            review_count=123,
+            source="openapi",
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            builder = StaticSiteBuilder(
+                posts_dir=root / "posts",
+                public_dir=root / "public",
+                site_title="테스트",
+                site_description="테스트",
+            )
+
+            card = builder._product_card_html(product, "추천 이유")
+
+        self.assertIn("20% 할인", card)
+        self.assertIn("19,900원", card)
+        self.assertIn("평점 4.8점 · 후기 123개", card)
+        self.assertNotIn("product-recommendation-image", card)
 
     def test_parse_post_recovers_from_inline_llm_response_labels(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -64,6 +91,16 @@ cover_image: https://example.com/cover.jpg
         self.assertIn("투표일이 다가오면서", post.body_html)
 
     def test_product_matching_uses_article_content(self) -> None:
+        omega = ProductLink(
+            name="종근당건강 프로메가 알티지 오메가3",
+            url="https://toss.im/_m/omega",
+            keywords=("오메가3", "혈행", "영양제", "건강"),
+        )
+        cleaner = ProductLink(
+            name="생활 청소기",
+            url="https://toss.im/_m/cleaner",
+            keywords=("청소", "가전", "생활"),
+        )
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             post_path = root / "posts" / "omega-health.md"
@@ -90,14 +127,14 @@ cover_image: https://example.com/cover.jpg
             )
 
             post = builder._parse_post(post_path)
-            selected = builder._select_product(post)
-            candidates = builder._select_products(post)
+            with patch("blog_agent.site.PRODUCT_LINKS", (cleaner, omega)):
+                selected = builder._select_product(post)
+                candidates = builder._select_products(post)
 
-        self.assertEqual(selected.url, "https://toss.im/_m/lnQdq7ws")
+        self.assertEqual(selected.url, "https://toss.im/_m/omega")
         self.assertIn("오메가3", selected.name)
-        self.assertTrue(selected.image_url.startswith("https://shopping.toss.im/"))
-        self.assertEqual(len(candidates), 5)
-        self.assertEqual(len({product.url for product in candidates}), 5)
+        self.assertEqual(len(candidates), 2)
+        self.assertEqual(len({product.url for product in candidates}), 2)
 
     def test_frontmatter_split_ignores_markdown_rule_inside_quoted_title(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -365,15 +402,10 @@ quality_score: 95.0
             self.assertIn('class="product-rotation"', html)
             self.assertIn('class="product-rotation-candidates"', html)
             self.assertIn("briefwave-product:", html)
-            self.assertIn('class="product-recommendation-image"', html)
             self.assertIn('class="product-recommendation-description"', html)
             self.assertIn("구성·용량과 현재 가격, 배송 조건", html)
             self.assertIn("현재 가격·상품 정보 확인하기", html)
-            self.assertIn("실제 구매자 후기", html)
-            self.assertIn("토스쇼핑에서 후기 전체 보기", html)
-            self.assertIn("구매자 개인의 경험", html)
-            self.assertIn('loading="lazy"', html)
-            self.assertIn('referrerpolicy="no-referrer"', html)
+            self.assertIn('class="product-user-reviews"', html)
             self.assertIn('href="https://toss.im/_m/', html)
             self.assertIn('rel="sponsored nofollow noopener"', html)
             self.assertIn("일정 수수료를 받을 수 있으며", html)

@@ -6,6 +6,7 @@ from pathlib import Path
 
 
 _REVIEW_DATA_PATH = Path(__file__).with_name("product_reviews.json")
+_TOSS_PRODUCT_DATA_PATH = Path(__file__).with_name("toss_products.json")
 try:
     PRODUCT_REVIEW_DATA: dict[str, dict] = json.loads(_REVIEW_DATA_PATH.read_text(encoding="utf-8"))
 except (OSError, ValueError):
@@ -17,14 +18,38 @@ class ProductLink:
     name: str
     url: str
     keywords: tuple[str, ...]
+    taca_item_id: int | None = None
+    product_url: str = ""
+    thumbnail_url: str = ""
+    image_allowed: bool = True
+    display_price: int = 0
+    original_price: int = 0
+    discount_rate: int = 0
+    review_score: float = 0
+    review_count: int = 0
+    source: str = "legacy"
 
     @property
     def image_url(self) -> str:
+        if self.source == "openapi":
+            return self.thumbnail_url if self.image_allowed else ""
         return PRODUCT_IMAGE_URLS.get(self.url.rsplit("/", 1)[-1], "")
 
     @property
     def review_data(self) -> dict:
+        if self.source == "openapi":
+            return {
+                "source": "Toss ShareLink Open API",
+                "source_url": self.product_url,
+                "rating": self.review_score,
+                "review_count": self.review_count,
+                "reviews": [],
+            }
         return PRODUCT_REVIEW_DATA.get(self.url.rsplit("/", 1)[-1], {})
+
+    @property
+    def cache_key(self) -> str:
+        return str(self.taca_item_id) if self.taca_item_id is not None else self.url.rsplit("/", 1)[-1]
 
 
 def product(name: str, code: str, *keywords: str) -> ProductLink:
@@ -123,3 +148,53 @@ PRODUCT_IMAGE_URLS: dict[str, str] = {
     "VyS3wxuy": "https://shopping.toss.im/955d5c28-ce13-4baa-9f0a-f06de476fcc0.jpg",
     "Xw7cyJLD": "https://shopping.toss.im/live/taca/ai/v2/MWJkZjAx/QUl1SkozcmRlMmtJMUEwMUtRcWxHUWptOVZ5dnZSV3VyVnhVSHJSUkR1Lys.png",
 }
+
+
+def _openapi_products() -> tuple[ProductLink, ...]:
+    """Load the latest official API snapshot, ignoring unknown response fields."""
+    try:
+        payload = json.loads(_TOSS_PRODUCT_DATA_PATH.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return ()
+    rows = payload.get("products", []) if isinstance(payload, dict) else []
+    products: list[ProductLink] = []
+    for row in rows:
+        if not isinstance(row, dict) or row.get("isSoldOut"):
+            continue
+        try:
+            taca_item_id = int(row["tacaItemId"])
+            name = str(row["name"]).strip()
+            short_url = str(row["shortUrl"]).strip()
+        except (KeyError, TypeError, ValueError):
+            continue
+        if not name or not short_url.startswith("https://toss.im/"):
+            continue
+        raw_keywords = row.get("keywords", [])
+        keywords = tuple(
+            str(keyword).strip()
+            for keyword in raw_keywords
+            if str(keyword).strip()
+        )
+        products.append(
+            ProductLink(
+                name=name,
+                url=short_url,
+                keywords=keywords or ("쇼핑", "상품"),
+                taca_item_id=taca_item_id,
+                product_url=str(row.get("productUrl") or ""),
+                thumbnail_url=str(row.get("thumbnailUrl") or ""),
+                image_allowed=bool(row.get("imageAllowed")),
+                display_price=int(row.get("displayPrice") or 0),
+                original_price=int(row.get("originalPrice") or 0),
+                discount_rate=int(row.get("discountRate") or 0),
+                review_score=float(row.get("reviewScore") or 0),
+                review_count=int(row.get("reviewCount") or 0),
+                source="openapi",
+            )
+        )
+    return tuple(products)
+
+
+# Keep the existing hand-curated catalog as a safe fallback until the first
+# successful workflow run. Once an API snapshot exists, it is the sole source.
+PRODUCT_LINKS = _openapi_products() or PRODUCT_LINKS

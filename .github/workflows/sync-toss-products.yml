@@ -1,0 +1,61 @@
+name: Sync Toss ShareLink products
+
+on:
+  workflow_dispatch:
+    inputs:
+      include_today_deals:
+        description: "Include today's deal products"
+        required: false
+        type: boolean
+        default: true
+  schedule:
+    - cron: "23 21 * * *" # 06:23 KST
+
+concurrency:
+  group: toss-product-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    # Set TOSS_RUNNER_LABEL to a self-hosted runner with a registered fixed
+    # egress IP when GitHub-hosted runner ranges are not allow-listed in Toss.
+    runs-on: ${{ vars.TOSS_RUNNER_LABEL || 'ubuntu-latest' }}
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      TOSS_ACCESS_KEY: ${{ secrets.Toss_Access_Key }}
+      TOSS_ID: ${{ secrets.TOSS_ID }}
+      TOSS_SECRET_KEY: ${{ secrets.TOSS_SECRET_KEY }}
+      TOSS_PRODUCT_IMAGES_ALLOWED: ${{ vars.TOSS_PRODUCT_IMAGES_ALLOWED || 'false' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Sync products and issue ShareLinks
+        shell: bash
+        run: |
+          args=(--size 30)
+          if [[ "${{ github.event_name }}" == "schedule" || "${{ inputs.include_today_deals }}" == "true" ]]; then
+            args+=(--include-today-deals)
+          fi
+          python scripts/sync_toss_products.py "${args[@]}"
+
+      - name: Commit refreshed product data
+        run: |
+          git config user.name "blog-agent"
+          git config user.email "actions@github.com"
+          git add blog_agent/toss_products.json
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: sync Toss ShareLink products"
+          git pull --rebase origin main
+          git push

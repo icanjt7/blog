@@ -9,6 +9,8 @@ on:
       - main
     paths:
       - "blog_agent/site.py"
+      - "blog_agent/product_links.py"
+      - "blog_agent/toss_products.json"
       - "streamlit_app.py"
       - "output/posts/**"
       - ".github/workflows/pages-deploy.yml"

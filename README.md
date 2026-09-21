@@ -1,5 +1,21 @@
 # Blog Auto Agent
 
+## Toss ShareLink 상품 동기화
+
+상품 추천 데이터는 토스 ShareLink Open API의 베스트 상품 응답과 상품별 추적 링크를 사용합니다.
+GitHub 저장소 Secrets에 `Toss_Access_Key`, `TOSS_ID`(회원 연동 ID/publisherId),
+`TOSS_SECRET_KEY`를 등록하면 `Sync Toss ShareLink products` 워크플로가 매일 상품 정보를
+`blog_agent/toss_products.json`에 갱신합니다. 조회 API의 일반 `productUrl`은 게시하지 않고,
+링크 발급 API가 반환한 `shortUrl`만 추천 링크로 사용합니다.
+
+토스 어드민에는 워크플로 실행 서버의 출발지 IP가 등록되어 있어야 합니다. 고정 IP를 쓰는
+self-hosted runner가 있다면 Actions 변수 `TOSS_RUNNER_LABEL`에 해당 runner label을 지정하세요.
+미등록 IP에서는 HTTP 200이어도 API 본문이 `resultType: FAIL`로 반환되며 동기화는 기존 데이터를
+덮어쓰지 않고 실패합니다.
+
+상품 이미지 사용은 별도 확인이 필요하므로 기본적으로 비활성화됩니다. 토스에서 서비스의 이미지
+사용 범위를 확인받은 경우에만 Actions 변수 `TOSS_PRODUCT_IMAGES_ALLOWED=true`를 설정하세요.
+
 하루 5편의 블로그 콘텐츠를 자동으로 기획, 수집, 작성, 검수, 발행하는 Python 기반 에이전트입니다.
 
 기본 설계는 다음 원칙을 따릅니다.
