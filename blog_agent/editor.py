@@ -167,6 +167,11 @@ class SeoEditorAgent:
         template = classify_press_template(reviewed.topic.title_hint, source_context)
         template_instruction = press_template_instruction(template)
         summary_card_instruction = press_summary_card_instruction(template)
+        closing_instruction = {
+            "ACTIONABLE": "지원 대상·신청 절차 뒤에 출처 고유 조건을 담은 FAQ 2개를 둔다.",
+            "INFORMATIONAL": "주요 협력·행사 내용과 기대 효과, 후속 확인 경로로 마무리한다.",
+            "ANNOUNCEMENT": "선정 평가·사업 규모·후속 추진 또는 완공 단계로 마무리한다.",
+        }[template]
         prompt = f"""
 아래 한국어 블로그 초안을 편집해 주세요.
 
@@ -187,7 +192,7 @@ class SeoEditorAgent:
 {summary_card_instruction}
 - H2/H3는 독자의 검색 의도를 반영한 구체적인 질문형 제목으로 다변화한다.
 - '발표 개요', '배경과 의미', '원문에서 함께 볼 부분', '맥락 짚기', '핵심 내용', '마무리'는 헤딩으로 쓰지 않는다.
-- 마지막 실무 섹션은 주제별 체크리스트 또는 자주 묻는 질문 2개로 구성한다.
+- {closing_instruction}
 - 문단을 짧게 나누고, 표/체크리스트의 가독성을 높인다.
 - "원문 안내의 시행일과 적용 대상을 먼저 봅니다", "신청, 예약, 방문, 자동 적용 중 어떤 방식인지 구분합니다"처럼 어느 글에나 붙는 범용 체크리스트는 제거한다.
 - 체크리스트와 표에는 참고 출처의 고유 숫자, 기간, 대상, 기관명, 절차를 최소 5개 이상 반영한다.
@@ -273,6 +278,11 @@ BODY:
         template = classify_press_template(draft.topic.title_hint, source_context)
         template_instruction = press_template_instruction(template)
         summary_card_instruction = press_summary_card_instruction(template)
+        closing_instruction = {
+            "ACTIONABLE": "지원 대상·신청 절차 뒤에 출처 고유 조건을 담은 FAQ 2개를 둔다.",
+            "INFORMATIONAL": "주요 협력·행사 내용과 기대 효과, 후속 확인 경로로 마무리한다.",
+            "ANNOUNCEMENT": "선정 평가·사업 규모·후속 추진 또는 완공 단계로 마무리한다.",
+        }[template]
         prompt = f"""
 아래 글은 1차 편집 후 검수에서 아직 품질 기준을 통과하지 못했습니다.
 검수 메모를 모두 해결하도록 제목, 요약, 본문을 다시 작성하세요.
@@ -286,7 +296,7 @@ BODY:
 - 본문은 1,300자 이상, ## 헤딩 5개 이상, 표 1개 이상으로 작성한다.
 {summary_card_instruction}
 - H2/H3는 검색 질문형으로 쓰고, '발표 개요', '배경과 의미', '원문에서 함께 볼 부분', '맥락 짚기', '핵심 내용', '마무리'를 사용하지 않는다.
-- 마지막에는 출처 고유 조건을 담은 체크리스트 또는 FAQ 2개를 둔다.
+- {closing_instruction}
 - 검수 메모에 나온 범용 문장과 AI식 반복 표현은 제거한다.
 - 출처의 고유명사, 수치, 기간, 기관명, 절차를 본문과 표에 반영한다.
 - 제목은 30자 이내 한국어로, 원문 핵심 대상을 드러낸다.

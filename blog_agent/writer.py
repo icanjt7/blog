@@ -243,8 +243,9 @@ class WriterAgent:
 {summary_card_instruction}
 - H2/H3는 검색자가 묻는 구체적인 질문형 문장으로 서로 다르게 쓴다. 예: '지원 대상과 소득 기준은?', '신청 방법과 필수 서류는?'
 - '발표 개요', '배경과 의미', '원문에서 함께 볼 부분', '맥락 짚기', '핵심 내용', '마무리'를 헤딩으로 쓰지 않는다.
-- 유형 A의 마지막 실무 섹션은 출처의 고유 조건을 반영한 FAQ 2개로 구성한다.
-- 유형 B는 신청 체크리스트나 필수 서류를 만들지 말고, 후속 일정과 공식 확인 경로로 마무리한다.
+- ACTIONABLE은 출처의 고유 조건을 반영한 FAQ 2개로 마무리한다.
+- INFORMATIONAL은 주요 협력·행사 내용과 기대 효과로 마무리한다.
+- ANNOUNCEMENT는 선정 평가·사업 규모·후속 추진 단계로 마무리한다.
 - 출처 링크는 URL 문자열로 노출하지 말고 기관명이 있는 마크다운 링크로만 쓴다. 사이트 렌더러가 공식 출처 버튼으로도 표시한다.
 - 마지막 문단은 독자에게 하나의 행동 권고나 확인 경로로 마무리.
 - 원문을 문장 순서대로 다시 말하는 방식은 금지한다. 반드시 독자가 얻는 판단 기준, 배경 설명, 실제 확인 순서를 추가한다.
@@ -330,28 +331,39 @@ BODY:
             [topic.title_hint, topic.rationale, *(source.summary for source in topic.sources)]
         )
 
-        def first(pattern: str) -> str:
+        fallback_fact = re.split(r"[.!?\n]", source_text, maxsplit=1)[0].strip()[:160] or topic.title_hint
+
+        def first(pattern: str, fallback: str = "") -> str:
             match = re.search(pattern, source_text, flags=re.I)
-            return match.group(0).strip() if match else "공식 원문 확인"
+            return match.group(0).strip() if match else (fallback or fallback_fact)
 
         target = first(r"(?:대상|지원대상|신청대상)[^.!?\n]{0,70}")
         amount = first(r"(?:최대\s*)?\d[\d,.]*\s*(?:원|만원|억원|%|개|건|명|곳)[^.!?\n]{0,45}")
         period = first(r"(?:\d{4}년\s*)?\d{1,2}월\s*\d{1,2}일[^.!?\n]{0,55}|\d{1,2}월부터[^.!?\n]{0,55}")
         agency = first(r"[가-힣A-Za-z0-9·]+(?:부|청|위원회|공단|공사|센터|재단|진흥원)[^.!?\n]{0,45}")
-        if classify_press_template(topic.title_hint, source_text) == "informational":
+        template = classify_press_template(topic.title_hint, source_text)
+        if template == "ANNOUNCEMENT":
+            result = first(r"(?:당선작|선정|결과|확정|제정|개정|고시)[^.!?\n]{0,110}")
+            scale = first(r"(?:대지면적|연면적|사업비|위치|소재지)[^.!?\n]{0,110}")
+            evaluation = first(r"(?:심사|평가|설계|콘셉트|시설|기대)[^.!?\n]{0,110}")
+            return (
+                "> **[당선작·핵심 결과]** " + result + "\n"
+                ">\n> **[사업 규모·위치]** " + scale + "\n"
+                ">\n> **[심사 평가·설계 콘셉트]** " + evaluation
+            )
+        if template == "INFORMATIONAL":
             purpose = first(r"(?:목적|위해|협약|행사)[^.!?\n]{0,100}")
             cooperation = first(r"(?:협력|공동|홍보|교류|논의)[^.!?\n]{0,100}")
-            plan = first(r"(?:향후|계획|예정|추진)[^.!?\n]{0,100}")
+            schedule = first(r"(?:\d{1,2}월\s*\d{1,2}일|장소|에서 개최|에서 체결)[^.!?\n]{0,100}", cooperation)
             return (
-                "> **[목적·의의]** " + purpose + "\n"
-                ">\n> **[주요 협력·행사 내용]** " + cooperation + "\n"
-                ">\n> **[향후 계획]** " + plan
+                "> **[참여 기관]** " + agency + "\n"
+                ">\n> **[협약·행사 목적]** " + purpose + "\n"
+                ">\n> **[개최 일정·장소 또는 주요 협력]** " + schedule
             )
         return (
-            "> **[핵심 수혜 대상·금액]** " + target + " / " + amount + "\n"
-            ">\n> **[주요 지원 내용]** " + first(r"(?:지원|혜택|감면|환급)[^.!?\n]{0,100}") + "\n"
-            ">\n> **[신청 방법·필수 서류]** " + period + "\n"
-            ">\n> **[주관 기관·신청처]** " + agency
+            "> **[지원 대상]** " + target + "\n"
+            ">\n> **[핵심 혜택·금액]** " + amount + "\n"
+            ">\n> **[신청 방법·기한]** " + period + " / " + agency
         )
 
     def _fallback_body(self, topic: Topic, frame: dict[str, str], source_lines: str) -> str:
@@ -359,11 +371,43 @@ BODY:
         source_title = source.title if source else topic.title_hint
         source_summary = self._clean_summary(source.summary if source else "")
         category = topic.category
+        template = classify_press_template(topic.title_hint, f"{source_title} {source_summary}")
+        subject = re.sub(r"\s+", " ", topic.title_hint or source_title).strip()
+        if len(subject) > 56:
+            subject = subject[:56].rsplit(" ", 1)[0].rstrip(" ,.;:-")
 
-        if classify_press_template(topic.title_hint, f"{source_title} {source_summary}") == "informational":
-            subject = re.sub(r"\s+", " ", topic.title_hint or source_title).strip()
-            if len(subject) > 56:
-                subject = subject[:56].rsplit(" ", 1)[0].rstrip(" ,.;:-")
+        if template == "ANNOUNCEMENT":
+            return f"""## {subject}에서 확정된 결과는 무엇인가요?
+
+{source_summary or frame["opening"]}
+
+이 자료는 신청자를 모집하는 공고가 아니라 선정 결과, 건립 계획 또는 법령 변화를 알리는 발표입니다. 당선작·확정 내용과 심사 근거를 먼저 구분해 읽어야 합니다.
+
+## {subject}의 평가 기준과 설계 콘셉트는 무엇인가요?
+
+| 구분 | 원문에서 확인할 내용 |
+| --- | --- |
+| 핵심 결과 | 선정된 당선작·확정안·개정 내용 |
+| 평가 근거 | 심사위원회가 높게 평가한 설계·운영 요소 |
+| 사업 규모 | 위치, 면적, 예산, 주요 시설 가운데 공개된 값 |
+| 후속 절차 | 설계, 착공, 준공, 시행 가운데 다음 단계 |
+
+원문에 일정이나 총사업비가 없다면 임의로 보충하지 않습니다. 대신 공개된 공간 구성, 심사 평가, 제도 변화 또는 기대 효과를 중심으로 판단할 수 있습니다.
+
+## {subject}에 포함되는 시설과 사업 범위는 무엇인가요?
+
+{source_summary or frame["detail_1"]}
+
+## {subject} 이후 추진 단계는 어떻게 확인하나요?
+
+발표일 이후 세부 설계, 계약, 착공, 준공 또는 시행 공지가 이어지는지 담당 기관의 후속 자료에서 확인합니다.
+
+## 공식 발표 자료는 어디에서 확인하나요?
+
+{source_lines}
+"""
+
+        if template == "INFORMATIONAL":
             return f"""## {subject}은 왜 추진됐나요?
 
 {source_summary or frame["opening"]}

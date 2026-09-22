@@ -21,9 +21,9 @@ class PressReleaseTemplateTest(unittest.TestCase):
 
         body = make_article_body(release)
 
-        self.assertIn("**[목적·의의]**", body)
-        self.assertIn("**[주요 협력·행사 내용]**", body)
-        self.assertIn("**[향후 계획]**", body)
+        self.assertIn("**[참여 기관]**", body)
+        self.assertIn("**[협약·행사 목적]**", body)
+        self.assertIn("**[주요 협력·기대 효과]**", body)
         self.assertIn("코엑스", body)
         self.assertNotIn("**[핵심 수혜 대상·금액]**", body)
         self.assertNotIn("신청 전에 준비할 서류", body)
@@ -42,10 +42,32 @@ class PressReleaseTemplateTest(unittest.TestCase):
 
         body = make_article_body(release)
 
-        self.assertIn("**[핵심 수혜 대상·금액]**", body)
-        self.assertIn("**[주요 지원 내용]**", body)
-        self.assertIn("**[신청 방법·필수 서류]**", body)
+        self.assertIn("**[지원 대상]**", body)
+        self.assertIn("**[핵심 혜택·금액]**", body)
+        self.assertIn("**[신청 방법·기한]**", body)
         self.assertIn("소상공인 경영안정 지원금 신청 접수 FAQ", body)
+
+    def test_design_winner_fallback_uses_announcement_schema(self) -> None:
+        release = PressRelease(
+            institution="국가유산청",
+            title="후백제역사문화센터 건립 설계공모 당선작 선정",
+            date="2026-09-22",
+            url="https://example.com/winner",
+            body_text=(
+                "국립완주문화유산연구소는 설계공모에서 '역사의 틈, 자연 사잇공간'을 최종 당선작으로 선정했다. "
+                "전주시 완산구 교동 일원에 대지면적 19,903㎡, 연면적 약 5,005㎡ 규모로 조성된다. "
+                "심사위원회는 주변 주거지와의 조화, 효율적인 동선, 높은 시공성을 평가했다."
+            ),
+        )
+
+        body = make_article_body(release)
+
+        self.assertIn("**[당선작·핵심 결과]**", body)
+        self.assertIn("**[사업 규모·위치]**", body)
+        self.assertIn("**[심사 평가·설계 콘셉트]**", body)
+        self.assertIn("최종 선정 결과와 심사 평가", body)
+        self.assertNotIn("신청 전에 준비할 서류", body)
+        self.assertNotIn("공식 원문 확인", body)
 
     def test_press_slug_keeps_complete_date_token(self) -> None:
         slug = slugify("국가유산진흥원 (주)WTC Seoul 국가유산 가치 확산을 위한 업무협약 체결 (260922)")

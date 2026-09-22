@@ -1,94 +1,165 @@
 from __future__ import annotations
 
+import json
 import re
-from typing import Literal
+from typing import Any, Literal
 
 
-PressTemplate = Literal["actionable", "informational"]
+PressTemplate = Literal["ACTIONABLE", "INFORMATIONAL", "ANNOUNCEMENT"]
 
+_ANNOUNCEMENT_MARKERS = (
+    "당선작", "선정 결과", "결과 발표", "최종 선정", "수상작", "건립", "착공", "준공",
+    "개관", "확정", "지정", "승인", "법령", "시행령", "시행규칙", "제정", "개정", "고시", "공포",
+)
 _INFORMATIONAL_MARKERS = (
-    "업무협약",
-    "양해각서",
-    "mou",
-    "협약",
-    "토론회",
-    "간담회",
-    "세미나",
-    "포럼",
-    "동향",
-    "회의",
-    "캠페인",
-    "전시",
-    "공연",
-    "기념식",
+    "업무협약", "양해각서", "mou", "협약", "토론회", "간담회", "학술대회", "세미나",
+    "포럼", "동향", "회의", "캠페인", "전시", "공연", "기념식", "축제",
 )
 _ACTIONABLE_MARKERS = (
-    "지원금",
-    "보조금",
-    "장려금",
-    "바우처",
-    "감면",
-    "환급",
-    "융자",
-    "공모",
-    "모집",
-    "신청",
-    "접수",
-    "지원사업",
-    "지원 사업",
-    "제도",
+    "지원금", "보조금", "장려금", "바우처", "감면", "환급", "융자", "공모", "모집",
+    "신청", "접수", "지원사업", "지원 사업", "복지", "급여", "수당",
 )
+_FORBIDDEN_EMPTY_VALUES = ("공식 원문 참조", "공식 원문 확인", "해당 없음", "미정", "확인 필요")
 
 
 def classify_press_template(title: str, body: str = "") -> PressTemplate:
-    """보도자료의 독자 행동 가능 여부를 분류한다.
-
-    제목의 협약·행사 신호를 가장 강하게 본다. MOU 본문에 등장하는
-    '지원' 같은 일반 단어가 지원사업으로 오분류되는 일을 막기 위해서다.
-    """
+    """보도자료를 행동형·정보형·결과발표형으로 분류한다."""
 
     title_text = re.sub(r"\s+", " ", title).strip().casefold()
     body_text = re.sub(r"\s+", " ", body).strip().casefold()
+    # '설계공모 당선작'처럼 공모와 결과 발표가 함께 나오면 결과 발표를 우선한다.
+    if any(marker in title_text for marker in _ANNOUNCEMENT_MARKERS):
+        return "ANNOUNCEMENT"
     if any(marker in title_text for marker in _INFORMATIONAL_MARKERS):
-        return "informational"
+        return "INFORMATIONAL"
     if any(marker in title_text for marker in _ACTIONABLE_MARKERS):
-        return "actionable"
+        return "ACTIONABLE"
 
-    informational_score = sum(marker in body_text for marker in _INFORMATIONAL_MARKERS)
-    actionable_score = sum(marker in body_text for marker in _ACTIONABLE_MARKERS)
-    if actionable_score > informational_score:
-        return "actionable"
-    return "informational"
+    scores = {
+        "ANNOUNCEMENT": sum(marker in body_text for marker in _ANNOUNCEMENT_MARKERS),
+        "INFORMATIONAL": sum(marker in body_text for marker in _INFORMATIONAL_MARKERS),
+        "ACTIONABLE": sum(marker in body_text for marker in _ACTIONABLE_MARKERS),
+    }
+    priority = {"ANNOUNCEMENT": 2, "INFORMATIONAL": 1, "ACTIONABLE": 0}
+    best = max(scores, key=lambda item: (scores[item], priority[item]))
+    return best if scores[best] else "INFORMATIONAL"  # type: ignore[return-value]
 
 
 def press_template_instruction(template: PressTemplate) -> str:
-    common = """[보도자료 유형 및 헤딩 규칙]
-- 먼저 보도자료 성격을 판단하고 아래에서 지정한 유형의 구조만 사용한다.
-- H2/H3에 '핵심 내용', '주요 지원 내용', '향후 계획' 같은 고정 문구를 그대로 쓰지 않는다.
-- 모든 H2/H3는 원문의 고유명사·장소·사업명·수치 중 하나를 포함해 검색 의도에 맞는 구체적인 문장으로 만든다.
-- 예: 'WTC Seoul 코엑스 전광판은 국가유산 홍보에 어떻게 쓰이나요?'
+    common = """[보도자료 3분류 및 헤딩 규칙]
+- H2/H3는 고정 문구를 복사하지 말고 원문의 고유명사·장소·사업명·수치를 포함한 검색 질문형 문장으로 작성한다.
+- 요약 값은 공식 자료에서 확인되는 사실만 쓴다. 정보가 없으면 사실을 만들지 말고, 원문에 있는 다른 핵심 사실로 라벨과 값을 함께 교체한다.
+- '공식 원문 참조', '공식 원문 확인', '해당 없음', '미정', '확인 필요'는 요약 박스에 절대 출력하지 않는다.
 """
-    if template == "informational":
-        return common + """- 판정 유형: 유형 B — MOU·협약·토론회·행사·동향 등 Informational 정보
-- 요약 카드에 지원 대상·금액·신청 방법을 만들지 않는다.
-- 본문은 ① 협약/행사의 목적과 의의 ② 주요 협력 내용과 세부 사항 ③ 향후 기대 효과와 계획 순서로 전개한다.
-- 독자에게 신청을 권하거나 필수 서류를 안내하지 않는다. 원문에 실제 참여 접수가 있을 때만 해당 사실을 별도로 적는다.
+    if template == "ACTIONABLE":
+        return common + """- post_type: ACTIONABLE — 개인·기업이 혜택을 받기 위해 신청하는 지원금·복지·모집
+- 요약 라벨 기준: [지원 대상], [핵심 혜택·금액], [신청 방법·기한]
+- 전개 순서: 지원 대상 요건 → 지원 내용 → 신청 절차 → FAQ
 """
-    return common + """- 판정 유형: 유형 A — 지원금·제도·공모 등 Actionable 정보
-- 본문은 ① 핵심 수혜 대상과 금액 ② 주요 지원 내용 ③ 신청 방법과 필수 서류 ④ FAQ 순서로 전개한다.
-- 원문에 없는 금액, 자격, 일정, 서류는 추측하지 말고 '공식 원문 확인'이라고 표시한다.
+    if template == "ANNOUNCEMENT":
+        return common + """- post_type: ANNOUNCEMENT — 당선작·결과 발표·인프라 건립·법령 제정/개정/고시
+- 요약 라벨 기준: [당선작·핵심 결과], [사업 규모·위치], [향후 추진·완공 일정]
+- 일정이 없으면 [심사 평가], [설계 콘셉트], [주요 시설], [기대 효과]처럼 원문에 있는 사실로 라벨을 교체한다.
+- 전개 순서: 선정 결과와 심사 평가·설계 콘셉트 → 주요 시설과 사업 규모 → 향후 추진·완공 일정
+"""
+    return common + """- post_type: INFORMATIONAL — 기관 간 MOU·학술대회·토론회·일회성 문화 행사
+- 요약 라벨 기준: [참여 기관], [협약·행사 목적], [개최 일정·장소]
+- 일정·장소가 없으면 [주요 협력 내용] 또는 [기대 효과]처럼 원문에 있는 사실로 라벨을 교체한다.
+- 전개 순서: 행사·협약 목적 → 주요 논의·협력 내용 → 기대 효과
 """
 
 
 def press_summary_card_instruction(template: PressTemplate) -> str:
-    if template == "informational":
-        return """도입 한 문장 다음에는 아래 3항목 요약 카드를 둔다.
-  > **[목적·의의]** ...
-  > **[주요 협력·행사 내용]** ...
-  > **[향후 계획]** ...
-원문에 없는 지원 대상·금액·신청 일정 항목은 만들지 않는다."""
-    return """도입 한 문장 다음에는 아래 4항목 요약 카드를 둔다. 원문에 값이 없으면 '공식 원문 확인'이라고 쓴다.
-  > **[핵심 수혜 대상·금액]** ...
-  > **[주요 지원 내용]** ...
-  > **[신청 방법·필수 서류]** ...
-  > **[주관 기관·신청처]** ..."""
+    labels = {
+        "ACTIONABLE": "[지원 대상] / [핵심 혜택·금액] / [신청 방법·기한]",
+        "INFORMATIONAL": "[참여 기관] / [협약·행사 목적] / [개최 일정·장소]",
+        "ANNOUNCEMENT": "[당선작·핵심 결과] / [사업 규모·위치] / [향후 추진·완공 일정]",
+    }[template]
+    return (
+        f"도입 다음에 {labels} 성격의 요약 3개를 둔다. "
+        "원문에 없는 항목은 원문에 있는 다른 핵심 사실로 라벨과 값을 함께 교체한다. "
+        "빈 값이나 대체 문구는 금지한다."
+    )
+
+
+def press_json_system_prompt() -> str:
+    """보도자료 작성 모델에 전달하는 단일 JSON 출력 계약."""
+
+    return """당신은 공공기관 보도자료를 구조화하는 한국어 편집기다.
+원문을 읽고 post_type을 ACTIONABLE, INFORMATIONAL, ANNOUNCEMENT 중 하나로 판단한다.
+
+분류 규칙:
+1. ACTIONABLE: 개인·기업이 혜택을 받기 위해 신청해야 하는 지원금·복지·접수·모집.
+2. INFORMATIONAL: 기관 간 MOU, 학술대회, 토론회, 일회성 행사.
+3. ANNOUNCEMENT: 설계공모 당선작·선정 결과, 센터/기념관 건립, 법령 제·개정 또는 고시.
+   제목에 '공모'가 있어도 이미 당선작이나 결과가 발표됐다면 ANNOUNCEMENT다.
+
+반드시 설명이나 Markdown 코드펜스 없이 아래 형태의 유효한 JSON 객체 하나만 출력한다.
+{
+  "post_type": "ACTIONABLE | INFORMATIONAL | ANNOUNCEMENT",
+  "title": "30자 안팎의 구체적인 제목",
+  "excerpt": "핵심 결과를 담은 2문장 요약",
+  "lead": "기관·발표일·핵심 결과가 들어간 도입 문단",
+  "summary_box": [
+    {"label": "동적 라벨 1", "value": "원문에서 확인한 구체적 사실"},
+    {"label": "동적 라벨 2", "value": "원문에서 확인한 구체적 사실"},
+    {"label": "동적 라벨 3", "value": "원문에서 확인한 구체적 사실"}
+  ],
+  "sections": [
+    {"heading": "원문 고유명사가 포함된 H2", "body_markdown": "근거 중심 본문"}
+  ]
+}
+
+summary_box는 정확히 3개, sections는 최소 3개를 출력한다.
+ACTIONABLE 라벨은 지원 대상·혜택/금액·신청 방법/기한을 우선한다.
+INFORMATIONAL 라벨은 참여 기관·목적·일정/장소를 우선한다.
+ANNOUNCEMENT 라벨은 당선작/결과·사업 규모/위치·추진/완공 일정을 우선한다.
+특정 정보가 원문에 없으면 원문의 다른 중요한 사실(심사 평가, 설계 콘셉트, 주요 시설, 총사업비, 기대 효과 등)로 라벨과 값을 함께 교체한다.
+'공식 원문 참조', '공식 원문 확인', '해당 없음', '미정', '확인 필요'는 절대 출력하지 않는다.
+출처에 없는 사실·수치·일정은 창작하지 않는다."""
+
+
+def parse_press_json(text: str, expected_type: PressTemplate | None = None) -> dict[str, Any] | None:
+    cleaned = re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip(), flags=re.I)
+    try:
+        payload = json.loads(cleaned)
+    except (json.JSONDecodeError, TypeError):
+        return None
+    if not isinstance(payload, dict) or payload.get("post_type") not in {
+        "ACTIONABLE", "INFORMATIONAL", "ANNOUNCEMENT"
+    }:
+        return None
+    if expected_type and payload["post_type"] != expected_type:
+        return None
+    summaries = payload.get("summary_box")
+    sections = payload.get("sections")
+    if not isinstance(summaries, list) or len(summaries) != 3:
+        return None
+    if not isinstance(sections, list) or len(sections) < 3:
+        return None
+    for item in summaries:
+        if not isinstance(item, dict):
+            return None
+        label = str(item.get("label") or "").strip()
+        value = str(item.get("value") or "").strip()
+        if not label or not value or any(marker in value for marker in _FORBIDDEN_EMPTY_VALUES):
+            return None
+    for section in sections:
+        if not isinstance(section, dict) or not str(section.get("heading") or "").strip():
+            return None
+        if not str(section.get("body_markdown") or "").strip():
+            return None
+    return payload
+
+
+def render_press_json(payload: dict[str, Any]) -> str:
+    lead = str(payload.get("lead") or "").strip()
+    summary = "\n>\n".join(
+        f"> **[{str(item['label']).strip().strip('[]')}]** {str(item['value']).strip()}"
+        for item in payload["summary_box"]
+    )
+    sections = "\n\n".join(
+        f"## {str(item['heading']).strip().lstrip('#').strip()}\n\n{str(item['body_markdown']).strip()}"
+        for item in payload["sections"]
+    )
+    return "\n\n".join(part for part in (lead, summary, sections) if part).strip()

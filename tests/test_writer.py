@@ -115,10 +115,9 @@ Steam Machine, 여름 구매 전 5가지
         self.assertIn("120원", draft.body_markdown)
         self.assertIn("주택용", draft.body_markdown)
         self.assertIn("기후에너지환경부", draft.body_markdown)
-        self.assertIn("**[핵심 수혜 대상·금액]**", draft.body_markdown)
-        self.assertIn("**[주요 지원 내용]**", draft.body_markdown)
-        self.assertIn("**[신청 방법·필수 서류]**", draft.body_markdown)
-        self.assertIn("**[주관 기관·신청처]**", draft.body_markdown)
+        self.assertIn("**[지원 대상]**", draft.body_markdown)
+        self.assertIn("**[핵심 혜택·금액]**", draft.body_markdown)
+        self.assertIn("**[신청 방법·기한]**", draft.body_markdown)
         self.assertNotIn("원문 안내의 시행일과 적용 대상을 먼저 봅니다", draft.body_markdown)
         self.assertNotIn("신청, 예약, 방문, 자동 적용 중 어떤 방식인지 구분합니다", draft.body_markdown)
 

@@ -30,8 +30,9 @@ from blog_agent.images import ImageAgent, is_public_license_badge
 from blog_agent.models import Draft, Topic
 from blog_agent.prompts import (
     classify_press_template,
-    press_summary_card_instruction,
-    press_template_instruction,
+    parse_press_json,
+    press_json_system_prompt,
+    render_press_json,
 )
 from blog_agent.slugs import slugify_words
 from blog_agent.writer import WriterAgent
@@ -552,6 +553,7 @@ def _llm_outputs(
     prompt: str,
     temperature: float = 0.8,
     max_tokens: int = 512,
+    system_prompt: str | None = None,
 ) -> list[str]:
     """Return provider responses in priority order so weak drafts can be rejected."""
     providers = getattr(writer, "_providers", [])
@@ -565,9 +567,13 @@ def _llm_outputs(
         if not client:
             continue
         try:
+            messages = []
+            if system_prompt:
+                messages.append({"role": "system", "content": system_prompt})
+            messages.append({"role": "user", "content": prompt})
             resp = client.chat.completions.create(
                 model=model,
-                messages=[{"role": "user", "content": prompt}],
+                messages=messages,
                 temperature=temperature,
                 max_tokens=max_tokens,
             )
@@ -621,39 +627,39 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
     if not release.body_text:
         return ""
     template = classify_press_template(release.title, release.body_text)
-    template_instruction = press_template_instruction(template)
-    summary_card_instruction = press_summary_card_instruction(template)
     prompt = f"""다음은 [{release.institution}]에서 발표한 보도자료 원문입니다.
-이 내용을 독자 친화적인 블로그 기사로 작성해주세요.
+이 내용을 독자 친화적인 블로그 기사 JSON으로 구조화하세요.
+
+[발표 정보]
+- 기관: {release.institution}
+- 발표일: {release.date}
+- 제목: {release.title}
+- 규칙 기반 예상 유형: {template}
 
 [보도자료 원문]
 {release.body_text[:3000]}
 
 [작성 규칙]
-{template_instruction}
 - 본문 1,500~2,100자 (한국어)
 - 첫 문단에 반드시 발표 기관({release.institution}), 발표일({release.date}), 발표 주제를 넣기
-{summary_card_instruction}
 - 독자에게 중요한 수치·날짜·대상·장소·참여기관·지원내용·시행방식을 구체적으로 포함
 - 원문에 있는 고유명사, 사업명, 제도명, 금액, 기간은 가능한 한 그대로 살리기
-- 마크다운 헤딩(##)으로 4~5개 섹션 구성
-- 표 1개 포함: 구분 / 확인할 내용
 - '~입니다', '~합니다' 정중체 사용
-- H2/H3는 독자의 검색 질문에 바로 답하는 구체적인 질의형 제목으로 구성
-- '발표 개요', '배경과 의미', '원문에서 함께 볼 부분', '맥락 짚기', '핵심 내용', '마무리'를 헤딩으로 사용 금지
-- 제목을 반복하는 "이번 보도자료의 핵심은..." 문장 금지
-- "원문 보도자료에는 세부 정보가 있습니다"처럼 뭉뚱그린 문장 금지
-- 원문에서 확인한 장소, 참여 기관, 대상, 일정, 수치가 있으면 반드시 반영
-- 유형 A는 FAQ 2개로 마무리하고, 유형 B는 후속 계획과 공식 확인 경로로 마무리
-- 자료 출처 기관: {release.institution}
-- 원문 URL: {release.url}
-
-BODY: 로 시작해서 본문만 작성하세요."""
-    for text in _llm_outputs(writer, prompt, temperature=0.75, max_tokens=2048):
-        if text.startswith("BODY:"):
-            text = text[5:].strip()
-        if article_is_specific(text, release):
-            return text
+- JSON 시스템 계약을 정확히 따르고 JSON 외 텍스트를 출력하지 않기"""
+    for text in _llm_outputs(
+        writer,
+        prompt,
+        temperature=0.55,
+        max_tokens=2600,
+        system_prompt=press_json_system_prompt(),
+    ):
+        payload = parse_press_json(text, expected_type=template)
+        if not payload:
+            continue
+        body = render_press_json(payload)
+        body += f"\n\n## 공식 발표 자료\n\n- [{release.institution} 보도자료]({release.url})"
+        if article_is_specific(body, release):
+            return body
     return ""
 
 
@@ -753,7 +759,35 @@ def make_article_body(release: PressRelease) -> str:
 
     template = classify_press_template(release.title, release.body_text)
     subject = shorten(clean_title, 64)
-    if template == "informational":
+    if template == "ANNOUNCEMENT":
+        result_value = shorten(lead, 180)
+        scale_value = shorten(clean_text(fact_block if facts else bullets), 180)
+        evaluation_value = shorten(clean_text(detail or bullets), 180)
+        sections = [
+            (
+                f"{with_particle(release.institution, '이', '가')} {release.date} 공개한 자료를 바탕으로 "
+                f"{clean_title}의 선정 결과, 사업 규모, 후속 추진 계획을 정리했습니다."
+            ),
+            (
+                f"> **[당선작·핵심 결과]** {result_value}\n>\n"
+                f"> **[사업 규모·위치]** {scale_value}\n>\n"
+                f"> **[심사 평가·설계 콘셉트]** {evaluation_value}"
+            ),
+            f"## {subject}의 최종 선정 결과와 심사 평가는 무엇인가요?",
+            f"{lead}\n\n{detail or bullets}",
+            f"## {subject}에 들어설 주요 시설과 사업 규모는 어느 정도인가요?",
+            f"{bullets}\n\n{fact_block}",
+            f"## {subject} 사업은 앞으로 어떤 순서로 추진되나요?",
+            (
+                "이번 발표는 신청자를 모집하는 공고가 아니라 선정·건립 결과를 알리는 자료입니다. "
+                f"후속 설계와 공사 일정은 {release.institution}의 사업 공지에서 이어서 확인할 수 있습니다."
+            ),
+            "## 후속 사업 공지는 어디에서 확인하나요?",
+            f"- [{release.institution} 보도자료]({release.url})",
+        ]
+        return "\n\n".join(sections).strip() + "\n"
+
+    if template == "INFORMATIONAL":
         purpose = lead
         cooperation = bullets
         future = detail or fact_block
@@ -763,9 +797,9 @@ def make_article_body(release: PressRelease) -> str:
                 f"{clean_title}의 목적과 협력 내용을 정리했습니다. 신청형 지원 안내가 아닌 협약·행사 정보입니다."
             ),
             (
-                f"> **[목적·의의]** {shorten(purpose, 180)}\n>\n"
-                f"> **[주요 협력·행사 내용]** {shorten(clean_text(cooperation), 180)}\n>\n"
-                f"> **[향후 계획]** {shorten(clean_text(future), 180)}"
+                f"> **[참여 기관]** {release.institution} 및 보도자료에 명시된 협력 기관\n>\n"
+                f"> **[협약·행사 목적]** {shorten(purpose, 180)}\n>\n"
+                f"> **[주요 협력·기대 효과]** {shorten(clean_text(cooperation + ' ' + future), 180)}"
             ),
             f"## {subject}은 왜 추진됐나요?",
             purpose,
@@ -786,10 +820,9 @@ def make_article_body(release: PressRelease) -> str:
             f"{clean_title}의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다."
         ),
         (
-            "> **[핵심 수혜 대상·금액]** 공식 원문 확인\n>\n"
-            "> **[주요 지원 내용]** 공식 원문 확인\n>\n"
-            "> **[신청 방법·필수 서류]** 공식 원문 확인\n>\n"
-            f"> **[주관 기관·신청처]** {release.institution}"
+            f"> **[지원 대상]** {shorten(lead, 180)}\n>\n"
+            f"> **[핵심 혜택·금액]** {shorten(clean_text(bullets), 180)}\n>\n"
+            f"> **[신청 방법·기한]** {shorten(clean_text(detail or fact_block), 180)}"
         ),
         f"## {subject} 혜택은 누가 받을 수 있나요?",
         lead,

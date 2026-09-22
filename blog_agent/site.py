@@ -909,7 +909,7 @@ class StaticSiteBuilder:
         plain_body = re.sub(r"<[^>]+>", " ", post.body_html)
         context = " ".join((post.title, post.category, " ".join(post.tags), post.excerpt, plain_body))
         template = classify_press_template(post.title, context)
-        is_actionable = template == "actionable" and post.category in {"생활", "정책", "환경"}
+        is_actionable = template == "ACTIONABLE" and post.category in {"생활", "정책", "환경"}
         if is_actionable:
             heading = "🛒 [가계부 절약] 정책 혜택과 함께 챙기는 알뜰 실속 핫딜"
             description = "가계 부담을 덜어드리기 위해 토스쇼핑의 인기 생필품 특가를 모았습니다."
