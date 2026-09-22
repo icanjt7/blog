@@ -142,7 +142,9 @@ class TossProductSyncTest(unittest.TestCase):
         self.assertIn("https://toss.im/_m/tracked", strip)
         self.assertIn("19,900원", strip)
         self.assertIn("★ 4.8 · 후기 123", strip)
-        self.assertIn('rel="sponsored nofollow noopener"', strip)
+        self.assertIn('rel="sponsored nofollow noopener noreferrer"', strip)
+        self.assertIn('class="home-product-badge"', strip)
+        self.assertIn("최저가·실시간 혜택 보기", strip)
         self.assertNotIn("product.jpg", strip)
 
     def test_home_product_strip_keeps_all_candidates_for_refresh_rotation(self) -> None:

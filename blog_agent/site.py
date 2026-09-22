@@ -1410,6 +1410,8 @@ class StaticSiteBuilder:
         </article>"""
 
     def _home_product_strip_html(self, limit: int = 6) -> str:
+        if not PRODUCT_LINKS:
+            raise RuntimeError("토스쇼핑 상품 풀이 비어 있어 메인 상품 영역을 만들 수 없습니다.")
         cards: list[str] = []
         display_count = max(1, limit)
         for index, product in enumerate(PRODUCT_LINKS):
@@ -1443,20 +1445,22 @@ class StaticSiteBuilder:
                 f'<a class="home-product-card" data-product-key="{html.escape(product.cache_key, quote=True)}" '
                 f'href="{html.escape(product.url)}" '
                 f'{"hidden " if index >= display_count else ""}'
-                'rel="sponsored nofollow noopener" target="_blank">'
+                'rel="sponsored nofollow noopener noreferrer" target="_blank">'
                 f'{image_html}<span class="home-product-info">'
+                '<span class="home-product-badge">토스쇼핑 추천 특가</span>'
                 f'<span class="home-product-name">{html.escape(product.name)}</span>'
                 f'<span class="home-product-meta">{price_html}{rating_html}</span>'
+                '<span class="home-product-cta">최저가·실시간 혜택 보기 →</span>'
                 '</span></a>'
             )
-        if not cards:
-            return ""
         return (
-            '<section class="home-products" aria-labelledby="home-products-title">'
+            '<section class="home-products toss-shopping-home" aria-labelledby="home-products-title">'
             '<div class="home-products-heading">'
-            '<h2 id="home-products-title">지금 많이 찾는 상품</h2>'
+            '<h2 id="home-products-title">🔥 오늘 실시간 추천 특가</h2>'
             '<span>토스쇼핑</span>'
             '</div>'
+            '<p class="home-products-intro"><strong>💡 생활비 절약 팁</strong> '
+            '토스쇼핑 인기 상품의 현재 가격과 배송 혜택을 확인해 보세요.</p>'
             f'<div class="home-product-strip" data-home-products data-display-count="{display_count}">'
             f'{"".join(cards)}</div>'
             '<p class="home-products-disclosure">상품 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>'
@@ -1482,12 +1486,14 @@ class StaticSiteBuilder:
         per_page = 9
         total = len(posts)
         notice_strip = self._home_notice_strip_html(posts)
+        product_strip = self._home_product_strip_html()
         if total == 0:
             content = f"""
             <section class="hero">
               <p class="hero-tagline">직접 판단에 도움이 되는 선별 브리핑을 모았습니다</p>
             </section>
             {notice_strip}
+            {product_strip}
             <p class="empty">아직 발행된 글이 없습니다.</p>
             """
             self._write_html(
@@ -1517,6 +1523,7 @@ class StaticSiteBuilder:
               {hero_stats}
             </section>
             {notice_strip if page == 1 else ""}
+            {product_strip if page == 1 else ""}
             <section class="grid">{cards}</section>
             {nav_html}
             """
@@ -3097,6 +3104,8 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 }
 .home-products-heading h2 { margin: 0; font-size: 1rem; line-height: 1.35; }
 .home-products-heading > span { color: var(--muted); font-size: 0.74rem; }
+.home-products-intro { margin: 0 0 10px; padding: 9px 11px; border-left: 4px solid #3182f6; border-radius: 7px; background: #edf6ff; color: #174f91; font-size: .8rem; line-height: 1.55; }
+.home-products-intro strong { color: #0b57b7; }
 .home-product-strip {
   display: grid;
   grid-auto-flow: column;
@@ -3125,6 +3134,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .home-product-card:hover { border-color: var(--accent); box-shadow: 0 3px 14px rgba(0,0,0,.07); text-decoration: none; }
 .home-product-image { width: 64px; height: 64px; flex: 0 0 64px; border-radius: 8px; object-fit: cover; }
 .home-product-info { min-width: 0; display: flex; flex: 1; flex-direction: column; gap: 5px; }
+.home-product-badge { align-self: flex-start; padding: 2px 7px; border-radius: 999px; background: #e8f3ff; color: #1261c9; font-size: .66rem; font-weight: 800; }
 .home-product-name {
   min-width: 0;
   overflow: hidden;
@@ -3140,6 +3150,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .home-product-price { color: var(--ink); font-weight: 700; }
 .home-product-price strong { color: #e5484d; }
 .home-product-rating { color: var(--muted); }
+.home-product-cta { color: #1769d2; font-size: .74rem; font-weight: 800; }
 .home-products-disclosure { margin: 5px 0 0; color: var(--muted); font-size: .68rem; line-height: 1.45; }
 .product-search-section { margin: 18px 0 22px; padding: 16px; border: 1px solid rgba(15,118,110,.22); border-radius: 12px; background: #f4faf8; }
 .product-search-section[hidden] { display: none; }
