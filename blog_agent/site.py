@@ -821,16 +821,13 @@ class StaticSiteBuilder:
         # 다국어 독자 경험은 상단 번역 선택기로 제공하고, 검색 색인용 다국어 포스트는
         # 전체 본문 번역 품질을 확보한 뒤 별도 생성하는 편이 안전하다.
 
-    _PRODUCT_BLOCKED_TOPICS = {"행정", "공공입찰", "나라장터", "입찰공고", "공공조달", "정치"}
     _PRODUCT_GENERIC_TOKENS = {
         "생활", "건강", "상품", "추천", "정보", "지원", "신청", "관련", "오늘", "사용", "위한",
     }
-    _PRODUCT_MIN_JACCARD = 0.08
 
     def _select_products(self, post: Post, limit: int = 5) -> list[ProductLink]:
-        article_topics = {post.category, *(str(tag).strip() for tag in post.tags)}
-        if article_topics & self._PRODUCT_BLOCKED_TOPICS:
-            return []
+        if not PRODUCT_LINKS:
+            raise RuntimeError("토스쇼핑 상품 풀이 비어 있어 포스팅 상품 위젯을 만들 수 없습니다.")
 
         searchable = " ".join((post.title, " ".join(post.tags), post.excerpt)).lower()
         article_tokens = {
@@ -847,11 +844,8 @@ class StaticSiteBuilder:
                 )
                 if token not in self._PRODUCT_GENERIC_TOKENS
             }
-            overlap = article_tokens & product_tokens
             union = article_tokens | product_tokens
-            similarity = len(overlap) / len(union) if union else 0.0
-            if not overlap or similarity < self._PRODUCT_MIN_JACCARD:
-                continue
+            similarity = len(article_tokens & product_tokens) / len(union) if union else 0.0
             tie_breaker = int(
                 hashlib.md5(f"{post.slug}:{product.url}".encode("utf-8")).hexdigest()[:8],
                 16,
@@ -859,7 +853,7 @@ class StaticSiteBuilder:
             ranked.append((similarity, tie_breaker, product))
 
         ranked.sort(key=lambda item: (item[0], item[1]), reverse=True)
-        return [item[2] for item in ranked[: max(0, limit)]]
+        return [item[2] for item in ranked[: max(1, limit)]]
 
     def _select_product(self, post: Post) -> ProductLink | None:
         products = self._select_products(post, limit=1)
@@ -892,13 +886,11 @@ class StaticSiteBuilder:
         ]
         if matched:
             topics = "·".join(dict.fromkeys(matched[:2]))
-            return f"본문의 {topics} 주제와 함께 살펴보기 좋은 상품을 골랐습니다."
-        return "읽은 내용과 함께 일상에서 활용할 만한 상품을 하나 골랐습니다."
+            return f"{topics} 관련 상품의 실시간 가격과 구매 조건을 토스쇼핑에서 확인할 수 있습니다."
+        return "토스쇼핑 인기 상품 풀에서 오늘 확인할 상품을 선정했습니다."
 
     def _product_link_html(self, post: Post) -> str:
         products = self._select_products(post)
-        if not products:
-            return ""
         product = products[0]
         candidates = [item.cache_key for item in products]
         candidates_json = json.dumps(candidates, ensure_ascii=False).replace("<", "\\u003c")
@@ -923,27 +915,41 @@ class StaticSiteBuilder:
                 'loading="lazy" decoding="async" referrerpolicy="no-referrer"></a>'
             )
         reviews_html = self._product_reviews_html(product)
+        trust_html = self._product_trust_html(product)
         return f"""
-          <p class="product-bridge-copy">📌 가계 부담을 덜어주는 정부 지원 혜택과 더불어, 일상 지출을 줄일 수 있는 오늘의 실속 특가도 함께 확인해 보세요.</p>
-          <aside class="product-recommendation" aria-label="추천 상품">
+          <aside class="toss-shopping-card product-recommendation" aria-label="토스쇼핑 추천 상품">
+            <div class="product-bridge-copy">
+              <strong>💡 [생활비 절약 팁] 오늘의 실속 가성비 특가</strong>
+              <span>가계 지출 부담을 덜어드리기 위해 토스쇼핑에서 실시간 만족도가 높은 특가 상품을 선별했습니다. 한정 수량 및 무료배송 혜택을 확인해 보세요.</span>
+            </div>
             {image_html}
             <div class="product-recommendation-body">
-              <p class="product-recommendation-label">💡 [알뜰 생활 팁] 가계 부담 줄이는 실속 가성비 핫딜</p>
+              <p class="product-recommendation-label">🔥 오늘 실시간 추천 특가</p>
               <div class="product-benefit-badges" aria-label="상품 혜택 안내">
-                <span>⚡ 실시간 특가 혜택</span><span>무료배송 대상 확인</span>
+                <span>[토스쇼핑 추천 특가]</span><span>[무료배송 대상 확인]</span>
               </div>
               <p class="product-recommendation-name">{html.escape(product.name)}</p>
               {price_html}
+              {trust_html}
               <p class="product-recommendation-reason">{html.escape(recommendation_reason)}</p>
               <p class="product-recommendation-description">{html.escape(description)}</p>
               <p class="product-recommendation-guide">구성·용량과 현재 가격, 배송 조건을 상세 페이지에서 비교해 보세요.</p>
               <a class="product-recommendation-link" href="{html.escape(product.url)}"
-                 rel="sponsored nofollow noopener noreferrer" target="_blank">[최저가 확인] 오늘 한정 특가 및 실시간 혜택 보기 <span aria-hidden="true">→</span></a>
+                 rel="sponsored nofollow noopener noreferrer" target="_blank">👉 [최저가 확인] 오늘 한정 특가 및 실시간 혜택 보기</a>
               {reviews_html}
               <p class="product-recommendation-disclosure">이 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>
             </div>
           </aside>
         """
+
+    @staticmethod
+    def _product_trust_html(product: ProductLink) -> str:
+        if product.review_score:
+            count = f" · 후기 {product.review_count:,}개" if product.review_count else ""
+            label = f"★ {product.review_score:.1f}점{count}"
+        else:
+            label = "★ 실구매자 만족도와 최신 후기는 상품 페이지에서 확인"
+        return f'<p class="product-trust-card">{html.escape(label)}</p>'
 
     def _write_product_catalog(self) -> None:
         catalog = {
@@ -3502,24 +3508,29 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 
 /* ── featured product ── */
 .product-bridge-copy {
-  margin: 28px 0 10px;
+  grid-column: 1 / -1;
+  margin: 0 0 2px;
   padding: 13px 15px;
-  border-left: 4px solid #f59e0b;
-  border-radius: 0 8px 8px 0;
-  background: #fff8e7;
-  color: #6b4608;
+  border-left: 4px solid #3182f6;
+  border-radius: 8px;
+  background: #edf6ff;
+  color: #174f91;
   font-size: .88rem;
   line-height: 1.65;
 }
+.product-bridge-copy strong,
+.product-bridge-copy span { display: block; }
+.product-bridge-copy strong { margin-bottom: 3px; color: #0b57b7; font-size: .96rem; }
 .product-recommendation {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin: 28px 0 0;
   padding: 18px;
-  border: 1px solid rgba(15,118,110,.22);
-  border-radius: 10px;
-  background: #f4faf8;
+  border: 1px solid rgba(49,130,246,.28);
+  border-radius: 14px;
+  background: #f7fbff;
+  box-shadow: 0 10px 28px rgba(49,130,246,.1);
 }
 .product-recommendation-image-link {
   display: block;
@@ -3538,13 +3549,13 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .product-recommendation-body { min-width: 0; }
 .product-recommendation-label {
   margin: 0 0 5px;
-  color: var(--accent);
+  color: #e5484d;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: .04em;
 }
 .product-benefit-badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
-.product-benefit-badges span { display: inline-flex; padding: 4px 8px; border: 1px dashed #dc2626; border-radius: 5px; background: #fff7ed; color: #b91c1c; font-size: .72rem; font-weight: 800; }
+.product-benefit-badges span { display: inline-flex; padding: 5px 9px; border: 1px solid rgba(49,130,246,.32); border-radius: 999px; background: #e8f3ff; color: #1261c9; font-size: .72rem; font-weight: 800; }
 .product-recommendation-name {
   margin: 0 0 8px;
   color: var(--ink);
@@ -3562,6 +3573,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .product-recommendation-price strong { color: #dc2626; }
 .product-recommendation-price del { color: var(--muted); font-size: .8rem; }
 .product-recommendation-price span { color: var(--ink); font-weight: 800; }
+.product-trust-card { margin: 0 0 9px; padding: 9px 11px; border: 1px solid #f4d78b; border-radius: 8px; background: #fff9e8; color: #9a5b00; font-size: .82rem; font-weight: 800; }
 .product-recommendation-reason {
   margin: 0 0 6px;
   color: var(--accent);
@@ -3585,9 +3597,9 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   width: 100%;
   padding: 10px 16px;
   border-radius: 8px;
-  border: 2px solid #7f1d1d;
-  background: linear-gradient(135deg, #dc2626, #991b1b);
-  box-shadow: 0 7px 16px rgba(153,27,27,.2);
+  border: 2px solid #1769d2;
+  background: linear-gradient(135deg, #3182f6, #1769d2);
+  box-shadow: 0 8px 18px rgba(49,130,246,.28);
   color: #fff;
   font-size: .9rem;
   font-weight: 750;

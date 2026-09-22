@@ -65,10 +65,12 @@ https://[잘못된-주소
         self.assertIn("20% 할인", card)
         self.assertIn("19,900원", card)
         self.assertIn("평점 4.8점 · 후기 123개", card)
-        self.assertIn("가계 부담을 덜어주는 정부 지원 혜택", card)
-        self.assertIn("⚡ 실시간 특가 혜택", card)
-        self.assertIn("무료배송 대상 확인", card)
-        self.assertIn("[최저가 확인] 오늘 한정 특가 및 실시간 혜택 보기", card)
+        self.assertIn('class="toss-shopping-card product-recommendation"', card)
+        self.assertIn("💡 [생활비 절약 팁] 오늘의 실속 가성비 특가", card)
+        self.assertIn("[토스쇼핑 추천 특가]", card)
+        self.assertIn("[무료배송 대상 확인]", card)
+        self.assertIn("👉 [최저가 확인] 오늘 한정 특가 및 실시간 혜택 보기", card)
+        self.assertIn("★ 4.8점 · 후기 123개", card)
         self.assertNotIn("product-recommendation-image", card)
 
     def test_parse_post_recovers_from_inline_llm_response_labels(self) -> None:
@@ -149,10 +151,10 @@ cover_image: https://example.com/cover.jpg
 
         self.assertEqual(selected.url, "https://toss.im/_m/omega")
         self.assertIn("오메가3", selected.name)
-        self.assertEqual(len(candidates), 1)
-        self.assertEqual(len({product.url for product in candidates}), 1)
+        self.assertEqual(len(candidates), 2)
+        self.assertEqual(len({product.url for product in candidates}), 2)
 
-    def test_product_widget_is_hidden_for_policy_and_unrelated_articles(self) -> None:
+    def test_product_widget_uses_hard_fallback_for_policy_and_unrelated_articles(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             posts_dir = root / "posts"
@@ -169,10 +171,10 @@ cover_image: https://example.com/cover.jpg
             )
             builder = StaticSiteBuilder(posts_dir, root / "public", "테스트", "테스트")
 
-            self.assertEqual(builder._product_link_html(builder._parse_post(policy_path)), "")
-            self.assertEqual(builder._product_link_html(builder._parse_post(unrelated_path)), "")
+            self.assertIn("toss-shopping-card", builder._product_link_html(builder._parse_post(policy_path)))
+            self.assertIn("toss-shopping-card", builder._product_link_html(builder._parse_post(unrelated_path)))
 
-    def test_relevant_policy_product_is_allowed_but_public_bid_is_blocked(self) -> None:
+    def test_relevant_policy_and_public_bid_both_receive_product_widget(self) -> None:
         energy_product = ProductLink(
             name="가정용 에너지 절약 멀티탭",
             url="https://toss.im/_m/energy",
@@ -198,7 +200,7 @@ cover_image: https://example.com/cover.jpg
                 bid_html = builder._product_link_html(builder._parse_post(bid_path))
 
         self.assertIn("오늘 한정 특가", policy_html)
-        self.assertEqual(bid_html, "")
+        self.assertIn("toss-shopping-card", bid_html)
 
     def test_frontmatter_split_ignores_markdown_rule_inside_quoted_title(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -452,6 +454,20 @@ quality_score: 95.0
 
             builder.build()
 
+            generated_post_pages = [
+                page
+                for page in (root / "public").glob("*.html")
+                if '<article class="post">' in page.read_text(encoding="utf-8")
+            ]
+            self.assertEqual(len(generated_post_pages), 2)
+            self.assertTrue(
+                all(
+                    '<aside class="toss-shopping-card product-recommendation"'
+                    in page.read_text(encoding="utf-8")
+                    for page in generated_post_pages
+                )
+            )
+
             html = (root / "public" / "source-post.html").read_text(encoding="utf-8")
             self.assertNotIn("읽는 기준", html)
             self.assertIn("자주 묻는 질문", html)
@@ -466,7 +482,7 @@ quality_score: 95.0
             self.assertIn('class="official-source-badge"', html)
             self.assertIn('target="_blank"', html)
             self.assertIn('noopener noreferrer', html)
-            self.assertNotIn('class="product-recommendation"', html)
+            self.assertIn('class="toss-shopping-card product-recommendation"', html)
             self.assertIn('aria-label="광고 영역"', html)
             self.assertIn('<div class="ad-label">광고</div>', html)
             self.assertLess(html.index('<div class="content">'), html.index('<div class="ad-slot"'))
