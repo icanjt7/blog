@@ -28,6 +28,12 @@ from blog_agent.config import load_settings
 from blog_agent.hwpx import extract_hwpx_text_bytes
 from blog_agent.images import ImageAgent, is_public_license_badge
 from blog_agent.models import Draft, Topic
+from blog_agent.prompts import (
+    classify_press_template,
+    press_summary_card_instruction,
+    press_template_instruction,
+)
+from blog_agent.slugs import slugify_words
 from blog_agent.writer import WriterAgent
 
 
@@ -447,10 +453,7 @@ def extract_first_hwpx_attachment(page: str, page_url: str, institution: str = "
 
 
 def slugify(value: str) -> str:
-    value = value.strip().lower()
-    value = re.sub(r"[^\w가-힣]+", "-", value)
-    value = re.sub(r"-{2,}", "-", value).strip("-")
-    return value[:48].strip("-") or "press"
+    return slugify_words(value, max_length=64, fallback="press")
 
 
 def unique_slug(prefix: str, title: str, url: str) -> str:
@@ -617,6 +620,9 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
     """HWPX에서 추출한 원문 텍스트를 LLM으로 기사화한다."""
     if not release.body_text:
         return ""
+    template = classify_press_template(release.title, release.body_text)
+    template_instruction = press_template_instruction(template)
+    summary_card_instruction = press_summary_card_instruction(template)
     prompt = f"""다음은 [{release.institution}]에서 발표한 보도자료 원문입니다.
 이 내용을 독자 친화적인 블로그 기사로 작성해주세요.
 
@@ -624,9 +630,10 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
 {release.body_text[:3000]}
 
 [작성 규칙]
+{template_instruction}
 - 본문 1,500~2,100자 (한국어)
 - 첫 문단에 반드시 발표 기관({release.institution}), 발표일({release.date}), 발표 주제를 넣기
-- 첫 문단 바로 다음에 인용문 박스로 '**[지원·적용 대상]**', '**[핵심 혜택·금액]**', '**[시행·신청 일정]**', '**[주관 기관·신청처]**' 4항목을 배치. 원문에 없으면 '해당 없음' 또는 '공식 원문 확인'으로 표시
+{summary_card_instruction}
 - 독자에게 중요한 수치·날짜·대상·장소·참여기관·지원내용·시행방식을 구체적으로 포함
 - 원문에 있는 고유명사, 사업명, 제도명, 금액, 기간은 가능한 한 그대로 살리기
 - 마크다운 헤딩(##)으로 4~5개 섹션 구성
@@ -637,7 +644,7 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
 - 제목을 반복하는 "이번 보도자료의 핵심은..." 문장 금지
 - "원문 보도자료에는 세부 정보가 있습니다"처럼 뭉뚱그린 문장 금지
 - 원문에서 확인한 장소, 참여 기관, 대상, 일정, 수치가 있으면 반드시 반영
-- 마지막 실무 섹션은 원문의 고유 조건을 반영한 '신청 전 확인 체크리스트' 또는 '자주 묻는 질문' 2개로 구성
+- 유형 A는 FAQ 2개로 마무리하고, 유형 B는 후속 계획과 공식 확인 경로로 마무리
 - 자료 출처 기관: {release.institution}
 - 원문 URL: {release.url}
 
@@ -744,26 +751,55 @@ def make_article_body(release: PressRelease) -> str:
             f"- 확인할 원문: {clean_title}"
         )
 
+    template = classify_press_template(release.title, release.body_text)
+    subject = shorten(clean_title, 64)
+    if template == "informational":
+        purpose = lead
+        cooperation = bullets
+        future = detail or fact_block
+        sections = [
+            (
+                f"{with_particle(release.institution, '이', '가')} {release.date} 공개한 자료를 바탕으로 "
+                f"{clean_title}의 목적과 협력 내용을 정리했습니다. 신청형 지원 안내가 아닌 협약·행사 정보입니다."
+            ),
+            (
+                f"> **[목적·의의]** {shorten(purpose, 180)}\n>\n"
+                f"> **[주요 협력·행사 내용]** {shorten(clean_text(cooperation), 180)}\n>\n"
+                f"> **[향후 계획]** {shorten(clean_text(future), 180)}"
+            ),
+            f"## {subject}은 왜 추진됐나요?",
+            purpose,
+            f"## {subject}에서 맡은 협력 역할은 무엇인가요?",
+            cooperation,
+            f"## {subject}의 세부 일정과 참여 기관은 어떻게 구성됐나요?",
+            fact_block,
+            f"## {subject} 이후 이어질 계획은 무엇인가요?",
+            future,
+            "## 후속 발표는 어디에서 확인하나요?",
+            f"- [{release.institution} 보도자료]({release.url})",
+        ]
+        return "\n\n".join(sections).strip() + "\n"
+
     sections = [
         (
             f"{with_particle(release.institution, '이', '가')} {release.date} 공개한 자료를 바탕으로 "
             f"{clean_title}의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다."
         ),
         (
-            "> **[지원·적용 대상]** 공식 원문 확인\n>\n"
-            "> **[핵심 혜택·금액]** 공식 원문 확인\n>\n"
-            "> **[시행·신청 일정]** 공식 원문 확인\n>\n"
+            "> **[핵심 수혜 대상·금액]** 공식 원문 확인\n>\n"
+            "> **[주요 지원 내용]** 공식 원문 확인\n>\n"
+            "> **[신청 방법·필수 서류]** 공식 원문 확인\n>\n"
             f"> **[주관 기관·신청처]** {release.institution}"
         ),
-        "## 누가 이번 발표를 확인해야 하나요?",
+        f"## {subject} 혜택은 누가 받을 수 있나요?",
         lead,
-        "## 달라지는 내용과 적용 범위는?",
+        f"## {subject}에서 지원하는 내용과 금액은 얼마인가요?",
         bullets,
-        "## 날짜·금액·현장 조건은 무엇인가요?",
+        f"## {subject} 신청 일정과 필수 조건은 무엇인가요?",
         fact_block,
-        "## 실제 적용 전에 따져볼 조건은?",
+        f"## {subject} 신청 전에 준비할 서류는 무엇인가요?",
         detail,
-        "## 신청·참여 전 확인 체크리스트",
+        f"## {subject} FAQ",
         concrete_reader_checks(release, facts, detail_lines),
         "## 공식 안내는 어디에서 확인하나요?",
         f"- [{release.institution} 보도자료]({release.url})",

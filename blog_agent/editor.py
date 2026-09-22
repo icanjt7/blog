@@ -8,6 +8,11 @@ from openai import OpenAI
 
 from .config import Settings
 from .models import Draft
+from .prompts import (
+    classify_press_template,
+    press_summary_card_instruction,
+    press_template_instruction,
+)
 
 
 PLACEHOLDER_PATTERNS = [
@@ -156,10 +161,17 @@ class SeoEditorAgent:
         reviewed = self.review(draft)
         today = datetime.now().strftime("%Y-%m-%d")
         sources = "\n".join(self._source_prompt_line(source) for source in reviewed.topic.sources)
+        source_context = " ".join(
+            [reviewed.topic.title_hint, reviewed.body_markdown, *(source.summary for source in reviewed.topic.sources)]
+        )
+        template = classify_press_template(reviewed.topic.title_hint, source_context)
+        template_instruction = press_template_instruction(template)
+        summary_card_instruction = press_summary_card_instruction(template)
         prompt = f"""
 아래 한국어 블로그 초안을 편집해 주세요.
 
 목표:
+{template_instruction}
 - 오늘 기준일은 {today}입니다.
 - 제목이 클릭하고 싶어지는지 먼저 확인한다. 아래 기준으로 더 좋은 제목으로 바꿔도 된다:
   · 숫자, 반전, 궁금증, 독자 공감 상황, 구체적 혜택 중 하나를 활용
@@ -172,7 +184,7 @@ class SeoEditorAgent:
 - "A사/B사/C사", "제품 A", "가상의 모델"처럼 실제 출처를 확인할 수 없는 익명 비교표는 제거하고 확인 가능한 기준표로 바꾼다.
 - 글에 등장하는 인물·작품·기업·제도 중 설명이 부족한 것이 있으면 한 줄씩 보완한다.
 - AI가 쓴 것처럼 보이는 반복 표현을 줄인다.
-- 도입 직후에 인용문 형식의 4항목 요약([지원·적용 대상] / [핵심 혜택·금액] / [시행·신청 일정] / [주관 기관·신청처])을 유지하거나 추가한다. 출처에 없으면 '공식 원문 확인'으로 표시한다.
+{summary_card_instruction}
 - H2/H3는 독자의 검색 의도를 반영한 구체적인 질문형 제목으로 다변화한다.
 - '발표 개요', '배경과 의미', '원문에서 함께 볼 부분', '맥락 짚기', '핵심 내용', '마무리'는 헤딩으로 쓰지 않는다.
 - 마지막 실무 섹션은 주제별 체크리스트 또는 자주 묻는 질문 2개로 구성한다.
@@ -255,17 +267,24 @@ BODY:
 
     def _second_pass(self, draft: Draft, sources: str) -> Draft | None:
         today = datetime.now().strftime("%Y-%m-%d")
+        source_context = " ".join(
+            [draft.topic.title_hint, draft.body_markdown, *(source.summary for source in draft.topic.sources)]
+        )
+        template = classify_press_template(draft.topic.title_hint, source_context)
+        template_instruction = press_template_instruction(template)
+        summary_card_instruction = press_summary_card_instruction(template)
         prompt = f"""
 아래 글은 1차 편집 후 검수에서 아직 품질 기준을 통과하지 못했습니다.
 검수 메모를 모두 해결하도록 제목, 요약, 본문을 다시 작성하세요.
 
 절대 조건:
+{template_instruction}
 - 오늘 기준일은 {today}입니다.
 - 출처에 없는 사실, 수치, 경험담은 만들지 않는다.
 - 출처 제목, 요약, 발행일에 없는 연도나 월을 만들지 않는다.
 - "2024년 기준", "2024년 6월 기준", "2024년부터" 같은 과거 기준일은 출처가 해당 연도를 명시할 때만 유지한다.
 - 본문은 1,300자 이상, ## 헤딩 5개 이상, 표 1개 이상으로 작성한다.
-- 도입 직후 [지원·적용 대상] / [핵심 혜택·금액] / [시행·신청 일정] / [주관 기관·신청처] 4항목 요약을 인용문 형식으로 둔다.
+{summary_card_instruction}
 - H2/H3는 검색 질문형으로 쓰고, '발표 개요', '배경과 의미', '원문에서 함께 볼 부분', '맥락 짚기', '핵심 내용', '마무리'를 사용하지 않는다.
 - 마지막에는 출처 고유 조건을 담은 체크리스트 또는 FAQ 2개를 둔다.
 - 검수 메모에 나온 범용 문장과 AI식 반복 표현은 제거한다.

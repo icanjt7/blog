@@ -66,10 +66,10 @@ https://[잘못된-주소
         self.assertIn("19,900원", card)
         self.assertIn("평점 4.8점 · 후기 123개", card)
         self.assertIn('class="toss-shopping-card product-recommendation"', card)
-        self.assertIn("💡 [생활비 절약 팁] 오늘의 실속 가성비 특가", card)
-        self.assertIn("[토스쇼핑 추천 특가]", card)
-        self.assertIn("[무료배송 대상 확인]", card)
-        self.assertIn("👉 [최저가 확인] 오늘 한정 특가 및 실시간 혜택 보기", card)
+        self.assertNotIn("product-bridge-copy", card)
+        self.assertIn("[토스 인기 특가]", card)
+        self.assertIn("[무료배송 대상]", card)
+        self.assertIn("👉 [최저가 확인] 오늘 한정 특가 및 실구매자 후기 보기", card)
         self.assertIn("★ 4.8점 · 후기 123개", card)
         self.assertNotIn("product-recommendation-image", card)
 
@@ -173,6 +173,31 @@ cover_image: https://example.com/cover.jpg
 
             self.assertIn("toss-shopping-card", builder._product_link_html(builder._parse_post(policy_path)))
             self.assertIn("toss-shopping-card", builder._product_link_html(builder._parse_post(unrelated_path)))
+
+    def test_product_bridge_copy_follows_article_type(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            posts_dir = root / "posts"
+            posts_dir.mkdir()
+            support_path = posts_dir / "support.md"
+            support_path.write_text(
+                "---\ntitle: 소상공인 지원금 신청\ncategory: 정책\ntags:\n- 지원금\n---\n신청 대상과 금액 안내입니다.",
+                encoding="utf-8",
+            )
+            mou_path = posts_dir / "mou.md"
+            mou_path.write_text(
+                "---\ntitle: 국가유산진흥원 WTC Seoul 업무협약\ncategory: 정책\ntags:\n- 문화\n- 협약\n---\n코엑스 전광판 홍보 협력 내용입니다.",
+                encoding="utf-8",
+            )
+            builder = StaticSiteBuilder(posts_dir, root / "public", "테스트", "테스트")
+
+            support_html = builder._product_link_html(builder._parse_post(support_path))
+            mou_html = builder._product_link_html(builder._parse_post(mou_path))
+
+        self.assertIn("🛒 [가계부 절약] 정책 혜택과 함께 챙기는 알뜰 실속 핫딜", support_html)
+        self.assertIn("가계 부담을 덜어드리기 위해", support_html)
+        self.assertIn("🎁 [브리핑웨이브 추천] 일상 속 가치를 더하는 실시간 핫딜", mou_html)
+        self.assertIn("공공 소식과 함께", mou_html)
 
     def test_relevant_policy_and_public_bid_both_receive_product_widget(self) -> None:
         energy_product = ProductLink(
@@ -504,7 +529,7 @@ quality_score: 95.0
             footer_html = (root / "public" / "index.html").read_text(encoding="utf-8")
             self.assertIn("기사·상품 검색...", footer_html)
             self.assertIn('class="home-products toss-shopping-home"', footer_html)
-            self.assertIn("🔥 오늘 실시간 추천 특가", footer_html)
+            self.assertIn("🔥 실시간 특가 TOP 4", footer_html)
             self.assertIn('data-home-products', footer_html)
             self.assertIn("최저가·실시간 혜택 보기", footer_html)
             self.assertLess(footer_html.index("home-notices"), footer_html.index("toss-shopping-home"))
@@ -513,7 +538,7 @@ quality_score: 95.0
             self.assertIn('href="./category-기술.html"', footer_html)
             category_html = (root / "public" / "category-기술.html").read_text(encoding="utf-8")
             self.assertIn('class="home-products toss-shopping-home"', category_html)
-            self.assertIn("🔥 오늘 실시간 추천 특가", category_html)
+            self.assertIn("🔥 실시간 특가 TOP 4", category_html)
             self.assertIn('data-home-products', category_html)
             contact_html = (root / "public" / "contact.html").read_text(encoding="utf-8")
             self.assertIn('href="mailto:jungteck@gmail.com"', contact_html)

@@ -18,6 +18,7 @@ import markdown
 import yaml
 
 from .images import ImageAgent
+from .prompts import classify_press_template
 from .product_links import PRODUCT_LINKS, ProductLink
 
 
@@ -898,7 +899,27 @@ class StaticSiteBuilder:
         return (
             f'<div class="product-rotation" data-product-rotation="{html.escape(post.slug)}" '
             'data-product-catalog="./product-catalog.json">'
-            f'{card}<script type="application/json" class="product-rotation-candidates">{candidates_json}</script>'
+            f'{self._product_bridge_html(post)}{card}'
+            f'<script type="application/json" class="product-rotation-candidates">{candidates_json}</script>'
+            '</div>'
+        )
+
+    @staticmethod
+    def _product_bridge_html(post: Post) -> str:
+        plain_body = re.sub(r"<[^>]+>", " ", post.body_html)
+        context = " ".join((post.title, post.category, " ".join(post.tags), post.excerpt, plain_body))
+        template = classify_press_template(post.title, context)
+        is_actionable = template == "actionable" and post.category in {"생활", "정책", "환경"}
+        if is_actionable:
+            heading = "🛒 [가계부 절약] 정책 혜택과 함께 챙기는 알뜰 실속 핫딜"
+            description = "가계 부담을 덜어드리기 위해 토스쇼핑의 인기 생필품 특가를 모았습니다."
+        else:
+            heading = "🎁 [브리핑웨이브 추천] 일상 속 가치를 더하는 실시간 핫딜"
+            description = "공공 소식과 함께 일상에서 만족도가 높은 검증된 가성비 상품을 엄선했습니다."
+        return (
+            '<div class="product-bridge-copy">'
+            f'<strong>{html.escape(heading)}</strong>'
+            f'<span>{html.escape(description)}</span>'
             '</div>'
         )
 
@@ -918,15 +939,11 @@ class StaticSiteBuilder:
         trust_html = self._product_trust_html(product)
         return f"""
           <aside class="toss-shopping-card product-recommendation" aria-label="토스쇼핑 추천 상품">
-            <div class="product-bridge-copy">
-              <strong>💡 [생활비 절약 팁] 오늘의 실속 가성비 특가</strong>
-              <span>가계 지출 부담을 덜어드리기 위해 토스쇼핑에서 실시간 만족도가 높은 특가 상품을 선별했습니다. 한정 수량 및 무료배송 혜택을 확인해 보세요.</span>
-            </div>
             {image_html}
             <div class="product-recommendation-body">
               <p class="product-recommendation-label">🔥 오늘 실시간 추천 특가</p>
               <div class="product-benefit-badges" aria-label="상품 혜택 안내">
-                <span>[토스쇼핑 추천 특가]</span><span>[무료배송 대상 확인]</span>
+                <span>[토스 인기 특가]</span><span>[무료배송 대상]</span>
               </div>
               <p class="product-recommendation-name">{html.escape(product.name)}</p>
               {price_html}
@@ -935,7 +952,7 @@ class StaticSiteBuilder:
               <p class="product-recommendation-description">{html.escape(description)}</p>
               <p class="product-recommendation-guide">구성·용량과 현재 가격, 배송 조건을 상세 페이지에서 비교해 보세요.</p>
               <a class="product-recommendation-link" href="{html.escape(product.url)}"
-                 rel="sponsored nofollow noopener noreferrer" target="_blank">👉 [최저가 확인] 오늘 한정 특가 및 실시간 혜택 보기</a>
+                 rel="sponsored nofollow noopener noreferrer" target="_blank">👉 [최저가 확인] 오늘 한정 특가 및 실구매자 후기 보기</a>
               {reviews_html}
               <p class="product-recommendation-disclosure">이 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>
             </div>
@@ -1409,7 +1426,7 @@ class StaticSiteBuilder:
           </div>
         </article>"""
 
-    def _home_product_strip_html(self, limit: int = 6) -> str:
+    def _home_product_strip_html(self, limit: int = 4) -> str:
         if not PRODUCT_LINKS:
             raise RuntimeError("토스쇼핑 상품 풀이 비어 있어 메인 상품 영역을 만들 수 없습니다.")
         cards: list[str] = []
@@ -1419,9 +1436,11 @@ class StaticSiteBuilder:
             if product.image_url:
                 image_html = (
                     f'<img class="home-product-image" src="{html.escape(product.image_url)}" '
-                    f'alt="" width="64" height="64" loading="lazy" decoding="async" '
+                    f'alt="{html.escape(product.name)} 상품 이미지" width="320" height="220" loading="lazy" decoding="async" '
                     'referrerpolicy="no-referrer">'
                 )
+            else:
+                image_html = '<span class="home-product-image-placeholder" aria-hidden="true">🛍️</span>'
             price_html = ""
             if product.display_price:
                 discount = (
@@ -1456,7 +1475,7 @@ class StaticSiteBuilder:
         return (
             '<section class="home-products toss-shopping-home" aria-labelledby="home-products-title">'
             '<div class="home-products-heading">'
-            '<h2 id="home-products-title">🔥 오늘 실시간 추천 특가</h2>'
+            '<h2 id="home-products-title">🔥 실시간 특가 TOP 4</h2>'
             '<span>토스쇼핑</span>'
             '</div>'
             '<p class="home-products-intro"><strong>💡 생활비 절약 팁</strong> '
@@ -1468,7 +1487,7 @@ class StaticSiteBuilder:
             '<script>(function(){'
             'var strip=document.querySelector("[data-home-products]");if(!strip)return;'
             'var cards=Array.prototype.slice.call(strip.querySelectorAll(".home-product-card"));'
-            'var count=Math.min(parseInt(strip.getAttribute("data-display-count"),10)||6,cards.length);'
+            'var count=Math.min(parseInt(strip.getAttribute("data-display-count"),10)||4,cards.length);'
             'for(var i=cards.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));'
             'var swap=cards[i];cards[i]=cards[j];cards[j]=swap;}'
             'var previous=[];try{previous=(sessionStorage.getItem("briefwave-home-products")||"").split("|").filter(Boolean);}catch(error){}'
@@ -2718,8 +2737,8 @@ class StaticSiteBuilder:
         var choices=candidates.filter(function(code){{return code!==excluded;}});
         if(!choices.length)choices=candidates;
         var selected=choices[Math.floor(Math.random()*choices.length)];
-        var candidateScript=data.outerHTML;
-        host.innerHTML=catalog[selected].html+candidateScript;
+        var currentCard=host.querySelector('.product-recommendation');
+        if(currentCard)currentCard.outerHTML=catalog[selected].html;
         try{{sessionStorage.setItem(storageKey,selected);}}catch(error){{}}
       }});
     }}).catch(function(){{}});
@@ -3110,19 +3129,15 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .home-products-intro strong { color: #0b57b7; }
 .home-product-strip {
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(220px, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
-  overflow-x: auto;
   padding: 1px 1px 7px;
-  scroll-snap-type: x proximity;
-  scrollbar-width: thin;
-  overscroll-behavior-inline: contain;
 }
 .home-product-card {
   min-width: 0;
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  flex-direction: column;
   gap: 10px;
   padding: 10px;
   color: var(--ink);
@@ -3133,8 +3148,12 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   text-decoration: none;
   transition: border-color .15s, box-shadow .15s;
 }
+.home-product-card[hidden] { display: none; }
 .home-product-card:hover { border-color: var(--accent); box-shadow: 0 3px 14px rgba(0,0,0,.07); text-decoration: none; }
-.home-product-image { width: 64px; height: 64px; flex: 0 0 64px; border-radius: 8px; object-fit: cover; }
+.home-product-image,
+.home-product-image-placeholder { width: 100%; aspect-ratio: 4 / 3; border-radius: 8px; background: #f3f6fb; }
+.home-product-image { display: block; object-fit: contain; }
+.home-product-image-placeholder { display: grid; place-items: center; color: #6b7a90; font-size: 2rem; }
 .home-product-info { min-width: 0; display: flex; flex: 1; flex-direction: column; gap: 5px; }
 .home-product-badge { align-self: flex-start; padding: 2px 7px; border-radius: 999px; background: #e8f3ff; color: #1261c9; font-size: .66rem; font-weight: 800; }
 .home-product-name {
@@ -3520,9 +3539,9 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .content th { background: #ece7da; }
 
 /* ── featured product ── */
+.product-rotation { margin: 28px 0 0; }
 .product-bridge-copy {
-  grid-column: 1 / -1;
-  margin: 0 0 2px;
+  margin: 0 0 10px;
   padding: 13px 15px;
   border-left: 4px solid #3182f6;
   border-radius: 8px;
@@ -3538,7 +3557,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin: 28px 0 0;
+  margin: 0;
   padding: 18px;
   border: 1px solid rgba(49,130,246,.28);
   border-radius: 14px;
@@ -3685,7 +3704,15 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   .home-notices { padding: 12px; }
   .home-notice-grid { grid-template-columns: 1fr; }
   .home-products { padding: 12px 12px 10px; }
-  .home-product-strip { grid-auto-columns: minmax(210px, 82vw); }
+  .home-product-strip {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(230px, 82vw);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    overscroll-behavior-inline: contain;
+  }
   .grid { grid-template-columns: 1fr; gap: 10px; padding: 10px 12px 0; }
   .card { border-radius: 10px; contain-intrinsic-size: 390px; }
   .card-body { padding: 12px 14px 14px; }

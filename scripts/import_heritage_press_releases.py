@@ -12,6 +12,7 @@ from urllib.parse import urljoin
 import requests
 
 from import_press_releases import classify_press_category, extract_first_hwpx_attachment
+from blog_agent.slugs import slugify_words
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -80,10 +81,7 @@ def first_image(fragment: str, base_url: str) -> tuple[str, str]:
 
 
 def slugify(value: str) -> str:
-    value = value.strip().lower()
-    value = re.sub(r"[^\w가-힣]+", "-", value)
-    value = re.sub(r"-{2,}", "-", value).strip("-")
-    return value[:48].strip("-") or "press-release"
+    return slugify_words(value, max_length=64, fallback="press-release")
 
 
 def unique_slug(prefix: str, title: str, url: str) -> str:

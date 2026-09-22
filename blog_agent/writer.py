@@ -10,6 +10,11 @@ from openai import OpenAI
 
 from .config import Settings
 from .models import Draft, Topic
+from .prompts import (
+    classify_press_template,
+    press_summary_card_instruction,
+    press_template_instruction,
+)
 
 
 PERSONAS = {
@@ -181,6 +186,12 @@ class WriterAgent:
                 raise
         today = datetime.now().strftime("%Y-%m-%d")
         sources = "\n".join(self._source_prompt_line(source) for source in topic.sources)
+        source_context = " ".join(
+            [topic.title_hint, topic.keyword, *(f"{source.title} {source.summary}" for source in topic.sources)]
+        )
+        press_template = classify_press_template(topic.title_hint, source_context)
+        template_instruction = press_template_instruction(press_template)
+        summary_card_instruction = press_summary_card_instruction(press_template)
         tourism_instruction = ""
         if self._has_tourapi_source(topic):
             tourism_instruction = f"""
@@ -198,9 +209,10 @@ class WriterAgent:
 """
         hook_style = HOOK_STYLES[hash(topic.keyword) % len(HOOK_STYLES)]
         persona = PERSONAS[topic.category]
-        system_prompt = """당신은 검색 의도를 먼저 해결하는 한국어 정보 에디터입니다.
+        system_prompt = f"""당신은 검색 의도를 먼저 해결하는 한국어 정보 에디터입니다.
 공식 출처에서 확인되는 사실만 사용하고, 출처에 없는 금액·기간·대상을 추측하지 않습니다.
-'발표 개요', '배경과 의미', '원문에서 함께 볼 부분', '맥락 짚기'처럼 반복되는 AI식 섹션명과 메타 설명을 쓰지 않습니다."""
+'발표 개요', '배경과 의미', '원문에서 함께 볼 부분', '맥락 짚기'처럼 반복되는 AI식 섹션명과 메타 설명을 쓰지 않습니다.
+{template_instruction}"""
         prompt = f"""[페르소나]
 {persona}
 
@@ -228,14 +240,11 @@ class WriterAgent:
 - "A사/B사/C사", "제품 A", "가상의 모델"처럼 실제 출처를 확인할 수 없는 익명 비교표를 만들지 않는다.
 - 핵심 키워드 "{topic.keyword}"는 4~7회만 자연스럽게 쓴다.
 - 본문 1,400~1,800자. 표 1개 이상 포함.
-- 도입 한 문장 바로 다음에는 아래 형식의 4항목 핵심 요약 카드를 둔다. 원문에 값이 없으면 만들지 말고 '공식 원문 확인'이라고 쓴다.
-  > **[지원·적용 대상]** ...
-  > **[핵심 혜택·금액]** ...
-  > **[시행·신청 일정]** ...
-  > **[주관 기관·신청처]** ...
+{summary_card_instruction}
 - H2/H3는 검색자가 묻는 구체적인 질문형 문장으로 서로 다르게 쓴다. 예: '지원 대상과 소득 기준은?', '신청 방법과 필수 서류는?'
 - '발표 개요', '배경과 의미', '원문에서 함께 볼 부분', '맥락 짚기', '핵심 내용', '마무리'를 헤딩으로 쓰지 않는다.
-- 마지막 실무 섹션은 출처의 고유 조건을 반영한 '신청 전 확인 체크리스트' 또는 '자주 묻는 질문' 2개로 구성한다.
+- 유형 A의 마지막 실무 섹션은 출처의 고유 조건을 반영한 FAQ 2개로 구성한다.
+- 유형 B는 신청 체크리스트나 필수 서류를 만들지 말고, 후속 일정과 공식 확인 경로로 마무리한다.
 - 출처 링크는 URL 문자열로 노출하지 말고 기관명이 있는 마크다운 링크로만 쓴다. 사이트 렌더러가 공식 출처 버튼으로도 표시한다.
 - 마지막 문단은 독자에게 하나의 행동 권고나 확인 경로로 마무리.
 - 원문을 문장 순서대로 다시 말하는 방식은 금지한다. 반드시 독자가 얻는 판단 기준, 배경 설명, 실제 확인 순서를 추가한다.
@@ -316,7 +325,7 @@ BODY:
         )
 
     def _summary_callout(self, topic: Topic) -> str:
-        """LLM 장애 시에도 검색자가 원하는 네 가지 값을 문서 최상단에 둔다."""
+        """LLM 장애 시에도 보도자료 성격에 맞는 요약을 문서 최상단에 둔다."""
         source_text = " ".join(
             [topic.title_hint, topic.rationale, *(source.summary for source in topic.sources)]
         )
@@ -329,10 +338,19 @@ BODY:
         amount = first(r"(?:최대\s*)?\d[\d,.]*\s*(?:원|만원|억원|%|개|건|명|곳)[^.!?\n]{0,45}")
         period = first(r"(?:\d{4}년\s*)?\d{1,2}월\s*\d{1,2}일[^.!?\n]{0,55}|\d{1,2}월부터[^.!?\n]{0,55}")
         agency = first(r"[가-힣A-Za-z0-9·]+(?:부|청|위원회|공단|공사|센터|재단|진흥원)[^.!?\n]{0,45}")
+        if classify_press_template(topic.title_hint, source_text) == "informational":
+            purpose = first(r"(?:목적|위해|협약|행사)[^.!?\n]{0,100}")
+            cooperation = first(r"(?:협력|공동|홍보|교류|논의)[^.!?\n]{0,100}")
+            plan = first(r"(?:향후|계획|예정|추진)[^.!?\n]{0,100}")
+            return (
+                "> **[목적·의의]** " + purpose + "\n"
+                ">\n> **[주요 협력·행사 내용]** " + cooperation + "\n"
+                ">\n> **[향후 계획]** " + plan
+            )
         return (
-            "> **[지원·적용 대상]** " + target + "\n"
-            ">\n> **[핵심 혜택·금액]** " + amount + "\n"
-            ">\n> **[시행·신청 일정]** " + period + "\n"
+            "> **[핵심 수혜 대상·금액]** " + target + " / " + amount + "\n"
+            ">\n> **[주요 지원 내용]** " + first(r"(?:지원|혜택|감면|환급)[^.!?\n]{0,100}") + "\n"
+            ">\n> **[신청 방법·필수 서류]** " + period + "\n"
             ">\n> **[주관 기관·신청처]** " + agency
         )
 
@@ -341,6 +359,36 @@ BODY:
         source_title = source.title if source else topic.title_hint
         source_summary = self._clean_summary(source.summary if source else "")
         category = topic.category
+
+        if classify_press_template(topic.title_hint, f"{source_title} {source_summary}") == "informational":
+            subject = re.sub(r"\s+", " ", topic.title_hint or source_title).strip()
+            if len(subject) > 56:
+                subject = subject[:56].rsplit(" ", 1)[0].rstrip(" ,.;:-")
+            return f"""## {subject}은 왜 추진됐나요?
+
+{source_summary or frame["opening"]}
+
+이 자료는 신청형 지원 안내가 아니라 협약·행사·동향을 설명하는 정보입니다. 따라서 지원 대상이나 서류를 억지로 만들지 않고 발표 목적과 참여 주체를 중심으로 읽어야 합니다.
+
+## {subject}에서 합의하거나 논의한 내용은 무엇인가요?
+
+| 구분 | 원문에서 확인할 내용 |
+| --- | --- |
+| 목적 | 협약·행사를 추진한 배경과 해결하려는 과제 |
+| 참여 주체 | {source_title}에 나온 기관·기업·관계자 |
+| 협력 내용 | 공동 홍보, 교류, 연구, 행사 등 실제 역할 분담 |
+| 후속 일정 | 발표 뒤 이어질 사업·행사·공식 공지 |
+
+원문에 나온 고유명사와 장소, 협력 수단을 함께 보면 선언적인 표현과 실제 실행 계획을 구분할 수 있습니다.
+
+## {subject} 이후 무엇이 달라질 수 있나요?
+
+협약이나 토론회는 체결·개최 자체로 정책이나 혜택이 즉시 시행된다는 뜻은 아닙니다. 후속 사업명, 일정, 담당 기관의 공지가 이어지는지 확인해야 기대 효과가 실제 계획으로 연결됐는지 판단할 수 있습니다.
+
+## 후속 계획은 어디에서 확인하나요?
+
+{source_lines}
+"""
 
         if category == "생활":
             living = self._living_context(topic, source_title, source_summary)

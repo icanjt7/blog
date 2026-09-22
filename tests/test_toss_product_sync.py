@@ -139,6 +139,7 @@ class TossProductSyncTest(unittest.TestCase):
             strip = builder._home_product_strip_html()
 
         self.assertEqual(strip.count('class="home-product-card"'), 2)
+        self.assertIn("🔥 실시간 특가 TOP 4", strip)
         self.assertIn("https://toss.im/_m/tracked", strip)
         self.assertIn("19,900원", strip)
         self.assertIn("★ 4.8 · 후기 123", strip)
@@ -161,11 +162,11 @@ class TossProductSyncTest(unittest.TestCase):
         builder = StaticSiteBuilder(Path("posts"), Path("public"), "테스트", "테스트")
 
         with patch("blog_agent.site.PRODUCT_LINKS", products):
-            strip = builder._home_product_strip_html(limit=6)
+            strip = builder._home_product_strip_html(limit=4)
 
         self.assertEqual(strip.count('class="home-product-card"'), 8)
-        self.assertEqual(strip.count(" hidden rel="), 2)
-        self.assertIn('data-display-count="6"', strip)
+        self.assertEqual(strip.count(" hidden rel="), 4)
+        self.assertIn('data-display-count="4"', strip)
         self.assertIn("briefwave-home-products", strip)
         self.assertIn("Math.random()", strip)
 
