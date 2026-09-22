@@ -2156,6 +2156,7 @@ class StaticSiteBuilder:
                 ordered_categories.append(category)
 
         per_page = 9
+        product_strip = self._home_product_strip_html()
         for category in ordered_categories:
             all_posts = category_posts.get(category, [])
             total = len(all_posts)
@@ -2175,6 +2176,7 @@ class StaticSiteBuilder:
             <section class="hero">
               <p class="hero-tagline"><strong>{html.escape(category)}</strong>{stats}</p>
             </section>
+            {product_strip if page == 1 else ""}
             <section class="grid">{cards}</section>
             {nav_html}
             """
