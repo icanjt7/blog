@@ -28,6 +28,12 @@ _FALLBACK_SOURCES = {
         summary="금융 정책과 제도 변경 확인용 공식 포털",
         authority=5,
     ),
+    "환경": Source(
+        title="기후에너지환경부 공식 누리집",
+        url="https://www.me.go.kr/",
+        summary="기후·환경 정책과 재난 대응 안내 확인용 공식 포털",
+        authority=5,
+    ),
     "정치": Source(
         title="중앙선거관리위원회 선거통계시스템",
         url="https://info.nec.go.kr/",

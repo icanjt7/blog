@@ -278,6 +278,7 @@ SEARCH_ALIASES: dict[str, tuple[str, ...]] = {
     "핫이슈": ("hot issue", "breaking news", "trend", "local news", "travel", "restaurant", "cafe", "旅游", "旅行", "ニュース", "tendencia"),
     "기술": ("technology", "tech", "it", "gadget", "ai", "software", "device", "科技", "技术", "技術", "tecnologia"),
     "정책": ("policy", "government", "finance", "subsidy", "support", "economy", "政策", "政府", "政策", "politica"),
+    "환경": ("environment", "climate", "safety", "disaster", "環境", "気候", "环境", "气候", "medio ambiente"),
     "생활": ("life", "lifestyle", "living", "tips", "benefits", "family", "生活", "暮らし", "vida"),
     "정치": ("politics", "election", "candidate", "pledge", "civic", "政治", "選挙", "politica"),
     "여행": ("travel", "trip", "tour", "tourism", "旅行", "旅游", "viaje"),
@@ -820,43 +821,49 @@ class StaticSiteBuilder:
         # 다국어 독자 경험은 상단 번역 선택기로 제공하고, 검색 색인용 다국어 포스트는
         # 전체 본문 번역 품질을 확보한 뒤 별도 생성하는 편이 안전하다.
 
-    _PRODUCT_CATEGORY_HINTS: dict[str, tuple[str, ...]] = {
-        "생활": ("생활", "식품", "건강", "청소", "뷰티", "의류"),
-        "기술": ("기술", "가전", "청소", "생활"),
-        "정책": ("건강", "식품", "농산물", "생활"),
-        "정치": ("건강", "식품", "생활"),
-        "스포츠": ("건강", "운동", "단백질", "영양제"),
-        "핫이슈": ("생활", "건강", "식품", "뷰티"),
+    _PRODUCT_BLOCKED_TOPICS = {"정책", "행정", "공공입찰", "복지지원", "정치", "환경"}
+    _PRODUCT_GENERIC_TOKENS = {
+        "생활", "건강", "상품", "추천", "정보", "지원", "신청", "관련", "오늘", "사용", "위한",
     }
+    _PRODUCT_MIN_JACCARD = 0.08
 
     def _select_products(self, post: Post, limit: int = 5) -> list[ProductLink]:
-        searchable = " ".join(
-            (post.title, post.category, " ".join(post.tags), post.excerpt, post.body_html)
-        ).lower()
-        searchable = re.sub(r"<[^>]+>", " ", searchable)
-        searchable = re.sub(r"\s+", " ", searchable)
-        article_tokens = set(re.findall(r"[가-힣a-z0-9]{2,}", searchable))
-        category_hints = set(self._PRODUCT_CATEGORY_HINTS.get(post.category, ("생활",)))
+        article_topics = {post.category, *(str(tag).strip() for tag in post.tags)}
+        if article_topics & self._PRODUCT_BLOCKED_TOPICS or self._is_government_post(post):
+            return []
 
-        def relevance(product: ProductLink) -> tuple[int, int]:
-            score = 0
-            product_keywords = {keyword.lower() for keyword in product.keywords}
-            for keyword in product_keywords:
-                if keyword in searchable:
-                    score += 12 + min(len(keyword), 8)
-            name_tokens = set(re.findall(r"[가-힣a-z0-9]{2,}", product.name.lower()))
-            score += len(article_tokens & name_tokens) * 7
-            score += len(category_hints & product_keywords) * 2
+        searchable = " ".join((post.title, " ".join(post.tags), post.excerpt)).lower()
+        article_tokens = {
+            token for token in re.findall(r"[가-힣a-z0-9]{2,}", searchable)
+            if token not in self._PRODUCT_GENERIC_TOKENS
+        }
+        ranked: list[tuple[float, int, ProductLink]] = []
+        for product in PRODUCT_LINKS:
+            product_tokens = {
+                token
+                for token in (
+                    {keyword.lower() for keyword in product.keywords}
+                    | set(re.findall(r"[가-힣a-z0-9]{2,}", product.name.lower()))
+                )
+                if token not in self._PRODUCT_GENERIC_TOKENS
+            }
+            overlap = article_tokens & product_tokens
+            union = article_tokens | product_tokens
+            similarity = len(overlap) / len(union) if union else 0.0
+            if not overlap or similarity < self._PRODUCT_MIN_JACCARD:
+                continue
             tie_breaker = int(
                 hashlib.md5(f"{post.slug}:{product.url}".encode("utf-8")).hexdigest()[:8],
                 16,
             )
-            return score, tie_breaker
+            ranked.append((similarity, tie_breaker, product))
 
-        return sorted(PRODUCT_LINKS, key=relevance, reverse=True)[: max(1, limit)]
+        ranked.sort(key=lambda item: (item[0], item[1]), reverse=True)
+        return [item[2] for item in ranked[: max(0, limit)]]
 
-    def _select_product(self, post: Post) -> ProductLink:
-        return self._select_products(post, limit=1)[0]
+    def _select_product(self, post: Post) -> ProductLink | None:
+        products = self._select_products(post, limit=1)
+        return products[0] if products else None
 
     @staticmethod
     def _product_description(product: ProductLink) -> str:
@@ -890,6 +897,8 @@ class StaticSiteBuilder:
 
     def _product_link_html(self, post: Post) -> str:
         products = self._select_products(post)
+        if not products:
+            return ""
         product = products[0]
         candidates = [item.cache_key for item in products]
         candidates_json = json.dumps(candidates, ensure_ascii=False).replace("<", "\\u003c")
@@ -935,6 +944,15 @@ class StaticSiteBuilder:
     def _write_product_catalog(self) -> None:
         catalog = {
             product.cache_key: {
+                "name": product.name,
+                "url": product.url,
+                "keywords": list(product.keywords),
+                "image_url": product.image_url,
+                "display_price": product.display_price,
+                "original_price": product.original_price,
+                "discount_rate": product.discount_rate,
+                "review_score": product.review_score,
+                "review_count": product.review_count,
                 "html": self._product_card_html(
                     product,
                     "이 글과 관련해 함께 비교해 볼 수 있는 상품입니다.",
@@ -1228,14 +1246,15 @@ class StaticSiteBuilder:
         if not links:
             return ""
         items = "\n".join(
-            f'<li><a href="{html.escape(url)}" rel="nofollow noopener" target="_blank">{html.escape(label)}</a></li>'
+            f'<a class="official-source-badge" href="{html.escape(url)}" '
+            f'rel="nofollow noopener noreferrer" target="_blank"><span>공식 출처</span>{html.escape(label)} ↗</a>'
             for label, url in links
         )
         return f"""
           <section class="source-box" aria-label="참고 자료">
             <h2>참고 자료</h2>
             <p>본문은 아래 원문과 공개 자료를 기준으로 편집했습니다. 날짜, 신청 조건, 운영 여부처럼 바뀔 수 있는 정보는 원문에서 다시 확인하세요.</p>
-            <ul>{items}</ul>
+            <div class="official-source-actions">{items}</div>
           </section>
         """
 
@@ -1284,13 +1303,36 @@ class StaticSiteBuilder:
             ]
         items = "\n".join(f"<li>{html.escape(point)}</li>" for point in points)
         return f"""
-          <section class="reader-context" aria-label="맥락 짚기">
-            <h2>맥락 짚기</h2>
+          <section class="reader-context" aria-label="확인 체크리스트">
+            <h2>읽고 나서 확인할 체크리스트</h2>
             <p>{html.escape(lead)}</p>
             <ul>{items}</ul>
             <p class="source-note">{html.escape(source_note)}</p>
           </section>
         """
+
+    def _home_notice_strip_html(self, posts: list[Post], limit: int = 4) -> str:
+        notice_markers = {"나라장터", "입찰공고", "공공조달", "보도자료", "공고"}
+        notices = [post for post in posts if notice_markers & set(post.tags)][:limit]
+        if not notices:
+            return (
+                '<section class="home-notices" aria-label="공공 공고 안내">'
+                '<div><strong>오늘의 공공 공고</strong>'
+                '<span>새 입찰·지원 공고가 수집되면 이 자리에 요약됩니다.</span></div></section>'
+            )
+        cards = "".join(
+            f'<a class="home-notice-card" href="./{html.escape(post.slug)}.html">'
+            f'<span>{html.escape(post.category)} · {post.date:%m.%d}</span>'
+            f'<strong>{html.escape(post.title)}</strong>'
+            f'<small>{html.escape(post.excerpt[:90])}</small></a>'
+            for post in notices
+        )
+        return (
+            '<section class="home-notices" aria-labelledby="home-notices-title">'
+            '<div class="home-notices-heading"><h2 id="home-notices-title">오늘의 주요 입찰·공고</h2>'
+            '<span>공식 자료 기반</span></div>'
+            f'<div class="home-notice-grid">{cards}</div></section>'
+        )
 
     @staticmethod
     def _primary_context_tag(post: Post) -> str:
@@ -1445,13 +1487,13 @@ class StaticSiteBuilder:
     def _write_index(self, posts: list[Post]) -> None:
         per_page = 9
         total = len(posts)
-        product_strip = self._home_product_strip_html()
+        notice_strip = self._home_notice_strip_html(posts)
         if total == 0:
             content = f"""
             <section class="hero">
               <p class="hero-tagline">직접 판단에 도움이 되는 선별 브리핑을 모았습니다</p>
             </section>
-            {product_strip}
+            {notice_strip}
             <p class="empty">아직 발행된 글이 없습니다.</p>
             """
             self._write_html(
@@ -1480,7 +1522,7 @@ class StaticSiteBuilder:
               <p class="hero-tagline">직접 판단에 도움이 되는 선별 브리핑을 모았습니다</p>
               {hero_stats}
             </section>
-            {product_strip if page == 1 else ""}
+            {notice_strip if page == 1 else ""}
             <section class="grid">{cards}</section>
             {nav_html}
             """
@@ -1684,8 +1726,8 @@ class StaticSiteBuilder:
         <article class="post search-page">
           <header class="search-hero">
             <p class="meta" id="search-kicker">검색</p>
-            <h1 id="search-title">글 검색</h1>
-            <p class="search-help" id="search-help">키워드, 카테고리, 태그로 빠르게 찾을 수 있습니다.</p>
+            <h1 id="search-title">기사·상품 검색</h1>
+            <p class="search-help" id="search-help">키워드, 카테고리, 태그로 기사와 상품을 함께 찾을 수 있습니다.</p>
           </header>
           <section id="tag-overview" class="tag-overview" hidden></section>
           <section class="search-panel">
@@ -1705,6 +1747,15 @@ class StaticSiteBuilder:
             </div>
           </section>
           <div id="results-summary" class="results-summary" aria-live="polite"></div>
+          <section id="product-results-section" class="product-search-section" hidden>
+            <div class="product-search-heading">
+              <h2>관련 상품</h2>
+              <span id="product-results-count"></span>
+            </div>
+            <div id="product-results" class="product-search-results"></div>
+            <p class="product-search-disclosure">상품 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>
+          </section>
+          <h2 id="article-results-heading" class="article-results-heading">기사</h2>
           <section id="results" class="search-results"></section>
           <nav id="search-pagination" class="pagination search-pagination" aria-label="검색 결과 페이지"></nav>
         </article>
@@ -1713,13 +1764,19 @@ class StaticSiteBuilder:
             + categories_json
             + ''';
         const searchIndex = [];
+        const productIndex = [];
         let activeTag = '';
         let currentPage = 1;
         const resultsPerPage = 9;
 
-        async function loadIndex(){
-          const res = await fetch('./search.json');
-          return await res.json();
+        async function loadIndexes(){
+          const [articleResponse, productResponse] = await Promise.all([
+            fetch('./search.json'),
+            fetch('./product-catalog.json')
+          ]);
+          const articles = await articleResponse.json();
+          const productCatalog = await productResponse.json();
+          return {articles, products: Object.values(productCatalog)};
         }
 
         function normalize(value){
@@ -1751,9 +1808,9 @@ class StaticSiteBuilder:
           if(!tag){
             overview.hidden = true;
             overview.innerHTML = '';
-            title.textContent = '글 검색';
+            title.textContent = '기사·상품 검색';
             kicker.textContent = '검색';
-            help.textContent = '키워드, 카테고리, 태그로 빠르게 찾을 수 있습니다.';
+            help.textContent = '키워드, 카테고리, 태그로 기사와 상품을 함께 찾을 수 있습니다.';
             return;
           }
 
@@ -1808,10 +1865,45 @@ class StaticSiteBuilder:
           });
         }
 
+        function filterProducts(query){
+          const normalizedQuery = normalize(query);
+          if(!normalizedQuery || activeTag) return [];
+          return productIndex.filter(product => normalize(productSearchText(product)).includes(normalizedQuery));
+        }
+
+        function productPrice(product){
+          if(!product.display_price) return '';
+          const discount = product.discount_rate ? `<strong>${product.discount_rate}% 할인</strong>` : '';
+          const original = product.original_price > product.display_price ? `<del>${Number(product.original_price).toLocaleString('ko-KR')}원</del>` : '';
+          return `<span class="product-search-price">${discount}${original}<b>${Number(product.display_price).toLocaleString('ko-KR')}원</b></span>`;
+        }
+
+        function renderProducts(products){
+          const section = document.getElementById('product-results-section');
+          const container = document.getElementById('product-results');
+          document.getElementById('product-results-count').textContent = products.length ? `${products.length}개` : '';
+          section.hidden = products.length === 0;
+          if(!products.length){
+            container.innerHTML = '';
+            return;
+          }
+          container.innerHTML = products.map(product => `
+            <a class="product-search-card" href="${escapeHtml(product.url)}" rel="sponsored nofollow noopener" target="_blank">
+              ${product.image_url ? `<img src="${escapeHtml(product.image_url)}" alt="${escapeHtml(product.name)} 상품 이미지" width="96" height="96" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : ''}
+              <span class="product-search-body">
+                <span class="product-search-type">상품</span>
+                <strong>${escapeHtml(product.name)}</strong>
+                ${productPrice(product)}
+                ${product.review_score ? `<span class="product-search-review">평점 ${escapeHtml(product.review_score)}점${product.review_count ? ` · 후기 ${Number(product.review_count).toLocaleString('ko-KR')}개` : ''}</span>` : ''}
+              </span>
+            </a>
+          `).join('');
+        }
+
         function renderResults(results, page){
           const resultsEl = document.getElementById('results');
           if(results.length === 0){
-            resultsEl.innerHTML = '<div class="no-results"><p>검색 결과가 없습니다.</p><p class="suggestion-text">다른 검색어를 시도하거나 카테고리를 선택해 보세요.</p></div>';
+            resultsEl.innerHTML = '<div class="no-results"><p>일치하는 기사가 없습니다.</p><p class="suggestion-text">다른 검색어를 시도하거나 카테고리를 선택해 보세요.</p></div>';
             renderPagination(0, 1);
             return;
 	          }
@@ -1835,21 +1927,22 @@ class StaticSiteBuilder:
           renderPagination(results.length, safePage);
 	        }
 
-        function renderSummary(results, query, category){
+        function renderSummary(results, products, query, category){
           const summary = document.getElementById('results-summary');
           const pieces = [];
           if(activeTag) pieces.push(`<strong>#${escapeHtml(activeTag)}</strong>`);
           if(query) pieces.push(`검색어 <strong>${escapeHtml(query)}</strong>`);
           if(category) pieces.push(`카테고리 <strong>${escapeHtml(category)}</strong>`);
-          const scope = pieces.length ? pieces.join(' · ') : '전체 글';
-          if(results.length === 0){
+          const scope = pieces.length ? pieces.join(' · ') : '전체 기사';
+          if(results.length === 0 && products.length === 0){
             summary.innerHTML = `<span>${scope}</span><strong>0개 결과</strong>`;
             return;
           }
           const totalPages = Math.max(1, Math.ceil(results.length / resultsPerPage));
           const start = (currentPage - 1) * resultsPerPage + 1;
           const end = Math.min(results.length, currentPage * resultsPerPage);
-          summary.innerHTML = `<span>${scope}</span><strong>${results.length}개 결과 · ${start}-${end} · ${currentPage}/${totalPages} 페이지</strong>`;
+          const articlePage = results.length ? ` · ${start}-${end} · ${currentPage}/${totalPages} 페이지` : '';
+          summary.innerHTML = `<span>${scope}</span><strong>기사 ${results.length}개 · 상품 ${products.length}개${articlePage}</strong>`;
         }
 
         function renderPagination(totalResults, page){
@@ -1896,8 +1989,9 @@ class StaticSiteBuilder:
         }
 
         (async ()=>{
-          const idx = await loadIndex();
-          searchIndex.push(...idx);
+          const indexes = await loadIndexes();
+          searchIndex.push(...indexes.articles);
+          productIndex.push(...indexes.products);
           renderCategoryFilters();
           const input = document.getElementById('q');
           const suggestions = document.getElementById('suggestions');
@@ -1911,10 +2005,12 @@ class StaticSiteBuilder:
             const sortKey = sortControl.value;
             currentPage = page || 1;
             const results = filterResults(query, activeCategory, sortKey);
+            const products = filterProducts(query);
             suggestions.textContent = buildSuggestionText(normalize(query), results);
             const totalPages = Math.max(1, Math.ceil(results.length / resultsPerPage));
             if(currentPage > totalPages) currentPage = totalPages;
-            renderSummary(results, query, activeCategory);
+            renderSummary(results, products, query, activeCategory);
+            renderProducts(products);
             renderResults(results, currentPage);
           }
 
@@ -1967,6 +2063,10 @@ class StaticSiteBuilder:
 
         function searchText(item){
           return [item.title, item.excerpt, item.category].concat(item.tags || [], item.aliases || []).join(' ');
+        }
+
+        function productSearchText(product){
+          return [product.name, '상품', '쇼핑'].concat(product.keywords || []).join(' ');
         }
         </script>
             '''
@@ -2517,7 +2617,7 @@ class StaticSiteBuilder:
           </span>
         </a>
         <div class="header-search">
-          <input type="search" id="header-q" placeholder="기사 검색..." autocomplete="off" aria-label="검색">
+          <input type="search" id="header-q" placeholder="기사·상품 검색..." autocomplete="off" aria-label="검색">
           <button class="search-btn" id="header-search-btn" type="button" aria-label="검색">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round">
               <circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.3" y2="16.3"/>
@@ -2549,22 +2649,26 @@ class StaticSiteBuilder:
   (function(){{
     var q=document.getElementById('header-q'),box=document.getElementById('header-results');
     if(!q||!box)return;
-    var idx=[];
+    var idx=[],products=[];
     var assetPrefix='{asset_prefix}';
     fetch(assetPrefix+'search.json').then(function(r){{return r.json();}}).then(function(d){{idx=d;}}).catch(function(){{}});
+    fetch(assetPrefix+'product-catalog.json').then(function(r){{return r.json();}}).then(function(d){{products=Object.keys(d).map(function(key){{return d[key];}});}}).catch(function(){{}});
     function norm(s){{return s.normalize('NFKC').toLowerCase();}}
     function searchText(item){{return [item.title,item.excerpt,item.category].concat(item.tags||[],item.aliases||[]).join(' ');}}
+    function productText(item){{return [item.name,'상품','쇼핑'].concat(item.keywords||[]).join(' ');}}
+    function esc(s){{return String(s).replace(/[&<>"']/g,function(c){{return {{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c];}});}}
     function run(){{
       var val=q.value.trim();
       if(!val){{box.innerHTML='';box.hidden=true;return;}}
       var n=norm(val);
-      var res=idx.filter(function(item){{
+      var articles=idx.filter(function(item){{
         return norm(searchText(item)).includes(n);
-      }}).slice(0,6);
+      }}).slice(0,4);
+      var matchedProducts=products.filter(function(item){{return norm(productText(item)).includes(n);}}).slice(0,2);
+      var res=articles.map(function(item){{return '<a class="hdr-item" href="'+assetPrefix+encodeURIComponent(item.slug)+'.html"><span class="hdr-title">'+esc(item.title)+'</span><span class="hdr-cat">기사 · '+esc(item.category)+'</span></a>';}})
+        .concat(matchedProducts.map(function(item){{return '<a class="hdr-item" href="'+esc(item.url)+'" rel="sponsored nofollow noopener" target="_blank"><span class="hdr-title">'+esc(item.name)+'</span><span class="hdr-cat hdr-product">상품</span></a>';}}));
       if(!res.length){{box.innerHTML='<div class="hdr-item hdr-empty">검색 결과가 없습니다</div>';box.hidden=false;return;}}
-      box.innerHTML=res.map(function(item){{
-        return '<a class="hdr-item" href="'+assetPrefix+item.slug+'.html"><span class="hdr-title">'+item.title+'</span><span class="hdr-cat">'+item.category+'</span></a>';
-      }}).join('');
+      box.innerHTML=res.join('');
       box.hidden=false;
     }}
     var btn=document.getElementById('header-search-btn');
@@ -2573,6 +2677,20 @@ class StaticSiteBuilder:
     q.addEventListener('focus',function(){{if(q.value.trim())run();}});
     if(btn)btn.addEventListener('click',function(){{if(q.value.trim())window.location.href=assetPrefix+'search.html?q='+encodeURIComponent(q.value.trim());else q.focus();}});
     document.addEventListener('click',function(e){{if(!q.contains(e.target)&&!box.contains(e.target)&&(!btn||!btn.contains(e.target)))box.hidden=true;}});
+  }})();
+  </script>
+  <script>
+  (function(){{
+    document.querySelectorAll('[data-deadline]').forEach(function(badge){{
+      var deadline=new Date(badge.getAttribute('data-deadline'));
+      if(Number.isNaN(deadline.getTime()))return;
+      var today=new Date(); today.setHours(0,0,0,0);
+      var end=new Date(deadline); end.setHours(0,0,0,0);
+      var days=Math.round((end-today)/86400000);
+      badge.textContent=days<0?'마감':(days===0?'오늘 마감':'D-'+days);
+      badge.classList.toggle('is-today',days===0);
+      badge.classList.toggle('is-closed',days<0);
+    }});
   }})();
   </script>
   <script>
@@ -2962,6 +3080,16 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .breadcrumb span[aria-current="page"] { color: var(--ink); }
 
 /* ── index grid ── */
+.home-notices { padding: 14px 0 16px; border-bottom: 1px solid var(--line); }
+.home-notices-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+.home-notices-heading h2 { margin: 0; font-size: 1rem; }
+.home-notices-heading span { color: var(--muted); font-size: .74rem; }
+.home-notice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.home-notice-card { display: flex; flex-direction: column; gap: 5px; min-width: 0; padding: 12px 14px; border: 1px solid var(--line); border-radius: 9px; background: var(--paper); color: var(--ink); }
+.home-notice-card:hover { text-decoration: none; border-color: var(--accent); }
+.home-notice-card span, .home-notice-card small { color: var(--muted); font-size: .74rem; }
+.home-notice-card strong { line-height: 1.38; }
+.home-notice-card small { line-height: 1.45; }
 .home-products {
   padding: 14px 0 12px;
   border-bottom: 1px solid var(--line);
@@ -3019,6 +3147,23 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .home-product-price strong { color: #e5484d; }
 .home-product-rating { color: var(--muted); }
 .home-products-disclosure { margin: 5px 0 0; color: var(--muted); font-size: .68rem; line-height: 1.45; }
+.product-search-section { margin: 18px 0 22px; padding: 16px; border: 1px solid rgba(15,118,110,.22); border-radius: 12px; background: #f4faf8; }
+.product-search-section[hidden] { display: none; }
+.product-search-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+.product-search-heading h2, .article-results-heading { margin: 0; font-size: 1rem; }
+.product-search-heading span { color: var(--muted); font-size: .78rem; }
+.product-search-results { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 10px; }
+.product-search-card { display: flex; align-items: center; gap: 12px; min-width: 0; padding: 11px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); color: var(--ink); text-decoration: none; }
+.product-search-card:hover { border-color: var(--accent); text-decoration: none; }
+.product-search-card img { width: 76px; height: 76px; flex: 0 0 76px; border-radius: 8px; object-fit: contain; background: #fff; }
+.product-search-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; font-size: .78rem; }
+.product-search-body > strong { line-height: 1.4; word-break: keep-all; }
+.product-search-type { color: var(--accent); font-size: .7rem; font-weight: 800; }
+.product-search-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 7px; }
+.product-search-price strong { color: #dc2626; }
+.product-search-price del, .product-search-review { color: var(--muted); }
+.product-search-disclosure { margin: 9px 0 0; color: var(--muted); font-size: .68rem; line-height: 1.45; }
+.article-results-heading { margin: 20px 0 8px; }
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
@@ -3129,6 +3274,10 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   margin-top: 10px;
   font-size: 0.84rem;
 }
+.official-source-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.official-source-badge { display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px; border: 1px solid rgba(15,118,110,.3); border-radius: 8px; background: #f4faf8; color: var(--ink); font-size: .86rem; font-weight: 650; }
+.official-source-badge:hover { text-decoration: none; border-color: var(--accent); }
+.official-source-badge span { padding: 2px 6px; border-radius: 999px; background: var(--accent); color: #fff; font-size: .68rem; }
 .related-posts li span {
   display: block;
   color: var(--muted);
@@ -3341,6 +3490,21 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 
 /* ── table: scrollable on mobile ── */
 .content .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 16px 0; }
+.content > blockquote { margin: 12px 0 22px; padding: 14px 16px; border: 1px solid rgba(15,118,110,.24); border-left: 4px solid var(--accent); border-radius: 8px; background: #f4faf8; }
+.content > blockquote p { margin: 0 0 6px; }
+.content > blockquote p:last-child { margin-bottom: 0; }
+.bid-card-grid { display: grid; gap: 12px; margin: 16px 0 24px; }
+.bid-card { padding: 16px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.bid-card-title { display: flex; align-items: flex-start; gap: 9px; margin-bottom: 12px; }
+.bid-card-title h3 { margin: 0; font-size: 1rem; line-height: 1.45; }
+.bid-type { flex: none; padding: 3px 7px; border-radius: 999px; background: #e8f4f1; color: var(--accent); font-size: .7rem; font-weight: 800; }
+.bid-card dl { display: grid; grid-template-columns: 1.1fr .9fr 1.2fr 1fr; gap: 0; margin: 0; border-top: 1px solid var(--line); }
+.bid-card dl > div { min-width: 0; padding: 10px 10px 0 0; }
+.bid-card dt { color: var(--muted); font-size: .72rem; }
+.bid-card dd { margin: 4px 0 0; overflow-wrap: anywhere; font-size: .82rem; }
+.deadline-badge { display: inline-flex; margin-left: 5px; padding: 2px 7px; border-radius: 999px; background: #fff1cf; color: #8a5200; font-size: .7rem; font-weight: 800; white-space: nowrap; }
+.deadline-badge.is-today { background: #fee2e2; color: #b91c1c; }
+.deadline-badge.is-closed { background: #ececec; color: #666; }
 
 /* center images inside post content */
 .content img { display: block; margin: 16px auto; max-width: 100%; height: auto; }
@@ -3490,6 +3654,8 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   .language-switcher select { width: 104px; height: 34px; font-size: 0.78rem; }
   .site-nav { padding: 0 4px; }
   .hero { padding: 10px 16px 8px; }
+  .home-notices { padding: 12px; }
+  .home-notice-grid { grid-template-columns: 1fr; }
   .home-products { padding: 12px 12px 10px; }
   .home-product-strip { grid-auto-columns: minmax(210px, 82vw); }
   .grid { grid-template-columns: 1fr; gap: 10px; padding: 10px 12px 0; }
@@ -3498,6 +3664,10 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 	  .product-recommendation { gap: 12px; padding: 14px; }
 	  .product-recommendation-image-link { height: min(72vw, 300px); }
 	  .post { border-radius: 0; border-left: none; border-right: none; padding: 16px; }
+	  .bid-card dl { grid-template-columns: 1fr; }
+	  .bid-card dl > div { display: grid; grid-template-columns: 76px 1fr; gap: 8px; padding: 9px 0; border-top: 1px dashed var(--line); }
+	  .bid-card dl > div:first-child { border-top: 0; }
+	  .bid-card dd { margin: 0; }
 	  .search-page { max-width: none; }
 	  .search-panel { padding: 14px; }
 	  .search-meta { flex-direction: column; align-items: stretch; }

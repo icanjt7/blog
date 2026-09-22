@@ -16,6 +16,27 @@ self-hosted runner가 있다면 Actions 변수 `TOSS_RUNNER_LABEL`에 해당 run
 상품 이미지 사용은 별도 확인이 필요하므로 기본적으로 비활성화됩니다. 토스에서 서비스의 이미지
 사용 범위를 확인받은 경우에만 Actions 변수 `TOSS_PRODUCT_IMAGES_ALLOWED=true`를 설정하세요.
 
+### 주문 이벤트 콜백
+
+구매·취소·구매확정 이벤트는 별도 수신 API에서 처리합니다. 정적 GitHub Pages는 POST 요청을
+받을 수 없으므로 `Dockerfile.webhook`을 이용해 영속 디스크가 있는 HTTPS 서버에 배포하세요.
+
+- 콜백 경로: `/webhooks/toss-sharelink/orders`
+- 상태 확인: `/healthz`
+- 필수 환경변수: `TOSS_SECRET_KEY`
+- 선택 환경변수: `TOSS_WEBHOOK_DB_PATH` (기본값 `state/toss_order_events.sqlite3`), `PORT`
+
+로컬 실행:
+
+```bash
+pip install -e .
+TOSS_SECRET_KEY=테스트용키 toss-webhook
+```
+
+수신 API는 원본 요청 본문으로 HMAC-SHA256 서명을 검증하고, `eventId` 중복을 제거한 뒤 SQLite에
+저장합니다. `PURCHASE`, `CANCEL`, `CONFIRM`을 처리하며 취소 상태는 뒤늦게 도착한 구매·구매확정
+이벤트로 되돌리지 않습니다. 운영 환경에서는 SQLite 파일 경로를 반드시 영속 볼륨에 두세요.
+
 하루 5편의 블로그 콘텐츠를 자동으로 기획, 수집, 작성, 검수, 발행하는 Python 기반 에이전트입니다.
 
 기본 설계는 다음 원칙을 따릅니다.

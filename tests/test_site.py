@@ -12,6 +12,18 @@ from blog_agent.site import StaticSiteBuilder
 
 
 class StaticSiteBuilderTest(unittest.TestCase):
+    def test_source_links_handle_url_labels_and_ignore_malformed_urls(self) -> None:
+        markdown_text = """## 출처
+
+[https://inmun2026.kr](https://inmun2026.kr)
+https://[잘못된-주소
+"""
+
+        links = StaticSiteBuilder._extract_source_links(markdown_text)
+
+        self.assertEqual(links, [("https://inmun2026.kr", "https://inmun2026.kr")])
+        self.assertIsNone(StaticSiteBuilder._source_label_for_url("https://[잘못된-주소"))
+
     def test_product_catalog_uses_sharelinks_and_only_approved_images(self) -> None:
         self.assertTrue(PRODUCT_LINKS)
         self.assertTrue(all(product.url.startswith("https://toss.im/") for product in PRODUCT_LINKS))
@@ -133,8 +145,28 @@ cover_image: https://example.com/cover.jpg
 
         self.assertEqual(selected.url, "https://toss.im/_m/omega")
         self.assertIn("오메가3", selected.name)
-        self.assertEqual(len(candidates), 2)
-        self.assertEqual(len({product.url for product in candidates}), 2)
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(len({product.url for product in candidates}), 1)
+
+    def test_product_widget_is_hidden_for_policy_and_unrelated_articles(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            posts_dir = root / "posts"
+            posts_dir.mkdir()
+            policy_path = posts_dir / "policy.md"
+            policy_path.write_text(
+                "---\ntitle: 저소득층 복지지원 신청\ncategory: 정책\ntags:\n- 복지지원\n---\n여성 의류와 무관한 지원 정책입니다.",
+                encoding="utf-8",
+            )
+            unrelated_path = posts_dir / "unrelated.md"
+            unrelated_path.write_text(
+                "---\ntitle: 지역 도서관 운영시간\ncategory: 생활\ntags:\n- 도서관\n---\n도서관 휴관일 안내입니다.",
+                encoding="utf-8",
+            )
+            builder = StaticSiteBuilder(posts_dir, root / "public", "테스트", "테스트")
+
+            self.assertEqual(builder._product_link_html(builder._parse_post(policy_path)), "")
+            self.assertEqual(builder._product_link_html(builder._parse_post(unrelated_path)), "")
 
     def test_frontmatter_split_ignores_markdown_rule_inside_quoted_title(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -390,7 +422,7 @@ quality_score: 95.0
 
             html = (root / "public" / "source-post.html").read_text(encoding="utf-8")
             self.assertNotIn("읽는 기준", html)
-            self.assertIn("맥락 짚기", html)
+            self.assertIn("읽고 나서 확인할 체크리스트", html)
             self.assertIn("지원 기기", html)
             self.assertIn("참고 자료", html)
             self.assertIn("공식 원문", html)
@@ -398,26 +430,30 @@ quality_score: 95.0
             self.assertIn("편집 기준", html)
             self.assertIn("함께 보면 좋은 글", html)
             self.assertIn("관련 글", html)
-            self.assertEqual(html.count('class="product-recommendation"'), 1)
-            self.assertIn('class="product-rotation"', html)
-            self.assertIn('class="product-rotation-candidates"', html)
-            self.assertIn("briefwave-product:", html)
-            self.assertIn('class="product-recommendation-description"', html)
-            self.assertIn("구성·용량과 현재 가격, 배송 조건", html)
-            self.assertIn("현재 가격·상품 정보 확인하기", html)
-            self.assertIn('class="product-user-reviews"', html)
-            self.assertIn('href="https://toss.im/_m/', html)
-            self.assertIn('rel="sponsored nofollow noopener"', html)
-            self.assertIn("일정 수수료를 받을 수 있으며", html)
+            self.assertIn('class="official-source-badge"', html)
+            self.assertIn('target="_blank"', html)
+            self.assertIn('noopener noreferrer', html)
+            self.assertNotIn('class="product-recommendation"', html)
             self.assertIn('aria-label="광고 영역"', html)
             self.assertIn('<div class="ad-label">광고</div>', html)
             self.assertLess(html.index('<div class="content">'), html.index('<div class="ad-slot"'))
             product_catalog = json.loads((root / "public" / "product-catalog.json").read_text(encoding="utf-8"))
             self.assertEqual(len(product_catalog), len(PRODUCT_LINKS))
+            first_product = next(iter(product_catalog.values()))
+            self.assertIn("name", first_product)
+            self.assertIn("url", first_product)
+            self.assertIn("keywords", first_product)
+            search_html = (root / "public" / "search.html").read_text(encoding="utf-8")
+            self.assertIn("기사·상품 검색", search_html)
+            self.assertIn("product-catalog.json", search_html)
+            self.assertIn('id="product-results"', search_html)
+            self.assertIn("filterProducts", search_html)
+            self.assertIn("기사 ${results.length}개 · 상품 ${products.length}개", search_html)
 
             for filename in ("about.html", "editorial-policy.html", "privacy.html", "contact.html"):
                 self.assertTrue((root / "public" / filename).exists())
             footer_html = (root / "public" / "index.html").read_text(encoding="utf-8")
+            self.assertIn("기사·상품 검색...", footer_html)
             self.assertIn('href="./privacy.html"', footer_html)
             self.assertIn('class="footer-category-links"', footer_html)
             self.assertIn('href="./category-기술.html"', footer_html)

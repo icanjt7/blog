@@ -105,6 +105,7 @@ class NaraBidTest(unittest.TestCase):
                     demand_inst="수요기관",
                     bid_close_at="2026-06-27 10:00",
                     contract_method="일반경쟁",
+                    budget_amount="150000000",
                     detail_url="https://example.go.kr/notice",
                 )
             ],
@@ -112,7 +113,11 @@ class NaraBidTest(unittest.TestCase):
         )
 
         self.assertIn('title: "2026-06-26 나라장터 입찰공고 1건"', body)
-        self.assertIn("| 1 | 물품 | [테스트 물품 구매](https://example.go.kr/notice) | 조달청 | 수요기관 |", body)
+        self.assertIn('class="bid-card"', body)
+        self.assertIn("추정금액", body)
+        self.assertIn("150,000,000원", body)
+        self.assertIn('class="deadline-badge"', body)
+        self.assertIn("D-1", body)
         self.assertIn("조달청 나라장터 입찰공고정보서비스 공개 데이터", body)
         self.assertNotIn("어디로", body)
         self.assertNotIn("단독", body)
@@ -139,7 +144,7 @@ class NaraBidTest(unittest.TestCase):
         self.assertIn("## 오늘의 흐름", body)
         self.assertIn("## 주목할 공고", body)
         self.assertIn("## 유형별 현황", body)
-        self.assertIn("## 전체 20건", body)
+        self.assertIn("## 전체 공고의 마감일과 추정금액은?", body)
         self.assertIn("### 1. 2026년 정보시스템 유지관리 용역", body)
         self.assertIn("시설·장비·시스템 유지관리", body)
         self.assertIn("나라장터 원문 공고와 첨부파일", body)

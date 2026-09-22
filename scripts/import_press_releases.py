@@ -125,7 +125,6 @@ PRESS_CATEGORY_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
     (
         "생활",
         (
-            "지원",
             "신청",
             "혜택",
             "복지",
@@ -140,10 +139,6 @@ PRESS_CATEGORY_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
             "노동",
             "근로",
             "임금",
-            "안전",
-            "폭염",
-            "집중호우",
-            "재난",
             "질병",
             "감염",
             "예방",
@@ -159,6 +154,28 @@ PRESS_CATEGORY_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
             "민원",
             "서류",
             "요금",
+        ),
+    ),
+    (
+        "환경",
+        (
+            "기후",
+            "탄소중립",
+            "온실가스",
+            "재생에너지",
+            "환경",
+            "대기오염",
+            "미세먼지",
+            "수질",
+            "폐기물",
+            "재난",
+            "안전",
+            "폭염",
+            "집중호우",
+            "홍수",
+            "산불",
+            "화재",
+            "소방",
         ),
     ),
     (
@@ -187,6 +204,15 @@ PRESS_CATEGORY_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
             "투자",
             "공공기관",
             "조달",
+            "나라장터",
+            "입찰",
+            "공고",
+            "산업",
+            "기업",
+            "보조금",
+            "중소기업",
+            "농림축산",
+            "농업",
         ),
     ),
 )
@@ -204,15 +230,24 @@ INSTITUTION_CATEGORY_HINTS: dict[str, str] = {
     "질병관리청": "생활",
     "교육부": "생활",
     "고용노동부": "생활",
+    "성평등가족부": "생활",
+    "여성가족부": "생활",
     "병무청": "생활",
     "경찰청": "생활",
-    "소방청": "생활",
-    "행정안전부": "생활",
+    "소방청": "환경",
+    "행정안전부": "환경",
+    "기후에너지환경부": "환경",
+    "환경부": "환경",
     "국토교통부": "생활",
     "기획예산처": "정책",
     "재정경제부": "정책",
     "금융위원회": "정책",
     "공정거래위원회": "정책",
+    "공정위": "정책",
+    "산업통상부": "정책",
+    "산업통상자원부": "정책",
+    "농림축산식품부": "정책",
+    "조달청": "정책",
 }
 
 AGENCIES = {
@@ -591,16 +626,18 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
 [작성 규칙]
 - 본문 1,500~2,100자 (한국어)
 - 첫 문단에 반드시 발표 기관({release.institution}), 발표일({release.date}), 발표 주제를 넣기
+- 첫 문단 바로 다음에 인용문 박스로 '**대상:**', '**지원액·규모:**', '**신청·적용 기간:**' 3줄을 배치. 원문에 없으면 '해당 없음' 또는 '공식 원문 확인'으로 표시
 - 독자에게 중요한 수치·날짜·대상·장소·참여기관·지원내용·시행방식을 구체적으로 포함
 - 원문에 있는 고유명사, 사업명, 제도명, 금액, 기간은 가능한 한 그대로 살리기
 - 마크다운 헤딩(##)으로 4~5개 섹션 구성
 - 표 1개 포함: 구분 / 확인할 내용
 - '~입니다', '~합니다' 정중체 사용
-- 일반적인 사회적, 기술적 추세와 연결하여 이 보도자료의 내용이 왜 지금 중요한지, 독자가 어떤 더 큰 그림을 이해해야 하는지 설명하는 '배경과 의미' 섹션을 포함하세요.
+- H2/H3는 독자의 검색 질문에 바로 답하는 구체적인 질의형 제목으로 구성
+- '발표 개요', '배경과 의미', '원문에서 함께 볼 부분', '맥락 짚기', '핵심 내용', '마무리'를 헤딩으로 사용 금지
 - 제목을 반복하는 "이번 보도자료의 핵심은..." 문장 금지
 - "원문 보도자료에는 세부 정보가 있습니다"처럼 뭉뚱그린 문장 금지
 - 원문에서 확인한 장소, 참여 기관, 대상, 일정, 수치가 있으면 반드시 반영
-- 마지막 섹션은 '## 원문에서 함께 볼 부분'으로 두고, 원문을 다시 열어볼 때 도움이 되는 구체 항목 3개를 적기
+- 마지막 실무 섹션은 원문의 고유 조건을 반영한 '신청 전 확인 체크리스트' 또는 '자주 묻는 질문' 2개로 구성
 - 자료 출처 기관: {release.institution}
 - 원문 URL: {release.url}
 
@@ -712,17 +749,18 @@ def make_article_body(release: PressRelease) -> str:
             f"{with_particle(release.institution, '이', '가')} {release.date} 공개한 자료를 바탕으로 "
             f"{clean_title}의 주요 내용을 독자가 바로 확인할 수 있게 정리했습니다."
         ),
-        "## 무엇을 발표했나",
+        "> **대상:** 공식 원문 확인\n>\n> **지원액·규모:** 공식 원문 확인\n>\n> **신청·적용 기간:** 공식 원문 확인",
+        "## 누가 이번 발표를 확인해야 하나요?",
         lead,
-        "## 핵심 내용",
+        "## 달라지는 내용과 적용 범위는?",
         bullets,
-        "## 숫자와 현장 정보",
+        "## 날짜·금액·현장 조건은 무엇인가요?",
         fact_block,
-        "## 배경과 의미",
+        "## 실제 적용 전에 따져볼 조건은?",
         detail,
-        "## 원문에서 함께 볼 부분",
+        "## 신청·참여 전 확인 체크리스트",
         concrete_reader_checks(release, facts, detail_lines),
-        "## 원문",
+        "## 공식 안내는 어디에서 확인하나요?",
         f"- [{release.institution} 보도자료]({release.url})",
     ]
     return "\n\n".join(sections).strip() + "\n"
@@ -798,28 +836,37 @@ def with_particle(text: str, consonant_particle: str, vowel_particle: str) -> st
 
 def classify_press_category(release: PressRelease) -> str:
     """보도자료 소재를 사이트 주요 카테고리로 분류한다."""
-    text = f"{release.title}\n{release.institution}\n{release.body_text[:2500]}".lower()
+    title = release.title.lower()
+    body = release.body_text[:2500].lower()
+    text = f"{title}\n{release.institution.lower()}\n{body}"
     scores = {category: 0 for category, _ in PRESS_CATEGORY_RULES}
     for category, keywords in PRESS_CATEGORY_RULES:
         for keyword in keywords:
             key = keyword.lower()
-            if key in text:
-                scores[category] += 3 if key in release.title.lower() else 1
+            if key in title:
+                scores[category] += 4
+            elif key in body:
+                scores[category] += 1
 
     hint = INSTITUTION_CATEGORY_HINTS.get(release.institution)
     if hint:
-        scores[hint] = scores.get(hint, 0) + 1
+        # 발행 부처는 범용 본문 단어보다 강한 신호다. 다만 명확한 기술 키워드가
+        # 있는 산업부 자료처럼 주제 자체가 다른 경우에는 키워드 점수가 역전할 수 있다.
+        scores[hint] = scores.get(hint, 0) + 6
+
+    # 경제·조달 문서에 흔한 '지원/신청' 때문에 생활로 밀리는 것을 방지한다.
+    policy_guard = ("기업", "산업", "보조금", "수출", "무역", "조달", "나라장터", "입찰", "공공계약")
+    if any(marker in text for marker in policy_guard):
+        scores["정책"] += 5
 
     political_markers = ("선거", "투표", "당선", "공약", "정당", "후보자", "정치")
     if scores["정치"] >= 3 and any(marker in text for marker in political_markers):
         return "정치"
-    if scores["기술"] >= 3:
-        return "기술"
-    if scores["핫이슈"] >= 3:
-        return "핫이슈"
-    if scores["생활"] >= 3:
-        return "생활"
-    return max(scores, key=scores.get) if max(scores.values()) > 0 else "정책"
+    best = max(scores, key=scores.get)
+    # 근거가 약하면 생활로 보내지 않고 공공 발표의 안전한 기본값인 정책을 쓴다.
+    if scores[best] < 3:
+        return "정책"
+    return best
 
 
 def search_cover_image(

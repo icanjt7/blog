@@ -1,0 +1,13 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY pyproject.toml README.md ./
+COPY blog_agent ./blog_agent
+
+RUN pip install --no-cache-dir -e .
+
+ENV PORT=8000
+EXPOSE 8000
+
+CMD ["python", "-m", "blog_agent.toss_webhook"]

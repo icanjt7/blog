@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+from html import escape
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -131,9 +132,7 @@ class NaraBidClient:
 def render_bid_digest(notices: list[BidNotice], *, generated_at: datetime | None = None) -> str:
     now = generated_at or datetime.now()
     title = f"{now:%Y-%m-%d} 나라장터 입찰공고 {len(notices)}건"
-    rows = "\n".join(_table_row(index, notice) for index, notice in enumerate(notices, start=1))
-    if not rows:
-        rows = "| - | - | 조회된 공고가 없습니다. | - | - | - | - |\n"
+    cards = _bid_cards(notices, now)
 
     return f"""---
 title: "{title}"
@@ -149,11 +148,9 @@ author: "조달청"
 
 조달청 나라장터 입찰공고정보서비스 공개 데이터를 기준으로 최근 입찰공고를 모았습니다. 실제 참가 여부, 제출서류, 입찰참가자격, 기초금액은 반드시 나라장터 원문 공고에서 다시 확인해야 합니다.
 
-## 오늘 확인할 공고
+## 어떤 공고가 곧 마감되나요?
 
-| 번호 | 구분 | 공고명 | 공고기관 | 수요기관 | 마감일시 | 계약방법 |
-|---:|---|---|---|---|---|---|
-{rows}
+{cards}
 
 ## 확인할 점
 
@@ -179,9 +176,7 @@ def render_service_digest(notices: list[BidNotice], *, generated_at: datetime | 
     trend_rows = "\n".join(_trend_row(label, grouped) for label, grouped in _service_groups(notices).items())
     if not trend_rows:
         trend_rows = "| - | - | - |\n"
-    table_rows = "\n".join(_service_table_row(index, notice) for index, notice in enumerate(notices, start=1))
-    if not table_rows:
-        table_rows = "| - | - | 조회된 공고가 없습니다. | - | - | - |\n"
+    cards = _bid_cards(notices, now)
 
     return f"""---
 title: "{title}"
@@ -212,11 +207,9 @@ author: "조달청"
 |---|---:|---|
 {trend_rows}
 
-## 전체 20건
+## 전체 공고의 마감일과 추정금액은?
 
-| 번호 | 유형 | 공고명 | 수요기관 | 마감일시 | 계약방법 |
-|---:|---|---|---|---|---|
-{table_rows}
+{cards}
 
 ## 공통 확인사항
 
@@ -270,6 +263,69 @@ def _pick(item: dict, *names: str) -> str:
 
 def _sort_date(value: str) -> str:
     return value or "9999"
+
+
+def _parse_deadline(value: str) -> datetime | None:
+    cleaned = re.sub(r"[^0-9]", "", value or "")
+    for length, fmt in ((12, "%Y%m%d%H%M"), (8, "%Y%m%d")):
+        if len(cleaned) >= length:
+            try:
+                return datetime.strptime(cleaned[:length], fmt)
+            except ValueError:
+                continue
+    return None
+
+
+def _deadline_label(value: str, now: datetime) -> tuple[str, str]:
+    deadline = _parse_deadline(value)
+    if not deadline:
+        return "마감일 확인", ""
+    days = (deadline.date() - now.date()).days
+    if days < 0:
+        label = "마감"
+    elif days == 0:
+        label = "오늘 마감"
+    else:
+        label = f"D-{days}"
+    return label, deadline.isoformat(timespec="minutes")
+
+
+def _format_amount(value: str) -> str:
+    if not value:
+        return "공고문 확인"
+    compact = value.replace(",", "").strip()
+    try:
+        return f"{int(float(compact)):,}원"
+    except ValueError:
+        return value
+
+
+def _bid_cards(notices: list[BidNotice], now: datetime) -> str:
+    if not notices:
+        return '<div class="bid-card-grid"><p class="bid-empty">조회된 공고가 없습니다.</p></div>'
+    cards: list[str] = []
+    for notice in notices:
+        label, iso_deadline = _deadline_label(notice.bid_close_at, now)
+        deadline_attr = f' data-deadline="{escape(iso_deadline, quote=True)}"' if iso_deadline else ""
+        title = escape(notice.title or "공고명 없음")
+        title_html = (
+            f'<a href="{escape(notice.detail_url, quote=True)}" target="_blank" '
+            f'rel="noopener noreferrer nofollow">{title}<span aria-hidden="true"> ↗</span></a>'
+            if notice.detail_url else title
+        )
+        cards.append(
+            '<article class="bid-card">'
+            f'<div class="bid-card-title"><span class="bid-type">{escape(notice.work_type)}</span>'
+            f'<h3>{title_html}</h3></div>'
+            '<dl>'
+            f'<div><dt>수요기관</dt><dd>{escape(notice.demand_inst or notice.notice_inst or "-")}</dd></div>'
+            f'<div><dt>추정금액</dt><dd>{escape(_format_amount(notice.budget_amount))}</dd></div>'
+            f'<div><dt>마감일시</dt><dd>{escape(notice.bid_close_at or "공고문 확인")} '
+            f'<span class="deadline-badge"{deadline_attr}>{label}</span></dd></div>'
+            f'<div><dt>링크</dt><dd>{title_html}</dd></div>'
+            '</dl></article>'
+        )
+    return '<div class="bid-card-grid">' + "".join(cards) + "</div>"
 
 
 def _table_row(index: int, notice: BidNotice) -> str:

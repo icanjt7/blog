@@ -29,6 +29,11 @@ PERSONAS = {
         "투자 권유처럼 들리지 않도록 사실과 판단을 분리하고, "
         "독자가 스스로 결정할 수 있도록 확인 경로를 안내합니다."
     ),
+    "환경": (
+        "당신은 기후·재난·생활안전 정책을 공식 자료 중심으로 설명하는 공공정보 에디터입니다. "
+        "위험을 과장하지 않고 적용 지역, 시행 시점, 행동 요령과 담당 기관을 분명히 구분합니다. "
+        "예보·계획·발령·사고 결과처럼 성격이 다른 정보를 섞지 않습니다."
+    ),
     "정치": (
         "당신은 선거와 의회 정보를 중립적으로 정리하는 공공정보 큐레이터입니다. "
         "특정 후보나 정당을 지지하거나 비판하지 않고, 공식 자료의 확인 경로와 "
@@ -193,6 +198,9 @@ class WriterAgent:
 """
         hook_style = HOOK_STYLES[hash(topic.keyword) % len(HOOK_STYLES)]
         persona = PERSONAS[topic.category]
+        system_prompt = """당신은 검색 의도를 먼저 해결하는 한국어 정보 에디터입니다.
+공식 출처에서 확인되는 사실만 사용하고, 출처에 없는 금액·기간·대상을 추측하지 않습니다.
+'발표 개요', '배경과 의미', '원문에서 함께 볼 부분', '맥락 짚기'처럼 반복되는 AI식 섹션명과 메타 설명을 쓰지 않습니다."""
         prompt = f"""[페르소나]
 {persona}
 
@@ -220,6 +228,14 @@ class WriterAgent:
 - "A사/B사/C사", "제품 A", "가상의 모델"처럼 실제 출처를 확인할 수 없는 익명 비교표를 만들지 않는다.
 - 핵심 키워드 "{topic.keyword}"는 4~7회만 자연스럽게 쓴다.
 - 본문 1,400~1,800자. 표 1개 이상 포함.
+- 도입 한 문장 바로 다음에는 아래 형식의 3줄 핵심 요약을 둔다. 원문에 값이 없으면 만들지 말고 '공식 원문 확인'이라고 쓴다.
+  > **대상:** ...
+  > **지원액·규모:** ...
+  > **신청·적용 기간:** ...
+- H2/H3는 검색자가 묻는 구체적인 질문형 문장으로 서로 다르게 쓴다. 예: '지원 대상과 소득 기준은?', '신청 방법과 필수 서류는?'
+- '발표 개요', '배경과 의미', '원문에서 함께 볼 부분', '맥락 짚기', '핵심 내용', '마무리'를 헤딩으로 쓰지 않는다.
+- 마지막 실무 섹션은 출처의 고유 조건을 반영한 '신청 전 확인 체크리스트' 또는 '자주 묻는 질문' 2개로 구성한다.
+- 출처 링크는 URL 문자열로 노출하지 말고 기관명이 있는 마크다운 링크로만 쓴다. 사이트 렌더러가 공식 출처 버튼으로도 표시한다.
 - 마지막 문단은 독자에게 하나의 행동 권고나 확인 경로로 마무리.
 - 원문을 문장 순서대로 다시 말하는 방식은 금지한다. 반드시 독자가 얻는 판단 기준, 배경 설명, 실제 확인 순서를 추가한다.
 - 참고 출처가 보도자료라면 발표 내용과 독자에게 의미 있는 영향·제한·후속 확인 경로를 분리해서 쓴다.
@@ -229,8 +245,8 @@ class WriterAgent:
 - 체크리스트를 쓰려면 참고 출처에서 확인되는 고유명사, 숫자, 기간, 대상, 기관명, 절차를 최소 5개 이상 넣어 주제별로 다르게 쓴다.
 {tourism_instruction}
 
-[맥락 심화 — 반드시 포함]
-글에 등장하는 인물·작품·기업·제도가 있다면 독자가 처음 듣는 사람이라고 가정하고 아래를 설명한다:
+[용어 설명]
+글에 등장하는 인물·작품·기업·제도가 있다면 독자가 처음 듣는 사람이라고 가정하고 필요한 경우에만 짧게 설명한다:
 - 인물: 이름 + 어떤 사람인지(직업·경력·배경) + 왜 지금 주목받는지
 - 작품(영화·책·앱 등): 장르·줄거리 한 줄 + 주요 관계자(감독·저자 등)
 - 기업/브랜드: 어떤 회사인지 + 이번 소식과의 연결점
@@ -257,7 +273,10 @@ BODY:
 """
         response = client.chat.completions.create(
             model=model,
-            messages=[{"role": "user", "content": prompt}],
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt},
+            ],
             temperature=0.85,
             max_tokens=2048,
         )
@@ -276,12 +295,16 @@ BODY:
 
     def _write_fallback(self, topic: Topic) -> Draft:
         if self._has_tourapi_source(topic):
-            return self._write_tourism_fallback(topic)
+            draft = self._write_tourism_fallback(topic)
+            draft.body_markdown = f"{self._summary_callout(topic)}\n\n{draft.body_markdown}"
+            return draft
         if topic.category == "기술" and topic.sources:
-            return self._write_tech_news_fallback(topic)
+            draft = self._write_tech_news_fallback(topic)
+            draft.body_markdown = f"{self._summary_callout(topic)}\n\n{draft.body_markdown}"
+            return draft
         source_lines = "\n".join(f"- [{s.title}]({s.url})" for s in topic.sources)
         frame = self._fallback_frame(topic)
-        body = self._fallback_body(topic, frame, source_lines)
+        body = f"{self._summary_callout(topic)}\n\n{self._fallback_body(topic, frame, source_lines)}"
         return Draft(
             topic=topic,
             title=frame["title"],
@@ -289,6 +312,25 @@ BODY:
             excerpt=frame["excerpt"],
             body_markdown=body,
             tags=self._tags(topic),
+        )
+
+    def _summary_callout(self, topic: Topic) -> str:
+        """LLM 장애 시에도 검색자가 원하는 세 가지 값을 문서 최상단에 둔다."""
+        source_text = " ".join(
+            [topic.title_hint, topic.rationale, *(source.summary for source in topic.sources)]
+        )
+
+        def first(pattern: str) -> str:
+            match = re.search(pattern, source_text, flags=re.I)
+            return match.group(0).strip() if match else "공식 원문 확인"
+
+        target = first(r"(?:대상|지원대상|신청대상)[^.!?\n]{0,70}")
+        amount = first(r"(?:최대\s*)?\d[\d,.]*\s*(?:원|만원|억원|%|개|건|명|곳)[^.!?\n]{0,45}")
+        period = first(r"(?:\d{4}년\s*)?\d{1,2}월\s*\d{1,2}일[^.!?\n]{0,55}|\d{1,2}월부터[^.!?\n]{0,55}")
+        return (
+            "> **대상:** " + target + "\n"
+            ">\n> **지원액·규모:** " + amount + "\n"
+            ">\n> **신청·적용 기간:** " + period
         )
 
     def _fallback_body(self, topic: Topic, frame: dict[str, str], source_lines: str) -> str:
@@ -323,7 +365,7 @@ BODY:
 
 {living["steps"]}
 
-## 마무리
+## 내 상황에는 어떻게 적용해야 하나요?
 
 {living["closing"]}
 
@@ -332,8 +374,8 @@ BODY:
 {source_lines}
 """
 
-        if category in {"정책", "정치"}:
-            return f"""## 이 이슈의 핵심
+        if category in {"정책", "환경", "정치"}:
+            return f"""## 누구에게 어떤 변화가 생기나요?
 
 {source_title}는 제도 변화나 공공 집행 방향을 보여주는 자료입니다. {topic.keyword}를 볼 때는 발표 문장보다 실제 적용 대상, 집행 방식, 후속 조치가 더 중요합니다.
 
@@ -348,7 +390,7 @@ BODY:
 | 영향 | {frame["cost_check"]} |
 | 예외 | {frame["exception_check"]} |
 
-## 독자가 이해해야 할 배경
+## 이 제도는 지금 어느 단계인가요?
 
 {frame["detail_1"]}
 
@@ -356,7 +398,7 @@ BODY:
 
 세금, 체납, 금융, 지원 제도는 같은 단어라도 행정 단계가 다를 수 있습니다. 조사 착수, 제도 발표, 실제 집행, 신청 접수, 사후 점검은 모두 다른 단계입니다. {topic.keyword}도 지금 어느 단계의 소식인지 먼저 구분해야 과하게 해석하지 않습니다.
 
-## 확인 포인트
+## 신청·적용 전에 무엇을 확인해야 하나요?
 
 1. 담당 기관과 발표일을 확인합니다.
 2. 개인, 사업자, 기관 중 누구에게 영향을 주는지 나눕니다.
@@ -364,7 +406,7 @@ BODY:
 4. 금액이나 비율이 있다면 한도와 기간을 함께 확인합니다.
 5. 원문 자료의 후속 링크나 담당 부서를 확인합니다.
 
-## 마무리
+## 공식 안내에서 마지막으로 확인할 것은?
 
 {topic.keyword}는 자극적인 제목보다 적용 범위가 중요합니다. 실제 행동이 필요한지는 원문에서 시행일, 대상, 담당 기관을 확인한 뒤 판단하는 것이 좋습니다.
 

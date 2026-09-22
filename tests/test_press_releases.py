@@ -131,6 +131,35 @@ class PressReleaseImportTest(unittest.TestCase):
         self.assertIn("지원", checks)
         self.assertNotIn("내 상황과 맞는지", checks)
 
+    def test_industry_subsidy_routes_to_policy_instead_of_living(self) -> None:
+        release = MODULE.PressRelease(
+            institution="산업통상부",
+            title="수출 중소기업 보조금 지원사업 신청 공고",
+            date="2026-09-22",
+            url="https://example.go.kr/industry",
+            body_text="기업의 설비 투자와 수출 경쟁력 강화를 위한 보조금 지원 대상과 신청 절차를 안내한다.",
+        )
+
+        self.assertEqual(MODULE.classify_press_category(release), "정책")
+
+    def test_source_and_keywords_route_environment_and_technology(self) -> None:
+        environment = MODULE.PressRelease(
+            "행정안전부", "집중호우 재난안전 대책", "2026-09-22", "https://example.go.kr/safety", "홍수 대비 점검",
+        )
+        technology = MODULE.PressRelease(
+            "개인정보보호위원회", "인공지능 개인정보 보호 연구개발 공고", "2026-09-22", "https://example.go.kr/ai", "소프트웨어 R&D 사업",
+        )
+
+        self.assertEqual(MODULE.classify_press_category(environment), "환경")
+        self.assertEqual(MODULE.classify_press_category(technology), "기술")
+
+    def test_unknown_public_notice_falls_back_to_policy(self) -> None:
+        release = MODULE.PressRelease(
+            "기타기관", "정기 안내", "2026-09-22", "https://example.go.kr/notice", "새 소식을 알립니다.",
+        )
+
+        self.assertEqual(MODULE.classify_press_category(release), "정책")
+
 
 if __name__ == "__main__":
     unittest.main()

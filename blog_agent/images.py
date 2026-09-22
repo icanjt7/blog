@@ -135,6 +135,7 @@ CATEGORY_VISUALS = {
     "핫이슈": "korean city news editorial",
     "기술": "technology innovation circuit abstract",
     "정책": "finance policy documents",
+    "환경": "climate environment safety public information",
     "정치": "neutral election civic public office",
     "스포츠": "football stadium player match action",
     "생활": "everyday lifestyle public information",
