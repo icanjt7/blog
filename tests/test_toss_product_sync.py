@@ -170,6 +170,32 @@ class TossProductSyncTest(unittest.TestCase):
         self.assertIn("briefwave-home-products", strip)
         self.assertIn("Math.random()", strip)
 
+    def test_bottom_recommend_widget_uses_distinct_rotation_and_ctr_copy(self) -> None:
+        products = tuple(
+            ProductLink(
+                name=f"주간 상품 {index}",
+                url=f"https://toss.im/_m/weekly-{index}",
+                keywords=("생활",),
+                taca_item_id=index,
+                source="openapi",
+            )
+            for index in range(1, 9)
+        )
+        builder = StaticSiteBuilder(Path("posts"), Path("public"), "테스트", "테스트")
+
+        with patch("blog_agent.site.PRODUCT_LINKS", products):
+            widget = builder._bottom_recommend_widget_html(limit=4)
+
+        self.assertIn('class="bottom-recommend-widget"', widget)
+        self.assertIn("놓치기 아쉬운 주간 베스트 핫딜", widget)
+        self.assertIn("끝까지 읽어주신 독자님을 위해", widget)
+        self.assertIn("[최저가 확인] 혜택 및 후기 보기 →", widget)
+        self.assertEqual(widget.count('class="bottom-recommend-card"'), 8)
+        self.assertIn("무료배송", widget)
+        self.assertIn("주간 베스트", widget)
+        self.assertIn("topKeys", widget)
+        self.assertIn("briefwave-bottom-products", widget)
+
 
 if __name__ == "__main__":
     unittest.main()

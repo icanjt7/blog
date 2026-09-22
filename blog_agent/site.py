@@ -1501,11 +1501,88 @@ class StaticSiteBuilder:
             '})();</script>'
         )
 
+    def _bottom_recommend_widget_html(self, limit: int = 4) -> str:
+        if not PRODUCT_LINKS:
+            raise RuntimeError("토스쇼핑 상품 풀이 비어 있어 하단 추천 영역을 만들 수 없습니다.")
+        display_count = max(1, min(limit, len(PRODUCT_LINKS)))
+        cards: list[str] = []
+        for product in PRODUCT_LINKS:
+            if product.image_url:
+                image_html = (
+                    '<span class="bottom-recommend-media">'
+                    f'<img class="bottom-recommend-image" src="{html.escape(product.image_url)}" '
+                    f'alt="{html.escape(product.name)} 상품 이미지" width="420" height="280" loading="lazy" decoding="async" '
+                    'referrerpolicy="no-referrer">'
+                    '<span class="bottom-recommend-shipping">무료배송</span>'
+                    '</span>'
+                )
+            else:
+                image_html = (
+                    '<span class="bottom-recommend-media">'
+                    '<span class="bottom-recommend-image-placeholder" aria-hidden="true">🛍️</span>'
+                    '<span class="bottom-recommend-shipping">무료배송</span>'
+                    '</span>'
+                )
+            price_html = ""
+            if product.display_price:
+                discount = f'<strong>{product.discount_rate}%</strong> ' if product.discount_rate else ""
+                price_html = (
+                    '<span class="bottom-recommend-price">'
+                    f'{discount}{product.display_price:,}원'
+                    '</span>'
+                )
+            rating_html = ""
+            if product.review_score and product.review_count:
+                rating_html = (
+                    '<span class="bottom-recommend-rating">'
+                    f'★ {product.review_score:.1f} · 후기 {product.review_count:,}'
+                    '</span>'
+                )
+            cards.append(
+                f'<a class="bottom-recommend-card" data-bottom-product-key="{html.escape(product.cache_key, quote=True)}" '
+                f'href="{html.escape(product.url)}" hidden '
+                'rel="sponsored nofollow noopener noreferrer" target="_blank">'
+                f'{image_html}<span class="bottom-recommend-body">'
+                '<span class="bottom-recommend-badge">주간 베스트</span>'
+                f'<span class="bottom-recommend-name">{html.escape(product.name)}</span>'
+                f'<span class="bottom-recommend-meta">{price_html}{rating_html}</span>'
+                '<span class="bottom-recommend-cta">[최저가 확인] 혜택 및 후기 보기 →</span>'
+                '</span></a>'
+            )
+        return (
+            '<section class="bottom-recommend-widget" aria-labelledby="bottom-recommend-title">'
+            '<div class="bottom-recommend-heading">'
+            '<p class="bottom-recommend-kicker">WEEKLY BEST</p>'
+            '<h2 id="bottom-recommend-title">💡 [브리핑웨이브 실속 추천] 놓치기 아쉬운 주간 베스트 핫딜</h2>'
+            '<p>끝까지 읽어주신 독자님을 위해, 이번 주 가장 만족도가 높았던 생활비 절약 아이템을 준비했습니다.</p>'
+            '</div>'
+            f'<div class="bottom-recommend-grid" data-bottom-products data-display-count="{display_count}">'
+            f'{"".join(cards)}</div>'
+            '<p class="bottom-recommend-disclosure">상품 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>'
+            '</section>'
+            '<script>(function(){'
+            'var grid=document.querySelector("[data-bottom-products]");if(!grid)return;'
+            'var cards=Array.prototype.slice.call(grid.querySelectorAll(".bottom-recommend-card"));'
+            'var count=Math.min(parseInt(grid.getAttribute("data-display-count"),10)||4,cards.length);'
+            'var topKeys=new Set(Array.prototype.slice.call(document.querySelectorAll("[data-home-products] .home-product-card:not([hidden])"))'
+            '.map(function(card){return card.dataset.productKey;}));'
+            'var candidates=cards.filter(function(card){return !topKeys.has(card.dataset.bottomProductKey);});'
+            'for(var i=candidates.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));'
+            'var swap=candidates[i];candidates[i]=candidates[j];candidates[j]=swap;}'
+            'var previous=[];try{previous=(sessionStorage.getItem("briefwave-bottom-products")||"").split("|").filter(Boolean);}catch(error){}'
+            'var previousSet=new Set(previous);var fresh=candidates.filter(function(card){return !previousSet.has(card.dataset.bottomProductKey);});'
+            'var selected=fresh.slice(0,count);if(selected.length<count){selected=selected.concat(candidates.filter(function(card){return selected.indexOf(card)<0;}).slice(0,count-selected.length));}'
+            'selected.forEach(function(card){card.hidden=false;grid.appendChild(card);});'
+            'try{sessionStorage.setItem("briefwave-bottom-products",selected.map(function(card){return card.dataset.bottomProductKey;}).join("|"));}catch(error){}'
+            '})();</script>'
+        )
+
     def _write_index(self, posts: list[Post]) -> None:
         per_page = 9
         total = len(posts)
         notice_strip = self._home_notice_strip_html(posts)
         product_strip = self._home_product_strip_html()
+        bottom_recommend = self._bottom_recommend_widget_html()
         if total == 0:
             content = f"""
             <section class="hero">
@@ -1545,6 +1622,7 @@ class StaticSiteBuilder:
             {product_strip if page == 1 else ""}
             <section class="grid">{cards}</section>
             {nav_html}
+            {bottom_recommend if page == 1 else ""}
             """
 
             filename = "index.html" if page == 1 else f"page{page}.html"
@@ -3173,6 +3251,64 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .home-product-rating { color: var(--muted); }
 .home-product-cta { color: #1769d2; font-size: .74rem; font-weight: 800; }
 .home-products-disclosure { margin: 5px 0 0; color: var(--muted); font-size: .68rem; line-height: 1.45; }
+.bottom-recommend-widget {
+  margin: 34px 0 6px;
+  padding: 24px;
+  overflow: hidden;
+  border: 1px solid #cfe0fb;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #f7fbff 0%, #eef5ff 54%, #fff 100%);
+  box-shadow: 0 12px 32px rgba(28, 87, 160, .1);
+}
+.bottom-recommend-heading { max-width: 760px; margin-bottom: 18px; }
+.bottom-recommend-kicker { margin: 0 0 6px; color: #1769d2; font-size: .7rem; font-weight: 900; letter-spacing: .12em; }
+.bottom-recommend-heading h2 { margin: 0 0 7px; color: #16365f; font-size: clamp(1.1rem, 2.2vw, 1.45rem); line-height: 1.4; word-break: keep-all; }
+.bottom-recommend-heading > p:last-child { margin: 0; color: #52657c; font-size: .86rem; line-height: 1.6; word-break: keep-all; }
+.bottom-recommend-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.bottom-recommend-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--ink);
+  border: 1px solid #d9e3f1;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 5px 16px rgba(35, 67, 109, .08);
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.bottom-recommend-card[hidden] { display: none; }
+.bottom-recommend-card:hover { transform: translateY(-3px); border-color: #3182f6; box-shadow: 0 12px 24px rgba(35, 96, 173, .16); text-decoration: none; }
+.bottom-recommend-media { position: relative; display: block; padding: 10px 10px 0; }
+.bottom-recommend-image,
+.bottom-recommend-image-placeholder { width: 100%; aspect-ratio: 3 / 2; border-radius: 10px; background: #f4f7fb; }
+.bottom-recommend-image { display: block; object-fit: contain; }
+.bottom-recommend-image-placeholder { display: grid; place-items: center; color: #64748b; font-size: 2.4rem; }
+.bottom-recommend-shipping { position: absolute; top: 18px; left: 18px; padding: 4px 8px; border-radius: 999px; background: rgba(17, 24, 39, .86); color: #fff; font-size: .66rem; font-weight: 800; backdrop-filter: blur(4px); }
+.bottom-recommend-body { display: flex; min-width: 0; flex: 1; flex-direction: column; gap: 7px; padding: 13px; }
+.bottom-recommend-badge { align-self: flex-start; padding: 3px 8px; border-radius: 999px; background: #fff0df; color: #b45309; font-size: .68rem; font-weight: 900; }
+.bottom-recommend-name { display: -webkit-box; min-height: 2.8em; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; font-size: .9rem; font-weight: 800; line-height: 1.4; word-break: keep-all; }
+.bottom-recommend-meta { display: flex; min-height: 1.35em; align-items: center; flex-wrap: wrap; gap: 4px 8px; font-size: .78rem; }
+.bottom-recommend-price { font-weight: 800; }
+.bottom-recommend-price strong { color: #e5484d; }
+.bottom-recommend-rating { color: var(--muted); }
+.bottom-recommend-cta { display: flex; min-height: 42px; align-items: center; justify-content: center; margin-top: auto; padding: 0 10px; border: 1px solid #1769d2; border-radius: 9px; background: #1769d2; color: #fff; font-size: .76rem; font-weight: 900; text-align: center; transition: transform .18s ease, color .18s ease, background .18s ease; }
+.bottom-recommend-card:hover .bottom-recommend-cta { transform: scale(1.02); background: #fff; color: #1769d2; }
+.bottom-recommend-disclosure { margin: 12px 0 0; color: var(--muted); font-size: .68rem; line-height: 1.5; }
+@media (max-width: 640px) {
+  .bottom-recommend-widget { margin: 26px 12px 4px; padding: 18px 14px; border-radius: 14px; }
+  .bottom-recommend-heading { margin-bottom: 14px; }
+  .bottom-recommend-heading h2 { font-size: 1.08rem; }
+  .bottom-recommend-grid { grid-template-columns: 1fr; gap: 12px; }
+  .bottom-recommend-card { display: grid; grid-template-columns: minmax(112px, 36%) minmax(0, 1fr); }
+  .bottom-recommend-media { padding: 10px 0 10px 10px; }
+  .bottom-recommend-image,
+  .bottom-recommend-image-placeholder { height: 100%; min-height: 138px; aspect-ratio: auto; }
+  .bottom-recommend-shipping { top: 17px; left: 17px; }
+  .bottom-recommend-body { padding: 12px; }
+  .bottom-recommend-cta { min-height: 40px; padding: 6px 8px; font-size: .72rem; line-height: 1.3; }
+}
 .product-search-section { margin: 18px 0 22px; padding: 16px; border: 1px solid rgba(15,118,110,.22); border-radius: 12px; background: #f4faf8; }
 .product-search-section[hidden] { display: none; }
 .product-search-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
