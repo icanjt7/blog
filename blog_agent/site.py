@@ -1484,21 +1484,6 @@ class StaticSiteBuilder:
             f'{"".join(cards)}</div>'
             '<p class="home-products-disclosure">상품 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>'
             '</section>'
-            '<script>(function(){'
-            'var strip=document.querySelector("[data-home-products]");if(!strip)return;'
-            'var cards=Array.prototype.slice.call(strip.querySelectorAll(".home-product-card"));'
-            'var count=Math.min(parseInt(strip.getAttribute("data-display-count"),10)||4,cards.length);'
-            'for(var i=cards.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));'
-            'var swap=cards[i];cards[i]=cards[j];cards[j]=swap;}'
-            'var previous=[];try{previous=(sessionStorage.getItem("briefwave-home-products")||"").split("|").filter(Boolean);}catch(error){}'
-            'var previousSet=new Set(previous);var selected=cards.slice(0,count);'
-            'if(cards.length>count&&previousSet.size&&selected.every(function(card){return previousSet.has(card.dataset.productKey);})){'
-            'var replacement=cards.find(function(card){return !previousSet.has(card.dataset.productKey);});'
-            'if(replacement)selected[count-1]=replacement;}'
-            'var selectedSet=new Set(selected);var ordered=selected.concat(cards.filter(function(card){return !selectedSet.has(card);}));'
-            'ordered.forEach(function(card,index){card.hidden=index>=count;strip.appendChild(card);});'
-            'try{sessionStorage.setItem("briefwave-home-products",selected.map(function(card){return card.dataset.productKey;}).join("|"));}catch(error){}'
-            '})();</script>'
         )
 
     def _bottom_recommend_widget_html(self, limit: int = 4) -> str:
@@ -1561,30 +1546,86 @@ class StaticSiteBuilder:
             f'{"".join(cards)}</div>'
             '<p class="bottom-recommend-disclosure">상품 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>'
             '</section>'
-            '<script>(function(){'
-            'var grid=document.querySelector("[data-bottom-products]");if(!grid)return;'
-            'var cards=Array.prototype.slice.call(grid.querySelectorAll(".bottom-recommend-card"));'
-            'var count=Math.min(parseInt(grid.getAttribute("data-display-count"),10)||4,cards.length);'
-            'cards.forEach(function(card){card.hidden=true;});'
-            'var topKeys=new Set(Array.prototype.slice.call(document.querySelectorAll("[data-home-products] .home-product-card:not([hidden])"))'
-            '.map(function(card){return card.dataset.productKey;}));'
-            'var candidates=cards.filter(function(card){return !topKeys.has(card.dataset.bottomProductKey);});'
-            'for(var i=candidates.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));'
-            'var swap=candidates[i];candidates[i]=candidates[j];candidates[j]=swap;}'
-            'var previous=[];try{previous=(sessionStorage.getItem("briefwave-bottom-products")||"").split("|").filter(Boolean);}catch(error){}'
-            'var previousSet=new Set(previous);var fresh=candidates.filter(function(card){return !previousSet.has(card.dataset.bottomProductKey);});'
-            'var selected=fresh.slice(0,count);if(selected.length<count){selected=selected.concat(candidates.filter(function(card){return selected.indexOf(card)<0;}).slice(0,count-selected.length));}'
-            'selected.forEach(function(card){card.hidden=false;grid.appendChild(card);});'
-            'try{sessionStorage.setItem("briefwave-bottom-products",selected.map(function(card){return card.dataset.bottomProductKey;}).join("|"));}catch(error){}'
-            '})();</script>'
         )
+
+    def _common_product_widgets_html(self) -> tuple[str, str]:
+        """공통 레이아웃에서 사용하는 상단·하단 토스 상품 위젯."""
+        return self._home_product_strip_html(), self._bottom_recommend_widget_html()
+
+    @staticmethod
+    def _toss_product_runtime_script() -> str:
+        """정적·비동기 DOM 모두에서 상품 위젯을 초기화하는 공통 런타임."""
+        return """
+  <script>
+  (function(){
+    function shuffle(cards){
+      for(var i=cards.length-1;i>0;i--){
+        var j=Math.floor(Math.random()*(i+1));
+        var swap=cards[i];cards[i]=cards[j];cards[j]=swap;
+      }
+      return cards;
+    }
+    window.renderTossProducts=function(root){
+      root=root||document;
+      var strips=root.querySelectorAll('[data-home-products]');
+      strips.forEach(function(strip){
+        if(strip.dataset.tossProductsReady==='1')return;
+        var cards=Array.prototype.slice.call(strip.querySelectorAll('.home-product-card'));
+        var count=Math.min(parseInt(strip.getAttribute('data-display-count'),10)||4,cards.length);
+        shuffle(cards);
+        var previous=[];
+        try{previous=(sessionStorage.getItem('briefwave-home-products')||'').split('|').filter(Boolean);}catch(error){}
+        var previousSet=new Set(previous);
+        var selected=cards.slice(0,count);
+        if(cards.length>count&&previousSet.size&&selected.every(function(card){return previousSet.has(card.dataset.productKey);})){
+          var replacement=cards.find(function(card){return !previousSet.has(card.dataset.productKey);});
+          if(replacement)selected[count-1]=replacement;
+        }
+        var selectedSet=new Set(selected);
+        selected.concat(cards.filter(function(card){return !selectedSet.has(card);})).forEach(function(card,index){
+          card.hidden=index>=count;strip.appendChild(card);
+        });
+        strip.dataset.tossProductsReady='1';
+        try{sessionStorage.setItem('briefwave-home-products',selected.map(function(card){return card.dataset.productKey;}).join('|'));}catch(error){}
+      });
+
+      var topKeys=new Set(Array.prototype.slice.call(document.querySelectorAll('[data-home-products] .home-product-card:not([hidden])'))
+        .map(function(card){return card.dataset.productKey;}));
+      var grids=root.querySelectorAll('[data-bottom-products]');
+      grids.forEach(function(grid){
+        if(grid.dataset.tossProductsReady==='1')return;
+        var cards=Array.prototype.slice.call(grid.querySelectorAll('.bottom-recommend-card'));
+        var count=Math.min(parseInt(grid.getAttribute('data-display-count'),10)||4,cards.length);
+        cards.forEach(function(card){card.hidden=true;});
+        var candidates=shuffle(cards.filter(function(card){return !topKeys.has(card.dataset.bottomProductKey);}));
+        var previous=[];
+        try{previous=(sessionStorage.getItem('briefwave-bottom-products')||'').split('|').filter(Boolean);}catch(error){}
+        var previousSet=new Set(previous);
+        var fresh=candidates.filter(function(card){return !previousSet.has(card.dataset.bottomProductKey);});
+        var selected=fresh.slice(0,count);
+        if(selected.length<count){
+          selected=selected.concat(candidates.filter(function(card){return selected.indexOf(card)<0;}).slice(0,count-selected.length));
+        }
+        selected.forEach(function(card){card.hidden=false;grid.appendChild(card);});
+        grid.dataset.tossProductsReady='1';
+        try{sessionStorage.setItem('briefwave-bottom-products',selected.map(function(card){return card.dataset.bottomProductKey;}).join('|'));}catch(error){}
+      });
+    };
+    window.renderTossProducts(document);
+    if(!window.__briefwaveTossEventsBound){
+      window.__briefwaveTossEventsBound=true;
+      window.addEventListener('popstate',function(){window.renderTossProducts(document);});
+      document.addEventListener('briefwave:content-updated',function(event){window.renderTossProducts(event.target||document);});
+    }
+  })();
+  </script>
+        """
 
     def _write_index(self, posts: list[Post]) -> None:
         per_page = 9
         total = len(posts)
         notice_strip = self._home_notice_strip_html(posts)
-        product_strip = self._home_product_strip_html()
-        bottom_recommend = self._bottom_recommend_widget_html()
+        product_strip, bottom_recommend = self._common_product_widgets_html()
         if total == 0:
             content = f"""
             <section class="hero">
@@ -1593,6 +1634,7 @@ class StaticSiteBuilder:
             {notice_strip}
             {product_strip}
             <p class="empty">아직 발행된 글이 없습니다.</p>
+            {bottom_recommend}
             """
             self._write_html(
                 "index.html",
@@ -1621,10 +1663,10 @@ class StaticSiteBuilder:
               {hero_stats}
             </section>
             {notice_strip if page == 1 else ""}
-            {product_strip if page == 1 else ""}
+            {product_strip}
             <section class="grid">{cards}</section>
             {nav_html}
-            {bottom_recommend if page == 1 else ""}
+            {bottom_recommend}
             """
 
             filename = "index.html" if page == 1 else f"page{page}.html"
@@ -2112,6 +2154,7 @@ class StaticSiteBuilder:
             renderSummary(results, products, query, activeCategory);
             renderProducts(products);
             renderResults(results, currentPage);
+            document.dispatchEvent(new CustomEvent('briefwave:content-updated'));
           }
 
           categoryButtons.addEventListener('click', event => {
@@ -2171,6 +2214,8 @@ class StaticSiteBuilder:
         </script>
             '''
         )
+        product_strip, bottom_recommend = self._common_product_widgets_html()
+        content = product_strip + content + bottom_recommend
         self._write_html(
             "search.html",
             f"{self.site_title} 검색",
@@ -2255,7 +2300,7 @@ class StaticSiteBuilder:
                 ordered_categories.append(category)
 
         per_page = 9
-        product_strip = self._home_product_strip_html()
+        product_strip, bottom_recommend = self._common_product_widgets_html()
         for category in ordered_categories:
             all_posts = category_posts.get(category, [])
             total = len(all_posts)
@@ -2275,9 +2320,10 @@ class StaticSiteBuilder:
             <section class="hero">
               <p class="hero-tagline"><strong>{html.escape(category)}</strong>{stats}</p>
             </section>
-            {product_strip if page == 1 else ""}
+            {product_strip}
             <section class="grid">{cards}</section>
             {nav_html}
+            {bottom_recommend}
             """
                 filename = cat_base if page == 1 else f"{cat_base[:-5]}-{page}.html"
                 self._write_html(
@@ -2657,6 +2703,7 @@ class StaticSiteBuilder:
         nav_html = self._nav_html(active, prefix=asset_prefix)
         footer_category_links = self._footer_category_links(asset_prefix)
         language_switcher = self._language_switcher_html()
+        toss_product_runtime = self._toss_product_runtime_script()
         language_codes_json = json.dumps([code for code, _ in LANGUAGE_OPTIONS], ensure_ascii=False)
         language_aliases_json = json.dumps(LANGUAGE_BASE_ALIASES, ensure_ascii=False)
         alternate_link_tags = ""
@@ -2747,6 +2794,7 @@ class StaticSiteBuilder:
       <p>© 2024 BriefWave. All rights reserved.</p>
     </div>
   </footer>
+{toss_product_runtime}
   <script>
   (function(){{
     var q=document.getElementById('header-q'),box=document.getElementById('header-results');

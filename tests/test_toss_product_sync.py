@@ -163,12 +163,16 @@ class TossProductSyncTest(unittest.TestCase):
 
         with patch("blog_agent.site.PRODUCT_LINKS", products):
             strip = builder._home_product_strip_html(limit=4)
+        runtime = builder._toss_product_runtime_script()
 
         self.assertEqual(strip.count('class="home-product-card"'), 8)
         self.assertEqual(strip.count(" hidden rel="), 4)
         self.assertIn('data-display-count="4"', strip)
-        self.assertIn("briefwave-home-products", strip)
-        self.assertIn("Math.random()", strip)
+        self.assertIn("briefwave-home-products", runtime)
+        self.assertIn("Math.random()", runtime)
+        self.assertIn("window.renderTossProducts", runtime)
+        self.assertIn("popstate", runtime)
+        self.assertIn("briefwave:content-updated", runtime)
 
     def test_bottom_recommend_widget_uses_distinct_rotation_and_ctr_copy(self) -> None:
         products = tuple(
@@ -185,6 +189,7 @@ class TossProductSyncTest(unittest.TestCase):
 
         with patch("blog_agent.site.PRODUCT_LINKS", products):
             widget = builder._bottom_recommend_widget_html(limit=4)
+        runtime = builder._toss_product_runtime_script()
 
         self.assertIn('class="bottom-recommend-widget"', widget)
         self.assertIn("놓치기 아쉬운 주간 베스트 핫딜", widget)
@@ -192,11 +197,11 @@ class TossProductSyncTest(unittest.TestCase):
         self.assertIn("[최저가 확인] 혜택 및 후기 보기 →", widget)
         self.assertEqual(widget.count('class="bottom-recommend-card"'), 8)
         self.assertEqual(widget.count(' hidden rel="'), 4)
-        self.assertIn("cards.forEach(function(card){card.hidden=true;});", widget)
+        self.assertIn("cards.forEach(function(card){card.hidden=true;});", runtime)
         self.assertIn("무료배송", widget)
         self.assertIn("주간 베스트", widget)
-        self.assertIn("topKeys", widget)
-        self.assertIn("briefwave-bottom-products", widget)
+        self.assertIn("topKeys", runtime)
+        self.assertIn("briefwave-bottom-products", runtime)
 
 
 if __name__ == "__main__":

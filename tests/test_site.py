@@ -411,6 +411,12 @@ quality_score: 95.0
             self.assertIn('<meta name="robots" content="noindex,follow">', page_two)
             self.assertIn('<meta name="robots" content="noindex,follow">', category_two)
             self.assertIn('<meta name="robots" content="noindex,follow">', search)
+            for rendered_page in (page_two, category_two, search):
+                self.assertIn('class="home-products toss-shopping-home"', rendered_page)
+                self.assertIn('class="bottom-recommend-widget"', rendered_page)
+                self.assertIn("window.renderTossProducts", rendered_page)
+                self.assertIn("briefwave:content-updated", rendered_page)
+            self.assertIn("document.dispatchEvent(new CustomEvent('briefwave:content-updated'))", search)
 
             static_sitemap = (root / "public" / "sitemap-static.xml").read_text(encoding="utf-8")
             post_sitemap = (root / "public" / "sitemap-posts-priority.xml").read_text(encoding="utf-8")
