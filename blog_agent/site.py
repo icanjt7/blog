@@ -1506,7 +1506,7 @@ class StaticSiteBuilder:
             raise RuntimeError("토스쇼핑 상품 풀이 비어 있어 하단 추천 영역을 만들 수 없습니다.")
         display_count = max(1, min(limit, len(PRODUCT_LINKS)))
         cards: list[str] = []
-        for product in PRODUCT_LINKS:
+        for index, product in enumerate(PRODUCT_LINKS):
             if product.image_url:
                 image_html = (
                     '<span class="bottom-recommend-media">'
@@ -1540,7 +1540,8 @@ class StaticSiteBuilder:
                 )
             cards.append(
                 f'<a class="bottom-recommend-card" data-bottom-product-key="{html.escape(product.cache_key, quote=True)}" '
-                f'href="{html.escape(product.url)}" hidden '
+                f'href="{html.escape(product.url)}" '
+                f'{"hidden " if index >= display_count else ""}'
                 'rel="sponsored nofollow noopener noreferrer" target="_blank">'
                 f'{image_html}<span class="bottom-recommend-body">'
                 '<span class="bottom-recommend-badge">주간 베스트</span>'
@@ -1564,6 +1565,7 @@ class StaticSiteBuilder:
             'var grid=document.querySelector("[data-bottom-products]");if(!grid)return;'
             'var cards=Array.prototype.slice.call(grid.querySelectorAll(".bottom-recommend-card"));'
             'var count=Math.min(parseInt(grid.getAttribute("data-display-count"),10)||4,cards.length);'
+            'cards.forEach(function(card){card.hidden=true;});'
             'var topKeys=new Set(Array.prototype.slice.call(document.querySelectorAll("[data-home-products] .home-product-card:not([hidden])"))'
             '.map(function(card){return card.dataset.productKey;}));'
             'var candidates=cards.filter(function(card){return !topKeys.has(card.dataset.bottomProductKey);});'

@@ -191,6 +191,8 @@ class TossProductSyncTest(unittest.TestCase):
         self.assertIn("끝까지 읽어주신 독자님을 위해", widget)
         self.assertIn("[최저가 확인] 혜택 및 후기 보기 →", widget)
         self.assertEqual(widget.count('class="bottom-recommend-card"'), 8)
+        self.assertEqual(widget.count(' hidden rel="'), 4)
+        self.assertIn("cards.forEach(function(card){card.hidden=true;});", widget)
         self.assertIn("무료배송", widget)
         self.assertIn("주간 베스트", widget)
         self.assertIn("topKeys", widget)
