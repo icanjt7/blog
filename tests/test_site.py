@@ -65,6 +65,10 @@ https://[잘못된-주소
         self.assertIn("20% 할인", card)
         self.assertIn("19,900원", card)
         self.assertIn("평점 4.8점 · 후기 123개", card)
+        self.assertIn("가계 부담을 덜어주는 정부 지원 혜택", card)
+        self.assertIn("⚡ 실시간 특가 혜택", card)
+        self.assertIn("무료배송 대상 확인", card)
+        self.assertIn("[최저가 확인] 오늘 한정 특가 및 실시간 혜택 보기", card)
         self.assertNotIn("product-recommendation-image", card)
 
     def test_parse_post_recovers_from_inline_llm_response_labels(self) -> None:
@@ -167,6 +171,34 @@ cover_image: https://example.com/cover.jpg
 
             self.assertEqual(builder._product_link_html(builder._parse_post(policy_path)), "")
             self.assertEqual(builder._product_link_html(builder._parse_post(unrelated_path)), "")
+
+    def test_relevant_policy_product_is_allowed_but_public_bid_is_blocked(self) -> None:
+        energy_product = ProductLink(
+            name="가정용 에너지 절약 멀티탭",
+            url="https://toss.im/_m/energy",
+            keywords=("에너지", "절약", "전기", "멀티탭"),
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            posts_dir = root / "posts"
+            posts_dir.mkdir()
+            policy_path = posts_dir / "energy-policy.md"
+            policy_path.write_text(
+                "---\ntitle: 전기 에너지 절약 지원 혜택\ncategory: 정책\ntags:\n- 에너지\n- 전기\n- 절약\n---\n전기 절약 가구 지원 안내입니다.",
+                encoding="utf-8",
+            )
+            bid_path = posts_dir / "bid.md"
+            bid_path.write_text(
+                "---\ntitle: 공공기관 멀티탭 구매 입찰\ncategory: 정책\ntags:\n- 공공입찰\n- 멀티탭\n---\n나라장터 구매 공고입니다.",
+                encoding="utf-8",
+            )
+            builder = StaticSiteBuilder(posts_dir, root / "public", "테스트", "테스트")
+            with patch("blog_agent.site.PRODUCT_LINKS", (energy_product,)):
+                policy_html = builder._product_link_html(builder._parse_post(policy_path))
+                bid_html = builder._product_link_html(builder._parse_post(bid_path))
+
+        self.assertIn("오늘 한정 특가", policy_html)
+        self.assertEqual(bid_html, "")
 
     def test_frontmatter_split_ignores_markdown_rule_inside_quoted_title(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -422,9 +454,10 @@ quality_score: 95.0
 
             html = (root / "public" / "source-post.html").read_text(encoding="utf-8")
             self.assertNotIn("읽는 기준", html)
-            self.assertIn("읽고 나서 확인할 체크리스트", html)
+            self.assertIn("자주 묻는 질문", html)
+            self.assertEqual(html.count("<dt>"), 2)
             self.assertIn("지원 기기", html)
-            self.assertIn("참고 자료", html)
+            self.assertIn("공식 정보는 어디에서 확인하나요?", html)
             self.assertIn("공식 원문", html)
             self.assertIn("Google Search Central", html)
             self.assertIn("편집 기준", html)

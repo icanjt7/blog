@@ -5,8 +5,8 @@
 - `scripts/import_press_releases.py`: 부처 사전점수와 제목/본문 키워드 가중치, 정책 오분류 방어, 환경 카테고리 및 보도자료용 새 본문 템플릿을 추가했습니다.
 - `blog_agent/models.py`, `blog_agent/trends.py`: 정식 `환경` 카테고리 타입과 기본 주제 시드를 추가했습니다.
 - `blog_agent/retrieval.py`, `blog_agent/images.py`, `scripts/improve_existing_images.py`: 환경 카테고리의 공식 폴백 출처, 이미지 프롬프트, 유지보수 스크립트 허용값을 연결했습니다.
-- `blog_agent/writer.py`, `blog_agent/editor.py`: 3줄 요약 박스, 검색 질문형 헤딩, 주제별 체크리스트/FAQ, AI 상투어 금지를 생성·재편집 프롬프트와 규칙 기반 폴백에 반영했습니다.
-- `blog_agent/site.py`: 정책/행정/공공입찰/복지지원 상품 차단, Jaccard 임계치, 무관 상품 위젯 생략, 홈 공고 카드, 공식 출처 버튼, 입찰 카드/D-Day CSS·JS를 추가했습니다.
+- `blog_agent/writer.py`, `blog_agent/editor.py`: 대상·혜택·일정·기관 4항목 요약 카드, 검색 질문형 헤딩, 주제별 체크리스트/FAQ, AI 상투어 금지를 생성·재편집 프롬프트와 규칙 기반 폴백에 반영했습니다.
+- `blog_agent/site.py`: 행정·공공입찰 상품 차단, Jaccard 임계치, 무관 상품 위젯 생략, 홈 공고 카드, 공식 출처 버튼, 고대비 CTA·혜택 배지·후기 말풍선, 입찰 카드/D-Day CSS·JS를 추가했습니다. 정책·복지 글도 연관도 기준을 통과한 상품만 제한적으로 노출합니다.
 - `blog_agent/narabid.py`: 공고명·수요기관·추정금액·마감일시·링크를 반응형 카드로 출력하고 빌드 시점 D-Day를 계산합니다.
 - `tests/test_press_releases.py`, `tests/test_site.py`, `tests/test_narabid.py`: 산업 보조금 분류, 환경/기술 라우팅, 상품 차단·무관도 폴백, 출처 배지, 반응형 입찰 카드와 D-Day 회귀 테스트를 추가했습니다.
 

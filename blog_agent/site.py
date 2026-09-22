@@ -821,7 +821,7 @@ class StaticSiteBuilder:
         # 다국어 독자 경험은 상단 번역 선택기로 제공하고, 검색 색인용 다국어 포스트는
         # 전체 본문 번역 품질을 확보한 뒤 별도 생성하는 편이 안전하다.
 
-    _PRODUCT_BLOCKED_TOPICS = {"정책", "행정", "공공입찰", "복지지원", "정치", "환경"}
+    _PRODUCT_BLOCKED_TOPICS = {"행정", "공공입찰", "나라장터", "입찰공고", "공공조달", "정치"}
     _PRODUCT_GENERIC_TOKENS = {
         "생활", "건강", "상품", "추천", "정보", "지원", "신청", "관련", "오늘", "사용", "위한",
     }
@@ -829,7 +829,7 @@ class StaticSiteBuilder:
 
     def _select_products(self, post: Post, limit: int = 5) -> list[ProductLink]:
         article_topics = {post.category, *(str(tag).strip() for tag in post.tags)}
-        if article_topics & self._PRODUCT_BLOCKED_TOPICS or self._is_government_post(post):
+        if article_topics & self._PRODUCT_BLOCKED_TOPICS:
             return []
 
         searchable = " ".join((post.title, " ".join(post.tags), post.excerpt)).lower()
@@ -924,17 +924,21 @@ class StaticSiteBuilder:
             )
         reviews_html = self._product_reviews_html(product)
         return f"""
+          <p class="product-bridge-copy">📌 가계 부담을 덜어주는 정부 지원 혜택과 더불어, 일상 지출을 줄일 수 있는 오늘의 실속 특가도 함께 확인해 보세요.</p>
           <aside class="product-recommendation" aria-label="추천 상품">
             {image_html}
             <div class="product-recommendation-body">
-              <p class="product-recommendation-label">이 글과 함께 살펴볼 상품</p>
+              <p class="product-recommendation-label">💡 [알뜰 생활 팁] 가계 부담 줄이는 실속 가성비 핫딜</p>
+              <div class="product-benefit-badges" aria-label="상품 혜택 안내">
+                <span>⚡ 실시간 특가 혜택</span><span>무료배송 대상 확인</span>
+              </div>
               <p class="product-recommendation-name">{html.escape(product.name)}</p>
               {price_html}
               <p class="product-recommendation-reason">{html.escape(recommendation_reason)}</p>
               <p class="product-recommendation-description">{html.escape(description)}</p>
               <p class="product-recommendation-guide">구성·용량과 현재 가격, 배송 조건을 상세 페이지에서 비교해 보세요.</p>
               <a class="product-recommendation-link" href="{html.escape(product.url)}"
-                 rel="sponsored nofollow noopener" target="_blank">현재 가격·상품 정보 확인하기 <span aria-hidden="true">→</span></a>
+                 rel="sponsored nofollow noopener noreferrer" target="_blank">[최저가 확인] 오늘 한정 특가 및 실시간 혜택 보기 <span aria-hidden="true">→</span></a>
               {reviews_html}
               <p class="product-recommendation-disclosure">이 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>
             </div>
@@ -1252,62 +1256,46 @@ class StaticSiteBuilder:
         )
         return f"""
           <section class="source-box" aria-label="참고 자료">
-            <h2>참고 자료</h2>
-            <p>본문은 아래 원문과 공개 자료를 기준으로 편집했습니다. 날짜, 신청 조건, 운영 여부처럼 바뀔 수 있는 정보는 원문에서 다시 확인하세요.</p>
+            <h2>공식 정보는 어디에서 확인하나요?</h2>
             <div class="official-source-actions">{items}</div>
           </section>
         """
 
     def _reader_context_html(self, post: Post) -> str:
         primary_tag = self._primary_context_tag(post)
-        source_count = len(self._enriched_source_links(post))
-        source_note = (
-            f"본문은 원문과 보조 참고 자료 {source_count}개를 대조해 읽을 수 있게 정리했습니다."
-            if source_count
-            else "본문에 원문 링크가 적은 글이므로 최신 조건은 공식 안내에서 한 번 더 확인하는 편이 좋습니다."
-        )
         if self._is_government_post(post) or post.category in {"정책", "정치"}:
-            lead = f"{primary_tag} 관련 발표는 제목의 결론보다 대상, 시행 시점, 담당 기관의 후속 안내를 함께 봐야 맥락이 분명해집니다."
-            points = [
-                "발표일과 실제 적용일이 다를 수 있어 날짜 표현을 따로 봅니다.",
-                "개인, 사업자, 기관 중 누구에게 직접 영향을 주는 내용인지 구분합니다.",
-                "신청, 단속, 지원, 설명자료 중 어느 단계의 소식인지 확인합니다.",
+            faq = [
+                (f"{primary_tag} 지원·적용 대상은 어디서 확인하나요?", "본문의 소득·지역·연령·사업자 조건을 먼저 확인한 뒤, 담당 기관의 공식 공고에서 제외 대상과 중복 지원 제한을 확인하세요."),
+                ("신청처와 마감일은 어떻게 확인하나요?", "아래 공식 출처 버튼에서 접수 시작·마감 시각, 온라인·방문 신청 여부와 필수 서류를 확인하세요."),
             ]
         elif post.category == "기술":
-            lead = f"{primary_tag} 이슈는 새 기능 자체보다 실제 사용자에게 달라지는 조건을 같이 볼 때 판단하기 쉽습니다."
-            points = [
-                "지원 기기, 지역, 요금제, 출시 시점처럼 제한 조건을 먼저 확인합니다.",
-                "회사 발표와 실제 사용 후기를 구분합니다.",
-                "보안, 개인정보, 호환성처럼 나중에 비용이 될 수 있는 항목을 따로 봅니다.",
+            faq = [
+                (f"{primary_tag}는 누가 언제부터 이용할 수 있나요?", "지원 기기·지역·요금제·출시 시점을 제품 또는 기관의 공식 안내에서 확인하세요."),
+                ("도입 전에 어떤 조건을 비교해야 하나요?", "가격뿐 아니라 개인정보 처리, 보안 업데이트, 기존 서비스와의 호환 조건을 함께 비교하세요."),
             ]
         elif post.category in {"생활", "핫이슈"}:
-            lead = f"{primary_tag} 정보는 바로 따라 하기보다 내 상황에 맞는 조건인지 먼저 걸러 보면 시행착오를 줄일 수 있습니다."
-            points = [
-                "신청·방문·구매 전에 필요한 준비물과 예외 조건을 확인합니다.",
-                "가격, 운영시간, 대상 조건처럼 바뀌기 쉬운 정보는 최신 안내를 다시 봅니다.",
-                "직접 경험담과 공개 자료 기반 안내를 구분해서 읽습니다.",
+            faq = [
+                (f"{primary_tag}를 이용하기 전에 무엇을 준비해야 하나요?", "본문에 나온 예약·신청·방문 조건과 준비물, 이용 제외 조건을 먼저 확인하세요."),
+                ("가격이나 운영시간은 어디서 다시 확인하나요?", "방문 또는 구매 직전에 운영 기관의 공식 페이지에서 최신 가격, 휴무일과 이용 시간을 확인하세요."),
             ]
         elif post.category == "스포츠":
-            lead = f"{primary_tag} 글은 전망과 확정 정보를 나눠 읽어야 경기 전 판단이 흔들리지 않습니다."
-            points = [
-                "일정, 명단, 기록처럼 확정된 정보와 해석을 구분합니다.",
-                "현지 시간, 부상, 징계, 이동 거리 같은 변수를 함께 봅니다.",
-                "대회 규정이나 조 편성은 공식 발표 기준으로 다시 확인합니다.",
+            faq = [
+                (f"{primary_tag} 일정과 출전 명단은 확정됐나요?", "경기 직전 공식 대회 페이지에서 현지 시각, 최종 명단과 부상·징계 여부를 확인하세요."),
+                ("전망을 볼 때 함께 확인할 변수는 무엇인가요?", "최근 기록과 함께 개최지 이동 거리, 휴식일, 대회 규정을 비교하면 판단에 도움이 됩니다."),
             ]
         else:
-            lead = f"{primary_tag} 관련 글은 사실, 해석, 다음 확인 경로를 나눠 읽으면 더 안전합니다."
-            points = [
-                "본문의 핵심 주장과 근거를 따로 확인합니다.",
-                "날짜와 출처가 있는 정보부터 우선해서 봅니다.",
-                "내 상황에 바로 적용되는 내용인지 한 번 더 걸러 봅니다.",
+            faq = [
+                (f"{primary_tag}의 핵심 조건은 무엇인가요?", "본문의 날짜·대상·수치와 예외 조건을 먼저 확인하고 내 상황에 적용되는지 비교하세요."),
+                ("추가 변경 사항은 어디서 확인하나요?", "아래 공식 출처 버튼에서 후속 공지와 최신 운영 조건을 확인하세요."),
             ]
-        items = "\n".join(f"<li>{html.escape(point)}</li>" for point in points)
+        items = "\n".join(
+            f"<div><dt>{html.escape(question)}</dt><dd>{html.escape(answer)}</dd></div>"
+            for question, answer in faq
+        )
         return f"""
-          <section class="reader-context" aria-label="확인 체크리스트">
-            <h2>읽고 나서 확인할 체크리스트</h2>
-            <p>{html.escape(lead)}</p>
-            <ul>{items}</ul>
-            <p class="source-note">{html.escape(source_note)}</p>
+          <section class="reader-context" aria-label="자주 묻는 질문">
+            <h2>자주 묻는 질문</h2>
+            <dl class="reader-faq">{items}</dl>
           </section>
         """
 
@@ -3270,10 +3258,10 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   border-radius: 8px;
   padding: 16px 18px;
 }
-.reader-context .source-note {
-  margin-top: 10px;
-  font-size: 0.84rem;
-}
+.reader-faq { display: grid; gap: 10px; margin: 0; }
+.reader-faq > div { padding: 12px 14px; border-radius: 8px; background: #fff; }
+.reader-faq dt { color: var(--ink); font-size: .92rem; font-weight: 800; }
+.reader-faq dd { margin: 5px 0 0; color: var(--muted); font-size: .86rem; line-height: 1.6; }
 .official-source-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .official-source-badge { display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px; border: 1px solid rgba(15,118,110,.3); border-radius: 8px; background: #f4faf8; color: var(--ink); font-size: .86rem; font-weight: 650; }
 .official-source-badge:hover { text-decoration: none; border-color: var(--accent); }
@@ -3513,6 +3501,16 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .content th { background: #ece7da; }
 
 /* ── featured product ── */
+.product-bridge-copy {
+  margin: 28px 0 10px;
+  padding: 13px 15px;
+  border-left: 4px solid #f59e0b;
+  border-radius: 0 8px 8px 0;
+  background: #fff8e7;
+  color: #6b4608;
+  font-size: .88rem;
+  line-height: 1.65;
+}
 .product-recommendation {
   display: flex;
   flex-direction: column;
@@ -3545,6 +3543,8 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   font-weight: 800;
   letter-spacing: .04em;
 }
+.product-benefit-badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.product-benefit-badges span { display: inline-flex; padding: 4px 8px; border: 1px dashed #dc2626; border-radius: 5px; background: #fff7ed; color: #b91c1c; font-size: .72rem; font-weight: 800; }
 .product-recommendation-name {
   margin: 0 0 8px;
   color: var(--ink);
@@ -3581,17 +3581,20 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 40px;
-  padding: 0 15px;
+  min-height: 48px;
+  width: 100%;
+  padding: 10px 16px;
   border-radius: 8px;
-  background: var(--accent);
+  border: 2px solid #7f1d1d;
+  background: linear-gradient(135deg, #dc2626, #991b1b);
+  box-shadow: 0 7px 16px rgba(153,27,27,.2);
   color: #fff;
   font-size: .9rem;
   font-weight: 750;
 }
 .product-recommendation-link span { margin-left: 5px; transition: transform .18s; }
 .product-recommendation-link:hover span { transform: translateX(3px); }
-.product-recommendation-link:hover { color: #fff; text-decoration: none; filter: brightness(.94); }
+.product-recommendation-link:hover { color: #fff; text-decoration: none; filter: brightness(1.05); transform: translateY(-1px); }
 .product-recommendation-disclosure {
   margin: 11px 0 0;
   color: var(--muted);
@@ -3608,11 +3611,11 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .product-user-reviews-title { margin: 0; color: var(--ink); font-size: .9rem; font-weight: 800; }
 .product-user-reviews-summary { margin: 3px 0 9px; color: var(--accent); font-size: .8rem; font-weight: 700; }
 .product-user-reviews ul { margin: 0; padding: 0; list-style: none; }
-.product-user-review { padding: 8px 0; border-top: 1px solid var(--line); font-size: .8rem; line-height: 1.5; }
-.product-user-review:first-child { border-top: 0; }
-.product-user-review-rating { margin-right: 7px; color: #b45309; font-weight: 800; }
+.product-user-review { position: relative; margin: 8px 0 0; padding: 10px 12px; border: 1px solid #f1dfb5; border-radius: 10px; background: #fffaf0; font-size: .8rem; line-height: 1.55; }
+.product-user-review::after { content: ""; position: absolute; left: 18px; bottom: -7px; width: 12px; height: 12px; border-right: 1px solid #f1dfb5; border-bottom: 1px solid #f1dfb5; background: #fffaf0; transform: rotate(45deg); }
+.product-user-review-rating { display: block; margin: 0 0 4px; color: #b45309; font-weight: 800; }
 .product-user-review q { color: var(--ink); }
-.product-user-review-author { margin-left: 7px; color: var(--muted); font-size: .74rem; }
+.product-user-review-author { display: block; margin: 6px 0 0; color: var(--muted); font-size: .74rem; }
 .product-user-reviews-more { display: inline-block; margin-top: 7px; font-size: .78rem; font-weight: 700; }
 .product-user-reviews-note,
 .product-user-reviews-empty { margin: 8px 0 0; color: var(--muted); font-size: .72rem; line-height: 1.5; }
