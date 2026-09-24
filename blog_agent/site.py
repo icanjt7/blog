@@ -8,16 +8,19 @@ import re
 import shutil
 import struct
 import zlib
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
 from pathlib import Path
+from string import Template
 from urllib.parse import quote, urlsplit, urlunsplit
 
 import markdown
 import yaml
 
 from .images import ImageAgent
+from .movie_pipeline import MovieRecord, load_movies
 from .prompts import classify_press_template
 from .product_links import PRODUCT_LINKS, ProductLink
 
@@ -339,6 +342,10 @@ class StaticSiteBuilder:
         categories: list[str] | None = None,
         ga_measurement_id: str | None = None,
         adsense_publisher_id: str | None = None,
+        movie_data_path: Path | None = None,
+        movie_limit: int | None = None,
+        movie_staging: bool = False,
+        movie_cache_dir: Path | None = None,
     ) -> None:
         self.posts_dir = posts_dir
         self.public_dir = public_dir
@@ -348,6 +355,11 @@ class StaticSiteBuilder:
         self.categories = categories or []
         self.ga_measurement_id = ga_measurement_id
         self.adsense_publisher_id = adsense_publisher_id
+        self.movie_data_path = movie_data_path
+        self.movie_limit = movie_limit
+        self.movie_staging = movie_staging
+        self.movie_cache_dir = movie_cache_dir or Path(".cache/movie-pages")
+        self.movie_build_stats = {"rendered": 0, "cached": 0}
         self.site_url = f"https://{self.custom_domain.strip()}" if self.custom_domain else "https://briefwave.kr"
         # Every generated post is public. Do not let a deployment environment
         # variable silently cap listings or remove posts from search/sitemaps.
@@ -371,6 +383,8 @@ class StaticSiteBuilder:
       # generate search index and page
       self._write_search_index(index_posts)
       self._write_product_catalog()
+      if self.movie_data_path:
+        self._write_movie_pages()
       self._write_search_page(posts)
       self._write_global_government_pages(posts)
       self._write_category_pages(index_posts)
@@ -890,7 +904,7 @@ class StaticSiteBuilder:
             return f"{topics} 관련 상품의 실시간 가격과 구매 조건을 토스쇼핑에서 확인할 수 있습니다."
         return "토스쇼핑 인기 상품 풀에서 오늘 확인할 상품을 선정했습니다."
 
-    def _product_link_html(self, post: Post) -> str:
+    def _product_link_html(self, post: Post, asset_prefix: str = "./") -> str:
         products = self._select_products(post)
         product = products[0]
         candidates = [item.cache_key for item in products]
@@ -898,10 +912,191 @@ class StaticSiteBuilder:
         card = self._product_card_html(product, self._product_recommendation_reason(product, post))
         return (
             f'<div class="product-rotation" data-product-rotation="{html.escape(post.slug)}" '
-            'data-product-catalog="./product-catalog.json">'
+            f'data-product-catalog="{html.escape(asset_prefix)}product-catalog.json">'
             f'{self._product_bridge_html(post)}{card}'
             f'<script type="application/json" class="product-rotation-candidates">{candidates_json}</script>'
             '</div>'
+        )
+
+    def _write_movie_pages(self) -> None:
+        """Render validated movie pages with a persistent, content-addressed cache."""
+        assert self.movie_data_path is not None
+        movies = load_movies(
+            self.movie_data_path,
+            staging=self.movie_staging,
+            limit=self.movie_limit,
+        )
+        if self.movie_staging and len(movies) != 10:
+            raise ValueError(f"movie canary must contain exactly 10 pages, got {len(movies)}")
+
+        template_path = Path(__file__).with_name("templates") / "movie-post.html"
+        template_text = template_path.read_text(encoding="utf-8")
+        product_version = "|".join(f"{item.name}:{item.url}" for item in PRODUCT_LINKS)
+        shell_version = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+        build_context = "|".join(
+            (
+                self.site_title,
+                self.site_url,
+                self.ga_measurement_id or "",
+                self.adsense_publisher_id or "",
+                shell_version,
+            )
+        )
+        version = hashlib.sha256((template_text + product_version + build_context).encode("utf-8")).hexdigest()
+        mode = "staging" if self.movie_staging else "production"
+        cache_dir = self.movie_cache_dir / mode
+        cache_dir.mkdir(parents=True, exist_ok=True)
+
+        jobs: list[tuple[MovieRecord, str, Path, Path]] = []
+        for movie in movies:
+            poster_source, poster_name = self._movie_poster_asset(movie)
+            poster_target = self.public_dir / "assets" / "movies" / poster_name
+            poster_target.parent.mkdir(parents=True, exist_ok=True)
+            if not poster_target.exists():
+                shutil.copy2(poster_source, poster_target)
+            filename = f"staging/movies/{movie.slug}.html" if self.movie_staging else f"movies/{movie.slug}.html"
+            cache_path = cache_dir / f"{movie.slug}.html"
+            digest_path = cache_dir / f"{movie.slug}.sha256"
+            digest = hashlib.sha256(f"movie-v2:{version}:{movie.fingerprint}".encode("utf-8")).hexdigest()
+            target = self.public_dir / filename
+            target.parent.mkdir(parents=True, exist_ok=True)
+            if cache_path.exists() and digest_path.exists() and digest_path.read_text().strip() == digest:
+                shutil.copy2(cache_path, target)
+                self.movie_build_stats["cached"] += 1
+            else:
+                jobs.append((movie, filename, cache_path, digest_path))
+
+        workers = max(1, min(self._env_int("MOVIE_BUILD_WORKERS", os.cpu_count() or 4), 12))
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            list(executor.map(lambda job: self._render_movie_job(job, template_text, version), jobs))
+        self.movie_build_stats["rendered"] += len(jobs)
+        self._write_movie_hub(movies)
+
+    @staticmethod
+    def _movie_poster_asset(movie: MovieRecord) -> tuple[Path, str]:
+        poster_source = Path(movie.poster_path)
+        if not poster_source.is_absolute():
+            poster_source = Path.cwd() / poster_source
+        if not poster_source.exists():
+            raise FileNotFoundError(f"movie poster not found: {poster_source}")
+        poster_hash = hashlib.sha256(poster_source.read_bytes()).hexdigest()[:12]
+        return poster_source, f"{poster_hash}-{poster_source.name}"
+
+    def _render_movie_job(
+        self,
+        job: tuple[MovieRecord, str, Path, Path],
+        template_text: str,
+        version: str,
+    ) -> None:
+        movie, filename, cache_path, digest_path = job
+        asset_prefix = "../../" if self.movie_staging else "../"
+        _poster_source, poster_name = self._movie_poster_asset(movie)
+        poster_public_path = f"assets/movies/{poster_name}"
+
+        review_cards = "".join(
+            '<blockquote class="movie-review-card"><p>'
+            f'{html.escape(review)}'
+            '</p><footer>검증된 관람객 리뷰 발췌</footer></blockquote>'
+            for review in movie.reviews[:6]
+        )
+        runtime = (
+            f'<div><dt>상영시간</dt><dd>{movie.runtime_minutes}분</dd></div>'
+            if movie.runtime_minutes else ""
+        )
+        fixture_notice = (
+            '<aside class="movie-fixture-notice" role="note">카나리 배포 검증용 가상 영화 데이터입니다. 검색엔진에 색인되지 않습니다.</aside>'
+            if movie.is_fixture else ""
+        )
+        product_post = Post(
+            title=movie.title,
+            date=datetime.fromisoformat(movie.release_date),
+            category="영화",
+            tags=[*movie.genres, "영화", "리뷰"],
+            slug=f"movie-{movie.slug}",
+            excerpt=movie.synopsis[:160],
+            body_html=f"<p>{html.escape(movie.synopsis)}</p>",
+        )
+        breadcrumb_items = [
+            ("홈", asset_prefix),
+            ("영화", f"{asset_prefix}{'staging/' if self.movie_staging else ''}movies/index.html"),
+            (movie.title, f"{asset_prefix}{filename}"),
+        ]
+        content = Template(template_text).substitute(
+            breadcrumb=self._breadcrumb_html(breadcrumb_items),
+            fixture_notice=fixture_notice,
+            poster_src=f"{asset_prefix}{poster_public_path}",
+            poster_alt=html.escape(movie.poster_alt),
+            release_date=html.escape(movie.release_date),
+            title=html.escape(movie.title),
+            director=html.escape(movie.director),
+            genres=html.escape(", ".join(movie.genres) or "장르 정보 없음"),
+            cast=html.escape(", ".join(movie.cast) or "출연 정보 없음"),
+            runtime=runtime,
+            synopsis=html.escape(movie.synopsis),
+            review_cards=review_cards,
+            spoiler_summary=html.escape(movie.spoiler_summary),
+            image_license=html.escape(movie.image_license),
+            image_source_url=html.escape(movie.image_source_url),
+            product_widget=self._product_link_html(product_post, asset_prefix=asset_prefix),
+        )
+        page_url = self._page_url(filename)
+        movie_schema: dict[str, object] = {
+            "@context": "https://schema.org",
+            "@type": "Movie",
+            "name": movie.title,
+            "description": movie.synopsis,
+            "image": self._absolute_url(poster_public_path),
+            "dateCreated": movie.release_date,
+            "genre": list(movie.genres),
+            "director": {"@type": "Person", "name": movie.director},
+            "actor": [{"@type": "Person", "name": actor} for actor in movie.cast],
+            "inLanguage": "ko-KR",
+        }
+        if movie.runtime_minutes:
+            movie_schema["duration"] = f"PT{movie.runtime_minutes}M"
+        self._write_html(
+            filename,
+            movie.title,
+            content,
+            active="영화",
+            page_url=page_url,
+            description=movie.synopsis[:160],
+            og_image=poster_public_path,
+            og_type="video.movie",
+            robots="noindex,follow" if self.movie_staging else "index,follow,max-image-preview:large",
+            structured_data=[movie_schema],
+            alternate_urls={"ko": page_url, "x-default": page_url},
+            asset_prefix=asset_prefix,
+            monetize=True,
+            og_image_width=800,
+            og_image_height=1200,
+        )
+        shutil.copy2(self.public_dir / filename, cache_path)
+        digest = hashlib.sha256(f"movie-v2:{version}:{movie.fingerprint}".encode()).hexdigest()
+        digest_path.write_text(digest + "\n", encoding="utf-8")
+
+    def _write_movie_hub(self, movies: list[MovieRecord]) -> None:
+        prefix = "../../" if self.movie_staging else "../"
+        filename = "staging/movies/index.html" if self.movie_staging else "movies/index.html"
+        cards = "".join(
+            f'<li><a href="./{html.escape(movie.slug)}.html">{html.escape(movie.title)}</a></li>'
+            for movie in movies
+        )
+        notice = "<p>카나리 품질 검증용 페이지 10건입니다.</p>" if self.movie_staging else ""
+        content = (
+            '<section class="post movie-hub"><nav class="breadcrumb" aria-label="탐색 경로"><ol>'
+            f'<li><a href="{prefix}">홈</a></li><li><span aria-current="page">영화</span></li></ol></nav>'
+            f'<h1>영화 포스팅</h1>{notice}<ul>{cards}</ul></section>'
+        )
+        url = self._page_url(filename)
+        self._write_html(
+            filename,
+            "영화 포스팅",
+            content,
+            page_url=url,
+            robots="noindex,follow" if self.movie_staging else "index,follow",
+            alternate_urls={"ko": url, "x-default": url},
+            asset_prefix=prefix,
         )
 
     @staticmethod
@@ -2581,6 +2776,8 @@ class StaticSiteBuilder:
         alternate_urls: dict[str, str] | None = None,
         asset_prefix: str = "./",
         monetize: bool = True,
+        og_image_width: int = 1200,
+        og_image_height: int = 630,
     ) -> None:
         gtm_id = html.escape(GTM_CONTAINER_ID)
         gtm_head = f"""  <!-- Google Tag Manager -->
@@ -2667,8 +2864,8 @@ class StaticSiteBuilder:
         og_image_tag = (
             f'\n  <meta property="og:image" content="{html.escape(image_url)}">'
             f'\n  <meta property="og:image:secure_url" content="{html.escape(image_url)}">'
-            '\n  <meta property="og:image:width" content="1200">'
-            '\n  <meta property="og:image:height" content="630">'
+            f'\n  <meta property="og:image:width" content="{og_image_width}">'
+            f'\n  <meta property="og:image:height" content="{og_image_height}">'
             f'\n  <meta property="og:image:alt" content="{html.escape(title)}">'
         )
         logo_url = f"{self.site_url}/favicon-512x512.png"
@@ -3440,6 +3637,38 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   font-size: clamp(1.4rem, 5vw, 2.4rem);
   line-height: 1.2;
   word-break: keep-all;
+}
+.movie-post { max-width: 920px; }
+.movie-header {
+  display: grid;
+  grid-template-columns: minmax(190px, 280px) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(20px, 4vw, 38px);
+  margin-bottom: 30px;
+}
+.movie-poster-wrap { overflow: hidden; border-radius: 16px; background: #101827; box-shadow: 0 14px 32px rgba(15, 23, 42, .22); }
+.movie-poster { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; }
+.movie-heading { min-width: 0; }
+.movie-heading h1 { margin-top: 4px; }
+.movie-facts { display: grid; gap: 0; margin: 22px 0 0; border-top: 1px solid var(--line); }
+.movie-facts > div { display: grid; grid-template-columns: 84px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.movie-facts dt { color: var(--muted); font-size: .84rem; font-weight: 700; }
+.movie-facts dd { margin: 0; font-size: .9rem; }
+.movie-section { margin-top: 32px; }
+.movie-section h2 { margin: 0 0 12px; font-size: 1.3rem; }
+.movie-review-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.movie-review-card { margin: 0; padding: 16px; border: 1px solid var(--line); border-radius: 12px; background: #f8fafc; }
+.movie-review-card p { margin: 0 0 9px; font-size: .92rem; line-height: 1.65; }
+.movie-review-card footer, .movie-review-note, .movie-image-credit { color: var(--muted); font-size: .75rem; }
+.movie-spoiler { border: 1px solid #d8c8ad; border-radius: 12px; background: #fffaf0; }
+.movie-spoiler summary { cursor: pointer; padding: 14px 16px; font-weight: 800; }
+.movie-spoiler p { margin: 0; padding: 0 16px 16px; }
+.movie-image-credit { margin-top: 22px; padding-top: 14px; border-top: 1px solid var(--line); }
+.movie-fixture-notice { margin-bottom: 20px; padding: 12px 14px; border: 1px solid #f59e0b; border-radius: 10px; background: #fffbeb; color: #92400e; font-size: .85rem; font-weight: 700; }
+@media (max-width: 640px) {
+  .movie-header { grid-template-columns: 1fr; }
+  .movie-poster-wrap { width: min(78vw, 320px); margin: 0 auto; }
+  .movie-review-grid { grid-template-columns: 1fr; }
 }
 .back { display: inline-block; margin-bottom: 20px; color: var(--muted); font-size: 0.9rem; }
 .source-box,

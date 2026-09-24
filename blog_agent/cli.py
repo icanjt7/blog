@@ -88,6 +88,11 @@ def build_parser() -> argparse.ArgumentParser:
     build = sub.add_parser("build-site", help="render generated Markdown posts into a static site")
     build.add_argument("--posts-dir")
     build.add_argument("--public-dir")
+    build.add_argument("--movie-data", help="validated movie JSON array")
+    build.add_argument("--movie-limit", type=int)
+    build.add_argument("--movie-mode", choices=["staging", "production"], default="production")
+    build.add_argument("--movie-cache-dir", default=".cache/movie-pages")
+    build.add_argument("--movie-release-approval", help="manual canary approval JSON required for production movies")
     reimage = sub.add_parser("re-image", help="re-fetch cover images for posts with missing/picsum images")
     reimage.add_argument("--category", help="only re-image posts in this category (e.g. 기술)")
     reimage.add_argument("--force", action="store_true", help="기존 URL이 있어도 재요청 (소급 적용)")
@@ -106,9 +111,20 @@ def main() -> None:
         print(json.dumps(store.latest_runs(args.limit), ensure_ascii=False, indent=2))
         return
     if args.command == "build-site":
+        if args.movie_data and args.movie_mode == "production":
+            approval_path = Path(args.movie_release_approval) if args.movie_release_approval else None
+            try:
+                approval = json.loads(approval_path.read_text(encoding="utf-8")) if approval_path else {}
+            except (OSError, json.JSONDecodeError):
+                approval = {}
+            if approval.get("approved") is not True or approval.get("verified_pages") != 10:
+                parser.error(
+                    "production movie build requires --movie-release-approval JSON "
+                    "with approved=true and verified_pages=10"
+                )
         posts_dir = settings.output_dir if not args.posts_dir else settings.output_dir.__class__(args.posts_dir)
         public_dir = settings.public_dir if not args.public_dir else settings.public_dir.__class__(args.public_dir)
-        StaticSiteBuilder(
+        builder = StaticSiteBuilder(
             posts_dir,
             public_dir,
             settings.site_title,
@@ -117,8 +133,17 @@ def main() -> None:
             settings.categories,
             ga_measurement_id=settings.ga_measurement_id,
             adsense_publisher_id=settings.adsense_publisher_id,
-        ).build()
-        print(json.dumps({"ok": True, "public_dir": str(public_dir)}, ensure_ascii=False, indent=2))
+            movie_data_path=Path(args.movie_data) if args.movie_data else None,
+            movie_limit=args.movie_limit,
+            movie_staging=args.movie_mode == "staging",
+            movie_cache_dir=Path(args.movie_cache_dir),
+        )
+        builder.build()
+        print(json.dumps({
+            "ok": True,
+            "public_dir": str(public_dir),
+            "movie_build": builder.movie_build_stats,
+        }, ensure_ascii=False, indent=2))
         return
     if args.command == "re-image":
         posts_dir = settings.output_dir if not args.posts_dir else Path(args.posts_dir)

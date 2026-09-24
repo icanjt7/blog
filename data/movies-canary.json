@@ -1,0 +1,82 @@
+[
+  {
+    "id": "canary-001", "title": "카나리 시네마 01: 빛의 경계", "slug": "canary-cinema-01-light-boundary", "release_date": "2026-09-01",
+    "genres": ["드라마", "미스터리"], "director": "스테이징 감독 01", "cast": ["테스트 배우 A", "테스트 배우 B"], "runtime_minutes": 108,
+    "synopsis": "낡은 극장을 지키는 영사기사가 마지막 상영을 준비하며 잊고 있던 약속을 마주하는 가상의 품질 검증용 이야기입니다.",
+    "spoiler_summary": "마지막 필름에 남겨진 기록이 극장을 다시 열게 되는 계기가 됩니다. 이 내용은 스포일러 토글 동작을 검증하기 위한 가상 문장입니다.",
+    "poster": {"path": "output/movie-assets/canary/staging-cinema-poster.webp", "alt": "빛이 교차하는 추상적인 가상 영화 포스터", "license": "BriefWave 자체 생성 QA 이미지", "source_url": "https://briefwave.kr/about.html"},
+    "reviews": ["잔잔한 분위기와 조명 연출이 잘 어울려 끝까지 집중해서 보았습니다.", "인물의 감정 변화가 차분하게 이어져 여운이 오래 남았습니다.", "초반 전개는 조금 느리지만 음악과 화면 구성이 인상적이었습니다.", "[스포일러] 결말의 반전은 예상하지 못했다"], "is_fixture": true
+  },
+  {
+    "id": "canary-002", "title": "카나리 시네마 02: 파도의 기록", "slug": "canary-cinema-02-wave-record", "release_date": "2026-09-02",
+    "genres": ["드라마", "가족"], "director": "스테이징 감독 02", "cast": ["테스트 배우 C", "테스트 배우 D"], "runtime_minutes": 101,
+    "synopsis": "바닷가 마을의 라디오 진행자가 주민들의 오래된 음성 편지를 복원하는 가상의 품질 검증용 이야기입니다.",
+    "spoiler_summary": "복원된 마지막 편지가 서로 멀어진 가족을 다시 연결합니다. 스포일러 영역 검증을 위한 가상 내용입니다.",
+    "poster": {"path": "output/movie-assets/canary/staging-cinema-poster.webp", "alt": "파도와 영사기 빛을 표현한 추상 영화 포스터", "license": "BriefWave 자체 생성 QA 이미지", "source_url": "https://briefwave.kr/about.html"},
+    "reviews": ["배우들의 자연스러운 대화가 실제 가족을 보는 듯 편안했습니다.", "바다 풍경과 담백한 음악이 이야기의 분위기를 잘 살렸습니다.", "중반부가 다소 길게 느껴졌지만 마지막까지 따뜻했습니다."], "is_fixture": true
+  },
+  {
+    "id": "canary-003", "title": "카나리 시네마 03: 새벽의 지도", "slug": "canary-cinema-03-dawn-map", "release_date": "2026-09-03",
+    "genres": ["모험", "드라마"], "director": "스테이징 감독 03", "cast": ["테스트 배우 E", "테스트 배우 F"], "runtime_minutes": 114,
+    "synopsis": "도시의 새벽길을 기록하는 두 친구가 사라진 골목의 흔적을 찾아가는 가상의 품질 검증용 이야기입니다.",
+    "spoiler_summary": "두 사람은 지도가 장소보다 함께한 시간을 기록하고 있었다는 사실을 알게 됩니다.",
+    "poster": {"path": "output/movie-assets/canary/staging-cinema-poster.webp", "alt": "새벽 도시와 기하학적 프레임의 추상 영화 포스터", "license": "BriefWave 자체 생성 QA 이미지", "source_url": "https://briefwave.kr/about.html"},
+    "reviews": ["도시의 색감과 카메라 움직임이 신선해서 보는 재미가 있었습니다.", "두 주인공의 우정이 과장되지 않아 더 공감할 수 있었습니다.", "설명이 적은 장면은 호불호가 있겠지만 분위기는 좋았습니다."], "is_fixture": true
+  },
+  {
+    "id": "canary-004", "title": "카나리 시네마 04: 작은 궤도", "slug": "canary-cinema-04-small-orbit", "release_date": "2026-09-04",
+    "genres": ["SF", "드라마"], "director": "스테이징 감독 04", "cast": ["테스트 배우 G", "테스트 배우 H"], "runtime_minutes": 119,
+    "synopsis": "소형 관측소의 연구원들이 통신이 끊긴 위성을 다시 추적하는 가상의 품질 검증용 이야기입니다.",
+    "spoiler_summary": "신호의 정체는 오래전 관측팀이 남긴 자동 메시지였고 연구원들은 임무의 의미를 새롭게 정의합니다.",
+    "poster": {"path": "output/movie-assets/canary/staging-cinema-poster.webp", "alt": "우주 궤도와 빛을 표현한 추상 영화 포스터", "license": "BriefWave 자체 생성 QA 이미지", "source_url": "https://briefwave.kr/about.html"},
+    "reviews": ["큰 사건보다 인물의 선택에 집중한 전개가 차분하고 좋았습니다.", "제한된 공간을 활용한 화면과 소리의 긴장감이 인상적이었습니다.", "과학 설명이 조금 어렵지만 배우들의 연기가 몰입을 도왔습니다."], "is_fixture": true
+  },
+  {
+    "id": "canary-005", "title": "카나리 시네마 05: 종이별", "slug": "canary-cinema-05-paper-star", "release_date": "2026-09-05",
+    "genres": ["애니메이션", "가족"], "director": "스테이징 감독 05", "cast": ["테스트 성우 A", "테스트 성우 B"], "runtime_minutes": 92,
+    "synopsis": "접힌 종이 마을의 작은 별이 잃어버린 색을 찾아 여행하는 가상의 품질 검증용 애니메이션입니다.",
+    "spoiler_summary": "별은 색이 멀리 있는 것이 아니라 마을 주민들의 기억에 남아 있었다는 것을 발견합니다.",
+    "poster": {"path": "output/movie-assets/canary/staging-cinema-poster.webp", "alt": "종이 질감과 별빛의 추상 애니메이션 포스터", "license": "BriefWave 자체 생성 QA 이미지", "source_url": "https://briefwave.kr/about.html"},
+    "reviews": ["부드러운 색감과 아기자기한 움직임을 아이와 함께 즐겼습니다.", "짧고 명확한 이야기라 가족 관객이 편하게 보기 좋았습니다.", "익숙한 설정이지만 음악과 캐릭터 표현이 사랑스러웠습니다."], "is_fixture": true
+  },
+  {
+    "id": "canary-006", "title": "카나리 시네마 06: 여름의 우편함", "slug": "canary-cinema-06-summer-mailbox", "release_date": "2026-09-06",
+    "genres": ["로맨스", "드라마"], "director": "스테이징 감독 06", "cast": ["테스트 배우 I", "테스트 배우 J"], "runtime_minutes": 105,
+    "synopsis": "폐쇄를 앞둔 시골 우체국에서 배달되지 못한 편지를 정리하는 두 사람의 가상 이야기입니다.",
+    "spoiler_summary": "마지막 편지의 수신인은 두 사람이었고 서로의 오래된 오해를 풀게 됩니다.",
+    "poster": {"path": "output/movie-assets/canary/staging-cinema-poster.webp", "alt": "여름빛과 편지 모양을 담은 추상 영화 포스터", "license": "BriefWave 자체 생성 QA 이미지", "source_url": "https://briefwave.kr/about.html"},
+    "reviews": ["여름 풍경이 선명하고 두 배우의 호흡이 자연스러웠습니다.", "감정을 서두르지 않고 쌓아 가는 방식이 마음에 들었습니다.", "예상 가능한 흐름이지만 편안하게 감상할 수 있었습니다."], "is_fixture": true
+  },
+  {
+    "id": "canary-007", "title": "카나리 시네마 07: 무음의 합창", "slug": "canary-cinema-07-silent-chorus", "release_date": "2026-09-07",
+    "genres": ["음악", "드라마"], "director": "스테이징 감독 07", "cast": ["테스트 배우 K", "테스트 배우 L"], "runtime_minutes": 110,
+    "synopsis": "각자의 방식으로 소리를 느끼는 청년들이 무대 공연을 준비하는 가상의 품질 검증용 이야기입니다.",
+    "spoiler_summary": "공연은 완벽하지 않았지만 관객과 단원들이 서로의 리듬을 이해하는 장면으로 마무리됩니다.",
+    "poster": {"path": "output/movie-assets/canary/staging-cinema-poster.webp", "alt": "음파와 무대 조명을 표현한 추상 영화 포스터", "license": "BriefWave 자체 생성 QA 이미지", "source_url": "https://briefwave.kr/about.html"},
+    "reviews": ["소리를 화면의 움직임으로 표현한 장면이 새롭고 인상적이었습니다.", "여러 인물의 사연을 균형 있게 보여 주어 몰입하기 좋았습니다.", "후반 공연 장면이 조금 더 길었으면 하는 아쉬움이 남았습니다."], "is_fixture": true
+  },
+  {
+    "id": "canary-008", "title": "카나리 시네마 08: 북쪽 창문", "slug": "canary-cinema-08-north-window", "release_date": "2026-09-08",
+    "genres": ["미스터리", "스릴러"], "director": "스테이징 감독 08", "cast": ["테스트 배우 M", "테스트 배우 N"], "runtime_minutes": 116,
+    "synopsis": "오래된 숙소의 북쪽 창문에서 매일 다른 풍경을 보는 여행자의 가상 미스터리입니다.",
+    "spoiler_summary": "창문은 숙소에 머물렀던 사람들의 기억을 비추는 장치였고 여행자는 기록을 남기기로 합니다.",
+    "poster": {"path": "output/movie-assets/canary/staging-cinema-poster.webp", "alt": "어두운 창문과 빛의 층을 표현한 추상 영화 포스터", "license": "BriefWave 자체 생성 QA 이미지", "source_url": "https://briefwave.kr/about.html"},
+    "reviews": ["적은 대사와 반복되는 공간이 긴장감을 꾸준히 유지했습니다.", "조명과 음향이 작은 변화까지 느끼게 해 몰입도가 높았습니다.", "열린 해석이 많아 명확한 설명을 좋아하면 어렵게 느낄 수 있습니다."], "is_fixture": true
+  },
+  {
+    "id": "canary-009", "title": "카나리 시네마 09: 느린 정거장", "slug": "canary-cinema-09-slow-station", "release_date": "2026-09-09",
+    "genres": ["드라마", "휴먼"], "director": "스테이징 감독 09", "cast": ["테스트 배우 O", "테스트 배우 P"], "runtime_minutes": 98,
+    "synopsis": "하루에 한 번만 기차가 서는 정거장에서 역무원과 승객들이 나누는 가상의 이야기입니다.",
+    "spoiler_summary": "정거장의 폐쇄 소식 이후 주민들은 공간을 작은 도서관으로 이어 가기로 결정합니다.",
+    "poster": {"path": "output/movie-assets/canary/staging-cinema-poster.webp", "alt": "기차 선로와 저녁빛을 단순화한 추상 영화 포스터", "license": "BriefWave 자체 생성 QA 이미지", "source_url": "https://briefwave.kr/about.html"},
+    "reviews": ["소소한 대화 속에서 인물의 삶이 자연스럽게 드러나 좋았습니다.", "빠른 사건은 없지만 따뜻한 분위기가 끝까지 이어졌습니다.", "잔잔한 영화를 선호하지 않으면 전개가 느리게 느껴질 수 있습니다."], "is_fixture": true
+  },
+  {
+    "id": "canary-010", "title": "카나리 시네마 10: 내일의 필름", "slug": "canary-cinema-10-tomorrow-film", "release_date": "2026-09-10",
+    "genres": ["드라마", "영화"], "director": "스테이징 감독 10", "cast": ["테스트 배우 Q", "테스트 배우 R"], "runtime_minutes": 112,
+    "synopsis": "독립영화 동아리의 구성원들이 중단된 졸업 작품을 다시 완성하는 가상의 품질 검증용 이야기입니다.",
+    "spoiler_summary": "완성된 작품은 상영 기회를 얻지 못하지만 구성원들은 동네 벽면에서 첫 상영을 시작합니다.",
+    "poster": {"path": "output/movie-assets/canary/staging-cinema-poster.webp", "alt": "필름 프레임과 내일의 빛을 표현한 추상 영화 포스터", "license": "BriefWave 자체 생성 QA 이미지", "source_url": "https://briefwave.kr/about.html"},
+    "reviews": ["영화를 만드는 과정의 즐거움과 갈등이 현실적으로 느껴졌습니다.", "등장인물이 함께 성장하는 흐름이 자연스럽고 응원하게 됩니다.", "몇몇 갈등이 빠르게 정리되지만 마지막 상영 장면은 따뜻했습니다."], "is_fixture": true
+  }
+]

@@ -1,0 +1,39 @@
+<article class="post movie-post">
+  $breadcrumb
+  $fixture_notice
+  <header class="movie-header">
+    <picture class="movie-poster-wrap">
+      <img class="movie-poster" src="$poster_src" alt="$poster_alt" width="800" height="1200" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+    <div class="movie-heading">
+      <p class="meta">영화 · $release_date</p>
+      <h1>$title</h1>
+      <dl class="movie-facts">
+        <div><dt>감독</dt><dd>$director</dd></div>
+        <div><dt>장르</dt><dd>$genres</dd></div>
+        <div><dt>출연</dt><dd>$cast</dd></div>
+        $runtime
+      </dl>
+    </div>
+  </header>
+  <section class="movie-section" aria-labelledby="movie-overview-title">
+    <h2 id="movie-overview-title">작품 소개</h2>
+    <p>$synopsis</p>
+  </section>
+  <section class="movie-section" aria-labelledby="movie-review-title">
+    <h2 id="movie-review-title">관람객 리뷰에서 확인한 반응</h2>
+    <div class="movie-review-grid">$review_cards</div>
+    <p class="movie-review-note">제공된 관람객 리뷰 중 스포일러·욕설·도배 문구를 제외한 문장만 표시합니다.</p>
+  </section>
+  <section class="movie-section" aria-labelledby="movie-spoiler-title">
+    <h2 id="movie-spoiler-title">스포일러 포함 줄거리</h2>
+    <details class="movie-spoiler">
+      <summary>스포일러 포함 내용 보기</summary>
+      <p>$spoiler_summary</p>
+    </details>
+  </section>
+  <section class="movie-image-credit" aria-label="포스터 이미지 정보">
+    <p>포스터: $image_license · <a href="$image_source_url" rel="nofollow noopener">이미지 출처 정보</a></p>
+  </section>
+  $product_widget
+</article>

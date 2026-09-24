@@ -10,7 +10,12 @@ on:
     paths:
       - "blog_agent/site.py"
       - "blog_agent/product_links.py"
+      - "blog_agent/movie_pipeline.py"
+      - "blog_agent/templates/**"
       - "blog_agent/toss_products.json"
+      - "data/movies-canary.json"
+      - "output/movie-assets/**"
+      - "scripts/verify_movie_canary.py"
       - "streamlit_app.py"
       - "output/posts/**"
       - ".github/workflows/pages-deploy.yml"
@@ -41,13 +46,24 @@ jobs:
       - name: Install
         run: pip install -e .
 
+      - name: Restore incremental movie page cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/movie-pages
+          key: movie-pages-${{ runner.os }}-${{ hashFiles('blog_agent/site.py', 'blog_agent/movie_pipeline.py', 'blog_agent/templates/movie-post.html', 'data/movies-canary.json', 'blog_agent/toss_products.json') }}
+          restore-keys: |
+            movie-pages-${{ runner.os }}-
+
       - name: Build site
         env:
           BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
           BLOG_CUSTOM_DOMAIN: ${{ vars.BLOG_CUSTOM_DOMAIN }}
           GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
           ADSENSE_PUBLISHER_ID: ${{ secrets.ADSENSE_PUBLISHER_ID }}
-        run: python -m blog_agent.cli build-site
+        run: python -m blog_agent.cli build-site --movie-data data/movies-canary.json --movie-limit 10 --movie-mode staging
+
+      - name: Verify 10-page movie canary, SEO, poster and Toss widget
+        run: python scripts/verify_movie_canary.py --public-dir public --expected-count 10
 
       - uses: actions/configure-pages@v5
 
