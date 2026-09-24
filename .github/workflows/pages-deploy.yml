@@ -11,11 +11,16 @@ on:
       - "blog_agent/site.py"
       - "blog_agent/product_links.py"
       - "blog_agent/movie_pipeline.py"
+      - "blog_agent/netflix_pipeline.py"
       - "blog_agent/templates/**"
       - "blog_agent/toss_products.json"
       - "data/movies-canary.json"
+      - "data/netflix.jsonl"
+      - "data/netflix-release-approval.json"
       - "output/movie-assets/**"
       - "scripts/verify_movie_canary.py"
+      - "scripts/generate_netflix_fixture.py"
+      - "scripts/verify_netflix_build.py"
       - "streamlit_app.py"
       - "output/posts/**"
       - ".github/workflows/pages-deploy.yml"
@@ -49,10 +54,12 @@ jobs:
       - name: Restore incremental movie page cache
         uses: actions/cache@v4
         with:
-          path: .cache/movie-pages
-          key: movie-pages-${{ runner.os }}-${{ hashFiles('blog_agent/site.py', 'blog_agent/movie_pipeline.py', 'blog_agent/templates/movie-post.html', 'data/movies-canary.json', 'blog_agent/toss_products.json') }}
+          path: |
+            .cache/movie-pages
+            .cache/netflix-pages
+          key: ssg-pages-${{ runner.os }}-${{ hashFiles('blog_agent/site.py', 'blog_agent/movie_pipeline.py', 'blog_agent/netflix_pipeline.py', 'blog_agent/templates/*.html', 'data/movies-canary.json', 'blog_agent/toss_products.json') }}
           restore-keys: |
-            movie-pages-${{ runner.os }}-
+            ssg-pages-${{ runner.os }}-
 
       - name: Build site
         env:
@@ -64,6 +71,29 @@ jobs:
 
       - name: Verify 10-page movie canary, SEO, poster and Toss widget
         run: python scripts/verify_movie_canary.py --public-dir public --expected-count 10
+
+      - name: Generate 50-page Netflix dry-run fixture
+        run: python scripts/generate_netflix_fixture.py --output /tmp/netflix-canary.jsonl --count 50
+
+      - name: Build Netflix 50-page multiprocessing canary
+        run: python -m blog_agent.cli build-netflix --input /tmp/netflix-canary.jsonl --public-dir public --limit 50 --dry-run --chunk-size 10 | tee /tmp/netflix-build-stats.json
+
+      - name: Verify Netflix SEO, spoiler UI, split sitemap and Toss widget
+        run: python scripts/verify_netflix_build.py --public-dir public --expected 50 --dry-run --expected-sitemaps 5 --stats /tmp/netflix-build-stats.json
+
+      - name: Build approved 20,000-page Netflix production dataset
+        if: ${{ hashFiles('data/netflix.jsonl') != '' }}
+        run: >-
+          python -m blog_agent.cli build-netflix
+          --input data/netflix.jsonl
+          --public-dir public
+          --chunk-size 1000
+          --expected-count 20000
+          --release-approval data/netflix-release-approval.json
+
+      - name: Verify approved Netflix production pages
+        if: ${{ hashFiles('data/netflix.jsonl') != '' }}
+        run: python scripts/verify_netflix_build.py --public-dir public --expected 20000 --expected-sitemaps 20
 
       - uses: actions/configure-pages@v5
 

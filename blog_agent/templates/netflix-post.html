@@ -1,0 +1,46 @@
+<article class="post movie-post netflix-post">
+  $breadcrumb
+  $fixture_notice
+  <header class="movie-header">
+    <picture class="movie-poster-wrap">
+      <img class="movie-poster" src="$poster_url" alt="$poster_alt" width="500" height="750" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </picture>
+    <div class="movie-heading">
+      <p class="meta">넷플릭스 · $year</p>
+      <h1>$title</h1>
+      <dl class="netflix-summary-box" aria-label="콘텐츠 핵심 요약">
+        <div><dt>장르 및 시청 등급</dt><dd>$genre_rating</dd></div>
+        <div><dt>총 회차/러닝타임</dt><dd>$episodes_runtime</dd></div>
+        <div><dt>주요 캐스팅 및 연출</dt><dd>$casting_direction</dd></div>
+      </dl>
+    </div>
+  </header>
+  <section class="movie-section" aria-labelledby="netflix-synopsis">
+    <h2 id="netflix-synopsis">$title 시놉시스 및 주요 등장인물</h2>
+    <p>$synopsis</p>
+    <ul class="netflix-character-list">$characters</ul>
+  </section>
+  <section class="movie-section" aria-labelledby="netflix-points">
+    <h2 id="netflix-points">$title 놓치면 안 될 핵심 관전 포인트 3가지</h2>
+    <ol class="netflix-viewing-points">$viewing_points</ol>
+  </section>
+  <section class="movie-section" aria-labelledby="netflix-ending">
+    <h2 id="netflix-ending">$title 결말 해석 및 시즌 후속작 떡밥</h2>
+    <details class="movie-spoiler netflix-spoiler">
+      <summary>🚨 스포일러 주의! [결말 해석 보기] 클릭하여 펼치기</summary>
+      <p>$ending_analysis</p>
+    </details>
+  </section>
+  <section class="movie-section" aria-labelledby="netflix-reviews">
+    <h2 id="netflix-reviews">$title 국내외 관람객 호불호 평점 요약</h2>
+    <div class="netflix-review-columns">
+      <section aria-labelledby="netflix-review-pros"><h3 id="netflix-review-pros">극호 포인트</h3><ul>$strengths</ul></section>
+      <section aria-labelledby="netflix-review-cons"><h3 id="netflix-review-cons">아쉬운 점</h3><ul>$weaknesses</ul></section>
+    </div>
+    <p class="movie-review-note">제공된 관람객 리뷰에서 확인 가능한 반응만 요약했습니다.</p>
+  </section>
+  <section class="movie-image-credit" aria-label="콘텐츠 데이터 출처">
+    <p><a href="$source_url" rel="nofollow noopener">작품 정보 출처</a> · <a href="$reviews_source_url" rel="nofollow noopener">관람평 출처</a></p>
+  </section>
+  $product_widget
+</article>

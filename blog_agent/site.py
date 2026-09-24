@@ -21,6 +21,7 @@ import yaml
 
 from .images import ImageAgent
 from .movie_pipeline import MovieRecord, load_movies
+from .netflix_pipeline import NetflixRecord
 from .prompts import classify_press_template
 from .product_links import PRODUCT_LINKS, ProductLink
 
@@ -904,7 +905,13 @@ class StaticSiteBuilder:
             return f"{topics} 관련 상품의 실시간 가격과 구매 조건을 토스쇼핑에서 확인할 수 있습니다."
         return "토스쇼핑 인기 상품 풀에서 오늘 확인할 상품을 선정했습니다."
 
-    def _product_link_html(self, post: Post, asset_prefix: str = "./") -> str:
+    def _product_link_html(
+        self,
+        post: Post,
+        asset_prefix: str = "./",
+        bridge_heading: str | None = None,
+        bridge_description: str | None = None,
+    ) -> str:
         products = self._select_products(post)
         product = products[0]
         candidates = [item.cache_key for item in products]
@@ -913,7 +920,7 @@ class StaticSiteBuilder:
         return (
             f'<div class="product-rotation" data-product-rotation="{html.escape(post.slug)}" '
             f'data-product-catalog="{html.escape(asset_prefix)}product-catalog.json">'
-            f'{self._product_bridge_html(post)}{card}'
+            f'{self._product_bridge_html(post, bridge_heading, bridge_description)}{card}'
             f'<script type="application/json" class="product-rotation-candidates">{candidates_json}</script>'
             '</div>'
         )
@@ -1100,12 +1107,19 @@ class StaticSiteBuilder:
         )
 
     @staticmethod
-    def _product_bridge_html(post: Post) -> str:
+    def _product_bridge_html(
+        post: Post,
+        heading_override: str | None = None,
+        description_override: str | None = None,
+    ) -> str:
         plain_body = re.sub(r"<[^>]+>", " ", post.body_html)
         context = " ".join((post.title, post.category, " ".join(post.tags), post.excerpt, plain_body))
         template = classify_press_template(post.title, context)
         is_actionable = template == "ACTIONABLE" and post.category in {"생활", "정책", "환경"}
-        if is_actionable:
+        if heading_override and description_override:
+            heading = heading_override
+            description = description_override
+        elif is_actionable:
             heading = "🛒 [가계부 절약] 정책 혜택과 함께 챙기는 알뜰 실속 핫딜"
             description = "가계 부담을 덜어드리기 위해 토스쇼핑의 인기 생필품 특가를 모았습니다."
         else:
@@ -1117,6 +1131,101 @@ class StaticSiteBuilder:
             f'<span>{html.escape(description)}</span>'
             '</div>'
         )
+
+    def _write_netflix_post(self, record: NetflixRecord, *, dry_run: bool) -> None:
+        """Render one validated Netflix page inside a multiprocessing worker."""
+        template_path = Path(__file__).with_name("templates") / "netflix-post.html"
+        template_text = template_path.read_text(encoding="utf-8")
+        filename = record.output_path(dry_run=dry_run)
+        asset_prefix = "../../../../" if dry_run else "../../../"
+        page_url = self._page_url(filename)
+        breadcrumb_items = [
+            ("홈", asset_prefix),
+            ("넷플릭스", f"{asset_prefix}search.html?q={quote('넷플릭스')}"),
+            (record.genre, f"{asset_prefix}search.html?q={quote(record.genre)}"),
+            (record.title, f"{asset_prefix}{filename}"),
+        ]
+        characters = "".join(
+            f"<li><strong>{html.escape(name)}</strong><span>{html.escape(relationship)}</span></li>"
+            for name, relationship in record.characters
+        )
+        viewing_points = "".join(f"<li>{html.escape(item)}</li>" for item in record.viewing_points)
+        strengths = "".join(f"<li>{html.escape(item)}</li>" for item in record.review_strengths)
+        weaknesses = "".join(f"<li>{html.escape(item)}</li>" for item in record.review_weaknesses)
+        fixture_notice = (
+            '<aside class="movie-fixture-notice" role="note">50건 병렬 빌드 검증용 가상 데이터입니다. 검색엔진에 색인되지 않습니다.</aside>'
+            if record.is_fixture else ""
+        )
+        product_post = Post(
+            title=f"{record.title} 넷플릭스 정주행",
+            date=datetime.fromisoformat(record.updated_at),
+            category="영화",
+            tags=[record.genre, "넷플릭스", "정주행", "간식", "홈시네마"],
+            slug=f"netflix-{record.slug}",
+            excerpt=f"{record.title} 시청 전 확인할 작품 정보와 관람객 반응",
+            body_html=f"<p>{html.escape(record.synopsis)}</p>",
+        )
+        product_widget = self._product_link_html(
+            product_post,
+            asset_prefix=asset_prefix,
+            bridge_heading="📺 [정주행 필수템] 넷플릭스 몰아보기를 위한 실속 가성비 핫딜",
+            bridge_description="밤샘 정주행의 몰입감을 높여줄 간식 특가와 편안한 시청 환경을 만들어줄 홈시네마 추천 아이템을 확인해 보세요.",
+        )
+        content = Template(template_text).substitute(
+            breadcrumb=self._breadcrumb_html(breadcrumb_items),
+            fixture_notice=fixture_notice,
+            poster_url=html.escape(record.poster_url),
+            poster_alt=html.escape(record.poster_alt),
+            year=record.year,
+            title=html.escape(record.title),
+            genre_rating=html.escape(record.age_rating),
+            episodes_runtime=html.escape(record.episodes_runtime),
+            casting_direction=html.escape(f"{', '.join(record.cast[:4])} · 연출 {record.director}"),
+            synopsis=html.escape(record.synopsis),
+            characters=characters,
+            viewing_points=viewing_points,
+            ending_analysis=html.escape(record.ending_analysis),
+            strengths=strengths,
+            weaknesses=weaknesses,
+            source_url=html.escape(record.source_url),
+            reviews_source_url=html.escape(record.reviews_source_url),
+            product_widget=product_widget,
+        )
+        schema_type = "TVSeries" if record.content_type == "tv" else "Movie"
+        schema: dict[str, object] = {
+            "@context": "https://schema.org",
+            "@type": schema_type,
+            "name": record.title,
+            "description": record.synopsis,
+            "image": record.poster_url,
+            "dateCreated": str(record.year),
+            "genre": record.genre,
+            "director": {"@type": "Person", "name": record.director},
+            "actor": [{"@type": "Person", "name": name} for name in record.cast],
+            "inLanguage": "ko-KR",
+            "sameAs": record.source_url,
+        }
+        self._write_html(
+            filename,
+            f"{record.title} 넷플릭스 줄거리·결말·관람평",
+            content,
+            active="영화",
+            page_url=page_url,
+            description=f"{record.title} 시놉시스, 등장인물, 관전 포인트, 결말 해석과 실제 관람객 호불호를 정리했습니다.",
+            og_image=record.poster_url,
+            og_type="video.tv_show" if record.content_type == "tv" else "video.movie",
+            robots="noindex,follow" if dry_run else "index,follow,max-image-preview:large",
+            structured_data=[schema],
+            alternate_urls={"ko": page_url, "x-default": page_url},
+            asset_prefix=asset_prefix,
+            monetize=True,
+            og_image_width=500,
+            og_image_height=750,
+            compact_runtime=True,
+        )
+        rendered = (self.public_dir / filename).read_text(encoding="utf-8")
+        if 'class="toss-shopping-card product-recommendation"' not in rendered:
+            raise RuntimeError(f"Toss product widget missing from {filename}")
 
     def _product_card_html(self, product: ProductLink, recommendation_reason: str) -> str:
         description = self._product_description(product)
@@ -2778,6 +2887,7 @@ class StaticSiteBuilder:
         monetize: bool = True,
         og_image_width: int = 1200,
         og_image_height: int = 630,
+        compact_runtime: bool = False,
     ) -> None:
         gtm_id = html.escape(GTM_CONTAINER_ID)
         gtm_head = f"""  <!-- Google Tag Manager -->
@@ -2854,6 +2964,14 @@ class StaticSiteBuilder:
   </script>
 """
             )
+
+        if compact_runtime:
+            gtm_head = ""
+            gtm_body = ""
+            ga_script = ""
+            if monetize:
+                pub = html.escape(self.adsense_publisher_id or "ca-pub-3870943054399059")
+                adsense_script = f'\n  <meta name="google-adsense-account" content="{pub}">'
 
         if page_url is None:
             page_url = self._page_url(filename)
@@ -3180,6 +3298,15 @@ class StaticSiteBuilder:
 </body>
 </html>
 """
+        if compact_runtime:
+            footer_end = page.index("</footer>") + len("</footer>")
+            body_end = page.rindex("</body>")
+            page = (
+                page[:footer_end]
+                + f'\n<script src="{asset_prefix}netflix-runtime.js" defer></script>\n'
+                + page[body_end:]
+            )
+            page = re.sub(r">\s+<", "><", page)
         target = self.public_dir / filename
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(page, encoding="utf-8")
@@ -3665,10 +3792,25 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .movie-spoiler p { margin: 0; padding: 0 16px 16px; }
 .movie-image-credit { margin-top: 22px; padding-top: 14px; border-top: 1px solid var(--line); }
 .movie-fixture-notice { margin-bottom: 20px; padding: 12px 14px; border: 1px solid #f59e0b; border-radius: 10px; background: #fffbeb; color: #92400e; font-size: .85rem; font-weight: 700; }
+.netflix-summary-box { display: grid; gap: 0; margin: 20px 0 0; border: 1px solid #cbd5e1; border-radius: 12px; background: #f8fafc; }
+.netflix-summary-box > div { padding: 11px 13px; border-bottom: 1px solid #dbe3ec; }
+.netflix-summary-box > div:last-child { border-bottom: 0; }
+.netflix-summary-box dt { color: #475569; font-size: .76rem; font-weight: 800; }
+.netflix-summary-box dd { margin: 3px 0 0; font-size: .9rem; line-height: 1.5; }
+.netflix-character-list, .netflix-viewing-points { display: grid; gap: 9px; padding-left: 22px; }
+.netflix-character-list li { display: grid; grid-template-columns: minmax(90px, 150px) 1fr; gap: 12px; }
+.netflix-character-list span { color: var(--muted); }
+.netflix-review-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.netflix-review-columns section { padding: 16px; border: 1px solid var(--line); border-radius: 12px; background: #f8fafc; }
+.netflix-review-columns h3 { margin: 0 0 8px; font-size: 1rem; }
+.netflix-review-columns ul { margin: 0; padding-left: 20px; }
+.netflix-review-columns li { margin: 5px 0; }
 @media (max-width: 640px) {
   .movie-header { grid-template-columns: 1fr; }
   .movie-poster-wrap { width: min(78vw, 320px); margin: 0 auto; }
   .movie-review-grid { grid-template-columns: 1fr; }
+  .netflix-character-list li, .netflix-review-columns { grid-template-columns: 1fr; }
+  .netflix-post .product-recommendation-link { width: 100%; }
 }
 .back { display: inline-block; margin-bottom: 20px; color: var(--muted); font-size: 0.9rem; }
 .source-box,

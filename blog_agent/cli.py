@@ -11,6 +11,7 @@ import yaml
 from .config import load_settings
 from .images import ImageAgent
 from .models import Draft, Topic
+from .netflix_pipeline import build_netflix_site
 from .pipeline import BlogPipeline
 from .site import StaticSiteBuilder
 from .storage import RunStore
@@ -93,6 +94,17 @@ def build_parser() -> argparse.ArgumentParser:
     build.add_argument("--movie-mode", choices=["staging", "production"], default="production")
     build.add_argument("--movie-cache-dir", default=".cache/movie-pages")
     build.add_argument("--movie-release-approval", help="manual canary approval JSON required for production movies")
+    netflix = sub.add_parser("build-netflix", help="stream and render large Netflix JSON/JSONL datasets")
+    netflix.add_argument("--input", required=True)
+    netflix.add_argument("--posts-dir")
+    netflix.add_argument("--public-dir")
+    netflix.add_argument("--cache-dir", default=".cache/netflix-pages")
+    netflix.add_argument("--chunk-size", type=int, default=1000)
+    netflix.add_argument("--limit", type=int)
+    netflix.add_argument("--workers", type=int)
+    netflix.add_argument("--dry-run", action="store_true")
+    netflix.add_argument("--expected-count", type=int, default=20000)
+    netflix.add_argument("--release-approval", help="manual 50-page approval JSON required for production")
     reimage = sub.add_parser("re-image", help="re-fetch cover images for posts with missing/picsum images")
     reimage.add_argument("--category", help="only re-image posts in this category (e.g. 기술)")
     reimage.add_argument("--force", action="store_true", help="기존 URL이 있어도 재요청 (소급 적용)")
@@ -109,6 +121,41 @@ def main() -> None:
     if args.command == "status":
         store = RunStore(settings.state_dir)
         print(json.dumps(store.latest_runs(args.limit), ensure_ascii=False, indent=2))
+        return
+    if args.command == "build-netflix":
+        if not args.dry_run:
+            approval_path = Path(args.release_approval) if args.release_approval else None
+            try:
+                approval = json.loads(approval_path.read_text(encoding="utf-8")) if approval_path else {}
+            except (OSError, json.JSONDecodeError):
+                approval = {}
+            if approval.get("approved") is not True or approval.get("verified_pages") != 50:
+                parser.error(
+                    "production Netflix build requires --release-approval JSON "
+                    "with approved=true and verified_pages=50"
+                )
+        posts_dir = settings.output_dir if not args.posts_dir else Path(args.posts_dir)
+        public_dir = settings.public_dir if not args.public_dir else Path(args.public_dir)
+        stats = build_netflix_site(
+            Path(args.input),
+            public_dir=public_dir,
+            posts_dir=posts_dir,
+            site_title=settings.site_title,
+            site_description=settings.site_description,
+            custom_domain=settings.custom_domain,
+            categories=settings.categories,
+            ga_measurement_id=settings.ga_measurement_id,
+            adsense_publisher_id=settings.adsense_publisher_id,
+            cache_dir=Path(args.cache_dir),
+            chunk_size=args.chunk_size,
+            limit=args.limit,
+            dry_run=args.dry_run,
+            workers=args.workers,
+        )
+        expected = args.limit if args.dry_run and args.limit is not None else args.expected_count
+        if stats["records"] != expected:
+            raise SystemExit(f"expected {expected} Netflix records, rendered {stats['records']}")
+        print(json.dumps({"ok": True, "dry_run": args.dry_run, **stats}, ensure_ascii=False, indent=2))
         return
     if args.command == "build-site":
         if args.movie_data and args.movie_mode == "production":
