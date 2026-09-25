@@ -1,2 +1,75 @@
+User-agent: GPTBot
+Allow: /
+Disallow: /page/
+Disallow: /page*.html
+Disallow: /search.html
+Disallow: /*?*tag=
+Disallow: /*?*category=
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /page/
+Disallow: /page*.html
+Disallow: /search.html
+Disallow: /*?*tag=
+Disallow: /*?*category=
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /page/
+Disallow: /page*.html
+Disallow: /search.html
+Disallow: /*?*tag=
+Disallow: /*?*category=
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /page/
+Disallow: /page*.html
+Disallow: /search.html
+Disallow: /*?*tag=
+Disallow: /*?*category=
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /page/
+Disallow: /page*.html
+Disallow: /search.html
+Disallow: /*?*tag=
+Disallow: /*?*category=
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /page/
+Disallow: /page*.html
+Disallow: /search.html
+Disallow: /*?*tag=
+Disallow: /*?*category=
+
+User-agent: OmgiliBot
+Allow: /
+Disallow: /page/
+Disallow: /page*.html
+Disallow: /search.html
+Disallow: /*?*tag=
+Disallow: /*?*category=
+
+User-agent: CCBot
+Allow: /
+Disallow: /page/
+Disallow: /page*.html
+Disallow: /search.html
+Disallow: /*?*tag=
+Disallow: /*?*category=
+
 User-agent: *
 Allow: /
+Disallow: /page/
+Disallow: /page*.html
+Disallow: /search.html
+Disallow: /*?*tag=
+Disallow: /*?*category=
+
+Sitemap: https://briefwave.kr/sitemap-static.xml
+Sitemap: https://briefwave.kr/sitemap.xml
+Sitemap: https://briefwave.kr/sitemap-index.xml

@@ -794,7 +794,9 @@ class StaticSiteBuilder:
             )
         ad_slot = self._ad_slot() if review_indexed else ""
         display_author = self._display_author(post)
-        reader_context_html = self._reader_context_html(post)
+        reader_faq_items = self._reader_faq_items(post)
+        reader_context_html = self._reader_context_html(post, reader_faq_items)
+        semantic_body_html = self._semantic_body_html(post)
         source_links_html = self._source_links_html(post)
         related_html = self._related_posts_html(post, posts)
         editorial_note = self._editorial_note_html(post)
@@ -818,7 +820,7 @@ class StaticSiteBuilder:
             </div>
             <div class="tags">{self._tag_html(post.tags)}</div>
           </header>
-          <div class="content">{post.body_html}</div>
+          <div class="content">{semantic_body_html}</div>
           {product_link_html}
           {reader_context_html}
           {source_links_html}
@@ -839,7 +841,11 @@ class StaticSiteBuilder:
             meta_extra=self._article_meta_tags(post),
             robots="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
             if review_indexed else "noindex,follow",
-            structured_data=[self._news_article_schema(post), self._breadcrumb_schema(breadcrumb_items)],
+            structured_data=[
+                self._news_article_schema(post),
+                self._breadcrumb_schema(breadcrumb_items),
+                self._faq_schema(reader_faq_items),
+            ],
             alternate_urls=alternates,
             monetize=review_indexed,
         )
@@ -1024,6 +1030,19 @@ class StaticSiteBuilder:
             '<aside class="movie-fixture-notice" role="note">카나리 배포 검증용 가상 영화 데이터입니다. 검색엔진에 색인되지 않습니다.</aside>'
             if movie.is_fixture else ""
         )
+        movie_facts = [
+            f"개봉일: {movie.release_date}",
+            f"감독: {movie.director}",
+            f"장르: {', '.join(movie.genres)}",
+        ]
+        if movie.runtime_minutes:
+            movie_facts.append(f"상영시간: {movie.runtime_minutes}분")
+        key_facts = (
+            '<section class="movie-section key-facts" aria-labelledby="movie-key-facts">'
+            '<h2 id="movie-key-facts">핵심 팩트 (Key Facts)</h2><ul>'
+            + "".join(f"<li>{html.escape(fact)}</li>" for fact in movie_facts)
+            + "</ul></section>"
+        )
         product_post = Post(
             title=movie.title,
             date=datetime.fromisoformat(movie.release_date),
@@ -1049,6 +1068,7 @@ class StaticSiteBuilder:
             genres=html.escape(", ".join(movie.genres) or "장르 정보 없음"),
             cast=html.escape(", ".join(movie.cast) or "출연 정보 없음"),
             runtime=runtime,
+            key_facts=key_facts,
             synopsis=html.escape(movie.synopsis),
             review_cards=review_cards,
             spoiler_summary=html.escape(movie.spoiler_summary),
@@ -1071,6 +1091,9 @@ class StaticSiteBuilder:
         }
         if movie.runtime_minutes:
             movie_schema["duration"] = f"PT{movie.runtime_minutes}M"
+        spoiler_faq = self._faq_schema([
+            (f"{movie.title}의 스포일러 포함 줄거리는 어떻게 전개되나요?", movie.spoiler_summary),
+        ])
         self._write_html(
             filename,
             movie.title,
@@ -1081,7 +1104,7 @@ class StaticSiteBuilder:
             og_image=poster_public_path,
             og_type="video.movie",
             robots="noindex,follow" if self.movie_staging else "index,follow,max-image-preview:large",
-            structured_data=[movie_schema],
+            structured_data=[movie_schema, spoiler_faq],
             alternate_urls={"ko": page_url, "x-default": page_url},
             asset_prefix=asset_prefix,
             monetize=True,
@@ -1166,6 +1189,18 @@ class StaticSiteBuilder:
             '<aside class="movie-fixture-notice" role="note">50건 병렬 빌드 검증용 가상 데이터입니다. 검색엔진에 색인되지 않습니다.</aside>'
             if record.is_fixture else ""
         )
+        netflix_facts = [
+            f"공개 연도: {record.year}년",
+            f"장르·시청 등급: {record.genre} · {record.age_rating}",
+            f"회차·러닝타임: {record.episodes_runtime}",
+            f"연출: {record.director}",
+        ]
+        key_facts = (
+            '<section class="movie-section key-facts" aria-labelledby="netflix-key-facts">'
+            '<h2 id="netflix-key-facts">핵심 팩트 (Key Facts)</h2><ul>'
+            + "".join(f"<li>{html.escape(fact)}</li>" for fact in netflix_facts)
+            + "</ul></section>"
+        )
         product_post = Post(
             title=f"{record.title} 넷플릭스 정주행",
             date=datetime.fromisoformat(record.updated_at),
@@ -1191,6 +1226,7 @@ class StaticSiteBuilder:
             genre_rating=html.escape(record.age_rating),
             episodes_runtime=html.escape(record.episodes_runtime),
             casting_direction=html.escape(f"{', '.join(record.cast[:4])} · 연출 {record.director}"),
+            key_facts=key_facts,
             synopsis=html.escape(record.synopsis),
             characters=characters,
             viewing_points=viewing_points,
@@ -1215,6 +1251,9 @@ class StaticSiteBuilder:
             "inLanguage": "ko-KR",
             "sameAs": record.source_url,
         }
+        ending_faq = self._faq_schema([
+            (f"{record.title}의 결말은 어떻게 해석할 수 있나요?", record.ending_analysis),
+        ])
         self._write_html(
             filename,
             f"{record.title} 넷플릭스 줄거리·결말·관람평",
@@ -1225,7 +1264,7 @@ class StaticSiteBuilder:
             og_image=record.poster_url,
             og_type="video.tv_show" if record.content_type == "tv" else "video.movie",
             robots="noindex,follow" if dry_run else "index,follow,max-image-preview:large",
-            structured_data=[schema],
+            structured_data=[schema, ending_faq],
             alternate_urls={"ko": page_url, "x-default": page_url},
             asset_prefix=asset_prefix,
             monetize=True,
@@ -1598,7 +1637,7 @@ class StaticSiteBuilder:
           </section>
         """
 
-    def _reader_context_html(self, post: Post) -> str:
+    def _reader_faq_items(self, post: Post) -> list[tuple[str, str]]:
         primary_tag = self._primary_context_tag(post)
         if self._is_government_post(post) or post.category in {"정책", "정치"}:
             faq = [
@@ -1625,6 +1664,29 @@ class StaticSiteBuilder:
                 (f"{primary_tag}의 핵심 조건은 무엇인가요?", "본문의 날짜·대상·수치와 예외 조건을 먼저 확인하고 내 상황에 적용되는지 비교하세요."),
                 ("추가 변경 사항은 어디서 확인하나요?", "아래 공식 출처 버튼에서 후속 공지와 최신 운영 조건을 확인하세요."),
             ]
+        return faq
+
+    @staticmethod
+    def _faq_schema(items: list[tuple[str, str]]) -> dict[str, object]:
+        return {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": question,
+                    "acceptedAnswer": {"@type": "Answer", "text": answer},
+                }
+                for question, answer in items
+            ],
+        }
+
+    def _reader_context_html(
+        self,
+        post: Post,
+        faq: list[tuple[str, str]] | None = None,
+    ) -> str:
+        faq = faq or self._reader_faq_items(post)
         items = "\n".join(
             f"<div><dt>{html.escape(question)}</dt><dd>{html.escape(answer)}</dd></div>"
             for question, answer in faq
@@ -1635,6 +1697,36 @@ class StaticSiteBuilder:
             <dl class="reader-faq">{items}</dl>
           </section>
         """
+
+    def _semantic_body_html(self, post: Post) -> str:
+        """Annotate the first press-release summary block without changing its text."""
+        if not self._is_government_post(post):
+            return post.body_html
+        match = re.search(r"<blockquote>.*?</blockquote>", post.body_html, flags=re.S)
+        if not match:
+            return post.body_html
+        summary = (
+            '<section id="executive-summary" role="doc-abstract" '
+            'aria-labelledby="executive-summary-title">'
+            '<h2 id="executive-summary-title">핵심 요약</h2>'
+            f'{match.group(0)}</section>'
+        )
+        remainder = post.body_html[match.end():]
+        facts = ""
+        if "핵심 팩트" not in post.body_html and "주요 수치" not in post.body_html:
+            fact_items = [
+                re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", paragraph))).strip()
+                for paragraph in re.findall(r"<p>(.*?)</p>", match.group(0), flags=re.S)
+            ]
+            fact_items = [item for item in fact_items if item][:4]
+            if fact_items:
+                facts = (
+                    '<section class="key-facts" aria-labelledby="key-facts-title">'
+                    '<h2 id="key-facts-title">핵심 팩트 (Key Facts)</h2><ul>'
+                    + "".join(f"<li>{html.escape(item)}</li>" for item in fact_items)
+                    + "</ul></section>"
+                )
+        return post.body_html[:match.start()] + summary + facts + remainder
 
     def _home_notice_strip_html(self, posts: list[Post], limit: int = 4) -> str:
         notice_markers = {"나라장터", "입찰공고", "공공조달", "보도자료", "공고"}
@@ -1657,6 +1749,156 @@ class StaticSiteBuilder:
             '<div class="home-notices-heading"><h2 id="home-notices-title">오늘의 주요 입찰·공고</h2>'
             '<span>공식 자료 기반</span></div>'
             f'<div class="home-notice-grid">{cards}</div></section>'
+        )
+
+    def _recommended_post_pool(
+        self,
+        posts: list[Post],
+        per_category: int = 15,
+    ) -> dict[str, list[dict[str, str]]]:
+        """Build a compact, deterministic pool for client-side recommendations."""
+        grouped: dict[str, list[Post]] = {}
+        for post in posts:
+            if post.category:
+                grouped.setdefault(post.category, []).append(post)
+
+        category_order = list(dict.fromkeys([*self.categories, *grouped.keys()]))
+        pool: dict[str, list[dict[str, str]]] = {}
+        for category in category_order:
+            candidates = grouped.get(category, [])
+            if not candidates:
+                continue
+            ranked = sorted(
+                candidates,
+                key=lambda post: (post.quality_score, post.date),
+                reverse=True,
+            )[: max(1, per_category)]
+            pool[category] = [
+                {
+                    "title": post.title,
+                    "url": f"./{post.slug}.html",
+                    "thumbnail": self._image_src_for_width(post.cover_image, 720),
+                    "summary": post.excerpt[:120],
+                }
+                for post in ranked
+            ]
+        return pool
+
+    def _recommended_posts_html(self, posts: list[Post]) -> str:
+        pool = self._recommended_post_pool(posts)
+        if not pool:
+            return ""
+
+        tabs: list[str] = []
+        for index, category in enumerate(pool):
+            selected = "true" if index == 0 else "false"
+            tab_index = "0" if index == 0 else "-1"
+            tabs.append(
+                f'<button class="recommended-tab" id="recommended-tab-{index}" role="tab" '
+                f'aria-selected="{selected}" aria-controls="recommended-panel" tabindex="{tab_index}" '
+                f'data-recommended-category="{html.escape(category, quote=True)}">'
+                f'{html.escape(category)}</button>'
+            )
+
+        skeletons = "".join(
+            '<div class="recommended-skeleton" aria-hidden="true">'
+            '<span class="recommended-skeleton-image"></span>'
+            '<span class="recommended-skeleton-line short"></span>'
+            '<span class="recommended-skeleton-line"></span>'
+            '</div>'
+            for _ in range(4)
+        )
+        serialized = json.dumps(pool, ensure_ascii=False, separators=(",", ":"))
+        serialized = (
+            serialized.replace("<", "\\u003c")
+            .replace(">", "\\u003e")
+            .replace("&", "\\u0026")
+            .replace("\u2028", "\\u2028")
+            .replace("\u2029", "\\u2029")
+        )
+        runtime = r"""
+  <script>
+  window.RECOMMENDED_POSTS=__RECOMMENDED_POSTS__;
+  (function(){
+    function shuffle(items){
+      var copy=items.slice();
+      for(var i=copy.length-1;i>0;i--){
+        var j=Math.floor(Math.random()*(i+1));
+        var swap=copy[i];copy[i]=copy[j];copy[j]=swap;
+      }
+      return copy;
+    }
+    function esc(value){
+      return String(value||'').replace(/[&<>"']/g,function(character){
+        return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character];
+      });
+    }
+    function initialize(){
+      var section=document.querySelector('[data-recommended-posts]');
+      var panel=document.getElementById('recommended-panel');
+      if(!section||!panel)return;
+      var tabs=Array.prototype.slice.call(section.querySelectorAll('[data-recommended-category]'));
+      var pool=window.RECOMMENDED_POSTS||{};
+      function render(category){
+        var candidates=shuffle(pool[category]||[]);
+        var count=Math.min(4,candidates.length);
+        var selected=candidates.slice(0,count);
+        var storageKey='briefwave-recommended-'+category;
+        var previous=[];
+        try{previous=(sessionStorage.getItem(storageKey)||'').split('|').filter(Boolean);}catch(error){}
+        var previousSet=new Set(previous);
+        if(candidates.length>count&&selected.length&&selected.every(function(item){return previousSet.has(item.url);})){
+          var replacement=candidates.find(function(item){return !previousSet.has(item.url);});
+          if(replacement)selected[count-1]=replacement;
+        }
+        var activeTab=tabs.find(function(tab){return tab.dataset.recommendedCategory===category;});
+        panel.innerHTML=selected.map(function(item){
+          var image=item.thumbnail
+            ? '<span class="recommended-card-media"><img src="'+esc(item.thumbnail)+'" alt="" width="720" height="405" loading="lazy" decoding="async"></span>'
+            : '<span class="recommended-card-media recommended-card-placeholder" aria-hidden="true">BriefWave</span>';
+          return '<article class="recommended-card"><a href="'+esc(item.url)+'">'+image+
+            '<span class="recommended-card-body"><span class="recommended-card-badge">'+esc(category)+'</span>'+
+            '<h3>'+esc(item.title)+'</h3><span class="recommended-card-summary">'+esc(item.summary)+'</span></span></a></article>';
+        }).join('');
+        if(activeTab)panel.setAttribute('aria-labelledby',activeTab.id);
+        try{sessionStorage.setItem(storageKey,selected.map(function(item){return item.url;}).join('|'));}catch(error){}
+      }
+      function activate(tab){
+        tabs.forEach(function(item){
+          var active=item===tab;
+          item.setAttribute('aria-selected',active?'true':'false');
+          item.tabIndex=active?0:-1;
+        });
+        render(tab.dataset.recommendedCategory);
+      }
+      tabs.forEach(function(tab,index){
+        tab.addEventListener('click',function(){activate(tab);});
+        tab.addEventListener('keydown',function(event){
+          if(event.key!=='ArrowLeft'&&event.key!=='ArrowRight')return;
+          event.preventDefault();
+          var direction=event.key==='ArrowRight'?1:-1;
+          var next=tabs[(index+direction+tabs.length)%tabs.length];
+          next.focus();activate(next);
+        });
+      });
+      if(tabs.length)activate(tabs[0]);
+    }
+    if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initialize,{once:true});
+    else initialize();
+  })();
+  </script>
+""".replace("__RECOMMENDED_POSTS__", serialized)
+
+        return (
+            '<section class="recommended-posts" data-recommended-posts '
+            'aria-labelledby="recommended-posts-title">'
+            '<div class="recommended-heading"><p class="recommended-kicker">EDITOR’S PICK</p>'
+            '<h2 id="recommended-posts-title">✨ 브리핑웨이브 에디터 추천 '
+            '<span>(새로고침하여 더 보기 🔄)</span></h2></div>'
+            '<div class="recommended-tabs" role="tablist" aria-label="추천 기사 카테고리">'
+            f'{"".join(tabs)}</div>'
+            '<div class="recommended-grid" id="recommended-panel" role="tabpanel" aria-live="polite">'
+            f'{skeletons}</div></section>{runtime}'
         )
 
     @staticmethod
@@ -1939,6 +2181,7 @@ class StaticSiteBuilder:
         per_page = 9
         total = len(posts)
         notice_strip = self._home_notice_strip_html(posts)
+        recommended_posts = self._recommended_posts_html(posts)
         product_strip, bottom_recommend = self._common_product_widgets_html()
         if total == 0:
             content = f"""
@@ -1946,6 +2189,7 @@ class StaticSiteBuilder:
               <p class="hero-tagline">직접 판단에 도움이 되는 선별 브리핑을 모았습니다</p>
             </section>
             {notice_strip}
+            {recommended_posts}
             {product_strip}
             <p class="empty">아직 발행된 글이 없습니다.</p>
             {bottom_recommend}
@@ -1977,6 +2221,7 @@ class StaticSiteBuilder:
               {hero_stats}
             </section>
             {notice_strip if page == 1 else ""}
+            {recommended_posts if page == 1 else ""}
             {product_strip}
             <section class="grid">{cards}</section>
             {nav_html}
@@ -3563,6 +3808,54 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .breadcrumb span[aria-current="page"] { color: var(--ink); }
 
 /* ── index grid ── */
+.recommended-posts {
+  min-height: 430px;
+  margin: 18px 0 6px;
+  padding: 22px;
+  overflow: hidden;
+  border: 1px solid #d8e7e3;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #f1faf7 0%, #fffdf8 62%, #fff 100%);
+}
+.recommended-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; margin-bottom: 14px; }
+.recommended-kicker { margin: 0; color: var(--accent); font-size: .7rem; font-weight: 900; letter-spacing: .14em; }
+.recommended-heading h2 { margin: 0; font-size: clamp(1.08rem, 2.2vw, 1.42rem); line-height: 1.4; word-break: keep-all; }
+.recommended-heading h2 span { color: var(--muted); font-size: .72em; font-weight: 600; }
+.recommended-tabs { display: flex; gap: 7px; margin-bottom: 16px; overflow-x: auto; scrollbar-width: none; }
+.recommended-tabs::-webkit-scrollbar { display: none; }
+.recommended-tab { min-height: 34px; padding: 0 14px; border: 1px solid #bdd8d1; border-radius: 999px; background: rgba(255,255,255,.88); color: #365b55; font: inherit; font-size: .8rem; font-weight: 800; white-space: nowrap; cursor: pointer; transition: color .18s ease, background .18s ease, border-color .18s ease; }
+.recommended-tab:hover, .recommended-tab[aria-selected="true"] { border-color: var(--accent); background: var(--accent); color: #fff; }
+.recommended-tab:focus-visible { outline: 3px solid rgba(15,118,110,.24); outline-offset: 2px; }
+.recommended-grid { display: grid; min-height: 292px; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.recommended-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 13px; background: var(--paper); box-shadow: 0 5px 18px rgba(31,79,69,.07); }
+.recommended-card > a { display: flex; height: 100%; flex-direction: column; color: var(--ink); text-decoration: none; }
+.recommended-card-media { display: block; aspect-ratio: 16 / 9; overflow: hidden; background: #e9f1ef; }
+.recommended-card-media img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .28s ease; }
+.recommended-card:hover .recommended-card-media img { transform: scale(1.045); }
+.recommended-card-placeholder { display: grid; place-items: center; color: var(--accent); font-size: .78rem; font-weight: 900; letter-spacing: .05em; }
+.recommended-card-body { display: flex; flex: 1; flex-direction: column; align-items: flex-start; gap: 7px; padding: 12px; }
+.recommended-card-badge { padding: 3px 8px; border-radius: 999px; background: #e7f5f1; color: #0b675f; font-size: .68rem; font-weight: 900; }
+.recommended-card h3 { display: -webkit-box; margin: 0; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; font-size: .92rem; line-height: 1.42; word-break: keep-all; }
+.recommended-card-summary { display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: var(--muted); font-size: .76rem; line-height: 1.5; }
+.recommended-skeleton { overflow: hidden; border: 1px solid var(--line); border-radius: 13px; background: var(--paper); }
+.recommended-skeleton-image, .recommended-skeleton-line { display: block; background: linear-gradient(90deg, #edf1ef 25%, #f8faf9 45%, #edf1ef 65%); background-size: 250% 100%; animation: recommended-shimmer 1.25s infinite linear; }
+.recommended-skeleton-image { aspect-ratio: 16 / 9; }
+.recommended-skeleton-line { height: 12px; margin: 14px 12px 0; border-radius: 999px; }
+.recommended-skeleton-line.short { width: 42%; margin-top: 16px; }
+@keyframes recommended-shimmer { to { background-position: -250% 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .recommended-skeleton-image, .recommended-skeleton-line { animation: none; }
+  .recommended-card-media img { transition: none; }
+}
+@media (max-width: 720px) {
+  .recommended-posts { min-height: 400px; margin: 14px -16px 4px; padding: 18px 16px; border-right: 0; border-left: 0; border-radius: 0; }
+  .recommended-heading { display: block; }
+  .recommended-kicker { margin-bottom: 4px; }
+  .recommended-heading h2 span { display: block; margin-top: 3px; }
+  .recommended-grid { min-height: 274px; grid-template-columns: repeat(4, minmax(240px, 78vw)); overflow-x: auto; padding: 1px 1px 8px; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .recommended-grid::-webkit-scrollbar { display: none; }
+  .recommended-card, .recommended-skeleton { scroll-snap-align: start; }
+}
 .home-notices { padding: 14px 0 16px; border-bottom: 1px solid var(--line); }
 .home-notices-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
 .home-notices-heading h2 { margin: 0; font-size: 1rem; }
@@ -4082,9 +4375,18 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 
 /* ── table: scrollable on mobile ── */
 .content .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 16px 0; }
-.content > blockquote { margin: 12px 0 22px; padding: 14px 16px; border: 1px solid rgba(15,118,110,.24); border-left: 4px solid var(--accent); border-radius: 8px; background: #f4faf8; }
-.content > blockquote p { margin: 0 0 6px; }
-.content > blockquote p:last-child { margin-bottom: 0; }
+.content > blockquote,
+#executive-summary > blockquote { margin: 12px 0 22px; padding: 14px 16px; border: 1px solid rgba(15,118,110,.24); border-left: 4px solid var(--accent); border-radius: 8px; background: #f4faf8; }
+.content > blockquote p,
+#executive-summary > blockquote p { margin: 0 0 6px; }
+.content > blockquote p:last-child,
+#executive-summary > blockquote p:last-child { margin-bottom: 0; }
+#executive-summary { margin: 24px 0; }
+#executive-summary > h2 { margin-bottom: 8px; }
+.key-facts { margin: 22px 0; padding: 16px 18px; border: 1px solid #d7e5e1; border-radius: 10px; background: #fbfdfc; }
+.key-facts h2 { margin-top: 0; }
+.key-facts ul { margin: 0; padding-left: 1.25rem; }
+.key-facts li + li { margin-top: 6px; }
 .bid-card-grid { display: grid; gap: 12px; margin: 16px 0 24px; }
 .bid-card { padding: 16px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
 .bid-card-title { display: flex; align-items: flex-start; gap: 9px; margin-bottom: 12px; }
@@ -4321,10 +4623,28 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
         (self.public_dir / "style.css").write_text((css.strip() + "\n" + extra).lstrip() + "\n", encoding="utf-8")
 
     def _write_robots(self) -> None:
-        content = (
-            "User-agent: *\n"
+        crawl_rules = (
             "Allow: /\n"
-            f"Sitemap: {self.site_url}/sitemap-static.xml\n"
+            "Disallow: /page/\n"
+            "Disallow: /page*.html\n"
+            "Disallow: /search.html\n"
+            "Disallow: /*?*tag=\n"
+            "Disallow: /*?*category=\n"
+        )
+        ai_crawlers = (
+            "GPTBot",
+            "ChatGPT-User",
+            "Google-Extended",
+            "Claude-Web",
+            "ClaudeBot",
+            "PerplexityBot",
+            "OmgiliBot",
+            "CCBot",
+        )
+        groups = [f"User-agent: {crawler}\n{crawl_rules}" for crawler in ai_crawlers]
+        groups.append(f"User-agent: *\n{crawl_rules}")
+        content = "\n".join(groups) + (
+            f"\nSitemap: {self.site_url}/sitemap-static.xml\n"
             f"Sitemap: {self.site_url}/sitemap.xml\n"
             f"Sitemap: {self.site_url}/sitemap-index.xml\n"
         )

@@ -8,14 +8,17 @@
     <div class="movie-heading">
       <p class="meta">영화 · $release_date</p>
       <h1>$title</h1>
-      <dl class="movie-facts">
-        <div><dt>감독</dt><dd>$director</dd></div>
-        <div><dt>장르</dt><dd>$genres</dd></div>
-        <div><dt>출연</dt><dd>$cast</dd></div>
-        $runtime
-      </dl>
+      <section id="executive-summary" role="doc-abstract" aria-label="영화 핵심 요약">
+        <dl class="movie-facts">
+          <div><dt>감독</dt><dd>$director</dd></div>
+          <div><dt>장르</dt><dd>$genres</dd></div>
+          <div><dt>출연</dt><dd>$cast</dd></div>
+          $runtime
+        </dl>
+      </section>
     </div>
   </header>
+  $key_facts
   <section class="movie-section" aria-labelledby="movie-overview-title">
     <h2 id="movie-overview-title">작품 소개</h2>
     <p>$synopsis</p>

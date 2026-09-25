@@ -58,6 +58,11 @@ class PressTemplateTest(unittest.TestCase):
                 {"label": "사업 규모", "value": "연면적 약 5,005㎡"},
                 {"label": "완공 일정", "value": "미정"},
             ],
+            "key_facts": [
+                "설계공모 당선작 1건을 선정",
+                "연면적 약 5,005㎡",
+                "국가유산청이 결과를 발표",
+            ],
             "sections": [
                 {"heading": "선정 결과", "body_markdown": "당선작 설명"},
                 {"heading": "사업 규모", "body_markdown": "시설 설명"},
@@ -72,6 +77,8 @@ class PressTemplateTest(unittest.TestCase):
         parsed = parse_press_json(json.dumps(payload, ensure_ascii=False), "ANNOUNCEMENT")
         self.assertIsNotNone(parsed)
         self.assertIn("## 선정 결과", render_press_json(parsed))
+        self.assertIn("## 핵심 팩트 (Key Facts)", render_press_json(parsed))
+        self.assertIn("- 연면적 약 5,005㎡", render_press_json(parsed))
 
     def test_slug_truncates_only_at_word_boundary(self) -> None:
         title = "국가유산진흥원 (주)WTC Seoul 국가유산 가치 확산을 위한 업무협약 체결 (260922)"

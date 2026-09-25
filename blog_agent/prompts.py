@@ -108,12 +108,18 @@ INVALID_DATA인 경우에는 {"post_type":"INVALID_DATA","reason":"구체적 원
     {"label": "동적 라벨 2", "value": "원문에서 확인한 구체적 사실"},
     {"label": "동적 라벨 3", "value": "원문에서 확인한 구체적 사실"}
   ],
+  "key_facts": [
+    "원문에서 확인한 날짜·금액·규모·대상 등 객관적 사실 1",
+    "원문에서 확인한 객관적 사실 2",
+    "원문에서 확인한 객관적 사실 3"
+  ],
   "sections": [
     {"heading": "원문 고유명사가 포함된 H2", "body_markdown": "근거 중심 본문"}
   ]
 }
 
 summary_box는 정확히 3개를 출력한다.
+key_facts는 원문에서 직접 확인되는 날짜·예산·규모·인원·평점 등 객관적 수치와 사실만 3~4개 출력한다. 수치가 부족하면 기관·대상·장소처럼 검증 가능한 사실을 사용하며 창작하지 않는다.
 ACTIONABLE sections는 최소 4개이며 지원 대상 요건 → 지원 내용 → 신청 절차 → FAQ 순서를 지킨다.
 INFORMATIONAL sections는 최소 3개이며 목적 → 주요 논의·협력 내용 → 기대 효과 순서를 지킨다.
 ANNOUNCEMENT sections는 최소 3개이며 선정 결과 → 시설·사업 규모 → 향후 추진 일정 순서를 지킨다.
@@ -141,8 +147,13 @@ def parse_press_json(text: str, expected_type: PressTemplate | None = None) -> d
     if expected_type and payload["post_type"] != expected_type:
         return None
     summaries = payload.get("summary_box")
+    key_facts = payload.get("key_facts")
     sections = payload.get("sections")
     if not isinstance(summaries, list) or len(summaries) != 3:
+        return None
+    if not isinstance(key_facts, list) or not 3 <= len(key_facts) <= 4:
+        return None
+    if any(not str(fact).strip() for fact in key_facts):
         return None
     minimum_sections = 4 if payload["post_type"] == "ACTIONABLE" else 3
     if not isinstance(sections, list) or len(sections) < minimum_sections:
@@ -168,8 +179,11 @@ def render_press_json(payload: dict[str, Any]) -> str:
         f"> **[{str(item['label']).strip().strip('[]')}]** {str(item['value']).strip()}"
         for item in payload["summary_box"]
     )
+    key_facts = "## 핵심 팩트 (Key Facts)\n\n" + "\n".join(
+        f"- {str(item).strip()}" for item in payload["key_facts"]
+    )
     sections = "\n\n".join(
         f"## {str(item['heading']).strip().lstrip('#').strip()}\n\n{str(item['body_markdown']).strip()}"
         for item in payload["sections"]
     )
-    return "\n\n".join(part for part in (lead, summary, sections) if part).strip()
+    return "\n\n".join(part for part in (lead, summary, key_facts, sections) if part).strip()

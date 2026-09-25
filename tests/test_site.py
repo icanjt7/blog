@@ -12,6 +12,50 @@ from blog_agent.site import StaticSiteBuilder
 
 
 class StaticSiteBuilderTest(unittest.TestCase):
+    def test_press_summary_and_faq_are_machine_readable(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            post_path = root / "posts" / "press.md"
+            post_path.parent.mkdir()
+            post_path.write_text(
+                """---
+title: '청년 지원 사업 안내'
+date: '2026-09-25T09:00:00'
+category: 정책
+tags: [보도자료, 청년]
+---
+
+도입 문장입니다.
+
+> **[지원 대상]** 지역 청년
+>
+> **[지원 금액]** 100만원
+
+## 핵심 팩트 (Key Facts)
+
+- 접수일은 9월 25일입니다.
+- 지원 규모는 100명입니다.
+- 담당 기관은 정책청입니다.
+""",
+                encoding="utf-8",
+            )
+            builder = StaticSiteBuilder(
+                posts_dir=post_path.parent,
+                public_dir=root / "public",
+                site_title="테스트",
+                site_description="테스트",
+            )
+            post = builder._parse_post(post_path)
+            body = builder._semantic_body_html(post)
+            faq = builder._reader_faq_items(post)
+            schema = builder._faq_schema(faq)
+
+        self.assertIn('<section id="executive-summary" role="doc-abstract"', body)
+        self.assertIn("<ul>", body)
+        self.assertEqual(schema["@type"], "FAQPage")
+        self.assertEqual(schema["mainEntity"][0]["name"], faq[0][0])
+        self.assertEqual(schema["mainEntity"][0]["acceptedAnswer"]["text"], faq[0][1])
+
     def test_source_links_handle_url_labels_and_ignore_malformed_urls(self) -> None:
         markdown_text = """## 출처
 
@@ -408,6 +452,18 @@ quality_score: 95.0
             page_two = (root / "public" / "page2.html").read_text(encoding="utf-8")
             category_two = (root / "public" / "category-기술-2.html").read_text(encoding="utf-8")
             search = (root / "public" / "search.html").read_text(encoding="utf-8")
+            index_html = (root / "public" / "index.html").read_text(encoding="utf-8")
+            self.assertIn('class="recommended-posts"', index_html)
+            self.assertIn("✨ 브리핑웨이브 에디터 추천", index_html)
+            self.assertIn("window.RECOMMENDED_POSTS=", index_html)
+            self.assertIn("for(var i=copy.length-1;i>0;i--)", index_html)
+            self.assertIn("DOMContentLoaded", index_html)
+            self.assertIn('role="tablist"', index_html)
+            self.assertIn('role="tabpanel"', index_html)
+            self.assertLess(index_html.index('class="recommended-posts"'), index_html.index('class="grid"'))
+            style = (root / "public" / "style.css").read_text(encoding="utf-8")
+            self.assertIn(".recommended-posts {", style)
+            self.assertIn("min-height: 430px", style)
             self.assertIn('<meta name="robots" content="noindex,follow">', page_two)
             self.assertIn('<meta name="robots" content="noindex,follow">', category_two)
             self.assertIn('<meta name="robots" content="noindex,follow">', search)
@@ -427,6 +483,10 @@ quality_score: 95.0
             self.assertIn("category-%EA%B8%B0%EC%88%A0.html", static_sitemap)
             self.assertIn("%ED%95%9C%EA%B8%80-%EA%B8%80-0.html", post_sitemap)
             self.assertIn("Allow: /", robots)
+            for crawler in ("GPTBot", "ChatGPT-User", "Google-Extended", "Claude-Web", "PerplexityBot", "OmgiliBot", "CCBot"):
+                self.assertIn(f"User-agent: {crawler}", robots)
+            self.assertIn("Disallow: /search.html", robots)
+            self.assertIn("Disallow: /page*.html", robots)
             self.assertIn("Sitemap: https://example.com/sitemap-static.xml", robots)
 
     def test_build_adds_adsense_quality_signals(self) -> None:
@@ -511,6 +571,8 @@ quality_score: 95.0
             self.assertIn("함께 보면 좋은 글", html)
             self.assertIn("관련 글", html)
             self.assertIn('class="official-source-badge"', html)
+            self.assertIn('"@type": "FAQPage"', html)
+            self.assertIn('"acceptedAnswer": {"@type": "Answer"', html)
             self.assertIn('target="_blank"', html)
             self.assertIn('noopener noreferrer', html)
             self.assertIn('class="toss-shopping-card product-recommendation"', html)

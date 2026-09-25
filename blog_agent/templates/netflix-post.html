@@ -8,13 +8,16 @@
     <div class="movie-heading">
       <p class="meta">넷플릭스 · $year</p>
       <h1>$title</h1>
-      <dl class="netflix-summary-box" aria-label="콘텐츠 핵심 요약">
-        <div><dt>장르 및 시청 등급</dt><dd>$genre_rating</dd></div>
-        <div><dt>총 회차/러닝타임</dt><dd>$episodes_runtime</dd></div>
-        <div><dt>주요 캐스팅 및 연출</dt><dd>$casting_direction</dd></div>
-      </dl>
+      <section id="executive-summary" role="doc-abstract" aria-label="콘텐츠 핵심 요약">
+        <dl class="netflix-summary-box">
+          <div><dt>장르 및 시청 등급</dt><dd>$genre_rating</dd></div>
+          <div><dt>총 회차/러닝타임</dt><dd>$episodes_runtime</dd></div>
+          <div><dt>주요 캐스팅 및 연출</dt><dd>$casting_direction</dd></div>
+        </dl>
+      </section>
     </div>
   </header>
+  $key_facts
   <section class="movie-section" aria-labelledby="netflix-synopsis">
     <h2 id="netflix-synopsis">$title 시놉시스 및 주요 등장인물</h2>
     <p>$synopsis</p>
