@@ -19,6 +19,7 @@ REQUIRED_SNIPPETS = (
     'class="movie-review-card"',
     '<details class="movie-spoiler">',
     'class="toss-shopping-card product-recommendation"',
+    'class="toss-cta-button product-recommendation-link"',
     'rel="sponsored nofollow noopener noreferrer"',
     'data-product-catalog="../../product-catalog.json"',
 )

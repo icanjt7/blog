@@ -795,9 +795,11 @@ class StaticSiteBuilder:
         cover_html = ""
         if post.cover_image:
             cover_src = self._image_src_for_width(post.cover_image, 1200)
+            primary_keyword = next((tag for tag in post.tags if tag.strip()), post.category)
+            cover_alt = f"{post.title} - {primary_keyword} 핵심 내용 요약 이미지"
             cover_html = (
                 f'<img class="cover" src="{html.escape(cover_src)}" '
-                f'alt="{html.escape(post.cover_image_alt)}" width="1200" height="675" '
+                f'alt="{html.escape(cover_alt)}" width="1200" height="675" '
                 'loading="eager" fetchpriority="high" decoding="async">'
             )
         ad_slot = self._ad_slot() if review_indexed else ""
@@ -1069,7 +1071,7 @@ class StaticSiteBuilder:
             breadcrumb=self._breadcrumb_html(breadcrumb_items),
             fixture_notice=fixture_notice,
             poster_src=f"{asset_prefix}{poster_public_path}",
-            poster_alt=html.escape(movie.poster_alt),
+            poster_alt=html.escape(f"{movie.title} - {', '.join(movie.genres[:2]) or '영화'} 핵심 내용 요약 이미지"),
             release_date=html.escape(movie.release_date),
             title=html.escape(movie.title),
             director=html.escape(movie.director),
@@ -1228,7 +1230,7 @@ class StaticSiteBuilder:
             breadcrumb=self._breadcrumb_html(breadcrumb_items),
             fixture_notice=fixture_notice,
             poster_url=html.escape(record.poster_url),
-            poster_alt=html.escape(record.poster_alt),
+            poster_alt=html.escape(f"{record.title} - {record.genre} 핵심 내용 요약 이미지"),
             year=record.year,
             title=html.escape(record.title),
             genre_rating=html.escape(record.age_rating),
@@ -1312,7 +1314,7 @@ class StaticSiteBuilder:
               <p class="product-recommendation-reason">{html.escape(recommendation_reason)}</p>
               <p class="product-recommendation-description">{html.escape(description)}</p>
               <p class="product-recommendation-guide">구성·용량과 현재 가격, 배송 조건을 상세 페이지에서 비교해 보세요.</p>
-              <a class="product-recommendation-link" href="{html.escape(product.url)}"
+              <a class="toss-cta-button product-recommendation-link" href="{html.escape(product.url)}"
                  rel="sponsored nofollow noopener noreferrer" target="_blank">👉 [최저가 확인] 오늘 한정 특가 및 실구매자 후기 보기</a>
               {reviews_html}
               <p class="product-recommendation-disclosure">이 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있으며, 구매 가격에는 영향을 주지 않습니다.</p>
@@ -1734,7 +1736,8 @@ class StaticSiteBuilder:
                     + "".join(f"<li>{html.escape(item)}</li>" for item in fact_items)
                     + "</ul></section>"
                 )
-        return post.body_html[:match.start()] + summary + facts + remainder
+        introduction = post.body_html[:match.start()]
+        return summary + facts + introduction + remainder
 
     def _home_notice_strip_html(self, posts: list[Post], limit: int = 4) -> str:
         notice_markers = {"나라장터", "입찰공고", "공공조달", "보도자료", "공고"}
@@ -4388,11 +4391,15 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .content p { margin: 0 0 1em; }
 .content ul, .content ol { padding-left: 1.4em; }
 .content li { margin-bottom: 0.3em; }
+.content ul, .movie-section ul, .key-facts ul { list-style: none; padding-left: 0; }
+.content ul > li, .movie-section ul > li, .key-facts ul > li { position: relative; padding-left: 1.55rem; }
+.content ul > li::before, .movie-section ul > li::before, .key-facts ul > li::before { content: "✓"; position: absolute; left: 0; top: 0; color: #0050ff; font-weight: 900; }
 
 /* ── table: scrollable on mobile ── */
 .content .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 16px 0; }
 .content > blockquote,
-#executive-summary > blockquote { margin: 12px 0 22px; padding: 14px 16px; border: 1px solid rgba(15,118,110,.24); border-left: 4px solid var(--accent); border-radius: 8px; background: #f4faf8; }
+.movie-section blockquote,
+#executive-summary > blockquote { margin: 12px 0 22px; padding: 14px 16px; border: 1px solid #d9dee8; border-left: 5px solid #0050ff; border-radius: 8px; background: #f5f7fa; }
 .content > blockquote p,
 #executive-summary > blockquote p { margin: 0 0 6px; }
 .content > blockquote p:last-child,
@@ -4444,9 +4451,9 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   margin: 0;
   padding: 18px;
   border: 1px solid rgba(49,130,246,.28);
-  border-radius: 14px;
+  border-radius: 18px;
   background: #f7fbff;
-  box-shadow: 0 10px 28px rgba(49,130,246,.1);
+  box-shadow: 0 14px 34px rgba(15,23,42,.14);
 }
 .product-recommendation-image-link {
   display: block;
@@ -4505,6 +4512,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   line-height: 1.55;
 }
 .product-recommendation-guide { margin-bottom: 13px; color: var(--ink); }
+.toss-cta-button,
 .product-recommendation-link {
   display: inline-flex;
   align-items: center;
@@ -4513,16 +4521,21 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   width: 100%;
   padding: 10px 16px;
   border-radius: 8px;
-  border: 2px solid #1769d2;
-  background: linear-gradient(135deg, #3182f6, #1769d2);
-  box-shadow: 0 8px 18px rgba(49,130,246,.28);
+  box-sizing: border-box;
+  border: 2px solid #0050ff;
+  background: #0050ff;
+  box-shadow: 0 9px 22px rgba(0,80,255,.3);
   color: #fff;
   font-size: .9rem;
-  font-weight: 750;
+  font-weight: 800;
+  transition: transform .16s ease, filter .16s ease, box-shadow .16s ease;
 }
 .product-recommendation-link span { margin-left: 5px; transition: transform .18s; }
 .product-recommendation-link:hover span { transform: translateX(3px); }
-.product-recommendation-link:hover { color: #fff; text-decoration: none; filter: brightness(1.05); transform: translateY(-1px); }
+.toss-cta-button:hover,
+.product-recommendation-link:hover { color: #fff; text-decoration: none; filter: brightness(1.08); transform: translateY(-1px); }
+.toss-cta-button:active,
+.product-recommendation-link:active { transform: scale(.98); box-shadow: 0 4px 12px rgba(0,80,255,.28); }
 .product-recommendation-disclosure {
   margin: 11px 0 0;
   color: var(--muted);
@@ -4600,8 +4613,9 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   .grid { grid-template-columns: 1fr; gap: 10px; padding: 10px 12px 0; }
   .card { border-radius: 10px; contain-intrinsic-size: 390px; }
   .card-body { padding: 12px 14px 14px; }
-	  .product-recommendation { gap: 12px; padding: 14px; }
+	  .product-recommendation { gap: 12px; padding: 14px; border-radius: 16px; }
 	  .product-recommendation-image-link { height: min(72vw, 300px); }
+	  .toss-cta-button, .product-recommendation-link { display: flex; width: 100%; min-height: 52px; padding-inline: 12px; text-align: center; }
 	  .post { border-radius: 0; border-left: none; border-right: none; padding: 16px; }
 	  .bid-card dl { grid-template-columns: 1fr; }
 	  .bid-card dl > div { display: grid; grid-template-columns: 76px 1fr; gap: 8px; padding: 9px 0; border-top: 1px dashed var(--line); }

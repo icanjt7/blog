@@ -147,7 +147,7 @@ def _render_record(builder: StaticSiteBuilder, template_text: str, raw: dict[str
     content = Template(template_text).substitute(
         breadcrumb=breadcrumb,
         poster_url=html.escape(record["poster_url"], quote=True),
-        poster_alt=html.escape(f"{record['title']} 포스터", quote=True),
+        poster_alt=html.escape(f"{record['title']} - {genres} 핵심 내용 요약 이미지", quote=True),
         year=record["release_year"],
         title=html.escape(record["title"]),
         genres=html.escape(genres),
@@ -258,7 +258,7 @@ def _catalog_card(record: dict[str, Any], *, href_prefix: str = "./") -> str:
         f'<article class="netflix-catalog-card">'
         f'<a href="{href_prefix}{html.escape(filename, quote=True)}">'
         f'<img src="{html.escape(record["poster_url"], quote=True)}" '
-        f'alt="{html.escape(record["title"], quote=True)} 포스터" width="300" height="450" loading="lazy" decoding="async">'
+        f'alt="{html.escape(record["title"], quote=True)} - {html.escape(genres, quote=True)} 핵심 내용 요약 이미지" width="300" height="450" loading="lazy" decoding="async">'
         f'<span class="netflix-card-body"><span class="netflix-card-badge">넷플릭스 · {html.escape(genres)}</span>'
         f'<strong>{html.escape(record["title"])}</strong>'
         f'<small>{record["release_year"]}년 · {"영화" if record["content_type"] == "movie" else "시리즈"}</small>'

@@ -48,6 +48,8 @@ def classify_press_template(title: str, body: str = "") -> PressTemplate:
 def press_template_instruction(template: PressTemplate) -> str:
     common = """[보도자료 3분류 및 헤딩 규칙]
 - H2/H3는 고정 문구를 복사하지 말고 원문의 고유명사·장소·사업명·수치를 포함한 검색 질문형 문장으로 작성한다.
+- 핵심 3줄 요약을 H1 바로 아래 본문의 첫 블록으로 배치하고, 서론보다 핵심 대상·금액·날짜·결과를 먼저 제시한다.
+- '결론적으로', '요약하자면', '이 영화가 주는 메시지는', '종합해 보면' 같은 AI 상투어를 사용하지 않는다.
 - 요약 값은 공식 자료에서 확인되는 사실만 쓴다. 정보가 없으면 사실을 만들지 말고, 원문에 있는 다른 핵심 사실로 라벨과 값을 함께 교체한다.
 - '공식 원문 참조', '공식 원문 확인', '해당 없음', '미정', '확인 필요'는 요약 박스에 절대 출력하지 않는다.
 """
@@ -76,7 +78,7 @@ def press_summary_card_instruction(template: PressTemplate) -> str:
         "ANNOUNCEMENT": "[당선작·핵심 결과] / [사업 규모·위치] / [향후 추진·완공 일정]",
     }[template]
     return (
-        f"도입 다음에 {labels} 성격의 요약 3개를 둔다. "
+        f"도입보다 먼저, H1 바로 아래에 {labels} 성격의 요약 3개를 둔다. "
         "원문에 없는 항목은 원문에 있는 다른 핵심 사실로 라벨과 값을 함께 교체한다. "
         "빈 값이나 대체 문구는 금지한다."
     )
@@ -87,6 +89,8 @@ def press_json_system_prompt() -> str:
 
     return """당신은 공공기관 보도자료를 구조화하는 한국어 편집기다.
 원문을 읽고 post_type을 ACTIONABLE, INFORMATIONAL, ANNOUNCEMENT 중 하나로 판단한다.
+핵심 3줄 요약(summary_box)은 H1 바로 아래에서 가장 먼저 렌더링될 데이터이므로 결론이나 배경보다 수혜 대상·금액·일정·핵심 결과를 앞에 배치한다.
+절대로 '결론적으로', '요약하자면', '이 영화가 주는 메시지는', '종합해 보면' 같은 기계적이고 상투적인 서두/맺음말(AI Cliché)을 사용하지 말 것. 전문적이고 건조한 블로거의 문체를 유지하고 바로 팩트와 수치를 제시할 것.
 
 제공된 보도자료 원문 텍스트가 구체적인 사실(Fact), 수치, 정책 내용을 포함하지 않고 단순히 '00월호가 발간되었습니다' 수준의 안내에 그친다면, 억지로 소제목(H2)이나 요약을 지어내지 말고 JSON 응답의 'post_type'을 'INVALID_DATA'로 반환할 것.
 INVALID_DATA인 경우에는 {"post_type":"INVALID_DATA","reason":"구체적 원문 부족"}만 출력한다.
@@ -186,4 +190,6 @@ def render_press_json(payload: dict[str, Any]) -> str:
         f"## {str(item['heading']).strip().lstrip('#').strip()}\n\n{str(item['body_markdown']).strip()}"
         for item in payload["sections"]
     )
-    return "\n\n".join(part for part in (lead, summary, key_facts, sections) if part).strip()
+    # The summary must be the first body block so the renderer can place it
+    # directly below the H1 without searching through introductory prose.
+    return "\n\n".join(part for part in (summary, key_facts, lead, sections) if part).strip()

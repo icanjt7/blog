@@ -16,6 +16,7 @@ REQUIRED_MARKERS = (
     'application/ld+json',
     'JustWatch에서 최신 제공 정보 확인',
     'class="toss-shopping-card product-recommendation"',
+    'class="toss-cta-button product-recommendation-link"',
     '👉 [최저가 확인] 오늘 한정 특가 및 실구매자 후기 보기',
 )
 CATALOG_PAGE_SIZE = 100

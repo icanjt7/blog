@@ -12,6 +12,7 @@ def test_movie_review_prompt_forbids_hallucination_and_cliches() -> None:
     assert "제공된 관람객 리뷰 텍스트 데이터 내에서만" in MOVIE_REVIEW_SYSTEM_PROMPT
     assert "절대로 새로운 정보를 창작" in MOVIE_REVIEW_SYSTEM_PROMPT
     assert "AI가 분석한 바에 따르면" in MOVIE_REVIEW_SYSTEM_PROMPT
+    assert "종합해 보면" in MOVIE_REVIEW_SYSTEM_PROMPT
 
 
 @pytest.mark.parametrize("text", [

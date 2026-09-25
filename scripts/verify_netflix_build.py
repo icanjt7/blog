@@ -17,6 +17,7 @@ REQUIRED = (
     '🚨 스포일러 주의! [결말 해석 보기] 클릭하여 펼치기',
     '📺 [정주행 필수템] 넷플릭스 몰아보기를 위한 실속 가성비 핫딜',
     'class="toss-shopping-card product-recommendation"',
+    'class="toss-cta-button product-recommendation-link"',
     '👉 [최저가 확인] 오늘 한정 특가 및 실구매자 후기 보기',
 )
 

@@ -24,6 +24,7 @@ class PressTemplateTest(unittest.TestCase):
         instruction = press_template_instruction(kind)
         self.assertIn("[참여 기관]", instruction)
         self.assertIn("[협약·행사 목적]", instruction)
+        self.assertIn("H1 바로 아래", instruction)
 
     def test_grant_is_actionable(self) -> None:
         kind = classify_press_template(
@@ -72,6 +73,8 @@ class PressTemplateTest(unittest.TestCase):
 
         self.assertIsNone(parse_press_json(json.dumps(payload, ensure_ascii=False), "ANNOUNCEMENT"))
         self.assertIn('"post_type"', press_json_system_prompt())
+        self.assertIn("종합해 보면", press_json_system_prompt())
+        self.assertIn("H1 바로 아래", press_json_system_prompt())
 
         payload["summary_box"][2] = {"label": "심사 평가", "value": "효율적인 동선과 높은 시공성을 평가"}
         parsed = parse_press_json(json.dumps(payload, ensure_ascii=False), "ANNOUNCEMENT")
@@ -79,6 +82,8 @@ class PressTemplateTest(unittest.TestCase):
         self.assertIn("## 선정 결과", render_press_json(parsed))
         self.assertIn("## 핵심 팩트 (Key Facts)", render_press_json(parsed))
         self.assertIn("- 연면적 약 5,005㎡", render_press_json(parsed))
+        rendered = render_press_json(parsed)
+        self.assertLess(rendered.index("> **[당선작]**"), rendered.index("국가유산청이 당선작을 발표했습니다."))
 
     def test_slug_truncates_only_at_word_boundary(self) -> None:
         title = "국가유산진흥원 (주)WTC Seoul 국가유산 가치 확산을 위한 업무협약 체결 (260922)"

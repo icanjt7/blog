@@ -37,6 +37,8 @@ def test_prompt_and_schema_lock_post_type_and_four_sections() -> None:
     for phrase in ("시놉시스 및 주요 등장인물", "핵심 관전 포인트 3가지", "결말 해석", "관람객 호불호"):
         assert phrase in NETFLIX_CONTENT_SYSTEM_PROMPT
     assert "입력에 없는" in NETFLIX_CONTENT_SYSTEM_PROMPT
+    assert "종합해 보면" in NETFLIX_CONTENT_SYSTEM_PROMPT
+    assert "H1 바로 아래" in NETFLIX_CONTENT_SYSTEM_PROMPT
 
 
 def test_streams_json_array_with_tiny_read_buffer(tmp_path: Path) -> None:
