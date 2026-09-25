@@ -63,12 +63,18 @@ jobs:
         run: pytest -q
 
       - name: Extract unpublished sources and apply Drop Rules
-        run: >-
-          python -u scripts/bulk_press_backfill.py collect
-          --candidate-limit "${{ inputs.candidate_limit }}"
-          --posts-dir output/posts
-          --output /tmp/qualified-press.jsonl
-          --report /tmp/collection-report.json
+        run: |
+          if [ -f data/unpublished-press-qualified.jsonl ]; then
+            cp data/unpublished-press-qualified.jsonl /tmp/qualified-press.jsonl
+            cp data/unpublished-press-collection-report.json /tmp/collection-report.json
+            test "$(wc -l < /tmp/qualified-press.jsonl)" -ge 1000
+          else
+            python -u scripts/bulk_press_backfill.py collect \
+              --candidate-limit "${{ inputs.candidate_limit }}" \
+              --posts-dir output/posts \
+              --output /tmp/qualified-press.jsonl \
+              --report /tmp/collection-report.json
+          fi
 
       - name: Build random 50-page canary with LLM
         run: >-
