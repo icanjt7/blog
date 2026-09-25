@@ -31,7 +31,9 @@ jobs:
       BLOG_LLM_PROVIDER_ORDER: "github,openrouter,motif,groq,gemini,nvidia"
       LLM_TIMEOUT_SECONDS: "90"
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'openai/gpt-4.1' }}
+      # Pin a currently supported GitHub Models identifier. The repository
+      # variable still contains a retired unqualified Llama model name.
+      GITHUB_MODEL: "openai/gpt-4.1"
       NVIDIA_API_KEY: ${{ secrets.LLAMA }}
       NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL || 'meta/llama-3.3-70b-instruct' }}
       NVIDIA_BASE_URL: ${{ vars.NVIDIA_BASE_URL || 'https://integrate.api.nvidia.com/v1' }}
