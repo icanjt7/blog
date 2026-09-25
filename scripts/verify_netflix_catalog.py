@@ -18,6 +18,7 @@ REQUIRED_MARKERS = (
     'class="toss-shopping-card product-recommendation"',
     'class="toss-cta-button product-recommendation-link"',
     '👉 [최저가 확인] 오늘 한정 특가 및 실구매자 후기 보기',
+    '기준 한국 넷플릭스에서 서비스 중인 것으로 확인했습니다',
 )
 CATALOG_PAGE_SIZE = 100
 
@@ -32,6 +33,13 @@ def verify(input_path: Path, public_dir: Path, chunk_size: int) -> dict[str, int
         missing = [marker for marker in REQUIRED_MARKERS if marker not in source]
         if missing:
             raise SystemExit(f"{path}: missing required markup {missing}")
+        if "수집 시점" in source:
+            raise SystemExit(f"{path}: machine-oriented collection copy remains")
+        for label in ("생활", "기술", "정책", "환경", "정치", "스포츠", "핫이슈", "영화"):
+            if f">{label}</a>" not in source:
+                raise SystemExit(f"{path}: global navigation item missing: {label}")
+        if '<a href="../../../netflix/index.html" class="active">영화</a>' not in source:
+            raise SystemExit(f"{path}: movie navigation active state missing")
 
     namespace = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
     index_path = public_dir / "sitemap-netflix-index.xml"
@@ -55,6 +63,11 @@ def verify(input_path: Path, public_dir: Path, chunk_size: int) -> dict[str, int
     missing_catalog_pages = [str(path) for path in catalog_pages if not path.exists()]
     if missing_catalog_pages:
         raise SystemExit(f"missing Netflix catalog pages: {missing_catalog_pages[:3]}")
+    catalog_source = catalog_pages[0].read_text(encoding="utf-8")
+    if "수집 시점 기준" in catalog_source or "기준 한국 넷플릭스에서 확인된" not in catalog_source:
+        raise SystemExit("Netflix catalog update copy is not contextualized")
+    if '<a href="../netflix/index.html" class="active">영화</a>' not in catalog_source:
+        raise SystemExit("Netflix catalog global navigation or active state is missing")
     home = (public_dir / "index.html").read_text(encoding="utf-8")
     if "지금 볼 수 있는 넷플릭스 작품" not in home or "./netflix/index.html" not in home:
         raise SystemExit("Netflix discovery section is missing from the home page")

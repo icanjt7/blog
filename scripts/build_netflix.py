@@ -185,7 +185,7 @@ def _render_record(builder: StaticSiteBuilder, template_text: str, raw: dict[str
         }
     faq = builder._faq_schema([(
         f"{record['title']}은 현재 한국 넷플릭스에서 볼 수 있나요?",
-        f"{collected_date} 수집 시점에 JustWatch의 한국 넷플릭스 제공 목록에서 확인됐습니다. 편성은 변경될 수 있습니다.",
+        f"{collected_date} 기준 한국 넷플릭스에서 서비스 중인 것으로 확인했습니다. 제공 여부는 변경될 수 있습니다.",
     )])
     builder._write_html(
         filename,
@@ -291,6 +291,7 @@ def _write_catalog_pages(args: argparse.Namespace, records: list[dict[str, Any]]
         categories=["영화"],
     )
     total_pages = max(1, (len(records) + CATALOG_PAGE_SIZE - 1) // CATALOG_PAGE_SIZE)
+    updated_date = max((record["collected_at"][:10] for record in records), default="")
     for page_number in range(1, total_pages + 1):
         page_records = records[(page_number - 1) * CATALOG_PAGE_SIZE:page_number * CATALOG_PAGE_SIZE]
         cards = "".join(_catalog_card(record) for record in page_records)
@@ -306,7 +307,7 @@ def _write_catalog_pages(args: argparse.Namespace, records: list[dict[str, Any]]
         content = (
             '<section class="netflix-catalog-page" aria-labelledby="netflix-catalog-title">'
             f'<h1 id="netflix-catalog-title">한국 넷플릭스 작품 전체 목록{f" — {page_number}페이지" if page_number > 1 else ""}</h1>'
-            f'<p class="netflix-catalog-lead">수집 시점 기준 {len(records):,}편의 영화와 시리즈를 장르·연도별 상세 정보로 확인하세요.</p>'
+            f'<p class="netflix-catalog-lead">🍿 {html.escape(updated_date)} 기준 한국 넷플릭스에서 확인된 {len(records):,}편의 영화와 시리즈입니다.</p>'
             f'<div class="netflix-catalog-grid">{cards}</div>{nav}</section>'
         )
         filename = "netflix/index.html" if page_number == 1 else f"netflix/page-{page_number}.html"

@@ -105,12 +105,21 @@ def test_multiprocess_builder_writes_pages_toss_widget_and_split_sitemaps(tmp_pa
     assert 'role="doc-abstract"' in source_html
     assert 'loading="lazy"' in source_html
     assert '"@type": "Movie"' in source_html
+    assert "🍿 <time" in source_html
+    assert "기준 한국 넷플릭스에서 서비스 중인 것으로 확인했습니다" in source_html
+    assert "수집 시점" not in source_html
+    assert '<a href="../../../category-정책.html" class="">정책</a>' in source_html
+    assert '<a href="../../../netflix/index.html" class="active">영화</a>' in source_html
     assert source_html.count("googletagmanager.com/gtm.js?id=") == 1
     assert source_html.count("googletagmanager.com/ns.html?id=GTM-PRH78BZK") == 1
     assert source_html.index("<!-- Google Tag Manager -->") < source_html.index('<meta charset="utf-8">')
     assert source_html.index("<body>") < source_html.index("<!-- Google Tag Manager (noscript) -->") < source_html.index('<header class="site-header">')
     catalog_html = (dist / "netflix" / "index.html").read_text(encoding="utf-8")
     assert "한국 넷플릭스 작품 전체 목록" in catalog_html
+    assert "🍿 2026-09-25 기준 한국 넷플릭스에서 확인된" in catalog_html
+    assert "수집 시점 기준" not in catalog_html
+    assert '<a href="../category-정책.html" class="">정책</a>' in catalog_html
+    assert '<a href="../netflix/index.html" class="active">영화</a>' in catalog_html
     assert "넷플릭스 검증작 1" in catalog_html
     home_html = (dist / "index.html").read_text(encoding="utf-8")
     assert "지금 볼 수 있는 넷플릭스 작품" in home_html

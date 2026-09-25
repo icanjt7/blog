@@ -12,6 +12,16 @@ from blog_agent.site import StaticSiteBuilder
 
 
 class StaticSiteBuilderTest(unittest.TestCase):
+    def test_global_navigation_never_shrinks_on_specialized_pages(self) -> None:
+        builder = StaticSiteBuilder(
+            posts_dir=Path("posts"), public_dir=Path("public"),
+            site_title="테스트", site_description="테스트", categories=["영화"],
+        )
+        nav = builder._nav_html(active="영화", prefix="../../../")
+        for label in ("생활", "기술", "정책", "환경", "정치", "스포츠", "핫이슈", "영화"):
+            self.assertIn(f">{label}</a>", nav)
+        self.assertIn('<a href="../../../netflix/index.html" class="active">영화</a>', nav)
+
     def test_press_summary_and_faq_are_machine_readable(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

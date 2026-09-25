@@ -25,6 +25,7 @@ from .netflix_pipeline import NetflixRecord
 from .prompts import classify_press_template
 from .product_links import PRODUCT_LINKS, ProductLink
 from .quality_filters import InvalidContentData, is_legacy_junk_post
+from .trends import CATEGORY_SEEDS
 
 
 @dataclass
@@ -69,6 +70,7 @@ GTM_BODY_HTML = f"""<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={GTM_CONTAINER_ID}"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->"""
+GLOBAL_NAV_CATEGORIES: tuple[str, ...] = (*CATEGORY_SEEDS.keys(), "영화")
 
 LANGUAGE_OPTIONS: tuple[tuple[str, str], ...] = (
     ("ko", "한국어"),
@@ -578,8 +580,8 @@ class StaticSiteBuilder:
         return prefix if prefix.endswith("/") else f"{prefix}/"
 
     def _navigation_categories(self) -> list[str]:
-        """Return global navigation categories, including the Netflix catalog."""
-        return list(dict.fromkeys([*self.categories, "영화"]))
+        """Merge the site-wide GNB with page-local categories without shrinking it."""
+        return list(dict.fromkeys([*GLOBAL_NAV_CATEGORIES, *self.categories]))
 
     def _category_nav_href(self, category: str, prefix: str) -> str:
         if category == "영화":
@@ -3712,7 +3714,7 @@ body { top: 0 !important; }
 .site-nav::-webkit-scrollbar { display: none; }
 .site-nav a { color: var(--muted); padding: 9px 18px; font-size: 0.9rem; font-weight: 500; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s; white-space: nowrap; text-decoration: none; display: block; }
 .site-nav a:hover { color: var(--ink); }
-.site-nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
+.site-nav a.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 800; }
 
 /* clickable tags */
 a.tag { text-decoration: none; }
