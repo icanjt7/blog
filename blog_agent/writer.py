@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import hashlib
 import os
 import re
 from datetime import datetime
@@ -10,11 +9,13 @@ from openai import OpenAI
 
 from .config import Settings
 from .models import Draft, Topic
+from .quality_filters import InvalidContentData
 from .prompts import (
     classify_press_template,
     press_summary_card_instruction,
     press_template_instruction,
 )
+from .slugs import build_seo_slug
 
 
 PERSONAS = {
@@ -212,6 +213,7 @@ class WriterAgent:
         system_prompt = f"""당신은 검색 의도를 먼저 해결하는 한국어 정보 에디터입니다.
 공식 출처에서 확인되는 사실만 사용하고, 출처에 없는 금액·기간·대상을 추측하지 않습니다.
 '발표 개요', '배경과 의미', '원문에서 함께 볼 부분', '맥락 짚기'처럼 반복되는 AI식 섹션명과 메타 설명을 쓰지 않습니다.
+제공된 보도자료 원문 텍스트가 구체적인 사실(Fact), 수치, 정책 내용을 포함하지 않고 단순히 '00월호가 발간되었습니다' 수준의 안내에 그친다면, 억지로 소제목(H2)이나 요약을 지어내지 말고 JSON 응답의 'post_type'을 'INVALID_DATA'로 반환할 것.
 {template_instruction}"""
         prompt = f"""[페르소나]
 {persona}
@@ -292,13 +294,15 @@ BODY:
             max_tokens=2048,
         )
         text = response.choices[0].message.content or ""
+        if re.search(r'["\']?post_type["\']?\s*[:=]\s*["\']?INVALID_DATA', text, flags=re.I):
+            raise InvalidContentData("Skip: LLM returned INVALID_DATA")
         title = self._extract(text, "TITLE", default=topic.title_hint)
         excerpt = self._extract(text, "EXCERPT", default=topic.rationale)
         body = self._extract(text, "BODY", default=text)
         return Draft(
             topic=topic,
             title=title,
-            slug=self._slug(topic.keyword),
+            slug=self._slug(topic.keyword, topic.category),
             excerpt=excerpt,
             body_markdown=body.strip(),
             tags=self._tags(topic),
@@ -319,7 +323,7 @@ BODY:
         return Draft(
             topic=topic,
             title=frame["title"],
-            slug=self._slug(topic.keyword),
+            slug=self._slug(topic.keyword, topic.category),
             excerpt=frame["excerpt"],
             body_markdown=body,
             tags=self._tags(topic),
@@ -704,7 +708,7 @@ BODY:
         return Draft(
             topic=topic,
             title=title,
-            slug=self._slug(topic.keyword),
+            slug=self._slug(topic.keyword, topic.category),
             excerpt=context["excerpt"],
             body_markdown=body,
             tags=self._tags(topic),
@@ -1372,7 +1376,7 @@ BODY:
         return Draft(
             topic=topic,
             title=f"{topic.keyword}, 처음 가면 이 동선",
-            slug=self._slug(topic.keyword),
+            slug=self._slug(topic.keyword, topic.category),
             excerpt=f"{topic.keyword} 방문 전 TourAPI 연관 관광지 데이터를 바탕으로 동선을 잡았습니다.",
             body_markdown=body,
             tags=self._tags(topic),
@@ -1389,10 +1393,8 @@ BODY:
         return re.sub(r"^\*\*|\*\*$", "", value).strip()
 
     @staticmethod
-    def _slug(keyword: str) -> str:
-        cleaned = re.sub(r"[^가-힣a-zA-Z0-9]+", "-", keyword).strip("-").lower()
-        suffix = hashlib.sha1(f"{keyword}-{datetime.now().date()}".encode()).hexdigest()[:8]
-        return f"{cleaned}-{suffix}"
+    def _slug(keyword: str, category: str = "") -> str:
+        return build_seo_slug(keyword, category=category, published_date=datetime.now().date())
 
     @staticmethod
     def _tags(topic: Topic) -> list[str]:

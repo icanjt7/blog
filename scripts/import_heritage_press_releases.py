@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import html
 import re
 from dataclasses import dataclass
@@ -12,7 +11,8 @@ from urllib.parse import urljoin
 import requests
 
 from import_press_releases import classify_press_category, extract_first_hwpx_attachment
-from blog_agent.slugs import slugify_words
+from blog_agent.quality_filters import InvalidContentData, require_source_content
+from blog_agent.slugs import build_seo_slug, source_integer_id
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -80,13 +80,8 @@ def first_image(fragment: str, base_url: str) -> tuple[str, str]:
     return "", ""
 
 
-def slugify(value: str) -> str:
-    return slugify_words(value, max_length=64, fallback="press-release")
-
-
 def unique_slug(prefix: str, title: str, url: str) -> str:
-    digest = hashlib.sha1(url.encode("utf-8")).hexdigest()[:8]
-    return f"{prefix}-{slugify(title)}-{digest}"
+    return build_seo_slug(title, category="정책", agency=prefix, source_id=source_integer_id(url))
 
 
 def yaml_quote(value: str) -> str:
@@ -254,6 +249,7 @@ def khs_release(url: str) -> PressRelease:
 
 
 def write_post(release: PressRelease, sequence: int) -> Path:
+    require_source_content(release.title, release.body_text)
     prefix = "kh" if release.institution == "국가유산진흥원" else "khs"
     slug = unique_slug(prefix, release.title, release.url)
     path = POSTS_DIR / f"{slug}.md"
@@ -295,7 +291,10 @@ def main() -> None:
 
     written = []
     for index, release in enumerate(releases):
-        written.append(write_post(release, index))
+        try:
+            written.append(write_post(release, index))
+        except InvalidContentData as exc:
+            print(f"Skip: {release.title} — {exc}")
 
     with_images = sum(1 for release in releases if release.image_url)
     print(f"wrote {len(written)} posts")

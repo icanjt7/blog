@@ -24,6 +24,7 @@ from .movie_pipeline import MovieRecord, load_movies
 from .netflix_pipeline import NetflixRecord
 from .prompts import classify_press_template
 from .product_links import PRODUCT_LINKS, ProductLink
+from .quality_filters import InvalidContentData, is_legacy_junk_post
 
 
 @dataclass
@@ -403,7 +404,12 @@ class StaticSiteBuilder:
     def _load_posts(self) -> list[Post]:
         if not self.posts_dir.exists():
             return []
-        posts = [self._parse_post(path) for path in sorted(self.posts_dir.glob("*.md"))]
+        posts: list[Post] = []
+        for path in sorted(self.posts_dir.glob("*.md")):
+            try:
+                posts.append(self._parse_post(path))
+            except InvalidContentData as exc:
+                print(f"{exc}: {path.name}")
         return sorted(posts, key=lambda post: post.date, reverse=True)
 
     def _parse_post(self, path: Path) -> Post:
@@ -421,6 +427,10 @@ class StaticSiteBuilder:
             except yaml.YAMLError as exc:
                 raise ValueError(f"Invalid frontmatter YAML in {path}") from exc
         title = self._normalize_generated_title(str(meta.get("title") or path.stem), path.stem)
+        if str(meta.get("post_type") or "").upper() == "INVALID_DATA":
+            raise InvalidContentData("Skip: LLM returned INVALID_DATA")
+        if is_legacy_junk_post(title, path.stem, body):
+            raise InvalidContentData("Skip: Legacy monthly junk post")
         date = self._parse_date(str(meta.get("date") or datetime.now().isoformat()))
         _cat_map = {"tech": "기술", "living": "생활", "finance": "정책", "local": "핫이슈"}
         category = str(meta.get("category") or "생활")

@@ -38,6 +38,7 @@ from import_press_releases import (  # noqa: E402
 )
 from blog_agent.config import load_settings  # noqa: E402
 from blog_agent.images import ImageAgent  # noqa: E402
+from blog_agent.quality_filters import InvalidContentData, require_source_content  # noqa: E402
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -456,6 +457,7 @@ def main() -> None:
                         break
                     continue
                 release = release_from_item(item)
+                require_source_content(release.title, release.body_text)
                 if writer:
                     _enrich_release(release, writer)
                 prefix = prefix_for(agency)
@@ -469,6 +471,9 @@ def main() -> None:
                     break
                 if count >= args.per_agency:
                     break
+            except InvalidContentData as exc:
+                print(f"  - {exc}")
+                continue
             except Exception as exc:
                 errors.append(f"{agency.name} {item.url}: {exc}")
                 print(f"  x {item.title[:45]}: {exc}")

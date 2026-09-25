@@ -10,7 +10,7 @@ from blog_agent.prompts import (
     press_template_instruction,
     render_press_json,
 )
-from blog_agent.slugs import slugify_words
+from blog_agent.slugs import build_seo_slug, slugify_words
 
 
 class PressTemplateTest(unittest.TestCase):
@@ -81,6 +81,15 @@ class PressTemplateTest(unittest.TestCase):
         self.assertFalse(slug.endswith("26092"))
         self.assertFalse(slug.endswith("-"))
         self.assertTrue(slug.startswith("국가유산진흥원-주-wtc-seoul"))
+
+    def test_press_seo_slug_uses_agency_keyword_and_integer_id(self) -> None:
+        slug = build_seo_slug(
+            "탄소중립 월간 동향",
+            category="환경",
+            agency="me",
+            source_id="https://example.go.kr/view?id=102",
+        )
+        self.assertEqual(slug, "me-carbon-neutral-trends-monthly-102")
 
 
 if __name__ == "__main__":

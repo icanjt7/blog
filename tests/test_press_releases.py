@@ -41,9 +41,9 @@ class PressReleaseImportTest(unittest.TestCase):
 
     def test_import_source_filters_release_date_range(self) -> None:
         releases = {
-            "old": MODULE.PressRelease("행정안전부", "이전 자료", "2026-07-26", "old", "본문"),
-            "in": MODULE.PressRelease("행정안전부", "지난주 자료", "2026-07-30", "in", "본문"),
-            "new": MODULE.PressRelease("행정안전부", "이후 자료", "2026-08-03", "new", "본문"),
+            "old": MODULE.PressRelease("행정안전부", "이전 자료", "2026-07-26", "old", "본문" * 250),
+            "in": MODULE.PressRelease("행정안전부", "지난주 자료", "2026-07-30", "in", "본문" * 250),
+            "new": MODULE.PressRelease("행정안전부", "이후 자료", "2026-08-03", "new", "본문" * 250),
         }
 
         with (

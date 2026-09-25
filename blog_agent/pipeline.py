@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import logging
 from dataclasses import dataclass
 
 from .config import Settings
@@ -8,11 +9,16 @@ from .editor import SeoEditorAgent
 from .images import ImageAgent
 from .models import Draft, PublishResult, Topic
 from .publishers import build_publisher
+from .quality_filters import InvalidContentData, evaluate_source_content
 from .reports import ReportWriter
 from .retrieval import FactRetriever
 from .storage import RunStore
 from .trends import TrendScout
 from .writer import WriterAgent
+from .slugs import UnsafeSlugError
+
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -73,7 +79,28 @@ class BlogPipeline:
                     break
                 self.store.add_event(run_id, "topic_started", "ok", {"keyword": topic.keyword})
                 enriched = self.retriever.enrich(topic)
-                draft = self.editor.improve(self.writer.write(enriched))
+                source_body = "\n".join(source.summary for source in enriched.sources if source.summary)
+                decision = evaluate_source_content(enriched.title_hint, source_body)
+                if not decision.accepted:
+                    logger.warning(decision.reason)
+                    self.store.add_event(
+                        run_id,
+                        "source_filter",
+                        "skipped",
+                        {"keyword": topic.keyword, "reason": decision.reason, "body_length": len(decision.raw_text)},
+                    )
+                    continue
+                try:
+                    draft = self.editor.improve(self.writer.write(enriched))
+                except (InvalidContentData, UnsafeSlugError) as exc:
+                    logger.warning(str(exc))
+                    self.store.add_event(
+                        run_id,
+                        "content_generation",
+                        "skipped",
+                        {"keyword": topic.keyword, "reason": str(exc)},
+                    )
+                    continue
                 draft = self.images.attach_cover(draft)
                 draft = self.images.attach_inline_image(draft)
                 drafts.append(draft)

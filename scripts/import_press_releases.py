@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import html
+import logging
 import re
 import sys
 import time
@@ -34,7 +35,8 @@ from blog_agent.prompts import (
     press_json_system_prompt,
     render_press_json,
 )
-from blog_agent.slugs import slugify_words
+from blog_agent.quality_filters import InvalidContentData, require_source_content
+from blog_agent.slugs import build_seo_slug, slugify_words, source_integer_id
 from blog_agent.writer import WriterAgent
 
 
@@ -44,6 +46,7 @@ USER_AGENT = "Mozilla/5.0 (compatible; BriefWavePressImporter/1.0)"
 TIMEOUT = 20
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": USER_AGENT})
+LOGGER = logging.getLogger("briefwave.press_import")
 
 INSTITUTION_LOGOS: dict[str, str] = {
     "행정안전부":        "assets/logos/mois.jpg",
@@ -458,8 +461,12 @@ def slugify(value: str) -> str:
 
 
 def unique_slug(prefix: str, title: str, url: str) -> str:
-    digest = hashlib.sha1(url.encode()).hexdigest()[:8]
-    return f"{prefix}-{slugify(title)}-{digest}"
+    return build_seo_slug(
+        title,
+        category="정책",
+        agency=prefix,
+        source_id=source_integer_id(url),
+    )
 
 
 def post_path_for_release(prefix: str, title: str, url: str, overwrite: bool = False) -> Path:
@@ -468,13 +475,20 @@ def post_path_for_release(prefix: str, title: str, url: str, overwrite: bool = F
         existing = sorted(POSTS_DIR.glob(f"{prefix}-*-{digest}.md"))
         if existing:
             return existing[0]
-    return POSTS_DIR / f"{prefix}-{slugify(title)}-{digest}.md"
+    return POSTS_DIR / f"{unique_slug(prefix, title, url)}.md"
 
 
 def existing_post_for_url(prefix: str, url: str) -> Path | None:
     digest = hashlib.sha1(url.encode()).hexdigest()[:8]
     existing = sorted(POSTS_DIR.glob(f"{prefix}-*-{digest}.md"))
-    return existing[0] if existing else None
+    if existing:
+        return existing[0]
+    identifier = source_integer_id(url)
+    if identifier is not None:
+        modern = sorted(POSTS_DIR.glob(f"{prefix}-*-{identifier}.md"))
+        if modern:
+            return modern[0]
+    return None
 
 
 def max_pages_for(per_source: int) -> int:
@@ -624,8 +638,7 @@ def _already_used(candidate: str, used: set[str]) -> bool:
 
 def generate_article_from_source(release: "PressRelease", writer: "WriterAgent") -> str:
     """HWPX에서 추출한 원문 텍스트를 LLM으로 기사화한다."""
-    if not release.body_text:
-        return ""
+    require_source_content(release.title, release.body_text, logger=LOGGER)
     template = classify_press_template(release.title, release.body_text)
     prompt = f"""다음은 [{release.institution}]에서 발표한 보도자료 원문입니다.
 이 내용을 독자 친화적인 블로그 기사 JSON으로 구조화하세요.
@@ -656,6 +669,8 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
         payload = parse_press_json(text, expected_type=template)
         if not payload:
             continue
+        if payload.get("post_type") == "INVALID_DATA":
+            raise InvalidContentData("Skip: LLM returned INVALID_DATA")
         body = render_press_json(payload)
         body += f"\n\n## 공식 발표 자료\n\n- [{release.institution} 보도자료]({release.url})"
         if article_is_specific(body, release):
@@ -996,6 +1011,7 @@ def write_post(
     overwrite: bool = False,
     image_agent: ImageAgent | None = None,
 ) -> Path:
+    require_source_content(release.title, release.body_text, logger=LOGGER)
     path = post_path_for_release(prefix, release.title, release.url, overwrite=overwrite)
     if path.exists() and not overwrite:
         return path
@@ -1498,6 +1514,7 @@ def _import_source(
                 continue
             if end_date and release_date > end_date:
                 continue
+            require_source_content(release.title, release.body_text, logger=LOGGER)
             if writer:
                 _enrich_release(release, writer)
             path = write_post(release, prefix, seq, overwrite=overwrite, image_agent=image_agent)
@@ -1506,6 +1523,9 @@ def _import_source(
             print(f"  + {release.title[:50]}")
             if len(written) >= target:
                 break
+        except InvalidContentData as e:
+            print(f"  - {e}")
+            continue
         except Exception as e:
             errors.append(f"{url}: {e}")
             print(f"  ✗ {url[:60]}: {e}")

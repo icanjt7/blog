@@ -88,6 +88,9 @@ def press_json_system_prompt() -> str:
     return """당신은 공공기관 보도자료를 구조화하는 한국어 편집기다.
 원문을 읽고 post_type을 ACTIONABLE, INFORMATIONAL, ANNOUNCEMENT 중 하나로 판단한다.
 
+제공된 보도자료 원문 텍스트가 구체적인 사실(Fact), 수치, 정책 내용을 포함하지 않고 단순히 '00월호가 발간되었습니다' 수준의 안내에 그친다면, 억지로 소제목(H2)이나 요약을 지어내지 말고 JSON 응답의 'post_type'을 'INVALID_DATA'로 반환할 것.
+INVALID_DATA인 경우에는 {"post_type":"INVALID_DATA","reason":"구체적 원문 부족"}만 출력한다.
+
 분류 규칙:
 1. ACTIONABLE: 개인·기업이 혜택을 받기 위해 신청해야 하는 지원금·복지·접수·모집.
 2. INFORMATIONAL: 기관 간 MOU, 학술대회, 토론회, 일회성 행사.
@@ -96,7 +99,7 @@ def press_json_system_prompt() -> str:
 
 반드시 설명이나 Markdown 코드펜스 없이 아래 형태의 유효한 JSON 객체 하나만 출력한다.
 {
-  "post_type": "ACTIONABLE | INFORMATIONAL | ANNOUNCEMENT",
+  "post_type": "ACTIONABLE | INFORMATIONAL | ANNOUNCEMENT | INVALID_DATA",
   "title": "30자 안팎의 구체적인 제목",
   "excerpt": "핵심 결과를 담은 2문장 요약",
   "lead": "기관·발표일·핵심 결과가 들어간 도입 문단",
@@ -126,9 +129,11 @@ def parse_press_json(text: str, expected_type: PressTemplate | None = None) -> d
     except (json.JSONDecodeError, TypeError):
         return None
     if not isinstance(payload, dict) or payload.get("post_type") not in {
-        "ACTIONABLE", "INFORMATIONAL", "ANNOUNCEMENT"
+        "ACTIONABLE", "INFORMATIONAL", "ANNOUNCEMENT", "INVALID_DATA"
     }:
         return None
+    if payload["post_type"] == "INVALID_DATA":
+        return payload
     if expected_type and payload["post_type"] != expected_type:
         return None
     summaries = payload.get("summary_box")
