@@ -16,6 +16,7 @@ on:
       - "blog_agent/toss_products.json"
       - "data/movies-canary.json"
       - "data/netflix.jsonl"
+      - "data/netflix_raw_data.json.gz"
       - "data/netflix-release-approval.json"
       - "output/movie-assets/**"
       - "scripts/verify_movie_canary.py"
@@ -95,6 +96,23 @@ jobs:
         if: ${{ hashFiles('data/netflix.jsonl') != '' }}
         run: python scripts/verify_netflix_build.py --public-dir public --expected 20000 --expected-sitemaps 20
 
+      - name: Build current Korean Netflix catalog
+        if: ${{ hashFiles('data/netflix_raw_data.json.gz') != '' }}
+        run: >-
+          python scripts/build_netflix.py
+          --input data/netflix_raw_data.json.gz
+          --dist-dir public
+          --chunk-size 1000
+          --workers 2
+
+      - name: Verify current Korean Netflix catalog
+        if: ${{ hashFiles('data/netflix_raw_data.json.gz') != '' }}
+        run: >-
+          python scripts/verify_netflix_catalog.py
+          --input data/netflix_raw_data.json.gz
+          --public-dir public
+          --chunk-size 1000
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
@@ -110,4 +128,5 @@ jobs:
           GOOGLE_SERVICE_ACCOUNT_JSON_BASE64: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON_BASE64 }}
           GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL || 'https://briefwave.kr/' }}
           GOOGLE_SITEMAP_URL: ${{ vars.GOOGLE_SITEMAP_URL || 'https://briefwave.kr/sitemap-index.xml' }}
+          GOOGLE_EXTRA_SITEMAP_URLS: https://briefwave.kr/sitemap-netflix-index.xml
         run: python scripts/submit_google_sitemap.py

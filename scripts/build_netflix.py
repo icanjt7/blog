@@ -306,6 +306,11 @@ def build(args: argparse.Namespace) -> dict[str, int | str]:
     index_path.write_text(sitemap_index, encoding="utf-8")
     # Compatibility alias for the site's existing deployment workflow.
     (args.dist_dir / "sitemap-netflix.xml").write_text(sitemap_index, encoding="utf-8")
+    robots_path = args.dist_dir / "robots.txt"
+    robots = robots_path.read_text(encoding="utf-8") if robots_path.exists() else "User-agent: *\nAllow: /\n"
+    netflix_sitemap_line = f"Sitemap: {site_url}/sitemap-netflix-index.xml"
+    if netflix_sitemap_line not in robots:
+        robots_path.write_text(robots.rstrip() + "\n" + netflix_sitemap_line + "\n", encoding="utf-8")
     report: dict[str, int | str] = {
         "input": str(args.input),
         "dist_dir": str(args.dist_dir),
@@ -321,7 +326,7 @@ def build(args: argparse.Namespace) -> dict[str, int | str]:
 
 def parser() -> argparse.ArgumentParser:
     command = argparse.ArgumentParser(description=__doc__)
-    command.add_argument("--input", type=Path, default=DEFAULT_INPUT)
+    command.add_argument("--input", type=Path, default=DEFAULT_INPUT, help="JSON/JSONL input, optionally gzip-compressed")
     command.add_argument("--dist-dir", type=Path, default=DEFAULT_DIST)
     command.add_argument("--posts-dir", type=Path, default=ROOT / "output" / "posts")
     command.add_argument("--chunk-size", type=int, default=1000)

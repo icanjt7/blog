@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import gzip
 from pathlib import Path
 
 import pytest
@@ -42,6 +43,13 @@ def test_streams_json_array_with_tiny_read_buffer(tmp_path: Path) -> None:
     path = tmp_path / "records.json"
     path.write_text(json.dumps([_record(1), _record(2)], ensure_ascii=False), encoding="utf-8")
     assert [item["id"] for item in stream_json_items(path, read_size=17)] == ["1", "2"]
+
+
+def test_streams_gzip_json_array_without_loading_it_all(tmp_path: Path) -> None:
+    path = tmp_path / "records.json.gz"
+    with gzip.open(path, "wt", encoding="utf-8") as handle:
+        json.dump([_record(1), _record(2)], handle, ensure_ascii=False)
+    assert [item["id"] for item in stream_json_items(path, read_size=19)] == ["1", "2"]
 
 
 def test_chunk_generator_never_exceeds_requested_size(tmp_path: Path) -> None:

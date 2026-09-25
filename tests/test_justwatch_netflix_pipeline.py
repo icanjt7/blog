@@ -113,3 +113,5 @@ def test_multiprocess_builder_writes_pages_toss_widget_and_split_sitemaps(tmp_pa
         for index in (1, 2)
     ]
     assert counts == [2, 1]
+    robots = (dist / "robots.txt").read_text(encoding="utf-8")
+    assert "Sitemap: https://briefwave.kr/sitemap-netflix-index.xml" in robots

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import gzip
 import json
 import os
 import resource
@@ -189,8 +190,17 @@ def parse_netflix_record(raw: dict[str, Any], *, dry_run: bool) -> NetflixRecord
 
 def stream_json_items(path: Path, *, read_size: int = 1024 * 1024) -> Iterator[dict[str, Any]]:
     """Yield objects from JSONL or a top-level JSON array without loading the file."""
-    if path.suffix.lower() in {".jsonl", ".ndjson"}:
-        with path.open("r", encoding="utf-8") as handle:
+    suffixes = [suffix.lower() for suffix in path.suffixes]
+    compressed = bool(suffixes and suffixes[-1] == ".gz")
+    logical_suffix = suffixes[-2] if compressed and len(suffixes) > 1 else (suffixes[-1] if suffixes else "")
+
+    def open_text():
+        if compressed:
+            return gzip.open(path, "rt", encoding="utf-8")
+        return path.open("r", encoding="utf-8")
+
+    if logical_suffix in {".jsonl", ".ndjson"}:
+        with open_text() as handle:
             for line_number, line in enumerate(handle, 1):
                 line = line.strip()
                 if not line:
@@ -205,7 +215,7 @@ def stream_json_items(path: Path, *, read_size: int = 1024 * 1024) -> Iterator[d
     buffer = ""
     started = False
     ended = False
-    with path.open("r", encoding="utf-8") as handle:
+    with open_text() as handle:
         while not ended:
             chunk = handle.read(read_size)
             if chunk:
