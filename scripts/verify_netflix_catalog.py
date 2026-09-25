@@ -18,6 +18,7 @@ REQUIRED_MARKERS = (
     'class="toss-shopping-card product-recommendation"',
     '👉 [최저가 확인] 오늘 한정 특가 및 실구매자 후기 보기',
 )
+CATALOG_PAGE_SIZE = 100
 
 
 def verify(input_path: Path, public_dir: Path, chunk_size: int) -> dict[str, int | bool]:
@@ -45,6 +46,22 @@ def verify(input_path: Path, public_dir: Path, chunk_size: int) -> dict[str, int
     if sitemap_urls != expected:
         raise SystemExit(f"expected {expected} sitemap URLs, found {sitemap_urls}")
 
+    expected_catalog_pages = math.ceil(expected / CATALOG_PAGE_SIZE)
+    catalog_pages = [public_dir / "netflix" / "index.html", *(
+        public_dir / "netflix" / f"page-{number}.html"
+        for number in range(2, expected_catalog_pages + 1)
+    )]
+    missing_catalog_pages = [str(path) for path in catalog_pages if not path.exists()]
+    if missing_catalog_pages:
+        raise SystemExit(f"missing Netflix catalog pages: {missing_catalog_pages[:3]}")
+    home = (public_dir / "index.html").read_text(encoding="utf-8")
+    if "지금 볼 수 있는 넷플릭스 작품" not in home or "./netflix/index.html" not in home:
+        raise SystemExit("Netflix discovery section is missing from the home page")
+    search_items = json.loads((public_dir / "search.json").read_text(encoding="utf-8"))
+    search_netflix = [item for item in search_items if str(item.get("url", "")).startswith("./netflix/")]
+    if len(search_netflix) != expected:
+        raise SystemExit(f"expected {expected} Netflix search records, found {len(search_netflix)}")
+
     robots = (public_dir / "robots.txt").read_text(encoding="utf-8")
     if "Sitemap: https://briefwave.kr/sitemap-netflix-index.xml" not in robots:
         raise SystemExit("Netflix sitemap index is missing from robots.txt")
@@ -53,6 +70,8 @@ def verify(input_path: Path, public_dir: Path, chunk_size: int) -> dict[str, int
         "pages": expected,
         "sub_sitemaps": expected_sitemaps,
         "sitemap_urls": sitemap_urls,
+        "catalog_pages": expected_catalog_pages,
+        "search_records": len(search_netflix),
         "toss_widget": True,
     }
     print(json.dumps(result, ensure_ascii=False))

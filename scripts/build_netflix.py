@@ -35,6 +35,8 @@ GENRE_SLUGS = {
     "fantasy", "history", "horror", "music", "reality", "romance",
     "science-fiction", "sports", "thriller", "war", "western", "other",
 }
+CATALOG_PAGE_SIZE = 100
+DISCOVERY_STYLE_MARKER = "/* Netflix discovery */"
 
 
 def _required(raw: dict[str, Any], key: str) -> str:
@@ -249,6 +251,117 @@ def _prepare_assets(public_dir: Path, posts_dir: Path, custom_domain: str) -> No
     (public_dir / "netflix-runtime.js").write_text(runtime, encoding="utf-8")
 
 
+def _catalog_card(record: dict[str, Any], *, href_prefix: str = "./") -> str:
+    filename = f"{record['genre_slug']}/{record['release_year']}/{record['slug']}.html"
+    genres = ", ".join(record["genres"][:2])
+    return (
+        f'<article class="netflix-catalog-card">'
+        f'<a href="{href_prefix}{html.escape(filename, quote=True)}">'
+        f'<img src="{html.escape(record["poster_url"], quote=True)}" '
+        f'alt="{html.escape(record["title"], quote=True)} 포스터" width="300" height="450" loading="lazy" decoding="async">'
+        f'<span class="netflix-card-body"><span class="netflix-card-badge">넷플릭스 · {html.escape(genres)}</span>'
+        f'<strong>{html.escape(record["title"])}</strong>'
+        f'<small>{record["release_year"]}년 · {"영화" if record["content_type"] == "movie" else "시리즈"}</small>'
+        f'</span></a></article>'
+    )
+
+
+def _write_discovery_css(public_dir: Path) -> None:
+    path = public_dir / "style.css"
+    current = path.read_text(encoding="utf-8") if path.exists() else ""
+    if DISCOVERY_STYLE_MARKER in current:
+        return
+    css = """
+/* Netflix discovery */
+.netflix-discovery{margin:2rem 0;padding:1.5rem;border-radius:20px;background:linear-gradient(135deg,#111827,#1f2937);color:#fff}
+.netflix-discovery-head{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1rem}.netflix-discovery h2{margin:0;color:#fff}.netflix-discovery p{margin:.45rem 0 0;color:#d1d5db}.netflix-view-all{flex:none;color:#fff;font-weight:800;text-decoration:none;border:1px solid #6b7280;border-radius:999px;padding:.55rem .9rem}
+.netflix-catalog-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1rem}.netflix-catalog-card{min-width:0;background:#fff;border:1px solid #e5e7eb;border-radius:14px;overflow:hidden;box-shadow:0 5px 18px rgba(15,23,42,.09)}.netflix-catalog-card a{display:block;color:#111827;text-decoration:none}.netflix-catalog-card img{display:block;width:100%;aspect-ratio:2/3;object-fit:cover;transition:transform .2s ease}.netflix-catalog-card a:hover img{transform:scale(1.025)}.netflix-card-body{display:grid;gap:.35rem;padding:.8rem}.netflix-card-badge{color:#dc2626;font-size:.75rem;font-weight:800}.netflix-card-body strong{font-size:.98rem;line-height:1.4}.netflix-card-body small{color:#6b7280}.netflix-catalog-page h1{margin-bottom:.35rem}.netflix-catalog-lead{color:#4b5563;margin-bottom:1.5rem}.netflix-pagination{display:flex;justify-content:center;gap:.75rem;align-items:center;margin:2rem 0}.netflix-pagination a{padding:.65rem 1rem;border:1px solid #d1d5db;border-radius:10px;text-decoration:none;font-weight:700}.netflix-pagination span{font-weight:700}
+@media(max-width:760px){.netflix-discovery{padding:1.1rem;margin-inline:-.25rem}.netflix-discovery-head{align-items:start}.netflix-catalog-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.5rem}.netflix-catalog-card{flex:0 0 68%;scroll-snap-align:start}.netflix-catalog-page .netflix-catalog-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.netflix-catalog-page .netflix-catalog-card{min-width:0}.netflix-view-all{font-size:.82rem}}
+"""
+    path.write_text(current.rstrip() + "\n" + css, encoding="utf-8")
+
+
+def _write_catalog_pages(args: argparse.Namespace, records: list[dict[str, Any]]) -> int:
+    builder = StaticSiteBuilder(
+        posts_dir=args.posts_dir,
+        public_dir=args.dist_dir,
+        site_title="브리핑웨이브",
+        site_description="현재 한국 넷플릭스에서 시청 가능한 영화와 시리즈",
+        custom_domain=args.domain,
+        categories=["영화"],
+    )
+    total_pages = max(1, (len(records) + CATALOG_PAGE_SIZE - 1) // CATALOG_PAGE_SIZE)
+    for page_number in range(1, total_pages + 1):
+        page_records = records[(page_number - 1) * CATALOG_PAGE_SIZE:page_number * CATALOG_PAGE_SIZE]
+        cards = "".join(_catalog_card(record) for record in page_records)
+        previous = "index.html" if page_number == 2 else f"page-{page_number - 1}.html"
+        following = f"page-{page_number + 1}.html"
+        nav = '<nav class="netflix-pagination" aria-label="넷플릭스 목록 페이지">'
+        if page_number > 1:
+            nav += f'<a href="./{previous}" rel="prev">← 이전</a>'
+        nav += f'<span>{page_number} / {total_pages}</span>'
+        if page_number < total_pages:
+            nav += f'<a href="./{following}" rel="next">다음 →</a>'
+        nav += "</nav>"
+        content = (
+            '<section class="netflix-catalog-page" aria-labelledby="netflix-catalog-title">'
+            f'<h1 id="netflix-catalog-title">한국 넷플릭스 작품 전체 목록{f" — {page_number}페이지" if page_number > 1 else ""}</h1>'
+            f'<p class="netflix-catalog-lead">수집 시점 기준 {len(records):,}편의 영화와 시리즈를 장르·연도별 상세 정보로 확인하세요.</p>'
+            f'<div class="netflix-catalog-grid">{cards}</div>{nav}</section>'
+        )
+        filename = "netflix/index.html" if page_number == 1 else f"netflix/page-{page_number}.html"
+        page_url = builder._page_url(filename)
+        schema = {
+            "@context": "https://schema.org", "@type": "CollectionPage",
+            "name": "한국 넷플릭스 작품 전체 목록", "url": page_url,
+            "numberOfItems": len(records),
+        }
+        builder._write_html(
+            filename, f"한국 넷플릭스 작품 전체 목록{f' {page_number}페이지' if page_number > 1 else ''}", content,
+            active="영화", page_url=page_url,
+            description=f"현재 한국 넷플릭스에서 시청 가능한 영화와 시리즈 {len(records):,}편을 확인하세요.",
+            robots="index,follow,max-image-preview:large", structured_data=[schema], asset_prefix="../", monetize=True,
+        )
+    return total_pages
+
+
+def _inject_home_discovery(public_dir: Path, records: list[dict[str, Any]]) -> bool:
+    path = public_dir / "index.html"
+    if not path.exists() or not records:
+        return False
+    source = path.read_text(encoding="utf-8")
+    source = re.sub(r"\n?<!-- NETFLIX_DISCOVERY_START -->.*?<!-- NETFLIX_DISCOVERY_END -->\n?", "\n", source, flags=re.S)
+    cards = "".join(_catalog_card(record, href_prefix="./netflix/") for record in records[:10])
+    section = (
+        '\n<!-- NETFLIX_DISCOVERY_START --><section class="netflix-discovery" aria-labelledby="home-netflix-title">'
+        '<div class="netflix-discovery-head"><div><h2 id="home-netflix-title">🎬 지금 볼 수 있는 넷플릭스 작품</h2>'
+        '<p>한국 넷플릭스 영화와 시리즈의 줄거리·장르·러닝타임을 한곳에서 확인하세요.</p></div>'
+        '<a class="netflix-view-all" href="./netflix/index.html">전체 작품 보기 →</a></div>'
+        f'<div class="netflix-catalog-grid">{cards}</div></section><!-- NETFLIX_DISCOVERY_END -->\n'
+    )
+    if "</main>" not in source:
+        return False
+    path.write_text(source.replace("</main>", section + "</main>", 1), encoding="utf-8")
+    return True
+
+
+def _extend_search_index(public_dir: Path, records: list[dict[str, Any]]) -> int:
+    path = public_dir / "search.json"
+    items = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+    items = [item for item in items if not str(item.get("url", "")).startswith("./netflix/")]
+    for record in records:
+        filename = f"netflix/{record['genre_slug']}/{record['release_year']}/{record['slug']}.html"
+        items.append({
+            "title": record["title"], "slug": record["slug"], "url": f"./{filename}",
+            "excerpt": record["synopsis"][:160], "date": record["collected_at"][:10],
+            "category": "영화", "tags": [*record["genres"], "넷플릭스"],
+            "author": "브리핑웨이브 편집팀", "display_author": "브리핑웨이브 편집팀",
+            "aliases": [record["title"], "넷플릭스", *record["genres"]],
+        })
+    path.write_text(json.dumps(items, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    return len(items)
+
+
 def build(args: argparse.Namespace) -> dict[str, int | str]:
     if args.chunk_size < 1 or args.chunk_size > 1000:
         raise ValueError("--chunk-size must be between 1 and 1000")
@@ -311,6 +424,13 @@ def build(args: argparse.Namespace) -> dict[str, int | str]:
     netflix_sitemap_line = f"Sitemap: {site_url}/sitemap-netflix-index.xml"
     if netflix_sitemap_line not in robots:
         robots_path.write_text(robots.rstrip() + "\n" + netflix_sitemap_line + "\n", encoding="utf-8")
+    discovery_records: list[dict[str, Any]] = []
+    for raw_chunk in chunked_records(args.input, chunk_size=args.chunk_size, limit=args.limit or None):
+        discovery_records.extend(normalize_record(raw) for raw in raw_chunk)
+    catalog_pages = _write_catalog_pages(args, discovery_records)
+    home_injected = _inject_home_discovery(args.dist_dir, discovery_records)
+    search_records = _extend_search_index(args.dist_dir, discovery_records)
+    _write_discovery_css(args.dist_dir)
     report: dict[str, int | str] = {
         "input": str(args.input),
         "dist_dir": str(args.dist_dir),
@@ -318,6 +438,9 @@ def build(args: argparse.Namespace) -> dict[str, int | str]:
         "chunk_size": args.chunk_size,
         "chunks": len(results),
         "records": sum(int(result["records"]) for result in results),
+        "catalog_pages": catalog_pages,
+        "home_discovery": int(home_injected),
+        "search_records": search_records,
         "sitemap_index": str(index_path),
     }
     print(json.dumps(report, ensure_ascii=False, indent=2))

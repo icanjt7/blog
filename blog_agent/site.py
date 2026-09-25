@@ -2384,6 +2384,7 @@ class StaticSiteBuilder:
                 {
                     "title": post.title,
                     "slug": post.slug,
+                    "url": f"./{post.slug}.html",
                     "excerpt": post.excerpt,
                     "date": post.date.strftime("%Y-%m-%d"),
                     "category": post.category,
@@ -2619,7 +2620,7 @@ class StaticSiteBuilder:
 	                <span class="cat-badge">${escapeHtml(item.category)}</span>
 	                <time datetime="${escapeHtml(item.date)}">${escapeHtml(item.date)}</time>
 	              </div>
-	              <h2><a href="./${encodeURIComponent(item.slug)}.html">${escapeHtml(item.title)}</a></h2>
+	              <h2><a href="${escapeHtml(item.url || `./${encodeURIComponent(item.slug)}.html`)}">${escapeHtml(item.title)}</a></h2>
 	              <p class="card-author">${escapeHtml(item.display_author || '브리핑웨이브 편집팀')}</p>
 	              <p class="card-excerpt">${escapeHtml(item.excerpt)}</p>
 	              <div class="tags">${(item.tags || []).map(tag=>`<a class="tag" href="./search.html?tag=${encodeURIComponent(tag)}">${escapeHtml(tag)}</a>`).join('')}</div>
@@ -3388,7 +3389,10 @@ class StaticSiteBuilder:
         return norm(searchText(item)).includes(n);
       }}).slice(0,4);
       var matchedProducts=products.filter(function(item){{return norm(productText(item)).includes(n);}}).slice(0,2);
-      var res=articles.map(function(item){{return '<a class="hdr-item" href="'+assetPrefix+encodeURIComponent(item.slug)+'.html"><span class="hdr-title">'+esc(item.title)+'</span><span class="hdr-cat">기사 · '+esc(item.category)+'</span></a>';}})
+      var res=articles.map(function(item){{
+        var href=item.url ? assetPrefix+String(item.url).replace(/^\\.\\//,'') : assetPrefix+encodeURIComponent(item.slug)+'.html';
+        return '<a class="hdr-item" href="'+esc(href)+'"><span class="hdr-title">'+esc(item.title)+'</span><span class="hdr-cat">기사 · '+esc(item.category)+'</span></a>';
+      }})
         .concat(matchedProducts.map(function(item){{return '<a class="hdr-item" href="'+esc(item.url)+'" rel="sponsored nofollow noopener" target="_blank"><span class="hdr-title">'+esc(item.name)+'</span><span class="hdr-cat hdr-product">상품</span></a>';}}));
       if(!res.length){{box.innerHTML='<div class="hdr-item hdr-empty">검색 결과가 없습니다</div>';box.hidden=false;return;}}
       box.innerHTML=res.join('');

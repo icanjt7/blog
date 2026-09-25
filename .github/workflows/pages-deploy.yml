@@ -22,6 +22,8 @@ on:
       - "scripts/verify_movie_canary.py"
       - "scripts/generate_netflix_fixture.py"
       - "scripts/verify_netflix_build.py"
+      - "scripts/build_netflix.py"
+      - "scripts/verify_netflix_catalog.py"
       - "streamlit_app.py"
       - "output/posts/**"
       - ".github/workflows/pages-deploy.yml"

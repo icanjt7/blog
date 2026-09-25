@@ -81,6 +81,9 @@ def test_multiprocess_builder_writes_pages_toss_widget_and_split_sitemaps(tmp_pa
     source = tmp_path / "netflix_raw_data.json"
     source.write_text(json.dumps([_raw(index) for index in range(1, 4)], ensure_ascii=False), encoding="utf-8")
     dist = tmp_path / "dist"
+    dist.mkdir()
+    (dist / "index.html").write_text("<html><body><main>홈</main></body></html>", encoding="utf-8")
+    (dist / "search.json").write_text("[]", encoding="utf-8")
     report = build(argparse.Namespace(
         input=source,
         dist_dir=dist,
@@ -93,6 +96,8 @@ def test_multiprocess_builder_writes_pages_toss_widget_and_split_sitemaps(tmp_pa
 
     assert report["records"] == 3
     assert report["chunks"] == 2
+    assert report["catalog_pages"] == 1
+    assert report["home_discovery"] == 1
     pages = sorted(dist.glob("netflix/drama/2026/*.html"))
     assert len(pages) == 3
     source_html = pages[0].read_text(encoding="utf-8")
@@ -100,6 +105,15 @@ def test_multiprocess_builder_writes_pages_toss_widget_and_split_sitemaps(tmp_pa
     assert 'role="doc-abstract"' in source_html
     assert 'loading="lazy"' in source_html
     assert '"@type": "Movie"' in source_html
+    catalog_html = (dist / "netflix" / "index.html").read_text(encoding="utf-8")
+    assert "한국 넷플릭스 작품 전체 목록" in catalog_html
+    assert "넷플릭스 검증작 1" in catalog_html
+    home_html = (dist / "index.html").read_text(encoding="utf-8")
+    assert "지금 볼 수 있는 넷플릭스 작품" in home_html
+    assert "./netflix/drama/2026/netflix-movie-tm1.html" in home_html
+    search_items = json.loads((dist / "search.json").read_text(encoding="utf-8"))
+    assert len(search_items) == 3
+    assert search_items[0]["url"] == "./netflix/drama/2026/netflix-movie-tm1.html"
 
     namespace = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
     index = ET.parse(dist / "sitemap-netflix-index.xml").getroot()
