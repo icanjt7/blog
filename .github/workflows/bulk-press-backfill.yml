@@ -28,8 +28,13 @@ jobs:
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       BLOG_LLM_PROVIDER_LIMIT: "3"
+      BLOG_LLM_PROVIDER_ORDER: "nvidia,github,openrouter,motif,groq,gemini"
+      LLM_TIMEOUT_SECONDS: "90"
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
+      GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'openai/gpt-4.1' }}
+      NVIDIA_API_KEY: ${{ secrets.LLAMA }}
+      NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL || 'meta/llama-3.3-70b-instruct' }}
+      NVIDIA_BASE_URL: ${{ vars.NVIDIA_BASE_URL || 'https://integrate.api.nvidia.com/v1' }}
       MOTIF_API: ${{ secrets.MOTIF_API }}
       MOTIF_MODEL: ${{ vars.MOTIF_MODEL || 'motif-12.7b-reasoning' }}
       MOTIF_BASE_URL: ${{ vars.MOTIF_BASE_URL || 'https://chat.motiftech.io/openapi/v1' }}
@@ -82,6 +87,7 @@ jobs:
           --input /tmp/qualified-press.jsonl
           --posts-dir /tmp/press-canary/posts
           --chunk-size 1000
+          --workers 2
           --random-sample 300
           --target-success 50
           --report /tmp/canary-generation-report.json
@@ -109,6 +115,7 @@ jobs:
           --input /tmp/qualified-press.jsonl
           --posts-dir /tmp/press-production/posts
           --chunk-size 1000
+          --workers 2
           --report /tmp/production-generation-report.json
 
       - name: Render and verify production batch
