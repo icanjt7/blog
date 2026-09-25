@@ -81,7 +81,8 @@ jobs:
               --candidate-limit "${{ inputs.candidate_limit }}" \
               --posts-dir output/posts \
               --output /tmp/qualified-press.jsonl \
-              --report /tmp/collection-report.json
+              --report /tmp/collection-report.json \
+              --drop-log /tmp/drop_logs.txt
           fi
 
       - name: Build random 50-page canary with LLM
@@ -94,6 +95,7 @@ jobs:
           --random-sample 300
           --target-success 50
           --report /tmp/canary-generation-report.json
+          --drop-log /tmp/drop_logs.txt
 
       - name: Render and verify canary layout, slugs and Toss CTA
         run: |
@@ -109,6 +111,7 @@ jobs:
             /tmp/collection-report.json
             /tmp/canary-generation-report.json
             /tmp/canary-qa-report.json
+            /tmp/drop_logs.txt
           retention-days: 14
 
       - name: Generate all qualified production articles
@@ -120,14 +123,15 @@ jobs:
           --chunk-size 1000
           --workers 2
           --report /tmp/production-generation-report.json
+          --drop-log /tmp/drop_logs.txt
 
       - name: Render and verify production batch
         if: ${{ inputs.execute_full == 'true' }}
         run: |
           python -m blog_agent.cli build-site --posts-dir /tmp/press-production/posts --public-dir /tmp/press-production/public
           python scripts/bulk_press_backfill.py verify --posts-dir /tmp/press-production/posts --public-dir /tmp/press-production/public --report /tmp/production-qa-report.json
-          test -f /tmp/press-production/public/sitemap-2.xml
-          grep -q 'sitemap-2.xml' /tmp/press-production/public/sitemap-index.xml
+          test -f /tmp/press-production/public/sitemap-post-2.xml
+          grep -q 'sitemap-post-2.xml' /tmp/press-production/public/sitemap-index.xml
 
       - name: Promote verified articles and push production trigger
         if: ${{ inputs.execute_full == 'true' }}

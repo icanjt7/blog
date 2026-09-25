@@ -3,6 +3,7 @@ Allow: /
 Disallow: /page/
 Disallow: /page*.html
 Disallow: /search.html
+Disallow: /category/
 Disallow: /*?*tag=
 Disallow: /*?*category=
 
@@ -11,6 +12,7 @@ Allow: /
 Disallow: /page/
 Disallow: /page*.html
 Disallow: /search.html
+Disallow: /category/
 Disallow: /*?*tag=
 Disallow: /*?*category=
 
@@ -19,6 +21,7 @@ Allow: /
 Disallow: /page/
 Disallow: /page*.html
 Disallow: /search.html
+Disallow: /category/
 Disallow: /*?*tag=
 Disallow: /*?*category=
 
@@ -27,6 +30,7 @@ Allow: /
 Disallow: /page/
 Disallow: /page*.html
 Disallow: /search.html
+Disallow: /category/
 Disallow: /*?*tag=
 Disallow: /*?*category=
 
@@ -35,6 +39,7 @@ Allow: /
 Disallow: /page/
 Disallow: /page*.html
 Disallow: /search.html
+Disallow: /category/
 Disallow: /*?*tag=
 Disallow: /*?*category=
 
@@ -43,6 +48,7 @@ Allow: /
 Disallow: /page/
 Disallow: /page*.html
 Disallow: /search.html
+Disallow: /category/
 Disallow: /*?*tag=
 Disallow: /*?*category=
 
@@ -51,6 +57,7 @@ Allow: /
 Disallow: /page/
 Disallow: /page*.html
 Disallow: /search.html
+Disallow: /category/
 Disallow: /*?*tag=
 Disallow: /*?*category=
 
@@ -59,6 +66,7 @@ Allow: /
 Disallow: /page/
 Disallow: /page*.html
 Disallow: /search.html
+Disallow: /category/
 Disallow: /*?*tag=
 Disallow: /*?*category=
 
@@ -67,6 +75,7 @@ Allow: /
 Disallow: /page/
 Disallow: /page*.html
 Disallow: /search.html
+Disallow: /category/
 Disallow: /*?*tag=
 Disallow: /*?*category=
 

@@ -6,17 +6,68 @@ import os
 import sys
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
+from datetime import datetime
 from pathlib import Path
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
-from bulk_press_backfill import existing_source_urls, iter_jsonl_chunks, verify
-from blog_agent.site import StaticSiteBuilder
+import bulk_press_backfill as backfill
+from bulk_press_backfill import append_drop_log, existing_source_urls, iter_jsonl_chunks, verify
+from blog_agent.quality_filters import evaluate_source_content
+from blog_agent.site import Post, StaticSiteBuilder
 from blog_agent.slugs import build_seo_slug
 
 
 class BulkPressBackfillTest(unittest.TestCase):
+    def test_thin_source_is_logged_before_any_llm_call(self) -> None:
+        record = {
+            "institution": "테스트기관",
+            "title": "09월 재난안전 월간",
+            "date": "2026-09-25",
+            "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=12345",
+            "body_text": "본문" * 50,
+        }
+        with patch.object(backfill.press, "generate_article_from_source") as llm_call:
+            generated, reason = backfill._articleize_record(record)
+        self.assertIsNone(generated)
+        self.assertIn("Insufficient body length", reason)
+        llm_call.assert_not_called()
+
+        with tempfile.TemporaryDirectory() as tmp:
+            drop_log = Path(tmp) / "drop_logs.txt"
+            append_drop_log(drop_log, "12345", record["title"], reason)
+            line = drop_log.read_text(encoding="utf-8")
+        self.assertIn("12345\t09월 재난안전 월간\tLength < 500", line)
+
+    def test_long_source_passes_pre_llm_filter(self) -> None:
+        body = "<p>" + ("검증된 정책 본문입니다. " * 80) + "</p>"
+        decision = evaluate_source_content("청년 지원 정책", body)
+        self.assertTrue(decision.accepted)
+        self.assertGreaterEqual(len(decision.raw_text), 500)
+
+        record = {
+            "agency_code": "test",
+            "agency_section": "policy",
+            "institution": "테스트기관",
+            "title": "청년 지원 정책",
+            "date": "2026-09-25",
+            "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=67890",
+            "body_text": body,
+        }
+        article = "## 청년 지원 정책의 구체적 대상\n\n검증된 기사 본문입니다."
+        with (
+            patch.object(backfill, "_WORKER_WRITER", object()),
+            patch.object(backfill.press, "generate_article_from_source", return_value=article) as llm_call,
+            patch.object(backfill.press, "article_is_specific", return_value=True),
+        ):
+            generated, reason = backfill._articleize_record(record)
+        self.assertEqual(reason, "")
+        self.assertIsNotNone(generated)
+        self.assertTrue(generated["article_ready"])
+        llm_call.assert_called_once()
+
     def test_jsonl_is_streamed_in_requested_chunks(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             source = Path(tmp) / "source.jsonl"
@@ -65,10 +116,43 @@ class BulkPressBackfillTest(unittest.TestCase):
             public = root / "public"
             StaticSiteBuilder(posts, public, "브리핑웨이브", "설명", "briefwave.kr").build()
             sitemap_index = (public / "sitemap-index.xml").read_text(encoding="utf-8")
-            self.assertTrue((public / "sitemap-2.xml").exists())
-            self.assertTrue((public / "sitemap-3.xml").exists())
-            self.assertIn("sitemap-2.xml", sitemap_index)
-            self.assertIn("sitemap-3.xml", sitemap_index)
+            self.assertTrue((public / "sitemap-post-2.xml").exists())
+            self.assertTrue((public / "sitemap-post-3.xml").exists())
+            self.assertIn("sitemap-post-2.xml", sitemap_index)
+            self.assertIn("sitemap-post-3.xml", sitemap_index)
+
+    def test_2500_posts_create_three_well_formed_sitemaps(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            public = Path(tmp) / "public"
+            public.mkdir()
+            builder = StaticSiteBuilder(Path(tmp) / "posts", public, "브리핑웨이브", "설명", "briefwave.kr")
+            posts = [
+                Post(
+                    title=f"정책 자료 {index}",
+                    date=datetime(2026, 9, 25),
+                    category="정책",
+                    tags=["정책"],
+                    slug=f"policy-item-{index}",
+                    excerpt="정책 설명",
+                    body_html="<p>본문</p>",
+                )
+                for index in range(2500)
+            ]
+
+            builder._write_sitemap(posts, posts)
+
+            namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+            expected_counts = (1000, 1000, 500)
+            for index, expected in enumerate(expected_counts, 1):
+                path = public / f"sitemap-post-{index}.xml"
+                self.assertTrue(path.exists())
+                root = ET.parse(path).getroot()
+                self.assertEqual(len(root.findall("sm:url", namespace)), expected)
+            sitemap_index = ET.parse(public / "sitemap-index.xml").getroot()
+            locations = [item.text or "" for item in sitemap_index.findall("sm:sitemap/sm:loc", namespace)]
+            post_locations = [location for location in locations if "sitemap-post-" in location]
+            self.assertEqual(len(post_locations), 3)
+            self.assertTrue(all(f"sitemap-post-{index}.xml" in post_locations[index - 1] for index in range(1, 4)))
 
     def test_canary_qa_requires_dynamic_headings_and_toss_widget(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

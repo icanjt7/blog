@@ -43,6 +43,38 @@ GENERIC_HEADINGS = {"개요", "지원 내용", "신청 방법", "주요 내용",
 _WORKER_WRITER: WriterAgent | None = None
 
 
+def _source_id(value: str) -> str:
+    match = re.search(r"[?&]newsId=(\d+)", value or "")
+    return match.group(1) if match else (value or "unknown")
+
+
+def _drop_reason_code(reason: str) -> str:
+    if "Insufficient body length" in reason:
+        suffix = "; Periodical shell" if "월간 동향" in reason else ""
+        return f"Length < 500{suffix}"
+    if "INVALID_DATA" in reason or "specific valid article" in reason:
+        return "LLM Invalid"
+    return reason.removeprefix("Skip: ").strip() or "Unknown"
+
+
+def append_drop_log(path: Path | None, source_id: str, title: str, reason: str) -> None:
+    if path is None:
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    clean_title = re.sub(r"[\t\r\n]+", " ", title).strip()
+    clean_id = re.sub(r"[\t\r\n]+", " ", source_id).strip() or "unknown"
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write(f"{clean_id}\t{clean_title}\t{_drop_reason_code(reason)}\n")
+
+
+def ensure_drop_log(path: Path | None) -> None:
+    """Create the monitoring artifact even when a run has no dropped records."""
+    if path is None:
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.touch(exist_ok=True)
+
+
 def _normalize_url(value: str) -> str:
     normalized = html.unescape(value).rstrip(".,")
     news_id = re.search(r"[?&]newsId=(\d+)", normalized)
@@ -107,6 +139,7 @@ def _write_jsonl(path: Path, records: list[dict[str, str]]) -> None:
 
 
 def collect(args: argparse.Namespace) -> dict[str, object]:
+    ensure_drop_log(args.drop_log)
     posted = existing_source_urls(args.posts_dir)
     agencies = list_agencies()
     per_agency = max(40, ((args.candidate_limit * 3) // max(1, len(agencies))) + 20)
@@ -138,23 +171,27 @@ def collect(args: argparse.Namespace) -> dict[str, object]:
     skipped: dict[str, int] = {}
     iterator = iter(candidates)
     with ThreadPoolExecutor(max_workers=args.fetch_workers) as executor:
-        pending = set()
+        pending: dict[object, tuple[Agency, ListItem]] = {}
         for _ in range(min(len(candidates), args.fetch_workers * 2)):
             try:
-                pending.add(executor.submit(_fetch_release, next(iterator)))
+                task = next(iterator)
+                pending[executor.submit(_fetch_release, task)] = task
             except StopIteration:
                 break
         while pending:
-            done, pending = wait(pending, return_when=FIRST_COMPLETED)
+            done, _ = wait(pending, return_when=FIRST_COMPLETED)
             for future in done:
+                _agency, item = pending.pop(future)
                 record, reason = future.result()
                 if record:
                     accepted.append(record)
                 else:
                     skipped[reason] = skipped.get(reason, 0) + 1
                     print(reason)
+                    append_drop_log(args.drop_log, _source_id(item.url), item.title, reason)
                 try:
-                    pending.add(executor.submit(_fetch_release, next(iterator)))
+                    task = next(iterator)
+                    pending[executor.submit(_fetch_release, task)] = task
                 except StopIteration:
                     pass
 
@@ -234,6 +271,7 @@ def _record_to_release(record: dict[str, str]) -> press.PressRelease:
 
 
 def articleize(args: argparse.Namespace) -> dict[str, object]:
+    ensure_drop_log(args.drop_log)
     args.posts_dir.mkdir(parents=True, exist_ok=True)
     press.POSTS_DIR = args.posts_dir
     max_workers = args.workers or max(1, os.cpu_count() or 1)
@@ -261,10 +299,17 @@ def articleize(args: argparse.Namespace) -> dict[str, object]:
     with ProcessPoolExecutor(max_workers=max_workers, initializer=_worker_init) as executor:
         for chunk in chunks:
             chunk_count += 1
-            for record, reason in executor.map(_articleize_record, chunk, chunksize=1):
+            results = executor.map(_articleize_record, chunk, chunksize=1)
+            for source, (record, reason) in zip(chunk, results):
                 if record is None:
                     skipped[reason] = skipped.get(reason, 0) + 1
                     print(reason)
+                    append_drop_log(
+                        args.drop_log,
+                        _source_id(str(source.get("url") or "")),
+                        str(source.get("title") or ""),
+                        reason,
+                    )
                     continue
                 agency = Agency(record["agency_code"], record["institution"], record["agency_section"])
                 try:
@@ -272,6 +317,12 @@ def articleize(args: argparse.Namespace) -> dict[str, object]:
                 except (InvalidContentData, UnsafeSlugError) as exc:
                     reason = str(exc)
                     skipped[reason] = skipped.get(reason, 0) + 1
+                    append_drop_log(
+                        args.drop_log,
+                        _source_id(str(source.get("url") or "")),
+                        str(source.get("title") or ""),
+                        reason,
+                    )
                     continue
                 written.append(path.name)
                 sequence += 1
@@ -350,6 +401,7 @@ def parser() -> argparse.ArgumentParser:
     collect_parser.add_argument("--start-date", default="2020-01-01")
     collect_parser.add_argument("--end-date", default="2099-12-31")
     collect_parser.add_argument("--report", type=Path)
+    collect_parser.add_argument("--drop-log", type=Path, default=ROOT / "drop_logs.txt")
     collect_parser.set_defaults(func=collect)
 
     article_parser = sub.add_parser("articleize")
@@ -361,6 +413,7 @@ def parser() -> argparse.ArgumentParser:
     article_parser.add_argument("--random-sample", type=int, default=0)
     article_parser.add_argument("--seed", type=int, default=20260925)
     article_parser.add_argument("--report", type=Path)
+    article_parser.add_argument("--drop-log", type=Path, default=ROOT / "drop_logs.txt")
     article_parser.set_defaults(func=articleize)
 
     verify_parser = sub.add_parser("verify")

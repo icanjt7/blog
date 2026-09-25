@@ -487,6 +487,7 @@ quality_score: 95.0
                 self.assertIn(f"User-agent: {crawler}", robots)
             self.assertIn("Disallow: /search.html", robots)
             self.assertIn("Disallow: /page*.html", robots)
+            self.assertIn("Disallow: /category/", robots)
             self.assertIn("Sitemap: https://example.com/sitemap-static.xml", robots)
 
     def test_build_adds_adsense_quality_signals(self) -> None:

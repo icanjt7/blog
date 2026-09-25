@@ -3085,8 +3085,12 @@ class StaticSiteBuilder:
                 )
                 for post in chunk
             ]
-            chunk_name = f"sitemap-{index}.xml"
-            (self.public_dir / chunk_name).write_text(_urlset(entries), encoding="utf-8")
+            chunk_name = f"sitemap-post-{index}.xml"
+            chunk_xml = _urlset(entries)
+            (self.public_dir / chunk_name).write_text(chunk_xml, encoding="utf-8")
+            # Preserve old URLs for existing Search Console registrations while
+            # the sitemap index moves to explicit post-sitemap names.
+            (self.public_dir / f"sitemap-{index}.xml").write_text(chunk_xml, encoding="utf-8")
             sitemap_files.append(chunk_name)
 
         # Keep the former priority sitemap as a compatibility alias, but only
@@ -4628,6 +4632,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
             "Disallow: /page/\n"
             "Disallow: /page*.html\n"
             "Disallow: /search.html\n"
+            "Disallow: /category/\n"
             "Disallow: /*?*tag=\n"
             "Disallow: /*?*category=\n"
         )

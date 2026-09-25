@@ -12,8 +12,8 @@ from google.oauth2 import service_account
 
 SCOPE = "https://www.googleapis.com/auth/webmasters"
 DEFAULT_SITE_URL = "https://briefwave.kr/"
-DEFAULT_SITEMAP_URL = "https://briefwave.kr/sitemap.xml"
-DEFAULT_EXTRA_SITEMAP_URLS = "https://briefwave.kr/sitemap-posts-priority.xml"
+DEFAULT_SITEMAP_URL = "https://briefwave.kr/sitemap-index.xml"
+DEFAULT_EXTRA_SITEMAP_URLS = ""
 
 
 def _load_service_account_info() -> dict | None:

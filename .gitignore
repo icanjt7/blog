@@ -10,4 +10,5 @@ build/
 state/*.sqlite3
 state/*.sqlite3-*
 public/
+drop_logs.txt
 .DS_Store
