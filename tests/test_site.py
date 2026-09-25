@@ -603,6 +603,10 @@ quality_score: 95.0
             for filename in ("about.html", "editorial-policy.html", "privacy.html", "contact.html"):
                 self.assertTrue((root / "public" / filename).exists())
             footer_html = (root / "public" / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(footer_html.count("googletagmanager.com/gtm.js?id="), 1)
+            self.assertEqual(footer_html.count("googletagmanager.com/ns.html?id=GTM-PRH78BZK"), 1)
+            self.assertLess(footer_html.index("<!-- Google Tag Manager -->"), footer_html.index('<meta charset="utf-8">'))
+            self.assertLess(footer_html.index("<body>"), footer_html.index("<!-- Google Tag Manager (noscript) -->"))
             self.assertIn("기사·상품 검색...", footer_html)
             self.assertIn('class="home-products toss-shopping-home"', footer_html)
             self.assertIn("🔥 실시간 특가 TOP 4", footer_html)

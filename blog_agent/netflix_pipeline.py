@@ -63,7 +63,6 @@ NETFLIX_CONTENT_SYSTEM_PROMPT = """당신은 OTT 콘텐츠 전문 에디터다. 
 NETFLIX_RUNTIME_JS = r"""(function(){
   function idle(callback){if('requestIdleCallback' in window)requestIdleCallback(callback,{timeout:2500});else setTimeout(callback,1500);}
   idle(function(){
-    var first=document.scripts[0],gtm=document.createElement('script');gtm.async=true;gtm.src='https://www.googletagmanager.com/gtm.js?id=GTM-PRH78BZK';first.parentNode.insertBefore(gtm,first);
     if(__GA_ID__){var ga=document.createElement('script');ga.async=true;ga.src='https://www.googletagmanager.com/gtag/js?id='+__GA_ID__;document.head.appendChild(ga);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config',__GA_ID__);}
     if(__ADSENSE_ID__){var ad=document.createElement('script');ad.async=true;ad.crossOrigin='anonymous';ad.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+__ADSENSE_ID__;document.head.appendChild(ad);}
   });

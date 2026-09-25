@@ -58,6 +58,17 @@ AUTHOR_NAMES = [
 ]
 
 GTM_CONTAINER_ID = "GTM-PRH78BZK"
+GTM_HEAD_HTML = f"""<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+}})(window,document,'script','dataLayer','{GTM_CONTAINER_ID}');</script>
+<!-- End Google Tag Manager -->"""
+GTM_BODY_HTML = f"""<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={GTM_CONTAINER_ID}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->"""
 
 LANGUAGE_OPTIONS: tuple[tuple[str, str], ...] = (
     ("ko", "한국어"),
@@ -1498,6 +1509,7 @@ class StaticSiteBuilder:
         page = f"""<!doctype html>
 <html lang="{html.escape(html_lang)}">
 <head>
+{GTM_HEAD_HTML}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://images.unsplash.com">
@@ -1532,6 +1544,7 @@ class StaticSiteBuilder:
   </style>
 </head>
 <body>
+{GTM_BODY_HTML}
   <main>{content}</main>
 </body>
 </html>
@@ -3159,31 +3172,8 @@ class StaticSiteBuilder:
         og_image_height: int = 630,
         compact_runtime: bool = False,
     ) -> None:
-        gtm_id = html.escape(GTM_CONTAINER_ID)
-        gtm_head = f"""  <!-- Google Tag Manager -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function briefwaveLoadGtm(){{
-      if(window.__briefwaveGtmLoading)return;
-      window.__briefwaveGtmLoading=true;
-      window.dataLayer.push({{'gtm.start': new Date().getTime(), event:'gtm.js'}});
-      var firstScript=document.getElementsByTagName('script')[0];
-      var tag=document.createElement('script');
-      tag.async=true;
-      tag.src='https://www.googletagmanager.com/gtm.js?id={gtm_id}';
-      firstScript.parentNode.insertBefore(tag,firstScript);
-    }}
-    if('requestIdleCallback' in window){{
-      requestIdleCallback(briefwaveLoadGtm, {{timeout: 2500}});
-    }}else{{
-      setTimeout(briefwaveLoadGtm, 1500);
-    }}
-  </script>
-  <!-- End Google Tag Manager -->"""
-        gtm_body = f"""  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={gtm_id}"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->"""
+        gtm_head = GTM_HEAD_HTML
+        gtm_body = GTM_BODY_HTML
         ga_script = ""
         if self.ga_measurement_id:
             mid = html.escape(self.ga_measurement_id)
@@ -3236,8 +3226,6 @@ class StaticSiteBuilder:
             )
 
         if compact_runtime:
-            gtm_head = ""
-            gtm_body = ""
             ga_script = ""
             if monetize:
                 pub = html.escape(self.adsense_publisher_id or "ca-pub-3870943054399059")
@@ -3302,9 +3290,9 @@ class StaticSiteBuilder:
         page = f"""<!doctype html>
 <html lang="{html.escape(html_lang)}">
 <head>
+{gtm_head}
 {ga_script}
   <meta charset="utf-8">
-{gtm_head}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="preconnect" href="https://images.pexels.com">

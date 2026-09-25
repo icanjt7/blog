@@ -105,6 +105,10 @@ def test_multiprocess_builder_writes_pages_toss_widget_and_split_sitemaps(tmp_pa
     assert 'role="doc-abstract"' in source_html
     assert 'loading="lazy"' in source_html
     assert '"@type": "Movie"' in source_html
+    assert source_html.count("googletagmanager.com/gtm.js?id=") == 1
+    assert source_html.count("googletagmanager.com/ns.html?id=GTM-PRH78BZK") == 1
+    assert source_html.index("<!-- Google Tag Manager -->") < source_html.index('<meta charset="utf-8">')
+    assert source_html.index("<body>") < source_html.index("<!-- Google Tag Manager (noscript) -->") < source_html.index('<header class="site-header">')
     catalog_html = (dist / "netflix" / "index.html").read_text(encoding="utf-8")
     assert "한국 넷플릭스 작품 전체 목록" in catalog_html
     assert "넷플릭스 검증작 1" in catalog_html
