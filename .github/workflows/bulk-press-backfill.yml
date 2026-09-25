@@ -27,8 +27,8 @@ jobs:
       models: read
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-      BLOG_LLM_PROVIDER_LIMIT: "3"
-      BLOG_LLM_PROVIDER_ORDER: "nvidia,github,openrouter,motif,groq,gemini"
+      BLOG_LLM_PROVIDER_LIMIT: "0"
+      BLOG_LLM_PROVIDER_ORDER: "github,openrouter,motif,groq,gemini,nvidia"
       LLM_TIMEOUT_SECONDS: "90"
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'openai/gpt-4.1' }}

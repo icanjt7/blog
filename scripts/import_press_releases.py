@@ -691,7 +691,10 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
         max_tokens=2600,
         system_prompt=press_json_system_prompt(),
     ):
-        payload = parse_press_json(text, expected_type=template)
+        # The rule-based template is a hint, not an override. The model sees
+        # the complete source and owns the final ACTIONABLE / INFORMATIONAL /
+        # ANNOUNCEMENT decision (including INVALID_DATA fail-fast).
+        payload = parse_press_json(text)
         if not payload:
             continue
         if payload.get("post_type") == "INVALID_DATA":
