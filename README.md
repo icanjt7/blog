@@ -69,6 +69,42 @@ python -m blog_agent.cli build-site
 
 `build-site`는 `output/posts/`의 Markdown 글을 `public/` 정적 사이트로 렌더링합니다. GitHub Actions는 매일 글을 만들고, `public/`을 GitHub Pages에 배포합니다.
 
+## 한국 넷플릭스 카탈로그 수집 및 병렬 빌드
+
+JustWatch의 한국(`KR`/`ko_KR`) 넷플릭스(`nfx`) 제공 목록은 다음처럼 수집합니다. 단일 조회의 1,999건 제한을 피하기 위해 연도와 콘텐츠 유형을 나누어 요청하며, 페이지 사이에는 기본 0.75초 지연과 429 지수 백오프가 적용됩니다.
+
+```bash
+python -m pip install -e .
+python scripts/fetch_netflix_data.py \
+  --output data/netflix_raw_data.json \
+  --limit 20000 \
+  --sort-by popularity
+```
+
+현재 한국 카탈로그의 실제 고유 작품 수가 20,000건보다 적으면 확인된 전체 작품만 저장하고 경고를 출력합니다. JustWatch와 사용 패키지는 비공식 연동이므로 대규모 실행 전 해당 서비스의 최신 이용 조건과 호출 정책을 확인해야 합니다.
+
+50건으로 렌더링 구조를 먼저 확인하려면 다음처럼 실행합니다.
+
+```bash
+python scripts/build_netflix.py \
+  --input data/netflix_raw_data.json \
+  --dist-dir dist \
+  --limit 50 \
+  --chunk-size 10 \
+  --workers 2
+```
+
+전체 빌드는 기본적으로 논리 CPU 코어 전체와 1,000건 청크를 사용합니다.
+
+```bash
+python scripts/build_netflix.py \
+  --input data/netflix_raw_data.json \
+  --dist-dir dist \
+  --chunk-size 1000
+```
+
+결과 페이지는 `dist/netflix/{genre}/{year}/{slug}.html`, 하위 사이트맵은 `dist/sitemap-netflix-N.xml`, 사이트맵 인덱스는 `dist/sitemap-netflix-index.xml`에 생성됩니다.
+
 GitHub 저장소 Settings → Pages에서 Source를 `GitHub Actions`로 설정하세요. 배포 후 주소는 보통 `https://icanjt7.github.io/blog/` 형태가 됩니다.
 
 WordPress에도 같은 글을 자동 포스팅하면서 GitHub Pages와 개인 도메인으로 공개하려면 [docs/hybrid-github-pages-wordpress.md](docs/hybrid-github-pages-wordpress.md)를 참고하세요.

@@ -5,6 +5,7 @@ __pycache__/
 .pytest_cache/
 .cache/
 dist/
+data/netflix_raw_data.json
 build/
 *.egg-info/
 state/*.sqlite3

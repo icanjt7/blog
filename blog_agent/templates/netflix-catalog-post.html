@@ -1,0 +1,35 @@
+<article class="post movie-post netflix-post netflix-catalog-post">
+  $breadcrumb
+  <header class="movie-header">
+    <picture class="movie-poster-wrap">
+      <img class="movie-poster" src="$poster_url" alt="$poster_alt" width="500" height="750" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+    </picture>
+    <div class="movie-heading">
+      <p class="meta">한국 넷플릭스 · $year</p>
+      <h1>$title</h1>
+      <section id="executive-summary" role="doc-abstract" aria-label="콘텐츠 핵심 요약">
+        <dl class="netflix-summary-box">
+          <div><dt>장르</dt><dd>$genres</dd></div>
+          <div><dt>시청 등급</dt><dd>$age_rating</dd></div>
+          <div><dt>러닝타임/회차</dt><dd>$runtime</dd></div>
+        </dl>
+      </section>
+    </div>
+  </header>
+  <section class="movie-section key-facts" aria-labelledby="netflix-key-facts">
+    <h2 id="netflix-key-facts">$title 핵심 작품 정보</h2>
+    <ul>$key_facts</ul>
+  </section>
+  <section class="movie-section" aria-labelledby="netflix-synopsis">
+    <h2 id="netflix-synopsis">$title 시놉시스</h2>
+    <p>$synopsis</p>
+  </section>
+  <section class="movie-section" aria-labelledby="netflix-availability">
+    <h2 id="netflix-availability">한국 넷플릭스 시청 가능 여부</h2>
+    <p><time datetime="$collected_at">$collected_date</time> 수집 시점에 JustWatch의 한국 넷플릭스 제공 목록에서 확인된 작품입니다. 편성은 이후 변경될 수 있습니다.</p>
+  </section>
+  <section class="movie-image-credit" aria-label="콘텐츠 데이터 출처">
+    <p><a href="$source_url" rel="nofollow noopener" target="_blank">JustWatch에서 최신 제공 정보 확인</a></p>
+  </section>
+  $product_widget
+</article>
