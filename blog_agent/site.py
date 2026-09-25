@@ -395,6 +395,7 @@ class StaticSiteBuilder:
         self._write_post(post, index_posts)
 
       self._write_index(index_posts)
+      self._write_404(index_posts)
       # generate search index and page
       self._write_search_index(index_posts)
       self._write_product_catalog()
@@ -1925,6 +1926,123 @@ class StaticSiteBuilder:
             f'{"".join(tabs)}</div>'
             '<div class="recommended-grid" id="recommended-panel" role="tabpanel" aria-live="polite">'
             f'{skeletons}</div></section>{runtime}'
+        )
+
+    def _not_found_post_pool(self, posts: list[Post], limit: int = 48) -> list[dict[str, str]]:
+        """Return a category-balanced, root-relative recommendation pool for 404 pages."""
+        grouped = self._recommended_post_pool(posts, per_category=8)
+        if not grouped:
+            return []
+
+        categories = list(grouped)
+        max_category_size = max(len(items) for items in grouped.values())
+        recommendations: list[dict[str, str]] = []
+        for item_index in range(max_category_size):
+            for category in categories:
+                items = grouped[category]
+                if item_index >= len(items):
+                    continue
+                item = items[item_index]
+                recommendations.append(
+                    {
+                        "title": item["title"],
+                        "url": "/" + item["url"].removeprefix("./"),
+                        "category": category,
+                        "thumb": item["thumbnail"],
+                    }
+                )
+                if len(recommendations) >= limit:
+                    return recommendations
+        return recommendations
+
+    def _write_404(self, posts: list[Post]) -> None:
+        recommendations = self._not_found_post_pool(posts)
+        serialized = json.dumps(recommendations, ensure_ascii=False, separators=(",", ":"))
+        serialized = (
+            serialized.replace("<", "\\u003c")
+            .replace(">", "\\u003e")
+            .replace("&", "\\u0026")
+            .replace("\u2028", "\\u2028")
+            .replace("\u2029", "\\u2029")
+        )
+        skeletons = "".join(
+            '<article class="error-post-card error-post-skeleton" aria-hidden="true">'
+            '<span class="error-post-thumb"></span><span class="error-post-info">'
+            '<span class="error-skeleton-line short"></span>'
+            '<span class="error-skeleton-line"></span></span></article>'
+            for _ in range(3)
+        )
+        content = f"""
+        <section class="error-container" aria-labelledby="error-title">
+          <p class="error-code" aria-hidden="true">404</p>
+          <h1 class="error-title" id="error-title">앗, 페이지를 찾을 수 없습니다 😅</h1>
+          <p class="error-desc">
+            요청하신 주소가 변경되었거나 삭제되었습니다.<br>
+            대신, <strong>브리핑웨이브 에디터가 추천하는 흥미로운 글</strong>을 둘러보세요.
+          </p>
+          <section class="error-recommendations" aria-labelledby="error-recommendations-title">
+            <h2 id="error-recommendations-title">이런 글은 어떠신가요?</h2>
+            <div id="random-posts-container" class="random-posts-grid" aria-live="polite">
+              {skeletons}
+            </div>
+          </section>
+          <a href="/" class="home-btn">메인 홈으로 가기</a>
+        </section>
+        <script>
+        window.AVAILABLE_POSTS={serialized};
+        (function(){{
+          function shuffle(items){{
+            var copy=items.slice();
+            for(var i=copy.length-1;i>0;i--){{
+              var j=Math.floor(Math.random()*(i+1));
+              var swap=copy[i];copy[i]=copy[j];copy[j]=swap;
+            }}
+            return copy;
+          }}
+          function esc(value){{
+            return String(value||'').replace(/[&<>"']/g,function(character){{
+              return {{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[character];
+            }});
+          }}
+          function render(){{
+            var container=document.getElementById('random-posts-container');
+            var posts=Array.isArray(window.AVAILABLE_POSTS)?window.AVAILABLE_POSTS:[];
+            if(!container)return;
+            if(!posts.length){{
+              container.innerHTML='<p class="error-posts-empty">추천 기사를 준비하고 있습니다.</p>';
+              return;
+            }}
+            var selected=shuffle(posts).slice(0,Math.min(3,posts.length));
+            var previous=[];
+            try{{previous=(sessionStorage.getItem('briefwave-404-posts')||'').split('|').filter(Boolean);}}catch(error){{}}
+            if(posts.length>selected.length&&selected.every(function(post){{return previous.indexOf(post.url)!==-1;}})){{
+              var replacement=posts.find(function(post){{return previous.indexOf(post.url)===-1;}});
+              if(replacement)selected[selected.length-1]=replacement;
+            }}
+            container.innerHTML=selected.map(function(post){{
+              var media=post.thumb
+                ? '<img src="'+esc(post.thumb)+'" alt="'+esc(post.title)+' - 핵심 내용 요약 이미지" class="error-post-thumb" width="720" height="405" loading="lazy" decoding="async">'
+                : '<span class="error-post-thumb error-post-placeholder" aria-hidden="true">BriefWave</span>';
+              return '<article class="error-post-card"><a href="'+esc(post.url)+'">'+media+
+                '<span class="error-post-info"><span class="error-post-category">'+esc(post.category)+'</span>'+
+                '<h3 class="error-post-title">'+esc(post.title)+'</h3></span></a></article>';
+            }}).join('');
+            try{{sessionStorage.setItem('briefwave-404-posts',selected.map(function(post){{return post.url;}}).join('|'));}}catch(error){{}}
+          }}
+          if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',render,{{once:true}});
+          else render();
+        }})();
+        </script>
+        """
+        self._write_html(
+            "404.html",
+            "페이지를 찾을 수 없습니다",
+            content,
+            page_url=self._page_url("404.html"),
+            description="요청하신 페이지를 찾을 수 없습니다. 브리핑웨이브 추천 기사를 확인해 보세요.",
+            robots="noindex,follow",
+            asset_prefix="/",
+            monetize=False,
         )
 
     @staticmethod
@@ -3715,6 +3833,47 @@ body { top: 0 !important; }
 .site-nav a { color: var(--muted); padding: 9px 18px; font-size: 0.9rem; font-weight: 500; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s; white-space: nowrap; text-decoration: none; display: block; }
 .site-nav a:hover { color: var(--ink); }
 .site-nav a.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 800; }
+
+/* resilient 404 page with client-side article recommendations */
+.error-container { max-width: 960px; margin: 54px auto 72px; padding: 0 20px; text-align: center; }
+.error-code { margin: 0 0 4px; color: var(--accent); font-size: clamp(3.6rem, 12vw, 7rem); font-weight: 900; line-height: 1; letter-spacing: -.07em; opacity: .14; }
+.error-title { margin: -18px 0 12px; color: var(--ink); font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.25; word-break: keep-all; }
+.error-desc { margin: 0 auto 36px; color: var(--muted); font-size: 1.04rem; line-height: 1.75; word-break: keep-all; }
+.error-recommendations { min-height: 330px; margin: 0 0 36px; }
+.error-recommendations h2 { margin: 0 0 18px; font-size: 1.25rem; text-align: left; }
+.random-posts-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; text-align: left; }
+.error-post-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); box-shadow: 0 8px 24px rgba(30,41,59,.07); transition: transform .2s ease, box-shadow .2s ease; }
+.error-post-card:hover { transform: translateY(-5px); box-shadow: 0 14px 30px rgba(30,41,59,.13); }
+.error-post-card > a { display: flex; height: 100%; flex-direction: column; color: inherit; text-decoration: none; }
+.error-post-thumb { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #edf4f2; }
+.error-post-placeholder { display: grid; place-items: center; color: var(--accent); font-weight: 800; }
+.error-post-info { display: block; padding: 15px 16px 18px; }
+.error-post-category { display: block; margin-bottom: 7px; color: var(--accent); font-size: .78rem; font-weight: 800; }
+.error-post-title { margin: 0; color: var(--ink); font-size: 1.02rem; line-height: 1.48; word-break: keep-all; }
+.home-btn { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; padding: 0 24px; border-radius: 9px; background: var(--ink); color: #fff; font-weight: 800; text-decoration: none; transition: background .2s ease, transform .2s ease; }
+.home-btn:hover { background: var(--accent); color: #fff; text-decoration: none; transform: translateY(-2px); }
+.error-post-skeleton { box-shadow: none; pointer-events: none; }
+.error-post-skeleton:hover { transform: none; box-shadow: none; }
+.error-post-skeleton .error-post-thumb, .error-skeleton-line { background: linear-gradient(90deg,#eef2f1 25%,#f8faf9 45%,#eef2f1 65%); background-size: 300% 100%; animation: error-skeleton-pulse 1.4s ease infinite; }
+.error-skeleton-line { display: block; width: 100%; height: 13px; margin-top: 9px; border-radius: 999px; }
+.error-skeleton-line.short { width: 38%; margin-top: 0; }
+.error-posts-empty { grid-column: 1 / -1; padding: 30px; color: var(--muted); text-align: center; }
+@keyframes error-skeleton-pulse { from { background-position: 100% 0; } to { background-position: 0 0; } }
+@media (max-width: 720px) {
+  .error-container { margin: 34px auto 54px; padding: 0; }
+  .error-title, .error-desc, .error-recommendations h2 { margin-right: 16px; margin-left: 16px; }
+  .error-code { font-size: 5rem; }
+  .error-title { margin-top: -12px; }
+  .random-posts-grid { display: flex; gap: 14px; overflow-x: auto; padding: 0 16px 16px; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .random-posts-grid::-webkit-scrollbar { display: none; }
+  .error-post-card { flex: 0 0 min(82vw, 310px); scroll-snap-align: start; }
+  .error-recommendations { min-height: 344px; }
+  .home-btn { width: calc(100% - 32px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .error-post-card, .home-btn { transition: none; }
+  .error-post-skeleton .error-post-thumb, .error-skeleton-line { animation: none; }
+}
 
 /* clickable tags */
 a.tag { text-decoration: none; }
