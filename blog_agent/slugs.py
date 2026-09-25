@@ -48,6 +48,19 @@ _MONTH_EN = {
     "09": "september", "10": "october", "11": "november", "12": "december",
 }
 
+_HANGUL_INITIAL = (
+    "g", "kk", "n", "d", "tt", "r", "m", "b", "pp", "s", "ss", "", "j", "jj", "ch", "k", "t", "p", "h",
+)
+_HANGUL_MEDIAL = (
+    "a", "ae", "ya", "yae", "eo", "e", "yeo", "ye", "o", "wa", "wae", "oe", "yo",
+    "u", "wo", "we", "wi", "yu", "eu", "ui", "i",
+)
+_HANGUL_FINAL = (
+    "", "k", "k", "ks", "n", "nj", "nh", "t", "l", "lk", "lm", "lb", "ls", "lt", "lp", "lh",
+    "m", "p", "ps", "t", "t", "ng", "t", "t", "k", "t", "p", "h",
+)
+_OPAQUE_HASH_SUFFIX_RE = re.compile(r"-[0-9a-f]{8}$", re.IGNORECASE)
+
 
 def slugify_words(value: str, *, max_length: int = 64, fallback: str = "post") -> str:
     """URL 슬러그를 단어 경계에서 줄여 마지막 토큰이 잘리지 않게 만든다."""
@@ -91,6 +104,45 @@ def _translated_tokens(value: str) -> list[str]:
     return list(dict.fromkeys(tokens))
 
 
+def romanize_korean(value: str) -> str:
+    """Return an ASCII-only deterministic romanization for slug fallbacks."""
+    words: list[str] = []
+    for chunk in re.findall(r"[가-힣]+|[a-zA-Z][a-zA-Z0-9]*|\d+", value):
+        converted: list[str] = []
+        for character in chunk.lower():
+            code = ord(character)
+            if 0xAC00 <= code <= 0xD7A3:
+                offset = code - 0xAC00
+                initial = offset // 588
+                medial = (offset % 588) // 28
+                final = offset % 28
+                converted.extend(
+                    (_HANGUL_INITIAL[initial], _HANGUL_MEDIAL[medial], _HANGUL_FINAL[final])
+                )
+            elif character.isascii() and character.isalnum():
+                converted.append(character)
+        word = "".join(converted)
+        if word:
+            words.append(word)
+    return "-".join(words)
+
+
+def ensure_clean_slug(slug: str) -> str:
+    """Reject new slugs containing Hangul or an opaque eight-character hash."""
+    if not slug or re.search(r"[가-힣]", slug) or _OPAQUE_HASH_SUFFIX_RE.search(slug):
+        raise UnsafeSlugError(f"Skip: Non-clean future slug ({slug})")
+    if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug):
+        raise UnsafeSlugError(f"Skip: Invalid future slug characters ({slug})")
+    return slug
+
+
+def _slug_with_suffix(base_parts: list[str], suffix_parts: list[str], max_length: int) -> str:
+    suffix = "-".join(suffix_parts)
+    budget = max_length - len(suffix) - (1 if suffix else 0)
+    base = slugify_words("-".join(base_parts), max_length=max(12, budget), fallback="")
+    return "-".join(part for part in (base, suffix) if part)
+
+
 def source_integer_id(value: str | int | None) -> int | None:
     if isinstance(value, int):
         return value if value >= 0 else None
@@ -116,26 +168,30 @@ def build_seo_slug(
         re.sub(r"[^a-z0-9]+", "-", agency.lower()).strip("-"),
     )
     category_slug = _CATEGORY_EN.get(category, re.sub(r"[^a-z0-9]+", "-", category.lower()).strip("-"))
-    parts = [part for part in (agency_slug, *translated) if part]
+    romanized = romanize_korean(title)
+    semantic_parts = translated or ([romanized] if romanized else [])
+    owner_slug = agency_slug or (category_slug if not translated else "")
+    parts = [part for part in (owner_slug, *semantic_parts) if part]
+    suffix_parts: list[str] = []
     identifier = source_integer_id(source_id)
+    if not translated and len(re.sub(r"[^a-z0-9]", "", romanized)) < 10 and identifier is not None and owner_slug:
+        return ensure_clean_slug(f"{owner_slug}-issue-{identifier}")
     if published_date:
         try:
             date_text = date.fromisoformat(str(published_date)[:10]).strftime("%Y-%m-%d")
         except ValueError:
             date_text = ""
         if date_text:
-            parts.append(date_text)
+            suffix_parts.append(date_text)
     if identifier is not None:
-        parts.append(str(identifier))
-    candidate = slugify_words("-".join(parts), max_length=max_length, fallback="") if parts else ""
+        suffix_parts.append(str(identifier))
+    candidate = _slug_with_suffix(parts, suffix_parts, max_length) if parts else ""
     if len(re.sub(r"[^a-z0-9]", "", candidate)) >= 10:
-        return candidate
+        return ensure_clean_slug(candidate)
 
     if identifier is not None and (agency_slug or category_slug):
-        return f"{agency_slug or category_slug}-issue-{identifier}"
+        return ensure_clean_slug(f"{agency_slug or category_slug}-issue-{identifier}")
 
-    native = slugify_words(title, max_length=max_length, fallback="")
-    native_length = len(re.sub(r"[^가-힣a-z0-9]", "", native))
-    if native_length >= 10:
-        return native
+    if romanized and len(re.sub(r"[^a-z0-9]", "", romanized)) >= 10:
+        return ensure_clean_slug(slugify_words(romanized, max_length=max_length, fallback=""))
     raise UnsafeSlugError(f"Skip: Unsafe short slug source ({title.strip()})")

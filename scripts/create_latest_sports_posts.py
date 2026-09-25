@@ -7,9 +7,10 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
-import re
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+
+from blog_agent.slugs import build_seo_slug
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -89,13 +90,8 @@ def quote(value: str) -> str:
     return json.dumps(value, ensure_ascii=False)
 
 
-def slug_text(value: str) -> str:
-    value = re.sub(r"[^0-9A-Za-z가-힣]+", "-", value).strip("-").lower()
-    return value[:90]
-
-
 def write_post(index: int, title: str, date: datetime, tags: list[str], body: str) -> Path:
-    slug = slug_text(title)
+    slug = build_seo_slug(title, category="스포츠", source_id=index, published_date=date.date(), max_length=90)
     path = POSTS_DIR / f"{PREFIX}{index:03d}-{slug}.md"
     frontmatter = [
         "---",

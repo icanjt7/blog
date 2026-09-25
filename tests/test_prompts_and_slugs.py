@@ -10,7 +10,7 @@ from blog_agent.prompts import (
     press_template_instruction,
     render_press_json,
 )
-from blog_agent.slugs import build_seo_slug, slugify_words
+from blog_agent.slugs import build_seo_slug, ensure_clean_slug, romanize_korean, slugify_words
 
 
 class PressTemplateTest(unittest.TestCase):
@@ -102,6 +102,31 @@ class PressTemplateTest(unittest.TestCase):
             source_id="https://example.go.kr/view?id=102",
         )
         self.assertEqual(slug, "me-carbon-neutral-monthly-trends-102")
+
+    def test_future_korean_titles_use_clean_romanized_slugs(self) -> None:
+        slug = build_seo_slug(
+            "강릉시장 당선인 공약",
+            category="정치",
+            published_date="2026-09-26",
+        )
+        self.assertEqual(slug, "politics-gangreungsijang-dangseonin-gongyak-2026-09-26")
+        self.assertNotRegex(slug, r"[가-힣]")
+        self.assertNotRegex(slug, r"-[0-9a-f]{8}$")
+        self.assertEqual(ensure_clean_slug(slug), slug)
+        self.assertEqual(romanize_korean("나라장터 입찰공고"), "narajangteo-ipchalgonggo")
+
+    def test_long_slug_keeps_date_and_integer_identifier(self) -> None:
+        slug = build_seo_slug(
+            "청년 창업 지원사업 모집 " * 12,
+            category="정책",
+            agency="중소벤처기업부",
+            source_id=156783181,
+            published_date="2026-09-26",
+            max_length=80,
+        )
+        self.assertLessEqual(len(slug), 80)
+        self.assertTrue(slug.endswith("-2026-09-26-156783181"))
+        self.assertNotRegex(slug, r"[가-힣]")
 
 
 if __name__ == "__main__":

@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import hashlib
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -17,6 +16,7 @@ from blog_agent.editor import SeoEditorAgent
 from blog_agent.images import ImageAgent
 from blog_agent.models import Draft, Source, Topic
 from blog_agent.publishers import MarkdownPublisher
+from blog_agent.slugs import build_seo_slug
 
 
 OFFICIAL_SOURCES = [
@@ -128,11 +128,7 @@ def existing_text(posts_dir: Path) -> str:
 
 
 def make_slug(keyword: str) -> str:
-    cleaned = "".join(ch if ch.isalnum() else "-" for ch in keyword).strip("-").lower()
-    while "--" in cleaned:
-        cleaned = cleaned.replace("--", "-")
-    suffix = hashlib.sha1(f"election-{keyword}-{datetime.now().date()}".encode()).hexdigest()[:8]
-    return f"{cleaned}-{suffix}"
+    return build_seo_slug(keyword, category="정치", published_date=datetime.now().date())
 
 
 def build_topics(limit: int, settings) -> list[Topic]:

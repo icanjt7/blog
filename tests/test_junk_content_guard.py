@@ -6,13 +6,61 @@ import unittest
 from pathlib import Path
 
 from blog_agent.prompts import parse_press_json, press_json_system_prompt
-from blog_agent.quality_filters import InvalidContentData, evaluate_source_content, require_source_content
+from blog_agent.quality_filters import (
+    InvalidContentData,
+    evaluate_source_content,
+    is_legacy_junk_post,
+    require_source_content,
+    should_drop_post,
+)
 from blog_agent.site import StaticSiteBuilder
 from blog_agent.slugs import UnsafeSlugError, build_seo_slug
 from blog_agent.writer import WriterAgent
 
 
 class JunkContentGuardTest(unittest.TestCase):
+    def test_structured_drop_rule_rejects_thin_monthly_and_unsafe_slug_records(self) -> None:
+        good_post = {
+            "title": "문화체육관광부 2026년 하반기 문화예술 지원 정책 안내",
+            "slug": "culture-ministry-culture-2026-09-25-156783181",
+            "body": "<p>문화예술 지원 대상과 신청 절차를 구체적으로 안내합니다.</p>" * 20,
+        }
+        thin_monthly = {
+            "title": "07월 생활비",
+            "slug": "07월-생활비-f8224f14",
+            "body": "<p>첨부파일을 확인하세요.</p>",
+        }
+        generated_shell = {
+            "title": "07월 제철음식, 꼭 챙겨야 할 5가지 정보",
+            "slug": "07월-제철음식-facfb66b",
+            "body": "<p>공식 포털에서 대상과 기간을 확인하세요.</p>" * 40,
+        }
+
+        self.assertEqual(should_drop_post(good_post), (False, "Pass: 정상적인 고품질 데이터"))
+        dropped, thin_reason = should_drop_post(thin_monthly)
+        self.assertTrue(dropped)
+        self.assertIn("본문 텍스트 부족", thin_reason)
+        dropped, slug_reason = should_drop_post(generated_shell)
+        self.assertTrue(dropped)
+        self.assertIn("비정상 헥사 해시값", slug_reason)
+
+    def test_legacy_hash_guard_is_scoped_to_monthly_shell_titles(self) -> None:
+        filler = "구체적인 정책 사실과 일정이 포함된 충분한 본문입니다. " * 40
+        self.assertTrue(
+            is_legacy_junk_post(
+                "07월 생활비, 달라진 지원 조건 한눈에 확인",
+                "07월-생활비-f8224f14",
+                filler,
+            )
+        )
+        self.assertFalse(
+            is_legacy_junk_post(
+                "주민자치회 활성화를 위한 워크숍 개최",
+                "mois-행정안전부-주민자치회-활성화-0cefae3f",
+                filler,
+            )
+        )
+
     def test_monthly_attachment_shell_is_rejected_and_logged(self) -> None:
         title = "09월 탄소중립"
         body = "<p>탄소중립 월간 소식지가 발간되었습니다.</p><a href='file.pdf'>첨부파일</a>"

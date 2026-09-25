@@ -8,9 +8,34 @@ import yaml
 
 from blog_agent.models import Draft, Topic
 from blog_agent.publishers import MarkdownPublisher
+from blog_agent.slugs import UnsafeSlugError
 
 
 class MarkdownPublisherTest(unittest.TestCase):
+    def test_new_unsafe_slug_is_rejected_but_existing_legacy_path_is_grandfathered(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            output = Path(tmp)
+            publisher = MarkdownPublisher(output)
+            topic = Topic(keyword="생활비", title_hint="생활비", category="생활")
+            draft = Draft(
+                topic=topic,
+                title="07월 생활비",
+                slug="07월-생활비-f8224f14",
+                excerpt="",
+                body_markdown="본문",
+                tags=["생활"],
+            )
+
+            with self.assertRaises(UnsafeSlugError):
+                publisher.publish(draft)
+            self.assertFalse((output / "07월-생활비-f8224f14.md").exists())
+
+            legacy_path = output / "07월-생활비-f8224f14.md"
+            legacy_path.write_text("legacy", encoding="utf-8")
+            result = publisher.publish(draft)
+            self.assertTrue(result.ok)
+            self.assertTrue(legacy_path.exists())
+
     def test_publish_escapes_multiline_frontmatter_values(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             publisher = MarkdownPublisher(Path(tmp))

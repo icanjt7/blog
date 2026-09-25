@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import argparse
 import os
-import re
 import sys
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -11,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from blog_agent.narabid import OPERATIONS, NaraBidClient, write_bid_digest, write_service_digest
+from blog_agent.slugs import build_seo_slug
 
 
 def main() -> int:
@@ -48,7 +48,7 @@ def main() -> int:
     output_dir = Path(args.output_dir)
     work_types = args.work_types or (["service"] if args.format == "service-summary" else ["goods", "service", "construction"])
     filename_base = "나라장터-용역입찰공고" if args.format == "service-summary" else "나라장터-입찰공고"
-    filename = f"{_slug(filename_base)}-{generated_at:%Y-%m-%d}.md"
+    filename = f"{build_seo_slug(filename_base, category='정책', published_date=generated_at.date())}.md"
     path = output_dir / filename
     if path.exists() and not args.overwrite:
         print(f"이미 파일이 있습니다: {path}. 덮어쓰려면 --overwrite를 사용하세요.", file=sys.stderr)
@@ -83,11 +83,6 @@ def _parse_datetime(value: str) -> datetime:
         except ValueError:
             pass
     raise ValueError("--date must be YYYY-MM-DD or YYYY-MM-DDTHH:MM")
-
-
-def _slug(value: str) -> str:
-    slug = re.sub(r"\s+", "-", value.strip())
-    return re.sub(r"[^0-9A-Za-z가-힣._-]+", "", slug).strip("-")
 
 
 def _dedupe_service_notices(notices):

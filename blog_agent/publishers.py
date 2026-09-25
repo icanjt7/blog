@@ -9,6 +9,7 @@ import yaml
 
 from .config import Settings
 from .models import Draft, PublishResult
+from .slugs import ensure_clean_slug
 import time
 
 
@@ -25,6 +26,10 @@ class MarkdownPublisher(Publisher):
     def publish(self, draft: Draft) -> PublishResult:
         body = self._body_with_images(draft)
         path = self.output_dir / f"{draft.slug}.md"
+        # Grandfather existing URLs, but never allow a newly created Markdown
+        # post to introduce a Hangul or opaque-hash slug again.
+        if not path.exists():
+            ensure_clean_slug(draft.slug)
         meta = {
             "title": self._clean_scalar(draft.title),
             "date": draft.created_at.isoformat(),
