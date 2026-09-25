@@ -1863,31 +1863,38 @@ class StaticSiteBuilder:
     function initialize(){
       var section=document.querySelector('[data-recommended-posts]');
       var panel=document.getElementById('recommended-panel');
+      var refreshButton=document.getElementById('recommended-refresh-button');
+      var refreshStatus=document.getElementById('recommended-refresh-status');
       if(!section||!panel)return;
       var tabs=Array.prototype.slice.call(section.querySelectorAll('[data-recommended-category]'));
       var pool=window.RECOMMENDED_POSTS||{};
-      function render(category){
+      var currentCategory='';
+      function render(category,animate){
         var candidates=shuffle(pool[category]||[]);
         var count=Math.min(4,candidates.length);
-        var selected=candidates.slice(0,count);
         var storageKey='briefwave-recommended-'+category;
         var previous=[];
         try{previous=(sessionStorage.getItem(storageKey)||'').split('|').filter(Boolean);}catch(error){}
         var previousSet=new Set(previous);
-        if(candidates.length>count&&selected.length&&selected.every(function(item){return previousSet.has(item.url);})){
-          var replacement=candidates.find(function(item){return !previousSet.has(item.url);});
-          if(replacement)selected[count-1]=replacement;
-        }
+        var fresh=candidates.filter(function(item){return !previousSet.has(item.url);});
+        var repeated=candidates.filter(function(item){return previousSet.has(item.url);});
+        var selected=fresh.concat(repeated).slice(0,count);
         var activeTab=tabs.find(function(tab){return tab.dataset.recommendedCategory===category;});
         panel.innerHTML=selected.map(function(item){
           var image=item.thumbnail
-            ? '<span class="recommended-card-media"><img src="'+esc(item.thumbnail)+'" alt="" width="720" height="405" loading="lazy" decoding="async"></span>'
+            ? '<span class="recommended-card-media"><img src="'+esc(item.thumbnail)+'" alt="'+esc(item.title)+' - 핵심 내용 요약 이미지" width="720" height="405" loading="lazy" decoding="async"></span>'
             : '<span class="recommended-card-media recommended-card-placeholder" aria-hidden="true">BriefWave</span>';
           return '<article class="recommended-card"><a href="'+esc(item.url)+'">'+image+
             '<span class="recommended-card-body"><span class="recommended-card-badge">'+esc(category)+'</span>'+
             '<h3>'+esc(item.title)+'</h3><span class="recommended-card-summary">'+esc(item.summary)+'</span></span></a></article>';
         }).join('');
+        if(animate){
+          panel.classList.remove('is-refreshing');
+          void panel.offsetWidth;
+          panel.classList.add('is-refreshing');
+        }
         if(activeTab)panel.setAttribute('aria-labelledby',activeTab.id);
+        if(refreshStatus)refreshStatus.textContent=category+' 추천 기사 '+selected.length+'개를 새로 표시했습니다.';
         try{sessionStorage.setItem(storageKey,selected.map(function(item){return item.url;}).join('|'));}catch(error){}
       }
       function activate(tab){
@@ -1896,7 +1903,8 @@ class StaticSiteBuilder:
           item.setAttribute('aria-selected',active?'true':'false');
           item.tabIndex=active?0:-1;
         });
-        render(tab.dataset.recommendedCategory);
+        currentCategory=tab.dataset.recommendedCategory;
+        render(currentCategory,false);
       }
       tabs.forEach(function(tab,index){
         tab.addEventListener('click',function(){activate(tab);});
@@ -1908,6 +1916,17 @@ class StaticSiteBuilder:
           next.focus();activate(next);
         });
       });
+      if(refreshButton){
+        refreshButton.addEventListener('click',function(){
+          if(!currentCategory||refreshButton.disabled)return;
+          refreshButton.disabled=true;
+          render(currentCategory,true);
+          window.setTimeout(function(){
+            panel.classList.remove('is-refreshing');
+            refreshButton.disabled=false;
+          },320);
+        });
+      }
       if(tabs.length)activate(tabs[0]);
     }
     if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initialize,{once:true});
@@ -1919,13 +1938,16 @@ class StaticSiteBuilder:
         return (
             '<section class="recommended-posts" data-recommended-posts '
             'aria-labelledby="recommended-posts-title">'
-            '<div class="recommended-heading"><p class="recommended-kicker">EDITOR’S PICK</p>'
-            '<h2 id="recommended-posts-title">✨ 브리핑웨이브 에디터 추천 '
-            '<span>(새로고침하여 더 보기 🔄)</span></h2></div>'
+            '<div class="recommended-heading"><div class="recommended-heading-copy">'
+            '<p class="recommended-kicker">EDITOR’S PICK</p>'
+            '<h2 id="recommended-posts-title">✨ 브리핑웨이브 에디터 추천</h2></div>'
+            '<button class="recommended-refresh-button" id="recommended-refresh-button" type="button" '
+            'aria-label="현재 카테고리의 새로운 추천 기사 보기">새로운 추천 보기 <span aria-hidden="true">🔄</span></button></div>'
             '<div class="recommended-tabs" role="tablist" aria-label="추천 기사 카테고리">'
             f'{"".join(tabs)}</div>'
             '<div class="recommended-grid" id="recommended-panel" role="tabpanel" aria-live="polite">'
-            f'{skeletons}</div></section>{runtime}'
+            f'{skeletons}</div><span class="visually-hidden" id="recommended-refresh-status" '
+            'aria-live="polite"></span></section>' + runtime
         )
 
     def _not_found_post_pool(self, posts: list[Post], limit: int = 48) -> list[dict[str, str]]:
@@ -3986,15 +4008,21 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
   background: linear-gradient(145deg, #f1faf7 0%, #fffdf8 62%, #fff 100%);
 }
 .recommended-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; margin-bottom: 14px; }
+.recommended-heading-copy { min-width: 0; }
 .recommended-kicker { margin: 0; color: var(--accent); font-size: .7rem; font-weight: 900; letter-spacing: .14em; }
 .recommended-heading h2 { margin: 0; font-size: clamp(1.08rem, 2.2vw, 1.42rem); line-height: 1.4; word-break: keep-all; }
-.recommended-heading h2 span { color: var(--muted); font-size: .72em; font-weight: 600; }
+.recommended-refresh-button { display: inline-flex; min-height: 38px; flex: 0 0 auto; align-items: center; justify-content: center; gap: 5px; padding: 0 15px; border: 1px solid #bdd8d1; border-radius: 999px; background: rgba(255,255,255,.9); color: #365b55; font: inherit; font-size: .82rem; font-weight: 800; cursor: pointer; transition: color .18s ease, background .18s ease, border-color .18s ease, transform .18s ease; }
+.recommended-refresh-button:hover { border-color: var(--accent); background: var(--accent); color: #fff; }
+.recommended-refresh-button:active { transform: scale(.97); }
+.recommended-refresh-button:focus-visible { outline: 3px solid rgba(15,118,110,.24); outline-offset: 2px; }
+.recommended-refresh-button:disabled { cursor: wait; opacity: .68; }
 .recommended-tabs { display: flex; gap: 7px; margin-bottom: 16px; overflow-x: auto; scrollbar-width: none; }
 .recommended-tabs::-webkit-scrollbar { display: none; }
 .recommended-tab { min-height: 34px; padding: 0 14px; border: 1px solid #bdd8d1; border-radius: 999px; background: rgba(255,255,255,.88); color: #365b55; font: inherit; font-size: .8rem; font-weight: 800; white-space: nowrap; cursor: pointer; transition: color .18s ease, background .18s ease, border-color .18s ease; }
 .recommended-tab:hover, .recommended-tab[aria-selected="true"] { border-color: var(--accent); background: var(--accent); color: #fff; }
 .recommended-tab:focus-visible { outline: 3px solid rgba(15,118,110,.24); outline-offset: 2px; }
 .recommended-grid { display: grid; min-height: 292px; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.recommended-grid.is-refreshing { animation: recommended-refresh .3s ease both; }
 .recommended-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 13px; background: var(--paper); box-shadow: 0 5px 18px rgba(31,79,69,.07); }
 .recommended-card > a { display: flex; height: 100%; flex-direction: column; color: var(--ink); text-decoration: none; }
 .recommended-card-media { display: block; aspect-ratio: 16 / 9; overflow: hidden; background: #e9f1ef; }
@@ -4011,15 +4039,17 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .recommended-skeleton-line { height: 12px; margin: 14px 12px 0; border-radius: 999px; }
 .recommended-skeleton-line.short { width: 42%; margin-top: 16px; }
 @keyframes recommended-shimmer { to { background-position: -250% 0; } }
+@keyframes recommended-refresh { from { opacity: .35; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 @media (prefers-reduced-motion: reduce) {
   .recommended-skeleton-image, .recommended-skeleton-line { animation: none; }
-  .recommended-card-media img { transition: none; }
+  .recommended-card-media img, .recommended-refresh-button { transition: none; }
+  .recommended-grid.is-refreshing { animation: none; }
 }
 @media (max-width: 720px) {
   .recommended-posts { min-height: 400px; margin: 14px -16px 4px; padding: 18px 16px; border-right: 0; border-left: 0; border-radius: 0; }
   .recommended-heading { display: block; }
   .recommended-kicker { margin-bottom: 4px; }
-  .recommended-heading h2 span { display: block; margin-top: 3px; }
+  .recommended-refresh-button { width: 100%; margin-top: 12px; }
   .recommended-grid { min-height: 274px; grid-template-columns: repeat(4, minmax(240px, 78vw)); overflow-x: auto; padding: 1px 1px 8px; scroll-snap-type: x mandatory; scrollbar-width: none; }
   .recommended-grid::-webkit-scrollbar { display: none; }
   .recommended-card, .recommended-skeleton { scroll-snap-align: start; }
