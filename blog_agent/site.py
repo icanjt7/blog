@@ -2824,37 +2824,35 @@ class StaticSiteBuilder:
                 post.cover_image_alt or post.title,
             )
 
-        priority_limit = max(100, self._env_int("BLOG_PRIORITY_SITEMAP_LIMIT", 500))
-        priority_max = max(priority_limit, self._env_int("BLOG_PRIORITY_SITEMAP_MAX", 2500))
-        recent_days = max(1, self._env_int("BLOG_PRIORITY_RECENT_DAYS", 21))
-        government_days = max(recent_days, self._env_int("BLOG_PRIORITY_GOVERNMENT_DAYS", 60))
-        recent_cutoff = (now - timedelta(days=recent_days)).date()
-        government_cutoff = (now - timedelta(days=government_days)).date()
+        # Keep each post sitemap bounded. This makes large programmatic-SEO
+        # backfills streamable and prevents one ever-growing XML allocation.
+        sitemap_chunk_size = max(1, self._env_int("BLOG_SITEMAP_CHUNK_SIZE", 1000))
+        post_chunks = [
+            sitemap_posts[offset:offset + sitemap_chunk_size]
+            for offset in range(0, len(sitemap_posts), sitemap_chunk_size)
+        ]
+        for index, chunk in enumerate(post_chunks, 1):
+            entries = [
+                _post_entry(
+                    post,
+                    "weekly" if index == 1 else "monthly",
+                    "0.9" if index == 1 else "0.5",
+                )
+                for post in chunk
+            ]
+            chunk_name = f"sitemap-{index}.xml"
+            (self.public_dir / chunk_name).write_text(_urlset(entries), encoding="utf-8")
+            sitemap_files.append(chunk_name)
 
-        priority_posts_by_slug: dict[str, Post] = {}
-        for post in sitemap_posts[:priority_limit]:
-            priority_posts_by_slug[post.slug] = post
-        for post in sitemap_posts:
-            post_date = post.date.date()
-            if post_date >= recent_cutoff or (
-                self._is_government_post(post) and post_date >= government_cutoff
-            ):
-                priority_posts_by_slug.setdefault(post.slug, post)
-
-        priority_posts = sorted(priority_posts_by_slug.values(), key=lambda post: post.date, reverse=True)[:priority_max]
-        priority_slugs = {post.slug for post in priority_posts}
-        archive_posts = [] if self.adsense_review_mode else [post for post in posts if post.slug not in priority_slugs]
-
-        priority_entries = [_post_entry(post, "weekly", "0.9") for post in priority_posts]
-        priority_name = "sitemap-posts-priority.xml"
-        (self.public_dir / priority_name).write_text(_urlset(priority_entries), encoding="utf-8")
-        sitemap_files.append(priority_name)
-
-        if archive_posts:
-            archive_entries = [_post_entry(post, "monthly", "0.5") for post in archive_posts]
-            archive_name = "sitemap-posts-archive.xml"
-            (self.public_dir / archive_name).write_text(_urlset(archive_entries), encoding="utf-8")
-            sitemap_files.append(archive_name)
+        # Keep the former priority sitemap as a compatibility alias, but only
+        # numbered chunks are included in the new sitemap index.
+        priority_entries = [
+            _post_entry(post, "weekly", "0.9")
+            for post in (post_chunks[0] if post_chunks else [])
+        ]
+        (self.public_dir / "sitemap-posts-priority.xml").write_text(
+            _urlset(priority_entries), encoding="utf-8"
+        )
 
         sitemap_index_entries = "\n".join(
             f"  <sitemap>\n"
@@ -2870,6 +2868,7 @@ class StaticSiteBuilder:
             + "\n</sitemapindex>\n"
         )
         (self.public_dir / "sitemap.xml").write_text(sitemap_index, encoding="utf-8")
+        (self.public_dir / "sitemap-index.xml").write_text(sitemap_index, encoding="utf-8")
 
     @staticmethod
     def _env_int(name: str, default: int) -> int:
@@ -4325,9 +4324,9 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
         content = (
             "User-agent: *\n"
             "Allow: /\n"
-            f"Sitemap: {self.site_url}/sitemap-posts-priority.xml\n"
             f"Sitemap: {self.site_url}/sitemap-static.xml\n"
             f"Sitemap: {self.site_url}/sitemap.xml\n"
+            f"Sitemap: {self.site_url}/sitemap-index.xml\n"
         )
         (self.public_dir / "robots.txt").write_text(content, encoding="utf-8")
 

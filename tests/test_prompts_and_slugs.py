@@ -89,7 +89,7 @@ class PressTemplateTest(unittest.TestCase):
             agency="me",
             source_id="https://example.go.kr/view?id=102",
         )
-        self.assertEqual(slug, "me-carbon-neutral-trends-monthly-102")
+        self.assertEqual(slug, "me-carbon-neutral-monthly-trends-102")
 
 
 if __name__ == "__main__":

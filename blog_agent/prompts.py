@@ -113,7 +113,11 @@ INVALID_DATA인 경우에는 {"post_type":"INVALID_DATA","reason":"구체적 원
   ]
 }
 
-summary_box는 정확히 3개, sections는 최소 3개를 출력한다.
+summary_box는 정확히 3개를 출력한다.
+ACTIONABLE sections는 최소 4개이며 지원 대상 요건 → 지원 내용 → 신청 절차 → FAQ 순서를 지킨다.
+INFORMATIONAL sections는 최소 3개이며 목적 → 주요 논의·협력 내용 → 기대 효과 순서를 지킨다.
+ANNOUNCEMENT sections는 최소 3개이며 선정 결과 → 시설·사업 규모 → 향후 추진 일정 순서를 지킨다.
+모든 section heading은 '개요', '지원 내용', '신청 방법' 같은 고정 문구만 쓰지 말고 원문의 사업명·대상·지역·수치를 포함한 검색 질문형 제목으로 만든다.
 ACTIONABLE 라벨은 지원 대상·혜택/금액·신청 방법/기한을 우선한다.
 INFORMATIONAL 라벨은 참여 기관·목적·일정/장소를 우선한다.
 ANNOUNCEMENT 라벨은 당선작/결과·사업 규모/위치·추진/완공 일정을 우선한다.
@@ -140,7 +144,8 @@ def parse_press_json(text: str, expected_type: PressTemplate | None = None) -> d
     sections = payload.get("sections")
     if not isinstance(summaries, list) or len(summaries) != 3:
         return None
-    if not isinstance(sections, list) or len(sections) < 3:
+    minimum_sections = 4 if payload["post_type"] == "ACTIONABLE" else 3
+    if not isinstance(sections, list) or len(sections) < minimum_sections:
         return None
     for item in summaries:
         if not isinstance(item, dict):

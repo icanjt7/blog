@@ -460,22 +460,38 @@ def slugify(value: str) -> str:
     return slugify_words(value, max_length=64, fallback="press")
 
 
-def unique_slug(prefix: str, title: str, url: str) -> str:
+def unique_slug(
+    prefix: str,
+    title: str,
+    url: str,
+    *,
+    agency: str = "",
+    published_date: str = "",
+) -> str:
     return build_seo_slug(
         title,
         category="정책",
-        agency=prefix,
+        agency=agency or prefix,
         source_id=source_integer_id(url),
+        published_date=published_date or None,
     )
 
 
-def post_path_for_release(prefix: str, title: str, url: str, overwrite: bool = False) -> Path:
+def post_path_for_release(
+    prefix: str,
+    title: str,
+    url: str,
+    overwrite: bool = False,
+    *,
+    agency: str = "",
+    published_date: str = "",
+) -> Path:
     digest = hashlib.sha1(url.encode()).hexdigest()[:8]
     if overwrite:
         existing = sorted(POSTS_DIR.glob(f"{prefix}-*-{digest}.md"))
         if existing:
             return existing[0]
-    return POSTS_DIR / f"{unique_slug(prefix, title, url)}.md"
+    return POSTS_DIR / f"{unique_slug(prefix, title, url, agency=agency, published_date=published_date)}.md"
 
 
 def existing_post_for_url(prefix: str, url: str) -> Path | None:
@@ -570,12 +586,22 @@ def _llm_outputs(
     system_prompt: str | None = None,
 ) -> list[str]:
     """Return provider responses in priority order so weak drafts can be rejected."""
+    return list(_iter_llm_outputs(writer, prompt, temperature, max_tokens, system_prompt))
+
+
+def _iter_llm_outputs(
+    writer: "WriterAgent",
+    prompt: str,
+    temperature: float = 0.8,
+    max_tokens: int = 512,
+    system_prompt: str | None = None,
+):
+    """Yield provider responses and stop as soon as the caller accepts one."""
     providers = getattr(writer, "_providers", [])
     if not providers and not writer._client:
-        return []
+        return
     if not providers:
         providers = [(writer._client, writer._model)]
-    outputs: list[str] = []
     last_error = ""
     for client, model in providers:
         if not client:
@@ -593,13 +619,12 @@ def _llm_outputs(
             )
             text = (resp.choices[0].message.content or "").strip()
             if text:
-                outputs.append(text)
+                yield text
         except Exception as exc:
             last_error = f"{model}: {type(exc).__name__}"
             continue
     if last_error:
         print(f"  ! LLM 전체 실패: {last_error}")
-    return outputs
 
 
 def _call_llm(writer: "WriterAgent", prompt: str,
@@ -659,7 +684,7 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
 - 원문에 있는 고유명사, 사업명, 제도명, 금액, 기간은 가능한 한 그대로 살리기
 - '~입니다', '~합니다' 정중체 사용
 - JSON 시스템 계약을 정확히 따르고 JSON 외 텍스트를 출력하지 않기"""
-    for text in _llm_outputs(
+    for text in _iter_llm_outputs(
         writer,
         prompt,
         temperature=0.55,
@@ -969,7 +994,13 @@ def search_cover_image(
     if not image_agent:
         return "", ""
 
-    slug = unique_slug(prefix, release.title, release.url)
+    slug = unique_slug(
+        prefix,
+        release.title,
+        release.url,
+        agency=release.institution,
+        published_date=release.date,
+    )
     draft = Draft(
         topic=Topic(
             keyword=release.title,
@@ -1012,7 +1043,14 @@ def write_post(
     image_agent: ImageAgent | None = None,
 ) -> Path:
     require_source_content(release.title, release.body_text, logger=LOGGER)
-    path = post_path_for_release(prefix, release.title, release.url, overwrite=overwrite)
+    path = post_path_for_release(
+        prefix,
+        release.title,
+        release.url,
+        overwrite=overwrite,
+        agency=release.institution,
+        published_date=release.date,
+    )
     if path.exists() and not overwrite:
         return path
     title = existing_frontmatter_value(path, "title") if overwrite else ""
@@ -1028,6 +1066,7 @@ def write_post(
         base_dt = datetime.now()
     post_dt = base_dt + timedelta(minutes=sequence)
     category = classify_press_category(release)
+    post_type = classify_press_template(release.title, release.body_text)
     tags = ["보도기사", release.institution, category]
     release_image = "" if is_public_license_badge(release.image_url, release.image_alt) else release.image_url
     release_alt = "" if not release_image else release.image_alt
@@ -1063,6 +1102,8 @@ def write_post(
         "tags:\n"
         + "".join(f"  - {yaml_quote(t)}\n" for t in tags)
         + f"quality_score: {quality_score:.1f}\n"
+        + f"post_type: {yaml_quote(post_type)}\n"
+        + f"source_url: {yaml_quote(release.url)}\n"
         + cover_line
         + f"cover_image_alt: {yaml_quote(alt)}\n"
         + f"author: {yaml_quote(release.institution)}\n"

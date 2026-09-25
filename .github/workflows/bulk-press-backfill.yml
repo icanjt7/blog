@@ -1,0 +1,126 @@
+name: Bulk press release backfill
+
+on:
+  workflow_dispatch:
+    inputs:
+      candidate_limit:
+        description: "Unpublished source records to inspect before Drop Rules"
+        required: true
+        default: "2000"
+      execute_full:
+        description: "Run the full backfill after the 50-page canary passes"
+        required: true
+        type: choice
+        options: ["true", "false"]
+        default: "true"
+
+concurrency:
+  group: bulk-press-release-backfill
+  cancel-in-progress: false
+
+jobs:
+  canary-and-production:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    permissions:
+      contents: write
+      models: read
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      BLOG_LLM_PROVIDER_LIMIT: "3"
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_MODEL: ${{ vars.GITHUB_MODEL || 'Llama-3.3-70B-Instruct' }}
+      MOTIF_API: ${{ secrets.MOTIF_API }}
+      MOTIF_MODEL: ${{ vars.MOTIF_MODEL || 'motif-12.7b-reasoning' }}
+      MOTIF_BASE_URL: ${{ vars.MOTIF_BASE_URL || 'https://chat.motiftech.io/openapi/v1' }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      GROQ_MODEL: ${{ vars.GROQ_MODEL || 'groq/compound' }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.1-8b-instruct:free' }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+      BLOG_SITE_TITLE: ${{ vars.BLOG_SITE_TITLE || '브리핑웨이브' }}
+      BLOG_CUSTOM_DOMAIN: ${{ vars.BLOG_CUSTOM_DOMAIN || 'briefwave.kr' }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync latest main
+        run: git pull --ff-only origin main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e . pytest
+
+      - name: Test pipeline contracts
+        run: pytest -q
+
+      - name: Extract unpublished sources and apply Drop Rules
+        run: >-
+          python -u scripts/bulk_press_backfill.py collect
+          --candidate-limit "${{ inputs.candidate_limit }}"
+          --posts-dir output/posts
+          --output /tmp/qualified-press.jsonl
+          --report /tmp/collection-report.json
+
+      - name: Build random 50-page canary with LLM
+        run: >-
+          python -u scripts/bulk_press_backfill.py articleize
+          --input /tmp/qualified-press.jsonl
+          --posts-dir /tmp/press-canary/posts
+          --chunk-size 1000
+          --random-sample 300
+          --target-success 50
+          --report /tmp/canary-generation-report.json
+
+      - name: Render and verify canary layout, slugs and Toss CTA
+        run: |
+          python -m blog_agent.cli build-site --posts-dir /tmp/press-canary/posts --public-dir /tmp/press-canary/public
+          python scripts/bulk_press_backfill.py verify --posts-dir /tmp/press-canary/posts --public-dir /tmp/press-canary/public --expected 50 --report /tmp/canary-qa-report.json
+
+      - name: Upload canary evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: press-backfill-canary-50
+          path: |
+            /tmp/press-canary/public
+            /tmp/collection-report.json
+            /tmp/canary-generation-report.json
+            /tmp/canary-qa-report.json
+          retention-days: 14
+
+      - name: Generate all qualified production articles
+        if: ${{ inputs.execute_full == 'true' }}
+        run: >-
+          python -u scripts/bulk_press_backfill.py articleize
+          --input /tmp/qualified-press.jsonl
+          --posts-dir /tmp/press-production/posts
+          --chunk-size 1000
+          --report /tmp/production-generation-report.json
+
+      - name: Render and verify production batch
+        if: ${{ inputs.execute_full == 'true' }}
+        run: |
+          python -m blog_agent.cli build-site --posts-dir /tmp/press-production/posts --public-dir /tmp/press-production/public
+          python scripts/bulk_press_backfill.py verify --posts-dir /tmp/press-production/posts --public-dir /tmp/press-production/public --report /tmp/production-qa-report.json
+          test -f /tmp/press-production/public/sitemap-2.xml
+          grep -q 'sitemap-2.xml' /tmp/press-production/public/sitemap-index.xml
+
+      - name: Promote verified articles and push production trigger
+        if: ${{ inputs.execute_full == 'true' }}
+        run: |
+          cp /tmp/press-production/posts/*.md output/posts/
+          git config user.name "blog-agent"
+          git config user.email "actions@github.com"
+          git add output/posts
+          git diff --cached --quiet && { echo "No qualified unpublished posts to commit"; exit 1; }
+          git commit -m "feat: 2000건 고품질 보도자료 기사화 및 배포"
+          git pull --rebase --autostash origin main
+          git push origin main
