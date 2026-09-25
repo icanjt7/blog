@@ -57,6 +57,8 @@ def verify(input_path: Path, public_dir: Path, chunk_size: int) -> dict[str, int
     home = (public_dir / "index.html").read_text(encoding="utf-8")
     if "지금 볼 수 있는 넷플릭스 작품" not in home or "./netflix/index.html" not in home:
         raise SystemExit("Netflix discovery section is missing from the home page")
+    if '<a href="./netflix/index.html" class="">영화</a>' not in home:
+        raise SystemExit("Movie category link is missing from the main navigation")
     search_items = json.loads((public_dir / "search.json").read_text(encoding="utf-8"))
     search_netflix = [item for item in search_items if str(item.get("url", "")).startswith("./netflix/")]
     if len(search_netflix) != expected:

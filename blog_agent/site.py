@@ -566,23 +566,31 @@ class StaticSiteBuilder:
     def _home_href(prefix: str = "./") -> str:
         return prefix if prefix.endswith("/") else f"{prefix}/"
 
+    def _navigation_categories(self) -> list[str]:
+        """Return global navigation categories, including the Netflix catalog."""
+        return list(dict.fromkeys([*self.categories, "영화"]))
+
+    def _category_nav_href(self, category: str, prefix: str) -> str:
+        if category == "영화":
+            return f"{prefix}netflix/index.html"
+        return f"{prefix}category-{self._slugify(category)}.html"
+
     def _nav_html(self, active: str | None = None, prefix: str = "./") -> str:
         home_href = self._home_href(prefix)
         items = [
             f'<a href="{home_href}" class="' + ("active" if active == "홈" else "") + '">홈</a>'
         ]
-        for category in self.categories:
-            href = f"{prefix}category-{self._slugify(category)}.html"
+        for category in self._navigation_categories():
+            href = self._category_nav_href(category, prefix)
             active_class = "active" if active == category else ""
             items.append(f'<a href="{href}" class="{active_class}">{html.escape(category)}</a>')
         return '<nav class="site-nav">' + "".join(items) + '</nav>'
 
     def _footer_category_links(self, prefix: str = "./") -> str:
-        if not self.categories:
-            return ""
+        categories = self._navigation_categories()
         links = "\n".join(
-            f'        <a href="{prefix}category-{self._slugify(category)}.html">{html.escape(category)}</a>'
-            for category in self.categories
+            f'        <a href="{self._category_nav_href(category, prefix)}">{html.escape(category)}</a>'
+            for category in categories
         )
         return f"""      <nav class="footer-category-links" aria-label="주요 카테고리">
 {links}

@@ -609,6 +609,8 @@ quality_score: 95.0
             self.assertIn('href="./privacy.html"', footer_html)
             self.assertIn('class="footer-category-links"', footer_html)
             self.assertIn('href="./category-기술.html"', footer_html)
+            self.assertIn('<a href="./netflix/index.html" class="">영화</a>', footer_html)
+            self.assertIn('<a href="./netflix/index.html">영화</a>', footer_html)
             category_html = (root / "public" / "category-기술.html").read_text(encoding="utf-8")
             self.assertIn('class="home-products toss-shopping-home"', category_html)
             self.assertIn("🔥 실시간 특가 TOP 4", category_html)
