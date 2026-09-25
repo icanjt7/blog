@@ -30,6 +30,7 @@ jobs:
       BLOG_LLM_PROVIDER_LIMIT: "0"
       BLOG_LLM_PROVIDER_ORDER: "github,openrouter,motif,groq,gemini,nvidia"
       LLM_TIMEOUT_SECONDS: "90"
+      BLOG_LLM_DEBUG: "1"
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Pin a currently supported GitHub Models identifier. The repository
       # variable still contains a retired unqualified Llama model name.

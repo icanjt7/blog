@@ -14,6 +14,7 @@ import argparse
 import hashlib
 import html
 import logging
+import os
 import re
 import sys
 import time
@@ -47,6 +48,7 @@ TIMEOUT = 20
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": USER_AGENT})
 LOGGER = logging.getLogger("briefwave.press_import")
+_LLM_DEBUG_COUNT = 0
 
 INSTITUTION_LOGOS: dict[str, str] = {
     "행정안전부":        "assets/logos/mois.jpg",
@@ -696,6 +698,7 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
         # ANNOUNCEMENT decision (including INVALID_DATA fail-fast).
         payload = parse_press_json(text)
         if not payload:
+            _debug_llm_rejection("invalid-json", text)
             continue
         if payload.get("post_type") == "INVALID_DATA":
             raise InvalidContentData("Skip: LLM returned INVALID_DATA")
@@ -703,7 +706,17 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
         body += f"\n\n## 공식 발표 자료\n\n- [{release.institution} 보도자료]({release.url})"
         if article_is_specific(body, release):
             return body
+        _debug_llm_rejection("article-quality", text)
     return ""
+
+
+def _debug_llm_rejection(reason: str, text: str) -> None:
+    global _LLM_DEBUG_COUNT
+    if os.getenv("BLOG_LLM_DEBUG") != "1" or _LLM_DEBUG_COUNT >= 3:
+        return
+    _LLM_DEBUG_COUNT += 1
+    preview = re.sub(r"\s+", " ", text).strip()[:500]
+    print(f"  ! LLM rejected ({reason}, chars={len(text)}): {preview}")
 
 
 def article_is_specific(text: str, release: PressRelease) -> bool:
