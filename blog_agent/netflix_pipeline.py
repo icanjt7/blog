@@ -4,6 +4,7 @@ import hashlib
 import gzip
 import json
 import os
+import re
 import resource
 import shutil
 import sys
@@ -18,7 +19,8 @@ NETFLIX_OUTPUT_SCHEMA: dict[str, Any] = {
     "additionalProperties": False,
     "required": [
         "post_type", "title", "summary_box", "synopsis", "characters",
-        "viewing_points", "ending_analysis", "review_summary",
+        "viewing_points", "ending_analysis", "review_summary", "reviews",
+        "rating", "youtube_key",
     ],
     "properties": {
         "post_type": {"const": "ENTERTAINMENT_NETFLIX"},
@@ -36,6 +38,12 @@ NETFLIX_OUTPUT_SCHEMA: dict[str, Any] = {
         "characters": {"type": "array", "items": {"type": "object"}},
         "viewing_points": {"type": "array", "minItems": 3, "maxItems": 3},
         "ending_analysis": {"type": "string"},
+        "youtube_key": {"type": "string", "pattern": "^[A-Za-z0-9_-]{6,20}$"},
+        "rating": {"type": "number", "minimum": 0, "maximum": 5},
+        "reviews": {
+            "type": "array", "minItems": 2, "maxItems": 3,
+            "items": {"type": "string", "minLength": 10},
+        },
         "review_summary": {
             "type": "object",
             "required": ["strengths", "weaknesses"],
@@ -49,6 +57,7 @@ NETFLIX_OUTPUT_SCHEMA: dict[str, Any] = {
 
 NETFLIX_CONTENT_SYSTEM_PROMPT = """당신은 OTT 콘텐츠 전문 에디터다. 입력으로 제공된 TMDB 메타데이터, 공식 발표, 관람객 리뷰만 사용한다.
 출력 post_type은 반드시 ENTERTAINMENT_NETFLIX다. 입력에 없는 사건, 인물 관계, 복선, 시즌 계획, 평점은 창작하지 마라.
+예고편 youtube_key, 5점 만점 rating, 실관람객 reviews 2~3개는 입력 데이터에서 확인된 값만 사용한다. 확인되지 않은 유튜브 키나 관람평을 지어내지 마라.
 공식 후속 시즌 발표와 해석·예상은 명확히 구분하고, 근거가 없으면 '공식 발표 없음'이라고 간결하게 표시하라.
 실제 관람평 문장 안에서만 장점 3개와 단점 2개를 추출하고 욕설·스포일러·도배 문장은 사용하지 마라.
 'AI가 분석한 바에 따르면' 같은 기계적인 서두를 쓰지 말고 사람이 쓴 듯 자연스럽고 간결한 한국어 문체를 사용하라.
@@ -107,6 +116,9 @@ class NetflixRecord:
     ending_analysis: str
     review_strengths: tuple[str, ...]
     review_weaknesses: tuple[str, ...]
+    reviews: tuple[str, ...]
+    rating: float
+    youtube_key: str
     poster_url: str
     poster_alt: str
     source_url: str
@@ -155,8 +167,17 @@ def parse_netflix_record(raw: dict[str, Any], *, dry_run: bool) -> NetflixRecord
     reviews = raw.get("review_summary") or {}
     strengths = tuple(str(item).strip() for item in reviews.get("strengths", []) if str(item).strip())
     weaknesses = tuple(str(item).strip() for item in reviews.get("weaknesses", []) if str(item).strip())
+    audience_reviews = tuple(str(item).strip() for item in raw.get("reviews", []) if str(item).strip())
     if len(points) != 3 or len(strengths) != 3 or len(weaknesses) != 2:
         raise ValueError("viewing_points/strengths/weaknesses must contain exactly 3/3/2 items")
+    if not 2 <= len(audience_reviews) <= 3:
+        raise ValueError("reviews must contain 2 or 3 items")
+    rating = float(raw.get("rating"))
+    if not 0 <= rating <= 5:
+        raise ValueError("rating must be between 0 and 5")
+    youtube_key = _text(raw, "youtube_key")
+    if not re.fullmatch(r"[A-Za-z0-9_-]{6,20}", youtube_key):
+        raise ValueError("youtube_key has an invalid format")
     if not characters:
         raise ValueError("at least one character relationship is required")
     is_fixture = bool(raw.get("is_fixture"))
@@ -180,6 +201,9 @@ def parse_netflix_record(raw: dict[str, Any], *, dry_run: bool) -> NetflixRecord
         ending_analysis=_text(raw, "ending_analysis"),
         review_strengths=strengths,
         review_weaknesses=weaknesses,
+        reviews=audience_reviews,
+        rating=rating,
+        youtube_key=youtube_key,
         poster_url=_text(raw, "poster_url"),
         poster_alt=_text(raw, "poster_alt"),
         source_url=_text(raw, "source_url"),

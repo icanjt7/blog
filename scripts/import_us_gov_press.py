@@ -40,6 +40,7 @@ from import_press_releases import (  # noqa: E402
 )
 from blog_agent.config import load_settings  # noqa: E402
 from blog_agent.images import ImageAgent  # noqa: E402
+from blog_agent.prompts import press_localization_instruction  # noqa: E402
 from blog_agent.writer import WriterAgent  # noqa: E402
 
 
@@ -328,6 +329,7 @@ def _llm_outputs(
 
 def korean_article(entry: USEntry, source_text: str, writer: WriterAgent | None) -> tuple[str, str]:
     source_facts = source_fact_pack(entry, source_text)
+    localization_rules = press_localization_instruction("INFORMATIONAL")
     prompt = f"""다음은 미국 정부 공식 기관의 보도자료 또는 뉴스 릴리스입니다.
 한국 독자가 이해할 수 있도록 한국어 블로그 기사로 재작성하세요.
 
@@ -351,15 +353,20 @@ def korean_article(entry: USEntry, source_text: str, writer: WriterAgent | None)
 {source_facts}
 
 [작성 규칙]
+{localization_rules}
 - 제목은 한국어 34자 이내, 기관명이나 변화 포인트를 포함
 - 본문은 1,500~2,100자
 - 원문에 없는 수치, 인명, 결론을 만들지 않기
 - 첫 단락에서 {entry.source.agency_ko}({entry.source.agency})가 {entry.date}에 어떤 발표를 했는지 명확히 설명
 - 발표 대상, 조치 내용, 일정, 금액, 기관명, 수치가 원문에 있으면 구체적으로 반영
 - '미국 이야기라 한국과 무관하다'처럼 단정하지 말고, 한국 독자가 볼 연결점을 설명
-- 최소 5개 섹션을 ## 헤딩으로 구성: 발표 내용 / 세부 내용 / 숫자와 일정 / 한국 독자가 볼 부분 / 원문 확인
+- 첫 번째 ## 헤딩은 반드시 '## 핵심 내용과 국내 파급력'으로 작성
+- 원문 사실과 국내 파급력 추론을 같은 문단에서 구분하고, 추론은 가능성·점검 필요성의 표현으로 제한
+- 최소 5개 섹션을 ## 헤딩으로 구성: 국내 파급력 / 발표 내용 / 세부 내용 / 숫자와 일정 / 원문 확인
+- FTC, Rulemaking 등 낯선 용어는 본문 중간에 '> 💡 **핵심 용어: 용어명** - 쉬운 해설' 형식으로 설명
 - 표 1개 포함: 항목 / 내용
-- 마지막에는 원문 확인 링크를 안내
+- 원문 확인 링크 뒤 마지막 정보 섹션은 반드시 '## 에디터의 시사점 (Key Takeaways)'와 정확히 3개의 '-' 불릿으로 구성
+- '이 기사는 ~를 시사합니다', '종합적으로 볼 때'를 사용하지 않기
 - 반복형 체크리스트나 "공식 발표를 확인해야 한다" 수준의 범용 문장 금지
 - 원문이 짧으면 짧다고 말하지 말고, 확인 가능한 사실만 촘촘히 풀어 설명
 
@@ -384,6 +391,20 @@ def us_article_is_specific(body: str, entry: USEntry) -> bool:
     if entry.source.agency_ko not in cleaned and entry.source.agency not in cleaned:
         return False
     if len(re.findall(r"^##\s+", body, flags=re.M)) < 4:
+        return False
+    headings = re.findall(r"^##\s+(.+?)\s*$", body, flags=re.M)
+    if not headings or headings[0] != "핵심 내용과 국내 파급력":
+        return False
+    takeaway_match = re.search(
+        r"^## 에디터의 시사점 \(Key Takeaways\)\s*$\n(?P<body>.*?)(?=^##\s|\Z)",
+        body,
+        flags=re.M | re.S,
+    )
+    if not takeaway_match or len(re.findall(r"^-\s+\S.+$", takeaway_match.group("body"), flags=re.M)) != 3:
+        return False
+    if entry.source.code.startswith("ftc") and not re.search(r"^>\s*💡\s*\*\*핵심 용어:\s*(?:FTC|Rulemaking)", body, flags=re.M):
+        return False
+    if re.search(r"이 기사는.{0,20}시사합니다|종합적으로 볼 때", body):
         return False
     generic_markers = (*WEAK_US_MARKERS, "이 발표는 미국 내")
     if any(marker in cleaned for marker in generic_markers):
@@ -445,20 +466,33 @@ def fallback_body(entry: USEntry, source_text: str) -> str:
         f"| 원문 | [{entry.source.agency} release]({entry.url}) |\n"
     )
     korea_angle = korean_reader_angle(entry, summary)
+    glossary_term = entry.source.agency
+    glossary_explanation = f"미국의 {entry.source.category_hint} 분야 공식 기관"
+    if entry.source.code.startswith("ftc"):
+        glossary_term = "FTC"
+        glossary_explanation = "미국의 소비자 보호와 경쟁 정책을 담당하는 연방거래위원회"
+    takeaways = (
+        f"- {entry.source.agency_ko} 발표의 적용 대상과 조치 범위를 원문에서 구분합니다.\n"
+        f"- 한국 기업·소비자는 '{entry.title}'과 직접 연결되는 거래나 서비스가 있는지 점검합니다.\n"
+        f"- {entry.source.agency}의 시행일과 후속 문서가 공개되는지 확인합니다."
+    )
     return (
         f"{with_particle(entry.source.agency_ko, '이', '가')}({entry.source.agency}) {entry.date} 공개한 '{entry.title}' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.\n\n"
+        "## 핵심 내용과 국내 파급력\n\n"
+        f"{sentences[0]} {korea_angle}\n\n"
         "## 어떤 발표인가\n\n"
-        f"{sentences[0]}\n\n"
-        "## 발표에서 확인되는 내용\n\n"
         f"{points}\n\n"
+        "## 발표에서 확인되는 내용\n\n"
+        f"{fact_block}\n\n"
+        f"> 💡 **핵심 용어: {glossary_term}** - {glossary_explanation}\n\n"
         "## 숫자와 고유명사\n\n"
         f"{fact_block}\n\n"
         "## 한눈에 보는 원문 기준\n\n"
         f"{table}\n"
-        "## 한국 독자가 볼 부분\n\n"
-        f"{korea_angle}\n\n"
         "## 원문 확인\n\n"
-        f"- [{entry.source.agency} 공식 자료]({entry.url})\n"
+        f"- [{entry.source.agency} 공식 자료]({entry.url})\n\n"
+        "## 에디터의 시사점 (Key Takeaways)\n\n"
+        f"{takeaways}\n"
     )
 
 

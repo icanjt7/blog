@@ -702,8 +702,10 @@ def generate_article_from_source(release: "PressRelease", writer: "WriterAgent")
             continue
         if payload.get("post_type") == "INVALID_DATA":
             raise InvalidContentData("Skip: LLM returned INVALID_DATA")
-        body = render_press_json(payload)
-        body += f"\n\n## 공식 발표 자료\n\n- [{release.institution} 보도자료]({release.url})"
+        body = render_press_json(
+            payload,
+            source_markdown=f"## 공식 발표 자료\n\n- [{release.institution} 보도자료]({release.url})",
+        )
         if article_is_specific(body, release):
             return body
         _debug_llm_rejection("article-quality", text)

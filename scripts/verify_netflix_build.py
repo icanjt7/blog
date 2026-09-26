@@ -14,6 +14,12 @@ REQUIRED = (
     '결말 해석 및 시즌 후속작 떡밥</h2>',
     '국내외 관람객 호불호 평점 요약</h2>',
     '<details class="movie-spoiler netflix-spoiler">',
+    'class="netflix-star-rating"',
+    '4.5 / 5.0',
+    'class="netflix-video-frame"',
+    'src="https://www.youtube.com/embed/M7lc1UVf-VE"',
+    'id="netflix-audience-reviews-title">🗣️ 실관람객 반응</h2>',
+    'class="review-card"',
     '🚨 스포일러 주의! [결말 해석 보기] 클릭하여 펼치기',
     '📺 [정주행 필수템] 넷플릭스 몰아보기를 위한 실속 가성비 핫딜',
     'class="toss-shopping-card product-recommendation"',
@@ -41,9 +47,22 @@ def verify(
             raise SystemExit(f"{page}: missing {missing}")
         if dry_run and 'name="robots" content="noindex,follow"' not in source:
             raise SystemExit(f"{page}: dry-run page must be noindex")
+        if source.count('class="review-card"') != 3:
+            raise SystemExit(f"{page}: expected exactly 3 audience review cards")
         schemas = re.findall(r'<script type="application/ld\+json">(.*?)</script>', source)
         if not any(json.loads(item).get("@type") in {"TVSeries", "Movie"} for item in schemas):
             raise SystemExit(f"{page}: TVSeries/Movie JSON-LD missing")
+    css = (public_dir / "style.css").read_text(encoding="utf-8")
+    css_markers = (
+        ".netflix-video-frame",
+        "aspect-ratio: 16 / 9",
+        ".netflix-stars-fill",
+        ".review-card-grid",
+        ".review-card::after",
+    )
+    missing_css = [value for value in css_markers if value not in css]
+    if missing_css:
+        raise SystemExit(f"Netflix UI CSS missing: {missing_css}")
     prefix = "sitemap-netflix-canary" if dry_run else "sitemap-netflix"
     submaps = sorted(public_dir.glob(f"{prefix}-[0-9]*.xml"))
     if not submaps or not (public_dir / f"{prefix}.xml").exists():

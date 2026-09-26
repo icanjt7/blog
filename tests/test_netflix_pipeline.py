@@ -25,6 +25,8 @@ def _record(index: int = 1) -> dict:
         "characters": [{"name": "인물", "relationship": "갈등을 조율하는 관계"}],
         "viewing_points": ["포인트 1", "포인트 2", "포인트 3"],
         "ending_analysis": "입력에 포함된 결말 설명",
+        "youtube_key": "M7lc1UVf-VE", "rating": 4.5,
+        "reviews": ["연출과 배우의 호흡이 자연스러웠습니다.", "후반부 전개가 인상적으로 이어졌습니다."],
         "review_summary": {"strengths": ["장점 1", "장점 2", "장점 3"], "weaknesses": ["단점 1", "단점 2"]},
         "poster_url": "https://example.com/poster.webp", "poster_alt": "검증 포스터",
         "source_url": "https://example.com/title", "reviews_source_url": "https://example.com/reviews",
@@ -64,6 +66,18 @@ def test_chunk_generator_never_exceeds_requested_size(tmp_path: Path) -> None:
 def test_fixture_is_rejected_for_production() -> None:
     with pytest.raises(ValueError, match="fixture"):
         parse_netflix_record(_record(), dry_run=False)
+
+
+def test_rejects_invalid_youtube_key_and_review_count() -> None:
+    invalid_key = _record()
+    invalid_key["youtube_key"] = "https://youtube.com/watch?v=unsafe"
+    with pytest.raises(ValueError, match="youtube_key"):
+        parse_netflix_record(invalid_key, dry_run=True)
+
+    too_few_reviews = _record()
+    too_few_reviews["reviews"] = ["리뷰가 한 개뿐이라 카드 구성을 충족하지 못합니다."]
+    with pytest.raises(ValueError, match="reviews"):
+        parse_netflix_record(too_few_reviews, dry_run=True)
 
 
 def test_hierarchical_output_path() -> None:

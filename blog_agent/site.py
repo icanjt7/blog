@@ -1209,6 +1209,35 @@ class StaticSiteBuilder:
         viewing_points = "".join(f"<li>{html.escape(item)}</li>" for item in record.viewing_points)
         strengths = "".join(f"<li>{html.escape(item)}</li>" for item in record.review_strengths)
         weaknesses = "".join(f"<li>{html.escape(item)}</li>" for item in record.review_weaknesses)
+        review_cards = "".join(
+            '<blockquote class="review-card">'
+            f'<p>{html.escape(review)}</p>'
+            '<cite>실관람객 리뷰</cite>'
+            '</blockquote>'
+            for review in record.reviews[:3]
+        )
+        rating_percent = max(0.0, min(100.0, record.rating / 5 * 100))
+        rating_label = f"{record.rating:.1f} / 5.0"
+        rating_component = (
+            f'<div class="netflix-star-rating" role="img" aria-label="관람객 평점 {rating_label}">'
+            '<span class="netflix-stars" aria-hidden="true">'
+            '<span class="netflix-stars-base">★★★★★</span>'
+            f'<span class="netflix-stars-fill" style="width:{rating_percent:.0f}%">★★★★★</span>'
+            '</span>'
+            f'<strong>{rating_label}</strong>'
+            '</div>'
+        )
+        trailer_section = (
+            '<section class="movie-section netflix-trailer" aria-labelledby="netflix-trailer-title">'
+            '<h2 id="netflix-trailer-title">공식 예고편</h2>'
+            '<div class="netflix-video-frame">'
+            f'<iframe src="https://www.youtube.com/embed/{html.escape(record.youtube_key, quote=True)}" '
+            f'title="{html.escape(record.title, quote=True)} 공식 예고편" loading="lazy" '
+            'referrerpolicy="strict-origin-when-cross-origin" '
+            'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" '
+            'allowfullscreen></iframe>'
+            '</div></section>'
+        )
         fixture_notice = (
             '<aside class="movie-fixture-notice" role="note">50건 병렬 빌드 검증용 가상 데이터입니다. 검색엔진에 색인되지 않습니다.</aside>'
             if record.is_fixture else ""
@@ -1247,9 +1276,11 @@ class StaticSiteBuilder:
             poster_alt=html.escape(f"{record.title} - {record.genre} 핵심 내용 요약 이미지"),
             year=record.year,
             title=html.escape(record.title),
+            rating_component=rating_component,
             genre_rating=html.escape(record.age_rating),
             episodes_runtime=html.escape(record.episodes_runtime),
             casting_direction=html.escape(f"{', '.join(record.cast[:4])} · 연출 {record.director}"),
+            trailer_section=trailer_section,
             key_facts=key_facts,
             synopsis=html.escape(record.synopsis),
             characters=characters,
@@ -1257,6 +1288,7 @@ class StaticSiteBuilder:
             ending_analysis=html.escape(record.ending_analysis),
             strengths=strengths,
             weaknesses=weaknesses,
+            review_cards=review_cards,
             source_url=html.escape(record.source_url),
             reviews_source_url=html.escape(record.reviews_source_url),
             product_widget=product_widget,
@@ -4297,6 +4329,13 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .netflix-summary-box > div:last-child { border-bottom: 0; }
 .netflix-summary-box dt { color: #475569; font-size: .76rem; font-weight: 800; }
 .netflix-summary-box dd { margin: 3px 0 0; font-size: .9rem; line-height: 1.5; }
+.netflix-star-rating { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 10px 0 16px; }
+.netflix-star-rating strong { color: #334155; font-size: .92rem; font-variant-numeric: tabular-nums; }
+.netflix-stars { position: relative; display: inline-block; color: #d6d9df; font-size: 1.35rem; line-height: 1; letter-spacing: 2px; }
+.netflix-stars-base { display: block; }
+.netflix-stars-fill { position: absolute; inset: 0 auto 0 0; overflow: hidden; width: 0; color: #f5b301; white-space: nowrap; }
+.netflix-video-frame { overflow: hidden; width: 100%; aspect-ratio: 16 / 9; border-radius: 16px; background: #0f172a; box-shadow: 0 14px 30px rgba(15, 23, 42, .18); }
+.netflix-video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
 .netflix-character-list, .netflix-viewing-points { display: grid; gap: 9px; padding-left: 22px; }
 .netflix-character-list li { display: grid; grid-template-columns: minmax(90px, 150px) 1fr; gap: 12px; }
 .netflix-character-list span { color: var(--muted); }
@@ -4305,11 +4344,17 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .netflix-review-columns h3 { margin: 0 0 8px; font-size: 1rem; }
 .netflix-review-columns ul { margin: 0; padding-left: 20px; }
 .netflix-review-columns li { margin: 5px 0; }
+.review-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.review-card { position: relative; margin: 0; padding: 18px 18px 16px; border: 1px solid #dbe3ec; border-radius: 16px; background: #f8fafc; box-shadow: 0 8px 20px rgba(15, 23, 42, .06); }
+.review-card::after { position: absolute; bottom: -8px; left: 28px; width: 14px; height: 14px; border-right: 1px solid #dbe3ec; border-bottom: 1px solid #dbe3ec; background: #f8fafc; content: ""; transform: rotate(45deg); }
+.review-card p { margin: 0 0 12px; color: #334155; font-size: .94rem; line-height: 1.7; }
+.review-card cite { color: #64748b; font-size: .76rem; font-style: normal; font-weight: 700; }
 @media (max-width: 640px) {
   .movie-header { grid-template-columns: 1fr; }
   .movie-poster-wrap { width: min(78vw, 320px); margin: 0 auto; }
   .movie-review-grid { grid-template-columns: 1fr; }
-  .netflix-character-list li, .netflix-review-columns { grid-template-columns: 1fr; }
+  .netflix-character-list li, .netflix-review-columns, .review-card-grid { grid-template-columns: 1fr; }
+  .netflix-video-frame { border-radius: 12px; }
   .netflix-post .product-recommendation-link { width: 100%; }
 }
 .back { display: inline-block; margin-bottom: 20px; color: var(--muted); font-size: 0.9rem; }

@@ -33,7 +33,31 @@ class USGovernmentPressImportTest(unittest.TestCase):
         self.assertIn("| 항목 | 내용 |", body)
         self.assertIn("https://www.nasa.gov/example", body)
         self.assertIn("원문 제목", body)
+        self.assertIn("## 핵심 내용과 국내 파급력", body)
+        self.assertIn("> 💡 **핵심 용어: NASA**", body)
+        self.assertIn("## 에디터의 시사점 (Key Takeaways)", body)
+        takeaway_body = body.split("## 에디터의 시사점 (Key Takeaways)", 1)[1]
+        self.assertEqual(len([line for line in takeaway_body.splitlines() if line.startswith("- ")]), 3)
+        self.assertTrue(MODULE.us_article_is_specific(body, entry))
         self.assertNotIn("한국 기업, 연구기관, 소비자, 정책 담당자가 직접 적용할 내용인지", body)
+
+    def test_ftc_fallback_explains_ftc_for_korean_readers(self) -> None:
+        source = next(item for item in MODULE.SOURCES if item.code == "ftc_consumer")
+        entry = MODULE.USEntry(
+            source=source,
+            title="FTC Opens Rulemaking on Subscription Practices",
+            date="2026-09-26",
+            url="https://www.ftc.gov/example",
+            summary=(
+                "The Federal Trade Commission announced a rulemaking concerning subscription cancellation "
+                "and consumer disclosure requirements for digital services."
+            ),
+        )
+
+        body = MODULE.fallback_body(entry, entry.summary)
+
+        self.assertIn("> 💡 **핵심 용어: FTC** - 미국의 소비자 보호와 경쟁 정책을 담당하는 연방거래위원회", body)
+        self.assertTrue(MODULE.us_article_is_specific(body, entry))
 
     def test_fetch_feed_skips_items_without_links(self) -> None:
         rss = """<?xml version="1.0"?>

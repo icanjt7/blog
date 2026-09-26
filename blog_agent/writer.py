@@ -12,6 +12,7 @@ from .models import Draft, Topic
 from .quality_filters import InvalidContentData
 from .prompts import (
     classify_press_template,
+    press_localization_instruction,
     press_summary_card_instruction,
     press_template_instruction,
 )
@@ -192,6 +193,7 @@ class WriterAgent:
         )
         press_template = classify_press_template(topic.title_hint, source_context)
         template_instruction = press_template_instruction(press_template)
+        localization_instruction = press_localization_instruction(press_template)
         summary_card_instruction = press_summary_card_instruction(press_template)
         tourism_instruction = ""
         if self._has_tourapi_source(topic):
@@ -216,7 +218,8 @@ class WriterAgent:
 핵심 3줄 요약은 H1 바로 아래에 놓이므로 도입이나 배경보다 먼저 대상·금액·날짜·핵심 결과를 제시합니다.
 절대로 '결론적으로', '요약하자면', '이 영화가 주는 메시지는', '종합해 보면' 같은 기계적이고 상투적인 서두/맺음말(AI Cliché)을 사용하지 않습니다. 전문적이고 건조한 블로거 문체를 유지하고 바로 팩트와 수치를 제시합니다.
 제공된 보도자료 원문 텍스트가 구체적인 사실(Fact), 수치, 정책 내용을 포함하지 않고 단순히 '00월호가 발간되었습니다' 수준의 안내에 그친다면, 억지로 소제목(H2)이나 요약을 지어내지 말고 JSON 응답의 'post_type'을 'INVALID_DATA'로 반환할 것.
-{template_instruction}"""
+{template_instruction}
+{localization_instruction}"""
         prompt = f"""[페르소나]
 {persona}
 

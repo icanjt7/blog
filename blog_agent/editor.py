@@ -10,6 +10,7 @@ from .config import Settings
 from .models import Draft
 from .prompts import (
     classify_press_template,
+    press_localization_instruction,
     press_summary_card_instruction,
     press_template_instruction,
 )
@@ -169,6 +170,7 @@ class SeoEditorAgent:
         )
         template = classify_press_template(reviewed.topic.title_hint, source_context)
         template_instruction = press_template_instruction(template)
+        localization_instruction = press_localization_instruction(template)
         summary_card_instruction = press_summary_card_instruction(template)
         closing_instruction = {
             "ACTIONABLE": "지원 대상·신청 절차 뒤에 출처 고유 조건을 담은 FAQ 2개를 둔다.",
@@ -180,6 +182,7 @@ class SeoEditorAgent:
 
 목표:
 {template_instruction}
+{localization_instruction}
 - 오늘 기준일은 {today}입니다.
 - 제목이 클릭하고 싶어지는지 먼저 확인한다. 아래 기준으로 더 좋은 제목으로 바꿔도 된다:
   · 숫자, 반전, 궁금증, 독자 공감 상황, 구체적 혜택 중 하나를 활용
@@ -281,6 +284,7 @@ BODY:
         )
         template = classify_press_template(draft.topic.title_hint, source_context)
         template_instruction = press_template_instruction(template)
+        localization_instruction = press_localization_instruction(template)
         summary_card_instruction = press_summary_card_instruction(template)
         closing_instruction = {
             "ACTIONABLE": "지원 대상·신청 절차 뒤에 출처 고유 조건을 담은 FAQ 2개를 둔다.",
@@ -293,6 +297,7 @@ BODY:
 
 절대 조건:
 {template_instruction}
+{localization_instruction}
 - 오늘 기준일은 {today}입니다.
 - 출처에 없는 사실, 수치, 경험담은 만들지 않는다.
 - 출처 제목, 요약, 발행일에 없는 연도나 월을 만들지 않는다.
