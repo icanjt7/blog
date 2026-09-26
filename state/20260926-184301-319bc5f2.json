@@ -1,0 +1,58 @@
+{
+  "run_id": "20260926-184301-319bc5f2",
+  "topics": [
+    {
+      "keyword": "09월 소방",
+      "title_hint": "09월 소방 핵심 정리",
+      "category": "환경",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "기후에너지환경부 공식 누리집",
+          "url": "https://www.me.go.kr/",
+          "published_at": null,
+          "summary": "기후·환경 정책과 재난 대응 안내 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "09월 국회",
+      "title_hint": "09월 국회 핵심 정리",
+      "category": "정치",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "중앙선거관리위원회 선거통계시스템",
+          "url": "https://info.nec.go.kr/",
+          "published_at": null,
+          "summary": "선거 결과, 당선인, 득표율 등 선거 통계 확인용 공식 서비스",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "09월 서울 맛집",
+      "title_hint": "09월 서울 맛집 핵심 정리",
+      "category": "핫이슈",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "한국관광공사 VisitKorea",
+          "url": "https://korean.visitkorea.or.kr/",
+          "published_at": null,
+          "summary": "지역 여행 정보 확인용 공식 포털",
+          "authority": 4
+        }
+      ]
+    }
+  ],
+  "drafts": [],
+  "publish_results": []
+}
