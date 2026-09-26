@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - "blog_agent/site.py"
+      - "blog_agent/quality_filters.py"
       - "blog_agent/product_links.py"
       - "blog_agent/movie_pipeline.py"
       - "blog_agent/netflix_pipeline.py"
@@ -25,6 +26,7 @@ on:
       - "scripts/build_netflix.py"
       - "scripts/verify_netflix_catalog.py"
       - "scripts/verify_gtm.py"
+      - "cleanup_safe.py"
       - "streamlit_app.py"
       - "output/posts/**"
       - ".github/workflows/pages-deploy.yml"

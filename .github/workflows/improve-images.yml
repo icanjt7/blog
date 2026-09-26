@@ -110,15 +110,3 @@ jobs:
           git commit -m "chore: improve existing article images"
           git pull --rebase origin main
           git push
-
-      - uses: actions/configure-pages@v5
-        if: inputs.dry_run == 'false'
-
-      - uses: actions/upload-pages-artifact@v3
-        if: inputs.dry_run == 'false'
-        with:
-          path: public
-
-      - id: deployment
-        if: inputs.dry_run == 'false'
-        uses: actions/deploy-pages@v4
