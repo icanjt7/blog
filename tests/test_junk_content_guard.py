@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+import importlib.util
 import tempfile
 import unittest
 from pathlib import Path
@@ -10,6 +11,7 @@ from blog_agent.quality_filters import (
     InvalidContentData,
     evaluate_source_content,
     is_legacy_junk_post,
+    is_safe_legacy_garbage_slug,
     require_source_content,
     should_drop_post,
 )
@@ -18,7 +20,63 @@ from blog_agent.slugs import UnsafeSlugError, build_seo_slug
 from blog_agent.writer import WriterAgent
 
 
+_CLEANUP_SPEC = importlib.util.spec_from_file_location(
+    "cleanup_safe", Path(__file__).resolve().parents[1] / "cleanup_safe.py"
+)
+assert _CLEANUP_SPEC and _CLEANUP_SPEC.loader
+_CLEANUP_MODULE = importlib.util.module_from_spec(_CLEANUP_SPEC)
+_CLEANUP_SPEC.loader.exec_module(_CLEANUP_MODULE)
+cleanup_build = _CLEANUP_MODULE.cleanup_build
+is_safe_garbage_candidate = _CLEANUP_MODULE.is_safe_garbage_candidate
+
+
 class JunkContentGuardTest(unittest.TestCase):
+    def test_safe_cleanup_requires_all_three_conditions(self) -> None:
+        self.assertTrue(is_safe_garbage_candidate(Path("07월-신청방법-f2149aa3.html")))
+        self.assertTrue(is_safe_garbage_candidate(Path("9월-결과발표-a1b2c3d4.html")))
+        self.assertFalse(is_safe_garbage_candidate(Path("ftc-guidelines-f2149aa3.html")))
+        self.assertFalse(
+            is_safe_garbage_candidate(
+                Path("미-연방거래위원회-ftc-seeks-public-comment-c0516c46.html")
+            )
+        )
+        self.assertFalse(
+            is_safe_garbage_candidate(Path("07월-신청방법-상세-자격-서류-f2149aa3.html"))
+        )
+        self.assertFalse(is_safe_garbage_candidate(Path("07월-신청방법.html")))
+        self.assertTrue(is_safe_legacy_garbage_slug("07월-ai-b73636a4"))
+        self.assertFalse(
+            is_safe_legacy_garbage_slug(
+                "미-연방거래위원회-ftc-seeks-public-comment-c0516c46"
+            )
+        )
+
+    def test_cleanup_is_dry_run_by_default_and_deletes_only_safe_candidate(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            junk = root / "07월-신청방법-f2149aa3.html"
+            protected = root / "미-연방거래위원회-ftc-seeks-public-comment-c0516c46.html"
+            junk.write_text("junk", encoding="utf-8")
+            protected.write_text("article", encoding="utf-8")
+
+            self.assertEqual(cleanup_build(root), [junk.resolve()])
+            self.assertTrue(junk.exists())
+            self.assertEqual(cleanup_build(root, execute=True), [junk.resolve()])
+            self.assertFalse(junk.exists())
+            self.assertTrue(protected.exists())
+
+    def test_new_admin_shell_keywords_are_rejected(self) -> None:
+        for keyword in ("신청방법", "모집안내", "결과발표"):
+            dropped, reason = should_drop_post(
+                {
+                    "title": f"07월 {keyword}",
+                    "slug": f"07월-{keyword}-f2149aa3",
+                    "body": "구체적인 사실이 부족한 안내입니다. " * 15,
+                }
+            )
+            self.assertTrue(dropped)
+            self.assertIn("단답형 스팸 제목", reason)
+
     def test_structured_drop_rule_rejects_thin_monthly_and_unsafe_slug_records(self) -> None:
         good_post = {
             "title": "문화체육관광부 2026년 하반기 문화예술 지원 정책 안내",

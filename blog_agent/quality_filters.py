@@ -10,15 +10,18 @@ MIN_SOURCE_BODY_LENGTH = 500
 ABSOLUTE_MIN_BODY_LENGTH = 200
 SHORT_TITLE_LENGTH = 12
 PERIODICAL_TITLE_RE = re.compile(
-    r"^\s*\d{1,2}월.*(?:생활비|제철음식|동향|브리프|재난안전|탄소중립|소식지|월간|주간)",
+    r"^\s*\d{1,2}월.*(?:생활비|제철음식|동향|브리프|재난안전|탄소중립|소식지|월간|주간|신청방법|모집안내|결과발표)",
     re.IGNORECASE,
 )
 SPAMMY_TITLE_RE = re.compile(
-    r"^\s*\d{1,2}월\s*(?:생활비|제철음식|동향|브리프|재난안전|탄소중립|소식지|월간|주간)(?:\s|,|$)",
+    r"^\s*\d{1,2}월\s*(?:생활비|제철음식|동향|브리프|재난안전|탄소중립|소식지|월간|주간|신청방법|모집안내|결과발표)(?:\s|,|$)",
     re.IGNORECASE,
 )
 LEGACY_JUNK_SLUG_RE = re.compile(r"^\d{1,2}월-.+-[0-9a-f]{8}$", re.IGNORECASE)
 BAD_KOREAN_HASH_SLUG_RE = re.compile(r"(?=.*[가-힣]).*-[0-9a-f]{8}$", re.IGNORECASE)
+SAFE_GARBAGE_MONTH_HASH_RE = re.compile(
+    r"^(?P<prefix>\d{1,2}월(?:-|$).*)-[0-9a-f]{8}$", re.IGNORECASE
+)
 
 
 class InvalidContentData(ValueError):
@@ -90,6 +93,19 @@ def should_drop_post(post_data: dict[str, object]) -> tuple[bool, str]:
     return False, "Pass: 정상적인 고품질 데이터"
 
 
+def is_safe_legacy_garbage_slug(slug: str) -> bool:
+    """Match only short month-prefixed legacy slugs with an opaque hash."""
+    normalized = slug.strip().removesuffix(".html")
+    match = SAFE_GARBAGE_MONTH_HASH_RE.fullmatch(normalized)
+    if not match:
+        return False
+    prefix = match.group("prefix")
+    if re.fullmatch(r"[a-z0-9-]+", prefix, flags=re.IGNORECASE):
+        return False
+    compact_length = len(re.sub(r"[-_\s]", "", prefix))
+    return compact_length < 10 and compact_length < 15
+
+
 def evaluate_source_content(
     title: str,
     body: str,
@@ -122,6 +138,8 @@ def require_source_content(
 
 def is_legacy_junk_post(title: str, slug: str, body: str) -> bool:
     """Reject known monthly-keyword/hash shells that predate the source filter."""
+    if is_safe_legacy_garbage_slug(slug):
+        return True
     clean_title = visible_text(title)
     is_periodical_shell = bool(SPAMMY_TITLE_RE.search(clean_title))
     if not is_periodical_shell:
