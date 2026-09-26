@@ -3,7 +3,7 @@
   $fixture_notice
   <header class="movie-header">
     <picture class="movie-poster-wrap">
-      <img class="movie-poster" src="$poster_url" alt="$poster_alt" width="500" height="750" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+      <img class="movie-poster" src="$poster_url" alt="$poster_alt" width="500" height="750" loading="eager" fetchpriority="high" decoding="async" referrerpolicy="no-referrer">
     </picture>
     <div class="movie-heading">
       <p class="meta">넷플릭스 · $year</p>

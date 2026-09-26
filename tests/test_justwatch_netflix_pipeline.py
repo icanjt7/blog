@@ -103,7 +103,7 @@ def test_multiprocess_builder_writes_pages_toss_widget_and_split_sitemaps(tmp_pa
     source_html = pages[0].read_text(encoding="utf-8")
     assert 'class="toss-shopping-card product-recommendation"' in source_html
     assert 'role="doc-abstract"' in source_html
-    assert 'loading="lazy"' in source_html
+    assert 'loading="eager" fetchpriority="high" decoding="async"' in source_html
     assert '"@type": "Movie"' in source_html
     assert "🍿 <time" in source_html
     assert "기준 한국 넷플릭스에서 서비스 중인 것으로 확인했습니다" in source_html

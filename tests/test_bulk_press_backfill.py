@@ -118,8 +118,8 @@ class BulkPressBackfillTest(unittest.TestCase):
             sitemap_index = (public / "sitemap-index.xml").read_text(encoding="utf-8")
             self.assertTrue((public / "sitemap-post-2.xml").exists())
             self.assertTrue((public / "sitemap-post-3.xml").exists())
-            self.assertIn("sitemap-post-2.xml", sitemap_index)
-            self.assertIn("sitemap-post-3.xml", sitemap_index)
+            self.assertIn("sitemap-posts-2.xml", sitemap_index)
+            self.assertIn("sitemap-posts-3.xml", sitemap_index)
 
     def test_2500_posts_create_three_well_formed_sitemaps(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -144,15 +144,36 @@ class BulkPressBackfillTest(unittest.TestCase):
             namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
             expected_counts = (1000, 1000, 500)
             for index, expected in enumerate(expected_counts, 1):
-                path = public / f"sitemap-post-{index}.xml"
+                path = public / f"sitemap-posts-{index}.xml"
                 self.assertTrue(path.exists())
                 root = ET.parse(path).getroot()
                 self.assertEqual(len(root.findall("sm:url", namespace)), expected)
             sitemap_index = ET.parse(public / "sitemap-index.xml").getroot()
             locations = [item.text or "" for item in sitemap_index.findall("sm:sitemap/sm:loc", namespace)]
-            post_locations = [location for location in locations if "sitemap-post-" in location]
+            post_locations = [location for location in locations if "sitemap-posts-" in location]
             self.assertEqual(len(post_locations), 3)
-            self.assertTrue(all(f"sitemap-post-{index}.xml" in post_locations[index - 1] for index in range(1, 4)))
+            self.assertTrue(all(f"sitemap-posts-{index}.xml" in post_locations[index - 1] for index in range(1, 4)))
+            self.assertTrue((public / "sitemap-post-1.xml").exists())
+
+    def test_sitemap_excludes_hash_and_routing_noise(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            public = Path(tmp) / "public"
+            public.mkdir()
+            builder = StaticSiteBuilder(Path(tmp) / "posts", public, "브리핑웨이브", "설명", "briefwave.kr")
+            posts = [
+                Post("정상", datetime(2026, 9, 26), "정책", [], "clean-policy-2026", "정상", "<p>본문</p>"),
+                Post("해시", datetime(2026, 9, 26), "정책", [], "07월-생활비-f8224f14", "제외", "<p>본문</p>"),
+                Post("404", datetime(2026, 9, 26), "정책", [], "404", "제외", "<p>본문</p>"),
+                Post("페이지", datetime(2026, 9, 26), "정책", [], "page2", "제외", "<p>본문</p>"),
+            ]
+
+            builder._write_sitemap(posts, posts)
+
+            sitemap = (public / "sitemap-posts-1.xml").read_text(encoding="utf-8")
+            self.assertIn("clean-policy-2026.html", sitemap)
+            self.assertNotIn("f8224f14", sitemap)
+            self.assertNotIn("/404.html", sitemap)
+            self.assertNotIn("/page2.html", sitemap)
 
     def test_canary_qa_requires_dynamic_headings_and_toss_widget(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

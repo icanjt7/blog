@@ -60,9 +60,9 @@ AUTHOR_NAMES = [
 
 GTM_CONTAINER_ID = "GTM-PRH78BZK"
 GTM_HEAD_HTML = f"""<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+<script defer>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
 new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.defer=true;
 j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 }})(window,document,'script','dataLayer','{GTM_CONTAINER_ID}');</script>
 <!-- End Google Tag Manager -->"""
@@ -463,6 +463,7 @@ class StaticSiteBuilder:
         )
         # wrap tables for horizontal scroll on mobile
         body_html = body_html.replace("<table>", '<div class="table-wrap"><table>').replace("</table>", "</table></div>")
+        body_html = self._stabilize_content_images(body_html)
         excerpt = self._excerpt(body)
         cover_image = raw_cover_image
         if not cover_image or "picsum.photos" in cover_image:
@@ -782,6 +783,27 @@ class StaticSiteBuilder:
         if match:
             return match.group(1).strip() + "\n"
         return markdown_text
+
+    @staticmethod
+    def _stabilize_content_images(body_html: str) -> str:
+        """Reserve 16:9 space for non-hero editorial images before they load."""
+
+        def add_dimensions(match: re.Match[str]) -> str:
+            tag = match.group(0)
+            additions: list[str] = []
+            if not re.search(r"\swidth=", tag, flags=re.I):
+                additions.append('width="1200"')
+            if not re.search(r"\sheight=", tag, flags=re.I):
+                additions.append('height="675"')
+            if not re.search(r"\sloading=", tag, flags=re.I):
+                additions.append('loading="lazy"')
+            if not re.search(r"\sdecoding=", tag, flags=re.I):
+                additions.append('decoding="async"')
+            if not additions:
+                return tag
+            return tag[:-1].rstrip() + " " + " ".join(additions) + ">"
+
+        return re.sub(r"<img\b[^>]*>", add_dimensions, body_html, flags=re.I)
 
     @staticmethod
     def _display_author(post: Post) -> str:
@@ -1491,7 +1513,11 @@ class StaticSiteBuilder:
             title = f'{copy["label"]}: {post.title}'
             cover_html = ""
             if post.cover_image:
-                cover_html = f'<img class="cover" src="{html.escape(post.cover_image)}" alt="{html.escape(post.cover_image_alt)}" loading="lazy">'
+                cover_html = (
+                    f'<img class="cover" src="{html.escape(post.cover_image)}" '
+                    f'alt="{html.escape(post.cover_image_alt)}" width="1200" height="675" '
+                    'loading="eager" fetchpriority="high" decoding="async">'
+                )
             content = f"""
         <article class="post localized-post"{direction}>
           <a class="back" href="../{html.escape(post.slug)}.html">{html.escape(copy["original"])}</a>
@@ -2526,7 +2552,8 @@ class StaticSiteBuilder:
         if post.cover_image:
             cover_html = (
                 f'<p><img src="{html.escape(self._absolute_url(post.cover_image))}" '
-                f'alt="{html.escape(post.cover_image_alt or post.title)}"></p>'
+                f'alt="{html.escape(post.cover_image_alt or post.title)}" width="1200" height="675" '
+                'loading="lazy" decoding="async"></p>'
             )
         content_html = f"{cover_html}{post.body_html}"
         categories = []
@@ -3178,6 +3205,21 @@ class StaticSiteBuilder:
         now = datetime.now()
         sitemap_posts = index_posts if index_posts is not None else posts
 
+        def _is_noise_path(path: str) -> bool:
+            normalized = "/" + path.strip().lstrip("/")
+            stem = normalized.rsplit("/", 1)[-1].removesuffix(".html")
+            return bool(
+                re.search(r"-[0-9a-f]{8}$", stem, flags=re.I)
+                or re.search(r"(?:^|/)page(?:/|[-_]?)\d+(?:\.html)?$", normalized, flags=re.I)
+                or normalized.endswith("/404.html")
+                or normalized.endswith("/search.html")
+            )
+
+        sitemap_posts = [
+            post for post in sitemap_posts
+            if not _is_noise_path(self._localized_post_filename(post, "ko"))
+        ]
+
         def _sitemap_loc(loc: str) -> str:
             parts = urlsplit(loc)
             encoded_path = quote(parts.path, safe="/%")
@@ -3284,11 +3326,12 @@ class StaticSiteBuilder:
                 )
                 for post in chunk
             ]
-            chunk_name = f"sitemap-post-{index}.xml"
+            chunk_name = f"sitemap-posts-{index}.xml"
             chunk_xml = _urlset(entries)
             (self.public_dir / chunk_name).write_text(chunk_xml, encoding="utf-8")
-            # Preserve old URLs for existing Search Console registrations while
-            # the sitemap index moves to explicit post-sitemap names.
+            # Preserve registered legacy sitemap endpoints without duplicating
+            # their URLs inside the new master sitemap index.
+            (self.public_dir / f"sitemap-post-{index}.xml").write_text(chunk_xml, encoding="utf-8")
             (self.public_dir / f"sitemap-{index}.xml").write_text(chunk_xml, encoding="utf-8")
             sitemap_files.append(chunk_name)
 
@@ -3362,6 +3405,7 @@ class StaticSiteBuilder:
       window.__briefwaveGtagLoading=true;
       var script=document.createElement('script');
       script.async=true;
+      script.defer=true;
       script.src='https://www.googletagmanager.com/gtag/js?id={mid}';
       document.head.appendChild(script);
     }}
@@ -3385,6 +3429,7 @@ class StaticSiteBuilder:
         window.__briefwaveAdsLoading=true;
         var s=document.createElement('script');
         s.async=true;
+        s.defer=true;
         s.crossOrigin='anonymous';
         s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={pub}';
         document.head.appendChild(s);
@@ -3491,7 +3536,8 @@ class StaticSiteBuilder:
   <link rel="apple-touch-icon" sizes="180x180" href="{asset_prefix}apple-touch-icon.png">
   <link rel="manifest" href="{asset_prefix}site.webmanifest">
   <link rel="canonical" href="{html.escape(page_url)}">{alternate_link_tags}
-  <link rel="stylesheet" href="{asset_prefix}style.css">
+  <link rel="preload" href="{asset_prefix}style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{asset_prefix}style.css"></noscript>
   <link rel="alternate" type="application/rss+xml" href="{asset_prefix}feed.xml">
 {meta_extra}
   {structured_json}{adsense_script}
@@ -4648,7 +4694,7 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .deadline-badge.is-closed { background: #ececec; color: #666; }
 
 /* center images inside post content */
-.content img { display: block; margin: 16px auto; max-width: 100%; height: auto; }
+.content img { display: block; margin: 16px auto; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: #ece7da; }
 .content table { width: 100%; min-width: 360px; border-collapse: collapse; font-size: 0.9rem; }
 .content th, .content td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; white-space: nowrap; }
 .content th { background: #ece7da; }
@@ -4682,7 +4728,8 @@ a.tag:hover { background: var(--accent); color: #fff; border-color: var(--accent
 .product-recommendation-image-link {
   display: block;
   width: 100%;
-  height: clamp(220px, 42vw, 340px);
+  max-height: 340px;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 9px;
   background: #fff;

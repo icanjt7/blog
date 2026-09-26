@@ -460,6 +460,10 @@ quality_score: 95.0
             self.assertIn('<nav class="breadcrumb" aria-label="탐색 경로">', first_post)
             self.assertIn('"@type": "BreadcrumbList"', first_post)
             self.assertIn('"item": "https://example.com/category-%EA%B8%B0%EC%88%A0.html"', first_post)
+            self.assertIn('<script defer>(function(w,d,s,l,i)', first_post)
+            self.assertIn('j.async=true;j.defer=true', first_post)
+            self.assertIn('<link rel="preload" href="./style.css" as="style"', first_post)
+            self.assertIn('<noscript><link rel="stylesheet" href="./style.css"></noscript>', first_post)
 
             page_two = (root / "public" / "page2.html").read_text(encoding="utf-8")
             category_two = (root / "public" / "category-기술-2.html").read_text(encoding="utf-8")
