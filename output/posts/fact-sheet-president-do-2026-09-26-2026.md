@@ -11,7 +11,7 @@ tags:
   - "팩트시트"
 author: "미국 백악관"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMHBvbGljeSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzkwNDg2MjI0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMHBvbGljeSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzkwNTcyODE5fDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미국 백악관이(The White House) 2026-09-26 공개한 'Fact Sheet: President Donald J. Trump Advances a Fair and Reciprocal Relationship with China While Hosting Historic State Visit' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
