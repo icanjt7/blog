@@ -1,0 +1,58 @@
+{
+  "run_id": "20261003-184944-726fceb5",
+  "topics": [
+    {
+      "keyword": "10월 지원금",
+      "title_hint": "10월 지원금 핵심 정리",
+      "category": "생활",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "대한민국 정책브리핑",
+          "url": "https://www.korea.kr/",
+          "published_at": null,
+          "summary": "정부 정책과 생활 혜택 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    },
+    {
+      "keyword": "10월 AI",
+      "title_hint": "10월 AI 핵심 정리",
+      "category": "기술",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "제조사 공식 홈페이지와 개발자 블로그",
+          "url": "https://developers.googleblog.com/",
+          "published_at": null,
+          "summary": "제품/기술 발표 원문 확인용",
+          "authority": 4
+        }
+      ]
+    },
+    {
+      "keyword": "10월 금리",
+      "title_hint": "10월 금리 핵심 정리",
+      "category": "정책",
+      "trend_score": 96.0,
+      "competition_score": 0.45,
+      "rationale": "월별 반복 검색 수요가 있는 evergreen 키워드",
+      "sources": [
+        {
+          "title": "금융위원회 보도자료",
+          "url": "https://www.fsc.go.kr/",
+          "published_at": null,
+          "summary": "금융 정책과 제도 변경 확인용 공식 포털",
+          "authority": 5
+        }
+      ]
+    }
+  ],
+  "drafts": [],
+  "publish_results": []
+}
