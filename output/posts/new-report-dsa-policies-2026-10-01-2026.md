@@ -12,7 +12,7 @@ tags:
   - "releases"
 author: "미국 백악관"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1494172961521-33799ddd43a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzkwOTI0NTY2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1494172961521-33799ddd43a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzkxMDk2NzM0fDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미국 백악관이(The White House) 2026-10-01 공개한 'New Report: DSA Policies Would Cost Americans Trillions' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
