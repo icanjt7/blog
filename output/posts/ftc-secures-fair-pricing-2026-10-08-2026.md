@@ -11,7 +11,7 @@ tags:
   - "경쟁정책"
 author: "미 연방거래위원회"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1677442135131-4d7c123aef1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzkxNzg5ODYxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1677442135131-4d7c123aef1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfDB8fHwxNzkxODc3NTMyfDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미 연방거래위원회가(Federal Trade Commission) 2026-10-08 공개한 'FTC Secures Fair Pricing Protections by Taking Action Against Major Wholesale T-Shirt Distributors' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
