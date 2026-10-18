@@ -11,7 +11,7 @@ tags:
   - "브리핑"
 author: "미국 백악관"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1788924646671-a35b527a1b41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8bmV1dHJhbCUyMGVsZWN0aW9uJTIwY2l2aWMlMjBwdWJsaWMlMjBvZmZpY2V8ZW58MXwwfHx8MTc5MjIxNTUxMHww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1788924646671-a35b527a1b41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8bmV1dHJhbCUyMGVsZWN0aW9uJTIwY2l2aWMlMjBwdWJsaWMlMjBvZmZpY2V8ZW58MXwwfHx8MTc5MjMwMzA0NXww&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미국 백악관이(The White House) 2026-10-15 공개한 'Congressional Bills S. 240, S. 283, and S. 2403 Signed into Law' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.

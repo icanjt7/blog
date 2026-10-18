@@ -11,7 +11,7 @@ tags:
   - "사법"
 author: "미 법무부"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1468779036391-52341f60b55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3OTIyMTU1MTB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1468779036391-52341f60b55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3OTIzMDMwNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미 법무부가(U.S. Department of Justice) 2026-10-16 공개한 'Three People Charged in Conspiracy to Commit Sex Trafficking of Minors and Related Charges' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
