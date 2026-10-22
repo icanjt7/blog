@@ -11,7 +11,7 @@ tags:
   - "브리핑"
 author: "미국 백악관"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1779743541911-5acb5fd6326b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzkyNDc2MTk3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1779743541911-5acb5fd6326b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw0fHxuZXV0cmFsJTIwZWxlY3Rpb24lMjBjaXZpYyUyMHB1YmxpYyUyMG9mZmljZXxlbnwxfDB8fHwxNzkyNjQ5MjgzfDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미국 백악관이(The White House) 2026-10-20 공개한 'Congressional Bills H.R. 227, H.R. 837, H.R. 1721, H.R. 2388, H.R. 2481, H.R. 3620, H.R. 4307, H.R. 4467, H.R. 6380, and H.R. 7831 Signed into Law' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.

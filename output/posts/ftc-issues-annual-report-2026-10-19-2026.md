@@ -11,7 +11,7 @@ tags:
   - "소비자보호"
 author: "미 연방거래위원회"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1584449879552-d4a37ce5e5c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZXZlcnlkYXklMjBsaWZlc3R5bGUlMjBwdWJsaWMlMjBpbmZvcm1hdGlvbnxlbnwxfDB8fHwxNzkyNDc2MTkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1652346637860-ab158d82b68e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZXZlcnlkYXklMjBsaWZlc3R5bGUlMjBwdWJsaWMlMjBpbmZvcm1hdGlvbnxlbnwxfDB8fHwxNzkyNjQ5Mjg1fDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미 연방거래위원회가(Federal Trade Commission) 2026-10-19 공개한 'FTC Issues Annual Report to Congress on Agency’s Actions to Protect Older Adults' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
