@@ -11,7 +11,7 @@ tags:
   - "경쟁정책"
 author: "미 연방거래위원회"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1554224155-3a58922a22c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMHBvbGljeSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzkyNzM1MzkwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMHBvbGljeSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzkzMDgxOTA4fDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미 연방거래위원회가(Federal Trade Commission) 2026-10-19 공개한 'FTC Order Preserves Competition in Digital Advertising Ecosystem as Part of Publicis’s Acquisition of LiveRamp' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
