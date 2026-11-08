@@ -12,7 +12,7 @@ tags:
   - "releases"
 author: "미국 백악관"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1788924646671-a35b527a1b41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8bmV1dHJhbCUyMGVsZWN0aW9uJTIwY2l2aWMlMjBwdWJsaWMlMjBvZmZpY2V8ZW58MXwwfHx8MTc5NDAzNTUyMnww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1788924646671-a35b527a1b41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8bmV1dHJhbCUyMGVsZWN0aW9uJTIwY2l2aWMlMjBwdWJsaWMlMjBvZmZpY2V8ZW58MXwwfHx8MTc5NDEyMjYzN3ww&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미국 백악관이(The White House) 2026-11-06 공개한 'President Trump Names Stephen Miller as 33rd White House Chief of Staff' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
