@@ -11,7 +11,7 @@ tags:
   - "경쟁정책"
 author: "미 연방거래위원회"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3OTQxMjI2MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw3fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3OTQxNDkyOTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미 연방거래위원회가(Federal Trade Commission) 2026-10-27 공개한 'FTC Bureau of Competition Statement on Termination of PlayPower’s Acquisition of Rival Playground Manufacturer Burke' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
