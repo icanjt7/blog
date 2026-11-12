@@ -11,7 +11,7 @@ tags:
   - "소비자보호"
 author: "미 연방거래위원회"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1652346637860-ab158d82b68e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZXZlcnlkYXklMjBsaWZlc3R5bGUlMjBwdWJsaWMlMjBpbmZvcm1hdGlvbnxlbnwxfDB8fHwxNzk0Mjk5MTkyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1730717051655-8028acef500b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZXZlcnlkYXklMjBsaWZlc3R5bGUlMjBwdWJsaWMlMjBpbmZvcm1hdGlvbnxlbnwxfDB8fHwxNzk0NDEyMjY5fDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미 연방거래위원회가(Federal Trade Commission) 2026-11-10 공개한 'Five States Join FTC Lawsuit Alleging Hims and Hers Engaged in Deceptive and Unlawful Privacy Practices' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
