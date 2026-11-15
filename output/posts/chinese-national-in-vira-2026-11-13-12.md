@@ -11,7 +11,7 @@ tags:
   - "사법"
 author: "미 법무부"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMHBvbGljeSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzk0NjM2OTIzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwxMHx8ZmluYW5jZSUyMHBvbGljeSUyMGRvY3VtZW50c3xlbnwxfDB8fHwxNzk0NzI5MTkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미 법무부가(U.S. Department of Justice) 2026-11-13 공개한 'Chinese National in Viral YouTube Video Sentenced to 6 ½ Years in $27 Million Multinational Fraud Scheme Targeting 2,000 Seniors' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.

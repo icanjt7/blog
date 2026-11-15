@@ -11,7 +11,7 @@ tags:
   - "우주"
 author: "미 항공우주국"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1538370965046-79c0d6907d47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzcGFjZSUyMGFzdHJvbm9teSUyMHNjaWVuY2V8ZW58MXwwfHx8MTc5NDQ3MTcxOHww&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1538370965046-79c0d6907d47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwyfHxzcGFjZSUyMGFzdHJvbm9teSUyMHNjaWVuY2V8ZW58MXwwfHx8MTc5NDcyOTE5NXww&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미 항공우주국이(NASA) 2026-11-13 공개한 'Outbursts from a Massive Star' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
