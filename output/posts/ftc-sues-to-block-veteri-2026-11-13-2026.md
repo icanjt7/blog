@@ -11,7 +11,7 @@ tags:
   - "경쟁정책"
 author: "미 연방거래위원회"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1771758249853-415175dc29b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3OTUwNzgxOTB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1771758249853-415175dc29b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHw4fHxmaW5hbmNlJTIwcG9saWN5JTIwZG9jdW1lbnRzfGVufDF8MHx8fDE3OTUxNjM2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미 연방거래위원회가(Federal Trade Commission) 2026-11-13 공개한 'FTC Sues to Block Veterinary Supplies Distributor Covetrus’s $3.5 Billion Acquisition of Rival MWI' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
@@ -23,7 +23,7 @@ The Federal Trade Commission sued today to block Covetrus Inc. 우주·과학 �
 ## 어떤 발표인가
 
 - and its owners, Clayton, Dubilier & Rice LLC and TPG Inc., from acquiring its closest competitor, MWI Veterinary Supply Inc., for $3.5 billion from MWI’s parent, Cencora Inc.
-- In its complaint, the FTC alleges that the transaction would merge the two largest suppliers in the markets for veterinary clinic distribution and distribution to large corporate accounts.
+- In its complaint , the FTC alleges that the transaction would merge the two largest suppliers in the markets for veterinary clinic distribution and distribution to large corporate accounts.
 - The combined firm would drive up costs for veterinary clinics, decrease service quality and increase prices for pet owners, according to the complaint.
 - Covetrus and MWI supply veterinarians with the products used in veterinary clinics, including pharmaceuticals, vaccines, “white goods,” (e.g., gloves, gauze, syringes), surgical supplies and thousands of other products, as well as associated services.
 - Their customers range from independent, single-veterinarian practices to large corporate accounts with hundreds of clinic locations in the United States.
@@ -32,7 +32,7 @@ The Federal Trade Commission sued today to block Covetrus Inc. 우주·과학 �
 
 - The Federal Trade Commission sued today to block Covetrus Inc
 - and its owners, Clayton, Dubilier & Rice LLC and TPG Inc., from acquiring its closest competitor, MWI Veterinary Supply Inc., for $3.5 billion from MWI’s parent, Cencora Inc
-- In its complaint, the FTC alleges that the transaction would merge the two largest suppliers in the markets for veterinary clinic distribution and distribution to large corporate accounts
+- In its complaint , the FTC alleges that the transaction would merge the two largest suppliers in the markets for veterinary clinic distribution and distribution to large corporate accounts
 - Their customers range from independent, single-veterinarian practices to large corporate accounts with hundreds of clinic locations in the United States
 - “Veterinarians and millions of American pet owners benefit when veterinary distributors compete by offering lower prices and better service
 
@@ -42,7 +42,7 @@ The Federal Trade Commission sued today to block Covetrus Inc. 우주·과학 �
 
 - The Federal Trade Commission sued today to block Covetrus Inc
 - and its owners, Clayton, Dubilier & Rice LLC and TPG Inc., from acquiring its closest competitor, MWI Veterinary Supply Inc., for $3.5 billion from MWI’s parent, Cencora Inc
-- In its complaint, the FTC alleges that the transaction would merge the two largest suppliers in the markets for veterinary clinic distribution and distribution to large corporate accounts
+- In its complaint , the FTC alleges that the transaction would merge the two largest suppliers in the markets for veterinary clinic distribution and distribution to large corporate accounts
 - Their customers range from independent, single-veterinarian practices to large corporate accounts with hundreds of clinic locations in the United States
 - “Veterinarians and millions of American pet owners benefit when veterinary distributors compete by offering lower prices and better service
 
