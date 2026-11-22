@@ -11,7 +11,7 @@ tags:
   - "소비자보호"
 author: "미 연방거래위원회"
 quality_score: 96.0
-cover_image: "https://images.unsplash.com/photo-1696685970391-d470da3ef7d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3OTUyNDkwOTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+cover_image: "https://images.unsplash.com/photo-1696685970391-d470da3ef7d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NjUzMTl8MHwxfHNlYXJjaHwzfHxldmVyeWRheSUyMGxpZmVzdHlsZSUyMHB1YmxpYyUyMGluZm9ybWF0aW9ufGVufDF8MHx8fDE3OTUzMzQ0MzV8MA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 미 연방거래위원회가(Federal Trade Commission) 2026-11-20 공개한 'Ten Additional States Join FTC Lawsuit Alleging Dollar General Charged Consumers More than Advertised for Many Products' 발표를 바탕으로, 확인 가능한 사실을 중심으로 정리했습니다.
